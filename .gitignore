@@ -1,26 +1,102 @@
-# 시스템
-.DS_Store
-Thumbs.db
-
-# 의존성
-node_modules/
-*.log
-
-# 환경변수 및 비밀정보
+# ── 인증 및 비밀정보 ──────────────────────────────────────────
+config/integrations.local.toml
 .env
 .env.*
 !.env.example
-*.key
-*.pem
-secrets/
+*.credentials.json
+*.auth.json
+.credentials/
+.auth/
 credentials/
+secrets/
+.notebooklm/
+notebooklm-auth*.json
+notebooklm-profile*/
+*.local.toml
+*.local.json
+*.local.yaml
+*.local.yml
+!*.example.toml
+!*.example.json
+!*.example.yaml
+!*.example.yml
+.envrc
+.direnv/
+*storage-state*.json
+*auth-state*.json
+cookies*.json
+*.pem
+*.key
+*.p12
+*.pfx
 
-# AI 도구 로컬 설정 (인증 정보 포함)
+# ── AI 도구 로컬 인증 및 설정 ────────────────────────────────
 opencode.json
+opencode.jsonc
 .opencode/
 .claude/
 .codex/
 
-# 빌드 결과물
-dist/
+# ── Obsidian 머신별 상태 ─────────────────────────────────────
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/workspaces.json
+.obsidian/sync.json
+.obsidian/publish.json
+.obsidian/cache
+.obsidian/.trash/
+.obsidian/plugins/
+.obsidian/themes/
+.obsidian/snippets/
+.trash/
+
+# ── 대용량 첨부 파일 (플레이스홀더만 추적) ──────────────────
+raw/papers/files/*
+!raw/papers/files/.gitkeep
+raw/assets/*
+!raw/assets/.gitkeep
+
+# ── 생성 결과물 ──────────────────────────────────────────────
+output/
+.ua/
+/.codegraph
+
+# ── 로컬 DB, 런타임 로그, 캐시 ──────────────────────────────
+.cache/
+*.log
+*.sqlite
+*.sqlite3
+*.db
+
+# ── Python ───────────────────────────────────────────────────
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.pyright/
+.coverage
+.coverage.*
+htmlcov/
 build/
+dist/
+site/
+node_modules/
+.npm/
+.pnpm-store/
+.yarn/cache/
+
+# ── 임시 및 시스템 파일 ──────────────────────────────────────
+.qa-*
+.qa/
+.tmp/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~
+.DS_Store
+Thumbs.db
