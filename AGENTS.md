@@ -104,3 +104,24 @@ All tags must be registered in `SCHEMA.md` before use in canonical frontmatter.
 | Codex | Terminal (`codex`) | Code implementation, bug fix, Git analysis, drone code exploration |
 | Gemini Code Assist | VS Code sidebar | Cross-validation, summarization, alternative perspective |
 | GitHub Copilot | VS Code inline | Autocomplete while editing Markdown/code, inline writing assist |
+| Understand Anything | Hermes skill / Claude Code | Gate C — knowledge graph generation and structural analysis |
+
+## Gate C — Knowledge Graph
+
+Understand Anything (`understand-knowledge`) is the Gate C tool. Run it after significant wiki growth or on demand.
+
+```bash
+# Hermes 내부에서
+/understand-knowledge ~/2nd
+
+# Claude Code에서 직접 (parse → merge → save)
+python3 ~/.hermes/skills/understand-anything/understand-knowledge/parse-knowledge-base.py ~/2nd
+python3 ~/.hermes/skills/understand-anything/understand-knowledge/merge-knowledge-graph.py ~/2nd
+```
+
+Output: `~/2nd/.ua/knowledge-graph.json` (`.gitignore` tracked — derived state, not canonical)
+
+Re-run triggers:
+- New canonical pages added (≥5 since last run)
+- Unresolved wikilinks detected by weekly lint
+- Master requests structural gap analysis

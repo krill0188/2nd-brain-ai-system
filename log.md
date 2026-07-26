@@ -83,3 +83,13 @@
 - Created: `docs/domain/drone-domain-guide.md` — domain structure, collection targets, canonical creation criteria, and collection priority order.
 - Canonical state: unchanged at 8 pages; `index.md` was not modified (no new canonical pages; raw evidence collection begins next).
 - Next action: begin raw evidence capture under `raw/` using `templates/raw-article.md` frontmatter.
+
+## [2026-07-27] map | Gate C 활성화 — Understand Anything 지식그래프
+
+- Tool installed: Understand Anything (Hermes skill, `~/.hermes/skills/understand-anything/`) — 스킬 9개 포함.
+- Gate C configured: `understand-knowledge` 스킬로 `~/2nd` 위키 최초 분석 완료.
+- Graph output: `.ua/knowledge-graph.json` (25 nodes, 41 edges, 5 layers, 4 tour steps).
+- Updated: `AGENTS.md` — Tool Roles 표에 Understand Anything 추가, Gate C 실행 절차 문서화.
+- Updated: `docs/architecture/master-ai-architecture.md` — Gate C·Understand Anything 상태를 "향후" → "운영 중"으로 갱신 (3곳).
+- `.ua/` directory: `.gitignore`에 기존 포함됨 — 파생 상태로 Git 추적 제외.
+- Re-run triggers: 신규 canonical ≥5 추가 / 주간 lint 미해결 wikilink 감지 / 마스터 요청.

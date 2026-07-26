@@ -209,7 +209,7 @@ contradictions: []
 | **Cross-Validate** | Gemini Code Assist (무료) | 권장 | 편집 중 교차검증·요약·대안 탐색 | - |
 | **Inline Assist** | GitHub Copilot (built-in) | 권장 | Markdown·코드 인라인 자동완성 | - |
 | 집중 탐색 | NotebookLM | 선택 | 선택한 소스 묶음의 질의·요약·가설 생성 | 소스 범위와 인용 반환 필수 |
-| 지식그래프 | 미정 (향후 선택) | 향후 | 문서·엔티티·관계를 파생 그래프로 생성 | canonical을 덮어쓰지 않고 재생성 가능 |
+| 지식그래프 | Understand Anything (`understand-knowledge`) | 운영 중 | 문서·엔티티·관계를 파생 그래프로 생성 → `.ua/knowledge-graph.json` | canonical을 덮어쓰지 않고 재생성 가능 |
 | 무결성 검사 | SHA-256, frontmatter·링크 검사 | 필수 | 원본 드리프트와 문서 계약 위반 감지 | 결정론적으로 재실행 가능 |
 
 ### 5.1 AI Control Plane 설계 원칙
@@ -344,8 +344,8 @@ Accepted 변경 후에는 lint를 다시 실행하고, 지식그래프가 있으
 | Hermes Cron 컴파일 | OpenCode(Kimi K2) 수동 실행 | 운영 중 |
 | llm-wiki 스킬 | OpenCode + Kimi K2 (역할 동일) | 운영 중 |
 | Gate B lint | Claude Code 검토 | 운영 중 |
-| Understand Anything | 지식그래프 도구 미선택 | **향후 선택** |
-| Gate C graph 검증 | 지식그래프 도입 후 구성 | **향후** |
+| Understand Anything | `understand-knowledge` 스킬 설치 완료 (v0.19.0) | **운영 중** |
+| Gate C graph 검증 | `.ua/knowledge-graph.json` 생성 완료 (25 노드, 41 엣지) | **운영 중** |
 | Hermes Cron 예약 | macOS launchd (기존 인프라 활용 가능) | 향후 |
 
 ### 7.1 실행 토폴로지
@@ -491,7 +491,7 @@ Accepted 변경 후에는 lint를 다시 실행하고, 지식그래프가 있으
 | 교차검증 | — | Gemini Code Assist | 마스터 특화 추가 |
 | 인라인 보조 | — | GitHub Copilot | 마스터 특화 추가 |
 | 집중 탐색 | NotebookLM | NotebookLM | 동일 |
-| 지식그래프 | Understand Anything | 미정 | 향후 선택 |
+| 지식그래프 | Understand Anything | 운영 중 | `~/.hermes/skills/understand-anything/` 설치, Gate C 활성 |
 
 ## 부록 B. 도메인 특화 — 드론 기술 8개 태그
 

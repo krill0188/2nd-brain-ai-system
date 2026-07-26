@@ -58,7 +58,7 @@
 
 ## AI 도구 역할
 
-이 시스템에는 5종 도구가 구성되어 있으며, 각각의 책임은 [AGENTS.md](AGENTS.md)에 정의되어 있습니다.
+이 시스템에는 6종 도구가 구성되어 있으며, 각각의 책임은 [AGENTS.md](AGENTS.md)에 정의되어 있습니다.
 
 | 도구 | 인터페이스 | 주요 역할 |
 | --- | --- | --- |
@@ -68,6 +68,7 @@
 | **Codex** | 터미널 (`codex`) | 드론 펌웨어 탐색 (PX4/ArduPilot/ROS2), 코드→raw 파이프라인 |
 | **Gemini Code Assist** | VS Code 사이드바 | 교차 검증, 대안 관점, 편집 중 요약 |
 | **GitHub Copilot** | VS Code 인라인 | Markdown 또는 코드 작성 중 자동완성 |
+| **Understand Anything** | Hermes 스킬 / Claude Code | Gate C — 지식그래프 생성, 공백 분석, 구조적 관측 |
 
 > **비용 원칙**: 반복 컴파일 작업은 Hermes/Kimi K2로 라우팅. Claude는 아키텍처 결정과 모순 해소에 예약. Gemini와 Copilot은 무료 — 편집 중 자유롭게 사용.
 
@@ -103,6 +104,7 @@
 | **연결된 Markdown 편집** | Obsidian에서 wikilinks와 역방향 링크를 사용해 지속적 지식을 읽고 편집하며, GitHub Copilot과 Gemini Code Assist가 편집 중 인라인으로 지원합니다. |
 | **멀티 AI 교차 검증** | Claude Code와 Gemini가 동일 증거에 대해 독립적 분석을 제공 — 지식이 정식으로 승격되기 전에 모순이 표면화됩니다. |
 | **드론 코드 탐색** | Codex가 PX4, ArduPilot, ROS2/MAVROS2, MAVSDK 소스 코드를 탐색하며, 결과는 `raw/inbox/`에 저장되어 Hermes가 컴파일 시 수집합니다. |
+| **지식그래프 (Gate C)** | Understand Anything `understand-knowledge` 스킬이 위키를 분석해 인터랙티브 지식그래프(`.ua/knowledge-graph.json`)를 생성 — 클러스터, 공백, 구조적 약한 연결을 자동으로 표면화합니다. |
 
 ---
 

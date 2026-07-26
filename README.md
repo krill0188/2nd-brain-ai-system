@@ -68,6 +68,7 @@ Five tools are configured for this system — each with a distinct responsibilit
 | **Codex** | Terminal (`codex`) | Drone firmware exploration (PX4/ArduPilot/ROS2), code-to-raw pipeline |
 | **Gemini Code Assist** | VS Code sidebar | Cross-validation, alternative perspective, summarization while editing |
 | **GitHub Copilot** | VS Code inline | Autocomplete while writing Markdown or code |
+| **Understand Anything** | Hermes skill / Claude Code | Gate C — knowledge graph generation, gap analysis, structural observation |
 
 > **Cost principle**: Route repetitive compile tasks to Hermes/Kimi K2. Reserve Claude for architecture decisions and contradiction resolution. Gemini and Copilot are free — use freely during editing.
 
@@ -103,6 +104,7 @@ Collection priority: `drone-sw` → `datalink` → `drone-ai` → `swarm` → ot
 | **Connected Markdown editing** | Read and edit durable knowledge in Obsidian using wikilinks and backlinks; GitHub Copilot and Gemini Code Assist assist inline while editing. |
 | **Multi-AI cross-validation** | Claude Code and Gemini provide independent analysis of the same evidence — contradictions surface before knowledge is promoted to canonical. |
 | **Drone code exploration** | Codex navigates PX4, ArduPilot, ROS2/MAVROS2, and MAVSDK source code; results are saved to `raw/inbox/` and picked up by Hermes for compilation. |
+| **Knowledge graph (Gate C)** | Understand Anything `understand-knowledge` skill analyzes the wiki and produces an interactive knowledge graph (`.ua/knowledge-graph.json`) — clusters, gaps, and structural weak links surfaced automatically. |
 
 ---
 
