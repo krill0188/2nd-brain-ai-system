@@ -1,29 +1,30 @@
 {
-  "editor.fontSize": 14,
-  "editor.tabSize": 2,
-  "editor.wordWrap": "on",
-  "editor.formatOnSave": true,
-  "editor.minimap.enabled": false,
-  "terminal.integrated.defaultProfile.osx": "bash",
-  "terminal.integrated.fontSize": 13,
-
-  // Markdown
-  "markdown.preview.fontSize": 14,
-  "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.quickSuggestions": { "other": true, "comments": false, "strings": false }
-  },
-
-  // Git
-  "git.enableSmartCommit": true,
-  "git.autofetch": true,
-  "git.confirmSync": false,
-
-  // 파일 탐색기
+  "files.encoding": "utf8",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
   "files.exclude": {
     "**/.DS_Store": true,
     "**/node_modules": true
   },
+
+  "editor.fontSize": 14,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "editor.minimap.enabled": false,
+
+  "markdown.preview.breaks": true,
+  "markdown.preview.fontSize": 14,
+  "[markdown]": {
+    "editor.quickSuggestions": { "other": true, "comments": false, "strings": false }
+  },
+
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.fontSize": 13,
+
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+
   "explorer.confirmDelete": false,
   "explorer.compactFolders": false
 }

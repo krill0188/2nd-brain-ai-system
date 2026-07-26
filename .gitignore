@@ -1,6 +1,26 @@
+# 시스템
 .DS_Store
+Thumbs.db
+
+# 의존성
 node_modules/
 *.log
+
+# 환경변수 및 비밀정보
 .env
-.env.local
+.env.*
+!.env.example
+*.key
+*.pem
+secrets/
+credentials/
+
+# AI 도구 로컬 설정 (인증 정보 포함)
 opencode.json
+.opencode/
+.claude/
+.codex/
+
+# 빌드 결과물
+dist/
+build/
