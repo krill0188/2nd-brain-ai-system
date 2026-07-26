@@ -93,3 +93,13 @@
 - Updated: `docs/architecture/master-ai-architecture.md` — Gate C·Understand Anything 상태를 "향후" → "운영 중"으로 갱신 (3곳).
 - `.ua/` directory: `.gitignore`에 기존 포함됨 — 파생 상태로 Git 추적 제외.
 - Re-run triggers: 신규 canonical ≥5 추가 / 주간 lint 미해결 wikilink 감지 / 마스터 요청.
+
+## [2026-07-27] map | Zotero 인제스트 파이프라인 구축
+
+- Installed: zotero-mcp-server v0.6.2 (pipx, `/Users/amaster/.local/bin/zotero-mcp`)
+- MCP registered: `~/.claude/settings.json` → `"zotero"` 서버 추가 (ZOTERO_LOCAL=true)
+- Created: `scripts/zotero-ingest.py` — Zotero 로컬 API → `raw/papers/<topic>/` Markdown 레코드 생성
+- Created: `raw/papers/` 7개 토픽 디렉토리 (drone-sw/drone-ai/datalink/swarm/drone-hw/voice-control/ai-agent/_unclassified)
+- Updated: `SCHEMA.md` — `raw/papers/<topic>/` 경로 역할 정의 추가
+- Updated: `AGENTS.md` — Zotero Ingest Pipeline 섹션 추가
+- Pending (마스터 직접): Zotero Chrome Connector 설치 + Zotero Settings → Advanced → 로컬 API 활성화

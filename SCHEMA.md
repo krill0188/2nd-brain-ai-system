@@ -28,6 +28,7 @@ contains no raw source record and no canonical page.
 | `inbox/` | Temporary intake awaiting classification and capture; not canonical evidence. |
 | `raw/articles/` | Immutable captured article or clipping Markdown. |
 | `raw/notebooklm/` | Immutable importer-preserved NotebookLM source records and source identifiers. |
+| `raw/papers/<topic>/` | Zotero 인제스트 Markdown 레코드. `<topic>`은 SCHEMA.md 등록 태그(drone-sw/drone-ai/datalink/swarm/drone-hw/voice-control/ai-agent) 또는 `_unclassified`. `scripts/zotero-ingest.py`가 자동 생성. |
 | `raw/papers/files/` | Optional copied paper attachments; initially only the empty `.gitkeep` placeholder is allowed. |
 | `raw/transcripts/` | Immutable captured transcript Markdown. |
 | `raw/web/` | Immutable importer-preserved web captures whose existing provenance paths must remain stable. |

@@ -106,6 +106,28 @@ All tags must be registered in `SCHEMA.md` before use in canonical frontmatter.
 | GitHub Copilot | VS Code inline | Autocomplete while editing Markdown/code, inline writing assist |
 | Understand Anything | Hermes skill / Claude Code | Gate C — knowledge graph generation and structural analysis |
 
+## Zotero Ingest Pipeline
+
+Zotero Connector(Chrome) → Zotero 라이브러리 → `scripts/zotero-ingest.py` → `raw/papers/<topic>/`
+
+```bash
+# 전체 수집 (Zotero 앱 실행 중이어야 함)
+python3 scripts/zotero-ingest.py
+
+# 특정 토픽만
+python3 scripts/zotero-ingest.py --topic drone-sw
+
+# 미리보기 (파일 쓰기 없음)
+python3 scripts/zotero-ingest.py --dry-run
+```
+
+Topic → directory mapping (SCHEMA.md 등록 태그 기준):
+`drone-sw` `drone-ai` `datalink` `swarm` `drone-hw` `voice-control` `ai-agent` `_unclassified`
+
+Claude Code MCP: `zotero` 서버 등록됨 → `search_zotero`, `get_item` 등 도구로 라이브러리 직접 조회 가능.
+
+**Zotero 로컬 API 활성화 필수**: Zotero → Settings → Advanced → "Allow other applications on this computer to communicate with Zotero" 켜기.
+
 ## Gate C — Knowledge Graph
 
 Understand Anything (`understand-knowledge`) is the Gate C tool. Run it after significant wiki growth or on demand.
