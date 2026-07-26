@@ -115,7 +115,7 @@
 | 분류 | 도구 | 목적 |
 | --- | --- | --- |
 | 필수 | [Obsidian](https://obsidian.md/download) | 이 저장소를 로컬 볼트로 열어 Markdown을 탐색하고 편집합니다. |
-| 논문 캡처 | [Zotero + Zotero Connector](https://www.zotero.org/download/) | 드론 논문과 PDF를 관리하고 브라우저에서 메타데이터를 저장합니다. |
+| 논문 캡처 | [Zotero + Zotero Connector](https://www.zotero.org/download/) | Connector로 브라우저에서 스크랩 → Zotero 라이브러리 → `python3 scripts/zotero-ingest.py` → `raw/papers/<topic>/` Markdown 레코드 자동 생성. Zotero Settings → Advanced → "Allow other applications" 활성화 필수. |
 | 웹 캡처 | [Obsidian Web Clipper](https://obsidian.md/clipper) | 웹 페이지를 `raw/web/` Markdown 파일로 변환합니다. |
 
 ### 자동화 및 메시징
@@ -138,7 +138,7 @@
 ### 권장 설정 순서
 
 1. 이 저장소를 클론하고 Obsidian에서 볼트로 열기.
-2. Zotero, Zotero Connector, Obsidian Web Clipper 설치.
+2. Zotero, Zotero Connector(Chrome), Obsidian Web Clipper 설치. Zotero 로컬 API 활성화: Settings → Advanced → "Allow other applications on this computer to communicate with Zotero". zotero-mcp 설치: `pipx install zotero-mcp-server`.
 3. npm으로 OpenCode, Claude Code CLI, Codex CLI 설치.
 4. VS Code에 Gemini Code Assist 확장 설치; GitHub로 Copilot 로그인.
 5. Hermes Agent 설치: `curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash`
@@ -228,7 +228,7 @@ Hermes가 콘텐츠를 `raw/inbox/`에 저장하고 다음 크론 실행 시 컴
 
 ## 기본 워크플로우
 
-1. **캡처**: 텔레그램에 링크를 전송하거나 Obsidian Web Clipper로 웹 페이지를 `raw/web/`에 저장. 논문은 Zotero → `raw/articles/`.
+1. **캡처**: 텔레그램에 링크를 전송하거나 Obsidian Web Clipper로 웹 페이지를 `raw/web/`에 저장. 논문은 Zotero Connector → Zotero 라이브러리 → `python3 scripts/zotero-ingest.py` → `raw/papers/<topic>/`.
 2. **자동 수집**: Hermes Cron (매일 04:00)이 `raw/inbox/`를 스캔하고, llm-wiki로 정식 후보를 컴파일한 후 텔레그램 리포트를 전송.
 3. **Gate B 승인**: Hermes가 정식 diff를 텔레그램으로 전달. `approve`로 확정하거나 `reject`로 폐기.
 4. **교차 검증**: Gemini나 Claude에게 초안을 검토해 모순이나 누락된 커버리지를 찾도록 요청.

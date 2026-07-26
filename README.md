@@ -115,7 +115,7 @@ Collection priority: `drone-sw` → `datalink` → `drone-ai` → `swarm` → ot
 | Category | Tool | Purpose |
 | --- | --- | --- |
 | Required | [Obsidian](https://obsidian.md/download) | Open this repository as a local vault to browse and edit Markdown. |
-| Paper capture | [Zotero + Zotero Connector](https://www.zotero.org/download/) | Manage drone papers and PDFs; save metadata from the browser. |
+| Paper capture | [Zotero + Zotero Connector](https://www.zotero.org/download/) | Scrape papers from the browser → Zotero library → `python3 scripts/zotero-ingest.py` → `raw/papers/<topic>/`. Requires Zotero Settings → Advanced → "Allow other applications" enabled. |
 | Web capture | [Obsidian Web Clipper](https://obsidian.md/clipper) | Convert web pages into `raw/web/` Markdown files. |
 
 ### Automation & Messaging
@@ -138,7 +138,7 @@ Collection priority: `drone-sw` → `datalink` → `drone-ai` → `swarm` → ot
 ### Recommended Setup Order
 
 1. Clone this repository and open it in Obsidian as a vault.
-2. Install Zotero, Zotero Connector, and Obsidian Web Clipper.
+2. Install Zotero, Zotero Connector (Chrome), and Obsidian Web Clipper. Enable Zotero local API: Settings → Advanced → "Allow other applications on this computer to communicate with Zotero". Install zotero-mcp: `pipx install zotero-mcp-server`.
 3. Install OpenCode, Claude Code CLI, and Codex CLI via npm.
 4. Install Gemini Code Assist extension in VS Code; sign in with GitHub for Copilot.
 5. Install Hermes Agent: `curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash`
@@ -228,7 +228,7 @@ Before adding knowledge, read [SCHEMA.md](SCHEMA.md), check [index.md](index.md)
 
 ## Basic Workflow
 
-1. **Capture**: Drop links into Telegram or save web pages via Obsidian Web Clipper → `raw/web/`. Papers go via Zotero → `raw/articles/`.
+1. **Capture**: Drop links into Telegram or save web pages via Obsidian Web Clipper → `raw/web/`. Papers go via Zotero Connector → Zotero library → `python3 scripts/zotero-ingest.py` → `raw/papers/<topic>/`.
 2. **Auto-ingest**: Hermes Cron (04:00 daily) scans `raw/inbox/`, compiles canonical candidates using llm-wiki, and sends a Telegram report.
 3. **Gate B approval**: Hermes delivers the canonical diff to Telegram. Reply `approve` to finalize or `reject` to discard.
 4. **Cross-validate**: Ask Gemini or Claude to review drafts for contradictions or missing coverage.
