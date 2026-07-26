@@ -43,6 +43,36 @@ The stack combines Hermes Agent automation with five AI tools, each assigned to 
 | **Weekly summary** | Hermes gateway | Cron `0 9 * * 1` — delivers weekly knowledge digest to Telegram |
 | **Telegram gateway** | Hermes gateway (launchd) | Always-on — receives capture commands, delivers Gate B diffs for approval |
 
+### Registering Cron Jobs
+
+Set up the skill symlink then register all three jobs via CLI:
+
+```bash
+# Skill symlink (displays as custom/llm-wiki-ains in Hermes UI)
+mkdir -p ~/.hermes/skills/custom
+ln -s ~/.hermes/skills/research/llm-wiki ~/.hermes/skills/custom/llm-wiki-ains
+
+# Daily ingestion — 04:00 every day
+hermes cron create "0 4 * * *" \
+  "raw/inbox/ scan → llm-wiki compile → canonical candidate. Move processed to raw/inbox/processed/. Summary: N collected, N compiled, N failed. If empty: exit silently." \
+  --name "2nd-daily-ingest" --skill "custom/llm-wiki-ains" \
+  --workdir "$(pwd)" --deliver local
+
+# Weekly lint — Monday 05:00
+hermes cron create "0 5 * * 1" \
+  "Audit all canonical docs in ~/2nd. Check: orphan pages, broken wikilinks, missing frontmatter fields, stale updated dates. Output violations as filename + reason list per SCHEMA.md. No auto-fix. If clean: 'lint passed — N pages checked'." \
+  --name "2nd-weekly-lint" --skill "custom/llm-wiki-ains" \
+  --workdir "$(pwd)" --deliver local
+
+# Weekly summary — Monday 09:00
+hermes cron create "0 9 * * 1" \
+  "Read ~/2nd/log.md for this week's changes. Format: new docs N / updated N / lint result one line. Top 3 topics. Next week collection priority: drone-sw → datalink → drone-ai." \
+  --name "2nd-weekly-summary" \
+  --workdir "$(pwd)" --deliver local
+```
+
+Verify registration: `hermes cron list`
+
 ### Telegram HITL — 4-Point Integration
 
 ```

@@ -43,6 +43,36 @@
 | **주간 요약** | Hermes 게이트웨이 | Cron `0 9 * * 1` — 주간 지식 다이제스트를 텔레그램으로 전달 |
 | **텔레그램 게이트웨이** | Hermes 게이트웨이 (launchd) | 상시 가동 — 캡처 명령 수신, Gate B diff를 승인을 위해 전달 |
 
+### Cron 작업 등록
+
+스킬 심링크를 설정한 후 CLI로 3개 잡을 등록합니다:
+
+```bash
+# 스킬 심링크 생성 (Hermes UI에서 custom/llm-wiki-ains로 표시)
+mkdir -p ~/.hermes/skills/custom
+ln -s ~/.hermes/skills/research/llm-wiki ~/.hermes/skills/custom/llm-wiki-ains
+
+# 일일 수집 — 매일 04:00
+hermes cron create "0 4 * * *" \
+  "raw/inbox/ 스캔 → llm-wiki 컴파일 → canonical 후보 작성. 처리 완료 파일은 raw/inbox/processed/로 이동. 요약: 수집 N개, 컴파일 N개, 실패 N개. 비어있으면 조용히 종료." \
+  --name "2nd-daily-ingest" --skill "custom/llm-wiki-ains" \
+  --workdir "$(pwd)" --deliver local
+
+# 주간 린트 — 매주 월요일 05:00
+hermes cron create "0 5 * * 1" \
+  "~/2nd 위키 전체 canonical 문서 점검. 확인 항목: 고아 페이지, 끊긴 wikilink, 누락 frontmatter 필드, 오래된 updated 날짜. SCHEMA.md 기준 위반 항목을 파일명+이유 목록으로 출력. 자동 수정 없음. 문제 없으면 'lint passed — N pages checked'." \
+  --name "2nd-weekly-lint" --skill "custom/llm-wiki-ains" \
+  --workdir "$(pwd)" --deliver local
+
+# 주간 요약 — 매주 월요일 09:00
+hermes cron create "0 9 * * 1" \
+  "~/2nd/log.md에서 이번 주 변경 이력 요약. 형식: 새 문서 N개 / 업데이트 N개 / lint 결과 한 줄. 주요 토픽 최대 3개. 다음 주 수집 우선순위: drone-sw → datalink → drone-ai." \
+  --name "2nd-weekly-summary" \
+  --workdir "$(pwd)" --deliver local
+```
+
+등록 확인: `hermes cron list`
+
 ### 텔레그램 HITL — 4포인트 통합
 
 ```
