@@ -106,6 +106,31 @@ All tags must be registered in `SCHEMA.md` before use in canonical frontmatter.
 | GitHub Copilot | VS Code inline | Autocomplete while editing Markdown/code, inline writing assist |
 | Understand Anything | Hermes skill / Claude Code | Gate C — knowledge graph generation and structural analysis |
 
+## Hermes Cron Schedule
+
+Three jobs are registered and active. All jobs run with `workdir ~/2nd` — AGENTS.md, CLAUDE.md, and SCHEMA.md are automatically injected into each run.
+
+| Job ID | Name | Schedule | Skill | Role |
+|---|---|---|---|---|
+| `ffcb165e` | `2nd-daily-ingest` | `0 4 * * *` (daily 04:00) | `custom/llm-wiki-ains` | Scan `raw/inbox/` → compile canonical candidates → move to `raw/inbox/processed/` |
+| `c727b7ee` | `2nd-weekly-lint` | `0 5 * * 1` (Mon 05:00) | `custom/llm-wiki-ains` | Audit all canonical docs — orphans, broken wikilinks, missing frontmatter, stale dates |
+| `548a6a08` | `2nd-weekly-summary` | `0 9 * * 1` (Mon 09:00) | none (LLM only) | Read `log.md` → weekly digest → collection priority suggestion |
+
+**Skill symlink**: `~/.hermes/skills/custom/llm-wiki-ains` → `~/.hermes/skills/research/llm-wiki`
+
+```bash
+# 잡 상태 확인
+hermes cron list
+
+# 잡 편집 (예: deliver를 telegram으로 변경)
+hermes cron edit <jobid> --deliver telegram
+
+# 수동 즉시 실행
+hermes cron run <jobid>
+```
+
+**Activation**: Requires `OPENROUTER_API_KEY` in `~/.hermes/.env`. Without it, LLM step fails.
+
 ## Zotero Ingest Pipeline
 
 Zotero Connector(Chrome) → Zotero 라이브러리 → `scripts/zotero-ingest.py` → `raw/papers/<topic>/`
