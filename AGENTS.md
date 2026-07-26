@@ -78,11 +78,29 @@ human verification against the source evidence.
 - Keep optional MCP servers disabled unless the current task needs them.
 - Summarize tool output before passing it to another model.
 
+## Domain Focus
+
+This wiki's primary knowledge domain is **drone technology**. Prioritize evidence and canonical pages within these eight subject areas:
+
+| Tag | Scope |
+|---|---|
+| `drone` | General drone systems — airframes, flight, regulations, mission |
+| `datalink` | RF, LTE, MAVLink, C2 link, telemetry architecture |
+| `swarm` | Multi-drone coordination, formation, task allocation, consensus |
+| `voice-control` | Natural language / voice command interfaces for drone operation |
+| `drone-hw` | Hardware — FC, ESC, motors, batteries, sensors, cameras, payloads |
+| `drone-sw` | Firmware (PX4/ArduPilot), GCS, middleware, SDK, ROS/ROS2, MAVROS/MAVROS2 |
+| `drone-ai` | Computer vision, autonomous flight, SLAM, detection, segmentation |
+| `ai-agent` | AI agent architectures, autonomous decision-making, multi-agent |
+
+All tags must be registered in `SCHEMA.md` before use in canonical frontmatter.
+
 ## Tool Roles
 
-| Tool | Primary Use |
-|---|---|
-| OpenCode + Kimi | Markdown cleanup, document drafting, repetitive tasks, repo summary |
-| Claude Code | Architecture, complex debugging, multi-file refactoring, final review |
-| Codex | Code implementation, bug fix, feature addition, Git analysis |
-| Gemini | Cross-validation, summarization, alternative exploration |
+| Tool | Interface | Primary Use |
+|---|---|---|
+| OpenCode + Kimi K2 | Terminal (`opencode`) | Markdown cleanup, document drafting, llm-wiki compile, repetitive tasks |
+| Claude Code | Terminal (`claude`) | Architecture, complex analysis, contradiction review, final judgment |
+| Codex | Terminal (`codex`) | Code implementation, bug fix, Git analysis, drone code exploration |
+| Gemini Code Assist | VS Code sidebar | Cross-validation, summarization, alternative perspective |
+| GitHub Copilot | VS Code inline | Autocomplete while editing Markdown/code, inline writing assist |

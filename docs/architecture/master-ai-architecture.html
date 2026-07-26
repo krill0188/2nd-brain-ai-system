@@ -1,0 +1,354 @@
+<title>2nd Brain AI System — 시스템 아키텍처</title>
+<style>
+:root {
+  --bg:    #0b0d18;
+  --sur:   #111422;
+  --sur2:  #181d30;
+  --bdr:   #232840;
+  --txt:   #dae0f5;
+  --txt2:  #7280a8;
+  --txt3:  #3a4460;
+
+  --ev:  #f97316; --ev-a:rgba(249,115,22,.10); --ev-b:rgba(249,115,22,.26);
+  --me:  #3b82f6; --me-a:rgba(59,130,246,.10); --me-b:rgba(59,130,246,.26);
+  --di:  #a855f7; --di-a:rgba(168,85,247,.10); --di-b:rgba(168,85,247,.26);
+  --de:  #22c55e; --de-a:rgba(34,197,94,.10);  --de-b:rgba(34,197,94,.26);
+  --cp:  #06b6d4; --cp-a:rgba(6,182,212,.09);  --cp-b:rgba(6,182,212,.30);
+}
+@media(prefers-color-scheme:light){:root{
+  --bg:#eef1fa;--sur:#fff;--sur2:#e4e9f8;--bdr:#ccd4ea;
+  --txt:#111932;--txt2:#4a5880;--txt3:#9aa8cc;
+}}
+:root[data-theme="dark"]{
+  --bg:#0b0d18;--sur:#111422;--sur2:#181d30;--bdr:#232840;
+  --txt:#dae0f5;--txt2:#7280a8;--txt3:#3a4460;
+}
+:root[data-theme="light"]{
+  --bg:#eef1fa;--sur:#fff;--sur2:#e4e9f8;--bdr:#ccd4ea;
+  --txt:#111932;--txt2:#4a5880;--txt3:#9aa8cc;
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{
+  background:var(--bg);color:var(--txt);
+  font-family:system-ui,-apple-system,sans-serif;
+  font-size:13px;line-height:1.55;
+  padding:36px 28px 52px;min-height:100vh;
+}
+
+/* ── HEADER ── */
+.ph{margin-bottom:30px;}
+.ph-title{font-size:19px;font-weight:700;letter-spacing:-.025em;color:var(--txt);margin-bottom:5px;}
+.ph-sub{font-size:11.5px;color:var(--txt2);}
+.ph-flow{
+  font-size:10px;color:var(--txt3);margin-top:5px;
+  font-family:'SF Mono',ui-monospace,monospace;letter-spacing:.04em;
+}
+
+/* ── CONTROL PLANE ── */
+.cp-wrap{
+  background:var(--cp-a);border:1px solid var(--cp-b);
+  border-radius:12px;padding:14px 18px 18px;margin-bottom:16px;
+}
+.cp-lbl{
+  font-size:9px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--cp);margin-bottom:13px;
+}
+.cp-pipe{display:flex;align-items:stretch;gap:0;overflow-x:auto;padding-bottom:2px;}
+.cp-n{
+  flex:1;min-width:145px;background:var(--sur);border:1px solid var(--bdr);
+  border-radius:8px;padding:9px 12px;text-align:center;
+}
+.cp-n-t{
+  font-size:10px;font-weight:700;color:var(--cp);
+  font-family:'SF Mono',ui-monospace,monospace;
+  margin-bottom:4px;letter-spacing:.02em;
+}
+.cp-n-s{font-size:9.5px;color:var(--txt2);line-height:1.6;}
+.cp-arr{
+  flex-shrink:0;width:30px;display:flex;align-items:center;
+  justify-content:center;color:var(--txt3);font-size:16px;
+}
+
+/* ── MAIN LAYERS GRID ── */
+.lw{overflow-x:auto;}
+.lg{
+  display:grid;
+  grid-template-columns:1fr 28px 1fr 28px 1fr 28px 1fr;
+  min-width:940px;align-items:start;gap:0;
+}
+
+/* ── SEPARATORS ── */
+.sep{
+  display:flex;flex-direction:column;
+  justify-content:flex-start;align-items:center;
+  padding-top:52px;gap:6px;
+}
+.sep-ic{font-size:17px;color:var(--txt3);line-height:1;}
+.sep-lbl{
+  font-size:8px;color:var(--txt3);letter-spacing:.07em;
+  text-transform:uppercase;writing-mode:vertical-rl;
+  transform:rotate(180deg);
+}
+
+/* ── LAYER BOX ── */
+.lay{border-radius:12px;padding:15px 13px 18px;display:flex;flex-direction:column;gap:9px;}
+.lay.ev{background:var(--ev-a);border:1px solid var(--ev-b);}
+.lay.me{background:var(--me-a);border:1px solid var(--me-b);}
+.lay.di{background:var(--di-a);border:1px solid var(--di-b);}
+.lay.de{background:var(--de-a);border:1px solid var(--de-b);}
+
+.l-num{font-size:8.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:2px;}
+.lay.ev .l-num{color:var(--ev);}
+.lay.me .l-num{color:var(--me);}
+.lay.di .l-num{color:var(--di);}
+.lay.de .l-num{color:var(--de);}
+
+.l-title{font-size:13px;font-weight:700;color:var(--txt);margin-bottom:5px;text-wrap:balance;}
+
+/* ── NODE CARD ── */
+.nd{
+  background:var(--sur);border:1px solid var(--bdr);
+  border-radius:7px;padding:9px 11px;
+}
+.lay.ev .nd{border-top:2px solid var(--ev);}
+.lay.me .nd{border-top:2px solid var(--me);}
+.lay.di .nd{border-top:2px solid var(--di);}
+.lay.de .nd{border-top:2px solid var(--de);}
+
+.nd-t{font-size:11px;font-weight:700;margin-bottom:3px;}
+.lay.ev .nd-t{color:var(--ev);}
+.lay.me .nd-t{color:var(--me);}
+.lay.di .nd-t{color:var(--di);}
+.lay.de .nd-t{color:var(--de);}
+
+.nd-s{font-size:10px;color:var(--txt2);line-height:1.65;}
+.nd-s em{color:var(--txt3);font-style:italic;}
+
+/* dashed variant */
+.nd.dash{
+  background:transparent;
+  border:1px dashed var(--bdr);
+  border-top:1px dashed var(--bdr);
+}
+.nd.dash .nd-t{color:var(--txt2);}
+
+/* ── GATE (diamond feel via border) ── */
+.gate{
+  background:var(--de-a);border:2px solid var(--de);
+  border-radius:8px;padding:11px 12px;text-align:center;
+}
+.gate-t{font-size:11.5px;font-weight:700;color:var(--de);margin-bottom:4px;}
+.gate-s{font-size:9.5px;color:var(--txt2);line-height:1.6;}
+
+/* ── RULE BLOCK ── */
+.rule{padding:5px 2px 0;font-size:9.5px;color:var(--txt3);}
+.rule strong{
+  display:block;font-size:8px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--txt3);margin-bottom:5px;
+}
+.rule li{padding-left:12px;position:relative;line-height:1.7;}
+.rule li::before{content:'·';position:absolute;left:3px;}
+
+/* ── FEEDBACK LOOP ── */
+.fb{
+  margin-top:13px;padding:9px 16px;
+  border-top:1px dashed var(--bdr);
+  font-size:10px;color:var(--txt2);text-align:center;
+  font-family:'SF Mono',ui-monospace,monospace;letter-spacing:.02em;
+}
+.fb .hi{color:var(--me);font-weight:600;}
+.fb .hicp{color:var(--cp);font-weight:600;}
+
+/* ── LEGEND ── */
+.legend{
+  display:flex;gap:20px;flex-wrap:wrap;
+  margin-top:18px;padding-top:13px;
+  border-top:1px solid var(--bdr);
+}
+.li{display:flex;align-items:center;gap:7px;font-size:10px;color:var(--txt2);}
+.ll{width:24px;height:2px;border-radius:1px;}
+.ll.s{background:var(--txt2);}
+.ll.d{background:repeating-linear-gradient(to right,var(--txt2) 0,var(--txt2) 4px,transparent 4px,transparent 8px);}
+.ll.c{background:var(--cp);}
+.ld{width:9px;height:9px;border-radius:50%;}
+</style>
+
+<!-- PAGE HEADER -->
+<div class="ph">
+  <div class="ph-title">🧠 2nd Brain AI System &mdash; 시스템 아키텍처</div>
+  <div class="ph-sub">증거 기반 개인 지식관리 · OpenCode + Kimi K2 · Claude Code · Codex · Gemini 멀티 AI 통합 환경</div>
+  <div class="ph-flow">Capture → Organize → Compile → Verify → Deliver &nbsp;·&nbsp; 사람 승인 게이트가 모든 레이어 경계에 위치</div>
+</div>
+
+<!-- CONTROL PLANE -->
+<div class="cp-wrap">
+  <div class="cp-lbl">VS Code · AI Control Plane · 자동화 제어층</div>
+  <div class="cp-pipe">
+    <div class="cp-n">
+      <div class="cp-n-t">collect-inbox</div>
+      <div class="cp-n-s">Web Clipper · Zotero<br>브라우저 · 북마크</div>
+    </div>
+    <div class="cp-arr">→</div>
+    <div class="cp-n">
+      <div class="cp-n-t">organize · Kimi</div>
+      <div class="cp-n-s">OpenCode + Kimi K2<br>llm-wiki · fresh session</div>
+    </div>
+    <div class="cp-arr">→</div>
+    <div class="cp-n">
+      <div class="cp-n-t">compile · Claude</div>
+      <div class="cp-n-s">Claude Code · Gate B<br>분석 · lint · 설계 검토</div>
+    </div>
+    <div class="cp-arr">→</div>
+    <div class="cp-n">
+      <div class="cp-n-t">verify · Gemini</div>
+      <div class="cp-n-s">Gemini Code Assist<br>Gate C · 교차검증</div>
+    </div>
+    <div class="cp-arr">→</div>
+    <div class="cp-n">
+      <div class="cp-n-t">deliver · sync</div>
+      <div class="cp-n-s">GitHub · Notion<br>diff · 리뷰 리포트</div>
+    </div>
+  </div>
+</div>
+
+<!-- LAYERS -->
+<div class="lw">
+<div class="lg">
+
+  <!-- 1. EVIDENCE -->
+  <div class="lay ev">
+    <div>
+      <div class="l-num">1. Evidence · 원본/출처</div>
+      <div class="l-title">수집 · 보존</div>
+    </div>
+    <div class="nd">
+      <div class="nd-t">웹 · 영상 · 논문</div>
+      <div class="nd-s">외부 자료 · 기사 · YouTube<br>트랜스크립트 · NotebookLM</div>
+    </div>
+    <div class="nd">
+      <div class="nd-t">Zotero + Connector</div>
+      <div class="nd-s">서지 · 첨부 · 주석<br>Zotero MCP 연결</div>
+    </div>
+    <div class="nd">
+      <div class="nd-t">raw/ (immutable)</div>
+      <div class="nd-s">원본 · 메타데이터<br>SHA-256 무결성 보장</div>
+    </div>
+    <div class="rule">
+      <strong>보존 규칙</strong>
+      <li>원본 본문은 수정하지 않음</li>
+      <li>주장 → source 경로로 되돌아감</li>
+      <li>AI 합성 결과를 raw에 저장 금지</li>
+    </div>
+  </div>
+
+  <!-- SEP 1→2 -->
+  <div class="sep">
+    <div class="sep-ic">→</div>
+    <div class="sep-lbl">data</div>
+  </div>
+
+  <!-- 2. CANONICAL MEMORY -->
+  <div class="lay me">
+    <div>
+      <div class="l-num">2. Canonical Memory · 장기 기억</div>
+      <div class="l-title">정리 · 연결</div>
+    </div>
+    <div class="nd">
+      <div class="nd-t">OpenCode + Kimi K2</div>
+      <div class="nd-s">canonical 변환 · Gate B · lint<br>llm-wiki 자동 정리 · 역할: 문서 정리</div>
+    </div>
+    <div class="nd">
+      <div class="nd-t">Canonical Markdown</div>
+      <div class="nd-s">entities · concepts<br>comparisons · queries</div>
+    </div>
+    <div class="nd">
+      <div class="nd-t">Obsidian Vault</div>
+      <div class="nd-s">읽기 · 편집 · 역링크<br>~/2nd · Graph View</div>
+    </div>
+    <div class="nd dash">
+      <div class="nd-t">Governance Contract</div>
+      <div class="nd-s">SCHEMA · index · log<br>frontmatter · provenance · lint</div>
+    </div>
+    <div class="rule">
+      <strong>경계 원칙</strong>
+      <li>외부 주장 · AI 합성 · 개인 판단을<br>&nbsp;&nbsp;같은 층에 섞지 않는다</li>
+    </div>
+  </div>
+
+  <!-- SEP 2→3 -->
+  <div class="sep">
+    <div class="sep-ic">→</div>
+    <div class="sep-lbl">query</div>
+  </div>
+
+  <!-- 3. DISCOVERY -->
+  <div class="lay di">
+    <div>
+      <div class="l-num">3. Discovery · 탐색/가설</div>
+      <div class="l-title">분석 · 발견</div>
+    </div>
+    <div class="nd">
+      <div class="nd-t">Claude Code</div>
+      <div class="nd-s">선택 원본 + Markdown 집중 분석<br>합성 · 설계 검토 · 역할: 아키텍처</div>
+    </div>
+    <div class="nd">
+      <div class="nd-t">가설 · 보고서</div>
+      <div class="nd-s">비교 · 질의 결과<br><em>(확정 지식 아님 — 사람 승인 필요)</em></div>
+    </div>
+    <div class="nd">
+      <div class="nd-t">Codex</div>
+      <div class="nd-s">코드 탐색 · 구현 후보<br>ChatGPT Plus 구독 · 역할: 코드 구현</div>
+    </div>
+    <div class="nd">
+      <div class="nd-t">.ua/ knowledge graph</div>
+      <div class="nd-s">재생성 가능한 관측 모델<br>군집 · 브리지 · 공백 후보</div>
+    </div>
+  </div>
+
+  <!-- SEP 3→4 -->
+  <div class="sep">
+    <div class="sep-ic">→</div>
+    <div class="sep-lbl">review</div>
+  </div>
+
+  <!-- 4. DECISION -->
+  <div class="lay de">
+    <div>
+      <div class="l-num">4. Decision · 검증/재사용</div>
+      <div class="l-title">승인 · 배포</div>
+    </div>
+    <div class="gate">
+      <div class="gate-t">⬡ Human Review Gate</div>
+      <div class="gate-s">원문 확인 · 중복/모순<br>출처 · 신뢰도 · 재사용가치</div>
+    </div>
+    <div class="nd">
+      <div class="nd-t">검증된 지식 (Accepted)</div>
+      <div class="nd-s">근거와 함께 canonical 승격<br>index.md + log.md 동기화</div>
+    </div>
+    <div class="nd">
+      <div class="nd-t">재사용</div>
+      <div class="nd-s">GitHub · Notion · 블로그<br>슬라이드 · 다이어그램 · 코드</div>
+    </div>
+  </div>
+
+</div><!-- /lg -->
+</div><!-- /lw -->
+
+<!-- FEEDBACK LOOP -->
+<div class="fb">
+  <span class="hi">Accepted</span>만 canonical 반영 &nbsp;→&nbsp; lint &nbsp;→&nbsp;
+  <span class="hicp">OpenCode Cron</span>: 지식그래프 재생성 &nbsp;↩ Layer 2
+</div>
+
+<!-- LEGEND -->
+<div class="legend">
+  <div class="li"><div class="ll s"></div>데이터 흐름</div>
+  <div class="li"><div class="ll d"></div>가설/관측</div>
+  <div class="li"><div class="ll c"></div>AI 자동화</div>
+  <div class="li"><div class="ld" style="background:var(--ev)"></div>Evidence</div>
+  <div class="li"><div class="ld" style="background:var(--me)"></div>Memory</div>
+  <div class="li"><div class="ld" style="background:var(--di)"></div>Discovery</div>
+  <div class="li"><div class="ld" style="background:var(--de)"></div>Decision</div>
+  <div class="li"><div class="ld" style="background:var(--cp)"></div>Control Plane</div>
+</div>

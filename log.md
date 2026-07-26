@@ -74,3 +74,12 @@
 - Correction: the immediately preceding lint entry reports 27 source references, but the measured canonical frontmatter total is 30.
 - Unchanged measurements: 17 claim-level markers, 33 canonical links, 8 canonical pages, and 0 lint errors or warnings.
 - Updated: `log.md` only; no raw or canonical page was changed.
+
+## [2026-07-26] map | 드론 도메인 초기화
+
+- Decision: this wiki's primary knowledge domain is set to **drone technology** (8 subject categories).
+- Registered tags added to `SCHEMA.md`: `drone`, `datalink`, `swarm`, `voice-control`, `drone-hw`, `drone-sw`, `drone-ai`, `ai-agent`.
+- Domain focus added to `AGENTS.md`: tag table with scope description for all 8 categories.
+- Created: `docs/domain/drone-domain-guide.md` — domain structure, collection targets, canonical creation criteria, and collection priority order.
+- Canonical state: unchanged at 8 pages; `index.md` was not modified (no new canonical pages; raw evidence collection begins next).
+- Next action: begin raw evidence capture under `raw/` using `templates/raw-article.md` frontmatter.

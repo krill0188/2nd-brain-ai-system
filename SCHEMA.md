@@ -78,6 +78,17 @@ a valid source record or canonical page.
 - `research`: research collection, synthesis, and verification.
 - `workflow`: ordered operational processes and feedback loops.
 
+#### Drone domain tags
+
+- `drone`: general drone systems — airframes, flight mechanics, regulations, mission planning.
+- `datalink`: drone data link and wireless communication — RF, LTE, MAVLink telemetry, C2 link.
+- `swarm`: multi-drone coordination and swarm algorithms — formation, task allocation, consensus.
+- `voice-control`: natural language and voice command interfaces for drone operation.
+- `drone-hw`: drone hardware components — flight controllers, ESC, motors, batteries, sensors, cameras.
+- `drone-sw`: drone software stack — firmware (PX4, ArduPilot), GCS, middleware, SDK, ROS/ROS2, MAVROS/MAVROS2.
+- `drone-ai`: AI and ML integration with drones — computer vision, autonomous flight, detection, SLAM.
+- `ai-agent`: AI agent architectures for autonomous drone decision-making and multi-agent systems.
+
 ## Raw source integrity
 
 Initial capture establishes an immutable raw record. The `sha256` field is the
