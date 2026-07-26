@@ -2,31 +2,59 @@
 
 **English** | [한국어](README.ko.md)
 
-> A drone-domain knowledge management system built on Markdown and Git — powered by a 5-AI tool stack (OpenCode + Kimi K2, Claude Code, Codex, Gemini Code Assist, GitHub Copilot).
+> A drone-domain knowledge management system built on Markdown and Git — powered by **Hermes Agent automation + 5-AI tool stack + Telegram HITL**.
 
 ## Project Overview
 
 This project is a personal knowledge management system specialized in **drone technology** (8 subject areas: drone / datalink / swarm / voice-control / drone-hw / drone-sw / drone-ai / ai-agent). It implements a continuous **capture → compile → discovery → human decision** workflow using plain Markdown files — compatible with Obsidian, VS Code, GitHub, and any Markdown-compatible tool.
 
-Built on [ains-lab/2nd-brain-template](https://github.com/ains-lab/2nd-brain-template) with a custom AI tool layer.
+Built on [ains-lab/2nd-brain-template](https://github.com/ains-lab/2nd-brain-template) with a custom AI tool layer, Hermes Agent automation, and Telegram HITL integration.
 
 ### Architecture
 
-The system consists of four layers: **Evidence → Canonical Memory → Discovery → Human Decision**. Raw source material is preserved as immutable evidence under `raw/`; reusable knowledge is compiled into canonical Markdown with traceable provenance. A 5-AI control plane coordinates capture, compilation, cross-validation, and final judgment — each tool assigned to its role by [AGENTS.md](AGENTS.md).
+The system consists of four knowledge layers: **Evidence → Canonical Memory → Discovery → Human Decision**. Raw source material is preserved as immutable evidence under `raw/`; reusable knowledge is compiled into canonical Markdown with traceable provenance.
+
+An **Automation Control Plane** (Hermes Agent + llm-wiki skill) handles scheduled ingestion, compilation, and lint automatically. A **Telegram HITL gateway** delivers diff reports to the master and gates canonical promotion on explicit approval — no AI hypothesis enters canonical memory without human sign-off.
 
 ![Master 2nd Brain AI System Architecture](docs/architecture/master-ai-architecture.png)
 
 ### Operating Workflow
 
-The operating workflow follows **Capture → Compile → Discovery → Human Decision**, passing through three integrity gates (Gate A: raw integrity, Gate B: lint/frontmatter, Gate C: graph/freshness) before any canonical change is finalized. Approved changes update the canonical page, `index.md`, and `log.md` together as a single atomic operation.
+The operating workflow follows **Capture → Hermes Cron → Gate A/B/C → Telegram Approval → Canonical**. Three integrity gates (Gate A: raw integrity / Gate B: lint + frontmatter / Gate C: graph freshness) run automatically. Gate B results are delivered to Telegram for human review before any canonical change is finalized.
 
 ![Master 2nd Brain Operating Workflow](docs/workflow/master-workflow.png)
 
 ### Technology Stack
 
-The AI tool stack maps five tools to specific roles in the knowledge pipeline. Open-format Markdown, provenance metadata, and Git history are the durable assets; AI tools are the replaceable layer.
+The stack combines Hermes Agent automation with five AI tools, each assigned to a distinct role. Open-format Markdown, provenance metadata, and Git history are the durable assets; AI tools and automation engines are the replaceable layer.
 
 ![Master 2nd Brain Technology Stack](docs/tech-stack/master-tech-stack.png)
+
+---
+
+## Automation Control Plane — Hermes Agent
+
+[Hermes Agent](https://github.com/NousResearch/hermes-agent) (v0.19.0) serves as the automation backbone, replacing the manual compilation loop with a scheduled pipeline.
+
+| Role | Tool | Trigger |
+| --- | --- | --- |
+| **Daily ingestion** | Hermes + llm-wiki skill | Cron `0 4 * * *` — scans `raw/inbox/`, compiles canonical candidates |
+| **Weekly lint** | Hermes + wiki audit | Cron `0 5 * * 1` — checks orphans, broken links, stale pages, SHA-256 drift |
+| **Weekly summary** | Hermes gateway | Cron `0 9 * * 1` — delivers weekly knowledge digest to Telegram |
+| **Telegram gateway** | Hermes gateway (launchd) | Always-on — receives capture commands, delivers Gate B diffs for approval |
+
+### Telegram HITL — 4-Point Integration
+
+```
+[Point 1: Input]      Master → Telegram → Hermes → raw/inbox/
+[Point 2: Cron log]   Hermes Cron → Telegram: "3 raw added, 2 canonical candidates"
+[Point 3: Gate]       Gate B diff → Telegram → Master: approve / reject / revise
+[Point 4: Query]      Master → Telegram → Hermes → wiki search → answer
+```
+
+Point 3 is the critical gate: Hermes sends the canonical diff to Telegram, and the master's reply (`approve` / `reject`) determines whether `index.md` and `log.md` are updated.
+
+---
 
 ## AI Tool Roles
 
@@ -34,13 +62,16 @@ Five tools are configured for this system — each with a distinct responsibilit
 
 | Tool | Interface | Primary Role |
 | --- | --- | --- |
-| **OpenCode + Kimi K2** | Terminal (`opencode`) | Markdown cleanup, document drafting, llm-wiki compile, repetitive organize tasks |
-| **Claude Code** | Terminal (`claude`) | Architecture analysis, contradiction review, multi-file reasoning, final judgment |
-| **Codex** | Terminal (`codex`) | Code implementation, drone firmware exploration (PX4/ArduPilot/ROS2), Git analysis |
+| **Hermes + llm-wiki** | Gateway / Cron | Automated ingestion, compilation, lint, Telegram delivery |
+| **OpenCode + Kimi K2** | Terminal (`opencode`) | Manual compile assist, document drafting, large-batch editing |
+| **Claude Code** | Terminal (`claude`) | Architecture analysis, contradiction review, Gate B deep judgment |
+| **Codex** | Terminal (`codex`) | Drone firmware exploration (PX4/ArduPilot/ROS2), code-to-raw pipeline |
 | **Gemini Code Assist** | VS Code sidebar | Cross-validation, alternative perspective, summarization while editing |
 | **GitHub Copilot** | VS Code inline | Autocomplete while writing Markdown or code |
 
-> **Cost principle**: Route repetitive compile tasks to Kimi K2 (token cost). Reserve Claude for architecture decisions and contradiction resolution. Gemini and Copilot are free — use freely during editing.
+> **Cost principle**: Route repetitive compile tasks to Hermes/Kimi K2. Reserve Claude for architecture decisions and contradiction resolution. Gemini and Copilot are free — use freely during editing.
+
+---
 
 ## Drone Domain Coverage
 
@@ -59,16 +90,21 @@ The primary knowledge domain is **drone technology** across 8 registered tag cat
 
 Collection priority: `drone-sw` → `datalink` → `drone-ai` → `swarm` → others.
 
+---
+
 ## Key Features
 
 | Feature | Description |
 | --- | --- |
+| **Automated ingestion pipeline** | Hermes Agent cron scans `raw/inbox/` daily at 04:00, runs llm-wiki skill to compile canonical candidates, and delivers results to Telegram. |
+| **Telegram HITL gate** | Gate B diffs are delivered to Telegram for master approval. No canonical change is finalized without an explicit `approve` reply. |
 | **Source and provenance preservation** | Capture papers and web material with Zotero and Obsidian Web Clipper, then preserve the source, metadata, and SHA-256 digest under `raw/` so every claim can be traced to evidence. |
-| **Verified knowledge compilation** | OpenCode + Kimi K2 structures source material into entity, concept, comparison, and query documents with provenance, confidence ratings, and contradiction tracking. |
+| **Verified knowledge compilation** | Hermes llm-wiki skill and OpenCode + Kimi K2 structure source material into entity, concept, comparison, and query documents with provenance, confidence ratings, and contradiction tracking. |
 | **Connected Markdown editing** | Read and edit durable knowledge in Obsidian using wikilinks and backlinks; GitHub Copilot and Gemini Code Assist assist inline while editing. |
 | **Multi-AI cross-validation** | Claude Code and Gemini provide independent analysis of the same evidence — contradictions surface before knowledge is promoted to canonical. |
-| **Drone code exploration** | Codex navigates PX4, ArduPilot, ROS2/MAVROS2, and MAVSDK source code and integrates findings into the wiki as `drone-sw` canonical pages. |
-| **Human verification gate** | No AI hypothesis is promoted to canonical memory without human approval. The human decision layer is enforced by the Gate C check before `index.md` and `log.md` are updated. |
+| **Drone code exploration** | Codex navigates PX4, ArduPilot, ROS2/MAVROS2, and MAVSDK source code; results are saved to `raw/inbox/` and picked up by Hermes for compilation. |
+
+---
 
 ## Prerequisites
 
@@ -77,8 +113,15 @@ Collection priority: `drone-sw` → `datalink` → `drone-ai` → `swarm` → ot
 | Category | Tool | Purpose |
 | --- | --- | --- |
 | Required | [Obsidian](https://obsidian.md/download) | Open this repository as a local vault to browse and edit Markdown. |
-| Paper capture | [Zotero + Zotero Connector](https://www.zotero.org/download/) | Manage drone papers and PDFs; save metadata from the browser into Zotero. |
+| Paper capture | [Zotero + Zotero Connector](https://www.zotero.org/download/) | Manage drone papers and PDFs; save metadata from the browser. |
 | Web capture | [Obsidian Web Clipper](https://obsidian.md/clipper) | Convert web pages into `raw/web/` Markdown files. |
+
+### Automation & Messaging
+
+| Tool | Purpose | Setup |
+| --- | --- | --- |
+| [Hermes Agent](https://github.com/NousResearch/hermes-agent) | Automation control plane — llm-wiki, cron, Telegram gateway | `curl -fsSL https://hermes-agent.nousresearch.com/install.sh \| bash` |
+| Telegram Bot | HITL notification and approval gateway | Create via [@BotFather](https://t.me/BotFather), set token in `~/.hermes/.env` |
 
 ### AI Tools
 
@@ -95,16 +138,19 @@ Collection priority: `drone-sw` → `datalink` → `drone-ai` → `swarm` → ot
 1. Clone this repository and open it in Obsidian as a vault.
 2. Install Zotero, Zotero Connector, and Obsidian Web Clipper.
 3. Install OpenCode, Claude Code CLI, and Codex CLI via npm.
-4. Install Gemini Code Assist extension in VS Code.
-5. Register OpenRouter API key: `cd ~/2nd && opencode providers login openrouter`
-6. Sign into Claude Max and ChatGPT Plus on first `claude` / `codex` run.
-7. Sign into GitHub for Copilot in VS Code (account icon → GitHub login).
+4. Install Gemini Code Assist extension in VS Code; sign in with GitHub for Copilot.
+5. Install Hermes Agent: `curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash`
+6. Set `WIKI_PATH`, `OPENROUTER_API_KEY`, and `TELEGRAM_BOT_TOKEN` in `~/.hermes/.env`.
+7. Start the gateway: `hermes gateway install --start-now --start-on-login`
+8. Configure cron jobs via the Hermes Telegram bot or CLI.
+
+---
 
 ## Directory Structure
 
 ```text
 .
-├── inbox/                    # Temporary intake awaiting classification
+├── inbox/                    # Temporary intake — Hermes picks up daily at 04:00
 ├── raw/                      # Immutable source evidence
 │   ├── articles/             # Article and web-clipping source text
 │   ├── notebooklm/           # NotebookLM source records
@@ -118,7 +164,7 @@ Collection priority: `drone-sw` → `datalink` → `drone-ai` → `swarm` → ot
 ├── comparisons/              # Canonical side-by-side analysis
 ├── queries/                  # Source-grounded questions and answers
 ├── docs/
-│   ├── architecture/         # System architecture diagram
+│   ├── architecture/         # System architecture diagram and spec
 │   ├── domain/               # Drone domain collection guide
 │   ├── tech-stack/           # Technology stack diagram
 │   └── workflow/             # Operating workflow diagram
@@ -130,6 +176,8 @@ Collection priority: `drone-sw` → `datalink` → `drone-ai` → `swarm` → ot
 ├── index.md                  # Active canonical knowledge catalog
 └── log.md                    # Append-only operation history
 ```
+
+---
 
 ## Quick Start
 
@@ -148,29 +196,45 @@ cd 2nd-brain-ai-system
 ### 3. Start a Knowledge Session
 
 ```bash
-# Day-to-day compile tasks — Kimi K2
+# Automated pipeline — Hermes handles daily ingestion
+hermes gateway status
+
+# Manual compile assist — Kimi K2
 cd ~/2nd && opencode
 
 # Architecture / contradiction analysis — Claude
 cd ~/2nd && claude
 
-# Drone code exploration — Codex
+# Drone code exploration — Codex (results go to raw/inbox/)
 cd ~/2nd && codex
 ```
 
-### 4. Read the Operating Contract
+### 4. Send a Capture Command via Telegram
 
-Before adding knowledge, read [SCHEMA.md](SCHEMA.md), check [index.md](index.md) for subjects already covered, and review the latest entries in [log.md](log.md). If the subject already exists, strengthen the existing page with new evidence instead of creating a duplicate.
+```
+[Telegram → @dronewikibot]
+"Collect this link and save to raw/inbox/: https://docs.px4.io/..."
+```
+
+Hermes saves the content to `raw/inbox/`, and the next cron run compiles it.
+
+### 5. Read the Operating Contract
+
+Before adding knowledge, read [SCHEMA.md](SCHEMA.md), check [index.md](index.md) for subjects already covered, and review the latest entries in [log.md](log.md).
+
+---
 
 ## Basic Workflow
 
-1. **Capture**: Save web pages to `raw/web/` via Obsidian Web Clipper; save papers to Zotero → export to `raw/articles/`.
-2. **Classify**: Move items from `inbox/` to the correct `raw/` subdirectory and fill in frontmatter using `templates/raw-article.md`.
-3. **Compile**: Ask OpenCode (Kimi K2) to draft a canonical page from 2+ raw sources using the appropriate template.
-4. **Cross-validate**: Ask Gemini or Claude to review the draft for contradictions or missing coverage.
-5. **Approve and record**: On approval, update `index.md` and append one entry to `log.md` in the same operation.
-6. **Explore**: Treat knowledge-graph suggestions as hypotheses. Promote only human-verified findings to canonical.
+1. **Capture**: Drop links into Telegram or save web pages via Obsidian Web Clipper → `raw/web/`. Papers go via Zotero → `raw/articles/`.
+2. **Auto-ingest**: Hermes Cron (04:00 daily) scans `raw/inbox/`, compiles canonical candidates using llm-wiki, and sends a Telegram report.
+3. **Gate B approval**: Hermes delivers the canonical diff to Telegram. Reply `approve` to finalize or `reject` to discard.
+4. **Cross-validate**: Ask Gemini or Claude to review drafts for contradictions or missing coverage.
+5. **Explore**: Treat knowledge-graph suggestions as hypotheses. Promote only human-verified findings to canonical.
+6. **Query**: Ask the Telegram bot directly — `"What did we collect on PX4 flight modes?"` — Hermes searches the wiki and replies.
 7. **Archive**: Move fully superseded pages to `_archive/`, repair links, and record the operation in `log.md`.
+
+---
 
 ## Data Management Principles
 
@@ -182,7 +246,9 @@ Before adding knowledge, read [SCHEMA.md](SCHEMA.md), check [index.md](index.md)
 - **Canonical knowledge is selective.** Promote a subject only when it is central to one source or repeated across at least two sources.
 - **Canonical knowledge is connected.** Every active canonical page must link to at least two other active canonical pages via `[[wikilinks]]`.
 - **Changes are atomic.** Canonical create/update/archive is complete only after updating `index.md` and appending to `log.md` together.
-- **API keys stay out of Git.** Never commit OpenRouter, Zotero, or any other API key to this repository.
+- **No secrets in Git.** Never commit API keys, bot tokens, or login sessions to this repository. Keep `~/.hermes/.env` local-only.
+
+---
 
 ## Synchronization
 
@@ -194,6 +260,8 @@ git push
 
 Use Git for history. Never store API keys, tokens, or login sessions in the repository.
 
+---
+
 ## License
 
-Based on [ains-lab/2nd-brain-template](https://github.com/ains-lab/2nd-brain-template). Adapted and extended for drone-domain AI knowledge management.
+Based on [ains-lab/2nd-brain-template](https://github.com/ains-lab/2nd-brain-template). Adapted and extended for drone-domain AI knowledge management with Hermes Agent automation and Telegram HITL.
