@@ -1,0 +1,9 @@
+{
+  "folders": [
+    { "path": "." }
+  ],
+  "settings": {
+    "editor.fontSize": 14,
+    "terminal.integrated.defaultProfile.osx": "bash"
+  }
+}

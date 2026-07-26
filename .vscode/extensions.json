@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "yzhang.markdown-all-in-one",
+    "shd101wyy.markdown-preview-enhanced",
+    "eamodio.gitlens",
+    "mhutchie.git-graph",
+    "vscodevim.vim"
+  ]
+}

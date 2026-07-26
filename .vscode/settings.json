@@ -1,0 +1,29 @@
+{
+  "editor.fontSize": 14,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "terminal.integrated.defaultProfile.osx": "bash",
+  "terminal.integrated.fontSize": 13,
+
+  // Markdown
+  "markdown.preview.fontSize": 14,
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.quickSuggestions": { "other": true, "comments": false, "strings": false }
+  },
+
+  // Git
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+
+  // 파일 탐색기
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/node_modules": true
+  },
+  "explorer.confirmDelete": false,
+  "explorer.compactFolders": false
+}
