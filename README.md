@@ -135,6 +135,7 @@ Collection priority: `drone-sw` → `datalink` → `drone-ai` → `swarm` → ot
 | **Multi-AI cross-validation** | Claude Code and Gemini provide independent analysis of the same evidence — contradictions surface before knowledge is promoted to canonical. |
 | **Drone code exploration** | Codex navigates PX4, ArduPilot, ROS2/MAVROS2, and MAVSDK source code; results are saved to `raw/inbox/` and picked up by Hermes for compilation. |
 | **Knowledge graph (Gate C)** | Understand Anything `understand-knowledge` skill analyzes the wiki and produces an interactive knowledge graph (`.ua/knowledge-graph.json`) — clusters, gaps, and structural weak links surfaced automatically. Open the local viewer with `open .ua/graph.html` (force-directed, interactive, works offline). |
+| **Gate C v2 — AI gap analysis** | `scripts/gate-c-analyze.sh` reads the knowledge graph, pre-processes structure stats (layer density, isolated nodes, high-degree hubs, disconnected layer pairs), and pipes them to `claude -p` for AI interpretation. Output is a Telegram-formatted gap report saved to `.ua/gap-report.md`. Run with `--deliver` to push via Hermes. |
 
 ---
 

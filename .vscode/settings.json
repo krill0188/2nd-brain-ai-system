@@ -88,5 +88,6 @@
     "Zotero", "Obsidian", "llm", "gitkeep", "ingest",
     "drone", "airframe", "gimbal", "lidar", "SLAM",
     "Hermes", "OpenCode", "Kimi", "openrouter"
-  ]
+  ],
+  "svn.ignoreMissingSvnWarning": true
 }

@@ -122,3 +122,113 @@
   - `index.md` (added px4-flight-modes entry, total pages: 9)
   - `log.md` (this entry)
 - Processed: moved `inbox/test-px4-flight-modes.md` to `inbox/processed/`
+
+## [2026-07-27] create | 드론 소프트웨어 도메인 canonical 3종
+
+- Evidence: inbox에 수집된 PX4/ROS2/DroneCAN 관련 raw 소스 3종을 canonical page로 승격
+- Raw sources moved to immutable records:
+  - `inbox/px4-system-architecture.md` → `raw/articles/px4-system-architecture.md`
+  - `inbox/px4-dronecan.md` → `raw/articles/px4-dronecan.md`
+  - `inbox/mastervault-ros2-devnotes.md` → `raw/articles/ros2-devnotes.md`
+- Created canonical pages:
+  - `concepts/px4-system-architecture.md` — PX4 시스템 아키텍처 (FC 단독/Companion 구성)
+  - `concepts/dronecan-protocol.md` — DroneCAN CAN 버스 통신 프로토콜
+  - `concepts/ros2-drone-integration.md` — ROS2 드론 연동 스택
+- Updated:
+  - `index.md` — 3개 신규 항목 추가 (total pages: 12)
+  - `log.md` — this entry
+- Navigation: 새로운 3페이지는 기존 [[px4-flight-modes]]와 상호 링크 연결
+- Tags used: `drone-sw`, `drone-hw`, `datalink`, `PX4`, `ROS2`, `MAVROS`, `CAN-bus`, `flight-controller`, `companion-computer`, `middleware`
+- Provenance: 모든 claim marker가 raw/articles/ 경로로 해결됨
+
+## [2026-07-27] create | ArduPilot 및 GCS canonical 2종 추가
+
+- Evidence: inbox에 수집된 ArduPilot 아키텍처, 개발 노트, PX4 기본 개념(내 GCS 섹션)을 canonical로 승격
+- Raw sources moved to immutable records:
+  - `inbox/ardupilot-architecture.md` → `raw/articles/ardupilot-architecture.md`
+  - `inbox/mastervault-ardupilot-devnotes.md` → `raw/articles/mastervault-ardupilot-devnotes.md`
+  - `inbox/px4-basic-concepts.md` → `raw/articles/px4-basic-concepts.md`
+- Created canonical pages:
+  - `concepts/ardupilot-architecture.md` — ArduPilot HAL 기반 아키텍처, Vehicle Code, SITL, Lua
+  - `concepts/ground-control-station.md` — QGroundControl, Mission Planner, GCS 기능과 텔레메트리
+- Updated:
+  - `index.md` — 2개 신규 항목 추가 (total pages: 14)
+  - `log.md` — this entry
+- Navigation: PX4/ArduPilot/GCS 페이지 간 상호 링크 연결
+- Tags used: `drone-sw`, `ArduPilot`, `GCS`, `QGroundControl`, `ground-control`, `HAL`, `flight-controller`
+- Provenance: 모든 claim marker가 raw/articles/ 경로로 해결됨
+
+## [2026-07-27] create | CI/CD, Regulations, Mission Planning, Calibration, Logging canonical 5종 추가
+
+- Evidence: 지식 기반으로 CI/CD, 규제, 미션 계획, 센서 캘리브레이션, 비행 로깅 canonical page 생성
+- Created canonical pages:
+  - `concepts/px4-cicd-pipeline.md` — GitHub Actions, 빌드, 테스트, 릴리스
+  - `concepts/drone-regulations.md` — FAA/EASA/한국 규제, BVLOS, Remote ID
+  - `concepts/mission-planning.md` — QGC 미션, Survey, Waypoint, MAVSDK API
+  - `concepts/sensor-calibration.md` — Accel/Gyro/Compass/Baro 캘리브레이션
+  - `concepts/flight-logging-analysis.md` — ULog, Flight Review, pyulog
+- Updated:
+  - `index.md` — 5개 신규 항목 추가 (total pages: 33)
+  - `log.md` — this entry
+- Navigation: 신규 페이지와 기존 PX4/하드웨어/안전 페이지 간 상호 링크
+- Tags used: `drone-sw`, `CI/CD`, `build`, `test`, `regulations`, `FAA`, `EASA`, `BVLOS`, `mission`, `waypoint`, `survey`, `calibration`, `IMU`, `compass`, `logging`, `ulog`, `flight-review`
+- Provenance: 지식 기반 생성 (추후 raw source 수집 예정)
+
+- Evidence: inbox 및 기존 지식 기반으로 안전, 전원, 페이로드, 시뮬레이션, 음성 제어 canonical page 생성
+- Raw sources moved to immutable records:
+  - `inbox/px4-flight-modes-dev.md` → `raw/articles/px4-flight-modes-dev.md`
+  - `inbox/px4-ros2-user-guide.md` → `raw/articles/px4-ros2-user-guide.md`
+  - `inbox/px4-uorb-messaging.md` → `raw/articles/px4-uorb-messaging.md`
+- Created canonical pages:
+  - `concepts/drone-safety-failsafe.md` — RTL, Geofence, Arming, Low Battery failsafe
+  - `concepts/drone-power-battery.md` — LiPo, ESC, Power Module, 충전/보관
+  - `concepts/drone-payload-systems.md` — Camera, Gimbal, Gripper, MAVLink 트리거
+  - `concepts/drone-simulation.md` — Gazebo, jMAVSim, SITL, 멀티 기체
+  - `concepts/voice-control-drone.md` — Whisper, NLP, 음성→MAVLink 매핑
+- Updated:
+  - `index.md` — 5개 신규 항목 추가 (total pages: 28)
+  - `log.md` — this entry
+- Navigation: Safety/Power/Payload/Simulation/Voice 페이지 간 상호 링크 연결
+- Tags used: `drone`, `drone-sw`, `drone-hw`, `safety`, `failsafe`, `RTL`, `geofence`, `battery`, `ESC`, `payload`, `gimbal`, `camera`, `simulation`, `gazebo`, `sitl`, `voice-control`, `NLP`, `speech`
+- Provenance: PX4/ROS2/uORB 원본은 raw/articles/로 이동, 나머지는 지식 기반 생성
+
+- Evidence: inbox에 수집된 MAVLink, Offboard 제어, 하드웨어 관련 raw 소스를 canonical로 승격
+- Raw sources moved to immutable records:
+  - `inbox/mastervault-mavlink-reference.md` → `raw/articles/mastervault-mavlink-reference.md`
+  - `inbox/mavlink-xml-schema.md` → `raw/articles/mavlink-xml-schema.md`
+  - `inbox/px4-mavlink.md` → `raw/articles/px4-mavlink.md`
+  - `inbox/px4-ros2-offboard-control.md` → `raw/articles/px4-offboard-control.md`
+  - `inbox/mastervault-hardware-reference.md` → `raw/articles/mastervault-hardware-reference.md`
+  - `inbox/px4-hardware-overview.md` → `raw/articles/px4-hardware-overview.md`
+- Created canonical pages:
+  - `concepts/mavlink-protocol.md` — MAVLink 패킷 구조, 메시지, 마이크로서비스, XML 스키마
+  - `concepts/px4-offboard-control.md` — ROS2 Offboard 제어, Companion 연동, NED 좌표계
+  - `concepts/flight-controller-hardware.md` — FC 하드웨어, GPS, 텔레메트리, 컴패니언
+- Updated:
+  - `index.md` — 3개 신규 항목 추가 (total pages: 17)
+  - `log.md` — this entry
+- Navigation: MAVLink/GCS/FC/Offboard 페이지 간 상호 링크 연결
+- Tags used: `drone-sw`, `drone-hw`, `datalink`, `MAVLink`, `ai-agent`, `offboard`, `companion-computer`, `communication`, `FC`, `hardware`, `Pixhawk`
+- Provenance: 모든 claim marker가 raw/articles/ 경로로 해결됨
+
+## [2026-07-27] create | Swarm, PX4 Architecture, MAVSDK, AI Agents, CV, Datalink canonical 6종 추가
+
+- Evidence: inbox 및 기존 지식 기반으로 6개 도메인 canonical page 생성
+- Raw sources moved to immutable records:
+  - `inbox/mastervault-recon-swarm.md` → `raw/articles/mastervault-recon-swarm.md`
+  - `inbox/mastervault-swarm-architecture.md` → `raw/articles/mastervault-swarm-architecture.md`
+  - `inbox/px4-architecture.md` → `raw/articles/px4-architecture.md`
+  - `inbox/mastervault-px4-devnotes.md` → `raw/articles/mastervault-px4-devnotes.md`
+- Created canonical pages:
+  - `concepts/swarm-coordination.md` — Leader-Follower, Formation, 군집정찰 프로젝트
+  - `concepts/px4-architecture-deep.md` — uORB, Tasks/Work Queue, NuttX 심층 분석
+  - `concepts/mavsdk.md` — MAVLink 기반 고수준 SDK, Python/C++ API
+  - `concepts/datalink-communication.md` — RF, LTE, WiFi, 위성 통신
+  - `concepts/drone-ai-agents.md` — 자율 의사결정, 다중 에이전트, BDI 아키텍처
+  - `concepts/computer-vision-drone.md` — YOLO, SLAM, 객체 추적, Jetson 통합
+- Updated:
+  - `index.md` — 6개 신규 항목 추가 (total pages: 23)
+  - `log.md` — this entry
+- Navigation: Swarm/Offboard/AI/CV/Datalink 페이지 간 상호 링크 연결
+- Tags used: `swarm`, `drone-ai`, `multi-drone`, `formation`, `PX4`, `architecture`, `uORB`, `MAVSDK`, `SDK`, `datalink`, `RF`, `LTE`, `telemetry`, `ai-agent`, `autonomous`, `decision-making`, `computer-vision`, `SLAM`, `YOLO`, `tracking`
+- Provenance: Swarm/PX4 원본은 raw/articles/로 이동, 나머지는 지식 기반 생성

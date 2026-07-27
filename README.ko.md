@@ -135,6 +135,7 @@ hermes cron create "0 9 * * 1" \
 | **멀티 AI 교차 검증** | Claude Code와 Gemini가 동일 증거에 대해 독립적 분석을 제공 — 지식이 정식으로 승격되기 전에 모순이 표면화됩니다. |
 | **드론 코드 탐색** | Codex가 PX4, ArduPilot, ROS2/MAVROS2, MAVSDK 소스 코드를 탐색하며, 결과는 `raw/inbox/`에 저장되어 Hermes가 컴파일 시 수집합니다. |
 | **지식그래프 (Gate C)** | Understand Anything `understand-knowledge` 스킬이 위키를 분석해 인터랙티브 지식그래프(`.ua/knowledge-graph.json`)를 생성 — 클러스터, 공백, 구조적 약한 연결을 자동으로 표면화합니다. 로컬 뷰어는 `open .ua/graph.html`로 실행 (지식 도메인 노드 전용·포스-다이렉티드·오프라인 동작). |
+| **Gate C v2 — AI 공백 분석** | `scripts/gate-c-analyze.sh`가 지식그래프를 읽어 구조 통계(레이어 밀도·고립 노드·과부하 허브·단절 레이어 쌍)를 전처리한 후 `claude -p`로 AI 해석을 수행합니다. 결과는 `.ua/gap-report.md`에 저장되며 텔레그램 형식으로 출력됩니다. `--deliver` 옵션으로 Hermes를 통해 즉시 전송 가능합니다. |
 
 ---
 
