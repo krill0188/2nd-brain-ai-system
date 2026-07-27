@@ -96,11 +96,11 @@ hermes cron create "0 9 * * 1" \
 | **OpenCode + Kimi K2** | 터미널 (`opencode`) | 수동 컴파일 지원, 문서 초안 작성, 대량 편집 |
 | **Claude Code** | 터미널 (`claude`) | 아키텍처 분석, 모순 검토, Gate B 심층 판단 |
 | **Codex** | 터미널 (`codex`) | 드론 펌웨어 탐색 (PX4/ArduPilot/ROS2), 코드→raw 파이프라인 |
-| **Gemini Code Assist** | VS Code 사이드바 | 교차 검증, 대안 관점, 편집 중 요약 |
-| **GitHub Copilot** | VS Code 인라인 | Markdown 또는 코드 작성 중 자동완성 |
+| **GitHub Copilot Chat** | VS Code 사이드바 (`@workspace`) | 교차 검증, 대안 관점, 워크스페이스 파일 직접 읽어 요약·질의응답 |
+| **GitHub Copilot 인라인** | VS Code 인라인 | Markdown 또는 코드 작성 중 자동완성 |
 | **Understand Anything** | Hermes 스킬 / Claude Code | Gate C — 지식그래프 생성, 공백 분석, 구조적 관측 |
 
-> **비용 원칙**: 반복 컴파일 작업은 Hermes/Kimi K2로 라우팅. Claude는 아키텍처 결정과 모순 해소에 예약. Gemini와 Copilot은 무료 — 편집 중 자유롭게 사용.
+> **비용 원칙**: 반복 컴파일 작업은 Hermes/Kimi K2로 라우팅. Claude는 아키텍처 결정과 모순 해소에 예약. GitHub Copilot(인라인 + Chat)은 무료 — 편집 중 및 교차 검증에 자유롭게 사용.
 
 ---
 
@@ -131,8 +131,8 @@ hermes cron create "0 9 * * 1" \
 | **텔레그램 HITL 게이트** | Gate B diff가 마스터 승인을 위해 텔레그램으로 전달됩니다. 명시적 `approve` 답변 없이는 어떤 정식 변경도 확정되지 않습니다. |
 | **소스와 출처 보존** | Zotero와 Obsidian Web Clipper로 논문과 웹 자료를 캡처한 후 소스, 메타데이터, SHA-256 다이제스트를 `raw/` 아래에 보존해 모든 주장을 증거까지 추적할 수 있습니다. |
 | **검증된 지식 컴파일** | Hermes llm-wiki 스킬과 OpenCode + Kimi K2가 소스 자료를 출처, 신뢰도 평가, 모순 추적을 포함한 엔티티, 개념, 비교, 쿼리 문서로 구조화합니다. |
-| **연결된 Markdown 편집** | Obsidian에서 wikilinks와 역방향 링크를 사용해 지속적 지식을 읽고 편집하며, GitHub Copilot과 Gemini Code Assist가 편집 중 인라인으로 지원합니다. |
-| **멀티 AI 교차 검증** | Claude Code와 Gemini가 동일 증거에 대해 독립적 분석을 제공 — 지식이 정식으로 승격되기 전에 모순이 표면화됩니다. |
+| **연결된 Markdown 편집** | Obsidian에서 wikilinks와 역방향 링크를 사용해 지속적 지식을 읽고 편집하며, GitHub Copilot 인라인이 편집 중 자동완성을 지원합니다. |
+| **멀티 AI 교차 검증** | Claude Code와 GitHub Copilot Chat(`@workspace`)이 동일 증거에 대해 독립적 분석을 제공 — 지식이 정식으로 승격되기 전에 모순이 표면화됩니다. |
 | **드론 코드 탐색** | Codex가 PX4, ArduPilot, ROS2/MAVROS2, MAVSDK 소스 코드를 탐색하며, 결과는 `raw/inbox/`에 저장되어 Hermes가 컴파일 시 수집합니다. |
 | **지식그래프 (Gate C)** | Understand Anything `understand-knowledge` 스킬이 위키를 분석해 인터랙티브 지식그래프(`.ua/knowledge-graph.json`)를 생성 — 클러스터, 공백, 구조적 약한 연결을 자동으로 표면화합니다. 로컬 뷰어는 `open .ua/graph.html`로 실행 (지식 도메인 노드 전용·포스-다이렉티드·오프라인 동작). |
 | **Gate C v2 — AI 공백 분석** | `scripts/gate-c-analyze.sh`가 지식그래프를 읽어 구조 통계(레이어 밀도·고립 노드·과부하 허브·단절 레이어 쌍)를 전처리한 후 `claude -p`로 AI 해석을 수행합니다. 결과는 `.ua/gap-report.md`에 저장되며 텔레그램 형식으로 출력됩니다. `--deliver` 옵션으로 Hermes를 통해 즉시 전송 가능합니다. |
@@ -163,15 +163,14 @@ hermes cron create "0 9 * * 1" \
 | [OpenCode](https://opencode.ai) + Kimi K2 | OpenRouter API 키 | 터미널에서 `opencode providers login openrouter` |
 | [Claude Code](https://claude.ai/code) | Claude Max 구독 | `claude` — 첫 실행 시 브라우저로 로그인 |
 | [Codex](https://github.com/openai/codex) | ChatGPT Plus 구독 | `codex` — 첫 실행 시 브라우저로 로그인 |
-| [Gemini Code Assist](https://marketplace.visualstudio.com/items?itemName=Google.geminicodeassist) | Google 계정 (무료) | VS Code 확장 설치 후 Google로 로그인 |
-| [GitHub Copilot](https://github.com/features/copilot) | GitHub 계정 (기본 제공) | VS Code 1.130+에 내장됨; GitHub로 로그인 |
+| [GitHub Copilot](https://github.com/features/copilot) | GitHub 계정 (기본 제공) | VS Code 1.130+에 내장됨; GitHub로 로그인. 인라인 자동완성 + Chat(`@workspace`) 교차 검증 모두 제공 |
 
 ### 권장 설정 순서
 
 1. 이 저장소를 클론하고 Obsidian에서 볼트로 열기.
 2. Zotero, Zotero Connector(Chrome), Obsidian Web Clipper 설치. Zotero 로컬 API 활성화: Settings → Advanced → "Allow other applications on this computer to communicate with Zotero". zotero-mcp 설치: `pipx install zotero-mcp-server`.
 3. npm으로 OpenCode, Claude Code CLI, Codex CLI 설치.
-4. VS Code에 Gemini Code Assist 확장 설치; GitHub로 Copilot 로그인.
+4. VS Code에서 GitHub Copilot 로그인(v1.130+ 내장); Copilot Chat(`@workspace`)으로 교차 검증 사용.
 5. Hermes Agent 설치: `curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash`
 6. `~/.hermes/.env`에 `WIKI_PATH`, `OPENROUTER_API_KEY`, `TELEGRAM_BOT_TOKEN` 설정.
 7. 게이트웨이 시작: `hermes gateway install --start-now --start-on-login`
@@ -271,7 +270,7 @@ Concepts / Comparisons / Queries / Entities 등 정식 지식 도메인 노드�
 1. **캡처**: 텔레그램에 링크를 전송하거나 Obsidian Web Clipper로 웹 페이지를 `raw/web/`에 저장. 논문은 Zotero Connector → Zotero 라이브러리 → `python3 scripts/zotero-ingest.py` → `raw/papers/<topic>/`.
 2. **자동 수집**: Hermes Cron (매일 04:00)이 `raw/inbox/`를 스캔하고, llm-wiki로 정식 후보를 컴파일한 후 텔레그램 리포트를 전송.
 3. **Gate B 승인**: Hermes가 정식 diff를 텔레그램으로 전달. `approve`로 확정하거나 `reject`로 폐기.
-4. **교차 검증**: Gemini나 Claude에게 초안을 검토해 모순이나 누락된 커버리지를 찾도록 요청.
+4. **교차 검증**: GitHub Copilot Chat(`@workspace`) 또는 Claude에게 초안을 검토해 모순이나 누락된 커버리지를 찾도록 요청.
 5. **탐색**: 지식 그래프 제안을 가설로 취급. 인간이 검증한 결과만 정식으로 승격.
 6. **쿼리**: 텔레그램 봇에 직접 질문 — `"PX4 비행 모드에 대해 무엇을 수집했나요?"` — Hermes가 wiki를 검색해 답변.
 7. **아카이브**: 완전히 대체된 페이지를 `_archive/`로 이동, 링크 수정, 운영을 `log.md`에 기록.

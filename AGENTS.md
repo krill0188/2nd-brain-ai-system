@@ -102,8 +102,8 @@ All tags must be registered in `SCHEMA.md` before use in canonical frontmatter.
 | OpenCode + Kimi K2 | Terminal (`opencode`) | Markdown cleanup, document drafting, llm-wiki compile, repetitive tasks |
 | Claude Code | Terminal (`claude`) | Architecture, complex analysis, contradiction review, final judgment |
 | Codex | Terminal (`codex`) | Code implementation, bug fix, Git analysis, drone code exploration |
-| Gemini Code Assist | VS Code sidebar | Cross-validation, summarization, alternative perspective |
-| GitHub Copilot | VS Code inline | Autocomplete while editing Markdown/code, inline writing assist |
+| GitHub Copilot Chat | VS Code sidebar (`@workspace`) | Cross-validation, summarization, alternative perspective, Q&A on workspace files |
+| GitHub Copilot Inline | VS Code inline | Autocomplete while editing Markdown/code, inline writing assist |
 | Understand Anything | Hermes skill / Claude Code | Gate C — knowledge graph generation and structural analysis |
 
 ## Hermes Cron Schedule

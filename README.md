@@ -96,11 +96,11 @@ Five tools are configured for this system — each with a distinct responsibilit
 | **OpenCode + Kimi K2** | Terminal (`opencode`) | Manual compile assist, document drafting, large-batch editing |
 | **Claude Code** | Terminal (`claude`) | Architecture analysis, contradiction review, Gate B deep judgment |
 | **Codex** | Terminal (`codex`) | Drone firmware exploration (PX4/ArduPilot/ROS2), code-to-raw pipeline |
-| **Gemini Code Assist** | VS Code sidebar | Cross-validation, alternative perspective, summarization while editing |
-| **GitHub Copilot** | VS Code inline | Autocomplete while writing Markdown or code |
+| **GitHub Copilot Chat** | VS Code sidebar (`@workspace`) | Cross-validation, alternative perspective, summarization — reads workspace files directly |
+| **GitHub Copilot Inline** | VS Code inline | Autocomplete while writing Markdown or code |
 | **Understand Anything** | Hermes skill / Claude Code | Gate C — knowledge graph generation, gap analysis, structural observation |
 
-> **Cost principle**: Route repetitive compile tasks to Hermes/Kimi K2. Reserve Claude for architecture decisions and contradiction resolution. Gemini and Copilot are free — use freely during editing.
+> **Cost principle**: Route repetitive compile tasks to Hermes/Kimi K2. Reserve Claude for architecture decisions and contradiction resolution. GitHub Copilot (inline + Chat) is free — use freely during editing and cross-validation.
 
 ---
 
@@ -131,8 +131,8 @@ Collection priority: `drone-sw` → `datalink` → `drone-ai` → `swarm` → ot
 | **Telegram HITL gate** | Gate B diffs are delivered to Telegram for master approval. No canonical change is finalized without an explicit `approve` reply. |
 | **Source and provenance preservation** | Capture papers and web material with Zotero and Obsidian Web Clipper, then preserve the source, metadata, and SHA-256 digest under `raw/` so every claim can be traced to evidence. |
 | **Verified knowledge compilation** | Hermes llm-wiki skill and OpenCode + Kimi K2 structure source material into entity, concept, comparison, and query documents with provenance, confidence ratings, and contradiction tracking. |
-| **Connected Markdown editing** | Read and edit durable knowledge in Obsidian using wikilinks and backlinks; GitHub Copilot and Gemini Code Assist assist inline while editing. |
-| **Multi-AI cross-validation** | Claude Code and Gemini provide independent analysis of the same evidence — contradictions surface before knowledge is promoted to canonical. |
+| **Connected Markdown editing** | Read and edit durable knowledge in Obsidian using wikilinks and backlinks; GitHub Copilot inline assists while editing. |
+| **Multi-AI cross-validation** | Claude Code and GitHub Copilot Chat (`@workspace`) provide independent analysis of the same evidence — contradictions surface before knowledge is promoted to canonical. |
 | **Drone code exploration** | Codex navigates PX4, ArduPilot, ROS2/MAVROS2, and MAVSDK source code; results are saved to `raw/inbox/` and picked up by Hermes for compilation. |
 | **Knowledge graph (Gate C)** | Understand Anything `understand-knowledge` skill analyzes the wiki and produces an interactive knowledge graph (`.ua/knowledge-graph.json`) — clusters, gaps, and structural weak links surfaced automatically. Open the local viewer with `open .ua/graph.html` (force-directed, interactive, works offline). |
 | **Gate C v2 — AI gap analysis** | `scripts/gate-c-analyze.sh` reads the knowledge graph, pre-processes structure stats (layer density, isolated nodes, high-degree hubs, disconnected layer pairs), and pipes them to `claude -p` for AI interpretation. Output is a Telegram-formatted gap report saved to `.ua/gap-report.md`. Run with `--deliver` to push via Hermes. |
@@ -163,15 +163,14 @@ Collection priority: `drone-sw` → `datalink` → `drone-ai` → `swarm` → ot
 | [OpenCode](https://opencode.ai) + Kimi K2 | OpenRouter API key | `opencode providers login openrouter` in terminal |
 | [Claude Code](https://claude.ai/code) | Claude Max subscription | `claude` — login via browser on first run |
 | [Codex](https://github.com/openai/codex) | ChatGPT Plus subscription | `codex` — login via browser on first run |
-| [Gemini Code Assist](https://marketplace.visualstudio.com/items?itemName=Google.geminicodeassist) | Google account (free) | Install VS Code extension, sign in with Google |
-| [GitHub Copilot](https://github.com/features/copilot) | GitHub account (built-in) | Built into VS Code 1.130+; sign in with GitHub |
+| [GitHub Copilot](https://github.com/features/copilot) | GitHub account (built-in) | Built into VS Code 1.130+; sign in with GitHub. Provides both inline completions and Chat (`@workspace`) |
 
 ### Recommended Setup Order
 
 1. Clone this repository and open it in Obsidian as a vault.
 2. Install Zotero, Zotero Connector (Chrome), and Obsidian Web Clipper. Enable Zotero local API: Settings → Advanced → "Allow other applications on this computer to communicate with Zotero". Install zotero-mcp: `pipx install zotero-mcp-server`.
 3. Install OpenCode, Claude Code CLI, and Codex CLI via npm.
-4. Install Gemini Code Assist extension in VS Code; sign in with GitHub for Copilot.
+4. Sign in to GitHub Copilot in VS Code (built-in from v1.130+); use Copilot Chat (`@workspace`) for cross-validation.
 5. Install Hermes Agent: `curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash`
 6. Set `WIKI_PATH`, `OPENROUTER_API_KEY`, and `TELEGRAM_BOT_TOKEN` in `~/.hermes/.env`.
 7. Start the gateway: `hermes gateway install --start-now --start-on-login`
@@ -271,7 +270,7 @@ Before adding knowledge, read [SCHEMA.md](SCHEMA.md), check [index.md](index.md)
 1. **Capture**: Drop links into Telegram or save web pages via Obsidian Web Clipper → `raw/web/`. Papers go via Zotero Connector → Zotero library → `python3 scripts/zotero-ingest.py` → `raw/papers/<topic>/`.
 2. **Auto-ingest**: Hermes Cron (04:00 daily) scans `raw/inbox/`, compiles canonical candidates using llm-wiki, and sends a Telegram report.
 3. **Gate B approval**: Hermes delivers the canonical diff to Telegram. Reply `approve` to finalize or `reject` to discard.
-4. **Cross-validate**: Ask Gemini or Claude to review drafts for contradictions or missing coverage.
+4. **Cross-validate**: Ask GitHub Copilot Chat (`@workspace`) or Claude to review drafts for contradictions or missing coverage.
 5. **Explore**: Treat knowledge-graph suggestions as hypotheses. Promote only human-verified findings to canonical.
 6. **Query**: Ask the Telegram bot directly — `"What did we collect on PX4 flight modes?"` — Hermes searches the wiki and replies.
 7. **Archive**: Move fully superseded pages to `_archive/`, repair links, and record the operation in `log.md`.
