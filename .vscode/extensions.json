@@ -1,10 +1,27 @@
 {
   "recommendations": [
-    "esbenp.prettier-vscode",
+    // ── AI 도구 (풀스택 필수) ──────────────────────────────
+    "anthropic.claude-code",
+    "google.geminicodeassist",
+    "github.copilot",
+    "github.copilot-chat",
+
+    // ── Markdown / 지식 관리 ───────────────────────────────
     "yzhang.markdown-all-in-one",
     "shd101wyy.markdown-preview-enhanced",
+    "bierner.markdown-mermaid",
+    "davidanson.vscode-markdownlint",
+
+    // ── Git ────────────────────────────────────────────────
     "eamodio.gitlens",
     "mhutchie.git-graph",
+
+    // ── 코드 품질 ──────────────────────────────────────────
+    "streetsidesoftware.code-spell-checker",
+    "esbenp.prettier-vscode",
+
+    // ── 편의 ───────────────────────────────────────────────
+    "gruntfuggly.todo-tree",
     "vscodevim.vim"
   ]
 }
