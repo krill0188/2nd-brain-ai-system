@@ -155,12 +155,12 @@ cmd_ping() {
   sect "claude -p 응답 테스트"
   info "전송 중..."
   local t_start t_end elapsed result
-  t_start=$(date +%s%3N)
+  t_start=$(python3 -c "import time; print(int(time.time()*1000))")
   result=$(echo "ping" | claude -p "respond with the single word PONG and nothing else" 2>/dev/null) || {
     fail "claude -p 실패 (로그인 상태 확인 필요)"
     exit 1
   }
-  t_end=$(date +%s%3N)
+  t_end=$(python3 -c "import time; print(int(time.time()*1000))")
   elapsed=$(( t_end - t_start ))
   if echo "$result" | grep -qi "pong"; then
     ok "응답: $result (${elapsed}ms)"
