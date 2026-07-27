@@ -15,6 +15,10 @@
 
 set -eo pipefail
 
+# VS Code / cron 등 비대화형 환경에서 PATH 보장
+export PATH="$HOME/.local/bin:$HOME/.npm-global/bin:/usr/local/bin:$PATH"
+[ -f "$HOME/.local/bin/env" ] && . "$HOME/.local/bin/env"
+
 # ── 상수 ─────────────────────────────────────────────────────
 JOB_INGEST="b1a360fce35d"
 JOB_LINT="91acb1c73884"

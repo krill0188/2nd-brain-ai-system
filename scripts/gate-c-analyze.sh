@@ -4,7 +4,10 @@
 #   ./scripts/gate-c-analyze.sh           # 분석 + stdout 출력
 #   ./scripts/gate-c-analyze.sh --deliver  # 분석 + Hermes Telegram 전달
 
-set -euo pipefail
+set -eo pipefail
+
+export PATH="$HOME/.local/bin:$HOME/.npm-global/bin:/usr/local/bin:$PATH"
+[ -f "$HOME/.local/bin/env" ] && . "$HOME/.local/bin/env"
 
 GRAPH="$HOME/2nd/.ua/knowledge-graph.json"
 REPORT="$HOME/2nd/.ua/gap-report.md"
