@@ -112,9 +112,9 @@ Three jobs are registered and active. All jobs run with `workdir ~/2nd` — AGEN
 
 | Job ID | Name | Schedule | Skill | Role |
 |---|---|---|---|---|
-| `ffcb165e` | `2nd-daily-ingest` | `0 4 * * *` (daily 04:00) | `custom/llm-wiki-ains` | Scan `raw/inbox/` → compile canonical candidates → move to `raw/inbox/processed/` |
-| `c727b7ee` | `2nd-weekly-lint` | `0 5 * * 1` (Mon 05:00) | `custom/llm-wiki-ains` | Audit all canonical docs — orphans, broken wikilinks, missing frontmatter, stale dates |
-| `548a6a08` | `2nd-weekly-summary` | `0 9 * * 1` (Mon 09:00) | none (LLM only) | Read `log.md` → weekly digest → collection priority suggestion |
+| `b1a360fc` | `2nd-daily-ingest` | `0 4 * * *` (daily 04:00) | `custom/llm-wiki-ains` | Scan `inbox/` → compile canonical candidates → move to `inbox/processed/` |
+| `91acb1c7` | `2nd-weekly-lint` | `0 5 * * 1` (Mon 05:00) | `custom/llm-wiki-ains` | Audit all canonical docs — orphans, broken wikilinks, missing frontmatter, stale dates |
+| `bd81d81b` | `2nd-weekly-summary` | `0 9 * * 1` (Mon 09:00) | none (LLM only) | Read `log.md` → weekly digest → collection priority suggestion |
 
 **Skill symlink**: `~/.hermes/skills/custom/llm-wiki-ains` → `~/.hermes/skills/research/llm-wiki`
 

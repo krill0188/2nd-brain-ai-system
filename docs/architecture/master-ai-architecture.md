@@ -346,12 +346,12 @@ Accepted 변경 후에는 lint를 다시 실행하고, 지식그래프가 있으
 | Gate B lint | Claude Code 검토 | 운영 중 |
 | Understand Anything | `understand-knowledge` 스킬 설치 완료 (v0.19.0) | **운영 중** |
 | Gate C graph 검증 | `.ua/knowledge-graph.json` 생성 완료 (25 노드, 41 엣지) | **운영 중** |
-| Hermes Cron 예약 | macOS launchd (기존 인프라 활용 가능) | 향후 |
+| Hermes Cron 예약 | Hermes Cron 3개 잡 (daily-ingest·weekly-lint·weekly-summary) | **운영 중** |
 
 ### 7.1 실행 토폴로지
 
 ```text
-수동 수집 / 예약 수집 (향후 launchd)
+수동 수집 / 예약 수집 (Hermes Cron — 운영 중: daily-ingest·weekly-lint·weekly-summary)
   ├─ collect-evidence
   │    ├─ Web Clipper · Zotero · 수동
   │    └─ Gate A: 중복·메타데이터·SHA-256·raw 경로 검증
@@ -484,7 +484,7 @@ Accepted 변경 후에는 lint를 다시 실행하고, 지식그래프가 있으
 | 원본 역할 | 원본 도구 | 마스터 도구 | 비고 |
 |---|---|---|---|
 | 수집 자동화 | Hermes Agent (web·browser·MCP) | Obsidian Web Clipper + Zotero | 현재 수동 |
-| 예약 오케스트레이션 | Hermes Scheduled Tasks (Cron) | macOS launchd | 향후 |
+| 예약 오케스트레이션 | Hermes Scheduled Tasks (Cron) | Hermes Cron (3잡 운영 중) | **운영 중** |
 | 지식 컴파일 | llm-wiki 스킬 | OpenCode + Kimi K2 | 운영 중 |
 | 심층 판단·Gate B | (사람) | Claude Code | 운영 중 |
 | 코드 탐색 | — | Codex (ChatGPT Plus) | 마스터 특화 추가 |

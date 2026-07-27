@@ -111,3 +111,14 @@
 - `2nd-weekly-summary` (548a6a08d90f): 매주 월 09:00 / log.md 주간 요약 / 스킬: 없음 (LLM only)
 - 전체 workdir: /Users/amaster/2nd (AGENTS.md·CLAUDE.md·SCHEMA.md 자동 주입)
 - deliver: local (OpenRouter API 키 등록 후 Telegram으로 변경 가능)
+
+## [2026-07-27] ingest | PX4 Flight Modes
+
+- Source: `inbox/test-px4-flight-modes.md` (captured from docs.px4.io)
+- Created:
+  - `raw/articles/px4-flight-modes.md` (immutable source record with sha256)
+  - `concepts/px4-flight-modes.md` (canonical concept page)
+- Updated:
+  - `index.md` (added px4-flight-modes entry, total pages: 9)
+  - `log.md` (this entry)
+- Processed: moved `inbox/test-px4-flight-modes.md` to `inbox/processed/`

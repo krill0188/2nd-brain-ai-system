@@ -3,7 +3,7 @@
 > Complete catalog of active canonical pages. Each entry is a wikilink followed by
 > a one-line summary, sorted alphabetically within its section.
 >
-> Total pages: 8
+> Total pages: 9
 
 ## Entities
 
@@ -12,6 +12,7 @@
 - [[ai-knowledge-workflow]] — 원본 수집부터 검증된 산출물까지의 단계와 품질 관문.
 - [[ai-personal-knowledge-management]] — 원본·컴파일된 지식·집중 탐색을 분리하는 개인 지식관리 원칙.
 - [[llm-wiki]] — 출처와 관계를 누적하는 지속형 Markdown 지식베이스.
+- [[px4-flight-modes]] — PX4 자동조종장치의 수동/보조/자동 비행 모드 분류와 주요 파라미터.
 - [[research-feedback-loop]] — 수집·합성·그래프 분석 결과를 검증해 위키로 환류하는 순환.
 - [[second-brain-research-workflow]] — 원본 보존, AI 합성과 개인 해석을 분리한 연구 환경.
 
