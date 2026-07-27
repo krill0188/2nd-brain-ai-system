@@ -3,13 +3,19 @@
 > Complete catalog of active canonical pages. Each entry is a wikilink followed by
 > a one-line summary, sorted alphabetically within its section.
 >
-> Total pages: 33
+> Total pages: 39
 
 ## Entities
 
 ## Concepts
 
 - [[ai-knowledge-workflow]] — 원본 수집부터 검증된 산출물까지의 단계와 품질 관문.
+- [[dronecan-deep]] — DroneCAN 프로토콜 상세: 설정, 펌웨어 업데이트, 문제 해결.
+- [[mavlink-protocol-deep]] — MAVLink v2 패킷 구조, XML 스키마, 마이크로서비스 패턴.
+- [[px4-architecture-deep]] — PX4 uORB, Tasks/Work Queue, NuttX 아키텍처 심층 분석.
+- [[recon-swarm-project]] — 지능형 자율 군집정찰드론 4단계 로드맵 프로젝트.
+- [[ros2-drone-deep]] — ROS2와 PX4/ArduPilot 연동, Offboard 제어, uXRCE-DDS.
+- [[swarm-modes]] — 군집 드론 운용 모드: Formation, Follow-Leader, Area Search.
 - [[ai-personal-knowledge-management]] — 원본·컴파일된 지식·집중 탐색을 분리하는 개인 지식관리 원칙.
 - [[ardupilot-architecture]] — ArduPilot의 HAL 기반 아키텍처와 Vehicle Code, SITL, Lua 스크립팅.
 - [[computer-vision-drone]] — 드론 컴퓨터 비전: YOLO, SLAM, 객체 추적, Jetson 통합.

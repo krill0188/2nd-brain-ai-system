@@ -157,7 +157,7 @@ PROMPT="당신은 개인 지식관리 시스템(PKM) 전문가다. 아래는 ~/2
 
 == 시스템 컨텍스트 ==
 - 드론 기술 도메인 PKM (drone/datalink/swarm/drone-hw/drone-sw/drone-ai/ai-agent)
-- inbox/에 19개 드론 파일 대기 중 (PX4·ArduPilot 공식문서 + 개인 노트)
+- inbox/ 현재 파일 수: $(ls "$HOME/2nd/inbox/"*.md 2>/dev/null | wc -l | tr -d ' ')개 (processed/ 제외)
 - Hermes Cron이 04:00 daily-ingest 실행 예정
 
 == 출력 형식 (Telegram 마크다운, 한글) ==

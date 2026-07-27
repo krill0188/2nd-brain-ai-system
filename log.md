@@ -232,3 +232,19 @@
 - Navigation: Swarm/Offboard/AI/CV/Datalink 페이지 간 상호 링크 연결
 - Tags used: `swarm`, `drone-ai`, `multi-drone`, `formation`, `PX4`, `architecture`, `uORB`, `MAVSDK`, `SDK`, `datalink`, `RF`, `LTE`, `telemetry`, `ai-agent`, `autonomous`, `decision-making`, `computer-vision`, `SLAM`, `YOLO`, `tracking`
 - Provenance: Swarm/PX4 원본은 raw/articles/로 이동, 나머지는 지식 기반 생성
+
+## [2026-07-28] ingest | inbox 배치 — PX4, ArduPilot, MAVLink, 스웜 소스 처리
+
+- 수집: `inbox/*.md` 20개 파일 → `inbox/processed/`로 이동 완료
+- Canonical 생성:
+  - `concepts/recon-swarm-project.md` — 지능형 자율 군집정찰 프로젝트
+  - `concepts/swarm-modes.md` — Formation, Follow-Leader, Area Search 모드
+  - `concepts/mavlink-protocol-deep.md` — 패킷 구조, XML 스키마, 마이크로서비스
+  - `concepts/dronecan-deep.md` — CAN 버스 프로토콜 상세
+  - `concepts/px4-architecture-deep.md` — uORB, Tasks, Work Queue 분석
+  - `concepts/ros2-drone-deep.md` — ROS2 연동과 Offboard 제어
+- 업데이트:
+  - `index.md` — 6개 새 항목 추가 (total pages: 39)
+  - `log.md` — this entry
+- Cross-links: 새 6개 페이지는 기존 canonical 페이지와 상호 연결
+- Tags: `swarm`, `drone-ai`, `datalink`, `drone-hw`, `drone-sw`, `ai-agent`
