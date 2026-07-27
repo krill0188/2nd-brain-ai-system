@@ -38,6 +38,7 @@ opencode.jsonc
 .codex/
 
 # ── Obsidian 머신별 상태 ─────────────────────────────────────
+*.canvas
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
 .obsidian/workspaces.json
