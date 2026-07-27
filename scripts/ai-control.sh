@@ -39,7 +39,7 @@ sect() { echo -e "\n${W}── $* ───────────────�
 # ── Telegram 전송 ─────────────────────────────────────────────
 send_telegram() {
   local msg="$1"
-  if hermes send telegram "$msg" 2>/dev/null; then
+  if hermes send --to telegram "$msg" 2>/dev/null; then
     info "Telegram 전송 완료"
   else
     warn "Telegram 전송 실패 (hermes send 오류)"

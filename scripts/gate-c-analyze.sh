@@ -212,7 +212,7 @@ echo "📄 저장됨: $REPORT" >&2
 # ── 6. Telegram 전달 (--deliver 옵션) ────────────────────────
 if [[ "$DELIVER" == true ]]; then
   if command -v hermes &>/dev/null; then
-    echo "$ANALYSIS" | hermes deliver telegram 2>/dev/null && \
+    echo "$ANALYSIS" | hermes send -t telegram 2>/dev/null && \
       echo "📨 Telegram 전달 완료" >&2 || \
       echo "⚠️  Telegram 전달 실패 — 수동 복사 필요" >&2
   else
