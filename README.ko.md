@@ -134,7 +134,7 @@ hermes cron create "0 9 * * 1" \
 | **연결된 Markdown 편집** | Obsidian에서 wikilinks와 역방향 링크를 사용해 지속적 지식을 읽고 편집하며, GitHub Copilot과 Gemini Code Assist가 편집 중 인라인으로 지원합니다. |
 | **멀티 AI 교차 검증** | Claude Code와 Gemini가 동일 증거에 대해 독립적 분석을 제공 — 지식이 정식으로 승격되기 전에 모순이 표면화됩니다. |
 | **드론 코드 탐색** | Codex가 PX4, ArduPilot, ROS2/MAVROS2, MAVSDK 소스 코드를 탐색하며, 결과는 `raw/inbox/`에 저장되어 Hermes가 컴파일 시 수집합니다. |
-| **지식그래프 (Gate C)** | Understand Anything `understand-knowledge` 스킬이 위키를 분석해 인터랙티브 지식그래프(`.ua/knowledge-graph.json`)를 생성 — 클러스터, 공백, 구조적 약한 연결을 자동으로 표면화합니다. |
+| **지식그래프 (Gate C)** | Understand Anything `understand-knowledge` 스킬이 위키를 분석해 인터랙티브 지식그래프(`.ua/knowledge-graph.json`)를 생성 — 클러스터, 공백, 구조적 약한 연결을 자동으로 표면화합니다. 로컬 뷰어는 `open .ua/graph.html`로 실행 (지식 도메인 노드 전용·포스-다이렉티드·오프라인 동작). |
 
 ---
 
@@ -250,7 +250,16 @@ cd ~/2nd && codex
 
 Hermes가 콘텐츠를 `raw/inbox/`에 저장하고 다음 크론 실행 시 컴파일합니다.
 
-### 5. 운영 계약 읽기
+### 5. 지식그래프 뷰어 열기
+
+```bash
+# Gate C 인터랙티브 뷰어 실행 (오프라인, 독립 실행형)
+open .ua/graph.html
+```
+
+Concepts / Comparisons / Queries / Entities 등 정식 지식 도메인 노드만 포스-다이렉티드 레이아웃으로 시각화합니다 (docs·templates 제외). 노드 클릭 시 요약·파일 경로·연결 목록을 확인할 수 있으며, 도메인 필터와 이름 검색을 지원합니다.
+
+### 6. 운영 계약 읽기
 
 지식을 추가하기 전에 [SCHEMA.md](SCHEMA.md)를 읽고, [index.md](index.md)에서 이미 다루어진 주제를 확인하고, [log.md](log.md)의 최신 항목을 검토하세요.
 

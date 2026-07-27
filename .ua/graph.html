@@ -1,0 +1,595 @@
+<title>Gate C — Knowledge Graph</title>
+<style>
+:root {
+  --void:#080B10;--surface:#0F1520;--panel:#162030;--border:#1A3050;
+  --ink:#A8C4DC;--ink-dim:#4A6880;--bright:#D8ECF8;
+  --teal:#00B4A6;--coral:#E05A4A;--amber:#D4A820;--slate:#5B8DB8;--steel:#7A9EC4;
+  --grid:rgba(0,180,166,.055);
+  --fu:ui-monospace,'Cascadia Code','Fira Code',Consolas,monospace;
+  --fb:-apple-system,'Segoe UI',system-ui,sans-serif;
+  --r:4px;--t:180ms ease;
+}
+@media(prefers-color-scheme:light){:root{
+  --void:#EEF3FA;--surface:#FFF;--panel:#F2F7FC;--border:#C3D3E6;
+  --ink:#1A2740;--ink-dim:#6A86A6;--bright:#0A1525;--grid:rgba(0,110,100,.07);
+}}
+:root[data-theme="dark"]{--void:#080B10;--surface:#0F1520;--panel:#162030;--border:#1A3050;--ink:#A8C4DC;--ink-dim:#4A6880;--bright:#D8ECF8;--grid:rgba(0,180,166,.055);}
+:root[data-theme="light"]{--void:#EEF3FA;--surface:#FFF;--panel:#F2F7FC;--border:#C3D3E6;--ink:#1A2740;--ink-dim:#6A86A6;--bright:#0A1525;--grid:rgba(0,110,100,.07);}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;overflow:hidden;background:var(--void);color:var(--ink);font-family:var(--fb);font-size:13px;line-height:1.5}
+#app{display:grid;grid-template-columns:210px 1fr;grid-template-rows:1fr 28px;height:100vh}
+#sb{grid-column:1;grid-row:1;background:var(--surface);border-right:1px solid var(--border);display:flex;flex-direction:column;overflow:hidden;z-index:10}
+#cva{grid-column:2;grid-row:1;position:relative;overflow:hidden;background:var(--void);background-image:radial-gradient(circle,var(--grid) 1px,transparent 1px);background-size:26px 26px}
+#sbar{grid-column:1/3;grid-row:2;background:var(--surface);border-top:1px solid var(--border);display:flex;align-items:center;gap:14px;padding:0 13px;font-family:var(--fu);font-size:10.5px;color:var(--ink-dim);overflow:hidden;white-space:nowrap}
+.hi{color:var(--teal)}.wa{color:var(--amber)}.sep{opacity:.3}
+canvas{display:block;width:100%;height:100%;cursor:grab}
+canvas.pan{cursor:grabbing}
+
+/* sidebar */
+.sb-head{padding:12px 13px 9px;border-bottom:1px solid var(--border);flex-shrink:0}
+.sb-eye{font-family:var(--fu);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-dim);margin-bottom:2px}
+.sb-title{font-size:14px;font-weight:600;color:var(--bright)}
+.sb-body{flex:1;overflow-y:auto;padding:11px;display:flex;flex-direction:column;gap:13px}
+.lbl{font-family:var(--fu);font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-dim);margin-bottom:5px}
+input[type=search]{width:100%;background:var(--panel);border:1px solid var(--border);border-radius:var(--r);color:var(--ink);font-family:var(--fu);font-size:11.5px;padding:5px 9px;outline:none;transition:border-color var(--t)}
+input[type=search]::placeholder{color:var(--ink-dim)}
+input[type=search]:focus{border-color:var(--teal)}
+.fgrp{display:flex;flex-direction:column;gap:2px}
+.fb{display:flex;align-items:center;gap:7px;padding:5px 7px;border-radius:var(--r);border:none;background:none;color:var(--ink-dim);font-family:var(--fu);font-size:11px;cursor:pointer;text-align:left;width:100%;transition:color var(--t),background var(--t)}
+.fb:hover{color:var(--ink);background:var(--panel)}
+.fb.on{color:var(--bright);background:var(--panel)}
+.fb:focus-visible{outline:2px solid var(--teal)}
+.fd{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+.fc{margin-left:auto;font-size:10px;font-variant-numeric:tabular-nums}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:5px}
+.sbox{background:var(--panel);border:1px solid var(--border);border-radius:var(--r);padding:7px 9px}
+.sv{font-family:var(--fu);font-size:18px;font-weight:700;color:var(--bright);font-variant-numeric:tabular-nums;line-height:1}
+.sl{font-family:var(--fu);font-size:10px;color:var(--ink-dim);text-transform:uppercase;letter-spacing:.07em;margin-top:3px}
+.ctrl{display:flex;gap:5px;flex-wrap:wrap}
+.cb{padding:5px 9px;background:var(--panel);border:1px solid var(--border);border-radius:var(--r);color:var(--ink-dim);font-family:var(--fu);font-size:11px;cursor:pointer;transition:color var(--t),border-color var(--t)}
+.cb:hover{color:var(--bright);border-color:var(--teal)}
+.cb:focus-visible{outline:2px solid var(--teal)}
+
+/* legend */
+.legend{display:flex;flex-direction:column;gap:5px}
+.leg-item{display:flex;align-items:center;gap:7px;font-family:var(--fu);font-size:10.5px;color:var(--ink-dim)}
+.leg-icon{flex-shrink:0}
+
+/* detail panel */
+#dp{position:absolute;top:0;right:0;bottom:0;width:290px;background:var(--surface);border-left:1px solid var(--border);transform:translateX(100%);transition:transform var(--t);overflow-y:auto;display:flex;flex-direction:column;z-index:20}
+#dp.open{transform:translateX(0)}
+#dph{padding:13px 13px 11px;border-bottom:1px solid var(--border);position:sticky;top:0;background:var(--surface);z-index:1;flex-shrink:0}
+#dpc{position:absolute;top:9px;right:9px;background:none;border:none;color:var(--ink-dim);cursor:pointer;font-size:14px;font-family:var(--fu);padding:4px 6px;border-radius:var(--r)}
+#dpc:hover{color:var(--bright);background:var(--panel)}
+.badge{font-family:var(--fu);font-size:9.5px;letter-spacing:.12em;padding:2px 7px;border-radius:2px;display:inline-block;margin-bottom:6px;text-transform:uppercase}
+.bc{background:rgba(0,180,166,.14);color:var(--teal)}
+.br{background:rgba(224,90,74,.14);color:var(--coral)}
+.bq{background:rgba(212,168,32,.14);color:var(--amber)}
+.be{background:rgba(122,158,196,.14);color:var(--steel)}
+.bh{background:rgba(100,120,150,.15);color:var(--ink)}
+#dpt{font-size:14.5px;font-weight:600;color:var(--bright);padding-right:22px;text-wrap:balance}
+.dpb{padding:13px;display:flex;flex-direction:column;gap:13px}
+.dp-sum{font-size:12.5px;line-height:1.65;color:var(--ink)}
+.dp-fp{font-family:var(--fu);font-size:10.5px;color:var(--teal);word-break:break-all;background:var(--panel);padding:6px 9px;border-radius:var(--r);border:1px solid var(--border);cursor:pointer;transition:border-color var(--t)}
+.dp-fp:hover{border-color:var(--teal)}
+.dp-ls{display:flex;flex-direction:column;gap:3px}
+.dp-li{display:flex;align-items:center;gap:6px;padding:4px 7px;border-radius:var(--r);background:var(--panel);border:1px solid transparent;font-family:var(--fu);font-size:10.5px;color:var(--ink-dim);cursor:pointer;text-align:left;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;transition:color var(--t),border-color var(--t)}
+.dp-li:hover{color:var(--bright);border-color:var(--border)}
+.dp-li:focus-visible{outline:2px solid var(--teal)}
+.dld{width:6px;height:6px;border-radius:50%;flex-shrink:0}
+.tag-row{display:flex;flex-wrap:wrap;gap:4px}
+.tag{background:var(--panel);border:1px solid var(--border);border-radius:2px;padding:2px 7px;font-family:var(--fu);font-size:10px;color:var(--ink-dim)}
+.conf-bar{height:3px;border-radius:2px;margin-top:5px}
+
+#tip{position:fixed;background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:5px 9px;font-family:var(--fu);font-size:11px;color:var(--ink);pointer-events:none;z-index:200;max-width:210px;opacity:0;transition:opacity 100ms;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;box-shadow:0 4px 16px rgba(0,0,0,.4)}
+#tip.show{opacity:1}
+::-webkit-scrollbar{width:3px}
+::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
+</style>
+
+<div id="app">
+<aside id="sb">
+  <div class="sb-head">
+    <div class="sb-eye">Gate C · 지식그래프</div>
+    <div class="sb-title">2nd Brain</div>
+  </div>
+  <div class="sb-body">
+    <div>
+      <div class="lbl">검색</div>
+      <input type="search" id="si" placeholder="노드 검색...">
+    </div>
+    <div>
+      <div class="lbl">도메인 필터</div>
+      <div class="fgrp" id="filters">
+        <button class="fb on" data-f="all"><span class="fd" style="background:var(--ink-dim)"></span>전체<span class="fc" id="cnt-all">12</span></button>
+        <button class="fb" data-f="concepts"><span class="fd" style="background:#00B4A6"></span>Concepts<span class="fc">6</span></button>
+        <button class="fb" data-f="comparisons"><span class="fd" style="background:#E05A4A"></span>Comparisons<span class="fc">2</span></button>
+        <button class="fb" data-f="queries"><span class="fd" style="background:#D4A820"></span>Queries<span class="fc">3</span></button>
+        <button class="fb" data-f="entities"><span class="fd" style="background:#7A9EC4"></span>Entities<span class="fc">1</span></button>
+      </div>
+    </div>
+    <div>
+      <div class="lbl">범례</div>
+      <div class="legend">
+        <div class="leg-item"><svg class="leg-icon" width="14" height="14" viewBox="0 0 14 14"><circle cx="7" cy="7" r="5.5" fill="none" stroke="#00B4A6" stroke-width="1.5"/></svg>Concept 개념</div>
+        <div class="leg-item"><svg class="leg-icon" width="14" height="14" viewBox="0 0 14 14"><circle cx="7" cy="7" r="5.5" fill="none" stroke="#E05A4A" stroke-width="1.5"/></svg>Comparison 비교</div>
+        <div class="leg-item"><svg class="leg-icon" width="14" height="14" viewBox="0 0 14 14"><circle cx="7" cy="7" r="5.5" fill="none" stroke="#D4A820" stroke-width="1.5"/></svg>Query 질의</div>
+        <div class="leg-item"><svg class="leg-icon" width="14" height="14" viewBox="0 0 14 14"><circle cx="7" cy="7" r="5.5" fill="none" stroke="#7A9EC4" stroke-width="1.5"/></svg>Entity 엔티티</div>
+        <div class="leg-item"><svg class="leg-icon" width="14" height="14" viewBox="0 0 14 14"><polygon points="7,1.5 12.5,12.5 1.5,12.5" fill="none" stroke="#A8C4DC" stroke-width="1.5" stroke-linejoin="round"/></svg>Hub 허브</div>
+        <div class="leg-item"><svg class="leg-icon" width="14" height="14" viewBox="0 0 14 14"><line x1="2" y1="7" x2="12" y2="7" stroke="#A8C4DC" stroke-width="1.2"/></svg>Related 연결</div>
+        <div class="leg-item"><svg class="leg-icon" width="14" height="14" viewBox="0 0 14 14"><line x1="2" y1="7" x2="12" y2="7" stroke="#4A6880" stroke-width="1" stroke-dasharray="2,3"/></svg>Category 분류</div>
+      </div>
+    </div>
+    <div>
+      <div class="lbl">통계</div>
+      <div class="stats">
+        <div class="sbox"><div class="sv" id="sv-nodes">12</div><div class="sl">표시 노드</div></div>
+        <div class="sbox"><div class="sv" id="sv-edges">-</div><div class="sl">표시 엣지</div></div>
+        <div class="sbox" style="grid-column:1/3"><div class="sv" style="font-size:12px">2026-07-26</div><div class="sl">마지막 분석</div></div>
+      </div>
+    </div>
+    <div>
+      <div class="lbl">제어</div>
+      <div class="ctrl">
+        <button class="cb" id="br">리셋 뷰</button>
+        <button class="cb" id="bh">재배치</button>
+      </div>
+    </div>
+  </div>
+</aside>
+
+<div id="cva">
+  <canvas id="gc"></canvas>
+  <div id="dp">
+    <div id="dph">
+      <button id="dpc">✕</button>
+      <div id="dpb" class="badge bc">CONCEPT</div>
+      <div id="dpt">Node</div>
+    </div>
+    <div class="dpb" id="dpbd"></div>
+  </div>
+</div>
+
+<div id="sbar">
+  <span class="hi" style="font-family:var(--fu)">Gate C</span>
+  <span class="sep">|</span>
+  <span>분석: 2026-07-26</span>
+  <span class="sep">|</span>
+  <span id="sbar-cnt">지식 도메인 노드만 표시</span>
+  <span class="sep">|</span>
+  <span class="wa">⏳ inbox/ 19개 드론 파일 — Cron 04:00 대기</span>
+</div>
+</div>
+<div id="tip"></div>
+
+<script>
+// ── 지식 도메인 전용 노드 (docs / templates / README 제외) ──────
+const LCOLORS={concepts:'#00B4A6',comparisons:'#E05A4A',queries:'#D4A820',entities:'#7A9EC4'};
+
+const RAW_NODES=[
+  // ── Concept articles ──────────────────────────────────────────
+  {id:"c:ai-wf",type:"article",layer:"concepts",
+   name:"AI 지식 워크플로",filePath:"concepts/ai-knowledge-workflow.md",
+   summary:"원본 수집부터 검토된 지식과 산출물 생성까지를 역할별 계층으로 나누는 운영 방식. 수집→원본보존→탐색·질의→위키컴파일→검증→산출",
+   tags:["workflow","automation"],confidence:"medium"},
+  {id:"c:ai-pkm",type:"article",layer:"concepts",
+   name:"AI 개인 지식관리",filePath:"concepts/ai-personal-knowledge-management.md",
+   summary:"자료를 많이 저장하는 일이 아니라 원본과 해석의 경계를 보존하면서 검증된 지식을 반복 재사용하는 운영 체계",
+   tags:["pkm","provenance"],confidence:"medium"},
+  {id:"c:llm-wiki",type:"article",layer:"concepts",
+   name:"LLM Wiki",filePath:"concepts/llm-wiki.md",
+   summary:"원본 자료를 한 번 구조화해 사람과 여러 AI 에이전트가 반복 사용할 수 있게 만드는 지속형 Markdown 지식베이스",
+   tags:["knowledge-base","pkm"],confidence:"high"},
+  {id:"c:rfloop",type:"article",layer:"concepts",
+   name:"연구 피드백 루프",filePath:"concepts/research-feedback-loop.md",
+   summary:"원본 수집, 위키 컴파일, 그래프 분석, 집중 합성의 결과가 다시 지식베이스로 돌아오는 반복 구조",
+   tags:["research","workflow"],confidence:"medium"},
+  {id:"c:sb-wf",type:"article",layer:"concepts",
+   name:"세컨드 브레인 연구 워크플로",filePath:"concepts/second-brain-research-workflow.md",
+   summary:"원본 보존, AI 합성, 개인 해석을 분리하면서 하나의 반복 가능한 연구 환경으로 연결하는 방식",
+   tags:["pkm","research"],confidence:"medium"},
+  {id:"hub:concepts",type:"topic",layer:"concepts",
+   name:"Concepts Hub",summary:"카테고리 허브 — 5 articles. AI 지식관리 워크플로 개념들의 핵심 레이어",tags:["category"]},
+
+  // ── Comparison articles ───────────────────────────────────────
+  {id:"r:tool-roles",type:"article",layer:"comparisons",
+   name:"AI 지식관리 도구 역할 비교",filePath:"comparisons/knowledge-tool-roles.md",
+   summary:"Zotero·NotebookLM·LLM Wiki·Obsidian·Understand Anything의 역할 분담과 교체 가능한 경계를 보여주는 비교",
+   tags:["comparisons","pkm"],confidence:"medium"},
+  {id:"hub:comparisons",type:"topic",layer:"comparisons",
+   name:"Comparisons Hub",summary:"카테고리 허브 — 1 article. 도구 역할 비교 레이어",tags:["category"]},
+
+  // ── Query articles ────────────────────────────────────────────
+  {id:"q:nlm",type:"article",layer:"queries",
+   name:"NotebookLM 질의 증분 워크플로",filePath:"queries/notebooklm-query-compounding.md",
+   summary:"NotebookLM 질의응답에서 재사용 가능한 지식만 queries/에 편입해 지식베이스를 증분하는 운영 방식",
+   tags:["notebooklm","workflow"],confidence:"medium"},
+  {id:"q:ua-graph",type:"article",layer:"queries",
+   name:"UA 지식그래프 워크플로",filePath:"queries/ua-knowledge-graph-workflow.md",
+   summary:"understand-knowledge 스킬로 지식그래프 생성부터 분석·활용·갱신까지. 코드 그래프 vs 지식그래프 차이 포함",
+   tags:["knowledge-graph","research"],confidence:"medium"},
+  {id:"hub:queries",type:"topic",layer:"queries",
+   name:"Queries Hub",summary:"카테고리 허브 — 2 articles. 탐색·합성·미해결 질의 레이어",tags:["category"]},
+
+  // ── Entity hub ────────────────────────────────────────────────
+  {id:"hub:entities",type:"topic",layer:"entities",
+   name:"Entities Hub",summary:"카테고리 허브 — 현재 비어 있음. 드론 도메인 엔티티 페이지가 축적될 레이어",tags:["category"]},
+];
+
+// knowledge domain edges only (no cross-layer to docs/templates)
+const RAW_EDGES=[
+  {s:"r:tool-roles",  t:"c:ai-wf",    k:"rel"},
+  {s:"r:tool-roles",  t:"c:sb-wf",    k:"rel"},
+  {s:"r:tool-roles",  t:"c:llm-wiki", k:"rel"},
+  {s:"r:tool-roles",  t:"c:rfloop",   k:"rel"},
+  {s:"c:ai-wf",       t:"c:ai-pkm",   k:"rel"},
+  {s:"c:ai-wf",       t:"c:rfloop",   k:"rel"},
+  {s:"c:ai-wf",       t:"c:sb-wf",    k:"rel"},
+  {s:"c:ai-pkm",      t:"c:rfloop",   k:"rel"},
+  {s:"c:ai-pkm",      t:"c:sb-wf",    k:"rel"},
+  {s:"c:llm-wiki",    t:"c:ai-pkm",   k:"rel"},
+  {s:"c:llm-wiki",    t:"c:ai-wf",    k:"rel"},
+  {s:"c:llm-wiki",    t:"q:nlm",      k:"rel"},
+  {s:"c:llm-wiki",    t:"q:ua-graph", k:"rel"},
+  {s:"c:llm-wiki",    t:"c:rfloop",   k:"rel"},
+  {s:"c:llm-wiki",    t:"r:tool-roles",k:"rel"},
+  {s:"c:rfloop",      t:"q:nlm",      k:"rel"},
+  {s:"c:rfloop",      t:"q:ua-graph", k:"rel"},
+  {s:"c:rfloop",      t:"c:ai-wf",    k:"rel"},
+  {s:"c:sb-wf",       t:"c:ai-pkm",   k:"rel"},
+  {s:"c:sb-wf",       t:"c:rfloop",   k:"rel"},
+  {s:"c:sb-wf",       t:"r:tool-roles",k:"rel"},
+  {s:"q:nlm",         t:"c:rfloop",   k:"rel"},
+  {s:"q:nlm",         t:"c:llm-wiki", k:"rel"},
+  {s:"q:ua-graph",    t:"c:llm-wiki", k:"rel"},
+  {s:"q:ua-graph",    t:"c:rfloop",   k:"rel"},
+  {s:"q:ua-graph",    t:"c:ai-pkm",   k:"rel"},
+  // category edges
+  {s:"c:ai-wf",       t:"hub:concepts",   k:"cat"},
+  {s:"c:ai-pkm",      t:"hub:concepts",   k:"cat"},
+  {s:"c:llm-wiki",    t:"hub:concepts",   k:"cat"},
+  {s:"c:rfloop",      t:"hub:concepts",   k:"cat"},
+  {s:"c:sb-wf",       t:"hub:concepts",   k:"cat"},
+  {s:"r:tool-roles",  t:"hub:comparisons",k:"cat"},
+  {s:"q:nlm",         t:"hub:queries",    k:"cat"},
+  {s:"q:ua-graph",    t:"hub:queries",    k:"cat"},
+];
+
+// ── STATE ─────────────────────────────────────────────────────
+const canvas=document.getElementById('gc');
+const ctx=canvas.getContext('2d');
+let W=0,H=0,dpr=1;
+let nodes=[],edges=[],nmap={};
+let sel=null,hov=null;
+let fl='all',sq='';
+let camX=0,camY=0,camZ=1;
+let isPan=false,panSX=0,panSY=0,panOX=0,panOY=0;
+let dragN=null,mdX=0,mdY=0;
+let alpha=1,simOn=true;
+
+function init(){
+  nodes=RAW_NODES.map((n,i)=>{
+    const a=(i/RAW_NODES.length)*Math.PI*2;
+    const r=n.type==='topic'?55:140+Math.random()*70;
+    return{...n,x:Math.cos(a)*r+(Math.random()-.5)*15,y:Math.sin(a)*r+(Math.random()-.5)*15,vx:0,vy:0,deg:0};
+  });
+  nodes.forEach(n=>nmap[n.id]=n);
+  RAW_EDGES.forEach(e=>{if(nmap[e.s])nmap[e.s].deg++;if(nmap[e.t])nmap[e.t].deg++;});
+  edges=RAW_EDGES.map(e=>({...e,sn:nmap[e.s],tn:nmap[e.t]})).filter(e=>e.sn&&e.tn);
+  resize();
+  window.addEventListener('resize',resize);
+  setupEvents();
+  updateStats();
+  requestAnimationFrame(loop);
+}
+
+function resize(){
+  const ca=document.getElementById('cva');
+  dpr=window.devicePixelRatio||1;
+  W=ca.clientWidth;H=ca.clientHeight;
+  canvas.style.width=W+'px';canvas.style.height=H+'px';
+  canvas.width=W*dpr;canvas.height=H*dpr;
+  ctx.setTransform(dpr,0,0,dpr,0,0);
+}
+
+// ── PHYSICS ───────────────────────────────────────────────────
+function step(){
+  if(alpha<.003){simOn=false;return;}
+  nodes.forEach(n=>{n.fx=0;n.fy=0;});
+  for(let i=0;i<nodes.length;i++){
+    const a=nodes[i];
+    for(let j=i+1;j<nodes.length;j++){
+      const b=nodes[j];
+      let dx=b.x-a.x,dy=b.y-a.y,d2=dx*dx+dy*dy;
+      if(d2<.5){dx=Math.random()-.5;dy=Math.random()-.5;d2=.5;}
+      const d=Math.sqrt(d2);
+      const f=9000*alpha/d2;
+      a.fx-=f*dx/d;a.fy-=f*dy/d;
+      b.fx+=f*dx/d;b.fy+=f*dy/d;
+    }
+  }
+  edges.forEach(e=>{
+    if(!vis(e.sn)||!vis(e.tn))return;
+    const a=e.sn,b=e.tn;
+    const dx=b.x-a.x,dy=b.y-a.y,d=Math.sqrt(dx*dx+dy*dy)||1;
+    const L=e.k==='cat'?90:115;
+    const f=.045*(d-L)*alpha;
+    a.fx+=f*dx/d;a.fy+=f*dy/d;
+    b.fx-=f*dx/d;b.fy-=f*dy/d;
+  });
+  nodes.filter(n=>n.type==='topic').forEach(hub=>{
+    const layer=hub.id.replace('hub:','');
+    nodes.filter(n=>n.type==='article'&&n.layer===layer).forEach(m=>{
+      m.fx+=.009*alpha*(hub.x-m.x);
+      m.fy+=.009*alpha*(hub.y-m.y);
+    });
+  });
+  nodes.forEach(n=>{n.fx-=.003*n.x;n.fy-=.003*n.y;});
+  nodes.forEach(n=>{
+    if(n._pin)return;
+    n.vx=(n.vx+n.fx)*.76;n.vy=(n.vy+n.fy)*.76;
+    n.x+=n.vx;n.y+=n.vy;
+  });
+  alpha*=.994;
+}
+
+// ── CAMERA ────────────────────────────────────────────────────
+function w2s(wx,wy){return{x:(wx-camX)*camZ+W/2,y:(wy-camY)*camZ+H/2};}
+function s2w(sx,sy){return{x:(sx-W/2)/camZ+camX,y:(sy-H/2)/camZ+camY};}
+
+// ── VISIBILITY ───────────────────────────────────────────────
+function vis(n){
+  if(fl==='all')return true;
+  return n.layer===fl;
+}
+
+function nAlpha(n){
+  if(!vis(n))return 0;
+  if(sq){return n.name.toLowerCase().includes(sq.toLowerCase())?1:.08;}
+  if(!sel)return 1;
+  if(n.id===sel.id)return 1;
+  return edges.some(e=>(e.sn.id===sel.id&&e.tn.id===n.id)||(e.tn.id===sel.id&&e.sn.id===n.id))?1:.1;
+}
+
+function nr(n){
+  if(n.type==='topic')return 17;
+  return 10+Math.min(n.deg*1.3,7);
+}
+
+// ── RENDER ────────────────────────────────────────────────────
+function drawHex(x,y,r){
+  ctx.beginPath();
+  for(let i=0;i<6;i++){const a=(i*Math.PI/3)-Math.PI/6;ctx.lineTo(x+r*Math.cos(a),y+r*Math.sin(a));}
+  ctx.closePath();
+}
+
+function render(){
+  ctx.clearRect(0,0,W,H);
+  edges.forEach(e=>{
+    const aA=nAlpha(e.sn),bA=nAlpha(e.tn);
+    if(!aA&&!bA)return;
+    const sa=w2s(e.sn.x,e.sn.y),sb=w2s(e.tn.x,e.tn.y);
+    let op=e.k==='cat'?.12:.24;
+    if(sel){const c=e.sn.id===sel.id||e.tn.id===sel.id;op=c?.85:.04;}
+    if(hov&&!sel){const c=e.sn.id===hov.id||e.tn.id===hov.id;if(c)op=.75;}
+    ctx.save();
+    ctx.globalAlpha=op;
+    ctx.strokeStyle=LCOLORS[e.sn.layer]||'#7A9EC4';
+    ctx.lineWidth=e.k==='cat'?.8:1.5;
+    if(e.k==='cat')ctx.setLineDash([3,5]);else ctx.setLineDash([]);
+    ctx.beginPath();ctx.moveTo(sa.x,sa.y);ctx.lineTo(sb.x,sb.y);ctx.stroke();
+    ctx.restore();
+  });
+
+  nodes.forEach(n=>{
+    const na=nAlpha(n);
+    if(!na)return;
+    const s=w2s(n.x,n.y);
+    const r=nr(n)*camZ;
+    const col=LCOLORS[n.layer]||'#7A9EC4';
+    const isSel=sel&&n.id===sel.id;
+    const isHov=hov&&n.id===hov.id;
+    ctx.save();
+    ctx.globalAlpha=na;
+
+    if(n.type==='topic'){
+      const hr=r*1.2;
+      if(isSel){ctx.shadowColor=col;ctx.shadowBlur=20;}
+      drawHex(s.x,s.y,hr);
+      ctx.fillStyle=col+(isSel?'28':'12');ctx.fill();
+      ctx.strokeStyle=col;ctx.lineWidth=isSel?2.5:1.5;ctx.stroke();
+      ctx.shadowBlur=0;
+      ctx.beginPath();ctx.arc(s.x,s.y,2.5*camZ,0,Math.PI*2);
+      ctx.fillStyle=col;ctx.fill();
+    } else {
+      if(isSel||isHov){
+        const gr=ctx.createRadialGradient(s.x,s.y,0,s.x,s.y,r*3);
+        gr.addColorStop(0,col+(isSel?'35':'20'));gr.addColorStop(1,col+'00');
+        ctx.save();ctx.globalAlpha=na*(isSel?.65:.45);
+        ctx.beginPath();ctx.arc(s.x,s.y,r*3,0,Math.PI*2);
+        ctx.fillStyle=gr;ctx.fill();ctx.restore();
+      }
+      ctx.beginPath();ctx.arc(s.x,s.y,r,0,Math.PI*2);
+      ctx.fillStyle=col+(isSel?'BB':'40');ctx.fill();
+      if(isSel){ctx.shadowColor=col;ctx.shadowBlur=12;}
+      ctx.strokeStyle=col;ctx.lineWidth=isSel?2:1.5;ctx.stroke();
+      ctx.shadowBlur=0;
+    }
+
+    if(camZ>.5||isSel||isHov){
+      const fs=Math.max(9,Math.min(12,10.5*camZ));
+      ctx.font=`${fs}px ui-monospace,Consolas,monospace`;
+      ctx.textAlign='center';ctx.textBaseline='top';
+      const lbl=n.name.length>20?n.name.slice(0,19)+'…':n.name;
+      const ly=s.y+r+3;
+      const tw=ctx.measureText(lbl).width;
+      ctx.globalAlpha=na*.9;
+      const bg=getComputedStyle(document.documentElement).getPropertyValue('--void').trim()||'#080B10';
+      ctx.fillStyle=bg;
+      ctx.fillRect(s.x-tw/2-2,ly-1,tw+4,fs+2);
+      ctx.globalAlpha=na;
+      ctx.fillStyle=isSel?col:(isHov?'#D8ECF8':'#4F6880');
+      ctx.fillText(lbl,s.x,ly);
+    }
+    ctx.restore();
+  });
+}
+
+function loop(){if(simOn)step();render();requestAnimationFrame(loop);}
+
+// ── HIT TEST ─────────────────────────────────────────────────
+function nodeAt(sx,sy){
+  const w=s2w(sx,sy);
+  let hit=null,best=Infinity;
+  nodes.forEach(n=>{
+    if(!nAlpha(n))return;
+    const dx=n.x-w.x,dy=n.y-w.y,d=Math.sqrt(dx*dx+dy*dy);
+    const hr=(nr(n)+5)/camZ;
+    if(d<hr&&d<best){best=d;hit=n;}
+  });
+  return hit;
+}
+
+// ── UI EVENTS ─────────────────────────────────────────────────
+function setupEvents(){
+  const tip=document.getElementById('tip');
+
+  canvas.addEventListener('mousemove',e=>{
+    const r=canvas.getBoundingClientRect();
+    const sx=e.clientX-r.left,sy=e.clientY-r.top;
+    if(isPan){camX=panOX-(e.clientX-panSX)/camZ;camY=panOY-(e.clientY-panSY)/camZ;return;}
+    if(dragN){const w=s2w(sx,sy);dragN.x=w.x;dragN.y=w.y;dragN.vx=0;dragN.vy=0;return;}
+    const n=nodeAt(sx,sy);
+    hov=n;canvas.style.cursor=n?'pointer':'grab';
+    if(n){tip.textContent=n.name;tip.style.left=(e.clientX+14)+'px';tip.style.top=(e.clientY-10)+'px';tip.classList.add('show');}
+    else tip.classList.remove('show');
+  });
+
+  canvas.addEventListener('mouseleave',()=>{hov=null;tip.classList.remove('show');});
+
+  canvas.addEventListener('mousedown',e=>{
+    e.preventDefault();mdX=e.clientX;mdY=e.clientY;
+    const r=canvas.getBoundingClientRect();
+    const n=nodeAt(e.clientX-r.left,e.clientY-r.top);
+    if(n){dragN=n;n._pin=true;simOn=true;alpha=Math.max(alpha,.1);}
+    else{isPan=true;panSX=e.clientX;panSY=e.clientY;panOX=camX;panOY=camY;canvas.classList.add('pan');}
+  });
+
+  window.addEventListener('mouseup',e=>{
+    const moved=Math.hypot(e.clientX-mdX,e.clientY-mdY)>6;
+    if(dragN){dragN._pin=false;if(!moved)selectNode(dragN);dragN=null;}
+    if(isPan){isPan=false;canvas.classList.remove('pan');if(!moved){sel=null;closeDP();}}
+  });
+
+  canvas.addEventListener('wheel',e=>{
+    e.preventDefault();
+    const f=e.deltaY>0?.84:1.19;
+    const r=canvas.getBoundingClientRect();
+    const sx=e.clientX-r.left,sy=e.clientY-r.top;
+    const bw=s2w(sx,sy);
+    camZ=Math.max(.08,Math.min(6,camZ*f));
+    const aw=s2w(sx,sy);
+    camX-=aw.x-bw.x;camY-=aw.y-bw.y;
+  },{passive:false});
+
+  document.getElementById('filters').addEventListener('click',e=>{
+    const b=e.target.closest('.fb');if(!b)return;
+    fl=b.dataset.f;
+    document.querySelectorAll('.fb').forEach(x=>x.classList.remove('on'));
+    b.classList.add('on');sel=null;closeDP();
+    updateStats();
+  });
+
+  document.getElementById('si').addEventListener('input',e=>{sq=e.target.value.trim();});
+  document.getElementById('br').addEventListener('click',()=>{camX=0;camY=0;camZ=1;});
+  document.getElementById('bh').addEventListener('click',()=>{
+    alpha=1;simOn=true;
+    nodes.forEach(n=>{n.vx=(Math.random()-.5)*5;n.vy=(Math.random()-.5)*5;});
+  });
+  document.getElementById('dpc').addEventListener('click',()=>{sel=null;closeDP();});
+}
+
+function updateStats(){
+  const visNodes=fl==='all'?nodes:nodes.filter(n=>n.layer===fl);
+  const nCount=visNodes.length;
+  const eCount=edges.filter(e=>visNodes.find(n=>n.id===e.sn.id)&&visNodes.find(n=>n.id===e.tn.id)).length;
+  document.getElementById('sv-nodes').textContent=nCount;
+  document.getElementById('sv-edges').textContent=eCount;
+  const label=fl==='all'?`${nCount} 지식 도메인 노드 · ${eCount} 엣지`:`${fl} — ${nCount}개 노드 · ${eCount} 엣지`;
+  document.getElementById('sbar-cnt').textContent=label;
+}
+
+// ── DETAIL PANEL ─────────────────────────────────────────────
+const BADGE_MAP={concepts:['CONCEPT','bc'],comparisons:['COMPARISON','br'],queries:['QUERY','bq'],entities:['ENTITY','be']};
+
+function selectNode(n){
+  sel=n;
+  document.getElementById('dp').classList.add('open');
+  const [label,cls]=n.type==='topic'?['HUB','bh']:(BADGE_MAP[n.layer]||['ARTICLE','be']);
+  const bd=document.getElementById('dpb');
+  bd.textContent=label;bd.className='badge '+cls;
+  document.getElementById('dpt').textContent=n.name;
+
+  const body=document.getElementById('dpbd');body.innerHTML='';
+  const mk=(t,c)=>{const e=document.createElement(t);if(c)e.className=c;return e;};
+  const esc=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;');
+
+  if(n.summary){
+    const s=mk('div');
+    s.innerHTML=`<div class="lbl">요약</div><div class="dp-sum">${esc(n.summary)}</div>`;
+    body.appendChild(s);
+  }
+
+  if(n.confidence){
+    const s=mk('div');
+    const cmap={high:'var(--teal)',medium:'var(--amber)',low:'var(--coral)'};
+    s.innerHTML=`<div class="lbl">신뢰도</div>`;
+    const b=mk('div');
+    b.style.cssText=`font-family:var(--fu);font-size:11px;color:${cmap[n.confidence]||'var(--ink-dim)'}`;
+    b.textContent=n.confidence.toUpperCase();
+    const bar=mk('div','conf-bar');
+    bar.style.cssText=`background:${cmap[n.confidence]||'var(--border)'};width:${n.confidence==='high'?'100':n.confidence==='medium'?'60':'30'}%`;
+    s.appendChild(b);s.appendChild(bar);body.appendChild(s);
+  }
+
+  if(n.filePath){
+    const s=mk('div');
+    s.innerHTML=`<div class="lbl">파일 경로</div>`;
+    const fp=mk('div','dp-fp');
+    fp.title='Obsidian에서 열기';fp.textContent=n.filePath;
+    fp.addEventListener('click',()=>window.open('obsidian://open?vault=2nd&file='+encodeURIComponent(n.filePath),'_blank'));
+    s.appendChild(fp);body.appendChild(s);
+  }
+
+  const conn=edges.filter(e=>(e.sn.id===n.id||e.tn.id===n.id)&&vis(e.sn)&&vis(e.tn));
+  if(conn.length){
+    const s=mk('div');
+    const lbl=mk('div','lbl');lbl.textContent=`연결 노드 (${conn.length})`;
+    s.appendChild(lbl);
+    const dl=mk('div','dp-ls');
+    conn.slice(0,12).forEach(e=>{
+      const o=e.sn.id===n.id?e.tn:e.sn;
+      if(!nmap[o.id])return;
+      const btn=mk('button','dp-li');
+      const dot=mk('span','dld');dot.style.background=LCOLORS[o.layer]||'#7A9EC4';
+      btn.appendChild(dot);btn.appendChild(document.createTextNode(o.name));
+      btn.addEventListener('click',()=>selectNode(o));
+      dl.appendChild(btn);
+    });
+    s.appendChild(dl);body.appendChild(s);
+  }
+
+  const tags=(n.tags||[]).filter(t=>t!=='category');
+  if(tags.length){
+    const s=mk('div');s.innerHTML=`<div class="lbl">태그</div>`;
+    const tr=mk('div','tag-row');
+    tags.forEach(t=>{const tg=mk('span','tag');tg.textContent=t;tr.appendChild(tg);});
+    s.appendChild(tr);body.appendChild(s);
+  }
+}
+
+function closeDP(){document.getElementById('dp').classList.remove('open');}
+
+init();
+</script>

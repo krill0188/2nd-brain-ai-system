@@ -134,7 +134,7 @@ Collection priority: `drone-sw` → `datalink` → `drone-ai` → `swarm` → ot
 | **Connected Markdown editing** | Read and edit durable knowledge in Obsidian using wikilinks and backlinks; GitHub Copilot and Gemini Code Assist assist inline while editing. |
 | **Multi-AI cross-validation** | Claude Code and Gemini provide independent analysis of the same evidence — contradictions surface before knowledge is promoted to canonical. |
 | **Drone code exploration** | Codex navigates PX4, ArduPilot, ROS2/MAVROS2, and MAVSDK source code; results are saved to `raw/inbox/` and picked up by Hermes for compilation. |
-| **Knowledge graph (Gate C)** | Understand Anything `understand-knowledge` skill analyzes the wiki and produces an interactive knowledge graph (`.ua/knowledge-graph.json`) — clusters, gaps, and structural weak links surfaced automatically. |
+| **Knowledge graph (Gate C)** | Understand Anything `understand-knowledge` skill analyzes the wiki and produces an interactive knowledge graph (`.ua/knowledge-graph.json`) — clusters, gaps, and structural weak links surfaced automatically. Open the local viewer with `open .ua/graph.html` (force-directed, interactive, works offline). |
 
 ---
 
@@ -250,7 +250,16 @@ cd ~/2nd && codex
 
 Hermes saves the content to `raw/inbox/`, and the next cron run compiles it.
 
-### 5. Read the Operating Contract
+### 5. View the Knowledge Graph
+
+```bash
+# Open the interactive Gate C graph viewer (offline, self-contained)
+open .ua/graph.html
+```
+
+The viewer shows only canonical knowledge domain nodes (Concepts / Comparisons / Queries / Entities) with a force-directed layout — docs, templates, and scaffolding are intentionally excluded. Click any node to see its summary, file path, and connections. Filter by domain or search by name.
+
+### 6. Read the Operating Contract
 
 Before adding knowledge, read [SCHEMA.md](SCHEMA.md), check [index.md](index.md) for subjects already covered, and review the latest entries in [log.md](log.md).
 
