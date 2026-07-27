@@ -1,0 +1,134 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "🤖 AI: 전체 상태 확인",
+      "type": "shell",
+      "command": "~/2nd/scripts/ai-control.sh status",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new",
+        "clear": true,
+        "showReuseMessage": false
+      },
+      "group": "none",
+      "problemMatcher": []
+    },
+    {
+      "label": "📨 AI: 상태 확인 + Telegram 전송",
+      "type": "shell",
+      "command": "~/2nd/scripts/ai-control.sh status --telegram",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new",
+        "clear": true,
+        "showReuseMessage": false
+      },
+      "group": "none",
+      "problemMatcher": []
+    },
+    {
+      "label": "🔔 AI: claude -p ping 테스트",
+      "type": "shell",
+      "command": "~/2nd/scripts/ai-control.sh ping",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true,
+        "showReuseMessage": false
+      },
+      "group": "none",
+      "problemMatcher": []
+    },
+    {
+      "label": "📥 AI: Daily Ingest 즉시 실행",
+      "type": "shell",
+      "command": "~/2nd/scripts/ai-control.sh run-ingest",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new",
+        "clear": true,
+        "showReuseMessage": false
+      },
+      "group": "none",
+      "problemMatcher": []
+    },
+    {
+      "label": "🔍 AI: Weekly Lint 즉시 실행",
+      "type": "shell",
+      "command": "~/2nd/scripts/ai-control.sh run-lint",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new",
+        "clear": true,
+        "showReuseMessage": false
+      },
+      "group": "none",
+      "problemMatcher": []
+    },
+    {
+      "label": "📋 AI: Weekly Summary 즉시 실행",
+      "type": "shell",
+      "command": "~/2nd/scripts/ai-control.sh run-summary",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new",
+        "clear": true,
+        "showReuseMessage": false
+      },
+      "group": "none",
+      "problemMatcher": []
+    },
+    {
+      "label": "🔬 AI: Gate C 공백 분석",
+      "type": "shell",
+      "command": "~/2nd/scripts/ai-control.sh run-gap",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new",
+        "clear": true,
+        "showReuseMessage": false
+      },
+      "group": "none",
+      "problemMatcher": []
+    },
+    {
+      "label": "📨 AI: Gate C 공백 분석 + Telegram 전송",
+      "type": "shell",
+      "command": "~/2nd/scripts/ai-control.sh run-gap --telegram",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new",
+        "clear": true,
+        "showReuseMessage": false
+      },
+      "group": "none",
+      "problemMatcher": []
+    },
+    {
+      "label": "📜 AI: Cron 실행 이력",
+      "type": "shell",
+      "command": "~/2nd/scripts/ai-control.sh history",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true,
+        "showReuseMessage": false
+      },
+      "group": "none",
+      "problemMatcher": []
+    },
+    {
+      "label": "🌐 AI: 지식그래프 뷰어 열기",
+      "type": "shell",
+      "command": "open ~/2nd/.ua/graph.html",
+      "presentation": {
+        "reveal": "silent",
+        "panel": "shared",
+        "showReuseMessage": false
+      },
+      "group": "none",
+      "problemMatcher": []
+    }
+  ]
+}
