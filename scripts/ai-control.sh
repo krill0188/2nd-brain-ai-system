@@ -50,6 +50,65 @@ send_telegram() {
   fi
 }
 
+# ── LLM 호출 (claude -p 실패 시 openrouter fallback) ─────────
+call_llm() {
+  local prompt="$1"
+
+  # 1차: claude -p (최대 2회)
+  for i in 1 2; do
+    local result
+    if result=$(echo "$prompt" | claude -p 2>/dev/null) && [[ -n "$result" ]]; then
+      echo "$result"; return 0
+    fi
+    [[ $i -eq 1 ]] && { warn "claude -p 1차 실패 → 5초 후 재시도"; sleep 5; }
+  done
+
+  warn "claude -p offline → OpenRouter fallback 시도"
+  local or_key=""
+  [[ -f "$HOME/.hermes/.env" ]] && \
+    or_key=$(grep -E '^OPENROUTER_API_KEY=' "$HOME/.hermes/.env" | cut -d= -f2- | tr -d '"' | tr -d "'")
+
+  if [[ -n "$or_key" ]]; then
+    local body
+    body=$(python3 -c "
+import json, sys
+prompt = sys.argv[1]
+print(json.dumps({'model':'openai/gpt-4o-mini','messages':[{'role':'user','content':prompt}]}))
+" "$prompt" 2>/dev/null)
+    local resp
+    resp=$(curl -sf --max-time 30 "https://openrouter.ai/api/v1/chat/completions" \
+      -H "Authorization: Bearer $or_key" \
+      -H "Content-Type: application/json" \
+      -d "$body" 2>/dev/null \
+      | python3 -c "import json,sys; d=json.load(sys.stdin); print(d['choices'][0]['message']['content'])" 2>/dev/null)
+    if [[ -n "$resp" ]]; then
+      ok "OpenRouter fallback 성공"
+      echo "$resp"; return 0
+    fi
+  else
+    warn "OPENROUTER_API_KEY 없음 (~/.hermes/.env)"
+  fi
+
+  echo "❌ LLM 응답 실패 (claude -p offline, openrouter 불가)"
+  return 1
+}
+
+# ── 커스텀 프롬프트 읽기 ─────────────────────────────────────
+PROMPTS_FILE="$HOME/.2nd-brain-ui/hermes-prompts.json"
+
+read_hermes_prompt() {
+  local job="$1"   # ingest | lint | summary | gap
+  if [[ ! -f "$PROMPTS_FILE" ]]; then echo ""; return; fi
+  python3 -c "
+import json, sys
+try:
+    d = json.load(open('$PROMPTS_FILE'))
+    print(d.get('$job', {}).get('systemPrompt', '').strip())
+except:
+    print('')
+" 2>/dev/null || echo ""
+}
+
 # ── 명령어별 함수 ─────────────────────────────────────────────
 
 cmd_status() {
@@ -177,21 +236,67 @@ cmd_run_ingest() {
   sect "Daily Ingest 즉시 실행"
   info "Job: $JOB_INGEST (2nd-daily-ingest)"
   info "inbox/ 파일을 지금 처리합니다..."
+
+  local custom_prompt
+  custom_prompt=$(read_hermes_prompt "ingest")
+
   hermes cron run "$JOB_INGEST" --accept-hooks
+
+  if [[ -n "$custom_prompt" ]]; then
+    local inbox_files inbox_content
+    inbox_files=$(ls "$HOME/2nd/inbox/"*.md 2>/dev/null || true)
+    if [[ -n "$inbox_files" ]]; then
+      inbox_content=$(cat $inbox_files 2>/dev/null | head -c 8000)
+      info "커스텀 프롬프트로 inbox 보완 분석 중..."
+      call_llm "$custom_prompt" \
+        && ok "커스텀 프롬프트 분석 완료" \
+        || warn "커스텀 프롬프트 분석 실패 (hermes cron은 정상 완료)"
+    fi
+  fi
   ok "트리거 완료 — Telegram으로 결과 수신 대기"
 }
 
 cmd_run_lint() {
   sect "Weekly Lint 즉시 실행"
   info "Job: $JOB_LINT (2nd-weekly-lint)"
+
+  local custom_prompt
+  custom_prompt=$(read_hermes_prompt "lint")
+
   hermes cron run "$JOB_LINT" --accept-hooks
+
+  if [[ -n "$custom_prompt" ]]; then
+    local wiki_content
+    wiki_content=$(find "$HOME/2nd/concepts" "$HOME/2nd/entities" -name "*.md" 2>/dev/null \
+      | head -20 | xargs cat 2>/dev/null | head -c 8000 || true)
+    if [[ -n "$wiki_content" ]]; then
+      info "커스텀 프롬프트로 문서 품질 보완 검토 중..."
+      call_llm "$custom_prompt" \
+        && ok "커스텀 프롬프트 검토 완료" \
+        || warn "커스텀 프롬프트 검토 실패 (hermes cron은 정상 완료)"
+    fi
+  fi
   ok "트리거 완료 — Telegram으로 결과 수신 대기"
 }
 
 cmd_run_summary() {
   sect "Weekly Summary 즉시 실행"
   info "Job: $JOB_SUMMARY (2nd-weekly-summary)"
+
+  local custom_prompt
+  custom_prompt=$(read_hermes_prompt "summary")
+
   hermes cron run "$JOB_SUMMARY" --accept-hooks
+
+  if [[ -n "$custom_prompt" ]]; then
+    local recent_activity
+    recent_activity=$(git -C "$HOME/2nd" log --oneline --since="7 days ago" 2>/dev/null \
+      | head -20 || echo "git 이력 없음")
+    info "커스텀 프롬프트로 주간 요약 보완 중..."
+    call_llm "최근 7일 활동:\n$recent_activity\n\n$custom_prompt" \
+      && ok "커스텀 프롬프트 요약 완료" \
+      || warn "커스텀 프롬프트 요약 실패 (hermes cron은 정상 완료)"
+  fi
   ok "트리거 완료 — Telegram으로 결과 수신 대기"
 }
 
@@ -203,6 +308,13 @@ cmd_run_gap() {
   if [[ ! -f "$GAP_SCRIPT" ]]; then
     fail "gate-c-analyze.sh 없음: $GAP_SCRIPT"
     exit 1
+  fi
+
+  local custom_prompt
+  custom_prompt=$(read_hermes_prompt "gap")
+  if [[ -n "$custom_prompt" ]]; then
+    info "커스텀 시스템 프롬프트 적용됨 (UI Settings → Hermes → 갭 분석)"
+    export GATE_C_SYSTEM_PROMPT="$custom_prompt"
   fi
 
   if $telegram; then

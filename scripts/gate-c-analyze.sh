@@ -9,6 +9,41 @@ set -eo pipefail
 export PATH="$HOME/.local/bin:$HOME/.npm-global/bin:/usr/local/bin:$PATH"
 [ -f "$HOME/.local/bin/env" ] && . "$HOME/.local/bin/env"
 
+# ── LLM 호출 (claude -p 실패 시 openrouter fallback) ─────────
+call_llm() {
+  local prompt="$1"
+  for i in 1 2; do
+    local result
+    if result=$(echo "$prompt" | claude -p "$prompt" 2>/dev/null) && [[ -n "$result" ]]; then
+      echo "$result"; return 0
+    fi
+    [[ $i -eq 1 ]] && { echo "⚠️  claude -p 1차 실패 → 5초 후 재시도" >&2; sleep 5; }
+  done
+  echo "⚠️  claude -p offline → OpenRouter fallback 시도" >&2
+  local or_key=""
+  [[ -f "$HOME/.hermes/.env" ]] && \
+    or_key=$(grep -E '^OPENROUTER_API_KEY=' "$HOME/.hermes/.env" | cut -d= -f2- | tr -d '"' | tr -d "'")
+  if [[ -n "$or_key" ]]; then
+    local body
+    body=$(python3 -c "
+import json, sys
+print(json.dumps({'model':'openai/gpt-4o-mini','messages':[{'role':'user','content':sys.argv[1]}]}))
+" "$prompt" 2>/dev/null)
+    local resp
+    resp=$(curl -sf --max-time 30 "https://openrouter.ai/api/v1/chat/completions" \
+      -H "Authorization: Bearer $or_key" \
+      -H "Content-Type: application/json" \
+      -d "$body" 2>/dev/null \
+      | python3 -c "import json,sys; d=json.load(sys.stdin); print(d['choices'][0]['message']['content'])" 2>/dev/null)
+    if [[ -n "$resp" ]]; then
+      echo "✅ OpenRouter fallback 성공" >&2
+      echo "$resp"; return 0
+    fi
+  fi
+  echo "❌ LLM 응답 실패 (claude -p offline, openrouter 불가)"
+  return 1
+}
+
 GRAPH="$HOME/2nd/.ua/knowledge-graph.json"
 REPORT="$HOME/2nd/.ua/gap-report.md"
 DELIVER=false
@@ -139,9 +174,7 @@ LAYER_ENTITIES=$(extract LAYER_ENTITIES)
 echo "📊 추출 완료: ${TOTAL_NODES}노드 · ${TOTAL_EDGES}엣지" >&2
 
 # ── 3. Claude -p 분석 ────────────────────────────────────────
-PROMPT="당신은 개인 지식관리 시스템(PKM) 전문가다. 아래는 ~/2nd 드론 도메인 지식그래프 구조 분석 데이터다. 이를 해석해서 실용적인 보고서를 작성해줘.
-
-== 구조 데이터 ($(date '+%Y-%m-%d')) ==
+DATA_BLOCK="== 구조 데이터 ($(date '+%Y-%m-%d')) ==
 - 전체: ${TOTAL_NODES}노드 · ${TOTAL_EDGES}엣지
 - 고립 노드: ${ISOLATED}
 - 과부하 허브 (연결 8+): ${HIGH_DEG}
@@ -180,9 +213,21 @@ PROMPT="당신은 개인 지식관리 시스템(PKM) 전문가다. 아래는 ~/2
 
 간결하고 실용적으로. 드론 도메인 맥락 반영 필수."
 
-echo "🤖 Claude 분석 중..." >&2
-ANALYSIS=$(claude -p "$PROMPT" 2>/dev/null) || {
-  ANALYSIS="❌ claude -p 분석 실패. claude CLI 로그인 상태 확인 필요."
+# UI Settings에서 커스텀 시스템 프롬프트가 있으면 사용, 없으면 기본값
+if [[ -n "${GATE_C_SYSTEM_PROMPT:-}" ]]; then
+  PROMPT="${GATE_C_SYSTEM_PROMPT}
+
+${DATA_BLOCK}"
+  echo "🎛  커스텀 프롬프트 적용 (UI Settings → Hermes → 갭 분석)" >&2
+else
+  PROMPT="당신은 개인 지식관리 시스템(PKM) 전문가다. 아래는 ~/2nd 드론 도메인 지식그래프 구조 분석 데이터다. 이를 해석해서 실용적인 보고서를 작성해줘.
+
+${DATA_BLOCK}"
+fi
+
+echo "🤖 LLM 분석 중 (claude -p → openrouter fallback)..." >&2
+ANALYSIS=$(call_llm "$PROMPT") || {
+  ANALYSIS="❌ LLM 분석 실패 (claude -p offline, openrouter 불가). claude CLI 로그인 상태 확인 필요."
 }
 
 # ── 4. 파일 저장 ─────────────────────────────────────────────
