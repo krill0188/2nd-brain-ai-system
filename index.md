@@ -3,9 +3,14 @@
 > Complete catalog of active canonical pages. Each entry is a wikilink followed by
 > a one-line summary, sorted alphabetically within its section.
 >
-> Total pages: 39
+> Total pages: 43
 
 ## Entities
+
+- [[ardupilot]] — ArduPilot 오픈소스 자동조종 소프트웨어: 기체 유형, EKF3, SITL.
+- [[mavlink-protocol]] — MAVLink 경량 직렬 메시지 프로토콜: 버전, 메시지, MAV_CMD.
+- [[pixhawk]] — PX4 호환 오픈 하드웨어 비행 제어기 플랫폼: 모델, 센서, 커넥터.
+- [[px4-flight-stack]] — PX4 오픈소스 드론 비행 제어 소프트웨어: 모듈, uORB, SITL.
 
 ## Concepts
 

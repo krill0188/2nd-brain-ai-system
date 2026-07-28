@@ -248,3 +248,19 @@
   - `log.md` — this entry
 - Cross-links: 새 6개 페이지는 기존 canonical 페이지와 상호 연결
 - Tags: `swarm`, `drone-ai`, `datalink`, `drone-hw`, `drone-sw`, `ai-agent`
+
+## [2026-07-28] ingest | inbox 드론 엔티티 4종 canonical 승격
+
+- 수집: `inbox/entity-*.md` 4개 파일
+- 원본 이동: `inbox/entity-*.md` → `raw/articles/` 4개 파일
+- Canonical 생성:
+  - `entities/pixhawk.md` — Pixhawk 하드웨어 플랫폼 엔티티
+  - `entities/ardupilot.md` — ArduPilot 비행 스택 엔티티  
+  - `entities/mavlink-protocol.md` — MAVLink 통신 프로토콜 엔티티
+  - `entities/px4-flight-stack.md` — PX4 비행 스택 엔티티
+- 업데이트:
+  - `index.md` — 4개 Entities 항목 추가, total pages 39 → 43
+  - `log.md` — this entry
+- 이동: 원본 4개 파일 `inbox/processed/`로 이동 완료
+- Cross-links: 4개 엔티티 페이지는 PX4/ArduPilot/MAVLink/DroneCAN/GCS 등 기존 개념 페이지와 상호 연결
+- Tags: `drone-hw`, `drone-sw`, `datalink`, `drone`
