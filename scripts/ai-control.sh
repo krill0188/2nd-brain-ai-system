@@ -235,7 +235,16 @@ cmd_ping() {
 cmd_run_ingest() {
   sect "Daily Ingest 즉시 실행"
   info "Job: $JOB_INGEST (2nd-daily-ingest)"
-  info "inbox/ 파일을 지금 처리합니다..."
+
+  # inbox/ 비어 있으면 자동 수집 먼저 실행
+  local inbox_count
+  inbox_count=$(ls "$HOME/2nd/inbox/"*.md 2>/dev/null | wc -l | tr -d ' ')
+  if [[ "$inbox_count" -eq 0 ]]; then
+    info "inbox/ 비어 있음 → fetch-inbox.sh 자동 수집 실행"
+    "$HOME/2nd/scripts/fetch-inbox.sh" 2>/dev/null || warn "fetch-inbox.sh 실패 (계속 진행)"
+  else
+    info "inbox/ ${inbox_count}개 파일 발견 → 처리 시작"
+  fi
 
   local custom_prompt
   custom_prompt=$(read_hermes_prompt "ingest")
