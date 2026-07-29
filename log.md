@@ -12,6 +12,33 @@
 > rotate the completed file to `log-YYYY.md` and begin a new `log.md`; preserve the
 > completed file unchanged.
 
+## [2026-07-30] ingest | RSS 뉴스 및 YOLO 릴리스 인제스트
+
+- Source files from `inbox/`:
+  - `fetch-2026-07-29-rss-dronedj.md`
+  - `fetch-2026-07-29-rss-dronelife.md`
+  - `fetch-2026-07-29-rss-oscarliang-fpv.md`
+  - `fetch-2026-07-29-rss-suasnews-regulation.md`
+  - `fetch-2026-07-29-rss-suasnews.md`
+  - `fetch-2026-07-30-rss-dronedj.md`
+  - `fetch-2026-07-30-rss-dronelife.md`
+  - `fetch-2026-07-30-rss-suasnews.md`
+  - `fetch-2026-07-30-yolo.md`
+- Created entities:
+  - `entities/doordash-air.md` — DoorDash Air FAA Part 135 인증
+  - `entities/droneshield.md` — DroneShield RfAI-3 AI 엔진
+  - `entities/perceptual-robotics.md` — 영국 풍력 터빈 검사 드론 기업
+  - `entities/terra-drone.md` — 일본 드론 배터리 사업
+  - `entities/xtend-ai-robotics.md` — XTEND-JFB $15억 합병
+- Created concepts:
+  - `concepts/dji-everest-mapping.md` — 에베레스트 매핑 프로젝트
+  - `concepts/dji-terra.md` — DJI Terra AI 매핑 소프트웨어
+  - `concepts/fcc-drone-regulations.md` — FCC 외국 드론 규제 정책
+  - `concepts/lockheed-martin-morfius.md` — 드론 스웜 대응 시스템
+  - `concepts/yolo-v8-4-112.md` — YOLO v8.4.112 릴리스 정보
+- Updated: `index.md` (67 pages), `log.md`
+- Moved sources to: `inbox/processed/` (9 files)
+
 ## [2026-07-21] ingest | 2nd-Brain 개인지식 관리 원본 배치
 
 - Selection: `understand-chat` identified the 2nd-Brain PKM core subgraph and its one-hop canonical neighbors; their leading frontmatter referenced 13 unique raw sources.
@@ -305,3 +332,36 @@
   
 - 이동된 raw sources:
   - 모두 `inbox/processed/`로 이동
+
+## [2026-07-27] ingest | arXiv 논문 3개 수집
+
+- **voice-control**: `raw/papers/voice-control/lim2025-taking-flight-with-dialogue.md`
+  - Title: Taking Flight with Dialogue: Enabling Natural Language Control for PX4-based Drone Agent
+  - Topics: PX4, ROS2, LLM, VLM, voice control
+  - Source: arXiv:2506.07509 [cs.RO]
+
+- **swarm**: `raw/papers/swarm/cai2026-progress-aware-docking.md`
+  - Title: A Progress-Aware Leader-Follower Midair Docking System for Dual-Drone Aerial Manipulation  
+  - Topics: Leader-Follower, dual-drone docking, PX4, ROS2
+  - Source: arXiv:2605.29410 [cs.RO], IEEE CASE 2026
+
+- **drone-sw**: `raw/papers/drone-sw/jacinto2024-pegasus-simulator.md`
+  - Title: Pegasus Simulator: An Isaac Sim Framework for Multiple Aerial Vehicles Simulation
+  - Topics: PX4, ROS2, NVIDIA Isaac Sim, multi-drone simulation
+  - Source: arXiv:2307.05263 [cs.RO], IEEE ICUAS 2024
+
+## [2026-07-27] ingest | 추가 arXiv 논문 6개 수집
+
+- **datalink**: 
+  - `koubaa2019-mavlink-survey.md` — MAVLink 종합 서베이 (IEEE Access 2019)
+  - `allouch2019-mavsec.md` — MAVLink 보안 프로토콜 (IWCMC 2019)
+
+- **swarm**: 
+  - `li2025-airswarm.md` — COTS 드론 멀티-UAV 플랫폼 (arXiv 2025)
+
+- **drone-ai**: 
+  - `shapira2025-icdnet.md` — Visual-Inertial SLAM 딥러닝 (arXiv 2025)
+  - `radwan2024-uav-slam-gpsdenied.md` — GPS 없는 환경 3D SLAM (IEEE ICUAS 2024)
+
+- **drone-hw**: 
+  - `danial2025-microdrone-slam.md` — Micro 드론 단안 SLAM (arXiv 2025)

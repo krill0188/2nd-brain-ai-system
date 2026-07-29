@@ -10,42 +10,42 @@ tags: [drone, hardware, news]
 
 # oscarliang-fpv 최신 동향 (2026-07-29)
 
-## Why Your Betaflight Drone Won’t Arm? Let’s Troubleshoot and Fix it.
-- 링크: https://oscarliang.com/quad-arming-issue-fix/
-- 날짜: Mon, 27 Jul 2026 23:00:57 +0000
+## How to Setup the Radiomaster TX16S MK3 Radio Transmitter and How to Use It
+- 링크: https://oscarliang.com/setup-radiomaster-tx16s-mk3/
+- 날짜: Mon, 13 Jul 2026 19:26:37 +0000
 
-Why Your Betaflight Drone Won’t Arm? Let’s Troubleshoot and Fix it.
-One of the most common problems beginners encounter is when a Betaflight drone refuses to arm. You flip the arm switch… and nothing happens. This is usually not a hardware failure. Betaflight includes many safety…
-The post Why Your Betaflight Drone Won’t Arm? Let’s Troubleshoot and Fix it. appeared first on Oscar Liang.
+How to Setup the Radiomaster TX16S MK3 Radio Transmitter and How to Use It
+For beginners, the Radiomaster TX16S MK3 can feel overwhelming at first, there are so many menus and options. But to get started, you only need to understand the basics: how to create a model, setup…
+The post How to Setup the Radiomaster TX16S MK3 Radio Transmitter and How to Use It appeared first on Oscar Liang.
 
-## Review: BetaFPV Meteor75 Pro II Tiny Whoop with DJI O4 Wide Air Unit
-- 링크: https://oscarliang.com/betafpv-meteor75-pro-dji-o4-wide/
-- 날짜: Sat, 25 Jul 2026 13:05:38 +0000
+## I have a Patreon & Giveaway Announcement!
+- 링크: https://oscarliang.com/patreon-support-announcement/
+- 날짜: Sun, 12 Jul 2026 23:00:08 +0000
 
-Review: BetaFPV Meteor75 Pro II Tiny Whoop with DJI O4 Wide Air Unit
-DJI recently released the new O4 Wide Air Unit, and the first BNF tiny whoop to support it is the BetaFPV Meteor75 Pro II. In this review, I will check out how well this micro…
-The post Review: BetaFPV Meteor75 Pro II Tiny Whoop with DJI O4 Wide Air Unit appeared first on Oscar Liang.
+I have a Patreon & Giveaway Announcement!
+I’m excited to announce that I’m now on Patreon! If you think my content is worth a couple of dollars per month, consider signing up. You support will not only help me keep making new…
+The post I have a Patreon & Giveaway Announcement! appeared first on Oscar Liang.
 
-## Review: DJI O4 Wide Air Unit — Improved FOV with Built-In Wide-Angle Lens
-- 링크: https://oscarliang.com/dji-o4-wide-air-unit/
-- 날짜: Thu, 23 Jul 2026 23:00:42 +0000
+## FPV Pilot’s Guide to 3D Printing: How to Get Started and Create Custom Drone Parts
+- 링크: https://oscarliang.com/3d-printer/
+- 날짜: Fri, 10 Jul 2026 23:00:16 +0000
 
-Review: DJI O4 Wide Air Unit — Improved FOV with Built-In Wide-Angle Lens
-One of the biggest complaints about the original DJI O4 Air Unit has always been its narrow FOV, and DJI is finally doing something about it. When I reviewed the Flywoo wide-angle lens for the…
-The post Review: DJI O4 Wide Air Unit — Improved FOV with Built-In Wide-Angle Lens appeared first on Oscar Liang.
+FPV Pilot’s Guide to 3D Printing: How to Get Started and Create Custom Drone Parts
+3D printing has opened up a whole new world of possibilities for FPV drone enthusiasts, allowing you to experiment, customize, and create like never before. In this tutorial, we will explore the basics of 3D…
+The post FPV Pilot’s Guide to 3D Printing: How to Get Started and Create Custom Drone Parts appeared first on Oscar Liang.
 
-## Review: HGLRC Talon Pro 3-Inch Cinewhoop — Read This Before You Buy
-- 링크: https://oscarliang.com/hglrc-talon-pro-3inch-cinewhoop/
-- 날짜: Mon, 20 Jul 2026 13:36:45 +0000
+## Review: DJI Osmo Action 6 vs GoPro Hero 13 Black – Which Camera Is Better for FPV?
+- 링크: https://oscarliang.com/dji-osmo-action-6/
+- 날짜: Wed, 08 Jul 2026 18:33:18 +0000
 
-Review: HGLRC Talon Pro 3-Inch Cinewhoop — Read This Before You Buy
-Yes, we are reviewing yet another cinewhoop. This time it is the HGLRC Talon Pro 3-inch. What makes it different? The camera cage is removable and can be installed on a different quad, so in…
-The post Review: HGLRC Talon Pro 3-Inch Cinewhoop — Read This Before You Buy appeared first on Oscar Liang.
+Review: DJI Osmo Action 6 vs GoPro Hero 13 Black – Which Camera Is Better for FPV?
+The best action camera is not always the best once it is strapped to an FPV drone, because FPV has very different requirements when it comes to weight, image quality, and stabilization. In this review,…
+The post Review: DJI Osmo Action 6 vs GoPro Hero 13 Black – Which Camera Is Better for FPV? appeared first on Oscar Liang.
 
-## How to Connect/Flash FC to Betaflight with Broken USB Port?
-- 링크: https://oscarliang.com/connect-fc-broken-usb/
-- 날짜: Fri, 17 Jul 2026 23:00:27 +0000
+## Review: DJI Neo 2 Selfie/FPV Drone – The Pros and Cons and Best Settings
+- 링크: https://oscarliang.com/dji-neo-2/
+- 날짜: Sat, 04 Jul 2026 23:00:49 +0000
 
-How to Connect/Flash FC to Betaflight with Broken USB Port?
-USB port falling off is not uncommon in flight controllers. If your FC has a broken USB port, can’t connect to Betaflight (or INAV Configurator) or flash firmware, here are some fixes you can attempt…
-The post How to Connect/Flash FC to Betaflight with Broken USB Port? appeared first on Oscar Liang.
+Review: DJI Neo 2 Selfie/FPV Drone – The Pros and Cons and Best Settings
+The DJI Neo 2 is one of the most interesting drones DJI has released in years — not because it’s the most powerful, but because it tries to be everything at once: a selfie drone,…
+The post Review: DJI Neo 2 Selfie/FPV Drone – The Pros and Cons and Best Settings appeared first on Oscar Liang.

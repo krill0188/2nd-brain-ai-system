@@ -10,37 +10,37 @@ tags: [drone, ops-mission, news]
 
 # dronelife 최신 동향 (2026-07-29)
 
-## Designing a Heavy Lift Drone from the Ground Up: PyroDelta Energy on this Episode of the Drone Radio Show!
-- 링크: https://dronelife.com/2026/07/28/designing-a-heavy-lift-drone-from-the-ground-up-pyrodelta-energy-on-this-episode-of-the-drone-radio-show/
-- 날짜: Tue, 28 Jul 2026 16:32:34 +0000
+## After 700 Drone Seizures, What Did the FIFA World Cup Really Prove?
+- 링크: https://dronelife.com/2026/07/27/fifa-world-cup-drone-security-700-seizures/
+- 날짜: Mon, 27 Jul 2026 18:27:13 +0000
 
-In this episode of the Drone Radio Show, Michael Abdelmaseh talks to host Randy Goers about the engineering behind PyroDelta’s patented Capillary Casting process, why the company believes waste heat is one of the most overlooked energy sources in aviation, what it takes to compete in one of DARPA’s most demanding drone competitions, and where […]
-The post Designing a Heavy Lift Drone from the Ground Up: PyroDelta Energy on this Episode of the Drone Radio Show! appeared first on DRONELIFE.
+The tournament suggests that layered counter-drone security can work. The next challenge may be preventing unnecessary incidents before they happen. For more than a year, the commercial drone industry watched preparations for the FIFA World Cup with a mix of optimism and concern. Could agencies coordinate across dozens of venues? Would local law enforcement have […]
+The post After 700 Drone Seizures, What Did the FIFA World Cup Really Prove? appeared first on DRONELIFE.
 
-## Don’t Miss Mike Moulton on the Public Safety Drone Review, August 4
-- 링크: https://dronelife.com/2026/07/28/public-safety-drone-review-mike-moulton-august-4/
-- 날짜: Tue, 28 Jul 2026 14:37:00 +0000
+## New FCC Language Reveals Next Phase of Trusted Drone Policy
+- 링크: https://dronelife.com/2026/07/27/fcc-conditional-drone-approvals-onshoring-framework/
+- 날짜: Mon, 27 Jul 2026 18:08:14 +0000
 
-Join us Tuesday, August 4 at 3 p.m. ET for the next edition of the Public Safety Drone Review, presented by DRONELIFE and DRONERESPONDERS. Register here for the free webcast. Hosted by DRONELIFE Editor in Chief Miriam McNabb, DRONERESPONDERS Director Charles Werner, and public safety aviation expert Mike O’Shea, the monthly livestream brings together leaders […]
-The post Don’t Miss Mike Moulton on the Public Safety Drone Review, August 4 appeared first on DRONELIFE.
+Latest FCC notice suggests Conditional Approval is becoming a long-term compliance framework rather than a temporary exemption program The Federal Communications Commission (FCC) has added two more uncrewed aircraft systems (UAS) to its growing list of devices exempt from the agency’s Covered List. But the most significant development may not be the addition of two […]
+The post New FCC Language Reveals Next Phase of Trusted Drone Policy appeared first on DRONELIFE.
 
-## How the World Is Addressing Human Factors in Drone Operations
-- 링크: https://dronelife.com/2026/07/28/drone-human-factors-regulations/
-- 날짜: Tue, 28 Jul 2026 14:00:15 +0000
+## Terra Drone to Launch Japan-Made Drone Battery Business
+- 링크: https://dronelife.com/2026/07/27/terra-drone-to-launch-japan-made-drone-battery-business/
+- 날짜: Mon, 27 Jul 2026 15:03:52 +0000
 
-Part 2 of DRONELIFE’s Exclusive Series: The Human Edge: People, Perception, and the Future of Drone Operations As commercial drone operations become more complex, regulators around the world are working to address new safety challenges. Much of that effort has focused on aircraft, airspace, and beyond visual line of sight (BVLOS) operations. Increasingly, however, attention […]
-The post How the World Is Addressing Human Factors in Drone Operations appeared first on DRONELIFE.
+The Tokyo-listed company will mass-produce cylindrical-cell battery packs in Japan to reduce reliance on Chinese suppliers and serve NDAA-compliant defense customers. Terra Drone Corporation will mass-produce drone battery packs in Japan, the company announced July 27, 2026. The Tokyo-listed company will use cylindrical cells for its own industrial and defense drones. It will also sell […]
+The post Terra Drone to Launch Japan-Made Drone Battery Business appeared first on DRONELIFE.
 
-## Drone System Gives Landslide Responders a 3D Map Before They Send in Crews
-- 링크: https://dronelife.com/2026/07/28/drone-system-gives-landslide-responders-a-3d-map-before-they-send-in-crews/
-- 날짜: Tue, 28 Jul 2026 13:31:04 +0000
+## XTEND and JFB Announce $1.5 Billion Merger to Form XTEND AI Robotics
+- 링크: https://dronelife.com/2026/07/27/xtend-and-jfb-announce-1-5-billion-merger-to-form-xtend-ai-robotics/
+- 날짜: Mon, 27 Jul 2026 14:48:31 +0000
 
-JOUAV demonstrates real-time mapping technology that helps emergency managers assess hazards and plan safer rescue operations When landslides strike, emergency crews face an immediate challenge. They need to know where it is safe to send responders. Following a landslide in Pengshui County, Chongqing, on July 17, JOUAV demonstrated how real-time drone mapping can help emergency […]
-The post Drone System Gives Landslide Responders a 3D Map Before They Send in Crews appeared first on DRONELIFE.
+The all-stock deal, expected to close mid-2026, will create a Nasdaq-listed defense robotics company trading under the ticker XTND. Israeli defense technology company XTEND and JFB Construction Holdings (Nasdaq: JFB) announced a $1.5 billion all-stock merger July 27, 2026. The transaction will create XTEND AI Robotics, a publicly traded company. The new entity will focus […]
+The post XTEND and JFB Announce $1.5 Billion Merger to Form XTEND AI Robotics appeared first on DRONELIFE.
 
-## FlyGuys and TerraFort Cut Disaster Damage Assessments from Months to Days
-- 링크: https://dronelife.com/2026/07/28/flyguys-terrafort-ai-disaster-damage-assessment/
-- 날짜: Tue, 28 Jul 2026 13:17:17 +0000
+## Perceptual Robotics Gets £4 Million to Scale Turbine Inspection Drones
+- 링크: https://dronelife.com/2026/07/24/perceptual-robotics-gets-4-million-to-scale-turbine-inspection-drones/
+- 날짜: Fri, 24 Jul 2026 17:25:20 +0000
 
-Integrated platform cuts damage assessment time from months to 10 days following Super Typhoon Sinlaku FlyGuys and disaster intelligence company TerraFort have announced the results of a partnership that combines drone-based aerial data collection with AI-powered damage assessment. The companies say the approach helped complete a large-scale post-disaster assessment in the Northern Mariana Islands just […]
-The post FlyGuys and TerraFort Cut Disaster Damage Assessments from Months to Days appeared first on DRONELIFE.
+Bristol-based drone company adds Innovate UK backing and a fresh check from Investing for Purpose alongside follow-on from Loggerhead Ventures and One Planet Capital. Perceptual Robotics has secured more than £4 million (about $5.3 million) so far in 2026. The Bristol-based company will use the capital to expand its wind turbine inspection platform. It announced […]
+The post Perceptual Robotics Gets £4 Million to Scale Turbine Inspection Drones appeared first on DRONELIFE.

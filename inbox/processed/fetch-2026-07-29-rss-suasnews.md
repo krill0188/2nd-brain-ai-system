@@ -10,32 +10,26 @@ tags: [drone, ops-mission, news]
 
 # suasnews 최신 동향 (2026-07-29)
 
-## Event 38 and TB2 Aerospace Collaborate to Integrate DROPS Multi-Mission Payload System with E455
-- 링크: https://www.suasnews.com/2026/07/event-38-and-tb2-aerospace-collaborate-to-integrate-drops-multi-mission-payload-system-with-e455/
-- 날짜: Tue, 28 Jul 2026 14:27:13 +0000
+## Terra Drone Enters Japan-Made Battery Business for Drones
+- 링크: https://www.suasnews.com/2026/07/terra-drone-enters-japan-made-battery-business-for-drones/
+- 날짜: Mon, 27 Jul 2026 15:47:25 +0000
 
-Event 38 Unmanned Systems and TB2 Aerospace are pleased to announce a collaboration integrating TB2
+Terra Drone Corporation, a leading drone and Urban Air Mobility (UAM) technology company headquartered in
 
-## Axon Vision and ParaZero Introduce New ForceField Configuration forNon-Destructive Counter-UAS Interception
-- 링크: https://www.suasnews.com/2026/07/axon-vision-and-parazero-introduce-new-forcefield-configuration-fornon-destructive-counter-uas-interception/
-- 날짜: Tue, 28 Jul 2026 14:04:20 +0000
+## AutoFlight Showcases Advanced Air Mobility During Games of the Future 2026 in Astana, Kazakhstan
+- 링크: https://www.suasnews.com/2026/07/autoflight-showcases-advanced-air-mobility-during-games-of-the-future-2026-in-astana-kazakhstan/
+- 날짜: Mon, 27 Jul 2026 15:39:48 +0000
 
-The integrated solution combines Axon Vision’s ForceField solution with ParaZero’s autonomous DefendAir anti-drone net-based interceptor,
+AutoFlight, a global leader in Advanced Air Mobility (AAM), together with its strategic partner Alatau
 
-## FlyGuys and TerraFort Partner on AI-Powered Damage Assessments to Speed Disaster Aid After Typhoon Sinlaku
-- 링크: https://www.suasnews.com/2026/07/flyguys-and-terrafort-partner-on-ai-powered-damage-assessments-to-speed-disaster-aid-after-typhoon-sinlaku/
-- 날짜: Tue, 28 Jul 2026 13:56:09 +0000
+## RAF Air Cadets accredited to award recognised drone qualifications
+- 링크: https://www.suasnews.com/2026/07/raf-air-cadets-accredited-to-award-recognised-drone-qualifications/
+- 날짜: Mon, 27 Jul 2026 10:34:51 +0000
 
-FlyGuys, the reality data capture platform building the physical data infrastructure for the AI economy,
+Young people in the RAF Air Cadets can now gain nationally recognised drone qualifications, after
 
-## Siemens accelerates engineering simulation with a unified AI-powered Simcenter portfolio
-- 링크: https://www.suasnews.com/2026/07/siemens-accelerates-engineering-simulation-with-a-unified-ai-powered-simcenter-portfolio/
-- 날짜: Tue, 28 Jul 2026 13:27:23 +0000
+## Orqa Manufacturing Capacity Rises to 500K Products Annually at HQ as Rapid Expansion Continues
+- 링크: https://www.suasnews.com/2026/07/orqa-manufacturing-capacity-rises-to-500k-products-annually-at-hq-as-rapid-expansion-continues/
+- 날짜: Mon, 27 Jul 2026 09:13:51 +0000
 
-Siemens today announced availability of the latest Simcenter software release with significant enhancements across the
-
-## DroneShield Breaks the Detection Paradigm: RfAI-3 Senses Drones That Have Never Been Seen Before
-- 링크: https://www.suasnews.com/2026/07/droneshield-breaks-the-detection-paradigm-rfai-3-senses-drones-that-have-never-been-seen-before/
-- 날짜: Tue, 28 Jul 2026 13:20:32 +0000
-
-DroneShield a global leader in advanced counter-drone (CUAS) technology, today unveiled RfAI-3, the third generation of its
+● Rapid expansion of strategic partnerships in the US, Canada, Norway and Sweden lead to

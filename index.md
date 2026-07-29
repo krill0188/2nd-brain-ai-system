@@ -3,14 +3,19 @@
 > Complete catalog of active canonical pages. Each entry is a wikilink followed by
 > a one-line summary, sorted alphabetically within its section.
 >
-> Total pages: 58
+> Total pages: 67
 
 ## Entities
 
 - [[ardupilot]] — ArduPilot 오픈소스 자동조종 소프트웨어: 기체 유형, EKF3, SITL.
+- [[doordash-air]] — DoorDash의 FAA Part 135 인증 드론 배달 서비스 (2026-07).
+- [[droneshield]] — 호주 기반 드론 탐지/방어 기업, RfAI-3 AI 엔진 보유.
 - [[mavlink-protocol]] — MAVLink 경량 직렬 메시지 프로토콜: 버전, 메시지, MAV_CMD.
+- [[perceptual-robotics]] — 영국 풍력 터빈 검사 드론 플랫폼 기업.
 - [[pixhawk]] — PX4 호환 오픈 하드웨어 비행 제어기 플랫폼: 모델, 센서, 커넥터.
 - [[px4-flight-stack]] — PX4 오픈소스 드론 비행 제어 소프트웨어: 모듈, uORB, SITL.
+- [[terra-drone]] — 일본 드론/UAM 기업, 일본산 배터리 사업 진출 (2026-07).
+- [[xtend-ai-robotics]] — XTEND-JFB 합병 방위 로봇 기업, 나스닥 상장 예정.
 
 ## Concepts
 
@@ -28,6 +33,7 @@
 - [[qgroundcontrol]] — MAVLink 기반 오픈소스 GCS (크로스 플랫폼).
 - [[ros2-lyrical]] — ROS 2 Lyrical Luth 릴리스 (2026-06-23).
 - [[yolo]] — 실시간 객체 검출을 위한 딥러닝 아키텍처.
+- [[yolo-v8-4-112]] — YOLO v8.4.112 릴리스, export 지원 개선 (2026-07-29).
 - [[mavsdk-release]] — MAVSDK v3.17.2 릴리스 정보 (2026-07-17).
 - [[dronecan-deep]] — DroneCAN 프로토콜 상세: 설정, 펌웨어 업데이트, 문제 해결.
 - [[mavlink-protocol-deep]] — MAVLink v2 패킷 구조, XML 스키마, 마이크로서비스 패턴.
@@ -45,6 +51,10 @@
 - [[drone-regulations]] — FAA, EASA, 한국 규제, BVLOS, Remote ID, UTM.
 - [[drone-safety-failsafe]] — RTL, Geofence, Arming, Low Battery failsafe 시스템.
 - [[drone-simulation]] — Gazebo, jMAVSim, SITL, 멀티 기체 시뮬레이션.
+- [[dji-everest-mapping]] — DJI 드론 에베레스트 쿰부 얼음폭포 매핑 프로젝트.
+- [[dji-terra]] — DJI 매핑 소프트웨어, AI/thermal mapping 지원 (2026-07).
+- [[fcc-drone-regulations]] — FCC 외국 제조 드론 규제 정책 (2026-07).
+- [[lockheed-martin-morfius]] — 록히드마틴 드론 스웜 대응 시스템 (50대 동시 무력화).
 - [[dronecan-protocol]] — FC와 주변기기를 연결하는 오픈소스 CAN 버스 통신 프로토콜.
 - [[flight-controller-hardware]] — Holybro, CUAV FC 보드와 GPS, 텔레메트리, 컴패니언 컴퓨터.
 - [[flight-logging-analysis]] — ULog 포맷, Flight Review, pyulog, 비행 데이터 분석.

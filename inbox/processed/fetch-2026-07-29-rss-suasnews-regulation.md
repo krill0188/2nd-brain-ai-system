@@ -10,32 +10,32 @@ tags: [drone, regulations, news]
 
 # suasnews-regulation 최신 동향 (2026-07-29)
 
-## Webinar for GA Community – Electronic Conspicuity Mandate Consultation
-- 링크: https://www.suasnews.com/2026/07/webinar-for-ga-community-electronic-conspicuity-mandate-consultation/
-- 날짜: Tue, 28 Jul 2026 13:15:22 +0000
+## Unifly Joins SESAR JU to Advance the Future of the Digital European Sky
+- 링크: https://www.suasnews.com/2026/07/unifly-joins-sesar-ju-to-advance-the-future-of-the-digital-european-sky/
+- 날짜: Mon, 13 Jul 2026 20:15:27 +0000
 
-The CAA is holding webinar for the General Aviation community in relation to the CAA’s
+Unifly, a leading aviation technology company and provider of UAS Traffic Management (UTM) solutions, has
 
-## SESAR – Building the air traffic control platform of the future
-- 링크: https://www.suasnews.com/2026/07/sesar-building-the-air-traffic-control-platform-of-the-future/
-- 날짜: Thu, 23 Jul 2026 06:06:32 +0000
+## Electronic Conspicuity Isn’t Optional — It’s Airspace Etiquette
+- 링크: https://www.suasnews.com/2026/07/electronic-conspicuity-isnt-optional-its-airspace-etiquette/
+- 날짜: Thu, 09 Jul 2026 13:32:11 +0000
 
-Combining automation, AI, cloud technologies and service-oriented architectures, the SESAR-supported HAVEN project looks to deliver
+As BVLOS operations and docked drone-in-a-box solutions scale up, one thing becomes non-negotiable: other airspace
 
-## UK SORA General Operations Manual (GOM)
-- 링크: https://www.suasnews.com/2026/07/uk-sora-general-operations-manual-gom/
-- 날짜: Tue, 21 Jul 2026 17:16:40 +0000
+## Civil Aviation Authority issues guidance as counter-drone technology disrupts UK airspace
+- 링크: https://www.suasnews.com/2026/07/civil-aviation-authority-issues-guidance-as-counter-drone-technology-disrupts-uk-airspace/
+- 날짜: Mon, 06 Jul 2026 10:52:44 +0000
 
-The CAA recommends that all UK SORA UAS operators have an operations manual to comply
+The UK Civil Aviation Authority (CAA) has issued sweeping guidance to airspace users following a
 
-## Consultation on a Proposed Electronic Conspicuity Mandate in the UK
-- 링크: https://www.suasnews.com/2026/07/consultation-on-a-proposed-electronic-conspicuity-mandate-in-the-uk/
-- 날짜: Tue, 14 Jul 2026 16:10:34 +0000
+## Navigating UK SORA: A guide to the CAA’s Decision No. 60 on drone operations
+- 링크: https://www.suasnews.com/2026/07/navigating-uk-sora-a-guide-to-the-caas-decision-no-60-on-drone-operations/
+- 날짜: Sat, 04 Jul 2026 06:03:46 +0000
 
-The UK Civil Aviation Authority (CAA) is consulting on its proposed approach to an Electronic Conspicuity
+The UK Civil Aviation Authority has overhauled its guidance for specific drone operations under Decision No. 60. From crash mitigations to airspace containment, here is a comprehensive breakdown of the revised UK SORA framework and what it means for operators.
 
-## Clearing the Path to BVLOS at Scale: High Lander and Thirdeye Bring Multi-Aircraft Detect-and-Avoid to the Field
-- 링크: https://www.suasnews.com/2026/07/clearing-the-path-to-bvlos-at-scale-high-lander-and-thirdeye-bring-multi-aircraft-detect-and-avoid-to-the-field/
-- 날짜: Tue, 14 Jul 2026 08:39:48 +0000
+## FCC Takes Quick Action to Support Implementation of SAFER SKIES Act
+- 링크: https://www.suasnews.com/2026/07/fcc-takes-quick-action-to-support-implementation-of-safer-skies-act/
+- 날짜: Fri, 03 Jul 2026 06:55:52 +0000
 
-Across the world, lower-level airspace operates under visual flight rules, where many crewed aircraft fly
+The Commission issued a series of actions and guidance today, including: · Sale and Importation
