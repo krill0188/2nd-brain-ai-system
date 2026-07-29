@@ -6,6 +6,7 @@ type: concept
 tags: [drone-sw, PX4, flight-controller, companion-computer]
 sources: [raw/articles/px4-system-architecture.md]
 confidence: high
+domain: flight-control
 contested: false
 contradictions: []
 ---

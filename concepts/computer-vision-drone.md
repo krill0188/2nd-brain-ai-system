@@ -6,6 +6,7 @@ type: concept
 tags: [drone-ai, computer-vision, SLAM, detection, tracking, YOLO]
 sources: []
 confidence: medium
+domain: ai-autonomy
 contested: false
 contradictions: []
 ---

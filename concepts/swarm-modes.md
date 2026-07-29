@@ -7,6 +7,7 @@ tags: [swarm, drone-ai, ai-agent]
 sources:
   - inbox/processed/mastervault-swarm-architecture.md
 confidence: medium
+domain: ai-autonomy
 contested: false
 contradictions: []
 ---

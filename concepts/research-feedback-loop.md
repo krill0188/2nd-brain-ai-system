@@ -13,6 +13,7 @@ sources:
   - "raw/notebooklm/llm-wiki-zotero-notebooklm-youtube.md"
   - "raw/notebooklm/notebooklm-py-github.md"
 confidence: medium
+domain: ai-autonomy
 contested: false
 contradictions: []
 ---

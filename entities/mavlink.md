@@ -7,6 +7,7 @@ tags: [datalink, drone-sw]
 sources:
   - raw/articles/mavlink-protocol-entity-reference.md
 confidence: high
+domain: comms-protocol
 contested: false
 contradictions: []
 ---

@@ -13,6 +13,7 @@ sources:
   - "raw/notebooklm/llm-wiki-zotero-notebooklm-youtube.md"
   - "raw/youtube/📺 LLM Wiki를 업그레이드하는 외부 지식 시스템! 연구자를 위한 최강의 조합 Zotero × Notebook × Obsidian x Claude Code.md"
 confidence: medium
+domain: ai-autonomy
 contested: false
 contradictions: []
 ---

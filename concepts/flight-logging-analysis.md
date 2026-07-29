@@ -6,6 +6,7 @@ type: concept
 tags: [drone-sw, logging, ulog, flight-review, analysis, debugging]
 sources: []
 confidence: medium
+domain: flight-control
 contested: false
 contradictions: []
 note: "Knowledge-based page - no raw source ingested yet"

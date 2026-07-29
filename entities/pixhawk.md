@@ -7,6 +7,7 @@ tags: [drone-hw, drone-sw]
 sources:
   - raw/articles/pixhawk-flight-controller-entity-reference.md
 confidence: high
+domain: hardware
 contested: false
 contradictions: []
 ---

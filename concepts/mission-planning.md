@@ -6,6 +6,7 @@ type: concept
 tags: [drone, drone-sw, mission, waypoint, survey, QGC, planning]
 sources: []
 confidence: medium
+domain: ops-mission
 contested: false
 contradictions: []
 note: "Knowledge-based page - no raw source ingested yet"

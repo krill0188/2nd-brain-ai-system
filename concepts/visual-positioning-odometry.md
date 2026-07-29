@@ -6,6 +6,7 @@ type: concept
 tags: [drone-ai, computer-vision, vio, slam, odometry, positioning]
 sources: []
 confidence: medium
+domain: hardware
 contested: false
 contradictions: []
 note: "Knowledge-based page - no raw source ingested yet"

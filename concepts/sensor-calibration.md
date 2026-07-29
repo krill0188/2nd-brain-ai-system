@@ -6,6 +6,7 @@ type: concept
 tags: [drone-sw, drone-hw, calibration, IMU, compass, accel, gyro, baro]
 sources: []
 confidence: medium
+domain: hardware
 contested: false
 contradictions: []
 note: "Knowledge-based page - no raw source ingested yet"

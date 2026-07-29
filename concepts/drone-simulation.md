@@ -6,6 +6,7 @@ type: concept
 tags: [drone-sw, simulation, gazebo, sitl, jmavsim, testing]
 sources: [raw/articles/mastervault-px4-devnotes.md, raw/articles/px4-architecture.md]
 confidence: high
+domain: flight-control
 contested: false
 contradictions: []
 ---

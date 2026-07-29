@@ -7,6 +7,7 @@ tags: [drone-hw, drone-sw, datalink]
 sources:
   - inbox/processed/px4-dronecan.md
 confidence: high
+domain: comms-protocol
 contested: false
 contradictions: []
 ---

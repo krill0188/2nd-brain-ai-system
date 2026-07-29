@@ -6,6 +6,7 @@ type: concept
 tags: [drone-sw, ArduPilot, flight-controller, HAL]
 sources: [raw/articles/ardupilot-architecture.md, raw/articles/mastervault-ardupilot-devnotes.md]
 confidence: high
+domain: flight-control
 contested: false
 contradictions: []
 ---

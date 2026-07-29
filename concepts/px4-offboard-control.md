@@ -6,6 +6,7 @@ type: concept
 tags: [drone-sw, ai-agent, offboard, companion-computer, autonomous]
 sources: [raw/articles/px4-ros2-offboard-control.md]
 confidence: high
+domain: flight-control
 contested: false
 contradictions: []
 ---

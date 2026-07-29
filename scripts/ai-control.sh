@@ -263,6 +263,12 @@ cmd_run_ingest() {
     fi
   fi
   ok "트리거 완료 — Telegram으로 결과 수신 대기"
+
+  # knowledge-graph.json 자동 갱신
+  if [[ -f "$HOME/2nd/scripts/update-graph.sh" ]]; then
+    info "knowledge-graph.json 갱신 중..."
+    bash "$HOME/2nd/scripts/update-graph.sh" 2>/dev/null && ok "그래프 갱신 완료" || warn "그래프 갱신 실패 (ingest는 정상 완료)"
+  fi
 }
 
 cmd_run_lint() {

@@ -6,6 +6,7 @@ type: concept
 tags: [drone-hw, rtk, gps, gnss, differential, precision, landing]
 sources: []
 confidence: medium
+domain: hardware
 contested: false
 contradictions: []
 note: "Knowledge-based page - no raw source ingested yet"

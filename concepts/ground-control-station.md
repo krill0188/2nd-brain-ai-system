@@ -6,6 +6,7 @@ type: concept
 tags: [drone-sw, GCS, QGroundControl, MAVLink, ground-control]
 sources: [raw/articles/px4-basic-concepts.md]
 confidence: high
+domain: gcs-software
 contested: false
 contradictions: []
 ---

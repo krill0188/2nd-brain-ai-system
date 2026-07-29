@@ -264,3 +264,44 @@
 - 이동: 원본 4개 파일 `inbox/processed/`로 이동 완료
 - Cross-links: 4개 엔티티 페이지는 PX4/ArduPilot/MAVLink/DroneCAN/GCS 등 기존 개념 페이지와 상호 연결
 - Tags: `drone-hw`, `drone-sw`, `datalink`, `drone`
+
+## [2026-07-29] ingest | inbox RSS 및 GitHub 릴리스 소스 15개 canonical 컴파일
+
+- 수집된 raw sources:
+  - `inbox/fetch-2026-07-29-rss-suasnews-regulation.md`
+  - `inbox/fetch-2026-07-29-rss-dronelife.md`
+  - `inbox/fetch-2026-07-29-rss-suasnews.md`
+  - `inbox/fetch-2026-07-29-rss-dronedj.md`
+  - `inbox/fetch-2026-07-29-rss-oscarliang-fpv.md`
+  - `inbox/fetch-2026-07-29-opencv.md`
+  - `inbox/fetch-2026-07-29-yolo.md`
+  - `inbox/fetch-2026-07-29-ros2.md`
+  - `inbox/fetch-2026-07-29-missionplanner.md`
+  - `inbox/fetch-2026-07-29-qgroundcontrol.md`
+  - `inbox/fetch-2026-07-29-pymavlink.md`
+  - `inbox/fetch-2026-07-29-mavsdk.md`
+  - `inbox/fetch-2026-07-29-betaflight.md`
+  - `inbox/fetch-2026-07-29-ardupilot.md`
+  - `inbox/fetch-2026-07-29-px4.md`
+
+- 생성된 canonical pages (concepts/):
+  - `concepts/betaflight.md` — domain: flight-control
+  - `concepts/opencv.md` — domain: ai-autonomy
+  - `concepts/yolo.md` — domain: ai-autonomy
+  - `concepts/ros2-lyrical.md` — domain: gcs-software
+  - `concepts/mission-planner.md` — domain: gcs-software
+  - `concepts/qgroundcontrol.md` — domain: gcs-software
+  - `concepts/pymavlink.md` — domain: comms-protocol
+  - `concepts/mavsdk-release.md` — domain: comms-protocol
+  - `concepts/ardupilot-plane-4-7.md` — domain: flight-control
+  - `concepts/px4-v1-17.md` — domain: flight-control
+  - `concepts/fpv-hardware.md` — domain: hardware
+  - `concepts/drone-news-regulations.md` — domain: regulations
+  - `concepts/drone-news-ops.md` — domain: ops-mission
+  - `concepts/drone-news-hardware.md` — domain: hardware
+
+- 업데이트된 navigation:
+  - `index.md` — 페이지 수 43 → 58, 새 항목 알파벳 순 추가
+  
+- 이동된 raw sources:
+  - 모두 `inbox/processed/`로 이동

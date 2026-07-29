@@ -6,6 +6,7 @@ type: concept
 tags: [swarm, drone-ai, multi-drone, formation, coordination]
 sources: [raw/articles/mastervault-recon-swarm.md, raw/articles/mastervault-swarm-architecture.md]
 confidence: medium
+domain: ai-autonomy
 contested: false
 contradictions: []
 ---

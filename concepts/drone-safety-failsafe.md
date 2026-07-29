@@ -6,6 +6,7 @@ type: concept
 tags: [drone, drone-sw, safety, failsafe, RTL, geofence]
 sources: [raw/articles/px4-basic-concepts.md, raw/articles/px4-flight-modes-dev.md]
 confidence: high
+domain: flight-control
 contested: false
 contradictions: []
 ---

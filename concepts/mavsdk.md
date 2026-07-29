@@ -6,6 +6,7 @@ type: concept
 tags: [drone-sw, MAVSDK, SDK, API, offboard]
 sources: []
 confidence: medium
+domain: comms-protocol
 contested: false
 contradictions: []
 ---

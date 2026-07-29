@@ -6,6 +6,7 @@ type: concept
 tags: [ai-agent, drone-ai, autonomous, decision-making, multi-agent]
 sources: []
 confidence: medium
+domain: ai-autonomy
 contested: false
 contradictions: []
 ---

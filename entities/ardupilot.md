@@ -7,6 +7,7 @@ tags: [drone-sw, drone]
 sources:
   - raw/articles/ardupilot-entity-reference.md
 confidence: high
+domain: flight-control
 contested: false
 contradictions: []
 ---

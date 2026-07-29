@@ -6,6 +6,7 @@ type: concept
 tags: [drone-sw, mavlink, mavlink2, security, signing, encryption, authentication]
 sources: []
 confidence: medium
+domain: comms-protocol
 contested: false
 contradictions: []
 note: "Knowledge-based page - no raw source ingested yet"

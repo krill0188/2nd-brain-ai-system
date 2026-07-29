@@ -9,6 +9,7 @@ sources:
   - inbox/processed/px4-uorb-messaging.md
   - inbox/processed/px4-system-architecture.md
 confidence: high
+domain: flight-control
 contested: false
 contradictions: []
 ---

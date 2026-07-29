@@ -9,6 +9,7 @@ sources:
   - inbox/processed/mavlink-xml-schema.md
   - inbox/processed/px4-mavlink.md
 confidence: high
+domain: comms-protocol
 contested: false
 contradictions: []
 ---

@@ -7,6 +7,7 @@ tags: [drone-sw, drone]
 sources:
   - raw/articles/px4-flight-stack-entity-reference.md
 confidence: high
+domain: flight-control
 contested: false
 contradictions: []
 ---

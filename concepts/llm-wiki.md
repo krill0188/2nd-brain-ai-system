@@ -14,6 +14,7 @@ sources:
   - "raw/notebooklm/llm-wiki-skill-github.md"
   - "raw/notebooklm/2026-07-16-all-notes.md"
 confidence: high
+domain: ai-autonomy
 contested: false
 contradictions: []
 ---

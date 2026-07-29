@@ -9,6 +9,7 @@ sources:
   - inbox/processed/px4-ros2-offboard-control.md
   - inbox/processed/px4-ros2-user-guide.md
 confidence: high
+domain: gcs-software
 contested: false
 contradictions: []
 ---

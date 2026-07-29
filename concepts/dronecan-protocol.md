@@ -6,6 +6,7 @@ type: concept
 tags: [drone-hw, drone-sw, datalink, CAN-bus]
 sources: [raw/articles/px4-dronecan.md]
 confidence: high
+domain: comms-protocol
 contested: false
 contradictions: []
 ---

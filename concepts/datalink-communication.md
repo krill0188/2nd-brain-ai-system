@@ -6,6 +6,7 @@ type: concept
 tags: [datalink, drone-sw, RF, LTE, telemetry, communication, C2]
 sources: []
 confidence: medium
+domain: comms-protocol
 contested: false
 contradictions: []
 ---

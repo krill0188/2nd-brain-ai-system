@@ -15,6 +15,7 @@ sources:
   - "raw/notebooklm/2026-07-16-all-notes.md"
   - "raw/notebooklm/understand-anything-github.md"
 confidence: medium
+domain: ai-autonomy
 contested: false
 contradictions: []
 ---

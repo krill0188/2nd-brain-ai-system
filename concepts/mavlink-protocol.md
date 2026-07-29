@@ -6,6 +6,7 @@ type: concept
 tags: [drone-sw, datalink, MAVLink, communication]
 sources: [raw/articles/mastervault-mavlink-reference.md, raw/articles/mavlink-xml-schema.md, raw/articles/px4-mavlink.md]
 confidence: high
+domain: comms-protocol
 contested: false
 contradictions: []
 ---

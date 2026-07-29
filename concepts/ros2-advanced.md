@@ -6,6 +6,7 @@ type: concept
 tags: [drone-sw, ros2, micro-ros, dds, qos, advanced, middleware]
 sources: []
 confidence: medium
+domain: gcs-software
 contested: false
 contradictions: []
 note: "Knowledge-based page - no raw source ingested yet"

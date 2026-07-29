@@ -6,6 +6,7 @@ type: concept
 tags: [drone-hw, battery, power, ESC, motor, LiPo]
 sources: [raw/articles/px4-basic-concepts.md, raw/articles/px4-hardware-overview.md]
 confidence: high
+domain: hardware
 contested: false
 contradictions: []
 ---

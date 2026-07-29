@@ -6,6 +6,7 @@ type: concept
 tags: [drone, regulations, UAS, FAA, EASA, BVLOS, compliance]
 sources: []
 confidence: medium
+domain: regulations
 contested: false
 contradictions: []
 note: "Knowledge-based page - no raw source ingested yet"

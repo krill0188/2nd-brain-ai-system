@@ -8,6 +8,7 @@ sources:
   - inbox/processed/mastervault-recon-swarm.md
   - inbox/processed/mastervault-swarm-architecture.md
 confidence: high
+domain: ops-mission
 contested: false
 contradictions: []
 ---

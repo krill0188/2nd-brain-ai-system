@@ -6,6 +6,7 @@ type: concept
 tags: [drone-sw, ROS2, MAVROS, micro-ROS, middleware]
 sources: [raw/articles/mastervault-ros2-devnotes.md]
 confidence: high
+domain: gcs-software
 contested: false
 contradictions: []
 ---

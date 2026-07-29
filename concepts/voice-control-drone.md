@@ -6,6 +6,7 @@ type: concept
 tags: [voice-control, drone-sw, ai-agent, NLP, speech]
 sources: []
 confidence: medium
+domain: ai-autonomy
 contested: false
 contradictions: []
 note: "Knowledge-based page - no raw source ingested yet"

@@ -6,6 +6,7 @@ type: concept
 tags: [drone-sw, tuning, pid, rate, attitude, position, control]
 sources: []
 confidence: medium
+domain: flight-control
 contested: false
 contradictions: []
 note: "Knowledge-based page - no raw source ingested yet"
