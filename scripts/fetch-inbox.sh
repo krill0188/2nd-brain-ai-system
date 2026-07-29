@@ -470,6 +470,8 @@ for line in open(conf):
     except Exception as ex:
         print(f"  ⚠️  youtube @{handle} 업로드 조회 실패: {ex}", file=sys.stderr); continue
 
+    from datetime import date, timedelta
+    cutoff = (date.today() - timedelta(days=45)).isoformat()
     written = 0
     for it in d.get("items", []):
         if written >= 2:
@@ -482,6 +484,8 @@ for line in open(conf):
         title = sn.get("title", "").strip()
         desc = re.sub(r"\s+", " ", sn.get("description", ""))[:500]
         published = sn.get("publishedAt", "")[:10]
+        if published and published < cutoff:
+            continue  # 오래된 백로그 영상 제외 (최근 45일만)
 
         fslug = re.sub(r"[^\w\s-]", "", title.lower())
         fslug = re.sub(r"[\s_]+", "-", fslug)[:60]
@@ -609,6 +613,10 @@ if items_out:
 else:
     print("  feed-only: 새 항목 없음")
 PYEOF
+
+# 영문 항목 한글 요약 부가 (원문+sha256 보존, claude CLI)
+chmod +x "$HOME/2nd/scripts/ko-summarize.sh" 2>/dev/null
+bash "$HOME/2nd/scripts/ko-summarize.sh" || true
 
 # 오늘의 뉴스 2장 브리핑 생성 (claude CLI, 실패해도 계속)
 bash "$HOME/2nd/scripts/daily-briefing.sh" || true

@@ -6,6 +6,7 @@
 - fetched(수집 시각) 자동 부여, 최신순 정렬, 최대 500개 유지
 사용: echo '[{...}]' | python3 news-feed-append.py
 """
+import hashlib
 import json
 import sys
 import os
@@ -39,6 +40,9 @@ def main():
             continue
         it.setdefault("fetched", now)
         it.setdefault("type", "news")
+        # 원문 무결성 해시 — 수집 시점의 제목+요약 원문 SHA-256 (변조 검증용)
+        it.setdefault("sha256", hashlib.sha256(
+            (it.get("title", "") + it.get("summary", "") + url).encode()).hexdigest())
         existing.append(it)
         seen.add(url)
         added += 1

@@ -1,10 +1,40 @@
 # YouTube 수집 채널 화이트리스트 (공신력 확보용)
 # 형식: @핸들|도메인|지역(KR/global)|메모
 # 도메인: flight-control | comms-protocol | hardware | gcs-software | ops-mission | regulations | ai-autonomy
-# 채널 추가: 이 파일에 한 줄 추가하면 다음 날 03:30부터 자동 수집
+# 채널 추가: 이 파일에 한 줄 추가하면 다음 날 03:30부터 자동 수집 (최근 45일 영상만)
 
-@PX4Autopilot|flight-control|global|PX4 공식 채널 (구독 1.5만)
-@Painless360|flight-control|global|기체 설정·튜토리얼 (구독 20만)
-@JoshuaBardwell|hardware|global|FPV 하드웨어·리뷰 (구독 43만)
-@uavcoach|ops-mission|global|드론 운용·교육 (구독 9만)
-@dji|hardware|global|DJI 공식 — 신제품·기술 (구독 640만)
+# ── 비행제어 ──
+@PX4Autopilot|flight-control|global|PX4 공식
+@Painless360|flight-control|global|기체 설정·튜토리얼
+@Auterion|flight-control|global|PX4 기업 (엔터프라이즈)
+@SPACE_VTOL|flight-control|KR|VTOL 개발
+@KSJin-ro4zb|flight-control|KR|K.S Jin
+
+# ── 하드웨어 ──
+@JoshuaBardwell|hardware|global|FPV 하드웨어·리뷰
+@dji|hardware|global|DJI 공식
+@GetFPV|hardware|global|FPV 부품·장비
+@quadmovr|hardware|global|쿼드 성능 극한
+@Emlid|hardware|global|RTK GPS·측위
+@HackHunt711|hardware|global|테크 하드웨어
+
+# ── GCS/소프트웨어 ──
+@IntelligentQuads|gcs-software|global|ArduPilot·드론개발 강좌
+@alirezaghaderi|gcs-software|global|드론 프로그래밍 강의
+@MATLAB|gcs-software|global|시뮬레이션·제어 공식
+@freecodecamp|gcs-software|global|프로그래밍 교육
+@webnautes|gcs-software|KR|ROS·개발 튜토리얼
+@pinklab_studio|gcs-software|KR|핑크랩 ROS·로봇
+
+# ── AI 자율/군집 ──
+@ailabRPG|ai-autonomy|global|UZH RPG — 드론 자율비행 최정상 랩
+@MITCSAIL|ai-autonomy|global|MIT CSAIL AI 연구
+@ctu-mrs|ai-autonomy|global|CTU 프라하 군집로봇 랩
+@BitcrazeVideos|ai-autonomy|global|Crazyflie 군집 연구
+@ModalAI|ai-autonomy|global|VOXL 컴패니언 AI
+@timelapsecoder|ai-autonomy|global|트래킹·비전 기술
+@intro-lab|ai-autonomy|KR|로보틱스 랩
+
+# ── 운용/임무 ──
+@uavcoach|ops-mission|global|드론 운용·교육
+@CopterExpressCompany|ops-mission|global|COEX Clover 교육드론
