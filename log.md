@@ -438,3 +438,9 @@
 - 생성: fc-vendor-param-guide(hardware) / px4-params-by-version, ardupilot-params-by-version(flight-control) / pixhawk-setup-params, cuav-setup-params, holybro-setup-params(hardware)
 - 배경: 제조사별 FC·펌웨어 버전별 파라미터 자료 공백 (마스터 지적 — 사용자 수요 최상위)
 - Cross-links: sensor-calibration, pid-tuning-control 연결
+
+## [2026-07-30] auto | 파라미터 diff 자동생성 시스템 (2단계)
+
+- scripts/param-diff.py: PX4 펌웨어 내장 parameter_xml + ArduPilot 버전별 공식 문서 자동 비교
+- 초기 생성: param-diff-px4-1-16-0-1-17-0 / param-diff-copter-4-6-0-4-7-0
+- fetch-inbox.sh --auto 훅: 신규 릴리즈 감지 시 직전 버전 대비 diff 페이지 자동 생성

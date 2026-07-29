@@ -614,6 +614,9 @@ else:
     print("  feed-only: 새 항목 없음")
 PYEOF
 
+# 신규 펌웨어 릴리즈 감지 시 파라미터 diff 페이지 자동 생성
+python3 "$HOME/2nd/scripts/param-diff.py" --auto 2>&1 | grep -v "^$" || true
+
 # 영문 항목 한글 요약 부가 (원문+sha256 보존, claude CLI)
 chmod +x "$HOME/2nd/scripts/ko-summarize.sh" 2>/dev/null
 bash "$HOME/2nd/scripts/ko-summarize.sh" || true

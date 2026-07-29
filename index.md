@@ -3,7 +3,7 @@
 > Complete catalog of active canonical pages. Each entry is a wikilink followed by
 > a one-line summary, sorted alphabetically within its section.
 >
-> Total pages: 97
+> Total pages: 99
 
 ## Entities
 
@@ -73,6 +73,8 @@
 - [[multi-modal-human-intent-uav]] — 다중 모달리티 인간 의도 중재 안전 UAV 기동.
 - [[neurosymland-landing-assessment]] — 신경-기호적 착륙 장소 평가 및 에지 배포.
 - [[opencv]] — 실시간 컴퓨터 비전을 위한 오픈소스 라이브러리.
+- [[param-diff-copter-4-6-0-4-7-0]] — ArduPilot Copter 4.6→4.7 파라미터 자동 diff (공식 문서 기반).
+- [[param-diff-px4-1-16-0-1-17-0]] — PX4 v1.16→v1.17 파라미터 자동 diff: 신규 40·삭제 61·기본값 변경 13.
 - [[pixhawk-setup-params]] — Pixhawk 6X/6C 보드 종속 파라미터: 디지털/아날로그 전원, 3중 IMU.
 - [[px4-architecture-deep]] — PX4 uORB, Tasks/Work Queue, NuttX 아키텍처 심층 분석.
 - [[px4-cicd-pipeline]] — GitHub Actions, 빌드 매트릭스, 테스트, 릴리스 파이프라인.
