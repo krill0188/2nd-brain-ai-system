@@ -3,7 +3,7 @@
 > Complete catalog of active canonical pages. Each entry is a wikilink followed by
 > a one-line summary, sorted alphabetically within its section.
 >
-> Total pages: 80
+> Total pages: 92
 
 ## Entities
 
@@ -19,7 +19,18 @@
 
 ## Concepts
 
+- [[active-sensing-uav-communication]] — 감지 지원 UAV 통신: AoA 획득 및 통신 품질 트레이드오프 최적화.
 - [[amazon-mk30-safety-incident]] — Amazon Prime Air MK30 드론 안전 사고 및 CAA 감독 우려.
+- [[cross-layered-medical-drone-coordination]] — CTDE 기반 의료 물품 배달 다중 드론 협업 시스템 (CEDA).
+- [[decentralized-swarm-gps-denied]] — GPS/통신 차단 환경 분산형 UAV 군집 표적 보호.
+- [[digital-twin-intent-drone-networks]] — 역강화 학습 기반 의도 기반 드론 네트워크 디지털 트윈.
+- [[e2e-fly-end-to-end-quadrotor]] — 미분 가능 물리 학습 기반 종단간 쿼드로터 자율 시스템.
+- [[lightweight-safe-rl-uav]] — 밀집 환경 경량 안전 강화 학습 UAV 내비게이션.
+- [[mars-dragonfly-modular-aerial]] — 모듈형 항공 로봇 시스템(MARS) 민첩 비행 제어.
+- [[multi-modal-human-intent-uav]] — 다중 모달리티 인간 의도 중재 안전 UAV 기동.
+- [[neurosymland-landing-assessment]] — 신경-기호적 착륙 장소 평가 및 에지 배포.
+- [[rl-quadrotor-tunable-control]] — 보상 설계를 통한 RL 기반 쿼드로터 성능 튜닝.
+- [[skyjepa-world-models]] — JEPA 스타일 장기 예측 세계 모델 실시간 쿼드로터 제어.
 - [[brinc-emergency-drone-funding]] — BRINC $125M 비상 드론 자금 조달 및 Motorola 투자.
 - [[chained-attacks-drone-fl]] — 드론 기반 연합학습 체인 공격: DoS 및 자격 증명 사칭.
 - [[dji-easa-sail-bvlos]] — DJI EASA SAIL BVLOS 승인: 유럽 규제 간소화.
@@ -34,9 +45,6 @@
 - [[vertical-pinching-antenna-systems]] — V-PAS: 수직 핀칭 안테나 시스템.
 - [[wing-nhs-medical-delivery]] — Wing NHS 긴급 의료 샘플 드론 배달.
 - [[zipline-us-expansion]] — Zipline 미국 확대 및 Tesla/Waymo/Uber 임원 영입.
-
-- [[ai-knowledge-workflow]] — 원본 수집부터 검증된 산출물까지의 단계와 품질 관문.
-- [[ardupilot-plane-4-7]] — ArduPilot Plane 4.7.0 릴리스 정보 (2026-07-21).
 - [[betaflight]] — FPV 드론용 오픈소스 비행 제어 소프트웨어.
 - [[drone-news-hardware]] — 2026년 7월 드론 하드웨어 및 제조사 동향.
 - [[drone-news-ops]] — 2026년 7월 드론 운용 및 미션 동향.

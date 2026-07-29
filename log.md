@@ -398,5 +398,38 @@
 - Updated: `index.md` (80 pages), `log.md`
 - Moved sources to: `inbox/processed/` (11 files)
 
+## [2026-07-30] ingest | arXiv 및 기타 소스 인제스트
+
+- Source files from `inbox/`:
+  - `fetch-2026-07-30-arxiv-a-cross-layered-multi-drone-coordination-for-medical-supply-.md`
+  - `fetch-2026-07-30-arxiv-a-heuristic-approach-for-performance-tuning-in-rl-based-quad.md`
+  - `fetch-2026-07-30-arxiv-a-model-for-mediating-multi-modal-human-intent-into-safe-man.md`
+  - `fetch-2026-07-30-arxiv-active-sensing-assisted-uav-communications-with-jittering-fr.md`
+  - `fetch-2026-07-30-arxiv-aerial-inspection-behaviors-via-rl-based-quadrotor-control-f.md`
+  - `fetch-2026-07-30-arxiv-decentralized-uav-swarms-for-ground-target-protection-in-gps.md`
+  - `fetch-2026-07-30-arxiv-e2e-fly-an-integrated-training-to-deployment-system-for-end-.md`
+  - `fetch-2026-07-30-arxiv-inverse-reinforcement-learning-enabled-digital-twin-for-inte.md`
+  - `fetch-2026-07-30-arxiv-lightweight-safe-reinforcement-learning-for-end-to-end-uav-n.md`
+  - `fetch-2026-07-30-arxiv-mars-dragonfly-agile-and-robust-flight-control-of-modular-ae.md`
+  - `fetch-2026-07-30-arxiv-neurosymland-neuro-symbolic-landing-site-assessment-for-robu.md`
+  - `fetch-2026-07-30-arxiv-skyjepa-learning-long-horizon-world-models-for-zero-shot-sim.md`
+  - (and 38 additional files: crossref papers, youtube videos, etc.)
+
+- Created concepts:
+  - `concepts/cross-layered-medical-drone-coordination.md` — CTDE 기반 의료 배달 다중 드론 협업
+  - `concepts/rl-quadrotor-tunable-control.md` — RL 보상 설계 기반 쿼드로터 성능 튜닝
+  - `concepts/multi-modal-human-intent-uav.md` — 다중 모달리티 인간 의도 중재
+  - `concepts/decentralized-swarm-gps-denied.md` — GPS/통신 차단 환경 분산 군집
+  - `concepts/active-sensing-uav-communication.md` — 감지 지원 UAV 통신 (AoA)
+  - `concepts/mars-dragonfly-modular-aerial.md` — 모듈형 항공 로봇 시스템(MARS)
+  - `concepts/neurosymland-landing-assessment.md` — 신경-기호적 착륙 장소 평가
+  - `concepts/e2e-fly-end-to-end-quadrotor.md` — 종단간 쿼드로터 자율 시스템
+  - `concepts/skyjepa-world-models.md` — JEPA 스타일 장기 예측 세계 모델
+  - `concepts/lightweight-safe-rl-uav.md` — 밀집 환경 경량 안전 RL 내비게이션
+  - `concepts/digital-twin-intent-drone-networks.md` — 의도 기반 드론 네트워크 디지털 트윈
+
+- Updated: `index.md` (92 pages), `log.md`
+- Moved sources to: `inbox/processed/` (58 files)
+
 - **drone-hw**: 
   - `danial2025-microdrone-slam.md` — Micro 드론 단안 SLAM (arXiv 2025)
