@@ -433,3 +433,8 @@
 
 - **drone-hw**: 
   - `danial2025-microdrone-slam.md` — Micro 드론 단안 SLAM (arXiv 2025)
+## [2026-07-30] manual | FC 파라미터 설정 시리즈 6편 작성
+
+- 생성: fc-vendor-param-guide(hardware) / px4-params-by-version, ardupilot-params-by-version(flight-control) / pixhawk-setup-params, cuav-setup-params, holybro-setup-params(hardware)
+- 배경: 제조사별 FC·펌웨어 버전별 파라미터 자료 공백 (마스터 지적 — 사용자 수요 최상위)
+- Cross-links: sensor-calibration, pid-tuning-control 연결
