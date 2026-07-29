@@ -70,6 +70,19 @@ content = (
 )
 with open(out_path, 'w') as f:
     f.write(content)
+
+import json, subprocess
+item = json.dumps([{
+    "title": f"{slug} {tag} 릴리즈",
+    "url": source_url,
+    "source": "github.com",
+    "domain": domain,
+    "type": "release",
+    "summary": body.strip().replace("\r", " ").replace("\n", " ")[:200],
+    "published": published,
+}], ensure_ascii=False)
+subprocess.run(["python3", __import__('os').path.expanduser("~/2nd/scripts/news-feed-append.py")],
+               input=item, text=True, capture_output=True)
 PYEOF
 
   echo "  ✅ [$domain] $slug $tag → inbox/"
@@ -146,6 +159,20 @@ with open(out_path, 'w') as f:
 with open(seen_path, 'a') as f:
     for e in fresh:
         f.write(e['link'] + "\n")
+
+import subprocess, os, json
+from urllib.parse import urlparse
+items = json.dumps([{
+    "title": e['title'],
+    "url": e['link'],
+    "source": urlparse(e['link']).hostname or slug,
+    "domain": domain,
+    "type": "news",
+    "summary": e['summary'][:200],
+    "published": e['date'],
+} for e in fresh], ensure_ascii=False)
+subprocess.run(["python3", os.path.expanduser("~/2nd/scripts/news-feed-append.py")],
+               input=items, text=True, capture_output=True)
 print(f"  ✅ [{domain}] {slug} 기사 {len(fresh)}건 → inbox/")
 PYEOF
 }
@@ -181,6 +208,81 @@ fetch_rss "https://dronelife.com/feed/"    "dronelife"     "ops-mission" 5
 
 # ── regulations (RSS) ───────────────────────────────────────────
 fetch_rss "https://www.suasnews.com/category/regulation/feed/" "suasnews-regulation" "regulations" 5
+
+# ── feed-only 수집: 국내뉴스·채용·정부사업 (위키 컴파일 제외) ────
+python3 - "$SEEN_RSS" "$UA" <<'PYEOF'
+import sys, json, re, html, os, subprocess
+import urllib.request
+from urllib.parse import urlparse
+
+seen_path, ua = sys.argv[1:]
+seen = set(open(seen_path).read().splitlines())
+new_links = []
+items_out = []
+
+def rss_items(url, limit=30):
+    try:
+        import feedparser
+        d = feedparser.parse(url, agent=ua)
+        return [{'title': e.get('title', '').strip(),
+                 'link': e.get('link', '').strip(),
+                 'date': (e.get('published', '') or e.get('updated', ''))[:32],
+                 'summary': html.unescape(re.sub(r'<[^>]+>', '', e.get('summary', '')))[:200].strip()}
+                for e in d.entries[:limit]]
+    except Exception as ex:
+        print(f"  ⚠️  rss 실패 {url[:50]}: {ex}", file=sys.stderr)
+        return []
+
+def add(entries, typ, region, label, max_items, source_from_title=False):
+    fresh = [e for e in entries if e['link'] and e['link'] not in seen][:max_items]
+    for e in fresh:
+        title, source = e['title'], urlparse(e['link']).hostname or ''
+        if source_from_title and ' - ' in title:
+            title, source = title.rsplit(' - ', 1)
+        items_out.append({'title': title, 'url': e['link'], 'source': source,
+                          'domain': '', 'type': typ, 'region': region,
+                          'summary': e['summary'], 'published': e['date']})
+        seen.add(e['link']); new_links.append(e['link'])
+    if fresh:
+        print(f"  ✅ [{label}] {len(fresh)}건 → news-feed")
+
+GN = "https://news.google.com/rss/search?q={q}&hl=ko&gl=KR&ceid=KR:ko"
+# 1) 국내 드론 뉴스
+add(rss_items(GN.format(q="%EB%93%9C%EB%A1%A0")), 'news', 'KR', '국내뉴스', 8, source_from_title=True)
+# 2) 정부사업 (지원사업·실증·공모)
+add(rss_items(GN.format(q="%EB%93%9C%EB%A1%A0+%EC%A7%80%EC%9B%90%EC%82%AC%EC%97%85+OR+%EB%93%9C%EB%A1%A0+%EC%8B%A4%EC%A6%9D+OR+%EB%93%9C%EB%A1%A0+%EA%B3%B5%EB%AA%A8")), 'gov', 'KR', '정부사업', 5, source_from_title=True)
+# 3) 방산 — 국내(무인기·드론 방산) + 해외(military drone)
+add(rss_items(GN.format(q="%EB%B0%A9%EC%82%B0+%EB%93%9C%EB%A1%A0+OR+%EB%AC%B4%EC%9D%B8%EA%B8%B0+%EB%B0%A9%EC%82%B0+OR+%EA%B5%B0%EC%9A%A9+%EB%93%9C%EB%A1%A0")), 'defense', 'KR', '방산KR', 5, source_from_title=True)
+add(rss_items("https://news.google.com/rss/search?q=military+drone+OR+defense+UAS+program&hl=en-US&gl=US&ceid=US:en"), 'defense', 'global', '방산글로벌', 5, source_from_title=True)
+# 4) 해외 채용 (sUAS News jobs)
+add(rss_items("https://www.suasnews.com/category/jobs/feed/"), 'job', 'global', '해외채용', 5)
+# 5) 국내 채용 (Wanted API)
+try:
+    req = urllib.request.Request(
+        "https://www.wanted.co.kr/api/v4/jobs?query=%EB%93%9C%EB%A1%A0&country=kr&limit=10",
+        headers={'User-Agent': ua})
+    data = json.load(urllib.request.urlopen(req, timeout=15))
+    entries = [{'title': f"{j.get('position','')} — {j.get('company',{}).get('name','')}",
+                'link': f"https://www.wanted.co.kr/wd/{j['id']}",
+                'date': '', 'summary': j.get('company', {}).get('industry_name', '')}
+               for j in data.get('data', []) if j.get('id')]
+    add(entries, 'job', 'KR', '국내채용', 10)
+except Exception as ex:
+    print(f"  ⚠️  Wanted API 실패: {ex}", file=sys.stderr)
+
+if items_out:
+    r = subprocess.run(["python3", os.path.expanduser("~/2nd/scripts/news-feed-append.py")],
+                       input=json.dumps(items_out, ensure_ascii=False), text=True, capture_output=True)
+    print("  " + (r.stdout.strip() or r.stderr.strip()))
+    with open(seen_path, 'a') as f:
+        for l in new_links:
+            f.write(l + "\n")
+else:
+    print("  feed-only: 새 항목 없음")
+PYEOF
+
+# 오늘의 뉴스 2장 브리핑 생성 (claude CLI, 실패해도 계속)
+bash "$HOME/2nd/scripts/daily-briefing.sh" || true
 
 COUNT=$(ls "$INBOX"/fetch-"$TODAY"-*.md 2>/dev/null | wc -l | tr -d ' ')
 if [[ "$COUNT" -gt 0 ]]; then
