@@ -209,6 +209,335 @@ fetch_rss "https://dronelife.com/feed/"    "dronelife"     "ops-mission" 5
 # ── regulations (RSS) ───────────────────────────────────────────
 fetch_rss "https://www.suasnews.com/category/regulation/feed/" "suasnews-regulation" "regulations" 5
 
+# ── arXiv 논문 자동 수집 (inbox → 위키 컴파일 + news-feed) ──────
+fetch_arxiv() {
+  local query="$1" slug="$2" domain="$3" max_items="${4:-3}"
+  python3 - "$query" "$slug" "$domain" "$max_items" "$INBOX" "$TODAY" "$SEEN_RSS" <<'PYEOF'
+import sys, json, os, re, subprocess
+import urllib.request, urllib.parse
+import xml.etree.ElementTree as ET
+
+query, slug, domain, max_items, inbox, today, seen_path = sys.argv[1:]
+max_items = int(max_items)
+ns = {'a': 'http://www.w3.org/2005/Atom'}
+
+url = ("https://export.arxiv.org/api/query?search_query=" + urllib.parse.quote(query)
+       + "&sortBy=submittedDate&sortOrder=descending&max_results=15")
+try:
+    req = urllib.request.Request(url, headers={'User-Agent': '2ndBrainFetcher/2.0'})
+    root = ET.fromstring(urllib.request.urlopen(req, timeout=20).read())
+except Exception as ex:
+    print(f"  ⚠️  arxiv {slug} 실패: {ex}", file=sys.stderr)
+    sys.exit(0)
+
+seen = set(open(seen_path).read().splitlines())
+feed_items, new_links, written = [], [], 0
+
+for e in root.findall('a:entry', ns):
+    if written >= max_items:
+        break
+    link = (e.findtext('a:id', namespaces=ns) or '').strip()
+    title = re.sub(r'\s+', ' ', (e.findtext('a:title', namespaces=ns) or '')).strip()
+    if not link or link in seen or not title:
+        continue
+    abstract = re.sub(r'\s+', ' ', (e.findtext('a:summary', namespaces=ns) or '')).strip()
+    published = (e.findtext('a:published', namespaces=ns) or '')[:10]
+    authors = ", ".join(a.findtext('a:name', namespaces=ns) or '' for a in e.findall('a:author', ns))[:200]
+
+    fslug = re.sub(r'[^\w\s-]', '', title.lower())
+    fslug = re.sub(r'[\s_]+', '-', fslug)[:60]
+    out = os.path.join(inbox, f"fetch-{today}-arxiv-{fslug}.md")
+    with open(out, 'w') as f:
+        f.write(f"""---
+title: {json.dumps(title)}
+created: {today}
+captured: {today}
+type: paper
+domain: {domain}
+source: {link}
+authors: {json.dumps(authors)}
+published: "{published}"
+tags: [drone, {domain}, paper, arxiv]
+---
+
+# {title}
+
+**Authors**: {authors}
+**Published**: {published}
+**arXiv**: {link}
+
+## Abstract
+
+{abstract}
+""")
+    feed_items.append({"title": title, "url": link, "source": "arxiv.org",
+                       "domain": domain, "type": "paper", "region": "global",
+                       "summary": abstract[:200], "published": published})
+    seen.add(link); new_links.append(link); written += 1
+
+if written:
+    subprocess.run(["python3", os.path.expanduser("~/2nd/scripts/news-feed-append.py")],
+                   input=json.dumps(feed_items, ensure_ascii=False), text=True, capture_output=True)
+    with open(seen_path, 'a') as f:
+        for l in new_links:
+            f.write(l + "\n")
+    print(f"  ✅ [{domain}] arXiv {slug} 논문 {written}편 → inbox/")
+else:
+    print(f"  skip arxiv {slug} (새 논문 없음)")
+PYEOF
+}
+
+fetch_arxiv 'all:"UAV flight control" OR all:"quadrotor control"' "flight"  "flight-control" 3
+fetch_arxiv 'all:"drone swarm" OR all:"autonomous UAV"'          "swarm"   "ai-autonomy"    3
+fetch_arxiv 'all:"UAV communication" OR all:"drone network"'     "comms"   "comms-protocol" 3
+
+# ── Crossref 저널논문 + KCI 국내논문 수집 (inbox + news-feed) ───
+KCI_KEY=$(grep '^KCI_API_KEY=' "$HOME/2nd/.env" 2>/dev/null | cut -d= -f2 || true)
+python3 - "$INBOX" "$TODAY" "$SEEN_RSS" "${KCI_KEY:-}" <<'PYEOF'
+import sys, json, os, re, subprocess
+import urllib.request, urllib.parse
+import xml.etree.ElementTree as ET
+from datetime import date, timedelta
+
+inbox, today, seen_path, kci_key = sys.argv[1:]
+seen = set(open(seen_path).read().splitlines())
+feed_items, new_links = [], []
+
+DOMAIN_RULES = [
+    ("ai-autonomy",    ["swarm", "autonomous", "vision", "learning", "ai ", "neural", "detection", "slam"]),
+    ("comms-protocol", ["communication", "network", "link", "relay", "spectrum", "통신"]),
+    ("flight-control", ["control", "flight", "attitude", "trajectory", "path planning", "제어", "비행"]),
+    ("regulations",    ["regulation", "law", "policy", "법", "규제"]),
+    ("ops-mission",    ["delivery", "inspection", "mission", "survey", "배송", "임무"]),
+]
+def classify(text):
+    t = text.lower()
+    for dom, kws in DOMAIN_RULES:
+        if any(k in t for k in kws):
+            return dom
+    return "ops-mission"
+
+def slugify(t):
+    t = re.sub(r"[^\w\s-]", "", t.lower())
+    return re.sub(r"[\s_]+", "-", t)[:60]
+
+def write_paper(title, url, domain, region, authors, journal, published, abstract, src_tag):
+    fslug = slugify(title)
+    out = os.path.join(inbox, f"fetch-{today}-{src_tag}-{fslug}.md")
+    with open(out, "w") as f:
+        f.write(f"""---
+title: {json.dumps(title)}
+created: {today}
+captured: {today}
+type: paper
+domain: {domain}
+source: {url}
+authors: {json.dumps(authors[:200])}
+journal: {json.dumps(journal[:120])}
+published: "{published}"
+tags: [drone, {domain}, paper, {src_tag}]
+---
+
+# {title}
+
+**Authors**: {authors[:200]}
+**Journal**: {journal}
+**Published**: {published}
+**Link**: {url}
+
+## Abstract
+
+{abstract or "(초록 미제공 — 링크 참조)"}
+""")
+    feed_items.append({"title": title, "url": url, "source": "doi.org" if "doi.org" in url else "kci.go.kr",
+                       "domain": domain, "type": "paper", "region": region,
+                       "summary": (abstract or journal)[:200], "published": published})
+    seen.add(url); new_links.append(url)
+
+# 1) Crossref — 최근 60일 드론/UAV 저널논문
+try:
+    since = (date.today() - timedelta(days=60)).isoformat()
+    url = ("https://api.crossref.org/works?query=drone+UAV"
+           f"&filter=type:journal-article,from-pub-date:{since}"
+           "&sort=published&order=desc&rows=15&mailto=krill0188@gmail.com")
+    d = json.load(urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': '2ndBrain/1.0'}), timeout=20))
+    cnt = 0
+    for it in d["message"]["items"]:
+        if cnt >= 4: break
+        doi = it.get("DOI", "")
+        link = f"https://doi.org/{doi}"
+        title = (it.get("title") or [""])[0].strip()
+        if not doi or not title or link in seen: continue
+        authors = ", ".join(f"{a.get('family','')} {a.get('given','')}".strip() for a in it.get("author", [])[:5])
+        journal = (it.get("container-title") or [""])[0]
+        pub = "-".join(str(x) for x in (it.get("published", {}).get("date-parts") or [[""]])[0])
+        abstract = re.sub(r"<[^>]+>", "", it.get("abstract", ""))[:800]
+        write_paper(title, link, classify(title + " " + abstract), "global", authors, journal, pub, abstract, "crossref")
+        cnt += 1
+    if cnt: print(f"  ✅ [paper] Crossref 저널논문 {cnt}편 → inbox/")
+    else: print("  skip crossref (새 논문 없음)")
+except Exception as ex:
+    print(f"  ⚠️  crossref 실패: {ex}", file=sys.stderr)
+
+# 2) KCI — 국내 등재논문 (키 설정 시 활성화)
+if kci_key:
+    try:
+        url = ("https://open.kci.go.kr/po/openapi/openApiSearch.kci?apiCode=articleSearch"
+               f"&key={kci_key}&title={urllib.parse.quote('드론')}&displayCount=10")
+        root = ET.fromstring(urllib.request.urlopen(url, timeout=20).read())
+        cnt = 0
+        for rec in root.iter("record"):
+            if cnt >= 4: break
+            def ft(*names):
+                for n in names:
+                    v = rec.findtext(f".//{n}")
+                    if v: return v.strip()
+                return ""
+            title = ft("article-title", "articleTitle", "title")
+            art_id = ft("article-id", "articleId", "url", "uci")
+            if not title: continue
+            link = art_id if art_id.startswith("http") else f"https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId={art_id}"
+            if link in seen: continue
+            authors = ft("author", "authors", "author-group")
+            journal = ft("journal-name", "journalName", "journal-title")
+            pub = ft("pub-year", "pubYear", "publication-date")
+            abstract = ft("abstract", "abstract-ko")[:800]
+            write_paper(title, link, classify(title + " " + abstract), "KR", authors, journal, pub, abstract, "kci")
+            cnt += 1
+        if cnt: print(f"  ✅ [paper] KCI 국내논문 {cnt}편 → inbox/")
+        else: print("  ⚠️  kci: 응답 파싱 0건 — 키/스펙 확인 필요", file=sys.stderr)
+    except Exception as ex:
+        print(f"  ⚠️  kci 실패: {ex}", file=sys.stderr)
+
+if feed_items:
+    subprocess.run(["python3", os.path.expanduser("~/2nd/scripts/news-feed-append.py")],
+                   input=json.dumps(feed_items, ensure_ascii=False), text=True, capture_output=True)
+    with open(seen_path, "a") as f:
+        for l in new_links:
+            f.write(l + "\n")
+PYEOF
+
+# ── YouTube 채널 화이트리스트 영상 수집 (inbox + news-feed) ─────
+YT_KEY=$(grep '^YOUTUBE_API_KEY=' "$HOME/2nd/.env" 2>/dev/null | cut -d= -f2 || true)
+YT_CONF="$HOME/2nd/config/youtube-channels.txt"
+if [[ -n "${YT_KEY:-}" && -f "$YT_CONF" ]]; then
+  python3 - "$YT_KEY" "$YT_CONF" "$INBOX" "$TODAY" "$SEEN_RSS" <<'PYEOF'
+import sys, json, os, re
+import urllib.request
+
+key, conf, inbox, today, seen_path = sys.argv[1:]
+CACHE = os.path.expanduser("~/2nd/.ua/youtube-channels-cache.json")
+API = "https://www.googleapis.com/youtube/v3"
+
+def get(url):
+    with urllib.request.urlopen(url, timeout=15) as r:
+        return json.load(r)
+
+cache = {}
+if os.path.exists(CACHE):
+    try: cache = json.load(open(CACHE))
+    except Exception: cache = {}
+
+seen = set(open(seen_path).read().splitlines())
+feed_items, new_links, total = [], [], 0
+
+for line in open(conf):
+    line = line.strip()
+    if not line or line.startswith("#"):
+        continue
+    parts = line.split("|")
+    handle = parts[0].lstrip("@")
+    domain = parts[1] if len(parts) > 1 else ""
+    region = parts[2] if len(parts) > 2 else "global"
+
+    # 핸들 → 업로드 재생목록 (캐시)
+    if handle not in cache:
+        try:
+            d = get(f"{API}/channels?part=snippet,contentDetails&forHandle={handle}&key={key}")
+            items = d.get("items") or []
+            if not items:
+                print(f"  ⚠️  youtube @{handle}: 채널 없음", file=sys.stderr); continue
+            cache[handle] = {
+                "title": items[0]["snippet"]["title"],
+                "uploads": items[0]["contentDetails"]["relatedPlaylists"]["uploads"],
+            }
+        except Exception as ex:
+            print(f"  ⚠️  youtube @{handle}: {ex}", file=sys.stderr); continue
+
+    ch = cache[handle]
+    try:
+        d = get(f"{API}/playlistItems?part=snippet&playlistId={ch['uploads']}&maxResults=5&key={key}")
+    except Exception as ex:
+        print(f"  ⚠️  youtube @{handle} 업로드 조회 실패: {ex}", file=sys.stderr); continue
+
+    written = 0
+    for it in d.get("items", []):
+        if written >= 2:
+            break
+        sn = it["snippet"]
+        vid = sn.get("resourceId", {}).get("videoId", "")
+        url = f"https://www.youtube.com/watch?v={vid}"
+        if not vid or url in seen:
+            continue
+        title = sn.get("title", "").strip()
+        desc = re.sub(r"\s+", " ", sn.get("description", ""))[:500]
+        published = sn.get("publishedAt", "")[:10]
+
+        fslug = re.sub(r"[^\w\s-]", "", title.lower())
+        fslug = re.sub(r"[\s_]+", "-", fslug)[:60]
+        out = os.path.join(inbox, f"fetch-{today}-yt-{fslug}.md")
+        with open(out, "w") as f:
+            f.write(f"""---
+title: {json.dumps(title)}
+created: {today}
+captured: {today}
+type: video
+domain: {domain}
+source: {url}
+channel: {json.dumps(ch['title'])}
+published: "{published}"
+tags: [drone, {domain}, video, youtube]
+---
+
+# {title}
+
+**채널**: {ch['title']} (공신력 화이트리스트)
+**게시**: {published}
+**영상**: {url}
+
+## 설명 요약
+
+{desc}
+""")
+        feed_items.append({"title": f"[{ch['title']}] {title}", "url": url,
+                           "source": "youtube.com", "domain": domain, "type": "video",
+                           "region": region, "summary": desc[:200], "published": published})
+        seen.add(url); new_links.append(url); written += 1; total += 1
+    if written:
+        print(f"  ✅ [{domain}] YouTube @{handle} 영상 {written}건 → inbox/")
+
+json.dump(cache, open(CACHE, "w"), ensure_ascii=False)
+if feed_items:
+    import subprocess
+    subprocess.run(["python3", os.path.expanduser("~/2nd/scripts/news-feed-append.py")],
+                   input=json.dumps(feed_items, ensure_ascii=False), text=True, capture_output=True)
+    with open(seen_path, "a") as f:
+        for l in new_links:
+            f.write(l + "\n")
+if total == 0:
+    print("  youtube: 새 영상 없음")
+PYEOF
+else
+  echo "  youtube: API키 또는 채널설정 없음 — 스킵"
+fi
+
+# ── Zotero 수동 수집분 인제스트 (앱 실행 중일 때만) ─────────────
+if curl -sf --max-time 3 "http://localhost:23119/connector/ping" >/dev/null 2>&1; then
+  python3 "$HOME/2nd/scripts/zotero-ingest.py" 2>/dev/null || true
+else
+  echo "  zotero: 앱 미실행 — 스킵"
+fi
+
 # ── feed-only 수집: 국내뉴스·채용·정부사업 (위키 컴파일 제외) ────
 python3 - "$SEEN_RSS" "$UA" <<'PYEOF'
 import sys, json, re, html, os, subprocess

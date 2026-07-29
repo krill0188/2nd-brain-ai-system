@@ -363,5 +363,40 @@
   - `shapira2025-icdnet.md` — Visual-Inertial SLAM 딥러닝 (arXiv 2025)
   - `radwan2024-uav-slam-gpsdenied.md` — GPS 없는 환경 3D SLAM (IEEE ICUAS 2024)
 
+## [2026-07-30] ingest | arXiv 논문 및 RSS 뉴스 인제스트
+
+- Source files from `inbox/`:
+  - `fetch-2026-07-30-arxiv-chained-attacks-on-drone-based-federated-learning-from-netwo.md`
+  - `fetch-2026-07-30-arxiv-distributed-continuous-aerial-surveillance-by-uas-swarms-und.md`
+  - `fetch-2026-07-30-arxiv-electromagnetic-neural-network-for-direction-of-arrival-esti.md`
+  - `fetch-2026-07-30-arxiv-federated-lightweight-intrusion-detection-in-drone-swarms-wi.md`
+  - `fetch-2026-07-30-arxiv-flight-ready-lidar-inertial-odometry-for-embedded-drone-plat.md`
+  - `fetch-2026-07-30-arxiv-high-level-spatial-dubins-airplane-based-reference-smoothing.md`
+  - `fetch-2026-07-30-arxiv-linear-stability-analysis-of-an-indi-pitch-rate-controller-u.md`
+  - `fetch-2026-07-30-arxiv-stacked-intelligent-metasurfaces-assisted-uav-communications.md`
+  - `fetch-2026-07-30-arxiv-vertical-pinching-antenna-systems-v-pas-aided-uav-communicat.md`
+  - `fetch-2026-07-30-rss-dronedj.md`
+  - `fetch-2026-07-30-rss-suasnews.md`
+
+- Created concepts:
+  - `concepts/chained-attacks-drone-fl.md` — 드론 FL 체인 공격 (DoS + 사칭)
+  - `concepts/distributed-aerial-surveillance-swarm.md` — LTL 기반 분산 공중 감시
+  - `concepts/emnn-doa-estimation.md` — 전자기 신경망 DOA 추정
+  - `concepts/federated-lightweight-intrusion-detection.md` — FL+KD 경량 IDS
+  - `concepts/flight-ready-lidar-inertial-odometry.md` — 임베디드 LIO 시스템
+  - `concepts/spatial-dubins-quadrotor-control.md` — Dubins 기반 쿼드로터 제어
+  - `concepts/indi-stability-tilt-rotor-vtol.md` — INDI VTOL 안정성 분석
+  - `concepts/stacked-intelligent-metasurfaces.md` — SIM 기반 UAV 통신
+  - `concepts/vertical-pinching-antenna-systems.md` — V-PAS 수직 안테나 시스템
+  - `concepts/dji-easa-sail-bvlos.md` — DJI EASA BVLOS 승인
+  - `concepts/wing-nhs-medical-delivery.md` — Wing NHS 의료 배달
+  - `concepts/zipline-us-expansion.md` — Zipline 미국 확대
+  - `concepts/montis-avalanche-faa-approval.md` — MONTIS FAA 승인
+  - `concepts/brinc-emergency-drone-funding.md` — BRINC $125M 자금 조달
+  - `concepts/amazon-mk30-safety-incident.md` — Amazon MK30 안전 사고
+
+- Updated: `index.md` (80 pages), `log.md`
+- Moved sources to: `inbox/processed/` (11 files)
+
 - **drone-hw**: 
   - `danial2025-microdrone-slam.md` — Micro 드론 단안 SLAM (arXiv 2025)

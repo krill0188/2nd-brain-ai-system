@@ -10,14 +10,8 @@ tags: [drone, ops-mission, news]
 
 # suasnews 최신 동향 (2026-07-30)
 
-## DroneShield Breaks the Detection Paradigm: RfAI-3 Senses Drones That Have Never Been Seen Before
-- 링크: https://www.suasnews.com/2026/07/droneshield-breaks-the-detection-paradigm-rfai-3-senses-drones-that-have-never-been-seen-before-2/
-- 날짜: Wed, 29 Jul 2026 15:31:50 +0000
+## Gravity Wins Again: Amazon’s MK30 Hits Darlington and the CAA’s Blind Spot
+- 링크: https://www.suasnews.com/2026/07/gravity-wins-again-amazons-mk30-hits-darlington-and-the-caas-blind-spot/
+- 날짜: Wed, 29 Jul 2026 18:55:06 +0000
 
-DroneShieldtoday unveiled RfAI-3, the third generation of its proprietary radio frequency intelligence engine. RfAI-3 marks a
-
-## Moolenaar, Obernolte, McClellan Introduce Legislation to Ban Dangerous Chinese Robots
-- 링크: https://www.suasnews.com/2026/07/moolenaar-obernolte-mcclellan-introduce-legislation-to-ban-dangerous-chinese-robots/
-- 날짜: Wed, 29 Jul 2026 15:10:24 +0000
-
-Chairman John Moolenaar of the Select Committee on China (R-MI), Congressman Jay Obernolte (R-CA), and
+An Amazon Prime Air MK30 drone just landed unannounced in a Darlington garden—and we can't say we're surprised. From brush fires in Oregon to building collisions in Texas, Amazon’s troubling safety record raises urgent questions about CAA oversight, especially when operators like Manna Aero prove high-redundancy drone delivery can actually be done safely.

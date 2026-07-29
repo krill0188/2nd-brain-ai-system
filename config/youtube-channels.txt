@@ -1,0 +1,10 @@
+# YouTube 수집 채널 화이트리스트 (공신력 확보용)
+# 형식: @핸들|도메인|지역(KR/global)|메모
+# 도메인: flight-control | comms-protocol | hardware | gcs-software | ops-mission | regulations | ai-autonomy
+# 채널 추가: 이 파일에 한 줄 추가하면 다음 날 03:30부터 자동 수집
+
+@PX4Autopilot|flight-control|global|PX4 공식 채널 (구독 1.5만)
+@Painless360|flight-control|global|기체 설정·튜토리얼 (구독 20만)
+@JoshuaBardwell|hardware|global|FPV 하드웨어·리뷰 (구독 43만)
+@uavcoach|ops-mission|global|드론 운용·교육 (구독 9만)
+@dji|hardware|global|DJI 공식 — 신제품·기술 (구독 640만)

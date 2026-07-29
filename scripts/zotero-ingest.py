@@ -158,7 +158,11 @@ def ingest(dry_run: bool = False, topic_filter: str | None = None) -> None:
             print(f"[DRY-RUN] → {out_file.relative_to(WIKI_ROOT)}")
         else:
             out_file.write_text(md, encoding="utf-8")
-            print(f"[OK] → {out_file.relative_to(WIKI_ROOT)}")
+            # inbox에도 복사 → 다음 04:00 cron이 위키 canonical로 컴파일
+            inbox_file = WIKI_ROOT / "inbox" / f"zotero-{slug}.md"
+            if not inbox_file.exists() and not (WIKI_ROOT / "inbox" / "processed" / f"zotero-{slug}.md").exists():
+                inbox_file.write_text(md, encoding="utf-8")
+            print(f"[OK] → {out_file.relative_to(WIKI_ROOT)} (+inbox)")
         new_count += 1
 
     print(f"\n수집 완료: 신규 {new_count}개 | 기존 스킵 {skip_count}개")

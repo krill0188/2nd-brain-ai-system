@@ -3,7 +3,7 @@
 > Complete catalog of active canonical pages. Each entry is a wikilink followed by
 > a one-line summary, sorted alphabetically within its section.
 >
-> Total pages: 67
+> Total pages: 80
 
 ## Entities
 
@@ -18,6 +18,22 @@
 - [[xtend-ai-robotics]] — XTEND-JFB 합병 방위 로봇 기업, 나스닥 상장 예정.
 
 ## Concepts
+
+- [[amazon-mk30-safety-incident]] — Amazon Prime Air MK30 드론 안전 사고 및 CAA 감독 우려.
+- [[brinc-emergency-drone-funding]] — BRINC $125M 비상 드론 자금 조달 및 Motorola 투자.
+- [[chained-attacks-drone-fl]] — 드론 기반 연합학습 체인 공격: DoS 및 자격 증명 사칭.
+- [[dji-easa-sail-bvlos]] — DJI EASA SAIL BVLOS 승인: 유럽 규제 간소화.
+- [[distributed-aerial-surveillance-swarm]] — LTL 사양 하 분산 지속적 공중 감시 스웜.
+- [[emnn-doa-estimation]] — UAV 통신을 위한 전자기 신경망 DOA 추정.
+- [[federated-lightweight-intrusion-detection]] — 지식 증류를 활용한 FL 기반 경량 IDS.
+- [[flight-ready-lidar-inertial-odometry]] — 임베디드 드론용 비행 준비 LIO 시스템.
+- [[indi-stability-tilt-rotor-vtol]] — 틸트로터 VTOL용 INDI 피치 레이트 컨트롤러 안정성 분석.
+- [[montis-avalanche-faa-approval]] — MONTIS 눈사태 드론 시스템 FAA 승인.
+- [[spatial-dubins-quadrotor-control]] — 쿼드로터 제어를 위한 공간적 Dubins 참조 스무딩.
+- [[stacked-intelligent-metasurfaces]] — SIM 기반 UAV 통신: 파형 도메인 신호 처리.
+- [[vertical-pinching-antenna-systems]] — V-PAS: 수직 핀칭 안테나 시스템.
+- [[wing-nhs-medical-delivery]] — Wing NHS 긴급 의료 샘플 드론 배달.
+- [[zipline-us-expansion]] — Zipline 미국 확대 및 Tesla/Waymo/Uber 임원 영입.
 
 - [[ai-knowledge-workflow]] — 원본 수집부터 검증된 산출물까지의 단계와 품질 관문.
 - [[ardupilot-plane-4-7]] — ArduPilot Plane 4.7.0 릴리스 정보 (2026-07-21).

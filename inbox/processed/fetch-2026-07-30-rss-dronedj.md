@@ -10,32 +10,32 @@ tags: [drone, hardware, news]
 
 # dronedj 최신 동향 (2026-07-30)
 
-## FCC expands crackdown on alleged DJI shell companies
-- 링크: https://dronedj.com/2026/07/21/amazon-dji-drone-alternatives-fcc/
-- 날짜: Wed, 22 Jul 2026 06:29:00 +0000
+## DJI just made European BVLOS drone approvals much easier
+- 링크: https://dronedj.com/2026/07/16/dji-drone-easa-sail-bvlos/
+- 날짜: Fri, 17 Jul 2026 06:54:00 +0000
 
-If you’ve been shopping for drones or creator gear on Amazon lately, you’ve probably noticed some unfamiliar names popping up alongside DJI. Brands like SkyRover and Specta have been selling products that look strikingly similar to DJI hardware, often at attractive prices and with Prime shipping. Now, the Federal Communications Commission (FCC) wants to make it much harder for companies it believes are acting as intermediaries for restricted drone manufacturers to continue selling products in the United States.
+For companies deploying drones across Europe, getting regulatory approval is often a much bigger challenge than the technology itself. While modern drone platforms are already capable of complex beyond visual line of sight (BVLOS) missions, operators still need to prove to regulators that those flights can be carried out safely. DJI is hoping to make that process easier.
 
-## Lockheed Martin unveils drone-killer that can stop 50 drones
-- 링크: https://dronedj.com/2026/07/20/lockheed-martin-drone-killer-morfius/
-- 날짜: Tue, 21 Jul 2026 06:47:00 +0000
+## Wing-powered drones speed NHS sample deliveries across London
+- 링크: https://dronedj.com/2026/07/16/nhs-wing-medical-drone-delivery/
+- 날짜: Fri, 17 Jul 2026 04:50:00 +0000
 
-As drone swarms become one of the biggest headaches for militaries around the world, defense companies are racing to develop new ways to stop them without firing expensive missiles at every target. Lockheed Martin says its latest system is built to tackle that challenge.
+The UK’s National Health Service (NHS) is making drones a permanent part of its healthcare logistics after a successful pilot dramatically reduced delivery times for urgent medical samples. The expansion could ultimately benefit up to 1.8 million people across southwest London while helping the health system cut costs, reduce emissions, and speed up patient care.
 
-## This DJI drone mapped Everest’s killer icefall without risking a single life
-- 링크: https://dronedj.com/2026/07/20/dji-drone-everest-khumbu-icefall/
-- 날짜: Tue, 21 Jul 2026 06:34:00 +0000
+## Zipline’s drone delivery boom brings Tesla, Waymo, Uber veterans
+- 링크: https://dronedj.com/2026/07/15/zipline-drone-tesla-waymo-uber/
+- 날짜: Wed, 15 Jul 2026 07:54:29 +0000
 
-If you’ve ever wondered whether drones can do more than capture stunning mountain footage, DJI’s latest Mount Everest case study offers a pretty compelling answer.
+Zipline is doubling down on its US drone delivery ambitions, announcing plans to launch services in Austin and Cleveland while bringing in senior executives from Tesla, Waymo, and Uber to help steer its next phase of growth.
 
-## This DJI Mini 5 Pro drone deal saves up to $110 today
-- 링크: https://dronedj.com/2026/07/17/dji-deal-mini-5-pro/
-- 날짜: Sat, 18 Jul 2026 06:10:00 +0000
+## FAA approves MONTIS drone system for avalanche safety missions
+- 링크: https://dronedj.com/2026/07/15/montis-avalanche-drone-amplified-faa/
+- 날짜: Wed, 15 Jul 2026 07:10:53 +0000
 
-If you’ve been waiting for the right excuse to pick up a DJI Mini 5 Pro, this might be it. After going months without a meaningful price cut, the tech giant’s flagship sub-250-gram drone is finally on sale, with every major bundle discounted by 10%.
+Drone-based avalanche control is stepping toward wider adoption in the US. Drone Amplified says the Federal Aviation Administration (FAA) has approved operations of its MONTIS drone-based avalanche control system, giving transportation agencies, ski resorts, and other organizations a clear regulatory path to use drones for controlled avalanche mitigation.
 
-## Matternet taps Beeline to accelerate US drone delivery expansion
-- 링크: https://dronedj.com/2026/07/17/matternet-drone-delivery-beeline-uas/
-- 날짜: Fri, 17 Jul 2026 17:27:01 +0000
+## Motorola backs BRINC’s $125 million emergency drone expansion
+- 링크: https://dronedj.com/2026/07/14/brinc-funding-motorola-emergency-drones/
+- 날짜: Wed, 15 Jul 2026 05:00:00 +0000
 
-As commercial drone delivery continues to gain traction in the United States, Matternet is expanding the network behind its operations. The company has announced a new partnership with Beeline UAS, adding another FAA Part 135 operator to help scale drone deliveries across the country.
+Imagine calling 911 and, before the first police officer or firefighter arrives, a drone is already hovering over the scene, streaming live video back to dispatchers and first responders. That’s the future BRINC says it’s building, and it just secured another major financial boost to make it happen.
