@@ -10,7 +10,7 @@
 
 | 판정 | 기술 |
 |---|---|
-| **채택** | Hermes Agent(유지), OpenRouter(유지), Claude Code(연구 엔진), BGE-M3(Phase 2, 사전계산 전용) |
+| **채택** | Hermes Agent(유지), OpenRouter(유지), Claude Code(연구 엔진), multilingual-mpnet(Phase 2 사전계산 임베딩 — 최초 계획한 BGE-M3는 실사용 검증 중 라이브러리 미지원 확인되어 교체) |
 | **보류** (재검토 트리거 명시) | LangGraph, LanceDB, KuzuDB, reranker |
 | **제외** | LiteLLM, Qdrant, Chroma, Neo4j |
 | **유지(역할 불변)** | Codex — 코드 구현 전용, 연구 루프 불투입 |
@@ -63,11 +63,18 @@
 - **필요한가**: 아직 아니오. Phase 2의 JSON 엣지 스키마 확장(type/evidence/confidence/status)으로 요구 충족.
 - **재검토 트리거**: 엣지 5,000↑, 또는 다중홉 경로 질의("A와 C를 잇는 모순 경로")가 연구 루프의 병목이 될 때.
 
-### 9. BGE-M3 — **채택 (Phase 2, 사전계산 전용)**
-- **해결 문제**: 한/영/다국어 의미 임베딩 — 현 시스템 최대 결핍(교차 언어 검색 실패)을 직접 해결. dense+sparse 동시 지원으로 하이브리드 점수와 정합.
-- **로컬 실행**: ONNX int8 양자화로 CPU 실행 가능. 듀얼코어에서 느리지만 **밤 배치 사전계산이므로 속도 무관**(120편 기준 수 분~수십 분 예상, 신규·변경분만 증분 처리).
-- **Vercel**: 모델 배포 불필요 — 벡터 JSON만 스냅샷 포함. 질의측 임베딩은 로컬은 동일 모델, Vercel은 OpenRouter 임베딩 API(건당 소액) 또는 키워드 폴백.
-- **비용**: 모델 무료, 전기료 수준. **대안 폴백**: Python 3.14 호환 문제 시 OpenRouter/OpenAI 임베딩 API(120편 1회 수백 원 미만).
+### 9. BGE-M3 → **multilingual-mpnet로 교체 (Phase 2, 사전계산 전용, 2026-08-01 실사용 검증 후 확정)**
+> ⚠️ 최초 이 표는 "BGE-M3 채택"이라고 적었으나, Phase 2 착수 시 실제
+> 확인해보니 채택 라이브러리(`fastembed`)의 내장 모델 30종에 BGE-M3
+> 자체가 없었다(라이브러리 실사용 가능 여부를 사전 확인하지 않은 채 이름만
+> 적은 것 — 착오였다). 대체로
+> `sentence-transformers/paraphrase-multilingual-mpnet-base-v2`
+> (1.0GB, 768차원, ~50개 언어)를 실측 검증 후 채택했다.
+- **해결 문제**: 한/영/다국어 의미 임베딩 — 현 시스템 최대 결핍(교차 언어 검색 실패)을 직접 해결.
+- **실측 검증(2026-08-01)**: 한글 질의 "군집 비행의 GPS 차단 환경 항법" ↔ 영문 문서 코사인 유사도 0.776, 무관 주제 대비 0.529 — 교차언어 매칭이 실제로 작동함을 확인. `research-search.py`/`lib/rag.ts`에 실제 배선 후 "위치 인식 불가 상황에서 스스로 길을 찾는 기술"(영단어 0개) 질의로 `decentralized-swarm-gps-denied` 등 관련 문서를 정상 검색 — 기존 키워드 방식이면 매칭 0건이었을 사례.
+- **로컬 실행**: Python 3.14(시스템)는 onnxruntime 휠 미지원 확인됨 → Python 3.11 격리 venv(`~/2nd/.venv`, gitignore 대상) 별도 구성. 문서 465건(canonical+raw+news) 임베딩 생성 405초(1회, 캐시된 모델 로드는 5초) — 듀얼코어에서도 배치 작업으로는 무리 없음.
+- **Vercel**: 모델 배포 불필요 — 사전계산 벡터 JSON(`​.ua/embeddings.json`, 3.65MB/465건)만 스냅샷 포함. 질의측 임베딩은 `.venv` 존재 여부로 자동 분기 — 로컬 dev는 동일 모델 subprocess 호출, Vercel(.venv 미배포)은 자동으로 키워드 전용 폴백. OpenRouter 임베딩 API 연동은 **검증 없이 도입하지 않고 보류**(엔드포인트 미검증 상태로 프로덕션에 넣지 않는다는 원칙 적용).
+- **비용**: 모델 무료, 전기료 수준. 신규 유료 API 호출 0건(폴백 방식 채택으로 회피).
 
 ### 10. reranker (bge-reranker 등) — **보류**
 - **해결 문제**: 1차 검색 상위 후보 재정렬로 정밀도 향상.

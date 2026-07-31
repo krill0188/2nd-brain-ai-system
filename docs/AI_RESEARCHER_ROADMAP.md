@@ -10,7 +10,7 @@
 ```
 Phase 0  문서화·스키마 등록          완료 (2026-07-31)
 Phase 1  MVP: 연구 루프 + CLI 승인    완료 (2026-08-01) — T1/T2/T3 전부 통과
-Phase 2  검색 강화: 임베딩+하이브리드+그래프 스키마 (2~3일)  ← 다음 착수 후보
+Phase 2  검색 강화: 임베딩+하이브리드 (2026-08-01, 부분완료 — 그래프 스키마 확장·노드ID 통일은 이연)
 Phase 3  텔레그램 승인 게이트         (1일)
 Phase 4  검증 자동화(Critic/Verifier 심화) (1~2일)
 Phase 5  웹 연구 탭(읽기 전용)        (1일)
@@ -75,23 +75,30 @@ Phase 5  웹 연구 탭(읽기 전용)        (1일)
 
 ## Phase 2 — 검색 강화: 임베딩 + 하이브리드 + 그래프 스키마
 
+> **1·2·5번 완료 (2026-08-01), 3·4번은 다음 증분으로 이연.** 아래는 원안
+> 그대로 보존.
+
 **작업**
-1. `scripts/embed-docs.py` 신규 — BGE-M3 ONNX int8(CPU)로 canonical 120편+뉴스 청킹·임베딩 → `.ua/embeddings.json` (문서 단위 + 512토큰 청크 단위). 밤 배치(fetch 체인 뒤) — Intel CPU에서 수 분 소요 예상, 배치라 무관
-2. `lib/rag.ts` 개선 (기존 함수 시그니처 유지):
-   - 모듈 레벨 문서 캐시(콜드스타트 1회 로드)
-   - 하이브리드 점수: `0.5*벡터내적 + 0.3*키워드 + 0.2*그래프 인접 부스트`
-   - embeddings.json 없으면 현행 키워드 방식 폴백 (무회귀 보장)
-   - 질의 임베딩: Vercel에서는 OpenRouter 임베딩 호출 또는 키워드 폴백 — 구현 시 결정
-3. 그래프 스키마 확장 — `update-graph.sh` 산출 엣지에 `type(supports|contradicts|depends-on|part-of|compares|wikilink)`, `evidence[]`, `confidence`, `status(canonical|hypothesis)` 필드 추가. frontmatter `contradictions` → `contradicts` 엣지 자동 생성
-4. 노드 ID 통일 — bare slug 표준. Gate C(`article:` prefix) 병합 시 정규화 매핑
-5. `sync-wiki.sh`에 embeddings.json 복사 1행 추가
+1. ✅ `scripts/embed-docs.py` 신규 — ~~BGE-M3~~ **multilingual-mpnet** ONNX(CPU)로 canonical 132편+raw 33편+뉴스 300건=465건 임베딩 → `.ua/embeddings.json`. **청킹 없이 문서당 앞 2000자**로 스코프 축소(원안은 512토큰 청크 단위였으나 소규모 코퍼스에 과설계 판단). Python 3.14는 onnxruntime 미지원 확인되어 `~/2nd/.venv`(Python 3.11) 격리 환경 구성
+2. ✅ `lib/rag.ts` 개선:
+   - 모듈 레벨 문서 캐시 구현
+   - 하이브리드 점수: `0.6*코사인 + 0.4*정규화 키워드` (원안의 그래프 부스트 0.2는 이미 `expandGraphNeighbors`가 별도 UI 경로로 처리 중이라 점수 결합에서는 제외 — 중복 방지)
+   - embeddings.json 없으면 키워드 폴백 — tsx로 실측 확인, 회귀 없음
+   - 질의 임베딩: **OpenRouter 임베딩 API는 엔드포인트 미검증 상태로 도입하지 않음(보류)**. 대신 `.venv` 존재 여부로 자동 분기 — 로컬 dev는 하이브리드 활성, Vercel(venv 미배포)은 자동 키워드 폴백
+3. ⏸ 그래프 스키마 확장(`type/evidence/confidence/status` 필드) — 이연
+4. ⏸ 노드 ID 통일(bare slug ↔ `article:` prefix) — 이연
+5. ✅ `sync-wiki.sh`에 embeddings.json 복사 추가 (내용 불변 시 git diff 없어 매일 커밋되지 않음 확인)
 
-**예상 변경 파일**: 신규 — `scripts/embed-docs.py`. 수정 — `lib/rag.ts`, `scripts/update-graph.sh`, `scripts/sync-wiki.sh`(1행), `drone-wiki-web/scripts/sync-wiki.sh`
+**실측 검증**: 한글 전용 질의("위치 인식 불가 상황에서 스스로 길을 찾는 기술", 영단어 0개)로 `decentralized-swarm-gps-denied` 등 검색 성공 — 기존 키워드 방식이면 0건. 기존 강한 키워드 질의("PX4 ArduPilot EKF 비교") 무회귀 확인. `research-search.py`(Python)와 `rag.ts`(TS) 두 구현이 동일 질의에 대해 거의 동일한 점수 산출 확인(로직 일관성).
 
-**위험**
-- rag.ts 회귀 → 폴백 경로 유지 + 기존 Q&A 스모크 테스트
-- BGE-M3 설치 실패(Python 3.14 호환) → 대안: onnxruntime 고정 버전, 최후 폴백 OpenRouter 임베딩 API(소액)
-- Vercel 스냅샷 크기 증가(벡터 JSON) → float16/8bit 양자화로 120편 기준 수 MB 이내
+**예상 변경 파일**: 신규 — `scripts/embed-docs.py`. 수정 — `lib/rag.ts`, `scripts/research-search.py`, `scripts/sync-wiki.sh`(drone-wiki-web)
+
+**위험 (실제 발생분 포함)**
+- rag.ts 회귀 → 폴백 경로 유지 + tsx 스모크 테스트로 실측 확인
+- **실제 발생**: BGE-M3가 채택 라이브러리(fastembed)에 없음을 뒤늦게 발견 → multilingual-mpnet로 교체(실측 검증 완료, `TECHNOLOGY_DECISION_RECORD.md` 정정)
+- **실제 발생**: 시스템 Python 3.14가 onnxruntime 미지원 → Python 3.11 venv로 격리
+- Vercel 스냅샷 크기 증가 → 465건 3.65MB로 확인, 문제 없는 수준
+- 자동 배포 파이프라인(2nd-sync-dronewiki, 매일 04:30) 통한 3.65MB 파일 최초 1회 자동 커밋·푸시·배포 발생 예정 — 마스터 인지 필요
 
 **완료 기준**: 한글 질의("군집 비행 충돌 회피") → 영문 문서(`swarm-coordination` 등) top-5 검색 성공. 기존 영문 질의 무회귀
 **롤백**: embeddings.json 삭제 → 자동 키워드 폴백. rag.ts 이전 커밋 복원
