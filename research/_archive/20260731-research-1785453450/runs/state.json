@@ -1,0 +1,14 @@
+{
+  "session_id": "20260731-research-1785453450",
+  "status": "awaiting_approval",
+  "created": "2026-07-30T23:17:30Z",
+  "updated": "2026-07-30T23:19:02Z",
+  "llm_calls": 5,
+  "llm_call_limit": 10,
+  "failures": [],
+  "approval": {
+    "decision": null,
+    "reason": null,
+    "at": null
+  }
+}

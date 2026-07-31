@@ -78,6 +78,35 @@ human verification against the source evidence.
 - Keep optional MCP servers disabled unless the current task needs them.
 - Summarize tool output before passing it to another model.
 
+## Research Layer
+
+`research/` is a fourth top-level area, distinct from `raw/`, canonical
+(`entities/`, `concepts/`, `comparisons/`, `queries/`), and `inbox/`. It stages
+AI-assisted research sessions and is never treated as canonical knowledge and
+never included in any web sync/deploy snapshot.
+
+- Category-based layout (mirrors this repository's existing "split by kind,
+  not by batch" convention — see `raw/` and canonical directories):
+  `research/runs/<session-id>/` (process files: goal, questions, search
+  hits, state.json), `research/hypotheses/<session-id>.md` (claims),
+  `research/reviews/<session-id>.md` (critique + verification),
+  `research/drafts/<session-id>.md` (the human-facing research memo). See
+  `research/RESEARCH_SCHEMA.md` for the full contract.
+- `raw/` and canonical directories are **read-only** to the research loop.
+  Phase 1 does not write to canonical at all — promotion tooling
+  (`scripts/research-promote.sh`) exists but is not wired into the Phase 1
+  pipeline; it is out of scope until a later phase revisits it.
+- A session's status (`planned → retrieving → hypothesis_generated →
+  under_critique → evidence_checked → awaiting_approval → approved |
+  rejected | failed`) is master-approved at the end: `approved`/`rejected`
+  only, recorded in `runs/<session-id>/state.json`. This approval records
+  trust in the research memo — it does not itself promote anything to
+  canonical.
+- Rejected sessions move to `research/_archive/<session-id>/` and never
+  mutate `raw/`, canonical pages, `index.md`, or `log.md`.
+- Full architecture: `docs/AI_RESEARCHER_ARCHITECTURE.md`. Rollout plan:
+  `docs/AI_RESEARCHER_ROADMAP.md`.
+
 ## Domain Focus
 
 This wiki's primary knowledge domain is **drone technology**. Prioritize evidence and canonical pages within these eight subject areas:

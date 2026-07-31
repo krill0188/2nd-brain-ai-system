@@ -1,0 +1,27 @@
+{
+  "session_id": "20260731-research-1785454426",
+  "status": "failed",
+  "created": "2026-07-30T23:33:46Z",
+  "updated": "2026-07-30T23:33:57Z",
+  "llm_calls": 0,
+  "llm_call_limit": 10,
+  "failures": [
+    {
+      "stage": "planner",
+      "attempt": 1,
+      "error": "",
+      "at": "2026-07-30T23:33:49Z"
+    },
+    {
+      "stage": "planner",
+      "attempt": 2,
+      "error": "",
+      "at": "2026-07-30T23:33:52Z"
+    }
+  ],
+  "approval": {
+    "decision": null,
+    "reason": null,
+    "at": null
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "session_id": "20260731-research-1785509562",
+  "status": "rejected",
+  "created": "2026-07-31T14:52:42Z",
+  "updated": "2026-07-31T15:08:52Z",
+  "llm_calls": 5,
+  "llm_call_limit": 10,
+  "failures": [],
+  "approval": {
+    "decision": "rejected",
+    "reason": "T3 테스트 — 근거 보강 필요",
+    "at": "2026-07-31T15:08:52Z"
+  }
+}

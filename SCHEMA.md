@@ -38,6 +38,7 @@ contains no raw source record and no canonical page.
 | `comparisons/` | Canonical pages whose exact `type` is `comparison`. |
 | `queries/` | Canonical filed syntheses whose exact `type` is `query`. |
 | `_archive/` | Fully superseded canonical pages removed from active navigation. |
+| `research/` | AI-assisted research session staging. Not canonical, not raw evidence, never included in web sync/deploy snapshots. Read-only access to `raw/` and canonical directories; writes to canonical only via `scripts/research-promote.sh` after human approval. See `AGENTS.md` § Research Layer and `docs/AI_RESEARCHER_ARCHITECTURE.md`. |
 
 ## File and frontmatter rules
 
