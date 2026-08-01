@@ -84,7 +84,7 @@ Phase 5  웹 연구 탭(읽기 전용)        (1일)
    - 모듈 레벨 문서 캐시 구현
    - 하이브리드 점수: `0.6*코사인 + 0.4*정규화 키워드` (원안의 그래프 부스트 0.2는 이미 `expandGraphNeighbors`가 별도 UI 경로로 처리 중이라 점수 결합에서는 제외 — 중복 방지)
    - embeddings.json 없으면 키워드 폴백 — tsx로 실측 확인, 회귀 없음
-   - 질의 임베딩: **OpenRouter 임베딩 API는 엔드포인트 미검증 상태로 도입하지 않음(보류)**. 대신 `.venv` 존재 여부로 자동 분기 — 로컬 dev는 하이브리드 활성, Vercel(venv 미배포)은 자동 키워드 폴백
+   - 질의 임베딩: `.venv` 존재 여부로 자동 분기 — 로컬 dev/연구 파이프라인은 하이브리드 활성, Vercel(venv 미배포)은 자동 키워드 폴백. **2026-08-01 마스터 결정: 프로덕션 웹 Q&A는 현상태(키워드 전용) 유지 확정.** OpenRouter `/api/v1/embeddings`(`https://openrouter.ai/api/v1/embeddings`, OpenAI 호환, 예: `openai/text-embedding-3-small`)가 실존함을 검증했으나, 로컬 문서 벡터(multilingual-mpnet)와 다른 모델이라 그대로 섞으면 벡터공간이 달라 무의미한 코사인 값이 나온다는 문제를 발견 — 프로덕션 적용 시 (a) 문서·질의 전체 재구성 또는 (b) 웹 배포 전용 별도 임베딩 파일 중 하나가 필요하며, 두 경로 모두 **매 웹 질문마다 영구적인 유료 API 비용**이 발생. 마스터가 이 반복비용 대비 이득이 크지 않다고 판단해 보류. 재검토 조건: 키워드 검색의 실사용자 불만이 실제로 누적되거나, 무료/저비용 임베딩 API 대안이 생길 때.
 3. ⏸ 그래프 스키마 확장(`type/evidence/confidence/status` 필드) — 이연
 4. ⏸ 노드 ID 통일(bare slug ↔ `article:` prefix) — 이연
 5. ✅ `sync-wiki.sh`에 embeddings.json 복사 추가 (내용 불변 시 git diff 없어 매일 커밋되지 않음 확인)
