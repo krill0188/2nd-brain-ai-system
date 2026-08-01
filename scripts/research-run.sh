@@ -199,7 +199,7 @@ cmd_approve() {
   jq --arg now "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
      '.status="approved" | .approval={decision:"approved", reason:null, at:$now} | .updated=$now' \
      "$sf" > "$tmp" && mv "$tmp" "$sf"
-  report_master "세션 $sid: 마스터 승인 완료. (참고: Phase 1은 canonical 자동 승격을 구현하지 않음 — 승격은 별도 작업)"
+  report_master "세션 $sid: 마스터 승인 완료. canonical 승격은 'scripts/research-promote.py $sid --items C1,C3' 형식으로 별도 실행 (fact 클레임은 승격 거부됨 — inference/hypothesis만 대상)"
 }
 
 cmd_reject() {

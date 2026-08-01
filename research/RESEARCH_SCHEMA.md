@@ -16,8 +16,11 @@ RAG scoring logic, reused) → expand via graph neighbors → generate claim
 candidates → critique → verify against sources → draft a markdown report →
 request approval. Research output is a **discovery candidate**, never
 canonical knowledge, until a human approves it (AGENTS.md § Human Approval).
-Phase 1 does **not** implement automatic promotion to canonical — that is
-an explicit non-goal.
+Promotion is never automatic — a human always selects specific claim IDs via
+`scripts/research-promote.py <session-id> --items C1,C3` (2026-08-01, added
+after Phase 1). `fact`-type claims are refused (they restate an existing
+source, not new knowledge); only `inference`/`hypothesis` claims with
+`verification_status: grounded` are eligible.
 
 ## Directory layout
 
@@ -45,7 +48,7 @@ research/
 | Area | Research loop access |
 |---|---|
 | `raw/` | Read-only. Never modified. |
-| canonical 4계층 | Read-only. Phase 1에서는 **쓰기 자체가 없다** — 자동 승격 비구현. |
+| canonical 4계층 | Read-only, 단 `scripts/research-promote.py`만 예외 — 마스터가 명시 지정한 클레임 ID에 한해 신규 페이지 생성. |
 | `index.md`, `log.md` | Phase 1에서 손대지 않음. |
 | `research/` | Read-write, `research-run.sh`만. |
 
@@ -65,7 +68,7 @@ planned → retrieving → hypothesis_generated → under_critique
 | `under_critique` | Critic 반론 검토 완료 | `reviews/<id>.md` (critic 파트) |
 | `evidence_checked` | Evidence Verifier 대조 완료 | `reviews/<id>.md` (verifier 파트로 덮어씀) |
 | `awaiting_approval` | 연구 메모 초안 작성 완료, 마스터 승인 대기 | `drafts/<id>.md` |
-| `approved` | 마스터가 draft를 승인 (canonical 승격은 Phase 1 범위 밖 — 승인은 "연구 결과를 신뢰할 수 있다"는 기록일 뿐) | state.json |
+| `approved` | 마스터가 draft를 승인. `research-promote.py`로 개별 클레임 승격 가능해짐(승인 자체가 전체 자동 승격은 아님 — 클레임별로 별도 선택) | state.json |
 | `rejected` | 마스터가 반려 | state.json + `_archive/`로 이동 |
 | `failed` | 동일 단계 연속 2회 LLM 실패로 중단 | state.json + 마스터 보고 |
 
@@ -149,6 +152,34 @@ Evidence Verifier가 같은 파일을 다시 읽어 `verification_status`를 채
 - `hypotheses/<id>.md`와 `reviews/<id>.md`는 클레임 ID(`## C1`, `## C2`, …)로
   1:1 대응한다. Report Writer가 두 파일을 조인해서 최종 draft를 만든다.
 
+## Promotion — `scripts/research-promote.py` (연구 루프 13단계, 2026-08-01 구현)
+
+```
+python3 scripts/research-promote.py <session-id> --items C1,C3
+```
+
+- **전제 조건**: `runs/<id>/state.json`의 `status`가 `approved`여야 한다
+  (`research-run.sh approve <id>` 선행 필수).
+- **승격 대상 필터**(자동, 예외 없음):
+  - `claim_type: fact` → 거부. 이미 출처 문서의 재진술이므로 신규 페이지가
+    불필요하다(SCHEMA.md page-threshold 원칙).
+  - `verification_status: insufficient_evidence` → 거부.
+  - `supporting_sources`에 raw 출처가 1건 이상 없으면 거부(provenance).
+  - 활성 canonical wikilink 2개를 확보 못 하면 거부(link validity) — 부족하면
+    같은 세션의 다른 클레임 인용으로 보충.
+- **All-or-nothing**: `--items`로 여러 개를 한 번에 요청했을 때 하나라도
+  검증에 실패하면 전체 중단, 어떤 파일도 쓰지 않는다.
+- **생성**: `concepts/<slug>.md` 1건(9필드 frontmatter, confidence는
+  inference→medium / hypothesis→low, 절대 high로 시작하지 않음) +
+  `index.md`(정렬·total 갱신) + `log.md`(append) 원자적 3동작 + `state.json`
+  에 `promoted: {C1: "slug", ...}` 기록.
+- **slug**: 클레임 텍스트에서 영문/숫자 토큰만 추출해 생성(저장소 전체
+  canonical이 영문 slug 관례 — 첫 구현이 한글 slug를 만들어 관례를 어긴
+  것을 실사용 테스트로 발견해 수정함).
+- **raw/ 절대 미수정.** 검증 실패 시 canonical/index.md/log.md 어디에도
+  쓰지 않는다(실제로 all-or-nothing 음성 테스트 완료 — 근거 부족 클레임이
+  섞인 배치 요청이 전체 거부되고 파일 변화 0건임을 확인).
+
 ## `drafts/<session-id>.md` 필수 구성 (13개 요소)
 
 1. 연구 질문
@@ -180,9 +211,11 @@ Retriever는 기계 검색(기존 RAG 로직 재사용)이라 LLM 호출이 아�
 
 `research/`는 `scripts/sync-wiki.sh`나 Vercel 배포에 절대 포함되지 않는다.
 
-## Phase 1 명시적 비범위
+## 명시적 비범위 (변경 없음)
 
-- canonical 자동 승격 (승인은 기록되지만 승격 스크립트는 Phase 1에 없음)
+- **자동** canonical 승격 — 승격은 항상 마스터가 클레임 ID를 명시 지정해야
+  발생한다(`research-promote.py --items ...`, 2026-08-01 구현). 세션 승인이
+  전체 클레임을 자동으로 승격시키지 않는다.
 - 자율 웹 크롤링
 - Neo4j 등 그래프 DB 도입
 - 대규모 멀티에이전트 프레임워크

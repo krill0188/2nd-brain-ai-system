@@ -21,12 +21,18 @@ Phase 5  웹 연구 탭(읽기 전용)        (1일)
 > **Phase 1 실제 구현 결과 (2026-08-01)**: 아래 원안보다 마스터의 후속
 > 상세 스펙에 따라 더 단순화되어 구현됨 — 5단계 LLM 파이프라인
 > (Planner→Hypothesis→Critic→Verifier→Report), 카테고리 기반 저장구조
-> (`research/{runs,hypotheses,reviews,drafts}/`), G1/G3 게이트 제거,
-> canonical 승격 완전 이연. 실사용 테스트 중 결함 5건 발견·수정
-> (한글 슬러그 처리, `claude -p` 도구 접근 차단, CLAUDE.md 격리,
-> 검색 스니펫 절단 완화, 테스트 기준서 자체의 오류). 상세는
+> (`research/{runs,hypotheses,reviews,drafts}/`), G1 게이트 제거. 실사용
+> 테스트 중 결함 5건 발견·수정(한글 슬러그 처리, `claude -p` 도구 접근 차단,
+> CLAUDE.md 격리, 검색 스니펫 절단 완화, 테스트 기준서 자체의 오류). 상세는
 > `AI_RESEARCHER_ARCHITECTURE.md` 상단 대조표와 `MVP_ACCEPTANCE_TESTS.md`
 > 판정 기록 참조. 아래 Phase 1 섹션은 최초 설계안 그대로 보존한다.
+>
+> **추가 구현 (2026-08-01, 최초 13단계 루프의 마지막 단계)**: 애초 Phase 1
+> 범위에서 뺐던 canonical 승격을 `scripts/research-promote.py` 재작성으로
+> 실제 연결. `fact` 클레임 거부, `insufficient_evidence` 거부, wikilink/
+> provenance 검증, all-or-nothing 정책 실사용 검증 완료(양성·음성 케이스
+> 모두). 실사용 중 한글 slug 생성 버그와 YAML frontmatter 따옴표 이스케이프
+> 버그를 발견해 수정 — 상세는 `research/RESEARCH_SCHEMA.md` § Promotion.
 
 ---
 

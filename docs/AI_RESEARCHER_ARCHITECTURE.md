@@ -14,7 +14,7 @@
 > | 저장 구조 | `research/<session-id>/` 단일 폴더 | `research/{runs,hypotheses,reviews,drafts}/` 카테고리 분리 |
 > | 파이프라인 | 8단계(Planner/Retriever/Analyst/Gap/Hypothesis/Critic/Verifier/Report), LLM 7회 | 5단계 LLM 호출(Planner/Hypothesis/Critic/Verifier/Report) + 기계 검색 1회 |
 > | 승인 게이트 | G1(계획)/G2(보고서)/G3(항목별 승격) 3단 | G2에 해당하는 단일 승인(`approve`/`reject`)만. G1·G3 제거 |
-> | canonical 승격 | Phase 1에 `research-promote.sh` 포함 | Phase 1 범위 밖으로 명시적 이연(`research-promote.py/.sh`는 존재하나 파이프라인에서 미호출) |
+> | canonical 승격 | Phase 1에 `research-promote.sh` 포함 | 최초 Phase 1에서는 이연했다가, 2026-08-01 `research-promote.py`를 v2 스키마(hypotheses/reviews 2파일 구조)에 맞게 재작성해 실제 연결 완료 — `fact` 클레임 거부·all-or-nothing 등 실사용 검증됨 |
 > | 클레임 필드 | `status/evidence/counter/verifier_note` | `claim/claim_type(fact\|inference\|hypothesis)/supporting_sources` + 별도 리뷰 파일의 `opposing_sources/limitations/confidence/verification_status` |
 
 ---
