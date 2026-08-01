@@ -444,3 +444,102 @@
 - scripts/param-diff.py: PX4 펌웨어 내장 parameter_xml + ArduPilot 버전별 공식 문서 자동 비교
 - 초기 생성: param-diff-px4-1-16-0-1-17-0 / param-diff-copter-4-6-0-4-7-0
 - fetch-inbox.sh --auto 훅: 신규 릴리즈 감지 시 직전 버전 대비 diff 페이지 자동 생성
+
+## [2026-07-31] ingest | Inbox daily ingest
+
+- Source files from `inbox/`:
+  - `fetch-2026-07-30-crossref-learning-heuristics-with-vision-transformers-for-risk-aware-.md`
+  - `fetch-2026-07-30-crossref-optimising-360-panoramic-imaging-fisheye-image-stitching-for.md`
+  - `fetch-2026-07-30-crossref-path-planning-for-urban-transmission-tower-inspection-using-.md`
+  - `fetch-2026-07-30-crossref-s2anet-semantic-spatial-driven-alignment-salient-object-dete.md`
+  - `fetch-2026-07-30-yt-32ish-questions-with-an-mit-robotics-researcher-and-actor.md`
+  - `fetch-2026-07-30-yt-3d-printing-additive-manufacturing-full-course.md`
+  - `fetch-2026-07-30-yt-aeon-ul16-aurora2305-2500kv-5x43x3-v1s-hqprop-kiss-esc-4in1-.md`
+  - `fetch-2026-07-30-yt-behind-the-popular-ai-tools-lies-a-crucial-bit-of-tech-calle.md`
+  - `fetch-2026-07-30-yt-bitcraze-at-icra-2026-crazyflie-swarm-highlights-from-vienna.md`
+  - `fetch-2026-07-30-yt-capture-every-detail4-august-2026-12-pm-gmt.md`
+  - `fetch-2026-07-30-yt-depth-anything-v2-pytorch-code-generation-with-matlab-coder.md`
+  - `fetch-2026-07-30-yt-dji-mavic-4-pro-unboxing.md`
+  - `fetch-2026-07-30-yt-fcc-investigates-dji-linked-tech.md`
+  - `fetch-2026-07-30-yt-kiss-esc-prototype-test-flying-back-in-2017.md`
+  - `fetch-2026-07-30-yt-learning-agile-quadrotor-flight-in-the-real-world-rss-2026.md`
+  - `fetch-2026-07-30-yt-many-of-us-want-home-robots-whats-the-holdup.md`
+  - `fetch-2026-07-30-yt-marine-corps-fiber-optic-live-fire-strike-at-camp-pendleton-.md`
+  - `fetch-2026-07-30-yt-motion-aware-event-suppression-for-event-cameras-rss-2026.md`
+  - `fetch-2026-07-30-yt-nemyx-drone-swarm-demo-with-british-army-auterion.md`
+  - `fetch-2026-07-30-yt-qa-livestream---august-17-2026.md`
+  - `fetch-2026-07-30-yt-ratefpv-f4-40a-aio-flight-controller-a-first-look.md`
+  - `fetch-2026-07-30-yt-stop-leaking-construction-profit-with-the-right-gnss-tools.md`
+  - `fetch-2026-07-30-yt-yolov11-litert-code-generation-with-matlab-coder.md`
+  - `fetch-2026-07-31-arxiv-uav-swarming-for-air-ground-isac-via-cross-region-cooperatio.md`
+  - `fetch-2026-07-31-crossref-a-two-layer-multi-objective-planner-for-heterogeneous-uav-as.md`
+  - `fetch-2026-07-31-crossref-multi-objective-electric-vehicle-drone-routing-problem-incor.md`
+  - `fetch-2026-07-31-crossref-multiscale-cross-layer-interaction-and-coordinated-symmetric.md`
+  - `fetch-2026-07-31-rss-dronedj.md`
+  - `fetch-2026-07-31-rss-dronelife.md`
+  - `fetch-2026-07-31-rss-suasnews.md`
+  - `fetch-2026-07-31-yt-agentic-ai-complete-course-for-beginners.md`
+  - `fetch-2026-07-31-yt-auterionos-powering-autonomous-mass-across-air-land-sea-aute.md`
+  - `fetch-2026-07-31-yt-darpa-offers-65mm-for-impossible-heavy-lift-challenge.md`
+  - `fetch-2026-07-31-yt-dji-osmo-pocket-4p-is-herethe-dual-lens-cinematic-pocket-gim.md`
+  - `fetch-2026-07-31-yt-high-speed-drone-los-flying-in-2020-5s-264kmh.md`
+  - `fetch-2026-07-31-yt-rc-news-kite-gcs-goes-into-release-candidate-a-brand-new-mod.md`
+  - `fetch-2026-07-31-yt-tiny-fpv-whoop-racespec-v2-flying---edit.md`
+- Created entities:
+  - `entities/auterion.md` — PX4 기반 드론 소프트웨어 플랫폼 기업
+  - `entities/bitcraze.md` — Crazyflie 나노 드론 플랫폼
+  - `entities/kite-gcs.md` — ArduPilot/INAV/PX4 지원 현대적 GCS
+  - `entities/ratefpv.md` — FPV 드론 AIO FC 제조업체
+- Created concepts:
+  - `concepts/agile-quadrotor-learning.md` — 실제 환경 민첩 쿼드로터 학습
+  - `concepts/event-camera-drone.md` — 이벤트 카메라 드론 비전
+  - `concepts/drone-news-2026-07-31.md` — 2026-07-31 드론 업계 뉴스
+  - `concepts/uav-isac-cross-region.md` — UAV ISAC 교차 지역 협력
+- Updated: `index.md` (106 pages), `log.md`
+- Moved sources to: `inbox/processed/` (37 files)
+
+## [2026-08-01] ingest | 2026-08-01 인제스트 — MAVLink-M, QGC v5.1.0, DJI 하드웨어, AI 연구
+
+- Source files from `inbox/` (17 files):
+  - `fetch-2026-08-01-yt-this-drone-can-chase-f1-cars.md`
+  - `fetch-2026-08-01-yt-a-new-era-of-interoperable-payloads-begins-at-the-dronecode-.md`
+  - `fetch-2026-08-01-yt-radial-impeller-drone-fly-by-drone-fpv-diy-rc-fpvdrone-quadm.md`
+  - `fetch-2026-08-01-yt-unbox-slip-it-into-your-pocket-start-rolling-osmo-pocket-4.md`
+  - `fetch-2026-08-01-yt-three-moves-one-gimbal-all-in-dji-rs-5.md`
+  - `fetch-2026-08-01-rss-oscarliang-fpv.md`
+  - `fetch-2026-08-01-rss-dronelife.md`
+  - `fetch-2026-08-01-rss-dronedj.md`
+  - `fetch-2026-08-01-qgroundcontrol.md`
+  - `fetch-2026-08-01-yolo.md`
+  - `fetch-2026-08-01-crossref-graph-neural-network-driven-anomaly-detection-framework-for-.md`
+  - `fetch-2026-08-01-crossref-detection-aided-enhanced-reweighted-atomic-norm-minimization.md`
+  - `fetch-2026-08-01-yt-중고등학생을-위한-피지컬-ai-로봇팔자율주행ai-로봇-체험-프로그램-소개.md`
+  - `fetch-2026-08-01-yt-윈도우-python-개발환경-visual-studio-code-miniconda-claude-code-설치-.md`
+  - `fetch-2026-08-01-yt-kubernetes-operator-best-practices-kubebuilder-deep-dive.md`
+  - `fetch-2026-08-01-yt-how-to-verify-generated-code-using-pil-support-package-for-r.md`
+  - `fetch-2026-08-01-yt-installation-and-hardware-setup-support-package-for-renesas-.md`
+- Created concepts:
+  - `concepts/high-speed-drone-tracking.md` — 고속 추적 드론 기술
+  - `concepts/mavlink-m-interoperability.md` — MAVLink-M 상호운용성
+  - `concepts/radial-impeller-drone.md` — 방사형 임펠러 드론
+  - `concepts/hglrc-talon-cinewhoop.md` — HGLRC Talon 시네후프 리뷰
+  - `concepts/gnn-uav-anomaly-detection.md` — GNN 기반 UAV 이상 탐지
+  - `concepts/uav-swarm-target-localization.md` — UAV 스웜 표적 위치 추정
+  - `concepts/drone-news-2026-08-01.md` — 2026-08-01 드론 뉴스
+  - `concepts/drone-delivery-news.md` — 드론 배달 뉴스
+- Created entities:
+  - `entities/qgroundcontrol.md` — QGroundControl v5.1.0
+  - `entities/dji-osmo-pocket-4.md` — DJI Osmo Pocket 4P
+  - `entities/dji-rs-5.md` — DJI RS 5
+  - `entities/yolo-v8-4-114.md` — YOLO v8.4.114
+- Updated: `index.md` (114 pages), `log.md`
+- Moved sources to: `inbox/processed/` (17 files)
+
+
+## [2026-08-01] research-promote | 지식베이스에 축적된 마이크로드론 온보드 SLAM 관련 문서들을 종합했을 때 공통적인 기술 트렌드는 무엇인가?
+
+- Source: `research/drafts/20260801-research-1785543589.md` (마스터 승인)
+- Created pages:
+  - `concepts/micro-drone-slam-imu-vio-lidar-uav-livox-mid-360-pixhawk-4-m.md` — 검색 결과에서 "micro drone"으로 명시된 SLAM 사례는 카메라+IMU(VIO) 조합을 사용한 반면, LiDAR-관성 오도메트리 사례는 더 큰 임베디드 UAV 플랫폼(Li
+  - `concepts/gps-uav-imu.md` — GPS 미수신 환경에 특화된 마이크로드론/UAV 위치추정 기법들은 공통적으로 외부 위치 인프라(GPS) 없이 온보드 카메라·IMU·옵티컬 플로우 등 상대적/자기완결적 센싱에만 의존
+- Updated: `index.md`

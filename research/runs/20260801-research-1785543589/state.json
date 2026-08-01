@@ -1,0 +1,18 @@
+{
+  "session_id": "20260801-research-1785543589",
+  "status": "approved",
+  "created": "2026-08-01T00:19:49Z",
+  "updated": "2026-08-01T00:30:42Z",
+  "llm_calls": 5,
+  "llm_call_limit": 10,
+  "failures": [],
+  "approval": {
+    "decision": "approved",
+    "reason": null,
+    "at": "2026-08-01T00:27:05Z"
+  },
+  "promoted": {
+    "C3": "micro-drone-slam-imu-vio-lidar-uav-livox-mid-360-pixhawk-4-m",
+    "C11": "gps-uav-imu"
+  }
+}
