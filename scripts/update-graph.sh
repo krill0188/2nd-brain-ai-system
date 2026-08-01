@@ -27,7 +27,7 @@ else:
     graph = {"nodes": [], "edges": []}
 
 existing_ids = {n["id"] for n in graph.get("nodes", [])}
-existing_edge_keys = {(e["source"], e["target"]) for e in graph.get("edges", [])}
+existing_edge_keys = {(e["source"], e["target"], e.get("type", "wikilink")) for e in graph.get("edges", [])}
 
 # ── frontmatter 파서 ──────────────────────────────────────────
 def parse_frontmatter(text):
@@ -83,6 +83,9 @@ for fpath in sorted(set(all_files)):
                  "Comparisons": "Comparisons", "Queries": "Queries"}
     layer = layer_map.get(layer, "Concepts")
 
+    confidence = fm.get("confidence", "") if fm.get("confidence") in ("high", "medium", "low") else ""
+    sources = fm.get("sources", []) if isinstance(fm.get("sources"), list) else []
+
     node = {
         "id":     slug,
         "name":   fm.get("title", slug),
@@ -90,6 +93,8 @@ for fpath in sorted(set(all_files)):
         "domain": fm.get("domain", ""),
         "tags":   fm.get("tags", []) if isinstance(fm.get("tags"), list) else [],
         "updated": fm.get("updated", fm.get("created", "")),
+        "confidence": confidence,
+        "status": "canonical",
     }
 
     if slug not in existing_ids:
@@ -97,24 +102,87 @@ for fpath in sorted(set(all_files)):
         existing_ids.add(slug)
         added_nodes += 1
     else:
-        # 기존 노드 domain/updated 갱신
+        # 기존 노드 domain/updated/confidence 갱신
         for n in graph["nodes"]:
             if n["id"] == slug:
                 if fm.get("domain"):
                     n["domain"] = fm["domain"]
                 if fm.get("updated"):
                     n["updated"] = fm["updated"]
+                if confidence:
+                    n["confidence"] = confidence
+                n.setdefault("status", "canonical")
                 break
 
-    # 엣지: wikilink
+    # 엣지: 본문 wikilink (일반 관계 — 관계 성격을 마크다운에서 신뢰성 있게
+    # 구분할 수 없어 기본값 유지. Phase 2에서 evidence/confidence만 추가)
     links = extract_links(content)
     for target_slug in links:
         target_slug = target_slug.strip()
-        key = (slug, target_slug)
+        key = (slug, target_slug, "wikilink")
         if key not in existing_edge_keys:
-            graph["edges"].append({"source": slug, "target": target_slug, "type": "wikilink"})
+            graph["edges"].append({
+                "source": slug, "target": target_slug, "type": "wikilink",
+                "evidence": sources[:1], "confidence": confidence,
+            })
             existing_edge_keys.add(key)
             added_edges += 1
+        else:
+            # 이전 스캔에서 evidence/confidence 없이 만들어진 기존 엣지 백필
+            for e in graph["edges"]:
+                if e["source"] == slug and e["target"] == target_slug and e.get("type", "wikilink") == "wikilink":
+                    e.setdefault("evidence", sources[:1])
+                    e.setdefault("confidence", confidence)
+                    break
+
+    # 엣지: frontmatter contradictions → 명시적 contradicts 관계
+    contradictions = fm.get("contradictions", [])
+    if isinstance(contradictions, list):
+        for target_slug in contradictions:
+            target_slug = target_slug.strip()
+            if not target_slug:
+                continue
+            key = (slug, target_slug, "contradicts")
+            if key not in existing_edge_keys:
+                graph["edges"].append({
+                    "source": slug, "target": target_slug, "type": "contradicts",
+                    "evidence": sources[:1], "confidence": confidence,
+                })
+                existing_edge_keys.add(key)
+                added_edges += 1
+
+# ── 노드 ID 정규화 (Phase 2) ──────────────────────────────────
+# Gate C(Understand Anything)가 별도로 이 파일에 병합하는 노드는
+# "article:<slug>" 형태 prefix를 쓴다. 이 스크립트는 bare slug를 쓰므로
+# 같은 문서가 두 ID로 중복 존재하며, article: 쪽은 어떤 위키링크와도
+# 매칭되지 않아 그래프에서 고립된다(실측: 137노드 중 21개). bare slug
+# 노드가 실존하면 article: 중복을 병합하고, 그 엣지를 bare slug로 재연결한다.
+bare_slugs = existing_ids  # 이번 스캔으로 확정된 canonical bare slug 전체
+redirect = {}
+for n in graph["nodes"]:
+    nid = n["id"]
+    if nid.startswith("article:"):
+        candidate = nid.split(":", 1)[1].rsplit("/", 1)[-1]
+        if candidate in bare_slugs:
+            redirect[nid] = candidate
+
+if redirect:
+    graph["nodes"] = [n for n in graph["nodes"] if n["id"] not in redirect]
+    for e in graph["edges"]:
+        if e["source"] in redirect:
+            e["source"] = redirect[e["source"]]
+        if e["target"] in redirect:
+            e["target"] = redirect[e["target"]]
+    # 재연결 후 생긴 중복 엣지 제거
+    seen = set()
+    deduped = []
+    for e in graph["edges"]:
+        k = (e["source"], e["target"], e.get("type", "wikilink"))
+        if k not in seen:
+            seen.add(k)
+            deduped.append(e)
+    graph["edges"] = deduped
+    print(f"🔗 노드 ID 정규화: article: prefix {len(redirect)}개 → bare slug 병합")
 
 # ── 저장 ──────────────────────────────────────────────────────
 with open(graph_path, "w") as f:

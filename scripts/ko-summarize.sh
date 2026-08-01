@@ -39,7 +39,16 @@ PYEOF
   ) || break  # 대상 없으면 종료
 
   TMP=$(mktemp)
-  echo "$PROMPT" | claude -p > "$TMP" 2>/dev/null || { rm -f "$TMP"; echo "  ko-summarize: claude 호출 실패"; exit 0; }
+  ERR=$(mktemp)
+  if ! echo "$PROMPT" | claude -p --tools "" --safe-mode > "$TMP" 2> "$ERR"; then
+    echo "  ko-summarize: claude 호출 실패 — $(tail -c 200 "$ERR" | tr '\n' ' ')"
+    rm -f "$TMP" "$ERR"; exit 0
+  fi
+  if [[ ! -s "$TMP" ]]; then
+    echo "  ko-summarize: claude 빈 응답 — $(tail -c 200 "$ERR" | tr '\n' ' ')"
+    rm -f "$TMP" "$ERR"; exit 0
+  fi
+  rm -f "$ERR"
 
   python3 - "$FEED" "$TMP" <<'PYEOF'
 import json, sys, re

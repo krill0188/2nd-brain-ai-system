@@ -51,8 +51,16 @@ PYEOF
 )
 
 TMP=$(mktemp)
-trap 'rm -f "$TMP"' EXIT
-echo "$PROMPT" | claude -p > "$TMP" 2>/dev/null || { echo "  briefing: claude 호출 실패"; exit 0; }
+ERR=$(mktemp)
+trap 'rm -f "$TMP" "$ERR"' EXIT
+if ! echo "$PROMPT" | claude -p --tools "" --safe-mode > "$TMP" 2> "$ERR"; then
+  echo "  briefing: claude 호출 실패 — $(tail -c 200 "$ERR" | tr '\n' ' ')"
+  exit 0
+fi
+if [[ ! -s "$TMP" ]]; then
+  echo "  briefing: claude 빈 응답 — $(tail -c 200 "$ERR" | tr '\n' ' ')"
+  exit 0
+fi
 
 python3 - "$OUT" "$TODAY" "$TMP" <<'PYEOF'
 import json, sys, re

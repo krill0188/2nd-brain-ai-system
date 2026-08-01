@@ -10,7 +10,7 @@
 ```
 Phase 0  문서화·스키마 등록          완료 (2026-07-31)
 Phase 1  MVP: 연구 루프 + CLI 승인    완료 (2026-08-01) — T1/T2/T3 전부 통과
-Phase 2  검색 강화: 임베딩+하이브리드 (2026-08-01, 부분완료 — 그래프 스키마 확장·노드ID 통일은 이연)
+Phase 2  검색 강화: 임베딩+하이브리드+그래프 스키마 (2026-08-01, 완료)
 Phase 3  텔레그램 승인 게이트         (1일)
 Phase 4  검증 자동화(Critic/Verifier 심화) (1~2일)
 Phase 5  웹 연구 탭(읽기 전용)        (1일)
@@ -81,7 +81,7 @@ Phase 5  웹 연구 탭(읽기 전용)        (1일)
 
 ## Phase 2 — 검색 강화: 임베딩 + 하이브리드 + 그래프 스키마
 
-> **1·2·5번 완료 (2026-08-01), 3·4번은 다음 증분으로 이연.** 아래는 원안
+> **전항목 완료 (2026-08-01).** 3·4번도 같은 날 추가로 완료. 아래는 원안
 > 그대로 보존.
 
 **작업**
@@ -91,11 +91,13 @@ Phase 5  웹 연구 탭(읽기 전용)        (1일)
    - 하이브리드 점수: `0.6*코사인 + 0.4*정규화 키워드` (원안의 그래프 부스트 0.2는 이미 `expandGraphNeighbors`가 별도 UI 경로로 처리 중이라 점수 결합에서는 제외 — 중복 방지)
    - embeddings.json 없으면 키워드 폴백 — tsx로 실측 확인, 회귀 없음
    - 질의 임베딩: `.venv` 존재 여부로 자동 분기 — 로컬 dev/연구 파이프라인은 하이브리드 활성, Vercel(venv 미배포)은 자동 키워드 폴백. **2026-08-01 마스터 결정: 프로덕션 웹 Q&A는 현상태(키워드 전용) 유지 확정.** OpenRouter `/api/v1/embeddings`(`https://openrouter.ai/api/v1/embeddings`, OpenAI 호환, 예: `openai/text-embedding-3-small`)가 실존함을 검증했으나, 로컬 문서 벡터(multilingual-mpnet)와 다른 모델이라 그대로 섞으면 벡터공간이 달라 무의미한 코사인 값이 나온다는 문제를 발견 — 프로덕션 적용 시 (a) 문서·질의 전체 재구성 또는 (b) 웹 배포 전용 별도 임베딩 파일 중 하나가 필요하며, 두 경로 모두 **매 웹 질문마다 영구적인 유료 API 비용**이 발생. 마스터가 이 반복비용 대비 이득이 크지 않다고 판단해 보류. 재검토 조건: 키워드 검색의 실사용자 불만이 실제로 누적되거나, 무료/저비용 임베딩 API 대안이 생길 때.
-3. ⏸ 그래프 스키마 확장(`type/evidence/confidence/status` 필드) — 이연
-4. ⏸ 노드 ID 통일(bare slug ↔ `article:` prefix) — 이연
+3. ✅ 그래프 스키마 확장 — `update-graph.sh` 노드에 `confidence`(frontmatter에서)/`status`("canonical" 고정) 추가, 엣지에 `evidence`(source 문서의 `sources[0]`)/`confidence` 추가. `type`은 본문 wikilink 기본값 `wikilink` 유지(마크다운에서 관계 성격을 신뢰성 있게 구분할 근거가 없어 원안의 supports/depends-on 등 세분류는 보류) + frontmatter `contradictions` → `contradicts` 엣지 자동 생성 추가. 기존 엣지 445건에도 소급 백필(최초 구현은 신규 엣지만 채우는 버그가 있어 실사용 테스트로 발견·수정)
+4. ✅ 노드 ID 통일 — Gate C가 만드는 `article:<slug>` 노드 중 동일 bare slug 캐논니컬 노드가 실존하면 자동 병합·엣지 재연결. 실행 1회차에 8건 병합 확인(137→150노드, 421→486엣지, 잔존 13건은 canonical 4계층 밖 문서라 정상)
 5. ✅ `sync-wiki.sh`에 embeddings.json 복사 추가 (내용 불변 시 git diff 없어 매일 커밋되지 않음 확인)
 
-**실측 검증**: 한글 전용 질의("위치 인식 불가 상황에서 스스로 길을 찾는 기술", 영단어 0개)로 `decentralized-swarm-gps-denied` 등 검색 성공 — 기존 키워드 방식이면 0건. 기존 강한 키워드 질의("PX4 ArduPilot EKF 비교") 무회귀 확인. `research-search.py`(Python)와 `rag.ts`(TS) 두 구현이 동일 질의에 대해 거의 동일한 점수 산출 확인(로직 일관성).
+**실측 검증**: 한글 전용 질의("위치 인식 불가 상황에서 스스로 길을 찾는 기술", 영단어 0개)로 `decentralized-swarm-gps-denied` 등 검색 성공 — 기존 키워드 방식이면 0건. 기존 강한 키워드 질의("PX4 ArduPilot EKF 비교") 무회귀 확인. `research-search.py`(Python)와 `rag.ts`(TS) 두 구현이 동일 질의에 대해 거의 동일한 점수 산출 확인(로직 일관성). 그래프 정규화 후 고아 엣지(타겟 노드 없음) 32건은 위키링크가 아직 캐논니컬 페이지로 안 만들어진 정상 케이스로 확인.
+
+**부수적으로 발견·수정한 무관 버그**: `ko-summarize.sh`/`daily-briefing.sh`의 새벽 자동 실행에서 `claude -p` 호출이 stderr 없이 조용히 실패해 최근 영문기사 20건의 한글요약이 누락됨을 발견 — stderr 캡처 추가(다음 실패 시 원인 즉시 노출) + `--tools "" --safe-mode` 방어적 적용(이 세션에서 검증된 동일 계열 수정) + 누락분 수동 처리 완료.
 
 **예상 변경 파일**: 신규 — `scripts/embed-docs.py`. 수정 — `lib/rag.ts`, `scripts/research-search.py`, `scripts/sync-wiki.sh`(drone-wiki-web)
 
