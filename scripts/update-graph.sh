@@ -86,6 +86,24 @@ for fpath in sorted(set(all_files)):
     confidence = fm.get("confidence", "") if fm.get("confidence") in ("high", "medium", "low") else ""
     sources = fm.get("sources", []) if isinstance(fm.get("sources"), list) else []
 
+    # ── 온톨로지 클래스 라벨 (Phase O1, ONTOLOGY_IMPLEMENTATION_ROADMAP.md) ──
+    # ONTOLOGY_SPEC.md §5 매핑표를 문서 분류 목적에 맞게 단순화했다(원안은
+    # domain 하나에 여러 런타임 클래스를 나열했으나, 위키 문서 자체를 그
+    # 런타임 객체의 인스턴스로 볼 수는 없다 — 예: "PX4 아키텍처" 문서는
+    # FlightController라는 하드웨어의 인스턴스가 아니라 그 기술에 대한
+    # 설명이므로 Technology로 분류하는 게 맞다). 매핑 안 되면 null로 두고
+    # 억지로 분류하지 않는다(SCHEMA.md 원칙과 동일).
+    ONTOLOGY_CLASS_MAP = {
+        "flight-control": "Technology",
+        "comms-protocol": "Technology",
+        "hardware": "Technology",
+        "gcs-software": "Technology",
+        "ai-autonomy": "AIModel",
+        "ai-agent": "AIModel",
+        "ops-mission": "Mission",
+    }
+    ontology_class = ONTOLOGY_CLASS_MAP.get(fm.get("domain", ""), None)
+
     node = {
         "id":     slug,
         "name":   fm.get("title", slug),
@@ -95,6 +113,7 @@ for fpath in sorted(set(all_files)):
         "updated": fm.get("updated", fm.get("created", "")),
         "confidence": confidence,
         "status": "canonical",
+        "ontologyClass": ontology_class,
     }
 
     if slug not in existing_ids:
@@ -102,7 +121,7 @@ for fpath in sorted(set(all_files)):
         existing_ids.add(slug)
         added_nodes += 1
     else:
-        # 기존 노드 domain/updated/confidence 갱신
+        # 기존 노드 domain/updated/confidence/ontologyClass 갱신
         for n in graph["nodes"]:
             if n["id"] == slug:
                 if fm.get("domain"):
@@ -112,6 +131,7 @@ for fpath in sorted(set(all_files)):
                 if confidence:
                     n["confidence"] = confidence
                 n.setdefault("status", "canonical")
+                n["ontologyClass"] = ontology_class
                 break
 
     # 엣지: 본문 wikilink (일반 관계 — 관계 성격을 마크다운에서 신뢰성 있게
