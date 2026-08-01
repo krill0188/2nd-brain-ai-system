@@ -2,25 +2,28 @@
 
 **English** | [한국어](README.ko.md)
 
-> A drone-domain knowledge management system built on Markdown and Git — powered by **Hermes Agent automation + 5-AI tool stack + Telegram HITL**.
+> A drone-domain knowledge management system built on Markdown and Git — powered by **Hermes Agent automation + 5-AI tool stack + a human-approved AI research loop**.
 
 ## Project Overview
 
 This project is a personal knowledge management system specialized in **drone technology** (8 subject areas: drone / datalink / swarm / voice-control / drone-hw / drone-sw / drone-ai / ai-agent). It implements a continuous **capture → compile → discovery → human decision** workflow using plain Markdown files — compatible with Obsidian, VS Code, GitHub, and any Markdown-compatible tool.
 
-Built on [ains-lab/2nd-brain-template](https://github.com/ains-lab/2nd-brain-template) with a custom AI tool layer, Hermes Agent automation, and Telegram HITL integration.
+Built on [ains-lab/2nd-brain-template](https://github.com/ains-lab/2nd-brain-template) with a custom AI tool layer, Hermes Agent automation, and an AI research loop (`research/`).
 
 ### Architecture
 
 The system consists of four knowledge layers: **Evidence → Canonical Memory → Discovery → Human Decision**. Raw source material is preserved as immutable evidence under `raw/`; reusable knowledge is compiled into canonical Markdown with traceable provenance.
 
-An **Automation Control Plane** (Hermes Agent + llm-wiki skill) handles scheduled ingestion, compilation, and lint automatically. A **Telegram HITL gateway** delivers diff reports to the master and gates canonical promotion on explicit approval — no AI hypothesis enters canonical memory without human sign-off.
+An **Automation Control Plane** (Hermes Agent + llm-wiki skill) handles scheduled ingestion, compilation, and lint automatically. **Routine daily-ingest compilation has no pre-approval step** — the llm-wiki skill compiles canonical pages immediately once its own conditions are met, logs the change to `log.md`, and a daily Telegram report notifies the master of what was created (visibility, not a blocking gate). **The only place human approval actually blocks finalization is the `research/` AI research loop** — AI-generated hypotheses/insights require the master to explicitly `approve` via `research-run.sh` and to name specific claims via `research-promote.py` before anything reaches canonical (see "AI Research Loop" below).
 
 ![Master 2nd Brain AI System Architecture](docs/architecture/master-ai-architecture.png)
 
 ### Operating Workflow
 
-The operating workflow follows **Capture → Hermes Cron → Gate A/B/C → Telegram Approval → Canonical**. Three integrity gates (Gate A: raw integrity / Gate B: lint + frontmatter / Gate C: graph freshness) run automatically. Gate B results are delivered to Telegram for human review before any canonical change is finalized.
+There are two separate paths.
+
+1. **Routine compilation path (no pre-approval)**: Capture → Hermes Cron (`fetch-inbox.sh`) → llm-wiki auto-compiles → logged to `log.md` → daily 07:30 Telegram post-hoc notification (list of new pages). `scripts/gate-c-analyze.sh` (graph structural gap analysis) runs separately and periodically.
+2. **AI research loop (pre-approval enforced)**: research goal → Planner→Retriever→Hypothesis→Critic→Verifier→Report (5 LLM calls) → master approval (`approve`/`reject`) → individually-selected claim promotion (`research-promote.py`). Only this path actually blocks canonical writes pending approval.
 
 ![Master 2nd Brain Operating Workflow](docs/workflow/master-workflow.png)
 
@@ -41,7 +44,7 @@ The stack combines Hermes Agent automation with five AI tools, each assigned to 
 | **Daily ingestion** | Hermes + llm-wiki skill (`b1a360fce35d`) | Cron `0 4 * * *` — scans `inbox/`, compiles canonical candidates | ✅ Active |
 | **Weekly lint** | Hermes + wiki audit (`91acb1c73884`) | Cron `0 5 * * 1` — checks orphans, broken links, stale pages, SHA-256 drift | ✅ Active |
 | **Weekly summary** | Hermes gateway (`bd81d81bca5f`) | Cron `0 9 * * 1` — delivers weekly knowledge digest to Telegram | ✅ Active |
-| **Telegram gateway** | Hermes gateway (launchd, PID auto-restart) | Always-on — receives capture commands, delivers Gate B diffs for approval | ✅ Running |
+| **Morning check + new-page notice** | `scripts/morning-report.sh` (`8fad48c5176d`) | Cron `30 7 * * *` — chain health check + list of canonical pages created that day (tagged auto-generated vs. research-loop-approved), sent via Telegram | ✅ Running |
 
 ### Registering Cron Jobs
 
@@ -73,16 +76,18 @@ hermes cron create "0 9 * * 1" \
 
 Verify registration: `hermes cron list`
 
-### Telegram HITL — 4-Point Integration
+### Telegram Integration — 3 Points (not an approval gate — a notification/query channel)
 
 ```
-[Point 1: Input]      Master → Telegram → Hermes → raw/inbox/
-[Point 2: Cron log]   Hermes Cron → Telegram: "3 raw added, 2 canonical candidates"
-[Point 3: Gate]       Gate B diff → Telegram → Master: approve / reject / revise
-[Point 4: Query]      Master → Telegram → Hermes → wiki search → answer
+[Point 1: Input]         Master → Telegram → Hermes → raw/inbox/
+[Point 2: Post-hoc]      Hermes Cron → Telegram (07:30): "8 new canonical pages auto-created today"
+[Point 3: Query]         Master → Telegram → Hermes → wiki search → answer
 ```
 
-Point 3 is the critical gate: Hermes sends the canonical diff to Telegram, and the master's reply (`approve` / `reject`) determines whether `index.md` and `log.md` are updated.
+> ⚠️ Telegram here is a **post-hoc notification/query channel, not a blocking approval gate**.
+> Daily-ingest does not wait for a Telegram reply — it updates `index.md`/`log.md` immediately.
+> The only point where approval actually blocks finalization is `research-run.sh approve` /
+> `research-promote.py` in the AI research loop below (CLI-based, not Telegram).
 
 ---
 
@@ -92,9 +97,9 @@ Five tools are configured for this system — each with a distinct responsibilit
 
 | Tool | Interface | Primary Role |
 | --- | --- | --- |
-| **Hermes + llm-wiki** | Gateway / Cron | Automated ingestion, compilation, lint, Telegram delivery |
+| **Hermes + llm-wiki** | Gateway / Cron | Automated ingestion, compilation, lint (finalized immediately, no pre-approval), Telegram notice afterward |
 | **OpenCode + Kimi K2** | Terminal (`opencode`) | Manual compile assist, document drafting, large-batch editing |
-| **Claude Code** | Terminal (`claude`) | Architecture analysis, contradiction review, Gate B deep judgment |
+| **Claude Code** | Terminal (`claude`) | Architecture analysis, contradiction review, running the AI research loop (Planner–Report) |
 | **Codex** | Terminal (`codex`) | Drone firmware exploration (PX4/ArduPilot/ROS2), code-to-raw pipeline |
 | **GitHub Copilot Chat** | VS Code sidebar (`@workspace`) | Cross-validation, alternative perspective, summarization — reads workspace files directly |
 | **GitHub Copilot Inline** | VS Code inline | Autocomplete while writing Markdown or code |
@@ -127,12 +132,12 @@ Collection priority: `drone-sw` → `datalink` → `drone-ai` → `swarm` → ot
 
 | Feature | Description |
 | --- | --- |
-| **Automated ingestion pipeline** | Hermes Agent cron scans `raw/inbox/` daily at 04:00, runs llm-wiki skill to compile canonical candidates, and delivers results to Telegram. |
-| **Telegram HITL gate** | Gate B diffs are delivered to Telegram for master approval. No canonical change is finalized without an explicit `approve` reply. |
+| **Automated ingestion pipeline** | Hermes Agent cron scans `raw/inbox/` daily at 04:00 and runs the llm-wiki skill, which compiles and **finalizes canonical pages immediately, with no pre-approval step**. A 07:30 morning report notifies the master via Telegram of what was created that day, after the fact. |
+| **AI research loop — the actual human approval gate** | Approval only blocks finalization in `research/`: a research session (Planner–Report) produces a draft, the master must explicitly `approve` it via `research-run.sh`, and must name specific claims via `research-promote.py --items` for them to reach canonical. `fact`-type claims (restating an existing source) are refused outright. |
 | **Source and provenance preservation** | Capture papers and web material with Zotero and Obsidian Web Clipper, then preserve the source, metadata, and SHA-256 digest under `raw/` so every claim can be traced to evidence. |
 | **Verified knowledge compilation** | Hermes llm-wiki skill and OpenCode + Kimi K2 structure source material into entity, concept, comparison, and query documents with provenance, confidence ratings, and contradiction tracking. |
 | **Connected Markdown editing** | Read and edit durable knowledge in Obsidian using wikilinks and backlinks; GitHub Copilot inline assists while editing. |
-| **Multi-AI cross-validation** | Claude Code and GitHub Copilot Chat (`@workspace`) provide independent analysis of the same evidence — contradictions surface before knowledge is promoted to canonical. |
+| **Multi-AI cross-validation** | Claude Code and GitHub Copilot Chat (`@workspace`) can provide independent analysis of the same evidence — but this is a manual check a human runs when warranted, not an automatic gate that runs before daily-ingest compilation. |
 | **Drone code exploration** | Codex navigates PX4, ArduPilot, ROS2/MAVROS2, and MAVSDK source code; results are saved to `raw/inbox/` and picked up by Hermes for compilation. |
 | **Knowledge graph (Gate C)** | Understand Anything `understand-knowledge` skill analyzes the wiki and produces an interactive knowledge graph (`.ua/knowledge-graph.json`) — clusters, gaps, and structural weak links surfaced automatically. Open the local viewer with `open .ua/graph.html` (force-directed, interactive, works offline). |
 | **Gate C v2 — AI gap analysis** | `scripts/gate-c-analyze.sh` reads the knowledge graph, pre-processes structure stats (layer density, isolated nodes, high-degree hubs, disconnected layer pairs), and pipes them to `claude -p` for AI interpretation. Output is a Telegram-formatted gap report saved to `.ua/gap-report.md`. Run with `--deliver` to push via Hermes. |
@@ -153,8 +158,8 @@ Collection priority: `drone-sw` → `datalink` → `drone-ai` → `swarm` → ot
 
 | Tool | Purpose | Setup |
 | --- | --- | --- |
-| [Hermes Agent](https://github.com/NousResearch/hermes-agent) | Automation control plane — llm-wiki, cron, Telegram gateway | `curl -fsSL https://hermes-agent.nousresearch.com/install.sh \| bash` |
-| Telegram Bot | HITL notification and approval gateway | Create via [@BotFather](https://t.me/BotFather), set token in `~/.hermes/.env` |
+| [Hermes Agent](https://github.com/NousResearch/hermes-agent) | Automation control plane — llm-wiki, cron, Telegram notification channel | `curl -fsSL https://hermes-agent.nousresearch.com/install.sh \| bash` |
+| Telegram Bot | Capture-command intake + post-hoc notification/query channel (not an approval gate) | Create via [@BotFather](https://t.me/BotFather), set token in `~/.hermes/.env` |
 
 ### AI Tools
 
@@ -268,10 +273,10 @@ Before adding knowledge, read [SCHEMA.md](SCHEMA.md), check [index.md](index.md)
 ## Basic Workflow
 
 1. **Capture**: Drop links into Telegram or save web pages via Obsidian Web Clipper → `raw/web/`. Papers go via Zotero Connector → Zotero library → `python3 scripts/zotero-ingest.py` → `raw/papers/<topic>/`.
-2. **Auto-ingest**: Hermes Cron (04:00 daily) scans `raw/inbox/`, compiles canonical candidates using llm-wiki, and sends a Telegram report.
-3. **Gate B approval**: Hermes delivers the canonical diff to Telegram. Reply `approve` to finalize or `reject` to discard.
-4. **Cross-validate**: Ask GitHub Copilot Chat (`@workspace`) or Claude to review drafts for contradictions or missing coverage.
-5. **Explore**: Treat knowledge-graph suggestions as hypotheses. Promote only human-verified findings to canonical.
+2. **Auto-compile (no pre-approval)**: Hermes Cron (04:00 daily) scans `raw/inbox/` and llm-wiki compiles and **finalizes** canonical pages immediately — no waiting state, `index.md`/`log.md` are updated right away.
+3. **Post-hoc notice**: `morning-report.sh` at 07:30 sends that day's newly-created pages to Telegram (a notice, not an approval request — the pages are already final).
+4. **(Optional) Cross-validate**: If warranted, ask GitHub Copilot Chat (`@workspace`) or Claude to review already-created pages for contradictions or missing coverage — a manual, human-initiated check, not an automatic step.
+5. **AI research loop (the real approval gate)**: For deeper questions, start a session with `scripts/research-run.sh new "<question>"`. It runs Planner→Retriever→Hypothesis→Critic→Verifier→Report to produce a draft; the master must `research-run.sh approve <id>` and then name specific claims via `research-promote.py <id> --items C1,C3` before anything reaches canonical — **only this path actually blocks finalization pending approval.**
 6. **Query**: Ask the Telegram bot directly — `"What did we collect on PX4 flight modes?"` — Hermes searches the wiki and replies.
 7. **Archive**: Move fully superseded pages to `_archive/`, repair links, and record the operation in `log.md`.
 
@@ -305,4 +310,4 @@ Use Git for history. Never store API keys, tokens, or login sessions in the repo
 
 ## License
 
-Based on [ains-lab/2nd-brain-template](https://github.com/ains-lab/2nd-brain-template). Adapted and extended for drone-domain AI knowledge management with Hermes Agent automation and Telegram HITL.
+Based on [ains-lab/2nd-brain-template](https://github.com/ains-lab/2nd-brain-template). Adapted and extended for drone-domain AI knowledge management with Hermes Agent automation and a human-approved AI research loop (`research/`).

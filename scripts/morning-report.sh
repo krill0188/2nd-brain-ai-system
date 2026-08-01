@@ -38,6 +38,37 @@ if [[ "$SITE_DATE" == "$TODAY" ]]; then echo "✅ 웹 배포: 사이트에 오�
 echo ""
 
 # 오늘의 드론 소식 본문
+# 오늘 새로 생성된 canonical 페이지 목록 (daily-ingest는 사전 승인 없이
+# 자동 컴파일한다 — README.md 정정 이후 실제 동작에 맞춰, 최소한 사후
+# 가시성을 매일 확보하기 위해 추가. research-promote는 이미 사람이
+# approve한 것이므로 구분 표시한다.)
+python3 - "$HOME/2nd/log.md" "$TODAY" <<'PYEOF'
+import re, sys
+log_path, today = sys.argv[1], sys.argv[2]
+text = open(log_path, encoding="utf-8").read()
+headers = list(re.finditer(r"^## \[(\d{4}-\d{2}-\d{2})\] (\S+) \| (.+)$", text, re.MULTILINE))
+created = []
+for i, m in enumerate(headers):
+    date, action, subject = m.groups()
+    if date != today:
+        continue
+    start = m.end()
+    end = headers[i + 1].start() if i + 1 < len(headers) else len(text)
+    block = text[start:end]
+    pages = re.findall(r"^\s*- `((?:concepts|entities|comparisons|queries)/[^`]+\.md)` — (.+)$", block, re.MULTILINE)
+    for path, desc in pages:
+        approved = action == "research-promote"
+        created.append((path, desc.strip(), approved))
+
+if created:
+    print("📄 오늘 신규 canonical 페이지")
+    print("")
+    for path, desc, approved in created:
+        tag = "✅승인됨(연구루프)" if approved else "🤖자동생성(사전승인 없음)"
+        print(f"- [{tag}] `{path}` — {desc}")
+    print("")
+PYEOF
+
 if [[ "$BRIEF_OK" == "yes" ]]; then
   python3 - "$BRIEF" <<'PYEOF'
 import json, sys

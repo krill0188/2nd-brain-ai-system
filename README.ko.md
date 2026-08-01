@@ -2,25 +2,28 @@
 
 [English](README.md) | **한국어**
 
-> Markdown과 Git 기반 드론 도메인 지식 관리 시스템 — **Hermes Agent 자동화 + 5종 AI 도구 스택 + 텔레그램 HITL** 탑재.
+> Markdown과 Git 기반 드론 도메인 지식 관리 시스템 — **Hermes Agent 자동화 + 5종 AI 도구 스택 + AI 연구 루프(인간 승인형)** 탑재.
 
 ## 프로젝트 개요
 
 이 프로젝트는 **드론 기술** (8개 주제 영역: drone / datalink / swarm / voice-control / drone-hw / drone-sw / drone-ai / ai-agent) 에 특화된 개인 지식 관리 시스템입니다. Obsidian, VS Code, GitHub 등 어떤 Markdown 도구와도 호환되는 일반 Markdown 파일을 사용해 **캡처 → 컴파일 → 발견 → 인간 결정**의 지속적 워크플로우를 구현합니다.
 
-[ains-lab/2nd-brain-template](https://github.com/ains-lab/2nd-brain-template) 기반으로 커스텀 AI 도구 레이어, Hermes Agent 자동화, 텔레그램 HITL 통합을 추가 구성한 시스템입니다.
+[ains-lab/2nd-brain-template](https://github.com/ains-lab/2nd-brain-template) 기반으로 커스텀 AI 도구 레이어, Hermes Agent 자동화, AI 연구 루프(`research/`)를 추가 구성한 시스템입니다.
 
 ### 아키텍처
 
 시스템은 4개 지식 계층으로 구성됩니다: **증거 → 정식 메모리 → 발견 → 인간 결정**. 원본 소스 자료는 `raw/`에 불변 증거로 보존되며, 재사용 가능한 지식은 추적 가능한 출처와 함께 정식 Markdown으로 컴파일됩니다.
 
-**자동화 제어 플레인** (Hermes Agent + llm-wiki 스킬)이 예약된 수집, 컴파일, 린트를 자동 처리합니다. **텔레그램 HITL 게이트웨이**는 diff 리포트를 마스터에게 전달하고, 명시적 승인이 있어야만 정식 메모리 승격이 이루어집니다 — 인간의 확인 없이는 AI 가설이 정식 메모리에 진입할 수 없습니다.
+**자동화 제어 플레인** (Hermes Agent + llm-wiki 스킬)이 예약된 수집·컴파일·린트를 자동 처리합니다. **일상적인 daily-ingest 컴파일에는 사전 승인 절차가 없습니다** — llm-wiki 스킬이 조건을 만족하면 즉시 canonical 페이지를 생성하고, `log.md`에 기록하며, 매일 아침 텔레그램 리포트로 신규 생성 목록을 마스터에게 사후 통지합니다(가시성 확보 목적, 확정을 막는 게이트는 아님). **인간 승인이 실제로 확정을 가로막는 지점은 `research/` AI 연구 루프뿐입니다** — AI가 생성한 가설·통찰은 마스터가 `research-run.sh approve`로 명시 승인하고, `research-promote.py`로 개별 클레임을 지정해야만 canonical로 반영됩니다(§ AI 연구 루프 참조).
 
 ![마스터 2nd Brain AI 시스템 아키텍처](docs/architecture/master-ai-architecture.png)
 
 ### 운영 워크플로우
 
-운영 워크플로우는 **캡처 → Hermes Cron → Gate A/B/C → 텔레그램 승인 → 정식화** 순서로 진행됩니다. 3개 무결성 게이트 (Gate A: raw 무결성 / Gate B: 린트+프론트매터 / Gate C: 그래프 신선도)가 자동 실행됩니다. Gate B 결과는 정식 변경이 확정되기 전에 텔레그램으로 마스터에게 전달되어 인간 검토를 거칩니다.
+두 개의 별도 경로가 있습니다.
+
+1. **일상 컴파일 경로(사전 승인 없음)**: 캡처 → Hermes Cron(`fetch-inbox.sh`) → llm-wiki 자동 컴파일 → `log.md` 기록 → 매일 아침 07:30 텔레그램 사후 통지(신규 페이지 목록). 주기적으로 `scripts/gate-c-analyze.sh`(그래프 구조 공백 분석)가 별도 실행됩니다.
+2. **AI 연구 루프(사전 승인 있음)**: 연구 목표 입력 → Planner→Retriever→Hypothesis→Critic→Verifier→Report(5단계 LLM) → 마스터 승인(`approve`/`reject`) → 개별 클레임 선택 승격(`research-promote.py`). 이 경로만 승인 전 canonical 반영을 실제로 차단합니다.
 
 ![마스터 2nd Brain 운영 워크플로우](docs/workflow/master-workflow.png)
 
@@ -41,7 +44,7 @@
 | **일일 수집** | Hermes + llm-wiki 스킬 (`b1a360fce35d`) | Cron `0 4 * * *` — `inbox/` 스캔, 정식 후보 컴파일 | ✅ 운영 중 |
 | **주간 린트** | Hermes + wiki 감사 (`91acb1c73884`) | Cron `0 5 * * 1` — 고아 페이지, 깨진 링크, 오래된 페이지, SHA-256 드리프트 검사 | ✅ 운영 중 |
 | **주간 요약** | Hermes 게이트웨이 (`bd81d81bca5f`) | Cron `0 9 * * 1` — 주간 지식 다이제스트를 텔레그램으로 전달 | ✅ 운영 중 |
-| **텔레그램 게이트웨이** | Hermes 게이트웨이 (launchd, 자동 재시작) | 상시 가동 — 캡처 명령 수신, Gate B diff를 승인을 위해 전달 | ✅ 운영 중 |
+| **아침 점검·신규 페이지 통지** | `scripts/morning-report.sh` (`8fad48c5176d`) | Cron `30 7 * * *` — 체인 상태 확인 + 그날 새로 생성된 canonical 페이지 목록(사전 승인 없이 자동 생성된 것/연구 루프로 승인된 것 구분)을 텔레그램으로 전달 | ✅ 운영 중 |
 
 ### Cron 작업 등록
 
@@ -73,16 +76,18 @@ hermes cron create "0 9 * * 1" \
 
 등록 확인: `hermes cron list`
 
-### 텔레그램 HITL — 4포인트 통합
+### 텔레그램 통합 — 3포인트 (승인 게이트 아님, 통지·조회 채널)
 
 ```
-[포인트 1: 입력]      마스터 → 텔레그램 → Hermes → raw/inbox/
-[포인트 2: Cron 로그] Hermes Cron → 텔레그램: "원본 3개 추가, 정식 후보 2개"
-[포인트 3: 게이트]    Gate B diff → 텔레그램 → 마스터: 승인 / 거부 / 수정
-[포인트 4: 쿼리]      마스터 → 텔레그램 → Hermes → wiki 검색 → 답변
+[포인트 1: 입력]        마스터 → 텔레그램 → Hermes → raw/inbox/
+[포인트 2: 사후 통지]   Hermes Cron → 텔레그램(아침 07:30): "오늘 신규 canonical 8건 자동생성"
+[포인트 3: 쿼리]        마스터 → 텔레그램 → Hermes → wiki 검색 → 답변
 ```
 
-포인트 3이 핵심 게이트입니다: Hermes가 정식 diff를 텔레그램으로 전송하고, 마스터의 답변(`approve` / `reject`)에 따라 `index.md`와 `log.md` 업데이트 여부가 결정됩니다.
+> ⚠️ 여기서 텔레그램은 **확정을 가로막는 승인 게이트가 아니라 사후 통지·조회 채널**입니다.
+> daily-ingest는 텔레그램 응답을 기다리지 않고 즉시 `index.md`/`log.md`를 갱신합니다.
+> 실제로 승인이 확정을 가로막는 지점은 아래 "AI 연구 루프"의 `research-run.sh approve`/
+> `research-promote.py` 뿐입니다(CLI 기반, 텔레그램 아님).
 
 ---
 
@@ -92,9 +97,9 @@ hermes cron create "0 9 * * 1" \
 
 | 도구 | 인터페이스 | 주요 역할 |
 | --- | --- | --- |
-| **Hermes + llm-wiki** | 게이트웨이 / Cron | 자동 수집, 컴파일, 린트, 텔레그램 전달 |
+| **Hermes + llm-wiki** | 게이트웨이 / Cron | 자동 수집·컴파일·린트(사전 승인 없이 즉시 확정), 완료 후 텔레그램 통지 |
 | **OpenCode + Kimi K2** | 터미널 (`opencode`) | 수동 컴파일 지원, 문서 초안 작성, 대량 편집 |
-| **Claude Code** | 터미널 (`claude`) | 아키텍처 분석, 모순 검토, Gate B 심층 판단 |
+| **Claude Code** | 터미널 (`claude`) | 아키텍처 분석, 모순 검토, AI 연구 루프(Planner~Report) 실행 |
 | **Codex** | 터미널 (`codex`) | 드론 펌웨어 탐색 (PX4/ArduPilot/ROS2), 코드→raw 파이프라인 |
 | **GitHub Copilot Chat** | VS Code 사이드바 (`@workspace`) | 교차 검증, 대안 관점, 워크스페이스 파일 직접 읽어 요약·질의응답 |
 | **GitHub Copilot 인라인** | VS Code 인라인 | Markdown 또는 코드 작성 중 자동완성 |
@@ -127,12 +132,12 @@ hermes cron create "0 9 * * 1" \
 
 | 기능 | 설명 |
 | --- | --- |
-| **자동화 수집 파이프라인** | Hermes Agent Cron이 매일 04:00에 `raw/inbox/`를 스캔하고, llm-wiki 스킬을 실행해 정식 후보를 컴파일한 후 결과를 텔레그램으로 전달합니다. |
-| **텔레그램 HITL 게이트** | Gate B diff가 마스터 승인을 위해 텔레그램으로 전달됩니다. 명시적 `approve` 답변 없이는 어떤 정식 변경도 확정되지 않습니다. |
+| **자동화 수집 파이프라인** | Hermes Agent Cron이 매일 04:00에 `raw/inbox/`를 스캔하고, llm-wiki 스킬을 실행해 canonical 페이지를 **사전 승인 없이 즉시** 컴파일·확정합니다. 매일 07:30 아침 리포트가 그날 생성분을 텔레그램으로 사후 통지합니다. |
+| **AI 연구 루프 — 실제 인간 승인 게이트** | `research/` 경로에서만 승인이 확정을 가로막습니다: 연구 세션(Planner~Report)이 draft를 만들면 `research-run.sh approve`로 마스터가 명시 승인해야 하고, `research-promote.py --items`로 클레임을 개별 지정해야 canonical에 반영됩니다. `fact` 클레임(기존 출처 재진술)은 승격 자체가 거부됩니다. |
 | **소스와 출처 보존** | Zotero와 Obsidian Web Clipper로 논문과 웹 자료를 캡처한 후 소스, 메타데이터, SHA-256 다이제스트를 `raw/` 아래에 보존해 모든 주장을 증거까지 추적할 수 있습니다. |
 | **검증된 지식 컴파일** | Hermes llm-wiki 스킬과 OpenCode + Kimi K2가 소스 자료를 출처, 신뢰도 평가, 모순 추적을 포함한 엔티티, 개념, 비교, 쿼리 문서로 구조화합니다. |
 | **연결된 Markdown 편집** | Obsidian에서 wikilinks와 역방향 링크를 사용해 지속적 지식을 읽고 편집하며, GitHub Copilot 인라인이 편집 중 자동완성을 지원합니다. |
-| **멀티 AI 교차 검증** | Claude Code와 GitHub Copilot Chat(`@workspace`)이 동일 증거에 대해 독립적 분석을 제공 — 지식이 정식으로 승격되기 전에 모순이 표면화됩니다. |
+| **멀티 AI 교차 검증** | Claude Code와 GitHub Copilot Chat(`@workspace`)이 동일 증거에 대해 독립적 분석을 제공할 수 있습니다 — 다만 이는 daily-ingest 자동 컴파일 전에 강제로 실행되는 게이트가 아니라, 필요 시 사람이 선택적으로 사용하는 수동 검증 도구입니다. |
 | **드론 코드 탐색** | Codex가 PX4, ArduPilot, ROS2/MAVROS2, MAVSDK 소스 코드를 탐색하며, 결과는 `raw/inbox/`에 저장되어 Hermes가 컴파일 시 수집합니다. |
 | **지식그래프 (Gate C)** | Understand Anything `understand-knowledge` 스킬이 위키를 분석해 인터랙티브 지식그래프(`.ua/knowledge-graph.json`)를 생성 — 클러스터, 공백, 구조적 약한 연결을 자동으로 표면화합니다. 로컬 뷰어는 `open .ua/graph.html`로 실행 (지식 도메인 노드 전용·포스-다이렉티드·오프라인 동작). |
 | **Gate C v2 — AI 공백 분석** | `scripts/gate-c-analyze.sh`가 지식그래프를 읽어 구조 통계(레이어 밀도·고립 노드·과부하 허브·단절 레이어 쌍)를 전처리한 후 `claude -p`로 AI 해석을 수행합니다. 결과는 `.ua/gap-report.md`에 저장되며 텔레그램 형식으로 출력됩니다. `--deliver` 옵션으로 Hermes를 통해 즉시 전송 가능합니다. |
@@ -153,8 +158,8 @@ hermes cron create "0 9 * * 1" \
 
 | 도구 | 목적 | 설정 |
 | --- | --- | --- |
-| [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 자동화 제어 플레인 — llm-wiki, cron, 텔레그램 게이트웨이 | `curl -fsSL https://hermes-agent.nousresearch.com/install.sh \| bash` |
-| 텔레그램 봇 | HITL 알림 및 승인 게이트웨이 | [@BotFather](https://t.me/BotFather)로 생성, 토큰을 `~/.hermes/.env`에 설정 |
+| [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 자동화 제어 플레인 — llm-wiki, cron, 텔레그램 통지 채널 | `curl -fsSL https://hermes-agent.nousresearch.com/install.sh \| bash` |
+| 텔레그램 봇 | 캡처 명령 수신 + 사후 통지·조회 채널(승인 게이트 아님) | [@BotFather](https://t.me/BotFather)로 생성, 토큰을 `~/.hermes/.env`에 설정 |
 
 ### AI 도구
 
@@ -268,10 +273,10 @@ Concepts / Comparisons / Queries / Entities 등 정식 지식 도메인 노드�
 ## 기본 워크플로우
 
 1. **캡처**: 텔레그램에 링크를 전송하거나 Obsidian Web Clipper로 웹 페이지를 `raw/web/`에 저장. 논문은 Zotero Connector → Zotero 라이브러리 → `python3 scripts/zotero-ingest.py` → `raw/papers/<topic>/`.
-2. **자동 수집**: Hermes Cron (매일 04:00)이 `raw/inbox/`를 스캔하고, llm-wiki로 정식 후보를 컴파일한 후 텔레그램 리포트를 전송.
-3. **Gate B 승인**: Hermes가 정식 diff를 텔레그램으로 전달. `approve`로 확정하거나 `reject`로 폐기.
-4. **교차 검증**: GitHub Copilot Chat(`@workspace`) 또는 Claude에게 초안을 검토해 모순이나 누락된 커버리지를 찾도록 요청.
-5. **탐색**: 지식 그래프 제안을 가설로 취급. 인간이 검증한 결과만 정식으로 승격.
+2. **자동 컴파일(사전 승인 없음)**: Hermes Cron(매일 04:00)이 `raw/inbox/`를 스캔하고, llm-wiki로 canonical 페이지를 **즉시 생성·확정**한다. 대기 상태 없이 바로 `index.md`/`log.md`에 반영됨.
+3. **사후 통지**: 매일 07:30 `morning-report.sh`가 그날 자동 생성된 페이지 목록을 텔레그램으로 통지(승인 요청 아님 — 이미 확정된 것을 알리는 것).
+4. **(선택) 교차 검증**: 필요하다고 판단되면 GitHub Copilot Chat(`@workspace`) 또는 Claude에게 이미 생성된 페이지를 검토해 모순이나 누락을 찾도록 사람이 직접 요청 — 자동 실행 아님.
+5. **AI 연구 루프(실제 승인 게이트)**: 더 깊은 탐구가 필요한 질문은 `scripts/research-run.sh new "<질문>"`으로 연구 세션을 만든다. Planner→Retriever→Hypothesis→Critic→Verifier→Report를 거쳐 draft가 나오면, `research-run.sh approve <id>`로 마스터가 승인하고 `research-promote.py <id> --items C1,C3`로 클레임을 개별 지정해야만 canonical에 반영된다 — **이 경로만 승인 전 확정을 실제로 차단한다.**
 6. **쿼리**: 텔레그램 봇에 직접 질문 — `"PX4 비행 모드에 대해 무엇을 수집했나요?"` — Hermes가 wiki를 검색해 답변.
 7. **아카이브**: 완전히 대체된 페이지를 `_archive/`로 이동, 링크 수정, 운영을 `log.md`에 기록.
 
@@ -305,4 +310,4 @@ git push
 
 ## 라이선스
 
-[ains-lab/2nd-brain-template](https://github.com/ains-lab/2nd-brain-template) 기반. Hermes Agent 자동화 및 텔레그램 HITL을 포함한 드론 도메인 AI 지식 관리를 위해 조정 및 확장됨.
+[ains-lab/2nd-brain-template](https://github.com/ains-lab/2nd-brain-template) 기반. Hermes Agent 자동화 및 인간 승인형 AI 연구 루프(`research/`)를 포함한 드론 도메인 AI 지식 관리를 위해 조정 및 확장됨.
