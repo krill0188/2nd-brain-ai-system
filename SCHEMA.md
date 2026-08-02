@@ -40,6 +40,7 @@ contains no raw source record and no canonical page.
 | `queries/` | Canonical filed syntheses whose exact `type` is `query`. |
 | `_archive/` | Fully superseded canonical pages removed from active navigation. |
 | `research/` | AI-assisted research session staging. Not canonical, not raw evidence, never included in web sync/deploy snapshots. Read-only access to `raw/` and canonical directories; writes to canonical only via `scripts/research-promote.sh` after human approval. See `AGENTS.md` § Research Layer and `docs/AI_RESEARCHER_ARCHITECTURE.md`. |
+| `innovations/` | Divergent/generative Innovation Engine staging (`docs/INNOVATION_ENGINE.md`). Never writes to canonical — proposals accumulate only in `innovations/registry/`, and promotion to a real project is always a manual human step. See `innovations/INNOVATION_SCHEMA.md`. |
 
 ## File and frontmatter rules
 
