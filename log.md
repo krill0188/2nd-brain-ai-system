@@ -433,6 +433,11 @@
 
 - **drone-hw**: 
   - `danial2025-microdrone-slam.md` — Micro 드론 단안 SLAM (arXiv 2025)
+
+## [2026-07-30] ingest | 오늘의 새 자료 수집
+
+### 논문 (arXiv)
+- **swarm**: `x... [truncated]
 ## [2026-07-30] manual | FC 파라미터 설정 시리즈 6편 작성
 
 - 생성: fc-vendor-param-guide(hardware) / px4-params-by-version, ardupilot-params-by-version(flight-control) / pixhawk-setup-params, cuav-setup-params, holybro-setup-params(hardware)
