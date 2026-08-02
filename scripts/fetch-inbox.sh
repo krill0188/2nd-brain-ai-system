@@ -198,9 +198,111 @@ fetch_github_release "ultralytics/ultralytics" "yolo"       "ai-autonomy"
 fetch_github_release "opencv/opencv"           "opencv"     "ai-autonomy"
 fetch_github_release "PX4/PX4-Avoidance"       "px4-avoidance" "ai-autonomy"
 
+# ── patents: USPTO 특허 데이터(PatentsView) — 무료 키 필요 ────────
+# 키 발급: https://patentsview.org/apis/keyrequest (data.uspto.gov로 이관됨,
+# 2026-08-02 curl로 리다이렉트 200 확인). .env에 USPTO_API_KEY=<키> 추가 시
+# 활성화, 없으면 아래에서 자동 스킵. INNOVATION_ENGINE.md의 "Patent
+# Candidate" 판정에 실제 근거 데이터를 처음으로 공급한다.
+# ⚠️ search.patentsview.org/api/v1/patent/ 엔드포인트는 공개 문서 기준
+# 구현이며, 이 세션에서는 키가 없어 실호출 검증을 못 했다 — 키 등록 후
+# 1회 실행 결과를 확인해야 한다(마스터에게 보고 필수).
+USPTO_KEY=$(grep '^USPTO_API_KEY=' "$HOME/2nd/.env" 2>/dev/null | cut -d= -f2 || true)
+fetch_patents() {
+  local key="$1" query="$2" domain="$3" max_items="${4:-5}"
+  [[ -z "$key" ]] && { echo "  patents: USPTO_API_KEY 없음 — 스킵(발급: https://patentsview.org/apis/keyrequest)"; return 0; }
+
+  python3 - "$key" "$query" "$domain" "$max_items" "$INBOX" "$TODAY" "$SEEN_RSS" <<'PYEOF'
+import sys, json, os, re
+import urllib.request, urllib.parse
+
+key, query, domain, max_items, inbox, today, seen_path = sys.argv[1:]
+max_items = int(max_items)
+
+params = urllib.parse.urlencode({
+    "q": json.dumps({"_text_any": {"patent_title": query}}),
+    "f": json.dumps(["patent_id", "patent_title", "patent_date", "patent_abstract"]),
+    "o": json.dumps({"size": max_items}),
+    "s": json.dumps([{"patent_date": "desc"}]),
+})
+url = f"https://search.patentsview.org/api/v1/patent/?{params}"
+
+try:
+    req = urllib.request.Request(url, headers={"X-Api-Key": key})
+    data = json.load(urllib.request.urlopen(req, timeout=20))
+except Exception as ex:
+    print(f"  ⚠️  uspto patents 실패(엔드포인트 1회 실검증 필요): {ex}", file=sys.stderr)
+    sys.exit(0)
+
+seen = set(open(seen_path).read().splitlines())
+feed_items, new_links, written = [], [], 0
+
+for it in data.get("patents", []) or []:
+    pid = it.get("patent_id", "")
+    link = f"https://patents.google.com/patent/US{pid}" if pid else ""
+    title = (it.get("patent_title") or "").strip()
+    if not link or not title or link in seen:
+        continue
+    abstract = (it.get("patent_abstract") or "").strip()
+    published = it.get("patent_date", "")
+
+    fslug = re.sub(r"[^\w\s-]", "", title.lower())
+    fslug = re.sub(r"[\s_]+", "-", fslug)[:60]
+    out = os.path.join(inbox, f"fetch-{today}-patent-{fslug}.md")
+    with open(out, "w") as f:
+        f.write(f"""---
+title: {json.dumps(title)}
+created: {today}
+captured: {today}
+type: patent
+domain: {domain}
+source: {link}
+patent_id: {pid}
+published: "{published}"
+tags: [drone, {domain}, patent]
+---
+
+# {title}
+
+**특허번호**: US{pid}
+**공개일**: {published}
+**원문(1차 소스)**: {link}
+
+## 초록(Abstract)
+
+{abstract or "(초록 미제공 — 원문 참조)"}
+""")
+    feed_items.append({"title": title, "url": link, "source": "patentsview.org",
+                       "domain": domain, "type": "patent", "region": "US",
+                       "summary": abstract[:200], "published": published})
+    seen.add(link); new_links.append(link); written += 1
+
+if written:
+    import subprocess
+    subprocess.run(["python3", os.path.expanduser("~/2nd/scripts/news-feed-append.py")],
+                   input=json.dumps(feed_items, ensure_ascii=False), text=True, capture_output=True)
+    with open(seen_path, "a") as f:
+        for l in new_links:
+            f.write(l + "\n")
+    print(f"  ✅ [{domain}] USPTO 특허 {written}건 → inbox/")
+else:
+    print("  skip uspto patents (새 항목 없음 또는 응답 파싱 0건)")
+PYEOF
+}
+
+fetch_patents "$USPTO_KEY" "drone" "ai-autonomy" 5
+fetch_patents "$USPTO_KEY" "unmanned aerial vehicle" "hardware" 5
+
 # ── hardware (RSS) ──────────────────────────────────────────────
 fetch_rss "https://oscarliang.com/feed/"  "oscarliang-fpv" "hardware" 5
 fetch_rss "https://dronedj.com/feed/"     "dronedj"        "hardware" 5
+
+# ── hardware: 제조사 공식 발표(직접 RSS 미제공 확인됨 → Google News로
+# 대체, 2026-08-02 검증: enterprise-insights.dji.com/feed, skydio.com/
+# blog/rss.xml 등 표준 경로 전부 404 — 실제 RSS 없음을 curl로 직접 확인
+# 후 결정한 대안). fetch_rss()는 재사용, 새 함수 없음(최소 변경).
+fetch_rss "https://news.google.com/rss/search?q=%22DJI+Enterprise%22&hl=en-US&gl=US&ceid=US:en" "dji-enterprise" "hardware" 4
+fetch_rss "https://news.google.com/rss/search?q=Skydio&hl=en-US&gl=US&ceid=US:en"                "skydio"        "hardware" 4
+fetch_rss "https://news.google.com/rss/search?q=%22Parrot+Drone%22&hl=en-US&gl=US&ceid=US:en"    "parrot"        "hardware" 4
 
 # ── ops-mission (RSS) ───────────────────────────────────────────
 fetch_rss "https://www.suasnews.com/feed/" "suasnews"      "ops-mission" 5
@@ -208,6 +310,96 @@ fetch_rss "https://dronelife.com/feed/"    "dronelife"     "ops-mission" 5
 
 # ── regulations (RSS) ───────────────────────────────────────────
 fetch_rss "https://www.suasnews.com/category/regulation/feed/" "suasnews-regulation" "regulations" 5
+
+# ── regulations 1차 소스: 미 연방 규정공보(Federal Register, FAA) ──
+# 무료·키 불필요(federalregister.gov 공식 API). 뉴스 재가공이 아닌
+# FAA 규정/고시 원문을 직접 수집 — "틀린 말을 하지 않는다" 목표에
+# 직결되는 1차 소스 보강(2026-08-02, 마스터 요청).
+fetch_federal_register() {
+  local term="$1" slug="$2" domain="$3" max_items="${4:-5}"
+  local out_prefix="$INBOX/fetch-${TODAY}-fedreg-${slug}"
+
+  python3 - "$term" "$slug" "$domain" "$max_items" "$out_prefix" "$TODAY" "$SEEN_RSS" "$UA" <<'PYEOF'
+import sys, json, os
+import urllib.request, urllib.parse
+
+term, slug, domain, max_items, out_prefix, today, seen_path, ua = sys.argv[1:]
+max_items = int(max_items)
+
+fields = ["title", "abstract", "html_url", "publication_date", "document_number", "type"]
+qs = urllib.parse.urlencode({
+    "conditions[term]": term,
+    "conditions[agencies][]": "federal-aviation-administration",
+    "order": "newest",
+    "per_page": max_items,
+}) + "".join(f"&fields[]={f}" for f in fields)
+url = f"https://www.federalregister.gov/api/v1/articles.json?{qs}"
+
+try:
+    req = urllib.request.Request(url, headers={'User-Agent': ua})
+    data = json.load(urllib.request.urlopen(req, timeout=20))
+except Exception as ex:
+    print(f"  ⚠️  federalregister {slug} 실패: {ex}", file=sys.stderr)
+    sys.exit(0)
+
+seen = set(open(seen_path).read().splitlines())
+feed_items, new_links, written = [], [], 0
+
+for it in data.get("results", []):
+    link = it.get("html_url", "")
+    title = (it.get("title") or "").strip()
+    if not link or not title or link in seen:
+        continue
+    abstract = (it.get("abstract") or "").strip()
+    published = it.get("publication_date", "")
+    doc_type = it.get("type", "")
+    doc_no = it.get("document_number", "")
+
+    out = f"{out_prefix}-{doc_no}.md"
+    with open(out, "w") as f:
+        f.write(f"""---
+title: {json.dumps(title)}
+created: {today}
+captured: {today}
+type: regulation-notice
+domain: {domain}
+source: {link}
+doc_type: {json.dumps(doc_type)}
+document_number: {doc_no}
+published: "{published}"
+tags: [drone, {domain}, faa, regulation]
+---
+
+# {title}
+
+**문서 유형**: {doc_type}
+**공표일**: {published}
+**Federal Register 문서번호**: {doc_no}
+**원문(1차 소스)**: {link}
+
+## 요약(Abstract)
+
+{abstract or "(요약 미제공 — 원문 참조)"}
+""")
+    feed_items.append({"title": title, "url": link, "source": "federalregister.gov",
+                       "domain": domain, "type": "regulation", "region": "US",
+                       "summary": abstract[:200], "published": published})
+    seen.add(link); new_links.append(link); written += 1
+
+if written:
+    import subprocess
+    subprocess.run(["python3", os.path.expanduser("~/2nd/scripts/news-feed-append.py")],
+                   input=json.dumps(feed_items, ensure_ascii=False), text=True, capture_output=True)
+    with open(seen_path, "a") as f:
+        for l in new_links:
+            f.write(l + "\n")
+    print(f"  ✅ [{domain}] Federal Register(FAA) {written}건 → inbox/")
+else:
+    print(f"  skip federalregister {slug} (새 항목 없음)")
+PYEOF
+}
+
+fetch_federal_register "drone" "faa" "regulations" 5
 
 # ── arXiv 논문 자동 수집 (inbox → 위키 컴파일 + news-feed) ──────
 fetch_arxiv() {
@@ -534,6 +726,100 @@ PYEOF
 else
   echo "  youtube: API키 또는 채널설정 없음 — 스킵"
 fi
+
+# ── ops-mission 1차 소스: 조달청 나라장터 입찰공고정보 — 무료 키 필요 ──
+# 키 발급: https://www.data.go.kr/data/15129394/openapi.do (활용신청).
+# .env에 NARA_API_KEY=<키> 추가 시 활성화, 없으면 자동 스킵. 기존
+# "정부사업" 구글뉴스 검색(간접 재가공)을 대체하지 않고 1차 소스로 보강한다.
+# ⚠️ 엔드포인트(apis.data.go.kr/1230000/ad/BidPublicInfoService/...)는
+# 공공데이터포털에 공개된 표준 서비스ID/오퍼레이션명 기준 구현이며, 이
+# 세션에서는 키가 없어 실호출 검증을 못 했다 — 키 등록 후 1회 실행
+# 결과를 확인해야 한다(마스터에게 보고 필수).
+NARA_KEY=$(grep '^NARA_API_KEY=' "$HOME/2nd/.env" 2>/dev/null | cut -d= -f2 || true)
+fetch_procurement() {
+  local key="$1" domain="$2" max_items="${3:-5}"
+  [[ -z "$key" ]] && { echo "  procurement: NARA_API_KEY 없음 — 스킵(발급: https://www.data.go.kr/data/15129394/openapi.do)"; return 0; }
+
+  python3 - "$key" "$domain" "$max_items" "$INBOX" "$TODAY" "$SEEN_RSS" <<'PYEOF'
+import sys, json, os, re
+import urllib.request, urllib.parse
+from datetime import date, timedelta
+
+key, domain, max_items, inbox, today, seen_path = sys.argv[1:]
+max_items = int(max_items)
+
+begin = (date.today() - timedelta(days=14)).strftime("%Y%m%d0000")
+end = date.today().strftime("%Y%m%d2359")
+params = urllib.parse.urlencode({
+    "serviceKey": key, "pageNo": 1, "numOfRows": max_items,
+    "inqryDiv": 1, "inqryBgnDt": begin, "inqryEndDt": end,
+    "bidNtceNm": "드론", "type": "json",
+})
+url = f"http://apis.data.go.kr/1230000/ad/BidPublicInfoService/getBidPblancListInfoServcPPSSrch?{params}"
+
+try:
+    data = json.load(urllib.request.urlopen(url, timeout=20))
+    items = data.get("response", {}).get("body", {}).get("items", []) or []
+    if isinstance(items, dict):
+        items = [items]
+except Exception as ex:
+    print(f"  ⚠️  나라장터 실패(엔드포인트 1회 실검증 필요): {ex}", file=sys.stderr)
+    sys.exit(0)
+
+seen = set(open(seen_path).read().splitlines())
+feed_items, new_links, written = [], [], 0
+
+for it in items[:max_items]:
+    link = it.get("bidNtceUrl") or it.get("bidNtceDtlUrl") or ""
+    title = (it.get("bidNtceNm") or "").strip()
+    if not link or not title or link in seen:
+        continue
+    agency = it.get("ntceInsttNm", "")
+    deadline = it.get("bidClseDt", "")
+    budget = it.get("presmptPrce", "")
+
+    fslug = re.sub(r"[^\w\s-]", "", title.lower())
+    fslug = re.sub(r"[\s_]+", "-", fslug)[:60]
+    out = os.path.join(inbox, f"fetch-{today}-procurement-{fslug}.md")
+    with open(out, "w") as f:
+        f.write(f"""---
+title: {json.dumps(title)}
+created: {today}
+captured: {today}
+type: procurement-notice
+domain: {domain}
+source: {link}
+agency: {json.dumps(agency)}
+deadline: "{deadline}"
+tags: [drone, {domain}, procurement, government]
+---
+
+# {title}
+
+**발주기관**: {agency}
+**마감**: {deadline}
+**추정가격**: {budget}
+**원문(1차 소스)**: {link}
+""")
+    feed_items.append({"title": title, "url": link, "source": "data.go.kr",
+                       "domain": domain, "type": "procurement", "region": "KR",
+                       "summary": agency[:200], "published": deadline})
+    seen.add(link); new_links.append(link); written += 1
+
+if written:
+    import subprocess
+    subprocess.run(["python3", os.path.expanduser("~/2nd/scripts/news-feed-append.py")],
+                   input=json.dumps(feed_items, ensure_ascii=False), text=True, capture_output=True)
+    with open(seen_path, "a") as f:
+        for l in new_links:
+            f.write(l + "\n")
+    print(f"  ✅ [{domain}] 나라장터 입찰 {written}건 → inbox/")
+else:
+    print("  skip 나라장터 (새 항목 없음 또는 응답 파싱 0건)")
+PYEOF
+}
+
+fetch_procurement "$NARA_KEY" "ops-mission" 5
 
 # ── Zotero 수동 수집분 인제스트 (앱 실행 중일 때만) ─────────────
 if curl -sf --max-time 3 "http://localhost:23119/connector/ping" >/dev/null 2>&1; then
