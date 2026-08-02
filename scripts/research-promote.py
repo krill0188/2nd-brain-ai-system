@@ -214,6 +214,9 @@ def yaml_safe_title(text: str) -> str:
 def build_page(claim: dict, resolved: dict, session_id: str, today: str) -> str:
     confidence = "medium" if claim["claim_type"] == "inference" else "low"
     review = resolved["review"]
+    # Phase O2 (ONTOLOGY_IMPLEMENTATION_ROADMAP.md) — claim_type을 본문
+    # 텍스트에만 남기지 않고 frontmatter의 선택적 10번째 필드로 기록한다.
+    # SCHEMA.md 9개 필수 필드 계약은 그대로 유지(추가만, 제거·변경 없음).
     fm = (
         "---\n"
         f"title: \"{yaml_safe_title(claim['claim'])}\"\n"
@@ -226,6 +229,7 @@ def build_page(claim: dict, resolved: dict, session_id: str, today: str) -> str:
         "domain: ai-agent\n"
         "contested: false\n"
         "contradictions: []\n"
+        f"claim_type: {claim['claim_type']}\n"
         "---\n"
     )
     body = [

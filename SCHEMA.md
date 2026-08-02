@@ -57,6 +57,12 @@ contains no raw source record and no canonical page.
 - `contested` is a YAML boolean. When it is `true`, describe unresolved positions
   with dates and provenance in the body. `contradictions` is a list of canonical
   page slugs whose claims conflict; use an empty list when there is no conflict.
+- `claim_type` is an optional 10th field, present only on pages created via
+  `scripts/research-promote.py` (the AI research loop's canonical promotion
+  path). Value is exactly `fact`, `inference`, or `hypothesis`, matching
+  `research/RESEARCH_SCHEMA.md`'s claim schema. Pages without this field are
+  unaffected — it is additive and never required for the nine-field contract
+  above.
 
 Templates live outside canonical directories and are not pages. All angle-bracket
 tokens in a copied template must be replaced or removed before the copy can become
