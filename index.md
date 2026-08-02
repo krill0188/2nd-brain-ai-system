@@ -3,7 +3,7 @@
 > Complete catalog of active canonical pages. Each entry is a wikilink followed by
 > a one-line summary, sorted alphabetically within its section.
 >
-> Total pages: 127
+> Total pages: 135
 ## Entities
 <!-- Alphabetical within section -->
 
@@ -17,10 +17,12 @@
 - [[droneshield]] — 호주 기반 드론 탐지/방어 기업, RfAI-3 AI 엔진 보유.
 - [[kite-gcs]] — ArduPilot/INAV/PX4 지원 현대적 오픈소스 GCS.
 - [[mavlink-protocol]] — MAVLink 경량 직렬 메시지 프로토콜: 버전, 메시지, MAV_CMD.
+- [[parrot]] — 프랑스 4G 연결 드론 및 전술용 마이크로 UAS 기업.
 - [[perceptual-robotics]] — 영국 풍력 터빈 검사 드론 플랫폼 기업.
 - [[pixhawk]] — PX4 호환 오픈 하드웨어 비행 제어기 플랫폼: 모델, 센서, 커넥터.
 - [[px4-flight-stack]] — PX4 오픈소스 드론 비행 제어 소프트웨어: 모듈, uORB, SITL.
 - [[ratefpv]] — FPV 드론 AIO 비행 컨트롤러 제조업체.
+- [[skydio]] — 미국 AI 기반 자율 드론 기업, 공공 안전/방위 시장 특화.
 - [[terra-drone]] — 일본 드론/UAM 기업, 일본산 배터리 사업 진출 (2026-07).
 - [[xtend-ai-robotics]] — XTEND-JFB 합병 방위 로봇 기업, 나스닥 상장 예정.
 
@@ -31,7 +33,14 @@
 - [[amazon-mk30-safety-incident]] — Amazon Prime Air MK30 드론 안전 사고 및 CAA 감독 우려.
 - [[ardupilot-architecture]] — ArduPilot의 HAL 기반 아키텍처와 Vehicle Code, SITL, Lua 스크립팅.
 - [[ardupilot-params-by-version]] — ArduPilot 4.4~4.7 버전별 주요 파라미터 변경점과 업그레이드 체크리스트.
-- [[betaflight]] — FPV 드론용 오픈소스 비행 제어 소프트웨어.
+- [[betaflight]] — FPV 드론용 오픈소스 비행 제어 소프트웨어 (2026.6.1 릴리스).
+- [[dji-osmo-action-6]] — DJI 액션 카메라 6세대, f/2.8 야간 촬영.
+- [[edgetx-custom-audio]] — EdgeTX 라디오 커스텀 오디오 설정 가이드.
+- [[faa-deter-program]] — FAA DETER UAS 집행 프로그램 (2026-04-17 발효).
+- [[faa-section-2209-uafr]] — FAA Section 2209 고정 시설 주변 UAFR 제한.
+- [[faa-section-927-waiver]] — FAA Section 927 면제 프로세스 (2024 재인증법).
+- [[faa-uas-environmental-assessment]] — FAA UAS 패키지 배달 환경평가 (2026-07-30).
+- [[uk-caa-airspace-architecture]] — 영국 CAA Airspace Architecture 개념 운용.
 - [[brinc-emergency-drone-funding]] — BRINC $125M 비상 드론 자금 조달 및 Motorola 투자.
 - [[chained-attacks-drone-fl]] — 드론 기반 연합학습 체인 공격: DoS 및 자격 증명 사칭.
 - [[computer-vision-drone]] — 드론 컴퓨터 비전: YOLO, SLAM, 객체 추적, Jetson 통합.

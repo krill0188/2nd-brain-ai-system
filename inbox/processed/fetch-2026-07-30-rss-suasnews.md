@@ -1,17 +1,29 @@
 ---
-title: "suasnews 최신 동향 (2026-07-30)"
-created: 2026-07-30
-captured: 2026-07-30
-type: news-digest
-domain: ops-mission
-source: https://www.suasnews.com/feed/
-tags: [drone, ops-mission, news]
+title: "UK CAA Airspace Architecture Concept of Operations"
+source: "sUAS News"
+url: "https://www.suasnews.com/2026/07/regulator-sets-out-vision-for-scaling-drone-operations-across-uk-airspace/"
+date: 2026-07-30
+category: regulations
+domain: drone
 ---
 
-# suasnews 최신 동향 (2026-07-30)
+# UK CAA Airspace Architecture Concept of Operations
 
-## Gravity Wins Again: Amazon’s MK30 Hits Darlington and the CAA’s Blind Spot
-- 링크: https://www.suasnews.com/2026/07/gravity-wins-again-amazons-mk30-hits-darlington-and-the-caas-blind-spot/
-- 날짜: Wed, 29 Jul 2026 18:55:06 +0000
+**출처**: sUAS News  
+**날짜**: 2026-07-30  
+**URL**: https://www.suasnews.com/2026/07/regulator-sets-out-vision-for-scaling-drone-operations-across-uk-airspace/
 
-An Amazon Prime Air MK30 drone just landed unannounced in a Darlington garden—and we can't say we're surprised. From brush fires in Oregon to building collisions in Texas, Amazon’s troubling safety record raises urgent questions about CAA oversight, especially when operators like Manna Aero prove high-redundancy drone delivery can actually be done safely.
+## 요약
+
+UK Civil Aviation Authority(CAA)가 **Airspace Architecture Concept of Operations**을 발표하여 영국 영공에서 드론 운용을 확대하는 비전을 제시함.
+
+## 주요 내용
+
+- 영국 영공에서 드론 운용 확대를 위한 공간 구조 개념
+- 규제 기관의 장기 비전 제시
+- UTM(UAS Traffic Management) 통합 방안
+
+## 관련 위키
+
+- [[drone-regulations]] — 드론 규제
+- [[utm-system]] — UTM 시스템 (추가 필요)

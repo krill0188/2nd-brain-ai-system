@@ -572,3 +572,38 @@
   - `concepts/drone-first-responder-dfr.md` — 응급 대응 드론 활용 프로그램
 - Updated: `index.md` (127 pages), `log.md`
 - Moved sources to: `inbox/processed/` (10 files)
+
+## [2026-08-03] ingest | FAA 규제 및 드론 하드웨어 뉴스 인제스트
+
+- Source files from `inbox/`:
+  - `fetch-2026-08-03-yt-how-to-configure-dios-as-outputs-support-package-for-renesas.md`
+  - `fetch-2026-08-03-yt-it-was-never-the-moment-that-was-missing-osmo-pocket-4p.md`
+  - `fetch-2026-08-03-yt-f28-at-night-the-stars-come-through-dji-osmo-action-6.md`
+  - `fetch-2026-08-03-yt-qa-livestream---august-2-2026.md`
+  - `fetch-2026-08-03-yt-installing-the-pixhawk-into-the-frame-and-testing-motors-ard.md`
+  - `fetch-2026-08-03-fedreg-faa-2026-06297.md`
+  - `fetch-2026-08-03-fedreg-faa-2026-07585.md`
+  - `fetch-2026-08-03-fedreg-faa-2026-08943.md`
+  - `fetch-2026-08-03-fedreg-faa-2026-13126.md`
+  - `fetch-2026-08-03-fedreg-faa-2026-15417.md`
+  - `fetch-2026-08-03-rss-parrot.md`
+  - `fetch-2026-08-03-rss-skydio.md`
+  - `fetch-2026-08-03-rss-dji-enterprise.md`
+  - `fetch-2026-08-03-rss-oscarliang-fpv.md`
+  - `fetch-2026-08-03-betaflight.md`
+  - `fetch-2026-07-30-rss-suasnews.md`
+- Created entities:
+  - `entities/parrot.md` — 프랑스 4G 연결 드론 기업
+  - `entities/skydio.md` — 미국 AI 자율 드론 기업
+- Created concepts:
+  - `concepts/dji-osmo-action-6.md` — DJI 액션 카메라 6세대
+  - `concepts/faa-section-927-waiver.md` — FAA Section 927 면제 프로세스
+  - `concepts/faa-deter-program.md` — FAA DETER UAS 집행 프로그램
+  - `concepts/faa-section-2209-uafr.md` — FAA Section 2209 UAFR 제한
+  - `concepts/faa-uas-environmental-assessment.md` — FAA UAS 환경평가
+  - `concepts/uk-caa-airspace-architecture.md` — 영국 CAA Airspace Architecture
+  - `concepts/edgetx-custom-audio.md` — EdgeTX 커스텀 오디오 설정
+- Updated:
+  - `concepts/betaflight.md` — 2026.6.1 릴리스 정보 추가
+  - `index.md` (135 pages), `log.md`
+- Moved sources to: `inbox/processed/` (16 files)
