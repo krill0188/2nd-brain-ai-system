@@ -129,6 +129,21 @@ def parse_reviews(path: Path) -> dict[str, dict]:
     return items
 
 
+def raw_evidence_tier(relpath: str) -> str:
+    """raw 소스 파일의 evidence_tier frontmatter 값을 읽는다. 필드가 없으면
+    'primary'(기존 raw/ 대부분 소스는 1차 증거)로 간주한다. 2026-08-02 —
+    raw/career-quiz/ 통합 시 도입된 evidence_tier: non-primary-reconstruction
+    을 코드 레벨에서 실제로 걸러내기 위한 검증(이전에는 파일 내부 경고
+    문구뿐이었고 강제되지 않았음)."""
+    path = WIKI_ROOT / relpath
+    try:
+        text = path.read_text(encoding="utf-8")
+    except OSError:
+        return "primary"
+    m = re.search(r"^evidence_tier:\s*(\S+)", text, re.MULTILINE)
+    return m.group(1).strip() if m else "primary"
+
+
 def resolve_evidence(evidence: list[str]) -> tuple[list[str], list[str], list[str]]:
     canon, raw, unresolved = [], [], []
     for item in evidence:
@@ -182,6 +197,11 @@ def validate_item(cid: str, claims: dict, reviews: dict) -> tuple[bool, str, dic
         return False, f"{cid}: 해결 불가능한 인용 — {unresolved}", {}
     if not raw:
         return False, f"{cid}: raw 출처가 하나도 없음 (SCHEMA provenance 요건 미충족)", {}
+
+    tiers = [raw_evidence_tier(r) for r in raw]
+    if all(t == "non-primary-reconstruction" for t in tiers):
+        return False, (f"{cid}: raw 출처가 전부 evidence_tier: non-primary-reconstruction "
+                        f"— 1차 증거 없이는 승격 불가(별도 1차 출처로 교차검증 필요)"), {}
 
     wikilinks = list(dict.fromkeys(canon))
     if len(wikilinks) < 2:

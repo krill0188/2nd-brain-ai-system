@@ -95,6 +95,59 @@ def test_yaml_quote_escaping_regression():
     print("PASS: YAML 인용부호 이스케이프 무회귀")
 
 
+def test_raw_evidence_tier_defaults_to_primary():
+    """evidence_tier 필드가 없는 기존 raw/ 소스는 'primary'로 취급되어야
+    한다(회귀 확인 — career-quiz 통합이 기존 raw 소스 처리를 바꾸면 안 됨)."""
+    tier = research_promote.raw_evidence_tier("raw/articles/ardupilot-architecture.md")
+    assert tier == "primary", f"기존 raw 소스가 예상과 다른 tier로 읽힘: {tier}"
+    print("PASS: evidence_tier 없는 기존 raw 소스는 기본값 primary")
+
+
+def test_raw_evidence_tier_reads_non_primary_flag():
+    """raw/career-quiz/ 파일의 evidence_tier: non-primary-reconstruction이
+    실제로 코드에서 읽히는지 확인."""
+    tier = research_promote.raw_evidence_tier("raw/career-quiz/swarm-quiz.md")
+    assert tier == "non-primary-reconstruction", f"career-quiz tier 오독: {tier}"
+    print("PASS: raw/career-quiz/ evidence_tier 필드 정상 인식")
+
+
+def test_validate_item_rejects_non_primary_only_evidence():
+    """supporting_sources가 전부 non-primary-reconstruction raw 소스뿐이면
+    validate_item()이 승격을 거부해야 한다 — 문서 경고만이 아니라 코드로
+    강제되는지 확인(이 세션에서 발견·수정한 구조적 리스크)."""
+    claims = {
+        "C1": {
+            "id": "C1", "claim": "군집 드론은 Boids 규칙을 따른다",
+            "claim_type": "inference",
+            "evidence": ["^[raw/career-quiz/swarm-quiz.md]",
+                         "[[swarm-coordination]]", "[[px4-architecture-deep]]"],
+        }
+    }
+    reviews = {"C1": {"verification_status": "grounded", "opposing_sources": "", "limitations": ""}}
+    ok, reason, _ = research_promote.validate_item("C1", claims, reviews)
+    assert not ok, "non-primary 소스뿐인데도 승격이 허용됨(구조적 리스크 미해결)"
+    assert "non-primary-reconstruction" in reason
+    print("PASS: raw 출처가 전부 non-primary-reconstruction이면 승격 거부")
+
+
+def test_validate_item_allows_mixed_primary_and_non_primary():
+    """non-primary 소스가 섞여 있어도 진짜 1차 출처가 최소 1건 있으면
+    허용되어야 한다(과잉 차단 방지 회귀 확인)."""
+    claims = {
+        "C1": {
+            "id": "C1", "claim": "군집 드론은 Boids 규칙을 따른다",
+            "claim_type": "inference",
+            "evidence": ["^[raw/career-quiz/swarm-quiz.md]",
+                         "^[raw/articles/ardupilot-architecture.md]",
+                         "[[swarm-coordination]]", "[[px4-architecture-deep]]"],
+        }
+    }
+    reviews = {"C1": {"verification_status": "grounded", "opposing_sources": "", "limitations": ""}}
+    ok, reason, resolved = research_promote.validate_item("C1", claims, reviews)
+    assert ok, f"1차 출처가 섞여 있는데도 거부됨(과잉 차단): {reason}"
+    print("PASS: non-primary + primary 혼합 시 정상 허용(과잉 차단 없음)")
+
+
 def test_fact_claim_type_rejected_by_validation():
     """validate_item()이 fact 클레임을 여전히 거부하는지 확인(Phase O2가
     다른 검증 로직을 건드리지 않았는지 회귀 확인)."""
@@ -112,6 +165,10 @@ if __name__ == "__main__":
         test_hypothesis_claim_confidence_low,
         test_required_9_fields_unchanged,
         test_yaml_quote_escaping_regression,
+        test_raw_evidence_tier_defaults_to_primary,
+        test_raw_evidence_tier_reads_non_primary_flag,
+        test_validate_item_rejects_non_primary_only_evidence,
+        test_validate_item_allows_mixed_primary_and_non_primary,
         test_fact_claim_type_rejected_by_validation,
     ]
     failed = 0

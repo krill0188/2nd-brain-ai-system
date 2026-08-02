@@ -33,6 +33,7 @@ contains no raw source record and no canonical page.
 | `raw/transcripts/` | Immutable captured transcript Markdown. |
 | `raw/web/` | Immutable importer-preserved web captures whose existing provenance paths must remain stable. |
 | `raw/youtube/` | Immutable importer-preserved video metadata and transcript captures. |
+| `raw/career-quiz/` | Non-primary reconstructed quiz compilations from 마스터's own 방산/드론/AI career-prep question bank (`career-bot/store/questions.json`, 1000 items / 24 categories). Each file's frontmatter carries `evidence_tier: non-primary-reconstruction`; the research loop's Retriever/Verifier must never treat these as primary raw evidence — see the caution banner inside each file. 2026-08-02 통합. |
 | `entities/` | Canonical pages whose exact `type` is `entity`. |
 | `concepts/` | Canonical pages whose exact `type` is `concept`. |
 | `comparisons/` | Canonical pages whose exact `type` is `comparison`. |

@@ -165,6 +165,10 @@ python3 scripts/research-promote.py <session-id> --items C1,C3
     불필요하다(SCHEMA.md page-threshold 원칙).
   - `verification_status: insufficient_evidence` → 거부.
   - `supporting_sources`에 raw 출처가 1건 이상 없으면 거부(provenance).
+  - raw 출처 전부가 `evidence_tier: non-primary-reconstruction`(예:
+    `raw/career-quiz/`의 커리어 대비 퀴즈 재구성 콘텐츠)이면 거부 — 최소
+    1건은 진짜 1차 출처여야 한다(2026-08-02 도입, `SCHEMA.md`의
+    `raw/career-quiz/` 통합과 함께 코드 레벨로 강제).
   - 활성 canonical wikilink 2개를 확보 못 하면 거부(link validity) — 부족하면
     같은 세션의 다른 클레임 인용으로 보충.
 - **All-or-nothing**: `--items`로 여러 개를 한 번에 요청했을 때 하나라도
