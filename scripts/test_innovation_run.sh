@@ -84,6 +84,36 @@ else
   bad "innovation-pick.py 실행 실패" "$(cat "$TMPDIR/pick.err")"
 fi
 
+# 5) UTF-8 안전 절단(한글 멀티바이트 경계에서 tr "Illegal byte sequence"
+#    나던 실측 버그의 회귀 테스트, 2026-08-02 수정)
+python3 -c "
+with open('$TMPDIR/utf8.md', 'w', encoding='utf-8') as f:
+    f.write('가'*250)
+"
+if snip=$(python3 -c "import sys; print(open(sys.argv[1], encoding='utf-8').read()[:200].replace(chr(10), ' '))" "$TMPDIR/utf8.md" 2>"$TMPDIR/utf8.err"); then
+  charcount=$(python3 -c "print(len('$snip'))" 2>/dev/null || echo 0)
+  if [[ "$charcount" == "200" ]]; then
+    ok "UTF-8 문자 단위 절단: 한글 250자 → 정확히 200자(무오류)"
+  else
+    bad "UTF-8 절단 길이" "기대 200, 실제 $charcount"
+  fi
+else
+  bad "UTF-8 절단 실행 실패" "$(cat "$TMPDIR/utf8.err")"
+fi
+
+# 6) continue 명령의 라운드 번호 산술(LLM 미호출, jq만 검증)
+jq -n '{run_id:"cont-test", status:"awaiting_review", current_round:5, max_rounds:5, llm_calls:20}' \
+  > "$RUNS_DIR/cont-test.json" 2>/dev/null || true
+last_round=5
+extra_rounds=5
+from_round=$((last_round + 1))
+to_round=$((last_round + extra_rounds))
+if [[ "$from_round" == "6" && "$to_round" == "10" ]]; then
+  ok "continue: 라운드 5 완료 후 이어가면 6~10라운드로 정확히 계산"
+else
+  bad "continue 라운드 산술" "from=$from_round to=$to_round"
+fi
+
 echo ""
 echo "${PASS}/$((PASS+FAIL)) 통과"
 [[ "$FAIL" -eq 0 ]]

@@ -14,6 +14,9 @@
 # 사용법:
 #   scripts/innovation-run.sh start "<초기 시드 — Research Engine 후속조사대상 또는 마스터 프롬프트>"
 #   scripts/innovation-run.sh status <run-id>
+#   scripts/innovation-run.sh continue <run-id> [추가 라운드 수, 기본 5]
+#     — 5라운드 완료 후 마스터가 "이어서 할지"를 선택하는 지점(자동 아님).
+#       마지막 라운드의 제안을 시드로 라운드 번호를 이어서 계속한다.
 
 set -euo pipefail
 
@@ -104,41 +107,18 @@ call_claude_stage() {
   exit 1
 }
 
-# ---- start: 5라운드 체인 실행 --------------------------------------------
+# ---- 공유 라운드 루프 (start/continue 둘 다 사용) -------------------------
 
-cmd_start() {
-  local seed_text="$1"
-  [[ -n "$seed_text" ]] || die "초기 시드가 비어 있습니다"
-
-  local slug; slug="$(slugify "$seed_text")"
-  local run_id; run_id="$(date +%Y%m%d)-innovation-$slug"
+run_round_chain() {
+  # $1=run_id $2=시작 라운드 번호 $3=끝 라운드 번호(포함) $4=이전 시드 파일 $5=레지스트리 파일
+  local run_id="$1" from_round="$2" to_round="$3" prev_seed_file="$4" reg_file="$5"
   local rdir_base="$RUNS_DIR/$run_id"
-  if [[ -d "$rdir_base" ]]; then
-    run_id="${run_id}-$(date +%H%M%S)"
-    rdir_base="$RUNS_DIR/$run_id"
-  fi
-  mkdir -p "$rdir_base"
-  printf '%s\n' "$seed_text" > "$rdir_base/00-seed.md"
-
-  jq -n --arg id "$run_id" --arg now "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
-     '{run_id:$id, status:"running", current_round:0, max_rounds:5,
-       llm_calls:0, created:$now, updated:$now}' \
-     > "$rdir_base/state.json"
-
-  log "런 시작: $run_id (최대 ${MAX_ROUNDS}라운드)"
-
-  local prev_seed_file="$rdir_base/00-seed.md"
-  local reg_file="$REGISTRY_DIR/$run_id.md"
-  echo "# Innovation Registry — $run_id" > "$reg_file"
-  echo "" >> "$reg_file"
-  echo "**초기 시드**: $seed_text" >> "$reg_file"
-  echo "" >> "$reg_file"
 
   local round
-  for round in $(seq 1 "$MAX_ROUNDS"); do
+  for round in $(seq "$from_round" "$to_round"); do
     local rdir="$rdir_base/round-$round"
     mkdir -p "$rdir"
-    log "── 라운드 $round/$MAX_ROUNDS ──"
+    log "── 라운드 $round/$to_round ──"
 
     # 기계: cross-domain 노드쌍 선택(이번 런에서 이미 쓴 쌍은 제외)
     if ! python3 "$PICK_PY" "$run_id" > "$rdir/00-pair.md" 2> "$rdir/_pick.err"; then
@@ -151,7 +131,12 @@ cmd_start() {
     call_claude_stage "$run_id" "combination" "$PROMPTS_DIR/combination.md" "$rdir/_ctx1.md" "$rdir/01-combination.md"
 
     # 2) Critique — 기계 검색으로 중복 여부 대조 자료 제공(Novelty Check 근거)
-    python3 "$SEARCH_PY" --query "$(head -c 200 "$rdir/01-combination.md" | tr '\n' ' ')" --top-k 5 \
+    #    head -c는 바이트 단위라 한글 멀티바이트 문자를 중간에 잘라 tr이
+    #    "Illegal byte sequence"를 내는 문제가 실측 확인됨 — python으로
+    #    문자 단위 안전 절단으로 교체(2026-08-02 수정).
+    local query_snip
+    query_snip="$(python3 -c "import sys; print(open(sys.argv[1], encoding='utf-8').read()[:200].replace(chr(10), ' '))" "$rdir/01-combination.md")"
+    python3 "$SEARCH_PY" --query "$query_snip" --top-k 5 \
       > "$rdir/_search.md" 2>/dev/null || echo "(검색 결과 없음)" > "$rdir/_search.md"
     cat "$rdir/01-combination.md" "$rdir/_search.md" > "$rdir/_ctx2.md"
     call_claude_stage "$run_id" "critique" "$PROMPTS_DIR/critique.md" "$rdir/_ctx2.md" "$rdir/02-critique.md"
@@ -175,12 +160,75 @@ cmd_start() {
 
     rm -f "$rdir"/_ctx*.md "$rdir/_search.md" "$rdir/_pick.err"
     prev_seed_file="$rdir/04-proposal.md"
-    state_set "$run_id" '.current_round = $r' --argjson r "$round"
+    state_set "$run_id" '.current_round = $r | .max_rounds = (if .max_rounds < $r then $r else .max_rounds end)' --argjson r "$round"
   done
 
   state_set "$run_id" '.status="awaiting_review" | .updated=$now' --arg now "$(date -u +%Y-%m-%dT%H:%M:%SZ)"
-  report_master "런 $run_id 완료 — 레지스트리: innovations/registry/$run_id.md (마스터 검토 대기, GO/HOLD/DISCARD)"
+  report_master "런 $run_id 완료 — 레지스트리: innovations/registry/$run_id.md (마스터 검토 대기, GO/HOLD/DISCARD, 또는 continue로 이어가기)"
   log "완료. 레지스트리: $reg_file"
+}
+
+# ---- start: 새 런, 5라운드 체인 실행 --------------------------------------
+
+cmd_start() {
+  local seed_text="$1"
+  [[ -n "$seed_text" ]] || die "초기 시드가 비어 있습니다"
+
+  local slug; slug="$(slugify "$seed_text")"
+  local run_id; run_id="$(date +%Y%m%d)-innovation-$slug"
+  local rdir_base="$RUNS_DIR/$run_id"
+  if [[ -d "$rdir_base" ]]; then
+    run_id="${run_id}-$(date +%H%M%S)"
+    rdir_base="$RUNS_DIR/$run_id"
+  fi
+  mkdir -p "$rdir_base"
+  printf '%s\n' "$seed_text" > "$rdir_base/00-seed.md"
+
+  jq -n --arg id "$run_id" --arg now "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
+     '{run_id:$id, status:"running", current_round:0, max_rounds:5,
+       llm_calls:0, created:$now, updated:$now}' \
+     > "$rdir_base/state.json"
+
+  log "런 시작: $run_id (최대 ${MAX_ROUNDS}라운드)"
+
+  local reg_file="$REGISTRY_DIR/$run_id.md"
+  echo "# Innovation Registry — $run_id" > "$reg_file"
+  echo "" >> "$reg_file"
+  echo "**초기 시드**: $seed_text" >> "$reg_file"
+  echo "" >> "$reg_file"
+
+  run_round_chain "$run_id" 1 "$MAX_ROUNDS" "$rdir_base/00-seed.md" "$reg_file"
+}
+
+# ---- continue: 기존 런에 라운드 추가(마스터가 선택하는 지점, 자동 아님) ---
+
+cmd_continue() {
+  local run_id="$1" extra_rounds="${2:-5}"
+  [[ -n "$run_id" ]] || die "run-id가 필요합니다"
+  local rdir_base="$RUNS_DIR/$run_id"
+  [[ -f "$(state_file "$run_id")" ]] || die "런 없음: $run_id"
+
+  local last_round; last_round="$(state_get "$run_id" '.current_round')"
+  local last_proposal="$rdir_base/round-$last_round/04-proposal.md"
+  [[ -f "$last_proposal" ]] || die "이전 라운드 제안($last_proposal)을 찾을 수 없음"
+
+  local from_round=$((last_round + 1))
+  local to_round=$((last_round + extra_rounds))
+  local reg_file="$REGISTRY_DIR/$run_id.md"
+  [[ -f "$reg_file" ]] || die "레지스트리 없음: $reg_file"
+
+  log "런 이어가기: $run_id — 라운드 $from_round~$to_round (기존 ${last_round}라운드에 이어서)"
+  # LLM_CALL_LIMIT은 "런 평생 누적 한도"가 아니라 "이번 실행 배치의 안전장치"다
+  # — continue는 마스터가 명시적으로 승인한 새 배치이므로 카운터를 리셋한다.
+  # (실측 버그: 리셋 없이는 기존 5라운드(20회)가 이미 상한 22에 근접해 있어
+  # continue가 라운드 6의 2번째 단계에서 바로 막혔다.)
+  state_set "$run_id" '.status="running" | .llm_calls=0'
+  {
+    echo "## (이어가기: 라운드 $from_round~$to_round 추가, $(date -u +%Y-%m-%dT%H:%M:%SZ))"
+    echo
+  } >> "$reg_file"
+
+  run_round_chain "$run_id" "$from_round" "$to_round" "$last_proposal" "$reg_file"
 }
 
 cmd_status() {
@@ -193,8 +241,9 @@ main() {
   local cmd="${1:-}"; shift || true
   case "$cmd" in
     start) cmd_start "${1:-}" ;;
+    continue) cmd_continue "${1:-}" "${2:-5}" ;;
     status) cmd_status "${1:-}" ;;
-    *) die "사용법: $0 {start \"<시드>\"|status <run-id>}" ;;
+    *) die "사용법: $0 {start \"<시드>\"|continue <run-id> [추가라운드]|status <run-id>}" ;;
   esac
 }
 
