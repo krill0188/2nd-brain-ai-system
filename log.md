@@ -543,3 +543,27 @@
   - `concepts/micro-drone-slam-imu-vio-lidar-uav-livox-mid-360-pixhawk-4-m.md` — 검색 결과에서 "micro drone"으로 명시된 SLAM 사례는 카메라+IMU(VIO) 조합을 사용한 반면, LiDAR-관성 오도메트리 사례는 더 큰 임베디드 UAV 플랫폼(Li
   - `concepts/gps-uav-imu.md` — GPS 미수신 환경에 특화된 마이크로드론/UAV 위치추정 기법들은 공통적으로 외부 위치 인프라(GPS) 없이 온보드 카메라·IMU·옵티컬 플로우 등 상대적/자기완결적 센싱에만 의존
 - Updated: `index.md`
+
+## [2026-08-02] ingest | Inbox 배치 인제스트 (10 sources)
+
+- Source files from `inbox/`:
+  - `fetch-2026-08-02-crossref-etfnet-an-efficient-transformer-based-rgbir-fusion-network-f.md`
+  - `fetch-2026-08-02-rss-dronelife.md`
+  - `fetch-2026-08-02-yolo.md`
+  - `fetch-2026-08-02-yt-flying-over-people-with-a-drone-whats-actually-legal.md`
+  - `fetch-2026-08-02-yt-how-to-configure-dios-as-inputs-support-package-for-renesas-.md`
+  - `fetch-2026-08-02-yt-how-to-work-with-tsg3-support-package-for-renesas-rh850-mcus.md`
+  - `fetch-2026-08-02-yt-passion-mission-all-for-padel-dji-avata-360.md`
+  - `fetch-2026-08-02-yt-rules-for-flying-a-drone-over-people.md`
+  - `fetch-2026-08-02-yt-wallefpv-lightening3-hd-quad-a-real-hoot-and-only-53g-with-w.md`
+  - `fetch-2026-08-02-yt-whats-waiting-on-the-other-side-of-the-lake-osmo-pocket-4p.md`
+- Created entities:
+  - `entities/geocomm.md` — 위치 정보 및 DFR Routing 기술 기업
+  - `entities/skyfireai.md` — 공익안전 자율 드론 플랫폼 기업
+  - `entities/wallefpv.md` — FPV 드론 하드웨어 제조업체
+- Created concepts:
+  - `concepts/rgb-ir-fusion-uav-detection.md` — Transformer 기반 RGB-IR 퓨전 UAV 객체 검출
+  - `concepts/yolo-v8-4-115.md` — YOLO v8.4.115 릴리스 (HUB→Platform 전환)
+  - `concepts/drone-first-responder-dfr.md` — 응급 대응 드론 활용 프로그램
+- Updated: `index.md` (127 pages), `log.md`
+- Moved sources to: `inbox/processed/` (10 files)

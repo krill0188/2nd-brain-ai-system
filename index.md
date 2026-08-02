@@ -3,11 +3,14 @@
 > Complete catalog of active canonical pages. Each entry is a wikilink followed by
 > a one-line summary, sorted alphabetically within its section.
 >
-> Total pages: 121
-
+> Total pages: 127
 ## Entities
+<!-- Alphabetical within section -->
 
 - [[ardupilot]] — ArduPilot 오픈소스 자동조종 소프트웨어: 기체 유형, EKF3, SITL.
+- [[geocomm]] — 위치 정보 및 DFR Routing 기술 제공 기업, SkyfireAI와 파트너십.
+- [[skyfireai]] — 공익안전 자율 드론 플랫폼 기업, GeoComm와 파트너십.
+- [[wallefpv]] — FPV 드론 하드웨어 제조업체, Lightening3 HD Quad (53g).
 - [[auterion]] — 스위스 기반 PX4 기반 드론 소프트웨어 플랫폼 기업, Nemyx 스웜 시스템.
 - [[bitcraze]] — 스웨덴 Crazyflie 나노 드론 플랫폼 개발 기업.
 - [[doordash-air]] — DoorDash의 FAA Part 135 인증 드론 배달 서비스 (2026-07).
@@ -45,6 +48,7 @@
 - [[dji-terra]] — DJI 매핑 소프트웨어, AI/thermal mapping 지원 (2026-07).
 - [[drone-ai-agents]] — 자율 의사결정, 다중 에이전트 협력, BDI 아키텍처.
 - [[drone-delivery-news]] — 드론 배달 서비스 확대 및 하드웨어 동향.
+- [[drone-first-responder-dfr]] — 응급 대응 최전선 드론 활용 공익안전 프로그램.
 - [[drone-news-2026-07-31]] — 2026년 7월 31일 드론 업계 주요 소식.
 - [[drone-news-2026-08-01]] — 2026년 8월 1일 드론 업계 주요 소식.
 - [[drone-news-hardware]] — 2026년 7월 드론 하드웨어 및 제조사 동향.
@@ -106,6 +110,7 @@
 - [[ratefpv]] — FPV 드론 AIO 비행 컨트롤러 제조업체.
 - [[recon-swarm-project]] — 지능형 자율 군집정찰드론 4단계 로드맵 프로젝트.
 - [[research-feedback-loop]] — 수집·합성·그래프 분석 결과를 검증해 위키로 환류하는 순환.
+- [[rgb-ir-fusion-uav-detection]] — Transformer 기반 RGB-IR 퓨전 UAV 객체 검출.
 - [[rl-quadrotor-tunable-control]] — 보상 설계를 통한 RL 기반 쿼드로터 성능 튜닝.
 - [[ros2-drone-deep]] — ROS2와 PX4/ArduPilot 연동, Offboard 제어, uXRCE-DDS.
 - [[ros2-drone-integration]] — ROS2 기반 드론 연동 스택과 PX4/ArduPilot 연결 방법.
@@ -124,6 +129,7 @@
 - [[wing-nhs-medical-delivery]] — Wing NHS 긴급 의료 샘플 드론 배달.
 - [[yolo-v8-4-112]] — YOLO v8.4.112 릴리스, export 지원 개선 (2026-07-29).
 - [[yolo-v8-4-114]] — YOLO v8.4.114 릴리스, Platform workflows 및 edge inference 개선 (2026-07-31).
+- [[yolo-v8-4-115]] — YOLO v8.4.115 릴리스, HUB→Platform 전환 (2026-08-01).
 - [[yolo]] — 실시간 객체 검출을 위한 딥러닝 아키텍처.
 - [[zipline-us-expansion]] — Zipline 미국 확대 및 Tesla/Waymo/Uber 임원 영입.
 ## Comparisons
