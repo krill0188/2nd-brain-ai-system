@@ -25,6 +25,9 @@ import subprocess
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import ontology_lib  # G3(2026-08-02): 클래스 계층 기반 질의 확장
+
 WIKI_ROOT = Path(__file__).resolve().parent.parent
 CANONICAL_DIRS = ["concepts", "entities", "comparisons", "queries"]
 RAW_DIRS = ["raw/articles", "raw/notebooklm", "raw/papers", "raw/transcripts", "raw/web", "raw/youtube"]
@@ -267,7 +270,11 @@ def search_news(query_tokens: set[str], top_k: int = 4,
 
 
 def load_graph() -> dict:
-    for p in [WIKI_ROOT / ".ua" / "knowledge-graph.json", WIKI_ROOT / "knowledge-graph.json"]:
+    # G0(2026-08-02): 전용 파일로 분리(understand-anything 플러그인과 파일
+    # 공유로 인한 스키마 충돌 회피). 과거 경로는 폴백으로만 유지.
+    for p in [WIKI_ROOT / ".ua" / "drone-knowledge-graph.json",
+              WIKI_ROOT / ".ua" / "knowledge-graph.json",
+              WIKI_ROOT / "knowledge-graph.json"]:
         if p.exists():
             try:
                 return json.loads(p.read_text(encoding="utf-8"))
@@ -353,6 +360,11 @@ def main() -> int:
           f"{'ON' if hybrid_enabled else 'OFF(키워드 전용)'})\n")
     for q, qvec in zip(queries, query_vecs):
         q_tokens = tokenize(q)
+        # G3(2026-08-02): 질의가 온톨로지 상위 클래스(예: FlightStack)를
+        # 가리키면 하위 클래스명(PX4/ArduPilot)을 검색 토큰에 추가한다.
+        # 매칭 없으면 빈 리스트 — 억지로 확장하지 않는다(ontology_lib 설계).
+        for cls in ontology_lib.expand_query_class_terms(q):
+            q_tokens |= tokenize(cls)
         canonical_hits = search_canonical(q_tokens, args.top_k, qvec)
         raw_hits = search_raw(q_tokens, args.top_k, qvec)
         news_hits = search_news(q_tokens, 4, qvec)
