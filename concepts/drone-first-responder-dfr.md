@@ -49,3 +49,6 @@ Drone as First Responder(DFR)는 응급 상황 발생 시 드론을 최초 대�
 - [[drone-regulations]] — 드론 규제 및 Part 107
 - [[mission-planning]] — 드론 미션 계획
 - [[ops-mission]] — 드론 운용 및 미션 관리
+
+## 📰 최근 관련 소식
+- 고층건물 화재, 드론으로 잡는다!...현장 투입 가능성 검증 (YTN 사이언스, Mon, 03 Au) — https://news.google.com/rss/articles/CBMijAFBVV95cUxOaUNFbUVBbFJpV0pIbUd0OGpqT1FVMzEzMmRRb0I1NXhsYnlDWEMtdGhTS0JiWGhyN0JrOHdiN3FlTXF4TF9oM0lMeHVFUG9Bd2lGYVJ0c0dhcVpKdmpyWmwxWm82VHdxTjZaSFdnRldpSU1yUlYydENESF9uTUZESUVHSTBIOTRoOVFZbQ?oc=5

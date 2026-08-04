@@ -3,7 +3,7 @@
 > Complete catalog of active canonical pages. Each entry is a wikilink followed by
 > a one-line summary, sorted alphabetically within its section.
 >
-> Total pages: 135
+> Total pages: 149
 ## Entities
 <!-- Alphabetical within section -->
 
@@ -23,10 +23,12 @@
 - [[px4-flight-stack]] — PX4 오픈소스 드론 비행 제어 소프트웨어: 모듈, uORB, SITL.
 - [[ratefpv]] — FPV 드론 AIO 비행 컨트롤러 제조업체.
 - [[skydio]] — 미국 AI 기반 자율 드론 기업, 공공 안전/방위 시장 특화.
+- [[skydio-centralsquare-dfr-integration]] — Skydio-CentralSquare DFR CAD 워크플로우 통합.
 - [[terra-drone]] — 일본 드론/UAM 기업, 일본산 배터리 사업 진출 (2026-07).
 - [[xtend-ai-robotics]] — XTEND-JFB 합병 방위 로봇 기업, 나스닥 상장 예정.
 
 ## Concepts
+- [[6g-isac-matlab-usrp]] — 6G ISAC: MATLAB/USRP 기반 통합 감지 및 통신 구현.
 - [[active-sensing-uav-communication]] — 감지 지원 UAV 통신: AoA 획득 및 통신 품질 트레이드오프 최적화.
 - [[agile-quadrotor-learning]] — 실제 환경에서 민첩한 쿼드로터 비행 학습. RSS 2026.
 - [[ai-personal-knowledge-management]] — 원본·컴파일된 지식·집중 탐색을 분리하는 개인 지식관리 원칙.
@@ -36,6 +38,9 @@
 - [[betaflight]] — FPV 드론용 오픈소스 비행 제어 소프트웨어 (2026.6.1 릴리스).
 - [[dji-osmo-action-6]] — DJI 액션 카메라 6세대, f/2.8 야간 촬영.
 - [[edgetx-custom-audio]] — EdgeTX 라디오 커스텀 오디오 설정 가이드.
+- [[elrs-41-release]] — ELRS 4.1 릴리스: 바인딩 개선 및 안정성 향상.
+- [[eve-air-mobility-transition]] — Eve Air Mobility eVTOL 첫 전환 비행 마일스톤.
+- [[event38-tb2-drops-integration]] — Event38-TB2 DROPS 모듈형 페이로드 시스템 통합.
 - [[faa-deter-program]] — FAA DETER UAS 집행 프로그램 (2026-04-17 발효).
 - [[faa-section-2209-uafr]] — FAA Section 2209 고정 시설 주변 UAFR 제한.
 - [[faa-section-927-waiver]] — FAA Section 927 면제 프로세스 (2024 재인증법).
@@ -49,9 +54,14 @@
 - [[datalink-communication]] — RF, LTE, WiFi, 위성 등 드론 데이터링크 통신 기술.
 - [[decentralized-swarm-gps-denied]] — GPS/통신 차단 환경 분산형 UAV 군집 표적 보호.
 - [[digital-twin-intent-drone-networks]] — 역강화 학습 기반 의도 기반 드론 네트워크 디지털 트윈.
+- [[divide-conquer-uav-detector]] — UAV 이미지용 분할-정복 객체 탐지기.
+- [[dronuum-computing-continuum]] — Computing Continuum 기반 스마트 드론 애플리케이션.
 - [[distributed-aerial-surveillance-swarm]] — LTL 사양 하 분산 지속적 공중 감시 스웜.
 - [[dji-easa-sail-bvlos]] — DJI EASA SAIL BVLOS 승인: 유럽 규제 간소화.
 - [[dji-everest-mapping]] — DJI 드론 에베레스트 쿰부 얼음폭포 매핑 프로젝트.
+- [[dji-matrice-5-rumor]] — DJI Matrice 5 루머 및 O4 Ground Station 동향.
+- [[dji-osmo-nano]] — DJI Osmo Nano 52g 초소형 액션 카메라.
+- [[dji-osmo-pocket-4p-dlog2]] — DJI Osmo Pocket 4P D-Log 2 및 4K/240fps 슬로우모션.
 - [[dji-osmo-pocket-4]] — DJI Osmo Pocket 4P 듀얼 렌즈 시네마틱 포켓 짐벌 카메라.
 - [[dji-rs-5]] — DJI RS 5 프로페셔널 짐벌 시스템.
 - [[dji-terra]] — DJI 매핑 소프트웨어, AI/thermal mapping 지원 (2026-07).
@@ -79,12 +89,15 @@
 - [[flight-controller-hardware]] — Holybro, CUAV FC 보드와 GPS, 텔레메트리, 컴패니언 컴퓨터.
 - [[flight-logging-analysis]] — ULog 포맷, Flight Review, pyulog, 비행 데이터 분석.
 - [[flight-ready-lidar-inertial-odometry]] — 임베디드 드론용 비행 준비 LIO 시스템.
+- [[fpv-antenna-guide]] — FPV 안테나 선택 및 사용 가이드.
 - [[fpv-hardware]] — 2026년 7월 FPV 드론 하드웨어 동향.
 - [[gnn-uav-anomaly-detection]] — GNN 기반 UAV 검사 데이터 이상 탐지 프레임워크.
 - [[gps-uav-imu]] — GPS 미수신 환경에 특화된 마이크로드론/UAV 위치추정 기법들은 공통적으로 외부 위치 인프라(GPS) 없이 온보드 카메라·IMU·옵티컬 플로우 등 상대적/자기완결적 센싱에만 의존
 - [[ground-control-station]] — QGroundControl, Mission Planner 등 GCS 소프트웨어와 텔레메트리 시스템.
 - [[hglrc-talon-cinewhoop]] — HGLRC Talon 2인치 시네후프 FPV 드론 리뷰.
 - [[high-speed-drone-tracking]] — 고속 추적 드론 기술: F1 차량 추적 및 스포츠 방송 응용.
+- [[hoverair-versa]] — HoverAir Versa 짐벌-드론 하이브리드 카메라.
+- [[ideaforge-yeti-heavy-lift]] — ideaForge YETI 헤비리프트 UAV 플랫폼.
 - [[holybro-setup-params]] — Holybro 6C/6X/Durandal/Kakute 전원모듈별·보드별 초기 파라미터.
 - [[indi-stability-tilt-rotor-vtol]] — 틸트로터 VTOL용 INDI 피치 레이트 컨트롤러 안정성 분석.
 - [[lightweight-safe-rl-uav]] — 밀집 환경 경량 안전 강화 학습 UAV 내비게이션.
@@ -96,7 +109,7 @@
 - [[mavlink-protocol]] — MAVLink 메시지 구조, 마이크로서비스, XML 스키마, pymavlink.
 - [[mavsdk-release]] — MAVSDK v3.17.2 릴리스 정보 (2026-07-17).
 - [[mavsdk]] — MAVLink 기반 고수준 드론 제어 SDK, Python/C++ API.
-- [[micro-drone-slam-imu-vio-lidar-uav-livox-mid-360-pixhawk-4-m]] — 검색 결과에서 "micro drone"으로 명시된 SLAM 사례는 카메라+IMU(VIO) 조합을 사용한 반면, LiDAR-관성 오도메트리 사례는 더 큰 임베디드 UAV 플랫폼(Li
+- [[mrope-multi-robot-safety]] — MROPE: 예측 안전 필터 기반 다중 로봇 협력 전략.
 - [[mission-planner]] — ArduPilot용 Windows 기반 GCS 소프트웨어.
 - [[mission-planning]] — QGC 미션 계획, Survey, Waypoint, MAVSDK 미션 API.
 - [[montis-avalanche-faa-approval]] — MONTIS 눈사태 드론 시스템 FAA 승인.
@@ -132,6 +145,7 @@
 - [[swarm-coordination]] — Leader-Follower 구조, 편대 비행, 군집정찰 프로젝트.
 - [[swarm-modes]] — 군집 드론 운용 모드: Formation, Follow-Leader, Area Search.
 - [[uav-isac-cross-region]] — 공중-지상 통합 감지 및 통신(ISAC) 교차 지역 협력 프레임워크.
+- [[uk-caa-bvlos-scale]] — UK CAA BVLOS 상용화 로드맵.
 - [[uav-swarm-target-localization]] — 다중경로 환경에서 UAV 스웜 표적 위치 추정.
 - [[vertical-pinching-antenna-systems]] — V-PAS: 수직 핀칭 안테나 시스템.
 - [[voice-control-drone]] — 음성 명령 인터페이스, Whisper, NLP, MAVLink 매핑.

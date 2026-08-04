@@ -1,0 +1,38 @@
+---
+title: "DJI Osmo Nano"
+created: 2026-08-04
+updated: 2026-08-04
+type: concept
+tags: [drone-hw, camera, gimbal]
+domain: hardware
+sources: [inbox/fetch-2026-08-04-yt-pov-flying-through-a-waterfall-dji-osmo-nano.md]
+confidence: high
+contested: false
+contradictions: []
+---
+
+# DJI Osmo Nano
+
+DJI의 초소형 액션 카메라 — 52g 무게로 어디에나 클립 가능.
+
+## 주요 사양
+
+- **무게**: 52g
+- **특징**: 어디에나 클립 가능한 초소형 디자인
+- **내구성**: 방수 및 폭포 통과 촬영 가능
+
+## 활용 시나리오
+
+- POV (Point of View) 촬영
+- 익스트림 스포츠
+- 일상 브이로깅
+- 드론/FPV 촬영 보조
+
+## 관련 개념
+
+- [[dji-osmo-pocket-4]] — DJI Osmo Pocket 4P
+- [[dji-osmo-action-6]] — DJI Osmo Action 6
+- [[drone-payload-systems]] — 드론 페이로드 시스템
+
+## 📰 최근 관련 소식
+- [DJI] POV: Flying Through a Waterfall | DJI Osmo Nano (youtube.com, 2026-08-03) — https://www.youtube.com/watch?v=moGHmss3FL8

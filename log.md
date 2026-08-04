@@ -607,3 +607,40 @@
   - `concepts/betaflight.md` — 2026.6.1 릴리스 정보 추가
   - `index.md` (135 pages), `log.md`
 - Moved sources to: `inbox/processed/` (16 files)
+
+## [2026-08-04] ingest | Inbox batch — RSS/YouTube/arXiv/crossref sources
+
+- Source files from `inbox/`:
+  - `fetch-2026-08-04-arxiv-mrope-a-multi-robot-safe-cooperative-strategy-via-combined-p.md`
+  - `fetch-2026-08-04-crossref-dronuum-a-smart-and-energy-efficient-drone-application-withi.md`
+  - `fetch-2026-08-04-crossref-one-size-doesnt-fit-all-divide-and-conquer-detector-for-uav-.md`
+  - `fetch-2026-08-04-rss-dji-enterprise.md`
+  - `fetch-2026-08-04-rss-dronedj.md`
+  - `fetch-2026-08-04-rss-dronelife.md`
+  - `fetch-2026-08-04-rss-oscarliang-fpv.md`
+  - `fetch-2026-08-04-rss-parrot.md`
+  - `fetch-2026-08-04-rss-skydio.md`
+  - `fetch-2026-08-04-rss-suasnews.md`
+  - `fetch-2026-08-04-yt-6g-isac-implementation-with-matlab-and-usrp.md`
+  - `fetch-2026-08-04-yt-elrs-41-makes-binding-easier-than-ever.md`
+  - `fetch-2026-08-04-yt-from-tricky-lighting-to-fleeting-details-camera-keeps-your-v.md`
+  - `fetch-2026-08-04-yt-low-level-graphics-in-c-pixel-manipulation-and-frame-buffers.md`
+  - `fetch-2026-08-04-yt-pov-flying-through-a-waterfall-dji-osmo-nano.md`
+- Created concepts:
+  - `concepts/6g-isac-matlab-usrp.md` — 6G ISAC MATLAB/USRP 구현
+  - `concepts/dji-matrice-5-rumor.md` — DJI Matrice 5 루머 및 O4 Ground Station
+  - `concepts/dji-osmo-nano.md` — DJI Osmo Nano 52g 카메라
+  - `concepts/dji-osmo-pocket-4p-dlog2.md` — DJI Osmo Pocket 4P D-Log 2
+  - `concepts/divide-conquer-uav-detector.md` — UAV 분할-정복 탐지기
+  - `concepts/dronuum-computing-continuum.md` — Computing Continuum 드론 앱
+  - `concepts/elrs-41-release.md` — ELRS 4.1 릴리스
+  - `concepts/eve-air-mobility-transition.md` — Eve Air Mobility 전환 비행
+  - `concepts/event38-tb2-drops-integration.md` — Event38-TB2 DROPS 통합
+  - `concepts/fpv-antenna-guide.md` — FPV 안테나 가이드
+  - `concepts/hoverair-versa.md` — HoverAir Versa 하이브리드 카메라
+  - `concepts/ideaforge-yeti-heavy-lift.md` — ideaForge YETI 헤비리프트
+  - `concepts/mrope-multi-robot-safety.md` — MROPE 다중 로봇 안전 전략
+  - `concepts/skydio-centralsquare-dfr-integration.md` — Skydio-CentralSquare DFR 통합
+  - `concepts/uk-caa-bvlos-scale.md` — UK CAA BVLOS 상용화 로드맵
+- Updated: `index.md` (149 pages), `log.md`
+- Moved sources to: `inbox/processed/` (15 files)
