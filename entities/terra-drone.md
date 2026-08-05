@@ -1,11 +1,11 @@
 ---
 title: Terra Drone
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-08-05
 type: entity
 tags: [drone, drone-hw, company]
 domain: hardware
-sources: [inbox/fetch-2026-07-29-rss-dronelife.md, inbox/fetch-2026-07-29-rss-suasnews.md]
+sources: [inbox/fetch-2026-07-29-rss-dronelife.md, inbox/fetch-2026-07-29-rss-suasnews.md, inbox/fetch-2026-08-05-rss-suasnews.md]
 confidence: high
 contested: false
 contradictions: []
@@ -28,6 +28,13 @@ contradictions: []
 - 중국 공급업체 의존 감소 목표
 - NDAA(국방수권법) 준수 고객 대상
 - 자체 산업/방위용 드론 및 외부 판매용
+
+## 2026년 8월 신기술
+
+### Terra Xross 1 실내 검사 드론
+- Chevron, Shell과의 DeepStar 컨소시엄 협력
+- **Signal Recovery Feature**: 실내 환경에서 신호 복구 기능 개발
+- 컨테이너 및 좁은 공간 검사에 최적화
 
 ## 관련 항목
 

@@ -72,3 +72,10 @@ domain: ops-mission
 - [[swarm-coordination]] — 다중 드론 협업
 - [[drone-safety-failsafe]] — 안전 시스템
 - [[drone-payload-systems]] — 페이로드 통합
+
+## 📰 최근 관련 소식
+- 당진 드론공원, 국토교통부 지정 드론공원에 최종 선정 (충남일보, Tue, 04 Au) — https://news.google.com/rss/articles/CBMic0FVX3lxTFBPb3NPQW9XZjRUS2FvTUMwNTNDLThvWjI4WWhSN1JEYzhValprNjg5OVJQcU9vcF9aMGlLX1U0Qld1enYyVGQ0S3JjR3dGQmd5NFlJSDJHUlQ2VlRFRXM5ZkhkYkpSQTR3UGtTM21WTEc0R0U?oc=5
+- 당진 석문산단 일대 국토부 지정 드론공원 됐다 (문화일보, Tue, 04 Au) — https://news.google.com/rss/articles/CBMiUEFVX3lxTE56SUo3VDI0dkZZM3V0ektxampwZjNPcW05N0c2VG5QVTlUOGtHbTJ6Rm81dXhBLXA4NnpaUS1ESmUtLVBIZHZlYjFBNmdiNTBp?oc=5
+- 충남 첫 ‘국가 지정 드론공원’ 탄생…당진서 비행·교육·대회 한 번에 (녹색경제신문, Tue, 04 Au) — https://news.google.com/rss/articles/CBMiaEFVX3lxTE9ySFBDbWVDbGdTd3ZTTVlfUWhBYTRDNURtZW8zc2FmLW9CZHZmcF8wcEdFa2FfOVpabEgzM1VjV3lEUFJ3V0pteGtDLWlDN3VEYmhmMDdJQTI1bXl6anNrRW9XTjFxdDk2?oc=5
+- 도망치는 상인 뒤쫓아 쾅…자폭드론 영상에 우크라 격분 (연합뉴스, Tue, 04 Au) — https://news.google.com/rss/articles/CBMiW0FVX3lxTE5jZ1p5MzR3emdzeV9WVVhMS1VYXzk1VVJJQm9ZUkZNUk8tLTNmZzEyRUsyVEotNncwZE9vSTVoMWQzbC11R2tnWHRSWWZtMUtDdE4zVGlnVndfZHPSAWBBVV95cUxOZU5ORmU4MEhOb2tldmcwblhram9BMUI2Vm5RXzc0OWlMQW40SXRzZmlMYnFhelBrdUk0SFV1V2I0b2xRNmY3MHFlTVdNMVZRU0M3Z2xFMjM5Z0tndThOLW0?oc=5
+- 네오배터리머티리얼즈코리아, 김제에 ‘드론·방산 배터리’ 생산거점 구축 (세계일보, Tue, 04 Au) — https://news.google.com/rss/articles/CBMiVEFVX3lxTE1NT2tUQXFwVjE0VUZBSmluMTB0SDVaWVdLV1ZhN2trN1VkaXpUeWplLWlpU05MQnlmVFdyTXBLRnpRS0ViYl9Nb05adWRvTlNBU01XNNIBVEFVX3lxTE1NT2tUQXFwVjE0VUZBSmluMTB0SDVaWVdLV1ZhN2trN1VkaXpUeWplLWlpU05MQnlmVFdyTXBLRnpRS0ViYl9Nb05adWRvTlNBU01XNA?oc=5

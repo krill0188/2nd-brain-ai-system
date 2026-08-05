@@ -37,3 +37,6 @@ Signal Processing 저널에 게시된 연구로, 다중경로 환경에서 UAV �
 - [[swarm-coordination]] — 스웜 협업 및 조정
 - [[decentralized-swarm-gps-denied]] — GPS 차단 환경 분산형 스웜
 - [[uav-isac-cross-region]] — ISAC 교차 지역 협력
+
+## 📰 최근 관련 소식
+- [Y르포] 60m 상공서 객체·사물 완벽 인식…안전·치안 구멍 메꾸는 AI드론 (v.daum.net, Mon, 03 Au) — https://news.google.com/rss/articles/CBMiRkFVX3lxTE53NnRpaXN4OVZWTUNYUEJpZ3ljM0lHaFR2SlcxSTExNWhiZWRxaXA3Q0xFcXh4am5wQS1mOEl4YmhQWEdYTUE?oc=5

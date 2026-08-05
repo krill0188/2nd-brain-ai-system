@@ -39,3 +39,4 @@ contradictions: []
 
 ## 📰 최근 관련 소식
 - [MATLAB] 6G ISAC Implementation with MATLAB and USRP (youtube.com, 2026-08-03) — https://www.youtube.com/watch?v=20bb37XtbIk
+- [화보] 이제 ‘드론’으로 배송을 (kyeongin.com, Tue, 04 Au) — https://news.google.com/rss/articles/CBMiUkFVX3lxTE9ZZlZYUHF4WEZLSFZUQUtjVGs2dWp5cmh5WVR6LVdrNlctYm5oOVlEU2YxOUtnVXFGZUFaRnY4TlFLS3BxN3daTmZZUFRELXJlVWc?oc=5

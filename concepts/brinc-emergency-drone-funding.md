@@ -49,3 +49,7 @@ BRINC의 $125M 비상 드론 확장 자금 조달. Motorola의 후원을 받아 
 - [[drone-regulations]] — 공공 안전 드론 규제
 - [[ops-mission]] — 특수 목적 드론 운용
 - [[drone-safety-failsafe]] — 드론 안전 시스템
+
+## 📰 최근 관련 소식
+- 당진 드론공원, 국토부 지정 드론공원 최종 선정 (에이티엔뉴스, Tue, 04 Au) — https://news.google.com/rss/articles/CBMibEFVX3lxTFB4N3VLYUZUNTAwUTVVWTBmQ1NaZXVhams2bEtJOXhnR05NV1NtRnBFSXIzeDlGOFQxYXRLWHNZQm93bHp4azhTdFBxa1NJNG96Q0puVi1PNDZaVENibmNNTW9RLV9veTktMXRXbg?oc=5
+- 네오배터리머티리얼즈코리아, 김제에 ‘드론·방산 배터리’ 생산거점 구축 (세계일보, Tue, 04 Au) — https://news.google.com/rss/articles/CBMiVEFVX3lxTE1NT2tUQXFwVjE0VUZBSmluMTB0SDVaWVdLV1ZhN2trN1VkaXpUeWplLWlpU05MQnlmVFdyTXBLRnpRS0ViYl9Nb05adWRvTlNBU01XNNIBVEFVX3lxTE1NT2tUQXFwVjE0VUZBSmluMTB0SDVaWVdLV1ZhN2trN1VkaXpUeWplLWlpU05MQnlmVFdyTXBLRnpRS0ViYl9Nb05adWRvTlNBU01XNA?oc=5

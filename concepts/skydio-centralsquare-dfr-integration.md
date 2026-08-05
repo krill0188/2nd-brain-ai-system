@@ -33,3 +33,7 @@ CentralSquare과 Skydio의 파트너십 — Drone as First Responder(DFR) 운용
 
 - [[drone-first-responder-dfr]] — 드론 퍼스트 리스폰더 프로그램
 - [[skydio]] — Skydio 기업 정보
+
+## 📰 최근 관련 소식
+- 김제시, 893억 투자 드론·방산 배터리 거점 구축 (전북타임즈, Tue, 04 Au) — https://news.google.com/rss/articles/CBMiZkFVX3lxTE1IWk5KTzJXcDJvcFJEZGNCQXVMcHlsSmFoVE4yUUhMclFrTk1LWVlFODhNWHgzSVNjdjA2OEJhbFYtZndTbHZzU2Ixd2ZpNmdLZnQ4U0x4dFRxMXk5ckVOSDRDTFVUdw?oc=5
+- 김제, 드론·방산 배터리 생산거점 구축...893억 투자 (뉴스핌, Tue, 04 Au) — https://news.google.com/rss/articles/CBMiXEFVX3lxTFA5UV9GZGYwQUpXRU0xUklQREdmU0NqenJMaWxoaVhTM0JoOUs0OFQ4MlZWczJBUHN0cDRKcmMxbVN4OWptYTRkaFhMTkFjNmZidGdUWmp0NEZ2Z285?oc=5

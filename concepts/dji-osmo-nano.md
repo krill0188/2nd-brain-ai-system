@@ -36,3 +36,4 @@ DJI의 초소형 액션 카메라 — 52g 무게로 어디에나 클립 가능.
 
 ## 📰 최근 관련 소식
 - [DJI] POV: Flying Through a Waterfall | DJI Osmo Nano (youtube.com, 2026-08-03) — https://www.youtube.com/watch?v=moGHmss3FL8
+- [화보] 이제 ‘드론’으로 배송을 (kyeongin.com, Tue, 04 Au) — https://news.google.com/rss/articles/CBMiUkFVX3lxTE9ZZlZYUHF4WEZLSFZUQUtjVGs2dWp5cmh5WVR6LVdrNlctYm5oOVlEU2YxOUtnVXFGZUFaRnY4TlFLS3BxN3daTmZZUFRELXJlVWc?oc=5

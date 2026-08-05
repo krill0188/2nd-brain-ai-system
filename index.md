@@ -3,10 +3,14 @@
 > Complete catalog of active canonical pages. Each entry is a wikilink followed by
 > a one-line summary, sorted alphabetically within its section.
 >
-> Total pages: 149
+> Total pages: 153
 ## Entities
 <!-- Alphabetical within section -->
 
+- [[fortem-technologies]] — DHS C-UAS IDIQ 주계약자, 공역 보안 기업.
+- [[monava]] — 스웨덴-핀란드 C-UAS 기업, 수동적 음향 탐지 기술.
+- [[sol-one]] — 벨기에 자율 드론 시스템 기업, €7.5억 밸류에이션.
+- [[tekever]] — 유럽 AI 기반 자율 시스템 기업, 영국 육군 CORVUS 계약.
 - [[ardupilot]] — ArduPilot 오픈소스 자동조종 소프트웨어: 기체 유형, EKF3, SITL.
 - [[geocomm]] — 위치 정보 및 DFR Routing 기술 제공 기업, SkyfireAI와 파트너십.
 - [[skyfireai]] — 공익안전 자율 드론 플랫폼 기업, GeoComm와 파트너십.
@@ -28,6 +32,10 @@
 - [[xtend-ai-robotics]] — XTEND-JFB 합병 방위 로봇 기업, 나스닥 상장 예정.
 
 ## Concepts
+- [[cleveland-clinic-drone-delivery]] — 미국 최초 장기 의료 드론 배달 프로그램 (Cleveland Clinic + Zipline).
+- [[dji-mic-mini-2s]] — DJI 무선 마이크 시스템, 32-bit float 녹음, AI 노이즈 캔슬링.
+- [[emlid-corrections]] — Emlid Reach RTK 보정 서비스, 1–2cm 정확도.
+- [[us-dod-cuas-marketplace]] — 미국 국방부 C-UAS 마켓플레이스, Kaizen 계약.
 - [[6g-isac-matlab-usrp]] — 6G ISAC: MATLAB/USRP 기반 통합 감지 및 통신 구현.
 - [[active-sensing-uav-communication]] — 감지 지원 UAV 통신: AoA 획득 및 통신 품질 트레이드오프 최적화.
 - [[agile-quadrotor-learning]] — 실제 환경에서 민첩한 쿼드로터 비행 학습. RSS 2026.

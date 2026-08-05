@@ -26,3 +26,8 @@ FAA가 발표한 무인항공기 시스템(UAS) 패키지 배달 운용에 대�
 
 - [[drone-delivery-news]] — 드론 배달 서비스 동향
 - [[drone-regulations]] — FAA 드론 규제 총론
+
+## 📰 최근 관련 소식
+- Pentagon’s counter-drone hub picked software startup Kaizen to develop c-UAS marketplace for $15M (DefenseScoop, Tue, 04 Au) — https://news.google.com/rss/articles/CBMiygFBVV95cUxPYlJzVVpNNGpnd0V3M3FUeHhIVUlCNTktdEFObmlOR1ZLVzVmLWI0bTZ5ZmxHQjBDd21fTVdUUTMxU1dzeUFkNHdzOU9Tc05fRFU2SjEtWVFCblRyU3NYcmdSNW5vODN4SGwxTlpydm1hU3kzZ2NNQWhFVjhjOWNRS2l1X0JSNTRxbTJDU3VpcjAxc3VoTk1wVlVsLTJLc3B1TDg0UzVmUUxGVFdPZXJJQjRFeTY2QlFjY1hTRXpfVnJvVDVQazNibFhR?oc=5
+- 당진 드론공원, 국토교통부 지정 드론공원에 최종 선정 (충남일보, Tue, 04 Au) — https://news.google.com/rss/articles/CBMic0FVX3lxTFBPb3NPQW9XZjRUS2FvTUMwNTNDLThvWjI4WWhSN1JEYzhValprNjg5OVJQcU9vcF9aMGlLX1U0Qld1enYyVGQ0S3JjR3dGQmd5NFlJSDJHUlQ2VlRFRXM5ZkhkYkpSQTR3UGtTM21WTEc0R0U?oc=5
+- 당진 드론공원, 국토부 지정 드론공원 최종 선정 (에이티엔뉴스, Tue, 04 Au) — https://news.google.com/rss/articles/CBMibEFVX3lxTFB4N3VLYUZUNTAwUTVVWTBmQ1NaZXVhams2bEtJOXhnR05NV1NtRnBFSXIzeDlGOFQxYXRLWHNZQm93bHp4azhTdFBxa1NJNG96Q0puVi1PNDZaVENibmNNTW9RLV9veTktMXRXbg?oc=5

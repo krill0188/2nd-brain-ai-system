@@ -31,3 +31,7 @@ contradictions: []
 - [[swarm]] — 드론 스웜 기술
 - [[swarm-coordination]] — 스웜 조정
 - [[drone-safety-failsafe]] — 드론 안전 시스템
+
+## 📰 최근 관련 소식
+- FA-50 들인 폴란드, 미그기 주고 우크라 ‘실전 드론’ 받나 [밀리터리+] (나우뉴스, Mon, 03 Au) — https://news.google.com/rss/articles/CBMicEFVX3lxTFA3R1VDWGRxZWhRYjAwZDc3TjlDdzNDeHBxWHl0TDdxZ24wVDFNbGFSb1lLaW9jLXM3OENwRVJtMVREN1JKVmpQV09ZcmtEc21RWWlEbnQ3Wk94b3FBdkpNdnlOZnV0ekx3SFcyUk9mZk0?oc=5
+- 도망치는 상인 뒤쫓아 쾅…자폭드론 영상에 우크라 격분 (연합뉴스, Tue, 04 Au) — https://news.google.com/rss/articles/CBMiW0FVX3lxTE5jZ1p5MzR3emdzeV9WVVhMS1VYXzk1VVJJQm9ZUkZNUk8tLTNmZzEyRUsyVEotNncwZE9vSTVoMWQzbC11R2tnWHRSWWZtMUtDdE4zVGlnVndfZHPSAWBBVV95cUxOZU5ORmU4MEhOb2tldmcwblhram9BMUI2Vm5RXzc0OWlMQW40SXRzZmlMYnFhelBrdUk0SFV1V2I0b2xRNmY3MHFlTVdNMVZRU0M3Z2xFMjM5Z0tndThOLW0?oc=5

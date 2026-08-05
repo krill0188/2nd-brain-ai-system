@@ -52,3 +52,4 @@ Drone as First Responder(DFR)는 응급 상황 발생 시 드론을 최초 대�
 
 ## 📰 최근 관련 소식
 - 고층건물 화재, 드론으로 잡는다!...현장 투입 가능성 검증 (YTN 사이언스, Mon, 03 Au) — https://news.google.com/rss/articles/CBMijAFBVV95cUxOaUNFbUVBbFJpV0pIbUd0OGpqT1FVMzEzMmRRb0I1NXhsYnlDWEMtdGhTS0JiWGhyN0JrOHdiN3FlTXF4TF9oM0lMeHVFUG9Bd2lGYVJ0c0dhcVpKdmpyWmwxWm82VHdxTjZaSFdnRldpSU1yUlYydENESF9uTUZESUVHSTBIOTRoOVFZbQ?oc=5
+- 드론으로 물품 배송...수원시, 실증 시작 (B world, Tue, 04 Au) — https://news.google.com/rss/articles/CBMicEFVX3lxTE1NYWhVQy1wOWMtek9ORlpmQnMtWDlSSVpTR1FtUEk2QVFBaldvZnlBSzhuczBxaXltUTZyZXVLT21Cbkc4UXVZUG0zbVlUOHJTLVhfSTZpeGRTRmhVU2cyYVNQVUg0Sld6UjEzeDVodjE?oc=5

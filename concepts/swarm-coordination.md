@@ -118,3 +118,6 @@ Tools/simulation/gazebo-classic/sitl_multiple_run.sh -n 3
 - [[mavlink-protocol]] — 통신 프로토콜
 - [[dronecan-protocol]] — 주변기기 통신
 - [[flight-controller-hardware]] — FC 하드웨어 선택
+
+## 📰 최근 관련 소식
+- 충남 첫 ‘국가 지정 드론공원’ 탄생…당진서 비행·교육·대회 한 번에 (녹색경제신문, Tue, 04 Au) — https://news.google.com/rss/articles/CBMiaEFVX3lxTE9ySFBDbWVDbGdTd3ZTTVlfUWhBYTRDNURtZW8zc2FmLW9CZHZmcF8wcEdFa2FfOVpabEgzM1VjV3lEUFJ3V0pteGtDLWlDN3VEYmhmMDdJQTI1bXl6anNrRW9XTjFxdDk2?oc=5

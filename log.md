@@ -644,3 +644,32 @@
   - `concepts/uk-caa-bvlos-scale.md` — UK CAA BVLOS 상용화 로드맵
 - Updated: `index.md` (149 pages), `log.md`
 - Moved sources to: `inbox/processed/` (15 files)
+
+## [2026-08-05] ingest | Emlid RTK, DJI Mic, C-UAS 기업, 의료 드론 배달 인제스트
+
+- Source files from `inbox/`:
+  - `fetch-2026-08-05-yt-emlid-corrections-get-centimeter-accuracy-with-your-reach-in.md`
+  - `fetch-2026-08-05-yt-how-to-get-an-rtk-fix-with-emlid-corrections.md`
+  - `fetch-2026-08-05-yt-meet-dji-mic-mini-2s---capture-every-detail.md`
+  - `fetch-2026-08-05-yt-edgetx-trainer-setup-using-a-cable-super-simple.md`
+  - `fetch-2026-08-05-rss-dronelife.md`
+  - `fetch-2026-08-05-rss-suasnews.md`
+  - `fetch-2026-08-05-rss-parrot.md`
+  - `fetch-2026-08-05-rss-skydio.md`
+  - `fetch-2026-08-05-rss-dji-enterprise.md`
+  - `fetch-2026-08-05-rss-dronedj.md`
+- Created entities:
+  - `entities/fortem-technologies.md` — DHS C-UAS IDIQ 주계약자
+  - `entities/monava.md` — 스웨덴-핀란드 C-UAS 기업
+  - `entities/sol-one.md` — 벨기에 자율 드론 시스템 기업
+  - `entities/tekever.md` — 유럽 AI 기반 자율 시스템 기업, 영국 육군 CORVUS 계약
+- Created concepts:
+  - `concepts/emlid-corrections.md` — Emlid RTK 보정 서비스
+  - `concepts/dji-mic-mini-2s.md` — DJI 무선 마이크 시스템
+  - `concepts/cleveland-clinic-drone-delivery.md` — 미국 최초 장기 의료 드론 배달
+  - `concepts/us-dod-cuas-marketplace.md` — 미국 국방부 C-UAS 마켓플레이스
+- Updated:
+  - `concepts/edgetx-custom-audio.md` — 트레이너 모드 추가
+  - `entities/terra-drone.md` — Terra Xross 1 실내 검사 드론 정보 추가
+- Updated: `index.md` (153 pages), `log.md`
+- Moved sources to: `inbox/processed/` (10 files)

@@ -43,3 +43,6 @@ ETFNet은 효율적인 트랜스포머 기반 RGB-IR 퓨전 네트워크로, UAV
 - 실제 UAV 임베디드 하드웨어에서의 추론 속도 벤치마크
 - 야간/열악한 기상 조건에서의 성능 평가
 - 다른 센서 모달리티(예: LiDAR)와의 확장 가능성
+
+## 📰 최근 관련 소식
+- Pentagon approves long-range, autonomous counter-UAS system for use across the military after border testing (DefenseScoop, Tue, 09 Ju) — https://news.google.com/rss/articles/CBMiqwFBVV95cUxQQ2ZSVldfYnY3OWlpREdGRVVTaFNfNUFxX3h6TzJnREhOUzVfLU93bFllLXdnMGZkNFVaUWdHVUo4c1dyMkpXbEh4UzJBOFFSclhJdTlxMl9wOUVZTVFEUlFxQzNNZXU2c21QcW9FY1V4NGlHVkhQVzJjUF80dHh4ODZvc3ZCNlBiQ3NrQmd1Y2NEVDFtSFdXMDFKM3hDem9XM0tpb01xVmpSUHc?oc=5

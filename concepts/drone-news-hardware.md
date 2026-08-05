@@ -43,3 +43,7 @@ domain: hardware
 - [[flight-controller-hardware]] — FC 하드웨어 개요
 - [[drone-payload-systems]] — 페이로드 통합
 - [[drone-regulations]] — 규제 환경
+
+## 📰 최근 관련 소식
+- 당진 석문산단 일대 국토부 지정 드론공원 됐다 (문화일보, Tue, 04 Au) — https://news.google.com/rss/articles/CBMiUEFVX3lxTE56SUo3VDI0dkZZM3V0ektxampwZjNPcW05N0c2VG5QVTlUOGtHbTJ6Rm81dXhBLXA4NnpaUS1ESmUtLVBIZHZlYjFBNmdiNTBp?oc=5
+- FA-50 들인 폴란드, 미그기 주고 우크라 ‘실전 드론’ 받나 [밀리터리+] (나우뉴스, Mon, 03 Au) — https://news.google.com/rss/articles/CBMicEFVX3lxTFA3R1VDWGRxZWhRYjAwZDc3TjlDdzNDeHBxWHl0TDdxZ24wVDFNbGFSb1lLaW9jLXM3OENwRVJtMVREN1JKVmpQV09ZcmtEc21RWWlEbnQ3Wk94b3FBdkpNdnlOZnV0ekx3SFcyUk9mZk0?oc=5
