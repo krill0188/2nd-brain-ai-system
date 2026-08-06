@@ -28,3 +28,18 @@ domain: ai-autonomy
 
 - [[drone-ai-agents]] — 드론 AI 에이전트 아키텍처
 - [[computer-vision-drone]] — 드론 탑재 컴퓨터 비전
+
+## 세부 연구/기업
+
+- [[agile-quadrotor-learning]] — 강화학습 기반 민첩 쿼드로터 제어
+- [[divide-conquer-uav-detector]] — Divide-and-Conquer UAV 이미지 탐지기
+- [[gnn-uav-anomaly-detection]] — GNN 기반 UAV 이상탐지
+- [[lightweight-safe-rl-uav]] — 경량 안전 강화학습
+- [[multi-modal-human-intent-uav]] — 다중모달 인간 의도 인식
+- [[neurosymland-landing-assessment]] — 신경-기호 착륙 평가
+- [[rgb-ir-fusion-uav-detection]] — RGB-IR 융합 객체 탐지
+- [[skyjepa-world-models]] — 월드모델 기반 sim-to-real
+- [[yolo-v8-4-115]] — YOLO v8.4.115 릴리스
+- [[micro-drone-slam-imu-vio-lidar-uav-livox-mid-360-pixhawk-4-m]] — 마이크로드론 SLAM 사례 비교
+- [[tekever]] — 유럽 AI 기반 자율 시스템 기업
+- [[xtend-ai-robotics]] — XTEND-JFB 합병 방위 로봇 기업

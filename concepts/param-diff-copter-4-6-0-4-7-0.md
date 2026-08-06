@@ -13,7 +13,7 @@ domain: flight-control
 
 # ArduPilot Copter 4.6.0 → 4.7.0 파라미터 변경 전체 목록
 
-> 공식 메타데이터 자동 비교 (생성일 2026-07-30). 개요 해설은 [[ardupilot-params-by-version]] 참조.
+> 공식 메타데이터 자동 비교 (생성일 2026-07-30). 개요 해설은 [[ardupilot-params-by-version]] 참조. 아키텍처 배경은 [[ardupilot-architecture]] 참조.
 
 ## 요약
 

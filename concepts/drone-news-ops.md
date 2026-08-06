@@ -1,7 +1,7 @@
 ---
 title: 드론 운용 및 미션 동향 2026-07
 created: 2026-07-29
-updated: 2026-07-29
+updated: 2026-08-06
 type: concept
 tags: [drone, ops-mission]
 sources: [inbox/fetch-2026-07-29-rss-dronelife.md, inbox/fetch-2026-07-29-rss-suasnews.md]
@@ -72,6 +72,10 @@ domain: ops-mission
 - [[swarm-coordination]] — 다중 드론 협업
 - [[drone-safety-failsafe]] — 안전 시스템
 - [[drone-payload-systems]] — 페이로드 통합
+- [[drone-news-2026-07-31]] — 관련 뉴스 아카이브
+- [[drone-news-2026-08-01]] — 관련 뉴스 아카이브
+- [[drone-news-hardware]] — 관련 뉴스 아카이브
+- [[drone-news-regulations]] — 관련 뉴스 아카이브
 
 ## 📰 최근 관련 소식
 - 당진 드론공원, 국토교통부 지정 드론공원에 최종 선정 (충남일보, Tue, 04 Au) — https://news.google.com/rss/articles/CBMic0FVX3lxTFBPb3NPQW9XZjRUS2FvTUMwNTNDLThvWjI4WWhSN1JEYzhValprNjg5OVJQcU9vcF9aMGlLX1U0Qld1enYyVGQ0S3JjR3dGQmd5NFlJSDJHUlQ2VlRFRXM5ZkhkYkpSQTR3UGtTM21WTEc0R0U?oc=5
@@ -79,3 +83,5 @@ domain: ops-mission
 - 충남 첫 ‘국가 지정 드론공원’ 탄생…당진서 비행·교육·대회 한 번에 (녹색경제신문, Tue, 04 Au) — https://news.google.com/rss/articles/CBMiaEFVX3lxTE9ySFBDbWVDbGdTd3ZTTVlfUWhBYTRDNURtZW8zc2FmLW9CZHZmcF8wcEdFa2FfOVpabEgzM1VjV3lEUFJ3V0pteGtDLWlDN3VEYmhmMDdJQTI1bXl6anNrRW9XTjFxdDk2?oc=5
 - 도망치는 상인 뒤쫓아 쾅…자폭드론 영상에 우크라 격분 (연합뉴스, Tue, 04 Au) — https://news.google.com/rss/articles/CBMiW0FVX3lxTE5jZ1p5MzR3emdzeV9WVVhMS1VYXzk1VVJJQm9ZUkZNUk8tLTNmZzEyRUsyVEotNncwZE9vSTVoMWQzbC11R2tnWHRSWWZtMUtDdE4zVGlnVndfZHPSAWBBVV95cUxOZU5ORmU4MEhOb2tldmcwblhram9BMUI2Vm5RXzc0OWlMQW40SXRzZmlMYnFhelBrdUk0SFV1V2I0b2xRNmY3MHFlTVdNMVZRU0M3Z2xFMjM5Z0tndThOLW0?oc=5
 - 네오배터리머티리얼즈코리아, 김제에 ‘드론·방산 배터리’ 생산거점 구축 (세계일보, Tue, 04 Au) — https://news.google.com/rss/articles/CBMiVEFVX3lxTE1NT2tUQXFwVjE0VUZBSmluMTB0SDVaWVdLV1ZhN2trN1VkaXpUeWplLWlpU05MQnlmVFdyTXBLRnpRS0ViYl9Nb05adWRvTlNBU01XNNIBVEFVX3lxTE1NT2tUQXFwVjE0VUZBSmluMTB0SDVaWVdLV1ZhN2trN1VkaXpUeWplLWlpU05MQnlmVFdyTXBLRnpRS0ViYl9Nb05adWRvTlNBU01XNA?oc=5
+- 우크라 “러, 드론으로 인간 사파리”…러 “우크라, 해변 민간인 공격” (news.kbs.co.kr, Tue, 04 Au) — https://news.google.com/rss/articles/CBMiW0FVX3lxTE12cjc4MGhSTUt4ZUo2OVo0cHJ3R19PdHZWY09VZ0JMdFdLRUhHVy13cERFdmdpTkl0c1JtbHJ3SUhRYWd6c2tqa1dyUllhekEteGFsT2tiYklsWms?oc=5
+- 中, 對美 드론 수출통제 강화…"美 제재 철회 안하면 추가 반격" (연합뉴스, Wed, 05 Au) — https://news.google.com/rss/articles/CBMiW0FVX3lxTE15QURoZlpRSEJmcUlWZ0xmU2JSQTBnMTdYamw4ME5neGkyWlU1Nk8tUC1nV1hreUM3UXo1eFhEeVVDM2hyYmFUamNnVDF5UGEtRUdpZV9Lcm5mS2fSAWBBVV95cUxOQWZvUXNFcWJ2MVFFOVVGQTdRemp2QjhnT0txMW5EVDFNTk9jd3gxd1dGNXRXdlh0M0x3VjlZeXVCMHFiOU9Pci1taDlZaFktZ1JPZ3NXdDdjNlVGWDExdHg?oc=5

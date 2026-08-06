@@ -28,3 +28,14 @@ domain: ops-mission
 
 - [[drone-first-responder-dfr]] — 공공안전 DFR 프로그램
 - [[drone-safety-failsafe]] — 운용 중 안전/failsafe 체계
+
+## 운용 사례
+
+- [[brinc-emergency-drone-funding]] — BRINC 응급 드론 펀딩(Motorola)
+- [[cleveland-clinic-drone-delivery]] — Cleveland Clinic 장기 의료 드론 배달
+- [[dronuum-computing-continuum]] — 드론 엣지 컴퓨팅 연속체
+- [[high-speed-drone-tracking]] — 고속 드론 추적
+- [[montis-avalanche-faa-approval]] — Montis 눈사태 구조 드론 FAA 승인
+- [[perceptual-robotics]] — 풍력 터빈 검사 드론 플랫폼 기업
+- [[skydio-centralsquare-dfr-integration]] — Skydio-CentralSquare DFR CAD 통합
+- [[amazon-mk30-safety-incident]] — Amazon MK30 배송 드론 안전 사고

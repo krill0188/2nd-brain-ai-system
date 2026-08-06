@@ -13,7 +13,7 @@ domain: flight-control
 
 # PX4 버전별 주요 파라미터 변경점 (v1.14~v1.17)
 
-PX4는 마이너 버전마다 파라미터가 신설·개명·폐기된다. **업그레이드 후 QGC에서 파라미터 diff 확인이 필수**다. 보드별 설정은 [[fc-vendor-param-guide]] 참조.
+PX4는 마이너 버전마다 파라미터가 신설·개명·폐기된다. **업그레이드 후 QGC에서 파라미터 diff 확인이 필수**다. 보드별 설정은 [[fc-vendor-param-guide]] 참조. 튜닝 배경은 [[px4-tuning-control]] 참조.
 
 ## v1.14 (2023)
 

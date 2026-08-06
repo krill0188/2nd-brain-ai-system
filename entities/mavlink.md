@@ -1,7 +1,7 @@
 ---
 title: MAVLink Protocol
 created: 2026-07-28
-updated: 2026-07-28
+updated: 2026-08-06
 type: entity
 tags: [datalink, drone-sw]
 sources:
@@ -98,6 +98,17 @@ MAVLink(Micro Air Vehicle Link)는 드론과 지상국(GCS) 간 통신을 위한
 | mavros/mavros2 | C++ (ROS) | ROS/ROS2 브리지 |
 | QGroundControl | C++ (Qt) | 범용 GCS |
 | Mission Planner | C# | ArduPilot 전용 GCS |
+
+## 심화 주제
+
+- [[advanced-mavlink]] — MAVLink 2.0 서명·라우팅·dialect 심화
+- [[mavlink-advanced]] — MAVLink 2.0 보안/서명 심화 노트
+- [[mavlink-advanced-features]] — RTPS 연동 등 MAVLink 2.0 고급 기능
+- [[mavlink2-security]] — MAVLink 2.0 서명/암호화/인증 상세
+- [[mavlink-m-interoperability]] — MAVLink-M 페이로드 상호운용성 해커톤
+- [[mavsdk-release]] — MAVSDK 릴리스 노트
+- [[dronecan-deep]] — DroneCAN(구 UAVCAN) 버스 프로토콜 심화
+- [[digital-twin-intent-drone-networks]] — 디지털 트윈 기반 드론 네트워크 통신 최적화
 
 ## 관련 페이지
 

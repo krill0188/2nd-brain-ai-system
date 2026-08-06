@@ -1,7 +1,7 @@
 ---
 title: ArduPilot Architecture
 created: 2026-07-27
-updated: 2026-07-27
+updated: 2026-08-06
 type: concept
 tags: [drone-sw, ArduPilot, flight-controller, HAL]
 sources: [raw/articles/ardupilot-architecture.md, raw/articles/mastervault-ardupilot-devnotes.md]
@@ -149,3 +149,13 @@ return update, 1000
 - [[px4-flight-modes]] — PX4 비행 모드
 - [[dronecan-protocol]] — CAN 버스 통신 프로토콜
 - [[ros2-drone-integration]] — ROS2 연동 스택
+
+## 세부 기체/제어 연구
+
+- [[ardupilot-plane-4-7]] — ArduPilot Plane 4.7 릴리스
+- [[indi-stability-tilt-rotor-vtol]] — INDI 틸트로터 VTOL 안정성 제어
+- [[mars-dragonfly-modular-aerial]] — 화성 드래곤플라이 모듈형 비행체
+- [[spatial-dubins-quadrotor-control]] — Dubins 경로 기반 쿼드로터 제어
+
+## 📰 최근 관련 소식
+- 고령층 많은 농업 현장이 폭염에 가장 취약…드론 띄워서 살핀다 (연합뉴스, Wed, 05 Au) — https://news.google.com/rss/articles/CBMiW0FVX3lxTFBLdElwUE03UmVsRlpCcEpNSHRBQmtBTGw3ZnFDbEduWTZTbTRZMXk4ZlBwcHYwMi1uQlA3eDR6QjRPT0xOa3l2QVF0NmVUbm5lWG1iQnRNa21lNTDSAWBBVV95cUxQZXFtT1l1WHRQRUFoR1J4amtHeFV6eEJxVjFTSkhzTFYwT1c3dEg0NkZ1RTROZkt1U1FoNHBHZUlJSnBZMmt2bkRxUWc4R1hVWmF2Smo2bzllcDI5RUhsRF8?oc=5

@@ -703,3 +703,21 @@
 - Skipped(사유): DJI Enterprise RSS 4건(구형/일반 펌웨어 소식, 개별 문서화 가치 낮음), FIFA 드론 압수(단발성 이벤트), 프랑스 드론 제조 이전·인적요인 시리즈(단일소스, 임계값 미달), HelloRadio 리뷰(단일 제품 리뷰), Parrot RSS 4건(2018~2024 구기사, 기존 `parrot.md`와 중복), Skydio DFR 기사(기존 `skydio-centralsquare-dfr-integration.md`와 동일 사안 중복), Skydio $3.5B 투자(동일 문서에 이미 반영된 사실과 중복), Minneapolis 항의(기존 `skydio.md` 서술과 동일 사안 연속보도), DJI Osmo Pocket 4P 영상(기존 페이지 대비 신규 정보 없음), Claude Code 강좌·MIT AI 공급망·MATLAB 스플라인(드론 도메인과 무관, out-of-domain)
 - Updated: `index.md` (185 pages), `log.md`
 - Moved sources to: `inbox/processed/` (13 files)
+
+## [2026-08-06] lint-fix | 고아 페이지(인바운드 0) 76개 전량 역링크 백필
+
+마스터 승인 후 진행(대량 갱신이라 사전 확인 필요했던 항목). 주제별 클러스터로 묶어 기존/신규 허브 문서에 역링크 추가하는 방식으로 처리 — 개별 페이지에 억지 연결을 만들지 않고 실제 주제가 일치하는 허브에서만 링크.
+
+- `entities/mavlink.md` → MAVLink 심화 8건(advanced-mavlink, mavlink-advanced, mavlink-advanced-features, mavlink2-security, mavlink-m-interoperability, mavsdk-release, dronecan-deep, digital-twin-intent-drone-networks)
+- `concepts/px4-tuning-control.md` → PX4 튜닝/버전 6건
+- `concepts/ros2-drone-integration.md` → ROS2 심화 5건
+- `concepts/drone-news-{2026-07-31,2026-08-01,hardware,ops,regulations}.md` → 5개 뉴스 아카이브 상호 교차링크
+- `concepts/drone-regulations.md` → 규제 사례 5건
+- `concepts/swarm-coordination.md` → 스웜 연구 5건
+- `concepts/drone-ai.md` → AI 연구/기업 12건
+- `concepts/drone-hw.md` → 제품/부품 15건
+- `concepts/ops-mission.md` → 운용 사례 8건
+- `concepts/ardupilot-architecture.md` → 제어 연구 4건
+- 부수 발견: `param-diff-copter-4-6-0-4-7-0`, `param-diff-px4-1-16-0-1-17-0`, `px4-params-by-version`, `ardupilot-params-by-version` 4개 페이지가 아웃바운드 링크 1개뿐(SCHEMA 최소 2개 위반) — 각각 상위 개념(`ardupilot-architecture`/`px4-tuning-control`) 링크 1개씩 추가해 해소.
+- **검증 결과**: 총 184페이지 / 고아(인바운드 0) 0개 / 아웃바운드<2 위반 0개 / 깨진 wikilink 0개 — 전부 0으로 확인.
+- `scripts/update-graph.sh` 재실행: drone-knowledge-graph.json 184노드 / 1094엣지(전회 1002 대비 +92), 고립 노드 0.

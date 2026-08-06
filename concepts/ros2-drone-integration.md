@@ -1,7 +1,7 @@
 ---
 title: ROS2 Drone Integration
 created: 2026-07-27
-updated: 2026-07-27
+updated: 2026-08-06
 type: concept
 tags: [drone-sw, ROS2, MAVROS, micro-ROS, middleware]
 sources: [raw/articles/mastervault-ros2-devnotes.md]
@@ -87,3 +87,11 @@ ros2 launch mavros mavros.launch.py fcu_url:=udp://127.0.0.1:14550@
 - [[px4-system-architecture]] — PX4 시스템 구성
 - [[px4-flight-modes]] — PX4 비행 모드
 - [[dronecan-protocol]] — FC-주변기기 통신
+
+## 심화 문서
+
+- [[ros2-advanced]] — ROS2 micro-ROS/DDS/QoS 심화
+- [[ros2-advanced-integration]] — ROS2 컴패니언 컴퓨터 통합 심화
+- [[ros2-drone-deep]] — ROS2 드론 통합 심화 노트
+- [[ros2-lyrical]] — ROS2 드론 소프트웨어 개요
+- [[kite-gcs]] — ArduPilot/INAV/PX4 지원 오픈소스 GCS

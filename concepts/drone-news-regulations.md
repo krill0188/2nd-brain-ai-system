@@ -1,7 +1,7 @@
 ---
 title: 드론 규제 동향 2026-07
 created: 2026-07-29
-updated: 2026-07-29
+updated: 2026-08-06
 type: concept
 tags: [drone, regulations]
 sources: [inbox/fetch-2026-07-29-rss-suasnews-regulation.md]
@@ -43,3 +43,7 @@ domain: regulations
 
 - [[drone-regulations]] — 드론 규제 개요
 - [[drone-safety-failsafe]] — 안전 및 failsafe 시스템
+- [[drone-news-2026-07-31]] — 관련 뉴스 아카이브
+- [[drone-news-2026-08-01]] — 관련 뉴스 아카이브
+- [[drone-news-hardware]] — 관련 뉴스 아카이브
+- [[drone-news-ops]] — 관련 뉴스 아카이브

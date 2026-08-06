@@ -1,7 +1,7 @@
 ---
 title: "Drone News 2026-07-31"
 created: 2026-07-31
-updated: 2026-07-31
+updated: 2026-08-06
 type: concept
 tags: [drone, regulations, ops-mission, hardware]
 sources: [raw/articles/fetch-2026-07-31-rss-dronedj.md, raw/articles/fetch-2026-07-31-rss-dronelife.md, raw/articles/fetch-2026-07-31-rss-suasnews.md]
@@ -49,3 +49,13 @@ contradictions: []
 - [[drone-regulations]]
 - [[dji-everest-mapping]]
 - [[dji-terra]]
+
+## 관련 뉴스 아카이브
+
+- [[drone-news-2026-08-01]]
+- [[drone-news-hardware]]
+- [[drone-news-ops]]
+- [[drone-news-regulations]]
+
+## 📰 최근 관련 소식
+- 붉게 달아오른 도심…‘열화상 드론’으로 본 폭염 (news.kbs.co.kr, Wed, 05 Au) — https://news.google.com/rss/articles/CBMiW0FVX3lxTE1qV01vSHh1bDZpaHl0STh1MlZXT2NZU1llRDd0dnVPRlVUZi0zV3pmSk02Q0w1YWpyMV8yVmt2NWxZMWt5M04yOWQ0M2hkZFo5QWZZMHBPZ0txdlU?oc=5

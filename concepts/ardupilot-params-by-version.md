@@ -13,7 +13,7 @@ domain: flight-control
 
 # ArduPilot 버전별 주요 파라미터 변경점 (4.4~4.7)
 
-ArduPilot(Copter/Plane/Rover)은 점 버전마다 파라미터 신설·기본값 변경이 잦다. Mission Planner의 **Compare Params** 기능으로 업그레이드 전후를 반드시 비교할 것. 보드별 설정은 [[fc-vendor-param-guide]] 참조.
+ArduPilot(Copter/Plane/Rover)은 점 버전마다 파라미터 신설·기본값 변경이 잦다. Mission Planner의 **Compare Params** 기능으로 업그레이드 전후를 반드시 비교할 것. 보드별 설정은 [[fc-vendor-param-guide]] 참조. 아키텍처 배경은 [[ardupilot-architecture]] 참조.
 
 ## Copter/Plane 4.4 (2023)
 

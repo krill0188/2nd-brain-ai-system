@@ -13,7 +13,7 @@ domain: flight-control
 
 # PX4 v1.16.0 → v1.17.0 파라미터 변경 전체 목록
 
-> 공식 메타데이터 자동 비교 (생성일 2026-07-30). 개요 해설은 [[px4-params-by-version]] 참조.
+> 공식 메타데이터 자동 비교 (생성일 2026-07-30). 개요 해설은 [[px4-params-by-version]] 참조. 튜닝 배경은 [[px4-tuning-control]] 참조.
 
 ## 요약
 

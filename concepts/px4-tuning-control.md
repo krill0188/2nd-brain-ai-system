@@ -1,7 +1,7 @@
 ---
 title: PX4 Tuning & Control
 created: 2026-07-27
-updated: 2026-07-27
+updated: 2026-08-06
 type: concept
 tags: [drone-sw, tuning, pid, rate, attitude, control, multicopter]
 sources: []
@@ -334,6 +334,15 @@ param.set_param_int("MC_PITCHRATE_D", 0);
 - [[drone-power-battery]] — Thrust-power 관계
 - [[flight-logging-analysis]] — 튜닝 검증
 - [[px4-simulation]] — SITL 튜닝
+
+## 심화/버전별 문서
+
+- [[px4-control-tuning]] — 제어 튜닝 심화 노트
+- [[px4-pid-tuning]] — PID 튜닝 심화 노트
+- [[px4-cicd-pipeline]] — PX4 CI/CD 빌드·테스트 파이프라인
+- [[px4-v1-17]] — PX4 v1.17 릴리스
+- [[param-diff-px4-1-16-0-1-17-0]] — PX4 1.16.0→1.17.0 파라미터 diff
+- [[param-diff-copter-4-6-0-4-7-0]] — ArduCopter 4.6.0→4.7.0 파라미터 diff
 
 ## 수집 대상
 

@@ -1,7 +1,7 @@
 ---
 title: 드론 하드웨어 및 제조사 동향 2026-07
 created: 2026-07-29
-updated: 2026-07-29
+updated: 2026-08-06
 type: concept
 tags: [drone, drone-hw]
 sources: [inbox/fetch-2026-07-29-rss-dronedj.md]
@@ -43,7 +43,13 @@ domain: hardware
 - [[flight-controller-hardware]] — FC 하드웨어 개요
 - [[drone-payload-systems]] — 페이로드 통합
 - [[drone-regulations]] — 규제 환경
+- [[drone-news-2026-07-31]] — 관련 뉴스 아카이브
+- [[drone-news-2026-08-01]] — 관련 뉴스 아카이브
+- [[drone-news-ops]] — 관련 뉴스 아카이브
+- [[drone-news-regulations]] — 관련 뉴스 아카이브
 
 ## 📰 최근 관련 소식
 - 당진 석문산단 일대 국토부 지정 드론공원 됐다 (문화일보, Tue, 04 Au) — https://news.google.com/rss/articles/CBMiUEFVX3lxTE56SUo3VDI0dkZZM3V0ektxampwZjNPcW05N0c2VG5QVTlUOGtHbTJ6Rm81dXhBLXA4NnpaUS1ESmUtLVBIZHZlYjFBNmdiNTBp?oc=5
 - FA-50 들인 폴란드, 미그기 주고 우크라 ‘실전 드론’ 받나 [밀리터리+] (나우뉴스, Mon, 03 Au) — https://news.google.com/rss/articles/CBMicEFVX3lxTFA3R1VDWGRxZWhRYjAwZDc3TjlDdzNDeHBxWHl0TDdxZ24wVDFNbGFSb1lLaW9jLXM3OENwRVJtMVREN1JKVmpQV09ZcmtEc21RWWlEbnQ3Wk94b3FBdkpNdnlOZnV0ekx3SFcyUk9mZk0?oc=5
+- 中, 對美 드론 수출통제 강화…"美 제재 철회 안하면 추가 반격" (연합뉴스, Wed, 05 Au) — https://news.google.com/rss/articles/CBMiW0FVX3lxTE15QURoZlpRSEJmcUlWZ0xmU2JSQTBnMTdYamw4ME5neGkyWlU1Nk8tUC1nV1hreUM3UXo1eFhEeVVDM2hyYmFUamNnVDF5UGEtRUdpZV9Lcm5mS2fSAWBBVV95cUxOQWZvUXNFcWJ2MVFFOVVGQTdRemp2QjhnT0txMW5EVDFNTk9jd3gxd1dGNXRXdlh0M0x3VjlZeXVCMHFiOU9Pci1taDlZaFktZ1JPZ3NXdDdjNlVGWDExdHg?oc=5
+- “어머니~더운께~들어가셔야 돼”…하늘서 안부 묻는 ‘폭염 드론’ (한겨레, Wed, 05 Au) — https://news.google.com/rss/articles/CBMiYEFVX3lxTE5YVXlQQV9mUlhOWHk4bHVTbk53ZkQtREswMExGTWZJMzRKMFJFVUN6OGgwVUd2d2gta3hCT3M1cjBtMVB6dFdBcWZiWGZ3bC03MXhhbkstbk45bkYzczVqMg?oc=5
