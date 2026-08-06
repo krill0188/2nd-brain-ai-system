@@ -98,6 +98,19 @@ a valid source record or canonical page.
 - `drone-sw`: drone software stack — firmware (PX4, ArduPilot), GCS, middleware, SDK, ROS/ROS2, MAVROS/MAVROS2.
 - `drone-ai`: AI and ML integration with drones — computer vision, autonomous flight, detection, SLAM.
 - `ai-agent`: AI agent architectures for autonomous drone decision-making and multi-agent systems.
+- `regulations`: aviation/UAS regulatory regimes, export controls, and government rulemaking.
+- `utm`: UAS Traffic Management — low-altitude airspace coordination and deconfliction.
+- `PX4`: PX4 flight-stack-specific content (architecture, tuning, SITL, releases).
+- `hardware`: physical drone/camera/component hardware not otherwise covered by `drone-hw`.
+- `company`: commercial entity/organization pages (manufacturers, operators, vendors).
+- `ops-mission`: operational/mission use cases — public safety, delivery, inspection, disaster response.
+- `fpv`: FPV (first-person-view) racing/freestyle hardware and protocols.
+
+2026-08-06 검증 노트: 위 7개(`regulations`/`utm`/`PX4`/`hardware`/`company`/`ops-mission`/`fpv`)는
+이번에 신규 등록했지만 실제로는 기존 다수 페이지(예: `flight-controller-hardware.md`,
+`fpv-antenna-guide.md`, `drone-regulations.md`)에서 이미 미등록 상태로 광범위하게
+쓰이고 있던 태그였다 — writer/reviewer 분리 점검(self-update-pipeline 세션 중 도입)에서
+발견. 전체 위키의 미등록 태그 잔여 스캔은 별도 lint 작업으로 남겨둔다.
 
 ## Raw source integrity
 

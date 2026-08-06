@@ -3,7 +3,7 @@
 > Complete catalog of active canonical pages. Each entry is a wikilink followed by
 > a one-line summary, sorted alphabetically within its section.
 >
-> Total pages: 153
+> Total pages: 185
 ## Entities
 <!-- Alphabetical within section -->
 
@@ -30,6 +30,9 @@
 - [[skydio-centralsquare-dfr-integration]] — Skydio-CentralSquare DFR CAD 워크플로우 통합.
 - [[terra-drone]] — 일본 드론/UAM 기업, 일본산 배터리 사업 진출 (2026-07).
 - [[xtend-ai-robotics]] — XTEND-JFB 합병 방위 로봇 기업, 나스닥 상장 예정.
+- [[dji]] — 중국 선전 기반 세계 최대 드론 제조사, 소비자/엔터프라이즈 사업부.
+- [[dji-enterprise]] — DJI 산업/기업용 사업부: Matrice, Dock, Zenmuse, DJI Terra.
+- [[matternet]] — 미국 병원 간 의료 물류 드론 배송 기업, M2 시스템.
 
 ## Concepts
 - [[cleveland-clinic-drone-delivery]] — 미국 최초 장기 의료 드론 배달 프로그램 (Cleveland Clinic + Zipline).
@@ -163,6 +166,16 @@
 - [[yolo-v8-4-115]] — YOLO v8.4.115 릴리스, HUB→Platform 전환 (2026-08-01).
 - [[yolo]] — 실시간 객체 검출을 위한 딥러닝 아키텍처.
 - [[zipline-us-expansion]] — Zipline 미국 확대 및 Tesla/Waymo/Uber 임원 영입.
+- [[drone-hw]] — 드론 하드웨어 도메인 개요(FC/센서/동력/통신/페이로드).
+- [[drone-sw]] — 드론 소프트웨어 스택 도메인 개요(PX4/ArduPilot/GCS/미들웨어).
+- [[drone-ai]] — 드론 AI 도메인 개요(컴퓨터 비전/SLAM/자율 에이전트).
+- [[ops-mission]] — 드론 운용/미션 도메인 개요(DFR/배송/검사/재난대응).
+- [[companion-computer]] — FC와 별도로 AI·영상처리를 오프로드하는 보조 컴퓨터.
+- [[mavros]] — ROS/ROS2와 MAVLink 자동조종장치를 잇는 브릿지 패키지.
+- [[utm-system]] — 저고도 공역 드론 교통관리(UTM) 체계.
+- [[px4-simulation]] — PX4 SITL 소프트웨어 시뮬레이션 환경.
+- [[divimath-4w-analog-vtx]] — Divimath 4W 아날로그 FPV 영상송신기(VTX).
+- [[china-drone-export-controls]] — 중국의 대미 드론·부품 수출 신규 라이선스 통제.
 ## Comparisons
 
 - [[knowledge-tool-roles]] — Zotero, NotebookLM, LLM Wiki, Obsidian과 그래프 도구의 책임 비교.

@@ -673,3 +673,33 @@
   - `entities/terra-drone.md` — Terra Xross 1 실내 검사 드론 정보 추가
 - Updated: `index.md` (153 pages), `log.md`
 - Moved sources to: `inbox/processed/` (10 files)
+
+## [2026-08-06] lint-fix | 그래프 단절(broken wikilink + orphan) 진단 및 broken link 해소
+
+마스터 지적: Obsidian 그래프에서 관계형 데이터 일부 미연결 확인 → 실측 진단.
+
+- 진단 결과: canonical 171페이지 중 76개 인바운드 링크 0(고아), 13개 링크 타겟이 페이지 자체가 없어 40건 참조가 깨져 있음(SCHEMA 위반). 원인은 도메인 분류 실패가 아니라 (1) 여러 페이지가 `[[drone-hw]]`/`[[drone-sw]]`/`[[drone-ai]]`/`[[ops-mission]]` 등 SCHEMA 태그명을 실제 존재하지 않는 허브 페이지처럼 링크한 것, (2) `[[ai-agent]]`→`drone-ai-agents`, `[[swarm]]`→`swarm-coordination` 슬러그 오기(typo).
+- Created (broken link 40건 해소, 신규 허브/개체 13개):
+  - `concepts/drone-hw.md`, `concepts/drone-sw.md`, `concepts/drone-ai.md`, `concepts/ops-mission.md` — 도메인 개요 허브
+  - `concepts/companion-computer.md`, `concepts/mavros.md`, `concepts/utm-system.md`, `concepts/px4-simulation.md`
+  - `entities/dji.md`, `entities/dji-enterprise.md`, `entities/matternet.md`
+- Fixed slug typo (3 files): `entities/droneshield.md`, `entities/xtend-ai-robotics.md` (`[[ai-agent]]`→`[[drone-ai-agents]]`), `concepts/lockheed-martin-morfius.md` (`[[swarm]]`→`[[swarm-coordination]]`)
+- 잔여 이슈(미해결, 대량 갱신이라 마스터 확인 필요): 인바운드 링크 0인 고아 페이지 76개는 그대로 남음 — 기존 페이지에 역링크 추가는 10개 이상 문서 일괄 갱신에 해당해 SCHEMA 규칙상 사전 승인 필요.
+- `mavlink-protocol`(index.md 2회 언급) 등 index.md에는 있으나 실제 파일이 없는 항목 별도 발견 — 이번 세션 범위 밖, 별도 lint 보고 필요.
+
+## [2026-08-06] ingest | drone wiki 스케줄 실행 + inbox 미처리 13건(Hermes 2nd-daily-ingest 402 에러로 미처리) 처리
+
+- 원인: Hermes `2nd-daily-ingest`(04:00) cron이 OpenRouter 크레딧 부족(HTTP 402)으로 실패 → `inbox/fetch-2026-08-06-*.md` 13건 미인제스트 상태로 잔류.
+- drone-wiki-web 자가갱신(`scripts/self-update-pipeline.ts`) dry-run 실행: 뉴스↔위키 교차참조 후보 40건 발견. 상당수가 저점수(≤4) 키워드 우연일치(MATLAB 튜토리얼↔SLAM 페이지, Claude Code 강좌↔UAV 탐지기 등 도메인 무관) → `--apply` 보류, 유효 매칭은 아래 수동 반영으로 대체.
+- Source files from `inbox/` (13개, 전부 검토):
+  - `fetch-2026-08-06-rss-dji-enterprise.md`, `fetch-2026-08-06-rss-dronedj.md`, `fetch-2026-08-06-rss-dronelife.md`, `fetch-2026-08-06-rss-oscarliang-fpv.md`, `fetch-2026-08-06-rss-parrot.md`, `fetch-2026-08-06-rss-skydio.md`, `fetch-2026-08-06-yt-a-water-ring-slowed-all-the-way-down-osmo-action-6.md`, `fetch-2026-08-06-yt-claude-code-full-course-autonomous-goals-mcp-and-vs-code-set.md`, `fetch-2026-08-06-yt-for-the-moments-you-planned-and-the-ones-you-never-saw-comin.md`, `fetch-2026-08-06-yt-how-to-get-an-rtk-fix-in-seconds.md`, `fetch-2026-08-06-yt-inside-ais-hidden-supply-chain.md`, `fetch-2026-08-06-yt-spline-fitting-explained-how-to-smooth-noisy-data-in-matlab.md`, `fetch-2026-08-06-yt-why-did-divimath-release-a-4w-analog-vtx.md`
+- Created concepts:
+  - `concepts/china-drone-export-controls.md` — 중국 대미 드론·부품 수출 통제
+  - `concepts/divimath-4w-analog-vtx.md` — Divimath 4W 아날로그 VTX
+- Updated:
+  - `entities/skydio.md` — $1.1억 펀딩/$44억 밸류에이션 추가
+  - `concepts/emlid-corrections.md` — 3번째 소스(RTK Fix in seconds) 추가
+  - `concepts/dji-osmo-action-6.md` — 슬로우모션 데모 소스 추가
+- Skipped(사유): DJI Enterprise RSS 4건(구형/일반 펌웨어 소식, 개별 문서화 가치 낮음), FIFA 드론 압수(단발성 이벤트), 프랑스 드론 제조 이전·인적요인 시리즈(단일소스, 임계값 미달), HelloRadio 리뷰(단일 제품 리뷰), Parrot RSS 4건(2018~2024 구기사, 기존 `parrot.md`와 중복), Skydio DFR 기사(기존 `skydio-centralsquare-dfr-integration.md`와 동일 사안 중복), Skydio $3.5B 투자(동일 문서에 이미 반영된 사실과 중복), Minneapolis 항의(기존 `skydio.md` 서술과 동일 사안 연속보도), DJI Osmo Pocket 4P 영상(기존 페이지 대비 신규 정보 없음), Claude Code 강좌·MIT AI 공급망·MATLAB 스플라인(드론 도메인과 무관, out-of-domain)
+- Updated: `index.md` (185 pages), `log.md`
+- Moved sources to: `inbox/processed/` (13 files)

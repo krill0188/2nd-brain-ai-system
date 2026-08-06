@@ -30,6 +30,6 @@ contradictions: []
 
 ## 관련 항목
 
-- [[ai-agent]] — AI 에이전트 기술
+- [[drone-ai-agents]] — AI 에이전트 기술
 - [[drone-ai-agents]] — 드론 AI 에이전트
 - [[drone-sw]] — 드론 소프트웨어

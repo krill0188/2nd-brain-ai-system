@@ -1,10 +1,10 @@
 ---
 title: Skydio
 created: 2026-08-03
-updated: 2026-08-03
+updated: 2026-08-06
 type: entity
 tags: [drone, hardware, company, autonomy, security]
-sources: [inbox/fetch-2026-08-03-rss-skydio.md]
+sources: [inbox/fetch-2026-08-03-rss-skydio.md, inbox/fetch-2026-08-06-rss-skydio.md]
 confidence: high
 contested: false
 contradictions: []
@@ -20,6 +20,7 @@ domain: hardware
 - **X10D**: 미 육군 운용 중인 최신 모델
 - **계약 논란**: Minneapolis 시의회가 경찰 드론 계약 거부 — 과거 ICE 판매 이력 문제
 - **감시 논란**: San Francisco 경찰 드론 영상 유출로 도시 감시 논란
+- **투자 유치**: $1.1억 규모 펀딩 라운드, 기업가치 $44억 평가^[inbox/fetch-2026-08-06-rss-skydio.md]
 
 ## 제품
 

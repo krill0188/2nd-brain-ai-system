@@ -1,10 +1,10 @@
 ---
 title: Emlid Corrections Service
 created: 2026-08-05
-updated: 2026-08-05
+updated: 2026-08-06
 type: concept
 tags: [drone, hardware, gnss, rtk, emlid]
-sources: [inbox/fetch-2026-08-05-yt-emlid-corrections-get-centimeter-accuracy-with-your-reach-in.md, inbox/fetch-2026-08-05-yt-how-to-get-an-rtk-fix-with-emlid-corrections.md]
+sources: [inbox/fetch-2026-08-05-yt-emlid-corrections-get-centimeter-accuracy-with-your-reach-in.md, inbox/fetch-2026-08-05-yt-how-to-get-an-rtk-fix-with-emlid-corrections.md, inbox/fetch-2026-08-06-yt-how-to-get-an-rtk-fix-in-seconds.md]
 confidence: high
 contested: false
 contradictions: []
@@ -27,6 +27,8 @@ Emlid Corrections는 Emlid Reach 수신기용 RTK 보정 서비스로, 별도의
 1. Emlid Flow 앱(iOS/Android)에서 Reach 수신기 연결
 2. Correction input에서 Emlid Corrections 선택
 3. 수 초 내 RTK Fix 획득 후 측량 시작
+
+Emlid CEO가 직접 시연한 데모에서도 위 3단계만으로 수 초 내 RTK Fix를 획득함을 확인했다.^[inbox/fetch-2026-08-06-yt-how-to-get-an-rtk-fix-in-seconds.md]
 
 ## 활용 분야
 

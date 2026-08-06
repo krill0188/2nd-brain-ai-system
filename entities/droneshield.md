@@ -29,6 +29,6 @@ contradictions: []
 
 ## 관련 항목
 
-- [[ai-agent]] — AI 에이전트 기술
+- [[drone-ai-agents]] — AI 에이전트 기술
 - [[drone-ai]] — 드론 AI 기술
 - [[lockheed-martin-morfius]] — 드론 대응 시스템
