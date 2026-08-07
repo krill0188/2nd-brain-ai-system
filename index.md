@@ -3,7 +3,7 @@
 > Complete catalog of active canonical pages. Each entry is a wikilink followed by
 > a one-line summary, sorted alphabetically within its section.
 >
-> Total pages: 185
+> Total pages: 186
 ## Entities
 <!-- Alphabetical within section -->
 
@@ -176,6 +176,8 @@
 - [[px4-simulation]] — PX4 SITL 소프트웨어 시뮬레이션 환경.
 - [[divimath-4w-analog-vtx]] — Divimath 4W 아날로그 FPV 영상송신기(VTX).
 - [[china-drone-export-controls]] — 중국의 대미 드론·부품 수출 신규 라이선스 통제.
+- [[multi-uav-collision-avoidance-survey]] — 다중 UAV 딥러닝 충돌회피 서베이 논문.
+- [[dfend-counter-drone-worldcup]] — 2026 FIFA 월드컵 DFEND 대드론 작전.
 ## Comparisons
 
 - [[knowledge-tool-roles]] — Zotero, NotebookLM, LLM Wiki, Obsidian과 그래프 도구의 책임 비교.

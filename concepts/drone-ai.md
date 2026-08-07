@@ -1,7 +1,7 @@
 ---
 title: Drone AI Overview
 created: 2026-08-06
-updated: 2026-08-06
+updated: 2026-08-07
 type: concept
 tags: [drone-ai]
 sources: []
@@ -43,3 +43,4 @@ domain: ai-autonomy
 - [[micro-drone-slam-imu-vio-lidar-uav-livox-mid-360-pixhawk-4-m]] — 마이크로드론 SLAM 사례 비교
 - [[tekever]] — 유럽 AI 기반 자율 시스템 기업
 - [[xtend-ai-robotics]] — XTEND-JFB 합병 방위 로봇 기업
+- [[multi-uav-collision-avoidance-survey]] — 다중 UAV 딥러닝 충돌회피 서베이 논문

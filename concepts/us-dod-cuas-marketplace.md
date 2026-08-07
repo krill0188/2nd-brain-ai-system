@@ -1,7 +1,7 @@
 ---
 title: US Department of War C-UAS Marketplace
 created: 2026-08-05
-updated: 2026-08-05
+updated: 2026-08-07
 type: concept
 tags: [drone, ai-agent, counter-uas, defense, regulations]
 sources: [inbox/fetch-2026-08-05-rss-dronelife.md]
@@ -38,6 +38,7 @@ domain: regulations
 - [[droneshield]] — 호주 기반 드론 탐지/방어 기업
 - [[monava]] — 스웨덴-핀란드 C-UAS 기업
 - [[lockheed-martin-morfius]] — 록히드마틴 드론 스웜 대응 시스템
+- [[dfend-counter-drone-worldcup]] — 2026 FIFA 월드컵 DFEND 대드론 작전 사례
 
 ## 📰 최근 관련 소식
 - Pentagon’s counter-drone hub picked software startup Kaizen to develop c-UAS marketplace for $15M (DefenseScoop, Tue, 04 Au) — https://news.google.com/rss/articles/CBMiygFBVV95cUxPYlJzVVpNNGpnd0V3M3FUeHhIVUlCNTktdEFObmlOR1ZLVzVmLWI0bTZ5ZmxHQjBDd21fTVdUUTMxU1dzeUFkNHdzOU9Tc05fRFU2SjEtWVFCblRyU3NYcmdSNW5vODN4SGwxTlpydm1hU3kzZ2NNQWhFVjhjOWNRS2l1X0JSNTRxbTJDU3VpcjAxc3VoTk1wVlVsLTJLc3B1TDg0UzVmUUxGVFdPZXJJQjRFeTY2QlFjY1hTRXpfVnJvVDVQazNibFhR?oc=5

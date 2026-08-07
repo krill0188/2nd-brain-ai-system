@@ -721,3 +721,22 @@
 - 부수 발견: `param-diff-copter-4-6-0-4-7-0`, `param-diff-px4-1-16-0-1-17-0`, `px4-params-by-version`, `ardupilot-params-by-version` 4개 페이지가 아웃바운드 링크 1개뿐(SCHEMA 최소 2개 위반) — 각각 상위 개념(`ardupilot-architecture`/`px4-tuning-control`) 링크 1개씩 추가해 해소.
 - **검증 결과**: 총 184페이지 / 고아(인바운드 0) 0개 / 아웃바운드<2 위반 0개 / 깨진 wikilink 0개 — 전부 0으로 확인.
 - `scripts/update-graph.sh` 재실행: drone-knowledge-graph.json 184노드 / 1094엣지(전회 1002 대비 +92), 고립 노드 0.
+
+## [2026-08-07] ingest | inbox 10건 처리 (Hermes 2nd-daily-ingest 연속 2일째 402 에러)
+
+- 원인: 2026-08-07 04:00 `2nd-daily-ingest` cron도 어제와 동일하게 OpenRouter HTTP 402(크레딧 부족)로 실패 — 반복되는 근본 원인이므로 마스터의 크레딧 충전 또는 모델 설정 변경이 필요함을 재차 보고.
+- Source files (10개, 전부 검토):
+  - `fetch-2026-08-07-crossref-deep-learning-based-collision-avoidance-techniques-in-multi-.md`, `fetch-2026-08-07-rss-dji-enterprise.md`, `fetch-2026-08-07-rss-dronedj.md`, `fetch-2026-08-07-rss-parrot.md`, `fetch-2026-08-07-rss-skydio.md`, `fetch-2026-08-07-rss-suasnews.md`, `fetch-2026-08-07-yt-a-pool-from-above-looks-like-art-dji-mavic-4-pro.md`, `fetch-2026-08-07-yt-is-this-drone-flight-legal.md`, `fetch-2026-08-07-yt-whats-under-the-moss-dji-osmo-nano.md`, `fetch-2026-08-07-yt-피지컬ai-체험-로봇팔자율주행반려로봇.md`
+- Created concepts:
+  - `concepts/multi-uav-collision-avoidance-survey.md` — Crossref 저널 서베이 논문(다중 UAV 딥러닝 충돌회피)
+  - `concepts/dfend-counter-drone-worldcup.md` — 2026 FIFA 월드컵 DFEND 대드론 작전(어제 스킵했던 700대 압수 사건과 연계)
+- Updated:
+  - `concepts/drone-first-responder-dfr.md` — 호놀룰루 경찰 DFR 2개 관할구 가동
+  - `entities/skydio.md` — JTF-SB 국경 임무 드론 운용 추가
+  - `concepts/dji-osmo-nano.md` — 방수 침수 촬영 데모 소스 추가
+  - `concepts/fcc-drone-regulations.md` — 외국 제조사 미국 시장 진입 절차 가이드 추가
+  - `concepts/drone-ai.md`, `concepts/us-dod-cuas-marketplace.md` — 신규 페이지 2건 역링크(고아 방지)
+- Skipped(사유): DJI Enterprise RSS 3건(제품 수명주기/일반 발표, 개별 문서화 가치 낮음), Parrot RSS 4건(2023~2025 구기사 재탕, 기존 페이지와 중복), DJI Mavic 4 Pro·"Is This Drone Flight Legal?" 영상(마케팅/컨텐츠 없음), 피지컬AI 체험 영상(로봇팔·자율주행·반려로봇 — 드론 무관 out-of-domain), Skydio Minneapolis 표결·펀딩 목록(기존 `skydio.md` 서술과 중복)
+- **검증**: 총 186페이지 / 고아 0 / 아웃바운드<2 위반 0 / 깨진 링크 0
+- Updated: `index.md` (186 pages), `log.md`
+- Moved sources to: `inbox/processed/` (10 files)
