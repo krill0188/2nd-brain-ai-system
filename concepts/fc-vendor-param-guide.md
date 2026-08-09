@@ -1,14 +1,15 @@
 ---
 title: "FC 제조사별 파라미터 설정 가이드 (총론)"
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-08-10
 type: concept
 tags: [drone, hardware, flight-control, parameter, setup]
-sources: [공식 문서 기반 정리]
-confidence: medium
+sources: []
+confidence: low
 contested: false
 contradictions: []
 domain: hardware
+note: "출처는 공식 문서 기반 정리(방법론)이나 raw/ 스냅샷 미보존 — 2026-08-10 프로버넌스 감사에서 발견, 재캡처 필요"
 ---
 
 # FC 제조사별 파라미터 설정 가이드 (총론)

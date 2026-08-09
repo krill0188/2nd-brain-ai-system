@@ -1,14 +1,15 @@
 ---
 title: "Pixhawk 6X/6C 초기 파라미터 설정"
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-08-10
 type: concept
 tags: [drone, hardware, pixhawk, parameter, setup]
-sources: [Pixhawk 표준(DS-009)·Holybro 문서 기반 정리]
-confidence: medium
+sources: []
+confidence: low
 contested: false
 contradictions: []
 domain: hardware
+note: "출처는 Pixhawk 표준(DS-009)·Holybro 문서 기반 정리(방법론)이나 raw/ 스냅샷 미보존 — 2026-08-10 프로버넌스 감사에서 발견, 재캡처 필요"
 ---
 
 # Pixhawk 6X/6C 초기 파라미터 설정

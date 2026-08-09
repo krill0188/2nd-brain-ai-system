@@ -780,3 +780,11 @@
 **검증(서브에이전트 완료 보고 재검증 원칙에 따라 오케스트레이터가 직접 재확인)**: 33개 파일 전부 `sources`/`note`/`updated` 필드 정확성 확인(이슈 0건), confidence 분포 medium 19 / low 7 재계산 일치, wikilink 그래프 191페이지 고아 0/아웃바운드위반 0/깨진링크 0 유지 확인, sources 프로버넌스 미해결 8건(=유형 C, 의도된 범위 밖) 외 전부 해소 확인.
 
 - Updated: `log.md` (index.md는 신규 페이지 없어 변경 없음)
+
+## [2026-08-10] lint-fix | sources 프로버넌스 감사 마무리 — 유형 C(설명문구) 8건
+
+전날(같은 날 자정 직후) 보류했던 유형 C 8건 처리. `sources:`가 파일 경로가 아니라 방법론 설명 문구("공식 파라미터 메타데이터 자동 diff" 등)였던 케이스 — 유형 B와 동일하게 `sources: []` + confidence 하향(high→medium 2건: param-diff-copter-4-6-0-4-7-0, param-diff-px4-1-16-0-1-17-0 / medium→low 6건: px4-params-by-version, pixhawk-setup-params, fc-vendor-param-guide, ardupilot-params-by-version, holybro-setup-params, cuav-setup-params) 처리하되, 방법론 설명 자체는 유용한 맥락이라 버리지 않고 `note` 필드에 보존("출처는 ~ 기반 정리(방법론)이나 raw/ 스냅샷 미보존").
+
+**최종 검증**: 총 191페이지 / 고아 0 / 아웃바운드<2 위반 0 / 깨진 wikilink 0 / sources 프로버넌스 미해결 **0건**(41개 전부 해소 — 어제 33개 + 오늘 8개). 그래프 정합성과 원본 출처 검증 양쪽 모두 완전히 클린한 상태 최초 달성.
+
+- Updated: `log.md`

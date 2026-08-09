@@ -1,14 +1,15 @@
 ---
 title: "CUAV FC(X7+/V5+/Nora+) 초기 파라미터 설정"
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-08-10
 type: concept
 tags: [drone, hardware, cuav, parameter, setup]
-sources: [CUAV 공식 문서 기반 정리]
-confidence: medium
+sources: []
+confidence: low
 contested: false
 contradictions: []
 domain: hardware
+note: "출처는 CUAV 공식 문서 기반 정리(방법론)이나 raw/ 스냅샷 미보존 — 2026-08-10 프로버넌스 감사에서 발견, 재캡처 필요"
 ---
 
 # CUAV FC(X7+/V5+/Nora+) 초기 파라미터 설정
@@ -52,3 +53,6 @@ CUAV 보드는 **전원 모듈(PMU) 종류에 따라 파라미터가 크게 달�
 
 - CUAV 문서: https://doc.cuav.net/
 - X7+ 매뉴얼: https://doc.cuav.net/flight-controller/x7/en/
+
+## 📰 최근 관련 소식
+- [Joshua Bardwell] Why did Divimath release a 4W ANALOG vTX?! (youtube.com, 2026-08-05) — https://www.youtube.com/watch?v=r6h3y7gFdR8
