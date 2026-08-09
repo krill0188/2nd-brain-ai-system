@@ -1,7 +1,7 @@
 ---
 title: Drone Regulations
 created: 2026-07-27
-updated: 2026-08-06
+updated: 2026-08-09
 type: concept
 tags: [drone, regulations, UAS, FAA, EASA, BVLOS, compliance]
 sources: []
@@ -187,6 +187,7 @@ note: "Knowledge-based page - no raw source ingested yet"
 - [[uk-caa-bvlos-scale]] — 영국 CAA BVLOS 대규모 운용 규정
 - [[us-dod-cuas-marketplace]] — 미국 국방부 C-UAS 마켓플레이스
 - [[china-drone-export-controls]] — 중국 대미 드론·부품 수출 통제
+- [[faa-249-gram-registration-rule]] — FAA 249그램 드론 등록 규정
 
 ## 수집 대상
 
@@ -196,3 +197,5 @@ note: "Knowledge-based page - no raw source ingested yet"
 
 ## 📰 최근 관련 소식
 - 폭발물 싣고 독일 공항 날아든 드론···경찰 “기폭 장치 제거” (경향신문, Wed, 05 Au) — https://news.google.com/rss/articles/CBMiWkFVX3lxTE1WS0FOM3RRX2JDNEZWTXpCc2lMMDFCaVJ1NmlVOFQ0NXBSZ1M2Q3B1TVlPYy1SMUxPMC0wTThVX01rd2dnQlA5N2o5TTlyNlY1bFF2OEoyTE13UdIBX0FVX3lxTE12bng0UngtcWxZNTRDLWlMWGlVRzFhblk5cDNtcnVzUGg5QmdCNGgxYzFHRm05V0RCRmcxV3JtbDE5bmRBOHN1elp1TEtJRkdvaUxaMF81aHZZYnBTbXJ3?oc=5
+- '물류 난타전' 우크라 방공망 구멍...독 공항, 폭발물 드론에 비상 (YTN 사이언스, Thu, 06 Au) — https://news.google.com/rss/articles/CBMijAFBVV95cUxNLTVDRWI5UWoyVDA2ZzBPTjNxZUxaNHZLWnVWOHdjd0VtSDU2YlU0SS1Sd182cFpIMllmeXdZWWRLRFJqalE4dU4zYjJ5UnFlNUIyb0VYdEJkVnR1WHppSy1udkEwZUV0dk1ZUkxTSmhuMlg3Ui11UVN5RnotQ29TRExJVFNJd0pCcXkxSA?oc=5
+- "美 정보기관, 독일 공항 폭발드론 러시아 소유 가능성 제기" (연합뉴스, Sat, 08 Au) — https://news.google.com/rss/articles/CBMiW0FVX3lxTE1rUGYybHdOX1ZOWXE0czNrQkdGQ2RXc0ZJek9KSVpQaWV5MXdyYl92ZS1jaEY1M3VYNk1xMEQzazBPcXlqaEtPb0lyYnVJWHBlMW9hdHVvRmtOMGfSAWBBVV95cUxQNzJBcEcybmpXRnVqT2NXeGhHdFVlWXBkdnM3cjk0UXlWbEx2YWE2Zm9IdllSbEdoNDdXd0ctQUFadGVkYVdySmJZSmVTLTJDU2x5a3I3ZEJUS1liYXZhUWc?oc=5

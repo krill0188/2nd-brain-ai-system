@@ -1,7 +1,7 @@
 ---
 title: DJI
 created: 2026-08-06
-updated: 2026-08-06
+updated: 2026-08-09
 type: entity
 tags: [drone, hardware, company]
 sources: []
@@ -25,3 +25,4 @@ domain: hardware
 
 - [[dji-enterprise]] — DJI 산업/기업용 사업부
 - [[dji-terra]] — DJI 매핑 소프트웨어
+- [[dji-mavic-4-pro]] — 100MP 하셀블라드 소비자용 항공촬영 드론

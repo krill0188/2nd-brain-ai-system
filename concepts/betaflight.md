@@ -1,7 +1,7 @@
 ---
 title: Betaflight
 created: 2026-07-29
-updated: 2026-08-03
+updated: 2026-08-09
 type: concept
 tags: [drone, drone-sw, flight-control]
 sources: [inbox/fetch-2026-07-29-betaflight.md, inbox/fetch-2026-08-03-betaflight.md]
@@ -49,3 +49,4 @@ Betaflight는 FPV(First Person View) 드론과 소형 레이싱 드론을 위한
 - [[drone-safety-failsafe]] — Arming 및 failsafe 메커니즘
 - [[px4-flight-stack]] — Betaflight와 비교되는 다른 오픈소스 비행 스택
 - [[edgetx-custom-audio]] — EdgeTX 라디오 설정
+- [[fc-firmware-comparison]] — Betaflight vs INAV vs ArduPilot 비교

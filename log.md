@@ -740,3 +740,27 @@
 - **검증**: 총 186페이지 / 고아 0 / 아웃바운드<2 위반 0 / 깨진 링크 0
 - Updated: `index.md` (186 pages), `log.md`
 - Moved sources to: `inbox/processed/` (10 files)
+
+## [2026-08-09] ingest | inbox 23건 처리 (Hermes 2nd-daily-ingest 4일 연속 402 에러)
+
+- 원인: 2026-08-08, 08-09 04:00 `2nd-daily-ingest` cron 모두 OpenRouter HTTP 402(크레딧 부족)로 실패 — 4일 연속(08-06~09) 반복. 근본 조치(크레딧 충전/모델 재설정) 필요.
+- 병렬 그래프 무결성 감사(fork, 진단 전용): 08-07 정리 이후 상태 재확인 — 고아 0 / 깨진 링크 0 / SCHEMA 위반 0 / index 유령 항목 0, 전부 유지되고 있음을 확인. 자동 self-update-pipeline의 "📰 최근 관련 소식" 섹션은 순수 텍스트+URL이라 wikilink 그래프에 영향 없음.
+- Source files (23개, 2026-08-08 12건 + 2026-08-09 11건, 전부 검토):
+  - 08-08: `rss-dronedj`, `rss-dronelife`, `rss-parrot`, `rss-skydio`, `rss-suasnews`, `yolo`, `yt-70-more-video-range...`, `yt-embedded-intelligence...`, `yt-pinklab-pinky-zero`, `yt-the-249-gram-drone-trap-explained`, `yt-the-hardest-screenshot-challenge...`, `yt-the-wilderness-has-a-sound...`
+  - 08-09: `ros2`, `rss-dji-enterprise`, `rss-dronelife`, `rss-oscarliang-fpv`, `rss-skydio`, `rss-suasnews`, `yolo`(08-08과 동일 릴리스, 중복), `yt-faroe-islands...`, `yt-inspired-by-the-odyssey...`, `yt-my-rc-kit-picks...`, `yt-the-249-gram-drone-trap`(explained판과 중복 주제)
+- Created:
+  - `concepts/yolo-v8-4-116.md` — YOLO v8.4.116 릴리스(08-08/09 중복 파일 통합 인용)
+  - `entities/ondas.md` — 미 방산 드론 기업(Mistral 전술 LUS, Sentrycs 대드론)
+  - `concepts/faa-249-gram-registration-rule.md` — FAA 249g 드론 등록 규정(중복 영상 2건 통합)
+  - `comparisons/fc-firmware-comparison.md` — Betaflight vs INAV vs ArduPilot 비교
+  - `concepts/dji-mavic-4-pro.md` — DJI Mavic 4 Pro(08-07/09 마케팅 영상 2건 통합)
+- Updated:
+  - `concepts/dfend-counter-drone-worldcup.md` — D-Fend 공식 확인(EnforceAir, 20+ 기관), Ondas 백링크
+  - `concepts/fcc-drone-regulations.md` — FCC DJI 접근차단 검토 + Gorge Drones $289,215 민사제재금 사례
+  - `entities/skydio.md` — Blue UAS 인증, SFPD 6개월 라이브스트림 유출, EVERYWHERE 단독근무자 파트너십
+  - `concepts/dji-mic-mini-2s.md` — 야외 녹음 데모 소스 추가
+  - `concepts/betaflight.md`, `entities/dji.md`, `concepts/drone-regulations.md`, `concepts/us-dod-cuas-marketplace.md`, `concepts/yolo-v8-4-115.md` — 신규 페이지 5건 역링크(고아 방지)
+- Skipped(사유): L&T 산업화 전망·ACSL 팬데믹 회고 op-ed·Robinson Unmanned Drone Dominance(단일언급, 임계값 미달), Parrot RSS 3건(2020~2023 구기사, 기존 페이지 중복), Skydio Minneapolis 표결·Spokane 400회 비행·A3 인사이트·$52M 육군계약(구식/중복/일반론), suasnews Tiltan HIL·SYPAQ·KLM Vantrel(단발 기업 홍보성, 임계값 미달), Skydio-CentralSquare DFR 재보도(기존 `skydio-centralsquare-dfr-integration.md`와 동일 사안), Inzpire RPAS 훈련(단일언급), ros2 lyrical patch2 릴리스노트(설치안내뿐 실질 체인지로그 없음), RushFPV VTX·MATLAB 임베디드AI·PinkLab Pinky Zero·DJI Neo2 챌린지·DJI RS5·Painless360 RC픽(마케팅/제휴링크 위주 또는 도메인 무관, 콘텐츠 실질 없음)
+- **검증**: 총 191페이지 / 고아 0 / 아웃바운드<2 위반 0 / 깨진 링크 0
+- Updated: `index.md` (191 pages), `log.md`
+- Moved sources to: `inbox/processed/` (23 files)

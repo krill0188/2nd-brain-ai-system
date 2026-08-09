@@ -1,10 +1,10 @@
 ---
 title: DJI Mic Mini 2S
 created: 2026-08-05
-updated: 2026-08-05
+updated: 2026-08-09
 type: concept
 tags: [drone, hardware, audio, dji, microphone]
-sources: [inbox/fetch-2026-08-05-yt-meet-dji-mic-mini-2s---capture-every-detail.md]
+sources: [inbox/fetch-2026-08-05-yt-meet-dji-mic-mini-2s---capture-every-detail.md, inbox/fetch-2026-08-08-yt-the-wilderness-has-a-sound-dji-mic-mini-2s-osmo-pocket-4p.md]
 confidence: high
 contested: false
 contradictions: []
@@ -17,7 +17,7 @@ DJI Mic Mini 2S는 드론 및 핸드헬드 촬영용 무선 마이크 시스템�
 
 ## 핵심 사양
 
-- **32-bit Float 내부 녹음**: 안전한 백업 녹음, 클리핑 방지
+- **32-bit Float 내부 녹음**: 안전한 백업 녹음, 클리핑 방지(야외 자연음 녹음 데모에서도 확인)^[inbox/fetch-2026-08-08-yt-the-wilderness-has-a-sound-dji-mic-mini-2s-osmo-pocket-4p.md]
 - **28시간 내부 저장**: 장시간 녹음 지원
 - **AI 노이즈 캔슬링**: 2단계 AI 기반 노이즈 제거, 보컬 정확 분리
 - **4TX + 1RX 크로스젠 연결**: 다중 송신기 지원

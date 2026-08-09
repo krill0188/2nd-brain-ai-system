@@ -3,7 +3,7 @@
 > Complete catalog of active canonical pages. Each entry is a wikilink followed by
 > a one-line summary, sorted alphabetically within its section.
 >
-> Total pages: 186
+> Total pages: 191
 ## Entities
 <!-- Alphabetical within section -->
 
@@ -33,6 +33,7 @@
 - [[dji]] — 중국 선전 기반 세계 최대 드론 제조사, 소비자/엔터프라이즈 사업부.
 - [[dji-enterprise]] — DJI 산업/기업용 사업부: Matrice, Dock, Zenmuse, DJI Terra.
 - [[matternet]] — 미국 병원 간 의료 물류 드론 배송 기업, M2 시스템.
+- [[ondas]] — 미 방산 드론 기업, Mistral(전술 LUS)·Sentrycs(대드론) 자회사 보유.
 
 ## Concepts
 - [[cleveland-clinic-drone-delivery]] — 미국 최초 장기 의료 드론 배달 프로그램 (Cleveland Clinic + Zipline).
@@ -178,9 +179,14 @@
 - [[china-drone-export-controls]] — 중국의 대미 드론·부품 수출 신규 라이선스 통제.
 - [[multi-uav-collision-avoidance-survey]] — 다중 UAV 딥러닝 충돌회피 서베이 논문.
 - [[dfend-counter-drone-worldcup]] — 2026 FIFA 월드컵 DFEND 대드론 작전.
+- [[yolo-v8-4-116]] — YOLO v8.4.116 릴리스 (2026-08-07).
+- [[faa-249-gram-registration-rule]] — FAA 249그램 드론 등록 규정.
+- [[dji-mavic-4-pro]] — DJI Mavic 4 Pro, 100MP 하셀블라드 센서.
+
 ## Comparisons
 
 - [[knowledge-tool-roles]] — Zotero, NotebookLM, LLM Wiki, Obsidian과 그래프 도구의 책임 비교.
+- [[fc-firmware-comparison]] — FPV 드론 FC 펌웨어 비교(Betaflight/INAV/ArduPilot).
 
 ## Queries
 
