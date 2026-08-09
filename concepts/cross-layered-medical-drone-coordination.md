@@ -1,14 +1,15 @@
 ---
 title: "Cross-Layered Multi-Drone Coordination for Medical Supply Delivery"
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-08-10
 type: concept
 tags: [drone, swarm, flight-control, ai-autonomy, medical-delivery, disaster-response]
-sources: [raw/papers/swarm/cross-layered-medical-drone-coordination.md]
-confidence: high
+sources: []
+confidence: medium
 contested: false
 contradictions: []
 domain: flight-control
+note: "Raw source not preserved in repo — found during 2026-08-10 provenance audit, needs recapture"
 ---
 
 # Cross-Layered Multi-Drone Coordination for Medical Supply Delivery
@@ -38,3 +39,6 @@ domain: flight-control
 ## 출처
 
 - Calyam et al., "A Cross-Layered Multi-Drone Coordination for Medical Supply Delivery during Disaster Response Management", arXiv:2605.09342, 2026.
+
+## 📰 최근 관련 소식
+- Inside the Drone Dominance Supply Chain: What Every U.S. Drone Company Must Source—and by When (Inside Unmanned Systems, Wed, 22 Ju) — https://news.google.com/rss/articles/CBMixgFBVV95cUxNLXE2RGRKTHV0TEpfTGsxemxJT1NPVTZMd1ZCdjNKY3I0YzFJRmVwQlJldWdjTm0wWHBOSVdBWURiYUVGR0pWMTQ3Wm9QeTlZTzgtOGxFd3lUMFo2ZUZWa21PZDJUcVlHdnFtQUxGclR5R2ZKVWw0R3FfV19qRWlJWF9YR0E3eU9JT3prMjdIY0RRNkNKVEFubGZJRlFuQk9nalBXY1pNVTQ4VXF1N1A0U1dBN1Fuc0FpdmN5bkRSX2J0QXdRdnc?oc=5

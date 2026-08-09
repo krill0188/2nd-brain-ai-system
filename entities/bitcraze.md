@@ -1,13 +1,14 @@
 ---
 title: "Bitcraze"
 created: 2026-07-31
-updated: 2026-07-31
+updated: 2026-08-10
 type: entity
 tags: [drone, drone-hw, drone-sw, swarm]
-sources: [raw/youtube/fetch-2026-07-30-yt-bitcraze-at-icra-2026-crazyflie-swarm-highlights-from-vienna.md]
-confidence: high
+sources: []
+confidence: medium
 contested: false
 contradictions: []
+note: "Raw source not preserved in repo — found during 2026-08-10 provenance audit, needs recapture"
 ---
 
 # Bitcraze

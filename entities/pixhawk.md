@@ -1,11 +1,11 @@
 ---
 title: Pixhawk
 created: 2026-07-28
-updated: 2026-07-28
+updated: 2026-08-10
 type: entity
 tags: [drone-hw, drone-sw]
 sources:
-  - raw/articles/pixhawk-flight-controller-entity-reference.md
+  - raw/articles/entity-pixhawk-hardware.md
 confidence: high
 domain: hardware
 contested: false

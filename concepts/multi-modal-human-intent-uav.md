@@ -1,14 +1,15 @@
 ---
 title: "Multi-Modal Human Intent Mediation for Safe UAV Maneuvers"
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-08-10
 type: concept
 tags: [drone, voice-control, ai-autonomy, human-machine-interface, safety]
-sources: [raw/papers/ai-autonomy/multi-modal-human-intent-uav.md]
-confidence: high
+sources: []
+confidence: medium
 contested: false
 contradictions: []
 domain: ai-autonomy
+note: "Raw source not preserved in repo — found during 2026-08-10 provenance audit, needs recapture"
 ---
 
 # Multi-Modal Human Intent Mediation for Safe UAV Maneuvers

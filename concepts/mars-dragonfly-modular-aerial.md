@@ -1,14 +1,15 @@
 ---
 title: "MARS-Dragonfly Modular Aerial Robot Systems"
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-08-10
 type: concept
 tags: [drone, flight-control, hardware, modular-robotics, swarm]
-sources: [raw/papers/flight-control/mars-dragonfly-modular-aerial.md]
-confidence: high
+sources: []
+confidence: medium
 contested: false
 contradictions: []
 domain: flight-control
+note: "Raw source not preserved in repo — found during 2026-08-10 provenance audit, needs recapture"
 ---
 
 # MARS-Dragonfly Modular Aerial Robot Systems

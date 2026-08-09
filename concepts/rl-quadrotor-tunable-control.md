@@ -1,14 +1,15 @@
 ---
 title: "RL-Based Quadrotor Control with Tunable Performance"
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-08-10
 type: concept
 tags: [drone, flight-control, reinforcement-learning, control-theory, px4]
-sources: [raw/papers/flight-control/rl-quadrotor-tunable-control.md]
-confidence: high
+sources: []
+confidence: medium
 contested: false
 contradictions: []
 domain: flight-control
+note: "Raw source not preserved in repo — found during 2026-08-10 provenance audit, needs recapture"
 ---
 
 # RL-Based Quadrotor Control with Tunable Performance

@@ -1,14 +1,15 @@
 ---
 title: "Digital Twin for Intent-Based Drone Networks"
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-08-10
 type: concept
 tags: [drone, datalink, comms-protocol, digital-twin, reinforcement-learning]
-sources: [raw/papers/datalink/digital-twin-intent-drone-networks.md]
-confidence: high
+sources: []
+confidence: medium
 contested: false
 contradictions: []
 domain: comms-protocol
+note: "Raw source not preserved in repo — found during 2026-08-10 provenance audit, needs recapture"
 ---
 
 # Digital Twin for Intent-Based Drone Networks

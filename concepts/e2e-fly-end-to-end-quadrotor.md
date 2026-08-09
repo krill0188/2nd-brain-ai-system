@@ -1,14 +1,15 @@
 ---
 title: "E2E-Fly: End-to-End Quadrotor Autonomy System"
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-08-10
 type: concept
 tags: [drone, flight-control, ai-autonomy, sim-to-real, reinforcement-learning]
-sources: [raw/papers/flight-control/e2e-fly-end-to-end-quadrotor.md]
-confidence: high
+sources: []
+confidence: medium
 contested: false
 contradictions: []
 domain: flight-control
+note: "Raw source not preserved in repo — found during 2026-08-10 provenance audit, needs recapture"
 ---
 
 # E2E-Fly: End-to-End Quadrotor Autonomy System

@@ -1,7 +1,7 @@
 ---
 title: NotebookLM 질의 지식 증분 워크플로
 created: 2026-07-21
-updated: 2026-07-21
+updated: 2026-08-10
 type: query
 tags:
   - automation
@@ -9,13 +9,11 @@ tags:
   - notebooklm
   - provenance
   - workflow
-sources:
-  - "raw/notebooklm/notebooklm-py-github.md"
-  - "raw/notebooklm/llm-wiki-skill-github.md"
-  - "raw/notebooklm/2026-07-16-all-notes.md"
-confidence: medium
+sources: []
+confidence: low
 contested: false
 contradictions: []
+note: "Raw source not preserved in repo — found during 2026-08-10 provenance audit, needs recapture"
 ---
 
 # NotebookLM 질의 지식 증분 워크플로

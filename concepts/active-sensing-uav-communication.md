@@ -1,14 +1,15 @@
 ---
 title: "Active Sensing-Assisted UAV Communications with Jittering"
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-08-10
 type: concept
 tags: [drone, datalink, comms-protocol, sensing, cellular]
-sources: [raw/papers/datalink/active-sensing-uav-communication.md]
-confidence: high
+sources: []
+confidence: medium
 contested: false
 contradictions: []
 domain: comms-protocol
+note: "Raw source not preserved in repo — found during 2026-08-10 provenance audit, needs recapture"
 ---
 
 # Active Sensing-Assisted UAV Communications with Jittering
@@ -39,3 +40,6 @@ UAV 지터링으로 인한 빔 불일치 문제를 해결하기 위한 통합 �
 ## 출처
 
 - Chen et al., "Active Sensing-assisted UAV Communications with Jittering: Framework and Performance Analysis", arXiv:2606.13036, 2026.
+
+## 📰 최근 관련 소식
+- “북한군 드론전 경험, 결정적 위협 아냐”…강건작 안보실 1차장의 ‘결이 다른 생각’ 보니[반도 앨리스] (경향신문, Fri, 07 Au) — https://news.google.com/rss/articles/CBMiWkFVX3lxTE50LTk3NTJxWXBWWmxhOXBmN2hJS3lfQ0haekRtNEtsTnFvekE5RUxBV3M2UW8xZnRTemgzWlo2aUJMWmlXWWlEa2t1Q3RGcDlsS1lBdmIxU0x0QdIBX0FVX3lxTE9qdG41WmdVclVUV3doYUxtLVh2OW80VXdNamstX0VtbHVmNVFrUXVpVmkxczBLa1ZDSXEwYWg5VUR1ak42enNQUDc3SW5LOXdjSFJpbGFrQnF4Z2hTNHNZ?oc=5

@@ -1,11 +1,11 @@
 ---
 title: MAVLink Protocol
 created: 2026-07-28
-updated: 2026-08-06
+updated: 2026-08-10
 type: entity
 tags: [datalink, drone-sw]
 sources:
-  - raw/articles/mavlink-protocol-entity-reference.md
+  - raw/articles/entity-mavlink-protocol.md
 confidence: high
 domain: comms-protocol
 contested: false

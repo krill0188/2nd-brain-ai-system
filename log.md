@@ -764,3 +764,19 @@
 - **검증**: 총 191페이지 / 고아 0 / 아웃바운드<2 위반 0 / 깨진 링크 0
 - Updated: `index.md` (191 pages), `log.md`
 - Moved sources to: `inbox/processed/` (23 files)
+
+## [2026-08-10] lint-fix | sources 프로버넌스 정밀 감사 — 33개 페이지 정정
+
+마스터 요청: "인젝션안에 DB 정밀하게 확인해서 관계형 데이터로 되어 있지 않은 부분 다시 체크". wikilink 그래프(고아/깨진링크)는 이미 0/0으로 깨끗했으나, 각 페이지 `sources:` 필드가 실제 raw 파일을 가리키는지는 별도로 한 번도 정밀검증한 적이 없었음 — 이번에 처음 실시.
+
+**발견**: 41개 페이지의 `sources:`가 존재하지 않는 파일을 인용 중. `raw/youtube/`, `raw/notebooklm/`은 git 히스토리 전체 확인 결과 2026-07-26 저장소 최초 생성 시점부터 `.gitkeep`만 있었고 실제 원본이 한 번도 존재한 적 없음(삭제 아님, 애초에 미캡처). `raw/papers/flight-control/`, `raw/papers/ai-autonomy/`도 빈 디렉토리, `raw/papers/arxiv/`는 디렉토리 자체가 없음.
+
+**3가지 유형으로 분류 후 처리**:
+- **유형 A(경로만 바뀐 것, 7건)** — 실제로는 파일명 컨벤션이 바뀐 리네임이었음. `entities/pixhawk.md`(`pixhawk-flight-controller-entity-reference.md`→`entity-pixhawk-hardware.md`), `entities/ardupilot.md`, `entities/mavlink.md`, `entities/px4-flight-stack.md`(동일 패턴), `concepts/ros2-drone-integration.md`(`mastervault-ros2-devnotes.md`→`ros2-devnotes.md`), `concepts/px4-offboard-control.md`(`px4-ros2-offboard-control.md`→`px4-offboard-control.md`), `concepts/drone-news-2026-07-31.md`(`raw/articles/`→`inbox/`) — 경로만 바로잡음, 오케스트레이터 직접 처리.
+- **유형 B(raw/youtube+notebooklm+papers 완전 미보존, 26건)** — 병렬 fork 위임. `sources: []`로 정정, confidence 한 단계 하향(high→medium 19건, medium→low 7건), `note: "Raw source not preserved in repo — found during 2026-08-10 provenance audit, needs recapture"` 추가. 가짜 파일 생성으로 경로만 맞추는 방식은 SCHEMA 원칙(원본 없는 경로 절대 유지 금지)에 반해 사용하지 않음 — 정직하게 gap으로 기록.
+  - 대상: `kite-gcs`, `bitcraze`, `ratefpv`, `auterion`, `active-sensing-uav-communication`, `digital-twin-intent-drone-networks`, `e2e-fly-end-to-end-quadrotor`, `ai-knowledge-workflow`, `rl-quadrotor-tunable-control`, `event-camera-drone`, `decentralized-swarm-gps-denied`, `second-brain-research-workflow`, `mars-dragonfly-modular-aerial`, `cross-layered-medical-drone-coordination`, `neurosymland-landing-assessment`, `research-feedback-loop`, `skyjepa-world-models`, `uav-isac-cross-region`, `ai-personal-knowledge-management`, `llm-wiki`, `lightweight-safe-rl-uav`, `agile-quadrotor-learning`, `multi-modal-human-intent-uav`, `knowledge-tool-roles`, `notebooklm-query-compounding`, `ua-knowledge-graph-workflow`
+- **유형 C(설명 문구, 8건, 이번 범위 밖)** — `param-diff-copter-4-6-0-4-7-0`, `px4-params-by-version`, `pixhawk-setup-params`, `fc-vendor-param-guide`, `param-diff-px4-1-16-0-1-17-0`, `ardupilot-params-by-version`, `holybro-setup-params`, `cuav-setup-params`. `sources:`가 파일 경로가 아니라 "공식 릴리즈노트 기반 정리" 같은 방법론 설명 문구 — 파일 미존재와는 다른 유형이라 마스터 지시대로 이번엔 보류.
+
+**검증(서브에이전트 완료 보고 재검증 원칙에 따라 오케스트레이터가 직접 재확인)**: 33개 파일 전부 `sources`/`note`/`updated` 필드 정확성 확인(이슈 0건), confidence 분포 medium 19 / low 7 재계산 일치, wikilink 그래프 191페이지 고아 0/아웃바운드위반 0/깨진링크 0 유지 확인, sources 프로버넌스 미해결 8건(=유형 C, 의도된 범위 밖) 외 전부 해소 확인.
+
+- Updated: `log.md` (index.md는 신규 페이지 없어 변경 없음)

@@ -1,13 +1,14 @@
 ---
 title: "UAV ISAC via Cross-Region Cooperation"
 created: 2026-07-31
-updated: 2026-07-31
+updated: 2026-08-10
 type: concept
 tags: [drone, comms-protocol, swarm, datalink]
-sources: [raw/papers/arxiv/fetch-2026-07-31-arxiv-uav-swarming-for-air-ground-isac-via-cross-region-cooperatio.md]
-confidence: high
+sources: []
+confidence: medium
 contested: false
 contradictions: []
+note: "Raw source not preserved in repo — found during 2026-08-10 provenance audit, needs recapture"
 ---
 
 # UAV ISAC via Cross-Region Cooperation

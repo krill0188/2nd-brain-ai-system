@@ -1,11 +1,11 @@
 ---
 title: ArduPilot
 created: 2026-07-28
-updated: 2026-07-28
+updated: 2026-08-10
 type: entity
 tags: [drone-sw, drone]
 sources:
-  - raw/articles/ardupilot-entity-reference.md
+  - raw/articles/entity-ardupilot.md
 confidence: high
 domain: flight-control
 contested: false

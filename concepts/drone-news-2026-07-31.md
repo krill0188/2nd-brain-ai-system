@@ -1,10 +1,10 @@
 ---
 title: "Drone News 2026-07-31"
 created: 2026-07-31
-updated: 2026-08-06
+updated: 2026-08-10
 type: concept
 tags: [drone, regulations, ops-mission, hardware]
-sources: [raw/articles/fetch-2026-07-31-rss-dronedj.md, raw/articles/fetch-2026-07-31-rss-dronelife.md, raw/articles/fetch-2026-07-31-rss-suasnews.md]
+sources: [inbox/fetch-2026-07-31-rss-dronedj.md, inbox/fetch-2026-07-31-rss-dronelife.md, inbox/fetch-2026-07-31-rss-suasnews.md]
 confidence: high
 contested: false
 contradictions: []
@@ -59,3 +59,5 @@ contradictions: []
 
 ## 📰 최근 관련 소식
 - 붉게 달아오른 도심…‘열화상 드론’으로 본 폭염 (news.kbs.co.kr, Wed, 05 Au) — https://news.google.com/rss/articles/CBMiW0FVX3lxTE1qV01vSHh1bDZpaHl0STh1MlZXT2NZU1llRDd0dnVPRlVUZi0zV3pmSk02Q0w1YWpyMV8yVmt2NWxZMWt5M04yOWQ0M2hkZFo5QWZZMHBPZ0txdlU?oc=5
+- 2.5㎞ 날아 목표물 명중…美 해병대, 한반도 첫 자폭드론 실사격 공개 (newsis.com, Thu, 06 Au) — https://news.google.com/rss/articles/CBMiYEFVX3lxTE9wcjNDZzBqZ1JWa1d1UmNWQkVCNUo4YTRCaHh0Z2ZvT2NIQ1hxYWh6bTZPYlRScDJyUXF2UDgtY2t4Tm41U1d0SWVDdmZrSEQwRnNIeVlMTGxSMGpxWjlpatIBeEFVX3lxTE9Qb1NHdEVnaWQwZC1PMjNoOFc5N1BUN3c5V0RoZGlBbzRfRGhPb3NnYThvUnhEU0NsV3A5UFlJNWMyb2dRNXlzbTBjQUk0MUVWTW9Qa0FwRDdnUnpWV00xOGdjU3Jsd3BIRldKY19fVEJpdG5NSlNJTA?oc=5
+- 리투아니아 "러, 우크라 드론으로 발트국 위장 공격 가능성" (뉴시스, Fri, 07 Au) — https://news.google.com/rss/articles/CBMiYEFVX3lxTE1sejZrMFRDYWNYYXRQR0d2R2Vra2c3MElxWVZjaTZ6eXh2NUJMczJUMTFnYmY4T2x5dnZLUkU1QTRnUHRtdWVodUx2ekhsVUg0aW5lWmwzTWFMZkpVRG10dtIBeEFVX3lxTE5IT2N2anZJSjVmTy13WVZ1cmR2TFhVX0ZST053V1pNemFMaElrUTFMR3ZCQ3I3cTJOZm9UaXlheVN4czhPbWJNb05lS3p0RkdlT1NVdXY1V0V4dnVJRVlreElJU2N5N0JMeWItN0YyTnA5MmQ3MW1odg?oc=5

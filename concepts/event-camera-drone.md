@@ -1,13 +1,14 @@
 ---
 title: "Event Camera for Drones"
 created: 2026-07-31
-updated: 2026-07-31
+updated: 2026-08-10
 type: concept
 tags: [drone, ai-autonomy, drone-hw, hardware]
-sources: [raw/youtube/fetch-2026-07-30-yt-motion-aware-event-suppression-for-event-cameras-rss-2026.md]
-confidence: high
+sources: []
+confidence: medium
 contested: false
 contradictions: []
+note: "Raw source not preserved in repo — found during 2026-08-10 provenance audit, needs recapture"
 ---
 
 # Event Camera for Drones

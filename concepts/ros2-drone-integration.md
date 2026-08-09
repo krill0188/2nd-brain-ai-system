@@ -1,10 +1,10 @@
 ---
 title: ROS2 Drone Integration
 created: 2026-07-27
-updated: 2026-08-06
+updated: 2026-08-10
 type: concept
 tags: [drone-sw, ROS2, MAVROS, micro-ROS, middleware]
-sources: [raw/articles/mastervault-ros2-devnotes.md]
+sources: [raw/articles/ros2-devnotes.md]
 confidence: high
 domain: gcs-software
 contested: false

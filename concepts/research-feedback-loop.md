@@ -1,21 +1,19 @@
 ---
 title: 연구 피드백 루프
 created: 2026-07-21
-updated: 2026-07-21
+updated: 2026-08-10
 type: concept
 tags:
   - knowledge-graph
   - provenance
   - research
   - workflow
-sources:
-  - "raw/notebooklm/2026-07-16-all-notes.md"
-  - "raw/notebooklm/llm-wiki-zotero-notebooklm-youtube.md"
-  - "raw/notebooklm/notebooklm-py-github.md"
-confidence: medium
+sources: []
+confidence: low
 domain: ai-autonomy
 contested: false
 contradictions: []
+note: "Raw source not preserved in repo — found during 2026-08-10 provenance audit, needs recapture"
 ---
 
 # 연구 피드백 루프

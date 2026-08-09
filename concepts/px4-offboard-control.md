@@ -1,10 +1,10 @@
 ---
 title: PX4 Offboard Control
 created: 2026-07-27
-updated: 2026-07-27
+updated: 2026-08-10
 type: concept
 tags: [drone-sw, ai-agent, offboard, companion-computer, autonomous]
-sources: [raw/articles/px4-ros2-offboard-control.md]
+sources: [raw/articles/px4-offboard-control.md]
 confidence: high
 domain: flight-control
 contested: false

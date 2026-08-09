@@ -1,14 +1,15 @@
 ---
 title: "SkyJEPA: Long-Horizon World Models for Quadrotor Control"
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-08-10
 type: concept
 tags: [drone, flight-control, ai-autonomy, world-models, sim-to-real]
-sources: [raw/papers/flight-control/skyjepa-world-models.md]
-confidence: high
+sources: []
+confidence: medium
 contested: false
 contradictions: []
 domain: flight-control
+note: "Raw source not preserved in repo — found during 2026-08-10 provenance audit, needs recapture"
 ---
 
 # SkyJEPA: Long-Horizon World Models for Quadrotor Control

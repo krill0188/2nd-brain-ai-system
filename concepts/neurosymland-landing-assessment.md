@@ -1,14 +1,15 @@
 ---
 title: "NEUROSYMLAND: Neuro-Symbolic Landing Site Assessment"
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-08-10
 type: concept
 tags: [drone, ai-autonomy, computer-vision, safety, landing]
-sources: [raw/papers/ai-autonomy/neurosymland-landing-assessment.md]
-confidence: high
+sources: []
+confidence: medium
 contested: false
 contradictions: []
 domain: ai-autonomy
+note: "Raw source not preserved in repo — found during 2026-08-10 provenance audit, needs recapture"
 ---
 
 # NEUROSYMLAND: Neuro-Symbolic Landing Site Assessment

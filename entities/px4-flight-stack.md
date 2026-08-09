@@ -1,11 +1,11 @@
 ---
 title: PX4 Flight Stack
 created: 2026-07-28
-updated: 2026-07-28
+updated: 2026-08-10
 type: entity
 tags: [drone-sw, drone]
 sources:
-  - raw/articles/px4-flight-stack-entity-reference.md
+  - raw/articles/entity-px4-flight-stack.md
 confidence: high
 domain: flight-control
 contested: false
