@@ -10,7 +10,7 @@ doi: "10.48550/arXiv.2607.26679"
 url: "http://arxiv.org/abs/2607.26679"
 zotero_key: JF9I6VDL
 tags: ["Electrical Engineering and Systems Science - Systems and Control"]
-attachment_path: raw/papers/files/_unclassified/uav-swarming-for-air-ground-isac-via-cross-region-cooperation.pdf
+attachment_path: raw/papers/files/swarm/uav-swarming-for-air-ground-isac-via-cross-region-cooperation.pdf
 attachment_sha256: c8a2f33c87b94397b01bca58e5ef99c4c8121fd4fca8330cd9cd4577d0e29c57
 sha256: 1890f6ed5ec9e5d3
 ---

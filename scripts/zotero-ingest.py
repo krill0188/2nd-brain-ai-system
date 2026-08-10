@@ -44,6 +44,37 @@ TAG_MAP = {
     "drone":         "drone-sw",   # 일반 drone → drone-sw 기본
 }
 
+# Zotero 태그가 TAG_MAP에 안 걸릴 때(예: arXiv 카테고리 태그만 있는 경우) 제목+초록
+# 키워드로 재분류하는 폴백. Zotero 자체엔 우리 커스텀 분류체계를 자동 태깅할 방법이
+# 없어서(자체 메타데이터 태그 또는 사람 수동 태깅뿐) 이 스크립트가 대신한다.
+# 순서가 우선순위 — 여러 키워드가 겹치면 먼저 나온 topic이 채택된다(첫 매치).
+DOMAIN_KEYWORDS: list[tuple[str, list[str]]] = [
+    ("swarm",         ["swarm", "multi-uav", "multi-drone", "formation flight",
+                        "cooperative uav", "multi-agent uav", "fleet coordination"]),
+    ("drone-ai",       ["computer vision", "slam", "neural network", "deep learning",
+                         "reinforcement learning", "autonomous flight", "object detection",
+                         "perception"]),
+    ("datalink",       ["mavlink", "telemetry", "data link", "c2 link", "isac",
+                         "wireless communication", "spectrum", "communication qos",
+                         "network protocol"]),
+    ("voice-control",  ["voice control", "speech recognition", "natural language",
+                         "dialogue system", "voice command"]),
+    ("drone-hw",       ["flight controller hardware", "esc firmware", "motor driver",
+                         "battery management", "gimbal", "actuator design"]),
+    ("drone-sw",       ["px4", "ardupilot", "ros2", "ros ", "ground control station",
+                         "gcs software", "firmware", "middleware", "mavros"]),
+    ("ai-agent",       ["ai agent", "llm agent", "agent architecture",
+                         "autonomous decision-making", "agentic"]),
+]
+
+
+def classify_by_keywords(text: str) -> str | None:
+    t = text.lower()
+    for topic, keywords in DOMAIN_KEYWORDS:
+        if any(kw in t for kw in keywords):
+            return topic
+    return None
+
 
 def zotero_get(path: str) -> dict | list:
     url = f"{ZOTERO_API}/{ZOTERO_USER}/{path}?format=json&limit=100"
@@ -53,12 +84,13 @@ def zotero_get(path: str) -> dict | list:
 
 
 def resolve_topic(item_data: dict) -> str:
-    """Zotero 태그에서 드론 토픽 결정. 매핑 없으면 _unclassified."""
+    """Zotero 태그 우선, 없으면 제목+초록 키워드로 재분류. 둘 다 실패하면 _unclassified."""
     tags = [t.get("tag", "").lower() for t in item_data.get("tags", [])]
     for tag in tags:
         if tag in TAG_MAP:
             return TAG_MAP[tag]
-    return "_unclassified"
+    text = f"{item_data.get('title', '')} {item_data.get('abstractNote', '')}"
+    return classify_by_keywords(text) or "_unclassified"
 
 
 def slugify(text: str) -> str:
@@ -277,6 +309,62 @@ def backfill_attachments(dry_run: bool = False) -> None:
           f"zotero_key없음 {no_key} | Zotero측 첨부없음 {no_attachment}")
 
 
+def _extract_abstract(text: str) -> str:
+    m = re.search(r"## Abstract\n\n(.+?)(\n\n##|\Z)", text, re.DOTALL)
+    return m.group(1) if m else ""
+
+
+def reclassify_unclassified(dry_run: bool = False) -> None:
+    """_unclassified/의 레코드를 제목+초록 키워드로 재분류해 올바른 topic/로 옮긴다.
+    첨부(raw/papers/files/)가 있으면 같이 옮기고 frontmatter의 attachment_path를
+    갱신한다 — 본문(제목/초록 등, `---` 이후 바이트)은 건드리지 않으므로 SCHEMA.md
+    raw 불변성 계약을 위반하지 않는다(위치 이동 + attachment_path 갱신만).
+    """
+    unclassified_dir = RAW_PAPERS / "_unclassified"
+    if not unclassified_dir.exists():
+        print("_unclassified 없음 — 재분류 대상 없음")
+        return
+
+    moved = skipped = 0
+    for md_file in sorted(unclassified_dir.glob("*.md")):
+        text = md_file.read_text(encoding="utf-8")
+        fm = parse_frontmatter(text)
+        title = fm.get("title", "")
+        topic = classify_by_keywords(f"{title} {_extract_abstract(text)}")
+        if not topic:
+            skipped += 1
+            continue
+
+        dest_md = RAW_PAPERS / topic / md_file.name
+
+        if dry_run:
+            print(f"  [DRY-RUN] {md_file.relative_to(WIKI_ROOT)} → {dest_md.relative_to(WIKI_ROOT)}")
+            moved += 1
+            continue
+
+        dest_md.parent.mkdir(parents=True, exist_ok=True)
+        md_file.rename(dest_md)
+
+        # 같이 옮길 첨부가 있으면 옮기고 frontmatter의 attachment_path를 갱신
+        src_att_dir = ATTACHMENT_ROOT / "_unclassified"
+        att_file = next(src_att_dir.glob(f"{md_file.stem}.*"), None) if src_att_dir.exists() else None
+        if att_file:
+            dest_att_dir = ATTACHMENT_ROOT / topic
+            dest_att_dir.mkdir(parents=True, exist_ok=True)
+            dest_att = dest_att_dir / att_file.name
+            att_file.rename(dest_att)
+            old_rel = str(att_file.relative_to(WIKI_ROOT))
+            new_rel = str(dest_att.relative_to(WIKI_ROOT))
+            content = dest_md.read_text(encoding="utf-8").replace(
+                f"attachment_path: {old_rel}", f"attachment_path: {new_rel}")
+            dest_md.write_text(content, encoding="utf-8")
+
+        print(f"  [OK] {md_file.name}: _unclassified → {topic}")
+        moved += 1
+
+    print(f"\n재분류 완료: 이동 {moved} | 키워드매칭 실패(스킵) {skipped}")
+
+
 def ingest(dry_run: bool = False, topic_filter: str | None = None, skip_attachments: bool = False) -> None:
     # Zotero 연결 확인
     try:
@@ -346,6 +434,8 @@ if __name__ == "__main__":
                          help="PDF 첨부 복사 생략(메타데이터 레코드만 생성)")
     parser.add_argument("--backfill-attachments", action="store_true",
                          help="이미 인제스트된 레코드 중 첨부 누락분만 소급 반영하고 종료")
+    parser.add_argument("--reclassify-unclassified", action="store_true",
+                         help="_unclassified/ 레코드를 제목+초록 키워드로 재분류하고 종료")
     parser.add_argument("--zotero-data-dir",
                          help="Zotero 데이터 디렉토리 경로 (기본: $ZOTERO_DATA_DIR 또는 ~/Zotero)")
     args = parser.parse_args()
@@ -355,5 +445,7 @@ if __name__ == "__main__":
 
     if args.backfill_attachments:
         backfill_attachments(dry_run=args.dry_run)
+    elif args.reclassify_unclassified:
+        reclassify_unclassified(dry_run=args.dry_run)
     else:
         ingest(dry_run=args.dry_run, topic_filter=args.topic, skip_attachments=args.skip_attachments)

@@ -247,6 +247,57 @@ def test_backfill_patches_frontmatter_without_touching_body():
     print("PASS test_backfill_patches_frontmatter_without_touching_body")
 
 
+def test_resolve_topic_falls_back_to_keyword_classification():
+    # arXiv 카테고리 태그만 있고 TAG_MAP에 안 걸리는 실측 케이스(2026-08-10,
+    # arXiv:2607.26679) — 제목+초록 키워드로 swarm으로 재분류돼야 함
+    item_data = {
+        "tags": [{"tag": "Electrical Engineering and Systems Science - Systems and Control"}],
+        "title": "UAV Swarming for Air-Ground ISAC via Cross-Region Cooperation",
+        "abstractNote": "a cross-region cooperative framework is designed to coordinate UAV swarms.",
+    }
+    assert zi.resolve_topic(item_data) == "swarm"
+    print("PASS test_resolve_topic_falls_back_to_keyword_classification")
+
+
+def test_resolve_topic_unclassified_when_no_keyword_matches():
+    item_data = {"tags": [], "title": "A Study of Something Unrelated", "abstractNote": "no domain keywords here"}
+    assert zi.resolve_topic(item_data) == "_unclassified"
+    print("PASS test_resolve_topic_unclassified_when_no_keyword_matches")
+
+
+def test_reclassify_unclassified_moves_record_and_attachment():
+    def run(root):
+        src_dir = zi.RAW_PAPERS / "_unclassified"
+        src_dir.mkdir(parents=True)
+        md = src_dir / "test-paper.md"
+        md.write_text(
+            '---\ntitle: "UAV Swarming for Air-Ground ISAC"\nzotero_key: X\n'
+            'attachment_path: raw/papers/files/_unclassified/test-paper.pdf\n'
+            'attachment_sha256: deadbeef\nsha256: abc\n---\n\n'
+            '# Title\n\n## Abstract\n\ncoordinate UAV swarms across regions.\n',
+            encoding="utf-8",
+        )
+        att_dir = zi.ATTACHMENT_ROOT / "_unclassified"
+        att_dir.mkdir(parents=True)
+        (att_dir / "test-paper.pdf").write_bytes(b"%PDF-1.4")
+
+        zi.reclassify_unclassified(dry_run=False)
+
+        dest_md = zi.RAW_PAPERS / "swarm" / "test-paper.md"
+        dest_att = zi.ATTACHMENT_ROOT / "swarm" / "test-paper.pdf"
+        assert dest_md.exists(), "레코드가 swarm/으로 이동해야 함"
+        assert dest_att.exists(), "첨부도 같이 이동해야 함"
+        assert not (src_dir / "test-paper.md").exists()
+
+        content = dest_md.read_text(encoding="utf-8")
+        assert "attachment_path: raw/papers/files/swarm/test-paper.pdf" in content
+        assert "attachment_sha256: deadbeef" in content, "해시는 재계산하지 않고 유지"
+        assert "coordinate UAV swarms across regions." in content, "본문은 절대 안 바뀜"
+
+    with_tmp_repo(run)
+    print("PASS test_reclassify_unclassified_moves_record_and_attachment")
+
+
 if __name__ == "__main__":
     tests = [v for k, v in list(globals().items()) if k.startswith("test_")]
     for t in tests:
