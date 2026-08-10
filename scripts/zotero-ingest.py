@@ -81,10 +81,16 @@ def sha256_file(path: Path) -> str:
 
 
 def find_pdf_attachment(parent_key: str) -> dict | None:
-    """부모 아이템의 자식 첨부 중 로컬에 실제로 존재하는 파일을 찾는다.
+    """부모 아이템의 자식 첨부 중 로컬에 실제로 존재하는 PDF 파일을 찾는다.
 
     linked_file/linked_url(Zotero storage 밖 경로)은 이 머신에서 항상 접근
     가능하다는 보장이 없어 제외한다 — imported_file/imported_url만 다룬다.
+
+    contentType == application/pdf인 것만 채택한다. "Add Item by Identifier"로
+    추가한 arXiv 논문은 실제 PDF 말고도 웹페이지 스냅샷(text/html) 첨부가 같이
+    딸려오고, 스냅샷이 children 응답에서 PDF보다 먼저 나올 수 있다 — contentType
+    체크 없이 첫 번째 매치를 쓰면 스냅샷 HTML을 "논문 원문"으로 잘못 저장하게
+    된다(2026-08-10 실측 테스트 중 발견: arXiv:2607.26679 첫 자식이 스냅샷이었음).
     """
     global _warned_missing_zotero_dir
     if not ZOTERO_DATA_DIR.exists():
@@ -107,6 +113,8 @@ def find_pdf_attachment(parent_key: str) -> dict | None:
         if cd.get("itemType") != "attachment":
             continue
         if cd.get("linkMode") not in ("imported_file", "imported_url"):
+            continue
+        if cd.get("contentType") != "application/pdf":
             continue
         filename = cd.get("filename", "")
         att_key = child.get("key", "")

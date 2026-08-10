@@ -119,6 +119,41 @@ def test_find_pdf_attachment_prefers_imported_local_file():
     print("PASS test_find_pdf_attachment_prefers_imported_local_file")
 
 
+def test_find_pdf_attachment_skips_html_snapshot_before_pdf():
+    def run(root):
+        # 2026-08-10 실측 발견: "Add Item by Identifier"로 추가한 arXiv 항목은
+        # PDF 앞에 웹페이지 스냅샷(text/html) 첨부가 먼저 올 수 있다. contentType
+        # 필터 없이 첫 매치를 쓰면 스냅샷을 "논문 원문"으로 잘못 저장한다.
+        snapshot = zi.ZOTERO_DATA_DIR / "storage" / "SNAP0001" / "2607.html"
+        snapshot.parent.mkdir(parents=True)
+        snapshot.write_bytes(b"<html>snapshot</html>")
+        pdf = zi.ZOTERO_DATA_DIR / "storage" / "ABCD1234" / "paper.pdf"
+        pdf.write_bytes(b"%PDF-1.4")
+
+        def fake_zotero_get(path):
+            return [
+                {"key": "SNAP0001", "data": {"itemType": "attachment", "linkMode": "imported_url",
+                                              "filename": "2607.html", "contentType": "text/html"}},
+                {"key": "ABCD1234", "data": {"itemType": "attachment", "linkMode": "imported_url",
+                                             "filename": "paper.pdf", "contentType": "application/pdf"}},
+            ]
+
+        orig_get = zi.zotero_get
+        zi.zotero_get = fake_zotero_get
+        try:
+            found = zi.find_pdf_attachment("PARENT01")
+        finally:
+            zi.zotero_get = orig_get
+
+        assert found is not None
+        assert found["path"] == pdf
+        assert found["filename"] == "paper.pdf"
+        assert found["content_type"] == "application/pdf"
+
+    with_tmp_repo(run)
+    print("PASS test_find_pdf_attachment_skips_html_snapshot_before_pdf")
+
+
 def test_find_pdf_attachment_missing_zotero_dir_returns_none():
     def run(root):
         shutil.rmtree(zi.ZOTERO_DATA_DIR)  # Zotero 미설치/다른 경로 상황 시뮬레이션
