@@ -298,6 +298,44 @@ def test_reclassify_unclassified_moves_record_and_attachment():
     print("PASS test_reclassify_unclassified_moves_record_and_attachment")
 
 
+def test_ingest_skips_inbox_copy_for_auto_2nd_brain_tag():
+    def run(root):
+        (zi.WIKI_ROOT / "inbox").mkdir(parents=True)
+
+        def fake_zotero_get(path):
+            if path == "items?itemType=-attachment":
+                return [
+                    {"key": "AUTO01", "data": {
+                        "itemType": "preprint", "title": "Auto Pushed Paper",
+                        "tags": [{"tag": "auto:2nd-brain"}, {"tag": "swarm"}],
+                        "creators": [], "date": "2026-08-10",
+                    }},
+                    {"key": "MANUAL01", "data": {
+                        "itemType": "preprint", "title": "Manually Curated Paper",
+                        "tags": [{"tag": "swarm"}],
+                        "creators": [], "date": "2026-08-10",
+                    }},
+                ]
+            return []  # children lookup — 첨부 없음
+
+        orig_get = zi.zotero_get
+        zi.zotero_get = fake_zotero_get
+        try:
+            zi.ingest(dry_run=False, skip_attachments=True)
+        finally:
+            zi.zotero_get = orig_get
+
+        assert (zi.RAW_PAPERS / "swarm" / "auto-pushed-paper.md").exists()
+        assert (zi.RAW_PAPERS / "swarm" / "manually-curated-paper.md").exists()
+        assert not (zi.WIKI_ROOT / "inbox" / "zotero-auto-pushed-paper.md").exists(), \
+            "auto:2nd-brain 태그 아이템은 fetch-inbox.sh가 이미 inbox에 넣어놨으므로 사본을 또 만들면 안 됨"
+        assert (zi.WIKI_ROOT / "inbox" / "zotero-manually-curated-paper.md").exists(), \
+            "태그 없는(수동 큐레이션) 아이템은 기존대로 inbox 사본이 있어야 함"
+
+    with_tmp_repo(run)
+    print("PASS test_ingest_skips_inbox_copy_for_auto_2nd_brain_tag")
+
+
 if __name__ == "__main__":
     tests = [v for k, v in list(globals().items()) if k.startswith("test_")]
     for t in tests:

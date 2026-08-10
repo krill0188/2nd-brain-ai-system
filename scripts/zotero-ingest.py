@@ -410,15 +410,25 @@ def ingest(dry_run: bool = False, topic_filter: str | None = None, skip_attachme
 
         md = build_markdown(item, attachment_meta)
 
+        # "auto:2nd-brain" 태그는 scripts/zotero-web-add.py가 붙인 것 — fetch-inbox.sh가
+        # 같은 논문을 inbox/에 이미 직접 써놨으므로 여기서 또 사본을 만들면 daily-ingest가
+        # 같은 논문을 두 번 컴파일하려 든다. raw/papers/만 채우고 inbox 사본은 건너뛴다.
+        tags_lower = [t.get("tag", "").lower() for t in d.get("tags", [])]
+        skip_inbox_copy = "auto:2nd-brain" in tags_lower
+
         if dry_run:
-            print(f"[DRY-RUN] → {out_file.relative_to(WIKI_ROOT)}")
+            print(f"[DRY-RUN] → {out_file.relative_to(WIKI_ROOT)}"
+                  f"{' (inbox 사본 생략: auto:2nd-brain)' if skip_inbox_copy else ''}")
         else:
             out_file.write_text(md, encoding="utf-8")
-            # inbox에도 복사 → 다음 04:00 cron이 위키 canonical로 컴파일
-            inbox_file = WIKI_ROOT / "inbox" / f"zotero-{slug}.md"
-            if not inbox_file.exists() and not (WIKI_ROOT / "inbox" / "processed" / f"zotero-{slug}.md").exists():
-                inbox_file.write_text(md, encoding="utf-8")
-            print(f"[OK] → {out_file.relative_to(WIKI_ROOT)} (+inbox)")
+            if skip_inbox_copy:
+                print(f"[OK] → {out_file.relative_to(WIKI_ROOT)} (inbox 사본 생략: auto:2nd-brain)")
+            else:
+                # inbox에도 복사 → 다음 04:00 cron이 위키 canonical로 컴파일
+                inbox_file = WIKI_ROOT / "inbox" / f"zotero-{slug}.md"
+                if not inbox_file.exists() and not (WIKI_ROOT / "inbox" / "processed" / f"zotero-{slug}.md").exists():
+                    inbox_file.write_text(md, encoding="utf-8")
+                print(f"[OK] → {out_file.relative_to(WIKI_ROOT)} (+inbox)")
         new_count += 1
 
     print(f"\n수집 완료: 신규 {new_count}개 | 기존 스킵 {skip_count}개")

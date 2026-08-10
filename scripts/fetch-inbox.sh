@@ -434,7 +434,8 @@ for e in root.findall('a:entry', ns):
         continue
     abstract = re.sub(r'\s+', ' ', (e.findtext('a:summary', namespaces=ns) or '')).strip()
     published = (e.findtext('a:published', namespaces=ns) or '')[:10]
-    authors = ", ".join(a.findtext('a:name', namespaces=ns) or '' for a in e.findall('a:author', ns))[:200]
+    author_list = [a.findtext('a:name', namespaces=ns) or '' for a in e.findall('a:author', ns)]
+    authors = ", ".join(author_list)[:200]
 
     fslug = re.sub(r'[^\w\s-]', '', title.lower())
     fslug = re.sub(r'[\s_]+', '-', fslug)[:60]
@@ -467,13 +468,27 @@ tags: [drone, {domain}, paper, arxiv]
                        "summary": abstract[:200], "published": published})
     seen.add(link); new_links.append(link); written += 1
 
+    # Zotero에도 밀어넣어 원문(PDF) 보존 — 실패해도 inbox 파이프라인은 계속 진행한다
+    # (Zotero 계정/키 미설정인 다른 머신에서도 이 스크립트가 죽으면 안 됨).
+    try:
+        arxiv_id = link.rsplit('/abs/', 1)[-1].split('v')[0]
+        push_payload = json.dumps({
+            "title": title, "authors": author_list, "abstract": abstract,
+            "arxiv_id": arxiv_id, "url": link,
+            "pdf_url": f"https://arxiv.org/pdf/{arxiv_id}", "date": published,
+        }, ensure_ascii=False)
+        subprocess.run(["python3", os.path.expanduser("~/2nd/scripts/zotero-web-add.py")],
+                       input=push_payload, text=True, capture_output=True, timeout=60)
+    except Exception:
+        pass
+
 if written:
     subprocess.run(["python3", os.path.expanduser("~/2nd/scripts/news-feed-append.py")],
                    input=json.dumps(feed_items, ensure_ascii=False), text=True, capture_output=True)
     with open(seen_path, 'a') as f:
         for l in new_links:
             f.write(l + "\n")
-    print(f"  ✅ [{domain}] arXiv {slug} 논문 {written}편 → inbox/")
+    print(f"  ✅ [{domain}] arXiv {slug} 논문 {written}편 → inbox/ (+Zotero PDF 보존 시도)")
 else:
     print(f"  skip arxiv {slug} (새 논문 없음)")
 PYEOF
