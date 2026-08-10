@@ -25,6 +25,26 @@ already_fetched() {
 
 [[ -z "$FORCE" ]] && already_fetched && { echo "✅ 오늘 이미 수집됨 ($TODAY)"; exit 0; }
 
+# 맥이 Power Nap(짧은 유지보수 웨이크업)으로 깼을 때 cron이 곧바로 실행되면
+# 네트워크(DNS)가 아직 준비되기 전이라 이 스크립트의 모든 fetch가 통째로
+# "nodename nor servname provided"로 실패한다(2026-08-11 03:30 실측 확인 —
+# GitHub/arXiv/YouTube/Crossref/Federal Register/텔레그램 전송까지 전부 동시
+# 실패). DNS 해석이 될 때까지 최대 60초 대기 후 진행 — 그래도 안 되면 그냥
+# 진행한다(개별 fetch 함수들은 이미 실패를 흡수하고 다음으로 넘어가게 돼 있음).
+wait_for_network() {
+  local tries=0
+  while (( tries < 12 )); do
+    if curl -sf --max-time 4 -o /dev/null "https://export.arxiv.org"; then
+      return 0
+    fi
+    tries=$((tries + 1))
+    sleep 5
+  done
+  echo "⚠️  60초 대기했지만 네트워크 미준비 — 그대로 진행(개별 fetch는 각자 실패 처리됨)"
+  return 1
+}
+wait_for_network || true  # set -e 보호: 네트워크 끝내 안 되도 스크립트는 계속 진행
+
 echo "🔍 드론 7개 도메인 지식 수집 시작 ($TODAY)..."
 
 # ── GitHub 최신 릴리즈 노트 수집 ─────────────────────────────────
