@@ -33,3 +33,6 @@ contradictions: []
 ## 관련
 
 [[flight-ready-lidar-inertial-odometry]] [[recon-swarm-project]]
+
+## 📰 최근 관련 소식
+- Palladyne AI Wins U.S. Army Contracts for Autonomous Drone Swarms and Gremlin-X Tactical UAV Program (uasweekly.com, Tue, 23 Ju) — https://news.google.com/rss/articles/CBMizgFBVV95cUxQMWFVakV3U3c3SVAzaTFpd2UtRFRIMzNBS0o1aW9VcU51bXVEY3M4LXhPMFE2NjI3VVJwdk1MS0RhZGdTc3RuZ0dIR21tZlBDa041WHRQbEhOUDRDQ2ZqZTRBREpmOGpON2FwSmU3UVlPQnlzWTF1T19uREUxVTZTcWlzT0pCZGJnX3FfQ1VtWlFyQWZ1dHJrSXJfNVpvV3dqTHIteGZRc1lfeXZuU25ZMkc4OVhiSU11YnhRMF9qZHgtVll6VXhrak01S2pPUQ?oc=5

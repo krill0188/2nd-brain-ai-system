@@ -96,3 +96,4 @@ domain: ops-mission
 - 우크라 드론 400대 퍼부었다…러 자영업자 연쇄파산 오나? (뉴스1, Sun, 09 Au) — https://news.google.com/rss/articles/CBMiSEFVX3lxTE40NFYyWW1KdEhvenNHNjdHcVhpcnJ1YVNrUThTUDQxaHFKaXFqWnlTMGJFc0hhVkZjTHhvRWRiN05Xa0c0SXV5Mg?oc=5
 - 프리뉴, 방위사업청 주관 ‘2026 혁신 프리미어 1000’ 방산 대상 기업 선정 (에너지안전신문, Sun, 09 Au) — https://news.google.com/rss/articles/CBMiZEFVX3lxTE1OSEt1VWpETlJVNlpDakEzaWVqbTdVLUlEYmpya004NHBVRTF1eW02Z2hFNUFJM3lEZ2NDVjBwc3gxclpia3ljdUZKa2t0OWl6UTE0aFNEejR6MmVWNFBjZEVncDY?oc=5
 - 사우디 아람코 정유시설서 검은 연기…후티 반군 “드론 공격” 주장 (중앙일보, Sun, 09 Au) — https://news.google.com/rss/articles/CBMiVkFVX3lxTE9HUVdoVFBjc2J0aDdLUGQ5aGFSQm80dlpoV3ctZGFyNTJSSFRzdDdWSERPVVhLT3pra3lvQ0FQT0l5Wm8xclhoMk5kbHB3b2VNVDFuLTJ3?oc=5
+- [밀덕텔링] 10억 짜리 자폭드론 ‘K-루카스’가 풀어야 할 진짜 숙제 (비즈한국, Fri, 07 Au) — https://news.google.com/rss/articles/CBMif0FVX3lxTFBISzhzcWVleV91NmlvVXJsUWp4Ylh5VFpwczhuYkZ4WVFublM5b3Bib1ZZNUo0ZUxUMTRZbnRadlhteXFsUno5ZTFBY3BLNl9Rb0lONWU0X1pIY0Y3N01CNzN6QzRwN2VsMWRnMFh2Mm9lVmtBSW56UlIxX3NWYzg?oc=5

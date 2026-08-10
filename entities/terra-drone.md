@@ -41,3 +41,6 @@ contradictions: []
 - [[fcc-drone-regulations]] — FCC 규제 정책
 - [[drone-power-battery]] — 드론 배터리 기술
 - [[drone-hw]] — 드론 하드웨어
+
+## 📰 최근 관련 소식
+- 美 프로코어 테크놀로지스, 1조2000억원에 드론디플로이 인수한다 (티스토리, Mon, 10 Au) — https://news.google.com/rss/articles/CBMiS0FVX3lxTE5XTFJOT0pqSjFzYmdmRDlFUjhrOUh2U01oZ0FhQ1pkVXllSkx3MVg4RTV6VFIybFJna3JWOU94SGw4ekNyQlE3bUM1WQ?oc=5

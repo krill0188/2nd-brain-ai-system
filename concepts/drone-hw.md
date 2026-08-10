@@ -48,3 +48,6 @@ domain: hardware
 - [[6g-isac-matlab-usrp]] — 6G ISAC MATLAB/USRP 구현
 - [[sol-one]] — 벨기에 자율 드론 시스템 기업
 - [[eve-air-mobility-transition]] — eVTOL 도심항공모빌리티 전환
+
+## 📰 최근 관련 소식
+- [DJI] Munch. Crunch. Repeat. 🍃｜DJI Mic Mini 2S (youtube.com, 2026-08-10) — https://www.youtube.com/watch?v=E-Pg5OWkidU

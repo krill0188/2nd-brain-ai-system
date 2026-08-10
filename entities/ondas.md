@@ -29,3 +29,6 @@ domain: hardware
 
 - [[dfend-counter-drone-worldcup]] — 대드론 보안 사례(2026 월드컵)
 - [[us-dod-cuas-marketplace]] — 미국 국방부 C-UAS 마켓플레이스
+
+## 📰 최근 관련 소식
+- LIG디펜스앤에어로스페이스 주가 신바람… 무인 방산 체계 수혜 (핀포인트뉴스, Mon, 10 Au) — https://news.google.com/rss/articles/CBMic0FVX3lxTE5sZGtRRVQzM01ldEZOb0wtdXV6ZnFPNHJIUGRxblBzRnRLa1dEY2N4U2VPUWtjblFoYTRmekM4UTVkVl9oM2JfamU1Sm1USVBTUVhvWE5DV0c4VEdMWlNxUFdaMGkwdElQQ2tfb3ZRTktaRm_SAXdBVV95cUxQcnFIX2xsNnNwWC1iZUowODNpLTE2NXU1bjA4c292ZVF5YkFqdFhPaUEwNktYa3cxYS1zZ3pTV281U05KWVdDdXVmUGZXRlhqdDNDZUgtdlYzeUpwTmpNVjBEZy1KVncya2FfcXN0Q3EtWVlvSzVTOA?oc=5

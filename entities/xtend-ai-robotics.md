@@ -33,3 +33,6 @@ contradictions: []
 - [[drone-ai-agents]] — AI 에이전트 기술
 - [[drone-ai-agents]] — 드론 AI 에이전트
 - [[drone-sw]] — 드론 소프트웨어
+
+## 📰 최근 관련 소식
+- 美 프로코어 테크놀로지스, 1조2000억원에 드론디플로이 인수한다 (티스토리, Mon, 10 Au) — https://news.google.com/rss/articles/CBMiS0FVX3lxTE5XTFJOT0pqSjFzYmdmRDlFUjhrOUh2U01oZ0FhQ1pkVXllSkx3MVg4RTV6VFIybFJna3JWOU94SGw4ekNyQlE3bUM1WQ?oc=5

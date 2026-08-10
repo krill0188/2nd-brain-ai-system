@@ -38,3 +38,6 @@ DJI Mic Mini 2S는 드론 및 핸드헬드 촬영용 무선 마이크 시스템�
 
 - [[dji-osmo-pocket-4]] — DJI Osmo Pocket 4P 듀얼 렌즈 카메라
 - [[dji-osmo-nano]] — DJI Osmo Nano 초소형 액션 카메라
+
+## 📰 최근 관련 소식
+- [DJI] Munch. Crunch. Repeat. 🍃｜DJI Mic Mini 2S (youtube.com, 2026-08-10) — https://www.youtube.com/watch?v=E-Pg5OWkidU

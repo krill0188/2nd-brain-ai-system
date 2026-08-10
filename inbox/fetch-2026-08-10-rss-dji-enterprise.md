@@ -10,8 +10,8 @@ tags: [drone, hardware, news]
 
 # dji-enterprise 최신 동향 (2026-08-10)
 
-## DJI paid for a security audit of its own drones, and here’s what it found - The Drone Girl
-- 링크: https://news.google.com/rss/articles/CBMia0FVX3lxTE91ZXdDQTVheTI4SXVwWHdKbXNiclI5Q01SemllY0FPOGVFMEdDWHBzaTYtUWU3aG5LYm9SUkdrUnhTVUkzdFV6NGtoLWNneFAzRUt5TUl0UzBoMEliOTk1aGtTaXZXbmNsOGdV0gFrQVVfeXFMT3Vld0NBNWF5MjhJdXBYd0ptc2JyUjlDTVJ6aWVjQU84ZUUwR0NYcHNpNi1RZTdobktib1JSR2tSeFNVSTN0VXo0a2gtY2d4UDNFS3lNSXRTMGgwSWI5OTVoa1NpdlduY2w4Z1U?oc=5
-- 날짜: Thu, 28 May 2026 07:00:00 GMT
+## DJI Enterprise Teases Possible Zenmuse L3 LiDAR Payload For November 4 Launch - DroneXL
+- 링크: https://news.google.com/rss/articles/CBMicEFVX3lxTFA4NDRDRmd1R2hEWlppdS1pSVlCUGNsNjl0bkY0OEp2MFVyZFNLSUIwWEpYRlVSTWJrNVVlRDhTUFVIbmtpNE9TMXRCdmNhRHVqdC1xcWtSNk56NEJJN0lKWEJiUkNDN24yN0phaGNVZGk?oc=5
+- 날짜: Tue, 28 Oct 2025 07:00:00 GMT
 
-DJI paid for a security audit of its own drones, and here’s what it found  The Drone Girl
+DJI Enterprise Teases Possible Zenmuse L3 LiDAR Payload For November 4 Launch  DroneXL

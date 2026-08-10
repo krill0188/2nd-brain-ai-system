@@ -46,3 +46,4 @@ ETFNet은 효율적인 트랜스포머 기반 RGB-IR 퓨전 네트워크로, UAV
 
 ## 📰 최근 관련 소식
 - Pentagon approves long-range, autonomous counter-UAS system for use across the military after border testing (DefenseScoop, Tue, 09 Ju) — https://news.google.com/rss/articles/CBMiqwFBVV95cUxQQ2ZSVldfYnY3OWlpREdGRVVTaFNfNUFxX3h6TzJnREhOUzVfLU93bFllLXdnMGZkNFVaUWdHVUo4c1dyMkpXbEh4UzJBOFFSclhJdTlxMl9wOUVZTVFEUlFxQzNNZXU2c21QcW9FY1V4NGlHVkhQVzJjUF80dHh4ODZvc3ZCNlBiQ3NrQmd1Y2NEVDFtSFdXMDFKM3hDem9XM0tpb01xVmpSUHc?oc=5
+- Linear Stability Analysis of an INDI Pitch-Rate Controller under Model Mismatch for a Tilt-Rotor VTOL UAV (arxiv.org, 2026-07-17) — http://arxiv.org/abs/2607.16471v1

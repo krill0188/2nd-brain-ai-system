@@ -37,3 +37,4 @@ DJI 엔터프라이즈 라인업의 새로운 동향 — Matrice 30 후속 모�
 - [DJI] A Pool From Above Looks Like Art | DJI Mavic 4 Pro (youtube.com, 2026-08-06) — https://www.youtube.com/watch?v=5lSrMtkMb8A
 - [DJI] Faroe Islands at 100MP | DJI Mavic 4 Pro (youtube.com, 2026-08-08) — https://www.youtube.com/watch?v=ZApGFzT2EnA
 - 불가리아 영공 침범한 드론 폭발…"우크라이나 모델 추정" (연합뉴스TV, Sat, 08 Au) — https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4yeVBaN1ZvQVlIWVpseDJuR2NDbm0xay1sQlhmZVkySklJdVg1dUN0MFUtSTJpOUNLcHFLNGVHZHYtZVc4ZzUycFJISWlFaUhmOFhIeV8xaGdFTTRIajlsUDVCNGUtcGM?oc=5
+- [DJI] High Altitude. O4 Air Unit Holds the Signal. | DJI O4 Air Unit (youtube.com, 2026-08-10) — https://www.youtube.com/watch?v=EYnuUKPESDw
