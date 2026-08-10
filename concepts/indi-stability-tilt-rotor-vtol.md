@@ -1,11 +1,11 @@
 ---
 title: "INDI Pitch-Rate Controller Stability Analysis for Tilt-Rotor VTOL UAV"
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-08-11
 type: concept
 tags: [drone, flight-control, indi, tilt-rotor, vtol, stability]
-sources: [inbox/fetch-2026-07-30-arxiv-linear-stability-analysis-of-an-indi-pitch-rate-controller-u.md]
-confidence: medium
+sources: [inbox/fetch-2026-07-30-arxiv-linear-stability-analysis-of-an-indi-pitch-rate-controller-u.md, raw/papers/_unclassified/linear-stability-analysis-of-an-indi-pitch-rate-controller-under-model-mismatch-.md]
+confidence: high
 contested: false
 contradictions: []
 domain: flight-control

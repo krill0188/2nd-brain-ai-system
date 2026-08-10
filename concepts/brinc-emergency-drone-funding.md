@@ -1,10 +1,10 @@
 ---
 title: "BRINC Emergency Drone Funding with Motorola"
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-08-11
 type: concept
 tags: [drone, ops-mission, emergency, first-responder, brinc, motorola]
-sources: [inbox/fetch-2026-07-30-rss-dronedj.md]
+sources: [inbox/fetch-2026-07-30-rss-dronedj.md, raw/articles/2026-08-11-rss-dronedj.md, raw/articles/2026-08-11-rss-dronelife.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -43,6 +43,10 @@ BRINC의 $125M 비상 드론 확장 자금 조달. Motorola의 후원을 받아 
 - 공공 안전에서 드론의 새로운 역할
 - 응급 대응 시간 단축 및 효율성 향상
 - 드론 기술의 사회적 가치 실현
+
+## 최신 동향
+
+- **LiveOps 산불·연기 추적 기능 추가(2026-08-10)**: NOAA 화재·연기 데이터를 통합한 신규 맵 레이어 2종 출시 — 공공안전 기관에 산불 대응 상황인식 정보 추가 제공. dronedj·dronelife 양쪽에서 독립 보도.^[raw/articles/2026-08-11-rss-dronedj.md]^[raw/articles/2026-08-11-rss-dronelife.md]
 
 ## 관련 페이지
 

@@ -3,7 +3,7 @@
 > Complete catalog of active canonical pages. Each entry is a wikilink followed by
 > a one-line summary, sorted alphabetically within its section.
 >
-> Total pages: 191
+> Total pages: 195
 ## Entities
 <!-- Alphabetical within section -->
 
@@ -182,6 +182,11 @@
 - [[yolo-v8-4-116]] — YOLO v8.4.116 릴리스 (2026-08-07).
 - [[faa-249-gram-registration-rule]] — FAA 249그램 드론 등록 규정.
 - [[dji-mavic-4-pro]] — DJI Mavic 4 Pro, 100MP 하셀블라드 센서.
+- [[mrope-multi-robot-safety]] — MROPE: 예측 안전 필터+타원 제약압축 기반 다중로봇 안전 협조 전략.
+- [[yolo-v8-4-117]] — YOLO v8.4.117 릴리스, 증강 정확도·배포 보안 개선 (2026-08-09).
+- [[moe-multimodal-uav-detection]] — MoE 기반 강건한 UAV 멀티모달 객체 탐지(관측 누락 대응).
+- [[uav-swarm-air-ground-isac]] — 교차 지역 협력 기반 Air-Ground ISAC UAV 군집(MAPPO).
+- [[rigid-covert-gnss-spoofing-swarm]] — UAV 군집 GNSS 스푸핑의 상대기하 탐지 사각지대(RigidShift).
 
 ## Comparisons
 

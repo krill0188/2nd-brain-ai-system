@@ -788,3 +788,29 @@
 **최종 검증**: 총 191페이지 / 고아 0 / 아웃바운드<2 위반 0 / 깨진 wikilink 0 / sources 프로버넌스 미해결 **0건**(41개 전부 해소 — 어제 33개 + 오늘 8개). 그래프 정합성과 원본 출처 검증 양쪽 모두 완전히 클린한 상태 최초 달성.
 
 - Updated: `log.md`
+
+## [2026-08-11] ingest | OpenRouter 크레딧 소진으로 멈춘 daily-ingest 수동 대행 (inbox 21건 처리)
+
+`2nd-daily-ingest`(04:00)가 2026-08-09부터 OpenRouter 402(크레딧 소진)로 계속 실패해 inbox에 21건(8/10~8/11, RSS 뉴스다이제스트 9 + YouTube 영상 8 + arXiv/Crossref 논문 2 + YOLO 릴리즈노트 2)이 미처리 상태로 쌓여 있던 것을 Claude Code가 수동으로 컴파일.
+
+**raw/ 아카이브**: 18건(articles 9 + youtube 9) + crossref 논문 1건(raw/papers/drone-ai/moe-multimodal-uav-detection.md) — 전부 sha256 계산해 frontmatter에 기록. 처리 중 parrot 8/10·8/11 두 다이제스트가 동일 슬러그로 raw 파일명이 충돌해 하나가 덮어써졌던 버그 발견, 원본 inbox에서 재작성해 수정.
+
+**canonical 신규 4건**:
+- `concepts/yolo-v8-4-117.md` — 기존 yolo-vX 시리즈 패턴 계승
+- `concepts/moe-multimodal-uav-detection.md` — Crossref 논문(초록 미제공, confidence: low로 명시)
+- `concepts/uav-swarm-air-ground-isac.md` — Zotero 자동push 논문(arXiv:2607.26679)
+- `concepts/rigid-covert-gnss-spoofing-swarm.md` — Zotero 자동push 논문(arXiv:2608.06885)
+
+**기존 페이지 근거 보강**(같은 사건이 이미 Zotero 자동push 이전에 inbox 경로로 먼저 캐노니컬화돼 있었음을 발견 — 신규 페이지 대신 sources에 raw/papers PDF 첨부 레코드 추가):
+- `concepts/mrope-multi-robot-safety.md` — index.md 누락도 함께 발견해 등재
+- `concepts/indi-stability-tilt-rotor-vtol.md` — confidence medium→high(전문 PDF 확보)
+
+**뉴스 근거 추가**(단일 소스 evidence, "## 최신 동향" 섹션): `entities/dji-enterprise.md`(Zenmuse L3 티저), `entities/dji.md`(FCC 규제 대응), `concepts/brinc-emergency-drone-funding.md`(LiveOps 산불 추적, dronedj+dronelife 2소스 교차확인)
+
+**보류(raw만 아카이브, canonical 미생성)**: DJI 마케팅 영상 5건, ArduPilot 빌드로그 영상, Polyspace/우분투CUDA(도메인 외), 피지컬AI 핑크랩(내용 없음), parrot 다이제스트 2건(전부 수년 전 재검색 결과), suasnews DroneShield/dronelife 수혈배송(단일 언급, 임계값 미달)
+
+**검증**: 깨진 wikilink 0, 신규 4페이지 전부 인바운드 1건 이상 확보, sha256 전건 계산 완료. inbox 21건 전부 `inbox/processed/`로 이동.
+
+**미해결로 남긴 것**: index.md가 필터시스템 대비 약 12개 페이지 더 누락돼 있음(오늘 발견분 1건만 수정, 전체 재감사는 범위 밖) — 다음 lint 세션에서 처리 필요.
+
+- Updated: `index.md` (Total pages 191→195, Concepts 섹션에 5줄 추가), `log.md`

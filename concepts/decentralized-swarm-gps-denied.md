@@ -1,7 +1,7 @@
 ---
 title: "Decentralized UAV Swarms in GPS/Communication-Denied Environments"
 created: 2026-07-30
-updated: 2026-08-10
+updated: 2026-08-11
 type: concept
 tags: [drone, swarm, datalink, comms-protocol, military, counter-uav]
 sources: []
@@ -38,6 +38,7 @@ GPS 및 통신 차단 환경에서 지상 표적 보호를 위한 분산형 UAV 
 - [[swarm-coordination]] — 군집 드론 운용 모드 및 편대 비행
 - [[datalink-communication]] — RF, LTE, WiFi 등 데이터링크 통신
 - [[drone-ai-agents]] — 다중 에이전트 협력 및 합의 알고리즘
+- [[rigid-covert-gnss-spoofing-swarm]] — 상대기하 기반 GNSS 스푸핑 탐지의 구조적 사각지대
 
 ## 출처
 

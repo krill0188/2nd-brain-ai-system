@@ -1,11 +1,11 @@
 ---
 title: "MROPE: Multi-Robot Safe Cooperative Strategy"
 created: 2026-08-04
-updated: 2026-08-04
+updated: 2026-08-11
 type: concept
 tags: [swarm, drone-ai, ai-agent, safety]
 domain: ai-autonomy
-sources: [inbox/fetch-2026-08-04-arxiv-mrope-a-multi-robot-safe-cooperative-strategy-via-combined-p.md]
+sources: [inbox/fetch-2026-08-04-arxiv-mrope-a-multi-robot-safe-cooperative-strategy-via-combined-p.md, raw/papers/swarm/mrope-a-multi-robot-safe-cooperative-strategy-via-combined-predictive-safety-fil.md]
 confidence: high
 contested: false
 contradictions: []

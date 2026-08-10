@@ -1,10 +1,10 @@
 ---
 title: DJI
 created: 2026-08-06
-updated: 2026-08-09
+updated: 2026-08-11
 type: entity
 tags: [drone, hardware, company]
-sources: []
+sources: [raw/articles/2026-08-11-rss-dronelife.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -20,6 +20,10 @@ domain: hardware
 - **소비자용**: Mavic, Air, Mini, Osmo(액션캠·짐벌) 시리즈
 - **엔터프라이즈**: Matrice, Dock(원격 자동 이착륙 스테이션), Zenmuse 페이로드
 - **소프트웨어**: DJI Terra(매핑/모델링), DJI Pilot
+
+## 최신 동향
+
+- **FCC 규제 대응**: FCC가 제안한 "군사급" 외국산 드론 제한 범주가 공공안전·농업·점검 등 민간 상업용 기체까지 포괄할 수 있다고 경고하는 대응서 제출(2026-08-10)^[raw/articles/2026-08-11-rss-dronelife.md]
 
 ## 관련 개념
 

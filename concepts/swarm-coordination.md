@@ -126,6 +126,7 @@ Tools/simulation/gazebo-classic/sitl_multiple_run.sh -n 3
 - [[swarm-modes]] — 스웜 운용 모드
 - [[uav-swarm-target-localization]] — 스웜 표적 위치추정
 - [[cross-layered-medical-drone-coordination]] — 의료물자 배송용 다중 드론 조율
+- [[uav-swarm-air-ground-isac]] — 교차 지역 협력 기반 Air-Ground ISAC 군집
 
 ## 📰 최근 관련 소식
 - 충남 첫 ‘국가 지정 드론공원’ 탄생…당진서 비행·교육·대회 한 번에 (녹색경제신문, Tue, 04 Au) — https://news.google.com/rss/articles/CBMiaEFVX3lxTE9ySFBDbWVDbGdTd3ZTTVlfUWhBYTRDNURtZW8zc2FmLW9CZHZmcF8wcEdFa2FfOVpabEgzM1VjV3lEUFJ3V0pteGtDLWlDN3VEYmhmMDdJQTI1bXl6anNrRW9XTjFxdDk2?oc=5
