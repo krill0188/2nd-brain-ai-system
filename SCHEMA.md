@@ -29,7 +29,7 @@ contains no raw source record and no canonical page.
 | `raw/articles/` | Immutable captured article or clipping Markdown. |
 | `raw/notebooklm/` | Immutable importer-preserved NotebookLM source records and source identifiers. |
 | `raw/papers/<topic>/` | Zotero 인제스트 Markdown 레코드. `<topic>`은 SCHEMA.md 등록 태그(drone-sw/drone-ai/datalink/swarm/drone-hw/voice-control/ai-agent) 또는 `_unclassified`. `scripts/zotero-ingest.py`가 자동 생성. |
-| `raw/papers/files/` | Optional copied paper attachments; initially only the empty `.gitkeep` placeholder is allowed. |
+| `raw/papers/files/<topic>/` | Copied paper attachment files (PDF etc.), mirrored from the local Zotero library's `storage/` directory by `scripts/zotero-ingest.py` at ingest time. Paired with `attachment_path`/`attachment_sha256` frontmatter fields on the matching `raw/papers/<topic>/*.md` record. Not tracked in git (`.gitignore`); Zotero itself remains the durable copy. `.gitkeep` is retained for topics with no attachment yet. |
 | `raw/transcripts/` | Immutable captured transcript Markdown. |
 | `raw/web/` | Immutable importer-preserved web captures whose existing provenance paths must remain stable. |
 | `raw/youtube/` | Immutable importer-preserved video metadata and transcript captures. |

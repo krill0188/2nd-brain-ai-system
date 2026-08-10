@@ -151,7 +151,7 @@ hermes cron create "0 9 * * 1" \
 | 분류 | 도구 | 목적 |
 | --- | --- | --- |
 | 필수 | [Obsidian](https://obsidian.md/download) | 이 저장소를 로컬 볼트로 열어 Markdown을 탐색하고 편집합니다. |
-| 논문 캡처 | [Zotero + Zotero Connector](https://www.zotero.org/download/) | Connector로 브라우저에서 스크랩 → Zotero 라이브러리 → `python3 scripts/zotero-ingest.py` → `raw/papers/<topic>/` Markdown 레코드 자동 생성. Zotero Settings → Advanced → "Allow other applications" 활성화 필수. |
+| 논문 캡처 | [Zotero + Zotero Connector](https://www.zotero.org/download/) | Connector로 브라우저에서 스크랩 → Zotero 라이브러리 → `python3 scripts/zotero-ingest.py` → `raw/papers/<topic>/` Markdown 레코드 + `raw/papers/files/<topic>/` PDF 원문 사본 자동 생성(`attachment_path`/`attachment_sha256` frontmatter 페어링). PDF는 git 미추적(로컬 전용, Zotero가 원본 보관). Zotero Settings → Advanced → "Allow other applications" 활성화 필수. 이미 인제스트된 레코드에 첨부만 소급 반영하려면 `--backfill-attachments`. |
 | 웹 캡처 | [Obsidian Web Clipper](https://obsidian.md/clipper) | 웹 페이지를 `raw/web/` Markdown 파일로 변환합니다. |
 
 ### 자동화 및 메시징
