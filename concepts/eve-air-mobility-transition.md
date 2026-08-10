@@ -32,3 +32,4 @@ Eve Air Mobility(NYSE: EVEX)의 eVTOL 프로그램이 첫 번째 전환 비행(t
 
 ## 📰 최근 관련 소식
 - Eve Air Mobility Achieves First Transition Flight Milestone, Advancing eVTOL Program Toward Wing-Borne Flight (www.suasnews.com, Mon, 03 Au) — https://www.suasnews.com/2026/08/eve-air-mobility-achieves-first-transition-flight-milestone-advancing-evtol-program-toward-wing-borne-flight/
+- 프랑스 자동차 공정 투입, 군용 드론 양산 체제 전환 (글로벌이코노믹, Fri, 07 Au) — https://news.google.com/rss/articles/CBMiiAFBVV95cUxPM0ZHVFo0dm5tTjZ4UGFXU0RRWjJmc213XzJmbEx0c2w3Rk5ic3dzVG5EeWNwYU5vWlgyTXdVTkpjWkllN3FlNlVTemtkWDBCWElLRVdGU3pTRmJwTk02N3JoeXJUVTdmMzZ2eGdRMTBsN0FzX2JLZTFTLWRvMGNvVWxtR3hpdzUw?oc=5

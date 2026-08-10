@@ -35,3 +35,9 @@ Sol.One은 벨기에 기반의 자율 드론 시스템 및 방위 기술 개발 
 
 ## 📰 최근 관련 소식
 - 김제에 드론·방산용 차세대 배터리 생산 거점 구축 (v.daum.net, Tue, 04 Au) — https://news.google.com/rss/articles/CBMiT0FVX3lxTFAwVW8xaXRheWRDUXdlUkFRamJYYkN0bEtLXy1YblBzMzRIcDJPNmxWdzN6bXFueUJIWFBYV1NvQ3BsRXNIa3lwMExIZjZyNm8?oc=5
+- 김제에 드론·방산용 차세대 배터리 생산 거점 구축 (v.daum.net, Tue, 04 Au) — https://news.google.com/rss/articles/CBMiVEFVX3lxTE9FMXROLTRVX0VfS1hCS21XVGhsNGx1OXZGN29uT2ZIa3hpeWxwUzM5Q0hab1VyRG1ZVTdOTmhGQ1huRmM3OWltdjc1a0w0NWt5V1pEbA?oc=5
+- 김제에 드론·방산용 차세대 배터리 생산 거점 구축 (news.kbs.co.kr, Tue, 04 Au) — https://news.google.com/rss/articles/CBMiW0FVX3lxTE9CVjlDQXNMRnY0NlF2RE5rU1ZqSkRlbnpHSGJzR0VhZm5LWkJIbHhXR01VQXgzUGM3cVVvYV9vNHV4LVRYS29kRnViSnJsR1BIcFg5TmxUQUJNX2M?oc=5
+- 광교호수공원서 드론으로 간식 받는다…수원시, 배송서비스 시작 (v.daum.net, Wed, 05 Au) — https://news.google.com/rss/articles/CBMiVEFVX3lxTE9YSk1CeXY4R25wMGpBYUVHdjRTVk91b1lvZTQxV3NmdnpVS3BSV2N2UFJtY2J1Z1VHLTNoYTNQaUlGTDZWSXFiaU02VW9LZ1loOFhYLQ?oc=5
+- 광교호수공원서 드론으로 간식 받는다…수원시, 배송서비스 시작 (v.daum.net, Wed, 05 Au) — https://news.google.com/rss/articles/CBMiS0FVX3lxTE4xdHNYLXZmRmpaaWdCcEdHUTBOR0p3MEktTFJvX2dXeXRlSEpZa1hwMG1EQURld19jV09uQWRiWEt0dzRWLU9Qem02dw?oc=5
+- 열화상 드론으로 보니‥1/3이 밭일하다 숨져 (v.daum.net, Thu, 06 Au) — https://news.google.com/rss/articles/CBMiT0FVX3lxTE96azdkckhNeDIxd1BtR0M2RU5SUlJiOVkwZ0tWbVI0SjJqd0Jra0Y4S2JLd1BRb01SUndHNXZqTk1BQ2JLMzN4SGEwM05rWWc?oc=5
+- 광교호수공원서 드론으로 간식 받는다…수원시, 배송서비스 시작 (v.daum.net, Wed, 05 Au) — https://news.google.com/rss/articles/CBMiRkFVX3lxTFAxSVFGQk1HTjZGTUJFSmdWZ2htX21GWUxZRW1MTS1ZOUVlY0o1eG5fM3JlaHVCOVpZNzlmYXlGNEloN2ZCTGc?oc=5

@@ -26,3 +26,6 @@ DJI의 액션 카메라 시리즈 6세대 모델로, 야간 촬영 성능이 크
 
 - [[dji-osmo-pocket-4]] — DJI의 포켓형 짐벌 카메라
 - [[computer-vision-drone]] — 드론 탑재 카메라 시스템
+
+## 📰 최근 관련 소식
+- [DJI] All for the Bridge Shot | DJI Avata 360 & Osmo 360 (youtube.com, 2026-08-09) — https://www.youtube.com/watch?v=yCpXorzKWx8

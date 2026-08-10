@@ -39,3 +39,5 @@ DJI Osmo Pocket 4P의 D-Log 2 프로파일과 4K/240fps 슬로우모션 기능.
 
 ## 📰 최근 관련 소식
 - [DJI] From tricky lighting to fleeting details, camera keeps your vlog looking cinematic.｜Osmo Pocket 4P (youtube.com, 2026-08-03) — https://www.youtube.com/watch?v=rQm3P3pP2NI
+- [DJI] A Pool From Above Looks Like Art | DJI Mavic 4 Pro (youtube.com, 2026-08-06) — https://www.youtube.com/watch?v=5lSrMtkMb8A
+- [DJI] Faroe Islands at 100MP | DJI Mavic 4 Pro (youtube.com, 2026-08-08) — https://www.youtube.com/watch?v=ZApGFzT2EnA

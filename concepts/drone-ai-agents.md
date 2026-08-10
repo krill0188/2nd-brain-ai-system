@@ -130,3 +130,6 @@ State ──▶ Policy ──▶ Action ──▶ Reward ──▶ Update
 - [[swarm-coordination]] — 다중 에이전트 협업
 - [[computer-vision-drone]] — 드론 컴퓨터 비전
 - [[ros2-drone-integration]] — ROS2 기반 AI 연동
+
+## 📰 최근 관련 소식
+- 니어스랩, 피지컬 AI 드론 앞세워 글로벌 방산시장 공략…24일 코스닥 입성 (아주경제, Thu, 06 Au) — https://news.google.com/rss/articles/CBMiWkFVX3lxTFBjNnNJX0x1WjJERW9GWm5mcnFtQzlfaVZ4MDgza2x0aTNzMFY2aFdTTEZnZVVvN3R2bFJaRmJzcWF0WHJGN3liZnh0WHd1dWVDd1VpUmRveGZ1Zw?oc=5

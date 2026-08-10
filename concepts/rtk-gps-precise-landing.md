@@ -308,3 +308,7 @@ Multi-GNSS (4 systems): 20-30 satellites
 - 드론 배달 실제 RTK 사용 사례
 - PPP-RTK (SSR) 기술 동향
 - 대규모 드론 swarm RTK 동기화
+
+## 📰 최근 관련 소식
+- 수원시, 광교호수공원서 드론배송 서비스 시연 (nsenior.co.kr, Tue, 04 Au) — https://news.google.com/rss/articles/CBMiY0FVX3lxTE51QjIxRlYxRldxTkVPakZyeERiSVg4RUlVai1WWjBOcUphQzF2cV9vZndmaUZla25PVjN2U1JsYmlxczJVTVVCZmxvSVoxb0xVRXR1WFVJRXU4WDBHT3JrTThJdw?oc=5
+- 수원시, 광교호수공원서 드론배송 시연 (뉴시스, Wed, 05 Au) — https://news.google.com/rss/articles/CBMieEFVX3lxTFB6LTBDeVpETTlZZlIzM3Rabnp3eDRMRFQxelhGLUt0NzFIaERuaEpWV2ZXRm5MZE5iUmEwYmFsblJUeEZPaDRzYVplUjNYckh0SlhLd05HRWlXU1VWb190RDBLdllOdDBTbHF6c1VTVk82cXhSdlhTbtIBeEFVX3lxTFB6LTBDeVpETTlZZlIzM3Rabnp3eDRMRFQxelhGLUt0NzFIaERuaEpWV2ZXRm5MZE5iUmEwYmFsblJUeEZPaDRzYVplUjNYckh0SlhLd05HRWlXU1VWb190RDBLdllOdDBTbHF6c1VTVk82cXhSdlhTbg?oc=5

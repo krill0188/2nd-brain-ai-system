@@ -25,3 +25,6 @@ Divimath이 출시한 4W 출력의 아날로그 FPV 영상 송신기(VTX). 대�
 
 - [[fpv-antenna-guide]] — FPV 안테나 선택 가이드(VTX와 짝을 이루는 구성요소)
 - [[elrs-41-release]] — FPV 무선 제어 링크(ExpressLRS) 최신 릴리스
+
+## 📰 최근 관련 소식
+- [Joshua Bardwell] 70% more video range & penetration! // RUSHFPV 3.3 GHZ VIDEO RECEIVER (youtube.com, 2026-08-07) — https://www.youtube.com/watch?v=BtauO-T3GBg

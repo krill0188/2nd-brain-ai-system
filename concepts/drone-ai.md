@@ -44,3 +44,6 @@ domain: ai-autonomy
 - [[tekever]] — 유럽 AI 기반 자율 시스템 기업
 - [[xtend-ai-robotics]] — XTEND-JFB 합병 방위 로봇 기업
 - [[multi-uav-collision-avoidance-survey]] — 다중 UAV 딥러닝 충돌회피 서베이 논문
+
+## 📰 최근 관련 소식
+- U.S. military to continue dispatching counter-drone capabilities to the Middle East (DefenseScoop, Fri, 10 Ap) — https://news.google.com/rss/articles/CBMihwFBVV95cUxOY1ZGcm0xWmFSY19Scjl2ckhiZ1ZMOW52X2lXR3lSOWFIaFNWanZ3OVoxZE4zMG0xM1AtZnBwQTBqTWFZZjhJV2NETVR4dEk4cW1zNGFUREVuY09EMWdHb3FUVWg4VF9HTURJTi1zSFZidzM0ZGl4T0hTcm1PS1RBRlZGbDRnUU0?oc=5

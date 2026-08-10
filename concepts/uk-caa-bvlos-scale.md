@@ -31,3 +31,9 @@ contradictions: []
 - [[faa-section-927-waiver]] — FAA Section 927 면제 프로세스
 - [[drone-regulations]] — 드론 규제 개요
 - [[uk-caa-airspace-architecture]] — 영국 CAA Airspace Architecture
+
+## 📰 최근 관련 소식
+- 수원특례시, 광교 일원서 ‘하늘편의점’ 드론배송 서비스 본격 시연… 미래형 교통 복지 상용화 첫걸음 (경인종합일보, Wed, 05 Au) — https://news.google.com/rss/articles/CBMib0FVX3lxTE1MS1BEejBRay1zMWNiSVE1MlpkdVRpZ2UzSmF5TC1qVDNNajJmS1YtTWpvRWtHcmJlWTEwTldCUTZMZEVSd3FTM3ExY1BuZjVoWE9qOEZUUmM5M3JqajhWMGhRN3RqSHhSUFFnMHNLONIBckFVX3lxTFBKYUJvd3FUS3RCVGRQUm84OUZrcVVYdDc3SzN6T0IxR3FMRzJXQ29fcmtTdWozUmFmZnFqOGRzR1JZZUFNdXMwNGhpbG1TanktT2NJV1hSRUozb1Y0eGFDMWpPcFVCcGY4Mmd0aEt6aWxLQQ?oc=5
+- 수원시, 광교호수공원 드론배송 실증…11월까지 주말 운영 (전자신문, Wed, 05 Au) — https://news.google.com/rss/articles/CBMiTkFVX3lxTE14Y3hjTDhhaGxwZHhPUWVQaTBjZ3JfTWFzaExnVVUycmNTdmQweVBLV0hPZ0VnWFFvNVB4VUJyRHFnN2FXQmpvMDJwdGhBUQ?oc=5
+- 수원시, 광교호수공원 드론배송 시연… 8월부터 주말 운영 (한국사회복지저널, Wed, 05 Au) — https://news.google.com/rss/articles/CBMibEFVX3lxTE1IX0RHdkxyWlRuVzFMNXI1WWNPLXpFQjZ3bkJ1RzJkR2V3MVNlZ3hZSzRFMWlzRFJ2bnpRMWtnMzg2dHd1MEVWZmFOV1dQd2tPc1lqQVlLcnlxdmdGS0hIZmRnLWVMVzlqcE5FZg?oc=5
+- 광교 산책길에 ‘하늘편의점’ 떴다… 수원특례시, 드론배송 시연 (수원일보, Sun, 09 Au) — https://news.google.com/rss/articles/CBMia0FVX3lxTE9oUVV1V01FTWdlN0g3RXYtWUFhNERSUTFZeklWUm9EMjI4RXNWSk9sVjg0RUhBN1g2eHh6MExxczlZdTBQalJEenJMTFR2VXYwOVU0akJqak1sTkF4eGpDMUhaLWFDYnh5QlBB?oc=5

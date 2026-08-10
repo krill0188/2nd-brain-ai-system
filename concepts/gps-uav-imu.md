@@ -33,3 +33,6 @@ GPS 미수신 환경에 특화된 마이크로드론/UAV 위치추정 기법들�
 ## 관련
 
 [[decentralized-swarm-gps-denied]] [[visual-positioning-odometry]]
+
+## 📰 최근 관련 소식
+- 사우디 아람코 정유시설서 검은 연기…후티 반군 “드론 공격” 주장 (중앙일보, Sun, 09 Au) — https://news.google.com/rss/articles/CBMiVkFVX3lxTE9HUVdoVFBjc2J0aDdLUGQ5aGFSQm80dlpoV3ctZGFyNTJSSFRzdDdWSERPVVhLT3pra3lvQ0FQT0l5Wm8xclhoMk5kbHB3b2VNVDFuLTJ3?oc=5

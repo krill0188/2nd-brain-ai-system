@@ -34,3 +34,6 @@ DJI의 드론 매핑 및 데이터 처리 소프트웨어. 2026년 7월 업데�
 - [[dji]] — DJI 드론 제조사
 - [[drone-ai]] — 드론 AI 기술
 - [[ground-control-station]] — 지상 관제 시스템
+
+## 📰 최근 관련 소식
+- 드론끼리 자율협업…방산·기체 검사 시장도 넘본다[스케일업리포트] (서울경제, Wed, 05 Au) — https://news.google.com/rss/articles/CBMiUkFVX3lxTE93X2l0RHdKdTRVZzFTaVpMVXg2ZmEybjdlY3RkMUR5dUE2OU5SS055LWV3OFJGMWJVTmFveFZXU0xmNWhFZnJ3WnVwWk8xQm1WbFHSAVNBVV95cUxOdkZBUWZGUW41bUVHNlFlZERmb2h5SXBMUkRzbXVHVFBzc3VldkxoZVNRaXhvVFRJNy1udEtjeGZpcEJyc3dTY0RteHUwOW9NSm9Tbw?oc=5

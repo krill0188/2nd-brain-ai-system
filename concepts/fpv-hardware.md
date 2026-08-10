@@ -48,3 +48,6 @@ domain: hardware
 - [[betaflight]] — FPV 드론용 비행 제어 소프트웨어
 - [[flight-controller-hardware]] — FC 하드웨어 개요
 - [[drone-payload-systems]] — 카메라 및 페이로드 통합
+
+## 📰 최근 관련 소식
+- [Joshua Bardwell] 70% more video range & penetration! // RUSHFPV 3.3 GHZ VIDEO RECEIVER (youtube.com, 2026-08-07) — https://www.youtube.com/watch?v=BtauO-T3GBg

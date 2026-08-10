@@ -352,3 +352,9 @@ mavproxy.py --master=/dev/ttyACM0 --baudrate=921600
 - MAVLink 3 로드맵
 - DDS-MAVLink interop
 - Quantum-safe signing
+
+## 📰 최근 관련 소식
+- 중국, 美 대상 드론·핵심부품 수출통제 강화 (뉴시스, Wed, 05 Au) — https://news.google.com/rss/articles/CBMiYEFVX3lxTE9KZUtyQ2tOWWpIWW1DM0ZpdXBsUTFodVp0ai12YmU3QmN1Tmd2YXFPOEtINFliTU1SdElZNGpOclBvNGVhVXBXdHl4QUZRX0JKVWxwMThXWnpVX2pOTzJYV9IBeEFVX3lxTE9KRTZneHpFODBaODlfQmx2OTZ5M1IwZzg4dHBvS3FTdjFJY1RKZUd6R0hLQTFCME04dS0tenllelVNSWhnb3lJd0ZNd29Bb0EzQjVuUWNTbkJTY05nX084SkxkWGE3SWlFeEVBRjh3enpYcG1aRkFHXw?oc=5
+- 고령층 많은 농업 현장이 폭염에 가장 취약…드론 띄워서 살핀다 (연합뉴스, Wed, 05 Au) — https://news.google.com/rss/articles/CBMiW0FVX3lxTFBLdElwUE03UmVsRlpCcEpNSHRBQmtBTGw3ZnFDbEduWTZTbTRZMXk4ZlBwcHYwMi1uQlA3eDR6QjRPT0xOa3l2QVF0NmVUbm5lWG1iQnRNa21lNTDSAWBBVV95cUxQZXFtT1l1WHRQRUFoR1J4amtHeFV6eEJxVjFTSkhzTFYwT1c3dEg0NkZ1RTROZkt1U1FoNHBHZUlJSnBZMmt2bkRxUWc4R1hVWmF2Smo2bzllcDI5RUhsRF8?oc=5
+- 美 해병대, 한국서 첫 자폭드론 실사격훈련…2.5㎞ 날아 목표물 명중[이현호의 밀리터리!톡] (sedaily.com, Thu, 06 Au) — https://news.google.com/rss/articles/CBMiUkFVX3lxTE16dFloM1ZKa0lzQW1PTUZXUG5Fam1UWFhEN2V3eGZ1dWFnNWRJMWg0Sld4T1N5RVJaeGhxLW0yZjluMzVIVFAtNGRXYU4weVB3akHSAVNBVV95cUxON1pudENjWVNXMXhRZmo0TDhmMjdrV3IwdHBIeHQtS3BRaFlEcFhCdzdNSU0xaS1ERi1xZUkwd3JlSHdsQ0tFT2xPYkhhUjF4S0J0VQ?oc=5
+- 미, 한반도서 자폭드론 첫 훈련...한국 배치 가능성도? (YTN 사이언스, Fri, 07 Au) — https://news.google.com/rss/articles/CBMijAFBVV95cUxPbmpqM3hNZTZIbjM3VE9pWGl4T1FhbXRoRlF5QXdnSlRrYkhTemJ0MXFzZTRfTHpjaXp6UnpXMENYcEhlSS1pNDQycGZiMTJnZlkwNDVGRWpkR2NDVElQaXM2cjgwU3pKQldpT25Qb0E5ejg5cXZDcWVnTlZsX2tqVzJSV2xwRV9DTDF2Uw?oc=5

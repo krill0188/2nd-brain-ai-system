@@ -36,3 +36,6 @@ ArduPilot Plane은 다음과 같은 고급 기능을 제공한다:
 - [[ardupilot-architecture]] — ArduPilot 소프트웨어 아키텍처
 - [[mission-planner]] — ArduPilot 공식 GCS
 - [[px4-flight-stack]] — ArduPilot의 대안 비행 스택
+
+## 📰 최근 관련 소식
+- 드론사업 팀 프로젝트 매니저 — 둠둠 (www.wanted.co.kr, 2026-08-07) — https://www.wanted.co.kr/wd/379169

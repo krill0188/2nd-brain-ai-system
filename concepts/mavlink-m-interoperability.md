@@ -35,3 +35,6 @@ MAVLink-M은 군사 및 상업용 드론 간의 상호운용성을 위한 확장
 - [[mavlink-protocol-deep]] — MAVLink 심층 분석
 - [[px4-flight-stack]] — PX4 비행 제어 스택
 - [[qgroundcontrol]] — QGroundControl GCS
+
+## 📰 최근 관련 소식
+- Inside the Drone Dominance Supply Chain: What Every U.S. Drone Company Must Source—and by When (Inside Unmanned Systems, Wed, 22 Ju) — https://news.google.com/rss/articles/CBMixgFBVV95cUxNLXE2RGRKTHV0TEpfTGsxemxJT1NPVTZMd1ZCdjNKY3I0YzFJRmVwQlJldWdjTm0wWHBOSVdBWURiYUVGR0pWMTQ3Wm9QeTlZTzgtOGxFd3lUMFo2ZUZWa21PZDJUcVlHdnFtQUxGclR5R2ZKVWw0R3FfV19qRWlJWF9YR0E3eU9JT3prMjdIY0RRNkNKVEFubGZJRlFuQk9nalBXY1pNVTQ4VXF1N1A0U1dBN1Fuc0FpdmN5bkRSX2J0QXdRdnc?oc=5

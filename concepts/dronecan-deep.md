@@ -64,3 +64,6 @@ PX4는 APDescriptor(보드 ID + 버전 메타데이터)로 유효한 펌웨어 �
 - [[dronecan-protocol]] — DroneCAN 개요
 - [[flight-controller-hardware]] — FC 하드웨어 연동
 - [[px4-offboard-control]] — 오프보드 제어
+
+## 📰 최근 관련 소식
+- 폭발물 싣고 독일 공항 날아든 드론···경찰 “기폭 장치 제거” (경향신문, Wed, 05 Au) — https://news.google.com/rss/articles/CBMiWkFVX3lxTE1WS0FOM3RRX2JDNEZWTXpCc2lMMDFCaVJ1NmlVOFQ0NXBSZ1M2Q3B1TVlPYy1SMUxPMC0wTThVX01rd2dnQlA5N2o5TTlyNlY1bFF2OEoyTE13UdIBX0FVX3lxTE12bng0UngtcWxZNTRDLWlMWGlVRzFhblk5cDNtcnVzUGg5QmdCNGgxYzFHRm05V0RCRmcxV3JtbDE5bmRBOHN1elp1TEtJRkdvaUxaMF81aHZZYnBTbXJ3?oc=5

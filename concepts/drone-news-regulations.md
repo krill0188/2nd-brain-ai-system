@@ -47,3 +47,8 @@ domain: regulations
 - [[drone-news-2026-08-01]] — 관련 뉴스 아카이브
 - [[drone-news-hardware]] — 관련 뉴스 아카이브
 - [[drone-news-ops]] — 관련 뉴스 아카이브
+
+## 📰 최근 관련 소식
+- 니어스랩, 피지컬 AI 드론 앞세워 글로벌 방산시장 공략…24일 코스닥 입성 (아주경제, Thu, 06 Au) — https://news.google.com/rss/articles/CBMiWkFVX3lxTFBjNnNJX0x1WjJERW9GWm5mcnFtQzlfaVZ4MDgza2x0aTNzMFY2aFdTTEZnZVVvN3R2bFJaRmJzcWF0WHJGN3liZnh0WHd1dWVDd1VpUmRveGZ1Zw?oc=5
+- 최재혁 니어스랩 대표 "40개국에서 검증한 드론 기술로 글로벌 방산 공략" (아시아경제, Thu, 06 Au) — https://news.google.com/rss/articles/CBMiYEFVX3lxTE1kQUlvOVp6Und5bUdaYVB0WXFLazhYbV9ERGZ5RGUxTDgzVlpjbjdTNzR5NGxzZTBRMEJWTTNTNHBIWDRsS215OElxbkRLUWxKMUN3ZE55NkZvV2xyZ3FUeg?oc=5
+- 피지컬AI 드론 기업 ＇니어스랩＇...글로벌 방산시장 ＇출격＇ [IPO톡톡] (한국경제TV, Thu, 06 Au) — https://news.google.com/rss/articles/CBMid0FVX3lxTE9sM3NZS2pRdnFBSVpld2x0bzJMVXRhekJFUlFwYlNUb01DSlJ0YVVKZVJkMFphRUJhMnlKR2lkSXNjaWpieVVJWGthV2xVamVYcjBCSkM5VllvWW9QMTBmSC12dnlkZV82YjdfdVZtaHJfZmJiX3k0?oc=5

@@ -53,3 +53,4 @@ BRINC의 $125M 비상 드론 확장 자금 조달. Motorola의 후원을 받아 
 ## 📰 최근 관련 소식
 - 당진 드론공원, 국토부 지정 드론공원 최종 선정 (에이티엔뉴스, Tue, 04 Au) — https://news.google.com/rss/articles/CBMibEFVX3lxTFB4N3VLYUZUNTAwUTVVWTBmQ1NaZXVhams2bEtJOXhnR05NV1NtRnBFSXIzeDlGOFQxYXRLWHNZQm93bHp4azhTdFBxa1NJNG96Q0puVi1PNDZaVENibmNNTW9RLV9veTktMXRXbg?oc=5
 - 네오배터리머티리얼즈코리아, 김제에 ‘드론·방산 배터리’ 생산거점 구축 (세계일보, Tue, 04 Au) — https://news.google.com/rss/articles/CBMiVEFVX3lxTE1NT2tUQXFwVjE0VUZBSmluMTB0SDVaWVdLV1ZhN2trN1VkaXpUeWplLWlpU05MQnlmVFdyTXBLRnpRS0ViYl9Nb05adWRvTlNBU01XNNIBVEFVX3lxTE1NT2tUQXFwVjE0VUZBSmluMTB0SDVaWVdLV1ZhN2trN1VkaXpUeWplLWlpU05MQnlmVFdyTXBLRnpRS0ViYl9Nb05adWRvTlNBU01XNA?oc=5
+- 센서뷰, '대드론 방어 시스템 개발' 정부과제 최종 선정 (파이낸스스코프, Fri, 07 Au) — https://news.google.com/rss/articles/CBMiakFVX3lxTE92WERCcUtpMHY2YkZuX05jUk5UUXoxeTVrTjMtNmEzX0VWellGUnc4OE93Snd1UC02V0UtRDF2SkowU2x2UmJHN1RhNlJLM0lWLUY2N19vbGpLMDJncm1UeWtXeHhrLXFFNFE?oc=5

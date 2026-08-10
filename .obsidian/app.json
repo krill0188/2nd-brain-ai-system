@@ -1,4 +1,5 @@
 {
   "attachmentFolderPath": "raw/assets",
-  "useMarkdownLinks": false
+  "useMarkdownLinks": false,
+  "promptDelete": false
 }

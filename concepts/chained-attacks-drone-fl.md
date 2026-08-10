@@ -55,3 +55,6 @@ Edge Intelligence(EI)는 드론 스웜과 같은 미션 크리티컬 무인 플�
 - [[federated-lightweight-intrusion-detection]] — 지식 증류를 활용한 FL 기반 IDS
 - [[swarm-coordination]] — 스웜 협업 및 보안
 - [[drone-ai-agents]] — 자율 에이전트 아키텍처
+
+## 📰 최근 관련 소식
+- 명지대 ‘드론봇·대드론 센터’ 출범... 산학군 협력 안보 네트워크 강화 (보안뉴스, Fri, 07 Au) — https://news.google.com/rss/articles/CBMiXkFVX3lxTE5XdUZ2TnIwaktzN3F0dFBmXzZ6UFBqbC1hcFFHS3AxZUYzSmFkNl9IQ1RYQ0VxZlpGX3JRZjJqMzNvbXlLLUNhLV92dk4xaHpUb0xUQWlNVF9oR2xReGc?oc=5
