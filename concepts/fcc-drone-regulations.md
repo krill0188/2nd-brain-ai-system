@@ -49,3 +49,6 @@ FAA가 워싱턴주 Gorge Drones에 미인증 농업용 드론 운항(2025년 �
 - [[drone-regulations]] — 드론 규제 종합
 - [[drone-hw]] — 드론 하드웨어
 - [[terra-drone]] — 일본 배터리 사업 진출 사례
+
+## 📰 최근 관련 소식
+- DJI Warns FCC Proposal Could Restrict Widely Used Commercial Drones (dronelife.com, Mon, 10 Au) — https://dronelife.com/2026/08/10/dji-fcc-drone-restrictions-commercial-models/

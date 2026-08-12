@@ -30,3 +30,6 @@ UAV Coach 채널에서 소개된 고속 추적 드론은 F1 레이스 카를 따
 - [[drone-payload-systems]] — 드론 페이로드 및 짐벌 시스템
 - [[computer-vision-drone]] — 드론 컴퓨터 비전 기술
 - [[event-camera-drone]] — 이벤트 카메라 기반 드론 비전
+
+## 📰 최근 관련 소식
+- Parrot Drone BeBop 2 Is Like a “Flying Image Processor” - IEEE Spectrum (news.google.com, Thu, 29 Ju) — https://news.google.com/rss/articles/CBMihwFBVV95cUxOcHZmc0tpbmlSdVRpUHdQaXloS245ekxWcXRzZ2ZJZ2U4LXdEUUZWbEo0UEpKU21EWE84cUhuT3FpOGo1TVoyYmNTT3dTQ18xZGlLX2syTXZqaUFEMVNEanpVLXZjS2swMDExVlIxRkRDb3BzSXJYenIweWc4LXRQbWJhejV4WnM?oc=5

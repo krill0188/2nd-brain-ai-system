@@ -172,3 +172,7 @@ for waypoint in path:
 - [[px4-offboard-control]] — 비전 데이터 기반 제어
 - [[flight-controller-hardware]] — 컴패니언 컴퓨터 선택
 - [[ros2-drone-integration]] — ROS2 비전 파이프라인
+
+## 📰 최근 관련 소식
+- Army seeks next-gen missile that could shoot down small drones for less than $150K a pop (DefenseScoop, Tue, 04 Au) — https://news.google.com/rss/articles/CBMie0FVX3lxTE5GbzRtdW9TS3Y4b3JkaW9oazVGWW9nUWRxa0hGY25RV2h1UEg1MVVfQnhSUE1xS1VFMzVSUGRyckRva0VEZFV5aWhqeHZsbngwV2FpTDBLMVEwdllFOWVXYVZyU3g2VDNESS1WekhBLXNYOEdhMWZrenRESQ?oc=5
+- Drones Bring Whole Blood Directly to Trauma Scenes (dronelife.com, Mon, 10 Au) — https://dronelife.com/2026/08/10/drones-bring-whole-blood-directly-to-trauma-scenes/

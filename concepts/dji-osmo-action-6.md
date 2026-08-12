@@ -29,3 +29,4 @@ DJI의 액션 카메라 시리즈 6세대 모델로, 야간 촬영 성능이 크
 
 ## 📰 최근 관련 소식
 - [DJI] All for the Bridge Shot | DJI Avata 360 & Osmo 360 (youtube.com, 2026-08-09) — https://www.youtube.com/watch?v=yCpXorzKWx8
+- [DJI] Magnetic Clip. Goes Wherever the Trick Takes It. | DJI Osmo Nano (youtube.com, 2026-08-10) — https://www.youtube.com/watch?v=ornaxYy9wsw

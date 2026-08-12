@@ -39,3 +39,6 @@ domain: ops-mission
 - [[perceptual-robotics]] — 풍력 터빈 검사 드론 플랫폼 기업
 - [[skydio-centralsquare-dfr-integration]] — Skydio-CentralSquare DFR CAD 통합
 - [[amazon-mk30-safety-incident]] — Amazon MK30 배송 드론 안전 사고
+
+## 📰 최근 관련 소식
+- BRINC Brings Wildfire and Smoke Tracking Into Drone Operations (dronelife.com, Mon, 10 Au) — https://dronelife.com/2026/08/10/brinc-wildfire-smoke-tracking-drone-operations/

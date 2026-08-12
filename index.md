@@ -3,8 +3,16 @@
 > Complete catalog of active canonical pages. Each entry is a wikilink followed by
 > a one-line summary, sorted alphabetically within its section.
 >
-> Total pages: 195
+> Total pages: 207
 ## Entities
+- [[mavlink]] — MAVLink 프로토콜 엔티티 페이지: 버전 비교, 핵심 메시지, GCS 통신.
+- [[ratefpv]] — FPV 드론 AIO 비행 컨트롤러 제조업체.
+<!-- 2026-08-12 index 재감사로 등재(기존 페이지, 카탈로그 누락분) -->
+
+- [[airwise-nexus]] — Airwise Solutions의 오픈 에어스페이스 인식 플랫폼, 센서 퓨전.
+- [[epropelled]] — 미국 드론 추진 시스템 제조사, $60M 정부 자금 지원.
+- [[flybyops]] — 핀란드 기업 BVLOS/자율 드론 운용 플랫폼.
+- [[radiomaster-gx15]] — RadioMaster ELRS 2.4GHz 라디오 컨트롤러 (2026-08).
 <!-- Alphabetical within section -->
 
 - [[fortem-technologies]] — DHS C-UAS IDIQ 주계약자, 공역 보안 기업.
@@ -20,12 +28,10 @@
 - [[doordash-air]] — DoorDash의 FAA Part 135 인증 드론 배달 서비스 (2026-07).
 - [[droneshield]] — 호주 기반 드론 탐지/방어 기업, RfAI-3 AI 엔진 보유.
 - [[kite-gcs]] — ArduPilot/INAV/PX4 지원 현대적 오픈소스 GCS.
-- [[mavlink-protocol]] — MAVLink 경량 직렬 메시지 프로토콜: 버전, 메시지, MAV_CMD.
 - [[parrot]] — 프랑스 4G 연결 드론 및 전술용 마이크로 UAS 기업.
 - [[perceptual-robotics]] — 영국 풍력 터빈 검사 드론 플랫폼 기업.
 - [[pixhawk]] — PX4 호환 오픈 하드웨어 비행 제어기 플랫폼: 모델, 센서, 커넥터.
 - [[px4-flight-stack]] — PX4 오픈소스 드론 비행 제어 소프트웨어: 모듈, uORB, SITL.
-- [[ratefpv]] — FPV 드론 AIO 비행 컨트롤러 제조업체.
 - [[skydio]] — 미국 AI 기반 자율 드론 기업, 공공 안전/방위 시장 특화.
 - [[skydio-centralsquare-dfr-integration]] — Skydio-CentralSquare DFR CAD 워크플로우 통합.
 - [[terra-drone]] — 일본 드론/UAM 기업, 일본산 배터리 사업 진출 (2026-07).
@@ -36,6 +42,27 @@
 - [[ondas]] — 미 방산 드론 기업, Mistral(전술 LUS)·Sentrycs(대드론) 자회사 보유.
 
 ## Concepts
+- [[advanced-mavlink]] — MAVLink 2 패킷 포맷/헤더 구조 및 Incompatibility 플래그.
+- [[ai-knowledge-workflow]] — 원본 수집→검토된 지식→산출물을 역할별 계층으로 분리하는 AI 지식 워크플로.
+- [[ardupilot-plane-4-7]] — ArduPilot Plane 4.7.0 안정 릴리스(2026-07-21), 고정익/VTOL.
+- [[mavlink-advanced]] — MAVLink 2 확장: 서명, RTPS, 상용/군용 배포용 고급 기능.
+- [[mavlink-advanced-features]] — MAVLink 2 보안 서명, Reliable ACK, RAS/RTPS 기능.
+- [[mavlink2-security]] — MAVLink 2 메시지 서명·암호화 보안 기능.
+- [[micro-drone-slam-imu-vio-lidar-uav-livox-mid-360-pixhawk-4-m]] — 마이크로드론 SLAM: 카메라+IMU(VIO) vs LiDAR-관성 오도메트리 플랫폼 규모별 비교(연구엔진 승격 클레임 C3).
+- [[pid-tuning-control]] — PID 제어 이론: 드론 자세/속도 안정화 핵심 알고리즘.
+- [[px4-control-tuning]] — PX4 Rate→Attitude→Velocity→Position 순차 제어 아키텍처.
+- [[px4-pid-tuning]] — PX4 PID 제어: Rate/Attitude loop 계층 구조.
+- [[px4-tuning-control]] — PX4 PID 튜닝과 제어 기법, Rate/Attitude/Position 게인 설정.
+- [[ros2-advanced]] — ROS2 DDS 미들웨어 기반 PX4 고성능 통합, micro-ROS/QoS.
+- [[ros2-advanced-integration]] — PX4-ROS2 고급 통합: micro-ROS, DDS 튜닝, 멀티 에이전트.
+- [[rtk-gps-precise-landing]] — RTK GPS 차등 측위, 센티미터급 정밀 착륙.
+- [[visual-positioning-odometry]] — Visual/Visual-Inertial Odometry로 GPS 미가용 환경 위치 추정.
+<!-- 2026-08-12 index 재감사로 등재(기존 페이지, 카탈로그 누락분) -->
+
+- [[fluid-antenna-system]] — FAS(Fluid Antenna System) 기반 UAV 통신, 동적 포트 재구성.
+- [[hybrid-beamforming-ntn]] — 비지상 네트워크 하이브리드 빔포밍, LEO/UAV 통신.
+- [[mbse-uav-sysml]] — SysML 기반 UAV 모델 기반 시스템 엔지니어링, ROS2 매핑.
+- [[yolo-v8-4-118]] — YOLO v8.4.118, LLM 인터페이스 추가 (2026-08-11).
 - [[cleveland-clinic-drone-delivery]] — 미국 최초 장기 의료 드론 배달 프로그램 (Cleveland Clinic + Zipline).
 - [[dji-mic-mini-2s]] — DJI 무선 마이크 시스템, 32-bit float 녹음, AI 노이즈 캔슬링.
 - [[emlid-corrections]] — Emlid Reach RTK 보정 서비스, 1–2cm 정확도.
@@ -119,9 +146,7 @@
 - [[mavlink-m-interoperability]] — MAVLink-M 표준 기반 드론 페이로드 상호운용성 해커톤 성과.
 - [[mavlink-protocol-deep]] — MAVLink v2 패킷 구조, XML 스키마, 마이크로서비스 패턴.
 - [[mavlink-protocol]] — MAVLink 메시지 구조, 마이크로서비스, XML 스키마, pymavlink.
-- [[mavsdk-release]] — MAVSDK v3.17.2 릴리스 정보 (2026-07-17).
 - [[mavsdk]] — MAVLink 기반 고수준 드론 제어 SDK, Python/C++ API.
-- [[mrope-multi-robot-safety]] — MROPE: 예측 안전 필터 기반 다중 로봇 협력 전략.
 - [[mission-planner]] — ArduPilot용 Windows 기반 GCS 소프트웨어.
 - [[mission-planning]] — QGC 미션 계획, Survey, Waypoint, MAVSDK 미션 API.
 - [[montis-avalanche-faa-approval]] — MONTIS 눈사태 드론 시스템 FAA 승인.
@@ -141,7 +166,6 @@
 - [[pymavlink]] — MAVLink 프로토콜의 Python 구현체.
 - [[qgroundcontrol]] — MAVLink 기반 오픈소스 GCS (크로스 플랫폼).
 - [[radial-impeller-drone]] — 방사형 임펠러 드론: FPV DIY 쿼드콥터 기술.
-- [[ratefpv]] — FPV 드론 AIO 비행 컨트롤러 제조업체.
 - [[recon-swarm-project]] — 지능형 자율 군집정찰드론 4단계 로드맵 프로젝트.
 - [[research-feedback-loop]] — 수집·합성·그래프 분석 결과를 검증해 위키로 환류하는 순환.
 - [[rgb-ir-fusion-uav-detection]] — Transformer 기반 RGB-IR 퓨전 UAV 객체 검출.
@@ -184,9 +208,13 @@
 - [[dji-mavic-4-pro]] — DJI Mavic 4 Pro, 100MP 하셀블라드 센서.
 - [[mrope-multi-robot-safety]] — MROPE: 예측 안전 필터+타원 제약압축 기반 다중로봇 안전 협조 전략.
 - [[yolo-v8-4-117]] — YOLO v8.4.117 릴리스, 증강 정확도·배포 보안 개선 (2026-08-09).
-- [[moe-multimodal-uav-detection]] — MoE 기반 강건한 UAV 멀티모달 객체 탐지(관측 누락 대응).
-- [[uav-swarm-air-ground-isac]] — 교차 지역 협력 기반 Air-Ground ISAC UAV 군집(MAPPO).
-- [[rigid-covert-gnss-spoofing-swarm]] — UAV 군집 GNSS 스푸핑의 상대기하 탐지 사각지대(RigidShift).
+|- [[moe-multimodal-uav-detection]] — MoE 기반 강건한 UAV 멀티모달 객체 탐지(관측 누락 대응).
+|- [[uav-swarm-air-ground-isac]] — 교차 지역 협력 기반 Air-Ground ISAC UAV 군집(MAPPO).
+|- [[rigid-covert-gnss-spoofing-swarm]] — UAV 군집 GNSS 스푸핑의 상대기하 탐지 사각지대(RigidShift).
+|- [[curriculum-guided-heterogeneous-multi-agent-isac]] — 커리큘럼 기반 이질적 다중 에이전트 ISAC 스웜 시스템.
+|- [[edge-constrained-uav-small-object-detection]] — P2 강화 및 QIEA 기반 에지 제약 UAV 소형 객체 탐지.
+|- [[llm-enabled-uav-natural-language-navigation]] — STL 사양 변환 기반 LLM 활성화 UAV 자연어 내비게이션.
+|- [[uav-detr-anti-drone-detection]] — WTConv 및 SWSA 기반 실시간 대드론 탐지 DETR 프레임워크.
 
 ## Comparisons
 

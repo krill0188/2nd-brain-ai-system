@@ -180,3 +180,7 @@ class VoiceControlNode(Node):
 - Whisper + 드론 통합 오픈소스
 - 다국어 음성 명령 데이터셋
 - 음성 인증/보안 방법론
+
+## 📰 최근 관련 소식
+- Army seeks next-gen missile that could shoot down small drones for less than $150K a pop (DefenseScoop, Tue, 04 Au) — https://news.google.com/rss/articles/CBMie0FVX3lxTE5GbzRtdW9TS3Y4b3JkaW9oazVGWW9nUWRxa0hGY25RV2h1UEg1MVVfQnhSUE1xS1VFMzVSUGRyckRva0VEZFV5aWhqeHZsbngwV2FpTDBLMVEwdllFOWVXYVZyU3g2VDNESS1WekhBLXNYOEdhMWZrenRESQ?oc=5
+- Drones Bring Whole Blood Directly to Trauma Scenes (dronelife.com, Mon, 10 Au) — https://dronelife.com/2026/08/10/drones-bring-whole-blood-directly-to-trauma-scenes/

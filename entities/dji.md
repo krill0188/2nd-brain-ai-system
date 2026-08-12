@@ -30,3 +30,6 @@ domain: hardware
 - [[dji-enterprise]] — DJI 산업/기업용 사업부
 - [[dji-terra]] — DJI 매핑 소프트웨어
 - [[dji-mavic-4-pro]] — 100MP 하셀블라드 소비자용 항공촬영 드론
+
+## 📰 최근 관련 소식
+- DJI Warns FCC Proposal Could Restrict Widely Used Commercial Drones (dronelife.com, Mon, 10 Au) — https://dronelife.com/2026/08/10/dji-fcc-drone-restrictions-commercial-models/

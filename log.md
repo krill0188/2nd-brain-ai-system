@@ -789,7 +789,41 @@
 
 - Updated: `log.md`
 
-## [2026-08-11] ingest | OpenRouter 크레딧 소진으로 멈춘 daily-ingest 수동 대행 (inbox 21건 처리)
+## [2026-08-12] ingest | inbox 17건 처리 (Hermes cron daily-ingest)
+
+- Source files from `inbox/`:
+  - `fetch-2026-08-12-arxiv-hybrid-beamforming-in-non-terrestrial-networks-architectures.md`
+  - `fetch-2026-08-12-arxiv-model-based-systems-engineering-framework-for-sysml-driven-d.md`
+  - `fetch-2026-08-12-arxiv-modeling-and-performance-analysis-for-fluid-antenna-system-e.md`
+  - `fetch-2026-08-12-rss-dronedj.md`
+  - `fetch-2026-08-12-rss-dronelife.md`
+  - `fetch-2026-08-12-rss-parrot.md`
+  - `fetch-2026-08-12-rss-skydio.md`
+  - `fetch-2026-08-12-rss-suasnews.md`
+  - `fetch-2026-08-12-yolo.md`
+  - `fetch-2026-08-12-yt-break-the-surface-skip-a-stone-and-let-the-camera-capture-it.md`
+  - `fetch-2026-08-12-yt-just-released-radiomaster-gx15-elrs-24ghz-radio.md`
+  - `fetch-2026-08-12-yt-physical-ai-양팔로봇.md`
+  - `fetch-2026-08-12-yt-python-for-engineers-robotics-master-numpy-pandas-and-chatgp.md`
+  - `fetch-2026-08-12-yt-radiomaster-gx15-the-perfect-size-for-an-rc-controller.md`
+  - `fetch-2026-08-12-yt-the-worlds-only-rotating-boat-lift-from-above-dji-mavic-4-pr.md`
+  - `fetch-2026-08-12-yt-핑크랩-physical-ai.md`
+  - `fetch-2026-08-12-yt-제부도-여름-노을-202608.md`
+- Created entities:
+  - `entities/airwise-nexus.md` — Airwise Solutions 오픈 에어스페이스 플랫폼
+  - `entities/epropelled.md` — 미국 드론 추진 시스템 제조사 ($60M 정부 지원)
+  - `entities/flybyops.md` — 핀란드 BVLOS/자율 드론 운용 플랫폼
+  - `entities/radiomaster-gx15.md` — ELRS 2.4GHz 라디오 컨트롤러
+- Created concepts:
+  - `concepts/fluid-antenna-system.md` — FAS 기반 UAV 통신 (arXiv:2608.09179)
+  - `concepts/hybrid-beamforming-ntn.md` — 비지상 네트워크 하이브리드 빔포밍 (arXiv:2608.08501)
+  - `concepts/mbse-uav-sysml.md` — SysML 기반 UAV MBSE 프레임워크 (arXiv:2608.09547)
+  - `concepts/yolo-v8-4-118.md` — YOLO v8.4.118, LLM 인터페이스 추가
+- Updated: `index.md` (195→202 pages), `log.md`
+- Moved sources to: `inbox/processed/` (17 files)
+
+**보류(canonical 미생성)**: DJI 마케팅 영상 2건 (Osmo Action 6, Mavic 4 Pro), Physical AI 영상 2건 (내용 없음), Python 튜토리얼 (도메인 외), 제부도 여행 영상 (도메인 외), parrot/skydio RSS (중복/단일 언급)
+
 
 `2nd-daily-ingest`(04:00)가 2026-08-09부터 OpenRouter 402(크레딧 소진)로 계속 실패해 inbox에 21건(8/10~8/11, RSS 뉴스다이제스트 9 + YouTube 영상 8 + arXiv/Crossref 논문 2 + YOLO 릴리즈노트 2)이 미처리 상태로 쌓여 있던 것을 Claude Code가 수동으로 컴파일.
 
@@ -809,8 +843,49 @@
 
 **보류(raw만 아카이브, canonical 미생성)**: DJI 마케팅 영상 5건, ArduPilot 빌드로그 영상, Polyspace/우분투CUDA(도메인 외), 피지컬AI 핑크랩(내용 없음), parrot 다이제스트 2건(전부 수년 전 재검색 결과), suasnews DroneShield/dronelife 수혈배송(단일 언급, 임계값 미달)
 
-**검증**: 깨진 wikilink 0, 신규 4페이지 전부 인바운드 1건 이상 확보, sha256 전건 계산 완료. inbox 21건 전부 `inbox/processed/`로 이동.
+- **검증**: 깨진 wikilink 0, 신규 4페이지 전부 인바운드 1건 이상 확보, sha256 전건 계산 완료. inbox 21건 전부 `inbox/processed/`로 이동.
+
+## [2026-08-12] ingest | arXiv 논문 4건 컴파일 — 스웜/AI 객체탐지/자연어 내비게이션
+
+- Source files from `inbox/`:
+  - `fetch-2026-08-12-arxiv-curriculum-guided-heterogeneous-multi-agent-intelligence-for.md`
+  - `fetch-2026-08-12-arxiv-edge-constrained-uav-small-object-detection-with-p2-enhancem.md`
+  - `fetch-2026-08-12-arxiv-llm-enabled-low-altitude-uav-natural-language-navigation-via.md`
+  - `fetch-2026-08-12-arxiv-uav-detr-detr-for-anti-drone-target-detection.md`
+
+- Created concepts:
+  - `concepts/curriculum-guided-heterogeneous-multi-agent-isac.md` — C-HAPPO 알고리즘 기반 다중 UAV 협력 ISAC (domain: swarm)
+  - `concepts/edge-constrained-uav-small-object-detection.md` — P2 강화 및 QIEA 기반 에지 제약 UAV 소형 객체 탐지 (domain: ai-autonomy)
+  - `concepts/llm-enabled-uav-natural-language-navigation.md` — STL 사양 변환 기반 LLM 활성화 UAV 자연어 내비게이션 (domain: ai-autonomy)
+  - `concepts/uav-detr-anti-drone-detection.md` — WTConv 및 SWSA 기반 실시간 대드론 탐지 DETR (domain: ai-autonomy)
+
+- Updated:
+  - `index.md` (Total pages 202→206, Concepts 섹션에 4줄 추가)
+  - `log.md`
+
+- Moved 4 inbox files to `inbox/processed/`
 
 **미해결로 남긴 것**: index.md가 필터시스템 대비 약 12개 페이지 더 누락돼 있음(오늘 발견분 1건만 수정, 전체 재감사는 범위 밖) — 다음 lint 세션에서 처리 필요.
 
 - Updated: `index.md` (Total pages 191→195, Concepts 섹션에 5줄 추가), `log.md`
+
+## [2026-08-12] lint-fix | index.md 재감사 — 카탈로그 누락 16건 등재 + 오분류/중복 4건 정리
+
+`session_20260805`/`session_20260811`에서 발견만 하고 보류했던 "index.md가 필터시스템 대비 약 12개 페이지 누락" 건을 전체 재감사.
+
+**감사 방법**: `entities/concepts/comparisons/queries/` 실제 파일(207개) vs `index.md` wikilink(당시 191개 고유) 전수 대조.
+
+**미등재 16건 등재**(전부 기존에 실존하던 완성 페이지 — 콘텐츠 신규 생성 아님):
+- Entities 1건: `mavlink`(MAVLink Protocol 엔티티, confidence high, sources 有)
+- Concepts 15건: `advanced-mavlink`, `mavlink-advanced`, `mavlink-advanced-features`, `mavlink2-security`(4건 모두 entities/mavlink.md가 실제로 링크하는 하위 상세 페이지 — 제목이 겹치는 2건도 diff 확인 결과 패킷포맷 vs RAS/RTPS로 내용은 실제로 다름, 병합 대상 아님), `pid-tuning-control`/`px4-control-tuning`/`px4-pid-tuning`/`px4-tuning-control`(4건, px4-tuning-control.md가 허브로 나머지를 링크), `ros2-advanced`/`ros2-advanced-integration`(2건, ros2-drone-integration.md가 허브), `ai-knowledge-workflow`, `ardupilot-plane-4-7`, `rtk-gps-precise-landing`, `visual-positioning-odometry`, `micro-drone-slam-imu-vio-lidar-uav-livox-mid-360-pixhawk-4-m`(Research Engine 승격 클레임 C3 — title frontmatter가 클레임 전문이라 슬러그가 긺; 마스터 승인된 연구 산출물이라 내용은 그대로 두고 index 한줄요약만 축약해 등재)
+
+**오분류/중복 리스팅 4건 정리**:
+- `mavlink-protocol`이 Entities 섹션에도 잘못 등재돼 있었음(실제 파일은 `concepts/mavlink-protocol.md`뿐, entities엔 없음) → Entities쪽 잘못된 줄 삭제, Concepts쪽 정상 유지
+- `ratefpv`(entities, type:entity)가 Concepts 섹션에도 중복 등재 → Concepts쪽 삭제, Entities로 정상화
+- `mavsdk-release`, `mrope-multi-robot-safety` Concepts 섹션 내 완전/유사 중복 줄 각 1건 삭제(mrope는 설명이 더 상세한 버전 유지)
+
+**검증**: 재감사 스크립트로 실제 파일(207) = index 리스트(207), 중복 등재 0건, 미등재 0건, 유령 링크(파일 없는데 등재) 0건 — 카탈로그 정합성 100% 달성.
+
+**의도적으로 손대지 않은 것**: mavlink 계열 4개 페이지의 내용 중복 정도(제목 2건이 "MAVLink Advanced Features"로 동일)는 병합하면 더 깔끔할 수 있으나, 실제 콘텐츠가 다르고(패킷구조 vs RAS/RTPS 등) entities/mavlink.md 허브에서 의도적으로 분기된 구조로 보여 이번 세션 범위(카탈로그 정합성)를 벗어나 병합하지 않음 — 다음 콘텐츠 정리 세션 후보로 남김.
+
+- Updated: `index.md` (Total pages 206→207, 표기상으론 +16이지만 오분류 4건 제거가 상쇄해 순증 +1)
