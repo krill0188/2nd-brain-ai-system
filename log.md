@@ -9,8 +9,39 @@
 > `delete`, `map`, and `repair`.
 >
 > Each entry lists every affected repository-relative path. After 500 entries,
-> rotate the completed file to `log-YYYY.md` and begin a new `log.md`; preserve the
-> completed file unchanged.
+> rotate the completed file to `log-YYYY.md` and begin a new `log.md`; preserve
+> the completed file unchanged.
+
+## [2026-08-13] ingest | RSS 뉴스 및 연구 논문 인제스트
+
+- Source files from `inbox/`:
+  - `fetch-2026-08-13-rss-dronedj.md`
+  - `fetch-2026-08-13-rss-dronelife.md`
+  - `fetch-2026-08-13-rss-suasnews.md`
+  - `fetch-2026-08-13-rss-skydio.md`
+  - `fetch-2026-08-13-arxiv-clustered-randomized-smoothing-for-stochastic-prediction-fun.md`
+  - `fetch-2026-08-13-yt-put-your-thumbs-here-dji-osmo-mobile-8.md`
+  - `fetch-2026-08-13-yt-under-249g-extremely-high-winds-still-stable-dji-mini-5-pro.md`
+- Skipped (out of scope/old):
+  - `fetch-2026-08-13-rss-parrot.md` (2020년 뉴스)
+  - `fetch-2026-08-13-fedreg-faa-2026-16504.md` (보잉 항공기 AD)
+  - `fetch-2026-08-13-yt-pinklab-band-drummer.md` (음악 영상)
+  - `fetch-2026-08-13-yt-틈틈일기-앱을-사용해보세요.md` (앱 리뷰)
+  - `fetch-2026-08-13-yt-윈도우에-nvidia-gpu-cuda-사용하도록-파이토치-설치하는-방법.md` (PyTorch 설치)
+- Created entities:
+  - `entities/cambridge-aerospace.md` — 영국 C-UAS 기업
+  - `entities/mbf-group.md` — 폴란드 드론/우주 기업
+- Created concepts:
+  - `concepts/insta360-x6.md` — 360도 액션 카메라
+  - `concepts/michigan-drone-lawsuit.md` — 미시간 드론 소송
+  - `concepts/michigan-aam-projects.md` — 미시간 AAM 프로젝트
+  - `concepts/fcc-drone-approval-revocation.md` — FCC 승인 취소
+  - `concepts/skydio-dfr-milestone.md` — DFR 1,000만 출동
+  - `concepts/clustered-randomized-smoothing.md` — arXiv 논문
+  - `concepts/dji-osmo-mobile-8.md` — DJI 짐벌
+  - `concepts/dji-mini-5-pro.md` — DJI 경량 드론
+- Updated: `index.md` (216 pages), `log.md`
+- Moved sources to: `inbox/processed/` (7 files)
 
 ## [2026-07-30] ingest | RSS 뉴스 및 YOLO 릴리스 인제스트
 

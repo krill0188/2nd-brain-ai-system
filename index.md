@@ -3,8 +3,10 @@
 > Complete catalog of active canonical pages. Each entry is a wikilink followed by
 > a one-line summary, sorted alphabetically within its section.
 >
-> Total pages: 207
+> Total pages: 216
 ## Entities
+- [[cambridge-aerospace]] — 영국 공중 방위/C-UAS 기업, $300M Series C (2026-08).
+- [[mbf-group]] — 폴란드 드론/우주 기업, IRYDA+ X1 및 SPACE Z1 개발.
 - [[mavlink]] — MAVLink 프로토콜 엔티티 페이지: 버전 비교, 핵심 메시지, GCS 통신.
 - [[ratefpv]] — FPV 드론 AIO 비행 컨트롤러 제조업체.
 <!-- 2026-08-12 index 재감사로 등재(기존 페이지, 카탈로그 누락분) -->
@@ -42,6 +44,14 @@
 - [[ondas]] — 미 방산 드론 기업, Mistral(전술 LUS)·Sentrycs(대드론) 자회사 보유.
 
 ## Concepts
+- [[clustered-randomized-smoothing]] — 클러스터 기반 랜덤 스무딩, 쿼드로터 충돌률 81% 감소.
+- [[dji-mini-5-pro]] — DJI 249g 미만 강풍 대응 여행용 드론.
+- [[dji-osmo-mobile-8]] — DJI 스마트폰 짐벌 시스템, AI 추적 기능.
+- [[fcc-drone-approval-revocation]] — FCC Odyssey Robot 드론 승인 취소 사건.
+- [[insta360-x6]] — Insta360 8K 360° 액션 카메라, AI 추적.
+- [[michigan-aam-projects]] — 미시간주 $2M AAM 프로젝트, 5개 기업 선정.
+- [[michigan-drone-lawsuit]] — 미시간 경찰 작전 근처 드론 비행 제한 소송.
+- [[skydio-dfr-milestone]] — Skydio DFR Command 1,000만 출동 돌파.
 - [[advanced-mavlink]] — MAVLink 2 패킷 포맷/헤더 구조 및 Incompatibility 플래그.
 - [[ai-knowledge-workflow]] — 원본 수집→검토된 지식→산출물을 역할별 계층으로 분리하는 AI 지식 워크플로.
 - [[ardupilot-plane-4-7]] — ArduPilot Plane 4.7.0 안정 릴리스(2026-07-21), 고정익/VTOL.

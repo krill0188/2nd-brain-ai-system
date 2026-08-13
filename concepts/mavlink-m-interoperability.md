@@ -38,3 +38,4 @@ MAVLink-M은 군사 및 상업용 드론 간의 상호운용성을 위한 확장
 
 ## 📰 최근 관련 소식
 - Inside the Drone Dominance Supply Chain: What Every U.S. Drone Company Must Source—and by When (Inside Unmanned Systems, Wed, 22 Ju) — https://news.google.com/rss/articles/CBMixgFBVV95cUxNLXE2RGRKTHV0TEpfTGsxemxJT1NPVTZMd1ZCdjNKY3I0YzFJRmVwQlJldWdjTm0wWHBOSVdBWURiYUVGR0pWMTQ3Wm9QeTlZTzgtOGxFd3lUMFo2ZUZWa21PZDJUcVlHdnFtQUxGclR5R2ZKVWw0R3FfV19qRWlJWF9YR0E3eU9JT3prMjdIY0RRNkNKVEFubGZJRlFuQk9nalBXY1pNVTQ4VXF1N1A0U1dBN1Fuc0FpdmN5bkRSX2J0QXdRdnc?oc=5
+- Two days, one drone killer: How defense companies built a wheeled counter-UAS robot at the Army’s Operation Jailbreak (DefenseScoop, Fri, 12 Ju) — https://news.google.com/rss/articles/CBMiqwFBVV95cUxOQ0ozTnRHSGliS1JZbXhiZUQ0aF9nTmlOV0dZWERBRm1RQS1lTnVmNU9rM1pPM2ZpZ1k2UVNYUkxZR05pS3Z4WDNzYmZYZUVpN1FLMklYbnF5Z1puaVdLN0hycWxPWlNsZUh1TVVpMlZuOTBoMFRHUS1EdHBmbTNQOHRMRkFKSDBaUW5PdUpBTFNaUHpTUzhjeGZuNHRhZXJNdXVmcTN5ZUNJbjQ?oc=5

@@ -47,3 +47,4 @@ contradictions: []
 - [MATLAB] What Is Polyspace Bug Finder? (youtube.com, 2026-08-10) — https://www.youtube.com/watch?v=sYCQltmHn_g
 - [밀덕텔링] 10억 짜리 자폭드론 ‘K-루카스’가 풀어야 할 진짜 숙제 (비즈한국, Fri, 07 Au) — https://news.google.com/rss/articles/CBMif0FVX3lxTFBISzhzcWVleV91NmlvVXJsUWp4Ylh5VFpwczhuYkZ4WVFublM5b3Bib1ZZNUo0ZUxUMTRZbnRadlhteXFsUno5ZTFBY3BLNl9Rb0lONWU0X1pIY0Y3N01CNzN6QzRwN2VsMWRnMFh2Mm9lVmtBSW56UlIxX3NWYzg?oc=5
 - 니어스랩, 풍력 자율비행 기술 앞세워 글로벌 방산 드론시장 공략 (드론매거진 뉴스, Mon, 10 Au) — https://news.google.com/rss/articles/CBMiZEFVX3lxTE4yUUJOb2pHMDl3YVhWWnd0eWFHbURRSjJPb185Y2k1aWRGY2lPcnVIbktNVFZib2prM2NMemNNZ1NwX3l0aWxiSzItN1Q1WEpDQjBfX1Uzd2pEOFVvaEh0V3BtaUc?oc=5
+- 치킨값 나오나?…'니어스랩' 청약, 오늘부터 (위키트리, Wed, 12 Au) — https://news.google.com/rss/articles/CBMiVkFVX3lxTFBsOWF3OXhGMUxZMkV1Ri1yOGlNdi1sSm5BUHk1UVpRY1FuNU1lLWFyZ3JjQVJnLXVlREdadkRrR205dC1iMkZGZG1VR0FUVWVUcTh5Tll3?oc=5

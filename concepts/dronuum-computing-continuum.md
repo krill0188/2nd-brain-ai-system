@@ -59,3 +59,5 @@ contradictions: []
 - [단독] 한국 드론기술, 우크라 전장서 시험 중…“스타트업 여러 곳 참여” (이투데이, Mon, 10 Au) — https://news.google.com/rss/articles/CBMiVEFVX3lxTFBVS1gzZjNwNERhMmJoTi11aWpwcFZLN0dMRU9tUEE5VE5Yd2ZrYV93cUlNV3RkTlcxdVp1QUNXMVJXWXduQVQzaVRuZE5DM1NjU190UQ?oc=5
 - [비디오머그] 공항에 폭발물 탑재 드론이…"새로운 위협" (v.daum.net, Mon, 10 Au) — https://news.google.com/rss/articles/CBMiT0FVX3lxTE5rT29XYmZpSXlDczdKa0ZQMnNfTFpRMFhYWmRGWDFuOUZCZlY1TzRyRzlhY19PU0pkRFVNTGdrMUVJUzRKSXRUUVdsclhPUm8?oc=5
 - 우크라, 러 정유중심지 드론 공격…12명 사망 39명 부상 (뉴시스, Mon, 10 Au) — https://news.google.com/rss/articles/CBMiYEFVX3lxTE1HSnNfck93aTlmSU9oZGQtM3R4cVFKMHYyYm1UcDVuWVhOSTZiRm93UlU4RjZETkItX051amNYeVpIQm5fUXZCTG9PemxUdzJoeXZBWmljemhIQXlra1FhNQ?oc=5
+- 우크라 드론 수백대 러 남부 공습…러 "8세 아이 등 2명 사망" (v.daum.net, Wed, 12 Au) — https://news.google.com/rss/articles/CBMiT0FVX3lxTE9IaGZiTkx5cWhOWjlMWmVzRWJDN2ZiSnNFYjdic2lrV2s2QS1td3YyMmduekI4dkJMekhDU2dXZE51d003eTdHYVdWbW5mbFE?oc=5
+- 'AI 탑재 바다의 드론' 무인수상정 개발…K방산 3사 3색 전략 (v.daum.net, Wed, 12 Au) — https://news.google.com/rss/articles/CBMiVEFVX3lxTE1va2RqNlR5eXRNRjgzbUlROV91QnUtOXJuajJ2T0RUY3Vub0hjM1Zwdlp6OHZpdlNhWFdrT2xnaXJBSEdCLWc1ME43bEgxOVN0djVPVg?oc=5
