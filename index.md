@@ -3,7 +3,7 @@
 > Complete catalog of active canonical pages. Each entry is a wikilink followed by
 > a one-line summary, sorted alphabetically within its section.
 >
-> Total pages: 216
+> Total pages: 222
 ## Entities
 - [[cambridge-aerospace]] — 영국 공중 방위/C-UAS 기업, $300M Series C (2026-08).
 - [[mbf-group]] — 폴란드 드론/우주 기업, IRYDA+ X1 및 SPACE Z1 개발.
@@ -41,7 +41,9 @@
 - [[dji]] — 중국 선전 기반 세계 최대 드론 제조사, 소비자/엔터프라이즈 사업부.
 - [[dji-enterprise]] — DJI 산업/기업용 사업부: Matrice, Dock, Zenmuse, DJI Terra.
 - [[matternet]] — 미국 병원 간 의료 물류 드론 배송 기업, M2 시스템.
-- [[ondas]] — 미 방산 드론 기업, Mistral(전술 LUS)·Sentrycs(대드론) 자회사 보유.
+|- [[ondas]] — 미 방산 드론 기업, Mistral(전술 LUS)·Sentrycs(대드론) 자회사 보유.
+|- [[flybyops]] — 핀란드 BVLOS/자율 드론 운용 플랫폼 기업.
+<!-- Alphabetical within section -->
 
 ## Concepts
 - [[clustered-randomized-smoothing]] — 클러스터 기반 랜덤 스무딩, 쿼드로터 충돌률 81% 감소.
@@ -216,9 +218,14 @@
 - [[yolo-v8-4-116]] — YOLO v8.4.116 릴리스 (2026-08-07).
 - [[faa-249-gram-registration-rule]] — FAA 249그램 드론 등록 규정.
 - [[dji-mavic-4-pro]] — DJI Mavic 4 Pro, 100MP 하셀블라드 센서.
-- [[mrope-multi-robot-safety]] — MROPE: 예측 안전 필터+타원 제약압축 기반 다중로봇 안전 협조 전략.
-- [[yolo-v8-4-117]] — YOLO v8.4.117 릴리스, 증강 정확도·배포 보안 개선 (2026-08-09).
-|- [[moe-multimodal-uav-detection]] — MoE 기반 강건한 UAV 멀티모달 객체 탐지(관측 누락 대응).
+|- [[mrope-multi-robot-safety]] — MROPE: 예측 안전 필터+타원 제약압축 기반 다중로봇 안전 협조 전략.
+|- [[yolo-v8-4-117]] — YOLO v8.4.117 릴리스, 증강 정확도·배포 보안 개선 (2026-08-09).
+|- [[yolo-v8-4-119]] — YOLO v8.4.119 릴리스, Intel NPU 분류 성능 개선 및 추적 안정성 향상 (2026-08-13).
+|- [[dji-neo-2-rth]] — DJI Neo 2 Return to Home 기술 소개.
+|- [[dji-osmo-pocket-4p-stabilization]] — DJI Osmo Pocket 4P 3축 짐벌 안정화 기능.
+|- [[ukraine-fight-drone-simulator]] — UFDS 우크라이나 전투 드론 시뮬레이터.
+|- [[uav-task-offloading-traffic-monitoring]] — UAV 기반 교통 모니터링 동적 태스크 오프로딩 연구.
+||- [[moe-multimodal-uav-detection]] — MoE 기반 강건한 UAV 멀티모달 객체 탐지(관측 누락 대응).
 |- [[uav-swarm-air-ground-isac]] — 교차 지역 협력 기반 Air-Ground ISAC UAV 군집(MAPPO).
 |- [[rigid-covert-gnss-spoofing-swarm]] — UAV 군집 GNSS 스푸핑의 상대기하 탐지 사각지대(RigidShift).
 |- [[curriculum-guided-heterogeneous-multi-agent-isac]] — 커리큘럼 기반 이질적 다중 에이전트 ISAC 스웜 시스템.

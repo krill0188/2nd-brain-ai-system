@@ -31,3 +31,6 @@ DJI의 스마트폰 짐벌 시스템. 2026년 8월 공개.
 
 - [[dji-osmo-nano]] — DJI 초소형 액션 카메라
 - [[dji-osmo-pocket-4]] — DJI Osmo Pocket 4
+
+## 📰 최근 관련 소식
+- [DJI] Put Your Thumbs Here | DJI Osmo Mobile 8 (youtube.com, 2026-08-12) — https://www.youtube.com/watch?v=V3Z6601nOug

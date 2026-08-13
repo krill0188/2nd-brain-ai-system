@@ -30,3 +30,6 @@ DJI의 249g 이하 초경량 여행용 드론. 강풍에서도 안정적인 비�
 - [[faa-249-gram-registration-rule]] — FAA 249g 등록 규정
 - [[dji-mavic-4-pro]] — DJI Mavic 4 Pro
 - [[drone-hw]] — 드론 하드웨어 도메인 개요
+
+## 📰 최근 관련 소식
+- [DJI] Under 249g. Extremely High Winds. Still Stable. | DJI Mini 5 Pro (youtube.com, 2026-08-13) — https://www.youtube.com/watch?v=0wabgytrt_U

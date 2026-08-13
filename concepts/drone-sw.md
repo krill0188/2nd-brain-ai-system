@@ -30,3 +30,6 @@ domain: flight-control
 - [[px4-system-architecture]] — PX4 소프트웨어 아키텍처
 - [[ardupilot-architecture]] — ArduPilot 아키텍처
 - [[mavros]] — ROS↔MAVLink 브릿지
+
+## 📰 최근 관련 소식
+- Counter-UAS software upgrade demonstrated on U.S. Army air-defense system (Military Embedded Systems, Wed, 12 Au) — https://news.google.com/rss/articles/CBMivgFBVV95cUxOU2pZSUtKcGVoMWpnWnBQdjEzamRZdm9mclZqT0M3SUsxN1RyZHVDSEg4V0oteDE5Q2JDX2NOZWxBa3ZTUlAyX2dIckpuMFk4UXY0bVFySGg5b1J6Q01mRFBKNDk4akFqQkMyV2NubFZIb1VQbGFGVXlhRTdKeXRXWVJVWmhGOWFhTTFRQk5GYlFSQ2ZPRjdkN1N6ZWF4bGZfY3c2T3dqRE02QjU3UFFNSnZvZEY2cTdueGwzSW9n?oc=5

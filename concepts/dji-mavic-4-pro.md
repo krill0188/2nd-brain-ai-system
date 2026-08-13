@@ -24,3 +24,6 @@ DJI의 소비자용 항공 촬영 드론. 핵심 특징은 100MP 하셀블라드
 
 - [[dji]] — 모기업 DJI
 - [[dji-osmo-action-6]] — 동시대 DJI 촬영 라인업
+
+## 📰 최근 관련 소식
+- [DJI] Under 249g. Extremely High Winds. Still Stable. | DJI Mini 5 Pro (youtube.com, 2026-08-13) — https://www.youtube.com/watch?v=0wabgytrt_U

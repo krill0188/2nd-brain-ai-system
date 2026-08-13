@@ -14,6 +14,31 @@
 
 ## [2026-08-13] ingest | RSS 뉴스 및 연구 논문 인제스트
 
+## [2026-08-14] ingest | RSS 뉴스 및 연구 논문 인제스트
+
+- Source files from `inbox/`:
+  - `fetch-2026-08-14-rss-dronedj.md`
+  - `fetch-2026-08-14-rss-dronelife.md`
+  - `fetch-2026-08-14-yolo.md`
+  - `fetch-2026-08-14-yt-guess-how-the-drone-returns-to-its-starting-point-neo-2.md`
+  - `fetch-2026-08-14-yt-cutest-stabilization-test-youll-see-today-dji-osmo-pocket-4p.md`
+  - `fetch-2026-08-14-yt-ukraine-fight-drone-simulator-not-just-a-game.md`
+  - `fetch-2026-08-14-crossref-dynamic-adaptive-task-offloading-for-uav-based-road-traffic-.md`
+- Skipped (out of scope/old):
+  - `fetch-2026-08-14-rss-dronelife.md` (EIVIE/HP Additive Manufacturing - hardware 범위 외)
+  - `fetch-2026-08-14-rss-dronelife.md` (Insta360 vs DJI - 중복/비교 분석용)
+  - `fetch-2026-08-14-rss-dronelife.md` (SimActive Correlator3D - 매핑 소프트웨어)
+- Created entities:
+  - `entities/flybyops.md` — 핀란드 BVLOS 드론 운용 플랫폼 기업
+- Created concepts:
+  - `concepts/yolo-v8-4-119.md` — YOLO v8.4.119 릴리스
+  - `concepts/dji-neo-2-rth.md` — DJI Neo 2 RTH 기술
+  - `concepts/dji-osmo-pocket-4p-stabilization.md` — DJI Osmo Pocket 4P 짐벌
+  - `concepts/ukraine-fight-drone-simulator.md` — UFDS 시뮬레이터
+  - `concepts/uav-task-offloading-traffic-monitoring.md` — UAV 교통 모니터링 태스크 오프로딩
+- Updated: `index.md` (222 pages), `log.md`
+- Moved sources to: `inbox/processed/` (7 files)
+
 - Source files from `inbox/`:
   - `fetch-2026-08-13-rss-dronedj.md`
   - `fetch-2026-08-13-rss-dronelife.md`
