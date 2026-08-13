@@ -920,3 +920,32 @@
 **의도적으로 손대지 않은 것**: mavlink 계열 4개 페이지의 내용 중복 정도(제목 2건이 "MAVLink Advanced Features"로 동일)는 병합하면 더 깔끔할 수 있으나, 실제 콘텐츠가 다르고(패킷구조 vs RAS/RTPS 등) entities/mavlink.md 허브에서 의도적으로 분기된 구조로 보여 이번 세션 범위(카탈로그 정합성)를 벗어나 병합하지 않음 — 다음 콘텐츠 정리 세션 후보로 남김.
 
 - Updated: `index.md` (Total pages 206→207, 표기상으론 +16이지만 오분류 4건 제거가 상쇄해 순증 +1)
+
+## [2026-08-13] lint | daily-ingest 자동 경로에 SCHEMA.md 9필드 계약 게이트 신설
+
+`CURRENT_STATE_AUDIT.md`(2026-08-01)가 발견한 "README가 주장하는 승인 게이트가 실제 daily-ingest(04:00 hermes cron, `custom/llm-wiki-ains` 스킬)엔 없다"는 문제를 처음으로 코드 게이트로 닫음. `research-promote.py::validate_item()`은 research/ 경로만 검증하고 daily-ingest는 무검증이었다.
+
+**구현**: `scripts/lint-knowledge.py`(정규식 frontmatter 파서, 9필드 계약 + wikilink 최소 2개 규칙 — 새 규칙 아님, `SCHEMA.md`/`SHAPES.md`가 이미 정의했지만 "강제 방식: 수동 검토"였던 것만 코드화). `--full`(전체 218편 재검사, 위반 0건 확인 — 기존 페이지 무효화 없음), `--recent-hours N`(mtime 기준, git 커밋 타이밍과 무관), `--quiet`(위반 없으면 완전 침묵) 3개 모드.
+
+**배선 2곳**: (1) `ai-control.sh cmd_run_ingest` — 수동 트리거용. (2) **`~/.hermes/scripts/2nd-lint-knowledge.sh` + hermes cron 잡 `2nd-lint-knowledge`(04:12, 04:00 daily-ingest 완료 후 ~ 04:20 dronewiki-self-update 전, `--no-agent --deliver telegram`)** — 이게 진짜 게이트. `hermes cron run`으로 클린 상태(`Status: silent`)와 의도적 위반 주입 상태(`Status: script failed` + 위반 상세 telegram 발송용 캡처) 양쪽 다 실제 잡 실행으로 종단 검증.
+
+**세션 중 자기수정 기록**: 처음엔 `ai-control.sh` 배선만 해두고 "완료"라 보고했으나, 실제 04:00 자동잡이 `ai-control.sh`를 전혀 거치지 않고 `jobs.json`에 독립 등록된 별도 스킬을 직접 호출한다는 걸 뒤늦게 발견 — 마스터 확인 질문("완료 한 것인가?")에 재검증하다 잡음. 자동화 게이트를 "완료"로 보고하기 전엔 실제 스케줄러 등록 정보(`~/.hermes/cron/jobs.json`)까지 확인해야 한다는 교훈.
+
+- 신규: `scripts/lint-knowledge.py`, `scripts/test_lint_knowledge.py`(10/10 통과), `~/.hermes/scripts/2nd-lint-knowledge.sh`
+- 수정: `scripts/ai-control.sh`
+- 커밋: `dd7e910`
+
+## [2026-08-13] ontology | ONTOLOGY_SPEC.md를 실제 OWL로 빌드(rdflib+owlready2, HermiT 추론 검증)
+
+마스터 승인으로 G5 트리거(500페이지/3000엣지, `GRAPH_SCHEMA.md` §5) 미도달 상태에서 실험적 진행. **자동 파이프라인엔 배선하지 않음** — canonical Markdown+JSON과 OWL 트리플의 이중 표현을 매번 동기화해야 하는 새 기술부채(이미 알려진 "하이브리드 검색 로직 2중 구현" 패턴의 3번째 반복)를 만들지 않기 위해 수동 실행 전용 산출물로 유지.
+
+**구현**: `scripts/build-owl.py` — `ontology/class-hierarchy.json`(53클래스) 그대로 전사 + `ONTOLOGY_SPEC.md` §2/§3(object/data property, TBox만 — Track B 런타임 인스턴스 없음) + canonical 문서 195편을 `CanonicalPage` 인스턴스(도메인 클래스에 직접 타이핑하지 않고 `aboutClass`로 메타 연결 — G1이 세운 "위키 문서 ≠ 도메인 인스턴스" 카테고리 오류 방지 원칙을 그대로 따름). HermiT 추론기(Java, `.venv`에서 owlready2 경유 실행) 결과: **일관성 검사 통과, 모순 없음**.
+
+**빌드하며 실제 발견한 것 2건** (JSON 상태로는 안 드러났던 것):
+1. `ONTOLOGY_SPEC.md` §2 원본이 `hasSensor`/`hasActuator` 역관계로 `mountedOn`을 중복 사용 — OWL `inverseOf`는 1:1이라 실제 빌드 시 충돌. `sensorMountedOn`/`actuatorMountedOn`으로 분리, 재발 방지 테스트 추가.
+2. `ontologyClass: "Technology"`(195개 노드 중 106개, 54%)가 `class-hierarchy.json` 53개 클래스 어디에도 없음 — Phase O1 매핑 당시의 미승격 임시 버킷으로 추정. 억지로 연결하지 않고 리포트만 함(추후 판단 사항으로 남김, SCHEMA.md "억지로 분류하지 않는다" 원칙 그대로 적용).
+
+- 신규: `scripts/build-owl.py`, `scripts/test_build_owl.py`(3/3 통과), `scripts/requirements-owl.txt`
+- `.venv`에 `rdflib==7.6.0`, `owlready2==0.51` 설치(Java 23 이미 설치돼있어 HermiT 추가 설치 불필요)
+- 산출물: `.ua/ontology.owl`(RDF/XML, git 미추적 — `.ua/`는 파생 산출물)
+- 커밋: `d32332d`
