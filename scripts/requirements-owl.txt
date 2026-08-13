@@ -1,0 +1,5 @@
+# build-owl.py 전용 의존성. embed-docs.py용 .venv(격리된 Python 3.11,
+# 시스템 3.14는 onnxruntime 미지원이라 분리됨)에 함께 설치해 재사용한다.
+# 설치: source .venv/bin/activate && pip install -r scripts/requirements-owl.txt
+rdflib==7.6.0
+owlready2==0.51
