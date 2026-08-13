@@ -269,6 +269,21 @@ cmd_run_ingest() {
     info "knowledge-graph.json 갱신 중..."
     bash "$HOME/2nd/scripts/update-graph.sh" 2>/dev/null && ok "그래프 갱신 완료" || warn "그래프 갱신 실패 (ingest는 정상 완료)"
   fi
+
+  # SCHEMA.md 9필드 계약 검증 (갭 A — daily-ingest 경로도 research-promote.py와
+  # 동일한 검증을 받는다. CURRENT_STATE_AUDIT.md 2026-08-01이 발견한, 이 경로에
+  # 자동 검증이 전혀 없던 문제를 닫는 게이트. 파일은 이미 hermes cron이 써버린
+  # 뒤라 사전 차단은 못 하지만, 위반을 조용히 넘어가지 않고 크게 보고한다.)
+  if [[ -f "$HOME/2nd/scripts/lint-knowledge.py" ]]; then
+    info "SCHEMA.md 9필드 계약 검증 중 (lint-knowledge.py)..."
+    local lint_output
+    if lint_output=$(python3 "$HOME/2nd/scripts/lint-knowledge.py" 2>&1); then
+      ok "lint-knowledge 통과 — 이번 ingest에서 SCHEMA 위반 없음"
+    else
+      warn "lint-knowledge 위반 발견 (아래 목록 — 텔레그램 보고 후 마스터 확인 필요):"
+      printf '%s\n' "$lint_output" | while IFS= read -r line; do warn "  $line"; done
+    fi
+  fi
 }
 
 cmd_run_lint() {
