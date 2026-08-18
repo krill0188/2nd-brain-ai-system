@@ -623,15 +623,20 @@ except Exception as ex:
 # 나와, 모든 레코드의 link가 동일값(...artiId=)으로 생성되어 dedup(seen)에 걸려
 # 사실상 1건만 저장되던 버그. articleInfo.attrib에서 직접 가져오도록 수정.
 # 키워드도 "드론" 단일어라 UAV/무인기/무인비행체 동의어를 OR로 추가해 커버리지 확대.
+# regDateFrom/regDateTo(등록일 범위, 공식 활용가이드 확인)로 최근 7일 등록분만
+# 요청 — 검색결과 상위가 항상 오래된 인기논문이라 새 논문을 놓치는 걸 방지.
 if kci_key:
     try:
         kci_keywords = ["드론", "UAV", "무인기", "무인비행체"]
+        reg_from = (date.today() - timedelta(days=7)).strftime("%Y%m%d")
+        reg_to = date.today().strftime("%Y%m%d")
         cnt = 0
         for kw in kci_keywords:
             if cnt >= 4:
                 break
             url = ("https://open.kci.go.kr/po/openapi/openApiSearch.kci?apiCode=articleSearch"
-                   f"&key={kci_key}&title={urllib.parse.quote(kw)}&displayCount=10")
+                   f"&key={kci_key}&title={urllib.parse.quote(kw)}"
+                   f"&regDateFrom={reg_from}&regDateTo={reg_to}&displayCount=10")
             root = ET.fromstring(urllib.request.urlopen(url, timeout=20).read())
             for rec in root.iter("record"):
                 if cnt >= 4:
