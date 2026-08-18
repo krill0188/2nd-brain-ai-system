@@ -618,30 +618,41 @@ except Exception as ex:
     print(f"  ⚠️  crossref 실패: {ex}", file=sys.stderr)
 
 # 2) KCI — 국내 등재논문 (키 설정 시 활성화)
+# 2026-08-19: 실제 응답 스키마 실측 확인 결과 article-id는 <articleInfo> 태그의
+# "속성"이지 하위 태그가 아니라 findtext(".//article-id")로는 항상 빈 문자열이
+# 나와, 모든 레코드의 link가 동일값(...artiId=)으로 생성되어 dedup(seen)에 걸려
+# 사실상 1건만 저장되던 버그. articleInfo.attrib에서 직접 가져오도록 수정.
+# 키워드도 "드론" 단일어라 UAV/무인기/무인비행체 동의어를 OR로 추가해 커버리지 확대.
 if kci_key:
     try:
-        url = ("https://open.kci.go.kr/po/openapi/openApiSearch.kci?apiCode=articleSearch"
-               f"&key={kci_key}&title={urllib.parse.quote('드론')}&displayCount=10")
-        root = ET.fromstring(urllib.request.urlopen(url, timeout=20).read())
+        kci_keywords = ["드론", "UAV", "무인기", "무인비행체"]
         cnt = 0
-        for rec in root.iter("record"):
-            if cnt >= 4: break
-            def ft(*names):
-                for n in names:
-                    v = rec.findtext(f".//{n}")
-                    if v: return v.strip()
-                return ""
-            title = ft("article-title", "articleTitle", "title")
-            art_id = ft("article-id", "articleId", "url", "uci")
-            if not title: continue
-            link = art_id if art_id.startswith("http") else f"https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId={art_id}"
-            if link in seen: continue
-            authors = ft("author", "authors", "author-group")
-            journal = ft("journal-name", "journalName", "journal-title")
-            pub = ft("pub-year", "pubYear", "publication-date")
-            abstract = ft("abstract", "abstract-ko")[:800]
-            write_paper(title, link, classify(title + " " + abstract), "KR", authors, journal, pub, abstract, "kci")
-            cnt += 1
+        for kw in kci_keywords:
+            if cnt >= 4:
+                break
+            url = ("https://open.kci.go.kr/po/openapi/openApiSearch.kci?apiCode=articleSearch"
+                   f"&key={kci_key}&title={urllib.parse.quote(kw)}&displayCount=10")
+            root = ET.fromstring(urllib.request.urlopen(url, timeout=20).read())
+            for rec in root.iter("record"):
+                if cnt >= 4:
+                    break
+                def ft(*names):
+                    for n in names:
+                        v = rec.findtext(f".//{n}")
+                        if v: return v.strip()
+                    return ""
+                article_info = rec.find(".//articleInfo")
+                art_id = (article_info.attrib.get("article-id", "") if article_info is not None else "")
+                title = ft("article-title", "articleTitle", "title")
+                if not title or not art_id: continue
+                link = f"https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId={art_id}"
+                if link in seen: continue
+                authors = ft("author", "authors", "author-group")
+                journal = ft("journal-name", "journalName", "journal-title")
+                pub = ft("pub-year", "pubYear", "publication-date")
+                abstract = ft("abstract", "abstract-ko")[:800]
+                write_paper(title, link, classify(title + " " + abstract), "KR", authors, journal, pub, abstract, "kci")
+                cnt += 1
         if cnt: print(f"  ✅ [paper] KCI 국내논문 {cnt}편 → inbox/")
         else: print("  ⚠️  kci: 응답 파싱 0건 — 키/스펙 확인 필요", file=sys.stderr)
     except Exception as ex:
