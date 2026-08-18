@@ -518,6 +518,17 @@ fetch_arxiv 'all:"UAV flight control" OR all:"quadrotor control"' "flight"  "fli
 fetch_arxiv 'all:"drone swarm" OR all:"autonomous UAV"'          "swarm"   "ai-autonomy"    3
 fetch_arxiv 'all:"UAV communication" OR all:"drone network"'     "comms"   "comms-protocol" 3
 
+# 2026-08-19 확장: 자동수집이 커버 못 하던 도메인(perception/hardware/LLM-agent/
+# security/GCS software) 5종 추가. 기존 3쿼리는 flight-control·swarm(ai-autonomy)·
+# comms-protocol만 다뤄 drone-ai(perception)·drone-hw·voice-control/ai-agent는
+# 사실상 마스터의 수동 정밀재검색에만 의존하고 있었음. domain 값은 drone-wiki-web
+# lib/types.ts의 DOMAIN_META 키와 반드시 일치시킬 것.
+fetch_arxiv 'all:"UAV object detection" OR all:"drone visual navigation" OR all:"UAV SLAM"'          "perception"    "ai-autonomy"   3
+fetch_arxiv 'all:"UAV battery management" OR all:"drone hardware design" OR all:"quadrotor actuator"' "hardware"      "hardware"      3
+fetch_arxiv 'all:"UAV language model" OR all:"drone LLM agent" OR all:"UAV vision-language model"'    "llm-agent"     "ai-autonomy"   3
+fetch_arxiv 'all:"UAV jamming detection" OR all:"drone GPS spoofing" OR all:"UAV secure communication"' "security"    "comms-protocol" 3
+fetch_arxiv 'all:"ground control station" OR all:"UAV mission planning software"'                     "gcs"           "gcs-software"  3
+
 # ── Crossref 저널논문 + KCI 국내논문 수집 (inbox + news-feed) ───
 KCI_KEY=$(grep '^KCI_API_KEY=' "$HOME/2nd/.env" 2>/dev/null | cut -d= -f2 || true)
 python3 - "$INBOX" "$TODAY" "$SEEN_RSS" "${KCI_KEY:-}" <<'PYEOF'
