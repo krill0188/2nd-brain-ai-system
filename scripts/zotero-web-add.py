@@ -124,18 +124,38 @@ def find_existing_by_title(title: str) -> str | None:
 
 
 def create_parent_item(paper: dict, dry_run: bool) -> str | None:
+    # source: "arxiv"(기본값, 하위호환) | "crossref" | "kci" — 2026-08-19 확장.
+    # 기존엔 itemType/repository/archiveID가 전부 arXiv 전용으로 하드코딩돼 있어
+    # Crossref/KCI 논문을 넣으면 "repository: arXiv"로 잘못 태깅됐다.
+    source = paper.get("source", "arxiv")
+    if source == "arxiv":
+        item_type = "preprint"
+        repository = "arXiv"
+        archive_id = f"arXiv:{paper['arxiv_id']}" if paper.get("arxiv_id") else ""
+        doi = paper.get("doi", f"10.48550/arXiv.{paper['arxiv_id']}" if paper.get("arxiv_id") else "")
+    else:
+        # Crossref/KCI는 둘 다 저널 게재 논문 — journalArticle이 적합. archiveID는
+        # 없음(arXiv 전용 개념), journal-name이 있으면 publicationTitle에 기록.
+        item_type = "journalArticle"
+        repository = ""
+        archive_id = ""
+        doi = paper.get("doi", "")
     item = {
-        "itemType": "preprint",
+        "itemType": item_type,
         "title": paper["title"],
         "creators": build_creators(paper.get("authors", [])),
         "abstractNote": paper.get("abstract", ""),
         "date": paper.get("date", ""),
-        "DOI": paper.get("doi", f"10.48550/arXiv.{paper['arxiv_id']}" if paper.get("arxiv_id") else ""),
+        "DOI": doi,
         "url": paper.get("url", ""),
-        "repository": "arXiv",
-        "archiveID": f"arXiv:{paper['arxiv_id']}" if paper.get("arxiv_id") else "",
         "tags": [{"tag": "auto:2nd-brain"}] + ([{"tag": paper["tag"]}] if paper.get("tag") else []),
     }
+    if repository:
+        item["repository"] = repository
+    if archive_id:
+        item["archiveID"] = archive_id
+    if paper.get("journal"):
+        item["publicationTitle"] = paper["journal"]
     if dry_run:
         print(f"  [DRY-RUN] 아이템 생성 → {item['title']}")
         return None

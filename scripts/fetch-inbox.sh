@@ -587,6 +587,23 @@ tags: [drone, {domain}, paper, {src_tag}]
 
 {abstract or "(초록 미제공 — 링크 참조)"}
 """)
+
+    # 2026-08-19: arXiv는 fetch_arxiv()가 자동으로 Zotero에 push했지만
+    # Crossref/KCI(이 함수 경유)는 push 로직이 아예 없어 원문 보존 창고에
+    # 안 들어가고 있었음(마스터 지적 "Zotero에서 완벽하게 수집"). PDF 직접
+    # 다운로드는 페이월/원문비공개가 흔해 시도하지 않고, 메타데이터만이라도
+    # Zotero에 남겨 라이브러리에서 나중에 사람이 원문을 붙일 수 있게 한다.
+    try:
+        doi = url.rsplit("https://doi.org/", 1)[-1] if "doi.org" in url else ""
+        push_payload = json.dumps({
+            "title": title, "authors": authors.split(", ") if authors else [],
+            "abstract": abstract, "doi": doi, "url": url, "date": published,
+            "journal": journal, "source": src_tag,
+        }, ensure_ascii=False)
+        subprocess.run(["python3", os.path.expanduser("~/2nd/scripts/zotero-web-add.py")],
+                       input=push_payload, text=True, capture_output=True, timeout=60)
+    except Exception:
+        pass
     feed_items.append({"title": title, "url": url, "source": "doi.org" if "doi.org" in url else "kci.go.kr",
                        "domain": domain, "type": "paper", "region": region,
                        "summary": (abstract or journal)[:200], "published": published})
