@@ -40,3 +40,6 @@ note: "Raw source not preserved in repo — found during 2026-08-10 provenance a
 - [[computer-vision-drone]]
 - [[drone-ai]]
 - [[drone-hw]]
+
+## 📰 최근 관련 소식
+- Powerful Public Safety Technology Needs Powerful Guardrails: What Flock’s Camera Controversy Means for Drones (dronelife.com, Fri, 14 Au) — https://dronelife.com/2026/08/14/public-safety-technology-drones-flock-guardrails/

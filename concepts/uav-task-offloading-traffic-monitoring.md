@@ -36,3 +36,6 @@ UAV 기반 도로 교통 모니터링 시스템에서의 동적 적응형 태스
 - [[ops-mission]] — 드론 운용/미션 도메인 개요
 - [[drone-ai-agents]] — 자율 의사결정, 다중 에이전트 협력
 - [[computing-continuum]] — 컴퓨팅 연속체 기반 스마트 드론 애플리케이션
+
+## 📰 최근 관련 소식
+- Dynamic adaptive task offloading for UAV-based road traffic monitoring (doi.org, 2027-1) — https://doi.org/10.1016/j.future.2026.108750

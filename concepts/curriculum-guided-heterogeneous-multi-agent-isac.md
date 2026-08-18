@@ -48,3 +48,6 @@ Curriculum-based Heterogeneous-Agent Proximal Policy Optimization:
 ## 출처
 
 Kang Yan et al., "Curriculum-Guided Heterogeneous Multi-Agent Intelligence for Multi-UAV Cooperative ISAC", arXiv:2605.17905, 2026-05-18.
+
+## 📰 최근 관련 소식
+- [freeCodeCamp.org] System Design for AI Agents – Building a Multi-Agent PR Reviewer (youtube.com, 2026-08-14) — https://www.youtube.com/watch?v=iqRcGCah0Kw

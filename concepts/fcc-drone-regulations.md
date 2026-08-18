@@ -52,3 +52,7 @@ FAA가 워싱턴주 Gorge Drones에 미인증 농업용 드론 운항(2025년 �
 
 ## 📰 최근 관련 소식
 - DJI Warns FCC Proposal Could Restrict Widely Used Commercial Drones (dronelife.com, Mon, 10 Au) — https://dronelife.com/2026/08/10/dji-fcc-drone-restrictions-commercial-models/
+- [UAV Coach] FCC “Military Grade” Drone Ban Explained (youtube.com, 2026-08-14) — https://www.youtube.com/watch?v=TMJI78x-lyo
+- 드론도 미사일도 막는다…K2 전차, 3.4조 투입해 `생존성` 강화 (디지털데일리, Fri, 14 Au) — https://news.google.com/rss/articles/CBMiZEFVX3lxTE5jakF6czVWTUYtenBULWxfaWVoX0F2bzBHVThvQWZVWXpFb3poQmhHYWhVTzJVRFNDLUlNVEdHVU1IYWlESy1yNDRKQTJFTTVWYWNEUFhkOEd0ZzRzMkRFNFBaQTU?oc=5
+- FCC Revokes Drone Approvals After U.S. Assembler Denies Any Connection (dronelife.com, Wed, 12 Au) — https://dronelife.com/2026/08/12/fcc-drone-approval-revocation-odyssey-robot/
+- Engineering Without Compromise: How HP Additive Manufacturing Helped EIVIE Build an NDAA-Compliant Drone (dronelife.com, Thu, 13 Au) — https://dronelife.com/2026/08/13/ndaa-compliant-drone-manufacturing/

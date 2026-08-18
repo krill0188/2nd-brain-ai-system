@@ -123,3 +123,6 @@ rclcpp::SensorDataQoS()
 - [[ros2-drone-integration]] — ROS2 연동 개요
 - [[px4-offboard-control]] — Offboard 제어
 - [[mavsdk]] — MAVSDK 대안
+
+## 📰 최근 관련 소식
+- Clustered Randomized Smoothing for Stochastic Prediction Functions (arxiv.org, 2026-08-12) — http://arxiv.org/abs/2608.12037v1

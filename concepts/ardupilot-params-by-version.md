@@ -52,3 +52,6 @@ ArduPilot(Copter/Plane/Rover)은 점 버전마다 파라미터 신설·기본값
 
 - 릴리즈노트: https://github.com/ArduPilot/ardupilot/releases
 - 전체 파라미터(버전별): https://ardupilot.org/copter/docs/parameters.html
+
+## 📰 최근 관련 소식
+- 에이럭스, 상반기 매출 371억 원…전년 대비 55% 증가 (한국경제, Fri, 14 Au) — https://news.google.com/rss/articles/CBMiWkFVX3lxTE9VSm9DUlhIQ3EwNE9TVlZ2clVlQU5DOHV0MU1MOWhvbkUySkp5SHVQeVMzMkZmRHRDa3hkTTN6LTFodm9iWE81cHFfaDNfY3FobmlNeU9aWEc0dw?oc=5

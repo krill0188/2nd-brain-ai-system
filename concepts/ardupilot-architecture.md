@@ -160,3 +160,6 @@ return update, 1000
 ## 📰 최근 관련 소식
 - 고령층 많은 농업 현장이 폭염에 가장 취약…드론 띄워서 살핀다 (연합뉴스, Wed, 05 Au) — https://news.google.com/rss/articles/CBMiW0FVX3lxTFBLdElwUE03UmVsRlpCcEpNSHRBQmtBTGw3ZnFDbEduWTZTbTRZMXk4ZlBwcHYwMi1uQlA3eDR6QjRPT0xOa3l2QVF0NmVUbm5lWG1iQnRNa21lNTDSAWBBVV95cUxQZXFtT1l1WHRQRUFoR1J4amtHeFV6eEJxVjFTSkhzTFYwT1c3dEg0NkZ1RTROZkt1U1FoNHBHZUlJSnBZMmt2bkRxUWc4R1hVWmF2Smo2bzllcDI5RUhsRF8?oc=5
 - [Painless360] Setting up NEOPixel LEDs and Sik3 Telemetry radios (Ardupilot Quad Build using a HolyBro X650) (youtube.com, 2026-08-09) — https://www.youtube.com/watch?v=D1L_mOhDvYk
+- [Painless360] How to Maiden an Ardupilot quad safely every time (Using a HolyBro X650 dev. kit) (youtube.com, 2026-08-16) — https://www.youtube.com/watch?v=zw1VgZWbs14
+- [DJI] Guess how the drone returns to its starting point !｜Neo 2 (youtube.com, 2026-08-12) — https://www.youtube.com/watch?v=hfLhpyLGzaM
+- Engineering Without Compromise: How HP Additive Manufacturing Helped EIVIE Build an NDAA-Compliant Drone (dronelife.com, Thu, 13 Au) — https://dronelife.com/2026/08/13/ndaa-compliant-drone-manufacturing/

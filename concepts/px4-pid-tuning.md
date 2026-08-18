@@ -298,3 +298,4 @@ MC_DTERM_CUTOFF: 30
 
 ## 📰 최근 관련 소식
 - 중국, 美 대상 드론·핵심부품 수출통제 강화 (뉴시스, Wed, 05 Au) — https://news.google.com/rss/articles/CBMiYEFVX3lxTE9KZUtyQ2tOWWpIWW1DM0ZpdXBsUTFodVp0ai12YmU3QmN1Tmd2YXFPOEtINFliTU1SdElZNGpOclBvNGVhVXBXdHl4QUZRX0JKVWxwMThXWnpVX2pOTzJYV9IBeEFVX3lxTE9KRTZneHpFODBaODlfQmx2OTZ5M1IwZzg4dHBvS3FTdjFJY1RKZUd6R0hLQTFCME04dS0tenllelVNSWhnb3lJd0ZNd29Bb0EzQjVuUWNTbkJTY05nX084SkxkWGE3SWlFeEVBRjh3enpYcG1aRkFHXw?oc=5
+- 에이럭스, 상반기 매출 371억 원…전년 대비 55% 증가 (한국경제, Fri, 14 Au) — https://news.google.com/rss/articles/CBMiWkFVX3lxTE9VSm9DUlhIQ3EwNE9TVlZ2clVlQU5DOHV0MU1MOWhvbkUySkp5SHVQeVMzMkZmRHRDa3hkTTN6LTFodm9iWE81cHFfaDNfY3FobmlNeU9aWEc0dw?oc=5

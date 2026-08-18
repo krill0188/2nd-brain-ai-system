@@ -59,3 +59,6 @@ contradictions: []
 ## 출처
 
 Jun Yang et al., "UAV-DETR: DETR for Anti-Drone Target Detection", arXiv:2603.22841, 2026-03-24.
+
+## 📰 최근 관련 소식
+- Pennsylvania National Guard Becomes Hub for Pentagon’s Drone Dominance Program (dronelife.com, Fri, 14 Au) — https://dronelife.com/2026/08/14/pennsylvania-national-guard-drone-dominance/

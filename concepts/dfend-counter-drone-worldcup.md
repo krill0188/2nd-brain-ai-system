@@ -33,3 +33,5 @@ contradictions: []
 - 센서뷰, '대드론 방어 시스템 개발' 정부과제 최종 선정 (파이낸스스코프, Fri, 07 Au) — https://news.google.com/rss/articles/CBMiakFVX3lxTE92WERCcUtpMHY2YkZuX05jUk5UUXoxeTVrTjMtNmEzX0VWellGUnc4OE93Snd1UC02V0UtRDF2SkowU2x2UmJHN1RhNlJLM0lWLUY2N19vbGpLMDJncm1UeWtXeHhrLXFFNFE?oc=5
 - [MATLAB] What Is Polyspace Bug Finder? (youtube.com, 2026-08-10) — https://www.youtube.com/watch?v=sYCQltmHn_g
 - 英 대드론 방산 ‘케임브리지 에어로스페이스’, 3억 달러 투자유치…기업가치 34억 달러 (wowtale.net, Tue, 11 Au) — https://news.google.com/rss/articles/CBMiT0FVX3lxTFBSWDdFRGhRcFNOS2pHSm5Icnl3U3lqUnAwWTBqRktkenRvRUZDUGV3ejJoaWN0R3J6V0ZLUkZfNTZabmVGamFIc3NuTV9xdUU?oc=5
+- 휴먼아고스, 기동형 대드론 체계 첫 해외 수출…글로벌 방산시장 노크 (파이낸셜뉴스, Tue, 11 Au) — https://news.google.com/rss/articles/CBMiWkFVX3lxTE5EZFV6enlYYk9CdjN5R3BrMzNMcU5yeWl0WWhpMmhjekJvUDBtYkFZZ2lxVE9GTUFfS2JYNU9URXBJS2w5QmpJUHdRdzBVZVJaaXY4MEI2WFZLQQ?oc=5
+- 휴먼아고스, 기동형 대드론 체계 첫 수출…해외 방산시장 공략 (팍스경제TV, Tue, 11 Au) — https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9IeFZPMzhoUXc1VXpmN3M3MUhCZXB1bFNqSG5fVFpOTmR2ckpRZWNTaGxacjFLeHBpbjljNmJOWEVtS1dxYXBuczNMU2ZyaC1tTWRYT3ZlUm9XV2hvQmNsSHVBd01mY1k?oc=5

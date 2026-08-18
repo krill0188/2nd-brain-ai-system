@@ -31,3 +31,4 @@ contradictions: []
 
 ## 📰 최근 관련 소식
 - 英 대드론 방산 ‘케임브리지 에어로스페이스’, 3억 달러 투자유치…기업가치 34억 달러 (wowtale.net, Tue, 11 Au) — https://news.google.com/rss/articles/CBMiT0FVX3lxTFBSWDdFRGhRcFNOS2pHSm5Icnl3U3lqUnAwWTBqRktkenRvRUZDUGV3ejJoaWN0R3J6V0ZLUkZfNTZabmVGamFIc3NuTV9xdUU?oc=5
+- Cambridge Aerospace Announces $300M Series C Raise (www.suasnews.com, Wed, 12 Au) — https://www.suasnews.com/2026/08/cambridge-aerospace-announces-300m-series-c-raise/

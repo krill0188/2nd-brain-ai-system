@@ -1,11 +1,11 @@
 ---
 title: FPV 드론 하드웨어 동향
 created: 2026-07-29
-updated: 2026-07-29
+updated: 2026-08-16
 type: concept
 tags: [drone, drone-hw]
-sources: [inbox/fetch-2026-07-29-rss-oscarliang-fpv.md]
-confidence: medium
+sources: [inbox/fetch-2026-07-29-rss-oscarliang-fpv.md, inbox/fetch-2026-08-15-rss-oscarliang-fpv.md]
+confidence: high
 contested: false
 contradictions: []
 domain: hardware
@@ -48,6 +48,9 @@ domain: hardware
 - [[betaflight]] — FPV 드론용 비행 제어 소프트웨어
 - [[flight-controller-hardware]] — FC 하드웨어 개요
 - [[drone-payload-systems]] — 카메라 및 페이로드 통합
+- [[fpv-motor-selection-guide]] — FPV 드론 모터 선택 가이드
 
 ## 📰 최근 관련 소식
-- [Joshua Bardwell] 70% more video range & penetration! // RUSHFPV 3.3 GHZ VIDEO RECEIVER (youtube.com, 2026-08-07) — https://www.youtube.com/watch?v=BtauO-T3GBg
+- [Joshua Bardwell] 70% more video range & penetration! // RUSHFPV 3.3 GHZ VIDEO RECEIVER (youtube.com, 2026-08-07)
+- **2026-08-13**: FPV 드론 모터 선택 고려사항 — 모터 사이즈, KV 등급, 프로펠러 호환성 (Oscar Liang)
+- [Joshua Bardwell] Q&A Livestream - August 16, 2026 (youtube.com, 2026-08-16) — https://www.youtube.com/watch?v=irGXC4fiRoY

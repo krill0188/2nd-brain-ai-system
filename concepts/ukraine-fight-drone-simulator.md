@@ -30,3 +30,6 @@ UFDS는 단순한 게임이 아닌 실제 전투 드론 운용 환경을 모사�
 - [[drone-simulation]] — Gazebo, jMAVSim, SITL, 멀티 기체 시뮬레이션
 - [[fpv-hardware]] — 2026년 7월 FPV 드론 하드웨어 동향
 - [[betaflight]] — FPV 드론용 오픈소스 비행 제어 소프트웨어
+
+## 📰 최근 관련 소식
+- [Joshua Bardwell] Ukraine Fight Drone Simulator // NOT JUST A GAME (youtube.com, 2026-08-13) — https://www.youtube.com/watch?v=_3blDd5NZRM

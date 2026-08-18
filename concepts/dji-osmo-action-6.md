@@ -1,10 +1,10 @@
 ---
 title: DJI Osmo Action 6
 created: 2026-08-03
-updated: 2026-08-06
+updated: 2026-08-16
 type: concept
 tags: [drone, hardware, camera, dji]
-sources: [inbox/fetch-2026-08-03-yt-f28-at-night-the-stars-come-through-dji-osmo-action-6.md, inbox/fetch-2026-08-06-yt-a-water-ring-slowed-all-the-way-down-osmo-action-6.md]
+sources: [inbox/fetch-2026-08-03-yt-f28-at-night-the-stars-come-through-dji-osmo-action-6.md, inbox/fetch-2026-08-06-yt-a-water-ring-slowed-all-the-way-down-osmo-action-6.md, inbox/fetch-2026-08-16-yt-six-ocean-scenes-one-sensor-holds-every-color-dji-osmo-actio.md]
 confidence: high
 contested: false
 contradictions: []
@@ -28,5 +28,8 @@ DJI의 액션 카메라 시리즈 6세대 모델로, 야간 촬영 성능이 크
 - [[computer-vision-drone]] — 드론 탑재 카메라 시스템
 
 ## 📰 최근 관련 소식
-- [DJI] All for the Bridge Shot | DJI Avata 360 & Osmo 360 (youtube.com, 2026-08-09) — https://www.youtube.com/watch?v=yCpXorzKWx8
-- [DJI] Magnetic Clip. Goes Wherever the Trick Takes It. | DJI Osmo Nano (youtube.com, 2026-08-10) — https://www.youtube.com/watch?v=ornaxYy9wsw
+- [DJI] All for the Bridge Shot | DJI Avata 360 & Osmo 360 (youtube.com, 2026-08-09)
+- [DJI] Magnetic Clip. Goes Wherever the Trick Takes It. | DJI Osmo Nano (youtube.com, 2026-08-10)
+- **2026-08-15**: Six Ocean Scenes 샘플 — 1/1.1인치 센서의 색상 보정력 검증 (보라 하늘, 푸른 바다, 풍부한 산호, 폭풍 녹색 등 6가지 해양 환경) — https://www.youtube.com/watch?v=l7bBjW_r6Mo
+- [DJI] Six Ocean Scenes. One Sensor Holds Every Color. | DJI Osmo Action 6 (youtube.com, 2026-08-15) — https://www.youtube.com/watch?v=l7bBjW_r6Mo
+- [DJI] Mountain Trail. Neo 2 Close the Whole Way. | DJI Neo 2 (youtube.com, 2026-08-14) — https://www.youtube.com/watch?v=i9xXT52Iksk

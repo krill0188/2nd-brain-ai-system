@@ -3,7 +3,7 @@
 > Complete catalog of active canonical pages. Each entry is a wikilink followed by
 > a one-line summary, sorted alphabetically within its section.
 >
-> Total pages: 222
+> Total pages: 244
 ## Entities
 - [[cambridge-aerospace]] — 영국 공중 방위/C-UAS 기업, $300M Series C (2026-08).
 - [[mbf-group]] — 폴란드 드론/우주 기업, IRYDA+ X1 및 SPACE Z1 개발.
@@ -45,15 +45,33 @@
 |- [[flybyops]] — 핀란드 BVLOS/자율 드론 운용 플랫폼 기업.
 <!-- Alphabetical within section -->
 
+|- [[yari-v6x]] — Enterprise-grade FMUv6X modular flight controller platform.
+|- [[elroy-air]] — California-based heavy-lift drone developer, $46M US Army contract.
+|- [[agilepe-uav-pursuit-evasion]] — Self-play RL pursuit-evasion with zero-shot sim-to-real transfer.
+|- [[sim-assisted-uav-beamforming]] — SIM-assisted energy-efficient beamforming and 3D position optimization.
+|- [[lapf-llm-agent-pathfinder]] — LLM-agent-based UAV path finder using UAVScenes dataset.
+|- [[score-shape-conforming-flight]] — Shape-conforming regions for enclosed degraded environment flight.
+|- [[yolo-v8-4-121]] — YOLO v8.4.121 release with OpenVINO INT8 improvements.
+|- [[us-drone-import-tariffs-2026-08]] — Updated US drone import tariffs up to 100%.
+|- [[uber-zipline-drone-delivery]] — Uber-Zipline partnership for 1M daily deliveries by 2029.
+|- [[auvsi-leadership-transition-2026]] — AUVSI leadership transition with Heather Lee as Acting CEO.
+|- [[faa-nextgen-drone-integration]] — FAA NextGen fact sheet on drone integration.
+|- [[uavionix-airwise-utm-partnership]] — uAvionix-Airwise real-time UTM partnership.
+
 ## Concepts
-- [[clustered-randomized-smoothing]] — 클러스터 기반 랜덤 스무딩, 쿼드로터 충돌률 81% 감소.
-- [[dji-mini-5-pro]] — DJI 249g 미만 강풍 대응 여행용 드론.
-- [[dji-osmo-mobile-8]] — DJI 스마트폰 짐벌 시스템, AI 추적 기능.
+|- [[clustered-randomized-smoothing]] — 클러스터 기반 랜덤 스무딩, 쿼드로터 충돌률 81% 감소.
+|- [[dji-mavic-4-pro-firmware-update]] — DJI Mavic 4 Pro 2026년 8월 펌웨어 업데이트.
+|- [[dji-mini-5-pro]] — DJI 249g 미만 강풍 대응 여행용 드론.
+|- [[dji-osmo-mobile-8]] — DJI 스마트폰 짐벌 시스템, AI 추적 기능.
+|- [[dji-osmo-nano-cinematic]] — DJI Osmo Nano 초소형 시네마틱 촬영 기법 및 활용.
 - [[fcc-drone-approval-revocation]] — FCC Odyssey Robot 드론 승인 취소 사건.
+- [[fpv-motor-selection-guide]] — FPV 드론 모터 선택 가이드 (사이즈, KV, 프로펠러).
 - [[insta360-x6]] — Insta360 8K 360° 액션 카메라, AI 추적.
 - [[michigan-aam-projects]] — 미시간주 $2M AAM 프로젝트, 5개 기업 선정.
 - [[michigan-drone-lawsuit]] — 미시간 경찰 작전 근처 드론 비행 제한 소송.
-- [[skydio-dfr-milestone]] — Skydio DFR Command 1,000만 출동 돌파.
+- [[skydio-dock-milestone]] — Skydio Dock 1년 만에 1,000대 배포 돌파.
+- [[us-drone-import-tariffs-2026]] — 미국 수입 드론/부품 25~100% 관세 (2026-08-13).
+- [[yolo-v8-4-120]] — YOLO v8.4.120 릴리스 (CUDA 결정론, LLM 문서화).
 - [[advanced-mavlink]] — MAVLink 2 패킷 포맷/헤더 구조 및 Incompatibility 플래그.
 - [[ai-knowledge-workflow]] — 원본 수집→검토된 지식→산출물을 역할별 계층으로 분리하는 AI 지식 워크플로.
 - [[ardupilot-plane-4-7]] — ArduPilot Plane 4.7.0 안정 릴리스(2026-07-21), 고정익/VTOL.
@@ -228,10 +246,14 @@
 ||- [[moe-multimodal-uav-detection]] — MoE 기반 강건한 UAV 멀티모달 객체 탐지(관측 누락 대응).
 |- [[uav-swarm-air-ground-isac]] — 교차 지역 협력 기반 Air-Ground ISAC UAV 군집(MAPPO).
 |- [[rigid-covert-gnss-spoofing-swarm]] — UAV 군집 GNSS 스푸핑의 상대기하 탐지 사각지대(RigidShift).
-|- [[curriculum-guided-heterogeneous-multi-agent-isac]] — 커리큘럼 기반 이질적 다중 에이전트 ISAC 스웜 시스템.
-|- [[edge-constrained-uav-small-object-detection]] — P2 강화 및 QIEA 기반 에지 제약 UAV 소형 객체 탐지.
-|- [[llm-enabled-uav-natural-language-navigation]] — STL 사양 변환 기반 LLM 활성화 UAV 자연어 내비게이션.
-|- [[uav-detr-anti-drone-detection]] — WTConv 및 SWSA 기반 실시간 대드론 탐지 DETR 프레임워크.
+||- [[curriculum-guided-heterogeneous-multi-agent-isac]] — 커리큘럼 기반 이질적 다중 에이전트 ISAC 스웜 시스템.
+||- [[edge-constrained-uav-small-object-detection]] — P2 강화 및 QIEA 기반 에지 제약 UAV 소형 객체 탐지.
+||- [[llm-enabled-uav-natural-language-navigation]] — STL 사양 변환 기반 LLM 활성화 UAV 자연어 내비게이션.
+||- [[uav-detr-anti-drone-detection]] — WTConv 및 SWSA 기반 실시간 대드론 탐지 DETR 프레임워크.
+|- [[aeroeval-mdo-framework]] — Multi-domain physics-based MDO for multirotor UAVs.
+|- [[test-time-scaling-vlm-uav]] — Test-time scaled VLMs for UAV navigation.
+|- [[visual-slam-gps-denied-evaluation]] — Robust V-SLAM evaluation in GPS-denied environments.
+|- [[llm-swarm-wot-framework]] — Agent-enhanced LLM reasoning for UAV swarm.
 
 ## Comparisons
 

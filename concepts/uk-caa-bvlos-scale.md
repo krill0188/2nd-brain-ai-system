@@ -40,3 +40,4 @@ contradictions: []
 - 광교 산책길에 '하늘편의점' 떴다…수원특례시, 드론배송 시연 (연합뉴스, Wed, 05 Au) — https://news.google.com/rss/articles/CBMiW0FVX3lxTE93ckxFTzR5b3JJdzlyQ29MOXJuUTMwMWJpR0w1YnZhOUtZQTFvMWZQU1didTlLOGludS1HYmlfeDVfZnhQOFlKRGZOYlZ6c3VNd053cEEzb0FBNFE?oc=5
 - 수원특례시, 드론배송 전 과정 시연 (광역행정신문, Tue, 04 Au) — https://news.google.com/rss/articles/CBMiREFVX3lxTFAwaTJQM1RSZEpyWnJSWWNqZHBvLV9GSUFEWFpKSjdLSU1DX0UwVXhvUGt2SnBuY2YwZFNnZHhDNGJKTnJ1?oc=5
 - [2026년 8월호] BEI, 세계 최고 수준 무음극 리튬메탈배터리 상용화 성공 (드론저널, Mon, 10 Au) — https://news.google.com/rss/articles/CBMibEFVX3lxTE5XdG1Yd2hHUUdNYW9ZaXJJSi1PWlZMNGktNkdXbl9QTlI5ZHFIZlBwZ3Y3WkFsZWIzUlpLZWhiZTRIMlBZNHUzN3dPLVlmZGVrUjN0ekJsOTZ1RTJtdjliTlM0eVV0N05wVElFWg?oc=5
+- 로봇팔 달린 드론…고층 유리창까지 닦는다 (전자신문, Fri, 14 Au) — https://news.google.com/rss/articles/CBMiTkFVX3lxTFBXNFQtZ2I3TTJ1MjZvZk1Fa181bkFxdFBBYXZWNDBqUjZkNnpWaWxlNWtKbWhfaG9NVm1JMENpejAtN0wwY3QyVWI5cTFhUQ?oc=5

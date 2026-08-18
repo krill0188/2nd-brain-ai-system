@@ -29,3 +29,6 @@ contradictions: []
 
 - [[drone-regulations]] — 드론 규제 종합
 - [[faa-deter-program]] — FAA 집행 프로그램
+
+## 📰 최근 관련 소식
+- Michigan Drone Lawsuit Challenges Restrictions on Flights Near Police Operations (dronelife.com, Wed, 12 Au) — https://dronelife.com/2026/08/12/michigan-drone-lawsuit-state-law/

@@ -14,6 +14,47 @@
 
 ## [2026-08-13] ingest | RSS 뉴스 및 연구 논문 인제스트
 
+## [2026-08-19] ingest | inbox 일일 수집 및 컴파일
+
+- Source files from `inbox/` (16 files processed):
+  - arXiv papers (4): AgilePE RL, SIM beamforming, LAPF LLM agent, SCORE navigation
+  - RSS news (5): DJI Enterprise, DroneDJ, DroneLife, Skydio, sUAS News (regulation + general)
+  - YOLO release (1): v8.4.121
+  - YouTube videos (6): 3분 자료구조, Ascent VTX, DJI Avata 360, DJI lineup, Osmo Pocket 4P
+- Created concepts:
+  - `concepts/agilepe-uav-pursuit-evasion.md` — Self-play RL pursuit-evasion
+  - `concepts/sim-assisted-uav-beamforming.md` — SIM-assisted beamforming optimization
+  - `concepts/lapf-llm-agent-pathfinder.md` — LLM-agent-based UAV navigation
+  - `concepts/score-shape-conforming-flight.md` — Shape-conforming regions for enclosed flight
+  - `concepts/yolo-v8-4-121.md` — YOLO v8.4.121 release
+  - `concepts/us-drone-import-tariffs-2026-08.md` — Updated tariff policy
+  - `concepts/uber-zipline-drone-delivery.md` — Partnership announcement
+  - `concepts/auvsi-leadership-transition-2026.md` — AUVSI leadership change
+  - `concepts/faa-nextgen-drone-integration.md` — FAA NextGen drone integration
+  - `concepts/uavionix-airwise-utm-partnership.md` — UTM collaboration
+- Created entities:
+  - `entities/elroy-air.md` — Heavy-lift drone developer
+  - `entities/yari-v6x.md` — Modular flight controller
+- Moved to processed:
+  - All 16 inbox files → `inbox/processed/`
+- Updated:
+  - `index.md` (총 페이지 240으로 갱신)
+
+## [2026-08-17] ingest | inbox 일일 수집 및 컴파일
+
+- Source files from `inbox/`:
+  - `fetch-2026-08-17-yt-golden-sand-dark-water-one-frame-dji-mavic-4-pro.md` → [[dji-mavic-4-pro]] 업데이트 (15.5-stop 다이내믹 레인지)
+  - `fetch-2026-08-17-yt-the-angle-that-makes-fingerboarding-look-cinematic-dji-osmo-.md` → [[dji-osmo-nano-cinematic]] 신규 생성
+  - `fetch-2026-08-17-yt-qa-livestream---august-16-2026.md` → 스킵 (일반 FPV Q&A)
+  - `fetch-2026-08-17-yt-how-to-maiden-an-ardupilot-quad-safely-every-time-using-a-ho.md` → [[ardupilot]], [[holybro-setup-params]] 참고
+  - `fetch-2026-08-17-rss-suasnews.md` → [[us-drone-import-tariffs-2026]] 참고 (관세 조정)
+  - `fetch-2026-08-17-rss-skydio.md` → [[skydio]] 참고 (X2D 훈련)
+  - `fetch-2026-08-17-rss-dji-enterprise.md` → [[dji-everest-mapping]] 참고 (에베레스트 프로젝트)
+- Created:
+  - `concepts/dji-osmo-nano-cinematic.md`
+- Updated:
+  - `index.md` (총 페이지 228로 갱신)
+
 ## [2026-08-14] ingest | RSS 뉴스 및 연구 논문 인제스트
 
 - Source files from `inbox/`:
@@ -974,3 +1015,58 @@
 - `.venv`에 `rdflib==7.6.0`, `owlready2==0.51` 설치(Java 23 이미 설치돼있어 HermiT 추가 설치 불필요)
 - 산출물: `.ua/ontology.owl`(RDF/XML, git 미추적 — `.ua/`는 파생 산출물)
 - 커밋: `d32332d`
+
+## [2026-08-16] ingest | inbox 파일 처리 및 canonical 페이지 작성
+
+### 새 canonical 페이지 (5개)
+- `concepts/yolo-v8-4-120.md` — YOLO v8.4.120 릴리스 (CUDA 결정론, TensorFlow 내보기, LLM 문서화)
+- `concepts/skydio-dock-milestone.md` — Skydio Dock 1년 만에 1,000대 배포 돌파
+- `concepts/dji-mavic-4-pro-firmware-update.md` — DJI Mavic 4 Pro 2026년 8월 펌웨어 업데이트
+- `concepts/us-drone-import-tariffs-2026.md` — 미국 수입 드론/부품 25~100% 관세 (Section 232)
+- `concepts/fpv-motor-selection-guide.md` — FPV 드론 모터 선택 가이드
+
+### 업데이트된 canonical 페이지 (5개)
+- `concepts/dji-mavic-4-pro.md` — 펌웨어 업데이트 정보 추가, confidence high로 상향
+- `concepts/dji-neo-2-rth.md` — 장애물 회피 기능 내용 추가, confidence high로 상향
+- `concepts/dji-osmo-action-6.md` — Six Ocean Scenes 샘플 추가
+- `concepts/mavlink-protocol.md` — 입문자용 소개 자료 추가
+- `concepts/drone-regulations.md` — 미국 수입 관세 정보 추가
+- `concepts/fpv-hardware.md` — 모터 선택 가이드 링크 추가
+
+### 처리된 inbox 파일 (17개)
+- `fetch-2026-08-16-rss-skydio.md` → concepts/skydio-dock-milestone.md
+- `fetch-2026-08-16-yolo.md` → concepts/yolo-v8-4-120.md
+- `fetch-2026-08-16-yt-mountain-trail-neo-2-close-the-whole-way-dji-neo-2.md` → concepts/dji-neo-2-rth.md (업데이트)
+- `fetch-2026-08-16-yt-six-ocean-scenes-one-sensor-holds-every-color-dji-osmo-actio.md` → concepts/dji-osmo-action-6.md (업데이트)
+- `fetch-2026-08-16-yt-what-is-mavlink-an-introduction-for-new-pilots.md` → concepts/mavlink-protocol.md (업데이트)
+- `fetch-2026-08-15-rss-dronedj.md` → concepts/dji-mavic-4-pro-firmware-update.md, concepts/dji-mavic-4-pro.md (업데이트)
+- `fetch-2026-08-15-rss-dronelife.md` → concepts/us-drone-import-tariffs-2026.md, concepts/drone-regulations.md (업데이트)
+- `fetch-2026-08-15-rss-oscarliang-fpv.md` → concepts/fpv-motor-selection-guide.md, concepts/fpv-hardware.md (업데이트)
+
+### 스킵된 파일 (8개)
+- `fetch-2026-08-16-yt-40-drones-disrupt-fire-response-in-washington.md` — 내용 없음 (뉴스레터 홍보)
+- `fetch-2026-08-15-rss-dji-enterprise.md` — 중복 (Matrice 4 Series 기존 내용)
+- `fetch-2026-08-15-rss-parrot.md` — 관련 없음 (중고 판매 광고)
+- `fetch-2026-08-15-yt-drone-prices-are-about-to-jump.md` — 내용 없음 (뉴스레터 홍보)
+- `fetch-2026-08-15-yt-fcc-military-grade-drone-ban-explained.md` — 내용 없음 (뉴스레터 홍보)
+- `fetch-2026-08-15-yt-noise-cancellation-off-vs-on-dji-mic-mini-2s.md` — 중복 (DJI Mic 기존 내용)
+- `fetch-2026-08-15-yt-pinklab-band---drummer.md` — 관련 없음 (음악 콘텐츠)
+- `fetch-2026-08-15-yt-system-design-for-ai-agents-building-a-multi-agent-pr-review.md` — 관련 없음 (일반 소프트웨어)
+- `fetch-2026-08-15-yt-total-darkness-bright-corona-one-frame-dji-mavic-4-pro.md` — 중복 (Mavic 4 Pro 기존 내용)
+- `fetch-2026-08-15-yt-windows를-위해-간단히-살펴보는-uv-설치-및-사용방법.md` — 관련 없음 (일반 개발 도구)
+
+### 이동된 파일
+- 17개 파일 → `inbox/processed/`
+
+## [2026-08-19] ingest | arXiv 논문 4건 canonical 변환
+
+- Source files moved to raw/papers:
+  - `raw/papers/drone-hw/fetch-2026-08-19-arxiv-multi-domain-physics-based-mdo-of-multirotor-uavs-a-determin.md` — AeroEval MDO Framework
+  - `raw/papers/voice-control/fetch-2026-08-19-arxiv-no-training-better-flights-test-time-scaled-vlms-for-uav-nav.md` — Test-Time Scaling VLM
+  - `raw/papers/drone-ai/fetch-2026-08-19-arxiv-robust-visual-slam-for-uav-navigation-in-gps-denied-and-degr.md` — Visual SLAM GPS-Denied Evaluation
+  - `raw/papers/swarm/fetch-2026-08-19-arxiv-say-the-mission-execute-the-swarm-agent-enhanced-llm-reasoni.md` — LLM Swarm WoT Framework
+- Created concepts:
+  - `concepts/aeroeval-mdo-framework.md` — Multi-domain physics-based MDO for multirotor UAVs
+  - `concepts/test-time-scaling-vlm-uav.md` — Test-time scaled VLMs for UAV navigation
+  - `concepts/visual-slam-gps-denied-evaluation.md` — Robust V-SLAM evaluation in GPS-denied environments
+  - `concepts/llm-swarm-wot-framework.md` — Agent-enhanced LLM reasoning for UAV swarm

@@ -29,3 +29,6 @@ FCC가 Odyssey Robot LLC의 드론 및 리모트 컨트롤러에 대한 장비 �
 
 - [[fcc-drone-regulations]] — FCC 외국 제조 드론 규제
 - [[china-drone-export-controls]] — 중국 드론 수출 통제
+
+## 📰 최근 관련 소식
+- FCC Revokes Drone Approvals After U.S. Assembler Denies Any Connection (dronelife.com, Wed, 12 Au) — https://dronelife.com/2026/08/12/fcc-drone-approval-revocation-odyssey-robot/

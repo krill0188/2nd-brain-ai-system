@@ -1,10 +1,10 @@
 ---
 title: MAVLink Protocol
 created: 2026-07-27
-updated: 2026-07-27
+updated: 2026-08-16
 type: concept
 tags: [drone-sw, datalink, MAVLink, communication]
-sources: [raw/articles/mastervault-mavlink-reference.md, raw/articles/mavlink-xml-schema.md, raw/articles/px4-mavlink.md]
+sources: [raw/articles/mastervault-mavlink-reference.md, raw/articles/mavlink-xml-schema.md, raw/articles/px4-mavlink.md, inbox/fetch-2026-08-16-yt-what-is-mavlink-an-introduction-for-new-pilots.md]
 confidence: high
 domain: comms-protocol
 contested: false
@@ -137,9 +137,16 @@ PX4는 MAVLink 저장소를 서브모듈로 포함한다.^[raw/articles/px4-mavl
 | 빌드 시스템 | MAVLink 2 C 헤더 파일 생성 |
 | 기본 dialect | `common.xml` |
 
+## 입문자용 소개 자료
+
+- Painless360 채널의 "What is MAVLink?" 영상: 새로운 파일럿을 위한 MAVLink 기초 개념 설명 — https://www.youtube.com/watch?v=OpWmst6X_6M (2026-08-15) ^[inbox/fetch-2026-08-16-yt-what-is-mavlink-an-introduction-for-new-pilots.md]
+
 ## 관련 개념
 
 - [[px4-system-architecture]] — PX4 시스템 구성
 - [[ardupilot-architecture]] — ArduPilot 아키텍처
 - [[ground-control-station]] — GCS 연동
 - [[ros2-drone-integration]] — ROS2 브릿지
+
+## 📰 최근 관련 소식
+- [Painless360] What is MAVLink? An introduction for new pilots (youtube.com, 2026-08-15) — https://www.youtube.com/watch?v=OpWmst6X_6M

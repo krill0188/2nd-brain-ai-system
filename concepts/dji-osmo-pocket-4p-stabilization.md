@@ -30,3 +30,6 @@ DJI Osmo Pocket 4P는 3축 기계식 짐벌을 탑재하여 표면이 움직이�
 - [[dji]] — DJI 드론 제조사 개요
 - [[dji-osmo-pocket-4]] — DJI Osmo Pocket 4P 듀얼 렌즈 시네마틱 포켓 짐벌 카메라
 - [[dji-osmo-nano]] — DJI Osmo Nano 52g 초소형 액션 카메라
+
+## 📰 최근 관련 소식
+- [DJI] Cutest Stabilization Test You'll See Today | DJI Osmo Pocket 4P (youtube.com, 2026-08-13) — https://www.youtube.com/watch?v=hd-2MTe_M2w

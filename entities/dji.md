@@ -33,3 +33,5 @@ domain: hardware
 
 ## 📰 최근 관련 소식
 - DJI Warns FCC Proposal Could Restrict Widely Used Commercial Drones (dronelife.com, Mon, 10 Au) — https://dronelife.com/2026/08/10/dji-fcc-drone-restrictions-commercial-models/
+- DJI Matrice 400 Delivers Ice Water Rescue in Minutes - dronexl.co (news.google.com, Mon, 02 Fe) — https://news.google.com/rss/articles/CBMicEFVX3lxTE45N2h3VVlibVhReWtYOEc3akdublpkRFI5clcyTVBBQUR4RHktSWx5aWJ0ck9zdXZuUTdSUzFFMDBYMTdWM3hLa0g3VXUzdDJlaG9BTzZLb0NGcklEaEUtVGtOVENSVGFmWHJqQ1ZDWTk?oc=5
+- Wildlife Organisation Increases Fawn Rescues by 20 Times with DJI Matrice 4 Series | Corporate - EQS News (news.google.com, Mon, 22 Ju) — https://news.google.com/rss/articles/CBMi9AFBVV95cUxQREtpR0Z0WXM4dkhMQmtDSzVoc3h4cnFWVlQzS1pwR0lZNWw2ckJWekc1eWNBdnZmWENpOWFKYkRaay15cWptR2dKTzRSOXpFc1NTVWozZWp1QjYwMUdWYUZDcjNJMGtmUUo0aEZsVHh1Y1FKbTlpVTliVHdvdFRzYTZQZHh2US13b1EtbXJNSmk5ZmU3cjJzdFRsMWZucmZORUctUUhaLWtLYkVYT0FxNHV2a0NIY2h1ZXZHeEtWWmxIY0kzVnM4d180WWNQYk5kcEdSNHdvNzJmMFJIUHNfdEZZbnJFdVJGWUxQUEdFOWxTX3Mt?oc=5

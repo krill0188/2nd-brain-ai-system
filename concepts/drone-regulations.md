@@ -1,11 +1,11 @@
 ---
 title: Drone Regulations
 created: 2026-07-27
-updated: 2026-08-09
+updated: 2026-08-16
 type: concept
 tags: [drone, regulations, UAS, FAA, EASA, BVLOS, compliance]
-sources: []
-confidence: medium
+sources: [inbox/fetch-2026-08-15-rss-dronelife.md]
+confidence: high
 domain: regulations
 contested: false
 contradictions: []
@@ -188,6 +188,7 @@ note: "Knowledge-based page - no raw source ingested yet"
 - [[us-dod-cuas-marketplace]] — 미국 국방부 C-UAS 마켓플레이스
 - [[china-drone-export-controls]] — 중국 대미 드론·부품 수출 통제
 - [[faa-249-gram-registration-rule]] — FAA 249그램 드론 등록 규정
+- [[us-drone-import-tariffs-2026]] — 미국 수입 드론/부품 25~100% 관세 (2026-08-13 발효)
 
 ## 수집 대상
 
@@ -200,3 +201,5 @@ note: "Knowledge-based page - no raw source ingested yet"
 - '물류 난타전' 우크라 방공망 구멍...독 공항, 폭발물 드론에 비상 (YTN 사이언스, Thu, 06 Au) — https://news.google.com/rss/articles/CBMijAFBVV95cUxNLTVDRWI5UWoyVDA2ZzBPTjNxZUxaNHZLWnVWOHdjd0VtSDU2YlU0SS1Sd182cFpIMllmeXdZWWRLRFJqalE4dU4zYjJ5UnFlNUIyb0VYdEJkVnR1WHppSy1udkEwZUV0dk1ZUkxTSmhuMlg3Ui11UVN5RnotQ29TRExJVFNJd0pCcXkxSA?oc=5
 - "美 정보기관, 독일 공항 폭발드론 러시아 소유 가능성 제기" (연합뉴스, Sat, 08 Au) — https://news.google.com/rss/articles/CBMiW0FVX3lxTE1rUGYybHdOX1ZOWXE0czNrQkdGQ2RXc0ZJek9KSVpQaWV5MXdyYl92ZS1jaEY1M3VYNk1xMEQzazBPcXlqaEtPb0lyYnVJWHBlMW9hdHVvRmtOMGfSAWBBVV95cUxQNzJBcEcybmpXRnVqT2NXeGhHdFVlWXBkdnM3cjk0UXlWbEx2YWE2Zm9IdllSbEdoNDdXd0ctQUFadGVkYVdySmJZSmVTLTJDU2x5a3I3ZEJUS1liYXZhUWc?oc=5
 - '폭발물 드론' 공항 출몰에 비상 걸린 독일, 드론 연구 확대 (연합뉴스, Sun, 09 Au) — https://news.google.com/rss/articles/CBMiW0FVX3lxTE83cmdnQ2dUSjdJMWZoX09OSnB5RXNqck1yOTc1NDUxTDluUXhqMUFtalRGdmdfLTV3Ukd0VUZRWG9lY1ROR2gwdWJtMFF5THFiYmFkeDJEOFdUSG_SAWBBVV95cUxPU05qa1JkSjBQcnlzWGg1SlpuaHQ4bEdkenp2UzYtalktdF9FWFg2LWk3N3h6VC1CdUJkeG1ocU5waURXYnZPa1plSXZOT0NndXpNMnB2OWR1X1IyMXN0R1Y?oc=5
+- 한국, 보이나? “러 드론서 ‘삼성전자’ 메모리칩 나왔다”…증거 공개한 우크라 [배틀라인] (서울신문, Thu, 13 Au) — https://news.google.com/rss/articles/CBMid0FVX3lxTE1sQlBVRzhwLVlmbXItM29xOTZleUwwdWZfbzJWLWxRY2xIcndhNVVNM2VSOV9LR0ZmNENkVGZHelZELXB4WHhOVlVsektzcVB5NmRQXzRLcnVTczVZa2p6WFE3X3ZUN3B2Z1ItX0kyRktWQVhxbmRN?oc=5
+- 미국 “언제든 군사용 전환”… 전세계 시장 90% 장악한 중국 드론에 ‘관세폭탄’ (문화일보, Fri, 14 Au) — https://news.google.com/rss/articles/CBMiUEFVX3lxTFBfVU1TY2hndS1OSWJueGFEc1JxVi1WQkRCMnBJc0RZamlHUUpPSmh4Ym9iMU5Lenk0NlBBN0h2RzFfcGZPTnpUZDFaQUV6Nmt0?oc=5

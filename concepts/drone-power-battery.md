@@ -169,3 +169,6 @@ SMBus/I2C 통신을 통한 지능형 배터리 관리.
 - [[drone-safety-failsafe]] — 배터리 기반 failsafe
 - [[flight-controller-hardware]] — Power module 선택
 - [[dronecan-protocol]] — CAN 기반 ESC
+
+## 📰 최근 관련 소식
+- How to Choose FPV Drone Motors – Considerations and Best Motor Recommendations (oscarliang.com, Thu, 13 Au) — https://oscarliang.com/motors/

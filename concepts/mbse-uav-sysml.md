@@ -65,3 +65,6 @@ The model supports requirement allocation, interface definition, subsystem respo
 - [[px4-system-architecture]] — PX4 flight control architecture
 - [[ardupilot-architecture]] — ArduPilot architecture
 - [[drone-ai-agents]] — Autonomous decision-making systems
+
+## 📰 최근 관련 소식
+- JTF-SB Marines Put Eyes in the Sky with VXE30 Stalker and Skydio X10 [Image 7 of 7] - DVIDS (news.google.com, Mon, 10 Au) — https://news.google.com/rss/articles/CBMiogFBVV95cUxNd0FhQk5fTVVqVGZVc1luOU41MFlJVHpMeGRKT25vZ1pGMEhteFo0YVRhTjA3RWhKdjlncmtSMGFYbW9NRkRFdk1RaFlURHpocTliVExsWmZJYzJTejZ3VlBPcU5ydEg5RWdpZ29KYkxjclRYOTQtaldHeksyS3J1djk3cHJOaXBScFkzMEZWajhlTlJwYW44MG05TE1mcElIdGc?oc=5

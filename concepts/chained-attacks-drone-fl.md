@@ -58,3 +58,4 @@ Edge Intelligence(EI)는 드론 스웜과 같은 미션 크리티컬 무인 플�
 
 ## 📰 최근 관련 소식
 - 명지대 ‘드론봇·대드론 센터’ 출범... 산학군 협력 안보 네트워크 강화 (보안뉴스, Fri, 07 Au) — https://news.google.com/rss/articles/CBMiXkFVX3lxTE5XdUZ2TnIwaktzN3F0dFBmXzZ6UFBqbC1hcFFHS3AxZUYzSmFkNl9IQ1RYQ0VxZlpGX3JRZjJqMzNvbXlLLUNhLV92dk4xaHpUb0xUQWlNVF9oR2xReGc?oc=5
+- Michigan Drone Lawsuit Challenges Restrictions on Flights Near Police Operations (dronelife.com, Wed, 12 Au) — https://dronelife.com/2026/08/12/michigan-drone-lawsuit-state-law/

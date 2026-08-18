@@ -26,3 +26,6 @@ FAA는 250g 미만 드론을 취미용으로 운용할 경우 등록을 면제�
 
 - [[drone-regulations]] — 드론 규제 개요
 - [[fcc-drone-regulations]] — FCC 드론 규제
+
+## 📰 최근 관련 소식
+- Airworthiness Directives; The Boeing Company Airplanes (federalregister.gov, 2026-08-13) — https://www.federalregister.gov/documents/2026/08/13/2026-16504/airworthiness-directives-the-boeing-company-airplanes

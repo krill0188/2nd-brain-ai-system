@@ -56,3 +56,6 @@ The subarray partition scheme achieves lower complexity than exhaustive search, 
 - [[hybrid-beamforming-ntn]] — Beamforming for non-terrestrial networks
 - [[datalink-communication]] — RF and wireless communication fundamentals
 - [[uav-isac-cross-region]] — Integrated sensing and communication
+
+## 📰 최근 관련 소식
+- Dynamic adaptive task offloading for UAV-based road traffic monitoring (doi.org, 2027-1) — https://doi.org/10.1016/j.future.2026.108750

@@ -1,15 +1,16 @@
 ---
 title: "Decentralized UAV Swarms in GPS/Communication-Denied Environments"
 created: 2026-07-30
-updated: 2026-08-11
+updated: 2026-08-19
 type: concept
 tags: [drone, swarm, datalink, comms-protocol, military, counter-uav]
-sources: []
-confidence: medium
+sources:
+  - raw/papers/swarm/decentralized-uav-swarms-for-ground-target-protection-in-gps--and-communication-.md
+confidence: high
 contested: false
 contradictions: []
 domain: comms-protocol
-note: "Raw source not preserved in repo — found during 2026-08-10 provenance audit, needs recapture"
+note: "2026-08-19 재수집으로 원문(PDF) 확보, sources 필드 채움. authors: Silveria, Araujo, Nascimento, Givigi"
 ---
 
 # Decentralized UAV Swarms in GPS/Communication-Denied Environments
@@ -43,3 +44,6 @@ GPS 및 통신 차단 환경에서 지상 표적 보호를 위한 분산형 UAV 
 ## 출처
 
 - Silveria et al., "Decentralized UAV Swarms for Ground Target Protection in GPS- and Communication-Denied Environments", arXiv:2607.20710, 2026.
+
+## 📰 최근 관련 소식
+- [UAV Coach] 40+ Drones Disrupt Fire Response in Washington (youtube.com, 2026-08-14) — https://www.youtube.com/watch?v=Xo74V_HZBuM

@@ -39,3 +39,6 @@ Eduardo Figueiredo, Frederik Mathiesen, Julian Schumann, Jens Kober, Arkady Zgon
 - [[px4-control-tuning]] — PX4 제어 튜닝
 - [[rl-quadrotor-tunable-control]] — RL 기반 쿼드로터 제어
 - [[ai-knowledge-workflow]] — AI 지식 워크플로
+
+## 📰 최근 관련 소식
+- Clustered Randomized Smoothing for Stochastic Prediction Functions (arxiv.org, 2026-08-12) — http://arxiv.org/abs/2608.12037v1

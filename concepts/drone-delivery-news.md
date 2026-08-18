@@ -42,3 +42,4 @@ contradictions: []
 - [Painless360] My R/C Kit Picks: August 2026! (youtube.com, 2026-08-08) — https://www.youtube.com/watch?v=lkO0WBSRI0E
 - 수원시, 광교호수공원 드론배송 서비스 시연 (신아일보, Wed, 05 Au) — https://news.google.com/rss/articles/CBMicEFVX3lxTE5HQWg4anYtUFlXUHgxWENBelBKVWR5MXc2eWRYOHgzZ1dBcGd2dEhXYXhpYWFXWHlZYlBnSjZ1bWpRUmxHYTdBd3ZweHluRmE2b3pwNGhqT1pxQzZKT3dTY2laQUpiT1JBYW9yNFF4Wlc?oc=5
 - 수원시, 광교호수공원 드론배송 시대 연다… '하늘편의점' 생활밀착형 배송서비스 본격 시연 (월드장애인사랑뉴스, Tue, 04 Au) — https://news.google.com/rss/articles/CBMib0FVX3lxTFBhdjZGZ2hxOVFfWUR5YVMweGRGTmVqUUJ2RUswMDlZVjVSamlPOU1YRXlZdFgwbElISmVYVVlrVjBlV2lQWGplb3FiM1c3MllHRXdBY3RJeHBTUkNkbDZfX0U0LUZRUlhQTkl2a1dORQ?oc=5
+- [Joshua Bardwell] Q&A Livestream - August 16, 2026 (youtube.com, 2026-08-16) — https://www.youtube.com/watch?v=irGXC4fiRoY

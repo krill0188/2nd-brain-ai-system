@@ -41,3 +41,5 @@ DJI의 초소형 액션 카메라 — 52g 무게로 어디에나 클립 가능.
 - [DJI] All for the Bridge Shot | DJI Avata 360 & Osmo 360 (youtube.com, 2026-08-09) — https://www.youtube.com/watch?v=yCpXorzKWx8
 - [DJI] High Altitude. O4 Air Unit Holds the Signal. | DJI O4 Air Unit (youtube.com, 2026-08-10) — https://www.youtube.com/watch?v=EYnuUKPESDw
 - [DJI] Magnetic Clip. Goes Wherever the Trick Takes It. | DJI Osmo Nano (youtube.com, 2026-08-10) — https://www.youtube.com/watch?v=ornaxYy9wsw
+- [DJI] Six Ocean Scenes. One Sensor Holds Every Color. | DJI Osmo Action 6 (youtube.com, 2026-08-15) — https://www.youtube.com/watch?v=l7bBjW_r6Mo
+- [DJI] The Angle That Makes Fingerboarding Look Cinematic | DJI Osmo Nano (youtube.com, 2026-08-16) — https://www.youtube.com/watch?v=p3ssKN2G5YQ

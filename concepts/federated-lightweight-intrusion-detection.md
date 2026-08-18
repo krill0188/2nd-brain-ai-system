@@ -60,3 +60,6 @@ FL과 KD의 결합은 리소스 제약 드론 네트워크에서 안전하고 �
 - [[chained-attacks-drone-fl]] — 드론 FL 체인 공격 분석
 - [[swarm-coordination]] — 스웜 협업 및 보안
 - [[drone-ai-agents]] — 자율 에이전트 아키텍처
+
+## 📰 최근 관련 소식
+- Skydio crosses 1,000 drone Dock deployments in just one year - DroneDJ (news.google.com, Tue, 07 Ju) — https://news.google.com/rss/articles/CBMiekFVX3lxTE1vN2ZBUHpiM3RTYmNpdnZaTEFKazhObTFBOFQ3Q1dDWDhIbDNTSnNXUU5FdDVHTXIxYTFKNmxOWmlPUVZabVFEMmxXaUtpYWpfUnltWHk0YW1wRGtCOU5FWXBpLV93MzV5SjJuNi1kdTFjbHNReE9IM1dn?oc=5

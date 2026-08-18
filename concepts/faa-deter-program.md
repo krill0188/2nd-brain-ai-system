@@ -26,3 +26,6 @@ domain: regulations
 
 - [[drone-regulations]] — FAA 드론 규제 총론
 - [[drone-safety-failsafe]] — 안전 및 페일세이프 시스템
+
+## 📰 최근 관련 소식
+- Airworthiness Directives; The Boeing Company Airplanes (federalregister.gov, 2026-08-13) — https://www.federalregister.gov/documents/2026/08/13/2026-16504/airworthiness-directives-the-boeing-company-airplanes
