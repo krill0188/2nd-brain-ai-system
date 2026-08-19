@@ -1,0 +1,21 @@
+---
+title: "Enhancing Drone Light Shows Performances: Optimal Allocation and Trajectories for Swarm Drone Formations"
+created: 2026-08-19
+captured: 2026-08-19
+type: paper
+domain: gcs-software
+source: http://arxiv.org/abs/2603.24401v1
+authors: "Yunes Alqudsi"
+published: "2026-03-25"
+tags: [drone, gcs-software, paper, arxiv]
+---
+
+# Enhancing Drone Light Shows Performances: Optimal Allocation and Trajectories for Swarm Drone Formations
+
+**Authors**: Yunes Alqudsi
+**Published**: 2026-03-25
+**arXiv**: http://arxiv.org/abs/2603.24401v1
+
+## Abstract
+
+Drone light shows (DLShows) represent a rapidly growing application of swarm robotics, creating captivating aerial displays through the synchronized flight of hundreds or thousands of unmanned aerial vehicles (UAVs) as environmentally friendly and reusable alternatives to traditional pyrotechnics. This domain presents unique challenges in optimally assigning drones to visual waypoints and generating smooth, collision-free trajectories at a very large scale. This article introduces the Unified Assignment and Trajectory Generation (UATG) framework. The proposed approach concurrently solves two core problems: the optimal assignment of drones to designated goal locations and the generation of dynamically feasible, collision-free, time-parameterized trajectories. The UATG framework is specifically designed for DLShows, ensuring minimal transition times between formations and guaranteeing inter-drone collision avoidance. A key innovation is its exceptional computational efficiency, enabling the coordination of large-scale in real-time; for instance, it computes the optimal assignment and trajectories for 1008 drones in approximately one second on a standard laptop. Extensive simulations in realistic environments validate the framework's performance, demonstrating its capability to orchestrate complex formations, from alphanumeric characters to intricate 3D shapes, with precision and visual smoothness. This work provides a critical advancement for the DLShow industry, offering a practical and scalable solution for generating complex aerial choreography and establishing a valuable benchmark for ground control station software designed for the efficient coordination of multiple UAVs. A supplemental animated simulation of this work is available at https://youtu.be/-Fjrhw03594.

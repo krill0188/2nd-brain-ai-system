@@ -10,14 +10,8 @@ tags: [drone, ops-mission, news]
 
 # suasnews 최신 동향 (2026-08-19)
 
-## Introducing YARI V6X: A Modular Flight Controller Platform for Small Unmanned Vehicles
-- 링크: https://www.suasnews.com/2026/08/introducing-yari-v6x-a-modular-flight-controller-platform-for-small-unmanned-vehicles/
-- 날짜: Mon, 17 Aug 2026 09:47:31 +0000
+## The Malaysia detour: why tariffs failed and the FCC reached backward
+- 링크: https://www.suasnews.com/2026/08/the-malaysia-detour-why-tariffs-failed-and-the-fcc-reached-backward/
+- 날짜: Tue, 18 Aug 2026 21:32:38 +0000
 
-YARI V6X is an enterprise-grade FMUv6X modular flight controller and autopilot platform for demanding small
-
-## The operation hasn’t changed. Your decision-making has.
-- 링크: https://www.suasnews.com/2026/08/the-operation-hasnt-changed-your-decision-making-has/
-- 날짜: Mon, 17 Aug 2026 09:40:33 +0000
-
-There is a strange thing that happens towards the end of a long test day.
+On 3 August the Federal Communications Commission stopped simply blocking new entries to the US

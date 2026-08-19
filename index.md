@@ -3,7 +3,7 @@
 > Complete catalog of active canonical pages. Each entry is a wikilink followed by
 > a one-line summary, sorted alphabetically within its section.
 >
-> Total pages: 244
+|> Total pages: 265
 ## Entities
 - [[cambridge-aerospace]] — 영국 공중 방위/C-UAS 기업, $300M Series C (2026-08).
 - [[mbf-group]] — 폴란드 드론/우주 기업, IRYDA+ X1 및 SPACE Z1 개발.
@@ -247,13 +247,30 @@
 |- [[uav-swarm-air-ground-isac]] — 교차 지역 협력 기반 Air-Ground ISAC UAV 군집(MAPPO).
 |- [[rigid-covert-gnss-spoofing-swarm]] — UAV 군집 GNSS 스푸핑의 상대기하 탐지 사각지대(RigidShift).
 ||- [[curriculum-guided-heterogeneous-multi-agent-isac]] — 커리큘럼 기반 이질적 다중 에이전트 ISAC 스웜 시스템.
+|||- [[edge-constrained-uav-small-object-detection]] — P2 강화 및 QIEA 기반 에지 제약 UAV 소형 객체 탐지.
+|||- [[llm-enabled-uav-natural-language-navigation]] — STL 사양 변환 기반 LLM 활성화 UAV 자연어 내비게이션.
+|||- [[uav-detr-anti-drone-detection]] — WTConv 및 SWSA 기반 실시간 대드론 탐지 DETR 프레임워크.
+||- [[aeroeval-mdo-framework]] — Multi-domain physics-based MDO for multirotor UAVs.
+||- [[test-time-scaling-vlm-uav]] — Test-time scaled VLMs for UAV navigation.
+||- [[visual-slam-gps-denied-evaluation]] — Robust V-SLAM evaluation in GPS-denied environments.
+||- [[llm-swarm-wot-framework]] — Agent-enhanced LLM reasoning for UAV swarm.
+||- [[uav-swarm-ai-trends-kci]] — UAV 군집 AI 기술 동향: MARL부터 LLM까지 아키텍처 진화.
+||- [[drone-anomaly-detection-survey]] — 드론 이상 징후 탐지 방법 연구 동향 및 융합 방향.
+||- [[drone-lidar-forest-boundary]] — 드론 라이다를 이용한 임야 현황경계 추출 및 지적측량 적용.
+||- [[uav-multispectral-glint-correction]] — UAV 다중분광 영상 글린트 보정(MVGC).
+||- [[sparc-narts-path-planning]] — SpArC-NARTs 네트워크 에어리얼 로봇 팀 경로 계획 최적화.
+||- [[cross-layer-attacks-uav-5g]] — 5G 기반 UAV C2 크로스 레이어 공격 분석.
+||- [[drone-light-show-uatg]] — 드론 라이트쇼 UATG 프레임워크: 1008대 실시간 궤적 생성.
+||- [[secure-swarm-uav-communications]] — 협력적 프렌들리 재밍을 통한 안전한 UAV 군집 통신.
+||- [[isac-uav-security]] — ISAC-UAV 시스템 물리 계층 보안 및 빔포밍 최적화.
+||- [[irs-assisted-uav-direction-modulation]] — IRS 지원 UAV 방향 변조 및 불연속 위상 시프트.
+||- [[time-optimal-quadrotor-waypoints]] — 쿼드로터 웨이포인트 시간 최적 궤적 계획.
+||- [[uav-battery-replacement-planner]] — UAV 배터리 교체 미션 플래너.
+||- [[dame-net-uav-image-restoration]] — DAME-Net: 구성적 UAV 이미지 복원(MoE 기반).
+||- [[tri-modal-uav-object-detection]] — 삼중 모달(RGB+열화상+이벤트) 융합 UAV 객체 탐지.
 ||- [[edge-constrained-uav-small-object-detection]] — P2 강화 및 QIEA 기반 에지 제약 UAV 소형 객체 탐지.
-||- [[llm-enabled-uav-natural-language-navigation]] — STL 사양 변환 기반 LLM 활성화 UAV 자연어 내비게이션.
-||- [[uav-detr-anti-drone-detection]] — WTConv 및 SWSA 기반 실시간 대드론 탐지 DETR 프레임워크.
-|- [[aeroeval-mdo-framework]] — Multi-domain physics-based MDO for multirotor UAVs.
-|- [[test-time-scaling-vlm-uav]] — Test-time scaled VLMs for UAV navigation.
-|- [[visual-slam-gps-denied-evaluation]] — Robust V-SLAM evaluation in GPS-denied environments.
-|- [[llm-swarm-wot-framework]] — Agent-enhanced LLM reasoning for UAV swarm.
+||- [[wonder-uav-coverage-optimization]] — WONDER: JEPA 기반 UAV 커버리지 최적화 협상 프레임워크.
+||- [[pilot-uav-motion-planning]] — PILOT: 특권 모방 학습 기반 UAV 모션 플래닝.
 
 ## Comparisons
 

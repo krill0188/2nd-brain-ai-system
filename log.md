@@ -1070,3 +1070,35 @@
   - `concepts/test-time-scaling-vlm-uav.md` — Test-time scaled VLMs for UAV navigation
   - `concepts/visual-slam-gps-denied-evaluation.md` — Robust V-SLAM evaluation in GPS-denied environments
   - `concepts/llm-swarm-wot-framework.md` — Agent-enhanced LLM reasoning for UAV swarm
+
+## [2026-08-19] ingest | inbox 일일 수집 및 컴파일 (2차)
+
+- Source files from `inbox/` (22 files processed):
+  - KCI papers (4): UAV 군집 AI 동향, 드론 이상 탐지, 드론 라이다 임야측량, 다중분광 글린트 보정
+  - arXiv papers (11): SpArC-NARTs, 5G C2 공격, 드론 라이트쇼, 보안 스웜 통신, ISAC 보안, IRS 변조, 시간최적 경로, 배터리 교체, DAME-Net 이미지 복원, 삼중모달 탐지, 에지 소형객체탐지, WONDER 커버리지, PILOT 모션플래닝
+  - RSS news (4): DroneLife, sUAS News, Skydio, OscarLiang FPV
+  - YouTube videos (3): DJI Air 3S, DJI Osmo 360, Joshua Bardwell Q&A
+- Created concepts:
+  - `concepts/uav-swarm-ai-trends-kci.md` — UAV 군집 AI 기술 동향 (MARL→LLM)
+  - `concepts/drone-anomaly-detection-survey.md` — 드론 이상 징후 탐지 방법
+  - `concepts/drone-lidar-forest-boundary.md` — 드론 라이다 임야 현황경계
+  - `concepts/uav-multispectral-glint-correction.md` — UAV 다중분광 글린트 보정
+  - `concepts/sparc-narts-path-planning.md` — SpArC-NARTs 경로 계획
+  - `concepts/cross-layer-attacks-uav-5g.md` — 5G C2 크로스 레이어 공격
+  - `concepts/drone-light-show-uatg.md` — 드론 라이트쇼 UATG
+  - `concepts/secure-swarm-uav-communications.md` — 보안 스웜 UAV 통신
+  - `concepts/isac-uav-security.md` — ISAC-UAV 물리 계층 보안
+  - `concepts/irs-assisted-uav-direction-modulation.md` — IRS 지원 방향 변조
+  - `concepts/time-optimal-quadrotor-waypoints.md` — 시간 최적 쿼드로터 경로
+  - `concepts/uav-battery-replacement-planner.md` — UAV 배터리 교체 플래너
+  - `concepts/dame-net-uav-image-restoration.md` — DAME-Net 이미지 복원
+  - `concepts/tri-modal-uav-object-detection.md` — 삼중 모달 객체 탐지
+  - `concepts/edge-constrained-uav-small-object-detection.md` — 에지 제약 소형 객체 탐지
+  - `concepts/wonder-uav-coverage-optimization.md` — WONDER 커버리지 최적화
+  - `concepts/pilot-uav-motion-planning.md` — PILOT 모션 플래닝
+- Skipped (low-value content):
+  - YouTube Q&A streams (2): Joshua Bardwell 라이브스트림 (일반 FPV Q&A)
+- Moved to processed:
+  - All 22 inbox files → `inbox/processed/`
+- Updated:
+  - `index.md` (총 페이지 265으로 갱신)
