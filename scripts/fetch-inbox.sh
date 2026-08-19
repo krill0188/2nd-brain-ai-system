@@ -559,9 +559,12 @@ def slugify(t):
     t = re.sub(r"[^\w\s-]", "", t.lower())
     return re.sub(r"[\s_]+", "-", t)[:60]
 
-def write_paper(title, url, domain, region, authors, journal, published, abstract, src_tag):
+def write_paper(title, url, domain, region, authors, journal, published, abstract, src_tag, open_access=None):
     fslug = slugify(title)
     out = os.path.join(inbox, f"fetch-{today}-{src_tag}-{fslug}.md")
+    open_access_line = ""
+    if open_access is not None:
+        open_access_line = f"open_access: {'true' if open_access else 'false'}\n"
     with open(out, "w") as f:
         f.write(f"""---
 title: {json.dumps(title)}
@@ -573,7 +576,7 @@ source: {url}
 authors: {json.dumps(authors[:200])}
 journal: {json.dumps(journal[:120])}
 published: "{published}"
-tags: [drone, {domain}, paper, {src_tag}]
+{open_access_line}tags: [drone, {domain}, paper, {src_tag}]
 ---
 
 # {title}
@@ -582,6 +585,7 @@ tags: [drone, {domain}, paper, {src_tag}]
 **Journal**: {journal}
 **Published**: {published}
 **Link**: {url}
+{f"**원문 공개**: {'✅ 공개(KCI 원문 내려받기 버튼 확인됨)' if open_access else '❌ 비공개(페이월/기관 접근 필요)'}" if open_access is not None else ""}
 
 ## Abstract
 
@@ -599,6 +603,7 @@ tags: [drone, {domain}, paper, {src_tag}]
             "title": title, "authors": authors.split(", ") if authors else [],
             "abstract": abstract, "doi": doi, "url": url, "date": published,
             "journal": journal, "source": src_tag,
+            "extra_tag": "open-access" if open_access else None,
         }, ensure_ascii=False)
         subprocess.run(["python3", os.path.expanduser("~/2nd/scripts/zotero-web-add.py")],
                        input=push_payload, text=True, capture_output=True, timeout=60)
@@ -642,6 +647,26 @@ except Exception as ex:
 # 키워드도 "드론" 단일어라 UAV/무인기/무인비행체 동의어를 OR로 추가해 커버리지 확대.
 # regDateFrom/regDateTo(등록일 범위, 공식 활용가이드 확인)로 최근 7일 등록분만
 # 요청 — 검색결과 상위가 항상 오래된 인기논문이라 새 논문을 놓치는 걸 방지.
+#
+# 원문공개여부(open_access) 판정: 공식 API(REST articleDetail, OAI-PMH oai_kci)의
+# orte-open-yn 필드를 둘 다 실측했으나 REST엔 필드 자체가 노출 안 되고, OAI-PMH는
+# article-id↔OAI identifier 매핑이 없어 하루 1,300+건을 순회해도 매칭 0/4로
+# 실패했다(2026-08-19). 대신 KCI 뷰어 페이지(이미 저장 중인 link) HTML에
+# `fncDown('KCI_FI...')` — "KCI 원문 내려받기" 버튼의 onclick 핸들러 — 존재
+# 여부로 직접 판별. 페이지당 요청 1번이면 되고 대량 순회가 불필요해 REST/OAI
+# 방식보다 훨씬 가볍고 안정적임을 실측 확인(4건 중 1건 공개/3건 비공개로 정상
+# 대조됨). 실제 PDF 자동다운로드는 JS 폼 제출 방식이라 이번 스코프에서 제외 —
+# 공개여부 표시까지만.
+def check_kci_open_access(link):
+    try:
+        req = urllib.request.Request(link, headers={
+            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
+        })
+        html = urllib.request.urlopen(req, timeout=15).read().decode("utf-8", errors="replace")
+        return "fncDown('KCI_FI" in html
+    except Exception:
+        return None
+
 if kci_key:
     try:
         kci_keywords = ["드론", "UAV", "무인기", "무인비행체"]
@@ -673,7 +698,8 @@ if kci_key:
                 journal = ft("journal-name", "journalName", "journal-title")
                 pub = ft("pub-year", "pubYear", "publication-date")
                 abstract = ft("abstract", "abstract-ko")[:800]
-                write_paper(title, link, classify(title + " " + abstract), "KR", authors, journal, pub, abstract, "kci")
+                open_access = check_kci_open_access(link)
+                write_paper(title, link, classify(title + " " + abstract), "KR", authors, journal, pub, abstract, "kci", open_access)
                 cnt += 1
         if cnt: print(f"  ✅ [paper] KCI 국내논문 {cnt}편 → inbox/")
         else: print("  ⚠️  kci: 응답 파싱 0건 — 키/스펙 확인 필요", file=sys.stderr)

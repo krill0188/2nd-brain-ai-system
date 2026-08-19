@@ -148,7 +148,11 @@ def create_parent_item(paper: dict, dry_run: bool) -> str | None:
         "date": paper.get("date", ""),
         "DOI": doi,
         "url": paper.get("url", ""),
-        "tags": [{"tag": "auto:2nd-brain"}] + ([{"tag": paper["tag"]}] if paper.get("tag") else []),
+        "tags": (
+            [{"tag": "auto:2nd-brain"}]
+            + ([{"tag": paper["tag"]}] if paper.get("tag") else [])
+            + ([{"tag": paper["extra_tag"]}] if paper.get("extra_tag") else [])
+        ),
     }
     if repository:
         item["repository"] = repository
