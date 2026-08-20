@@ -32,6 +32,14 @@ from graph_lib import (
 wiki = os.path.expanduser("~/2nd")
 graph_path, legacy_path = sys.argv[1], sys.argv[2]
 
+# 2026-08-20 팔란티어 온톨로지 Link 보강: PhysicalEntity 하위 세분류
+# (Sensor/Actuator/ComputeUnit 등) 문서는 frontmatter의 ontology_class로
+# domain 기반 매핑(ontology_class_for_domain)을 override할 수 있다.
+# class-hierarchy.json에 실제 정의된 클래스만 허용 — 오탈자로 존재하지
+# 않는 클래스가 그래프에 들어가는 걸 막는다.
+with open(os.path.join(wiki, "ontology", "class-hierarchy.json")) as f:
+    VALID_ONTOLOGY_CLASSES = set(json.load(f)["classes"].keys())
+
 # ── G0 마이그레이션(최초 1회) ────────────────────────────────────
 # 신규 전용 파일이 아직 없고, understand-anything이 공유하던 구 파일에
 # 우리 canonical 데이터(ontologyClass 필드 보유 노드)가 있으면 그것만
@@ -102,7 +110,11 @@ for fpath in sorted(set(all_files)):
     # FlightController라는 하드웨어의 인스턴스가 아니라 그 기술에 대한
     # 설명이므로 Technology로 분류하는 게 맞다). 매핑 안 되면 null로 두고
     # 억지로 분류하지 않는다(SCHEMA.md 원칙과 동일).
-    ontology_class = ontology_class_for_domain(fm.get("domain", ""))
+    explicit_class = fm.get("ontology_class", "").strip() if isinstance(fm.get("ontology_class"), str) else ""
+    if explicit_class and explicit_class in VALID_ONTOLOGY_CLASSES:
+        ontology_class = explicit_class
+    else:
+        ontology_class = ontology_class_for_domain(fm.get("domain", ""))
 
     node = {
         "id":     slug,

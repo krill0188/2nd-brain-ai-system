@@ -5,10 +5,16 @@ updated: 2026-08-19
 type: entity
 domain: flight-control
 tags: [drone, flight-control, hardware, fmu, autopilot, yari]
-sources: [inbox/fetch-2026-08-19-rss-suasnews.md]
+sources: [inbox/fetch-2026-08-19-rss-suasnews.md, "https://yarirobotics.com/product/yariv6x-fc-standard-set/"]
 confidence: high
 contested: false
 contradictions: []
+ontology_class: ComputeUnit
+ontology_subclass: FlightController
+manufacturer: "YARI Robotics"
+mcu: STM32H743
+imuArray: "3x IIM-42653 (SmartIndustrial, 능동 발열관리)"
+note: "2026-08-20 팔란티어 온톨로지 Link 보강 — WebSearch로 무게/치수는 공식 자료에서 확인 못 함(추측 없이 미기입), MCU/IMU 구성만 검증 반영"
 ---
 
 # YARI V6X Flight Controller

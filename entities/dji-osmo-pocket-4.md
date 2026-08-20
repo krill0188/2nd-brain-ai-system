@@ -5,10 +5,17 @@ updated: 2026-08-01
 type: entity
 tags: [drone, drone-hw]
 domain: hardware
-sources: ["inbox/fetch-2026-08-01-yt-unbox-slip-it-into-your-pocket-start-rolling-osmo-pocket-4.md"]
+sources: ["inbox/fetch-2026-08-01-yt-unbox-slip-it-into-your-pocket-start-rolling-osmo-pocket-4.md", "https://www.notebookcheck.net/DJI-Osmo-Pocket-4P-Pro-review-shows-70mm-1-1-5-inch-3-6x-zoom-camera-samples-with-cinematic-bokeh.1292303.0.html"]
 confidence: high
 contested: false
 contradictions: []
+ontology_class: Sensor
+ontology_subclass: Camera
+manufacturer: DJI
+weightG: 230
+sensorType: "1-inch CMOS(광각, LOFIC) + 1/1.28-inch CMOS(60mm 상당 망원)"
+resolutionMp: 37
+note: "2026-08-20 팔란티어 온톨로지 Link 보강 — WebSearch 실측 검증(Notebookcheck 등 리뷰 매체 종합)"
 ---
 
 # DJI Osmo Pocket 4P

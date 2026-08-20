@@ -5,10 +5,17 @@ updated: 2026-08-01
 type: entity
 tags: [drone, drone-hw]
 domain: hardware
-sources: ["inbox/fetch-2026-08-01-yt-three-moves-one-gimbal-all-in-dji-rs-5.md"]
+sources: ["inbox/fetch-2026-08-01-yt-three-moves-one-gimbal-all-in-dji-rs-5.md", "https://www.dji.com/rs-5/specs"]
 confidence: high
 contested: false
 contradictions: []
+ontology_class: Actuator
+ontology_subclass: Gimbal
+manufacturer: DJI
+weightKg: 1.46
+maxPayloadKg: 3
+batteryWh: 33.29
+note: "2026-08-20 팔란티어 온톨로지 Link 보강 — DJI 공식 스펙 페이지로 WebSearch 검증"
 ---
 
 # DJI RS 5

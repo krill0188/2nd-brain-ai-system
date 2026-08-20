@@ -6,10 +6,19 @@ type: entity
 tags: [drone-hw, drone-sw]
 sources:
   - raw/articles/entity-pixhawk-hardware.md
+  - https://docs.holybro.com/autopilot/pixhawk-6x/technical-specification
 confidence: high
 domain: hardware
 contested: false
 contradictions: []
+ontology_class: ComputeUnit
+ontology_subclass: FlightController
+manufacturer: Holybro
+representative_model: "Pixhawk 6X"
+weightG: 23
+dimensionsMm: "38.8 x 31.8 x 14.6"
+mcu: STM32H753
+note: "2026-08-20 팔란티어 온톨로지 Link 보강 — 대표 모델(Pixhawk 6X) 기준 실측 스펙, Holybro 공식 문서로 WebSearch 검증"
 ---
 
 # Pixhawk

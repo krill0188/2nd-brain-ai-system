@@ -1,0 +1,22 @@
+{
+  "rule": "ONTOLOGY_SPEC.md §4 규칙6 — 미승인 가설로 Mission 근거 금지",
+  "checked_at": "2026-08-20T12:21:00Z",
+  "violations": [],
+  "clean_sessions": [
+    {
+      "session_id": "20260731-research-1785453631",
+      "hypothesis_count": 7,
+      "promoted_count": 0
+    },
+    {
+      "session_id": "20260801-research-1785510116",
+      "hypothesis_count": 7,
+      "promoted_count": 0
+    },
+    {
+      "session_id": "20260801-research-1785543589",
+      "hypothesis_count": 4,
+      "promoted_count": 2
+    }
+  ]
+}
