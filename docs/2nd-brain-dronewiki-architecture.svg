@@ -1,0 +1,246 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1180" font-family="'Apple SD Gothic Neo','Malgun Gothic',sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475569"/>
+    </marker>
+    <marker id="aBlue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#0284c7"/>
+    </marker>
+    <marker id="aPurple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1800" height="1180" fill="#f8fafc"/>
+  <text x="900" y="34" text-anchor="middle" font-size="22" font-weight="700" fill="#0f172a">2nd Brain × DroneWiki — 팔란티어 온톨로지 전체 구조</text>
+  <text x="900" y="54" text-anchor="middle" font-size="12.5" fill="#64748b">Object/Property/Link/Action(2nd Brain, 원본) → 파일 동기화 파이프라인 → RAG+서브섬션 추론(drone-wiki-web, 배포본)</text>
+
+  <!-- ============ SECTION A: 2nd Brain 팔란티어 온톨로지 4요소 ============ -->
+  <rect x="30" y="80" width="500" height="1000" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="280" y="108" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">2nd Brain (~/2nd) — 팔란티어 온톨로지 4요소, 원본</text>
+
+  <!-- Object Type -->
+  <rect x="55" y="130" width="450" height="130" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+  <text x="280" y="152" text-anchor="middle" font-size="13" font-weight="700" fill="#334155">① Object Type</text>
+  <text x="280" y="170" text-anchor="middle" font-size="11" fill="#475569">ontology/class-hierarchy.json</text>
+  <text x="280" y="190" text-anchor="middle" font-size="10.5" fill="#64748b">53개 클래스 · Thing → PhysicalEntity/</text>
+  <text x="280" y="206" text-anchor="middle" font-size="10.5" fill="#64748b">SoftwareSystem/AbstractProcess/Agent…</text>
+  <text x="280" y="226" text-anchor="middle" font-size="10.5" fill="#64748b">PhysicalEntity 하위: Drone/Sensor/</text>
+  <text x="280" y="242" text-anchor="middle" font-size="10.5" fill="#64748b">Actuator/ComputeUnit (19개 세부클래스)</text>
+
+  <!-- Property Type -->
+  <rect x="55" y="272" width="450" height="110" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+  <text x="280" y="294" text-anchor="middle" font-size="13" font-weight="700" fill="#334155">② Property Type</text>
+  <text x="280" y="312" text-anchor="middle" font-size="11" fill="#475569">ONTOLOGY_SPEC.md §2 · §3</text>
+  <text x="280" y="332" text-anchor="middle" font-size="10.5" fill="#64748b">관계 20종(hasSensor, runsOn…)</text>
+  <text x="280" y="348" text-anchor="middle" font-size="10.5" fill="#64748b">속성 스키마(weightKg, deploymentLocation…)</text>
+  <text x="280" y="368" text-anchor="middle" font-size="10.5" fill="#64748b">SWRL 추론 규칙 8개 정의</text>
+
+  <line x1="280" y1="260" x2="280" y2="272" stroke="#94a3b8" stroke-width="1.2" marker-end="url(#a)"/>
+
+  <!-- Link -->
+  <rect x="55" y="394" width="450" height="150" rx="8" fill="#fef9c3" stroke="#ca8a04"/>
+  <text x="280" y="416" text-anchor="middle" font-size="13" font-weight="700" fill="#713f12">③ Link — 실세계 인스턴스</text>
+  <text x="280" y="434" text-anchor="middle" font-size="11" fill="#713f12">entities/*.md frontmatter (2026-08-20 신규)</text>
+  <text x="280" y="454" text-anchor="middle" font-size="10.5" fill="#a16207">pixhawk/dji-rs-5/dji-osmo-pocket-4/yari-v6x</text>
+  <text x="280" y="470" text-anchor="middle" font-size="10.5" fill="#a16207">/yolo-v8-4-114 — WebSearch 실측 스펙</text>
+  <text x="280" y="486" text-anchor="middle" font-size="10.5" fill="#a16207">(weightG/manufacturer/mcu/parameterCount)</text>
+  <text x="280" y="510" text-anchor="middle" font-size="10.5" fill="#854d0e">update-graph.sh가 ontology_class override</text>
+  <text x="280" y="526" text-anchor="middle" font-size="10.5" fill="#854d0e">→ .ua/drone-knowledge-graph.json 반영</text>
+
+  <line x1="280" y1="382" x2="280" y2="394" stroke="#94a3b8" stroke-width="1.2" marker-end="url(#a)"/>
+
+  <!-- Action -->
+  <rect x="55" y="566" width="450" height="170" rx="8" fill="#fee2e2" stroke="#dc2626"/>
+  <text x="280" y="588" text-anchor="middle" font-size="13" font-weight="700" fill="#7f1d1d">④ Action — Kinetic Layer</text>
+  <text x="280" y="606" text-anchor="middle" font-size="11" fill="#7f1d1d">scripts/apply-kinetic-rules.py</text>
+  <text x="280" y="626" text-anchor="middle" font-size="10.5" fill="#991b1b">rdflib ABox 트리플 → SPARQL 추론 → 쓰기</text>
+  <text x="280" y="644" text-anchor="middle" font-size="10.5" fill="#991b1b">규칙4 SLM/LLM 판별 → aiModelClass 기록</text>
+  <text x="280" y="660" text-anchor="middle" font-size="10.5" fill="#991b1b">규칙6 미승인가설 감사 → ontology-audit.json</text>
+  <text x="280" y="680" text-anchor="middle" font-size="10.5" fill="#7f1d1d" font-weight="600">hermes cron 04:50 자동 실행</text>
+  <text x="280" y="700" text-anchor="middle" font-size="10" fill="#b91c1c">(나머지 SWRL 6개: 실시간 텔레메트리 필요</text>
+  <text x="280" y="716" text-anchor="middle" font-size="10" fill="#b91c1c">→ Swarm OPS GCS 미검증으로 스코프 제외)</text>
+
+  <line x1="280" y1="544" x2="280" y2="566" stroke="#94a3b8" stroke-width="1.2" marker-end="url(#a)"/>
+
+  <rect x="55" y="754" width="450" height="60" rx="8" fill="#fff" stroke="#94a3b8" stroke-dasharray="4 3"/>
+  <text x="280" y="774" text-anchor="middle" font-size="11" font-weight="700" fill="#334155">상세 흐름도(트리거→트리플→추론→쓰기→알림)</text>
+  <text x="280" y="792" text-anchor="middle" font-size="10.5" fill="#64748b">→ docs/agent-workflow.svg (Action 단독 상세뷰)</text>
+
+  <!-- daily pipeline mini -->
+  <text x="280" y="850" text-anchor="middle" font-size="12" font-weight="700" fill="#334155">hermes cron 새벽 체인</text>
+  <g font-size="10">
+    <rect x="60" y="864" width="100" height="36" rx="6" fill="#e2e8f0" stroke="#94a3b8"/>
+    <text x="110" y="886" text-anchor="middle" fill="#334155">04:00 daily-ingest</text>
+    <rect x="175" y="864" width="100" height="36" rx="6" fill="#e2e8f0" stroke="#94a3b8"/>
+    <text x="225" y="886" text-anchor="middle" fill="#334155">04:47 graph갱신</text>
+    <rect x="290" y="864" width="105" height="36" rx="6" fill="#fee2e2" stroke="#dc2626"/>
+    <text x="342" y="886" text-anchor="middle" fill="#7f1d1d">04:50 kinetic-rules</text>
+    <rect x="410" y="864" width="90" height="36" rx="6" fill="#e0f2fe" stroke="#0284c7"/>
+    <text x="455" y="886" text-anchor="middle" fill="#0c4a6e">04:30 sync ▶</text>
+  </g>
+  <line x1="160" y1="882" x2="175" y2="882" stroke="#475569" stroke-width="1" marker-end="url(#a)"/>
+  <line x1="275" y1="882" x2="290" y2="882" stroke="#475569" stroke-width="1" marker-end="url(#a)"/>
+
+  <text x="280" y="936" text-anchor="middle" font-size="10.5" fill="#94a3b8">※ sync는 04:30(그래프 갱신 이전) — Link 원본은 그날 반영,</text>
+  <text x="280" y="952" text-anchor="middle" font-size="10.5" fill="#94a3b8">그래프/규칙 최신결과는 익일 04:30에 동기화(오늘은 수동 즉시실행)</text>
+
+  <rect x="55" y="980" width="450" height="80" rx="8" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="280" y="1002" text-anchor="middle" font-size="11" font-weight="700" fill="#334155">역할: Source of Truth</text>
+  <text x="280" y="1020" text-anchor="middle" font-size="10.5" fill="#64748b">모든 데이터·추론 로직의 유일 원본.</text>
+  <text x="280" y="1036" text-anchor="middle" font-size="10.5" fill="#64748b">drone-wiki-web은 이 원본의 매일 스냅샷 미러.</text>
+
+  <!-- ============ ARROW A -> B ============ -->
+  <line x1="530" y1="460" x2="590" y2="460" stroke="#0284c7" stroke-width="2" marker-end="url(#aBlue)"/>
+  <text x="560" y="448" text-anchor="middle" font-size="10" fill="#0284c7" font-weight="700">rsync</text>
+
+  <!-- ============ SECTION B: 동기화 파이프라인 ============ -->
+  <rect x="590" y="80" width="330" height="1000" rx="12" fill="#f0f9ff" stroke="#7dd3fc" stroke-width="1.5"/>
+  <text x="755" y="108" text-anchor="middle" font-size="15" font-weight="700" fill="#0c4a6e">동기화 파이프라인</text>
+  <text x="755" y="126" text-anchor="middle" font-size="10.5" fill="#0369a1">hermes cron 04:30 · sync-wiki.sh</text>
+  <text x="755" y="140" text-anchor="middle" font-size="9.5" fill="#0369a1">(오늘 8/2 이전 구버전 사본 발견·최신화)</text>
+
+  <rect x="615" y="160" width="280" height="160" rx="8" fill="#fff" stroke="#7dd3fc"/>
+  <text x="755" y="182" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0c4a6e">1. 파일 복사 (rsync/cp)</text>
+  <text x="755" y="202" text-anchor="middle" font-size="10" fill="#0369a1">concepts/ entities/ comparisons/</text>
+  <text x="755" y="218" text-anchor="middle" font-size="10" fill="#0369a1">queries/ ontology/ (마크다운 원문 전체)</text>
+  <text x="755" y="238" text-anchor="middle" font-size="10" fill="#0369a1">.ua/drone-knowledge-graph.json</text>
+  <text x="755" y="254" text-anchor="middle" font-size="10" fill="#0369a1">.ua/discovery-knowledge-graph.json</text>
+  <text x="755" y="270" text-anchor="middle" font-size="10" fill="#0369a1">.ua/news-feed.json · daily-briefing.json</text>
+  <text x="755" y="286" text-anchor="middle" font-size="10" fill="#0369a1">.ua/embeddings.json · self-update-state.json</text>
+  <text x="755" y="304" text-anchor="middle" font-size="9.5" fill="#075985">→ drone-wiki-web/data/wiki/ 로 통째 복사</text>
+
+  <line x1="755" y1="320" x2="755" y2="340" stroke="#0284c7" stroke-width="1.5" marker-end="url(#aBlue)"/>
+
+  <rect x="615" y="342" width="280" height="90" rx="8" fill="#fff" stroke="#7dd3fc"/>
+  <text x="755" y="364" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0c4a6e">2. git commit + push</text>
+  <text x="755" y="384" text-anchor="middle" font-size="10" fill="#0369a1">"sync: 2nd Brain → DroneWiki"</text>
+  <text x="755" y="402" text-anchor="middle" font-size="10" fill="#0369a1">변경 없으면 스킵(git status --porcelain)</text>
+  <text x="755" y="418" text-anchor="middle" font-size="9.5" fill="#075985">drone-wiki-web 저장소(krill0188/drone-wiki-web)</text>
+
+  <line x1="755" y1="432" x2="755" y2="452" stroke="#0284c7" stroke-width="1.5" marker-end="url(#aBlue)"/>
+
+  <rect x="615" y="454" width="280" height="90" rx="8" fill="#fff" stroke="#7dd3fc"/>
+  <text x="755" y="476" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0c4a6e">3. Vercel 배포</text>
+  <text x="755" y="496" text-anchor="middle" font-size="10" fill="#0369a1">npx vercel --prod --yes</text>
+  <text x="755" y="514" text-anchor="middle" font-size="10" fill="#0369a1">git 연동 자동배포 없는 프로젝트 — CLI 필수</text>
+  <text x="755" y="530" text-anchor="middle" font-size="9.5" fill="#075985">배포마다 새 고유 URL 생성</text>
+
+  <line x1="755" y1="544" x2="755" y2="564" stroke="#0284c7" stroke-width="1.5" marker-end="url(#aBlue)"/>
+
+  <rect x="615" y="566" width="280" height="80" rx="8" fill="#fff" stroke="#7dd3fc"/>
+  <text x="755" y="588" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0c4a6e">4. alias 재연결</text>
+  <text x="755" y="608" text-anchor="middle" font-size="10" fill="#0369a1">vercel alias set &lt;배포URL&gt;</text>
+  <text x="755" y="624" text-anchor="middle" font-size="10" fill="#0369a1">drone-wiki-web.vercel.app</text>
+  <text x="755" y="638" text-anchor="middle" font-size="9.5" fill="#dc2626">빠뜨리면 실도메인 조용히 정체</text>
+
+  <rect x="615" y="666" width="280" height="120" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-dasharray="3 3"/>
+  <text x="755" y="688" text-anchor="middle" font-size="11" font-weight="700" fill="#065f46">2026-08-20 발견·수정한 버그</text>
+  <text x="755" y="706" text-anchor="middle" font-size="9.5" fill="#065f46">~/.hermes/scripts/dronewiki-sync.sh 가</text>
+  <text x="755" y="720" text-anchor="middle" font-size="9.5" fill="#065f46">8/2 이전 구버전 사본이라 drone-knowledge-</text>
+  <text x="755" y="734" text-anchor="middle" font-size="9.5" fill="#065f46">graph.json이 6일째 미동기화 상태였음</text>
+  <text x="755" y="752" text-anchor="middle" font-size="9.5" fill="#047857" font-weight="600">→ scripts/sync-wiki.sh(최신 원본)로 교체</text>
+  <text x="755" y="770" text-anchor="middle" font-size="9.5" fill="#047857">실행 재검증 완료(279docs 동기화)</text>
+
+  <rect x="615" y="800" width="280" height="80" rx="8" fill="#fff" stroke="#7dd3fc"/>
+  <text x="755" y="822" text-anchor="middle" font-size="11" font-weight="700" fill="#0c4a6e">데이터 방향성</text>
+  <text x="755" y="842" text-anchor="middle" font-size="10" fill="#0369a1">단방향(2nd Brain → drone-wiki-web)</text>
+  <text x="755" y="860" text-anchor="middle" font-size="10" fill="#0369a1">웹에서 2nd Brain으로 역방향 쓰기 없음</text>
+
+  <!-- ============ ARROW B -> C ============ -->
+  <line x1="920" y1="460" x2="980" y2="460" stroke="#7c3aed" stroke-width="2" marker-end="url(#aPurple)"/>
+  <text x="950" y="448" text-anchor="middle" font-size="10" fill="#7c3aed" font-weight="700">배포됨</text>
+
+  <!-- ============ SECTION C: drone-wiki-web ============ -->
+  <rect x="980" y="80" width="790" height="1000" rx="12" fill="#faf5ff" stroke="#c4b5fd" stroke-width="1.5"/>
+  <text x="1375" y="108" text-anchor="middle" font-size="15" font-weight="700" fill="#4c1d95">drone-wiki-web (Vercel 배포본) — 데이터 미러 + 프론트엔드</text>
+  <text x="1375" y="126" text-anchor="middle" font-size="10.5" fill="#6d28d9">drone-wiki-web.vercel.app · krill0188/drone-wiki-web</text>
+
+  <rect x="1005" y="150" width="330" height="70" rx="8" fill="#fff" stroke="#c4b5fd"/>
+  <text x="1170" y="172" text-anchor="middle" font-size="12" font-weight="700" fill="#4c1d95">data/wiki/ — 2nd Brain 스냅샷</text>
+  <text x="1170" y="192" text-anchor="middle" font-size="10" fill="#6d28d9">entities/*.md (frontmatter 원문 그대로 포함)</text>
+  <text x="1170" y="208" text-anchor="middle" font-size="10" fill="#6d28d9">.ua/drone-knowledge-graph.json</text>
+
+  <rect x="1350" y="150" width="410" height="70" rx="8" fill="#fff" stroke="#c4b5fd"/>
+  <text x="1555" y="172" text-anchor="middle" font-size="12" font-weight="700" fill="#4c1d95">2026-08-20 신규 — 온톨로지 연결 레이어</text>
+  <text x="1555" y="192" text-anchor="middle" font-size="10" fill="#6d28d9">lib/ontology.ts: getAncestors / describeOntologyClass</text>
+  <text x="1555" y="208" text-anchor="middle" font-size="10" fill="#dc2626" font-weight="600">→ class-hierarchy.json 기반 서브섬션(A ⊑ B) 실시간 추론</text>
+
+  <line x1="1170" y1="220" x2="1170" y2="250" stroke="#7c3aed" stroke-width="1.5" marker-end="url(#aPurple)"/>
+  <line x1="1555" y1="220" x2="1555" y2="250" stroke="#7c3aed" stroke-width="1.5" marker-end="url(#aPurple)"/>
+
+  <rect x="1005" y="252" width="755" height="140" rx="8" fill="#fff" stroke="#c4b5fd" stroke-width="1.5"/>
+  <text x="1382" y="274" text-anchor="middle" font-size="12.5" font-weight="700" fill="#4c1d95">lib/rag.ts — ragSearch() (핵심 수정 지점, 2026-08-20)</text>
+  <text x="1382" y="296" text-anchor="middle" font-size="10.5" fill="#6d28d9">이전: matter(raw)로 frontmatter/본문 분리 후 본문(content)만 슬라이스 → Link 데이터 소실</text>
+  <text x="1382" y="316" text-anchor="middle" font-size="10.5" fill="#047857" font-weight="600">수정: ONTOLOGY_PROPERTY_KEYS 화이트리스트로 frontmatter 구조화 속성을</text>
+  <text x="1382" y="334" text-anchor="middle" font-size="10.5" fill="#047857" font-weight="600">RagSource.properties에 포함 + ontology_class로 서브섬션 체인 자동 계산</text>
+  <text x="1382" y="356" text-anchor="middle" font-size="10" fill="#6d28d9">키워드+임베딩 하이브리드 검색(로컬 dev만) → topK 문서 + 속성 + 추론체인 반환</text>
+  <text x="1382" y="376" text-anchor="middle" font-size="9.5" fill="#7e22ce">loadGraph()는 drone-knowledge-graph.json → knowledge-graph.json 순 폴백</text>
+
+  <line x1="1382" y1="392" x2="1382" y2="416" stroke="#7c3aed" stroke-width="1.5" marker-end="url(#aPurple)"/>
+
+  <text x="1382" y="440" text-anchor="middle" font-size="12" font-weight="700" fill="#4c1d95">API Routes (system prompt에 "온톨로지 속성" 블록 삽입)</text>
+
+  <rect x="1005" y="452" width="240" height="130" rx="8" fill="#ede9fe" stroke="#7c3aed"/>
+  <text x="1125" y="474" text-anchor="middle" font-size="11.5" font-weight="700" fill="#4c1d95">/api/chat</text>
+  <text x="1125" y="492" text-anchor="middle" font-size="10" fill="#5b21b6">AI Q&amp;A</text>
+  <text x="1125" y="510" text-anchor="middle" font-size="9.5" fill="#6d28d9">ragSearch + graphRagSearch</text>
+  <text x="1125" y="526" text-anchor="middle" font-size="9.5" fill="#6d28d9">+ 온톨로지 속성/추론 블록</text>
+  <text x="1125" y="546" text-anchor="middle" font-size="9.5" fill="#047857" font-weight="600">실측: "무게는?" → 23g 정답</text>
+  <text x="1125" y="562" text-anchor="middle" font-size="9.5" fill="#047857" font-weight="600">"어떤 장치?" → 서브섬션체인 정답</text>
+
+  <rect x="1260" y="452" width="240" height="130" rx="8" fill="#ede9fe" stroke="#7c3aed"/>
+  <text x="1380" y="474" text-anchor="middle" font-size="11.5" font-weight="700" fill="#4c1d95">/api/drone-builder</text>
+  <text x="1380" y="492" text-anchor="middle" font-size="10" fill="#5b21b6">AI 드론빌더 (3단계 에이전트)</text>
+  <text x="1380" y="510" text-anchor="middle" font-size="9.5" fill="#6d28d9">기획서→스펙→아키텍처</text>
+  <text x="1380" y="526" text-anchor="middle" font-size="9.5" fill="#6d28d9">단계별 ragSearch 재조회</text>
+  <text x="1380" y="546" text-anchor="middle" font-size="9.5" fill="#047857" font-weight="600">chat과 동일 로직 재사용</text>
+  <text x="1380" y="562" text-anchor="middle" font-size="9.5" fill="#047857" font-weight="600">→ 동일하게 온톨로지 반영됨</text>
+
+  <rect x="1515" y="452" width="245" height="130" rx="8" fill="#f3f4f6" stroke="#9ca3af"/>
+  <text x="1637" y="474" text-anchor="middle" font-size="11.5" font-weight="700" fill="#374151">/api/wiki-editor</text>
+  <text x="1637" y="492" text-anchor="middle" font-size="10" fill="#4b5563">AI 에디터</text>
+  <text x="1637" y="512" text-anchor="middle" font-size="9.5" fill="#6b7280">초안→위키 포맷 변환</text>
+  <text x="1637" y="530" text-anchor="middle" font-size="9.5" fill="#6b7280">RAG/그래프 미사용</text>
+  <text x="1637" y="550" text-anchor="middle" font-size="9.5" fill="#b91c1c" font-weight="600">✗ 온톨로지 미반영</text>
+  <text x="1637" y="566" text-anchor="middle" font-size="9.5" fill="#6b7280">(스타일 변환만 담당)</text>
+
+  <rect x="1005" y="598" width="240" height="70" rx="8" fill="#fff" stroke="#c4b5fd"/>
+  <text x="1125" y="620" text-anchor="middle" font-size="11.5" font-weight="700" fill="#4c1d95">/api/graph → /graph</text>
+  <text x="1125" y="638" text-anchor="middle" font-size="10" fill="#6d28d9">getAugmentedKnowledgeGraph()</text>
+  <text x="1125" y="654" text-anchor="middle" font-size="9.5" fill="#6d28d9">Sensor/Actuator/ComputeUnit 노드 시각화</text>
+
+  <line x1="1125" y1="582" x2="1125" y2="598" stroke="#7c3aed" stroke-width="1.2" marker-end="url(#aPurple)"/>
+  <line x1="1380" y1="582" x2="1380" y2="598" stroke="#7c3aed" stroke-width="1.2" marker-end="url(#aPurple)"/>
+
+  <line x1="1125" y1="582" x2="1125" y2="598" stroke="#7c3aed" stroke-width="1.2"/>
+
+  <!-- users -->
+  <line x1="1125" y1="668" x2="1125" y2="700" stroke="#4c1d95" stroke-width="1.5" marker-end="url(#aPurple)"/>
+  <line x1="1380" y1="582" x2="1300" y2="700" stroke="#4c1d95" stroke-width="1.2" marker-end="url(#aPurple)"/>
+  <line x1="1637" y1="582" x2="1500" y2="700" stroke="#9ca3af" stroke-width="1.2" marker-end="url(#a)"/>
+
+  <rect x="1005" y="700" width="755" height="60" rx="8" fill="#4c1d95"/>
+  <text x="1382" y="736" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">실사용자 — 마스터가 웹에서 질문/조회하는 지점</text>
+
+  <!-- 실측 검증 박스 -->
+  <rect x="1005" y="784" width="755" height="200" rx="10" fill="#fff" stroke="#4c1d95" stroke-width="1.5"/>
+  <text x="1382" y="810" text-anchor="middle" font-size="13" font-weight="700" fill="#0f172a">프로덕션 실측 검증 (2026-08-20, drone-wiki-web.vercel.app)</text>
+
+  <text x="1030" y="838" font-size="11" fill="#334155">질문: "Pixhawk 6X의 무게(weight)는 몇 그램이야? 제조사는 어디야?"</text>
+  <text x="1050" y="858" font-size="10.5" fill="#b91c1c">수정 전 → "DroneWiki의 현재 지식 베이스에는 정확한 무게 스펙이 명시되어 있지 않습니다"</text>
+  <text x="1050" y="876" font-size="10.5" fill="#047857" font-weight="600">수정 후 → "무게: 23그램(23g) · 제조사: Holybro" [Link 속성 직접 인용]</text>
+
+  <text x="1030" y="906" font-size="11" fill="#334155">질문: "Pixhawk는 어떤 종류의 장치야? 상위 분류를 알려줘"</text>
+  <text x="1050" y="928" font-size="10.5" fill="#047857" font-weight="600">→ "Thing → PhysicalEntity → ComputeUnit → FlightController(Pixhawk)"</text>
+  <text x="1050" y="946" font-size="10.5" fill="#6d28d9">[class-hierarchy.json 서브섬션 추론 체인을 실시간 답변에 반영]</text>
+
+  <text x="1382" y="970" text-anchor="middle" font-size="10" fill="#94a3b8">GitHub: 2nd-brain-ai-system v3.3.0 · drone-wiki-web v2.6.0</text>
+
+  <rect x="1005" y="998" width="755" height="70" rx="8" fill="#fefce8" stroke="#ca8a04" stroke-dasharray="3 3"/>
+  <text x="1382" y="1020" text-anchor="middle" font-size="10.5" fill="#713f12" font-weight="700">agent-workflow.svg와의 관계</text>
+  <text x="1382" y="1038" text-anchor="middle" font-size="10" fill="#713f12">이 다이어그램은 전체 구조(Object/Property/Link/Action + 배포 파이프라인).</text>
+  <text x="1382" y="1054" text-anchor="middle" font-size="10" fill="#713f12">agent-workflow.svg는 이 중 ④ Action 블록 하나만 상세 확대한 서브뷰다.</text>
+
+  <text x="900" y="1160" text-anchor="middle" font-size="10.5" fill="#94a3b8">2nd Brain v3.3.0 + drone-wiki-web v2.6.0 (2026-08-20) · docs/2nd-brain-dronewiki-architecture.svg</text>
+</svg>
