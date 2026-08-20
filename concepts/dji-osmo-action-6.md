@@ -33,3 +33,4 @@ DJI의 액션 카메라 시리즈 6세대 모델로, 야간 촬영 성능이 크
 - **2026-08-15**: Six Ocean Scenes 샘플 — 1/1.1인치 센서의 색상 보정력 검증 (보라 하늘, 푸른 바다, 풍부한 산호, 폭풍 녹색 등 6가지 해양 환경) — https://www.youtube.com/watch?v=l7bBjW_r6Mo
 - [DJI] Six Ocean Scenes. One Sensor Holds Every Color. | DJI Osmo Action 6 (youtube.com, 2026-08-15) — https://www.youtube.com/watch?v=l7bBjW_r6Mo
 - [DJI] Mountain Trail. Neo 2 Close the Whole Way. | DJI Neo 2 (youtube.com, 2026-08-14) — https://www.youtube.com/watch?v=i9xXT52Iksk
+- [DJI] POV: You're in Goal. Ball Incoming. | DJI Osmo 360 (youtube.com, 2026-08-17) — https://www.youtube.com/watch?v=pCP6tG4x894

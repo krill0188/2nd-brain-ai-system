@@ -55,3 +55,6 @@ Amazon Prime Air MK30 드론의 Darlington 정원 불시 착륙 사고. Oregon �
 - [[drone-regulations]] — 드론 규제 및 안전 기준
 - [[drone-safety-failsafe]] — 드론 안전 및 페일세이프 시스템
 - [[dji-easa-sail-bvlos]] — DJI EASA 안전 승인 사례
+
+## 📰 최근 관련 소식
+- [DJI] Istanbul After Dark | DJI Air 3S (youtube.com, 2026-08-17) — https://www.youtube.com/watch?v=7o40DrX2qX4

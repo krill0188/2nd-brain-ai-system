@@ -85,3 +85,5 @@ AI 개인 지식관리는 자료를 많이 저장하는 일이 아니라, 원본
 - 0.3초 만에 레이저 '번쩍', 드론까지 출격…첨단무기 타깃은 '모기'[월드콘] - 머니투데이 (머니투데이, Fri, 14 Au) — https://news.google.com/rss/articles/CBMiaEFVX3lxTFBZMGNIUWpaOXBHdmFBcWttQ0FsWlJiQXo1cFBPZ1E0Zk5oUTZubGNkWmM3c3V0RzUza3lSQUtCWWFtcDRzZ3hWdjFqQU9KQUZFc1JaZG1QUjJvZmI5QnVuRTZqLVZZY01i0gFuQVVfeXFMUHpDamd6bUI5eVZ3NVlRQ0lnRFVXbVktdWI5ejJJMVBlbjd0ODBENEpyTzFVZ0lIeUc2UTlVUUtjWkJJRVQ2N1JFdHdTODcxcFFIbmVkUTVBVTRRbkswUGtuOENORVdZNlo1dThpU1E?oc=5
 - [핑크랩 PinkLAB] PinkLAB Band - drummer (youtube.com, 2026-08-14) — https://www.youtube.com/watch?v=OIs7R4QU8Vs
 - [핑크랩 PinkLAB] PinkLAB Band | Drummer (youtube.com, 2026-08-13) — https://www.youtube.com/watch?v=eF9S3rb5Hwk
+- 안양시, 을지연습 연계 ‘드론 복합위협’ 대비 실제훈련 실시 (경기일보, Wed, 19 Au) — https://news.google.com/rss/articles/CBMiW0FVX3lxTE9BaDdjb2tSOVlaeGpvY2lyVWsxVWVWcmtwNUo1WlRsU0NWMm83OHpDTG9saXo1UzlwcDJFMFVIV0tIazB2b2JzY3Q4WmRibkdZRXAyZEpmV1NGaUU?oc=5
+- 전차·장갑차·공중통신까지…K방산, 드론·AI 동맹 확대 (newstomato.com, Wed, 19 Au) — https://news.google.com/rss/articles/CBMiYEFVX3lxTE1acWRjVTNLQ1Q2MTJPdFlmc081eTlMWFJqc3h2UkpZVm81VUxDbFdxcXNnbWJqMTdKLXlrTHVLUkxrU1lFN0U0b3VkWU9YUGNJTlZHYlYtV0UzNExXT0x5TA?oc=5

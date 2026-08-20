@@ -43,3 +43,4 @@ UAV 지터링으로 인한 빔 불일치 문제를 해결하기 위한 통합 �
 
 ## 📰 최근 관련 소식
 - “북한군 드론전 경험, 결정적 위협 아냐”…강건작 안보실 1차장의 ‘결이 다른 생각’ 보니[반도 앨리스] (경향신문, Fri, 07 Au) — https://news.google.com/rss/articles/CBMiWkFVX3lxTE50LTk3NTJxWXBWWmxhOXBmN2hJS3lfQ0haekRtNEtsTnFvekE5RUxBV3M2UW8xZnRTemgzWlo2aUJMWmlXWWlEa2t1Q3RGcDlsS1lBdmIxU0x0QdIBX0FVX3lxTE9qdG41WmdVclVUV3doYUxtLVh2OW80VXdNamstX0VtbHVmNVFrUXVpVmkxczBLa1ZDSXEwYWg5VUR1ak42enNQUDc3SW5LOXdjSFJpbGFrQnF4Z2hTNHNZ?oc=5
+- 젤렌스키, 새 국방장관 지명…'드론전 영웅' 해임 논란 일단락 (연합뉴스, Tue, 18 Au) — https://news.google.com/rss/articles/CBMiW0FVX3lxTE85SENhbm5kdTVvVktkdUhYbHIxRWd1aUZ3V09WU01Jb0lUR2JzSS13VVJyZldqZ050R0R3TjZxRHRsVjYyQlhxTGFGOFZnMlVDM0JmcjR4bnpHc0HSAWBBVV95cUxNOGtnMzVzWHVHM3Z1b21MNlFsNG1NcExCRnYzSzRMdUdrR3k2c0JsR2xpQ3VUd1BqVE9GdG9XdDNHMlFZV2ZsNGU0Ml9vSUNWTU9VNmVEd2tsUHJzYUFIel8?oc=5

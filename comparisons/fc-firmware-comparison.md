@@ -33,3 +33,6 @@ FPV 드론을 조립할 때 모터·ESC·영상시스템·수신기 선택 못�
 
 - [[betaflight]] — Betaflight 펌웨어 상세
 - [[ardupilot-architecture]] — ArduPilot 아키텍처
+
+## 📰 최근 관련 소식
+- 드론 라이다를 이용한 임야 현황경계 추출 및 분석 (kci.go.kr, 2026) — https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003368639

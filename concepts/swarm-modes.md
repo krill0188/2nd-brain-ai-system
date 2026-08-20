@@ -68,3 +68,6 @@ contradictions: []
 - [[recon-swarm-project]] — 실제 프로젝트 적용
 - [[datalink-communication]] — 통신 기술
 - [[drone-ai-agents]] — 자율 에이전트
+
+## 📰 최근 관련 소식
+- '군집 드론' 폭탄테러 가상상황…민·관·군·경·소방 첫 합동훈련 (뉴시스, Wed, 19 Au) — https://news.google.com/rss/articles/CBMiYEFVX3lxTE53Q25RRW5taVdpZ25YWTdOMTJHRXF3aGZ3ckJhMzhtUWUyakVlYTZER0hvanVUWGxHMkN5c2dJM3h3MFUxeDhjWnlBNUR3QmJIVmdNX2xsZHZHeGxuakNBSNIBeEFVX3lxTE96SUcydjlfVjA5eGkweHplNjI3cVo1QVVobU1XWEdDdlJlNlJzN3V5clpaSzRybWZqOGZyaXR5V0wzQlNsaG1NQmNYN0xDVHprajc5OGxNZHJvYTNMRHBwLXM2Y3Q5dWtLalZMeDgzLUZYeGlSdGswLQ?oc=5

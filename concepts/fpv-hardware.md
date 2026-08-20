@@ -54,3 +54,5 @@ domain: hardware
 - [Joshua Bardwell] 70% more video range & penetration! // RUSHFPV 3.3 GHZ VIDEO RECEIVER (youtube.com, 2026-08-07)
 - **2026-08-13**: FPV 드론 모터 선택 고려사항 — 모터 사이즈, KV 등급, 프로펠러 호환성 (Oscar Liang)
 - [Joshua Bardwell] Q&A Livestream - August 16, 2026 (youtube.com, 2026-08-16) — https://www.youtube.com/watch?v=irGXC4fiRoY
+- [Joshua Bardwell] Q&A Livestream - August 31, 2026 (youtube.com, 2026-08-17) — https://www.youtube.com/watch?v=3Qqj8uxDom0
+- [Joshua Bardwell] Q&A Livestream - September 13, 2026 (youtube.com, 2026-08-17) — https://www.youtube.com/watch?v=mXiuiQHP7c8

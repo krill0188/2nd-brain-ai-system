@@ -46,3 +46,6 @@ domain: ops-mission
 ## 참고
 
 청주대학교 박수범, 한국지적학회지 (2026)
+
+## 📰 최근 관련 소식
+- 드론 라이다를 이용한 임야 현황경계 추출 및 분석 (kci.go.kr, 2026) — https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003368639

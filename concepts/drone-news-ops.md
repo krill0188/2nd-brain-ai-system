@@ -120,3 +120,6 @@ domain: ops-mission
 - 후티반군 매체 "드론으로 홍해 사우디 아람코 정유시설 타격" (연합뉴스TV, Thu, 13 Au) — https://news.google.com/rss/articles/CBMiZ0FVX3lxTE10SS1VMk9ETlVLVktyUm1OYU9vYjYyTzhkdThVaGJqVUhMZ2lsZTljcGhrbTgzNGlXNkg3QjlncnUxNFhwWV9tdVUtR3VSYVlHM2dSWlRqTXp4eFpicnNHbXIxcG9oYzA?oc=5
 - FlybyOps wants to solve the biggest headache in scaling autonomous drone fleets (dronedj.com, Thu, 13 Au) — https://dronedj.com/2026/08/13/flybyops-autonomous-bvlos-drone-software/
 - [핑크랩 PinkLAB] PinkLAB Band | Drummer (youtube.com, 2026-08-13) — https://www.youtube.com/watch?v=eF9S3rb5Hwk
+- 충남 6개 지역 국토부 주관 드론 실증사업 공모 선정 (연합뉴스, Sun, 15 Ma) — https://news.google.com/rss/articles/CBMiW0FVX3lxTE1RYkc5U091OVRsak5hMUtOY1lIUlJvX3J2bTRGR1VUdjR3RUNDN0x2Q1pDa3VYWXZtY0hNZGZXWVJHZnV2WjBQd04yMGZlbFZJWXBZaHo1MmtoU1nSAWBBVV95cUxOMlRtbG1CZ2FKZkZiNU0yVEtGTWVhVW5zTWRWb0hwaVk5aUZiaWtxRzhnaWxwMmtDcmhiWUd1LXRfOG5aMHYtN1Z3QzlVN0h4SXRsSTI5a3l4Qmg3NGVuWnk?oc=5
+- 충남 첫 드론공원, 국토부 지정 ‘쾌거’ (충청메시지, Tue, 04 Au) — https://news.google.com/rss/articles/CBMia0FVX3lxTE5TalpYLVctLTZxbEwwNmNIZXJJdFJoZGQwZkdnZ09KbnNGaVlIc1E1QnExZG15dFdTVHpKSE10VHdzcEFnOUtEaklrS2JWX3JySzlTN1JncEZWWFNFS2d4Y21vUzVyUHYwQnpJ?oc=5
+- LG엔솔, 美 방산 드론 공급망 진입 검토 (지디넷코리아, Wed, 19 Au) — https://news.google.com/rss/articles/CBMiVkFVX3lxTE1kOVVSUmtwZDQ2YjZlNFl6S3I4QjIydEdZYUVlNzNLS3I0clk2dHdXSmhSSFRwVmFVaWF4WjJBSG4taTlrNUZBak4tcFBNQ282dWMySGNn?oc=5

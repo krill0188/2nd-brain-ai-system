@@ -3,7 +3,7 @@
 > Complete catalog of active canonical pages. Each entry is a wikilink followed by
 > a one-line summary, sorted alphabetically within its section.
 >
-|> Total pages: 265
+|> Total pages: 275
 ## Entities
 - [[cambridge-aerospace]] — 영국 공중 방위/C-UAS 기업, $300M Series C (2026-08).
 - [[mbf-group]] — 폴란드 드론/우주 기업, IRYDA+ X1 및 SPACE Z1 개발.
@@ -220,31 +220,41 @@
 - [[yolo-v8-4-114]] — YOLO v8.4.114 릴리스, Platform workflows 및 edge inference 개선 (2026-07-31).
 - [[yolo-v8-4-115]] — YOLO v8.4.115 릴리스, HUB→Platform 전환 (2026-08-01).
 - [[yolo]] — 실시간 객체 검출을 위한 딥러닝 아키텍처.
-- [[zipline-us-expansion]] — Zipline 미국 확대 및 Tesla/Waymo/Uber 임원 영입.
-- [[drone-hw]] — 드론 하드웨어 도메인 개요(FC/센서/동력/통신/페이로드).
-- [[drone-sw]] — 드론 소프트웨어 스택 도메인 개요(PX4/ArduPilot/GCS/미들웨어).
-- [[drone-ai]] — 드론 AI 도메인 개요(컴퓨터 비전/SLAM/자율 에이전트).
-- [[ops-mission]] — 드론 운용/미션 도메인 개요(DFR/배송/검사/재난대응).
-- [[companion-computer]] — FC와 별도로 AI·영상처리를 오프로드하는 보조 컴퓨터.
-- [[mavros]] — ROS/ROS2와 MAVLink 자동조종장치를 잇는 브릿지 패키지.
-- [[utm-system]] — 저고도 공역 드론 교통관리(UTM) 체계.
-- [[px4-simulation]] — PX4 SITL 소프트웨어 시뮬레이션 환경.
-- [[divimath-4w-analog-vtx]] — Divimath 4W 아날로그 FPV 영상송신기(VTX).
-- [[china-drone-export-controls]] — 중국의 대미 드론·부품 수출 신규 라이선스 통제.
-- [[multi-uav-collision-avoidance-survey]] — 다중 UAV 딥러닝 충돌회피 서베이 논문.
-- [[dfend-counter-drone-worldcup]] — 2026 FIFA 월드컵 DFEND 대드론 작전.
-- [[yolo-v8-4-116]] — YOLO v8.4.116 릴리스 (2026-08-07).
-- [[faa-249-gram-registration-rule]] — FAA 249그램 드론 등록 규정.
-- [[dji-mavic-4-pro]] — DJI Mavic 4 Pro, 100MP 하셀블라드 센서.
-|- [[mrope-multi-robot-safety]] — MROPE: 예측 안전 필터+타원 제약압축 기반 다중로봇 안전 협조 전략.
-|- [[yolo-v8-4-117]] — YOLO v8.4.117 릴리스, 증강 정확도·배포 보안 개선 (2026-08-09).
-|- [[yolo-v8-4-119]] — YOLO v8.4.119 릴리스, Intel NPU 분류 성능 개선 및 추적 안정성 향상 (2026-08-13).
-|- [[dji-neo-2-rth]] — DJI Neo 2 Return to Home 기술 소개.
-|- [[dji-osmo-pocket-4p-stabilization]] — DJI Osmo Pocket 4P 3축 짐벌 안정화 기능.
-|- [[ukraine-fight-drone-simulator]] — UFDS 우크라이나 전투 드론 시뮬레이터.
-|- [[uav-task-offloading-traffic-monitoring]] — UAV 기반 교통 모니터링 동적 태스크 오프로딩 연구.
+|- [[chaotic-map-uav-secure-comms]] — 카오스 맵 기반 FPGA UAV 보안 통신.
+|- [[drone-news-2026-08-20]] — 2026년 8월 20일 드론 업계 뉴스 종합.
+|- [[gnss-denied-remote-autonomy]] — 상용 DJI 드론 기반 GNSS 차단 환경 원격 자율.
+|- [[nc2s-secure-c3-system]] — Zero-Trust 기반 UxV 보안 명령-제어-통신 시스템.
+|- [[pt-detr-small-target-detection]] — RT-DETR 기반 UAV 소형 객체 탐지.
+|- [[ris-secure-uav-communications]] — RIS 지원 강건한 UAV 보안 통신.
+|- [[slei3d-heterogeneous-fleet]] — 제한 통신 환경 이질적 로봇 군집 탐사/검사.
+|- [[uav-detr-anti-drone-detection]] — WTConv/SWSA 기반 실시간 대드론 탐지.
+|- [[yolo-v8-4-123]] — YOLO v8.4.123 깊이 추정 데이터셋 호환성 확장.
+||- [[zoomdet-uav-adaptive-detection]] — 적응적 줌인 UAV 객체 탐지 프레임워크.
+|- [[zipline-us-expansion]] — Zipline 미국 확대 및 Tesla/Waymo/Uber 임원 영입.
+|- [[drone-hw]] — 드론 하드웨어 도메인 개요(FC/센서/동력/통신/페이로드).
+|- [[drone-sw]] — 드론 소프트웨어 스택 도메인 개요(PX4/ArduPilot/GCS/미들웨어).
+|- [[drone-ai]] — 드론 AI 도메인 개요(컴퓨터 비전/SLAM/자율 에이전트).
+|- [[ops-mission]] — 드론 운용/미션 도메인 개요(DFR/배송/검사/재난대응).
+|- [[companion-computer]] — FC와 별도로 AI·영상처리를 오프로드하는 보조 컴퓨터.
+|- [[mavros]] — ROS/ROS2와 MAVLink 자동조종장치를 잇는 브릿지 패키지.
+|- [[utm-system]] — 저고도 공역 드론 교통관리(UTM) 체계.
+|- [[px4-simulation]] — PX4 SITL 소프트웨어 시뮬레이션 환경.
+|- [[divimath-4w-analog-vtx]] — Divimath 4W 아날로그 FPV 영상송신기(VTX).
+|- [[china-drone-export-controls]] — 중국의 대미 드론·부품 수출 신규 라이선스 통제.
+|- [[multi-uav-collision-avoidance-survey]] — 다중 UAV 딥러닝 충돌회피 서베이 논문.
+|- [[dfend-counter-drone-worldcup]] — 2026 FIFA 월드컵 DFEND 대드론 작전.
+|- [[yolo-v8-4-116]] — YOLO v8.4.116 릴리스 (2026-08-07).
+|- [[faa-249-gram-registration-rule]] — FAA 249그램 드론 등록 규정.
+|- [[dji-mavic-4-pro]] — DJI Mavic 4 Pro, 100MP 하셀블라드 센서.
+||- [[mrope-multi-robot-safety]] — MROPE: 예측 안전 필터+타원 제약압축 기반 다중로봇 안전 협조 전략.
+||- [[yolo-v8-4-117]] — YOLO v8.4.117 릴리스, 증강 정확도·배포 보안 개선 (2026-08-09).
+||- [[yolo-v8-4-119]] — YOLO v8.4.119 릴리스, Intel NPU 분류 성능 개선 및 추적 안정성 향상 (2026-08-13).
+||- [[dji-neo-2-rth]] — DJI Neo 2 Return to Home 기술 소개.
+||- [[dji-osmo-pocket-4p-stabilization]] — DJI Osmo Pocket 4P 3축 짐벌 안정화 기능.
+||- [[ukraine-fight-drone-simulator]] — UFDS 우크라이나 전투 드론 시뮬레이터.
+||- [[uav-task-offloading-traffic-monitoring]] — UAV 기반 교통 모니터링 동적 태스크 오프로딩 연구.
+|||
 ||- [[moe-multimodal-uav-detection]] — MoE 기반 강건한 UAV 멀티모달 객체 탐지(관측 누락 대응).
-|- [[uav-swarm-air-ground-isac]] — 교차 지역 협력 기반 Air-Ground ISAC UAV 군집(MAPPO).
 |- [[rigid-covert-gnss-spoofing-swarm]] — UAV 군집 GNSS 스푸핑의 상대기하 탐지 사각지대(RigidShift).
 ||- [[curriculum-guided-heterogeneous-multi-agent-isac]] — 커리큘럼 기반 이질적 다중 에이전트 ISAC 스웜 시스템.
 |||- [[edge-constrained-uav-small-object-detection]] — P2 강화 및 QIEA 기반 에지 제약 UAV 소형 객체 탐지.

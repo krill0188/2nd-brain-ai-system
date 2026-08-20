@@ -1102,3 +1102,33 @@
   - All 22 inbox files → `inbox/processed/`
 - Updated:
   - `index.md` (총 페이지 265으로 갱신)
+
+## [2026-08-20] ingest | inbox 일일 수집 및 컴파일
+
+- Source files from `inbox/` (15 files processed):
+  - arXiv papers (8): ZoomDet, PT-DETR, UAV-DETR, Chaotic Map, RIS Secure Comms, NC2S, SLEI3D, GNSS-denied Autonomy
+  - RSS news (5): DroneDJ, DroneLife, Skydio, sUAS News, sUAS News Regulation
+  - Release notes (1): YOLO v8.4.123
+  - YouTube videos (2): DJI Mavic 4 Thermal, RL in C Course
+- Created concepts (10):
+  - `concepts/zoomdet-uav-adaptive-detection.md` — 적응적 줌인 UAV 객체 탐지
+  - `concepts/pt-detr-small-target-detection.md` — RT-DETR 기반 UAV 소형 객체 탐지
+  - `concepts/uav-detr-anti-drone-detection.md` — WTConv/SWSA 기반 대드론 탐지
+  - `concepts/chaotic-map-uav-secure-comms.md` — 카오스 맵 기반 FPGA UAV 보안 통신
+  - `concepts/ris-secure-uav-communications.md` — RIS 지원 UAV 보안 통신
+  - `concepts/nc2s-secure-c3-system.md` — Zero-Trust 기반 UxV 보안 C3 시스템
+  - `concepts/slei3d-heterogeneous-fleet.md` — 이질적 로봇 군집 탐사/검사
+  - `concepts/gnss-denied-remote-autonomy.md` — GNSS 차단 환경 원격 자율
+  - `concepts/yolo-v8-4-123.md` — YOLO v8.4.123 깊이 추정 데이터셋 호환성
+  - `concepts/drone-news-2026-08-20.md` — 2026년 8월 20일 드론 뉴스 종합
+- Moved to raw/:
+  - `raw/papers/ai-autonomy/` (3 files)
+  - `raw/papers/comms-protocol/` (2 files)
+  - `raw/papers/gcs-software/` (3 files)
+  - `raw/releases/` (1 file)
+  - `raw/articles/` (5 files)
+  - `raw/youtube/` (2 files)
+- Updated:
+  - `index.md` (총 페이지 275으로 갱신)
+- Skipped (low-value content):
+  - YouTube videos (5): 일반 CS/알고리즘 교육 콘텐츠 (드론 도메인 외)

@@ -56,3 +56,4 @@ FAA가 워싱턴주 Gorge Drones에 미인증 농업용 드론 운항(2025년 �
 - 드론도 미사일도 막는다…K2 전차, 3.4조 투입해 `생존성` 강화 (디지털데일리, Fri, 14 Au) — https://news.google.com/rss/articles/CBMiZEFVX3lxTE5jakF6czVWTUYtenBULWxfaWVoX0F2bzBHVThvQWZVWXpFb3poQmhHYWhVTzJVRFNDLUlNVEdHVU1IYWlESy1yNDRKQTJFTTVWYWNEUFhkOEd0ZzRzMkRFNFBaQTU?oc=5
 - FCC Revokes Drone Approvals After U.S. Assembler Denies Any Connection (dronelife.com, Wed, 12 Au) — https://dronelife.com/2026/08/12/fcc-drone-approval-revocation-odyssey-robot/
 - Engineering Without Compromise: How HP Additive Manufacturing Helped EIVIE Build an NDAA-Compliant Drone (dronelife.com, Thu, 13 Au) — https://dronelife.com/2026/08/13/ndaa-compliant-drone-manufacturing/
+- 블룸버그 "LG에너지솔루션, 미국 정부와 방산업체에 드론용 배터리 공급 검토" (비즈니스포스트, Tue, 18 Au) — https://news.google.com/rss/articles/CBMic0FVX3lxTFBnWVptbXBUdERabXJ3TzY2Rm1VUkE4bTYtUEgxWTU2Z2dFSFhJeXNVRlFMZWJJelRpZUk3WGNtaFBmZjRKTm14aUc4djRycm4ya0xFTm9VMGEwN2pfNUE5ZlU0Rmw0OG5LMEY2ekI3dG1GV0k?oc=5

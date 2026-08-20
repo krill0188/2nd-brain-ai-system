@@ -43,3 +43,6 @@ contradictions: []
 - 수원시, 광교호수공원 드론배송 서비스 시연 (신아일보, Wed, 05 Au) — https://news.google.com/rss/articles/CBMicEFVX3lxTE5HQWg4anYtUFlXUHgxWENBelBKVWR5MXc2eWRYOHgzZ1dBcGd2dEhXYXhpYWFXWHlZYlBnSjZ1bWpRUmxHYTdBd3ZweHluRmE2b3pwNGhqT1pxQzZKT3dTY2laQUpiT1JBYW9yNFF4Wlc?oc=5
 - 수원시, 광교호수공원 드론배송 시대 연다… '하늘편의점' 생활밀착형 배송서비스 본격 시연 (월드장애인사랑뉴스, Tue, 04 Au) — https://news.google.com/rss/articles/CBMib0FVX3lxTFBhdjZGZ2hxOVFfWUR5YVMweGRGTmVqUUJ2RUswMDlZVjVSamlPOU1YRXlZdFgwbElISmVYVVlrVjBlV2lQWGplb3FiM1c3MllHRXdBY3RJeHBTUkNkbDZfX0U0LUZRUlhQTkl2a1dORQ?oc=5
 - [Joshua Bardwell] Q&A Livestream - August 16, 2026 (youtube.com, 2026-08-16) — https://www.youtube.com/watch?v=irGXC4fiRoY
+- [Joshua Bardwell] Q&A Livestream - September 13, 2026 (youtube.com, 2026-08-17) — https://www.youtube.com/watch?v=mXiuiQHP7c8
+- [Joshua Bardwell] Q&A Livestream - August 31, 2026 (youtube.com, 2026-08-17) — https://www.youtube.com/watch?v=3Qqj8uxDom0
+- 우크라 '드론전 영웅', 젤렌스키에 반기…"선거해야" (news.sbs.co.kr, Wed, 19 Au) — https://news.google.com/rss/articles/CBMiakFVX3lxTE85T2VsazFPRWJ2UzI3SndXaER1c0lsMEhSWFpORmgwZ1psb1N6RnNWenVIUmZ0TFFYZWs0Vk9vRHlSUl91bjJZd1ZmN2RtTjFtZjhWWkdCX2VncFBEZWNUaVpiZ0c1bS1BUHc?oc=5
