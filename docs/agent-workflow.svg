@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 980" font-family="'Apple SD Gothic Neo','Malgun Gothic',sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475569"/>
+    </marker>
+    <marker id="arrowRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#b91c1c"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1440" height="980" fill="#f8fafc"/>
+  <text x="720" y="38" text-anchor="middle" font-size="24" font-weight="700" fill="#0f172a">2nd Brain 팔란티어 온톨로지 — Action(Kinetic Layer) 실행 흐름</text>
+  <text x="720" y="60" text-anchor="middle" font-size="13" fill="#64748b">apply-kinetic-rules.py — agent-workflows(justinjoy) 패턴 이식: 트리플 선언 → 추론(SPARQL) → 행동(쓰기)</text>
+
+  <!-- Row 1: Trigger -->
+  <text x="40" y="100" font-size="13" font-weight="700" fill="#334155">① 트리거 (hermes cron, 매일 새벽)</text>
+  <g font-size="12.5">
+    <rect x="40" y="112" width="220" height="56" rx="8" fill="#e2e8f0" stroke="#94a3b8"/>
+    <text x="150" y="136" text-anchor="middle" fill="#0f172a" font-weight="600">04:00</text>
+    <text x="150" y="154" text-anchor="middle" fill="#334155">2nd-daily-ingest</text>
+
+    <rect x="310" y="112" width="220" height="56" rx="8" fill="#e2e8f0" stroke="#94a3b8"/>
+    <text x="420" y="136" text-anchor="middle" fill="#0f172a" font-weight="600">04:47</text>
+    <text x="420" y="154" text-anchor="middle" fill="#334155">2nd-update-knowledge-graph</text>
+
+    <rect x="580" y="112" width="240" height="56" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="700" y="136" text-anchor="middle" fill="#1e3a8a" font-weight="700">04:50</text>
+    <text x="700" y="154" text-anchor="middle" fill="#1e3a8a" font-weight="600">2nd-apply-kinetic-rules ★</text>
+  </g>
+  <line x1="260" y1="140" x2="310" y2="140" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="530" y1="140" x2="580" y2="140" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="700" y1="168" x2="700" y2="200" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Row 2: ABox triples -->
+  <text x="40" y="222" font-size="13" font-weight="700" fill="#334155">② ABox 트리플 선언 (rdflib Graph, 실제 데이터 → 사실 명제)</text>
+  <g font-size="12">
+    <rect x="60" y="236" width="330" height="92" rx="8" fill="#fef9c3" stroke="#ca8a04"/>
+    <text x="225" y="258" text-anchor="middle" font-weight="700" fill="#713f12">entities/*.md frontmatter</text>
+    <text x="225" y="278" text-anchor="middle" fill="#713f12">deploymentLocation: onboard</text>
+    <text x="225" y="296" text-anchor="middle" fill="#713f12">parameterCount: 2400000</text>
+    <text x="225" y="316" text-anchor="middle" fill="#a16207" font-size="11">→ dr:yolo-v8-4-114 rdf:type dr:AIModel</text>
+
+    <rect x="440" y="236" width="330" height="92" rx="8" fill="#fef9c3" stroke="#ca8a04"/>
+    <text x="605" y="258" text-anchor="middle" font-weight="700" fill="#713f12">research/hypotheses + state.json</text>
+    <text x="605" y="278" text-anchor="middle" fill="#713f12">claim_type: hypothesis (C6, C10…)</text>
+    <text x="605" y="296" text-anchor="middle" fill="#713f12">state.promoted = { C3, C11 → concepts/ }</text>
+    <text x="605" y="316" text-anchor="middle" fill="#a16207" font-size="11">→ 클레임 ID별 승격 여부 사실화</text>
+  </g>
+  <line x1="700" y1="200" x2="225" y2="236" stroke="#475569" stroke-width="1.2" marker-end="url(#arrow)"/>
+  <line x1="700" y1="200" x2="605" y2="236" stroke="#475569" stroke-width="1.2" marker-end="url(#arrow)"/>
+
+  <!-- Row 3: Inference -->
+  <text x="40" y="358" font-size="13" font-weight="700" fill="#334155">③ 추론 (SPARQL ASK — TBox 조건 매칭, ONTOLOGY_SPEC.md §4)</text>
+  <g font-size="12">
+    <rect x="60" y="372" width="330" height="86" rx="8" fill="#dcfce7" stroke="#16a34a"/>
+    <text x="225" y="394" text-anchor="middle" font-weight="700" fill="#14532d">규칙4 — SLM/LLM 판별</text>
+    <text x="225" y="414" text-anchor="middle" fill="#14532d" font-size="11">onboard ∧ parameterCount &lt; 3B → SLM</text>
+    <text x="225" y="430" text-anchor="middle" fill="#14532d" font-size="11">cloud → LLM</text>
+    <text x="225" y="448" text-anchor="middle" fill="#166534" font-size="10.5">yolo-v8-4-114 → SLM 판정</text>
+
+    <rect x="440" y="372" width="330" height="86" rx="8" fill="#dcfce7" stroke="#16a34a"/>
+    <text x="605" y="394" text-anchor="middle" font-weight="700" fill="#14532d">규칙6 — 미승인 가설 감사</text>
+    <text x="605" y="414" text-anchor="middle" fill="#14532d" font-size="11">claimType=hypothesis ∧ id ∈ promoted</text>
+    <text x="605" y="430" text-anchor="middle" fill="#14532d" font-size="11">→ VIOLATION (미승인 채 Mission 근거화)</text>
+    <text x="605" y="448" text-anchor="middle" fill="#166534" font-size="10.5">실측: 세션 3개 / 위반 0건</text>
+  </g>
+  <line x1="225" y1="328" x2="225" y2="372" stroke="#475569" stroke-width="1.2" marker-end="url(#arrow)"/>
+  <line x1="605" y1="328" x2="605" y2="372" stroke="#475569" stroke-width="1.2" marker-end="url(#arrow)"/>
+
+  <!-- Row 4: Action (write) -->
+  <text x="40" y="490" font-size="13" font-weight="700" fill="#334155">④ 행동 (Kinetic Layer — 실제 파일 쓰기)</text>
+  <g font-size="12">
+    <rect x="60" y="504" width="330" height="70" rx="8" fill="#fee2e2" stroke="#dc2626"/>
+    <text x="225" y="528" text-anchor="middle" font-weight="700" fill="#7f1d1d">entities/yolo-v8-4-114.md 갱신</text>
+    <text x="225" y="548" text-anchor="middle" fill="#7f1d1d" font-size="11">frontmatter: aiModelClass: SLM 기록</text>
+
+    <rect x="440" y="504" width="330" height="70" rx="8" fill="#fee2e2" stroke="#dc2626">
+    </rect>
+    <text x="605" y="528" text-anchor="middle" font-weight="700" fill="#7f1d1d">research/runs/&lt;id&gt;/</text>
+    <text x="605" y="548" text-anchor="middle" fill="#7f1d1d" font-size="11">ontology-audit.json 생성/갱신 (매 세션)</text>
+  </g>
+  <line x1="225" y1="458" x2="225" y2="504" stroke="#475569" stroke-width="1.2" marker-end="url(#arrow)"/>
+  <line x1="605" y1="458" x2="605" y2="504" stroke="#475569" stroke-width="1.2" marker-end="url(#arrow)"/>
+
+  <!-- Violation branch (dashed, conditional) -->
+  <rect x="440" y="604" width="330" height="60" rx="8" fill="#fff" stroke="#dc2626" stroke-dasharray="4 3"/>
+  <text x="605" y="626" text-anchor="middle" font-weight="700" fill="#7f1d1d" font-size="12">위반 시만: concepts/&lt;slug&gt;.md</text>
+  <text x="605" y="644" text-anchor="middle" fill="#7f1d1d" font-size="11">ontology_status: INVALID 플래그</text>
+  <line x1="605" y1="574" x2="605" y2="604" stroke="#b91c1c" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#arrowRed)"/>
+
+  <!-- Row 5: Notification -->
+  <rect x="220" y="700" width="330" height="60" rx="8" fill="#ede9fe" stroke="#7c3aed"/>
+  <text x="385" y="722" text-anchor="middle" font-weight="700" fill="#4c1d95" font-size="12">⑤ hermes → telegram 알림</text>
+  <text x="385" y="740" text-anchor="middle" fill="#4c1d95" font-size="11">위반 있으면 필수, 없으면 요약 1회</text>
+  <line x1="225" y1="574" x2="350" y2="700" stroke="#475569" stroke-width="1.2" marker-end="url(#arrow)"/>
+  <line x1="605" y1="664" x2="450" y2="700" stroke="#475569" stroke-width="1.2" marker-end="url(#arrow)"/>
+
+  <!-- Verification -->
+  <rect x="620" y="700" width="380" height="80" rx="8" fill="#e0f2fe" stroke="#0284c7"/>
+  <text x="810" y="722" text-anchor="middle" font-weight="700" fill="#0c4a6e" font-size="12">마스터 직접 검증</text>
+  <text x="810" y="740" text-anchor="middle" fill="#0c4a6e" font-size="10.5">grep aiModelClass entities/*.md</text>
+  <text x="810" y="756" text-anchor="middle" fill="#0c4a6e" font-size="10.5">cat research/runs/*/ontology-audit.json</text>
+  <text x="810" y="772" text-anchor="middle" fill="#0c4a6e" font-size="10.5">hermes cron runs 2nd-apply-kinetic-rules</text>
+  <line x1="1000" y1="740" x2="1050" y2="740" stroke="#0284c7" stroke-width="1" stroke-dasharray="3 3"/>
+
+  <!-- Scope excluded box -->
+  <rect x="1000" y="112" width="380" height="360" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-dasharray="6 4"/>
+  <text x="1190" y="140" text-anchor="middle" font-size="13" font-weight="700" fill="#475569">스코프 제외 — 실시간 텔레메트리 필요</text>
+  <text x="1190" y="160" text-anchor="middle" font-size="11" fill="#64748b">SWRL 규칙 1·2·3·5·7·8 (총 6개)</text>
+
+  <g font-size="10.5" fill="#475569">
+    <text x="1020" y="188">규칙1 — 저신뢰 음성명령 차단</text>
+    <text x="1020" y="206">규칙2 — Task 의존성 차단</text>
+    <text x="1020" y="224">규칙3 — 센서 능력 부적합</text>
+    <text x="1020" y="242">규칙5 — 통신단절 시 LLM→SLM 위임</text>
+    <text x="1020" y="260">규칙7 — 치명적 Task 실패 시 Mission 중단</text>
+    <text x="1020" y="278">규칙8 — 군집 안전(데이터링크 단절 제외)</text>
+  </g>
+
+  <line x1="1190" y1="290" x2="1190" y2="320" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#arrow)"/>
+
+  <rect x="1020" y="322" width="340" height="130" rx="8" fill="#fff" stroke="#94a3b8"/>
+  <text x="1190" y="346" text-anchor="middle" font-weight="700" fill="#334155" font-size="12">전제: Swarm OPS GCS 실시간 연동</text>
+  <text x="1190" y="368" text-anchor="middle" fill="#dc2626" font-size="11">✗ 실기체 미검증 (SIM 모드 기본값)</text>
+  <text x="1190" y="386" text-anchor="middle" fill="#dc2626" font-size="11">✗ 워킹트리 dirty</text>
+  <text x="1190" y="404" text-anchor="middle" fill="#dc2626" font-size="11">✗ 3개월 커밋 정지</text>
+  <text x="1190" y="428" text-anchor="middle" fill="#475569" font-size="10.5">→ 별도 프로젝트 결정 필요, 이번 범위 아님</text>
+
+  <!-- Design note box -->
+  <rect x="1000" y="504" width="380" height="256" rx="10" fill="#fefce8" stroke="#ca8a04" stroke-dasharray="3 3"/>
+  <text x="1190" y="530" text-anchor="middle" font-size="13" font-weight="700" fill="#713f12">설계 노트</text>
+  <text x="1020" y="556" font-size="11" fill="#713f12">• build-owl.py는 별개 산출물 — "문서≠</text>
+  <text x="1020" y="572" font-size="11" fill="#713f12">  인스턴스" 원칙 유지, ABox 인스턴스화 안 함</text>
+  <text x="1020" y="596" font-size="11" fill="#713f12">• 이 스크립트는 마스터의 명시적 지시로</text>
+  <text x="1020" y="612" font-size="11" fill="#713f12">  다른 전제(문서=Link 대상 인스턴스)로 동작</text>
+  <text x="1020" y="636" font-size="11" fill="#713f12">• update-graph.sh는 frontmatter의</text>
+  <text x="1020" y="652" font-size="11" fill="#713f12">  ontology_class로 domain 매핑을 override</text>
+  <text x="1020" y="676" font-size="11" fill="#713f12">  (class-hierarchy.json 화이트리스트 검증)</text>
+  <text x="1020" y="700" font-size="11" fill="#713f12">• "하네스 경계선"과는 다름 — 이건 사후</text>
+  <text x="1020" y="716" font-size="11" fill="#713f12">  배치 쓰기지, tool 호출을 실시간 차단하는</text>
+  <text x="1020" y="732" font-size="11" fill="#713f12">  pre-tool-use 훅이 아님</text>
+
+  <text x="720" y="960" text-anchor="middle" font-size="11" fill="#94a3b8">2nd Brain v3.3.0 (2026-08-20) · agent-workflows(github.com/justinjoy) 패턴 응용 · scripts/apply-kinetic-rules.py</text>
+</svg>
