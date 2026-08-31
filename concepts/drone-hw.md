@@ -51,3 +51,4 @@ domain: hardware
 
 ## 📰 최근 관련 소식
 - [DJI] Munch. Crunch. Repeat. 🍃｜DJI Mic Mini 2S (youtube.com, 2026-08-10) — https://www.youtube.com/watch?v=E-Pg5OWkidU
+- 대만 군용 드론에 중국산 부품 납품…방산업체 대표 구속 (파이낸스투데이, Thu, 20 Au) — https://news.google.com/rss/articles/CBMiZ0FVX3lxTE15RjRiM2NIaDJjUVRiemNnMDJYSzh3b29Cd0JuVS1DMkZXLUFnNXBMVWQ0N3lldVl1OWtMS05qeG9XQlpVZ1JzbjdVdU5xWTFBNzhFRERGZHdWZUlPaE9lcjdKNFhaLTg?oc=5

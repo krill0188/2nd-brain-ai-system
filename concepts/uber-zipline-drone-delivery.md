@@ -38,3 +38,6 @@ Long-term partnership between Uber and Zipline to bring autonomous drone deliver
 ## Sources
 
 - DroneDJ, "Uber Eats adds Zipline drones for ultra-fast deliveries", 2026-08-17
+
+## 📰 최근 관련 소식
+- Uber and Zipline Partner to Bring Drone Delivery to Millions of Americans (www.suasnews.com, Fri, 21 Au) — https://www.suasnews.com/2026/08/uber-and-zipline-partner-to-bring-drone-delivery-to-millions-of-americans/

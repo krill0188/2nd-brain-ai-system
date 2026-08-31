@@ -1,12 +1,11 @@
 ---
 title: MAVSDK
 created: 2026-07-27
-updated: 2026-07-27
+updated: 2026-09-01
 type: concept
 tags: [drone-sw, MAVSDK, SDK, API, offboard]
-sources: []
-confidence: medium
-domain: comms-protocol
+sources: [inbox/fetch-2026-09-01-mavsdk.md]
+confidence: high
 contested: false
 contradictions: []
 ---
@@ -109,6 +108,10 @@ await drone.offboard.set_velocity_ned(
 | **유연성** | 제한적 | 높음 |
 | **실시간** | 제한적 | 지원 |
 | **사용 사례** | 프로토타입, GCS | 자율비행, SLAM |
+
+## 릴리스 이력
+
+- **v3.17.4** (2026-08-25): Android 빌드 심볼 가시성 수정 ^[inbox/fetch-2026-09-01-mavsdk.md]
 
 ## 관련 개념
 

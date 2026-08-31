@@ -44,3 +44,6 @@ note: "Raw source not preserved in repo — found during 2026-08-10 provenance a
 
 - Lagos Suarez et al., "A Heuristic Approach for Performance Tuning in RL-based Quadrotor Control via Reward Design and Termination Conditions", arXiv:2605.19166, 2026.
 - Lagos Suarez et al., "Aerial Inspection Behaviors via RL-based Quadrotor Control for Under-canopy Forest Environments", arXiv:2605.19202, 2026.
+
+## 📰 최근 관련 소식
+- [freeCodeCamp.org] Code a Reinforcement Learning Library in C from Scratch (Full Course) (youtube.com, 2026-08-19) — https://www.youtube.com/watch?v=R5fPn6W8m6k

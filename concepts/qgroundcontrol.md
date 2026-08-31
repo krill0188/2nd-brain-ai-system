@@ -1,14 +1,13 @@
 ---
 title: QGroundControl
 created: 2026-07-29
-updated: 2026-07-29
+updated: 2026-09-01
 type: concept
 tags: [drone, drone-sw, gcs-software]
-sources: [inbox/fetch-2026-07-29-qgroundcontrol.md]
+sources: [inbox/fetch-2026-07-29-qgroundcontrol.md, inbox/fetch-2026-09-01-qgroundcontrol.md]
 confidence: high
 contested: false
 contradictions: []
-domain: gcs-software
 ---
 
 # QGroundControl
@@ -22,9 +21,18 @@ QGroundControl(QGC)는 MAVLink 프로토콜을 사용하는 드론을 위한 오
 - **설정/캘리브레이션**: 센서 캘리브레이션, 펌웨어 업데이트
 - **비행 모드 전환**: 수동/자동 모드 간 실시간 전환
 
-## 최신 릴리스: v5.0.8 (2025-10-09)
+## 릴리스 이력
 
-### 주요 변경사항
+### v5.1.4 (2026-08-30)
+
+- **HUD 피치 표시 수정**: nose-down 시 pitch indicator가 아래로 이동 (roll convention 일치) ^[inbox/fetch-2026-09-01-qgroundcontrol.md]
+- **PlanView**: Land/Alt Land 도구가 rover에 대해 RTL을 삽입하는 문제 수정
+- **Comms**: 링크 워커 스레드 종료 시 정리 개선
+- **Video**: H.265 녹화 안정성 강화
+- **PX4**: UAVCAN ESC enumeration 제거 (v1.17+ PD_GRIPPER_TYPE 그리퍼 감지)
+- **APM**: 모터 PWM 파라미터 없을 때 ESC 컴포넌트 스킵
+
+### v5.0.8 (2025-10-09)
 
 - **macOS 서명**: 앱 번들 서명, 공증(Notarization), 스테이플링 지원
 - **Android SD 카드**: Android 11+(API 30+) SD 카드 권한 수정

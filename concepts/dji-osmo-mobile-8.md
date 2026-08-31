@@ -34,3 +34,4 @@ DJI의 스마트폰 짐벌 시스템. 2026년 8월 공개.
 
 ## 📰 최근 관련 소식
 - [DJI] Put Your Thumbs Here | DJI Osmo Mobile 8 (youtube.com, 2026-08-12) — https://www.youtube.com/watch?v=V3Z6601nOug
+- [DJI] Your Thumbs Run the Scene | DJI Osmo Mobile 8 (youtube.com, 2026-08-23) — https://www.youtube.com/watch?v=ttaMMdP-5Ic

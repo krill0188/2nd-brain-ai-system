@@ -29,3 +29,6 @@ Ondas 미드웨스트 방위 드론 거점 확장. 오하이오 Springfield에 �
 ## 출처
 
 DroneDJ, 2026-08-20. ^[raw/articles/ondas-ohio-drone-hub-2026-08.md]
+
+## 📰 최근 관련 소식
+- Ondas Opens UAS Training and Operations Hub at Ohio’s NAAMCE (dronelife.com, Fri, 21 Au) — https://dronelife.com/2026/08/21/ondas-uas-training-facility-ohio/

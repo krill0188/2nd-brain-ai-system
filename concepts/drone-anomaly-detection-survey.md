@@ -50,3 +50,6 @@ domain: flight-control
 ## 참고
 
 대진대학교 김남용, 한국융합과학회지 (2026)
+
+## 📰 최근 관련 소식
+- 드론 기반 객체 탐지 시스템에 대한 물리적 적대적 패치 공격: 디지털-물리 도메인 갭 분석 및 완화 (kci.go.kr, 2026) — https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003368967

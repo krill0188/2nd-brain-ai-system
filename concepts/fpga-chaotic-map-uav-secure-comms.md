@@ -43,3 +43,6 @@ FPGA 기반 혼돈 맵(chaotic map)을 활용한 UAV 안전 통신 시스템. �
 ## 출처
 
 Christian Nwachioma et al., "FPGA prototyping of synchronized chaotic map for UAV secure communication", arXiv:2101.03880, 2020. ^[raw/papers/datalink/fpga-chaotic-map-uav-secure-communication.md]
+
+## 📰 최근 관련 소식
+- Aero-LLM: A Distributed Framework for Secure UAV Communication and Intelligent Decision-Making (arxiv.org, 2025-02-05) — http://arxiv.org/abs/2502.05220v1

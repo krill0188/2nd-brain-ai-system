@@ -32,3 +32,4 @@ DJI의 소비자용 항공 촬영 드론. 핵심 특징은 100MP 하셀블라드
 - [DJI] Golden Sand. Dark Water. One Frame. | DJI Mavic 4 Pro (youtube.com, 2026-08-15) — https://www.youtube.com/watch?v=O6rsKqpPq9U
 - 2 Enterprise Anafi Usa Parrot Anafi Vs Mavic USED DJI Mini Pro Drone With RC Remote Controller Adorama - diocesisdesalamanca (news.google.com, Wed, 15 Ju) — https://news.google.com/rss/articles/CBMiiAFBVV95cUxOWmh3YWdsRUExbEVmWVVaVGFieTFvTTI2dlEtbzhUYUpFdlE3UzJKeEdnUGxMNGZLaUFIcldzOFc3dWM2YThneDNvY3ptRGs2N2VRZkQ5QzJMU0V0bkNxdXJGVGU5am9FcjYycmxKelJmVHZfdkZsN0ptZk9FZlI1azFZVnhmZ2Fa?oc=5
 - DJI Mavic 4 Pro drone gets new firmware update for smoother flights (dronedj.com, Fri, 14 Au) — https://dronedj.com/2026/08/14/dji-mavic-4-drone-firmware-2/
+- [DJI] From Island to Street | DJI Mavic 4 Pro (youtube.com, 2026-08-23) — https://www.youtube.com/watch?v=KCJZrlJoQAQ

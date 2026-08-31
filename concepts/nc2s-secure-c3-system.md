@@ -57,3 +57,6 @@ domain: gcs-software
 ## 출처
 
 - Rebolo et al., "Secure Command, Control and Communications Systems (C3) for Army UxVs", arXiv:2511.21936, 2025.
+
+## 📰 최근 관련 소식
+- A Novel Cipher for Enhancing MAVLink Security: Design, Security Analysis, and Performance Evaluation Using a Drone Testbed (arxiv.org, 2025-04-29) — http://arxiv.org/abs/2504.20626v1

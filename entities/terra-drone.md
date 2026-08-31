@@ -44,3 +44,4 @@ contradictions: []
 
 ## 📰 최근 관련 소식
 - 美 프로코어 테크놀로지스, 1조2000억원에 드론디플로이 인수한다 (티스토리, Mon, 10 Au) — https://news.google.com/rss/articles/CBMiS0FVX3lxTE5XTFJOT0pqSjFzYmdmRDlFUjhrOUh2U01oZ0FhQ1pkVXllSkx3MVg4RTV6VFIybFJna3JWOU94SGw4ekNyQlE3bUM1WQ?oc=5
+- Terra Drone’s B1 Interceptor Drone Passes Japan ATLA Counter-UAS Demonstration Test (uasweekly.com, Thu, 27 Au) — https://news.google.com/rss/articles/CBMitwFBVV95cUxPU1pVTjVfcnF3NktfYTItVkZYdVM1YWVQOXhHUzFXVHltUkdBcFVveklDZy1jWVBfR21mTld1eHQwWE45anAyLWtROTBickwtV3Uyd3l1cDREMFpSQnppMmRmYUU0c3Q2aG1lUkNHMGl3MXBlNTBNaXN2a0lWV0JGSF8zMHBPUUlFUl9MWlZaczhyTVJOSlVCZTdTT3dCZkYzNC1KUHQ1amNMRGtQV1RwS0kyQVdJTms?oc=5

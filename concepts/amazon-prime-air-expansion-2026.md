@@ -30,3 +30,6 @@ Amazon Prime Air 드론 배달 서비스 미국 전역 확대 계획. 2026년 �
 ## 출처
 
 DroneDJ, DroneLife, 2026-08-19. ^[raw/articles/amazon-prime-air-expansion-2026-08.md]
+
+## 📰 최근 관련 소식
+- 러, 유럽 전역 '회색지대 도발' 맹공…공항 폭탄드론·방산업체 방화 (글로벌이코노믹, Mon, 31 Au) — https://news.google.com/rss/articles/CBMiiAFBVV95cUxQZElQZ1VOSzJUZVNQTktFZEw3eTRoS2ZEU1VhT1dReEdVblVZTU9fT2V6Q3FUYWNhWFdLMkhtcUJ1VXZPc1VHb1BZMWwzMmpkU0FNNFdPMF9fbExDM1VkV1c3MW1sdWMwZXVpWW1veGdxVVlZN0wxLVRDTWJuNzhDTkF2b2pGakhI?oc=5

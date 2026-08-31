@@ -30,3 +30,6 @@ EdgeTX에서는 케이블을 이용한 트레이너 설정이 가능하다. Radi
 
 - [[betaflight]] — FPV 드론 비행 제어 소프트웨어
 - [[fpv-hardware]] — FPV 하드웨어 동향
+
+## 📰 최근 관련 소식
+- [Painless360] New tool! Customise your radio and edit EdgeTX themes easily! (youtube.com, 2026-08-21) — https://www.youtube.com/watch?v=A-4OwLXs6xg

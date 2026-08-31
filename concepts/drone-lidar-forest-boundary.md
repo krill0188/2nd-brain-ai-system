@@ -49,3 +49,4 @@ domain: ops-mission
 
 ## 📰 최근 관련 소식
 - 드론 라이다를 이용한 임야 현황경계 추출 및 분석 (kci.go.kr, 2026) — https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003368639
+- 남원시, 드론 공공서비스 실증 본격화 (klan.kr, Wed, 19 Au) — https://news.google.com/rss/articles/CBMiQEFVX3lxTE5KeUgyZXNWdFQtMWtHWDFRSk13UjFiQzNiNjlvWGVKZ1Ytb0pkYmZvWWVSeW5XbXhyWFVuSllOTUU?oc=5

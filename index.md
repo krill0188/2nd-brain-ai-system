@@ -3,7 +3,7 @@
 > Complete catalog of active canonical pages. Each entry is a wikilink followed by
 > a one-line summary, sorted alphabetically within its section.
 >
-|> Total pages: 275
+|> Total pages: 313
 ## Entities
 - [[cambridge-aerospace]] — 영국 공중 방위/C-UAS 기업, $300M Series C (2026-08).
 - [[mbf-group]] — 폴란드 드론/우주 기업, IRYDA+ X1 및 SPACE Z1 개발.
@@ -73,25 +73,36 @@
 - [[us-drone-import-tariffs-2026]] — 미국 수입 드론/부품 25~100% 관세 (2026-08-13).
 - [[yolo-v8-4-120]] — YOLO v8.4.120 릴리스 (CUDA 결정론, LLM 문서화).
 - [[advanced-mavlink]] — MAVLink 2 패킷 포맷/헤더 구조 및 Incompatibility 플래그.
-- [[ai-knowledge-workflow]] — 원본 수집→검토된 지식→산출물을 역할별 계층으로 분리하는 AI 지식 워크플로.
-- [[ardupilot-plane-4-7]] — ArduPilot Plane 4.7.0 안정 릴리스(2026-07-21), 고정익/VTOL.
+|- [[ai-knowledge-workflow]] — 원본 수집→검토된 지식→산출물을 역할별 계층으로 분리하는 AI 지식 워크플로.
+|- [[aero-llm-framework]] — Distributed LLM framework for secure UAV communication and intelligent decision-making.
+|- [[aitester-uas-testing]] — Automated system-level testing for unmanned aerial systems using AI.
+|- [[ardupilot-plane-4-7]] — ArduPilot Plane 4.7.0 안정 릴리스(2026-07-21), 고정익/VTOL.
 - [[mavlink-advanced]] — MAVLink 2 확장: 서명, RTPS, 상용/군용 배포용 고급 기능.
 - [[mavlink-advanced-features]] — MAVLink 2 보안 서명, Reliable ACK, RAS/RTPS 기능.
 - [[mavlink2-security]] — MAVLink 2 메시지 서명·암호화 보안 기능.
 - [[micro-drone-slam-imu-vio-lidar-uav-livox-mid-360-pixhawk-4-m]] — 마이크로드론 SLAM: 카메라+IMU(VIO) vs LiDAR-관성 오도메트리 플랫폼 규모별 비교(연구엔진 승격 클레임 C3).
-- [[pid-tuning-control]] — PID 제어 이론: 드론 자세/속도 안정화 핵심 알고리즘.
+|- [[pid-tuning-control]] — PID 제어 이론: 드론 자세/속도 안정화 핵심 알고리즘.
+|- [[codaf-multimodal-detection]] — Cross-modal offset-guided alignment and fusion for UAV object detection.
+|- [[dge-yolo-uav-detection]] — Dual-branch gathering and attention for accurate UAV detection.
 - [[px4-control-tuning]] — PX4 Rate→Attitude→Velocity→Position 순차 제어 아키텍처.
 - [[px4-pid-tuning]] — PX4 PID 제어: Rate/Attitude loop 계층 구조.
 - [[px4-tuning-control]] — PX4 PID 튜닝과 제어 기법, Rate/Attitude/Position 게인 설정.
 - [[ros2-advanced]] — ROS2 DDS 미들웨어 기반 PX4 고성능 통합, micro-ROS/QoS.
 - [[ros2-advanced-integration]] — PX4-ROS2 고급 통합: micro-ROS, DDS 튜닝, 멀티 에이전트.
 - [[rtk-gps-precise-landing]] — RTK GPS 차등 측위, 센티미터급 정밀 착륙.
-- [[visual-positioning-odometry]] — Visual/Visual-Inertial Odometry로 GPS 미가용 환경 위치 추정.
+|- [[uav-mining-digital-twin]] — UAV object detection for mining industrial metaverse with LiDAR and digital twin.
+|- [[unet-multi-uav-networking]] — Generic multi-UAV communication and networking architecture for heterogeneous applications.
 <!-- 2026-08-12 index 재감사로 등재(기존 페이지, 카탈로그 누락분) -->
 
-- [[fluid-antenna-system]] — FAS(Fluid Antenna System) 기반 UAV 통신, 동적 포트 재구성.
-- [[hybrid-beamforming-ntn]] — 비지상 네트워크 하이브리드 빔포밍, LEO/UAV 통신.
-- [[mbse-uav-sysml]] — SysML 기반 UAV 모델 기반 시스템 엔지니어링, ROS2 매핑.
+|- [[thermal-drone-wildfire-monitoring]] — Thermal drone wildfire monitoring and C-UAS response.
+|- [[fpv-battery-maintenance]] — FPV drone battery maintenance and ND filters for cinematic video.
+|- [[skydio-blue-uas-cleared]] — Skydio Blue UAS Cleared List update and revenue metrics.
+|- [[dji-mavic-4-pro-features]] — DJI Mavic 4 Pro camera and Lito X1 ActiveTrack features.
+|- [[holybro-x650-autonomous-mission]] — HolyBro X650 autonomous mission planning with ArduPilot.
+|- [[visual-positioning-odometry]] — Visual/Visual-Inertial Odometry로 GPS 미가용 환경 위치 추정.
+|- [[fluid-antenna-system]] — FAS(Fluid Antenna System) 기반 UAV 통신, 동적 포트 재구성.
+|- [[hybrid-beamforming-ntn]] — 비지상 네트워크 하이브리드 빔포밍, LEO/UAV 통신.
+|- [[mbse-uav-sysml]] — SysML 기반 UAV 모델 기반 시스템 엔지니어링, ROS2 매핑.
 - [[yolo-v8-4-118]] — YOLO v8.4.118, LLM 인터페이스 추가 (2026-08-11).
 - [[cleveland-clinic-drone-delivery]] — 미국 최초 장기 의료 드론 배달 프로그램 (Cleveland Clinic + Zipline).
 - [[dji-mic-mini-2s]] — DJI 무선 마이크 시스템, 32-bit float 녹음, AI 노이즈 캔슬링.
@@ -228,8 +239,34 @@
 |- [[ris-secure-uav-communications]] — RIS 지원 강건한 UAV 보안 통신.
 |- [[slei3d-heterogeneous-fleet]] — 제한 통신 환경 이질적 로봇 군집 탐사/검사.
 |- [[uav-detr-anti-drone-detection]] — WTConv/SWSA 기반 실시간 대드론 탐지.
-|- [[yolo-v8-4-123]] — YOLO v8.4.123 깊이 추정 데이터셋 호환성 확장.
-||- [[zoomdet-uav-adaptive-detection]] — 적응적 줌인 UAV 객체 탐지 프레임워크.
+||- [[yolo-v8-4-123]] — YOLO v8.4.123 깊이 추정 데이터셋 호환성 확장.
+|||- [[yolo-v8-4-126]] — YOLO v8.4.126 릴리스, 제한적 체크포인트 로딩 40% 향상 (2026-08-21).
+|||- [[yolo-v8-4-137]] — YOLO v8.4.137 릴리스, PyTorch 1.11+ CUDA channels-last 자동 활성화 (2026-08-31).
+|||- [[qgroundcontrol-v5-1-3]] — QGroundControl v5.1.3 안정 릴리스, HUD 피치 표시 수정 (2026-08-20).
+|||- [[qgroundcontrol-v5-1-4]] — QGroundControl v5.1.4 안정 릴리스, HUD 피치 표시 및 다양한 버그 수정 (2026-08-30).
+|||- [[mavsdk-release]] — MAVSDK v3.17.4 백포트 릴리스, Android 빌드 수정 (2026-08-25).
+|||- [[dji-osmo-360-ii]] — DJI Osmo 360 II 8K/60fps 360° 카메라 공개.
+|||- [[a2z-longtail-dual]] — A2Z Drone Delivery Longtail Dual BVLOS 드론 공개.
+|||- [[shadowfaxuas-sf45]] — ShadowfaxUAS SF45 ITAR-free Group 3 VTOL.
+|||- [[zuri-cargo-tiltrotor]] — Zuri 비무장 화물 틸트로터 VTOL.
+|||- [[terra-drone-deftech]] — Terra Drone DEFTECH 파트너십 및 C-UAS 시스템.
+|||- [[hdzero-goggle-2-scroll-fix]] — HDZero Goggle 2 스크롤 휠 펌웨어 수정.
+|||- [[fcc-military-drone-restrictions]] — FCC "군사 등급" 드론 수입 제안.
+|||- [[louisville-dfr-expansion]] — Louisville DFR 함대 확대 계획.
+|||- [[ga-asi-fujitsu-mou]] — GA-ASI Fujitsu 일본 UAS MOU.
+|||- [[drone-wildfire-rt-detr]] — 드론 산불 감시 RT-DETR 개선 모델.
+||- [[physical-adversarial-patch-drone-detection]] — 드론 YOLOv5 물리적 적대적 패치 공격 및 디지털-물리 도메인 갭 분석.
+||- [[uavd-mamba-multimodal-detection]] — UAVD-Mamba: 변형 토큰 퓨전 Mamba 기반 다중모달 UAV 탐지.
+||- [[rt-detr-plus-uav-detection]] — RT-DETR++ UAV 객체 탐지용 채널 게이트 어텐션 업샘플링/다운샘플링.
+||- [[wave-detr-multimodal-drone-detector]] — WAVE-DETR: 가시광선+음향 다중모달 실제 드론 탐지기.
+||- [[mavshield-mavlink-security-cipher]] — MAVShield: MAVLink 보안 강화를 위한 경량 암호화 알고리즘.
+||- [[uav-resilience-stealthy-attacks]] — seL4 기반 런타임 모니터링으로 UAV 은밀 공격 복원력 확보.
+||- [[csi-jamming-attack-detection-uav]] — CSI(채널 상태 정보) 기반 UAV 네트워크 재밍 공격 탐지.
+||- [[rmworld-radio-world-models-uav]] — RMWorld: 다중 UAV 통신 제어를 위한 작업 인식 라디오 세계 모델.
+||- [[xai-uav-relay-6g-terahertz]] — 테라헤르츠 6G 네트워크에서 XAI 기반 UAV 중계 위치 최적화.
+||- [[mtcnet-multimodal-concealment-uav]] — MTCNet: UAV 항공 영상의 다중모달 시간 민감 표적 은폐 네트워크.
+||- [[multi-uav-wind-farm-inspection]] — 시간 제약 다중 UAV 협업 해상 풍력 발전단 검사.
+|||- [[zoomdet-uav-adaptive-detection]] — 적응적 줌인 UAV 객체 탐지 프레임워크.
 |- [[zipline-us-expansion]] — Zipline 미국 확대 및 Tesla/Waymo/Uber 임원 영입.
 |- [[drone-hw]] — 드론 하드웨어 도메인 개요(FC/센서/동력/통신/페이로드).
 |- [[drone-sw]] — 드론 소프트웨어 스택 도메인 개요(PX4/ArduPilot/GCS/미들웨어).

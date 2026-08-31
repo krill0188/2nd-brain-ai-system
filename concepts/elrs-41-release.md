@@ -47,3 +47,4 @@ ExpressLRS 4.1 버전의 주요 개선사항 — 바인딩 프로세스 간소�
 - 김제, 드론·방산용 배터리 거점된다 (서울Pn, Tue, 04 Au) — https://news.google.com/rss/articles/CBMiakFVX3lxTE5RRUY4MWZqZld2SVNFY21TY3JxOUlRTjJFcXBpaGtUbmh5bjl3WkRJMWJ6RnJNSXdkNl9rbktvdFRpbk42OXY1VHlqb2JqWHpzWk4tZ3NiMVo2eFpLbFk4ZmRlMnVQV3F2NHc?oc=5
 - [Joshua Bardwell] Why did Divimath release a 4W ANALOG vTX?! (youtube.com, 2026-08-05) — https://www.youtube.com/watch?v=r6h3y7gFdR8
 - 드론·로봇·AI까지 키운다…BNK부산은행, 동남권 방산기술에 투자 (이코노미사이언스, Thu, 13 Au) — https://news.google.com/rss/articles/CBMib0FVX3lxTE1TOVZ4eTdTVXpKaWFJQWhzNFVQaFUxM0ZPLWtjNWxJZEp5OGFqYklrb1lKVUdKWmUzVEJlNmtnbnItcUg1MFN2TFM1ZnMxS1dFb2lROEhLWkQtUjBrcWNGWmtUdkkzYUJLZTBUZHdLcw?oc=5
+- 한투AC, 美 오리건에 K-방산·드론 스타트업 거점 '베이스캠프' 구축 (뉴스핌, Fri, 28 Au) — https://news.google.com/rss/articles/CBMiXEFVX3lxTE9UVngzY3gxRkh5SmJkWE5zOWp0eGhRSWRRNW5vZzcwUDZNUkdQc3BvY0dqTjBjY1A3VnBYNll5TUk4MWFMMUhnRWpjZlhOOHBkb3VaTjlOWE9HSjlG?oc=5

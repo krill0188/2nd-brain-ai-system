@@ -31,3 +31,6 @@ International Journal of Energy Technology and Policy에 게시된 연구로, UA
 - [[computer-vision-drone]] — 드론 컴퓨터 비전
 - [[drone-ai-agents]] — 드론 AI 에이전트
 - [[yolo]] — 실시간 객체 검출
+
+## 📰 최근 관련 소식
+- [freeCodeCamp.org] Learn Data Structures and Algorithms Visually – Crash Course (youtube.com, 2026-08-20) — https://www.youtube.com/watch?v=RpLnQnurpLY

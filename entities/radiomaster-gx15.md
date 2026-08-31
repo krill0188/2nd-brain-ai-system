@@ -32,3 +32,6 @@ Multiple reviewers noted the GX15 hits a "sweet spot" for size — larger than t
 - [[ratefpv]] — FPV hardware manufacturer
 - [[wallefpv]] — FPV drone hardware
 - [[betaflight]] — FPV flight control firmware
+
+## 📰 최근 관련 소식
+- [Painless360] How the sticks on the radio move the right control on an INAV wing or plane (youtube.com, 2026-08-22) — https://www.youtube.com/watch?v=5X-VrxGZWzI

@@ -43,3 +43,4 @@ note: "Raw source not preserved in repo — found during 2026-08-10 provenance a
 ## 📰 최근 관련 소식
 - Inside the Drone Dominance Supply Chain: What Every U.S. Drone Company Must Source—and by When (Inside Unmanned Systems, Wed, 22 Ju) — https://news.google.com/rss/articles/CBMixgFBVV95cUxNLXE2RGRKTHV0TEpfTGsxemxJT1NPVTZMd1ZCdjNKY3I0YzFJRmVwQlJldWdjTm0wWHBOSVdBWURiYUVGR0pWMTQ3Wm9QeTlZTzgtOGxFd3lUMFo2ZUZWa21PZDJUcVlHdnFtQUxGclR5R2ZKVWw0R3FfV19qRWlJWF9YR0E3eU9JT3prMjdIY0RRNkNKVEFubGZJRlFuQk9nalBXY1pNVTQ4VXF1N1A0U1dBN1Fuc0FpdmN5bkRSX2J0QXdRdnc?oc=5
 - [freeCodeCamp.org] System Design for AI Agents – Building a Multi-Agent PR Reviewer (youtube.com, 2026-08-14) — https://www.youtube.com/watch?v=iqRcGCah0Kw
+- The White House Wants Drone Dominance. How Much of the Supply Chain Must Be American? (dronelife.com, Fri, 21 Au) — https://dronelife.com/2026/08/21/us-drone-supply-chain-drone-dominance/

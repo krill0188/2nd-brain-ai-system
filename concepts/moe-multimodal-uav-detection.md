@@ -25,3 +25,6 @@ Xi, Lu, Li의 저널 논문("Mixture-of-experts for robust multimodal object det
 
 - [[drone-ai]] — 드론 AI 기술 전반
 - [[rgb-ir-fusion-uav-detection]] — RGB-IR 융합 기반 UAV 탐지(관련 멀티모달 접근)
+
+## 📰 최근 관련 소식
+- 드론 기반 객체 탐지 시스템에 대한 물리적 적대적 패치 공격: 디지털-물리 도메인 갭 분석 및 완화 (kci.go.kr, 2026) — https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003368967

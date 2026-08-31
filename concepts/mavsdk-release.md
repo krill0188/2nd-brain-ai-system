@@ -1,36 +1,34 @@
 ---
-title: MAVSDK v3.17.2
-created: 2026-07-29
-updated: 2026-07-29
+title: MAVSDK v3.17.4 Release Notes
+created: 2026-09-01
+updated: 2026-09-01
 type: concept
-tags: [drone, drone-sw, datalink]
-sources: [inbox/fetch-2026-07-29-mavsdk.md]
+tags: [drone, drone-sw, comms-protocol, mavsdk, release]
+sources: [inbox/fetch-2026-09-01-mavsdk.md]
 confidence: high
 contested: false
 contradictions: []
-domain: comms-protocol
 ---
 
-# MAVSDK v3.17.2
+# MAVSDK v3.17.4
 
-MAVSDK는 MAVLink 프로토콜 기반의 고수준 드론 제어 SDK이다. Python, C++, Java 등 다양한 언어로 드론 애플리케이션을 개발할 수 있게 해준다.
+MAVSDK v3.17.4는 안드로이드 빌드 관련 심볼 가시성 변경사항을 수정한 백포트 릴리스이다.
 
-## 핵심 특징
+## 변경사항
 
-- **고수준 API**: MAVLink 메시지의 저수준 세부사항 추상화
-- **크로스 플랫폼**: Linux, macOS, Windows, Android, iOS 지원
-- **다중 언어**: C++, Python, Java, Swift, C# 등 바인딩 제공
-- **비동기 지원**: async/await 패턴을 활용한 효율적인 제어
+- **[BACKPORT]** 최근 심볼 가시성 변경사항으로 인한 Android 빌드 수정
 
-## 최신 릴리스: v3.17.2 (2026-07-17)
+## 릴리스 정보
 
-### 주요 변경사항
-
-- v3 브랜치에 다양한 버그 수정 백포트
+| 항목 | 내용 |
+|------|------|
+| **버전** | v3.17.4 |
+| **날짜** | 2026-08-25 |
+| **유형** | 백포트 수정 |
+| **전체 변경 로그** | https://github.com/mavlink/MAVSDK/compare/v3.17.3...v3.17.4 |
 
 ## 관련 개념
 
-- [[mavlink-protocol]] — MAVSDK가 기반하는 프로토콜
-- [[pymavlink]] — MAVLink의 Python 구현체
-- [[px4-offboard-control]] — MAVSDK를 활용한 Offboard 제어
-- [[mavros]] — ROS2와 MAVLink 간 브리지
+- [[mavsdk]] — MAVSDK 개요 페이지
+- [[mavlink-protocol]] — MAVLink 프로토콜
+- [[px4-offboard-control]] — PX4 Offboard 제어

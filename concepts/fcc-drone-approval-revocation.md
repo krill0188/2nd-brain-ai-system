@@ -32,3 +32,4 @@ FCC가 Odyssey Robot LLC의 드론 및 리모트 컨트롤러에 대한 장비 �
 
 ## 📰 최근 관련 소식
 - FCC Revokes Drone Approvals After U.S. Assembler Denies Any Connection (dronelife.com, Wed, 12 Au) — https://dronelife.com/2026/08/12/fcc-drone-approval-revocation-odyssey-robot/
+- FCC Proposal Could Bring Drone Software and Supply Chains Under Greater Scrutiny (dronelife.com, Thu, 20 Au) — https://dronelife.com/2026/08/20/fcc-drone-software-rules/

@@ -44,3 +44,5 @@ MAVLink-M은 군사 및 상업용 드론 간의 상호운용성을 위한 확장
 - Adjusting imports of unmanned aircraft systems and unmanned aircraft systems components into the United States (www.suasnews.com, Sun, 16 Au) — https://www.suasnews.com/2026/08/adjusting-imports-of-unmanned-aircraft-systems-and-unmanned-aircraft-systems-components-into-the-united-states/
 - MBF Group develops IRYDA+ X1, launches SPACE Z1 and prepares the next stage of financing for advanced technologies (www.suasnews.com, Wed, 12 Au) — https://www.suasnews.com/2026/08/mbf-group-develops-iryda-x1-launches-space-z1-and-prepares-the-next-stage-of-financing-for-advanced-technologies/
 - Two Shenzhen Rivals, Two Different Paths to the U.S. Market (dronelife.com, Thu, 13 Au) — https://dronelife.com/2026/08/13/insta360-dji-us-market/
+- [Multi-robot Systems Group at FEE-CTU in Prague] MRS Summer School 2026 | Official video (youtube.com, 2026-08-21) — https://www.youtube.com/watch?v=tNvr5b-oJlc
+- The White House Wants Drone Dominance. How Much of the Supply Chain Must Be American? (dronelife.com, Fri, 21 Au) — https://dronelife.com/2026/08/21/us-drone-supply-chain-drone-dominance/

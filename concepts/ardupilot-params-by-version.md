@@ -55,3 +55,4 @@ ArduPilot(Copter/Plane/Rover)은 점 버전마다 파라미터 신설·기본값
 
 ## 📰 최근 관련 소식
 - 에이럭스, 상반기 매출 371억 원…전년 대비 55% 증가 (한국경제, Fri, 14 Au) — https://news.google.com/rss/articles/CBMiWkFVX3lxTE9VSm9DUlhIQ3EwNE9TVlZ2clVlQU5DOHV0MU1MOWhvbkUySkp5SHVQeVMzMkZmRHRDa3hkTTN6LTFodm9iWE81cHFfaDNfY3FobmlNeU9aWEc0dw?oc=5
+- [단독]불법 드론에… 김포-제주공항 상반기 159편 이착륙 지연 (동아일보, Sun, 30 Au) — https://news.google.com/rss/articles/CBMidkFVX3lxTE9ZaWQ1ZmplM09uU3UxOUt2Vm1YbS10dnRpVk1GZTZSdXNFVlh0NTdmNV9YQjl6ZUI5Sl8wZWZ2MXgtaGJKclZqT011NnZGS3JXWnZXZWlUQW9hMDRVNlMtREhMQW4xcFR5ei02T3k2enE5c25BMmfSAWZBVV95cUxOSG53eElWT0Z0QkxLcGNzYV9LUzl4LU9NM0h3R2RNdk9QNWphOVZISURyYkJDZlZJZDFrRHNmWmZzZTRRbXNOaXItT3NUN0w3QnlULTNseFQtMDczZ3VMcmhDc1lHc2c?oc=5

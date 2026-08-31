@@ -28,3 +28,6 @@ DJI Mavic 4 Pro와 Matrice 4TD의 로켓 발사 열화상 촬영. Mavic 4 Pro가
 ## 출처
 
 DJI 공식 YouTube, 2026-08-20. ^[raw/videos/dji-mavic-4-pro-thermal-rocket-capture.md]
+
+## 📰 최근 관련 소식
+- [DJI] A Rocket Launch. Now in Thermal. | DJI Mavic 4 Pro & Matrice 4TD (youtube.com, 2026-08-20) — https://www.youtube.com/watch?v=MnUhzDUb66I

@@ -52,3 +52,8 @@ BVLOS UAV 운용에서 5G SA 네트워크를 통한 C2(Command and Control) 경�
 ## 참고
 
 Wagner Comin Sonaglio et al., arXiv:2603.04662 (2026)
+
+## 📰 최근 관련 소식
+- [Painless360] How the sticks on the radio move the right control on an INAV wing or plane (youtube.com, 2026-08-22) — https://www.youtube.com/watch?v=5X-VrxGZWzI
+- UAV Resilience Against Stealthy Attacks (arxiv.org, 2025-03-21) — http://arxiv.org/abs/2503.17298v2
+- '발사 실패' 자폭드론, 추가 실험 없이 사업 종료…軍 "추후 사업서 검증" (뉴스1, Mon, 31 Au) — https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1iREZFcjFncXlaTlZ6Q1NPbFpDeXFxZ010Mkpsalp3aWlkYmZRNnJlYkxMbXJvc0duQ3RNeFZxN1ZvQzlodkNmQjFRLTVRSXB1QW1ZWmFKalVWeWgzWDN2NWhibW9taU3SAWxBVV95cUxQRUEyN3B1aU1Wd3M4RmFya1RDQWF3el9PWl9QRTUzdXBUUWVNMHdOOFJDUkFkX01GN0FUZ0tSYVlMRXRxUWpSM1N3Z2RRVjNCTnlLem1vREJ6bkhDNndad2N6Y2JQZThocWhqeTE?oc=5

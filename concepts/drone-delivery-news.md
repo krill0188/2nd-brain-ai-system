@@ -46,3 +46,5 @@ contradictions: []
 - [Joshua Bardwell] Q&A Livestream - September 13, 2026 (youtube.com, 2026-08-17) — https://www.youtube.com/watch?v=mXiuiQHP7c8
 - [Joshua Bardwell] Q&A Livestream - August 31, 2026 (youtube.com, 2026-08-17) — https://www.youtube.com/watch?v=3Qqj8uxDom0
 - 우크라 '드론전 영웅', 젤렌스키에 반기…"선거해야" (news.sbs.co.kr, Wed, 19 Au) — https://news.google.com/rss/articles/CBMiakFVX3lxTE85T2VsazFPRWJ2UzI3SndXaER1c0lsMEhSWFpORmgwZ1psb1N6RnNWenVIUmZ0TFFYZWs0Vk9vRHlSUl91bjJZd1ZmN2RtTjFtZjhWWkdCX2VncFBEZWNUaVpiZ0c1bS1BUHc?oc=5
+- “착륙 못 하고 빙빙”…제주공항 또 멈춰 세운 ‘드론’ [잇슈 키워드] (KBS 뉴스, Wed, 19 Au) — https://news.google.com/rss/articles/CBMiW0FVX3lxTE1OTDVMN1FKWDBGNzNDNkN0NEdfWnFqLWs1Qm1jUExDVnpJdGEwcGVTM1hYQ0p2M29ZNklYRjQ0a3R0NTVaUHo3UGFFYzRScFNKVXZQMURPOXdMNWc?oc=5
+- [Joshua Bardwell] Q&A Livestream - August 23, 2026 (youtube.com, 2026-08-23) — https://www.youtube.com/watch?v=PQGyyYn5CJM

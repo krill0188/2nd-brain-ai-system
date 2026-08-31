@@ -1132,3 +1132,86 @@
   - `index.md` (총 페이지 275으로 갱신)
 - Skipped (low-value content):
   - YouTube videos (5): 일반 CS/알고리즘 교육 콘텐츠 (드론 도메인 외)
+
+## [2026-08-23] ingest | inbox 일일 수집 및 컴파일
+
+- Source files from `inbox/` (30 files processed):
+  - arXiv papers (6): UAVD-Mamba, RT-DETR++, WAVE-DETR, MAVShield, UAV Resilience, CSI Jamming Detection, RMWorld
+  - KCI papers (1): Physical adversarial patch attacks
+  - CrossRef papers (3): XAI UAV relay, MTCNet, Multi-UAV wind farm inspection
+  - RSS news (6): DroneLife, sUAS News, Skydio, DJI Enterprise, DroneDJ, Oscar Liang FPV
+  - Release notes (2): YOLO v8.4.126, QGroundControl v5.1.3
+  - YouTube videos (12): UAV Coach, MRS Summer School, Painless360, DJI Osmo
+- Created concepts (13):
+  - `concepts/yolo-v8-4-126.md` — YOLO v8.4.126 제한적 체크포인트 로딩 개선
+  - `concepts/qgroundcontrol-v5-1-3.md` — QGroundControl v5.1.3 HUD 피치 표시 수정
+  - `concepts/physical-adversarial-patch-drone-detection.md` — 물리적 적대적 패치 공격 분석
+  - `concepts/uavd-mamba-multimodal-detection.md` — UAVD-Mamba 다중모달 탐지
+  - `concepts/rt-detr-plus-uav-detection.md` — RT-DETR++ UAV 객체 탐지
+  - `concepts/wave-detr-multimodal-drone-detector.md` — WAVE-DETR 가시광+음향 탐지
+  - `concepts/mavshield-mavlink-security-cipher.md` — MAVShield MAVLink 보안 암호화
+  - `concepts/uav-resilience-stealthy-attacks.md` — seL4 기반 UAV 은밀 공격 복원력
+  - `concepts/csi-jamming-attack-detection-uav.md` — CSI 기반 재밍 탐지
+  - `concepts/rmworld-radio-world-models-uav.md` — RMWorld 라디오 세계 모델
+  - `concepts/xai-uav-relay-6g-terahertz.md` — XAI 6G UAV 중계 위치 최적화
+  - `concepts/mtcnet-multimodal-concealment-uav.md` — MTCNet 다중모달 표적 은폐
+  - `concepts/multi-uav-wind-farm-inspection.md` — 다중 UAV 풍력 발전단 검사
+- Moved to processed:
+  - All 30 inbox files → `inbox/processed/`
+- Updated:
+  - `index.md` (총 페이지 288으로 갱신)
+
+## [2026-08-24] ingest | inbox 일일 수집 및 컴파일
+
+- Source files from `inbox/` (14 files processed):
+  - arXiv papers (6): Aero-LLM, AITester, CoDAF, DGE-YOLO, UAV mining digital twin, UNet
+  - RSS news (3): DroneLife, OscarLiang FPV, Skydio
+  - YouTube videos (5): 3분 자료구조 Queue, DJI Mavic 4 Pro, DJI Lito X1, Joshua Bardwell Q&A, HolyBro X650
+- Created concepts:
+  - `concepts/aero-llm-framework.md` — Distributed LLM framework for secure UAV communication
+  - `concepts/aitester-uas-testing.md` — Automated system-level testing for UAS
+  - `concepts/codaf-multimodal-detection.md` — Cross-modal alignment and fusion for UAV detection
+  - `concepts/dge-yolo-uav-detection.md` — Dual-branch YOLO for UAV detection
+  - `concepts/uav-mining-digital-twin.md` — UAV detection for mining industrial metaverse
+  - `concepts/unet-multi-uav-networking.md` — Generic multi-UAV networking architecture
+  - `concepts/thermal-drone-wildfire-monitoring.md` — Thermal drone wildfire monitoring
+  - `concepts/fpv-battery-maintenance.md` — FPV battery maintenance and ND filters
+  - `concepts/skydio-blue-uas-cleared.md` — Skydio Blue UAS certification
+  - `concepts/dji-mavic-4-pro-features.md` — DJI Mavic 4 Pro and Lito X1 features
+  - `concepts/holybro-x650-autonomous-mission.md` — HolyBro X650 autonomous mission planning
+- Moved to processed:
+  - All 14 inbox files → `inbox/processed/`
+- Updated:
+  - `index.md` (총 페이지 298으로 갱신)
+
+## [2026-09-01] ingest | inbox 일일 수집 및 컴파일
+
+- Source files from `inbox/` (58 files processed):
+  - MAVSDK release (1): v3.17.4
+  - QGroundControl release (1): v5.1.4
+  - YOLO release (1): v8.4.137
+  - RSS news (4): DJI Enterprise, DroneDJ, DroneLife, Skydio, sUAS News
+  - YouTube videos (9): Agentic AI RF, Compass FC, HDZero Goggle, Part 107, All-Electric Flying Machine, Ascent Latency, DJI Avata 360, Pinky Zero, 데이터구조
+  - KCI papers (4): UAV LiDAR 산불, 산불 연기 RT-DETR, 미한 육군 생태계, 해안사구지형
+- Updated concepts:
+  - `concepts/mavsdk.md` — v3.17.4 릴리스 정보 추가, confidence high로 상향
+  - `concepts/qgroundcontrol.md` — v5.1.4 릴리스 정보 추가
+  - `concepts/yolo.md` — v8.4.137 릴리스 정보 추가
+- Created concepts:
+  - `concepts/yolo-v8-4-137.md` — YOLO v8.4.137 release notes
+  - `concepts/qgroundcontrol-v5-1-4.md` — QGC v5.1.4 release notes
+  - `concepts/mavsdk-release.md` — MAVSDK v3.17.4 release notes
+  - `concepts/dji-osmo-360-ii.md` — DJI Osmo 360 II 360° 카메라
+  - `concepts/a2z-longtail-dual.md` — A2Z Longtail Dual BVLOS 드론
+  - `concepts/shadowfaxuas-sf45.md` — ShadowfaxUAS SF45 VTOL
+  - `concepts/zuri-cargo-tiltrotor.md` — Zuri 화물 틸트로터
+  - `concepts/terra-drone-deftech.md` — Terra Drone DEFTECH 파트너십
+  - `concepts/hdzero-goggle-2-scroll-fix.md` — HDZero Goggle 2 스크롤 휠 수정
+  - `concepts/fcc-military-drone-restrictions.md` — FCC 군사등급 드론 제안
+  - `concepts/louisville-dfr-expansion.md` — Louisville DFR 확대
+  - `concepts/ga-asi-fujitsu-mou.md` — GA-ASI Fujitsu MOU
+  - `concepts/drone-wildfire-rt-detr.md` — 산불 감시 RT-DETR 개선 모델
+- Moved to processed:
+  - All 58 inbox files → `inbox/processed/`
+- Updated:
+  - `index.md` (총 페이지 313으로 갱신)

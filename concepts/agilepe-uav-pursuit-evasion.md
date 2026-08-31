@@ -53,3 +53,6 @@ AgilePE addresses the fundamental challenge of autonomous pursuit-evasion for UA
 ## Sources
 
 - Tang et al., "AgilePE: Autonomous UAV Pursuit-Evasion via Self-Play Reinforcement Learning", arXiv:2608.14135, 2026-08-14
+
+## 📰 최근 관련 소식
+- [freeCodeCamp.org] Code a Reinforcement Learning Library in C from Scratch (Full Course) (youtube.com, 2026-08-19) — https://www.youtube.com/watch?v=R5fPn6W8m6k
