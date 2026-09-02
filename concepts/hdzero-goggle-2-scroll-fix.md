@@ -37,3 +37,6 @@ HDZero Goggle 2의 스크롤 휠 문제를 해결하기 위한 펌웨어 수정 
 - [[fpv-hardware]] — FPV 하드웨어
 - [[hdzero]] — HDZero 시스템
 - [[fpv-goggles]] — FPV 고글
+
+## 📰 최근 관련 소식
+- [Joshua Bardwell] HDZero Goggle 2 Crazy Scroll Wheel Fix! (youtube.com, 2026-08-24) — https://www.youtube.com/watch?v=108Etb3V-gg

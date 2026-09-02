@@ -59,3 +59,5 @@ domain: hardware
 - 드론 떼에 뚫린 T-72…K방산, 방호 설계 바꾼다 (글로벌이코노믹, Thu, 20 Au) — https://news.google.com/rss/articles/CBMiiAFBVV95cUxPaFp6dFhlOVo2a3RPY0ozaGFGQzRyUVFaOHFEc2dOY1hzX0pkYmYzZTk5djdIRXJvNkt4cVNrYVNhNkJhY3F3bXlYTUJjOERJNFV3OVNNZGxoR1Mydkg1NllDV0w2NUFTWnZvaXVHWTdpTEVUQWVhQ0JYRElUVHVaNWUzWE91Y0VU?oc=5
 - [Joshua Bardwell] Q&A Livestream - August 23, 2026 (youtube.com, 2026-08-23) — https://www.youtube.com/watch?v=PQGyyYn5CJM
 - [Joshua Bardwell] (Nearly) perfect portable soldering iron: Sequre S99 (youtube.com, 2026-08-20) — https://www.youtube.com/watch?v=kWFIQe2fsWE
+- [Joshua Bardwell] Ascent latency update (youtube.com, 2026-08-25) — https://www.youtube.com/watch?v=9TQLzUFDQVc
+- [Joshua Bardwell] Q&A Livestream - October 12, 2026 (youtube.com, 2026-09-01) — https://www.youtube.com/watch?v=kbmmcxwe4xI

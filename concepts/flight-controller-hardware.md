@@ -135,3 +135,6 @@ LiPo Battery → Power Module/Board → FC
 - [[ardupilot-architecture]] — ArduPilot 지원 하드웨어
 - [[dronecan-protocol]] — CAN 버스 주변기기 연결
 - [[companion-computer]] — 고급 처리용 보조 컴퓨터
+
+## 📰 최근 관련 소식
+- [Painless360] Do I really need a compass on my flight controller? (youtube.com, 2026-08-25) — https://www.youtube.com/watch?v=pOs855esffs

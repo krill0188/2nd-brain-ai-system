@@ -71,3 +71,4 @@ domain: flight-control
 - [UAV Coach] Drone Prices Are About To DOUBLE (youtube.com, 2026-08-21) — https://www.youtube.com/watch?v=3lAYXJQyK3w
 - Purple UAS Opens Certification Portal for Public Safety Drone Manufacturers (www.suasnews.com, Fri, 21 Au) — https://www.suasnews.com/2026/08/purple-uas-opens-certification-portal-for-public-safety-drone-manufacturers/
 - [UAV Coach] Is It Still Worth Starting a Drone Business Today? (youtube.com, 2026-08-20) — https://www.youtube.com/watch?v=Am5-N5FF26A
+- [Painless360] Do I really need a compass on my flight controller? (youtube.com, 2026-08-25) — https://www.youtube.com/watch?v=pOs855esffs

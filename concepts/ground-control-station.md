@@ -126,3 +126,6 @@ GCS와 FC 간 무선 MAVLink 연결을 제공.^[raw/articles/px4-basic-concepts.
 - [[ardupilot-architecture]] — ArduPilot 아키텍처
 - [[dronecan-protocol]] — CAN 버스 통신
 - [[ros2-drone-integration]] — Companion 연동
+
+## 📰 최근 관련 소식
+- 日, 드론·AI 등 새 전쟁 방식 활용으로 방위전략 조정 (뉴시스, Mon, 31 Au) — https://news.google.com/rss/articles/CBMiYEFVX3lxTE9FZWROTzhNNVBsOWpZaWJtVEdPdEtpYlRlZUdVQzh5eDV4V1Z4MjlTYmI1QmVWaHQxYlJCbW81WC1Zek1yR3hMQXRFVVNRWjZOVHhXQzhlUGNTQzBiTlZJQtIBeEFVX3lxTE1DeE5Ob2hHYlJtV2o3b295cFpBQzZ2RC1CZzFheUhRMW9XWDBRLVlQd1pfLWlCQ2pGQWptY3pYbEJVX3ludUtkSk1CWVhtanJBeXBtN3RUR0l5ZEs5MUloekxDSElJSWJhc3pqenlpUUVZTG9Zay1CYQ?oc=5

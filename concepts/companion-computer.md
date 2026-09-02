@@ -32,3 +32,6 @@ Flight Controller와 별도로 탑재되어 AI 추론·영상처리·미션 계�
 
 - [[flight-controller-hardware]] — FC 하드웨어 개요
 - [[px4-offboard-control]] — Offboard 제어 인터페이스
+
+## 📰 최근 관련 소식
+- 임현 유비파이 대표 - 드론쇼 기업이 말하는 ‘신방산’ (포브스코리아, Thu, 27 Au) — https://news.google.com/rss/articles/CBMickFVX3lxTFBzRHdaMWhHN0h4YUlrVFhYSDEtU1BVM1gySHFlVExZSHNkVjBsWU1YaTMtS1dwcHdtSWRHeTJMRll1WEhabUh4dGh2UTNpM1VGOVZ4VzdSa2Q4WnEzeHNYMDFWbHVrNHBDLTJUekhpSW45UQ?oc=5

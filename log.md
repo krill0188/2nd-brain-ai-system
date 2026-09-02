@@ -12,7 +12,34 @@
 > rotate the completed file to `log-YYYY.md` and begin a new `log.md`; preserve
 > the completed file unchanged.
 
-## [2026-08-13] ingest | RSS 뉴스 및 연구 논문 인제스트
+## [2026-09-02] ingest | inbox 일일 수집 및 컴파일
+
+- Source files from `inbox/` (18 files processed):
+  - arXiv papers (1): STL 기반 확산 모델 다중 에이전트 계획
+  - CrossRef papers (1): 계층적 RL UAV 자율 내비게이션
+  - KCI papers (4): Drone Wall 방어체계, 벼 출수 판별, 자율 배송 시스템, 음악 이론(드론 외)
+  - RSS news (6): DroneDJ, DroneLife, sUAS News(2), Parrot, Skydio
+  - YouTube videos (6): DJI Mini 4 Pro, Osmo 360, INAV 설정, 자료구조(3)
+- Created concepts (5):
+  - `concepts/drone-wall-defense-system.md` — Drone Wall 기반 대드론 방어체계
+  - `concepts/stl-diffusion-multi-agent-planning.md` — STL 확산 모델 다중 에이전트 계획
+  - `concepts/hierarchical-rl-uav-navigation.md` — 계층적 RL UAV 자율 내비게이션
+  - `concepts/vision-marker-drone-delivery.md` — 시각 마커 기반 자율 배송
+  - `concepts/drone-rice-heading-detection.md` — 드론 기반 벼 출수 판별
+- Created entities (7):
+  - `entities/vulcan-drone.md` — Vision Aerial 미국 제조 드론
+  - `entities/emo-mini-drone.md` — High Great Innovation 249g 라이트쇼 드론
+  - `entities/avidrone.md` — 캐나다 헤비리프트 드론 기업
+  - `entities/dronetag.md` — Remote ID 솔루션 기업
+  - `entities/flowcopter.md` — 영국 유압 전달 기술 기업
+  - `entities/uas-sentry-nexus-observer.md` — 휴대용 듀얼 밴드 Remote ID 탐지
+  - `entities/a2z-longtail-dual.md` — A2Z BVLOS 듀얼 패키지 배송 드론
+- Moved to processed:
+  - All 18 inbox files → `inbox/processed/`
+- Updated:
+  - `index.md` (총 페이지 327으로 갱신)
+
+
 
 ## [2026-08-19] ingest | inbox 일일 수집 및 컴파일
 

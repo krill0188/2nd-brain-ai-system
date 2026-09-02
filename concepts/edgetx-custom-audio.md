@@ -33,3 +33,4 @@ EdgeTX에서는 케이블을 이용한 트레이너 설정이 가능하다. Radi
 
 ## 📰 최근 관련 소식
 - [Painless360] New tool! Customise your radio and edit EdgeTX themes easily! (youtube.com, 2026-08-21) — https://www.youtube.com/watch?v=A-4OwLXs6xg
+- [Painless360] Why I don't like sharing a fixed wing INAV setup file (diff_all or dump) (youtube.com, 2026-09-01) — https://www.youtube.com/watch?v=VcIYB40QFXw

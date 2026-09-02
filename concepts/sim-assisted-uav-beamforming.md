@@ -67,3 +67,6 @@ Transform-based alternating optimization combining:
 ## Sources
 
 - Sheemar et al., "Energy Efficient Multi-User Beamforming and 3D Position Optimization for SIM-Assisted UAVs", arXiv:2608.13765, 2026-08-13
+
+## 📰 최근 관련 소식
+- 3D 프린터로 ‘드론 방공망’을 만드는 일본 (뉴스임팩트, Thu, 27 Au) — https://news.google.com/rss/articles/CBMickFVX3lxTFBtYVJJWm0wZHlsX1BCTXBPb3JRSkZQZWJLUGQ4S0ItNTU2aHpDVWlSUVFHNFN2Y1JfR09wdXpmXzlmRnVSVm4yTGNFVC1pLTFNWHVuSHdYRzBJT2NsUExsdjcwSGFiVGxqcTQtdEE2YjlMdw?oc=5

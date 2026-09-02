@@ -28,3 +28,4 @@ Divimath이 출시한 4W 출력의 아날로그 FPV 영상 송신기(VTX). 대�
 
 ## 📰 최근 관련 소식
 - [Joshua Bardwell] 70% more video range & penetration! // RUSHFPV 3.3 GHZ VIDEO RECEIVER (youtube.com, 2026-08-07) — https://www.youtube.com/watch?v=BtauO-T3GBg
+- [Joshua Bardwell] HDZero Goggle 2 Crazy Scroll Wheel Fix! (youtube.com, 2026-08-24) — https://www.youtube.com/watch?v=108Etb3V-gg

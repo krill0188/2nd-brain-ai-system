@@ -48,3 +48,6 @@ note: "출처는 공식 문서 기반 정리(방법론)이나 raw/ 스냅샷 미
 
 - PX4 파라미터 레퍼런스: https://docs.px4.io/main/en/advanced_config/parameter_reference.html
 - ArduPilot 전체 파라미터: https://ardupilot.org/copter/docs/parameters.html
+
+## 📰 최근 관련 소식
+- [Painless360] Why I don't like sharing a fixed wing INAV setup file (diff_all or dump) (youtube.com, 2026-09-01) — https://www.youtube.com/watch?v=VcIYB40QFXw

@@ -53,3 +53,4 @@ Jinquan Yan et al., arXiv:2604.09313 (2026)
 ## 📰 최근 관련 소식
 - "러 파병 북한군 현재 8천500명…정찰·공격용 드론부대 포함" (v.daum.net, Sat, 22 Au) — https://news.google.com/rss/articles/CBMiRkFVX3lxTE82bXkwUDZ0WnNmSE4zbVNZRzV6cTVzbTcyYmhtX0U3N0dYQld6MUx2a3JjMDg3eU1fZ09kc1dHQXhTM1dIQ0E?oc=5
 - 러, '시속 600㎞' 제트 엔진 드론 공세 확대…우크라 요격 고전 (v.daum.net, Mon, 31 Au) — https://news.google.com/rss/articles/CBMiT0FVX3lxTE54cEpvaUF1b2hGUkdlSzlmVF9YYUNYUTdFcVpwVDFnT24tOUdwVE01R3YwTnpPUXVIZVBkNXA3dVNTTjl3NVAtTGp5WU0tT0k?oc=5
+- 폴란드 드론공장 방화…'또 러시아 공작' 의심 (v.daum.net, Mon, 31 Au) — https://news.google.com/rss/articles/CBMiT0FVX3lxTE9OTkdQR2UzdVZ4cGdwVWsyb0pDUUdRaUFmUTViY0FfRURPVDFkcktyYW5pQTJpX0hRMEhTWWtwZXo4UUVoRC1mQ2NabzA3clU?oc=5

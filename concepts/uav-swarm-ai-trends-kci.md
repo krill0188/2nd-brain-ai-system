@@ -48,3 +48,6 @@ UAV 군집 시스템은 다수의 UAV가 자율적으로 협업하여 복잡한 
 ## 참고
 
 성균관대학교 강구현, 한국통신학회논문지 (2026)
+
+## 📰 최근 관련 소식
+- 대중국 봉쇄망 구축하는 미·일 방산혈맹… 차세대 드론·위성 네트워크로 진화 [이종윤의 밀리터리 월드] (파이낸셜뉴스, Sun, 30 Au) — https://news.google.com/rss/articles/CBMiWkFVX3lxTFBsWlhlNHpsa2hUaUJGaXM3eVd5Y1BVRm1oNGNFa0pteTJCWF9JRnVta3d2Q0xhM0h0RzhXT2pFX3k1TkdlQ0ZkMU5vQlRYN3dlbWw3V3JRRTU2dw?oc=5

@@ -3,9 +3,16 @@
 > Complete catalog of active canonical pages. Each entry is a wikilink followed by
 > a one-line summary, sorted alphabetically within its section.
 >
-|> Total pages: 313
+|> Total pages: 327
 ## Entities
-- [[cambridge-aerospace]] — 영국 공중 방위/C-UAS 기업, $300M Series C (2026-08).
+|- [[a2z-longtail-dual]] — A2Z Drone Delivery BVLOS 듀얼 패키지 배송 드론.
+|- [[avidrone]] — 캐나다 헤비리프트 드론 기업, DARPA Lift Challenge 우승.
+|- [[cambridge-aerospace]] — 영국 공중 방위/C-UAS 기업, $300M Series C (2026-08).
+|- [[dronetag]] — Remote ID 솔루션 기업, Airwise Nexus 통합.
+|- [[emo-mini-drone]] — High Great Innovation 249g 라이트쇼 드론.
+|- [[flowcopter]] — 영국 유압 전달 기술 기업, TEKEVER 인수.
+|- [[uas-sentry-nexus-observer]] — 휴대용 듀얼 밴드 Remote ID 탐지 시스템.
+|- [[vulcan-drone]] — Vision Aerial 미국 제조 드론 패밀리.
 - [[mbf-group]] — 폴란드 드론/우주 기업, IRYDA+ X1 및 SPACE Z1 개발.
 - [[mavlink]] — MAVLink 프로토콜 엔티티 페이지: 버전 비교, 핵심 메시지, GCS 통신.
 - [[ratefpv]] — FPV 드론 AIO 비행 컨트롤러 제조업체.
@@ -59,6 +66,11 @@
 |- [[uavionix-airwise-utm-partnership]] — uAvionix-Airwise real-time UTM partnership.
 
 ## Concepts
+|- [[drone-rice-heading-detection]] — 드론 기반 벼 출수 판별 시스템(YOLOv11).
+|- [[drone-wall-defense-system]] — Drone Wall 기반 자율 대드론 방어체계.
+|- [[hierarchical-rl-uav-navigation]] — 계층적 RL 기반 UAV 자율 내비게이션.
+|- [[stl-diffusion-multi-agent-planning]] — STL 기반 확산 모델 다중 에이전트 계획.
+|- [[vision-marker-drone-delivery]] — 시각 마커 기반 자율 배송 드론 시스템.
 |- [[clustered-randomized-smoothing]] — 클러스터 기반 랜덤 스무딩, 쿼드로터 충돌률 81% 감소.
 |- [[dji-mavic-4-pro-firmware-update]] — DJI Mavic 4 Pro 2026년 8월 펌웨어 업데이트.
 |- [[dji-mini-5-pro]] — DJI 249g 미만 강풍 대응 여행용 드론.
