@@ -35,8 +35,23 @@ research/
 ├── reviews/<session-id>.md      # Critic + Evidence Verifier 결과
 ├── drafts/<session-id>.md       # 마스터 승인 대상 연구 메모 (승인 전용 draft 저장소)
 ├── prompts/                     # 역할별 시스템 프롬프트 (세션 무관, 고정 자산)
+├── designs/<YYYYMMDD-slug>.md   # AI 드론빌더 설계 산출물 (연구 루프와 별개 계층 — 아래 참고)
 └── _archive/<session-id>/       # 반려/종료 세션 — runs/hypotheses/reviews/drafts 4곳에서 이동 보관
 ```
+
+### `designs/` — 설계 산출물 계층 (2026-09-03 신설)
+
+`scripts/drone-builder-claude.sh`가 생성하는 드론 설계안(기획서·스펙·아키텍처 3단 구성)을
+쌓는 곳이다. 연구 루프(`hypotheses`/`reviews`/`drafts`)와는 **의도적으로 분리**한다 —
+연구 루프는 원자적 클레임(claim)을 검증하는 구조인데, 설계안은 문서 단위 산출물이라
+claim 단위로 쪼개면 맥락이 깨지기 때문이다.
+
+- **status는 항상 `draft`로 시작한다** — canonical(신뢰 계층)이 아니다.
+- 본문 맨 앞에 미검증 경고문을 명시한다.
+- frontmatter `sources:`에 근거로 사용한 위키 페이지를 기록해 추적 가능하게 한다.
+- `index.md`/`log.md`에 올리지 않는다(검증 전 초안이므로 카탈로그 대상 아님).
+- canonical 승격은 자동화하지 않는다 — 마스터가 읽고 가치 있는 부분만 직접
+  `concepts/`·`entities/`·`queries/`로 옮겨 적는다(discovery 그래프와 동일 원칙).
 
 - 세션 식별자: `<YYYYMMDD-slug>` (log.md 날짜 관례와 정합).
 - 4개 카테고리 디렉터리는 같은 session-id로 대응된다 — 파일명이 곧 조인 키.
