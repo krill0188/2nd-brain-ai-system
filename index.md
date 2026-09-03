@@ -3,7 +3,7 @@
 > Complete catalog of active canonical pages. Each entry is a wikilink followed by
 > a one-line summary, sorted alphabetically within its section.
 >
-|> Total pages: 336
+|> Total pages: 342
 ## Entities
 |- [[a2z-longtail-dual]] — A2Z Drone Delivery BVLOS 듀얼 패키지 배송 드론.
 |- [[avidrone]] — 캐나다 헤비리프트 드론 기업, DARPA Lift Challenge 우승.
@@ -340,6 +340,12 @@
 |- [[kci-lightweight-uav-precision-imaging]] — 고정밀 영상 획득용 경량 UAV 플랫폼(FC/ESC/PDB 통합 보드).
 |- [[kci-multi-uav-clustering-path-generation]] — 다중 UAV IoT 데이터 수집: 수요 가중 클러스터링+탐욕 경로 최적 조합.
 |- [[yolo-v8-4-138]] — YOLO v8.4.138 릴리스, 구형 체크포인트 호환성 복구 및 MuSGD/DDP 안정성 개선.
+|- [[drone-news-2026-09-04]] — 2026년 9월 4일 드론 업계 주요 소식 (Easy Aerial, EagleNXT, BVLOS, 베네수엘라 지진 대응).
+|- [[llm-uav-carrier-tactical-agent]] — 무인기 모함 LLM 기반 5에이전트 자율 전술 프레임워크.
+|- [[military-uav-gca-bit-false-alarm]] — 군용 UAV 지상안테나조립체 BIT 오탐 개선 로직 연구.
+|- [[uav-cf-mmimo-pilot-assignment]] — 이동성 인식 칼만 필터 기반 CF-mMIMO UAV 파일럿 할당.
+|- [[uav-comm-bridges-qubo-optimization]] — 재난 대응 UAV 5G 통신 브릿지 QUBO/양자 컴퓨팅 최적화.
+|- [[uav-uplink-energy-efficiency-los]] — 확률적 LoS 채널 UAV 업링크 전송 에너지 효율 최적화(BCD).
 
 ## Comparisons
 

@@ -54,3 +54,4 @@ domain: flight-control
 ## 📰 최근 관련 소식
 - 드론 기반 객체 탐지 시스템에 대한 물리적 적대적 패치 공격: 디지털-물리 도메인 갭 분석 및 완화 (kci.go.kr, 2026) — https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003368967
 - 제주공항 위협하는 ‘불법 드론’…올해만 84건 탐지 (제민일보, Wed, 02 Se) — https://news.google.com/rss/articles/CBMiZkFVX3lxTE5VM2ExYjFzdlZHTUpONTZTTTVTeElmRHNiY2g4SW5xR1pMczhLYTAyeWNyMlJ6Z01hczFmVGlWVGRHRFg5UlFTWjc3ZjEyYTdaOXlyY3Ftdzg3RS0wTWtudGhXb2NrQQ?oc=5
+- 송산동청소년지도협, 드론 교실 운영 (제민일보, Thu, 03 Se) — https://news.google.com/rss/articles/CBMiZkFVX3lxTE16SEswaXJhZlFfM1ktME50VVRrS25uOE1DRDVuNGRIVlVGZ0RlNG1mc0RVNGhtVmRqeFE2OEk3cTVnNlhwd1BCZ0ZRTTN3a2pwb0RLX0hWZUZnWmJVZlk0YVp3cllnZw?oc=5
