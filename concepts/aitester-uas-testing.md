@@ -57,3 +57,4 @@ Empirical evaluation on core UAS components demonstrated effectiveness:
 
 ## 📰 최근 관련 소식
 - Automated System-level Testing of Unmanned Aerial Systems (arxiv.org, 2024-03-23) — http://arxiv.org/abs/2403.15857v2
+- Pentagon’s counter-drone task force inks $500M contract for SkyValor 'detect and defeat' system after border testing (DefenseScoop, Fri, 31 Ju) — https://news.google.com/rss/articles/CBMinwFBVV95cUxOZUpxTkZwc3BESFJYVVVqLUgzdW1qbHNBTm9yWXhNUHNZLUh3c25HT25xZE9OOWw0SU56QlpwN2NJWGIyX0s4TUFaYTF6d2MtckFsZVB3bjAyLVcyV1R4OFJueWJYM2ZsaEYxVFJiM3E3d0o3MGlILTNIQkZQLTJ1cXZhaDUtdU5hNHc4dFk5YWEwMGtGYmQ2d3pwUTNvb2c?oc=5

@@ -38,3 +38,4 @@ contradictions: []
 - "우크라, 모스크바 공항 겨냥 AI드론떼 작전 마련했다가 중단" (연합뉴스, Sat, 22 Au) — https://news.google.com/rss/articles/CBMiW0FVX3lxTFB6VWN4YjdSMmNfSWJYQWQ0cmFvSXdsaFZyVkVnZThKWms1c3NRRDVRV0N5enJyTV9LMXhiQWZMNWtmbm5QWnRrelQ2Vk8yd2xVaFNKUm1xZEh5UzjSAWBBVV95cUxQNldEanBCSGxQZFNOWUhuY2FMajIyRUlBZmlDT3pseV9vVzZod3FnVGxnQnY5ZXRLMnRuNWlIdUw2ZjlXMzF2SmI4cnYyQkhnV2ZXSE5CZUtuekQwMEgySjg?oc=5
 - Inside the Counter-UAS Response to Drone Flights Over Spokane Wildfires (dronelife.com, Thu, 20 Au) — https://dronelife.com/2026/08/20/spokane-wildfire-drones-firefighting-aircraft/
 - [MATLAB] What Is Polyspace Code Prover? (youtube.com, 2026-08-20) — https://www.youtube.com/watch?v=m66oMivVL_w
+- “‘제트 드론’ 요격, 가장 어려워”…한국 대드론 방공망 현실 [밀리터리+] (나우뉴스, Tue, 01 Se) — https://news.google.com/rss/articles/CBMicEFVX3lxTFA3ZFVMWnU5cG01ZUI2RTBfX1RpejkyMzN6cHc1MXRpN1plVGdSR0owa05oZVlWMk9LYl9EMF9oRjdFTzBrRkV1bVlnaGFTNk1nVUozTUZUa1ZmOURjYkJEV252MGJfRW16NGJHUVJOU00?oc=5

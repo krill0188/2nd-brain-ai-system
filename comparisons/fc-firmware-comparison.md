@@ -39,3 +39,4 @@ FPV 드론을 조립할 때 모터·ESC·영상시스템·수신기 선택 못�
 - 드론 vs 전차 ‘모의전투’ 결과는…美 기갑여단 순식간에 전멸[이현호의 밀리터리!톡] (서울경제, Sat, 22 Au) — https://news.google.com/rss/articles/CBMiUkFVX3lxTE1hSVhMSFlPSVFrX01GUWpWekNlVWhfUG9KN1RBc1k0VWJJV2gyWERSOFdsZXY3VWI2dUNyWkdLMWtqSXhoVllERWdMYVhXaHU0YWc?oc=5
 - [Joshua Bardwell] (Nearly) perfect portable soldering iron: Sequre S99 (youtube.com, 2026-08-20) — https://www.youtube.com/watch?v=kWFIQe2fsWE
 - [Joshua Bardwell] Ascent latency update (youtube.com, 2026-08-25) — https://www.youtube.com/watch?v=9TQLzUFDQVc
+- [Joshua Bardwell] Betaflight FINALLY added this feature! FC Alignment Wizard in BF 2026.6 (youtube.com, 2026-09-02) — https://www.youtube.com/watch?v=mHreu_l1FwY

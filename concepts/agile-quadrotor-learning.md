@@ -36,3 +36,6 @@ note: "Raw source not preserved in repo — found during 2026-08-10 provenance a
 - [[drone-ai]]
 - [[px4-flight-stack]]
 - [[drone-simulation]]
+
+## 📰 최근 관련 소식
+- 토토 과자 : 실제 경험자들의 조언 (Platea Magazine, Fri, 28 Au) — https://news.google.com/rss/articles/CBMioAJBVV95cUxPUFcxU3RDMlltWFg4OUx4VFY5WHJYY0xFVjZnT1dZT0tNV2xld21qZGJpS1dLczNQcTJzWlIyRGp0S3hzYnc5a0F4TzljM05icHpmNnhZYVJXWGxscHV5eEJOUkxfRVlqYnJwMlFtZmk3ODNuaHhnR1FyZnlEWlo5bjJ6ZnVEUFJZWHh1aEhqSVRKQXQtM3VKdEgtWFdOVTlDRDdLRkhTMW9yU3FBSkVVUGZHWjhkRXZzMU9IeVVQWFNKLXF5S0N2Uk5UZ0gtdUhiS1N4SjM0LUEteXpfMy1YaEt6c0hvVUpyQ1luS1hWODI1aTdVa2N6RzZ5NDA3d0lqVzBheHNESU1rSVBEMEVDWXM3OUkwdjdpV2lYRU9qMU8?oc=5

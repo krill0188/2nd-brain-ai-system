@@ -46,3 +46,4 @@ MAVLink-M은 군사 및 상업용 드론 간의 상호운용성을 위한 확장
 - Two Shenzhen Rivals, Two Different Paths to the U.S. Market (dronelife.com, Thu, 13 Au) — https://dronelife.com/2026/08/13/insta360-dji-us-market/
 - [Multi-robot Systems Group at FEE-CTU in Prague] MRS Summer School 2026 | Official video (youtube.com, 2026-08-21) — https://www.youtube.com/watch?v=tNvr5b-oJlc
 - The White House Wants Drone Dominance. How Much of the Supply Chain Must Be American? (dronelife.com, Fri, 21 Au) — https://dronelife.com/2026/08/21/us-drone-supply-chain-drone-dominance/
+- The Army’s new drone-first soldiers are already graduating from training school (Task & Purpose, Mon, 31 Au) — https://news.google.com/rss/articles/CBMiW0FVX3lxTE9zRkVpaXlRcHh3d3Zpb00zMnZBczkyaXJWa1E3ZkZ6MTVhSUJDN0ZmQkZsS1dSV3c3VEVUMTZuOERMWm8xZnp6aHZIREo2VEJYWU54eEJDREJlS0k?oc=5

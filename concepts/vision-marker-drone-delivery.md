@@ -31,3 +31,7 @@ ROS2 기반 자율 배송 UAV 시스템. 웨이포인트 내비게이션, 목표
 ## 출처
 
 - 예타오, "시각 마커 탐지를 이용한 자율 배송 드론 시스템 설계", 드라이브·컨트롤, 2026
+
+## 📰 최근 관련 소식
+- 드론 배송 실증 확대…섬 지역 상비약 배송도 추진 (약사공론, Wed, 11 Ma) — https://news.google.com/rss/articles/CBMibEFVX3lxTE0tTzluLU53UEZJRGxEeFF6eHIxWGZQdHpVT3dmdUlhT1FQQURSVktkQ2RHYnNYcDBhWC1fUHpCU1BRZVVDYldyaFlDY01yTnE0REFiLXRtaDA5U2lac2ZQMk5YeXYxWGFuWGZNbg?oc=5
+- 인천 AI 기반 방산클러스터 구축 나서…박찬대 "미래 방위산업 출발점" (뉴스핌, Wed, 02 Se) — https://news.google.com/rss/articles/CBMiXEFVX3lxTFBHMEw3MlViS1dtbGhvbUtqZXdISWx0bDN1bWlIelNPbm1STGV4eFA1Q2stXzRNU1dIUERJcnJ3WE82SGxpUHhhVnppQXJmUFBKUTRTeU5HeFhIYTZa?oc=5

@@ -41,3 +41,6 @@ AeroEval은 멀티로터 UAV 설계를 위한 물리 기반 다학문 설계 최
 - [[drone-hw]] — 드론 하드웨어 도메인 개요
 - [[flight-controller-hardware]] — 비행 제어기 하드웨어
 - [[drone-power-battery]] — 드론 전력 및 배터리 시스템
+
+## 📰 최근 관련 소식
+- 토토 과자 : 실제 경험자들의 조언 (Platea Magazine, Fri, 28 Au) — https://news.google.com/rss/articles/CBMioAJBVV95cUxPUFcxU3RDMlltWFg4OUx4VFY5WHJYY0xFVjZnT1dZT0tNV2xld21qZGJpS1dLczNQcTJzWlIyRGp0S3hzYnc5a0F4TzljM05icHpmNnhZYVJXWGxscHV5eEJOUkxfRVlqYnJwMlFtZmk3ODNuaHhnR1FyZnlEWlo5bjJ6ZnVEUFJZWHh1aEhqSVRKQXQtM3VKdEgtWFdOVTlDRDdLRkhTMW9yU3FBSkVVUGZHWjhkRXZzMU9IeVVQWFNKLXF5S0N2Uk5UZ0gtdUhiS1N4SjM0LUEteXpfMy1YaEt6c0hvVUpyQ1luS1hWODI1aTdVa2N6RzZ5NDA3d0lqVzBheHNESU1rSVBEMEVDWXM3OUkwdjdpV2lYRU9qMU8?oc=5

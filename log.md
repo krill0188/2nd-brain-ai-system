@@ -1242,3 +1242,33 @@
   - All 58 inbox files → `inbox/processed/`
 - Updated:
   - `index.md` (총 페이지 313으로 갱신)
+
+## [2026-09-03] ingest | inbox 일일 수집 및 컴파일
+
+- Source files from `inbox/` (21 files processed):
+  - Crossref papers (2): DE-distributionally robust UAV power sizing, ORBIT-FL federated continual learning
+  - KCI papers (4): 고정밀 영상 경량 UAV 플랫폼, 다중 UAV 클러스터링/경로 생성, 대드론 하드킬 교전영역, 델타형 UAV RCS 최적화
+  - RSS news (6): DJI Enterprise, DroneDJ, DroneLife, OscarLiang FPV, Parrot, sUAS News
+  - YOLO release (1): v8.4.138
+  - YouTube videos (8): Pinky Zero (×2), Betaflight 2026.6 FC Alignment Wizard, DJI Osmo 360 II 프로모, DJI Air 3S 프로모, Joshua Bardwell Q&A, B+트리 자료구조, 러스트 입문
+- Created entities:
+  - `entities/heven-aerotech.md` — 미국 버지니아 수소 추진 드론 제조사
+- Created concepts:
+  - `concepts/yolo-v8-4-138.md` — YOLO v8.4.138 릴리스 노트
+  - `concepts/kci-lightweight-uav-precision-imaging.md` — 고정밀 영상 경량 UAV 플랫폼
+  - `concepts/kci-multi-uav-clustering-path-generation.md` — 다중 UAV IoT 클러스터링/경로 생성 기법 연구
+  - `concepts/kci-counter-drone-hardkill-engagement-zone.md` — 대드론 하드킬 교전영역 CLARA 알고리즘
+  - `concepts/kci-delta-wing-uav-rcs-optimization.md` — RCS 제약 델타형 UAV 날개 형상 최적화
+  - `concepts/betaflight-fc-alignment-wizard.md` — Betaflight 2026.6 FC 정렬 마법사 신규 기능
+  - `concepts/amprius-sicore-battery.md` — Amprius SiCore 2세대 500 Wh/kg 배터리 셀
+  - `concepts/california-drone-concert-restriction.md` — 캘리포니아 AB 2113 공연장 드론 제한
+  - `concepts/drone-news-2026-09-03.md` — 2026-09-03 드론 뉴스 종합
+- Skipped (insufficient content / off-domain / passing mention):
+  - Crossref 2 papers (abstract 미제공, 단일 출처 thin)
+  - RSS parrot (2017 구기사, 실질 내용 없음)
+  - YouTube 5편: Pinky Zero (설명 없음), Q&A 사전 공지, DJI 홍보 쇼트, B+트리(비도메인), 러스트 입문(비도메인)
+  - OscarLiang FPV (제목만 있음)
+- Moved to processed:
+  - All 21 inbox files → `inbox/processed/`
+- Updated:
+  - `index.md` (총 페이지 336으로 갱신)

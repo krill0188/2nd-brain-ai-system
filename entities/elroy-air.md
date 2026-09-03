@@ -42,3 +42,6 @@ Elroy Air develops autonomous hybrid-electric VTOL (vertical take-off and landin
 ## Sources
 
 - DroneDJ, "US Army awards Elroy Air $46M for heavy-lift drone", 2026-08-18
+
+## 📰 최근 관련 소식
+- U.S. Army Awards AeroVironment a $500 Million Contract for Layered Counter-Drone Defense Systems (Overt Defense -, Thu, 09 Ju) — https://news.google.com/rss/articles/CBMi0AFBVV95cUxOZVFYdllnTnotM0o3aE52WGFBV293TGhET19lbElZc19zWHVRcFNIQWduZUtyQTFZd2p5X1ZPd0tDR2xCaV85TmI0WmNvNkZ4M3FlUW5MMGhseVMxcUs3cmItZ3d0OGpibl84M3FHdzhTWkZ5NHFCLVdjSTJ5UDFTejNBY2N1V3ZnZ2g5UTF2NGhBT1M4eFhBQnU5N0NSUjFMbDg4d1NBd3luenZ4SGxzemtQcEpnbFprTHRaa0ROYjBXelNxaGtha004WnF4WTQy?oc=5

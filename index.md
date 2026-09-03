@@ -3,7 +3,7 @@
 > Complete catalog of active canonical pages. Each entry is a wikilink followed by
 > a one-line summary, sorted alphabetically within its section.
 >
-|> Total pages: 327
+|> Total pages: 336
 ## Entities
 |- [[a2z-longtail-dual]] — A2Z Drone Delivery BVLOS 듀얼 패키지 배송 드론.
 |- [[avidrone]] — 캐나다 헤비리프트 드론 기업, DARPA Lift Challenge 우승.
@@ -64,6 +64,7 @@
 |- [[auvsi-leadership-transition-2026]] — AUVSI leadership transition with Heather Lee as Acting CEO.
 |- [[faa-nextgen-drone-integration]] — FAA NextGen fact sheet on drone integration.
 |- [[uavionix-airwise-utm-partnership]] — uAvionix-Airwise real-time UTM partnership.
+|- [[heven-aerotech]] — 미국 버지니아 기반 수소 추진 드론 제조사, 56,000 sq ft 생산 시설 가동 (2026-09).
 
 ## Concepts
 |- [[drone-rice-heading-detection]] — 드론 기반 벼 출수 판별 시스템(YOLOv11).
@@ -330,6 +331,15 @@
 ||- [[edge-constrained-uav-small-object-detection]] — P2 강화 및 QIEA 기반 에지 제약 UAV 소형 객체 탐지.
 ||- [[wonder-uav-coverage-optimization]] — WONDER: JEPA 기반 UAV 커버리지 최적화 협상 프레임워크.
 ||- [[pilot-uav-motion-planning]] — PILOT: 특권 모방 학습 기반 UAV 모션 플래닝.
+|- [[amprius-sicore-battery]] — Amprius SiCore 2세대 실리콘 음극 배터리 셀, 500 Wh/kg, 장거리 UAS 대상.
+|- [[betaflight-fc-alignment-wizard]] — Betaflight 2026.6 FC 정렬 마법사 신규 기능.
+|- [[california-drone-concert-restriction]] — 캘리포니아 AB 2113: 야외 공연장 400ft 드론 비행 제한, FAA 선점 쟁점.
+|- [[drone-news-2026-09-03]] — 2026년 9월 3일 드론 업계 주요 소식.
+|- [[kci-counter-drone-hardkill-engagement-zone]] — 대드론 하드킬 UAV 교전영역 계산 알고리즘(CLARA 기법).
+|- [[kci-delta-wing-uav-rcs-optimization]] — RCS 제약 델타형 UAV 공력-스텔스 통합 최적화.
+|- [[kci-lightweight-uav-precision-imaging]] — 고정밀 영상 획득용 경량 UAV 플랫폼(FC/ESC/PDB 통합 보드).
+|- [[kci-multi-uav-clustering-path-generation]] — 다중 UAV IoT 데이터 수집: 수요 가중 클러스터링+탐욕 경로 최적 조합.
+|- [[yolo-v8-4-138]] — YOLO v8.4.138 릴리스, 구형 체크포인트 호환성 복구 및 MuSGD/DDP 안정성 개선.
 
 ## Comparisons
 
