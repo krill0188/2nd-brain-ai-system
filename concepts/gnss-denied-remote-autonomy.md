@@ -46,11 +46,19 @@ domain: gcs-software
 - 강력한 온보드 컴퓨터 불필요
 - 광범위한 배포 가능
 
+## 수색·구조(SAR) 적용
+
+동일 시스템은 수색 구조(SAR) 임무에도 그대로 적용된다 — 구조물 근접 환경에서의 GNSS 차단
+자율 비행, 상태 추정·장애물 회피, 다중 이종 UAV 동시 감독, 공유 3D 환경 모델을 통한
+상황 인식 향상이 핵심이다.
+
 ## 관련 개념
 
 - [[visual-positioning-odometry]] — GPS 미가용 환경 시각적 위치 추정
 - [[decentralized-swarm-gps-denied]] — GPS 차단 환경 분산형 UAV 군집
 - [[flight-ready-lidar-inertial-odometry]] — 임베디드 LIO 시스템
+- [[drone-first-responder-dfr]] — 응급 대응 드론 활용
+- [[ground-control-station]] — GCS 소프트웨어 및 텔레메트리
 
 ## 출처
 

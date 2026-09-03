@@ -12,6 +12,35 @@
 > rotate the completed file to `log-YYYY.md` and begin a new `log.md`; preserve
 > the completed file unchanged.
 
+## [2026-09-04] ingest | inbox 일일 수집 및 컴파일
+
+- Source files from `inbox/` (19 files processed):
+  - arXiv papers (1): UAV 통신 브릿지 QUBO 최적화
+  - CrossRef papers (1): 블레이드리스 UAV 추진기 공력 최적화 (초록 없음 → 스킵)
+  - KCI papers (4): CF-mMIMO 파일럿 할당, UAV 업링크 에너지 효율, 무인기 모함 LLM 전술 에이전트, 군용 UAV GCA BIT 오탐
+  - RSS news (6): DroneDJ, DroneLife, sUAS News, DJI Enterprise, Skydio, Oscar Liang FPV
+  - YouTube videos (7): DJI ROMO 2(스킵-로봇청소기), MATLAB Signal Processing(스킵-비드론), AI Hardware(스킵-비드론), 자료구조(스킵-비드론), 러스트 입문(스킵-비드론), drone over people(스킵-프로모션), Parrot RSS(스킵-구형기사)
+- Skipped (out of scope/old):
+  - CrossRef bladeless thruster (초록 미제공, 너무 단편적)
+  - DJI ROMO 2 YT (로봇 청소기, 드론 아님)
+  - MATLAB Signal Processing YT (드론 도메인 외)
+  - AI Hardware semiconductor YT (드론 도메인 외)
+  - 자료구조 YT (드론 도메인 외)
+  - 러스트 입문 YT (드론 도메인 외)
+  - How to fly a drone over people YT (Part 107 강좌 프로모션에 불과)
+  - Parrot RSS (2014-2024 구형 기사)
+- Created concepts (6):
+  - `concepts/drone-news-2026-09-04.md` — 2026년 9월 4일 드론 업계 주요 소식
+  - `concepts/llm-uav-carrier-tactical-agent.md` — 무인기 모함 LLM 기반 자율 전술 에이전트 프레임워크
+  - `concepts/military-uav-gca-bit-false-alarm.md` — 군용 UAV 지상안테나조립체 BIT 오탐 개선 로직
+  - `concepts/uav-cf-mmimo-pilot-assignment.md` — 이동성 인식 CF-mMIMO UAV 파일럿 할당
+  - `concepts/uav-comm-bridges-qubo-optimization.md` — 재난 대응 UAV 통신 브릿지 QUBO 최적화
+  - `concepts/uav-uplink-energy-efficiency-los.md` — 확률적 LoS 채널 UAV 업링크 에너지 효율 최적화
+- Moved to processed:
+  - All 19 inbox files → `inbox/processed/`
+- Updated:
+  - `index.md` (총 페이지 342으로 갱신)
+
 ## [2026-09-02] ingest | inbox 일일 수집 및 컴파일
 
 - Source files from `inbox/` (18 files processed):
@@ -1272,3 +1301,21 @@
   - All 21 inbox files → `inbox/processed/`
 - Updated:
   - `index.md` (총 페이지 336으로 갱신)
+
+## [2026-09-04] archive | 중복 원문·페이지 정리 (drone-wiki-web RAG 확장 중 발견)
+- 발견 경위: raw/ 전체(179건)를 RAG 검색 대상에 포함시키는 작업 중 동일 논문이
+  raw/에 2건씩 중복 저장된 사례 2건 확인
+- 쌍1 — arXiv:2510.21357 (GNSS-denied Remote Autonomy for SAR):
+  - `raw/papers/drone-sw/gnss-denied-remote-autonomy-sar.md` 삭제(gcs-software/ 쪽과 완전
+    동일 파일, 후자만 유지)
+  - `concepts/gnss-denied-remote-autonomy-sar.md` → `_archive/concepts/`로 이동, 내용은
+    생존 페이지 `concepts/gnss-denied-remote-autonomy.md`에 SAR 적용 섹션으로 병합,
+    outbound wikilink 합집합 반영([[drone-first-responder-dfr]], [[ground-control-station]] 추가)
+  - `concepts/slei3d-heterogeneous-fleet-exploration.md`의 wikilink를 생존 슬러그로 정정
+- 쌍2 — arXiv:2605.03678 (Robust Visual SLAM for UAV Navigation in GPS-Denied):
+  - `raw/papers/drone-ai/fetch-2026-08-19-arxiv-robust-visual-slam-....md`(일반 arXiv
+    자동수집본) 삭제, Zotero 경유본(`robust-visual-slam-....md`, DOI·PDF첨부·Notes
+    섹션 포함해 더 완전함)만 유지
+  - `concepts/visual-slam-gps-denied-evaluation.md`의 `sources:`를 생존 raw 경로로 정정
+- `scripts/update-graph.sh` 재실행(엣지 +3, 총 1597개)
+- index.md는 애초에 SAR 페이지가 미등재 상태였어 별도 수정 불필요

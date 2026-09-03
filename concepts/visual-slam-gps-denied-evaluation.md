@@ -4,7 +4,7 @@ created: 2026-08-19
 updated: 2026-08-19
 type: concept
 tags: [drone-ai, drone, slam, computer-vision, gps-denied]
-sources: [raw/papers/drone-ai/fetch-2026-08-19-arxiv-robust-visual-slam-for-uav-navigation-in-gps-denied-and-degr.md]
+sources: [raw/papers/drone-ai/robust-visual-slam-for-uav-navigation-in-gps-denied-and-degraded-environments-a-.md]
 confidence: high
 contested: false
 contradictions: []

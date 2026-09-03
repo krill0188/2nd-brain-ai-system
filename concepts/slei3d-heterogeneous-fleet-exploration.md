@@ -35,7 +35,7 @@ domain: gcs-software
 
 - [[swarm-coordination]] — 군집 조율 및 편대 비행
 - [[recon-swarm-project]] — 지능형 자율 군집정찰드론
-- [[gnss-denied-remote-autonomy-sar]] — GNSS 차단 환경 자율 수색
+- [[gnss-denied-remote-autonomy]] — GNSS 차단 환경 자율 수색
 
 ## 출처
 
