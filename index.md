@@ -3,7 +3,7 @@
 > Complete catalog of active canonical pages. Each entry is a wikilink followed by
 > a one-line summary, sorted alphabetically within its section.
 >
-|> Total pages: 342
+|> Total pages: 352
 ## Entities
 |- [[a2z-longtail-dual]] — A2Z Drone Delivery BVLOS 듀얼 패키지 배송 드론.
 |- [[avidrone]] — 캐나다 헤비리프트 드론 기업, DARPA Lift Challenge 우승.
@@ -346,6 +346,15 @@
 |- [[uav-cf-mmimo-pilot-assignment]] — 이동성 인식 칼만 필터 기반 CF-mMIMO UAV 파일럿 할당.
 |- [[uav-comm-bridges-qubo-optimization]] — 재난 대응 UAV 5G 통신 브릿지 QUBO/양자 컴퓨팅 최적화.
 |- [[uav-uplink-energy-efficiency-los]] — 확률적 LoS 채널 UAV 업링크 전송 에너지 효율 최적화(BCD).
+- [[aliexpress-125-fpv-drone-build]] — AliExpress $125 7인치 FPV 드론 조립·리뷰 2부작.
+- [[drone-backyard-flight-legality]] — 이웃집 마당 위 드론 비행의 FAA/프라이버시 합법성 쟁점.
+- [[drone-fluxgate-magnetometer-crossline-correction]] — 드론 탑재 플럭스게이트 자력탐사 교차점 오차 보정.
+- [[drone-news-2026-09-05]] — 2026년 9월 5일 드론 업계 주요 소식(FCC, DJI, Skydio, Wing).
+- [[pine-wilt-disease-uav-detection]] — UAV 영상 기반 소나무재선충병 탐지 정확도 비교(YOLO26-L).
+- [[uav-imagery-ground-vehicle-localization]] — UAV 영상의 지상차량 시각 위치추정 기여 분해 연구.
+- [[uav-support-facility-robust-location-planning]] — 시설 고장 고려 UAV 감시 지원시설 강건 입지 계획.
+- [[vit-uavcom-vision-inertial-uav-communication]] — 비전-관성 추적 지원 UAV 통신·궤적 공동 최적화.
+- [[yolo-v8-4-139]] — YOLO v8.4.139 릴리스, validation 메모리 사용량 절감 (2026-09-04).
 
 ## Comparisons
 

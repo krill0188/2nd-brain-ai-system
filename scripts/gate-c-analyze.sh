@@ -258,12 +258,13 @@ echo "---" >&2
 echo "📄 저장됨: $REPORT" >&2
 
 # ── 6. Telegram 전달 (--deliver 옵션) ────────────────────────
+NOTIFY_SH="/Users/amaster/claudeclaw/scripts/notify.sh"
 if [[ "$DELIVER" == true ]]; then
-  if command -v hermes &>/dev/null; then
-    echo "$ANALYSIS" | hermes send -t telegram 2>/dev/null && \
+  if [[ -x "$NOTIFY_SH" ]]; then
+    bash "$NOTIFY_SH" "$ANALYSIS" 2>/dev/null && \
       echo "📨 Telegram 전달 완료" >&2 || \
       echo "⚠️  Telegram 전달 실패 — 수동 복사 필요" >&2
   else
-    echo "⚠️  hermes 명령어 없음 — Telegram 수동 전달 필요" >&2
+    echo "⚠️  notify.sh 없음 — Telegram 수동 전달 필요" >&2
   fi
 fi

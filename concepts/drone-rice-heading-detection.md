@@ -44,3 +44,6 @@ domain: ops-mission
 ## 출처
 
 - 정윤정, "드론 시계열 RGB 영상과 딥러닝 기반 분류 모델을 이용한 벼 품종군의 출수 판별", 한국작물학회지, 2026
+
+## 📰 최근 관련 소식
+- 충남도, 스마트농업 특구 선정·청년농 드론교육으로 미래농업 기반 넓힌다 (농수축산신문, Thu, 03 Se) — https://news.google.com/rss/articles/CBMibEFVX3lxTE5nUWpnYktLY2FUd2VPT2hzTmgxeE43aHZ2RHhCdURsbTlWNTZoMElqV1RnU0htNDI3dnNTYUdyS016c193LThCSU9QQmdmNWlsckRQSnRzMEp2VFhFUlQ1YUdUQzl5a0I0SjRYaQ?oc=5

@@ -1319,3 +1319,43 @@
   - `concepts/visual-slam-gps-denied-evaluation.md`의 `sources:`를 생존 raw 경로로 정정
 - `scripts/update-graph.sh` 재실행(엣지 +3, 총 1597개)
 - index.md는 애초에 SAR 페이지가 미등재 상태였어 별도 수정 불필요
+
+## [2026-09-05] ingest | inbox 일일 수집 및 컴파일
+
+- Source files from `inbox/` (22 files processed):
+  - ArduPilot release (1): Plane-4.7.1
+  - arXiv paper (1): VIT-UAVCom (Vision-Inertial Tracking-Assisted UAV Communication)
+  - Crossref paper (1): UAV transmission-line anomaly detection (sample-preserving evaluation)
+  - KCI papers (4): 소나무재선충병 UAV 탐지, UAV 영상 지상차량 위치추정, 드론 탑재 플럭스게이트
+    자력탐사 교차점 보정, 시설 고장 고려 UAV 감시 지원시설 강건 입지 계획
+  - RSS news (5): DJI Enterprise, DroneDJ, DroneLife, Parrot, Skydio
+  - YOLO release (1): v8.4.139
+  - YouTube videos (9): Joshua Bardwell AliExpress $125 FPV 드론(빌드+리뷰 2편), UAV Coach 이웃집
+    마당 드론 비행 합법성(2편), DJI Osmo 360 II 프로모, DJI RS 4 Mini 프로모, 핑크랩 Pinky Studio,
+    freeCodeCamp 웹스크래핑(비도메인), 러스트 입문 #3(비도메인)
+- Created concepts:
+  - `concepts/vit-uavcom-vision-inertial-uav-communication.md` — VIT-UAVCom 비전-관성 UAV 통신
+  - `concepts/pine-wilt-disease-uav-detection.md` — UAV 영상 기반 소나무재선충병 탐지 정확도 비교
+  - `concepts/uav-imagery-ground-vehicle-localization.md` — UAV 영상 지상차량 시각 위치추정 기여 분해
+  - `concepts/drone-fluxgate-magnetometer-crossline-correction.md` — 드론 탑재 플럭스게이트 자력탐사
+    교차점 오차 보정
+  - `concepts/uav-support-facility-robust-location-planning.md` — 시설 고장 고려 UAV 감시 지원시설
+    강건 입지 계획
+  - `concepts/yolo-v8-4-139.md` — YOLO v8.4.139 릴리스 노트
+  - `concepts/aliexpress-125-fpv-drone-build.md` — AliExpress $125 FPV 드론 조립/리뷰
+  - `concepts/drone-backyard-flight-legality.md` — 이웃집 마당 위 드론 비행 합법성
+  - `concepts/drone-news-2026-09-05.md` — 2026-09-05 드론 뉴스 종합
+- Updated concepts (evidence added, no new page):
+  - `concepts/ardupilot-plane-4-7.md` — Plane-4.7.1 패치 릴리스 정보 추가
+  - `concepts/yolo.md` — v8.4.139 릴리스 이력 링크 추가, domain 필드 보강
+  - `concepts/fcc-military-drone-restrictions.md` — 공개 의견 결과(98.6% 반대) 업데이트, domain 필드 보강
+- Skipped (insufficient content / stale / off-domain / passing mention):
+  - Crossref 1편 (초록 미제공, 단일 출처 thin)
+  - RSS parrot (2014~2024년 재게시 구기사, 2026년 실질 내용 없음)
+  - YouTube 3편: DJI Osmo 360 II 프로모(기존 페이지 대비 신규 정보 없음), 핑크랩 Pinky Studio(설명 없음),
+    DJI RS 4 Mini 프로모(스펙 정보 없는 홍보 쇼트)
+  - YouTube 2편: 웹스크래핑 튜토리얼, 러스트 입문(비도메인)
+- Moved to processed:
+  - All 22 inbox files → `inbox/processed/`
+- Updated:
+  - `index.md` (총 페이지 352로 갱신, concepts 섹션에 신규 9건 추가)

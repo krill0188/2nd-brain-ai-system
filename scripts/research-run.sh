@@ -40,11 +40,12 @@ MAX_ATTEMPTS=2
 log() { echo "[research-run $(date '+%H:%M:%S')] $*"; }
 die() { log "ERROR: $*"; exit 1; }
 
+NOTIFY_SH="/Users/amaster/claudeclaw/scripts/notify.sh"
 report_master() {
   local msg="$1"
   log "$msg"
-  if command -v hermes >/dev/null 2>&1; then
-    hermes send -t telegram "[연구] $msg" >/dev/null 2>&1 || true
+  if [[ -x "$NOTIFY_SH" ]]; then
+    bash "$NOTIFY_SH" "[연구] $msg" >/dev/null 2>&1 || true
   fi
 }
 

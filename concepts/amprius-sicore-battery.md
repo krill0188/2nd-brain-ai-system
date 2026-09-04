@@ -32,3 +32,6 @@ contradictions: []
 ## 시장 맥락
 
 수소 드론([[heven-aerotech]])과 함께, 배터리 에너지 밀도 향상은 드론 비행 지속시간 연장의 두 가지 핵심 경로 중 하나다. 배터리 관리 및 LiPo 세부 기술은 [[drone-power-battery]]를 참조한다.
+
+## 📰 최근 관련 소식
+- 육군 '50만 드론전사' 사업, 中 밀어내고 국산 배터리 탑재 (디일렉, Thu, 03 Se) — https://news.google.com/rss/articles/CBMiZkFVX3lxTE4xdE5pSjdBRHFla2taYmVUVjBNTUVjdGk0eHhfcFVfVHFRQzdHRUUyaEVEeFJkejl1blQ4Vi1xeGNhVXVweEh3ZEJIY1hqTG5RY2hlaEF6aGJjaVF5M2V5SjQ0XzZFQQ?oc=5

@@ -20,11 +20,13 @@ export PATH="$HOME/.local/bin:$HOME/.npm-global/bin:/usr/local/bin:$PATH"
 [ -f "$HOME/.local/bin/env" ] && . "$HOME/.local/bin/env"
 
 # ── 상수 ─────────────────────────────────────────────────────
-JOB_INGEST="b1a360fce35d"
-JOB_LINT="91acb1c73884"
-JOB_SUMMARY="bd81d81bca5f"
+SCRIPT_INGEST="$HOME/2nd/scripts/daily-ingest-claude.sh"
+SCRIPT_LINT="$HOME/2nd/scripts/weekly-lint-claude.sh"
+SCRIPT_SUMMARY="$HOME/2nd/scripts/weekly-summary-claude.sh"
 GAP_SCRIPT="$HOME/2nd/scripts/gate-c-analyze.sh"
 REPORT_DIR="$HOME/2nd/.ua"
+LOG_DIR="$HOME/2nd/.ua/logs"
+mkdir -p "$LOG_DIR"
 
 # ── 색상 (TTY에서만 적용) ─────────────────────────────────────
 if [[ -t 1 ]]; then
@@ -41,12 +43,13 @@ info() { echo -e "${C}ℹ  $*${N}"; }
 sect() { echo -e "\n${W}── $* ──────────────────────────────${N}"; }
 
 # ── Telegram 전송 ─────────────────────────────────────────────
+NOTIFY_SH="/Users/amaster/claudeclaw/scripts/notify.sh"
 send_telegram() {
   local msg="$1"
-  if hermes send --to telegram "$msg" 2>/dev/null; then
+  if [[ -x "$NOTIFY_SH" ]] && bash "$NOTIFY_SH" "$msg" 2>/dev/null; then
     info "Telegram 전송 완료"
   else
-    warn "Telegram 전송 실패 (hermes send 오류)"
+    warn "Telegram 전송 실패 (notify.sh 오류)"
   fi
 }
 
@@ -119,31 +122,36 @@ cmd_status() {
   report+="🤖 *AI 플랫폼 상태 리포트*\n"
   report+="📅 $(date '+%Y-%m-%d %H:%M')\n\n"
 
-  sect "Hermes Gateway"
-  local gw_pid gw_line
-  gw_line=$(hermes gateway status 2>/dev/null | grep "PID" | head -1 || true)
-  if [[ -n "$gw_line" ]]; then
-    gw_pid=$(echo "$gw_line" | grep -oE '[0-9]+' | head -1)
-    ok "Gateway 실행 중 (PID $gw_pid)"
-    report+="✅ Hermes Gateway: PID $gw_pid\n"
-  else
-    fail "Gateway 응답 없음"
-    report+="❌ Hermes Gateway: 응답 없음\n"
-  fi
-
-  sect "Hermes Cron Jobs"
-  local cron_out
-  cron_out=$(hermes cron list 2>/dev/null)
-
-  for job_name in "2nd-daily-ingest" "2nd-weekly-lint" "2nd-weekly-summary"; do
-    local last_run
-    last_run=$(echo "$cron_out" | grep -A15 "Name:.*$job_name" | grep "Last run:" | head -1 | sed 's/.*Last run: *//' || true)
-    if [[ -n "$last_run" ]]; then
-      ok "$job_name: $last_run"
-      report+="✅ $job_name: $last_run\n"
+  sect "Launchd 스케줄러 (2nd Brain 잡)"
+  for job_label in "ai.2nd.daily-ingest" "ai.2nd.weekly-lint" "ai.2nd.weekly-summary"; do
+    local plist="$HOME/Library/LaunchAgents/${job_label}.plist"
+    if [[ -f "$plist" ]]; then
+      local loaded
+      loaded=$(launchctl list "$job_label" 2>/dev/null | grep '"PID"' || true)
+      if [[ -n "$loaded" ]]; then
+        ok "$job_label: 실행 중"
+        report+="✅ $job_label: 실행 중\n"
+      else
+        ok "$job_label: 등록됨 (대기 중)"
+        report+="✅ $job_label: 등록됨\n"
+      fi
     else
-      warn "$job_name: 실행 이력 없음"
-      report+="⚠️  $job_name: 이력 없음\n"
+      warn "$job_label: plist 없음"
+      report+="⚠️  $job_label: 미등록\n"
+    fi
+  done
+
+  sect "최근 실행 이력"
+  for job in "ingest" "lint" "summary"; do
+    local log_file="$LOG_DIR/${job}.log"
+    if [[ -f "$log_file" ]]; then
+      local last_line
+      last_line=$(tail -1 "$log_file" 2>/dev/null || true)
+      ok "$job: $last_line"
+      report+="✅ $job: $last_line\n"
+    else
+      warn "$job: 이력 없음"
+      report+="⚠️  $job: 이력 없음\n"
     fi
   done
 
@@ -234,7 +242,7 @@ cmd_ping() {
 
 cmd_run_ingest() {
   sect "Daily Ingest 즉시 실행"
-  info "Job: $JOB_INGEST (2nd-daily-ingest)"
+  info "Script: daily-ingest-claude.sh"
 
   # inbox/ 비어 있으면 자동 수집 먼저 실행
   local inbox_count
@@ -246,23 +254,9 @@ cmd_run_ingest() {
     info "inbox/ ${inbox_count}개 파일 발견 → 처리 시작"
   fi
 
-  local custom_prompt
-  custom_prompt=$(read_hermes_prompt "ingest")
-
-  hermes cron run "$JOB_INGEST" --accept-hooks
-
-  if [[ -n "$custom_prompt" ]]; then
-    local inbox_files inbox_content
-    inbox_files=$(ls "$HOME/2nd/inbox/"*.md 2>/dev/null || true)
-    if [[ -n "$inbox_files" ]]; then
-      inbox_content=$(cat $inbox_files 2>/dev/null | head -c 8000)
-      info "커스텀 프롬프트로 inbox 보완 분석 중..."
-      call_llm "$custom_prompt" \
-        && ok "커스텀 프롬프트 분석 완료" \
-        || warn "커스텀 프롬프트 분석 실패 (hermes cron은 정상 완료)"
-    fi
-  fi
-  ok "트리거 완료 — Telegram으로 결과 수신 대기"
+  bash "$SCRIPT_INGEST" 2>&1 | tee -a "$LOG_DIR/ingest.log"
+  echo "[$(date '+%Y-%m-%d %H:%M')] ingest 완료" >> "$LOG_DIR/ingest.log"
+  ok "ingest 완료"
 
   # knowledge-graph.json 자동 갱신
   if [[ -f "$HOME/2nd/scripts/update-graph.sh" ]]; then
@@ -270,10 +264,7 @@ cmd_run_ingest() {
     bash "$HOME/2nd/scripts/update-graph.sh" 2>/dev/null && ok "그래프 갱신 완료" || warn "그래프 갱신 실패 (ingest는 정상 완료)"
   fi
 
-  # SCHEMA.md 9필드 계약 검증 (갭 A — daily-ingest 경로도 research-promote.py와
-  # 동일한 검증을 받는다. CURRENT_STATE_AUDIT.md 2026-08-01이 발견한, 이 경로에
-  # 자동 검증이 전혀 없던 문제를 닫는 게이트. 파일은 이미 hermes cron이 써버린
-  # 뒤라 사전 차단은 못 하지만, 위반을 조용히 넘어가지 않고 크게 보고한다.)
+  # SCHEMA.md 9필드 계약 검증
   if [[ -f "$HOME/2nd/scripts/lint-knowledge.py" ]]; then
     info "SCHEMA.md 9필드 계약 검증 중 (lint-knowledge.py)..."
     local lint_output
@@ -288,46 +279,20 @@ cmd_run_ingest() {
 
 cmd_run_lint() {
   sect "Weekly Lint 즉시 실행"
-  info "Job: $JOB_LINT (2nd-weekly-lint)"
+  info "Script: weekly-lint-claude.sh"
 
-  local custom_prompt
-  custom_prompt=$(read_hermes_prompt "lint")
-
-  hermes cron run "$JOB_LINT" --accept-hooks
-
-  if [[ -n "$custom_prompt" ]]; then
-    local wiki_content
-    wiki_content=$(find "$HOME/2nd/concepts" "$HOME/2nd/entities" -name "*.md" 2>/dev/null \
-      | head -20 | xargs cat 2>/dev/null | head -c 8000 || true)
-    if [[ -n "$wiki_content" ]]; then
-      info "커스텀 프롬프트로 문서 품질 보완 검토 중..."
-      call_llm "$custom_prompt" \
-        && ok "커스텀 프롬프트 검토 완료" \
-        || warn "커스텀 프롬프트 검토 실패 (hermes cron은 정상 완료)"
-    fi
-  fi
-  ok "트리거 완료 — Telegram으로 결과 수신 대기"
+  bash "$SCRIPT_LINT" 2>&1 | tee -a "$LOG_DIR/lint.log"
+  echo "[$(date '+%Y-%m-%d %H:%M')] lint 완료" >> "$LOG_DIR/lint.log"
+  ok "lint 완료"
 }
 
 cmd_run_summary() {
   sect "Weekly Summary 즉시 실행"
-  info "Job: $JOB_SUMMARY (2nd-weekly-summary)"
+  info "Script: weekly-summary-claude.sh"
 
-  local custom_prompt
-  custom_prompt=$(read_hermes_prompt "summary")
-
-  hermes cron run "$JOB_SUMMARY" --accept-hooks
-
-  if [[ -n "$custom_prompt" ]]; then
-    local recent_activity
-    recent_activity=$(git -C "$HOME/2nd" log --oneline --since="7 days ago" 2>/dev/null \
-      | head -20 || echo "git 이력 없음")
-    info "커스텀 프롬프트로 주간 요약 보완 중..."
-    call_llm "최근 7일 활동:\n$recent_activity\n\n$custom_prompt" \
-      && ok "커스텀 프롬프트 요약 완료" \
-      || warn "커스텀 프롬프트 요약 실패 (hermes cron은 정상 완료)"
-  fi
-  ok "트리거 완료 — Telegram으로 결과 수신 대기"
+  bash "$SCRIPT_SUMMARY" 2>&1 | tee -a "$LOG_DIR/summary.log"
+  echo "[$(date '+%Y-%m-%d %H:%M')] summary 완료" >> "$LOG_DIR/summary.log"
+  ok "summary 완료"
 }
 
 cmd_run_gap() {
@@ -356,17 +321,17 @@ cmd_run_gap() {
 
 cmd_history() {
   local job_filter="${1:-}"
-  sect "Cron 실행 이력 (최근 10건)"
-  if [[ -n "$job_filter" ]]; then
-    hermes cron runs "$job_filter" --limit 10
-  else
-    info "=== daily-ingest ==="
-    hermes cron runs "$JOB_INGEST" --limit 5 2>/dev/null || true
-    info "=== weekly-lint ==="
-    hermes cron runs "$JOB_LINT" --limit 3 2>/dev/null || true
-    info "=== weekly-summary ==="
-    hermes cron runs "$JOB_SUMMARY" --limit 3 2>/dev/null || true
-  fi
+  sect "실행 이력 (로그 파일)"
+  for job in "ingest" "lint" "summary"; do
+    local log_file="$LOG_DIR/${job}.log"
+    if [[ -n "$job_filter" ]] && [[ "$job" != *"$job_filter"* ]]; then continue; fi
+    info "=== $job ==="
+    if [[ -f "$log_file" ]]; then
+      tail -10 "$log_file"
+    else
+      warn "이력 없음"
+    fi
+  done
 }
 
 cmd_help() {
@@ -385,10 +350,10 @@ ai-control.sh — 2nd Brain AI 플랫폼 통제 스크립트
   help                  이 도움말
 
 통제 가능 범위:
-  ✅ Hermes 3 cron 잡 (ingest·lint·summary) — 즉시 트리거 가능
+  ✅ launchd 3 잡 (ingest·lint·summary) — 즉시 트리거 가능
   ✅ claude -p — ping 테스트 및 gate-c-analyze.sh에서 사용
   ✅ Gate C gap analysis — 직접 실행 + Telegram 전송
-  ✅ Telegram 상태 보고 — hermes send telegram
+  ✅ Telegram 상태 보고 — claudeclaw notify.sh
   ⚠️  OpenCode / Codex — 설치 확인만 가능 (대화형 도구)
   ❌ Gemini Code Assist / GitHub Copilot — VS Code 전용, 프로그래밍 통제 불가
 

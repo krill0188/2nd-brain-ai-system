@@ -35,11 +35,12 @@ MAX_ATTEMPTS=2
 log() { echo "[innovation-run $(date '+%H:%M:%S')] $*"; }
 die() { log "ERROR: $*"; exit 1; }
 
+NOTIFY_SH="/Users/amaster/claudeclaw/scripts/notify.sh"
 report_master() {
   local msg="$1"
   log "$msg"
-  if command -v hermes >/dev/null 2>&1; then
-    hermes send -t telegram "[Innovation] $msg" >/dev/null 2>&1 || true
+  if [[ -x "$NOTIFY_SH" ]]; then
+    bash "$NOTIFY_SH" "[Innovation] $msg" >/dev/null 2>&1 || true
   fi
 }
 

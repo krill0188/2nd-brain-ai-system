@@ -57,3 +57,4 @@ contradictions: []
 - [MATLAB] What Is Polyspace Code Prover? (youtube.com, 2026-08-20) — https://www.youtube.com/watch?v=m66oMivVL_w
 - 한투AC, 미국 오리건에 ‘K-방산·드론 베이스캠프’ 구축…국내 스타트업 미국 진출 지원 (드론매거진 뉴스, Mon, 31 Au) — https://news.google.com/rss/articles/CBMiZEFVX3lxTE5ZODF5N3NRd3hhWS0zZFF0eVNFcWlNdURLV0VTYV82Z25PcHVQVWpLR0RzSTNQbXpmeldrRG16YW5tRXBlcnhPVG9BeUR1NHpRVkZyRzdqNkhrRlJoNmFIaUhCcDM?oc=5
 - 체면구긴 '한국 자폭드론'...4초 만에 해상으로 추락 (YTN 사이언스, Mon, 31 Au) — https://news.google.com/rss/articles/CBMif0FVX3lxTFBrYnN5bnZxcnFuZ0w4cDh6aDA5VTJTMlBPT1lReG5LdTdVOFc2bWtDQjJhYWh6OUZuQzJfRDJXbFVNWk5heURlblMzekswTGw2Q1JJYnA1OWZ6a1ZjamVoSHFYUGt6Wm9nQTBYdm1GR0Y5dWszbmhCWm5FNkxoSlk?oc=5
+- 충남도, 스마트농업 특구 선정·청년농 드론교육으로 미래농업 기반 넓힌다 (농수축산신문, Thu, 03 Se) — https://news.google.com/rss/articles/CBMibEFVX3lxTE5nUWpnYktLY2FUd2VPT2hzTmgxeE43aHZ2RHhCdURsbTlWNTZoMElqV1RnU0htNDI3dnNTYUdyS016c193LThCSU9QQmdmNWlsckRQSnRzMEp2VFhFUlQ1YUdUQzl5a0I0SjRYaQ?oc=5

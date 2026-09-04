@@ -1,8 +1,9 @@
 ---
 title: YOLO
 created: 2026-07-29
-updated: 2026-09-01
+updated: 2026-09-05
 type: concept
+domain: ai-autonomy
 tags: [drone, drone-ai, ai-agent]
 sources: [inbox/fetch-2026-07-29-yolo.md, inbox/fetch-2026-09-01-yolo.md]
 confidence: high
@@ -22,7 +23,7 @@ YOLO는 실시간 객체 검출을 위한 딥러닝 아키텍처이다. 단일 �
 
 ## 릴리스 이력
 
-버전별 상세 변경사항은 개별 페이지 참고(최신순): [[yolo-v8-4-137]] · [[yolo-v8-4-117]] · [[yolo-v8-4-116]] · [[yolo-v8-4-115]] · [[yolo-v8-4-112]]
+버전별 상세 변경사항은 개별 페이지 참고(최신순): [[yolo-v8-4-139]] · [[yolo-v8-4-138]] · [[yolo-v8-4-137]] · [[yolo-v8-4-117]] · [[yolo-v8-4-116]] · [[yolo-v8-4-115]] · [[yolo-v8-4-112]]
 
 ### v8.4.137 (2026-08-31)
 

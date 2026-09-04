@@ -1,8 +1,9 @@
 ---
 title: FCC Military-Grade Drone Restrictions Proposal
 created: 2026-09-01
-updated: 2026-09-01
+updated: 2026-09-05
 type: concept
+domain: regulations
 tags: [drone, regulations, fcc, import, policy]
 sources: [inbox/fetch-2026-09-01-rss-dronelife.md]
 confidence: high
@@ -28,6 +29,11 @@ FCC(연방통신위원회)가 외국산 "군사 등급" 드론에 대한 수입 
 - **의견 마감**: 2026년 9월 2일 (연장 요청 거부)
 - **연장 요청자**: DRONERESPONDERS, Commercial Drone Alliance
 - **연장 결과**: FCC가 연장 요청 거부
+
+## 공개 의견 결과 (2026-09-05 업데이트)
+
+- Pilot Institute 분석: 읽을 수 있는 의견서 3,824건 중 3,770건(98.6%)이 원안에 반대.
+- 경제적 영향, 공공안전, 농업·상업용 드론 운용에 대한 우려가 주요 반대 사유로 제기됨.
 
 ## 영향
 
