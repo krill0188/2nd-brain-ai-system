@@ -1,3 +1,5 @@
+> **역사적 감사 기록:** 아래 내용은 Stage 0-R 수정 전 기준이다. 현재 sync는 audit-only이며, 예약 self-update는 canonical을 직접 쓴다. GraphRAG는 canonical+discovery를 함께 사용한다. 최신 확인·잔여 blocker는 [Stage 0-R](STAGE_0R_REBASELINE.md)을 따른다.
+
 # 2026-09-13 아키텍처 감사 — README vs 실제 시스템
 
 > 마스터 지시: "GitHub 문서와 실제 시스템/아키텍처/구조가 다르다, 수집·동기화 작동원리 등 레이어별 역할이 정확히 기재 안 되어있다" — 실제 launchd/스크립트 기준으로 전수 대조.

@@ -135,30 +135,19 @@ All tags must be registered in `SCHEMA.md` before use in canonical frontmatter.
 | GitHub Copilot Inline | VS Code inline | Autocomplete while editing Markdown/code, inline writing assist |
 | Understand Anything | Hermes skill / Claude Code | Gate C — knowledge graph generation and structural analysis |
 
-## Hermes Cron Schedule
+## Automation Control Plane (2026-09-13 re-baseline)
 
-Three jobs are registered and active. All jobs run with `workdir ~/2nd` — AGENTS.md, CLAUDE.md, and SCHEMA.md are automatically injected into each run.
+Native launchd `ai.2nd.*` jobs are the observed callers. The historical Hermes
+cron table is superseded; legacy `.hermes/scripts/` paths remain operational
+compatibility wrappers. See `00_CURRENT_SYSTEM.md` for current schedules and
+`docs/STAGE_0R_REBASELINE.md` for evidence and unresolved ordering.
 
-| Job ID | Name | Schedule | Skill | Role |
-|---|---|---|---|---|
-| `b1a360fc` | `2nd-daily-ingest` | `0 4 * * *` (daily 04:00) | `custom/llm-wiki-ains` | Scan `inbox/` → compile canonical candidates → move to `inbox/processed/` |
-| `91acb1c7` | `2nd-weekly-lint` | `0 5 * * 1` (Mon 05:00) | `custom/llm-wiki-ains` | Audit all canonical docs — orphans, broken wikilinks, missing frontmatter, stale dates |
-| `bd81d81b` | `2nd-weekly-summary` | `0 9 * * 1` (Mon 09:00) | none (LLM only) | Read `log.md` → weekly digest → collection priority suggestion |
-
-**Skill symlink**: `~/.hermes/skills/custom/llm-wiki-ains` → `~/.hermes/skills/research/llm-wiki`
-
-```bash
-# 잡 상태 확인
-hermes cron list
-
-# 잡 편집 (예: deliver를 telegram으로 변경)
-hermes cron edit <jobid> --deliver telegram
-
-# 수동 즉시 실행
-hermes cron run <jobid>
-```
-
-**Activation**: Requires `OPENROUTER_API_KEY` in `~/.hermes/.env`. Without it, LLM step fails.
+`scripts/ai-control.sh status` reports plist presence, actual loaded state, exit
+status, calendar and log timestamps without model calls or log bodies.
+`scripts/sync-wiki.sh` in DroneWiki and the legacy operational sync entry point
+now run validation/audit only. No public snapshot deletion, push or deployment.
+Publication policy lives in `publication/policy.json`; existing byte hashes
+permit retention, not automatic approval of future revisions.
 
 ## Zotero Ingest Pipeline
 
