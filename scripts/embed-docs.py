@@ -11,7 +11,12 @@ sentence-transformers/paraphrase-multilingual-mpnet-base-v2
 실행 환경: 시스템 Python(3.14)은 onnxruntime 미지원(휠 없음) → 격리된
 ~/2nd/.venv (Python 3.11)에서만 실행한다. 반드시 아래처럼 실행:
 
-    ~/2nd/.venv/bin/python scripts/embed-docs.py
+    ~/2nd/.venv/bin/python scripts/embed-docs.py --if-stale
+    python3 scripts/embed-docs.py --check  # 0=fresh, 2=stale; no model required
+
+기본 모델 로드는 기존 로컬 캐시만 사용한다. 최초 무료 모델 다운로드는
+명시적인 --allow-download 옵션으로만 허용한다.
+캐시가 없거나 생성이 실패하면 기존 산출물을 보존하고 비정상 종료한다.
 
 이 스크립트는 raw/canonical을 읽기만 한다 — 절대 쓰지 않는다.
 출력은 .ua/embeddings.json 1개 파일뿐이며, 이는 knowledge-graph.json과
@@ -19,6 +24,11 @@ sentence-transformers/paraphrase-multilingual-mpnet-base-v2
 """
 from __future__ import annotations
 
+import argparse
+import hashlib
+import math
+import os
+import tempfile
 import json
 import re
 import sys
@@ -133,13 +143,50 @@ def collect_news() -> list[dict]:
     return docs
 
 
-def main() -> int:
-    try:
-        from fastembed import TextEmbedding
-    except ImportError:
-        print("ERROR: fastembed 미설치. ~/2nd/.venv/bin/python으로 실행했는지 확인하십시오.", file=sys.stderr)
-        return 1
+def input_fingerprint(docs: list[dict]) -> str:
+    """Hash exact model inputs and identities; no source text is written to output."""
+    data = {"model": MODEL_NAME, "max_chars": MAX_CHARS, "docs": docs}
+    return hashlib.sha256(json.dumps(data, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
 
+
+def artifact_is_fresh(docs: list[dict], fingerprint: str) -> bool:
+    """Reject incomplete, corrupt or stale output before skipping generation."""
+    try:
+        data = json.loads(OUT_PATH.read_text(encoding="utf-8"))
+        rows = data["docs"]
+        return (data.get("input_fingerprint") == fingerprint
+                and data["model"] == MODEL_NAME and data["dim"] == 768
+                and data["doc_count"] == len(docs) == len(rows)
+                and [r["path"] for r in rows] == [d["path"] for d in docs]
+                and all(len(r["vector"]) == 768
+                        and all(isinstance(v, (int, float)) and math.isfinite(v) for v in r["vector"])
+                        for r in rows))
+    except (OSError, ValueError, KeyError, TypeError, AttributeError):
+        return False
+
+
+def atomic_write(payload: dict) -> None:
+    """Only replace the last good artifact after a complete JSON write."""
+    OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
+    fd, name = tempfile.mkstemp(prefix=".embeddings-", suffix=".json", dir=OUT_PATH.parent)
+    try:
+        with os.fdopen(fd, "w", encoding="utf-8") as handle:
+            json.dump(payload, handle, ensure_ascii=False, allow_nan=False)
+            handle.flush()
+            os.fsync(handle.fileno())
+        os.replace(name, OUT_PATH)
+    finally:
+        if os.path.exists(name):
+            os.unlink(name)
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument("--check", action="store_true", help="read-only freshness check; stale exits 2")
+    mode.add_argument("--if-stale", action="store_true", help="skip model loading when inputs are unchanged")
+    parser.add_argument("--allow-download", action="store_true", help="explicit one-off free model download; default is cached-only")
+    args = parser.parse_args()
     t0 = time.time()
     canonical = collect_canonical()
     raw = collect_raw()
@@ -147,17 +194,42 @@ def main() -> int:
     all_docs = canonical + raw + news
     print(f"수집: canonical {len(canonical)} / raw {len(raw)} / news {len(news)} = 총 {len(all_docs)}건")
 
+    fingerprint = input_fingerprint(all_docs)
+    fresh = artifact_is_fresh(all_docs, fingerprint)
+    if args.check:
+        print("FRESH" if fresh else "STALE")
+        return 0 if fresh else 2
+    if args.if_stale and fresh:
+        print("FRESH — 모델 실행 생략")
+        return 0
+
     if not all_docs:
         print("임베딩할 문서 없음 — 종료")
         return 0
 
-    model = TextEmbedding(MODEL_NAME)
+    try:
+        from fastembed import TextEmbedding
+        # Downloads require an explicit one-off flag; no hosted embedding API.
+        model = TextEmbedding(MODEL_NAME, local_files_only=not args.allow_download, threads=2)
+    except Exception:
+        print("ERROR: 로컬 캐시 모델 로드 실패 — 기존 임베딩 보존", file=sys.stderr)
+        return 1
     print(f"모델 로드: {round(time.time() - t0, 1)}초")
 
     t1 = time.time()
     texts = [d["text"] for d in all_docs]
-    vectors = list(model.embed(texts))
+    vectors = list(model.embed(texts, batch_size=8))
     print(f"임베딩 생성: {round(time.time() - t1, 1)}초 ({len(vectors)}건)")
+
+    if len(vectors) != len(all_docs) or any(
+        len(v) != 768 or not all(math.isfinite(float(x)) for x in v) for v in vectors
+    ):
+        print("ERROR: 임베딩 개수/차원/수치 검증 실패 — 기존 파일 보존", file=sys.stderr)
+        return 1
+    # Concurrent knowledge edits must not be stamped as a fresh snapshot.
+    if input_fingerprint(collect_canonical() + collect_raw() + collect_news()) != fingerprint:
+        print("ERROR: 생성 중 입력 변경 — 기존 임베딩 보존", file=sys.stderr)
+        return 1
 
     out_docs = []
     for d, v in zip(all_docs, vectors):
@@ -170,13 +242,14 @@ def main() -> int:
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     payload = {
         "version": 1,
+        "input_fingerprint": fingerprint,
         "model": MODEL_NAME,
         "dim": len(out_docs[0]["vector"]) if out_docs else 0,
         "created": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "doc_count": len(out_docs),
         "docs": out_docs,
     }
-    OUT_PATH.write_text(json.dumps(payload, ensure_ascii=False), encoding="utf-8")
+    atomic_write(payload)
     size_mb = OUT_PATH.stat().st_size / 1024 / 1024
     print(f"저장 완료: {OUT_PATH} ({round(size_mb, 2)}MB, {len(out_docs)}건)")
     print(f"총 소요: {round(time.time() - t0, 1)}초")
