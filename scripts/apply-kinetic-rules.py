@@ -32,6 +32,7 @@ research/runs/<id>/ontology-audit.json 생성/갱신(규칙6 감사 기록).
 from __future__ import annotations
 
 import json
+import argparse
 import re
 import subprocess
 import sys
@@ -45,6 +46,7 @@ ENTITIES_DIR = ROOT / "entities"
 CONCEPTS_DIR = ROOT / "concepts"
 HYPOTHESES_DIR = ROOT / "research" / "hypotheses"
 RUNS_DIR = ROOT / "research" / "runs"
+CHECK_ONLY = False
 
 DR = Namespace("https://2nd-brain.local/ontology#")
 
@@ -90,7 +92,8 @@ def upsert_frontmatter_field(path: Path, key: str, value: str) -> bool:
     else:
         new_fm_block = fm_block + f"\n{key}: {value}"
 
-    path.write_text(new_fm_block + rest, encoding="utf-8")
+    if not CHECK_ONLY:
+        path.write_text(new_fm_block + rest, encoding="utf-8")
     return True
 
 
@@ -211,7 +214,7 @@ def rule6_unapproved_hypothesis_audit() -> dict:
 
     for session_id in sessions:
         run_dir = RUNS_DIR / session_id
-        if run_dir.exists():
+        if run_dir.exists() and not CHECK_ONLY:
             audit_path = run_dir / "ontology-audit.json"
             audit_path.write_text(json.dumps(audit_result, ensure_ascii=False, indent=2), encoding="utf-8")
 
@@ -230,7 +233,12 @@ def notify_telegram(message: str) -> None:
         print("⚠ hermes CLI를 찾을 수 없어 텔레그램 알림 생략", file=sys.stderr)
 
 
-def main() -> None:
+def main() -> int:
+    global CHECK_ONLY
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--check', action='store_true', help='Read-only validation; no files or notifications')
+    args = parser.parse_args()
+    CHECK_ONLY = args.check
     print("🔧 apply-kinetic-rules.py — SWRL 규칙4·6 평가 시작")
 
     r4_changed = rule4_slm_llm_classification()
@@ -243,6 +251,9 @@ def main() -> None:
     n_clean = len(r6_result["clean_sessions"])
     print(f"규칙6(미승인 가설 감사): 세션 {n_clean + n_violations}개 중 위반 {n_violations}건")
 
+    if CHECK_ONLY:
+        print('CHECK ONLY: no knowledge writes or notifications')
+        return 1 if n_violations or r4_changed else 0
     if n_violations > 0:
         lines = [f"⚠️ 온톨로지 규칙6 위반 발견: {n_violations}개 세션에서 미승인 hypothesis가 Mission 근거로 승격됨"]
         for v in r6_result["violations"]:
@@ -255,7 +266,8 @@ def main() -> None:
         )
 
     print("완료.")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
