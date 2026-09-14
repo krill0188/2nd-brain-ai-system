@@ -21,7 +21,7 @@ def main() -> int:
         ('kinetic-static-check', [python, str(ROOT / 'scripts/apply-kinetic-rules.py'), '--check']),
         ('embeddings-freshness', [python, str(ROOT / 'scripts/embed-docs.py'), '--check']),
         ('graph-coverage', ['python3', str(ROOT / 'scripts/artifact-status.py')]),
-        ('publication-policy', ['python3', str(ROOT / 'scripts/publication-gate.py')]),
+        ('publication-policy', [python, str(ROOT / 'scripts/publication-gate.py')]),
     ]
     results = []
     for name, command in steps:
