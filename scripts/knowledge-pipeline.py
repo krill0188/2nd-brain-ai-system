@@ -38,7 +38,7 @@ def steps(candidate: Path) -> list[tuple[str, list[str]]]:
         ('Generate:discovery', ['bash', str(ROOT / 'scripts/extract-knowledge-graph.sh'), '--limit', '15']),
         ('Generate:canonical-graph', ['bash', str(ROOT / 'scripts/update-graph.sh')]),
         ('Validate:all', ['python3', str(ROOT / 'scripts/publication-preflight.py')]),
-        ('Publish:isolated-candidate', ['python3', str(ROOT / 'scripts/publication-gate.py'), '--stage', str(candidate)]),
+        ('Publish:isolated-candidate', [py, str(ROOT / 'scripts/publication-gate.py'), '--stage', str(candidate)]),
     ]
 
 

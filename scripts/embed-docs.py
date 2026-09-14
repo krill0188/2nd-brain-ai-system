@@ -19,7 +19,8 @@ sentence-transformers/paraphrase-multilingual-mpnet-base-v2
 캐시가 없거나 생성이 실패하면 기존 산출물을 보존하고 비정상 종료한다.
 
 이 스크립트는 raw/canonical을 읽기만 한다 — 절대 쓰지 않는다.
-출력은 .ua/embeddings.json 1개 파일뿐이며, 이는 knowledge-graph.json과
+산출물은 .ua/embeddings.json이며, 동시 실행 제어용 .ua/embeddings.lock을 사용한다.
+산출물은 knowledge-graph.json과
 동일하게 "파생 상태"로 취급한다(.gitignore의 .ua/ 규칙과 정합).
 """
 from __future__ import annotations
