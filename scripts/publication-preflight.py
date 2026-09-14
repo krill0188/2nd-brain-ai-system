@@ -20,7 +20,7 @@ def main() -> int:
         ('canonical-lint', ['python3', str(ROOT / 'scripts/lint-knowledge.py'), '--full']),
         ('kinetic-static-check', [python, str(ROOT / 'scripts/apply-kinetic-rules.py'), '--check']),
         ('embeddings-freshness', [python, str(ROOT / 'scripts/embed-docs.py'), '--check']),
-        ('graph-coverage', ['python3', str(ROOT / 'scripts/artifact-status.py')]),
+        ('graph-coverage', [python, str(ROOT / 'scripts/artifact-status.py')]),
         ('publication-policy', [python, str(ROOT / 'scripts/publication-gate.py')]),
     ]
     results = []
