@@ -25,6 +25,7 @@ sentence-transformers/paraphrase-multilingual-mpnet-base-v2
 from __future__ import annotations
 
 import argparse
+import fcntl
 import hashlib
 import math
 import os
@@ -149,12 +150,41 @@ def input_fingerprint(docs: list[dict]) -> str:
     return hashlib.sha256(json.dumps(data, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
 
 
+def generation_contract() -> dict:
+    """Inspect installed metadata without importing/loading the embedding model."""
+    version = 'unavailable'
+    for metadata in sorted((WIKI_ROOT / '.venv/lib').glob('python*/site-packages/fastembed-*.dist-info/METADATA')):
+        match = re.search(r'^Version: (.+)$', metadata.read_text(), re.MULTILINE)
+        if match:
+            version = match.group(1)
+    return {'model': MODEL_NAME, 'fastembed': version, 'max_chars': MAX_CHARS, 'input_format': 1}
+
+
+def document_fingerprint(doc: dict) -> str:
+    # News list positions can change without changing its embedding input.
+    value = {key: val for key, val in doc.items() if key != 'slug'}
+    return hashlib.sha256(json.dumps(value, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
+
+
+def reusable_vectors() -> dict:
+    try:
+        old = json.loads(OUT_PATH.read_text())
+        if old.get('generation_contract') != generation_contract():
+            return {}
+        return {row['input_hash']: row['vector'] for row in old['docs']
+                if 'input_hash' in row and len(row['vector']) == 768
+                and all(isinstance(v, (float, int)) and math.isfinite(v) for v in row['vector'])}
+    except (OSError, ValueError, KeyError, TypeError):
+        return {}
+
+
 def artifact_is_fresh(docs: list[dict], fingerprint: str) -> bool:
     """Reject incomplete, corrupt or stale output before skipping generation."""
     try:
         data = json.loads(OUT_PATH.read_text(encoding="utf-8"))
         rows = data["docs"]
         return (data.get("input_fingerprint") == fingerprint
+                and data.get('generation_contract') == generation_contract()
                 and data["model"] == MODEL_NAME and data["dim"] == 768
                 and data["doc_count"] == len(docs) == len(rows)
                 and [r["path"] for r in rows] == [d["path"] for d in docs]
@@ -187,6 +217,20 @@ def main() -> int:
     mode.add_argument("--if-stale", action="store_true", help="skip model loading when inputs are unchanged")
     parser.add_argument("--allow-download", action="store_true", help="explicit one-off free model download; default is cached-only")
     args = parser.parse_args()
+    if args.check:
+        return generate(args)
+    OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
+    with OUT_PATH.with_suffix('.lock').open('a') as lock:
+        try:
+            fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        except BlockingIOError:
+            print('BLOCKED: 임베딩 생성 실행 중 — 기존 산출물 보존')
+            return 2
+        return generate(args)
+
+
+def generate(args) -> int:
+    """Collect a stable input set and atomically replace the derived vectors."""
     t0 = time.time()
     canonical = collect_canonical()
     raw = collect_raw()
@@ -207,18 +251,25 @@ def main() -> int:
         print("임베딩할 문서 없음 — 종료")
         return 0
 
-    try:
-        from fastembed import TextEmbedding
-        # Downloads require an explicit one-off flag; no hosted embedding API.
-        model = TextEmbedding(MODEL_NAME, local_files_only=not args.allow_download, threads=2)
-    except Exception:
-        print("ERROR: 로컬 캐시 모델 로드 실패 — 기존 임베딩 보존", file=sys.stderr)
-        return 1
-    print(f"모델 로드: {round(time.time() - t0, 1)}초")
-
+    cached = reusable_vectors()
+    pending = [d for d in all_docs if document_fingerprint(d) not in cached]
+    print(f'재사용 {len(all_docs) - len(pending)} / 재계산 {len(pending)}')
     t1 = time.time()
-    texts = [d["text"] for d in all_docs]
-    vectors = list(model.embed(texts, batch_size=8))
+    if pending:
+        try:
+            from fastembed import TextEmbedding
+            model = TextEmbedding(MODEL_NAME, local_files_only=not args.allow_download, threads=2)
+            for i, (doc, vector) in enumerate(zip(pending, model.embed([d['text'] for d in pending], batch_size=8))):
+                cached[document_fingerprint(doc)] = vector
+                if (i + 1) % 40 == 0:
+                    print(f'계산 진행 {i + 1}/{len(pending)}', flush=True)
+        except Exception:
+            print('ERROR: 모델 계산 실패 — 기존 임베딩 보존', file=sys.stderr)
+            return 1
+    if any(document_fingerprint(doc) not in cached for doc in all_docs):
+        print('ERROR: 누락된 벡터 — 기존 파일 보존', file=sys.stderr)
+        return 1
+    vectors = [cached[document_fingerprint(d)] for d in all_docs]
     print(f"임베딩 생성: {round(time.time() - t1, 1)}초 ({len(vectors)}건)")
 
     if len(vectors) != len(all_docs) or any(
@@ -236,6 +287,7 @@ def main() -> int:
         out_docs.append({
             "kind": d["kind"], "layer": d["layer"], "slug": d["slug"],
             "path": d["path"], "title": d["title"],
+            "input_hash": document_fingerprint(d),
             "vector": [round(float(x), 6) for x in v],
         })
 
@@ -243,6 +295,7 @@ def main() -> int:
     payload = {
         "version": 1,
         "input_fingerprint": fingerprint,
+        "generation_contract": generation_contract(),
         "model": MODEL_NAME,
         "dim": len(out_docs[0]["vector"]) if out_docs else 0,
         "created": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
