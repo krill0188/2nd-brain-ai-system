@@ -650,5 +650,19 @@
       "raw/youtube/yt-우분투에-nvidia-gpu-cuda-사용하도록-파이토치-설치하는-방법.md": "f5c0bc59adbf5943238588c9a07273f87b028f3d5deeb9730500f038acdd1f14",
       "raw/youtube/yt-피지컬ai-핑크랩.md": "1a5e7f4158036e680a1afd462304ab0762b83847d2ae1d842f16764bc21e1d20"
     }
+  },
+  "candidate_retirements": {
+    "entities/qgroundcontrol.md": {
+      "snapshot_sha256": "3005e157afc7b51555fbdfab1bbc159b411087db055e8225e9f01e9c82ec6a92",
+      "replacement": "entities/qgroundcontrol-v5-1-0.md",
+      "replacement_sha256": "7171f7e29bd8f144fd6f985f495d0c49b07193de876c11c3dc6636e4bb59ae6a",
+      "reason": "Reviewed canonical supersession on 2026-09-14; omit only from isolated candidate, never delete live snapshot."
+    },
+    "entities/a2z-longtail-dual.md": {
+      "snapshot_sha256": "4b527f15231c8636c2325b7504620cd945622c903d70c1f28dcaa1caf9f8a5ce",
+      "replacement": "concepts/a2z-longtail-dual.md",
+      "replacement_sha256": "bf10d30cbd41d94e7c4d3299489bb81698b1412acde5d54a2ef82daa1d8b6dce",
+      "reason": "Reviewed canonical supersession on 2026-09-14; omit only from isolated candidate, never delete live snapshot."
+    }
   }
 }

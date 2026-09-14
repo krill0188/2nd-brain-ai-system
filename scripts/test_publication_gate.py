@@ -92,6 +92,57 @@ class PublicationTests(unittest.TestCase):
         self.assertEqual(seen, [['generate'], ['validate']])
         self.assertEqual(result[-1]['exit_code'], 1)
 
+    def retirement(self):
+        for root in (self.src, self.dst):
+            (root / 'entities').mkdir()
+        (self.dst / 'entities/old.md').write_text('old published version')
+        (self.src / 'entities/new.md').write_text('replacement')
+        old_hash = gate.digest(self.dst / 'entities/old.md')
+        new_hash = gate.digest(self.src / 'entities/new.md')
+        self.policy['baseline']['files']['entities/old.md'] = old_hash
+        self.policy['approved_files']['entities/new.md'] = new_hash
+        self.policy['candidate_retirements'] = {'entities/old.md': {
+            'snapshot_sha256': old_hash, 'replacement': 'entities/new.md',
+            'replacement_sha256': new_hash, 'reason': 'verified supersession'}}
+
+    def test_retirement_only_omits_candidate_and_preserves_snapshot(self):
+        self.retirement()
+        report = self.audit()
+        self.assertTrue(report['ready'])
+        self.assertEqual(report['deletions'], 0)
+        self.assertEqual(report['candidate_omissions'], 1)
+        target = self.base / 'candidate'
+        gate.stage(self.src, self.dst, target, report)
+        self.assertFalse((target / 'entities/old.md').exists())
+        self.assertTrue((self.dst / 'entities/old.md').exists())
+        self.assertEqual((target / 'entities/new.md').read_text(), 'replacement')
+
+    def test_retirement_rejects_changed_replacement_and_returned_source(self):
+        self.retirement()
+        report = self.audit()
+        (self.src / 'entities/old.md').write_text('source returned')
+        self.assertFalse(self.audit()['ready'])
+        with self.assertRaises(ValueError):
+            gate.stage(self.src, self.dst, self.base / 'candidate', report)
+        (self.src / 'entities/old.md').unlink()
+        (self.src / 'entities/new.md').write_text('unreviewed revision')
+        self.assertFalse(self.audit()['ready'])
+
+    def test_retirement_rejects_wrong_hash_or_bulk_batch(self):
+        self.retirement()
+        self.policy['candidate_retirements']['entities/old.md']['snapshot_sha256'] = 'wrong'
+        with self.assertRaises(ValueError):
+            self.audit()
+        self.policy['candidate_retirements'] = {str(i): {} for i in range(3)}
+        with self.assertRaises(ValueError):
+            self.audit()
+
+    def test_retained_source_becomes_private_after_audit(self):
+        report = self.audit()
+        (self.src / 'raw/a.md').write_text('---\nvisibility: private\n---\nx')
+        with self.assertRaises(ValueError):
+            gate.stage(self.src, self.dst, self.base / 'candidate', report)
+
 
 if __name__ == '__main__':
     unittest.main()

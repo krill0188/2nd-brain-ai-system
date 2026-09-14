@@ -28,6 +28,8 @@ def digest(path: Path) -> str:
 
 
 def safe_relative(name: str) -> bool:
+    if not isinstance(name, str):
+        return False
     p = PurePosixPath(name)
     return bool(name) and not p.is_absolute() and '..' not in p.parts and '\\' not in name
 
@@ -95,6 +97,20 @@ def audit(source: Path, snapshot: Path, policy: dict) -> dict:
         if not safe_relative(name) or not name.endswith('/') or mode not in ('public', 'review', 'deny'):
             raise ValueError('invalid directory policy')
     baseline = policy['baseline']['files']
+    retirements = policy.get('candidate_retirements', {})
+    # Small, exact-byte supersessions only. This never deletes the live snapshot.
+    if not isinstance(retirements, dict) or len(retirements) > 2:
+        raise ValueError('candidate retirement batch exceeds conservative limit')
+    canonical = ('concepts/', 'entities/', 'comparisons/', 'queries/')
+    for name, rule in retirements.items():
+        if (not safe_relative(name) or not name.startswith(canonical) or not name.endswith('.md')
+                or not isinstance(rule, dict) or rule.get('snapshot_sha256') != baseline.get(name)
+                or name not in baseline or not rule.get('reason')
+                or not safe_relative(rule.get('replacement', ''))
+                or not rule['replacement'].startswith(canonical)
+                or not rule['replacement'].endswith('.md') or rule['replacement'] == name
+                or not isinstance(rule.get('replacement_sha256'), str)):
+            raise ValueError('invalid candidate retirement')
     for name in [*baseline, *policy['approved_files']]:
         if not safe_relative(name):
             raise ValueError('unsafe policy path')
@@ -141,6 +157,10 @@ def audit(source: Path, snapshot: Path, policy: dict) -> dict:
             elif src.suffix == '.md' and (decision == 'explicit-public' or directory_rule(name, policy) == 'public'):
                 action, reason = 'approve', 'explicit-document-or-directory'
         row = {'path': name, 'action': action, 'reason': reason}
+        if source_hash is not None:
+            row['source_sha256'] = source_hash
+        elif reason == 'source-missing-no-delete':
+            row['source_absent'] = True
         if action == 'retain':
             row['sha256'] = baseline[name]
         elif action == 'approve':
@@ -156,8 +176,20 @@ def audit(source: Path, snapshot: Path, policy: dict) -> dict:
         for row in rows:
             if row['path'] in ARTIFACTS and row['action'] == 'approve':
                 row.update(action='block', reason='derived-source-review-required')
+    by_path = {row['path']: row for row in rows}
+    for name, rule in retirements.items():
+        row = by_path[name]
+        replacement = by_path.get(rule['replacement'], {})
+        if (row['action'] == 'retain' and row['reason'] == 'source-missing-no-delete'
+                and replacement.get('action') in ('approve', 'retain')
+                and replacement.get('sha256') == rule['replacement_sha256']):
+            row.update(action='retire-from-candidate', reason='exact-reviewed-supersession',
+                       replacement=rule['replacement'], replacement_sha256=rule['replacement_sha256'])
+        else:
+            row.update(action='block', reason='retirement-precondition-failed')
     counts = dict(Counter(r['action'] for r in rows))
     return {'mode': 'audit', 'counts': counts, 'deletions': 0,
+            'candidate_omissions': counts.get('retire-from-candidate', 0),
             'ready': not any(r['action'] in ('block', 'hold') for r in rows), 'files': rows}
 
 
@@ -168,6 +200,17 @@ def stage(source: Path, snapshot: Path, target: Path, report: dict) -> None:
         raise ValueError('candidate must be a new directory outside source and snapshot')
     if not report['ready']:
         raise ValueError('publication review unresolved; candidate not created')
+    def check_inputs():
+        for row in report['files']:
+            name = row['path']
+            if row.get('source_absent') and ((source / name).exists() or (source / name).is_symlink()):
+                raise ValueError('source appeared after audit')
+            if 'source_sha256' in row and (not regular(source, name) or digest(source / name) != row['source_sha256']):
+                raise ValueError('source changed after audit')
+            if row['action'] in ('retain', 'retire-from-candidate') and (
+                    not regular(snapshot, name) or digest(snapshot / name) != row['sha256']):
+                raise ValueError('snapshot changed after audit')
+    check_inputs()
     target.mkdir(parents=True)
     try:
         for row in report['files']:
@@ -181,6 +224,7 @@ def stage(source: Path, snapshot: Path, target: Path, report: dict) -> None:
             shutil.copy2(origin / row['path'], dst)
             if digest(dst) != row['sha256']:
                 raise ValueError('input changed during copy')
+        check_inputs()
         (target / 'PUBLICATION-CANDIDATE.json').write_text(json.dumps(report, indent=2) + '\n')
     except Exception:
         shutil.rmtree(target)
