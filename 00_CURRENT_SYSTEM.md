@@ -1,6 +1,6 @@
 # 00_CURRENT_SYSTEM — 2nd Brain × DroneWiki
 
-기준: 2026-09-14 KST. Stage 0-R 로컬 안정화 중, **종료 보류**.
+기준: 2026-09-15 KST. Stage 0-R 로컬 안정화 중, **종료 보류**.
 기준 HEAD: 2nd `8ff794e`, DroneWiki `ba13767`. 사용자 기존 미커밋 지식 변경을 보존한다.
 상세 변경/검증/rollback: [Stage 0-R](docs/STAGE_0R_REBASELINE.md).
 
@@ -62,7 +62,7 @@ Discovery 최근 실측 20초, canonical graph·kinetic 약 1초 이하. Ingest�
 
 ```text
 Generate: fetch → ingest → self-update --apply
-  → 초기 lint → embeddings --if-stale → discovery(limit15) → canonical graph
+  → kinetic apply --no-notify → 초기 lint → embeddings --if-stale → discovery(limit15) → canonical graph
 Validate: 전체 lint → kinetic --check → embeddings --check → graph coverage → publication gate
 Publish: 별도 신규 디렉터리에 검토 candidate (기존 snapshot 수정 없음)
 Deploy: 별도 승인, 자동 실행 없음
@@ -107,8 +107,10 @@ Canonical graph는 376 nodes / 1682 edges이며, 현재 본문과 관계 유형�
 Discovery 추출 실패는 이제 처리 완료로 기록하지 않는다. 과거 처리 상태의 실제 성공 여부는 UNKNOWN이다.
 별도 Terminal 커밋 `dff0925`에서 32개 파일의 hash 승인이 추가되어 현재 preflight 5항목은 PASS다.
 임베딩 880개/768차원 FRESH, 변경 없는 실행은 모델 계산을 건너뛴다.
-격리 candidate는 598 files이며 공개 duplicate slug 2건을 기존 bytes 보존 정책에 따라 유지한다.
-독립 스케줄의 순서 보장과 공개 경로 전환은 아직 해결되지 않았다.
+2026-09-15 격리 candidate는 596 files / canonical 376개 / duplicate slug 0건이다.
+정확한 두 경로만 후보에서 제외하는 정책을 적용했고 실제 공개 snapshot은 그대로다.
+`--validate-existing` 검증→후보 생성은 PASS. 공유 writer lock 및 단일 예약 전환은 미구현·미활성이다.
+최신 근거: [Stage 0-R Continuation](docs/STAGE_0R_CONTINUATION.md).
 상세 후속 기록: [Stage 0-R Follow-up](docs/STAGE_0R_FOLLOWUP.md).
 임베딩 생성 결과와 최종 QA 값은 연결된 Stage 0-R 결과 문서를 따른다.
 
