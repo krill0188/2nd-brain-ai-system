@@ -237,6 +237,7 @@ def main() -> int:
     global CHECK_ONLY
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--check', action='store_true', help='Read-only validation; no files or notifications')
+    parser.add_argument('--no-notify', action='store_true', help='Apply rules normally without external messages')
     args = parser.parse_args()
     CHECK_ONLY = args.check
     print("🔧 apply-kinetic-rules.py — SWRL 규칙4·6 평가 시작")
@@ -254,12 +255,12 @@ def main() -> int:
     if CHECK_ONLY:
         print('CHECK ONLY: no knowledge writes or notifications')
         return 1 if n_violations or r4_changed else 0
-    if n_violations > 0:
+    if n_violations > 0 and not args.no_notify:
         lines = [f"⚠️ 온톨로지 규칙6 위반 발견: {n_violations}개 세션에서 미승인 hypothesis가 Mission 근거로 승격됨"]
         for v in r6_result["violations"]:
             lines.append(f"  - {v['session_id']}: {', '.join(v['violating_claim_ids'])}")
         notify_telegram("\n".join(lines))
-    elif r4_changed:
+    elif r4_changed and not args.no_notify:
         notify_telegram(
             f"🔧 2nd Brain 온톨로지 Kinetic Layer 실행 완료 — "
             f"규칙4 SLM/LLM 분류 {len(r4_changed)}건, 규칙6 위반 0건(정상)"

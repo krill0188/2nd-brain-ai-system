@@ -9,7 +9,11 @@ import argparse
 import fcntl
 import hashlib
 import json
+import os
+import re
+import shutil
 import subprocess
+import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -24,6 +28,11 @@ def source_fingerprint() -> str:
             if p.is_file() and not p.is_symlink() and p.suffix in ('.md', '.json'):
                 h.update(str(p.relative_to(ROOT)).encode())
                 h.update(p.read_bytes())
+    for name in ('.ua/news-feed.json', 'publication/policy.json'):
+        p = ROOT / name
+        if p.exists():
+            h.update(name.encode())
+            h.update(p.read_bytes())
     return h.hexdigest()
 
 
@@ -33,6 +42,7 @@ def steps(candidate: Path) -> list[tuple[str, list[str]]]:
         ('Generate:fetch', ['bash', str(ROOT / 'scripts/fetch-inbox.sh')]),
         ('Generate:ingest', ['bash', str(ROOT / 'scripts/daily-ingest-claude.sh')]),
         ('Generate:self-update-canonical', [str(WEB / 'node_modules/.bin/tsx'), str(WEB / 'scripts/self-update-pipeline.ts'), '--apply']),
+        ('Generate:kinetic-apply', [py, str(ROOT / 'scripts/apply-kinetic-rules.py'), '--no-notify']),
         ('Validate:canonical-lint-before-generation', ['python3', str(ROOT / 'scripts/lint-knowledge.py'), '--full']),
         ('Generate:embeddings', [py, str(ROOT / 'scripts/embed-docs.py'), '--if-stale']),
         ('Generate:discovery', ['bash', str(ROOT / 'scripts/extract-knowledge-graph.sh'), '--limit', '15']),
@@ -55,11 +65,14 @@ def run_steps(items, execute=subprocess.run) -> list[dict]:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--run-local', action='store_true')
+    parser.add_argument('--validate-existing', action='store_true', help='Validate current source and stage only; no generation or messages')
     parser.add_argument('--candidate', type=Path)
     args = parser.parse_args()
     candidate = args.candidate or Path('/tmp/dronewiki-reviewed-candidate')
     plan = steps(candidate)
-    if not args.run_local:
+    if args.run_local and args.validate_existing:
+        parser.error('choose generation or existing-snapshot validation')
+    if not args.run_local and not args.validate_existing:
         print(json.dumps({'steps': [name for name, _ in plan], 'Deploy': 'manual approval required',
                           'Report': 'local .ua/pipeline-result.json; no messages',
                           'activation': 'NOT ACTIVE; replace overlapping launchd triggers before running'}, indent=2))
@@ -69,7 +82,8 @@ def main() -> int:
     labels = ('daily-fetch', 'daily-ingest', 'dronewiki-self-update', 'lint-knowledge',
               'extract-knowledge-graph', 'update-knowledge-graph', 'apply-kinetic-rules', 'sync-dronewiki')
     for label in labels:
-        if subprocess.run(['launchctl', 'list', 'ai.2nd.' + label], capture_output=True).returncode == 0:
+        state = subprocess.run(['launchctl', 'list', 'ai.2nd.' + label], capture_output=True, text=True)
+        if state.returncode == 0 and (not args.validate_existing or re.search(r'"PID"\s*=\s*\d+', state.stdout)):
             print('BLOCKED: overlapping legacy launchd jobs remain loaded; schedule migration required')
             return 2
     if not args.candidate or candidate.exists() or any(
@@ -89,19 +103,32 @@ def main() -> int:
         results = []
         try:
             # Ingest may change source; freeze its fingerprint after lint.
-            results = run_steps(plan[:4])
+            results = [] if args.validate_existing else run_steps(plan[:5])
             before = source_fingerprint()
             if all(r['exit_code'] == 0 for r in results):
-                results += run_steps(plan[4:-1])
+                results += run_steps(plan[-2:-1] if args.validate_existing else plan[5:-1])
             if source_fingerprint() != before:
                 results.append({'step': 'Validate:source-stability', 'exit_code': 2})
             if all(r['exit_code'] == 0 for r in results):
                 results += run_steps(plan[-1:])
+                if source_fingerprint() != before:
+                    results.append({'step': 'Validate:source-stability-after-stage', 'exit_code': 2})
+                    if candidate.exists():
+                        shutil.rmtree(candidate)
         except (OSError, subprocess.TimeoutExpired):
             results.append({'step': 'execution-error', 'exit_code': 124})
         report = {'at': datetime.now(timezone.utc).isoformat(), 'steps': results,
+                  'mode': 'validate-existing' if args.validate_existing else 'generate-local',
+                  'schedule_activation': 'NOT PERFORMED',
                   'deploy': 'NOT EXECUTED: approval required'}
-        (ROOT / '.ua/pipeline-result.json').write_text(json.dumps(report, indent=2) + '\n')
+        fd, tmp = tempfile.mkstemp(prefix='.pipeline-result-', dir=ROOT / '.ua')
+        try:
+            with os.fdopen(fd, 'w') as handle:
+                json.dump(report, handle, indent=2)
+            os.replace(tmp, ROOT / '.ua/pipeline-result.json')
+        finally:
+            if os.path.exists(tmp):
+                os.unlink(tmp)
         print(json.dumps(report))
         return 0 if results and all(r['exit_code'] == 0 for r in results) else 2
 
