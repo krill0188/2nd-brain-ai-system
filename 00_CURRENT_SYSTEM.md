@@ -23,13 +23,13 @@ External sources
       기존 공개 bytes 해시 보존 + 신규/변경 bytes 명시 승인
       deny 우선 / 기본 review / 파생자료도 검토 대상
   → publication-preflight.py [현재 audit-only]
-  → HOLD (기존 data/wiki snapshot 그대로 유지)
+  → 검증 PASS / 격리 candidate (기존 data/wiki snapshot 그대로 유지)
   → 향후 승인된 candidate → Git push / Vercel deploy [별도 승인]
 ```
 
 ## 운영 설정 — VERIFIED
 
-현재 12개 ai.2nd.* jobs가 loaded이며 확인 시 last exit는 모두 0이다.
+현재 12개 ai.2nd.* jobs가 loaded다. 후속 확인에서 sync last exit는 2(검증 차단), 나머지는 0이었다.
 이는 과거 실행 결과이며 새 sync gate의 성공 판정이 아니다.
 
 | Job | StartCalendarInterval (KST) |
@@ -102,7 +102,14 @@ Production hybrid는 이번에 활성화하지 않는다. 별도 공급자를 �
 
 검사한 raw/canonical 문서의 publication 관련 메타데이터는 0건. 이 사실로 private 자료의 존재/부재를 단정하지 않는다.
 정책은 기존 snapshot 596개 파일의 해시를 retention 기준으로 고정하고, metadata deny를 우선한다.
-발행 정책 미승인 변경·전체 lint 13건·slug 중복 2건·잔존 graph node 1개·discovery pending 2건이 남아 있다.
+2026-09-14 후속 점검: canonical 376개, 전체 lint 위반 0건, slug 중복 0건, graph 누락/잔존 노드 0개, discovery pending 0건.
+Canonical graph는 376 nodes / 1682 edges이며, 현재 본문과 관계 유형까지 일치하지 않는 기존 관계 425개를 검토 대상으로 보존했다(410개는 문서 연결은 존재, 15개는 같은 방향 연결 미재현).
+Discovery 추출 실패는 이제 처리 완료로 기록하지 않는다. 과거 처리 상태의 실제 성공 여부는 UNKNOWN이다.
+별도 Terminal 커밋 `dff0925`에서 32개 파일의 hash 승인이 추가되어 현재 preflight 5항목은 PASS다.
+임베딩 880개/768차원 FRESH, 변경 없는 실행은 모델 계산을 건너뛴다.
+격리 candidate는 598 files이며 공개 duplicate slug 2건을 기존 bytes 보존 정책에 따라 유지한다.
+독립 스케줄의 순서 보장과 공개 경로 전환은 아직 해결되지 않았다.
+상세 후속 기록: [Stage 0-R Follow-up](docs/STAGE_0R_FOLLOWUP.md).
 임베딩 생성 결과와 최종 QA 값은 연결된 Stage 0-R 결과 문서를 따른다.
 
 ## 변경 범위

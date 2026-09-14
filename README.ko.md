@@ -1,5 +1,7 @@
 # 2nd Brain AI 시스템
 
+[Stage 0-R 후속 검증](docs/STAGE_0R_FOLLOWUP.md)
+
 > **Stage 0-R 최신 정정 (2026-09-14):** 원본은 `~/2nd`, 공개 snapshot은 `drone-wiki-web/data/wiki`입니다. sync는 검증 전용이며, 기존 해시는 기존 bytes 보존에만 사용합니다. GraphRAG는 canonical 전용 `drone-knowledge-graph.json`과 미검증 `discovery-knowledge-graph.json`을 함께 읽습니다. Production은 현재 Python 실행환경이 없는 배포 구성상 keyword fallback이며 live 호출 로그는 UNKNOWN입니다. 예약 self-update는 `--apply`로 canonical을 직접 씁니다. Discovery는 여전히 OpenRouter를 사용하고 kinetic의 레거시 알림은 Hermes를 호출할 수 있습니다. [최신 검증·제한](docs/STAGE_0R_REBASELINE.md).
 
 [English](README.md) | **한국어**

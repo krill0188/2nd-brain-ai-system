@@ -1,5 +1,7 @@
 # 2nd Brain AI System
 
+[Stage 0-R follow-up verification](docs/STAGE_0R_FOLLOWUP.md)
+
 > **Stage 0-R current override (2026-09-14):** source of truth=`~/2nd`; public snapshot=`drone-wiki-web/data/wiki`. Sync now audits only. Existing hashes are retention-only; changed/new bytes require publication approval. GraphRAG reads `drone-knowledge-graph.json` plus unverified `discovery-knowledge-graph.json`. Production query vectors require unavailable local Python under the current build, so keyword fallback is expected; live invocation is UNKNOWN. Self-update scheduled `--apply` writes canonical. Discovery extraction still uses OpenRouter and optional Neo4j; kinetic legacy notification can still call Hermes. Do not infer that every subsystem is subscription-only or entirely Hermes-free. Current evidence/limitations: [Stage 0-R](docs/STAGE_0R_REBASELINE.md).
 
 **English** | [한국어](README.ko.md)
