@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "policy": "default-deny-content-version",
+  "baseline": {
+    "repository": "krill0188/drone-wiki-web",
+    "commit": "ba1376776dcbc6fe8bf862fafd1f14775a86a5f2",
+    "prefix": "data/wiki"
+  },
+  "publication_roots": [
+    "comparisons",
+    "concepts",
+    "entities",
+    "ontology",
+    "queries",
+    "raw"
+  ],
+  "derived_artifacts": [
+    ".ua/daily-briefing.json",
+    ".ua/discovery-knowledge-graph.json",
+    ".ua/drone-knowledge-graph.json",
+    ".ua/embeddings.json",
+    ".ua/knowledge-graph.json",
+    ".ua/news-feed.json",
+    ".ua/self-update-state.json"
+  ],
+  "approved_source_versions": [],
+  "revoked_paths": []
+}
