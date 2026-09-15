@@ -28,6 +28,7 @@ import json
 import os
 import re
 import sys
+import tempfile
 from pathlib import Path
 
 WIKI_ROOT = Path(os.path.expanduser("~/2nd"))
@@ -59,8 +60,22 @@ def load_state() -> dict:
 
 
 def save_state(state: dict) -> None:
-    STATE_PATH.parent.mkdir(parents=True, exist_ok=True)
-    STATE_PATH.write_text(json.dumps(state, ensure_ascii=False, indent=2))
+    save_json_atomic(STATE_PATH, state)
+
+
+def save_json_atomic(path: Path, data: dict) -> None:
+    """Preserve the previous artifact on serialization or disk failure."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    fd, name = tempfile.mkstemp(prefix='.discovery-', dir=path.parent)
+    try:
+        with os.fdopen(fd, 'w') as handle:
+            json.dump(data, handle, ensure_ascii=False, indent=2)
+            handle.flush()
+            os.fsync(handle.fileno())
+        os.replace(name, path)
+    finally:
+        if os.path.exists(name):
+            os.unlink(name)
 
 
 def strip_frontmatter(text: str) -> tuple[str, str]:
@@ -235,7 +250,7 @@ def sync_to_neo4j(graph_documents) -> int:
     return sum(len(gd.nodes) for gd in converted)
 
 
-def main() -> None:
+def main() -> int:
     parser = argparse.ArgumentParser(description="raw/ 문서에서 LLM 기반 개념/관계 자동 추출 → 지식그래프 빌드")
     parser.add_argument("--limit", type=int, default=8, help="이번 실행에서 처리할 신규 문서 최대 개수 (기본 8, 비용 안전장치)")
     parser.add_argument("--source", type=str, default=None, help="특정 raw 하위 디렉토리만 처리 (예: raw/papers)")
@@ -248,7 +263,7 @@ def main() -> None:
 
     if not pending:
         print("✅ 신규/변경된 raw 문서가 없습니다. 처리할 것이 없습니다.")
-        return
+        return 0
 
     batch = pending[: args.limit]
     print(f"📄 신규 문서 {len(pending)}개 발견 (이번 실행 {len(batch)}개 처리, --limit {args.limit})")
@@ -269,12 +284,17 @@ def main() -> None:
     print("🧠 LLM 추출 실행 중 (문서당 1회 호출)...")
     graph_documents = []
     source_map: dict[int, str] = {}
+    successful_meta = []
+    failed_count = 0
     for doc, (path, digest, rel) in zip(documents, doc_meta):
         try:
             gd_list = transformer.convert_to_graph_documents([doc])
-        except Exception as e:
-            print(f"  ⚠️  {rel} 추출 실패: {e}", file=sys.stderr)
+        except Exception:
+            # Provider exception strings can include request headers or credentials.
+            print(f"  ⚠️  {rel} 추출 실패 — 미처리 상태 유지", file=sys.stderr)
+            failed_count += 1
             continue
+        successful_meta.append((path, digest, rel))
         for gd in gd_list:
             graph_documents.append(gd)
             source_map[id(gd)] = rel
@@ -287,22 +307,26 @@ def main() -> None:
 
     if args.dry_run:
         print("🔍 --dry-run: discovery JSON/Neo4j에 저장하지 않음")
-        return
+        return 1 if failed_count else 0
+
+    if not successful_meta:
+        print('추출 실패 — 기존 graph/state 보존')
+        return 1
 
     merged = merge_into_discovery_graph(new_nodes, new_edges)
-    DISCOVERY_GRAPH_PATH.parent.mkdir(parents=True, exist_ok=True)
-    DISCOVERY_GRAPH_PATH.write_text(json.dumps(merged, ensure_ascii=False, indent=2))
+    save_json_atomic(DISCOVERY_GRAPH_PATH, merged)
     print(f"💾 저장: {DISCOVERY_GRAPH_PATH} (총 노드 {len(merged['nodes'])}개, 총 엣지 {len(merged['edges'])}개)")
 
     neo4j_count = sync_to_neo4j(graph_documents)
     if neo4j_count:
         print(f"🔗 Neo4j 동기화: 노드 {neo4j_count}개 반영")
 
-    for path, digest, rel in doc_meta:
+    for path, digest, rel in successful_meta:
         state[rel] = digest
     save_state(state)
-    print(f"✅ 처리 완료. 남은 미처리 문서: {len(pending) - len(batch)}개")
+    print(f"처리 결과: 성공 {len(successful_meta)} / 실패 {failed_count} / 남은 미처리 {len(pending) - len(successful_meta)}개")
+    return 1 if failed_count else 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

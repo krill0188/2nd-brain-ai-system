@@ -1,5 +1,9 @@
 # 2nd Brain AI 시스템
 
+[Stage 0-R 후속 검증](docs/STAGE_0R_FOLLOWUP.md)
+
+> **Stage 0-R 최신 정정 (2026-09-14):** 원본은 `~/2nd`, 공개 snapshot은 `drone-wiki-web/data/wiki`입니다. sync는 검증 전용이며, 기존 해시는 기존 bytes 보존에만 사용합니다. GraphRAG는 canonical 전용 `drone-knowledge-graph.json`과 미검증 `discovery-knowledge-graph.json`을 함께 읽습니다. Production은 현재 Python 실행환경이 없는 배포 구성상 keyword fallback이며 live 호출 로그는 UNKNOWN입니다. 예약 self-update는 `--apply`로 canonical을 직접 씁니다. Discovery는 여전히 OpenRouter를 사용하고 kinetic의 레거시 알림은 Hermes를 호출할 수 있습니다. [최신 검증·제한](docs/STAGE_0R_REBASELINE.md).
+
 [English](README.md) | **한국어**
 
 > Markdown과 Git 기반 드론 도메인 지식 관리 시스템 — **launchd + `claude -p` 자동화 + 5종 AI 도구 스택 + AI 연구 루프(인간 승인형)** 탑재.
@@ -37,27 +41,23 @@
 
 ## 자동화 제어 플레인 — launchd + `claude -p`
 
-> **Hermes Agent는 완전히 은퇴했습니다(2026-09).** 아래 표는 예전에 Hermes cron 파이프라인
-> (`hermes cron create`, `b1a360fce35d` 같은 스킬 ID)을 기술했었는데, 그 파이프라인은 더 이상
-> 존재하지 않습니다. 자동화는 이제 **네이티브 macOS `launchd`**(라벨 접두사 `ai.2nd.*`) 위에서
-> 돌고, LLM을 호출하는 모든 잡은 **`claude -p`**로 Claude Pro/Max 구독을 직접 호출합니다(API
-> 키 불필요, 소진될 OpenRouter 크레딧도 없음). 텔레그램 발송도 더 이상 Hermes 게이트웨이
-> 프로세스를 거치지 않습니다 — `scripts/hermes-wrap.sh`(이름은 레거시일 뿐 Hermes에 전혀
-> 의존하지 않음)가 각 스크립트의 stdout을 받아서 텔레그램 Bot API로 바로 보냅니다.
+> 실제 스케줄러는 native launchd입니다. Ingest와 주간 Claude jobs는 `claude -p`를 쓰지만,
+> discovery 추출은 OpenRouter와 선택적 Neo4j를 사용합니다. 레거시 Hermes 경로가 남아 있고
+> kinetic 알림은 Hermes를 호출할 수 있습니다. `hermes-wrap.sh`는 기존 notify 스크립트로 알림을 전달합니다.
 
-일일 체인 전체를 실행 순서대로(각 단계는 앞 단계의 산출물에 의존):
+아래는 독립 jobs의 예약 시각이며, 앞 단계의 성공·완료를 보장하는 순차 체인이 아닙니다.
 
 | 순서 | launchd 라벨 | 시각 | 스크립트 | 역할 |
 | --- | --- | --- | --- | --- |
 | 1 | `ai.2nd.daily-fetch` | 07:30 | `hermes-wrap.sh` → `scripts/fetch-inbox.sh` | 8개+ 소스(RSS, arXiv 8도메인, Crossref, KCI, USPTO, 미 연방관보/FAA, YouTube 27채널, 나라장터) 수집 → `inbox/` |
 | 2 | `ai.2nd.daily-ingest` | 08:00 | `scripts/daily-ingest-claude.sh`(`claude -p`) | `summarize-note`/`publish-entry` 스킬로 `inbox/`를 canonical `concepts/`/`entities/`/`comparisons/`/`queries/`로 컴파일, 처리 완료 파일은 `inbox/processed/`로 이동 |
 | 3 | `ai.2nd.lint-knowledge` | 08:12 | `scripts/lint-knowledge.py --recent-hours 2 --quiet` | 직전 실행에서 수집된 것에 대한 스키마 게이트 — canonical 9필드 계약 강제 |
-| 4 | `ai.2nd.dronewiki-self-update` | 08:20 | `hermes-wrap.sh` → `.hermes/scripts/dronewiki-self-update.sh` | drone-wiki-web용 "이 뉴스를 기존 문서에 연결" **제안**만 생성(canonical 파일 직접 작성 안 함) |
-| 5 | `ai.2nd.sync-dronewiki` | 08:30 | `hermes-wrap.sh` → `.hermes/scripts/dronewiki-sync.sh` | canonical + `raw/` + 그래프 3종 + 임베딩을 `drone-wiki-web/data/wiki/`로 rsync 후 `git push` + `vercel --prod --yes` |
+| 4 | `ai.2nd.dronewiki-self-update` | 08:20 | `.hermes/scripts/dronewiki-self-update.sh --apply` | 기존 자동 실행이 canonical 뉴스 섹션을 직접 수정. 제안 전용 아님. 완료 의존성은 미해결. |
+| 5 | `ai.2nd.sync-dronewiki` | 08:30 | compatibility wrapper → repository `sync-wiki.sh` → `publication-preflight.py` | Stage 0-R 검증 전용: lint·kinetic·임베딩 최신성·발행 정책 검사. snapshot 변경/push/배포 없음 |
 | 6 | `ai.2nd.extract-knowledge-graph` | 08:45 | `scripts/extract-knowledge-graph.sh --limit 15` | raw 원문에서 미검증 discovery 그래프 추출(canonical 그래프와 절대 섞이지 않음) |
-| 7 | `ai.2nd.update-knowledge-graph` | 08:47 | `scripts/update-graph.sh` | `concepts/`/`entities/`로부터 canonical 드론 지식그래프 재구성 |
+| 7 | `ai.2nd.update-knowledge-graph` | 08:47 | `scripts/update-graph.sh` | canonical 4개 디렉터리로부터 그래프 갱신(레거시 잔존 노드 가능) |
 | 8 | `ai.2nd.apply-kinetic-rules` | 08:50 | `scripts/apply-kinetic-rules.py` | 구현된 SWRL 규칙 2개 실행(규칙4: SLM/LLM 판별, 규칙6: 미승인 가설 감사) |
-| 9 | `ai.2nd.morning-report` | 11:30 | `scripts/morning-report-send.sh` | 위 체인 전체가 실제로 돌았는지 검증 후 dronewikibot으로 드론 뉴스 브리핑 발송 |
+| 9 | `ai.2nd.morning-report` | 11:30 | `scripts/morning-report-send.sh` | 기존 아침 리포트 발송. 새 발행 파이프라인의 성공 증명은 아님 |
 
 주간(일일 체인과 독립):
 
@@ -91,7 +91,7 @@ launchctl load   ~/Library/LaunchAgents/ai.2nd.<name>.plist
 ### 텔레그램 — 승인 게이트 아님, 통지·조회 채널
 
 ```
-[입력]      마스터 → 텔레그램 → (수동 캡처, "빠른 시작" 참고) → raw/inbox/
+[입력]      마스터 → 텔레그램 → (수동 캡처, "빠른 시작" 참고) → inbox/
 [사후 통지] ai.2nd.morning-report(11:30) → 텔레그램: 오늘 신규 canonical 페이지 + 드론 뉴스 다이제스트
 [쿼리]      마스터 → 텔레그램(dronewikibot) → wiki 검색 → 답변
 ```
@@ -145,13 +145,13 @@ launchctl load   ~/Library/LaunchAgents/ai.2nd.<name>.plist
 
 | 기능 | 설명 |
 | --- | --- |
-| **자동화 수집 파이프라인** | `ai.2nd.daily-fetch`(launchd, 07:30)가 `raw/inbox/`를 채우고, `ai.2nd.daily-ingest`(08:00, `claude -p`)가 canonical 페이지를 **사전 승인 없이 즉시** 컴파일·확정합니다. 매일 11:30 아침 리포트가 그날 생성분을 텔레그램으로 사후 통지합니다. |
+| **자동화 수집 파이프라인** | `ai.2nd.daily-fetch`(launchd, 07:30)가 `inbox/`를 채우고, `ai.2nd.daily-ingest`(08:00, `claude -p`)가 canonical 페이지를 **사전 승인 없이 즉시** 컴파일·확정합니다. 매일 11:30 아침 리포트가 그날 생성분을 텔레그램으로 사후 통지합니다. |
 | **AI 연구 루프 — 실제 인간 승인 게이트** | `research/` 경로에서만 승인이 확정을 가로막습니다: 연구 세션(Planner~Report)이 draft를 만들면 `research-run.sh approve`로 마스터가 명시 승인해야 하고, `research-promote.py --items`로 클레임을 개별 지정해야 canonical에 반영됩니다. `fact` 클레임(기존 출처 재진술)은 승격 자체가 거부됩니다. |
 | **소스와 출처 보존** | Zotero와 Obsidian Web Clipper로 논문과 웹 자료를 캡처한 후 소스, 메타데이터, SHA-256 다이제스트를 `raw/` 아래에 보존해 모든 주장을 증거까지 추적할 수 있습니다. |
 | **검증된 지식 컴파일** | `ai.2nd.daily-ingest`(`claude -p`)와 OpenCode + Kimi K2가 소스 자료를 출처, 신뢰도 평가, 모순 추적을 포함한 엔티티, 개념, 비교, 쿼리 문서로 구조화합니다. |
 | **연결된 Markdown 편집** | Obsidian에서 wikilinks와 역방향 링크를 사용해 지속적 지식을 읽고 편집하며, GitHub Copilot 인라인이 편집 중 자동완성을 지원합니다. |
 | **멀티 AI 교차 검증** | Claude Code와 GitHub Copilot Chat(`@workspace`)이 동일 증거에 대해 독립적 분석을 제공할 수 있습니다 — 다만 이는 daily-ingest 자동 컴파일 전에 강제로 실행되는 게이트가 아니라, 필요 시 사람이 선택적으로 사용하는 수동 검증 도구입니다. |
-| **드론 코드 탐색** | Codex가 PX4, ArduPilot, ROS2/MAVROS2, MAVSDK 소스 코드를 탐색하며, 결과는 `raw/inbox/`에 저장되어 `ai.2nd.daily-ingest`가 컴파일 시 수집합니다. |
+| **드론 코드 탐색** | Codex가 PX4, ArduPilot, ROS2/MAVROS2, MAVSDK 소스 코드를 탐색하며, 결과는 `inbox/`에 저장되어 `ai.2nd.daily-ingest`가 컴파일 시 수집합니다. |
 | **지식그래프 (Gate C)** | Understand Anything `understand-knowledge` 스킬이 위키를 분석해 인터랙티브 지식그래프(`.ua/knowledge-graph.json`)를 생성 — 클러스터, 공백, 구조적 약한 연결을 자동으로 표면화합니다. 로컬 뷰어는 `open .ua/graph.html`로 실행 (지식 도메인 노드 전용·포스-다이렉티드·오프라인 동작). |
 | **Gate C v2 — AI 공백 분석** | `scripts/gate-c-analyze.sh`가 지식그래프를 읽어 구조 통계(레이어 밀도·고립 노드·과부하 허브·단절 레이어 쌍)를 전처리한 후 `claude -p`로 AI 해석을 수행합니다. 결과는 `.ua/gap-report.md`에 저장되며 텔레그램 형식으로 출력됩니다. `--deliver` 옵션으로 `scripts/hermes-wrap.sh`(게이트웨이 없이 텔레그램 Bot API 직접 호출)를 통해 즉시 전송 가능합니다. |
 
@@ -255,7 +255,7 @@ cd ~/2nd && opencode
 # 아키텍처 / 모순 분석 — Claude
 cd ~/2nd && claude
 
-# 드론 코드 탐색 — Codex (결과는 raw/inbox/로)
+# 드론 코드 탐색 — Codex (결과는 inbox/로)
 cd ~/2nd && codex
 ```
 
@@ -263,10 +263,10 @@ cd ~/2nd && codex
 
 ```
 [텔레그램 → @dronewikibot]
-"이 링크를 수집해서 raw/inbox/에 저장해줘: https://docs.px4.io/..."
+"이 링크를 수집해서 inbox/에 저장해줘: https://docs.px4.io/..."
 ```
 
-캡처된 콘텐츠는 `raw/inbox/`에 저장되고, 다음 `ai.2nd.daily-ingest` 실행(08:00)에서 컴파일됩니다.
+캡처된 콘텐츠는 `inbox/`에 저장되고, 다음 `ai.2nd.daily-ingest` 실행(08:00)에서 컴파일됩니다.
 
 ### 5. 지식그래프 뷰어 열기
 
@@ -286,7 +286,7 @@ Concepts / Comparisons / Queries / Entities 등 정식 지식 도메인 노드�
 ## 기본 워크플로우
 
 1. **캡처**: 텔레그램에 링크를 전송하거나 Obsidian Web Clipper로 웹 페이지를 `raw/web/`에 저장. 논문은 Zotero Connector → Zotero 라이브러리 → `python3 scripts/zotero-ingest.py` → `raw/papers/<topic>/`.
-2. **자동 컴파일(사전 승인 없음)**: `ai.2nd.daily-ingest`(launchd, 매일 08:00, `claude -p`)이 `raw/inbox/`를 스캔하고, canonical 페이지를 **즉시 생성·확정**한다. 대기 상태 없이 바로 `index.md`/`log.md`에 반영됨.
+2. **자동 컴파일(사전 승인 없음)**: `ai.2nd.daily-ingest`(launchd, 매일 08:00, `claude -p`)이 `inbox/`를 스캔하고, canonical 페이지를 **즉시 생성·확정**한다. 대기 상태 없이 바로 `index.md`/`log.md`에 반영됨.
 3. **사후 통지**: 매일 07:30 `morning-report.sh`가 그날 자동 생성된 페이지 목록을 텔레그램으로 통지(승인 요청 아님 — 이미 확정된 것을 알리는 것).
 4. **(선택) 교차 검증**: 필요하다고 판단되면 GitHub Copilot Chat(`@workspace`) 또는 Claude에게 이미 생성된 페이지를 검토해 모순이나 누락을 찾도록 사람이 직접 요청 — 자동 실행 아님.
 5. **AI 연구 루프(실제 승인 게이트)**: 더 깊은 탐구가 필요한 질문은 `scripts/research-run.sh new "<질문>"`으로 연구 세션을 만든다. Planner→Retriever→Hypothesis→Critic→Verifier→Report를 거쳐 draft가 나오면, `research-run.sh approve <id>`로 마스터가 승인하고 `research-promote.py <id> --items C1,C3`로 클레임을 개별 지정해야만 canonical에 반영된다 — **이 경로만 승인 전 확정을 실제로 차단한다.**

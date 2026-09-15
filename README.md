@@ -1,5 +1,9 @@
 # 2nd Brain AI System
 
+[Stage 0-R follow-up verification](docs/STAGE_0R_FOLLOWUP.md)
+
+> **Stage 0-R current override (2026-09-14):** source of truth=`~/2nd`; public snapshot=`drone-wiki-web/data/wiki`. Sync now audits only. Existing hashes are retention-only; changed/new bytes require publication approval. GraphRAG reads `drone-knowledge-graph.json` plus unverified `discovery-knowledge-graph.json`. Production query vectors require unavailable local Python under the current build, so keyword fallback is expected; live invocation is UNKNOWN. Self-update scheduled `--apply` writes canonical. Discovery extraction still uses OpenRouter and optional Neo4j; kinetic legacy notification can still call Hermes. Do not infer that every subsystem is subscription-only or entirely Hermes-free. Current evidence/limitations: [Stage 0-R](docs/STAGE_0R_REBASELINE.md).
+
 **English** | [한국어](README.ko.md)
 
 > A drone-domain knowledge management system built on Markdown and Git — powered by **launchd + `claude -p` automation + 5-AI tool stack + a human-approved AI research loop**.
@@ -37,28 +41,24 @@ The stack combines launchd + `claude -p` automation with five AI tools, each ass
 
 ## Automation Control Plane — launchd + `claude -p`
 
-> **Hermes Agent has been fully retired (2026-09).** The table below used to describe a Hermes
-> cron pipeline (`hermes cron create`, skill IDs like `b1a360fce35d`) — that pipeline no longer
-> exists. Automation now runs on **native macOS `launchd`** (label prefix `ai.2nd.*`), and every
-> job that talks to an LLM calls **`claude -p`** directly against the Claude Pro/Max subscription
-> (no API key, no OpenRouter credits to run out of). Telegram delivery no longer goes through a
-> Hermes gateway process either — `scripts/hermes-wrap.sh` (the name is legacy; it depends on
-> nothing Hermes-related) captures each script's stdout and posts it straight to the Telegram Bot
-> API.
+> Native launchd is the observed scheduler. Ingest and weekly Claude jobs use
+> `claude -p`; discovery extraction still uses OpenRouter and optional Neo4j.
+> Legacy Hermes paths remain, and kinetic notification can still call Hermes.
+> `hermes-wrap.sh` dispatches notifications through the existing notify script.
 
-The full daily chain, in execution order (each step depends on the previous one's output):
+The daily calendar below is a set of independent jobs, not a completion-ordered chain.
 
 | Order | launchd label | Time | Script | Role |
 | --- | --- | --- | --- | --- |
 | 1 | `ai.2nd.daily-fetch` | 07:30 | `hermes-wrap.sh` → `scripts/fetch-inbox.sh` | Pulls from 8+ sources (RSS, arXiv ×8 domain queries, Crossref, KCI, USPTO, US Federal Register/FAA, YouTube ×27 channels, 나라장터) into `inbox/` |
 | 2 | `ai.2nd.daily-ingest` | 08:00 | `scripts/daily-ingest-claude.sh` (`claude -p`) | Compiles `inbox/` into canonical `concepts/`/`entities/`/`comparisons/`/`queries/` using the `summarize-note` and `publish-entry` skills; moves processed files to `inbox/processed/` |
 | 3 | `ai.2nd.lint-knowledge` | 08:12 | `scripts/lint-knowledge.py --recent-hours 2 --quiet` | Schema gate on anything ingested in the last run — enforces the 9-field canonical contract |
-| 4 | `ai.2nd.dronewiki-self-update` | 08:20 | `hermes-wrap.sh` → `.hermes/scripts/dronewiki-self-update.sh` | Generates "link this news to an existing doc" *proposals* for drone-wiki-web (does not write canonical files itself) |
-| 5 | `ai.2nd.sync-dronewiki` | 08:30 | `hermes-wrap.sh` → `.hermes/scripts/dronewiki-sync.sh` | rsyncs canonical + `raw/` + the 3 graph files + embeddings into `drone-wiki-web/data/wiki/`, then `git push` + `vercel --prod --yes` |
+| 4 | `ai.2nd.dronewiki-self-update` | 08:20 | `.hermes/scripts/dronewiki-self-update.sh --apply` | Existing automatic canonical news-section writes; not proposal-only. Completion ordering is unresolved. |
+| 5 | `ai.2nd.sync-dronewiki` | 08:30 | compatibility wrapper → repository `sync-wiki.sh` → `publication-preflight.py` | Stage 0-R audit only: lint, kinetic check, embeddings freshness, publication policy; no snapshot writes/push/deploy |
 | 6 | `ai.2nd.extract-knowledge-graph` | 08:45 | `scripts/extract-knowledge-graph.sh --limit 15` | Extracts the unverified *discovery* graph from raw sources (never mixed with the canonical graph) |
-| 7 | `ai.2nd.update-knowledge-graph` | 08:47 | `scripts/update-graph.sh` | Rebuilds the canonical drone knowledge graph from `concepts/`/`entities/` |
+| 7 | `ai.2nd.update-knowledge-graph` | 08:47 | `scripts/update-graph.sh` | Updates the canonical graph from all four canonical directories (legacy stale nodes can remain) |
 | 8 | `ai.2nd.apply-kinetic-rules` | 08:50 | `scripts/apply-kinetic-rules.py` | Runs the two implemented SWRL rules (Rule 4: SLM/LLM classification, Rule 6: unapproved-hypothesis audit) |
-| 9 | `ai.2nd.morning-report` | 11:30 | `scripts/morning-report-send.sh` | Verifies the whole chain above actually ran, then sends the drone-news briefing to Telegram via dronewikibot |
+| 9 | `ai.2nd.morning-report` | 11:30 | `scripts/morning-report-send.sh` | Sends the existing morning report; not a success receipt for the new gated pipeline |
 
 Weekly, independent of the daily chain:
 
@@ -91,7 +91,7 @@ than moving one job in isolation — two jobs sharing a time slot is a silent fa
 ### Telegram — notification/query channel, not an approval gate
 
 ```
-[Input]     Master → Telegram → (manual capture, see "Quick Start") → raw/inbox/
+[Input]     Master → Telegram → (manual capture, see "Quick Start") → inbox/
 [Post-hoc]  ai.2nd.morning-report (11:30) → Telegram: today's canonical pages + drone news digest
 [Query]     Master → Telegram (dronewikibot) → wiki search → answer
 ```
@@ -151,7 +151,7 @@ Collection priority: `drone-sw` → `datalink` → `drone-ai` → `swarm` → ot
 | **Verified knowledge compilation** | `ai.2nd.daily-ingest` (`claude -p`) and OpenCode + Kimi K2 structure source material into entity, concept, comparison, and query documents with provenance, confidence ratings, and contradiction tracking. |
 | **Connected Markdown editing** | Read and edit durable knowledge in Obsidian using wikilinks and backlinks; GitHub Copilot inline assists while editing. |
 | **Multi-AI cross-validation** | Claude Code and GitHub Copilot Chat (`@workspace`) can provide independent analysis of the same evidence — but this is a manual check a human runs when warranted, not an automatic gate that runs before daily-ingest compilation. |
-| **Drone code exploration** | Codex navigates PX4, ArduPilot, ROS2/MAVROS2, and MAVSDK source code; results are saved to `raw/inbox/` and picked up by `ai.2nd.daily-ingest` for compilation. |
+| **Drone code exploration** | Codex navigates PX4, ArduPilot, ROS2/MAVROS2, and MAVSDK source code; results are saved to `inbox/` and picked up by `ai.2nd.daily-ingest` for compilation. |
 | **Knowledge graph (Gate C)** | Understand Anything `understand-knowledge` skill analyzes the wiki and produces an interactive knowledge graph (`.ua/knowledge-graph.json`) — clusters, gaps, and structural weak links surfaced automatically. Open the local viewer with `open .ua/graph.html` (force-directed, interactive, works offline). |
 | **Gate C v2 — AI gap analysis** | `scripts/gate-c-analyze.sh` reads the knowledge graph, pre-processes structure stats (layer density, isolated nodes, high-degree hubs, disconnected layer pairs), and pipes them to `claude -p` for AI interpretation. Output is a Telegram-formatted gap report saved to `.ua/gap-report.md`. Run with `--deliver` to push via `scripts/hermes-wrap.sh` (direct Telegram Bot API call, no gateway process involved). |
 
@@ -255,7 +255,7 @@ cd ~/2nd && opencode
 # Architecture / contradiction analysis — Claude
 cd ~/2nd && claude
 
-# Drone code exploration — Codex (results go to raw/inbox/)
+# Drone code exploration — Codex (results go to inbox/)
 cd ~/2nd && codex
 ```
 
@@ -263,10 +263,10 @@ cd ~/2nd && codex
 
 ```
 [Telegram → @dronewikibot]
-"Collect this link and save to raw/inbox/: https://docs.px4.io/..."
+"Collect this link and save to inbox/: https://docs.px4.io/..."
 ```
 
-The capture is saved to `raw/inbox/`, and the next `ai.2nd.daily-ingest` run (08:00) compiles it.
+The capture is saved to `inbox/`, and the next `ai.2nd.daily-ingest` run (08:00) compiles it.
 
 ### 5. View the Knowledge Graph
 
@@ -286,7 +286,7 @@ Before adding knowledge, read [SCHEMA.md](SCHEMA.md), check [index.md](index.md)
 ## Basic Workflow
 
 1. **Capture**: Drop links into Telegram or save web pages via Obsidian Web Clipper → `raw/web/`. Papers go via Zotero Connector → Zotero library → `python3 scripts/zotero-ingest.py` → `raw/papers/<topic>/`.
-2. **Auto-compile (no pre-approval)**: `ai.2nd.daily-ingest` (launchd, 08:00 daily, `claude -p`) scans `raw/inbox/` and compiles and **finalizes** canonical pages immediately — no waiting state, `index.md`/`log.md` are updated right away.
+2. **Auto-compile (no pre-approval)**: `ai.2nd.daily-ingest` (launchd, 08:00 daily, `claude -p`) scans `inbox/` and compiles and **finalizes** canonical pages immediately — no waiting state, `index.md`/`log.md` are updated right away.
 3. **Post-hoc notice**: `morning-report.sh` at 07:30 sends that day's newly-created pages to Telegram (a notice, not an approval request — the pages are already final).
 4. **(Optional) Cross-validate**: If warranted, ask GitHub Copilot Chat (`@workspace`) or Claude to review already-created pages for contradictions or missing coverage — a manual, human-initiated check, not an automatic step.
 5. **AI research loop (the real approval gate)**: For deeper questions, start a session with `scripts/research-run.sh new "<question>"`. It runs Planner→Retriever→Hypothesis→Critic→Verifier→Report to produce a draft; the master must `research-run.sh approve <id>` and then name specific claims via `research-promote.py <id> --items C1,C3` before anything reaches canonical — **only this path actually blocks finalization pending approval.**

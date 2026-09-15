@@ -118,107 +118,11 @@ cmd_status() {
   local telegram=false
   [[ "${1:-}" == "--telegram" ]] && telegram=true
 
-  local report=""
-  report+="🤖 *AI 플랫폼 상태 리포트*\n"
-  report+="📅 $(date '+%Y-%m-%d %H:%M')\n\n"
-
-  sect "Launchd 스케줄러 (2nd Brain 잡)"
-  for job_label in "ai.2nd.daily-ingest" "ai.2nd.weekly-lint" "ai.2nd.weekly-summary"; do
-    local plist="$HOME/Library/LaunchAgents/${job_label}.plist"
-    if [[ -f "$plist" ]]; then
-      local loaded
-      loaded=$(launchctl list "$job_label" 2>/dev/null | grep '"PID"' || true)
-      if [[ -n "$loaded" ]]; then
-        ok "$job_label: 실행 중"
-        report+="✅ $job_label: 실행 중\n"
-      else
-        ok "$job_label: 등록됨 (대기 중)"
-        report+="✅ $job_label: 등록됨\n"
-      fi
-    else
-      warn "$job_label: plist 없음"
-      report+="⚠️  $job_label: 미등록\n"
-    fi
-  done
-
-  sect "최근 실행 이력"
-  for job in "ingest" "lint" "summary"; do
-    local log_file="$LOG_DIR/${job}.log"
-    if [[ -f "$log_file" ]]; then
-      local last_line
-      last_line=$(tail -1 "$log_file" 2>/dev/null || true)
-      ok "$job: $last_line"
-      report+="✅ $job: $last_line\n"
-    else
-      warn "$job: 이력 없음"
-      report+="⚠️  $job: 이력 없음\n"
-    fi
-  done
-
-  sect "claude -p (Claude Code CLI)"
-  local ping_result
-  if ping_result=$(echo "ping" | claude -p "respond with the single word PONG and nothing else" 2>/dev/null); then
-    if echo "$ping_result" | grep -qi "pong"; then
-      ok "claude -p 응답 정상 ($(claude --version 2>/dev/null | head -1))"
-      report+="✅ claude -p: 응답 정상\n"
-    else
-      warn "claude -p 응답 이상: $ping_result"
-      report+="⚠️  claude -p: 응답 이상\n"
-    fi
-  else
-    fail "claude -p 응답 실패"
-    report+="❌ claude -p: 응답 실패\n"
-  fi
-
-  sect "OpenCode + Kimi K2"
-  if command -v opencode &>/dev/null; then
-    local oc_ver
-    oc_ver=$(opencode --version 2>/dev/null || echo "unknown")
-    ok "opencode 설치됨 (v$oc_ver)"
-    report+="✅ OpenCode: v$oc_ver (대화형 — 직접 실행 필요)\n"
-  else
-    fail "opencode 미설치"
-    report+="❌ OpenCode: 미설치\n"
-  fi
-
-  sect "Codex CLI"
-  if command -v codex &>/dev/null; then
-    local cdx_ver
-    cdx_ver=$(codex --version 2>/dev/null | head -1 || echo "unknown")
-    ok "codex 설치됨 ($cdx_ver)"
-    report+="✅ Codex: $cdx_ver (대화형 — 직접 실행 필요)\n"
-  else
-    fail "codex 미설치"
-    report+="❌ Codex: 미설치\n"
-  fi
-
-  sect "Gate C 파일"
-  local graph_json="$REPORT_DIR/knowledge-graph.json"
-  local graph_html="$REPORT_DIR/graph.html"
-  local gap_report="$REPORT_DIR/gap-report.md"
-
-  if [[ -f "$graph_json" ]]; then
-    local node_count
-    node_count=$(python3 -c "import json; d=json.load(open('$graph_json')); print(len(d.get('nodes',[])))" 2>/dev/null || echo "?")
-    ok "knowledge-graph.json: ${node_count}개 노드 ($(stat -f '%Sm' -t '%Y-%m-%d %H:%M' "$graph_json"))"
-    report+="✅ 지식그래프: ${node_count}노드\n"
-  else
-    warn "knowledge-graph.json 없음 — Gate C 실행 필요"
-    report+="⚠️  지식그래프: 없음 (Gate C 실행 필요)\n"
-  fi
-
-  [[ -f "$graph_html" ]] && ok "graph.html 존재" || warn "graph.html 없음"
-  [[ -f "$gap_report" ]] && ok "gap-report.md 존재 ($(stat -f '%Sm' -t '%Y-%m-%d %H:%M' "$gap_report"))" \
-                          || warn "gap-report.md 없음 — run-gap 실행 필요"
-
-  sect "VS Code 연동 (수동 확인 필요)"
-  warn "Gemini Code Assist: VS Code 사이드바에서 직접 확인"
-  warn "GitHub Copilot: VS Code에서 편집 중 제안 여부 확인"
-  report+="⚠️  Gemini/Copilot: VS Code에서 수동 확인 필요\n"
-
-  echo ""
+  local report
+  report=$(python3 "$HOME/2nd/scripts/ai-control-status.py") || return $?
+  printf '%s\n' "$report"
   if $telegram; then
-    send_telegram "$(echo -e "$report")"
+    send_telegram "$report"
   fi
 }
 
@@ -350,7 +254,7 @@ ai-control.sh — 2nd Brain AI 플랫폼 통제 스크립트
   help                  이 도움말
 
 통제 가능 범위:
-  ✅ launchd 3 잡 (ingest·lint·summary) — 즉시 트리거 가능
+  ✅ status: 전체 ai.2nd.* 관찰 / 기존 ingest·lint·summary 즉시 실행 명령 유지
   ✅ claude -p — ping 테스트 및 gate-c-analyze.sh에서 사용
   ✅ Gate C gap analysis — 직접 실행 + Telegram 전송
   ✅ Telegram 상태 보고 — claudeclaw notify.sh
@@ -367,7 +271,16 @@ shift || true
 case "$COMMAND" in
   status)      cmd_status "${@}" ;;
   ping)        cmd_ping ;;
-  run-ingest)  cmd_run_ingest ;;
+  run-ingest)
+    # 자동화 체인(fetch/ingest/self-update/kinetic/discovery/graph)과 같은 lock을
+    # 공유한다 — 수동 실행이 자동 스케줄과 겹치면 exec로 전체를 락 래퍼에 넘겨
+    # 자식이 부모 락을 물려받게 한다(교착 방지 위해 재진입 시엔 바로 통과).
+    if [[ "${PIPELINE_LOCK_HELD:-}" != "1" ]]; then
+      export PIPELINE_LOCK_HELD=1
+      exec python3 "$HOME/2nd/scripts/with-pipeline-lock.py" -- "$0" run-ingest
+    fi
+    cmd_run_ingest
+    ;;
   run-lint)    cmd_run_lint ;;
   run-summary) cmd_run_summary ;;
   run-gap)     cmd_run_gap "${@}" ;;
