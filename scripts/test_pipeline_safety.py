@@ -35,7 +35,15 @@ class PipelineSafetyTests(unittest.TestCase):
                      patch('sys.argv', ['pipeline', '--validate-existing', '--candidate', str(candidate)]):
                     self.assertEqual(pipeline.main(), code)
                 self.assertFalse(any(name.startswith('Generate:') for name in seen))
-                self.assertEqual('Publish:isolated-candidate' in seen, code == 0)
+                publication = [
+                    'Publish:policy-candidate',
+                    'Publish:version-candidate',
+                    'Publish:reconcile-candidates',
+                ]
+                self.assertEqual(
+                    [name for name in seen if name.startswith('Publish:')],
+                    publication if code == 0 else [],
+                )
 
     def test_news_change_invalidates_stable_source(self):
         with tempfile.TemporaryDirectory() as tmp, patch.object(pipeline, 'ROOT', Path(tmp)):
@@ -45,6 +53,32 @@ class PipelineSafetyTests(unittest.TestCase):
             old = pipeline.source_fingerprint()
             news.write_text('[{"title":"new"}]')
             self.assertNotEqual(old, pipeline.source_fingerprint())
+
+    def test_manifest_change_invalidates_stable_source(self):
+        with tempfile.TemporaryDirectory() as tmp, patch.object(pipeline, 'ROOT', Path(tmp)):
+            publication = Path(tmp) / 'publication'
+            publication.mkdir()
+            manifest = publication / 'publication-manifest.json'
+            manifest.write_text('{"version": 1}')
+            old = pipeline.source_fingerprint()
+            manifest.write_text('{"version": 1, "revoked_paths": ["concepts/a.md"]}')
+            self.assertNotEqual(old, pipeline.source_fingerprint())
+
+    def test_publication_order_requires_policy_version_reconcile(self):
+        candidate = Path('/tmp/final-publication-candidate')
+        names = [name for name, _ in pipeline.steps(candidate)]
+        self.assertEqual(
+            names[-4:],
+            [
+                'Validate:all',
+                'Publish:policy-candidate',
+                'Publish:version-candidate',
+                'Publish:reconcile-candidates',
+            ],
+        )
+
+        version_command = dict(pipeline.steps(candidate))['Publish:version-candidate']
+        self.assertNotIn('--strict', version_command)
 
     def test_kinetic_no_notify_keeps_rule_application(self):
         with patch.object(kinetic, 'rule4_slm_llm_classification', return_value=[{'slug': 'fixture', 'aiModelClass': 'SLM'}]) as r4, \

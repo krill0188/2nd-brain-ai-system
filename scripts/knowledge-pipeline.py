@@ -28,7 +28,11 @@ def source_fingerprint() -> str:
             if p.is_file() and not p.is_symlink() and p.suffix in ('.md', '.json'):
                 h.update(str(p.relative_to(ROOT)).encode())
                 h.update(p.read_bytes())
-    for name in ('.ua/news-feed.json', 'publication/policy.json'):
+    for name in (
+        '.ua/news-feed.json',
+        'publication/policy.json',
+        'publication/publication-manifest.json',
+    ):
         p = ROOT / name
         if p.exists():
             h.update(name.encode())
@@ -36,8 +40,17 @@ def source_fingerprint() -> str:
     return h.hexdigest()
 
 
+def publication_paths(candidate: Path) -> tuple[Path, Path, Path]:
+    return (
+        candidate.with_name(candidate.name + '.policy'),
+        candidate.with_name(candidate.name + '.version'),
+        candidate.with_name(candidate.name + '.version-report.json'),
+    )
+
+
 def steps(candidate: Path) -> list[tuple[str, list[str]]]:
     py = str(ROOT / '.venv/bin/python')
+    policy_candidate, version_candidate, version_report = publication_paths(candidate)
     return [
         ('Generate:fetch', ['bash', str(ROOT / 'scripts/fetch-inbox.sh')]),
         ('Generate:ingest', ['bash', str(ROOT / 'scripts/daily-ingest-claude.sh')]),
@@ -48,7 +61,34 @@ def steps(candidate: Path) -> list[tuple[str, list[str]]]:
         ('Generate:discovery', ['bash', str(ROOT / 'scripts/extract-knowledge-graph.sh'), '--limit', '15']),
         ('Generate:canonical-graph', ['bash', str(ROOT / 'scripts/update-graph.sh')]),
         ('Validate:all', ['python3', str(ROOT / 'scripts/publication-preflight.py')]),
-        ('Publish:isolated-candidate', [py, str(ROOT / 'scripts/publication-gate.py'), '--stage', str(candidate)]),
+        ('Publish:policy-candidate', [
+            py,
+            str(ROOT / 'scripts/publication-gate.py'),
+            '--stage',
+            str(policy_candidate),
+        ]),
+        ('Publish:version-candidate', [
+            py,
+            str(ROOT / 'scripts/build-publication-snapshot.py'),
+            '--source-root',
+            str(ROOT),
+            '--baseline-repo',
+            str(WEB),
+            '--output',
+            str(version_candidate),
+            '--report',
+            str(version_report),
+        ]),
+        ('Publish:reconcile-candidates', [
+            py,
+            str(ROOT / 'scripts/reconcile-publication-candidates.py'),
+            '--policy-candidate',
+            str(policy_candidate),
+            '--version-candidate',
+            str(version_candidate),
+            '--output',
+            str(candidate),
+        ]),
     ]
 
 
@@ -92,6 +132,11 @@ def main() -> int:
     ):
         print('BLOCKED: provide a new isolated --candidate directory')
         return 2
+
+    policy_candidate, version_candidate, version_report = publication_paths(candidate)
+    if any(path.exists() for path in (policy_candidate, version_candidate, version_report)):
+        print('BLOCKED: publication intermediate path already exists')
+        return 2
     lock_path = ROOT / '.ua/knowledge-pipeline.lock'
     lock_path.parent.mkdir(exist_ok=True)
     with lock_path.open('a') as lock:
@@ -106,17 +151,24 @@ def main() -> int:
             results = [] if args.validate_existing else run_steps(plan[:5])
             before = source_fingerprint()
             if all(r['exit_code'] == 0 for r in results):
-                results += run_steps(plan[-2:-1] if args.validate_existing else plan[5:-1])
+                results += run_steps([plan[8]] if args.validate_existing else plan[5:9])
             if source_fingerprint() != before:
                 results.append({'step': 'Validate:source-stability', 'exit_code': 2})
             if all(r['exit_code'] == 0 for r in results):
-                results += run_steps(plan[-1:])
+                results += run_steps(plan[9:])
                 if source_fingerprint() != before:
                     results.append({'step': 'Validate:source-stability-after-stage', 'exit_code': 2})
                     if candidate.exists():
                         shutil.rmtree(candidate)
         except (OSError, subprocess.TimeoutExpired):
             results.append({'step': 'execution-error', 'exit_code': 124})
+        finally:
+            for path in (policy_candidate, version_candidate):
+                if path.exists():
+                    shutil.rmtree(path)
+            if version_report.exists():
+                version_report.unlink()
+
         report = {'at': datetime.now(timezone.utc).isoformat(), 'steps': results,
                   'mode': 'validate-existing' if args.validate_existing else 'generate-local',
                   'schedule_activation': 'NOT PERFORMED',
