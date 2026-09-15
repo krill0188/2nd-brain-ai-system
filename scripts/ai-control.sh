@@ -271,7 +271,16 @@ shift || true
 case "$COMMAND" in
   status)      cmd_status "${@}" ;;
   ping)        cmd_ping ;;
-  run-ingest)  cmd_run_ingest ;;
+  run-ingest)
+    # 자동화 체인(fetch/ingest/self-update/kinetic/discovery/graph)과 같은 lock을
+    # 공유한다 — 수동 실행이 자동 스케줄과 겹치면 exec로 전체를 락 래퍼에 넘겨
+    # 자식이 부모 락을 물려받게 한다(교착 방지 위해 재진입 시엔 바로 통과).
+    if [[ "${PIPELINE_LOCK_HELD:-}" != "1" ]]; then
+      export PIPELINE_LOCK_HELD=1
+      exec python3 "$HOME/2nd/scripts/with-pipeline-lock.py" -- "$0" run-ingest
+    fi
+    cmd_run_ingest
+    ;;
   run-lint)    cmd_run_lint ;;
   run-summary) cmd_run_summary ;;
   run-gap)     cmd_run_gap "${@}" ;;
