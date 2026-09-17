@@ -1,4 +1,12 @@
 #!/usr/bin/env bash
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+LOCK_WRAPPER="$SCRIPT_DIR/with-pipeline-lock.py"
+
+# Direct execution acquires the shared writer lock.
+# Nested pipeline execution reuses the inherited lock descriptor.
+if ! python3 "$LOCK_WRAPPER" --check-inherited; then
+  exec python3 "$LOCK_WRAPPER" -- bash "$0" "$@"
+fi
 # 2nd-daily-ingest — Claude Pro 구독(claude -p) 기반 실행.
 # OpenRouter(hermes 자체 에이전트 실행) 크레딧 소진 대응으로 2026-09-02 전환.
 # 이전 동작(custom/llm-wiki-ains 스킬, hermes cron b1a360fce35d)과 동일한 작업을

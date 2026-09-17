@@ -6,7 +6,6 @@ Install schedule only after retiring overlapping legacy calendar triggers togeth
 """
 from __future__ import annotations
 import argparse
-import fcntl
 import hashlib
 import json
 import os
@@ -14,6 +13,8 @@ import re
 import shutil
 import subprocess
 import tempfile
+import uuid
+from pipeline_lock import shared_lock, inherited_lock_fd
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -92,13 +93,77 @@ def steps(candidate: Path) -> list[tuple[str, list[str]]]:
     ]
 
 
+def select_steps(plan, names):
+    wanted = set(names)
+    selected = [item for item in plan if item[0] in wanted]
+    found = {name for name, _ in selected}
+    missing = wanted - found
+    if missing:
+        raise ValueError(f'missing pipeline steps: {sorted(missing)}')
+    return selected
+
+
 def run_steps(items, execute=subprocess.run) -> list[dict]:
     results = []
     for name, command in items:
-        result = execute(command, cwd=WEB, capture_output=True, timeout=7200)
-        results.append({'step': name, 'exit_code': result.returncode})
+        fd = inherited_lock_fd()
+        result = execute(
+            command,
+            cwd=WEB,
+            capture_output=True,
+            timeout=7200,
+            pass_fds=(() if fd is None else (fd,)),
+        )
+
+        record = {'step': name, 'exit_code': result.returncode}
+
+        if result.returncode:
+            # Persist only fixed diagnostics; never source/provider output.
+            output = (
+                (getattr(result, 'stdout', b'') or b'')
+                + (getattr(result, 'stderr', b'') or b'')
+            )
+            if isinstance(output, bytes):
+                output = output.decode('utf-8', errors='replace')
+
+            known = (
+                'MODEL_LOAD_FAILED',
+                'MODEL_CACHE_UNAVAILABLE',
+                'MODEL_COMPUTE_FAILED',
+                'INPUT_CHANGED',
+                'INVALID_VECTORS',
+                'MISSING_VECTORS',
+            )
+            record['diagnostic'] = next(
+                (code for code in known if code in output),
+                'STEP_FAILED',
+            )
+
+            if name == 'Validate:all':
+                try:
+                    validation = json.loads(output)
+                    allowed = {
+                        'canonical-lint',
+                        'kinetic-static-check',
+                        'embeddings-freshness',
+                        'graph-coverage',
+                        'publication-policy',
+                    }
+                    failed = [
+                        row['step']
+                        for row in validation['steps']
+                        if row['step'] in allowed and row['exit_code'] != 0
+                    ]
+                    record['failed_checks'] = failed
+                    if failed == ['publication-policy']:
+                        record['diagnostic'] = 'PUBLICATION_REVIEW_REQUIRED'
+                except (ValueError, KeyError, TypeError):
+                    pass
+
+        results.append(record)
         if result.returncode:
             break
+
     return results
 
 
@@ -106,13 +171,30 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--run-local', action='store_true')
     parser.add_argument('--validate-existing', action='store_true', help='Validate current source and stage only; no generation or messages')
-    parser.add_argument('--candidate', type=Path)
+    parser.add_argument('--refresh-derived', action='store_true', help='Refresh derived artifacts from current source; skip fetch/ingest/self-update and notifications')
+
+    target = parser.add_mutually_exclusive_group()
+    target.add_argument('--candidate', type=Path)
+    target.add_argument('--candidate-root', type=Path, help='Create a unique child for each run; retain previous final candidates')
+
     args = parser.parse_args()
-    candidate = args.candidate or Path('/tmp/dronewiki-reviewed-candidate')
+
+    candidate = args.candidate or (
+        args.candidate_root
+        / (
+            datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ-')
+            + uuid.uuid4().hex[:12]
+        )
+        if args.candidate_root
+        else Path('/tmp/dronewiki-reviewed-candidate')
+    )
+
     plan = steps(candidate)
-    if args.run_local and args.validate_existing:
-        parser.error('choose generation or existing-snapshot validation')
-    if not args.run_local and not args.validate_existing:
+
+    if sum((args.run_local, args.validate_existing, args.refresh_derived)) > 1:
+        parser.error('choose one execution mode')
+
+    if not args.run_local and not args.validate_existing and not args.refresh_derived:
         print(json.dumps({'steps': [name for name, _ in plan], 'Deploy': 'manual approval required',
                           'Report': 'local .ua/pipeline-result.json; no messages',
                           'activation': 'NOT ACTIVE; replace overlapping launchd triggers before running'}, indent=2))
@@ -126,8 +208,9 @@ def main() -> int:
         if state.returncode == 0 and (not args.validate_existing or re.search(r'"PID"\s*=\s*\d+', state.stdout)):
             print('BLOCKED: overlapping legacy launchd jobs remain loaded; schedule migration required')
             return 2
-    if not args.candidate or candidate.exists() or any(
-        candidate.resolve().is_relative_to(p.resolve()) or p.resolve().is_relative_to(candidate.resolve())
+    if not (args.candidate or args.candidate_root) or candidate.exists() or any(
+        candidate.resolve().is_relative_to(p.resolve())
+        or p.resolve().is_relative_to(candidate.resolve())
         for p in (ROOT, WEB)
     ):
         print('BLOCKED: provide a new isolated --candidate directory')
@@ -137,27 +220,70 @@ def main() -> int:
     if any(path.exists() for path in (policy_candidate, version_candidate, version_report)):
         print('BLOCKED: publication intermediate path already exists')
         return 2
-    lock_path = ROOT / '.ua/knowledge-pipeline.lock'
-    lock_path.parent.mkdir(exist_ok=True)
-    with lock_path.open('a') as lock:
-        try:
-            fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
-        except BlockingIOError:
-            print('BLOCKED: another pipeline is running')
-            return 2
+    (ROOT / '.ua').mkdir(exist_ok=True)
+    with shared_lock():
         results = []
         try:
-            # Ingest may change source; freeze its fingerprint after lint.
-            results = [] if args.validate_existing else run_steps(plan[:5])
+            # Freeze publication-relevant source after the initial canonical lint.
+            if args.validate_existing:
+                initial = []
+            elif args.refresh_derived:
+                initial = select_steps(
+                    plan,
+                    ['Validate:canonical-lint-before-generation'],
+                )
+            else:
+                initial = select_steps(
+                    plan,
+                    [
+                        'Generate:fetch',
+                        'Generate:ingest',
+                        'Generate:self-update-canonical',
+                        'Generate:kinetic-apply',
+                        'Validate:canonical-lint-before-generation',
+                    ],
+                )
+
+            results = run_steps(initial) if initial else []
             before = source_fingerprint()
+
             if all(r['exit_code'] == 0 for r in results):
-                results += run_steps([plan[8]] if args.validate_existing else plan[5:9])
+                if args.validate_existing:
+                    middle = select_steps(plan, ['Validate:all'])
+                else:
+                    middle = select_steps(
+                        plan,
+                        [
+                            'Generate:embeddings',
+                            'Generate:discovery',
+                            'Generate:canonical-graph',
+                            'Validate:all',
+                        ],
+                    )
+                results += run_steps(middle)
+
             if source_fingerprint() != before:
-                results.append({'step': 'Validate:source-stability', 'exit_code': 2})
+                results.append({
+                    'step': 'Validate:source-stability',
+                    'exit_code': 2,
+                })
+
             if all(r['exit_code'] == 0 for r in results):
-                results += run_steps(plan[9:])
+                publication = select_steps(
+                    plan,
+                    [
+                        'Publish:policy-candidate',
+                        'Publish:version-candidate',
+                        'Publish:reconcile-candidates',
+                    ],
+                )
+                results += run_steps(publication)
+
                 if source_fingerprint() != before:
-                    results.append({'step': 'Validate:source-stability-after-stage', 'exit_code': 2})
+                    results.append({
+                        'step': 'Validate:source-stability-after-stage',
+                        'exit_code': 2,
+                    })
                     if candidate.exists():
                         shutil.rmtree(candidate)
         except (OSError, subprocess.TimeoutExpired):
@@ -186,4 +312,8 @@ def main() -> int:
 
 
 if __name__ == '__main__':
-    raise SystemExit(main())
+    try:
+        raise SystemExit(main())
+    except BlockingIOError:
+        print('BLOCKED: another knowledge writer is running')
+        raise SystemExit(75)

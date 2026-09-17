@@ -270,5 +270,12 @@ def main() -> int:
     return 0
 
 
-if __name__ == "__main__":
-    sys.exit(main())
+if __name__ == '__main__':
+    from pipeline_lock import run_locked
+
+    # --check is read-only; normal/no-notify modes may mutate knowledge.
+    raise SystemExit(
+        main()
+        if '--check' in sys.argv or '--help' in sys.argv
+        else run_locked(main)
+    )
