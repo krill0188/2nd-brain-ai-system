@@ -129,4 +129,12 @@ def main() -> int:
 
 
 if __name__ == '__main__':
-    raise SystemExit(main())
+    import sys
+    from pipeline_lock import run_locked
+
+    # Audit mode is read-only; only --write needs writer serialization.
+    raise SystemExit(
+        run_locked(main)
+        if '--write' in sys.argv
+        else main()
+    )
