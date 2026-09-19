@@ -36,7 +36,7 @@ def main() -> int:
     report = {'checked_at': datetime.now(timezone.utc).isoformat(), 'steps': results,
               'validation_passed': all(row['exit_code'] == 0 for row in results),
               'publish': 'NOT EXECUTED', 'deploy': 'APPROVAL REQUIRED',
-              'ordering': 'UNVERIFIED: legacy independent schedules remain loaded'}
+              'ordering': 'Validation checks run sequentially; generation ordering requires pipeline execution evidence'}
     args.report.parent.mkdir(parents=True, exist_ok=True)
     args.report.write_text(json.dumps(report, indent=2) + '\n')
     print(json.dumps(report))
