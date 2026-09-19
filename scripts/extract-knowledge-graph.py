@@ -132,6 +132,7 @@ def build_transformer():
         api_key=api_key,
         base_url="https://openrouter.ai/api/v1",
         temperature=0,
+        max_tokens=8000,
     )
     return LLMGraphTransformer(
         llm=llm,

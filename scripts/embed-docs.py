@@ -42,6 +42,7 @@ WIKI_ROOT = Path(__file__).resolve().parent.parent
 CANONICAL_DIRS = ["entities", "concepts", "comparisons", "queries"]
 RAW_DIRS = ["raw/articles", "raw/notebooklm", "raw/papers", "raw/transcripts", "raw/web", "raw/youtube"]
 MODEL_NAME = "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+MODEL_CACHE = WIKI_ROOT / '.ua/model-cache/fastembed'
 MAX_CHARS = 2000  # 문서당 임베딩 입력 상한 (청킹 없이 전체 문서를 대표하는 앞부분만 사용 — Phase 2 범위 결정)
 OUT_PATH = WIKI_ROOT / ".ua" / "embeddings.json"
 
@@ -259,16 +260,25 @@ def generate(args) -> int:
     if pending:
         try:
             from fastembed import TextEmbedding
-            model = TextEmbedding(MODEL_NAME, local_files_only=not args.allow_download, threads=2)
+            model = TextEmbedding(
+                MODEL_NAME,
+                cache_dir=str(MODEL_CACHE),
+                local_files_only=not args.allow_download,
+                threads=2,
+            )
+        except Exception:
+            print('ERROR: MODEL_LOAD_FAILED — 기존 임베딩 보존', file=sys.stderr)
+            return 1
+        try:
             for i, (doc, vector) in enumerate(zip(pending, model.embed([d['text'] for d in pending], batch_size=8))):
                 cached[document_fingerprint(doc)] = vector
                 if (i + 1) % 40 == 0:
                     print(f'계산 진행 {i + 1}/{len(pending)}', flush=True)
         except Exception:
-            print('ERROR: 모델 계산 실패 — 기존 임베딩 보존', file=sys.stderr)
+            print('ERROR: MODEL_COMPUTE_FAILED — 기존 임베딩 보존', file=sys.stderr)
             return 1
     if any(document_fingerprint(doc) not in cached for doc in all_docs):
-        print('ERROR: 누락된 벡터 — 기존 파일 보존', file=sys.stderr)
+        print('ERROR: MISSING_VECTORS — 기존 파일 보존', file=sys.stderr)
         return 1
     vectors = [cached[document_fingerprint(d)] for d in all_docs]
     print(f"임베딩 생성: {round(time.time() - t1, 1)}초 ({len(vectors)}건)")
@@ -276,11 +286,11 @@ def generate(args) -> int:
     if len(vectors) != len(all_docs) or any(
         len(v) != 768 or not all(math.isfinite(float(x)) for x in v) for v in vectors
     ):
-        print("ERROR: 임베딩 개수/차원/수치 검증 실패 — 기존 파일 보존", file=sys.stderr)
+        print("ERROR: INVALID_VECTORS — 기존 파일 보존", file=sys.stderr)
         return 1
     # Concurrent knowledge edits must not be stamped as a fresh snapshot.
     if input_fingerprint(collect_canonical() + collect_raw() + collect_news()) != fingerprint:
-        print("ERROR: 생성 중 입력 변경 — 기존 임베딩 보존", file=sys.stderr)
+        print("ERROR: INPUT_CHANGED — 기존 임베딩 보존", file=sys.stderr)
         return 1
 
     out_docs = []
