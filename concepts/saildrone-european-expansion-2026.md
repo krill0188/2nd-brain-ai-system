@@ -1,7 +1,7 @@
 ---
 title: "Saildrone European Expansion 2026"
 created: 2026-08-20
-updated: 2026-08-20
+updated: 2026-09-14
 type: concept
 tags: [ops-mission, maritime, saildrone, autonomy]
 sources: [raw/articles/saildrone-european-expansion-2026-08.md]
@@ -25,6 +25,8 @@ Saildrone 유럽 대규모 확장. 코펜하겐 EU 본부 설립 및 네덜란�
 
 ## 관련 개념
 
+
+- [[drone-news-2026-08-20]] — 동일 유럽 확장 소식을 포함한 뉴스 종합
 - [[ops-mission]] — 드론 운용/미션 도메인 개요
 - [[maritime-autonomy]] — 해상 자율 시스템
 

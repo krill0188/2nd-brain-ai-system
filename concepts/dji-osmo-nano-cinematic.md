@@ -36,3 +36,4 @@ DJI Osmo Nano는 초소형 폼팩터로 시네마틱한 영상 촬영이 가능�
 
 ## 📰 최근 관련 소식
 - [DJI] The Angle That Makes Fingerboarding Look Cinematic | DJI Osmo Nano (youtube.com, 2026-08-16) — https://www.youtube.com/watch?v=p3ssKN2G5YQ
+- [DJI] POV: The Mouse Sees This | DJI Osmo Nano (youtube.com, 2026-09-16) — https://www.youtube.com/watch?v=tgg6LpcKxs0

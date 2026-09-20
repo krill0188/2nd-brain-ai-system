@@ -1,7 +1,7 @@
 ---
 title: "Avidrone"
 created: 2026-09-02
-updated: 2026-09-02
+updated: 2026-09-14
 type: entity
 tags: [drone, hardware, company, heavy-lift, canada]
 sources: [inbox/fetch-2026-09-02-rss-dronelife.md]
@@ -23,6 +23,8 @@ domain: hardware
 
 ## 관련 개념
 
+
+- [[ideaforge-yeti-heavy-lift]] — 다른 헤비리프트 UAV 사례
 - [[drone-hw]] — 드론 하드웨어 개요
 - [[heavy-lift-drone]] — 헤비리프트 드론
 

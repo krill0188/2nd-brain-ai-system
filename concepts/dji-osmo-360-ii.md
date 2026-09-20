@@ -34,3 +34,7 @@ DJI Osmo 360 II는 DJI의 차세대 360° 액션 카메라로, 8K/60fps 파노�
 - [[dji]] — DJI 기업 페이지
 - [[dji-osmo-action-6]] — Osmo Action 6
 - [[drone-payload-systems]] — 드론 페이로드 시스템
+
+## 📰 최근 관련 소식
+- [DJI] Build the Shot Before the Ride | DJI Osmo 360 II (youtube.com, 2026-09-05) — https://www.youtube.com/watch?v=ws6alwQJ1hA
+- [DJI] Can You Outrun the Camera?｜Avata 360 (youtube.com, 2026-09-10) — https://www.youtube.com/watch?v=lT0RvXcvUws

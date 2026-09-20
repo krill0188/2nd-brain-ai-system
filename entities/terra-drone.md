@@ -1,11 +1,11 @@
 ---
 title: Terra Drone
 created: 2026-07-30
-updated: 2026-08-05
+updated: 2026-09-15
 type: entity
 tags: [drone, drone-hw, company]
 domain: hardware
-sources: [inbox/fetch-2026-07-29-rss-dronelife.md, inbox/fetch-2026-07-29-rss-suasnews.md, inbox/fetch-2026-08-05-rss-suasnews.md]
+sources: [inbox/fetch-2026-07-29-rss-dronelife.md, inbox/fetch-2026-07-29-rss-suasnews.md, inbox/fetch-2026-08-05-rss-suasnews.md, inbox/fetch-2026-09-15-rss-suasnews.md]
 confidence: high
 contested: false
 contradictions: []
@@ -35,6 +35,11 @@ contradictions: []
 - Chevron, Shell과의 DeepStar 컨소시엄 협력
 - **Signal Recovery Feature**: 실내 환경에서 신호 복구 기능 개발
 - 컨테이너 및 좁은 공간 검사에 최적화
+
+### 2026년 9월 국산 비행 컨트롤러 "Terra DFC"
+
+- 방위용 드론용 비행 컨트롤러 "Terra DFC"를 사내 자체 개발.
+- 일본 방위성의 "범용 방위 드론(General-Purpose Defense Drone)" 탑재를 전제로 함.^[inbox/fetch-2026-09-15-rss-suasnews.md]
 
 ## 관련 항목
 

@@ -1,7 +1,7 @@
 ---
 title: Terra Drone DEFTECH Partnership
 created: 2026-09-01
-updated: 2026-09-01
+updated: 2026-09-14
 type: concept
 tags: [drone, company, defense, c-uas, terra-drone]
 sources: [inbox/fetch-2026-09-01-rss-dronelife.md]
@@ -35,6 +35,8 @@ Terra Drone은 일본 기업으로서 방산 시장에 적극 진출하고 있�
 
 ## 관련 개념
 
+
+- [[dfend-counter-drone-worldcup]] — 다른 C-UAS 시스템의 운용 사례
 - [[terra-drone]] — Terra Drone 기업 페이지
 - [[c-uas]] — 대드론 시스템
 - [[drone-defense]] — 드론 방어

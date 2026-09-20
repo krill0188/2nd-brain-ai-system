@@ -33,3 +33,4 @@ Betaflight 2026.6에 FC Alignment Wizard가 신규 추가됐다. FC 보드를 �
 
 ## 📰 최근 관련 소식
 - [Joshua Bardwell] Betaflight FINALLY added this feature! FC Alignment Wizard in BF 2026.6 (youtube.com, 2026-09-02) — https://www.youtube.com/watch?v=mHreu_l1FwY
+- [멈춤보단 천천히라도] 러스트 Box — 자기를 품는 타입의 크기 문제 | 러스트 입문 #11 (youtube.com, 2026-09-12) — https://www.youtube.com/watch?v=pwRx0xLUp0c

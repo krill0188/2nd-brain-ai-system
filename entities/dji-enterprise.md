@@ -33,3 +33,4 @@ DJI의 산업/기업용 드론 사업부. Matrice 기체, Dock 원격 자동화 
 
 ## 📰 최근 관련 소식
 - [DJI] Level Cleared, LiDAR Included | DJI Lito X1 (youtube.com, 2026-08-19) — https://www.youtube.com/watch?v=F2JQLufbhXE
+- [DJI] Orbit with More Confidence | DJI Lito X1 (youtube.com, 2026-09-09) — https://www.youtube.com/watch?v=lBP1rSdwsa4

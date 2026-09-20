@@ -44,3 +44,4 @@ ArduPilot Plane은 다음과 같은 고급 기능을 제공한다:
 
 ## 📰 최근 관련 소식
 - 드론사업 팀 프로젝트 매니저 — 둠둠 (www.wanted.co.kr, 2026-08-07) — https://www.wanted.co.kr/wd/379169
+- 이륙 하자마자 추락…K드론 또 망신 당했다 (joongang.co.kr, Wed, 16 Se) — https://news.google.com/rss/articles/CBMiVkFVX3lxTE82UGhUdTdHWElLcFNfWUUyM2dLcDJNRlNoV05kSHJaMFVhX3J3ejR6M1dRNURfWXp3dk1jS2JlTjN2LWpkMV8yOTV2aGp2WkJWN1pPcC13?oc=5

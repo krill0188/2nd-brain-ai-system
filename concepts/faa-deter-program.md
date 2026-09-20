@@ -29,3 +29,4 @@ domain: regulations
 
 ## 📰 최근 관련 소식
 - Airworthiness Directives; The Boeing Company Airplanes (federalregister.gov, 2026-08-13) — https://www.federalregister.gov/documents/2026/08/13/2026-16504/airworthiness-directives-the-boeing-company-airplanes
+- DRONERESPONDERS Honors The Texas Program Behind 100,000 Sorties (DroneXL, Tue, 01 Se) — https://news.google.com/rss/articles/CBMiiwFBVV95cUxPSmE0Wm5aYmtJQ0Z5NjBkelZ6bm9TYXN3cWJvVWprSW1nY05BQjZZX3pielZCUE45QjY3SHZ0dS1fM3NjVW9QVjAzdEctakVoV0F1alpyN2RBUXM2ekZzOTEydldLbEZCUmRSTWQtOXNBaEVsM0JpMElxaVBNcng3WmtoN0VXdzYxdjRZ?oc=5

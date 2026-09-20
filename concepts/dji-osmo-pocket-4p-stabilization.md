@@ -33,3 +33,5 @@ DJI Osmo Pocket 4P는 3축 기계식 짐벌을 탑재하여 표면이 움직이�
 
 ## 📰 최근 관련 소식
 - [DJI] Cutest Stabilization Test You'll See Today | DJI Osmo Pocket 4P (youtube.com, 2026-08-13) — https://www.youtube.com/watch?v=hd-2MTe_M2w
+- [DJI] Portrait Camera Moves Made Easier | DJI Osmo Pocket 4P (youtube.com, 2026-09-11) — https://www.youtube.com/watch?v=lS4JzIOa5HU
+- [DJI] One city, two ways to see it | DJI Osmo Pocket 4P (youtube.com, 2026-09-15) — https://www.youtube.com/watch?v=_4KqLMpM-ME

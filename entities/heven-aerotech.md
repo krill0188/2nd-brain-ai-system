@@ -31,3 +31,6 @@ contradictions: []
 ## 관련 페이지
 
 드론 배터리 및 전원 시스템 전반은 [[drone-power-battery]]를 참조한다.
+
+## 📰 최근 관련 소식
+- [Painless360] FNIRSI HS-03 Cordless Soldering Iron (18650 Powered) (youtube.com, 2026-09-13) — https://www.youtube.com/watch?v=axGZGOnF_Qk

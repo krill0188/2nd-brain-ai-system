@@ -173,3 +173,4 @@ SMBus/I2C 통신을 통한 지능형 배터리 관리.
 ## 📰 최근 관련 소식
 - How to Choose FPV Drone Motors – Considerations and Best Motor Recommendations (oscarliang.com, Thu, 13 Au) — https://oscarliang.com/motors/
 - How to Fix a Broken LiPo Battery Balance Connector Safely (oscarliang.com, Sat, 22 Au) — https://oscarliang.com/fix-balance-plug-lipo-replace/
+- [Painless360] ToolkitRC B50 Battery Warming Bag, a perfect accessory for winter flying (youtube.com, 2026-09-09) — https://www.youtube.com/watch?v=HkTC_oOoIb4

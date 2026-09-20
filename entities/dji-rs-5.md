@@ -32,3 +32,6 @@ DJI의 프로페셔널 짐벌 시스템. 2026년 7월 31일 발표.
 
 - [[dji-osmo-pocket-4]] — DJI Osmo Pocket 4P
 - [[drone-payload-systems]] — 드론 페이로드 및 짐벌 시스템
+
+## 📰 최근 관련 소식
+- [DJI] Who else got locked onto this setup? 🔥｜DJI SDR Transmission 2 & DJI RS 5 (youtube.com, 2026-09-18) — https://www.youtube.com/watch?v=ZINDKjr1fT4

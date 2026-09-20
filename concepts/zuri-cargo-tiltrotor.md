@@ -1,7 +1,7 @@
 ---
 title: Zuri Uncrewed Cargo Tiltrotor
 created: 2026-09-01
-updated: 2026-09-01
+updated: 2026-09-14
 type: concept
 tags: [drone, hardware, vtol, cargo, zuri]
 sources: [inbox/fetch-2026-09-01-rss-dronelife.md]
@@ -33,6 +33,8 @@ contradictions: []
 
 ## 관련 개념
 
+
+- [[drone-payload-systems]] — 화물 페이로드 시스템 개요
 - [[vtol]] — 수직이착륙 기체
 - [[cargo-drone]] — 화물 드론
 - [[drone-hw]] — 드론 하드웨어 도메인

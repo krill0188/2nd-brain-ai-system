@@ -42,3 +42,4 @@ UAV 이미지를 위한 분할-정복 탐지기 — 다양한 스케일과 조�
 - MBF Group develops IRYDA+ X1, launches SPACE Z1 and prepares the next stage of financing for advanced technologies (www.suasnews.com, Wed, 12 Au) — https://www.suasnews.com/2026/08/mbf-group-develops-iryda-x1-launches-space-z1-and-prepares-the-next-stage-of-financing-for-advanced-technologies/
 - [freeCodeCamp.org] Learn Data Structures and Algorithms Visually – Crash Course (youtube.com, 2026-08-20) — https://www.youtube.com/watch?v=RpLnQnurpLY
 - [Painless360] New tool! Customise your radio and edit EdgeTX themes easily! (youtube.com, 2026-08-21) — https://www.youtube.com/watch?v=A-4OwLXs6xg
+- [Painless360] Walksnail ASCENT: Simple Update and Binding Tutorial (youtube.com, 2026-09-06) — https://www.youtube.com/watch?v=MOIE0yypHe0

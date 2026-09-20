@@ -1,7 +1,7 @@
 ---
 title: GA-ASI Fujitsu Japan UAS MOU
 created: 2026-09-01
-updated: 2026-09-01
+updated: 2026-09-14
 type: concept
 tags: [drone, company, defense, japan, ga-asi, fujitsu]
 sources: [inbox/fetch-2026-09-01-rss-suasnews.md]
@@ -31,6 +31,9 @@ General Atomics Aeronautical Systems, Inc.(GA-ASI)와 Fujitsu Limited가 일본 
 
 ## 관련 개념
 
+
+- [[ops-mission]] — UAS 운용 분야 개요
+- [[ground-control-station]] — UAS 운용 구성요소인 지상통제소 개요
 - [[uas]] — 무인항공체 시스템
 - [[defense-drone]] — 방산 드론
 - [[japan-drone-market]] — 일본 드론 시장

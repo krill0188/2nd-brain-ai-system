@@ -73,3 +73,6 @@ domain: flight-control
 - [UAV Coach] Is It Still Worth Starting a Drone Business Today? (youtube.com, 2026-08-20) — https://www.youtube.com/watch?v=Am5-N5FF26A
 - [Painless360] Do I really need a compass on my flight controller? (youtube.com, 2026-08-25) — https://www.youtube.com/watch?v=pOs855esffs
 - [Joshua Bardwell] Build a $125 Cheap AliExpress 7" Drone with me (youtube.com, 2026-09-04) — https://www.youtube.com/watch?v=vuYEK0POxi0
+- [UAV Coach] I Use These 4 Apps on EVERY Drone Flight (youtube.com, 2026-09-11) — https://www.youtube.com/watch?v=Y9bZebPQRvI
+- [Joshua Bardwell] Why I paid $60 for this AMAZING cable (I'm stupid) (youtube.com, 2026-09-14) — https://www.youtube.com/watch?v=kagyXl1lvtA
+- One year in, America’s counter-drone task force still has ‘a ton of work to do’ (DefenseScoop, Mon, 24 Au) — https://news.google.com/rss/articles/CBMisgFBVV95cUxORThPZklYSTRJS2hZZkF6UXNsRnhOMV9EVWIyLW1vQ29tTEhSVzBKX2ZScHVqbWxlVzRWR3Rhdmh2WkExaEVBTEN3Y0hKaXZhSDFTZjRTbHdicnNvYV9XbURwRGJvODEzMWEzWTFHMUFnemNienFLRHktYWVfRTlRU01PTjVFZmRMdUNuMDFNWl9GbzNob0JPU2M5eFpwS09kcUpLTjdTUEhFMmhURjFUeXpB?oc=5

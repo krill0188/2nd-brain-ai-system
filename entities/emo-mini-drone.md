@@ -1,7 +1,7 @@
 ---
 title: "EMO Mini 드론"
 created: 2026-09-02
-updated: 2026-09-02
+updated: 2026-09-14
 type: entity
 tags: [drone, hardware, light-show, 249g]
 sources: [inbox/fetch-2026-09-02-rss-dronedj.md]
@@ -24,6 +24,8 @@ High Great Innovation이 개발한 249g급 대형 공중 라이트쇼 드론. �
 
 ## 관련 개념
 
+
+- [[swarm-coordination]] — 다중 기체 편대 비행 협업 개요
 - [[drone-hw]] — 드론 하드웨어 개요
 - [[drone-light-show-uatg]] — 드론 라이트쇼 UATG 프레임워크
 

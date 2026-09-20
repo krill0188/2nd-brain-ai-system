@@ -30,3 +30,6 @@ GNSS가 차단된 도심 환경에서 무인지상차량(UGV)의 정확한 위�
 - [[visual-positioning-odometry]] — Visual/Visual-Inertial Odometry 기반 GPS 미가용 위치 추정
 - [[gps-uav-imu]] — GPS 미수신 환경 UAV/UGV 위치추정 기법
 - [[gnss-denied-remote-autonomy]] — GNSS 차단 환경 원격 자율
+
+## 📰 최근 관련 소식
+- [칼럼/원천기술 IP가 국력③] K-방산과 미래 모빌리티의 핵심, 원천 IP 기반 생태계 구축 (특허뉴스, Wed, 09 Se) — https://news.google.com/rss/articles/CBMiSEFVX3lxTE9ZRENJT0VDTHNCZFlGWkdJbGdOQmVTWG9qazB3N3FYay1jYThMYVVXNXR2aWoxZHhzbGt4aTUxblQxQ3VDMDRrUQ?oc=5
