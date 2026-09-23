@@ -1,10 +1,10 @@
 ---
 title: 드론 규제 동향 2026-07
 created: 2026-07-29
-updated: 2026-08-06
+updated: 2026-09-24
 type: concept
 tags: [drone, regulations]
-sources: [inbox/fetch-2026-07-29-rss-suasnews-regulation.md]
+sources: [raw/articles/fetch-2026-07-29-rss-suasnews-regulation.md]
 confidence: medium
 contested: false
 contradictions: []

@@ -1,10 +1,10 @@
 ---
 title: 드론 운용 및 미션 동향 2026-07
 created: 2026-07-29
-updated: 2026-08-06
+updated: 2026-09-24
 type: concept
 tags: [drone, ops-mission]
-sources: [inbox/fetch-2026-07-29-rss-dronelife.md, inbox/fetch-2026-07-29-rss-suasnews.md]
+sources: [raw/articles/fetch-2026-07-29-rss-dronelife.md, raw/articles/fetch-2026-07-29-rss-suasnews.md]
 confidence: medium
 contested: false
 contradictions: []

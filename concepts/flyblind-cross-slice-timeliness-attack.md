@@ -1,11 +1,11 @@
 ---
 title: "FlyBlind: 5G 슬라이스 간 적시성 공격(Silent State Staleness)"
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-24
 type: concept
 domain: comms-protocol
 tags: [drone, datalink]
-sources: [raw/papers/datalink/flyblind-cross-slice-timeliness-attacks-on-uav-situational-awareness-over-5g.md, inbox/processed/fetch-2026-09-19-arxiv-flyblind-cross-slice-timeliness-attacks-on-uav-situational-a.md]
+sources: [raw/papers/datalink/flyblind-cross-slice-timeliness-attacks-on-uav-situational-awareness-over-5g.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -15,7 +15,7 @@ contradictions: []
 
 5G Standalone(SA) 망 위에서 BVLOS UAS가 C2와 영상 피드백을 **공유 User Plane**으로 함께 전송할 때,
 같은 망의 인접 슬라이스에 있는 **인가된 co-tenant**가 GCS의 상태 정보를 "낡게" 만들 수 있음을 보인
-Sonaglio 등(2026-08-27, arXiv 2608.27604)의 연구다.^[inbox/processed/fetch-2026-09-19-arxiv-flyblind-cross-slice-timeliness-attacks-on-uav-situational-a.md]
+Sonaglio 등(2026-08-27, arXiv 2608.27604)의 연구다.^[raw/papers/datalink/flyblind-cross-slice-timeliness-attacks-on-uav-situational-awareness-over-5g.md]
 
 ## 공격 개요
 

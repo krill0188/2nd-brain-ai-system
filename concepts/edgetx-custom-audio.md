@@ -1,10 +1,10 @@
 ---
 title: EdgeTX Custom Audio Setup
 created: 2026-08-03
-updated: 2026-08-05
+updated: 2026-09-24
 type: concept
 tags: [drone, hardware, fpv, transmitter, edgetx]
-sources: [inbox/fetch-2026-08-03-rss-oscarliang-fpv.md, inbox/fetch-2026-08-05-yt-edgetx-trainer-setup-using-a-cable-super-simple.md]
+sources: [raw/articles/fetch-2026-08-03-rss-oscarliang-fpv.md, inbox/fetch-2026-08-05-yt-edgetx-trainer-setup-using-a-cable-super-simple.md]
 confidence: high
 contested: false
 contradictions: []

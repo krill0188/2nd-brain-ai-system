@@ -1,10 +1,10 @@
 ---
 title: DJI Osmo Action 6
 created: 2026-08-03
-updated: 2026-08-16
+updated: 2026-09-24
 type: concept
 tags: [drone, hardware, camera, dji]
-sources: [inbox/fetch-2026-08-03-yt-f28-at-night-the-stars-come-through-dji-osmo-action-6.md, inbox/fetch-2026-08-06-yt-a-water-ring-slowed-all-the-way-down-osmo-action-6.md, inbox/fetch-2026-08-16-yt-six-ocean-scenes-one-sensor-holds-every-color-dji-osmo-actio.md]
+sources: [raw/youtube/fetch-2026-08-03-yt-f28-at-night-the-stars-come-through-dji-osmo-action-6.md, inbox/fetch-2026-08-06-yt-a-water-ring-slowed-all-the-way-down-osmo-action-6.md, inbox/fetch-2026-08-16-yt-six-ocean-scenes-one-sensor-holds-every-color-dji-osmo-actio.md]
 confidence: high
 contested: false
 contradictions: []
