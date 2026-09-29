@@ -1,11 +1,11 @@
 ---
 title: Terra Drone
 created: 2026-07-30
-updated: 2026-09-15
+updated: 2026-09-24
 type: entity
 tags: [drone, drone-hw, company]
 domain: hardware
-sources: [inbox/fetch-2026-07-29-rss-dronelife.md, inbox/fetch-2026-07-29-rss-suasnews.md, inbox/fetch-2026-08-05-rss-suasnews.md, inbox/fetch-2026-09-15-rss-suasnews.md]
+sources: [raw/articles/fetch-2026-07-29-rss-dronelife.md, raw/articles/fetch-2026-07-29-rss-suasnews.md, inbox/fetch-2026-08-05-rss-suasnews.md, inbox/fetch-2026-09-15-rss-suasnews.md]
 confidence: high
 contested: false
 contradictions: []

@@ -1,11 +1,11 @@
 ---
 title: "Swarm Modes — 군집 드론 운용 모드"
 created: 2026-07-28
-updated: 2026-07-28
+updated: 2026-09-24
 type: concept
 tags: [swarm, drone-ai, ai-agent]
 sources:
-  - inbox/processed/mastervault-swarm-architecture.md
+  - raw/articles/mastervault-swarm-architecture.md
 confidence: medium
 domain: ai-autonomy
 contested: false

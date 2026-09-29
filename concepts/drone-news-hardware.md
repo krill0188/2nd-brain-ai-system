@@ -1,10 +1,10 @@
 ---
 title: 드론 하드웨어 및 제조사 동향 2026-07
 created: 2026-07-29
-updated: 2026-08-06
+updated: 2026-09-24
 type: concept
 tags: [drone, drone-hw]
-sources: [inbox/fetch-2026-07-29-rss-dronedj.md]
+sources: [raw/articles/fetch-2026-07-29-rss-dronedj.md]
 confidence: medium
 contested: false
 contradictions: []

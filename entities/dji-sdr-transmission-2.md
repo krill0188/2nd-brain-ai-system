@@ -1,11 +1,11 @@
 ---
 title: "DJI SDR Transmission 2"
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-24
 type: entity
 domain: hardware
 tags: [drone, hardware]
-sources: [inbox/processed/fetch-2026-09-19-rss-dronedj.md, inbox/processed/fetch-2026-09-19-yt-who-else-got-locked-onto-this-setup-dji-sdr-transmission-2-d.md]
+sources: [raw/articles/fetch-2026-09-19-rss-dronedj.md, raw/youtube/fetch-2026-09-19-yt-who-else-got-locked-onto-this-setup-dji-sdr-transmission-2-d.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -15,13 +15,13 @@ contradictions: []
 
 DJI가 2026-09-18 정식 출시한 전문 촬영용 무선 영상 전송 시스템. 여러 카메라·모니터·무선 기기가
 한 촬영 현장에서 전파 자원을 경쟁하는 환경에서 깨끗한 카메라 피드를 전달하는 것이 목적이며, 4K HDR
-전송을 내세운다.^[inbox/processed/fetch-2026-09-19-rss-dronedj.md]
+전송을 내세운다.^[raw/articles/fetch-2026-09-19-rss-dronedj.md]
 
 ## 주요 특징
 
 - **대상**: 다수 무선 장비가 밀집한 전문 영상 제작 현장(필름 세트).
 - **워크플로**: DJI RS 5 짐벌과 조합해 DJI Ronin 앱으로 스마트폰 한 대에서 모니터링·제어·녹화를 수행하며,
-  고비트레이트·저지연 모니터링이 워크플로에 내장된다.^[inbox/processed/fetch-2026-09-19-yt-who-else-got-locked-onto-this-setup-dji-sdr-transmission-2-d.md]
+  고비트레이트·저지연 모니터링이 워크플로에 내장된다.^[raw/youtube/fetch-2026-09-19-yt-who-else-got-locked-onto-this-setup-dji-sdr-transmission-2-d.md]
 - FPV 촬영 셋업(MAXFPV 제작 영상)에서도 함께 사용되는 사례가 소개됐다.
 
 ## 한계

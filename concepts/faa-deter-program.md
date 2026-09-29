@@ -1,10 +1,10 @@
 ---
 title: FAA DETER Program
 created: 2026-08-03
-updated: 2026-08-03
+updated: 2026-09-24
 type: concept
 tags: [drone, regulations, faa, enforcement]
-sources: [inbox/fetch-2026-08-03-fedreg-faa-2026-07585.md]
+sources: [raw/articles/fetch-2026-08-03-fedreg-faa-2026-07585.md]
 confidence: high
 contested: false
 contradictions: []

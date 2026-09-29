@@ -1,10 +1,10 @@
 ---
 title: Betaflight
 created: 2026-07-29
-updated: 2026-09-17
+updated: 2026-09-24
 type: concept
 tags: [drone, drone-sw, flight-control]
-sources: [inbox/fetch-2026-07-29-betaflight.md, inbox/fetch-2026-08-03-betaflight.md, inbox/fetch-2026-09-17-betaflight.md]
+sources: [inbox/fetch-2026-07-29-betaflight.md, raw/articles/fetch-2026-08-03-betaflight.md, inbox/fetch-2026-09-17-betaflight.md]
 confidence: high
 contested: false
 contradictions: []

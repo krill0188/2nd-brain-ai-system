@@ -1,10 +1,10 @@
 ---
 title: FPV 드론 하드웨어 동향
 created: 2026-07-29
-updated: 2026-08-16
+updated: 2026-09-24
 type: concept
 tags: [drone, drone-hw]
-sources: [inbox/fetch-2026-07-29-rss-oscarliang-fpv.md, inbox/fetch-2026-08-15-rss-oscarliang-fpv.md]
+sources: [raw/articles/fetch-2026-07-29-rss-oscarliang-fpv.md, inbox/fetch-2026-08-15-rss-oscarliang-fpv.md]
 confidence: high
 contested: false
 contradictions: []

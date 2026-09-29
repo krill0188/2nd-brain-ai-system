@@ -1,7 +1,7 @@
 ---
 title: "FlyBlind: 5G 슬라이스 간 적시성 공격(Silent State Staleness)"
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-24
 type: concept
 domain: comms-protocol
 tags: [drone, datalink]
