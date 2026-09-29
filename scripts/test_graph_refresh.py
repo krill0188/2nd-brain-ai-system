@@ -60,17 +60,48 @@ class GraphTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
             a, b = root / 'a.md', root / 'b.md'
-            transformer = SimpleNamespace(convert_to_graph_documents=lambda docs: [] if docs[0].page_content == 'ok' else (_ for _ in ()).throw(RuntimeError('SECRET')))
+            def fake_extract(title, body):
+                if body == 'ok':
+                    return extract.GDoc([], [])
+                raise RuntimeError('SECRET')
             with patch.object(extract, 'WIKI_ROOT', root), \
                  patch.object(extract, 'STATE_PATH', root / 'state.json'), \
                  patch.object(extract, 'DISCOVERY_GRAPH_PATH', root / 'graph.json'), \
                  patch.object(extract, 'discover_files', return_value=[a, b]), \
                  patch.object(extract, 'pending_files', return_value=[(a, 'ok', 'good-hash'), (b, 'fail', 'bad-hash')]), \
-                 patch.object(extract, 'build_transformer', return_value=transformer), \
+                 patch.object(extract, 'extract_with_claude', side_effect=fake_extract), \
                  patch.object(extract, 'sync_to_neo4j', return_value=0), \
                  patch('sys.argv', ['extract', '--limit', '2']):
                 self.assertEqual(extract.main(), 1)
                 self.assertEqual(json.loads((root / 'state.json').read_text()), {'a.md': 'good-hash'})
+
+    def test_parse_graph_json_validates_schema(self):
+        text = 'noise ' + json.dumps({
+            'nodes': [{'id': 'PX4', 'type': 'Technology'}, {'id': 'X', 'type': 'Bogus'},
+                      {'id': 'MAVLink', 'type': 'Protocol'}],
+            'relationships': [{'source': 'PX4', 'target': 'MAVLink', 'type': 'uses'},
+                              {'source': 'PX4', 'target': 'X', 'type': 'USES'},
+                              {'source': 'PX4', 'target': 'MAVLink', 'type': 'bad type!'}]}) + ' tail'
+        gd = extract.parse_graph_json(text)
+        self.assertEqual([n.id for n in gd.nodes], ['PX4', 'MAVLink'])
+        self.assertEqual([(r.source.id, r.target.id, r.type) for r in gd.relationships], [('PX4', 'MAVLink', 'USES')])
+        with self.assertRaises(ValueError):
+            extract.parse_graph_json('no json here')
+
+    def test_failure_log_never_echoes_exception_text(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            a = root / 'a.md'
+            with patch.object(extract, 'WIKI_ROOT', root), \
+                 patch.object(extract, 'STATE_PATH', root / 'state.json'), \
+                 patch.object(extract, 'DISCOVERY_GRAPH_PATH', root / 'graph.json'), \
+                 patch.object(extract, 'discover_files', return_value=[a]), \
+                 patch.object(extract, 'pending_files', return_value=[(a, 'x', 'h')]), \
+                 patch.object(extract, 'extract_with_claude', side_effect=RuntimeError('SECRET-TOKEN')), \
+                 patch('sys.argv', ['extract']), \
+                 patch('sys.stderr') as err:
+                extract.main()
+            self.assertNotIn('SECRET', ''.join(str(c) for c in err.write.call_args_list))
 
 
 if __name__ == '__main__':

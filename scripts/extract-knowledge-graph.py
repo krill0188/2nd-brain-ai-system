@@ -30,7 +30,6 @@ import re
 import subprocess
 import sys
 import tempfile
-from dataclasses import dataclass, field
 from pathlib import Path
 
 WIKI_ROOT = Path(os.path.expanduser("~/2nd"))
@@ -124,26 +123,19 @@ def pending_files(files: list[Path], state: dict) -> list[tuple[Path, str, str]]
     return pending
 
 
-@dataclass
 class GNode:
-    id: str
-    type: str
-    properties: dict = field(default_factory=dict)
+    def __init__(self, id: str, type: str):
+        self.id, self.type, self.properties = id, type, {}
 
 
-@dataclass
 class GRel:
-    source: GNode
-    target: GNode
-    type: str
-    properties: dict = field(default_factory=dict)
+    def __init__(self, source: GNode, target: GNode, type: str):
+        self.source, self.target, self.type, self.properties = source, target, type, {}
 
 
-@dataclass
 class GDoc:
-    nodes: list
-    relationships: list
-    source: object = None
+    def __init__(self, nodes: list, relationships: list):
+        self.nodes, self.relationships, self.source = nodes, relationships, None
 
 
 SYSTEM_PROMPT = (
@@ -352,7 +344,8 @@ def main() -> int:
             gd_list = [extract_with_claude(*doc)]
         except Exception as exc:
             # 고정 진단 코드만 출력한다(모델 출력/문서 본문은 로그에 남기지 않는다).
-            code = str(exc) if isinstance(exc, RuntimeError) else type(exc).__name__
+            msg = str(exc)
+            code = msg if re.fullmatch(r"CLAUDE_EXIT_\d+|NO_JSON", msg) else type(exc).__name__
             print(f"  ⚠️  {rel} 추출 실패({code}) — 미처리 상태 유지", file=sys.stderr)
             failed_count += 1
             continue
