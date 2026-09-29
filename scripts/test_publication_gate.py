@@ -74,13 +74,23 @@ class PublicationTests(unittest.TestCase):
             gate.stage(self.src, self.dst, self.base / 'race', report)
         self.assertFalse((self.base / 'race').exists())
 
-    def test_derived_new_bytes_cannot_bypass_unapproved_source(self):
+    def test_derived_changes_keep_public_copy_and_never_hold(self):
         (self.src / '.ua').mkdir()
-        p = self.src / '.ua/embeddings.json'
-        p.write_text('{"docs": []}')
-        self.policy['approved_files']['.ua/embeddings.json'] = gate.digest(p)
-        (self.src / 'raw/new.md').write_text('unapproved')
-        self.assertIn('derived-source-review-required', [r['reason'] for r in self.audit()['files']])
+        (self.dst / '.ua').mkdir()
+        (self.dst / '.ua/embeddings.json').write_text('{"docs": ["public"]}')
+        (self.src / '.ua/embeddings.json').write_text('{"docs": ["fresh"]}')
+        (self.src / '.ua/news-feed.json').write_text('[]')
+        self.policy['baseline']['files']['.ua/embeddings.json'] = gate.digest(self.dst / '.ua/embeddings.json')
+        self.policy['approved_files']['.ua/embeddings.json'] = gate.digest(self.src / '.ua/embeddings.json')
+        report = self.audit()
+        rows = {r['path']: r for r in report['files']}
+        self.assertEqual(rows['.ua/embeddings.json']['action'], 'retain')
+        self.assertEqual(rows['.ua/embeddings.json']['sha256'], self.policy['baseline']['files']['.ua/embeddings.json'])
+        self.assertEqual(rows['.ua/news-feed.json']['action'], 'exclude')
+        self.assertTrue(report['ready'])
+        gate.stage(self.src, self.dst, self.base / 'candidate', report)
+        self.assertEqual((self.base / 'candidate/.ua/embeddings.json').read_text(), '{"docs": ["public"]}')
+        self.assertFalse((self.base / 'candidate/.ua/news-feed.json').exists())
 
     def test_pipeline_failure_never_reaches_publish(self):
         seen = []

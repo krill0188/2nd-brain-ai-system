@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parent.parent
 LAYERS = ('concepts', 'entities', 'comparisons', 'queries', 'raw', 'ontology', '.ua')
 ARTIFACTS = {'.ua/' + name for name in (
     'embeddings.json', 'drone-knowledge-graph.json', 'discovery-knowledge-graph.json',
-    'news-feed.json', 'daily-briefing.json')}
+    'news-feed.json', 'daily-briefing.json', 'knowledge-graph.json', 'self-update-state.json')}
 HARD_DENY = ('research/', 'inbox/', 'innovations/', 'raw/career-quiz/', 'raw/papers/files/')
 
 
@@ -168,14 +168,15 @@ def audit(source: Path, snapshot: Path, policy: dict) -> dict:
         if source_hash is not None and digest(src) != source_hash:
             row.update(action='block', reason='source-changed-during-audit')
         rows.append(row)
-    # Derived payloads contain titles/text/provenance too: no automatic bulk copy.
-    # Even explicitly reviewed artifact hashes cannot bypass unapproved source bytes.
-    held = any(r['action'] in ('hold', 'block', 'exclude') and r['path'].endswith('.md') and
-               not r['path'].startswith(HARD_DENY) for r in rows)
-    if held:
-        for row in rows:
-            if row['path'] in ARTIFACTS and row['action'] == 'approve':
-                row.update(action='block', reason='derived-source-review-required')
+    # Derived payloads are never published from working-tree bytes: they must be rebuilt
+    # from the approved snapshot. Keep the already-public copy (or omit if none existed).
+    for row in rows:
+        if row['path'] in ARTIFACTS and row['action'] in ('approve', 'hold'):
+            if row['path'] in baseline:
+                row.update(action='retain', reason='derived-rebuild-required', sha256=baseline[row['path']])
+            else:
+                row.update(action='exclude', reason='derived-rebuild-required')
+                row.pop('sha256', None)
     by_path = {row['path']: row for row in rows}
     for name, rule in retirements.items():
         row = by_path[name]
