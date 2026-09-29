@@ -212,6 +212,7 @@ class RuntimeSafetyTests(unittest.TestCase):
                 "Publish:policy-candidate",
                 "Publish:version-candidate",
                 "Publish:reconcile-candidates",
+                "Publish:derived-projection",
             ]
 
             self.assertEqual(

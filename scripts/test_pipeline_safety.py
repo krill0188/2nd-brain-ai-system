@@ -39,6 +39,7 @@ class PipelineSafetyTests(unittest.TestCase):
                     'Publish:policy-candidate',
                     'Publish:version-candidate',
                     'Publish:reconcile-candidates',
+                    'Publish:derived-projection',
                 ]
                 self.assertEqual(
                     [name for name in seen if name.startswith('Publish:')],
@@ -68,12 +69,13 @@ class PipelineSafetyTests(unittest.TestCase):
         candidate = Path('/tmp/final-publication-candidate')
         names = [name for name, _ in pipeline.steps(candidate)]
         self.assertEqual(
-            names[-4:],
+            names[-5:],
             [
                 'Validate:all',
                 'Publish:policy-candidate',
                 'Publish:version-candidate',
                 'Publish:reconcile-candidates',
+                'Publish:derived-projection',
             ],
         )
 

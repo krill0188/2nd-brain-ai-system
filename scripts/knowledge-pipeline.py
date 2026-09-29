@@ -90,6 +90,12 @@ def steps(candidate: Path) -> list[tuple[str, list[str]]]:
             '--output',
             str(candidate),
         ]),
+        ('Publish:derived-projection', [
+            py,
+            str(ROOT / 'scripts/build-derived-candidate.py'),
+            '--candidate',
+            str(candidate),
+        ]),
     ]
 
 
@@ -286,9 +292,13 @@ def main() -> int:
                         'Publish:policy-candidate',
                         'Publish:version-candidate',
                         'Publish:reconcile-candidates',
+                        'Publish:derived-projection',
                     ],
                 )
                 results += run_steps(publication)
+
+                if any(r['step'] == 'Publish:derived-projection' and r['exit_code'] for r in results) and candidate.exists():
+                    shutil.rmtree(candidate)
 
                 if source_fingerprint() != before:
                     results.append({
