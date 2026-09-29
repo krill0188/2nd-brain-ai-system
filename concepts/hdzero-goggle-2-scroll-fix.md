@@ -1,7 +1,7 @@
 ---
 title: HDZero Goggle 2 Scroll Wheel Fix
 created: 2026-09-01
-updated: 2026-09-01
+updated: 2026-09-14
 type: concept
 tags: [drone, fpv, hardware, hdzero, goggle]
 sources: [inbox/fetch-2026-09-01-yt-hdzero-goggle-2-crazy-scroll-wheel-fix.md]
@@ -34,6 +34,8 @@ HDZero Goggle 2의 스크롤 휠 문제를 해결하기 위한 펌웨어 수정 
 
 ## 관련 개념
 
+
+- [[drone-hw]] — 관련 하드웨어 도메인 개요
 - [[fpv-hardware]] — FPV 하드웨어
 - [[hdzero]] — HDZero 시스템
 - [[fpv-goggles]] — FPV 고글

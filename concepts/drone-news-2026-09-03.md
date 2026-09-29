@@ -39,3 +39,4 @@ contradictions: []
 
 ## 📰 최근 관련 소식
 - 한화에어로스페이스, 드론 연계 K9 운용개념 공개 (디일렉, Thu, 03 Se) — https://news.google.com/rss/articles/CBMiZkFVX3lxTE5VN3hpYU5rNS1sdEZPZXN5MS1OUzdnU0o4R3FiUDNhWG1INlRzdEdOR3RZclBsY0E0YzVVNDhleGxRd052dTlOZlVmX1JCQXctOUxPUVJmTUNMNG5IS0Ftam9ScEl6UQ?oc=5
+- [Painless360] FNIRSI HS-03 Cordless Soldering Iron (18650 Powered) (youtube.com, 2026-09-13) — https://www.youtube.com/watch?v=axGZGOnF_Qk

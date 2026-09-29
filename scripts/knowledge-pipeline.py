@@ -107,13 +107,24 @@ def run_steps(items, execute=subprocess.run) -> list[dict]:
     results = []
     for name, command in items:
         fd = inherited_lock_fd()
-        result = execute(
-            command,
-            cwd=WEB,
-            capture_output=True,
-            timeout=7200,
-            pass_fds=(() if fd is None else (fd,)),
-        )
+        try:
+            result = execute(
+                command,
+                cwd=WEB,
+                capture_output=True,
+                timeout=7200,
+                pass_fds=(() if fd is None else (fd,)),
+            )
+        except subprocess.TimeoutExpired:
+            results.append({'step': name, 'exit_code': 124, 'diagnostic': 'STEP_TIMEOUT'})
+            break
+        except OSError as exc:
+            results.append({
+                'step': name,
+                'exit_code': 127,
+                'diagnostic': 'EXECUTABLE_MISSING' if isinstance(exc, FileNotFoundError) else 'STEP_LAUNCH_FAILED',
+            })
+            break
 
         record = {'step': name, 'exit_code': result.returncode}
 

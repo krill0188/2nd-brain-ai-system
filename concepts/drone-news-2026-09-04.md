@@ -33,3 +33,6 @@ contradictions: []
 ## FPV / 소프트웨어
 
 - **Betaflight 2026.6 출시**: 6개월 주기 메이저 릴리스, 260개 이상 PR 반영 (Oscar Liang, 2026-09-01). [[betaflight]] 참조.
+
+## 📰 최근 관련 소식
+- 유럽 번지는 러 드론 공포…젤렌스키 탄 전용기 피격될 뻔 (동아일보, Thu, 10 Se) — https://news.google.com/rss/articles/CBMic0FVX3lxTFBVOTdjYURmWjZEUDV0QlpXR21ucVFfSTVYY3M2RDFTVG51QndwaUk1WjViQ3EyZzRKUFl6eFJsOXFmemNmRDR1Uk80NzlXdkw0NE56Tzg5dmp0aXBZMXhtWm5SM1VkQ0lMN2xjTDVFRDExd2fSAWZBVV95cUxQSUJtejNKSExWZE1OZDQwY1lmUVdLVG1RZHZqaVktLVNjRU4tc0oteUY0d3hlZmw2VXd5YXNqR2FzejJzNlVsMTNOaU1VZEowU043a2tDNWh3TkZVbHJmOXJua3lxd0E?oc=5

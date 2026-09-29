@@ -1,7 +1,7 @@
 ---
 title: "ArduPilot Plane 4.7.0 → 4.7.1 파라미터 변경 전체 목록"
 created: 2026-09-05
-updated: 2026-09-05
+updated: 2026-09-14
 type: concept
 tags: [drone, flight-control, parameter, diff, plane]
 sources: [공식 파라미터 메타데이터 자동 diff]
@@ -33,3 +33,7 @@ domain: flight-control
 **Q** (2): `Q_P_JERK_D`, `Q_P_JERK_NE`
 
 > ⚠️ 업그레이드 후 백업 파라미터 파일과 diff하여 기체 종속값을 재확인할 것.
+
+## 관련 페이지
+
+- [[ardupilot-plane-4-7]] — Plane 4.7 계열 릴리스 개요

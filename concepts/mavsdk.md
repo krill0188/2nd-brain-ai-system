@@ -1,10 +1,11 @@
 ---
 title: MAVSDK
 created: 2026-07-27
-updated: 2026-09-01
+updated: 2026-09-23
 type: concept
+domain: comms-protocol
 tags: [drone-sw, MAVSDK, SDK, API, offboard]
-sources: [inbox/fetch-2026-09-01-mavsdk.md]
+sources: [inbox/fetch-2026-09-01-mavsdk.md, inbox/processed/fetch-2026-09-23-mavsdk.md]
 confidence: high
 contested: false
 contradictions: []
@@ -112,6 +113,8 @@ await drone.offboard.set_velocity_ned(
 ## 릴리스 이력
 
 - **v3.17.4** (2026-08-25): Android 빌드 심볼 가시성 수정 ^[inbox/fetch-2026-09-01-mavsdk.md]
+- **v4.0.0** (2026-09-22): C++ breaking change, MavlinkDirect 플러그인 정식화, Python/C/Kotlin
+  신규 바인딩. 상세는 [[mavsdk-v4-0-0]] 참고.^[inbox/processed/fetch-2026-09-23-mavsdk.md]
 
 ## 관련 개념
 

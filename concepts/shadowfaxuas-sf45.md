@@ -1,7 +1,7 @@
 ---
 title: ShadowfaxUAS SF45
 created: 2026-09-01
-updated: 2026-09-01
+updated: 2026-09-14
 type: concept
 tags: [drone, hardware, vtol, isr, shadowfaxuas]
 sources: [inbox/fetch-2026-09-01-rss-suasnews.md]
@@ -33,6 +33,8 @@ ShadowfaxUAS SF45는 남아프리카 제조업체 ShadowfaxUAS가 출시한 ITAR
 
 ## 관련 개념
 
+
+- [[ops-mission]] — 드론 운용 및 임무 도메인 개요
 - [[vtol]] — 수직이착륙 기체
 - [[isr]] — 정찰/감시/정보 수집
 - [[drone-hw]] — 드론 하드웨어 도메인

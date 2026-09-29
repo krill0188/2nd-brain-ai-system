@@ -1,4 +1,5 @@
 # Stage 0-R 후속 안정화 — 2026-09-14
+> **2026-09-15 저녁 최신 상태:** [실행 복구 결과](STAGE_0R_RUNTIME_REPAIR.md)를 우선한다. 단일 07:30 job은 이미 설치됐고, 모델 캐시·공통 CLI 잠금·반복 후보 경로를 보완했다. 현재 382 canonical / 887 embeddings FRESH / graph 누락 0 / discovery pending 0. 발행 hold 30 + block 1로 Stage 0-R는 HOLD. 아래 수치와 예약 미활성 설명은 이전 시점 기록이다.
 
 판정: **HOLD — 로컬 결함 수정 완료 범위와 발행/운영 전환 미완료를 구분한다.**
 

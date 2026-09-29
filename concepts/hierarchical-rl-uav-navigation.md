@@ -30,3 +30,6 @@ domain: ai-autonomy
 ## 출처
 
 - Kou Kai et al., "Intent-guided hierarchical reinforcement learning with hybrid maneuver modes for UAV autonomous navigation in constrained airspace", Aerospace Science and Technology, 2027
+
+## 📰 최근 관련 소식
+- [핑크랩 PinkLAB] Pendulum Sim2Real 강화학습 | AI야 이거 세울 수 있어? (youtube.com, 2026-09-11) — https://www.youtube.com/watch?v=-9-bJf1nSdI

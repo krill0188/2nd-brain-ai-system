@@ -1,7 +1,7 @@
 ---
 title: "qgroundcontrol v5.1.0"
 created: 2026-08-01
-updated: 2026-08-01
+updated: 2026-09-14
 type: entity
 tags: [drone, drone-sw]
 domain: gcs-software
@@ -30,6 +30,8 @@ v5.0 이후 사용자 중심 변경사항은 공식 문서의 "What's New" 페�
 플랫폼별 설치 지침은 공식 문서의 Download and Install 페이지 참조.
 
 ## 관련 페이지
+
+- [[qgroundcontrol]] — QGroundControl 일반 개요 및 릴리스 이력
 
 - [[mavlink-protocol]] — MAVLink 프로토콜
 - [[px4-flight-stack]] — PX4 비행 제어 스택

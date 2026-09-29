@@ -1359,3 +1359,745 @@
   - All 22 inbox files → `inbox/processed/`
 - Updated:
   - `index.md` (총 페이지 352로 갱신, concepts 섹션에 신규 9건 추가)
+
+## [2026-09-06] ingest | inbox 일일 수집 및 컴파일
+
+- Source files from `inbox/` (14 files processed):
+  - KCI papers (4): LLM 전략 파라미터 생성 기반 상황 적응형 군집 무인기 임무 할당, 도심 유수지
+    UAV 초분광영상 배경유형 보조 U-Net++ 쓰레기 후보영역 탐지, UAV 초분광 영상 기반 보리 습해
+    조기 탐지, 방어적 대공/엄호 작전 유·무인 복합 편대 임무 효과도 분석
+  - RSS news (3): oscarliang-fpv, parrot, suasnews
+  - YOLO release (1): v8.4.141
+  - YouTube videos (6): DJI Osmo 360 II 프로모, Painless360 FPV Market Split 여론조사, UAV Coach
+    30초 드론 입문, DJI Mavic 4 Pro 프로모, 러스트 입문 #4(비도메인), 3분 알고리즘 #2(비도메인)
+- Created concepts:
+  - `concepts/kci-llm-cbba-swarm-task-allocation.md` — LLM+CBBA 하이브리드 군집 무인기 임무 할당
+  - `concepts/kci-hyperspectral-litter-detection-unetpp.md` — 배경유형 보조 U-Net++ 쓰레기 후보영역 탐지
+  - `concepts/kci-barley-wet-stress-hyperspectral-detection.md` — UAV 초분광 기반 보리 습해 조기 탐지
+  - `concepts/kci-manned-unmanned-teaming-defensive-air-ops.md` — 유·무인 복합 편대 임무 효과도 분석
+  - `concepts/yolo-v8-4-141.md` — YOLO v8.4.141 릴리스 노트
+  - `concepts/drone-news-2026-09-06.md` — 2026-09-06 드론 뉴스 종합(라이프치히, Garuda, Skyports)
+- Updated concepts (evidence added, no new page):
+  - `concepts/yolo.md` — v8.4.141 릴리스 이력 링크 추가
+- Skipped (insufficient content / off-domain / passing mention):
+  - RSS oscarliang-fpv: Banggood 9월 세일 쿠폰 홍보 1건뿐, 신규 기술정보 없음
+  - RSS parrot: 2021년 재게시 구기사(Parrot 버그바운티), 2026년 실질 내용 없음
+  - RSS suasnews 항목 중 라이프치히/Garuda/Skyports 3건은 `drone-news-2026-09-06`으로 종합 반영
+  - YouTube 3편: DJI Osmo 360 II 프로모·DJI Mavic 4 Pro 프로모(기존 페이지 대비 신규 스펙 정보 없음),
+    UAV Coach 30초 드론 입문(Part 107 강좌 광고, 기술 정보 없음)
+  - YouTube 1편: Painless360 FPV Market Split(RSS 설명이 채널 자기소개 문구로 잘려 실질 내용 없음)
+  - YouTube 2편: 러스트 제어흐름 입문 #4, 3분 알고리즘 재귀 #2(비도메인 — 프로그래밍 언어/CS 강좌)
+- Moved to processed:
+  - All 14 inbox files → `inbox/processed/`
+- Updated:
+  - `index.md` (총 페이지 358로 갱신, concepts 섹션에 신규 6건 추가)
+
+## [2026-09-07] ingest | inbox 일일 수집 및 컴파일
+
+- Source files from `inbox/` (9 files processed):
+  - CrossRef paper (1): Robust observer-based visual servoing control of gimbal-mounted cameras
+  - RSS news (3): dji-enterprise, oscarliang-fpv, skydio
+  - YOLO release (1): v8.4.142
+  - YouTube videos (4): DJI Neo 2 프로모 2편, Walksnail ASCENT 업데이트/바인딩 튜토리얼,
+    러스트 입문 #5(비도메인), 3분 알고리즘 #3(비도메인)
+- Created concepts:
+  - `concepts/yolo-v8-4-142.md` — YOLO v8.4.142 릴리스 노트(end2end→nms 통합)
+- Updated concepts (evidence added, no new page):
+  - `concepts/yolo.md` — v8.4.142 릴리스 이력 링크 추가
+- Skipped (insufficient content / thin / off-domain / passing mention):
+  - CrossRef 1편: 초록 미제공, 단일 출처 thin (링크만 존재)
+  - RSS dji-enterprise: 헤드라인 1건뿐, 본문 없음(DFR 프레임워크 관련 신규 기술정보 없음)
+  - RSS oscarliang-fpv: DJI O4 Wide Air Unit 마운팅 어댑터/케이스 리뷰, 액세서리 소개 수준 thin
+  - RSS skydio: 헤드라인 2건뿐, 본문 없음(Pentagon 배터리, Nashville 경찰 드론 프라이버시)
+  - YouTube 2편: DJI Neo 2 프로모 쇼트(신규 스펙 정보 없음)
+  - YouTube 1편: Walksnail ASCENT 튜토리얼(설명이 링크·채널 자기소개 위주로 잘려 실질 절차 정보 없음)
+  - YouTube 2편: 러스트 구조체/impl 입문 #5, 선형/이진 탐색 3분 알고리즘 #3(비도메인 — 프로그래밍/CS 강좌)
+- Moved to processed:
+  - All 9 inbox files → `inbox/processed/`
+- Updated:
+  - `index.md` (총 페이지 359로 갱신, concepts 섹션에 신규 1건 추가)
+
+## [2026-09-08] ingest | inbox 일일 수집 및 컴파일
+
+- Source files from `inbox/` (12 files processed):
+  - arXiv paper (1): Game-Theoretic Drone Swarm Defense (차등 게임이론 응용)
+  - Crossref paper (1): Parameter-Efficient Entropy-Guided Feature Suppression (절연체 결함 탐지 드론 검사)
+  - KCI papers (2): 드론 다중분광 NDVI 기반 한라산 구상나무 활력도 예비평가, 소형무장헬기
+    유무인복합 운용 통합검증환경 구축 및 비행제어시스템 통합 검증
+  - RSS news (2): dji-enterprise, oscarliang-fpv
+  - YOLO release (1): v8.4.143
+  - YouTube videos (5): DJI Osmo Action 6 프로모, DJI Avata 360 IFA2026 프로모, 핑크랩 Pinky
+    Studio(설명 없음), 러스트 입문 #6(비도메인), 3분 알고리즘 #4(비도메인)
+- Created concepts:
+  - `concepts/game-theoretic-drone-swarm-defense.md` — 차등 게임이론 기반 드론 스웜 방어 전술 효과 분석
+  - `concepts/kci-hallasan-fir-ndvi-vitality-assessment.md` — 한라산 구상나무 고도·사면향별 NDVI 활력도 평가
+  - `concepts/kci-light-attack-helicopter-mum-t-verification.md` — 소형무장헬기 유무인복합 통합검증환경/비행제어 통합 검증
+  - `concepts/yolo-v8-4-143.md` — YOLO v8.4.143 릴리스 노트(INT8 QAT)
+- Updated concepts (evidence added, no new page):
+  - `concepts/yolo.md` — v8.4.143 릴리스 이력 링크 추가
+- Skipped (insufficient content / stale / off-domain / passing mention):
+  - Crossref 1편: 초록 미제공, 단일 출처 thin(링크만 존재)
+  - RSS dji-enterprise: 2020~2025년 재게시 구기사 위주, 2026-09 신규 기술정보 없음
+  - RSS oscarliang-fpv: 기존 FPV 빌드 튜토리얼 모음 허브 페이지 재게시, 신규 정보 없음
+  - YouTube 2편: DJI Osmo Action 6·DJI Avata 360 IFA2026 프로모 쇼트(기존 페이지 대비 신규 스펙 정보 없음)
+  - YouTube 1편: 핑크랩 Pinky Studio(설명 없음)
+  - YouTube 2편: 러스트 Option/Result 입문 #6, 버블 정렬 3분 알고리즘 #4(비도메인 — 프로그래밍/CS 강좌)
+- Moved to processed:
+  - All 12 inbox files → `inbox/processed/`
+- Updated:
+  - `index.md` (총 페이지 363으로 갱신, concepts 섹션에 신규 4건 추가)
+
+## [2026-09-09] ingest | inbox 일일 수집 및 컴파일
+
+- Source files from `inbox/` (15 files processed):
+  - Crossref papers (2): UAV collision risk assessment(noncentral chi-square), Truck-drone
+    collaborative routing for humanitarian logistics
+  - RSS news (5): dji-enterprise, dronedj, dronelife, oscarliang-fpv, suasnews
+  - YOLO release (1): v8.4.144
+  - YouTube videos (7): DJI Mavic 4 Pro 문 클로즈업 프로모, Emlid RTK 베이스 스테이션 셋업 가이드,
+    MATLAB Python-in-Simulink, MATLAB 터미널/AI 코딩 에이전트 통합, DJI IFA 2026 프로모,
+    러스트 입문 #7(비도메인), 3분 알고리즘 #5(비도메인)
+- Created concepts:
+  - `concepts/yolo-v8-4-144.md` — YOLO v8.4.144 릴리스 노트(수치 안정성/배포 워크플로)
+  - `concepts/drone-news-2026-09-09.md` — 2026-09-09 드론 뉴스 종합(방산/대드론, 운용/인프라, 규제)
+- Updated concepts (evidence added, no new page):
+  - `concepts/yolo.md` — v8.4.144 릴리스 이력 링크 추가
+  - `entities/elroy-air.md` — Chaparral FAA eIPP 조종사 없는 첫 비행 이정표 추가
+  - `concepts/rtk-gps-precise-landing.md` — Emlid Flow Average Fix/Manual Entry 베이스 포지션
+    설정 방식 추가(최초 raw 출처 확보, sources 갱신)
+- Skipped (insufficient content / thin / off-domain / passing mention):
+  - Crossref 2편: 둘 다 초록 미제공, 단일 출처 thin(링크만 존재)
+  - RSS dji-enterprise: 헤드라인 1건뿐, 본문 없음(DJI Onboard AI Challenge 수상자 발표)
+  - RSS oscarliang-fpv: Amazon 스토어프론트 오픈 홍보 1건, 신규 기술정보 없음
+  - RSS dronedj 중 3건: Potensic Atom 3(스펙 정보 없는 프로모), NestGen 2026 서밋 라인업(구체
+    정보 없는 이벤트 예고), DJI Mimo 앱 업데이트(구체 기능 정보 없음)
+  - RSS suasnews 중 1건: Supacat Jackal(지상 차량 통합 소개, 드론 비중심)
+  - YouTube 2편: DJI Mavic 4 Pro 문 클로즈업·DJI IFA 2026 프로모 쇼트(신규 스펙 정보 없음)
+  - YouTube 2편: MATLAB Python-in-Simulink, MATLAB 터미널/AI 코딩 에이전트(비도메인 — 범용
+    엔지니어링 툴, 드론 특화 내용 없음)
+  - YouTube 2편: 러스트 문자열/UTF-8 입문 #7, 선택 정렬 3분 알고리즘 #5(비도메인 — 프로그래밍/CS 강좌)
+- Moved to processed:
+  - All 15 inbox files → `inbox/processed/`
+- Updated:
+  - `index.md` (총 페이지 365로 갱신, concepts 섹션에 신규 2건 추가)
+
+## [2026-09-10~11] ingest | inbox 일일 수집 및 컴파일 (2일치 소급 처리)
+
+- Source files from `inbox/` (28 files processed, 2026-09-10 14건 + 2026-09-11 14건):
+  - arXiv paper (1): Multi-Agent Reinforcement Learning for Autonomous UAV Exploration in Wildfire Response
+  - KCI paper (1): UAV-LiDAR 지면점 밀도와 공간 해상도가 DEM 정확도에 미치는 영향
+  - RSS news (8): dronedj, dronelife×2, oscarliang-fpv, skydio, suasnews×2 (09-10/09-11 각 일자)
+  - YOLO releases (2): v8.4.146 (09-10/09-11 동일 릴리스 중복 수집)
+  - YouTube videos (17): DJI 프로모 5편(Lito X1/Mic Mini 2S/Mavic 4 Pro/Osmo Action 6 ×2), UAV Coach
+    Part 107/보트램프 합법성 2편, Painless360 배터리 워밍백/RadioMaster ER16 PWM 수신기 2편,
+    Joshua Bardwell Walksnail Ascent 펌웨어, Auterion FPV Swarm Strike, MATLAB Coursera 차량 시뮬레이션,
+    freeCodeCamp Python/OpenAI Codex 강좌 2편(비도메인), 3분 알고리즘 #6·#7(비도메인),
+    러스트 입문 #8·#9(비도메인)
+- Created concepts:
+  - `concepts/yolo-v8-4-146.md` — YOLO v8.4.146 릴리스(RT-DETR 신뢰성 개선)
+  - `concepts/marl-uav-wildfire-exploration.md` — 산불 대응 자율 UAV 탐색 다중 에이전트 강화학습
+  - `concepts/kci-uav-lidar-ground-point-density-dem-accuracy.md` — UAV-LiDAR 지면점 밀도·해상도가
+    DEM 정확도에 미치는 영향
+  - `concepts/drone-news-2026-09-10.md` — 2026-09-10 드론 뉴스 종합(라이다 매핑, BVLOS 검증, 스마트 월)
+  - `concepts/drone-news-2026-09-11.md` — 2026-09-11 드론 뉴스 종합(배터리 공급망, 방산 조달)
+- Updated concepts (evidence added, no new page):
+  - `concepts/yolo.md` — v8.4.146 릴리스 이력 링크 추가, updated 갱신
+  - `concepts/fcc-military-drone-restrictions.md` — DJI의 FCC 제안 범위 반발 업데이트 추가
+- Skipped (insufficient content / thin / off-domain / passing mention / duplicate):
+  - RSS dronedj: DJI FlightHub 2 온프레미스 업그레이드(본문 잘림, 실질 정보 없음)
+  - RSS oscarliang-fpv: Flywoo Explorer LR4 V2 리뷰(제품 소개 수준, 스펙 정보 없음)
+  - RSS suasnews 중 2건: 건설현장 드론 활용·교량 점검 드론(둘 다 일반론적 도입부만 존재, 실질
+    정보 없음)
+  - RSS skydio 전체 4건: 헤드라인/캡션만 존재, 본문 없음(Air Force 훈련 이미지 캡션, St. Paul/Hot
+    Springs 경찰 드론 보조금 재게시)
+  - YOLO 1건: 09-11 fetch는 09-10과 동일 v8.4.146 릴리스 중복 수집(단일 페이지로 컴파일)
+  - YouTube 9편(09-10): 보트램프 드론 합법성·Part 107 시험(Labor Day 세일 홍보뿐), DJI Lito X1
+    궤도샷·DJI Mic Mini 2S 프로모(스펙 정보 없음), ToolkitRC B50 배터리 워밍백·Walksnail Ascent
+    펌웨어 업데이트(제품 링크만, 실질 절차 정보 없음), 삽입 정렬 3분 알고리즘 #6·러스트 소유권/대여
+    입문 #8(비도메인), Learn Python interactive course(비도메인)
+  - YouTube 8편(09-11): DJI Mavic 4 Pro·DJI Osmo Action 6 프로모(스펙 정보 없음), Auterion FPV
+    Swarm Strike(설명란에 링크만 존재, 실질 내용 없음), RadioMaster ER16/ER12/ER3Pro ELRS 수신기
+    (제품 링크만, 스펙 정보 없음), MATLAB Coursera 차량 시뮬레이션·OpenAI Codex 강좌(비도메인),
+    병합 정렬 3분 알고리즘 #7·러스트 생명주기 입문 #9(비도메인)
+- Moved to processed:
+  - All 28 inbox files → `inbox/processed/`
+- Updated:
+  - `index.md` (총 페이지 370으로 갱신, concepts 섹션에 신규 5건 추가)
+
+## [2026-09-12] ingest | inbox 일일 수집 및 컴파일
+
+- Source files from `inbox/` (14 files processed):
+  - arXiv paper (1): SwarmNxt(오픈소스 SW-HW 애자일 공중 스웜 플랫폼)
+  - KCI papers (2): 재구성형 UAV 스웜 임무 중단 고려 임무 신뢰도 모델링, 드론 다기관 인증체계
+    개선 단계별 승인 모델 연구
+  - RSS news (4): dronedj, dronelife, skydio, suasnews
+  - YOLO release (1): v8.4.148
+  - YouTube videos (6): DJI Avata 360·DJI Osmo Pocket 4P 프로모 2편, UAV Coach 4개 앱 소개,
+    핑크랩 Pendulum Sim2Real(설명 없음), 러스트 입문 #10·3분 알고리즘 #8(비도메인)
+- Created concepts:
+  - `concepts/swarmnxt-aerial-swarm-platform.md` — SwarmNxt 오픈소스 SW-HW 애자일 공중 스웜 플랫폼
+  - `concepts/kci-uav-swarm-mission-reliability-abort.md` — 재구성형 UAV 스웜 임무 중단 고려
+    임무 신뢰도 모델링 및 평가
+  - `concepts/kci-drone-certification-stepwise-approval-model.md` — 드론 다기관 인증체계 개선을
+    위한 단계별 승인 모델 연구(7단계 구조화)
+  - `concepts/yolo-v8-4-148.md` — YOLO v8.4.148 릴리스(SAM 3.1 이미지 예측 체크포인트 지원)
+  - `concepts/drone-news-2026-09-12.md` — 2026-09-12 드론 뉴스 종합(Teledyne 방산 계약, TB2 MMAD
+    도킹, GA-ASI 산불 UAS, Embention Veronte KAI FCC)
+- Updated concepts (evidence added, no new page):
+  - `concepts/yolo.md` — v8.4.148 릴리스 이력 링크 추가, updated 갱신
+- Skipped (insufficient content / thin / off-domain / passing mention / duplicate):
+  - RSS skydio: FCC 98.6% 반대 의견 통계는 `fcc-military-drone-restrictions.md`에 이미 동일
+    수치로 반영됨(중복); Air Force SkyDio X10D 훈련 이미지 3건은 캡션만 존재, 본문 없음
+  - RSS suasnews 중 1건: AirData 클라우드 녹화/10분 리와인드는 `drone-news-2026-09-11.md`에
+    이미 반영된 09-10 소식과 동일 건(중복)
+  - RSS dronelife 중 2건: INTERGEO 2026 사전 안내(구체 정보 없는 행사 예고), "성공을 감당할 수
+    있는가" 단순성 강조 오피니언(일반론적 조언, 신규 기술정보 없음)
+  - YouTube 2편: DJI Avata 360·DJI Osmo Pocket 4P 프로모 쇼트(신규 스펙 정보 없음)
+  - YouTube 1편: UAV Coach 4개 앱 소개(AutoPylot/DJI Fly/UAV Forecast/Google Earth 앱 나열,
+    구체 기술 정보 없는 홍보성 리스트)
+  - YouTube 1편: 핑크랩 Pendulum Sim2Real(설명 요약 공란, 실질 내용 없음)
+  - YouTube 2편: 러스트 trait/derive 입문 #10, 퀵 정렬 3분 알고리즘 #8(비도메인 — 프로그래밍/CS 강좌)
+- Moved to processed:
+  - All 14 inbox files → `inbox/processed/`
+- Updated:
+  - `index.md` (총 페이지 375로 갱신, concepts 섹션에 신규 5건 추가)
+
+## [2026-09-13] ingest | inbox 일일 수집 및 컴파일
+
+- Source files from `inbox/` (11 files processed):
+  - RSS news (3): suasnews, oscarliang-fpv, skydio
+  - YOLO release (1): v8.4.150
+  - crossref papers (2): MDOLF(차량-UAV 협업 지상객체 탐지/위치추정), USFnet(UAV-Shore 융합
+    내륙수운 교차로 시각인지)
+  - YouTube videos (5): DJI Osmo Pocket 4P IBC 프로모, DJI Ronin 2 BTS 프로모, UAV Coach
+    4개 앱 소개(설명란 공란), 3분 알고리즘 #9(DFS)·러스트 입문 #12(비도메인)
+- Created concepts:
+  - `concepts/yolo-v8-4-150.md` — YOLO v8.4.150 릴리스(제한 체크포인트 로딩 고속화, YOLOE
+    호환성 복구, RT-DETR 학습 효율화, YOLO27 프리뷰 문서)
+- Updated concepts (evidence added, no new page):
+  - `concepts/yolo.md` — v8.4.150 릴리스 이력 링크 추가, updated 갱신
+- Skipped (insufficient content / thin / off-domain / passing mention / duplicate):
+  - RSS suasnews 1건: IAA 드론 조종사 제한공역 기소 사건 — 본문이 "brought a"에서 잘려
+    실제 처분 내용(벌금/형량) 없음, 사실 확인 불가
+  - RSS oscarliang-fpv 1건: 분실 FPV 드론 복구 가이드 — 도입부만 존재, 구체 복구 절차/장비
+    정보 없음
+  - RSS skydio 전체 4건: 헤드라인/캡션만 존재, 본문 없음(정부 대량 구매·Calgary 경찰 90일
+    시범운영 2건 중복 헤드라인·Air Force X10D 훈련 이미지 캡션)
+  - crossref 논문 2건: MDOLF, USFnet — 초록 미제공(링크만 존재), 제목 외 합성 가능한 근거 없음
+  - YouTube 2편: DJI Osmo Pocket 4P IBC·DJI Ronin 2 BTS(둘 다 홍보 영상, 신규 스펙/기술
+    정보 없음)
+  - YouTube 1편: UAV Coach 4개 앱 소개(설명란 공란, 실질 내용 없음 — 09-12 동일 채널/제목
+    영상 기존 스킵 사례와 동일 유형)
+  - YouTube 2편: 3분 알고리즘 #9(DFS)·러스트 입문 #12(모듈, 12편 완결) — 비도메인(일반
+    프로그래밍/CS 강좌)
+- Moved to processed:
+  - All 11 inbox files → `inbox/processed/`
+- Updated:
+  - `index.md` (총 페이지 376으로 갱신, concepts 섹션에 신규 1건 추가)
+
+## [2026-09-14] ingest | inbox 일일 수집 및 컴파일
+
+- Source files from `inbox/` (7 files processed):
+  - RSS news (2): dji-enterprise, dronedj
+  - YouTube videos (5): DJI Osmo Pocket 4P 프로모(Cliffside Fairytale), DJI Osmo Nano 프로모(Strange
+    POV), FNIRSI HS-03 무선 인두기 리뷰(Painless360, 비도메인), 러스트 입문 #11(Box), 3분
+    알고리즘 #10(BFS) — 뒤 2편은 비도메인(일반 프로그래밍/CS 강좌)
+- Created concepts:
+  - `concepts/uk-police-drone-child-injury-incident.md` — 영국 경찰 DJI Matrice 30T 케이블
+    충돌 후 아동 부상 사고, 운용자 직무 위법행위(misconduct) 청문 절차
+- Skipped (insufficient content / thin / off-domain / passing mention / duplicate):
+  - RSS dji-enterprise: 헤드라인 1건뿐, 본문 없음(DJI Enterprise Drone Onboard AI Challenge 2026
+    수상자 발표 — 09-11/09-12 세션에서 이미 동일 헤드라인 반복 스킵된 건과 동일)
+  - YouTube 2편: DJI Osmo Pocket 4P·DJI Osmo Nano 프로모 쇼트(신규 스펙 정보 없음, 홍보성 컷)
+  - YouTube 1편: FNIRSI HS-03 무선 인두기 리뷰(드론 도메인 외 일반 공구 리뷰, 실질 드론 관련
+    정보 없음)
+  - YouTube 2편: 러스트 입문 #11(Box)·3분 알고리즘 #10(BFS) — 비도메인(일반 프로그래밍/CS 강좌)
+- Moved to processed:
+  - All 7 inbox files → `inbox/processed/`
+- Updated:
+  - `index.md` (총 페이지 377로 갱신, concepts 섹션에 신규 1건 추가)
+
+## [2026-09-14] maintenance | Stage 0-R canonical 연결 복구 및 QGC 버전 식별
+
+- 기존 본문의 관련 주제를 기준으로 활성 canonical 연결을 추가하고 updated를 갱신. 제품 채택 관계나 신규 사실을 주장하지 않음.
+- Updated canonical pages:
+  - `concepts/agilepe-uav-pursuit-evasion.md`
+  - `concepts/drone-wildfire-rt-detr.md`
+  - `concepts/ga-asi-fujitsu-mou.md`
+  - `concepts/hdzero-goggle-2-scroll-fix.md`
+  - `concepts/param-diff-copter-4-7-0-4-7-1.md`
+  - `concepts/param-diff-plane-4-7-0-4-7-1.md`
+  - `concepts/saildrone-european-expansion-2026.md`
+  - `concepts/shadowfaxuas-sf45.md`
+  - `concepts/terra-drone-deftech.md`
+  - `concepts/zuri-cargo-tiltrotor.md`
+  - `entities/avidrone.md`
+  - `entities/elroy-air.md`
+  - `entities/emo-mini-drone.md`
+- Renamed `entities/qgroundcontrol.md` → `entities/qgroundcontrol-v5-1-0.md`: 기존 본문이 v5.1.0 RC 기록임을 경로에 반영. 일반 `[[qgroundcontrol]]` 연결은 `concepts/qgroundcontrol.md`로 유지.
+- Updated `index.md`: 누락되어 있던 entity 버전 기록 추가. canonical 파일 총수는 동일. 기존 index 내용 및 과거 로그 보존.
+- raw 및 공개 snapshot은 변경하지 않음. 기존 source 경로·태그·미해결 링크 전체 정합성은 별도 감사 범위이며 이번 최소 링크 수 복구가 SCHEMA 전체 검증을 뜻하지 않음.
+
+## [2026-09-14] maintenance | Longtail Dual 중복 페이지의 근거 기반 통합
+
+- Updated `concepts/a2z-longtail-dual.md`: 지원되는 기업 소개, sUAS News 원문 URL·제목, 배송 사례 연결을 보존. dual-battery 근거와 동시 다중 배송 주장 미확인 상태, 기존 inbox provenance gap을 구분해 기록.
+- Archived `entities/a2z-longtail-dual.md` → `_archive/a2z-longtail-dual-entity.md`: 원래 바이트 그대로 보존. 출처 발췌로 확인되지 않는 dual-package 표현은 활성 concept의 사실로 합치지 않음.
+- Updated `index.md`: 중복 entity 항목 제거, concept 1개 유지, 활성 canonical 파일 수 377 → 376. QGC 버전 페이지 이름 변경은 페이지 수를 바꾸지 않음.
+- `raw/`, 공개 snapshot, 외부 서비스 및 배포는 변경하지 않음.
+
+## [2026-09-15] ingest | inbox 일일 수집 및 컴파일
+
+- Source files from `inbox/` (15 files processed):
+  - arXiv paper (1): PATH — Continuous Target Sensing among Autonomous Cooperative Drones
+  - RSS news (4): dji-enterprise, dronedj, dronelife, suasnews
+  - YOLO release (1): v8.4.152
+  - YouTube videos (8): DJI Mavic 4 Pro Autumn 프로모, MATLAB ISAC 페이즈드 어레이 설계,
+    Isaac Sim 실물 로봇 주행 강화학습(핑크랩), Radial Impeller Drone 호버링(quadmovr),
+    EMAX Nanoscout PRO 1S Whoop 출시, DJI Ronin 4D IBC 2026 프로모, Joshua Bardwell
+    $60 케이블 리뷰, 3분 알고리즘 #11(위상 정렬) — 마지막 1편은 비도메인
+- Created concepts/entities:
+  - `concepts/path-uav-target-handoff.md` — PATH: 협력 드론 간 기하학 기반 연속 표적
+    감지 핸드오프 프레임워크(arXiv:2609.12456)
+  - `entities/wingcopter.md` — Wingcopter 262 전술 정찰 eVTOL 공개(2026-09-14)
+  - `entities/kite-aerospace.md` — Kite Aerospace KITE UAS 생산 개시(호주 질롱)
+  - `concepts/emax-nanoscout-pro-1s-whoop.md` — EMAX 신형 1S 휩급 FPV 드론 출시
+  - `concepts/simplesense-dft-seraphimos-air-force.md` — Simplesense-DFT SeraphimOS
+    대드론 시스템 첫 미 공군 배치($3.4M)
+  - `concepts/yolo-v8-4-152.md` — YOLO v8.4.152 릴리스(SystemLogger NVIDIA 드라이버/CUDA
+    버전 캐싱)
+- Updated concepts/entities (evidence added, no new page):
+  - `concepts/fcc-military-drone-restrictions.md` — 라이트쇼 업계 영향 우려(DroneDJ) 반영,
+    `[[drone-light-show-uatg]]` 링크 추가
+  - `entities/terra-drone.md` — 국산 비행 컨트롤러 "Terra DFC" 자체 개발 사실 추가
+  - `concepts/6g-isac-matlab-usrp.md` — MATLAB 페이즈드 어레이 ISAC 설계 워크플로 반영
+  - `concepts/radial-impeller-drone.md` — 신규 호버링 테스트 영상 근거 추가
+  - `concepts/yolo.md` — v8.4.152 릴리스 이력 링크 추가, sources/updated 갱신
+- Skipped (insufficient content / thin / off-domain / passing mention / duplicate):
+  - RSS dji-enterprise: 헤드라인 1건뿐, 본문 없음(DJI Enterprise Drone Onboard AI Challenge
+    2026 수상자 발표 — 09-11/09-12/09-14 세션에서 이미 동일 헤드라인 반복 스킵된 건과 동일)
+  - RSS skydio 2건: Skydio DFR command 2,500만 통 신고 접수·62d AW C-17 sUAS 점검 훈련
+    — 둘 다 헤드라인만 존재, 본문 없음
+  - RSS suasnews 2건: AARTOS HAWK T1 MSPO 2026 관심(본문이 "At the center of the
+    company's"에서 잘려 구체 정보 없음), Dexa TechCrunch Startup Battlefield 200 선정
+    (선정 사실만 존재, 기술 정보 없음)
+  - YouTube 3편: DJI Mavic 4 Pro Autumn 프로모·DJI Ronin 4D IBC 2026 프로모(둘 다 홍보성
+    쇼트, 신규 스펙 정보 없음), 핑크랩 Isaac Sim(설명 요약이 제목 반복뿐, 실질 내용 없음)
+  - YouTube 1편: Joshua Bardwell $60 케이블 리뷰(오피니언/제품 불만 콘텐츠, 구체 기술
+    스펙 없음)
+  - YouTube 1편: 3분 알고리즘 #11(위상 정렬) — 비도메인(일반 CS 알고리즘 강좌)
+- Moved to processed:
+  - All 15 inbox files → `inbox/processed/`
+- Updated:
+  - `index.md` (총 페이지 376 → 382로 갱신, entities 섹션에 신규 2건, concepts 섹션에 신규 4건 추가)
+
+## [2026-09-16] ingest | inbox 일일 수집 및 컴파일
+
+- Source files from `inbox/` (16 files processed):
+  - KCI papers (4): 관측자 중심 위치정보 전달체계-공항 드론 Incident 대응, 국가중요시설
+    초밀집지역 대드론 거버넌스(세종), 저고도 드론 비가시권 비행 제도화(FAA BVLOS NPRM),
+    한국형 드론 공역시스템(EU Drone Strategy 2.0/U-space) — 4건 모두 `raw/papers/_unclassified/`에
+    기존 Zotero 인제스트 raw 레코드 존재, 해당 raw 경로를 sources로 사용
+  - RSS news (5): dronedj, dronelife, skydio, suasnews, parrot
+  - YOLO release (1): v8.4.153
+  - YouTube videos (6): freeCodeCamp 풀스택 배포 강좌(비도메인), DJI Osmo Pocket 4P 프로모,
+    DJI Osmo Action 6 프로모, MATLAB 스플라인 피팅(비도메인), 3분 알고리즘 #12(다익스트라,
+    비도메인), 영상 속 사람 바꾸기(비도메인 AI 영상편집)
+- Created concepts:
+  - `concepts/kci-airport-drone-incident-location-reporting.md` — 관측자 중심 위치정보
+    전달체계를 활용한 공항 드론 Incident 대응방안 연구(이준혁, 대한항공)
+  - `concepts/kci-sejong-counter-drone-governance.md` — 세종 국가상징구역 대드론
+    작전조정 우선권(OCP) 선제적 거버넌스 설계 연구(문홍렬, 대통령경호처)
+  - `concepts/dji-drone-shot-down-alabama-incident.md` — 앨라배마 DJI Mavic 4 Pro
+    총격 피격 사건
+  - `concepts/fcc-drone-cellular-c2-testing.md` — FCC 드론 셀룰러 네트워크 C2/탐지회피/
+    Remote ID 전국 테스트 승인(2026-09-11 발효)
+  - `concepts/skyports-japan-aam-subsidy-wins.md` — Skyports 일본 AAM 보조금 프로젝트
+    9건 수주(신청 성공률 100%, 6개 현)
+  - `concepts/darpa-heavy-lift-challenge-2026-south-africa.md` — DARPA Heavy Lift
+    Challenge 남아공 부자 팀 75만 달러 우승(13kg 헥사콥터, CubePilot Cube). Avidrone의
+    별도 DARPA Lift Challenge 보도와 동일 사건 여부는 원문만으로 확인 불가하여 단정하지
+    않음(비-모순, 참고만 기록)
+  - `concepts/yolo-v8-4-153.md` — YOLO v8.4.153 릴리스(SAM3 초기화 버그 수정, INT8
+    export 동작 명확화)
+- Created comparisons:
+  - `comparisons/kci-bvlos-faa-nprm-korea.md` — 저고도 드론 BVLOS 제도 비교: FAA
+    Normalizing UAS BVLOS NPRM vs 한국 특별비행승인제도(윤민철, 한국항공대학교)
+  - `comparisons/kci-korea-airspace-eu-uspace.md` — 드론 공역시스템 비교: 한국형 드론
+    공역시스템 vs EU Drone Strategy 2.0/U-space(윤민철, 한국항공대학교)
+- Updated:
+  - `concepts/yolo.md` — v8.4.153 릴리스 이력 링크 추가, sources/updated 갱신
+- Skipped (insufficient content / thin / off-domain / passing mention / duplicate / stale):
+  - RSS dronelife 2건: "The Drone Is No Longer the Point"(INTERGEO 트렌드 논평, 본문이
+    "[…]"에서 잘려 구체 정보 없음), "From Cars to Drones: Birdstop..."(본문이 "[…]"에서
+    잘려 구체 정보 없음)
+  - RSS skydio 2건: "Air Force SkyDio X10D sUAS Training [Image 4/2 of 9]" — 이미지
+    캡션 반복뿐, 본문 없음
+  - RSS suasnews 3건: GeoCue TrueView 550(본문이 한 구절에서 잘림, 구체 스펙 없음),
+    EuroUSC-Benelux→Unifly Compliance 개명(한 문장뿐, 실질 기술/정책 정보 없음), UK CAA
+    Airspace Change Process 개편(본문이 한 구절에서 잘림)
+  - RSS parrot 1건: 2012-12-13자 slate.com RC 완구 기사 — Google News 검색 오탐(스테일),
+    드론 도메인과 무관
+  - YouTube 6편: freeCodeCamp 풀스택 배포 강좌(비도메인, 드론 언급 전무), DJI Osmo
+    Pocket 4P·DJI Osmo Action 6 프로모 쇼트(신규 스펙 정보 없음, 홍보성 컷), MATLAB
+    스플라인 피팅 강좌(비도메인 일반 수학), 3분 알고리즘 #12(다익스트라, 비도메인 CS
+    강좌), 영상 속 사람 바꾸기(비도메인 로컬 AI 영상편집, 드론 무관)
+- Moved to processed:
+  - All 16 inbox files → `inbox/processed/`
+- Updated:
+  - `index.md` (총 페이지 382 → 391로 갱신, concepts 섹션에 신규 7건, comparisons 섹션에
+    신규 2건 추가)
+
+## [2026-09-17] ingest | inbox 일일 수집 및 컴파일
+
+- Source files from `inbox/` (16 files processed):
+  - KCI papers (3): 재난 대응을 위한 드론의 기술적 발전 방향(김준호, KARI) — 기존
+    `raw/papers/_unclassified/` Zotero 레코드 존재, 해당 raw 경로를 sources로 사용;
+    UWB 품질 저하 환경에서 UAV 군집측위 최소운용조건 분석(김요셉, 숭실대) — 동일하게
+    기존 raw 레코드 존재; 이중 NIS 보상 SAC 기반 GNSS/INS 무인기 은닉 기만 기법(박종일,
+    Duksan Navcours) — 이 건은 Zotero 인제스트 raw 레코드가 아직 생성되지 않아
+    기존 관행(YOLO/뉴스 다이제스트류와 동일)대로 inbox 경로를 sources로 사용
+  - arXiv paper (1): Calibrate Once, Fly Any Team — 저충실도 시뮬레이션 잔차 보정
+    기반 드론 군집 훈련(Mednikov & Gal, 2026-09-15)
+  - RSS news (6, 중복 사건은 다중 출처로 병합): dronedj, dronelife, suasnews,
+    suasnews-regulation, skydio, dji-enterprise
+  - YOLO release (1): v8.4.154
+  - Betaflight release (1): 2026.6.2 (단일 백포트 버그 수정)
+  - YouTube videos (4): 3분 알고리즘 #13 크루스칼 MST(비도메인 CS 강좌), DJI Avata 360
+    로켓 발사 촬영 프로모(스펙 정보 없는 홍보 쇼트), 핑크랩 Pendulum Sim2Real RL(비도메인
+    일반 로봇공학), DJI Osmo Nano 고양이 POV 프로모(홍보 쇼트)
+- Created concepts:
+  - `concepts/yolo-v8-4-154.md` — YOLO v8.4.154 릴리스(CoreML 동적 export 수정,
+    RT-DETR INT8 정확도 0.0002→0.6513 mAP50-95 복원, GPU 훈련 속도 개선)
+  - `concepts/calibrate-once-fly-any-team-swarm-training.md` — JAX 기반 저충실도
+    시뮬레이터 + 에이전트별 잔차 보정으로 팀 규모 3~18대 드론 군집 정책 훈련
+  - `concepts/kci-disaster-response-drone-tech-direction.md` — 재난치안용 무인기
+    개발 사업 기술 성과 검토 및 추가 발전 방향(단일 출처, 초록만 확인)
+  - `concepts/kci-uwb-degraded-uav-swarm-positioning.md` — Drift-Correction LSTM +
+    UWB/EKF 기반 UAV 군집 측위의 최소 운용조건 정량 분석
+  - `concepts/kci-dual-nis-sac-gnss-ins-spoofing.md` — 표적 내부 정보 없이 SAC
+    이중 은닉 보상으로 GNSS/INS 은닉 기만을 수행하는 프레임워크
+  - `concepts/flytrex-rooftop-docks-ai-fleet-positioning.md` — 댈러스 옥상 도킹 +
+    AI 함대 배치로 배달비용 60%/시간 50% 절감 주장(dronelife+suasnews 중복 병합)
+  - `concepts/bt-drone-sim-rail-incident-response.md` — BT 드론 SIM 기반 영국
+    철도경찰 역량 지원(원문 절단으로 confidence: low)
+  - `concepts/resilienx-orion-nasa-sbir-wildfire.md` — ResilienX ORION 공역 조정
+    시스템, NASA SBIR Phase II 선정
+  - `concepts/drone-assistant-finland-regulatory-tool.md` — 핀란드 드론 규정 AI
+    조회 도구 출시(dronedj+suasnews 중복 병합)
+  - `concepts/aive-ai-wildfire-mapping.md` — AIVE AI Systems 소수 이미지 기반
+    지오레퍼런스 매핑(INTERGEO 2026)
+  - `concepts/emesent-trimble-lidar-integration.md` — Emesent 모바일 SLAM 스캐너,
+    Trimble Connect/Business Center 직접 연동(INTERGEO 2026)
+  - `concepts/airwise-uas-sentry-remote-id-integration.md` — Airwise Nexus ×
+    UAS Sentry Nexus Remote ID 탐지 통합(dronelife+dronedj 중복 병합)
+- Updated:
+  - `concepts/yolo.md` — v8.4.154 릴리스 이력 링크 추가, sources/updated 갱신
+  - `concepts/betaflight.md` — 2026.6.2 패치 릴리스(I2C busdev 가드 백포트) 섹션 추가
+- Skipped (insufficient content / thin / off-domain / passing mention / duplicate / stale):
+  - YouTube 4편: 3분 알고리즘 #13(비도메인 CS 알고리즘 강좌), DJI Avata 360 로켓
+    발사 촬영(홍보성 쇼트, 신규 스펙 없음), 핑크랩 Pendulum Sim2Real RL(비도메인
+    일반 로봇/RL, 드론 무관), DJI Osmo Nano 고양이 POV(홍보성 쇼트)
+  - RSS dji-enterprise 2건: O4 Ground Station(2026-06-13 기사 재검색, 스테일),
+    Mavic 3 Enterprise 그린란드 빙하 매핑(2026-04-13 기사 재검색, 스테일)
+  - RSS dronelife 1건: GeoCue TrueView 550(본문이 "…"에서 잘려 구체 스펙 없음)
+  - RSS suasnews-regulation 1건: CAA Air Traffic Services 가이던스 컨설테이션
+    (본문 한 구절에서 잘림, 드론 특정 규제 아닌 일반 공항 ATS 사안)
+  - RSS skydio 2건: AirSight x Skydio(제목만, 본문 없음), Skydio Minneapolis DFR
+    계약 상실(2026-07-17 기사 재검색, 스테일)
+- Moved to processed:
+  - All 16 inbox files → `inbox/processed/`
+- Updated:
+  - `index.md` (총 페이지 391 → 403으로 갱신, concepts 섹션에 신규 12건 추가)
+
+## [2026-09-18] ingest | inbox 일일 수집 및 컴파일
+
+- Source files from `inbox/` (16 files processed, `.gitkeep` 제외 15건):
+  - arXiv papers (3): CALOS 쿼드로터 안전 RL Lyapunov 안전 레이어(Cesareo et al.,
+    2026-09-15); Context-Aware Operational Security(DUDE-IDS, LSTM 기반 드론
+    이상탐지, Tufekci & Tunc, 2026-07-19); Rapid drone-based wildfire detection
+    (드론 산불탐지 네트워크 배치·라우팅 비용 최적화, Puech et al., 2026-09-16)
+  - CrossRef paper (1): Hierarchical optimal consensus for economically
+    efficient path planning in multi-UAV — 초록 미제공(제목·저널·DOI만 확인),
+    실질 내용 구성 불가로 스킵
+  - RSS news (4 feed, 중복 사건은 다중 출처로 병합): dronedj, dronelife,
+    oscarliang-fpv, suasnews
+  - YOLO release (1): v8.4.155
+  - YouTube videos (7): DJI Mavic 4 Pro/Avata 360 프로모 쇼트 2편, freeCodeCamp
+    Hinton 딥러닝 강좌(비도메인), GEPRC TriPro LR60 리뷰(스펙 정보 없음), quadmovr
+    PX4 자작기체 클로즈업(스펙 정보 없음), MATLAB 스플라인 강좌(비도메인),
+    3분 알고리즘 #14 그리디(비도메인 CS 강좌)
+- Created concepts:
+  - `concepts/calos-lyapunov-safety-layer-quadrotor-rl.md` — CALOS: Control-
+    Affine Lyapunov On-manifold 안전 레이어로 쿼드로터 RL 정책의 자세 제약을
+    실시간 강제(횡방향 추종 오차 55~60% 감소, 제약 위반 0건)
+  - `concepts/dude-ids-context-aware-drone-security.md` — LSTM 기반 온보드 IDS로
+    GPS 스푸핑/MITM/재전송/DoS 이상탐지 98% 정확도
+  - `concepts/drone-wildfire-detection-network-optimization.md` — 드론 배치+
+    라우팅 공동 최적화로 5년 1억 달러 예산 시 산불 97.3% 탐지(74%는 1시간 이내)
+  - `concepts/northern-plains-vantis-bvlos-medical-ag-demo.md` — 노스다코타
+    Vantis 네트워크 위 CVS Health/SkyfireAI 등 의료·농업 BVLOS 실비행 시연
+  - `concepts/skydrive-verty-korea-evtol-mou.md` — SkyDrive-Verty 한국 eVTOL
+    상용화 MOU(2028 목표, SD-05 기체)
+  - `concepts/skyebrowse-per-model-pricing.md` — SkyeBrowse 3D 드론 매핑
+    Commercial/Pro/Public Safety & Enterprise 3종 종량제 전환
+  - `concepts/ga-asi-mojave-battlefield-short-field-ops.md` — GA-ASI Mojave ×
+    Hanwha Aerospace 최초 전장 단거리 이착륙 운용 완료
+  - `concepts/yolo-v8-4-155.md` — YOLO v8.4.155 릴리스(labels.cache 재사용
+    오류 방지, Windows OpenVINO FP32 추론, YOLO26 MPS 포즈 훈련 수정)
+- Updated:
+  - `concepts/yolo.md` — v8.4.155 릴리스 이력 링크 추가, sources/updated 갱신
+- Skipped (insufficient content / thin / off-domain / passing mention / duplicate / stale):
+  - CrossRef 1건: Hierarchical optimal consensus multi-UAV path planning —
+    초록 없이 제목만 확인되어 실질 내용 구성 불가
+  - RSS dronedj 2건: DJI Osmo Pocket 4P/Pocket 4 펌웨어 업데이트 — "more…"에서
+    잘려 구체 스펙·기능 정보 없음, 홍보성 티저
+  - RSS dronelife 3건: Raleigh 디지털 트윈("[…]"에서 잘림, 구체 정보 없음);
+    SimActive CEO 인터뷰(트렌드 논평, "[…]"에서 잘림); GA-ASI×Tactical Air
+    Support 킬체인 기사(재검색 스테일, 본문 도입부에서 잘림)
+  - RSS oscarliang-fpv 1건: FPV 프로펠러 선택 가이드 — 일반 입문 가이드, 본문
+    잘림, 신규 스펙/데이터 없음
+  - RSS suasnews 3건: ORS9 CAA Decision No.61(본문 한 구절에서 잘림); SESAR
+    Innovation Days 2026 마감 연장(행사 공지, 실질 기술/정책 정보 없음);
+    Beyond Anti-Jamming 논평(본문 도입부에서 잘림, 트렌드 논평)
+  - YouTube 7편: DJI Mavic 4 Pro·Avata 360 프로모 쇼트 2편(신규 스펙 정보 없음,
+    홍보성 컷), freeCodeCamp Hinton 딥러닝 강좌(비도메인, 드론 언급 전무),
+    Joshua Bardwell GEPRC TriPro LR60 리뷰(제휴링크·면책조항뿐, 실측 스펙 없음),
+    quadmovr PX4 자작기체 클로즈업(크리에이터 소개뿐, 기술 정보 없음), MATLAB
+    스플라인 강좌(비도메인 일반 수학), 3분 알고리즘 #14 그리디(비도메인 CS 강좌)
+- Moved to processed:
+  - All 15 inbox files (excluding `.gitkeep`) → `inbox/processed/`
+- Updated:
+  - `index.md` (총 페이지 403 → 411로 갱신, concepts 섹션에 신규 8건 추가)
+
+## [2026-09-19] ingest | inbox 일일 수집 및 컴파일
+
+- Source files from `inbox/` (14 files processed, `.gitkeep` 제외):
+  - arXiv paper (1): FlyBlind 5G 슬라이스 간 적시성 공격(Sonaglio et al.,
+    2026-08-27; raw/papers/datalink/에 기존 v1 레코드 존재, inbox는 v2 초록)
+  - CrossRef paper (1): Registration-free visible-thermal fusion for UAV
+    detection — 초록 미제공, 스킵
+  - RSS news (5 feed): dji-enterprise, dronedj, dronelife, skydio, suasnews
+  - YouTube videos (7): UAV Coach 2편, DJI 2편, PinkLAB Isaac Sim, 3분 알고리즘 2편
+- Created:
+  - `concepts/flyblind-cross-slice-timeliness-attack.md` — 인접 슬라이스 co-tenant가
+    업링크 grant 경쟁으로 GCS 텔레메트리를 약 12초 노후화(OWD p99 수십 ms,
+    가용성 99.9%↑, failsafe 미발동)시키는 Silent State Staleness
+  - `entities/dji-sdr-transmission-2.md` — DJI SDR Transmission 2(2026-09-18 출시,
+    dronedj RSS + DJI 공식 YouTube 2건 종합, 스펙 수치는 미확인)
+- Updated:
+  - `entities/matternet.md` — AVI-SPL 현장 기술자 부품 배송 파트너십(2026-09-15) 추가,
+    sources/updated 갱신
+  - `index.md` (총 페이지 411 → 413, entities/concepts 각 1건 추가)
+- Skipped (insufficient content / thin / off-domain / passing mention / duplicate):
+  - CrossRef 1건: 초록 없이 제목만 확인
+  - RSS dji-enterprise 1건: DroneXL 제목만(2026-03 게시분), 본문 없음
+  - RSS dronedj ABZ Innovation 헝가리 공장: 단일 출처, "more…"에서 잘림
+  - RSS skydio 4건: DVIDS Marines X2D 훈련 이미지/영상 캡션 3건(제목뿐);
+    CentralSquare-Skydio 제휴는 기존 `concepts/skydio-centralsquare-dfr-integration.md`
+    와 중복
+  - RSS suasnews 2건: DRONTEX 2026 행사 공지; NATs 기술 사고 운송장관 답변(본문 잘림)
+  - YouTube 5건: UAV Coach 공역 승인(AutoPylot 홍보, 본문 잘림)·DJI Air 3S(설명 없음),
+    DJI Osmo Mobile 8P 프로모 쇼트, PinkLAB Isaac Sim(설명 제목 반복뿐),
+    3분 알고리즘 2편(비도메인 CS 강좌)
+- Moved to processed:
+  - All 14 inbox files (excluding `.gitkeep`) → `inbox/processed/`
+
+## [2026-09-20] ingest | inbox 일일 수집 및 컴파일
+
+- Source files from `inbox/` (10 files processed, `.gitkeep` 제외):
+  - CrossRef paper (1): 산악 도시간 회랑 드론 화물 수요 이산선택모형 — 초록 미제공, 스킵
+  - RSS news (3 feed): dronedj, parrot, skydio
+  - Release note (1): Ultralytics YOLO v8.4.156
+  - YouTube videos (6): UAV Coach 1편, DJI 2편, Painless360 1편, 3분 자료구조/알고리즘 2편
+- Created:
+  - `concepts/yolo-v8-4-156.md` — YOLO v8.4.156(2026-09-19): 원격 NDJSON 변환
+    신뢰성, INT8 TensorRT export 속도/정확도 개선 (domain: ai-autonomy)
+- Updated:
+  - `index.md` (총 페이지 413 → 414, concepts 섹션에 신규 1건 추가)
+- Skipped (insufficient content / thin / off-domain / passing mention):
+  - CrossRef 1건: 초록 없이 제목만 확인
+  - RSS dronedj·skydio: US Marines 드론 훈련 영상 기사(제목/도입문뿐, "more…"에서
+    잘림), AirSight x Skydio 제휴 기사(제목뿐, 단일 출처), DVIDS Skydio X2D 이미지
+    캡션 2건(제목뿐)
+  - RSS parrot 1건: Sphinx 시뮬레이터 스팸성 제목 나열(2026-09-01 구형 기사)
+  - YouTube 6건: DJI Neo 2·Osmo 360 II 프로모 쇼트(기존 페이지 존재, 신규 정보
+    없음), UAV Coach 드론법 영상(설명 비어 있음), Painless360 쿼드 빌드 예고(제휴
+    링크뿐), 3분 자료구조·3분 알고리즘 #16(비도메인 CS 강좌)
+- Moved to processed:
+  - All 10 inbox files (excluding `.gitkeep`) → `inbox/processed/`
+
+## [2026-09-21] ingest | inbox 일일 수집 및 컴파일
+
+- Source files from `inbox/` (10 files processed, `.gitkeep` 제외):
+  - RSS news (2 feed): oscarliang-fpv, skydio
+  - Release note (1): Ultralytics YOLO v8.4.157
+  - YouTube videos (7): quadmovr 1편, Painless360 1편, DJI 2편, Joshua Bardwell 2편, 국내 AI 영상 1편
+- Created:
+  - `concepts/yolo-v8-4-157.md` — YOLO v8.4.157(2026-09-20): TensorRT FP16/INT8
+    최대 20% 가속, YOLOE-26 prompt-free 확대, Apple Silicon 성능 (domain: ai-autonomy)
+- Updated:
+  - `index.md` (총 페이지 414 → 415, concepts 섹션에 신규 1건 추가)
+- Skipped (insufficient content / thin / off-domain / passing mention):
+  - RSS oscarliang-fpv 1건: BetaFPV Matrix P1 AIO FC 빌드 기사(도입문뿐, 단일 출처)
+  - RSS skydio 3건: Galt 경찰 드론 프로그램(제목뿐), DVIDS Marines X2D·Air Force X10D
+    훈련 이미지 캡션(제목뿐)
+  - YouTube 7건: quadmovr 방사형 임펠러 실험 드론(비과학적 단일 영상, 설명 요약뿐),
+    Painless360 RC 모델 소음 저감(링크 목록뿐), DJI Mavic 4 Pro·Mic Mini 2/Osmo 360
+    프로모 쇼트(기존 페이지 존재, 신규 정보 없음), Joshua Bardwell Q&A 라이브 2편
+    (설명이 쇼핑리스트/후원 링크뿐), AI 인물 변환 영상(비도메인)
+- Moved to processed:
+  - All 10 inbox files (excluding `.gitkeep`) → `inbox/processed/`
+
+## [2026-09-22] ingest | inbox 일일 수집 및 컴파일
+
+- Source files from `inbox/` (13 files processed, `.gitkeep` 제외):
+  - Release note (1): Ultralytics YOLO v8.4.158
+  - RSS news (4 feed): dronelife, suasnews, dji-enterprise, skydio
+  - CrossRef papers (2): AeroDistinct 드론-조류 판별, UAV 소형 객체 검출 MoE (둘 다 초록 없음)
+  - YouTube videos (6): freeCodeCamp Claude CCDV-F, DJI Neo 2·Osmo Action 6/360 쇼트, Joshua Bardwell 2편, 국내 기록 습관 영상
+- Created:
+  - `concepts/yolo-v8-4-158.md` — YOLO v8.4.158(2026-09-21): Mosaic 유지·AutoBatch·export·SAM2 개선 (domain: ai-autonomy)
+  - `concepts/zimbabwe-kite-bvlos-medical-delivery.md` — Drone Solutions Zimbabwe CAAZ BVLOS 승인, dronelife+suasnews 2개 출처 (domain: ops-mission)
+- Updated:
+  - `index.md` (총 페이지 415 → 417, concepts 섹션에 신규 2건 추가)
+- Skipped (insufficient content / thin / off-domain / passing mention):
+  - CrossRef 2건: 초록 미제공(제목·저자뿐)
+  - RSS dronelife 3건: Doodle Labs Nano² 라디오, Luxembourg 공항 드론 사건(기존 kci-airport 페이지 존재), Beijing 사유 드론 금지(단일 출처 발췌)
+  - RSS suasnews 1건: FQ-42 Creech 배치(제목 수준)
+  - RSS dji-enterprise 1건: World Heritage 3D 이니셔티브(제목뿐), skydio 3건: Auburn/Cleveland 경찰 드론(제목뿐)
+  - YouTube 6건: DJI 프로모 쇼트 2편(기존 페이지 존재), Bardwell Q&A(쇼핑리스트/후원 링크뿐), Bardwell Betaflight GPS 크래시(링크뿐, 설명 부족), freeCodeCamp Claude 자격증(비도메인), 국내 기록 영상(설명 비어 있음)
+- Moved to processed:
+  - All 13 inbox files (excluding `.gitkeep`) → `inbox/processed/`
+
+## [2026-09-23] ingest | inbox 일일 수집 및 컴파일
+
+- Source files from `inbox/` (16 files processed, `.gitkeep` 제외):
+  - arXiv papers (3): OTFS UAV 전력 제어, PhysAI-Bench, SNN-PPO 협소구간 내비게이션
+  - CrossRef papers (1): HERMES 진화적 UAV 경로계획 (초록 미제공)
+  - Release notes (2): MAVSDK v4.0.0, Ultralytics YOLO v8.4.160
+  - RSS news (5 feed): dronedj, dronelife, oscarliang-fpv, skydio, suasnews
+  - YouTube videos (5): Painless360 ArduPilot 라디오, DJI Osmo Action 6/Mavic 4 Pro 쇼트 2편, UZH IROS 2026 곡예비행, 국내 채널(설명 비어 있음)
+- Created concepts (11):
+  - `concepts/otfs-uav-power-control.md` — OTFS 기반 지연 SINR 피드백 UAV 전력 제어 (domain: comms-protocol)
+  - `concepts/physai-bench-uav-agentic-benchmark.md` — PhysAI-Bench UAV 에이전트 의사결정 벤치마크 (domain: ai-autonomy)
+  - `concepts/snn-ppo-uav-constrained-navigation.md` — SNN 액터-크리틱 PPO UAV 협소구간 내비게이션 (domain: ai-autonomy)
+  - `concepts/hermes-evolutionary-uav-path-planning.md` — HERMES 진화적 UAV 경로계획, 초록 미제공으로 confidence: low (domain: flight-control)
+  - `concepts/mavsdk-v4-0-0.md` — MAVSDK v4.0.0 릴리스 (domain: comms-protocol)
+  - `concepts/yolo-v8-4-160.md` — YOLO v8.4.160 릴리스 (domain: ai-autonomy)
+  - `concepts/acrobatic-flight-preference-learning-uzh.md` — UZH IROS 2026 선호 기반 강화학습 곡예비행 (domain: ai-autonomy)
+  - `concepts/alaska-drone-blood-delivery-olympic-antidoping.md` — 알래스카 1,000km 혈액 샘플 장거리 배송 시험 (domain: ops-mission)
+  - `concepts/faa-drone-restriction-court-challenge.md` — FAA 철회 드론 비행제한 항소법원 재검토 (domain: regulations)
+  - `concepts/advanced-navigation-kongsberg-cuas-deal.md` — Advanced Navigation-KONGSBERG C-UAS 1,850만 달러 계약 (domain: ai-autonomy)
+  - `concepts/skyways-dsv-offshore-logistics-partnership.md` — Skyways-DSV 해상 물류 파트너십, 원문 발췌 단편적으로 confidence: low (domain: ops-mission)
+  - `concepts/unauthorized-drones-timber-fire-firefighting.md` — Timber Fire 무단 드론 소방 항공기 운항 방해 (domain: regulations)
+- Created entities (1):
+  - `entities/abz-innovation.md` — 헝가리 기반 드론 제조사, 90일 만에 대형 공장 가동 (domain: hardware)
+- Updated existing canonical (evidence added, no new page):
+  - `entities/matternet.md` — Matternet OTCQB(MTTN) 상장 추가
+  - `concepts/zimbabwe-kite-bvlos-medical-delivery.md` — dronedj 재보도 출처 추가
+  - `concepts/skyebrowse-per-model-pricing.md` — dronedj 재보도 출처 추가
+  - `concepts/mavsdk.md` — 릴리스 이력에 v4.0.0 추가, domain 필드 보강
+- Updated:
+  - `index.md` (총 페이지 417 → 430, entities 1건·concepts 12건 추가)
+- Skipped (insufficient content / thin / off-domain / duplicate-no-new-fact):
+  - RSS dronedj 2건: KITE Zimbabwe·SkyeBrowse 가격 — 기존 페이지에 출처만 추가(중복 사실 없음)
+  - RSS oscarliang-fpv 1건: BetaFPV ArtLynk P1 리뷰(도입문뿐, 리뷰 본문 없음)
+  - RSS skydio 4건: Oceanside/Auburn 경찰 드론, 영국군 드론 예산, Marines X2D 훈련 — 전부 Google News 헤드라인뿐(본문 없음)
+  - RSS suasnews 1건: Australia FIMS 가격 컨설테이션(절차 안내, 문장 잘림)
+  - YouTube 4건: Painless360 ArduPilot 라디오 설정(재생목록 링크뿐, 신규 정보 없음), DJI Osmo Action 6·Mavic 4 Pro 프로모 쇼트 2편(기존 페이지 존재, 신규 정보 없음), 국내 채널 영상(설명 비어 있음)
+- Moved to processed:
+  - All 16 inbox files (excluding `.gitkeep`) → `inbox/processed/`
+
+## [2026-09-25] ingest | inbox 일일 수집 및 컴파일
+
+- Source files from `inbox/` (30 files processed): arXiv 1, KCI 1, CrossRef 1, GitHub 릴리스 3(yolo 2, pymavlink 1), RSS 10, YouTube 14
+- Created concepts (10):
+  - `concepts/vlm-fsm-copilot-uav-navigation.md` — FSM-VLM 하이브리드 UAV 항법 (domain: ai-autonomy)
+  - `concepts/counter-drone-queueing-force-sizing.md` — 대드론 방어체계 소요산정 대기행렬 모형 (domain: ai-autonomy)
+  - `concepts/yolo-v8-4-161.md` — YOLO v8.4.161 (domain: ai-autonomy)
+  - `concepts/yolo-v8-4-162.md` — YOLO v8.4.162 (domain: ai-autonomy)
+  - `concepts/pymavlink-v2-4-50.md` — pymavlink v2.4.50 (domain: comms-protocol)
+  - `concepts/lowes-wing-doordash-drone-delivery-pilot.md` — Lowe's 드론 배송 시범 (domain: ops-mission)
+  - `concepts/fire-foresight-xprize-wildfire-award.md` — XPRIZE Wildfire 수상 (domain: ops-mission)
+  - `concepts/rincell-rc50t-drone-cell.md` — Rincell RC50T 셀 (domain: hardware)
+  - `concepts/vulcan-elements-army-skyfoundry-magnets.md` — SkyFoundry 자석 공급 (domain: regulations)
+  - `concepts/drone-safety-statement-modernization-act.md` — 안전 규정 확인 법안 (domain: regulations)
+- Updated existing canonical (evidence added, no new page):
+  - `entities/tekever.md` — Series D 5.8억 달러 추가
+  - `concepts/dji-osmo-360-ii.md` — 2026-09-24 펌웨어 업데이트 추가
+  - `concepts/fcc-drone-cellular-c2-testing.md` — DroneDJ 재보도 추가
+  - `concepts/pymavlink.md` — v2.4.50 링크 추가
+- Updated:
+  - `index.md` (총 페이지 430 → 440, concepts 10건 추가)
+- Skipped (thin / headline-only / off-domain / duplicate):
+  - CrossRef 베이지안 드론 커버리지(초록 미제공), Skydio·DJI Enterprise·Parrot RSS(헤드라인뿐 또는 2018년 기사), sUAS News 2건·DroneLife 일부·DroneDJ 일부(발췌 단편적), Oscar Liang ER12 리뷰(도입문뿐)
+  - YouTube 14건: DJI 프로모 쇼트 5편, 비드론 주제(RAG·TimescaleDB·Simscape·MATLAB·러스트·바이브코딩·해커톤·Physical AI), 설명 빈약(UAV Coach·Bardwell·quadmovr)
+- Moved to processed:
+  - All 30 inbox files (excluding `.gitkeep`) → `inbox/processed/`
+
+## [2026-09-26] ingest | inbox 일일 수집 및 컴파일
+
+- Source files from `inbox/` (14 files processed): arXiv 1, CrossRef 1, GitHub 릴리스 1(yolo), RSS 7, YouTube 4
+- Created concepts (4):
+  - `concepts/oa-mppi-occlusion-aware-uav-control.md` — 가림 인지 MPPI UAV 제어 (domain: ai-autonomy)
+  - `concepts/yolo-v8-4-163.md` — YOLO v8.4.163 (domain: ai-autonomy)
+  - `concepts/skydio-f10-megadock.md` — Skydio F10·MegaDock (domain: hardware)
+  - `concepts/skyebrowse-crash-analysis-crowd-counter.md` — SkyeBrowse 신기능 (domain: ops-mission)
+- Updated:
+  - `index.md` (총 페이지 440 → 444, concepts 4건 추가)
+- Skipped (thin / headline-only / duplicate / off-domain):
+  - CrossRef 야간 UAV 차량탐지(초록 미제공), Parrot RSS(2023년 기사), Oscar Liang·sUAS News 2건·DroneLife 나머지(헤드라인·도입문뿐), YouTube 4건(DJI 프로모 2편, UAV Coach HOA 2편 설명 빈약)
+- Moved to processed:
+  - All 14 inbox files (excluding `.gitkeep`) → `inbox/processed/`
+
+## [2026-09-27] ingest | inbox 일일 수집 및 컴파일
+
+- Source files from `inbox/` (6 files processed): RSS 2, YouTube 4
+- Created: none (신규 canonical 페이지 없음)
+- Updated: none (`index.md` 총 페이지 444 유지)
+- Skipped (thin / headline-only / duplicate):
+  - Skydio RSS(F10·MegaDock는 `concepts/skydio-f10-megadock.md`에 기존 반영, Newport Beach는 헤드라인뿐), sUAS News(SkyfireAI-DBOX 발췌 단편적)
+  - YouTube 4건: DJI 프로모 2편(Osmo Pocket 4P, Action 6), Bardwell Betaflight 나침반(설명·챕터 목록뿐), Painless360 PORTS 탭(설명 빈약)
+- Moved to processed:
+  - All 6 inbox files (excluding `.gitkeep`) → `inbox/processed/`
+
+## [2026-09-28] ingest | inbox 일일 수집 및 컴파일
+
+- Source files from `inbox/` (7 files processed): RSS 2, GitHub 릴리스 1(yolo), YouTube 4
+- Created concepts (1):
+  - `concepts/yolo-v8-4-164.md` — YOLO v8.4.164(2026-09-27): FLOPs 계산 고속화(THOP 2.2.0),
+    CoreML export 2.8~3배 가속, CUDA 비디오 프레임 prefetch, 데이터셋 검증 강화 (domain: ai-autonomy)
+- Updated:
+  - `index.md` (총 페이지 444 → 445, concepts 섹션에 신규 1건 추가)
+- Skipped (thin / headline-only / duplicate / promo-no-new-fact):
+  - Parrot RSS 1건: "Parrot and RIIS Partner" 기사(2020-02-13 구형 기사, Google News RSS 스팸성 재노출)
+  - Skydio RSS 2건: "Inside Skydio's Autonomy Stack" 인터뷰(제목뿐, 본문 없음), Montgomery County
+    경찰 중국산 드론 탈피 기사(헤드라인뿐, 기존 `entities/skydio.md`에 추가할 신규 사실 없음)
+  - YouTube 4건: Painless360 ELRS Model Locater 툴(뷰어 요청 영상, 설명이 링크 목록뿐·기능 설명 없음),
+    DJI Osmo Nano·Air 3 프로모 쇼트 2편(기존 페이지 존재, 신규 정보 없음), quadmovr PX4 포지션 홀드
+    쇼트(자작 기체 소개뿐, 기술적 세부사항 없음)
+- Moved to processed:
+  - All 7 inbox files (excluding `.gitkeep`) → `inbox/processed/`
+
+## [2026-09-29] ingest | inbox 일일 수집 및 컴파일
+
+- Source files from `inbox/` (12 files processed): KCI 1, GitHub 릴리스 2(yolo, mavsdk), RSS 6, YouTube 5(중복: rss-skydio 1건 헤드라인 다수 포함)
+- Created concepts (3):
+  - `concepts/yolo-v8-4-165.md` — YOLO v8.4.165 릴리스, wheel 설치 정리·ONNX opset 검증·Windows OpenVINO 크래시 회피 (domain: ai-autonomy)
+  - `concepts/mavsdk-v4-0-1.md` — MAVSDK v4.0.1 패치, Python destroy() 동시성 안전성 및 FTP 타임아웃 시퀀스 보존 (domain: comms-protocol)
+  - `concepts/bio-inspired-offloading-uav-iov-mec.md` — UAV 보조 IoV MEC 오프로딩 CA-BIGA/DRL 알고리즘, 초록 절단으로 confidence: low (domain: comms-protocol)
+- Updated existing canonical (evidence added, no new page):
+  - `entities/elroy-air.md` — Chaparral 생산 전환용 PIPE 펀딩 1.75억 달러 확대 추가
+  - `entities/matternet.md` — M3 드론(11lb 페이로드, 10마일 항속) 공개 추가
+  - `concepts/amprius-sicore-battery.md` — 미국 정부 드론 배터리 생산 보조금 7,500만 달러(suasnews·dronelife 중복 출처) 추가
+  - `concepts/drone-regulations.md` — 미국 노스글렌시 드론 배송 허브 지자체-연방 권한 분리 사례 추가
+- Updated:
+  - `index.md` (총 페이지 445 → 448, concepts 섹션에 신규 3건 추가)
+- Skipped (thin / headline-only / promo-no-new-fact / off-domain):
+  - YouTube 4건: Joshua Bardwell 와이어리스 버디박스(어필리에이트 링크뿐, 기술 설명 없음), DJI Neo 2 제스처 런칭 쇼트(기존 `concepts/dji-neo-2-rth.md` 존재, 신규 기술 사실 없음), MATLAB Aerospace Blockset 소개 영상(일반 마케팅 설명뿐), DJI Osmo Mobile 8 스케이트 쇼트(기존 `concepts/dji-osmo-mobile-8.md` 존재, 신규 정보 없음)
+  - RSS oscarliang-fpv 1건: 1S 3인치 Toothpick 빌드(도입 문단뿐, 본문 없음)
+  - RSS skydio 3건: Bay Area 공장 확장·경찰 드론 예산 확대·Vegas 핸즈온(전부 Google News 헤드라인뿐, 본문 없음)
+  - RSS suasnews 나머지 3건: UK CAA 공해상 UAS 컨설테이션·에스토니아 무인체계 로드맵·Robin Radar 신사옥(전부 문장 잘림, 발췌 단편적)
+  - RSS dronelife 1건: BETA Technologies 전기항공 EMS 시험(유인 전기항공기, 드론 도메인 외)
+- Moved to processed:
+  - All 12 inbox files (excluding `.gitkeep`) → `inbox/processed/`

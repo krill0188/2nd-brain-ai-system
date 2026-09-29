@@ -1,15 +1,14 @@
 ---
 title: RTK GPS & Precise Landing
 created: 2026-07-27
-updated: 2026-07-27
+updated: 2026-09-09
 type: concept
 tags: [drone-hw, rtk, gps, gnss, differential, precision, landing]
-sources: []
+sources: [inbox/fetch-2026-09-09-yt-fix-your-rtk-drone-positioning-step-by-step-base-setup-guide.md]
 confidence: medium
 domain: hardware
 contested: false
 contradictions: []
-note: "Knowledge-based page - no raw source ingested yet"
 ---
 
 # RTK GPS & Precise Landing
@@ -129,6 +128,19 @@ Options:
    - 이동식 base (정확도 감소)
    - 드론 간 상대적 정확도는 유지
 ```
+
+### Emlid Flow Base Position 설정
+
+Self-hosted base 좌표를 Emlid Flow 앱 + Reach 수신기로 결정하는 두 가지 방식:
+
+| 방식 | 설명 |
+|------|------|
+| **Average Fix** | 일정 시간 GNSS 관측을 평균해 base 좌표를 자동 산출 |
+| **Manual Entry (Benchmark)** | 기지측점(benchmark) 등 이미 알려진 좌표를 직접 입력 |
+
+RTK 드론이 "Single" 상태에 고정되어 Fix를 얻지 못하는 문제는 base position 설정 오류가 주요
+원인 중 하나이며, 정확한 base 좌표 확보가 RTK-capable 드론(GNSS 모듈 + 실시간 보정 지원)의
+전제 조건이다.^[inbox/fetch-2026-09-09-yt-fix-your-rtk-drone-positioning-step-by-step-base-setup-guide.md]
 
 ## NTRIP Protocol
 
@@ -312,3 +324,6 @@ Multi-GNSS (4 systems): 20-30 satellites
 ## 📰 최근 관련 소식
 - 수원시, 광교호수공원서 드론배송 서비스 시연 (nsenior.co.kr, Tue, 04 Au) — https://news.google.com/rss/articles/CBMiY0FVX3lxTE51QjIxRlYxRldxTkVPakZyeERiSVg4RUlVai1WWjBOcUphQzF2cV9vZndmaUZla25PVjN2U1JsYmlxczJVTVVCZmxvSVoxb0xVRXR1WFVJRXU4WDBHT3JrTThJdw?oc=5
 - 수원시, 광교호수공원서 드론배송 시연 (뉴시스, Wed, 05 Au) — https://news.google.com/rss/articles/CBMieEFVX3lxTFB6LTBDeVpETTlZZlIzM3Rabnp3eDRMRFQxelhGLUt0NzFIaERuaEpWV2ZXRm5MZE5iUmEwYmFsblJUeEZPaDRzYVplUjNYckh0SlhLd05HRWlXU1VWb190RDBLdllOdDBTbHF6c1VTVk82cXhSdlhTbtIBeEFVX3lxTFB6LTBDeVpETTlZZlIzM3Rabnp3eDRMRFQxelhGLUt0NzFIaERuaEpWV2ZXRm5MZE5iUmEwYmFsblJUeEZPaDRzYVplUjNYckh0SlhLd05HRWlXU1VWb190RDBLdllOdDBTbHF6c1VTVk82cXhSdlhTbg?oc=5
+- GPS 끊긴 건물서 조난자 찾는다…우주항공청, 드론 경연대회 개최 (뉴시스, Sun, 06 Se) — https://news.google.com/rss/articles/CBMiYEFVX3lxTE9ZakJZMlRhb041TjRzMlNtNWI5MnVMemhCcVpmUy1MSWpCYjYxOGtENWtIZlFPY3VsYlEtYUxxQzh5OE9RV3FGV1hhaXd0cXUtSVhyXzBiUmJwZ0lQTHRUbNIBeEFVX3lxTE5HYUlnUS1Gb2JPeURjNHZrelM5dmtfODMyX0VseWJ4ZDJTcHVKX0dNRjJmdTdPZzl0QUxxamNvamtvenZjakFiQ3BsTlJ2YWlXX2p6aEpuUk5xTDk4cGJyQTJxWTdDQ2VWYnhXTDVQS1VFVUFQM0RSZw?oc=5
+- [Emlid] Fix Your RTK Drone Positioning: Step-by-Step Base Setup Guide (youtube.com, 2026-09-08) — https://www.youtube.com/watch?v=skRiCNmBI9g
+- 이번 주말, 집에만 있긴 아까워요! 서울 곳곳 문화행사(ft.드론쇼·축제) (mediahub.seoul.go.kr, Thu, 10 Se) — https://news.google.com/rss/articles/CBMiWEFVX3lxTE1FU1d6VUR1djZ1ZS1HY0gxRnhFOU5rZGl1OW9MNXJDUEZEZHZJTnRrM3V3VWg3RHdJdTRPdzJYWllUUEZCYk5DUUZGZkVRcEdhWUlKcDNrMU0?oc=5

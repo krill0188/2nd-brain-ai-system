@@ -34,3 +34,7 @@ FC/ESC/PDB 일체형 통합 보드 설계는 드론 소형화 및 군용·산업
 ## 관련 페이지
 
 비슷한 FC 통합 설계 패턴은 [[flight-controller-hardware]]를 참조하고, 하드웨어 소형화 동향 전반은 [[drone-hw]]에서 확인할 수 있다.
+
+## 📰 최근 관련 소식
+- 고양시, 고정밀 드론영상 자체 제작… 농지조사·불법건축물 단속 활용 (세계일보, Sat, 05 Se) — https://news.google.com/rss/articles/CBMiWEFVX3lxTE9jSEdrcGN1eXhsZGNDaldONzByRzVWQU5Ib0UtanMwY1VubEwtTm5IckxJNmN1WXdGSDFzMkZRdEw0MElVSFRQbHRVU1ppeXprV0hsM0FFM0PSAVRBVV95cUxPSnYwQ08zNWtlWUNzcU9pZVpMaG9ZTHo3MVNYRTJjWUotQmNfdjJmNEppN25KLWNJR3hMclh4TW11a2l6elozUnl6ZkVjNkJ6aUhYeDA?oc=5
+- [한화시스템/방산] 대드론체계 시스템 개발 — 한화그룹 (Hanwha) (www.wanted.co.kr, 2026-09-18) — https://www.wanted.co.kr/wd/387716

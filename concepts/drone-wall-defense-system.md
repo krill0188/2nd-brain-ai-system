@@ -38,3 +38,7 @@ Drone-to-Drone 운용 방식을 기반으로 한 Drone Wall 개념의 자율 대
 ## 출처
 
 - 김상혁, "Drone-to-Drone 기반 Drone Wall 개념을 적용한 대드론 방어체계 제안", 한국방위산업학회지, 2026
+
+## 📰 최근 관련 소식
+- U.S. Military selects first bases for directed-energy counter-drone program (UAS Magazine, Fri, 08 Ma) — https://news.google.com/rss/articles/CBMiqgFBVV95cUxQYTBSSlZTWElOU015U0xMVTZNYVRwVFhYZ25fSEEyMHVaWjJEYm1QcHVWd0NCVG84MGxvUFhxVWJfZi1WN1JTcWZuZWg5OUMtNHIyd3BIRU52bFhwS0t4cG9SR0dSaW01RFJ4QTNUVHphZXRFRVF6WlQ5UjZVZUtrekVtUlhaQTI3Rm9YMm51eG1teWFUUXNNTy1lbVdnTTN4ZUI0ZHB5Zk1EUQ?oc=5
+- JIATF-401 Drone Defense Marketplace broadens allied access to counter-drone capabilities (army.mil, Tue, 19 Ma) — https://news.google.com/rss/articles/CBMiwgFBVV95cUxPQV82THNsWmtyRnd1dEhNOWxzNEI1aVBFelBfUm1oU0Q5LTN0Skw2TmZfOGFpZWNOcGFnN2Z0RjBkM3pjWnJCa1RqTlR0WnB5cTFsNWlQRmt4N2djbkItNS1uTDhQZ1FIUS01NFNMRVBJOFE4MmpMTjRSak9hS2xuLUY4WFlGSTc5NVR0TE4tLVhMbm85U1JwN2ZzUjRjd1oxdE04ZTN0aWF2dkJsdU1sVjNtRTM2U250S1ROQzRlOHJGUdIBxwFBVV95cUxObmdfend4cDBSakN0bm1LSVdDbG9ieXFFWmNiR2VEc04zRW1tWlhIcUh6RUI1ZFV4THlwM29IaDN6WmJ3Nm9TRm1KMjRsNjFfaGRMdWJERmVKX1E4Y3NUWmd1QUlqYWtUYk95ZDNQNzhfYmxyR0N0bWJROXZJanVkbmVVaVlaYm40cG1WRG5xRmJYMERuRXU5ZG5zTkFWQktOYlVDVWlOa1hqZFZ2Vlh1S3F1T2FTSVZUY20yU3NRMUZ5VkQ0eGpZ?oc=5

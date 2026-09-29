@@ -1,4 +1,5 @@
 # Stage 0-R — 공개 경로 전환 및 실행 체인 보완
+> **2026-09-15 저녁 최신 상태:** [실행 복구 결과](STAGE_0R_RUNTIME_REPAIR.md)를 우선한다. 단일 07:30 job은 이미 설치됐고, 모델 캐시·공통 CLI 잠금·반복 후보 경로를 보완했다. 현재 382 canonical / 887 embeddings FRESH / graph 누락 0 / discovery pending 0. 발행 hold 30 + block 1로 Stage 0-R는 HOLD. 아래 수치와 예약 미활성 설명은 이전 시점 기록이다.
 
 기준: 2026-09-15 KST. **후보의 중복 경로 문제 해결, 예약 실행 전환은 미완료.**
 

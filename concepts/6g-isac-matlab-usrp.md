@@ -1,11 +1,11 @@
 ---
 title: "6G ISAC: MATLAB/USRP 기반 구현"
 created: 2026-08-04
-updated: 2026-08-04
+updated: 2026-09-15
 type: concept
 tags: [datalink, 6g, isac, simulation]
 domain: comms-protocol
-sources: [inbox/fetch-2026-08-04-yt-6g-isac-implementation-with-matlab-and-usrp.md]
+sources: [inbox/fetch-2026-08-04-yt-6g-isac-implementation-with-matlab-and-usrp.md, inbox/fetch-2026-09-15-yt-designing-isac-systems-with-phased-arrays.md]
 confidence: high
 contested: false
 contradictions: []
@@ -31,6 +31,14 @@ contradictions: []
 ### 채널 추정
 - 통신 및 감지를 위한 채널 추정
 - 100MHz 대역폭에서의 성능 검증
+
+### 페이즈드 어레이 기반 ISAC 설계 (2026-09-14 업데이트)
+
+- MATLAB 채널: 페이즈드 어레이 송수신기를 활용한 통신 중심(communication-centric) ISAC
+  워크플로 공개 — 공유 스펙트럼·파형·하드웨어로 통신과 사용자 위치추정을 동시 수행.^[inbox/fetch-2026-09-15-yt-designing-isac-systems-with-phased-arrays.md]
+- 다중경로(multipath) 환경에서 페이즈드 어레이 송신기·수신기를 갖춘 MIMO-OFDM 링크를 모델링.
+- OFDM 파일럿 신호로 추정한 채널 정보로 프리코딩·컴바이닝 가중치를 계산해 통신 링크를
+  구성하고, 비트오류율(BER)로 성능을 평가.
 
 ## 관련 개념
 
@@ -58,3 +66,7 @@ contradictions: []
 - 한투AC, 미국 오리건에 ‘K-방산·드론 베이스캠프’ 구축…국내 스타트업 미국 진출 지원 (드론매거진 뉴스, Mon, 31 Au) — https://news.google.com/rss/articles/CBMiZEFVX3lxTE5ZODF5N3NRd3hhWS0zZFF0eVNFcWlNdURLV0VTYV82Z25PcHVQVWpLR0RzSTNQbXpmeldrRG16YW5tRXBlcnhPVG9BeUR1NHpRVkZyRzdqNkhrRlJoNmFIaUhCcDM?oc=5
 - 체면구긴 '한국 자폭드론'...4초 만에 해상으로 추락 (YTN 사이언스, Mon, 31 Au) — https://news.google.com/rss/articles/CBMif0FVX3lxTFBrYnN5bnZxcnFuZ0w4cDh6aDA5VTJTMlBPT1lReG5LdTdVOFc2bWtDQjJhYWh6OUZuQzJfRDJXbFVNWk5heURlblMzekswTGw2Q1JJYnA1OWZ6a1ZjamVoSHFYUGt6Wm9nQTBYdm1GR0Y5dWszbmhCWm5FNkxoSlk?oc=5
 - 충남도, 스마트농업 특구 선정·청년농 드론교육으로 미래농업 기반 넓힌다 (농수축산신문, Thu, 03 Se) — https://news.google.com/rss/articles/CBMibEFVX3lxTE5nUWpnYktLY2FUd2VPT2hzTmgxeE43aHZ2RHhCdURsbTlWNTZoMElqV1RnU0htNDI3dnNTYUdyS016c193LThCSU9QQmdmNWlsckRQSnRzMEp2VFhFUlQ1YUdUQzl5a0I0SjRYaQ?oc=5
+- 무기공장이 된 전쟁터를 발판으로 우크라이나에서 태어난 방산 스타트업들 (뉴스임팩트, Wed, 02 Se) — https://news.google.com/rss/articles/CBMickFVX3lxTE5lX2lxNl9mVlo0dE1EZC1fT3lyNTZPbHFmVXI5TzVqQkNKRy1odExkQUg4UXc5XzBCQXlLUHFaN2NuTXp4SFdtZkJRWF8wRjhTTHhvV0U0TE03M2w2c0tmWWgyMHVRS0JTVjRwY3F3NmowUQ?oc=5
+- 한화, 드론·위성 싹 잡는다…차세대 방산 승부수 (소년한국일보, Mon, 07 Se) — https://news.google.com/rss/articles/CBMibEFVX3lxTFBBT0ZFM244akR4Ui1aRzM0REpwM01CQ2U1elhmc2U1WmVpOE5rT3IxaXdDTWNHQTl4dGxWcU5kVEkxdVJwQzlrY0pwbFh6VlY4VVQtSm4yVzdTejY3SGdEd0dfZjAxa1B4aks2UtIBcEFVX3lxTE1HZTYtLXY0eU1PdGVINkFQUFZMMkk1NnlpcWpoLTBSVWJpbkl3clByOS1qRWxIbTZZc19kSFRLcTFudzlBZ05qQVN0eFQyRVhzbWRsSDhsSUxpMjdnOG5ZTVZ3SjE3ZnIwX0swT0UzUEw?oc=5
+- 미 해병대, 드론 요격 차량 '템페스트' 실전 배치 (데일리방산, Wed, 09 Se) — https://news.google.com/rss/articles/CBMicEFVX3lxTFBISG9wY1hOQWFTSnQ5R05HbmFqbTJWVUlTUW9vMmRNQkYySjZSd1NBZlFFanBIN1diUTVuTTkzS2ZDZDlja0ZrM0UwQmk0TW1SZndQODVzWTlHQllxamRGRnBpQ2M0ZDRHMW9ZN0pwT2E?oc=5
+- ‘마약왕’박왕열, 1억들여 ‘드론탈옥’ 준비했다 (munhwa.com, Tue, 15 Se) — https://news.google.com/rss/articles/CBMiUEFVX3lxTE42VXBqZ0g1ek9wSlZIa0ZWQ0hGdG5FbnhKRFhrUkY1YTNrWkJUd2I0TkpPS1FqMkYwUm5WTEYtcGU0MHZuRUdhUWgzMkhELU5R?oc=5

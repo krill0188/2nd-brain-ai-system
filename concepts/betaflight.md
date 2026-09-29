@@ -1,10 +1,10 @@
 ---
 title: Betaflight
 created: 2026-07-29
-updated: 2026-08-09
+updated: 2026-09-17
 type: concept
 tags: [drone, drone-sw, flight-control]
-sources: [inbox/fetch-2026-07-29-betaflight.md, inbox/fetch-2026-08-03-betaflight.md]
+sources: [inbox/fetch-2026-07-29-betaflight.md, inbox/fetch-2026-08-03-betaflight.md, inbox/fetch-2026-09-17-betaflight.md]
 confidence: high
 contested: false
 contradictions: []
@@ -42,6 +42,12 @@ Betaflight는 FPV(First Person View) 드론과 소형 레이싱 드론을 위한
 - **OSD**: Blackbox 저장 모드 액션 추가
 - **디버깅**: DEBUG_TASK 모드, PRBS FLASH 테스트
 - **카메라**: CADDX GM3 짐벌 드라이버
+
+## 패치 릴리스 (2026.6.2)
+
+2026년 9월 16일 릴리스된 2026.6.2는 2026.6 계열 백포트 버그 수정 1건만
+포함한다: I2C busdev 접근자가 미설정 버스에 대해 접근하지 않도록 가드
+추가(PR #15605).^[inbox/fetch-2026-09-17-betaflight.md]
 
 ## 관련 개념
 

@@ -55,3 +55,8 @@ DJI's latest drone camera capabilities showcasing the Mavic 4 Pro's Hasselblad 1
 ## 📰 최근 관련 소식
 - [DJI] What if these were yours? | DJI Lito X1 (youtube.com, 2026-08-23) — https://www.youtube.com/watch?v=Zb1sF68eUMs
 - [DJI] From Island to Street | DJI Mavic 4 Pro (youtube.com, 2026-08-23) — https://www.youtube.com/watch?v=KCJZrlJoQAQ
+- [DJI] Wait for the Zoom Out | DJI Mavic 4 Pro (youtube.com, 2026-09-05) — https://www.youtube.com/watch?v=dzHZkvgUJ08
+- [DJI] A Moon This Close? | DJI Mavic 4 Pro (youtube.com, 2026-09-08) — https://www.youtube.com/watch?v=yNMbasMoqho
+- [DJI] Orbit with More Confidence | DJI Lito X1 (youtube.com, 2026-09-09) — https://www.youtube.com/watch?v=lBP1rSdwsa4
+- [DJI] Bright Water, Full Detail | DJI Mavic 4 Pro (youtube.com, 2026-09-10) — https://www.youtube.com/watch?v=p80YZPP9gJQ
+- [Painless360] 'Pro Grade' ELRS PWM Receivers: The new RadioMaster ER16, ER12 and ER3Pro (youtube.com, 2026-09-10) — https://www.youtube.com/watch?v=3vInqhMlb1I

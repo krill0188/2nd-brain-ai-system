@@ -37,3 +37,7 @@ Signal Temporal Logic(STL) 사양을 활용한 확산 기반 다중 에이전트
 
 - Joe Eappen et al., "Generalizable Multi-Agent Planning from Signal Temporal Logic Specifications via Diffusion", arXiv:2608.29490, 2026
 - 코드: https://github.com/jeappen/diff-ma-stl
+
+## 📰 최근 관련 소식
+- [단독] ‘드론’ 타고 날아서…박왕열, 송환 한 달 전 탈옥 계획 (JTBC, Mon, 14 Se) — https://news.google.com/rss/articles/CBMiVEFVX3lxTE5aZXowUXdrOGo0TjlKMDA2NlcxSjBEem9mN3FnR3VBaHl5Y2xweVRvcGhDLUxxM25DcHdkTXl3QUJMMGVKd1pkRFJoUzdRZHhscmZzSg?oc=5
+- [단독] 드론타고 '옥중탈출' 꿈꿨던 박왕열…필리핀 수용소에선 '월 600만원' 호화생활도 가능한 이유는 / 풀버전 (JTBC, Tue, 15 Se) — https://news.google.com/rss/articles/CBMiVEFVX3lxTFBIdWVLZVpUblJBWnR1dVhaZmV0YWNvSW9iSDNsYUdRZkhSXzZPeUlnVXJfMFV5M0NSSWJ3aFV6UHNmVHdjQnhvQU1jU0R1Z01PdGRjRQ?oc=5

@@ -41,3 +41,5 @@ Return to Home는 다음 센서 융합을 통해 구현된다:
 - [DJI] Mountain Trail. Neo 2 Close the Whole Way. | DJI Neo 2 (youtube.com, 2026-08-14) — https://www.youtube.com/watch?v=i9xXT52Iksk
 - [DJI] Guess how the drone returns to its starting point !｜Neo 2 (youtube.com, 2026-08-12) — https://www.youtube.com/watch?v=hfLhpyLGzaM
 - Two Shenzhen Rivals, Two Different Paths to the U.S. Market (dronelife.com, Thu, 13 Au) — https://dronelife.com/2026/08/13/insta360-dji-us-market/
+- [DJI] What moment would you capture at the show? ｜DJI Neo 2 (youtube.com, 2026-09-06) — https://www.youtube.com/watch?v=-3VeVIIsFs4
+- [DJI] Fast Feet, Clean Frame | DJI Neo 2 (youtube.com, 2026-09-06) — https://www.youtube.com/watch?v=7FrKRyF02W0

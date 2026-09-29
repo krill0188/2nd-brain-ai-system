@@ -1,7 +1,7 @@
 ---
 title: "AgilePE: UAV Pursuit-Evasion via Self-Play RL"
 created: 2026-08-19
-updated: 2026-08-19
+updated: 2026-09-14
 type: concept
 domain: ai-autonomy
 tags: [drone, ai-autonomy, reinforcement-learning, sim-to-real, pursuit-evasion]
@@ -45,6 +45,8 @@ AgilePE addresses the fundamental challenge of autonomous pursuit-evasion for UA
 
 ## Related Concepts
 
+
+- [[agile-quadrotor-learning]] — 민첩 쿼드로터 비행 학습 관련 연구
 - [[reinforcement-learning-drone]] — RL techniques for drone control
 - [[sim-to-real-transfer]] — Simulation to real-world policy transfer
 - [[swarm-coordination]] — Multi-drone coordination strategies

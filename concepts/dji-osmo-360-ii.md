@@ -1,10 +1,10 @@
 ---
 title: DJI Osmo 360 II
 created: 2026-09-01
-updated: 2026-09-01
+updated: 2026-09-25
 type: concept
 tags: [drone, hardware, dji, camera, 360]
-sources: [inbox/fetch-2026-09-01-rss-dronedj.md]
+sources: [inbox/fetch-2026-09-01-rss-dronedj.md, inbox/processed/fetch-2026-09-25-rss-dronedj.md]
 confidence: high
 contested: false
 contradictions: []
@@ -34,3 +34,11 @@ DJI Osmo 360 II는 DJI의 차세대 360° 액션 카메라로, 8K/60fps 파노�
 - [[dji]] — DJI 기업 페이지
 - [[dji-osmo-action-6]] — Osmo Action 6
 - [[drone-payload-systems]] — 드론 페이로드 시스템
+
+## 📰 최근 관련 소식
+- [DJI] Build the Shot Before the Ride | DJI Osmo 360 II (youtube.com, 2026-09-05) — https://www.youtube.com/watch?v=ws6alwQJ1hA
+- [DJI] Can You Outrun the Camera?｜Avata 360 (youtube.com, 2026-09-10) — https://www.youtube.com/watch?v=lT0RvXcvUws
+
+## 펌웨어 업데이트 (2026-09-24)
+
+- 저조도 영상 화질 개선, 근접 파노라마 사진 보정, 대용량 360 파일의 클라우드 백업 편의성 향상.^[inbox/processed/fetch-2026-09-25-rss-dronedj.md]

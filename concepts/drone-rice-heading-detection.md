@@ -47,3 +47,4 @@ domain: ops-mission
 
 ## 📰 최근 관련 소식
 - 충남도, 스마트농업 특구 선정·청년농 드론교육으로 미래농업 기반 넓힌다 (농수축산신문, Thu, 03 Se) — https://news.google.com/rss/articles/CBMibEFVX3lxTE5nUWpnYktLY2FUd2VPT2hzTmgxeE43aHZ2RHhCdURsbTlWNTZoMElqV1RnU0htNDI3dnNTYUdyS016c193LThCSU9QQmdmNWlsckRQSnRzMEp2VFhFUlQ1YUdUQzl5a0I0SjRYaQ?oc=5
+- 음향 AI·컴퓨터비전 연구원 (영상 기반 드론 탐지·추적) — 부전전자 (www.wanted.co.kr, 2026-09-17) — https://www.wanted.co.kr/wd/387130

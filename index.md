@@ -3,9 +3,9 @@
 > Complete catalog of active canonical pages. Each entry is a wikilink followed by
 > a one-line summary, sorted alphabetically within its section.
 >
-|> Total pages: 352
+|> Total pages: 448
 ## Entities
-|- [[a2z-longtail-dual]] — A2Z Drone Delivery BVLOS 듀얼 패키지 배송 드론.
+- [[qgroundcontrol-v5-1-0]] — QGroundControl v5.1.0 릴리스 후보 기록.
 |- [[avidrone]] — 캐나다 헤비리프트 드론 기업, DARPA Lift Challenge 우승.
 |- [[cambridge-aerospace]] — 영국 공중 방위/C-UAS 기업, $300M Series C (2026-08).
 |- [[dronetag]] — Remote ID 솔루션 기업, Airwise Nexus 통합.
@@ -65,6 +65,9 @@
 |- [[faa-nextgen-drone-integration]] — FAA NextGen fact sheet on drone integration.
 |- [[uavionix-airwise-utm-partnership]] — uAvionix-Airwise real-time UTM partnership.
 |- [[heven-aerotech]] — 미국 버지니아 기반 수소 추진 드론 제조사, 56,000 sq ft 생산 시설 가동 (2026-09).
+- [[kite-aerospace]] — 호주 질롱 기반 자율 물류 UAS "KITE" 생산 개시 기업 (2026-09).
+- [[wingcopter]] — 독일 드론 제조사, 전술 정찰 eVTOL "Wingcopter 262" 공개 (2026-09).
+- [[dji-sdr-transmission-2]] — DJI 전문 촬영용 4K HDR 무선 영상 전송 시스템 (2026-09-18 출시).
 
 ## Concepts
 |- [[drone-rice-heading-detection]] — 드론 기반 벼 출수 판별 시스템(YOLOv11).
@@ -184,6 +187,7 @@
 - [[flight-ready-lidar-inertial-odometry]] — 임베디드 드론용 비행 준비 LIO 시스템.
 - [[fpv-antenna-guide]] — FPV 안테나 선택 및 사용 가이드.
 - [[fpv-hardware]] — 2026년 7월 FPV 드론 하드웨어 동향.
+- [[game-theoretic-drone-swarm-defense]] — 차등 게임이론 기반 드론 스웜 방어 전술 효과 분석.
 - [[gnn-uav-anomaly-detection]] — GNN 기반 UAV 검사 데이터 이상 탐지 프레임워크.
 - [[gps-uav-imu]] — GPS 미수신 환경에 특화된 마이크로드론/UAV 위치추정 기법들은 공통적으로 외부 위치 인프라(GPS) 없이 온보드 카메라·IMU·옵티컬 플로우 등 상대적/자기완결적 센싱에만 의존
 - [[ground-control-station]] — QGroundControl, Mission Planner 등 GCS 소프트웨어와 텔레메트리 시스템.
@@ -259,7 +263,7 @@
 |||- [[qgroundcontrol-v5-1-4]] — QGroundControl v5.1.4 안정 릴리스, HUD 피치 표시 및 다양한 버그 수정 (2026-08-30).
 |||- [[mavsdk-release]] — MAVSDK v3.17.4 백포트 릴리스, Android 빌드 수정 (2026-08-25).
 |||- [[dji-osmo-360-ii]] — DJI Osmo 360 II 8K/60fps 360° 카메라 공개.
-|||- [[a2z-longtail-dual]] — A2Z Drone Delivery Longtail Dual BVLOS 드론 공개.
+- [[a2z-longtail-dual]] — A2Z Drone Delivery Longtail Dual 듀얼 배터리 BVLOS 드론.
 |||- [[shadowfaxuas-sf45]] — ShadowfaxUAS SF45 ITAR-free Group 3 VTOL.
 |||- [[zuri-cargo-tiltrotor]] — Zuri 비무장 화물 틸트로터 VTOL.
 |||- [[terra-drone-deftech]] — Terra Drone DEFTECH 파트너십 및 C-UAS 시스템.
@@ -350,16 +354,109 @@
 - [[drone-backyard-flight-legality]] — 이웃집 마당 위 드론 비행의 FAA/프라이버시 합법성 쟁점.
 - [[drone-fluxgate-magnetometer-crossline-correction]] — 드론 탑재 플럭스게이트 자력탐사 교차점 오차 보정.
 - [[drone-news-2026-09-05]] — 2026년 9월 5일 드론 업계 주요 소식(FCC, DJI, Skydio, Wing).
+- [[drone-news-2026-09-06]] — 2026년 9월 6일 드론 업계 주요 소식(라이프치히 사건, Garuda 네팔, Skyports 오이타).
+- [[kci-barley-wet-stress-hyperspectral-detection]] — UAV 초분광 영상 기반 보리 습해 조기 탐지(KNN 식생지수).
+- [[kci-hyperspectral-litter-detection-unetpp]] — 도심 유수지 UAV 초분광영상 배경유형 보조 U-Net++ 쓰레기 탐지.
+- [[kci-llm-cbba-swarm-task-allocation]] — LLM 전략 파라미터 생성 기반 상황 적응형 군집 무인기 임무 할당.
+- [[kci-manned-unmanned-teaming-defensive-air-ops]] — 방어적 대공/엄호 작전 유·무인 복합 편대 임무 효과도 분석.
+- [[kci-hallasan-fir-ndvi-vitality-assessment]] — 드론 다중분광 NDVI 기반 한라산 구상나무 고도·사면향별 활력도 예비평가.
+- [[kci-light-attack-helicopter-mum-t-verification]] — 소형무장헬기 유무인복합 운용 통합검증환경 및 비행제어시스템 통합 검증.
 - [[pine-wilt-disease-uav-detection]] — UAV 영상 기반 소나무재선충병 탐지 정확도 비교(YOLO26-L).
 - [[uav-imagery-ground-vehicle-localization]] — UAV 영상의 지상차량 시각 위치추정 기여 분해 연구.
 - [[uav-support-facility-robust-location-planning]] — 시설 고장 고려 UAV 감시 지원시설 강건 입지 계획.
 - [[vit-uavcom-vision-inertial-uav-communication]] — 비전-관성 추적 지원 UAV 통신·궤적 공동 최적화.
 - [[yolo-v8-4-139]] — YOLO v8.4.139 릴리스, validation 메모리 사용량 절감 (2026-09-04).
+- [[yolo-v8-4-141]] — YOLO v8.4.141 릴리스, Axelera Voyager SDK 1.8.0 업그레이드 (2026-09-05).
+- [[yolo-v8-4-142]] — YOLO v8.4.142 릴리스, end2end를 nms 옵션으로 통합 (2026-09-05).
+- [[yolo-v8-4-143]] — YOLO v8.4.143 릴리스, YOLO26 INT8 양자화 인식 훈련(QAT) 도입 (2026-09-07).
+- [[yolo-v8-4-144]] — YOLO v8.4.144 릴리스, 수치 안정성 및 배포 워크플로 개선 (2026-09-08).
+- [[drone-news-2026-09-09]] — 2026년 9월 9일 드론 업계 주요 소식(Powerus, Robinson, XROSSBAT, TSA Part 108).
+- [[drone-news-2026-09-10]] — 2026년 9월 10일 드론 업계 주요 소식(Ouster 라이다, Superwake BVLOS, 텍사스 스마트 월).
+- [[drone-news-2026-09-11]] — 2026년 9월 11일 드론 업계 주요 소식(배터리 공급망, MQ-9A 리퍼, Echodyne MESA 레이더).
+- [[kci-uav-lidar-ground-point-density-dem-accuracy]] — UAV-LiDAR 지면점 밀도·해상도가 DEM 정확도에 미치는 영향.
+- [[marl-uav-wildfire-exploration]] — 산불 대응 자율 UAV 탐색을 위한 다중 에이전트 강화학습.
+- [[yolo-v8-4-146]] — YOLO v8.4.146 릴리스, RT-DETR 신뢰성 개선 (2026-09-09).
+- [[swarmnxt-aerial-swarm-platform]] — SwarmNxt: 고속 애자일 공중 스웜을 위한 오픈소스 SW-HW 플랫폼.
+- [[kci-uav-swarm-mission-reliability-abort]] — 재구성형 UAV 스웜의 임무 중단을 고려한 임무 신뢰도 모델링.
+- [[kci-drone-certification-stepwise-approval-model]] — 드론 다기관 인증체계 개선을 위한 단계별 승인 모델 연구.
+- [[drone-news-2026-09-12]] — 2026년 9월 12일 드론 업계 주요 소식(Teledyne 방산 계약, TB2 MMAD 도킹, GA-ASI 산불 UAS).
+- [[yolo-v8-4-148]] — YOLO v8.4.148 릴리스, SAM 3.1 이미지 예측 체크포인트 지원 (2026-09-11).
+- [[yolo-v8-4-150]] — YOLO v8.4.150 릴리스, 제한 체크포인트 로딩 고속화 및 RT-DETR 학습 효율화 (2026-09-12).
+- [[uk-police-drone-child-injury-incident]] — 영국 경찰 DJI Matrice 30T 케이블 충돌 후 아동 부상, 운용자 직무 위법행위 청문.
+- [[emax-nanoscout-pro-1s-whoop]] — EMAX 신형 1S 휩급 FPV 레이싱 드론 출시.
+- [[path-uav-target-handoff]] — 협력 UAV 간 기하학 기반 연속 표적 감지 핸드오프(PATH) 프레임워크.
+- [[simplesense-dft-seraphimos-air-force]] — Simplesense-DFT SeraphimOS 대드론 시스템 첫 미 공군 배치.
+- [[yolo-v8-4-152]] — YOLO v8.4.152 릴리스, SystemLogger NVIDIA 드라이버/CUDA 버전 캐싱 (2026-09-14).
+- [[kci-airport-drone-incident-location-reporting]] — 관측자 중심 위치정보 전달체계 기반 공항 드론 Incident 대응 연구.
+- [[kci-sejong-counter-drone-governance]] — 세종 국가상징구역 대드론 운용 작전조정 우선권(OCP) 거버넌스 설계 연구.
+- [[dji-drone-shot-down-alabama-incident]] — 앨라배마 DJI Mavic 4 Pro 총격 피격 사건.
+- [[fcc-drone-cellular-c2-testing]] — FCC 드론 셀룰러 네트워크 C2/탐지회피/Remote ID 전국 테스트 승인 (2026-09-11).
+- [[skyports-japan-aam-subsidy-wins]] — Skyports 일본 AAM 보조금 프로젝트 9건 수주(신청 성공률 100%).
+- [[darpa-heavy-lift-challenge-2026-south-africa]] — DARPA Heavy Lift Challenge 남아공 부자 팀 75만 달러 우승.
+- [[yolo-v8-4-153]] — YOLO v8.4.153 릴리스, SAM3 초기화 버그 수정 및 INT8 export 동작 명확화 (2026-09-15).
+- [[yolo-v8-4-154]] — YOLO v8.4.154 릴리스, CoreML 동적 export 수정 및 RT-DETR INT8 정확도 복원 (2026-09-16).
+- [[calibrate-once-fly-any-team-swarm-training]] — 저충실도 시뮬레이션 잔차 보정 기반 드론 군집 훈련 기법.
+- [[kci-disaster-response-drone-tech-direction]] — 재난 대응을 위한 드론의 기술적 발전 방향 연구(김준호, KARI).
+- [[kci-uwb-degraded-uav-swarm-positioning]] — UWB 품질 저하 환경에서 UAV 군집측위 최소운용조건 분석.
+- [[kci-dual-nis-sac-gnss-ins-spoofing]] — 이중 NIS 보상 SAC 기반 GNSS/INS 무인기 은닉 기만 기법.
+- [[flytrex-rooftop-docks-ai-fleet-positioning]] — Flytrex 옥상 도킹스테이션 + AI 함대 배치(댈러스), 배달비용 60% 절감.
+- [[bt-drone-sim-rail-incident-response]] — BT 드론 SIM 기반 영국 철도경찰 드론 역량 지원.
+- [[resilienx-orion-nasa-sbir-wildfire]] — ResilienX ORION 공역 조정 시스템, NASA SBIR Phase II 선정.
+- [[drone-assistant-finland-regulatory-tool]] — Drone Assistant 핀란드 드론 규정 AI 조회 도구 출시.
+- [[aive-ai-wildfire-mapping]] — AIVE AI Systems 소수 이미지 기반 지오레퍼런스 매핑(INTERGEO 2026).
+- [[emesent-trimble-lidar-integration]] — Emesent 모바일 SLAM 스캐너, Trimble Connect 직접 연동.
+- [[airwise-uas-sentry-remote-id-integration]] — Airwise Solutions × UAS Sentry Remote ID 탐지 통합.
+- [[yolo-v8-4-155]] — YOLO v8.4.155 릴리스, labels.cache 재사용 오류 방지 및 Windows OpenVINO 추론 개선 (2026-09-17).
+- [[yolo-v8-4-156]] — YOLO v8.4.156 릴리스, 원격 NDJSON 변환 신뢰성 및 INT8 TensorRT export 개선 (2026-09-19).
+- [[yolo-v8-4-157]] — YOLO v8.4.157 릴리스, TensorRT FP16/INT8 추론 최대 20% 가속 및 YOLOE prompt-free 지원 확대 (2026-09-20).
+- [[yolo-v8-4-158]] — YOLO v8.4.158 릴리스, OOM 복구 후 Mosaic 유지·AutoBatch·export 클래스 수 추론·SAM2 비디오 마스크 개선 (2026-09-21).
+- [[zimbabwe-kite-bvlos-medical-delivery]] — Drone Solutions International, 짐바브웨 CAAZ로부터 KITE 의료 물류 BVLOS 승인 (2026-09-21).
+- [[calos-lyapunov-safety-layer-quadrotor-rl]] — CALOS: 쿼드로터 안전 강화학습용 Control-Affine Lyapunov 안전 레이어.
+- [[dude-ids-context-aware-drone-security]] — DUDE-IDS: LSTM 기반 자율 드론 상황 인지 운용 보안 이상탐지.
+- [[drone-wildfire-detection-network-optimization]] — 드론 기반 산불 조기탐지 네트워크의 배치·라우팅 비용 최적화.
+- [[northern-plains-vantis-bvlos-medical-ag-demo]] — Northern Plains UAS Test Site, Vantis 기반 의료·농업 BVLOS 시연.
+- [[skydrive-verty-korea-evtol-mou]] — SkyDrive-Verty 한국 eVTOL 상용화 MOU(2028년 목표).
+- [[skyebrowse-per-model-pricing]] — SkyeBrowse 3D 드론 매핑 모델별 종량제 가격 전환.
+- [[ga-asi-mojave-battlefield-short-field-ops]] — GA-ASI Mojave, Hanwha Aerospace와 최초 전장 단거리 이착륙 운용 완료.
+- [[flyblind-cross-slice-timeliness-attack]] — 5G 슬라이스 간 적시성 공격 FlyBlind: 링크는 정상인데 GCS 텔레메트리가 12초 노후화(Silent State Staleness).
+- [[otfs-uav-power-control]] — OTFS 기반 지연 SINR 피드백 고기동 UAV 전력 제어.
+- [[physai-bench-uav-agentic-benchmark]] — PhysAI-Bench: LLM 기반 UAV 에이전트 의사결정 벤치마크.
+- [[snn-ppo-uav-constrained-navigation]] — 스파이킹 신경망 액터-크리틱 PPO 기반 UAV 협소구간 자율비행.
+- [[hermes-evolutionary-uav-path-planning]] — HERMES: 경험 재생·연산자 가소성 기반 진화적 UAV 경로계획.
+- [[mavsdk-v4-0-0]] — MAVSDK v4.0.0 릴리스, C++ breaking change 및 Python/C/Kotlin 신규 바인딩 (2026-09-22).
+- [[yolo-v8-4-160]] — YOLO v8.4.160 릴리스, 데이터셋 캐시 무효화 및 메모리 사용량 개선 (2026-09-22).
+- [[acrobatic-flight-preference-learning-uzh]] — UZH IROS 2026: 선호 기반 강화학습 쿼드로터 곡예비행 학습.
+- [[alaska-drone-blood-delivery-olympic-antidoping]] — 알래스카 Windracers ULTRA 1,000km 혈액 샘플 장거리 배송 시험.
+- [[faa-drone-restriction-court-challenge]] — FAA 철회 드론 비행제한, EFF/ACLU 항소법원 재검토 요구.
+- [[advanced-navigation-kongsberg-cuas-deal]] — Advanced Navigation-KONGSBERG 1,850만 달러 C-UAS 플랫폼 계약.
+- [[skyways-dsv-offshore-logistics-partnership]] — Skyways-DSV 해상 물류 파트너십.
+- [[unauthorized-drones-timber-fire-firefighting]] — Timber Fire 무단 드론, 소방 항공기 운항 방해.
+- [[abz-innovation]] — 헝가리 기반 드론 제조사, 90일 만에 유럽 최대급 민간 드론 공장 가동.
+- [[vlm-fsm-copilot-uav-navigation]] — FSM-VLM 하이브리드 UAV 항법, GPS 미사용 환경 지연·신뢰성 분석.
+- [[counter-drone-queueing-force-sizing]] — 대드론 방어체계 소요산정 확률적 대기행렬 모형(KCI 2026).
+- [[yolo-v8-4-161]] — YOLO v8.4.161 릴리스 (2026-09-23), 신뢰성·문서 정비.
+- [[yolo-v8-4-162]] — YOLO v8.4.162 릴리스 (2026-09-24), CUDA 예측 prefetch.
+- [[pymavlink-v2-4-50]] — pymavlink v2.4.50 릴리스 (2026-09-24), 모드·서명·TLOG 리더.
+- [[lowes-wing-doordash-drone-delivery-pilot]] — Lowe's 드론 배송 시범, DoorDash·Wing 20분 이내.
+- [[fire-foresight-xprize-wildfire-award]] — Fire Foresight XPRIZE Wildfire 자율 대응 트랙 50만 달러 수상.
+- [[rincell-rc50t-drone-cell]] — Rincell RC50T NDAA 준수 21700 드론 배터리 셀.
+- [[vulcan-elements-army-skyfoundry-magnets]] — 미 육군 SkyFoundry 희토류 자석 공급사 Vulcan Elements.
+- [[drone-safety-statement-modernization-act]] — 첫 비행 전 안전 규정 확인 의무화 법안(하원 위원회 진전).
+- [[oa-mppi-occlusion-aware-uav-control]] — OA-MPPI: 가림 영역 인지 MPPI 기반 쿼드로터 온보드 비행 제어.
+- [[yolo-v8-4-163]] — YOLO v8.4.163 릴리스 (2026-09-25), Linux Core AI export.
+- [[skydio-f10-megadock]] — Skydio F10 Lightrunner 자율 고정익·MegaDock 공개 (2026-09).
+- [[skyebrowse-crash-analysis-crowd-counter]] — SkyeBrowse 충돌 분석·Crowd Counter 신기능 (2026-09-25).
+- [[yolo-v8-4-164]] — YOLO v8.4.164 릴리스 (2026-09-27), FLOPs 계산 고속화 및 export/비디오 추론 개선.
+- [[yolo-v8-4-165]] — YOLO v8.4.165 릴리스 (2026-09-28), wheel 설치 정리 및 export/추론 신뢰성 개선.
+- [[mavsdk-v4-0-1]] — MAVSDK v4.0.1 패치 릴리스, Python destroy() 동시성 및 FTP 타임아웃 시퀀스 수정.
+- [[bio-inspired-offloading-uav-iov-mec]] — UAV 보조 IoV MEC 오프로딩: CA-BIGA·DRL 알고리즘 (KCI, confidence low).
 
 ## Comparisons
 
 - [[knowledge-tool-roles]] — Zotero, NotebookLM, LLM Wiki, Obsidian과 그래프 도구의 책임 비교.
 - [[fc-firmware-comparison]] — FPV 드론 FC 펌웨어 비교(Betaflight/INAV/ArduPilot).
+- [[kci-bvlos-faa-nprm-korea]] — 저고도 드론 BVLOS 제도 비교: FAA Normalizing UAS BVLOS NPRM vs 한국 특별비행승인.
+- [[kci-korea-airspace-eu-uspace]] — 드론 공역시스템 비교: 한국형 드론 공역시스템 vs EU Drone Strategy 2.0/U-space.
 
 ## Queries
 

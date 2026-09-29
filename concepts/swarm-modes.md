@@ -71,3 +71,4 @@ contradictions: []
 
 ## 📰 최근 관련 소식
 - '군집 드론' 폭탄테러 가상상황…민·관·군·경·소방 첫 합동훈련 (뉴시스, Wed, 19 Au) — https://news.google.com/rss/articles/CBMiYEFVX3lxTE53Q25RRW5taVdpZ25YWTdOMTJHRXF3aGZ3ckJhMzhtUWUyakVlYTZER0hvanVUWGxHMkN5c2dJM3h3MFUxeDhjWnlBNUR3QmJIVmdNX2xsZHZHeGxuakNBSNIBeEFVX3lxTE96SUcydjlfVjA5eGkweHplNjI3cVo1QVVobU1XWEdDdlJlNlJzN3V5clpaSzRybWZqOGZyaXR5V0wzQlNsaG1NQmNYN0xDVHprajc5OGxNZHJvYTNMRHBwLXM2Y3Q5dWtLalZMeDgzLUZYeGlSdGswLQ?oc=5
+- GPS 끊긴 건물서 조난자 찾는다…우주항공청, 드론 경연대회 개최 (뉴시스, Sun, 06 Se) — https://news.google.com/rss/articles/CBMiYEFVX3lxTE9ZakJZMlRhb041TjRzMlNtNWI5MnVMemhCcVpmUy1MSWpCYjYxOGtENWtIZlFPY3VsYlEtYUxxQzh5OE9RV3FGV1hhaXd0cXUtSVhyXzBiUmJwZ0lQTHRUbNIBeEFVX3lxTE5HYUlnUS1Gb2JPeURjNHZrelM5dmtfODMyX0VseWJ4ZDJTcHVKX0dNRjJmdTdPZzl0QUxxamNvamtvenZjakFiQ3BsTlJ2YWlXX2p6aEpuUk5xTDk4cGJyQTJxWTdDQ2VWYnhXTDVQS1VFVUFQM0RSZw?oc=5

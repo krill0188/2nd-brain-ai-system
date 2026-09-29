@@ -1,7 +1,7 @@
 ---
 title: pymavlink
 created: 2026-07-29
-updated: 2026-07-29
+updated: 2026-09-25
 type: concept
 tags: [drone, drone-sw, datalink]
 sources: [inbox/fetch-2026-07-29-pymavlink.md]
@@ -22,7 +22,11 @@ pymavlink는 MAVLink 프로토콜을 위한 Python 구현체이다. 드론과 GC
 - **유틸리티**: `mavproxy`, `mavlogdump` 등 명령줄 도구
 - **다중 언어 지원**: Python, C, C++, JavaScript 등으로 코드 생성
 
-## 최신 릴리스: v2.4.49 (2025-08-01)
+## 릴리스
+
+최신은 [[pymavlink-v2-4-50]](2026-09-24). 아래는 이전 v2.4.49(2025-08-01) 기록이다.
+
+### v2.4.49 (2025-08-01)
 
 ### 주요 변경사항
 
