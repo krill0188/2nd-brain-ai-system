@@ -55,7 +55,7 @@ def steps(candidate: Path) -> list[tuple[str, list[str]]]:
     return [
         ('Generate:fetch', ['bash', str(ROOT / 'scripts/fetch-inbox.sh')]),
         ('Generate:ingest', ['bash', str(ROOT / 'scripts/daily-ingest-claude.sh')]),
-        ('Generate:self-update-canonical', [str(WEB / 'node_modules/.bin/tsx'), str(WEB / 'scripts/self-update-pipeline.ts'), '--apply']),
+        ('Generate:self-update-canonical', [shutil.which('node') or '/usr/local/bin/node', '--import', 'tsx', str(WEB / 'scripts/self-update-pipeline.ts'), '--apply']),
         ('Generate:kinetic-apply', [py, str(ROOT / 'scripts/apply-kinetic-rules.py'), '--no-notify']),
         ('Validate:canonical-lint-before-generation', ['python3', str(ROOT / 'scripts/lint-knowledge.py'), '--full']),
         ('Generate:embeddings', [py, str(ROOT / 'scripts/embed-docs.py'), '--if-stale']),
@@ -307,8 +307,14 @@ def main() -> int:
                     })
                     if candidate.exists():
                         shutil.rmtree(candidate)
-        except (OSError, subprocess.TimeoutExpired):
-            results.append({'step': 'execution-error', 'exit_code': 124})
+        except (OSError, subprocess.TimeoutExpired) as exc:
+            results.append({
+                'step': 'execution-error',
+                'exit_code': 124,
+                'diagnostic': type(exc).__name__,
+                'errno': getattr(exc, 'errno', None),
+                'path': Path(str(getattr(exc, 'filename', '') or '')).name or None,
+            })
         finally:
             for path in (policy_candidate, version_candidate):
                 if path.exists():

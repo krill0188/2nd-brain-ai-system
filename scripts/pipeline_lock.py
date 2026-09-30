@@ -27,7 +27,10 @@ def shared_lock():
         yield inherited
         return
     LOCK_PATH.parent.mkdir(parents=True, exist_ok=True)
-    fd = os.open(LOCK_PATH, os.O_CREAT | os.O_RDWR, 0o600)
+    low = os.open(LOCK_PATH, os.O_CREAT | os.O_RDWR, 0o600)
+    # Keep the lock above fd 3, which node children use for IPC.
+    fd = fcntl.fcntl(low, fcntl.F_DUPFD, 10)
+    os.close(low)
     previous = os.environ.get(FD_ENV)
     try:
         fcntl.flock(fd, fcntl.LOCK_EX | fcntl.LOCK_NB)
