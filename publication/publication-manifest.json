@@ -3,7 +3,7 @@
   "policy": "default-deny-content-version",
   "baseline": {
     "repository": "krill0188/drone-wiki-web",
-    "commit": "978fef7cd1fa1645b0dc948280b940a92cb7cc20",
+    "commit": "a705edfabe6a08396efdf76fd5a624986b7cbdbf",
     "prefix": "data/wiki"
   },
   "publication_roots": [
