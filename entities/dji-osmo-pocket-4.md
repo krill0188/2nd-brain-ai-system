@@ -32,3 +32,6 @@ DJI의 듀얼 렌즈 시네마틱 포켓 짐벌 카메라. 2026년 7월 30일 �
 
 - [[dji-rs-5]] — DJI RS 5 프로페셔널 짐벌
 - [[drone-payload-systems]] — 드론 페이로드 및 카메라 시스템
+
+## 📰 최근 관련 소식
+- [DJI] New generation. New cinematic language. | Osmo Pocket 4P (youtube.com, 2026-09-29) — https://www.youtube.com/watch?v=rPbMC1fYulk

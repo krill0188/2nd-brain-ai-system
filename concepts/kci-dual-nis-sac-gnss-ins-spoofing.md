@@ -1,11 +1,13 @@
 ---
 title: "이중 NIS 보상 SAC 기반 GNSS/INS 무인기 은닉 기만 기법 (KCI)"
 created: 2026-09-17
-updated: 2026-09-17
+updated: 2026-09-30
 type: concept
 domain: ai-autonomy
 tags: [drone, drone-ai, datalink]
-sources: [inbox/fetch-2026-09-17-kci-이중-nis-보상을-적용한-sac-기반-gnssins-복합항법-무인기-은닉-기만-기법.md]
+sources:
+  - inbox/fetch-2026-09-17-kci-이중-nis-보상을-적용한-sac-기반-gnssins-복합항법-무인기-은닉-기만-기법.md
+  - raw/papers/drone-ai/이중-nis-보상을-적용한-sac-기반-gnssins-복합항법-무인기-은닉-기만-기법.md
 confidence: medium
 contested: false
 contradictions: []
@@ -25,7 +27,8 @@ contradictions: []
   접근 불가능하다는 한계가 있다.
 - 이를 해결하기 위해 최대 엔트로피 강화학습 알고리즘인 SAC(Soft
   Actor-Critic)에 이중 은닉(dual-concealment) 보상을 적용한 프레임워크를
-  제안, 훈련 중 내부 정보 없이도 은닉 기만이 가능하도록 설계했다.
+  제안, 훈련 중 내부 정보 없이도 은닉 기만이 가능하도록 설계했다. 2026-09-30 Zotero
+재인제스트로 동일 논문의 durable 레코드가 raw/papers에 추가돼 출처가 이중 확보됐다.^[raw/papers/drone-ai/이중-nis-보상을-적용한-sac-기반-gnssins-복합항법-무인기-은닉-기만-기법.md]
 
 ## 관련 개념
 

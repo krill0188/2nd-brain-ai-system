@@ -1,11 +1,13 @@
 ---
 title: "Swarm Modes — 군집 드론 운용 모드"
 created: 2026-07-28
-updated: 2026-09-24
+updated: 2026-09-30
 type: concept
 tags: [swarm, drone-ai, ai-agent]
 sources:
   - raw/articles/mastervault-swarm-architecture.md
+  - raw/papers/swarm/hierarchical-optimal-consensus-for-economically-efficient-path-planning-in-multi.md
+  - raw/papers/swarm/robust-observer-based-visual-servoing-control-of-gimbal-mounted-cameras-for-mult.md
 confidence: medium
 domain: ai-autonomy
 contested: false
@@ -62,12 +64,28 @@ contradictions: []
 - 충돌 회피 알고리즘 (ORCA/VO)
 - 배터리 기반 자동 교대
 
+## 관련 연구 (2026-09-30 추가, 서지정보만 확보 — 초록 미수집)
+
+- "Hierarchical optimal consensus for economically efficient path planning in
+  multi-UAV" (Zhu·Xu·Bi·Wang, 2027)^[raw/papers/swarm/hierarchical-optimal-consensus-for-economically-efficient-path-planning-in-multi.md] —
+  다중 UAV 경제적 효율 경로계획을 위한 계층적 최적 컨센서스. 제목·서지 사항만
+  확보, 방법·수치 결과는 원문 확보 후 보강 필요.
+- "Robust observer-based visual servoing control of gimbal-mounted cameras for
+  multi-UAV target tracking via relative dynamics and distributed Gaussian
+  processes" (Miao·Wang·Niu·Zhang·Yu, 2027)^[raw/papers/swarm/robust-observer-based-visual-servoing-control-of-gimbal-mounted-cameras-for-mult.md] —
+  짐벌 탑재 카메라의 관측기 기반 강건 비주얼 서보잉으로 다중 UAV 표적 추적 제어.
+  제목·서지 사항만 확보, 방법·수치 결과는 원문 확보 후 보강 필요.
+
 ## 관련 페이지
 
 - [[swarm-coordination]] — 군집 협업 개념
 - [[recon-swarm-project]] — 실제 프로젝트 적용
 - [[datalink-communication]] — 통신 기술
 - [[drone-ai-agents]] — 자율 에이전트
+- [[game-theoretic-drone-swarm-defense]] — 차등 게임이론 기반 드론 스웜 방어 전술
+- [[swarmnxt-aerial-swarm-platform]] — 오픈소스 SW-HW 애자일 공중 스웜 플랫폼
+- [[kci-uav-swarm-mission-reliability-abort]] — 재구성형 UAV 스웜 임무 신뢰도 모델링
+- [[calibrate-once-fly-any-team-swarm-training]] — 저충실도 시뮬레이션 잔차 보정 군집 훈련
 
 ## 📰 최근 관련 소식
 - '군집 드론' 폭탄테러 가상상황…민·관·군·경·소방 첫 합동훈련 (뉴시스, Wed, 19 Au) — https://news.google.com/rss/articles/CBMiYEFVX3lxTE53Q25RRW5taVdpZ25YWTdOMTJHRXF3aGZ3ckJhMzhtUWUyakVlYTZER0hvanVUWGxHMkN5c2dJM3h3MFUxeDhjWnlBNUR3QmJIVmdNX2xsZHZHeGxuakNBSNIBeEFVX3lxTE96SUcydjlfVjA5eGkweHplNjI3cVo1QVVobU1XWEdDdlJlNlJzN3V5clpaSzRybWZqOGZyaXR5V0wzQlNsaG1NQmNYN0xDVHprajc5OGxNZHJvYTNMRHBwLXM2Y3Q5dWtLalZMeDgzLUZYeGlSdGswLQ?oc=5

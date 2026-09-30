@@ -1,11 +1,13 @@
 ---
 title: "DUDE-IDS: 자율 드론용 상황 인지 운용 보안(LSTM 이상탐지)"
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-30
 type: concept
 domain: ai-autonomy
 tags: [drone, ai-autonomy, security, intrusion-detection]
-sources: [inbox/fetch-2026-09-18-arxiv-context-aware-operational-security-for-autonomous-drones.md]
+sources:
+  - inbox/fetch-2026-09-18-arxiv-context-aware-operational-security-for-autonomous-drones.md
+  - raw/papers/drone-ai/context-aware-operational-security-for-autonomous-drones.md
 confidence: medium
 contested: false
 contradictions: []
@@ -33,6 +35,9 @@ Tufekci·Tunc(2026-07-19, arXiv)가 제안한 Denial of Usage Detection Engine I
 자율 드론 서비스가 확산될수록 사이버공격·운용 실패가 경제적 손실과 안전 문제로
 직결되므로, 미션 컴퓨터 온보드 IDS는 통신 대역폭에 의존하지 않는 방어선으로
 기능할 수 있다.
+
+2026-09-30 Zotero 재인제스트로 동일 arXiv 논문의 durable 레코드(PDF 첨부 포함)가
+raw/papers/drone-ai에 추가돼 출처가 이중 확보됐다.^[raw/papers/drone-ai/context-aware-operational-security-for-autonomous-drones.md]
 
 ## 관련 개념
 

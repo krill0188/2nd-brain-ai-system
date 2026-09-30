@@ -35,3 +35,6 @@ contradictions: []
   임무 효과도 분석(동일 MUM-T 계열, M&S 효과도 관점)
 - [[mavlink]] — 드론 통신 프로토콜(STANAG 4586과 대비되는 오픈소스 C2 프로토콜)
 - [[swarm-coordination]] — 편대 비행 및 리더-팔로워 협업 구조
+
+## 📰 최근 관련 소식
+- 한화, 43개 기업과 'K-무인기' 생태계 구축 (데일리방산, Tue, 29 Se) — https://news.google.com/rss/articles/CBMicEFVX3lxTE1mZDNIYU0yZHQ4YjRnenZLb0d1ZUxnMld0NFhWTEVMYXBHLW84dHhVRElnREMzMXdnWUJaUVJHZUxyOVZrWjVqN2R6NHNpSEJOTzhGQnRaYV9GcG1ERk5KMVNQRFpscFUydkgxS0lmeUc?oc=5

@@ -1,11 +1,13 @@
 ---
 title: "CALOS: 쿼드로터 안전 강화학습을 위한 Control-Affine Lyapunov On-manifold Safety Layer"
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-30
 type: concept
 domain: flight-control
 tags: [drone, flight-control, reinforcement-learning, safety]
-sources: [inbox/fetch-2026-09-18-arxiv-calos-control-affine-lyapunov-on-manifold-safety-layer-for-s.md]
+sources:
+  - inbox/fetch-2026-09-18-arxiv-calos-control-affine-lyapunov-on-manifold-safety-layer-for-s.md
+  - raw/papers/drone-ai/calos-control-affine-lyapunov-on-manifold-safety-layer-for-safe-deep-reinforceme.md
 confidence: medium
 contested: false
 contradictions: []
@@ -32,6 +34,9 @@ Cesareo·Mengozzi·Mimmo·Acquaviva(2026-09-15, arXiv)가 제안한 런타임 �
 대규모 병렬 DRL 훈련(수천 환경 동시 실행)에서 안전 제약을 별도 레이어로 분리해
 강제하는 접근은, 비행 제어기에 강화학습 정책을 직접 탑재하려는 시도에서 검증·인증
 가능성을 높이는 실용적 경로로 볼 수 있다.
+
+2026-09-30 Zotero 재인제스트로 동일 arXiv 논문의 durable 레코드가 raw/papers/drone-ai에
+추가돼 출처가 이중 확보됐다.^[raw/papers/drone-ai/calos-control-affine-lyapunov-on-manifold-safety-layer-for-safe-deep-reinforceme.md]
 
 ## 관련 개념
 

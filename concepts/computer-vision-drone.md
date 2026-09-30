@@ -191,3 +191,4 @@ for waypoint in path:
 - [멈춤보단 천천히라도] 퀵 정렬 — 실전 최강자의 비밀, 피벗 | 3분 알고리즘 #8 (youtube.com, 2026-09-11) — https://www.youtube.com/watch?v=OXNDcpR7HcI
 - [멈춤보단 천천히라도] DP — 한 번 구한 답은 기억한다 | 3분 알고리즘 #15 (youtube.com, 2026-09-18) — https://www.youtube.com/watch?v=eYO62e2alYA
 - [멈춤보단 천천히라도] 3분 알고리즘 — 애니메이션으로 배우는 알고리즘 기초 (youtube.com, 2026-09-18) — https://www.youtube.com/watch?v=WII-LeqSI58
+- Northrop Grumman to Accelerate Extended-Range C-UAS Missile Technology for US Army (Northrop Grumman, Tue, 29 Se) — https://news.google.com/rss/articles/CBMiwgFBVV95cUxNdnB2bXIzRGFoZ1B3Tk5yX0x6bzJVRWNUUEx1T2VvamkxZ1JSTHdBa0pjdFBER1F4dW9LV2FRTmtjNTdqYVJhdWowUjFRdm5TM2xuRENMQlFJVkJtWjMwR0YtTVdjTFN4TU5wT0NlODdVc1pzbVE1TC1udVlnbDlLd3pKbzdONlNyLXVQMGl6dTVNVTZGRnotNy00SFRBY3RQV0R4dkpBX3VlakFlVWQzVjc3RHkxaWhPWlAyZlhZVXZZQQ?oc=5

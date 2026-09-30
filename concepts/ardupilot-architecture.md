@@ -163,3 +163,4 @@ return update, 1000
 - [Painless360] How to Maiden an Ardupilot quad safely every time (Using a HolyBro X650 dev. kit) (youtube.com, 2026-08-16) — https://www.youtube.com/watch?v=zw1VgZWbs14
 - [DJI] Guess how the drone returns to its starting point !｜Neo 2 (youtube.com, 2026-08-12) — https://www.youtube.com/watch?v=hfLhpyLGzaM
 - Engineering Without Compromise: How HP Additive Manufacturing Helped EIVIE Build an NDAA-Compliant Drone (dronelife.com, Thu, 13 Au) — https://dronelife.com/2026/08/13/ndaa-compliant-drone-manufacturing/
+- [Painless360] Ardupilot and YAPPU setup tips to avoid the 'No Telemetry' error in EdgeTX (youtube.com, 2026-09-29) — https://www.youtube.com/watch?v=Wgog17JB110

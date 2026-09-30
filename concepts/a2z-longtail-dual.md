@@ -51,3 +51,4 @@ sUAS News의 2026-08-31 기사 [A2Z Drone Delivery Launches New Longtail Dual](h
 
 ## 📰 최근 관련 소식
 - ‘마약왕’박왕열, 1억들여 ‘드론탈옥’ 준비했다 (munhwa.com, Tue, 15 Se) — https://news.google.com/rss/articles/CBMiUEFVX3lxTE42VXBqZ0g1ek9wSlZIa0ZWQ0hGdG5FbnhKRFhrUkY1YTNrWkJUd2I0TkpPS1FqMkYwUm5WTEYtcGU0MHZuRUdhUWgzMkhELU5R?oc=5
+- 밀양도 ‘드론 배송’ 하늘길 열었다 (부산일보, Tue, 29 Se) — https://news.google.com/rss/articles/CBMidEFVX3lxTE96clYwbFFudGNQUjBxblpyV1Awd2hPbU5xUjdHcnc1MElGT2JZbG5RbHhHMnVWLXVPTW5SMzR6R3hJWm9xenBaZWt5SzlrODhycGZEYTdIek5ZYXQzUk4yVm5paDJEOXRiWm9zbWh2clRWbG9h?oc=5

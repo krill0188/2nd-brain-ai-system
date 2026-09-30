@@ -22,3 +22,6 @@ Flytrex가 댈러스에서 매장(가맹점) 옥상에 드론을 미리 배치�
 
 - [[a2z-longtail-dual]] — Longtail Dual 듀얼 배터리 BVLOS 배송 드론
 - [[drone-delivery-news]] — 드론 배달 서비스 확대 및 하드웨어 동향
+
+## 📰 최근 관련 소식
+- 중국, 스카버러 암초에 고고도 정찰드론 WZ-7 첫 배치 (동아일보, Tue, 29 Se) — https://news.google.com/rss/articles/CBMic0FVX3lxTE1rUGM0ZnlvR2RLekdnWTZuaG9aUG11aVRycldsbW5wVGFjVTVmSGtLYXkyUVdEQXktMnNTbWE2Vy1WSnVrcWZiNS12eW5SX0NoU0twNkpEc2Vad1FjZzVsZlJZYmprdnVnQk50WC1UdWpIMk3SAWZBVV95cUxOUDc0MDY2eFJULUFTc3VXaUhURVREZDVmRGxHc25WRS1pWlk2TkxIRXd1RTRfVmhpbDNqTkZxMWluNERnSDBvUWVUeV9uRFJOSGVlWVFaUlZLdDRINkpzVFBTUllMSlE?oc=5

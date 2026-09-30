@@ -1,7 +1,7 @@
 ---
 title: "게임이론 기반 드론 스웜 방어(차등 게임 응용 사례)"
 created: 2026-09-08
-updated: 2026-09-08
+updated: 2026-09-30
 type: concept
 domain: ai-autonomy
 tags: [drone, ai-autonomy, swarm]
@@ -37,3 +37,5 @@ Differential Game) 이론으로 정식화한 연구다
 - [[swarm-coordination]] — 편대 비행 및 리더-팔로워 협업 구조
 - [[distributed-aerial-surveillance-swarm]] — LTL 사양 기반 분산 지속 감시 스웜
 - [[rigid-covert-gnss-spoofing-swarm]] — UAV 군집 GNSS 스푸핑 탐지 사각지대 분석(적대적 상황 대응 계열)
+- [[swarm-modes]] — 군집 드론 운용 모드 개요
+- [[kci-uav-swarm-mission-reliability-abort]] — 재구성형 UAV 스웜 임무 신뢰도 모델링(같은 raw/papers/swarm 배치로 2026-09-30 수집)

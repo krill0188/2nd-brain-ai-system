@@ -1,11 +1,13 @@
 ---
 title: "다중 UAV 딥러닝 충돌회피 서베이"
 created: 2026-08-07
-updated: 2026-08-07
+updated: 2026-09-30
 type: concept
 tags: [drone, ai-autonomy, paper]
 domain: ai-autonomy
-sources: [inbox/fetch-2026-08-07-crossref-deep-learning-based-collision-avoidance-techniques-in-multi-.md]
+sources:
+  - inbox/fetch-2026-08-07-crossref-deep-learning-based-collision-avoidance-techniques-in-multi-.md
+  - raw/papers/_unclassified/a-conservative-analytical-framework-for-uav-collision-risk-assessment-under-posi.md
 confidence: medium
 contested: false
 contradictions: []
@@ -23,6 +25,18 @@ Computer Science Review 저널에 게재된 다중 UAV 네트워크의 딥러닝
 - **원문**: https://doi.org/10.1016/j.cosrev.2026.101045
 
 > 초록 미제공 — 원문 확인 후 구체적 기법 분류를 추가 보강할 필요가 있음(confidence: medium 유지 이유).
+
+## 2026-09-30 추가 근거 (서지정보만 확보)
+
+Wang·Luo·Jiang·Wang·Liu(2027, *Reliability Engineering & System Safety*)가 발표한
+"A conservative analytical framework for UAV collision risk assessment under
+position uncertainty using noncentral chi-square distributions"가 같은 날
+Zotero로 인제스트됐다.^[raw/papers/_unclassified/a-conservative-analytical-framework-for-uav-collision-risk-assessment-under-posi.md]
+제목 자체가 밝히는 정보로는, 위치 불확실성 하에서 비중심 카이제곱 분포를 이용해
+UAV 충돌 위험을 보수적(conservative)으로 해석적 평가하는 프레임워크다 — 이
+서베이 페이지가 다루는 "딥러닝 기반 충돌 회피"와는 별개로 확률적·해석적 위험
+평가 축의 보완 문헌으로 분류한다. 초록은 아직 확보되지 않아 정량적 결과는
+기록하지 않는다.
 
 ## 관련 개념
 

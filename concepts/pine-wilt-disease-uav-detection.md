@@ -36,3 +36,6 @@ UAV RGB 정사영상과 YOLO26-Large 모델을 사용해 소나무재선충병(p
 - [[computer-vision-drone]] — 드론 컴퓨터 비전 전반(YOLO, 객체 탐지)
 - [[yolo]] — YOLO 아키텍처 개요
 - [[drone-lidar-forest-boundary]] — 드론 라이다 기반 임야 경계 추출 연구
+
+## 📰 최근 관련 소식
+- [멈춤보단 천천히라도] RTX 4060 노트북 8GB로 만든 AI 인물 변환 | 원본·결과 비교 (youtube.com, 2026-09-29) — https://www.youtube.com/watch?v=n-OELSRl-B4

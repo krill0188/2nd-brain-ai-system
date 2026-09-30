@@ -43,3 +43,4 @@ suasnews도 동일 소식을 같은 날 보도했다.^[inbox/processed/fetch-202
 ## 📰 최근 관련 소식
 - 육군 '50만 드론전사' 사업, 中 밀어내고 국산 배터리 탑재 (디일렉, Thu, 03 Se) — https://news.google.com/rss/articles/CBMiZkFVX3lxTE4xdE5pSjdBRHFla2taYmVUVjBNTUVjdGk0eHhfcFVfVHFRQzdHRUUyaEVEeFJkejl1blQ4Vi1xeGNhVXVweEh3ZEJIY1hqTG5RY2hlaEF6aGJjaVF5M2V5SjQ0XzZFQQ?oc=5
 - [배터리 틈새전쟁]① 전기차 대신 방산·드론…특수전지 파고든 中企들 (대한경제, Mon, 14 Se) — https://news.google.com/rss/articles/CBMidEFVX3lxTE5lNHRGSzhkaVNUX25ld2pLbTh0ekYwbjhoVlVSM2VSa0w2QlZZWklWNGY5UGdTN1BRZFhCc281b3RGazFPV0Z4Z0VVaGhNTUFCZVJFcHVjN0p0dzd1TGRwZHJXZVh3NGtlLWJqbE9tRFlHNEJh?oc=5
+- “한국 공장이 미군용 배터리 생산”…전기차 만들다 드론으로 갈아탄 사연 [밀리터리+] (나우뉴스, Tue, 29 Se) — https://news.google.com/rss/articles/CBMicEFVX3lxTE1kenB6OGdrdndxbWU3aHI2dW5VTFU3YW9VQnhzMm1JU3Y0T0Rqdy1SSmpUcVdhb2tDNTlQbEp6amxxM1lEVzZGdVNsT1hBYzcwb3JOOEJxQko0aGxKVHdTbnJnRjcxVE5mUU1PRV95c0I?oc=5

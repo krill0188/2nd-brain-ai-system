@@ -1,11 +1,13 @@
 ---
 title: "OTFS 기반 지연 SINR 피드백 UAV 전력 제어"
 created: 2026-09-23
-updated: 2026-09-23
+updated: 2026-09-30
 type: concept
 domain: comms-protocol
 tags: [drone, datalink]
-sources: [inbox/processed/fetch-2026-09-23-arxiv-otfs-enabled-delayed-sinr-feedback-power-control-for-reliabl.md]
+sources:
+  - inbox/processed/fetch-2026-09-23-arxiv-otfs-enabled-delayed-sinr-feedback-power-control-for-reliabl.md
+  - raw/papers/_unclassified/otfs-enabled-delayed-sinr-feedback-power-control-for-reliable-and-fair-high-mobi.md
 confidence: medium
 contested: false
 contradictions: []
@@ -25,6 +27,9 @@ contradictions: []
 - 신뢰성·공정성·스펙트럼효율 3요소를 설계자가 가중치로 직접 제어
 - 균일 선형 배열(ULA) 기지국이 다수 UAV를 공통 OTFS 프레임으로 서빙
 - 고기동(최대 90 m/s)에서 OFDM 대비 우위 확대
+
+2026-09-30 Zotero 재인제스트로 동일 arXiv 논문의 durable 레코드(PDF 첨부 포함)가
+raw/papers/_unclassified에 추가돼 출처가 이중 확보됐다.^[raw/papers/_unclassified/otfs-enabled-delayed-sinr-feedback-power-control-for-reliable-and-fair-high-mobi.md]
 
 ## Related
 

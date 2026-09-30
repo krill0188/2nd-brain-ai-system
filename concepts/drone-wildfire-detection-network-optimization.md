@@ -1,11 +1,13 @@
 ---
 title: "드론 기반 산불 조기탐지 네트워크의 비용 최적화"
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-30
 type: concept
 domain: ops-mission
 tags: [drone, ops-mission, wildfire]
-sources: [inbox/fetch-2026-09-18-arxiv-rapid-drone-based-wildfire-detection-at-a-fraction-of-curren.md]
+sources:
+  - inbox/fetch-2026-09-18-arxiv-rapid-drone-based-wildfire-detection-at-a-fraction-of-curren.md
+  - raw/papers/_unclassified/rapid-drone-based-wildfire-detection-at-a-fraction-of-current-prevention-spendin.md
 confidence: medium
 contested: false
 contradictions: []
@@ -31,6 +33,9 @@ Puech·de Moor·Trišović·Bertsimas(2026-09-16, arXiv)는 감시 인프라 배
 
 인프라 배치와 드론 라우팅을 결합한 정량적 최적화 프레임워크는 지자체·주정부의
 산불 대응 예산 배분 의사결정에 직접 활용 가능한 근거를 제공한다.
+
+2026-09-30 Zotero 재인제스트로 동일 arXiv 논문의 durable 레코드가 raw/papers/_unclassified에
+추가돼 출처가 이중 확보됐다.^[raw/papers/_unclassified/rapid-drone-based-wildfire-detection-at-a-fraction-of-current-prevention-spendin.md]
 
 ## 관련 개념
 

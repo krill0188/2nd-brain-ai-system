@@ -1,10 +1,10 @@
 ---
 title: Matternet
 created: 2026-08-06
-updated: 2026-09-29
+updated: 2026-09-30
 type: entity
 tags: [drone, ops-mission, company]
-sources: [raw/articles/fetch-2026-09-19-rss-dronelife.md, inbox/processed/fetch-2026-09-23-rss-dronelife.md, inbox/processed/fetch-2026-09-29-rss-dronedj.md]
+sources: [raw/articles/fetch-2026-09-19-rss-dronelife.md, inbox/processed/fetch-2026-09-23-rss-dronelife.md, inbox/processed/fetch-2026-09-29-rss-dronedj.md, inbox/processed/fetch-2026-09-30-rss-dronelife.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -32,6 +32,9 @@ domain: ops-mission
   갖춘 신형 M3 드론을 공개했다. Matternet은 파일럿 개입 없이 배송량을 수천 건 규모로
   확장하는 것을 목표로, 사람을 운영 루프에서 배제하는 방향을 M3의 핵심 설계 목표로
   제시했다.^[inbox/processed/fetch-2026-09-29-rss-dronedj.md]
+- **옥상 마이크로 허브용 플랫폼**: M3는 신형 기체·도킹 스테이션·드롭박스 포털을 결합해, 레스토랑·
+  소매점·병원이 현장 인력 없이도 물품을 발송할 수 있도록 설계됐다. 상업 서비스 목표 시점은
+  2027년 하반기다.^[inbox/processed/fetch-2026-09-30-rss-dronelife.md]
 
 ## 관련 개념
 

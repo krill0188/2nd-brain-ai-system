@@ -1,11 +1,13 @@
 ---
 title: "Calibrate Once, Fly Any Team — 저충실도 시뮬레이션 기반 드론 군집 훈련"
 created: 2026-09-17
-updated: 2026-09-17
+updated: 2026-09-30
 type: concept
 domain: ai-autonomy
 tags: [drone, drone-ai, swarm]
-sources: [inbox/fetch-2026-09-17-arxiv-calibrate-once-fly-any-team-residual-grounded-low-fidelity-t.md]
+sources:
+  - inbox/fetch-2026-09-17-arxiv-calibrate-once-fly-any-team-residual-grounded-low-fidelity-t.md
+  - raw/papers/swarm/calibrate-once-fly-any-team-residual-grounded-low-fidelity-training-for-cooperat.md
 confidence: medium
 contested: false
 contradictions: []
@@ -38,7 +40,11 @@ Maxim Mednikov, Oren Gal(2026-09-15, arXiv)이 제안한 방법으로, 고충실
   최대 팀 규모에서는 훨씬 적은 연산 비용으로 근접한 성능을 달성하고
   HF 훈련 특유의 높은 충돌률을 완전히 피한다.
 
+2026-09-30 Zotero 재인제스트로 동일 논문의 durable 레코드가 raw/papers/swarm에 추가돼
+출처가 이중 확보됐다.^[raw/papers/swarm/calibrate-once-fly-any-team-residual-grounded-low-fidelity-training-for-cooperat.md]
+
 ## 관련 개념
 
 - [[swarmnxt-aerial-swarm-platform]] — 오픈소스 공중 스웜 SW/HW 플랫폼
 - [[agilepe-uav-pursuit-evasion]] — Self-play RL 기반 sim-to-real 전이 유사 접근
+- [[swarm-modes]] — 군집 드론 운용 모드 개요

@@ -1,11 +1,13 @@
 ---
 title: "스파이킹 신경망 액터-크리틱 PPO 기반 UAV 협소구간 자율비행"
 created: 2026-09-23
-updated: 2026-09-23
+updated: 2026-09-30
 type: concept
 domain: ai-autonomy
 tags: [drone, drone-ai]
-sources: [inbox/processed/fetch-2026-09-23-arxiv-spiking-neural-network-actor-critic-proximal-policy-optimiza.md]
+sources:
+  - inbox/processed/fetch-2026-09-23-arxiv-spiking-neural-network-actor-critic-proximal-policy-optimiza.md
+  - raw/papers/drone-ai/spiking-neural-network-actor-critic-proximal-policy-optimization-control-for-aut.md
 confidence: medium
 contested: false
 contradictions: []
@@ -25,6 +27,9 @@ contradictions: []
 - 목표: 연산 비용을 낮춰 온보드(임베디드) UAV 배포 가능성 확보
 - 학습 후반 성공률 90%+ (전체 평균은 63.77%)
 - 적용 분야: 교량/터널/구조물 점검용 협소구간 통과
+
+2026-09-30 Zotero 재인제스트로 동일 arXiv 논문의 durable 레코드가 raw/papers/drone-ai에
+추가돼 출처가 이중 확보됐다.^[raw/papers/drone-ai/spiking-neural-network-actor-critic-proximal-policy-optimization-control-for-aut.md]
 
 ## Related
 

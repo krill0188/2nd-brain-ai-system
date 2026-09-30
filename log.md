@@ -2101,3 +2101,90 @@
   - RSS dronelife 1건: BETA Technologies 전기항공 EMS 시험(유인 전기항공기, 드론 도메인 외)
 - Moved to processed:
   - All 12 inbox files (excluding `.gitkeep`) → `inbox/processed/`
+
+## [2026-09-30] ingest | inbox 일일 수집 및 컴파일
+
+- Source files from `inbox/` (14 files processed): arXiv 논문 1(DroneWAM), GitHub 릴리스 1(yolo),
+  RSS 6(dji-enterprise, dronedj, dronelife, skydio, suasnews ×2 도메인), YouTube 6
+- Created concepts (3):
+  - `concepts/dronewam-efficient-world-action-model.md` — DroneWAM: JEPA 기반 드론 시각
+    내비게이션 world-action model, DroneNav-6D 데이터셋, adaptive rollout (domain: ai-autonomy)
+  - `concepts/yolo-v8-4-166.md` — YOLO v8.4.166(2026-09-29): 시맨틱 마스크/데이터셋 변환 신뢰성,
+    세그멘테이션 정확도, EXIF 방향 처리 개선 (domain: ai-autonomy)
+  - `concepts/diu-low-cost-isr-challenge.md` — DIU 저비용 ISR(LC-ISR) 항공기 조달 공모전, 1억
+    달러 + 추가 2.5억 달러 예산 (dronelife·suasnews 교차 확인, domain: ops-mission)
+- Created entities (1):
+  - `entities/wingtraray.md` — Wingtra VTOL 측량 드론, EU 드론 포트 C3/C6 클래스 인증 획득
+    (domain: hardware, confidence: low — 단일 출처·짧은 본문)
+- Updated existing canonical (evidence added, no new page):
+  - `concepts/skydio-f10-megadock.md` — 기존 페이지의 "한계"로 남아있던 MegaDock 용량(5기),
+    항속 반경(30마일), 속도(100mph), 소프트웨어 플랫폼 2종, 비대칭 기체 설계 사양을 신규
+    출처로 확정 반영
+  - `entities/skydio.md` — F10 Lightrunner 제품 항목에 `[[skydio-f10-megadock]]` 상세 링크 추가
+  - `entities/matternet.md` — M3 드론의 옥상 마이크로 허브용 도킹·드롭박스 포털 구성 및 2027년
+    하반기 상업 서비스 목표 시점 추가
+  - `concepts/emlid-corrections.md` — RTK FIX↔FLOAT 전환 시 현장 점검 4항목(장애물/베이스라인
+    거리/보정 소스/멀티패스) 트러블슈팅 섹션 추가
+- Updated:
+  - `index.md` (총 페이지 448 → 452, entities 1건·concepts 3건 신규 추가)
+- Skipped (thin / headline-only / promo-no-new-fact / off-domain / duplicate):
+  - RSS dji-enterprise 1건: Matrice 5TD 중국 서류 유출(제목뿐, 본문 없음, 750g 증량 사실 외
+    검증 가능한 세부 없음)
+  - RSS dronedj 1건: Insta360 X6 3D 비디오 기능(도입부 수사적 질문뿐, "more…"에서 잘림·구체
+    사양 없음 — 기존 `concepts/insta360-x6.md` 존재)
+  - RSS dronelife 1건: Blue Marble 지오스페이셜 워크플로우(일반 기업 소개, 드론 특화 사실 없음)
+  - RSS dronelife 1건: Matternet M3(11lb/10mile) — 2026-09-29 이미 캡처된 사실과 중복, 신규
+    세부사항만 `entities/matternet.md`에 추가 반영
+  - RSS skydio 2건: overtdefense 동일 F10 발표 헤드라인 중복, Skydio 로비스트 공시(기술 무관,
+    행정 정보성)
+  - RSS suasnews 3건: 항공 소음 관리 정책 일반론(구체 수치 없음), Drone Dominance Phase III
+    프레임워크("represents a"에서 문장 잘림), BVLOS Atypical Air 정책 개념("within"에서 문장
+    잘림) — 전부 발췌 단편적
+  - RSS suasnews 1건: DIU LC-ISR 챌린지 — dronelife 기사와 동일 주제, 통합해 신규 개념
+    페이지로 컴파일(중복 아님, 교차출처로 반영)
+  - YouTube 4건: 2026 WCRC 현장 영상(과수원 수확 자율주행 로봇 대회, 드론 도메인 외),
+    Painless360 ArduPilot/YAAPU 설정 팁(외부 링크·소셜미디어 안내뿐, 기술 설명 없음),
+    DJI Avata 360·Osmo Pocket 4P 프로모 쇼트 2편(마케팅 문구뿐, 사양 정보 없음)
+  - YouTube 2건: Python 알고리즘 트레이딩 강의, RTX 4060 AI 인물 변환(둘 다 드론 도메인 완전
+    무관 — inbox 자동수집 오분류 추정)
+- Moved to processed:
+  - All 14 inbox files (excluding `.gitkeep`) → `inbox/processed/`
+
+## [2026-09-30] refactor | wiki-refactor: Zotero 재인제스트 근거 반영 및 스웜/탐지 클러스터 연결
+
+- Source: `raw/papers/{swarm,drone-ai,_unclassified}/*.md` 신규/갱신 60건 중, 기존 canonical
+  페이지가 이미 다루는 논문의 durable Zotero 레코드가 다수 포함됨을 확인(paper-ingest가
+  inbox/arxiv 단발 캡처로 이미 만든 페이지의 동일 논문을 raw/papers로 재인제스트한 패턴)
+- 강화(reinforcement, 11개) — 기존 단일 inbox 출처 페이지에 durable raw/papers 경로를
+  `sources`에 추가하고 본문에 `^[raw/...]` 재확증 마커 부기:
+  - `concepts/dronewam-efficient-world-action-model.md`
+  - `concepts/hermes-evolutionary-uav-path-planning.md` (confidence low 유지 — 재인제스트본도 초록 미확보)
+  - `concepts/kci-dual-nis-sac-gnss-ins-spoofing.md`
+  - `concepts/bio-inspired-offloading-uav-iov-mec.md` (confidence low 유지 — 재인제스트본도 초록 절단 동일)
+  - `concepts/physai-bench-uav-agentic-benchmark.md`
+  - `concepts/snn-ppo-uav-constrained-navigation.md`
+  - `concepts/calos-lyapunov-safety-layer-quadrotor-rl.md`
+  - `concepts/calibrate-once-fly-any-team-swarm-training.md`
+  - `concepts/otfs-uav-power-control.md`
+  - `concepts/dude-ids-context-aware-drone-security.md`
+  - `concepts/drone-wildfire-detection-network-optimization.md`
+- 링크 보강(연결, 2개) — 오늘 함께 도착한 스웜 클러스터 3편
+  (`game-theoretic-drone-swarm-defense`/`swarmnxt-aerial-swarm-platform`/
+  `kci-uav-swarm-mission-reliability-abort`)과 `calibrate-once-fly-any-team-swarm-training`을
+  허브 페이지에 연결하고, 서지정보만 확보된 신규 스웜 논문 2건(경로계획 컨센서스, 짐벌 비주얼
+  서보잉)을 인용 추가:
+  - `concepts/swarm-modes.md`
+  - `concepts/game-theoretic-drone-swarm-defense.md` (↔ swarm-modes, kci-uav-swarm-mission-reliability-abort 상호링크)
+- 근거 추가(서지정보만, 초록 미수집 — 2개):
+  - `concepts/multi-uav-collision-avoidance-survey.md` — UAV 충돌 위험 해석적 평가 프레임워크(비중심 카이제곱) 1건 추가
+  - `concepts/drone-anomaly-detection-survey.md` — 데이터 기반 탐지 범주 최신 논문 5건(가시광-열화상 융합·MDOLF·AeroDistinct·야간탐지·MoE 소형객체탐지) 추가
+- Skipped (15개 한도 초과, 다음 실행 몫): 나머지 raw/papers/_unclassified·drone-ai 미매칭 6건
+  (OTFS 제외 보험계리 없음 — a-bayesian-learning 심장정지 커버리지망, PATH 연속 표적센싱,
+  산악회랑 화물수요, truck-drone 라우팅, USFnet, 절연체 결함탐지), raw/articles 11건,
+  raw/youtube 2건 — 이미 canonical 매칭된 나머지 raw/papers 다수(관측자-중심 공항드론·
+  국가중요시설 대드론·소형무장헬기·재난대응·도심유수지·저고도BVLOS·대드론방어체계·
+  한라산NDVI·기술기반인증·보리습해·LLM군집임무할당·방어적대공작전·한국형공역·
+  game-theoretic/swarmnxt/mission-reliability 3편)은 이번 raw 배치 이전에 이미
+  raw/papers 경로로 직접 생성·커밋되어 있어 추가 조치 불필요
+- Updated: `index.md` 변경 없음(신규 페이지 생성 없이 기존 15개 페이지만 갱신)
+- lint: `python3 scripts/lint-knowledge.py --full` → 452개 파일 검사, 위반 0건

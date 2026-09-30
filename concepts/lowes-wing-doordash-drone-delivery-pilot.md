@@ -27,3 +27,7 @@ Lowe's가 노스캐롤라이나 매튜스에서 드론 배송 시범을 시작�
 - [[doordash-air]] — DoorDash의 드론 배달 서비스
 - [[drone-delivery-news]] — 드론 배송 소식 모음
 - [[uber-zipline-drone-delivery]] — Uber-Zipline 배송 파트너십
+
+## 📰 최근 관련 소식
+- 밀양시, 드론 배송 서비스 본격화 … 하늘길 물류시대 연다 (아시아경제, Tue, 29 Se) — https://news.google.com/rss/articles/CBMiYEFVX3lxTE9OeVJwQUlXU0xFQUJQd3kyVTR6S1F1WTUzXzZ5ZzBnd2tkUlZIR1dZcXJraEN2RnRQYmhwT25lYjFuck5GM1d3UWp3a3hnSVBPaXUtNzg2bWZDWk5GLVQ1cw?oc=5
+- "공원·캠핑장도 배달 갑니다"…밀양서 야외 드론 배송 시작 (뉴스1, Mon, 28 Se) — https://news.google.com/rss/articles/CBMiZEFVX3lxTE9MUzd5clpWanJFdzQxUzlQdEJhLTNYVGFmeUVwNi16aEN1YTNkTkdRc01BRlI2WjFDUkZXb2FDVWZOemlYcTZFT2ZNSWxnNVBLaGpaMHBNMW16amRPb2JRV1FfaWPSAWRBVV95cUxPTFM3eXJaVmpyRXc0MVM5UHRCYS0zWFRhZnlFcDYtemhDdWEzZE5HUXNNQUZSNloxQ1JGV29hQ1VmTnppWHE2RU9mTUlsZzVQS2hqWjBwTTFtempkT29iUVdRX2lj?oc=5

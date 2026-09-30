@@ -44,3 +44,6 @@ Understand Anything은 이 지식의 구조적 품질을 관찰한다. 이들은
 LLM Wiki의 유지 원칙은 [[llm-wiki]], 분석 결과의 환류는 [[research-feedback-loop]]를 참고한다. ^[raw/notebooklm/llm-wiki-skill-github.md]
 
 제품 기능과 설치 방식은 빠르게 변할 수 있으므로 실제 도입 시점에는 각 프로젝트의 최신 공식 문서를 다시 확인해야 한다.
+
+## 📰 최근 관련 소식
+- [멈춤보단 천천히라도] RTX 4060 노트북 8GB로 만든 AI 인물 변환 | 원본·결과 비교 (youtube.com, 2026-09-29) — https://www.youtube.com/watch?v=n-OELSRl-B4

@@ -1,10 +1,16 @@
 ---
 title: "드론 이상 징후 탐지 방법 연구 동향 및 개선 방안"
 created: 2026-08-19
-updated: 2026-08-19
+updated: 2026-09-30
 type: concept
 tags: [drone, flight-control, safety, research, sensor]
-sources: [inbox/fetch-2026-08-19-kci-드론-이상-징후-탐지-방법-연구-동향-및-개선-방안-연구.md]
+sources:
+  - inbox/fetch-2026-08-19-kci-드론-이상-징후-탐지-방법-연구-동향-및-개선-방안-연구.md
+  - raw/papers/_unclassified/registration-free-visible-thermal-fusion-for-uav-detection.md
+  - raw/papers/_unclassified/mdolf-framework-for-multi-target-detection-and-online-localization-of-ground-obj.md
+  - raw/papers/_unclassified/aerodistinct-a-generative-data-construction-pipeline-and-benchmark-for-dronebird.md
+  - raw/papers/_unclassified/seeing-what-darkness-conceals-frequency-adaptive-modeling-for-nighttime-uav-vehi.md
+  - raw/papers/drone-ai/dynamic-multi-scale-mixture-of-experts-with-cross-scale-feature-enhancement-for-.md
 confidence: high
 contested: false
 contradictions: []
@@ -41,6 +47,34 @@ domain: flight-control
 - 상태 추정 기반 + 데이터 기반 융합
 - 세 방법의 통합적 융합
 
+## 최근 추가된 관련 탐지 연구 (2026-09-30, 서지정보만 확보 — 초록 미수집)
+
+데이터 기반(센서 융합·딥러닝) 탐지 범주에 해당하는 최근 논문 5건이 Zotero로
+인제스트됐다. 초록이 아직 확보되지 않아 제목 수준의 주제 분류만 기록한다:
+
+- "Registration-free visible-thermal fusion for UAV detection" (Huang·Wang·Zou·Dang·Chi,
+  2027)^[raw/papers/_unclassified/registration-free-visible-thermal-fusion-for-uav-detection.md] —
+  정합(registration) 없는 가시광-열화상 센서 융합 UAV 탐지.
+- "MDOLF: Framework for multi-target detection and online localization of ground
+  objects based on aerial imagery in the vehicle-UAV collaboration scenario"
+  (Zhou·Peng·Wu·Wang·Ma, 2027)^[raw/papers/_unclassified/mdolf-framework-for-multi-target-detection-and-online-localization-of-ground-obj.md] —
+  차량-UAV 협업 시나리오의 다중표적 탐지·온라인 위치추정 프레임워크.
+- "AeroDistinct: A generative data construction pipeline and benchmark for
+  drone–bird discrimination in urban air mobility" (Lin·Zhan·Liang·Tan·Feng,
+  2027)^[raw/papers/_unclassified/aerodistinct-a-generative-data-construction-pipeline-and-benchmark-for-dronebird.md] —
+  도심 항공 모빌리티 환경의 드론-조류 판별용 생성 데이터 구축 파이프라인·벤치마크.
+- "Seeing what darkness conceals: Frequency-adaptive modeling for nighttime UAV
+  vehicle detection" (Du·Cheng·Yuan, 2027)^[raw/papers/_unclassified/seeing-what-darkness-conceals-frequency-adaptive-modeling-for-nighttime-uav-vehi.md] —
+  야간 UAV 차량 탐지를 위한 주파수 적응형 모델링.
+- "Dynamic multi-scale mixture-of-experts with cross-scale feature enhancement
+  for UAV small object detection" (Li·Hou·Xiong·Ma·Liu,
+  2027)^[raw/papers/drone-ai/dynamic-multi-scale-mixture-of-experts-with-cross-scale-feature-enhancement-for-.md] —
+  UAV 소형 객체 탐지를 위한 동적 다중스케일 MoE·교차스케일 특징 강화.
+
+이 5건 모두 "데이터 기반 방법" 범주(비행 로그가 아닌 영상·센서 데이터 기반)의
+최신 사례로, 위 "융합적 발전 방향" 절의 센서+데이터 융합 흐름을 뒷받침하는
+정성적 근거로 분류한다. 방법·수치 성능은 원문 확보 후 보강이 필요하다.
+
 ## 관련 개념
 
 - [[flight-logging-analysis]] — ULog 포맷 및 비행 데이터 분석
@@ -55,3 +89,4 @@ domain: flight-control
 - 드론 기반 객체 탐지 시스템에 대한 물리적 적대적 패치 공격: 디지털-물리 도메인 갭 분석 및 완화 (kci.go.kr, 2026) — https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003368967
 - 제주공항 위협하는 ‘불법 드론’…올해만 84건 탐지 (제민일보, Wed, 02 Se) — https://news.google.com/rss/articles/CBMiZkFVX3lxTE5VM2ExYjFzdlZHTUpONTZTTTVTeElmRHNiY2g4SW5xR1pMczhLYTAyeWNyMlJ6Z01hczFmVGlWVGRHRFg5UlFTWjc3ZjEyYTdaOXlyY3Ftdzg3RS0wTWtudGhXb2NrQQ?oc=5
 - 송산동청소년지도협, 드론 교실 운영 (제민일보, Thu, 03 Se) — https://news.google.com/rss/articles/CBMiZkFVX3lxTE16SEswaXJhZlFfM1ktME50VVRrS25uOE1DRDVuNGRIVlVGZ0RlNG1mc0RVNGhtVmRqeFE2OEk3cTVnNlhwd1BCZ0ZRTTN3a2pwb0RLX0hWZUZnWmJVZlk0YVp3cllnZw?oc=5
+- 러 제트 추진 드론 맹폭…우크라 전역서 최소 7명 사망·50명 이상 부상 (yna.co.kr, Tue, 29 Se) — https://news.google.com/rss/articles/CBMieEFVX3lxTE81YTdBTVN5am5BQmtONkhRa3JlaThXNlFORkRCTkpIZmJ3NEk1bThWY2tfeGlyLXRsblM2TVhFRHZVR1JGUnc2MVJBMXl3a3FLNjJYLUJ1LVVGbDNCWTFRbjE0dGd3WkpHd01CMG55dVJ4a1NyZ2lHTA?oc=5

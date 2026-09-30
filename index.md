@@ -3,7 +3,7 @@
 > Complete catalog of active canonical pages. Each entry is a wikilink followed by
 > a one-line summary, sorted alphabetically within its section.
 >
-|> Total pages: 448
+|> Total pages: 452
 ## Entities
 - [[qgroundcontrol-v5-1-0]] — QGroundControl v5.1.0 릴리스 후보 기록.
 |- [[avidrone]] — 캐나다 헤비리프트 드론 기업, DARPA Lift Challenge 우승.
@@ -68,6 +68,7 @@
 - [[kite-aerospace]] — 호주 질롱 기반 자율 물류 UAS "KITE" 생산 개시 기업 (2026-09).
 - [[wingcopter]] — 독일 드론 제조사, 전술 정찰 eVTOL "Wingcopter 262" 공개 (2026-09).
 - [[dji-sdr-transmission-2]] — DJI 전문 촬영용 4K HDR 무선 영상 전송 시스템 (2026-09-18 출시).
+- [[wingtraray]] — Wingtra VTOL 측량 드론, EU 드론 포트 C3/C6 클래스 인증 획득 (2026-09).
 
 ## Concepts
 |- [[drone-rice-heading-detection]] — 드론 기반 벼 출수 판별 시스템(YOLOv11).
@@ -450,6 +451,9 @@
 - [[yolo-v8-4-165]] — YOLO v8.4.165 릴리스 (2026-09-28), wheel 설치 정리 및 export/추론 신뢰성 개선.
 - [[mavsdk-v4-0-1]] — MAVSDK v4.0.1 패치 릴리스, Python destroy() 동시성 및 FTP 타임아웃 시퀀스 수정.
 - [[bio-inspired-offloading-uav-iov-mec]] — UAV 보조 IoV MEC 오프로딩: CA-BIGA·DRL 알고리즘 (KCI, confidence low).
+- [[dronewam-efficient-world-action-model]] — DroneWAM: JEPA 기반 드론 시각 내비게이션 world-action model (arXiv).
+- [[yolo-v8-4-166]] — YOLO v8.4.166 릴리스 (2026-09-29), 데이터셋 처리·예측 출력 신뢰성 개선.
+- [[diu-low-cost-isr-challenge]] — DIU 저비용 ISR 드론 조달 공모전, 1억 달러 규모 (2026-09).
 
 ## Comparisons
 

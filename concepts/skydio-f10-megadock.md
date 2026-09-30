@@ -1,11 +1,11 @@
 ---
 title: "Skydio F10 Lightrunner 및 MegaDock 공개"
 created: 2026-09-26
-updated: 2026-09-26
+updated: 2026-09-30
 type: concept
 domain: hardware
 tags: [drone, hardware, company]
-sources: [inbox/processed/fetch-2026-09-26-rss-dronedj.md, inbox/processed/fetch-2026-09-26-rss-skydio.md]
+sources: [inbox/processed/fetch-2026-09-26-rss-dronedj.md, inbox/processed/fetch-2026-09-26-rss-skydio.md, inbox/processed/fetch-2026-09-30-rss-dronelife.md, inbox/processed/fetch-2026-09-30-rss-skydio.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -23,9 +23,17 @@ Skydio가 2026-09-23~25 사이 고정익 자율 드론 F10 Lightrunner와 MegaDo
   수행하는 자율 드론 함대로 가겠다는 메시지다.^[inbox/processed/fetch-2026-09-26-rss-dronedj.md]
 - **MegaDock, 신규 명령 2종, 함대 전반 업그레이드**가 함께 발표됐다.
 
+## 사양 확인 (2026-09-29 업데이트)
+
+- **MegaDock 용량**: 5기 항공기 동시 탑재.^[inbox/processed/fetch-2026-09-30-rss-dronelife.md]
+- **항속 범위**: MegaDock으로부터 반경 30마일(약 48km).^[inbox/processed/fetch-2026-09-30-rss-dronelife.md]
+- **속도**: 최고 시속 100마일(약 161km/h).^[inbox/processed/fetch-2026-09-30-rss-dronelife.md]
+- **소프트웨어**: 산업별 특화 소프트웨어 플랫폼 2종 동시 발표.^[inbox/processed/fetch-2026-09-30-rss-dronelife.md]
+- **기체 설계**: 전통적 고정익 형태에서 벗어난 비대칭(asymmetrical) 구조로 보도됨.^[inbox/processed/fetch-2026-09-30-rss-skydio.md]
+
 ## 한계
 
-수집 원문이 제목·요약 수준이라 MegaDock 용량, 항속·탑재 사양, 신규 명령 내용, 가격은 확인되지 않았다.
+가격 정보는 여전히 확인되지 않았다.
 
 ## 관련 개념
 

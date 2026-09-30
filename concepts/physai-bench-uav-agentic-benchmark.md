@@ -1,11 +1,13 @@
 ---
 title: "PhysAI-Bench: UAV 중심 물리 AI 에이전트 의사결정 벤치마크"
 created: 2026-09-23
-updated: 2026-09-23
+updated: 2026-09-30
 type: concept
 domain: ai-autonomy
 tags: [drone, ai-agent]
-sources: [inbox/processed/fetch-2026-09-23-arxiv-physai-bench-a-benchmark-for-llm-based-agentic-decision-maki.md]
+sources:
+  - inbox/processed/fetch-2026-09-23-arxiv-physai-bench-a-benchmark-for-llm-based-agentic-decision-maki.md
+  - raw/papers/drone-ai/physai-bench-a-benchmark-for-llm-based-agentic-decision-making-in-autonomous-uav.md
 confidence: medium
 contested: false
 contradictions: []
@@ -25,6 +27,9 @@ contradictions: []
 - MCP 툴 호출·A2A 상호작용·6G 네트워크 조건까지 포함하는 풍부한 맥락
 - 29개 파운데이션 모델, 12개 프롬프팅/temperature 조합으로 모델별 최적 설정 선정 후 고정 평가
 - 최고 성능(GPT-5.3)도 52% 수준 — 상당한 개선 여지
+
+2026-09-30 Zotero 재인제스트로 동일 arXiv 논문의 durable 레코드가 raw/papers/drone-ai에
+추가돼 출처가 이중 확보됐다.^[raw/papers/drone-ai/physai-bench-a-benchmark-for-llm-based-agentic-decision-making-in-autonomous-uav.md]
 
 ## Related
 

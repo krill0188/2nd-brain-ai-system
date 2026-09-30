@@ -1,10 +1,10 @@
 ---
 title: Emlid Corrections Service
 created: 2026-08-05
-updated: 2026-08-06
+updated: 2026-09-30
 type: concept
 tags: [drone, hardware, gnss, rtk, emlid]
-sources: [inbox/fetch-2026-08-05-yt-emlid-corrections-get-centimeter-accuracy-with-your-reach-in.md, inbox/fetch-2026-08-05-yt-how-to-get-an-rtk-fix-with-emlid-corrections.md, inbox/fetch-2026-08-06-yt-how-to-get-an-rtk-fix-in-seconds.md]
+sources: [inbox/fetch-2026-08-05-yt-emlid-corrections-get-centimeter-accuracy-with-your-reach-in.md, inbox/fetch-2026-08-05-yt-how-to-get-an-rtk-fix-with-emlid-corrections.md, inbox/fetch-2026-08-06-yt-how-to-get-an-rtk-fix-in-seconds.md, inbox/processed/fetch-2026-09-30-yt-why-your-gnss-receiver-wont-lock-fix-and-how-to-fix-it.md]
 confidence: high
 contested: false
 contradictions: []
@@ -30,6 +30,15 @@ Emlid Corrections는 Emlid Reach 수신기용 RTK 보정 서비스로, 별도의
 
 Emlid CEO가 직접 시연한 데모에서도 위 3단계만으로 수 초 내 RTK Fix를 획득함을 확인했다.^[inbox/fetch-2026-08-06-yt-how-to-get-an-rtk-fix-in-seconds.md]
 
+## FIX 끊김(FLOAT 전환) 트러블슈팅
+
+RTK 솔루션이 FIX와 FLOAT 사이를 오갈 때 현장에서 점검할 4가지 항목:^[inbox/processed/fetch-2026-09-30-yt-why-your-gnss-receiver-wont-lock-fix-and-how-to-fix-it.md]
+
+- **장애물**: 나무, 건물, 지붕 처마 등 상공 시야를 가리는 요소 확인
+- **베이스라인 거리**: 베이스 또는 NTRIP 기준국까지의 거리 점검
+- **보정 소스**: 인터넷 연결 및 NTRIP 스트림 정상 여부 확인
+- **멀티패스/반사면**: 금속, 유리 외벽, 인근 트럭 등 신호 반사 요인 주의
+
 ## 활용 분야
 
 - 정밀 측량 및 매핑
@@ -41,3 +50,6 @@ Emlid CEO가 직접 시연한 데모에서도 위 3단계만으로 수 초 내 R
 
 - [[gps-uav-imu]] — GPS 미수신 환경 위치추정 기법
 - [[sensor-calibration]] — 센서 캘리브레이션
+
+## 📰 최근 관련 소식
+- [Emlid] Why your GNSS receiver won't lock FIX and how to fix it (youtube.com, 2026-09-29) — https://www.youtube.com/watch?v=l2qOaIcsXqQ

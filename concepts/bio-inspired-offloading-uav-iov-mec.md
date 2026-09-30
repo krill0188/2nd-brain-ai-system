@@ -1,11 +1,13 @@
 ---
 title: "Bio-Inspired Offloading Algorithms in a UAV-Assisted IoV Network with MEC"
 created: 2026-09-29
-updated: 2026-09-29
+updated: 2026-09-30
 type: concept
 domain: comms-protocol
 tags: [drone, drone-ai, datalink]
-sources: [inbox/processed/fetch-2026-09-29-kci-bio-inspired-offloading-algorithms-in-a-uav-assisted-iov-net.md]
+sources:
+  - inbox/processed/fetch-2026-09-29-kci-bio-inspired-offloading-algorithms-in-a-uav-assisted-iov-net.md
+  - raw/papers/_unclassified/bio-inspired-offloading-algorithms-in-a-uav-assisted-iov-network-with-mobile-edg.md
 confidence: low
 contested: false
 contradictions: []
@@ -38,6 +40,8 @@ UAV를 IoV(차량 사물인터넷)의 이동형 MEC 노드로 활용해 신호�
 
 - 원문이 페이월로 비공개이며, 수집된 초록이 CA-BIGA 이후 DRL 알고리즘 설명 문장 중간에서
   잘려 있어 정량적 성능 비교 결과를 확인할 수 없다. confidence를 `low`로 표기한다.
+- 2026-09-30 Zotero 재인제스트본(raw/papers)도 동일하게 절단된 초록만 확보해, 한계가
+  해소되지 않았음을 재확인했다.^[raw/papers/_unclassified/bio-inspired-offloading-algorithms-in-a-uav-assisted-iov-network-with-mobile-edg.md]
 
 ## 관련 개념
 

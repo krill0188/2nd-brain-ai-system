@@ -1,10 +1,10 @@
 ---
 title: Skydio
 created: 2026-08-03
-updated: 2026-08-09
+updated: 2026-09-30
 type: entity
 tags: [drone, hardware, company, autonomy, security]
-sources: [inbox/fetch-2026-08-03-rss-skydio.md, inbox/fetch-2026-08-06-rss-skydio.md, inbox/fetch-2026-08-07-rss-skydio.md, inbox/fetch-2026-08-08-rss-skydio.md, inbox/fetch-2026-08-09-rss-skydio.md]
+sources: [inbox/fetch-2026-08-03-rss-skydio.md, inbox/fetch-2026-08-06-rss-skydio.md, inbox/fetch-2026-08-07-rss-skydio.md, inbox/fetch-2026-08-08-rss-skydio.md, inbox/fetch-2026-08-09-rss-skydio.md, inbox/processed/fetch-2026-09-30-rss-dronelife.md, inbox/processed/fetch-2026-09-30-rss-skydio.md]
 confidence: high
 contested: false
 contradictions: []
@@ -28,8 +28,11 @@ domain: hardware
 ## 제품
 
 - **Skydio X10D**: 군용/공공 안전용 자율 드론
+- **Skydio F10 Lightrunner**: 최초의 고정익 자율 드론, MegaDock 로봇 독과 연동 — 상세는
+  [[skydio-f10-megadock]] 참조
 
 ## 관련 개념
 
+- [[skydio-f10-megadock]] — F10 Lightrunner 고정익 드론·MegaDock 플랫폼 상세
 - [[drone-ai-agents]] — 드론 AI 자율 시스템
 - [[drone-first-responder-dfr]] — 응급 대응 드론 프로그램
