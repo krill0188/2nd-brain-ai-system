@@ -59,6 +59,32 @@ class DerivedCandidateTests(unittest.TestCase):
         finally:
             sys.argv = old
 
+    def write_feeds(self, news, briefing):
+        (self.live / '.ua/news-feed.json').write_text(json.dumps(news))
+        (self.live / '.ua/daily-briefing.json').write_text(json.dumps(briefing))
+
+    def test_valid_feeds_are_published_from_source(self):
+        item = {'title': 'Drone news', 'url': 'https://example.com/a/var/b', 'type': 'news'}
+        self.write_feeds([item], {'date': '2026-09-30', 'cards': [{'title': 't', 'body': 'b'}]})
+        status = derived.publish_feeds(self.cand, self.live / '.ua')
+        self.assertEqual(set(status.values()), {'refreshed'})
+        self.assertEqual(json.loads((self.cand / '.ua/news-feed.json').read_text()), [item])
+        self.assertEqual(derived.verify(self.cand)[:0], [])
+
+    def test_unsafe_feed_keeps_retained_copy(self):
+        self.write_feeds([{'title': 'x', 'url': 'https://e.com', 'summary': 'see /Users/amaster/2nd/inbox/a.md'}],
+                         {'date': '2026-09-30', 'cards': [{'body': 'ok'}]})
+        (self.cand / '.ua/news-feed.json').write_text('[{"title":"old","url":"https://old.example"}]')
+        status = derived.publish_feeds(self.cand, self.live / '.ua')
+        self.assertIn('kept-retained-copy', status['news-feed.json'])
+        self.assertEqual(status['daily-briefing.json'], 'refreshed')
+        self.assertIn('old.example', (self.cand / '.ua/news-feed.json').read_text())
+
+    def test_malformed_feed_is_rejected(self):
+        self.assertIsNotNone(derived.feed_problem('news-feed.json', []))
+        self.assertIsNotNone(derived.feed_problem('news-feed.json', [{'title': 'x', 'url': 'file:///etc/passwd'}]))
+        self.assertIsNotNone(derived.feed_problem('daily-briefing.json', {'date': 'd'}))
+
     def test_vectors_reused_only_for_matching_bytes(self):
         hashes = self.hashes()
         pool = self.write_pool([
@@ -107,6 +133,9 @@ class DerivedCandidateTests(unittest.TestCase):
         self.assertEqual(out['edges'][0]['evidence'], ['raw/articles/ok.md'])
 
     def test_end_to_end_and_verify_detects_tampering(self):
+        item = [{'title': 'n', 'url': 'https://example.com'}]
+        self.write_feeds(item, {'date': '2026-09-30', 'cards': []})
+        (self.cand / '.ua/news-feed.json').write_text(json.dumps(item))
         self.write_pool([{'input_hash': h, 'vector': vec(1.0)} for h in self.hashes().values()])
         (self.live / '.ua/discovery-knowledge-graph.json').write_text(json.dumps({
             'nodes': [{'id': 'A', 'sources': ['raw/articles/ok.md', 'raw/articles/private.md']}], 'edges': []}))

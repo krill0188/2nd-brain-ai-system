@@ -9,7 +9,9 @@ embeddings.json          vectors reused only when the candidate's own document b
                          same input_hash (live index + previous public copy are just vector pools)
 discovery-knowledge-graph.json   live graph filtered to sources/evidence present in the candidate
 drone-knowledge-graph.json       regenerated from candidate canonical docs
-news-feed / daily-briefing / knowledge-graph / self-update-state   left as retained public copies
+news-feed / daily-briefing   published from the source .ua/ only after schema + local-path validation
+                         (public news metadata; invalid input keeps the retained public copy and warns)
+knowledge-graph / self-update-state   left as retained public copies
 
 Writes only inside the candidate directory. Never deploys, never pushes.
 """
@@ -18,6 +20,7 @@ import argparse
 import importlib.util
 import json
 import os
+import re
 import sys
 import tempfile
 from datetime import datetime, timezone
@@ -63,6 +66,43 @@ def write_json_atomic(path: Path, payload) -> None:
     finally:
         if os.path.exists(tmp):
             os.unlink(tmp)
+
+
+LOCAL_PATH = re.compile(r'(?<![\w:/.~-])(?:/(?:Users|home|private|var|tmp)/|~/)|(?:^|\s)(?:inbox|research|innovations)/\S+\.md')
+MAX_FEED_ITEMS = 5000
+
+
+def feed_problem(name: str, data) -> str | None:
+    """Return why a feed artifact is unsafe/malformed, or None when it may be published."""
+    if LOCAL_PATH.search(json.dumps(data, ensure_ascii=False)):
+        return 'local or internal path string'
+    if name == 'news-feed.json':
+        if not isinstance(data, list) or not data or len(data) > MAX_FEED_ITEMS:
+            return 'expected a non-empty list within the size limit'
+        for item in data:
+            if (not isinstance(item, dict) or not isinstance(item.get('title'), str)
+                    or not str(item.get('url', '')).startswith(('http://', 'https://'))):
+                return 'item without title or http(s) url'
+    elif name == 'daily-briefing.json':
+        if (not isinstance(data, dict) or not isinstance(data.get('date'), str)
+                or not isinstance(data.get('cards'), list)
+                or any(not isinstance(c, dict) or not isinstance(c.get('body'), str) for c in data['cards'])):
+            return 'expected {date, cards:[{body}]}'
+    return None
+
+
+def publish_feeds(candidate: Path, source_ua: Path) -> dict:
+    status = {}
+    for name in ('news-feed.json', 'daily-briefing.json'):
+        data = read_json(source_ua / name)
+        reason = 'source unreadable' if data is None else feed_problem(name, data)
+        if reason:
+            status[name] = f'kept-retained-copy ({reason})'
+            print(f'WARNING: {name} not refreshed: {reason}', file=sys.stderr)
+        else:
+            write_json_atomic(candidate / '.ua' / name, data)
+            status[name] = 'refreshed'
+    return status
 
 
 def candidate_embedding_inputs(candidate: Path) -> tuple[object, list[dict]]:
@@ -144,6 +184,12 @@ def verify(candidate: Path) -> list[str]:
     problems: list[str] = []
     files = candidate_files(candidate)
 
+    for name in ('news-feed.json', 'daily-briefing.json'):
+        data = read_json(candidate / '.ua' / name)
+        reason = 'unreadable' if data is None else feed_problem(name, data)
+        if reason:
+            problems.append(f'{name}: {reason}')
+
     embeddings = read_json(candidate / '.ua/embeddings.json')
     if not isinstance(embeddings, dict):
         problems.append('embeddings unreadable')
@@ -196,6 +242,7 @@ def main() -> int:
     if not args.verify_only:
         live = args.source_root / '.ua'
         files = candidate_files(candidate)
+        feeds = publish_feeds(candidate, live)
         embed = load_script('embed-docs.py')
         embeddings = build_embeddings(candidate, [live / 'embeddings.json', candidate / '.ua/embeddings.json'],
                                       cached_embedder(embed, args.source_root / '.ua/model-cache/fastembed'))
@@ -208,7 +255,7 @@ def main() -> int:
 
         drone = build_drone_graph(candidate)
         write_json_atomic(candidate / '.ua/drone-knowledge-graph.json', drone)
-        summary = {'embeddings': embeddings['payload']['doc_count'], 'embeddings_missing': embeddings['missing'],
+        summary = {'feeds': feeds, 'embeddings': embeddings['payload']['doc_count'], 'embeddings_missing': embeddings['missing'],
                    'discovery_nodes': len(discovery['nodes']), 'discovery_edges': len(discovery['edges']),
                    'drone_nodes': len(drone['nodes']), 'drone_edges': len(drone['edges'])}
 
