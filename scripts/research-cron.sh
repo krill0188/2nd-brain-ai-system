@@ -85,7 +85,7 @@ fi
 
 NCHANGED=0
 for d in "${CANON[@]}"; do
-  NCHANGED=$((NCHANGED + $(diff -rq "$BACKUP/$d" "$d" 2>/dev/null | wc -l)))
+  NCHANGED=$((NCHANGED + $( { diff -rq "$BACKUP/$d" "$d" 2>/dev/null || true; } | wc -l)))
 done
 if [ "$ALLOW_CANON" = 0 ]; then
   if [ "$NCHANGED" -ne 0 ] || ! cmp -s "$BACKUP/index.md" index.md || ! cmp -s "$BACKUP/log.md" log.md; then
