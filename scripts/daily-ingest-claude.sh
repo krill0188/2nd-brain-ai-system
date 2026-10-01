@@ -22,6 +22,10 @@ PROMPT='SCHEMA.md와 index.md를 먼저 읽고 orient한 뒤 inbox/ 폴더(inbox
 domain 필드를 반드시 포함한다 (flight-control | comms-protocol | hardware | gcs-software | ops-mission |
 regulations | ai-autonomy 중 하나). 처리에 성공한 inbox 원본 파일은 inbox/processed/로 이동해라.
 raw/ 파일은 절대 수정하지 마라. 사소한 언급 하나로는 새 페이지를 만들지 마라.
+YouTube 파일은 frontmatter에 transcript: true 이면 "## 자막" 섹션(자동 추출, 최대 8000자)이 있다. 설명란이
+아니라 자막 내용을 기준으로 가치를 판단해라: 절차·사양·버그 원인·측정/테스트 결과 같은 구체적 기술 정보가
+있으면 컴파일 대상(신규 또는 기존 페이지 보강)이고, 프로모/잡담/도메인 외 영상만 skip해 log.md에 사유를 남겨라.
+자막 내용을 근거로 쓸 때는 자막에 없는 사실을 덧붙이지 마라.
 
 작업이 끝나면 "수집 N개, 컴파일 N개, 실패 N개" 형식의 한 줄 요약을 마지막에 출력해라.'
 

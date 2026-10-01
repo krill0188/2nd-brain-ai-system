@@ -433,13 +433,59 @@ fetch_federal_register "drone" "faa" "regulations" 5
 fetch_arxiv() {
   local query="$1" slug="$2" domain="$3" max_items="${4:-3}"
   python3 - "$query" "$slug" "$domain" "$max_items" "$INBOX" "$TODAY" "$SEEN_RSS" <<'PYEOF'
-import sys, json, os, re, subprocess
+import sys, json, os, re, subprocess, hashlib
 import urllib.request, urllib.parse
 import xml.etree.ElementTree as ET
 
 query, slug, domain, max_items, inbox, today, seen_path = sys.argv[1:]
 max_items = int(max_items)
 ns = {'a': 'http://www.w3.org/2005/Atom'}
+
+
+def preserve_original(arxiv_id, fslug, domain):
+    """원문(HTML 우선, PDF 폴백) 직접 보존 — Zotero 데스크톱 앱 실행 여부와 무관하게 항상 동작한다.
+    기존 zotero-ingest.py 경로는 'http://localhost:23119/connector/ping'(Zotero 앱 연결체커)이
+    응답할 때만 돌아서, 무인 launchd 실행에서는 앱이 꺼져 있어 거의 항상 스킵된다(2026-10-01
+    실측: raw/papers 전체 184건 중 PDF 보존 69건/미보존 115건 — 이 경로 의존이 원인으로 확인됨).
+    반환: (attachment_path, attachment_type, attachment_sha256) 또는 전부 None(실패 시).
+    """
+    files_dir = os.path.join(os.path.expanduser('~/2nd/raw/papers/files'), domain)
+    try:
+        os.makedirs(files_dir, exist_ok=True)
+    except Exception:
+        return None, None, None
+    for ext, src_url in (('html', f'https://arxiv.org/html/{arxiv_id}'), ('pdf', f'https://arxiv.org/pdf/{arxiv_id}')):
+        try:
+            req = urllib.request.Request(src_url, headers={'User-Agent': '2ndBrainFetcher/2.0'})
+            data = urllib.request.urlopen(req, timeout=20).read()
+        except Exception:
+            continue
+        if len(data) < 2000:   # 너무 작으면 에러/placeholder 페이지일 가능성 — 다음 포맷 시도
+            continue
+        dest = os.path.join(files_dir, f'{fslug}.{ext}')
+        new_hash = hashlib.sha256(data).hexdigest()
+        if os.path.exists(dest):
+            old_hash = hashlib.sha256(open(dest, 'rb').read()).hexdigest()
+            if old_hash != new_hash:
+                # 같은 파일명인데 내용이 다름(예: 같은 제목의 다른 버전) — 기존 걸 덮어쓰지 않고
+                # 별도 보관만 하고, 프런트매터에는 기존(정본) 해시를 그대로 유지한다.
+                conflict_dest = os.path.join(files_dir, f'{fslug}.CONFLICT-{today}.{ext}')
+                try:
+                    open(conflict_dest, 'wb').write(data)
+                except Exception:
+                    pass
+                print(f"  ⚠️  원문 해시 충돌: {dest} (기존 유지, 새 응답은 {conflict_dest}에 별도 보관)", file=sys.stderr)
+                rel = os.path.relpath(dest, os.path.expanduser('~/2nd'))
+                return rel, ext, old_hash
+            rel = os.path.relpath(dest, os.path.expanduser('~/2nd'))
+            return rel, ext, new_hash
+        try:
+            open(dest, 'wb').write(data)
+        except Exception:
+            continue
+        rel = os.path.relpath(dest, os.path.expanduser('~/2nd'))
+        return rel, ext, new_hash
+    return None, None, None
 
 url = ("https://export.arxiv.org/api/query?search_query=" + urllib.parse.quote(query)
        + "&sortBy=submittedDate&sortOrder=descending&max_results=15")
@@ -467,6 +513,10 @@ for e in root.findall('a:entry', ns):
 
     fslug = re.sub(r'[^\w\s-]', '', title.lower())
     fslug = re.sub(r'[\s_]+', '-', fslug)[:60]
+    arxiv_id = link.rsplit('/abs/', 1)[-1].split('v')[0]
+    attach_path, attach_type, attach_hash = preserve_original(arxiv_id, fslug, domain)
+    attach_fm = (f"attachment_path: {attach_path}\nattachment_type: {attach_type}\n"
+                 f"attachment_sha256: {attach_hash}\n") if attach_path else ""
     out = os.path.join(inbox, f"fetch-{today}-arxiv-{fslug}.md")
     with open(out, 'w') as f:
         f.write(f"""---
@@ -479,7 +529,7 @@ source: {link}
 authors: {json.dumps(authors)}
 published: "{published}"
 tags: [drone, {domain}, paper, arxiv]
----
+{attach_fm}---
 
 # {title}
 
@@ -498,8 +548,8 @@ tags: [drone, {domain}, paper, arxiv]
 
     # Zotero에도 밀어넣어 원문(PDF) 보존 — 실패해도 inbox 파이프라인은 계속 진행한다
     # (Zotero 계정/키 미설정인 다른 머신에서도 이 스크립트가 죽으면 안 됨).
+    # 위 preserve_original()이 이미 직접 원문을 보존했으므로 이건 보조 경로(중복 안전망)다.
     try:
-        arxiv_id = link.rsplit('/abs/', 1)[-1].split('v')[0]
         push_payload = json.dumps({
             "title": title, "authors": author_list, "abstract": abstract,
             "arxiv_id": arxiv_id, "url": link,
@@ -516,7 +566,7 @@ if written:
     with open(seen_path, 'a') as f:
         for l in new_links:
             f.write(l + "\n")
-    print(f"  ✅ [{domain}] arXiv {slug} 논문 {written}편 → inbox/ (+Zotero PDF 보존 시도)")
+    print(f"  ✅ [{domain}] arXiv {slug} 논문 {written}편 → inbox/ (원문 HTML/PDF 직접 보존 + Zotero 보조)")
 else:
     print(f"  skip arxiv {slug} (새 논문 없음)")
 PYEOF
@@ -735,7 +785,7 @@ YT_KEY=$(grep '^YOUTUBE_API_KEY=' "$HOME/2nd/.env" 2>/dev/null | cut -d= -f2 || 
 YT_CONF="$HOME/2nd/config/youtube-channels.txt"
 if [[ -n "${YT_KEY:-}" && -f "$YT_CONF" ]]; then
   python3 - "$YT_KEY" "$YT_CONF" "$INBOX" "$TODAY" "$SEEN_RSS" <<'PYEOF'
-import sys, json, os, re
+import sys, json, os, re, subprocess, time
 import urllib.request
 
 key, conf, inbox, today, seen_path = sys.argv[1:]
@@ -753,6 +803,7 @@ if os.path.exists(CACHE):
 
 seen = set(open(seen_path).read().splitlines())
 feed_items, new_links, total = [], [], 0
+tstats = {"attempted": 0, "ok": 0, "rate_limited": 0, "blocked": 0, "unavailable": 0}
 
 for line in open(conf):
     line = line.strip()
@@ -800,6 +851,29 @@ for line in open(conf):
         if published and published < cutoff:
             continue  # 오래된 백로그 영상 제외 (최근 45일만)
 
+        transcript = ""
+        if tstats["blocked"] < 2 and tstats["unavailable"] == 0:
+            if tstats["attempted"]:
+                time.sleep(1.5)
+            tstats["attempted"] += 1
+            try:
+                done = subprocess.run(
+                    ["python3", os.path.expanduser("~/2nd/scripts/yt_transcript.py"), vid],
+                    capture_output=True, text=True, timeout=90)
+                transcript = done.stdout.strip()
+                if transcript:
+                    tstats["ok"] += 1
+                    tstats["blocked"] = 0
+                elif done.returncode == 3:
+                    tstats["blocked"] += 1
+                    tstats["rate_limited"] += 1
+                elif done.returncode == 4:
+                    tstats["unavailable"] += 1
+            except Exception:
+                pass
+        transcript_block = f"\n## 자막 (자동 추출, 최대 8000자)\n\n{transcript}\n" if transcript else ""
+        has_transcript = "true" if transcript else "false"
+
         fslug = re.sub(r"[^\w\s-]", "", title.lower())
         fslug = re.sub(r"[\s_]+", "-", fslug)[:60]
         out = os.path.join(inbox, f"fetch-{today}-yt-{fslug}.md")
@@ -814,6 +888,7 @@ source: {url}
 channel: {json.dumps(ch['title'])}
 published: "{published}"
 tags: [drone, {domain}, video, youtube]
+transcript: {has_transcript}
 ---
 
 # {title}
@@ -825,7 +900,7 @@ tags: [drone, {domain}, video, youtube]
 ## 설명 요약
 
 {desc}
-""")
+{transcript_block}""")
         feed_items.append({"title": f"[{ch['title']}] {title}", "url": url,
                            "source": "youtube.com", "domain": domain, "type": "video",
                            "region": region, "summary": desc[:200], "published": published})
@@ -834,8 +909,21 @@ tags: [drone, {domain}, video, youtube]
         print(f"  ✅ [{domain}] YouTube @{handle} 영상 {written}건 → inbox/")
 
 json.dump(cache, open(CACHE, "w"), ensure_ascii=False)
+if tstats["attempted"]:
+    print(f"  youtube 자막: {tstats['ok']}/{tstats['attempted']}건 추출"
+          f" (rate-limit {tstats['rate_limited']}, yt-dlp 없음 {tstats['unavailable']})")
+    stats_path = os.path.expanduser("~/2nd/.ua/youtube-transcript-stats.json")
+    try:
+        json.dump({"date": today, **{k: tstats[k] for k in ("attempted", "ok", "rate_limited", "unavailable")}},
+                  open(stats_path, "w"))
+    except OSError:
+        pass
+    notify = os.path.expanduser("~/claudeclaw/scripts/notify.sh")
+    if tstats["attempted"] >= 4 and tstats["ok"] == 0 and os.path.isfile(notify):
+        subprocess.run(["bash", notify, f"[2nd 수집] 유튜브 자막 0/{tstats['attempted']}건 - "
+                        "yt-dlp 업데이트 필요 또는 YouTube 차단 의심 (설명란만으로 수집 계속됨)"],
+                       capture_output=True, timeout=60)
 if feed_items:
-    import subprocess
     subprocess.run(["python3", os.path.expanduser("~/2nd/scripts/news-feed-append.py")],
                    input=json.dumps(feed_items, ensure_ascii=False), text=True, capture_output=True)
     with open(seen_path, "a") as f:
