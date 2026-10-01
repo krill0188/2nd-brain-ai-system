@@ -171,6 +171,30 @@ Claude Code MCP: `zotero` 서버 등록됨 → `search_zotero`, `get_item` 등 �
 
 **Zotero 로컬 API 활성화 필수**: Zotero → Settings → Advanced → "Allow other applications on this computer to communicate with Zotero" 켜기.
 
+## Original-Text Preservation (2026-10-01)
+
+`scripts/fetch-inbox.sh`'s `fetch_arxiv()` now preserves the original paper directly
+(`preserve_original()`), independent of the Zotero pipeline above:
+
+- HTML-first (`arxiv.org/html/<id>`), PDF fallback (`arxiv.org/pdf/<id>`), saved under
+  `raw/papers/files/<domain>/<slug>.{html,pdf}`.
+- SHA-256 recorded as `attachment_sha256` in the inbox markdown frontmatter
+  (plus `attachment_path`, `attachment_type`).
+- Hash-conflict rule: if a file already exists at that path with a **different** hash,
+  the existing file is never overwritten — the new response is saved separately as
+  `<slug>.CONFLICT-<date>.<ext>` and a warning is printed. Frontmatter keeps the
+  original (first-seen) hash as canonical.
+- Scope: this step only does read-only HTTP GET to `arxiv.org` and writes only under
+  `raw/papers/files/`. It does not touch `inbox/`, canonical directories, or any other
+  `raw/` subtree.
+
+Why this exists: the Zotero path above only runs when the Zotero desktop app is open
+(`localhost:23119/connector/ping`), so it was silently skipped on every unattended
+launchd run — measured 2026-10-01: 69/184 papers had a preserved original, 115 did not.
+This direct path has no such dependency and covers every arXiv paper `fetch_arxiv()`
+processes going forward. The Zotero path is kept as a secondary channel for
+manually-collected papers.
+
 ## Gate C — Knowledge Graph
 
 Understand Anything (`understand-knowledge`) is the Gate C tool. Run it after significant wiki growth or on demand.
