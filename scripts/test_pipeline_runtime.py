@@ -97,6 +97,36 @@ class RuntimeSafetyTests(unittest.TestCase):
         )
         self.assertEqual(calls[0][1]["pass_fds"], (123,))
 
+    def test_missing_web_dependencies_are_restored_or_reported(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            web = Path(tmp)
+            calls = []
+
+            def ok(command, **kwargs):
+                calls.append(command)
+                return SimpleNamespace(returncode=0)
+
+            def lost(command, **kwargs):
+                raise FileNotFoundError("npm")
+
+            with patch.object(pipeline, "WEB", web):
+                self.assertEqual(
+                    pipeline.ensure_web_dependencies(execute=ok),
+                    [{"step": "Prepare:web-dependencies", "exit_code": 0,
+                      "diagnostic": "DEPENDENCIES_RESTORED"}],
+                )
+                self.assertEqual(calls[0][1:], ["ci", "--no-audit", "--no-fund"])
+                self.assertEqual(
+                    pipeline.ensure_web_dependencies(execute=lost)[0]["diagnostic"],
+                    "DEPENDENCY_RESTORE_FAILED",
+                )
+
+                (web / "node_modules/tsx").mkdir(parents=True)
+                (web / "node_modules/tsx/package.json").write_text("{}")
+                calls.clear()
+                self.assertEqual(pipeline.ensure_web_dependencies(execute=ok), [])
+                self.assertEqual(calls, [])
+
     def test_failure_stops_next_step_and_redacts_output(self):
         calls = []
 

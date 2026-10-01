@@ -109,6 +109,26 @@ def select_steps(plan, names):
     return selected
 
 
+def ensure_web_dependencies(execute=subprocess.run) -> list[dict]:
+    # A lost node_modules once surfaced as a masked exit 124 for ten days.
+    if (WEB / 'node_modules/tsx/package.json').exists():
+        return []
+    npm = shutil.which('npm') or '/usr/local/bin/npm'
+    try:
+        result = execute(
+            [npm, 'ci', '--no-audit', '--no-fund'],
+            cwd=WEB,
+            capture_output=True,
+            timeout=900,
+        )
+    except (OSError, subprocess.TimeoutExpired):
+        return [{'step': 'Prepare:web-dependencies', 'exit_code': 127,
+                 'diagnostic': 'DEPENDENCY_RESTORE_FAILED'}]
+    ok = result.returncode == 0
+    return [{'step': 'Prepare:web-dependencies', 'exit_code': result.returncode,
+             'diagnostic': 'DEPENDENCIES_RESTORED' if ok else 'DEPENDENCY_RESTORE_FAILED'}]
+
+
 def run_steps(items, execute=subprocess.run) -> list[dict]:
     results = []
     for name, command in items:
@@ -261,7 +281,10 @@ def main() -> int:
                     ],
                 )
 
-            results = run_steps(initial) if initial else []
+            prepared = ensure_web_dependencies() if initial else []
+            if any(r['exit_code'] for r in prepared):
+                initial = []
+            results = prepared + (run_steps(initial) if initial else [])
             before = source_fingerprint()
 
             if all(r['exit_code'] == 0 for r in results):
