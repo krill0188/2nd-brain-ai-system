@@ -1,7 +1,7 @@
 ---
 title: "드론 이상 징후 탐지 방법 연구 동향 및 개선 방안"
 created: 2026-08-19
-updated: 2026-09-30
+updated: 2026-10-01
 type: concept
 tags: [drone, flight-control, safety, research, sensor]
 sources:
@@ -11,6 +11,7 @@ sources:
   - raw/papers/_unclassified/aerodistinct-a-generative-data-construction-pipeline-and-benchmark-for-dronebird.md
   - raw/papers/_unclassified/seeing-what-darkness-conceals-frequency-adaptive-modeling-for-nighttime-uav-vehi.md
   - raw/papers/drone-ai/dynamic-multi-scale-mixture-of-experts-with-cross-scale-feature-enhancement-for-.md
+  - raw/papers/_unclassified/감시-드론을-위한-심층-신경망-기반-지상-표적-추적-기법.md
 confidence: high
 contested: false
 contradictions: []
@@ -75,11 +76,17 @@ domain: flight-control
 최신 사례로, 위 "융합적 발전 방향" 절의 센서+데이터 융합 흐름을 뒷받침하는
 정성적 근거로 분류한다. 방법·수치 성능은 원문 확보 후 보강이 필요하다.
 
+같은 범주(데이터 기반·영상 탐지)의 국내 연구로, RetinaNet 객체 탐지에 칼만 필터를 결합해
+감시 드론의 지상 표적을 추적하는 기법이 있다. 신경망 단독 탐지 대비 칼만 필터 결합 시
+표적 인식 정확도가 향상됨을 실험으로 확인했다
+^[raw/papers/_unclassified/감시-드론을-위한-심층-신경망-기반-지상-표적-추적-기법.md].
+
 ## 관련 개념
 
 - [[flight-logging-analysis]] — ULog 포맷 및 비행 데이터 분석
 - [[sensor-calibration]] — 센서 캘리브레이션
 - [[drone-safety-failsafe]] — RTL, Geofence 등 안전 시스템
+- [[kci-ground-target-tracking-retinanet-kalman]] — RetinaNet+칼만필터 기반 감시 드론 지상 표적 추적(KCI)
 
 ## 참고
 

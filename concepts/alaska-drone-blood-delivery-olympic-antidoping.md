@@ -35,3 +35,6 @@ Nenana에서 출발해 왕복 1,000km(621마일), 8시간 47분 비행을 완료
 
 - [[matternet]]
 - [[cleveland-clinic-drone-delivery]]
+
+## 📰 최근 관련 소식
+- “주문하면 드론이 배달”…밀양 야외 드론 배송 시작 (쿠키뉴스, Wed, 30 Se) — https://news.google.com/rss/articles/CBMiY0FVX3lxTE1qbVFJRzZwMVBMZ19hRFBoRjYtM3BSNlMzNk9yaUwybDlwSm5EZGEwbFZrVTNXUktrMUpSWWJoSlVtbnhRWXhBUzZiWEpsVzNGQVBVQVFGWjd5eEJ3QWJnRWdJcw?oc=5

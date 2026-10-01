@@ -1,11 +1,11 @@
 ---
 title: "PATH: 협력 드론 간 연속 표적 감지 핸드오프"
 created: 2026-09-15
-updated: 2026-09-15
+updated: 2026-10-01
 type: concept
 domain: comms-protocol
 tags: [drone, comms-protocol, swarm]
-sources: [inbox/fetch-2026-09-15-arxiv-path-continuous-target-sensing-among-autonomous-cooperative-.md]
+sources: [inbox/fetch-2026-09-15-arxiv-path-continuous-target-sensing-among-autonomous-cooperative-.md, raw/papers/_unclassified/감시-드론을-위한-심층-신경망-기반-지상-표적-추적-기법.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -38,8 +38,14 @@ Kim 외 7인, arXiv:2609.12456v1 (2026-09-11 게시).^[inbox/fetch-2026-09-15-ar
 - 상대 자세(relative-pose) 불확실성이 수신측 투영 오차의 지배적 요인으로 확인됨(센서 오차 민감도 분석).
 - 비디오 프레임률(60Hz)에서 동작, UAV 간 통신량 16kB/s 미만으로 자원 제약 플랫폼에서도 경량 구현이 가능함을 시연.
 
+PATH는 협력 드론 "사이"의 표적 추적 책임 이전을 다루는 반면, 국내 연구인 RetinaNet+칼만필터
+기법은 단일 감시 드론이 다수 지상 표적을 "혼자" 탐지·추적하는 문제를 다룬다. 두 연구는 표적
+추적의 서로 다른 단계(단일 플랫폼 내부 추적 vs 플랫폼 간 핸드오프)를 보완적으로 다룬다는
+점에서 연결된다^[raw/papers/_unclassified/감시-드론을-위한-심층-신경망-기반-지상-표적-추적-기법.md].
+
 ## 관련 개념
 
 - [[datalink-communication]] — 드론 데이터링크 통신 기술
 - [[swarm-coordination]] — 다중 드론 협력 구조
 - [[uav-swarm-target-localization]] — 다중경로 환경 UAV 스웜 표적 위치 추정
+- [[kci-ground-target-tracking-retinanet-kalman]] — RetinaNet+칼만필터 기반 단일 감시 드론 지상 표적 추적(KCI)

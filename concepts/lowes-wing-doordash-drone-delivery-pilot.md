@@ -31,3 +31,4 @@ Lowe's가 노스캐롤라이나 매튜스에서 드론 배송 시범을 시작�
 ## 📰 최근 관련 소식
 - 밀양시, 드론 배송 서비스 본격화 … 하늘길 물류시대 연다 (아시아경제, Tue, 29 Se) — https://news.google.com/rss/articles/CBMiYEFVX3lxTE9OeVJwQUlXU0xFQUJQd3kyVTR6S1F1WTUzXzZ5ZzBnd2tkUlZIR1dZcXJraEN2RnRQYmhwT25lYjFuck5GM1d3UWp3a3hnSVBPaXUtNzg2bWZDWk5GLVQ1cw?oc=5
 - "공원·캠핑장도 배달 갑니다"…밀양서 야외 드론 배송 시작 (뉴스1, Mon, 28 Se) — https://news.google.com/rss/articles/CBMiZEFVX3lxTE9MUzd5clpWanJFdzQxUzlQdEJhLTNYVGFmeUVwNi16aEN1YTNkTkdRc01BRlI2WjFDUkZXb2FDVWZOemlYcTZFT2ZNSWxnNVBLaGpaMHBNMW16amRPb2JRV1FfaWPSAWRBVV95cUxPTFM3eXJaVmpyRXc0MVM5UHRCYS0zWFRhZnlFcDYtemhDdWEzZE5HUXNNQUZSNloxQ1JGV29hQ1VmTnppWHE2RU9mTUlsZzVQS2hqWjBwTTFtempkT29iUVdRX2lj?oc=5
+- “주문하면 드론이 배달”…밀양 야외 드론 배송 시작 (쿠키뉴스, Wed, 30 Se) — https://news.google.com/rss/articles/CBMiY0FVX3lxTE1qbVFJRzZwMVBMZ19hRFBoRjYtM3BSNlMzNk9yaUwybDlwSm5EZGEwbFZrVTNXUktrMUpSWWJoSlVtbnhRWXhBUzZiWEpsVzNGQVBVQVFGWjd5eEJ3QWJnRWdJcw?oc=5

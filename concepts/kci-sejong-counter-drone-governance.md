@@ -1,11 +1,11 @@
 ---
 title: "국가중요시설 초밀집지역의 대드론 거버넌스: 세종 국가상징구역 설계"
 created: 2026-09-16
-updated: 2026-09-16
+updated: 2026-10-01
 type: concept
 domain: regulations
 tags: [drone, regulations, ops-mission]
-sources: [raw/papers/_unclassified/국가중요시설-초밀집지역의-대드론-거버넌스-연구---세종-국가상징구역의-선제적-거버넌스-설계--.md]
+sources: [raw/papers/_unclassified/국가중요시설-초밀집지역의-대드론-거버넌스-연구---세종-국가상징구역의-선제적-거버넌스-설계--.md, raw/papers/_unclassified/러시아ㆍ우크라이나-전쟁이-드론-테러에-미치는-영향과-시사점.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -39,7 +39,14 @@ contradictions: []
 - 문홍렬(대통령경호처), "국가중요시설 초밀집지역의 대드론 거버넌스 연구 - 세종
   국가상징구역의 선제적 거버넌스 설계 -", 항공보안ㆍ안전 거버넌스, 2026.
 
+본 연구의 세종 국가상징구역 대드론 거버넌스 설계는 "국가중요시설에 실제 위협이 발생했을 때"의
+운용조정 체계를 다루는데, 같은 해 발표된 러시아·우크라이나 전쟁 드론 테러 전용 가능성 연구는
+그 위협의 현실적 시나리오(상용 쿼드콥터·FPV 드론의 저비용 전용, 시설 인근 은닉발진)를
+제시한다는 점에서 상호보완적이다
+^[raw/papers/_unclassified/러시아ㆍ우크라이나-전쟁이-드론-테러에-미치는-영향과-시사점.md].
+
 ## 관련 개념
 
 - [[kci-airport-drone-incident-location-reporting]] — 같은 학술지의 공항 드론 대응 연구
 - [[kci-counter-drone-hardkill-engagement-zone]] — 대드론 하드킬 교전영역 알고리즘
+- [[kci-russia-ukraine-war-drone-terror]] — 러우전쟁 드론 기술의 비국가행위자 테러 전용 가능성(위협 시나리오)

@@ -1,11 +1,11 @@
 ---
 title: "드론 탑재 삼성분 플럭스게이트 자력탐사 교차점 오차 보정"
 created: 2026-09-05
-updated: 2026-09-05
+updated: 2026-10-01
 type: concept
 domain: hardware
 tags: [drone, hardware, drone-hw]
-sources: [raw/papers/_unclassified/드론-탑재-삼성분-플럭스게이트-자력탐사자료의-교차점-오차-분석-및-보정.md]
+sources: [raw/papers/_unclassified/드론-탑재-삼성분-플럭스게이트-자력탐사자료의-교차점-오차-분석-및-보정.md, raw/papers/_unclassified/켑스트럼을-이용한-단일-마이크로폰-기반-드론-거리-추정.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -25,7 +25,14 @@ contradictions: []
 - 벡터 성분이상의 교차점 오차가 스칼라 이상의 교차점 오차보다 크며, 이는 자세 센서 내재 오차에서
   기인 — 회전 불변량인 스칼라 오차와는 본질적으로 원인이 다름을 정량적으로 규명.
 
+동일한 "단일 탑재 센서로 물리량을 추정하되 배열(다중 센서) 구성이 아니라는 제약을 역으로
+활용하는" 방법론 계열로, 단일 마이크로폰만으로 드론 소음의 TDOA(도달시간차)를 켑스트럼으로
+추출해 거리를 추정하는 국내 연구가 있다. 두 연구 모두 배열 센서 없이 단일 센서의 기하·신호
+구조 정보만으로 위치/오차를 보정·추정한다는 문제 설정을 공유한다
+^[raw/papers/_unclassified/켑스트럼을-이용한-단일-마이크로폰-기반-드론-거리-추정.md].
+
 ## 관련 개념
 
 - [[drone-payload-systems]] — 카메라, 짐벌, 페이로드 트리거 등 드론 페이로드 통합
 - [[sensor-calibration]] — Accel/Gyro/Compass/Baro 등 센서 캘리브레이션
+- [[kci-cepstrum-single-microphone-drone-distance]] — 켑스트럼 기반 단일 마이크로폰 드론 거리 추정(동일 단일센서 방법론 계열)

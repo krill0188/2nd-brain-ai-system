@@ -1,10 +1,10 @@
 ---
 title: Computer Vision for Drones
 created: 2026-07-27
-updated: 2026-07-27
+updated: 2026-10-01
 type: concept
 tags: [drone-ai, computer-vision, SLAM, detection, tracking, YOLO]
-sources: []
+sources: [raw/papers/_unclassified/감시-드론을-위한-심층-신경망-기반-지상-표적-추적-기법.md]
 confidence: medium
 domain: ai-autonomy
 contested: false
@@ -62,6 +62,7 @@ SLAM은 실시간으로 지도를 생성하고 동시에 위치를 추정하는 
 | **SORT** | 단순, 실시간 |
 | **DeepSORT** | 딥러닝 융합 |
 | **ByteTrack** | 고성능 |
+| **RetinaNet+Kalman** | 국내 연구(감시 드론 지상 표적)에서 RetinaNet 탐지에 칼만 필터를 결합, 신경망 단독 대비 표적 인식 정확도 향상 확인^[raw/papers/_unclassified/감시-드론을-위한-심층-신경망-기반-지상-표적-추적-기법.md] |
 
 ## 시스템 아키텍처
 
@@ -172,6 +173,7 @@ for waypoint in path:
 - [[px4-offboard-control]] — 비전 데이터 기반 제어
 - [[flight-controller-hardware]] — 컴패니언 컴퓨터 선택
 - [[ros2-drone-integration]] — ROS2 비전 파이프라인
+- [[kci-ground-target-tracking-retinanet-kalman]] — RetinaNet+칼만필터 기반 감시 드론 지상 표적 추적(KCI)
 
 ## 📰 최근 관련 소식
 - Army seeks next-gen missile that could shoot down small drones for less than $150K a pop (DefenseScoop, Tue, 04 Au) — https://news.google.com/rss/articles/CBMie0FVX3lxTE5GbzRtdW9TS3Y4b3JkaW9oazVGWW9nUWRxa0hGY25RV2h1UEg1MVVfQnhSUE1xS1VFMzVSUGRyckRva0VEZFV5aWhqeHZsbngwV2FpTDBLMVEwdllFOWVXYVZyU3g2VDNESS1WekhBLXNYOEdhMWZrenRESQ?oc=5

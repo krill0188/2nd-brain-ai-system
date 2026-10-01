@@ -1,11 +1,11 @@
 ---
 title: "Betaflight 2026.6 FC Alignment Wizard"
 created: 2026-09-03
-updated: 2026-09-03
+updated: 2026-10-01
 type: concept
 domain: hardware
 tags: [drone-hw, hardware, drone-sw, fpv]
-sources: []
+sources: [inbox/processed/fetch-2026-10-01-rss-oscarliang-fpv.md]
 confidence: high
 contested: false
 contradictions: []
@@ -33,4 +33,5 @@ Betaflight 2026.6에 FC Alignment Wizard가 신규 추가됐다. FC 보드를 �
 
 ## 📰 최근 관련 소식
 - [Joshua Bardwell] Betaflight FINALLY added this feature! FC Alignment Wizard in BF 2026.6 (youtube.com, 2026-09-02) — https://www.youtube.com/watch?v=mHreu_l1FwY
+- [Oscar Liang] How to Fix FC Board Alignment in Betaflight: No More Guessing! (oscarliang.com, 2026-09-30) — https://oscarliang.com/betaflight-fc-board-alignment-wizard/ (동일 기능 교차 확인, Betaflight Configurator 2026.6 릴리스로 명시)^[inbox/processed/fetch-2026-10-01-rss-oscarliang-fpv.md]
 - [멈춤보단 천천히라도] 러스트 Box — 자기를 품는 타입의 크기 문제 | 러스트 입문 #11 (youtube.com, 2026-09-12) — https://www.youtube.com/watch?v=pwRx0xLUp0c

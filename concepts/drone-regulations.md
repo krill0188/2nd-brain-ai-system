@@ -1,7 +1,7 @@
 ---
 title: Drone Regulations
 created: 2026-07-27
-updated: 2026-09-29
+updated: 2026-10-01
 type: concept
 tags: [drone, regulations, UAS, FAA, EASA, BVLOS, compliance]
 sources: [inbox/fetch-2026-08-15-rss-dronelife.md, inbox/processed/fetch-2026-09-29-rss-dronelife.md]
@@ -197,6 +197,7 @@ note: "Knowledge-based page - no raw source ingested yet"
 - [[china-drone-export-controls]] — 중국 대미 드론·부품 수출 통제
 - [[faa-249-gram-registration-rule]] — FAA 249그램 드론 등록 규정
 - [[us-drone-import-tariffs-2026]] — 미국 수입 드론/부품 25~100% 관세 (2026-08-13 발효)
+- [[kci-russia-ukraine-war-drone-terror]] — 러우전쟁 드론 기술의 비국가행위자 테러 전용 가능성과 한국 대테러정책 시사점(KCI)
 
 ## 수집 대상
 

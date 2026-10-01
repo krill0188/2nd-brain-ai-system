@@ -62,3 +62,4 @@ domain: hardware
 - [Joshua Bardwell] Ascent latency update (youtube.com, 2026-08-25) — https://www.youtube.com/watch?v=9TQLzUFDQVc
 - [Joshua Bardwell] Q&A Livestream - October 12, 2026 (youtube.com, 2026-09-01) — https://www.youtube.com/watch?v=kbmmcxwe4xI
 - [Joshua Bardwell] Walksnail Ascent Firmware Update How-To (youtube.com, 2026-09-09) — https://www.youtube.com/watch?v=yf__frUKreI
+- [Joshua Bardwell] RaceGOW 6! Whoop race ... from your house! (youtube.com, 2026-09-30) — https://www.youtube.com/watch?v=Ai6nMBlTAwA

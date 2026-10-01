@@ -33,3 +33,4 @@ DroneDJ, DroneLife, 2026-08-19. ^[raw/articles/amazon-prime-air-expansion-2026-0
 
 ## 📰 최근 관련 소식
 - 러, 유럽 전역 '회색지대 도발' 맹공…공항 폭탄드론·방산업체 방화 (글로벌이코노믹, Mon, 31 Au) — https://news.google.com/rss/articles/CBMiiAFBVV95cUxQZElQZ1VOSzJUZVNQTktFZEw3eTRoS2ZEU1VhT1dReEdVblVZTU9fT2V6Q3FUYWNhWFdLMkhtcUJ1VXZPc1VHb1BZMWwzMmpkU0FNNFdPMF9fbExDM1VkV1c3MW1sdWMwZXVpWW1veGdxVVlZN0wxLVRDTWJuNzhDTkF2b2pGakhI?oc=5
+- 이차전지 특화단지 올라탄 순천… 방산·드론까지 산업지도 확장 (천지일보, Wed, 30 Se) — https://news.google.com/rss/articles/CBMiakFVX3lxTE04VFZhWk1TWktScjlsSDRhZFV2YmxvOEFxTnppaVNHZXcwSGIwT3ZnS0ZLNFhHU2dmcnQyNHQ4MHItZEhkY096eEZ5NHU5cG9TMVNUblJfOTRscHprdDd5QU9kTHNJZzJmckE?oc=5

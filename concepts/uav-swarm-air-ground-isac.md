@@ -30,3 +30,6 @@ Miao & Gao(2026, arXiv:2607.26679)가 제안한 UAV 군집을 이용한 공중-�
 
 - [[swarm-coordination]] — 드론 군집 협조 제어 일반
 - [[datalink-communication]] — 드론 데이터링크·통신 기초
+
+## 📰 최근 관련 소식
+- 경찰 드론·순찰 로봇으로 여성 1인 가구 밀집 지역 지킨다 (뉴스1, Wed, 30 Se) — https://news.google.com/rss/articles/CBMiZEFVX3lxTE55NF9IbU0wT1ZUa2lXeHV4enUta2xxWldid1hPX2tZYWM2d1ZMdXo5eGxNUGRFX3ZHeHJsQkpwYXNBVGxpMDFkSFo5UUpyZ3lzbWE5YXJXZnhWaElGRUZMeDVhU0vSAWpBVV95cUxNVGpuODVBZ3RydjNOMWM1ejFTLXJnbnRuMmY4dm9UdE5JRHZPV0FRV0FIYjY4b0tzQUd4SXV3cG9yaDB0Uk9NN2QwUFByNnd3dFhOZzdXMklGN2x2ODJMaTlHN0FuYklZaWJB?oc=5

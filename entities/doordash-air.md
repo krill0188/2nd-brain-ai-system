@@ -1,11 +1,11 @@
 ---
 title: DoorDash Air
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-10-01
 type: entity
 tags: [drone, ops-mission, company]
 domain: ops-mission
-sources: [inbox/fetch-2026-07-30-rss-dronelife.md]
+sources: [inbox/fetch-2026-07-30-rss-dronelife.md, inbox/processed/fetch-2026-10-01-rss-dronelife.md]
 confidence: high
 contested: false
 contradictions: []
@@ -26,6 +26,16 @@ DoorDash의 자체 드론 배달 서비스. 2026년 7월 FAA Part 135 항공운�
 - **수직 통합**: 자체 항공기, 인증, 배달 플랫폼 보유
 - **Amazon 전략 유사**: 전체 생태계 내 통합
 - **서비스명**: DoorDash Air
+
+## 전용 기체 및 시범 서비스 (2026-09)
+
+2026-09-30 전용 설계 배달 드론과 레스토랑 적재 인프라를 결합한 End-to-End 배달 시스템을
+공개했다.^[inbox/processed/fetch-2026-10-01-rss-dronelife.md] 북부 캘리포니아(Northern
+California)에서 시범 운영을 시작한다.
+
+- **기체**: 6-프로펠러(Six-propeller) 전용 설계 드론
+- **인프라**: 레스토랑 적재(Restaurant Loading) 인프라 + 기존 DoorDash 배달 마켓플레이스 연동
+- **시범 지역**: 북부 캘리포니아
 
 ## 관련 항목
 

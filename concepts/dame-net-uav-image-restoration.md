@@ -67,3 +67,4 @@ Jinquan Yan et al., arXiv:2604.09313 (2026)
 - "드론 공습에 아내 잃고 맨몸으로"…후티 진격에 10만명 피란길 (v.daum.net, Tue, 15 Se) — https://news.google.com/rss/articles/CBMiT0FVX3lxTE5mYlBQTUhQcHdtN1lMZXNNZlVBbXBLTHBHcFh5WGlyeGFxU3BYa2NNVW8tM3U4N2Y1eHVsV194YVYzQXUtOW1SeGpXMGYtR00?oc=5
 - 이륙하자마자 ‘우수수’ 추락…K-드론, UAE·사우디 앞 망신 (v.daum.net, Fri, 18 Se) — https://news.google.com/rss/articles/CBMiT0FVX3lxTFBzWVFvYlpPMU14dUxEZVpoZXJNdXk1anZnN3JjZ0ZiMEdOMHRrWDZOVWdDcUY2eHRfN2Q4NHBVX1lSSlJEalFLVjk5RmtJRGM?oc=5
 - 60m 폭·10m 물속까지 샅샅이…한강 실종자 찾는 수상드론 (v.daum.net, Tue, 29 Se) — https://news.google.com/rss/articles/CBMiT0FVX3lxTFBjeG83WkNNemdINkVXUUxjbXRZdk9GWDNPeEpRZlktWEh3MWQ5YUhWWkcwRFh0UUp1SmRBNy12LXFueldBbkFLdl9fRU9naEk?oc=5
+- 네팔 산골에 뜬 800㎏짜리 드론이 향한 곳 (v.daum.net, Wed, 30 Se) — https://news.google.com/rss/articles/CBMiT0FVX3lxTE8tOXBhM0hjQUxfTWFsdmdCMVVmVllsSjJyb0J2RUMxMFVvM1RPRFlrVG5uRzNxM2RTUzZzZkNMaVpRTWtpV05uQXZLS1VoUFE?oc=5
