@@ -26,6 +26,7 @@ from typing import Callable
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import auto_publish_lib as lib  # noqa: E402
+from pipeline_lock import inherited_lock_fd  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 WEB = Path.home() / 'projectm/drone-wiki-web'
@@ -48,7 +49,9 @@ class Abort(Exception):
 
 
 def default_run(cmd, cwd=None, timeout=1800):
-    return subprocess.run(cmd, cwd=cwd, capture_output=True, text=True, timeout=timeout)
+    fd = inherited_lock_fd()
+    return subprocess.run(cmd, cwd=cwd, capture_output=True, text=True, timeout=timeout,
+                          pass_fds=(() if fd is None else (fd,)))
 
 
 def default_fetch(url: str, timeout: int = 30):
@@ -358,7 +361,7 @@ def finish(ctx: Ctx, result: dict):
     if ctx.push:
         rebaseline(ctx)
         try:
-            ctx.git('push', 'origin', 'main')
+            ctx.git('push', 'origin', ctx.git('branch', '--show-current') or 'master')
         except Abort as exc:
             result['warning'] = f'2nd push failed: {exc.detail}'
 
