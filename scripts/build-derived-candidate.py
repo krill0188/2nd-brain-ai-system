@@ -11,7 +11,8 @@ discovery-knowledge-graph.json   live graph filtered to sources/evidence present
 drone-knowledge-graph.json       regenerated from candidate canonical docs
 news-feed / daily-briefing   published from the source .ua/ only after schema + local-path validation
                          (public news metadata; invalid input keeps the retained public copy and warns)
-knowledge-graph / self-update-state   left as retained public copies
+self-update-state               published like the feeds (url -> {processedAt, matchedSlugs} only)
+knowledge-graph                 left as retained public copy
 
 Writes only inside the candidate directory. Never deploys, never pushes.
 """
@@ -70,6 +71,7 @@ def write_json_atomic(path: Path, payload) -> None:
 
 LOCAL_PATH = re.compile(r'(?<![\w:/.~-])(?:/(?:Users|home|private|var|tmp)/|~/)|(?:^|\s)(?:inbox|research|innovations)/\S+\.md')
 MAX_FEED_ITEMS = 5000
+FEED_FILES = ('news-feed.json', 'daily-briefing.json', 'self-update-state.json')
 
 
 def feed_problem(name: str, data) -> str | None:
@@ -88,12 +90,22 @@ def feed_problem(name: str, data) -> str | None:
                 or not isinstance(data.get('cards'), list)
                 or any(not isinstance(c, dict) or not isinstance(c.get('body'), str) for c in data['cards'])):
             return 'expected {date, cards:[{body}]}'
+    elif name == 'self-update-state.json':
+        if not isinstance(data, dict) or not data or len(data) > MAX_FEED_ITEMS:
+            return 'expected a non-empty object within the size limit'
+        for url, row in data.items():
+            if (not url.startswith(('http://', 'https://')) or not isinstance(row, dict)
+                    or set(row) != {'processedAt', 'matchedSlugs'}
+                    or not isinstance(row['processedAt'], str)
+                    or not isinstance(row['matchedSlugs'], list)
+                    or any(not isinstance(x, str) for x in row['matchedSlugs'])):
+                return 'entry is not url -> {processedAt, matchedSlugs}'
     return None
 
 
 def publish_feeds(candidate: Path, source_ua: Path) -> dict:
     status = {}
-    for name in ('news-feed.json', 'daily-briefing.json'):
+    for name in FEED_FILES:
         data = read_json(source_ua / name)
         reason = 'source unreadable' if data is None else feed_problem(name, data)
         if reason:
@@ -184,7 +196,7 @@ def verify(candidate: Path) -> list[str]:
     problems: list[str] = []
     files = candidate_files(candidate)
 
-    for name in ('news-feed.json', 'daily-briefing.json'):
+    for name in FEED_FILES:
         data = read_json(candidate / '.ua' / name)
         reason = 'unreadable' if data is None else feed_problem(name, data)
         if reason:

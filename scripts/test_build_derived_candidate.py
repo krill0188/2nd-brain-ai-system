@@ -42,6 +42,9 @@ class DerivedCandidateTests(unittest.TestCase):
         (self.cand / 'concepts/alpha.md').write_text(CONCEPT)
         (self.cand / 'raw/articles/ok.md').write_text('---\ntitle: Ok\n---\nokay text\n')
         (self.cand / '.ua/news-feed.json').write_text('[]')
+        (self.cand / '.ua/self-update-state.json').write_text(json.dumps(self.STATE))
+
+    STATE = {'https://example.com/a': {'processedAt': '2026-08-04T00:00:00Z', 'matchedSlugs': ['alpha']}}
 
     def hashes(self):
         _, docs = derived.candidate_embedding_inputs(self.cand)
@@ -62,6 +65,8 @@ class DerivedCandidateTests(unittest.TestCase):
     def write_feeds(self, news, briefing):
         (self.live / '.ua/news-feed.json').write_text(json.dumps(news))
         (self.live / '.ua/daily-briefing.json').write_text(json.dumps(briefing))
+        (self.live / '.ua/self-update-state.json').write_text(json.dumps(
+            {**self.STATE, 'https://example.com/b': {'processedAt': '2026-10-01T00:00:00Z', 'matchedSlugs': []}}))
 
     def test_valid_feeds_are_published_from_source(self):
         item = {'title': 'Drone news', 'url': 'https://example.com/a/var/b', 'type': 'news'}
@@ -84,6 +89,23 @@ class DerivedCandidateTests(unittest.TestCase):
         self.assertIsNotNone(derived.feed_problem('news-feed.json', []))
         self.assertIsNotNone(derived.feed_problem('news-feed.json', [{'title': 'x', 'url': 'file:///etc/passwd'}]))
         self.assertIsNotNone(derived.feed_problem('daily-briefing.json', {'date': 'd'}))
+
+    def test_self_update_state_is_published_and_validated(self):
+        self.write_feeds([{'title': 'Drone news', 'url': 'https://example.com/a'}],
+                         {'date': '2026-09-30', 'cards': [{'body': 'b'}]})
+        derived.publish_feeds(self.cand, self.live / '.ua')
+        published = json.loads((self.cand / '.ua/self-update-state.json').read_text())
+        self.assertIn('https://example.com/b', published)
+
+        bad = [
+            [], {},
+            {'file:///etc/passwd': self.STATE['https://example.com/a']},
+            {'https://e.com': {'processedAt': 'x', 'matchedSlugs': [1]}},
+            {'https://e.com': {'processedAt': 'x', 'matchedSlugs': [], 'extra': 'x'}},
+            {'https://e.com': {'processedAt': 'x', 'matchedSlugs': ['/Users/amaster/2nd/inbox/a.md']}},
+        ]
+        for data in bad:
+            self.assertIsNotNone(derived.feed_problem('self-update-state.json', data), data)
 
     def test_vectors_reused_only_for_matching_bytes(self):
         hashes = self.hashes()
