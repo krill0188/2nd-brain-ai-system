@@ -25,172 +25,184 @@
   ],
   "approved_source_versions": [
     {
-      "path": "comparisons/knowledge-tool-roles.md",
-      "source_commit": "299f70663a43fe962b740fac979076ae13b0c77f"
-    },
-    {
-      "path": "concepts/a2z-longtail-dual.md",
-      "source_commit": "299f70663a43fe962b740fac979076ae13b0c77f"
+      "path": "concepts/agile-vision-multi-uav-state-estimation.md",
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
     },
     {
       "path": "concepts/ai-knowledge-workflow.md",
-      "source_commit": "299f70663a43fe962b740fac979076ae13b0c77f"
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
     },
     {
       "path": "concepts/ai-personal-knowledge-management.md",
-      "source_commit": "299f70663a43fe962b740fac979076ae13b0c77f"
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
     },
     {
-      "path": "concepts/amprius-sicore-battery.md",
-      "source_commit": "299f70663a43fe962b740fac979076ae13b0c77f"
+      "path": "concepts/aitester-uas-testing.md",
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
     },
     {
-      "path": "concepts/ardupilot-architecture.md",
-      "source_commit": "299f70663a43fe962b740fac979076ae13b0c77f"
+      "path": "concepts/alaska-drone-blood-delivery-olympic-antidoping.md",
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
     },
     {
-      "path": "concepts/bio-inspired-offloading-uav-iov-mec.md",
-      "source_commit": "299f70663a43fe962b740fac979076ae13b0c77f"
+      "path": "concepts/aliexpress-125-fpv-drone-build.md",
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
     },
     {
-      "path": "concepts/calibrate-once-fly-any-team-swarm-training.md",
-      "source_commit": "299f70663a43fe962b740fac979076ae13b0c77f"
+      "path": "concepts/amazon-prime-air-expansion-2026.md",
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
     },
     {
-      "path": "concepts/calos-lyapunov-safety-layer-quadrotor-rl.md",
-      "source_commit": "299f70663a43fe962b740fac979076ae13b0c77f"
+      "path": "concepts/betaflight-fc-alignment-wizard.md",
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
     },
     {
       "path": "concepts/china-drone-export-controls.md",
-      "source_commit": "299f70663a43fe962b740fac979076ae13b0c77f"
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
     },
     {
       "path": "concepts/computer-vision-drone.md",
-      "source_commit": "299f70663a43fe962b740fac979076ae13b0c77f"
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
+    },
+    {
+      "path": "concepts/counter-drone-queueing-force-sizing.md",
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
     },
     {
       "path": "concepts/dame-net-uav-image-restoration.md",
-      "source_commit": "299f70663a43fe962b740fac979076ae13b0c77f"
-    },
-    {
-      "path": "concepts/diu-low-cost-isr-challenge.md",
-      "source_commit": "299f70663a43fe962b740fac979076ae13b0c77f"
-    },
-    {
-      "path": "concepts/dji-osmo-360-ii.md",
-      "source_commit": "299f70663a43fe962b740fac979076ae13b0c77f"
-    },
-    {
-      "path": "concepts/dji-osmo-pocket-4p-stabilization.md",
-      "source_commit": "299f70663a43fe962b740fac979076ae13b0c77f"
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
     },
     {
       "path": "concepts/drone-anomaly-detection-survey.md",
-      "source_commit": "299f70663a43fe962b740fac979076ae13b0c77f"
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
+    },
+    {
+      "path": "concepts/drone-fluxgate-magnetometer-crossline-correction.md",
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
+    },
+    {
+      "path": "concepts/drone-news-hardware.md",
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
     },
     {
       "path": "concepts/drone-news-ops.md",
-      "source_commit": "299f70663a43fe962b740fac979076ae13b0c77f"
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
     },
     {
-      "path": "concepts/drone-wildfire-detection-network-optimization.md",
-      "source_commit": "299f70663a43fe962b740fac979076ae13b0c77f"
+      "path": "concepts/drone-regulations.md",
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
     },
     {
-      "path": "concepts/dronewam-efficient-world-action-model.md",
-      "source_commit": "299f70663a43fe962b740fac979076ae13b0c77f"
+      "path": "concepts/fpv-hardware.md",
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
     },
     {
-      "path": "concepts/dronuum-computing-continuum.md",
-      "source_commit": "299f70663a43fe962b740fac979076ae13b0c77f"
+      "path": "concepts/high-speed-drone-tracking.md",
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
     },
     {
-      "path": "concepts/dude-ids-context-aware-drone-security.md",
-      "source_commit": "299f70663a43fe962b740fac979076ae13b0c77f"
+      "path": "concepts/kci-cepstrum-single-microphone-drone-distance.md",
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
     },
     {
-      "path": "concepts/emlid-corrections.md",
-      "source_commit": "299f70663a43fe962b740fac979076ae13b0c77f"
+      "path": "concepts/kci-drone-detection-cfar-feature-postprocessing.md",
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
     },
     {
-      "path": "concepts/flytrex-rooftop-docks-ai-fleet-positioning.md",
-      "source_commit": "299f70663a43fe962b740fac979076ae13b0c77f"
+      "path": "concepts/kci-ground-target-tracking-retinanet-kalman.md",
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
     },
     {
-      "path": "concepts/game-theoretic-drone-swarm-defense.md",
-      "source_commit": "299f70663a43fe962b740fac979076ae13b0c77f"
+      "path": "concepts/kci-russia-ukraine-war-drone-terror.md",
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
     },
     {
-      "path": "concepts/hermes-evolutionary-uav-path-planning.md",
-      "source_commit": "299f70663a43fe962b740fac979076ae13b0c77f"
-    },
-    {
-      "path": "concepts/kci-dual-nis-sac-gnss-ins-spoofing.md",
-      "source_commit": "299f70663a43fe962b740fac979076ae13b0c77f"
-    },
-    {
-      "path": "concepts/kci-light-attack-helicopter-mum-t-verification.md",
-      "source_commit": "299f70663a43fe962b740fac979076ae13b0c77f"
+      "path": "concepts/kci-sejong-counter-drone-governance.md",
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
     },
     {
       "path": "concepts/lowes-wing-doordash-drone-delivery-pilot.md",
-      "source_commit": "299f70663a43fe962b740fac979076ae13b0c77f"
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
     },
     {
-      "path": "concepts/multi-uav-collision-avoidance-survey.md",
-      "source_commit": "299f70663a43fe962b740fac979076ae13b0c77f"
+      "path": "concepts/path-uav-target-handoff.md",
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
     },
     {
-      "path": "concepts/otfs-uav-power-control.md",
-      "source_commit": "299f70663a43fe962b740fac979076ae13b0c77f"
-    },
-    {
-      "path": "concepts/physai-bench-uav-agentic-benchmark.md",
-      "source_commit": "299f70663a43fe962b740fac979076ae13b0c77f"
-    },
-    {
-      "path": "concepts/pine-wilt-disease-uav-detection.md",
-      "source_commit": "299f70663a43fe962b740fac979076ae13b0c77f"
-    },
-    {
-      "path": "concepts/skydio-f10-megadock.md",
-      "source_commit": "299f70663a43fe962b740fac979076ae13b0c77f"
-    },
-    {
-      "path": "concepts/snn-ppo-uav-constrained-navigation.md",
-      "source_commit": "299f70663a43fe962b740fac979076ae13b0c77f"
+      "path": "concepts/pt-detr-small-target-detection.md",
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
     },
     {
       "path": "concepts/swarm-modes.md",
-      "source_commit": "299f70663a43fe962b740fac979076ae13b0c77f"
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
     },
     {
-      "path": "concepts/us-dod-cuas-marketplace.md",
-      "source_commit": "299f70663a43fe962b740fac979076ae13b0c77f"
+      "path": "concepts/temporal-cascading-quadrotor-mpc.md",
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
     },
     {
-      "path": "concepts/yolo-v8-4-166.md",
-      "source_commit": "299f70663a43fe962b740fac979076ae13b0c77f"
+      "path": "concepts/uav-swarm-air-ground-isac.md",
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
     },
     {
-      "path": "entities/dji-osmo-pocket-4.md",
-      "source_commit": "299f70663a43fe962b740fac979076ae13b0c77f"
+      "path": "concepts/ukraine-fight-drone-simulator.md",
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
     },
     {
-      "path": "entities/matternet.md",
-      "source_commit": "299f70663a43fe962b740fac979076ae13b0c77f"
+      "path": "concepts/yolo-v8-4-170.md",
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
     },
     {
-      "path": "entities/skydio.md",
-      "source_commit": "299f70663a43fe962b740fac979076ae13b0c77f"
+      "path": "entities/digital-force-technologies.md",
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
     },
     {
-      "path": "entities/wingtraray.md",
-      "source_commit": "299f70663a43fe962b740fac979076ae13b0c77f"
+      "path": "entities/doordash-air.md",
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
     },
     {
-      "path": "raw/papers/_unclassified/dronewam-efficient-world-action-model-for-drone-visual-navigation.md",
-      "source_commit": "299f70663a43fe962b740fac979076ae13b0c77f"
+      "path": "entities/droneshield.md",
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
+    },
+    {
+      "path": "entities/elroy-air.md",
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
+    },
+    {
+      "path": "entities/fortem-technologies.md",
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
+    },
+    {
+      "path": "entities/monava.md",
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
+    },
+    {
+      "path": "entities/powerus.md",
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
+    },
+    {
+      "path": "entities/robin-radar.md",
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
+    },
+    {
+      "path": "entities/smart-shooter.md",
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
+    },
+    {
+      "path": "raw/papers/_unclassified/감시-드론을-위한-심층-신경망-기반-지상-표적-추적-기법.md",
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
+    },
+    {
+      "path": "raw/papers/_unclassified/드론-탐지를-위한-효과적인-특징-기반-후처리-기법.md",
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
+    },
+    {
+      "path": "raw/papers/_unclassified/러시아ㆍ우크라이나-전쟁이-드론-테러에-미치는-영향과-시사점.md",
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
+    },
+    {
+      "path": "raw/papers/_unclassified/켑스트럼을-이용한-단일-마이크로폰-기반-드론-거리-추정.md",
+      "source_commit": "ca67ed95baec510f9118ad396416c46a85df0004"
     }
   ],
   "revoked_paths": []
