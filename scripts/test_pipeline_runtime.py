@@ -97,10 +97,10 @@ class RuntimeSafetyTests(unittest.TestCase):
         )
         self.assertEqual(calls[0][1]["pass_fds"], (123,))
 
-    def test_missing_web_dependencies_are_restored_or_reported(self):
+    def test_missing_web_dependencies_are_restored_notified_or_reported(self):
         with tempfile.TemporaryDirectory() as tmp:
             web = Path(tmp)
-            calls = []
+            calls, notes = [], []
 
             def ok(command, **kwargs):
                 calls.append(command)
@@ -111,21 +111,26 @@ class RuntimeSafetyTests(unittest.TestCase):
 
             with patch.object(pipeline, "WEB", web):
                 self.assertEqual(
-                    pipeline.ensure_web_dependencies(execute=ok),
+                    pipeline.ensure_web_dependencies(execute=ok, notify=notes.append),
                     [{"step": "Prepare:web-dependencies", "exit_code": 0,
-                      "diagnostic": "DEPENDENCIES_RESTORED"}],
+                      "diagnostic": "DEPENDENCIES_RESTORED",
+                      "node_modules_dir_present": False}],
                 )
                 self.assertEqual(calls[0][1:], ["ci", "--no-audit", "--no-fund"])
-                self.assertEqual(
-                    pipeline.ensure_web_dependencies(execute=lost)[0]["diagnostic"],
-                    "DEPENDENCY_RESTORE_FAILED",
-                )
+                self.assertIn("자동 복구했습니다", notes[0])
+                self.assertIn("전체 유실", notes[0])
+
+                failed = pipeline.ensure_web_dependencies(execute=lost, notify=notes.append)
+                self.assertEqual(failed[0]["diagnostic"], "DEPENDENCY_RESTORE_FAILED")
+                self.assertIn("복구 실패", notes[1])
 
                 (web / "node_modules/tsx").mkdir(parents=True)
                 (web / "node_modules/tsx/package.json").write_text("{}")
                 calls.clear()
-                self.assertEqual(pipeline.ensure_web_dependencies(execute=ok), [])
-                self.assertEqual(calls, [])
+                notes.clear()
+                self.assertEqual(
+                    pipeline.ensure_web_dependencies(execute=ok, notify=notes.append), [])
+                self.assertEqual((calls, notes), ([], []))
 
     def test_failure_stops_next_step_and_redacts_output(self):
         calls = []

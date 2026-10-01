@@ -109,10 +109,22 @@ def select_steps(plan, names):
     return selected
 
 
-def ensure_web_dependencies(execute=subprocess.run) -> list[dict]:
+NOTIFY = Path.home() / 'claudeclaw/scripts/notify.sh'
+
+
+def notify_telegram(message: str) -> None:
+    if NOTIFY.is_file():
+        try:
+            subprocess.run(['bash', str(NOTIFY), message], capture_output=True, timeout=60)
+        except (OSError, subprocess.TimeoutExpired):
+            pass
+
+
+def ensure_web_dependencies(execute=subprocess.run, notify=notify_telegram) -> list[dict]:
     # A lost node_modules once surfaced as a masked exit 124 for ten days.
     if (WEB / 'node_modules/tsx/package.json').exists():
         return []
+    dir_present = (WEB / 'node_modules').is_dir()
     npm = shutil.which('npm') or '/usr/local/bin/npm'
     try:
         result = execute(
@@ -121,12 +133,17 @@ def ensure_web_dependencies(execute=subprocess.run) -> list[dict]:
             capture_output=True,
             timeout=900,
         )
+        code = result.returncode
     except (OSError, subprocess.TimeoutExpired):
-        return [{'step': 'Prepare:web-dependencies', 'exit_code': 127,
-                 'diagnostic': 'DEPENDENCY_RESTORE_FAILED'}]
-    ok = result.returncode == 0
-    return [{'step': 'Prepare:web-dependencies', 'exit_code': result.returncode,
-             'diagnostic': 'DEPENDENCIES_RESTORED' if ok else 'DEPENDENCY_RESTORE_FAILED'}]
+        code = 127
+    ok = code == 0
+    record = {'step': 'Prepare:web-dependencies', 'exit_code': code,
+              'diagnostic': 'DEPENDENCIES_RESTORED' if ok else 'DEPENDENCY_RESTORE_FAILED',
+              'node_modules_dir_present': dir_present}
+    notify('[2nd 파이프라인] drone-wiki-web 의존성(tsx) 유실 감지 - '
+           + ('npm ci로 자동 복구했습니다.' if ok else '자동 복구 실패, 확인이 필요합니다.')
+           + f' node_modules 폴더 {"있었음(일부 유실)" if dir_present else "없었음(전체 유실)"}')
+    return [record]
 
 
 def run_steps(items, execute=subprocess.run) -> list[dict]:
