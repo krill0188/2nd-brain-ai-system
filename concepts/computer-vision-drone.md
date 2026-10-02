@@ -1,10 +1,10 @@
 ---
 title: Computer Vision for Drones
 created: 2026-07-27
-updated: 2026-10-01
+updated: 2026-10-02
 type: concept
 tags: [drone-ai, computer-vision, SLAM, detection, tracking, YOLO]
-sources: [raw/papers/_unclassified/감시-드론을-위한-심층-신경망-기반-지상-표적-추적-기법.md]
+sources: [raw/papers/_unclassified/감시-드론을-위한-심층-신경망-기반-지상-표적-추적-기법.md, inbox/processed/fetch-2026-10-02-yolo.md]
 confidence: medium
 domain: ai-autonomy
 contested: false
@@ -24,6 +24,11 @@ contradictions: []
 | **YOLOv5/v8/v10** | 범용, 빠름 | 30-60+ |
 | **YOLO-NAS** | AutoNAC 최적화 | 40-80 |
 | **RT-DETR** | Transformer 기반 | 20-40 |
+
+Ultralytics 8.4.171(2026-10-01)부터 AMD GPU(ROCm/MIGraphX)에 대한 엔드투엔드 지원이 추가돼,
+컴패니언 컴퓨터의 추론 하드웨어가 NVIDIA/CUDA 일변도에서 벗어날 수 있게 됐다 — MIGraphX
+실행 공급자는 Radeon 8060S 벤치마크에서 PyTorch ROCm 대비 동일 정확도로 더 빠른 추론을
+기록했다.^[inbox/processed/fetch-2026-10-02-yolo.md]
 
 **드론 특화:**
 - 작은 객체 감지 최적화
@@ -174,6 +179,7 @@ for waypoint in path:
 - [[flight-controller-hardware]] — 컴패니언 컴퓨터 선택
 - [[ros2-drone-integration]] — ROS2 비전 파이프라인
 - [[kci-ground-target-tracking-retinanet-kalman]] — RetinaNet+칼만필터 기반 감시 드론 지상 표적 추적(KCI)
+- [[kci-critical-facility-intrusion-detection-drone-ai]] — AI 드론 기반 중요시설 침입탐지 5단계 파이프라인 개념설계(KCI)
 
 ## 📰 최근 관련 소식
 - Army seeks next-gen missile that could shoot down small drones for less than $150K a pop (DefenseScoop, Tue, 04 Au) — https://news.google.com/rss/articles/CBMie0FVX3lxTE5GbzRtdW9TS3Y4b3JkaW9oazVGWW9nUWRxa0hGY25RV2h1UEg1MVVfQnhSUE1xS1VFMzVSUGRyckRva0VEZFV5aWhqeHZsbngwV2FpTDBLMVEwdllFOWVXYVZyU3g2VDNESS1WekhBLXNYOEdhMWZrenRESQ?oc=5

@@ -1,10 +1,10 @@
 ---
 title: QGroundControl
 created: 2026-07-29
-updated: 2026-09-01
+updated: 2026-10-02
 type: concept
 tags: [drone, drone-sw, gcs-software]
-sources: [inbox/fetch-2026-07-29-qgroundcontrol.md, inbox/fetch-2026-09-01-qgroundcontrol.md]
+sources: [inbox/fetch-2026-07-29-qgroundcontrol.md, inbox/fetch-2026-09-01-qgroundcontrol.md, inbox/processed/fetch-2026-10-02-qgroundcontrol.md]
 confidence: high
 contested: false
 contradictions: []
@@ -22,6 +22,13 @@ QGroundControl(QGC)는 MAVLink 프로토콜을 사용하는 드론을 위한 오
 - **비행 모드 전환**: 수동/자동 모드 간 실시간 전환
 
 ## 릴리스 이력
+
+### v5.1.5
+
+- **번역**: ko_KR, pt_PT, zh_CN에서 누락된 `%1` 플레이스홀더 복원
+- **MissionManager**: 깨진 enum 번역으로 유실됐던 미션 명령 복원
+- **AnalyzeView**: 0바이트 온보드 로그 다운로드 시 멈추던 문제 수정
+- 상세는 [[qgroundcontrol-v5-1-5]] 참고.^[inbox/processed/fetch-2026-10-02-qgroundcontrol.md]
 
 ### v5.1.4 (2026-08-30)
 

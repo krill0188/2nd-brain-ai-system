@@ -46,3 +46,4 @@ contradictions: []
 - [DJI] Strange POV, Tiny Camera | DJI Osmo Nano (youtube.com, 2026-09-13) — https://www.youtube.com/watch?v=USMNmd2uIso
 - [DJI] Cliffside Fairytale Moves | DJI Osmo Pocket 4P (youtube.com, 2026-09-13) — https://www.youtube.com/watch?v=FNyprKVEm9s
 - [멈춤보단 천천히라도] BFS — 물결처럼 퍼지는 너비 우선 탐색 | 3분 알고리즘 #10 (youtube.com, 2026-09-13) — https://www.youtube.com/watch?v=pD6JYiwOHUo
+- [멈춤보단 천천히라도] 틈틈일기로 사진을 관리하세요 (youtube.com, 2026-10-01) — https://www.youtube.com/watch?v=C8-sI1PtRu0

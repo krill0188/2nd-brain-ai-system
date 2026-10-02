@@ -1,7 +1,7 @@
 ---
 title: Drone Power & Battery
 created: 2026-07-27
-updated: 2026-07-27
+updated: 2026-10-02
 type: concept
 tags: [drone-hw, battery, power, ESC, motor, LiPo]
 sources: [raw/articles/px4-basic-concepts.md, raw/articles/px4-hardware-overview.md]
@@ -164,11 +164,18 @@ SMBus/I2C 통신을 통한 지능형 배터리 관리.
 | **Short circuit** | 보호 회로, fuse |
 | **Thermal runaway** | 방화 케이스, 감시 |
 
+## 차세대 셀 화학: 실리콘 음극
+
+상용 LiPo 에너지 밀도(약 250–300 Wh/kg)를 넘어서는 차세대 경로로, 실리콘 음극(silicon
+anode) 기반 셀이 부상하고 있다. 자세한 사양과 미국 정부 생산 보조금 동향은
+[[amprius-sicore-battery]] 참조.
+
 ## 관련 개념
 
 - [[drone-safety-failsafe]] — 배터리 기반 failsafe
 - [[flight-controller-hardware]] — Power module 선택
 - [[dronecan-protocol]] — CAN 기반 ESC
+- [[amprius-sicore-battery]] — 차세대 실리콘-음극 셀(500 Wh/kg), LiPo 대비 1.5–2배 비행시간 연장 가능성
 
 ## 📰 최근 관련 소식
 - How to Choose FPV Drone Motors – Considerations and Best Motor Recommendations (oscarliang.com, Thu, 13 Au) — https://oscarliang.com/motors/

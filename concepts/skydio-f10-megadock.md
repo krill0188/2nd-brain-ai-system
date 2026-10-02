@@ -40,3 +40,6 @@ Skydio가 2026-09-23~25 사이 고정익 자율 드론 F10 Lightrunner와 MegaDo
 - [[skydio]] — Skydio 기업 엔티티
 - [[skydio-dock-milestone]] — Skydio Dock 1,000대 배포 돌파
 - [[skydio-dfr-milestone]] — Skydio DFR 마일스톤
+
+## 📰 최근 관련 소식
+- 中 매빅보다 2배 멀리, 30㎞ 날아간다…우크라 정찰드론 '슬라빅' 공개 (뉴시스, Thu, 01 Oc) — https://news.google.com/rss/articles/CBMiYEFVX3lxTE1Pek1MS3VEN2ZJRWpWWnh5enQtaDlEWkJFUTRiQV9wU09KZVBzYnhTbzI1VHZDYU9MY0xXX3JEclN6ajBxbVlpa2JXdDAwUzBsZlRzcG5BWDVTLTRQekJsS9IBeEFVX3lxTE8wQ21nVU4yNlpxejRTY0JJZnFlSTBCWi14clJsWHo1aG9qU0hYNENXTllQY0ExbFkxVzdGRUN0OWY5V3VuUHVWWUNKRjNxRENhejBFcl9YVGl0MV9wMndseGxDUjc1c3FXQVV0TkJ2cHE3NjRReDB3QQ?oc=5

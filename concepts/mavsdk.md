@@ -1,11 +1,11 @@
 ---
 title: MAVSDK
 created: 2026-07-27
-updated: 2026-09-23
+updated: 2026-10-02
 type: concept
 domain: comms-protocol
 tags: [drone-sw, MAVSDK, SDK, API, offboard]
-sources: [inbox/fetch-2026-09-01-mavsdk.md, inbox/processed/fetch-2026-09-23-mavsdk.md]
+sources: [inbox/fetch-2026-09-01-mavsdk.md, inbox/processed/fetch-2026-09-23-mavsdk.md, inbox/processed/fetch-2026-09-29-mavsdk.md, inbox/processed/fetch-2026-10-02-mavsdk.md]
 confidence: high
 contested: false
 contradictions: []
@@ -115,6 +115,10 @@ await drone.offboard.set_velocity_ned(
 - **v3.17.4** (2026-08-25): Android 빌드 심볼 가시성 수정 ^[inbox/fetch-2026-09-01-mavsdk.md]
 - **v4.0.0** (2026-09-22): C++ breaking change, MavlinkDirect 플러그인 정식화, Python/C/Kotlin
   신규 바인딩. 상세는 [[mavsdk-v4-0-0]] 참고.^[inbox/processed/fetch-2026-09-23-mavsdk.md]
+- **v4.0.1** (2026-09-28): Python `destroy()` 동시성 안전성, FTP 타임아웃 시퀀스 번호 보존.
+  상세는 [[mavsdk-v4-0-1]] 참고.^[inbox/processed/fetch-2026-09-29-mavsdk.md]
+- **v4.0.3**: Python/Kotlin 바인딩의 객체 핸들 수명(handle lifetime) 버그 수정, MavlinkDirect
+  수신 예제 추가. 상세는 [[mavsdk-v4-0-3]] 참고.^[inbox/processed/fetch-2026-10-02-mavsdk.md]
 
 ## 관련 개념
 

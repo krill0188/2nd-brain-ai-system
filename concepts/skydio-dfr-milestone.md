@@ -1,7 +1,7 @@
 ---
 title: Skydio DFR Command Milestone
 created: 2026-08-13
-updated: 2026-08-13
+updated: 2026-10-02
 type: concept
 domain: ops-mission
 tags: [drone, dfr, public-safety, skydio, milestone]
@@ -29,3 +29,4 @@ Skydio DFR Command가 1,000만 건의 출동 요청을 돌파. 세계에서 가�
 - [[skydio]] — Skydio 기업 정보
 - [[skydio-centralsquare-dfr-integration]] — CentralSquare 통합
 - [[drone-first-responder-dfr]] — DFR 프로그램 개요
+- [[skydio-f10-megadock]] — 고정익 F10 Lightrunner·MegaDock 플랫폼 확장(2026-09)

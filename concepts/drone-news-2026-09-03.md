@@ -40,3 +40,4 @@ contradictions: []
 ## 📰 최근 관련 소식
 - 한화에어로스페이스, 드론 연계 K9 운용개념 공개 (디일렉, Thu, 03 Se) — https://news.google.com/rss/articles/CBMiZkFVX3lxTE5VN3hpYU5rNS1sdEZPZXN5MS1OUzdnU0o4R3FiUDNhWG1INlRzdEdOR3RZclBsY0E0YzVVNDhleGxRd052dTlOZlVmX1JCQXctOUxPUVJmTUNMNG5IS0Ftam9ScEl6UQ?oc=5
 - [Painless360] FNIRSI HS-03 Cordless Soldering Iron (18650 Powered) (youtube.com, 2026-09-13) — https://www.youtube.com/watch?v=axGZGOnF_Qk
+- 아우레우스 그린웨이 홀딩스, 방산 드론 기업 '파워러스'와 합병 완료... 사명 변경 (데이터투자, Thu, 01 Oc) — https://news.google.com/rss/articles/CBMic0FVX3lxTFBFQk9WbkFtUDliaDVXby1WOGJLMGN2NHpfckZQSnJpc3FSZHBBaTB0dW9nSFRyYXlad1Vvc3NwZ0pOclRpWFZaV0ViYVZ4NzBDWjB0UVhyT1ozWURUY1pOd3hxU0NZay1WOVlEU21ScUlqOTQ?oc=5

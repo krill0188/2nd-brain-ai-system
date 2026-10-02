@@ -1,7 +1,7 @@
 ---
 title: QGroundControl v5.1.4 Release Notes
 created: 2026-09-01
-updated: 2026-09-01
+updated: 2026-10-02
 type: concept
 tags: [drone, drone-sw, gcs-software, qgroundcontrol, release]
 sources: [inbox/fetch-2026-09-01-qgroundcontrol.md]
@@ -52,5 +52,6 @@ QGroundControl v5.1.4는 v5.1 안정 릴리스로, HUD 피치 표시 수정 및 
 ## 관련 개념
 
 - [[qgroundcontrol]] — QGroundControl 개요 페이지
+- [[qgroundcontrol-v5-1-5]] — 후속 패치 릴리스(번역·MAVLink enum·미션 관리 버그 수정)
 - [[px4-flight-stack]] — PX4 비행 스택
 - [[mavlink-protocol]] — MAVLink 프로토콜

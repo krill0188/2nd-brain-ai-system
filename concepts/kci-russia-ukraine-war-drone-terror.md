@@ -1,7 +1,7 @@
 ---
 title: "러시아ㆍ우크라이나 전쟁이 드론 테러에 미치는 영향과 시사점 (KCI)"
 created: 2026-10-01
-updated: 2026-10-01
+updated: 2026-10-02
 type: concept
 domain: regulations
 tags: [drone, regulations]
@@ -43,3 +43,7 @@ contradictions: []
 - [[drone-regulations]] — FAA·EASA·한국 규제, BVLOS, Remote ID, UTM
 - [[kci-sejong-counter-drone-governance]] — 세종 국가상징구역 대드론 운용 작전조정 우선권 거버넌스
 - [[ukraine-fight-drone-simulator]] — UFDS 우크라이나 전투 드론 시뮬레이터
+- [[kci-rok-army-drone-acquisition-capability]] — 같은 러우전쟁 교훈을 벤치마킹해 한국 육군 sUAS
+  획득 ROC/KPP(경제성·혹한기 운용·항재밍/보안·신속 전개)를 도출한 연구(KCI) — 전장에서
+  검증된 드론 기술의 확산이 위협(테러 전용)과 아군 획득체계 개혁(전력화) 양쪽에 동시에
+  영향을 준다는 점에서 상호 보완적 시사점을 제공한다.

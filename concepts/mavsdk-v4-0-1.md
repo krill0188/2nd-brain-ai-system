@@ -1,7 +1,7 @@
 ---
 title: "MAVSDK v4.0.1 Release"
 created: 2026-09-29
-updated: 2026-09-29
+updated: 2026-10-02
 type: concept
 domain: comms-protocol
 tags: [drone, drone-sw]
@@ -37,4 +37,5 @@ v4.0.0에서 도입된 신규 Python 바인딩을 실제 서비스에 적용할 
 
 - [[mavsdk]] — MAVSDK 개요 페이지
 - [[mavsdk-v4-0-0]] — 직전 메이저 릴리스(breaking change, 신규 바인딩)
+- [[mavsdk-v4-0-3]] — 후속 패치 릴리스(Python/Kotlin 바인딩 핸들 수명 버그 수정)
 - [[mavlink-protocol]] — MAVLink 프로토콜

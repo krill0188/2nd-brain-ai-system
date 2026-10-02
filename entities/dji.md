@@ -1,7 +1,7 @@
 ---
 title: DJI
 created: 2026-08-06
-updated: 2026-08-11
+updated: 2026-10-02
 type: entity
 tags: [drone, hardware, company]
 sources: [raw/articles/2026-08-11-rss-dronelife.md]
@@ -24,12 +24,16 @@ domain: hardware
 ## 최신 동향
 
 - **FCC 규제 대응**: FCC가 제안한 "군사급" 외국산 드론 제한 범주가 공공안전·농업·점검 등 민간 상업용 기체까지 포괄할 수 있다고 경고하는 대응서 제출(2026-08-10)^[raw/articles/2026-08-11-rss-dronelife.md]
+- **Osmo 360 II 공개 (2026-08)**: 8K/60fps 360° 액션카메라가 재사용 로켓 미션에서 공개
+  데뷔했다. 동시 공개된 Osmo Action 6은 재진입 시 500°C 근접 온도에서 생존하는 내열 설계로
+  소비자용 최초의 우주비행 액션카메라를 표방한다. 상세는 [[dji-osmo-360-ii]] 참조.
 
 ## 관련 개념
 
 - [[dji-enterprise]] — DJI 산업/기업용 사업부
 - [[dji-terra]] — DJI 매핑 소프트웨어
 - [[dji-mavic-4-pro]] — 100MP 하셀블라드 소비자용 항공촬영 드론
+- [[dji-osmo-360-ii]] — 360° 액션카메라, Osmo Action 6 동시 공개
 
 ## 📰 최근 관련 소식
 - DJI Warns FCC Proposal Could Restrict Widely Used Commercial Drones (dronelife.com, Mon, 10 Au) — https://dronelife.com/2026/08/10/dji-fcc-drone-restrictions-commercial-models/

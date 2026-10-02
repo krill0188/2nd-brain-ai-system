@@ -1,11 +1,11 @@
 ---
 title: YOLO
 created: 2026-07-29
-updated: 2026-09-18
+updated: 2026-10-02
 type: concept
 domain: ai-autonomy
 tags: [drone, drone-ai, ai-agent]
-sources: [inbox/fetch-2026-07-29-yolo.md, inbox/fetch-2026-09-01-yolo.md, inbox/fetch-2026-09-15-yolo.md, inbox/fetch-2026-09-16-yolo.md, inbox/fetch-2026-09-17-yolo.md, inbox/fetch-2026-09-18-yolo.md]
+sources: [inbox/fetch-2026-07-29-yolo.md, inbox/fetch-2026-09-01-yolo.md, inbox/fetch-2026-09-15-yolo.md, inbox/fetch-2026-09-16-yolo.md, inbox/fetch-2026-09-17-yolo.md, inbox/fetch-2026-09-18-yolo.md, inbox/processed/fetch-2026-10-02-yolo.md]
 confidence: high
 contested: false
 contradictions: []
@@ -24,6 +24,12 @@ YOLO는 실시간 객체 검출을 위한 딥러닝 아키텍처이다. 단일 �
 ## 릴리스 이력
 
 버전별 상세 변경사항은 개별 페이지 참고(최신순): [[yolo-v8-4-155]] · [[yolo-v8-4-154]] · [[yolo-v8-4-153]] · [[yolo-v8-4-152]] · [[yolo-v8-4-150]] · [[yolo-v8-4-148]] · [[yolo-v8-4-146]] · [[yolo-v8-4-144]] · [[yolo-v8-4-143]] · [[yolo-v8-4-142]] · [[yolo-v8-4-141]] · [[yolo-v8-4-139]] · [[yolo-v8-4-138]] · [[yolo-v8-4-137]] · [[yolo-v8-4-117]] · [[yolo-v8-4-116]] · [[yolo-v8-4-115]] · [[yolo-v8-4-112]]
+
+### v8.4.171 (2026-10-01)
+
+- **AMD ROCm/MIGraphX 엔드투엔드 지원 추가**: AMD GPU에서 네이티브 PyTorch 학습·실행 및
+  MIGraphX 실행 공급자로 export된 ONNX 모델 구동 가능. NVIDIA/CUDA 일변도이던 드론 컴패니언
+  컴퓨터의 추론 하드웨어 선택지를 넓힌다. 상세는 [[yolo-v8-4-171]] 참고.^[inbox/processed/fetch-2026-10-02-yolo.md]
 
 ### v8.4.137 (2026-08-31)
 

@@ -1,7 +1,7 @@
 ---
 title: Skydio
 created: 2026-08-03
-updated: 2026-09-30
+updated: 2026-10-02
 type: entity
 tags: [drone, hardware, company, autonomy, security]
 sources: [inbox/fetch-2026-08-03-rss-skydio.md, inbox/fetch-2026-08-06-rss-skydio.md, inbox/fetch-2026-08-07-rss-skydio.md, inbox/fetch-2026-08-08-rss-skydio.md, inbox/fetch-2026-08-09-rss-skydio.md, inbox/processed/fetch-2026-09-30-rss-dronelife.md, inbox/processed/fetch-2026-09-30-rss-skydio.md]
@@ -24,6 +24,9 @@ domain: hardware
 - **국경 임무**: JTF-SB 소속 미군이 리오그란데 밸리 국경 인근에서 Skydio 드론 운용^[inbox/fetch-2026-08-07-rss-skydio.md]
 - **Blue UAS 인증**: 전 제품군이 Blue UAS Cleared List 등재 — DFR 솔루션 중 유일하게 Blue UAS 인증받은 사례^[inbox/fetch-2026-08-08-rss-skydio.md]
 - **B2B 확장**: EVERYWHERE와 통합해 단독 근무자(lone worker) 대상 자율 드론 대응 서비스 제공^[inbox/fetch-2026-08-08-rss-skydio.md]
+- **MegaDock 사양 확정 (2026-09-29)**: F10 Lightrunner를 지원하는 MegaDock이 항공기 5기 동시
+  탑재, 도크 반경 30마일(약 48km) 항속, 최고 시속 100마일(약 161km/h)로 사양이 구체화됐다 —
+  상세는 [[skydio-f10-megadock]] 참조.^[inbox/processed/fetch-2026-09-30-rss-dronelife.md]
 
 ## 제품
 

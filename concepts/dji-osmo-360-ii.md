@@ -39,6 +39,7 @@ DJI Osmo 360 II는 DJI의 차세대 360° 액션 카메라로, 8K/60fps 파노�
 - [DJI] Build the Shot Before the Ride | DJI Osmo 360 II (youtube.com, 2026-09-05) — https://www.youtube.com/watch?v=ws6alwQJ1hA
 - [DJI] Can You Outrun the Camera?｜Avata 360 (youtube.com, 2026-09-10) — https://www.youtube.com/watch?v=lT0RvXcvUws
 - [DJI] Desert lines hit different | DJI Avata 360 (youtube.com, 2026-09-29) — https://www.youtube.com/watch?v=tN9gRj5rYfg
+- [DJI] Every Drop, Every Angle | DJI Osmo 360 (youtube.com, 2026-10-01) — https://www.youtube.com/watch?v=MD1wLMsjxZo
 
 ## 펌웨어 업데이트 (2026-09-24)
 
