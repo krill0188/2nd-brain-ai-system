@@ -427,9 +427,37 @@ def record(ctx: Ctx, status: str, detail: dict, started: float):
     (ctx.state / 'last-run.json').write_text(json.dumps(payload, ensure_ascii=False, indent=2) + '\n')
 
 
+def deliver(message: str, runner=subprocess.run, notify_path: Path = NOTIFY, log_path: Path | None = None,
+            attempts: int = 2, pause=time.sleep) -> bool:
+    """Send via notify.sh, retry on failure, and record each attempt; never raises."""
+    log_path = log_path or STATE / 'notify.log'
+    if not notify_path.is_file():
+        outcomes = ['notify.sh missing']
+    else:
+        outcomes = []
+        for attempt in range(1, attempts + 1):
+            try:
+                done = runner(['bash', str(notify_path), telegram_safe(message)], capture_output=True, text=True, timeout=60)
+                outcomes.append(f'attempt {attempt} rc={done.returncode} {(done.stderr or "").strip()[:200]}'.strip())
+                if done.returncode == 0:
+                    break
+            except Exception as exc:
+                outcomes.append(f'attempt {attempt} {type(exc).__name__}')
+            if attempt < attempts:
+                pause(5)
+    sent = bool(outcomes) and outcomes[-1].startswith('attempt') and ' rc=0' in outcomes[-1]
+    try:
+        log_path.parent.mkdir(parents=True, exist_ok=True)
+        with log_path.open('a', encoding='utf-8') as handle:
+            handle.write(f"{datetime.now(timezone.utc).isoformat(timespec='seconds')} {'SENT' if sent else 'FAILED'} "
+                         f"{message.splitlines()[0][:80]!r} | {'; '.join(outcomes)}\n")
+    except OSError:
+        pass
+    return sent
+
+
 def telegram_notify(message: str):
-    if NOTIFY.is_file():
-        subprocess.run(['bash', str(NOTIFY), telegram_safe(message)], capture_output=True, timeout=60)
+    deliver(message)
 
 
 def main() -> int:

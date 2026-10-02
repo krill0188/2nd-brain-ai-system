@@ -369,5 +369,54 @@ class ExecuteTests(unittest.TestCase):
         self.assertEqual(ap.telegram_safe('a<b>&c 50%'), 'a(b)+c 50pct')
 
 
+class DeliverTests(unittest.TestCase):
+    def setUp(self):
+        tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(tmp.cleanup)
+        self.dir = Path(tmp.name)
+        self.script = self.dir / 'notify.sh'
+        self.script.write_text('#!/bin/bash\n')
+        self.log = self.dir / 'state' / 'notify.log'
+
+    def send(self, results, **kw):
+        calls = []
+
+        def runner(cmd, **_):
+            calls.append(cmd)
+            result = results[min(len(calls), len(results)) - 1]
+            if isinstance(result, Exception):
+                raise result
+            return subprocess.CompletedProcess(cmd, result, '', 'curl: boom' if result else '')
+
+        sent = ap.deliver('title line\nsecond', runner=runner, notify_path=self.script, log_path=self.log,
+                          pause=lambda _s: None, **kw)
+        return sent, calls
+
+    def test_success_logs_once(self):
+        sent, calls = self.send([0])
+        self.assertTrue(sent)
+        self.assertEqual(len(calls), 1)
+        self.assertIn('SENT', self.log.read_text())
+
+    def test_retries_after_failure_then_succeeds(self):
+        sent, calls = self.send([6, 0])
+        self.assertTrue(sent)
+        self.assertEqual(len(calls), 2)
+        self.assertIn('rc=6', self.log.read_text())
+
+    def test_timeout_never_raises_and_is_logged_as_failed(self):
+        sent, calls = self.send([subprocess.TimeoutExpired('x', 60)])
+        self.assertFalse(sent)
+        self.assertEqual(len(calls), 2)
+        text = self.log.read_text()
+        self.assertIn('FAILED', text)
+        self.assertIn('TimeoutExpired', text)
+
+    def test_missing_script_is_logged_as_failed(self):
+        sent = ap.deliver('m', notify_path=self.dir / 'nope.sh', log_path=self.log)
+        self.assertFalse(sent)
+        self.assertIn('notify.sh missing', self.log.read_text())
+
+
 if __name__ == '__main__':
     unittest.main()
