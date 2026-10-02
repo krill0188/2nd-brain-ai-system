@@ -9,39 +9,14 @@ set -eo pipefail
 export PATH="$HOME/.local/bin:$HOME/.npm-global/bin:/usr/local/bin:$PATH"
 [ -f "$HOME/.local/bin/env" ] && . "$HOME/.local/bin/env"
 
-# ── LLM 호출 (claude -p 실패 시 openrouter fallback) ─────────
+# ── LLM 호출: 공용 ai_router.py로 위임 (2026-10-03) ─────────
+# 이전엔 claude -p 실패 시 openrouter fallback을 이 스크립트가 직접 손으로 구현했었다
+# (OPENROUTER_API_KEY를 ~/.hermes/.env에서 직접 읽는 방식 포함). ai_router.py가 똑같은
+# "Claude 우선, 실패 시 폴백" 의도를 그대로 지키면서, 레이트리밋이 아닌 실패는 조용히
+# 넘기지 않고, 폴백 경로도 codex-lb 우선 → OpenRouter 순으로 하나 더 추가해준다.
 call_llm() {
   local prompt="$1"
-  for i in 1 2; do
-    local result
-    if result=$(echo "$prompt" | claude -p "$prompt" 2>/dev/null) && [[ -n "$result" ]]; then
-      echo "$result"; return 0
-    fi
-    [[ $i -eq 1 ]] && { echo "⚠️  claude -p 1차 실패 → 5초 후 재시도" >&2; sleep 5; }
-  done
-  echo "⚠️  claude -p offline → OpenRouter fallback 시도" >&2
-  local or_key=""
-  [[ -f "$HOME/.hermes/.env" ]] && \
-    or_key=$(grep -E '^OPENROUTER_API_KEY=' "$HOME/.hermes/.env" | cut -d= -f2- | tr -d '"' | tr -d "'")
-  if [[ -n "$or_key" ]]; then
-    local body
-    body=$(python3 -c "
-import json, sys
-print(json.dumps({'model':'openai/gpt-4o-mini','messages':[{'role':'user','content':sys.argv[1]}]}))
-" "$prompt" 2>/dev/null)
-    local resp
-    resp=$(curl -sf --max-time 30 "https://openrouter.ai/api/v1/chat/completions" \
-      -H "Authorization: Bearer $or_key" \
-      -H "Content-Type: application/json" \
-      -d "$body" 2>/dev/null \
-      | python3 -c "import json,sys; d=json.load(sys.stdin); print(d['choices'][0]['message']['content'])" 2>/dev/null)
-    if [[ -n "$resp" ]]; then
-      echo "✅ OpenRouter fallback 성공" >&2
-      echo "$resp"; return 0
-    fi
-  fi
-  echo "❌ LLM 응답 실패 (claude -p offline, openrouter 불가)"
-  return 1
+  python3 "$HOME/projectm/scripts/ai_router.py" -p "$prompt" --tier high --project 2nd-gate-c --workdir "$HOME/2nd"
 }
 
 GRAPH="$HOME/2nd/.ua/knowledge-graph.json"

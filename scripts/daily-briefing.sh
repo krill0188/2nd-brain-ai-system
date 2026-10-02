@@ -50,15 +50,17 @@ print(f"""오늘({today}) 수집된 드론 분야 자료를 분야별로 정리�
 PYEOF
 )
 
+# 단순 요약(이미 수집된 뉴스를 카드로 압축) — 공용 ai_router.py 저가치 티어로 위임
+# (2nd AGENTS.md 자체 규칙: "Use the lowest-cost capable model for ... summarization")
 TMP=$(mktemp)
 ERR=$(mktemp)
 trap 'rm -f "$TMP" "$ERR"' EXIT
-if ! echo "$PROMPT" | claude -p --tools "" --safe-mode > "$TMP" 2> "$ERR"; then
-  echo "  briefing: claude 호출 실패 — $(tail -c 200 "$ERR" | tr '\n' ' ')"
+if ! python3 "$HOME/projectm/scripts/ai_router.py" -p "$PROMPT" --tier low --project 2nd-daily-briefing > "$TMP" 2> "$ERR"; then
+  echo "  briefing: ai_router 호출 실패 — $(tail -c 200 "$ERR" | tr '\n' ' ')"
   exit 0
 fi
 if [[ ! -s "$TMP" ]]; then
-  echo "  briefing: claude 빈 응답 — $(tail -c 200 "$ERR" | tr '\n' ' ')"
+  echo "  briefing: ai_router 빈 응답 — $(tail -c 200 "$ERR" | tr '\n' ' ')"
   exit 0
 fi
 

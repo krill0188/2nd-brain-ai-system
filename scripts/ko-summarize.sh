@@ -38,14 +38,17 @@ print(f"""아래 드론 분야 영문 자료 목록입니다. 각 항목을 한�
 PYEOF
   ) || break  # 대상 없으면 종료
 
+  # 단순 요약 작업 — 공용 ai_router.py로 위임, 저가치 티어(Claude 쿼터 안 씀,
+  # codex-lb/OpenRouter 우선) 사용. 뉴스 제목·요약뿐이라 민감정보 아님.
+  # (2nd AGENTS.md 자체 규칙: "Use the lowest-cost capable model for ... summarization")
   TMP=$(mktemp)
   ERR=$(mktemp)
-  if ! echo "$PROMPT" | claude -p --tools "" --safe-mode > "$TMP" 2> "$ERR"; then
-    echo "  ko-summarize: claude 호출 실패 — $(tail -c 200 "$ERR" | tr '\n' ' ')"
+  if ! python3 "$HOME/projectm/scripts/ai_router.py" -p "$PROMPT" --tier low --project 2nd-ko-summarize > "$TMP" 2> "$ERR"; then
+    echo "  ko-summarize: ai_router 호출 실패 — $(tail -c 200 "$ERR" | tr '\n' ' ')"
     rm -f "$TMP" "$ERR"; exit 0
   fi
   if [[ ! -s "$TMP" ]]; then
-    echo "  ko-summarize: claude 빈 응답 — $(tail -c 200 "$ERR" | tr '\n' ' ')"
+    echo "  ko-summarize: ai_router 빈 응답 — $(tail -c 200 "$ERR" | tr '\n' ' ')"
     rm -f "$TMP" "$ERR"; exit 0
   fi
   rm -f "$ERR"
