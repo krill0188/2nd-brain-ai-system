@@ -23,6 +23,151 @@
     ".ua/news-feed.json",
     ".ua/self-update-state.json"
   ],
-  "approved_source_versions": [],
+  "approved_source_versions": [
+    {
+      "path": "concepts/ai-knowledge-workflow.md",
+      "source_commit": "139759e1a7a067b8078579e2754653f4d584406c"
+    },
+    {
+      "path": "concepts/ai-personal-knowledge-management.md",
+      "source_commit": "139759e1a7a067b8078579e2754653f4d584406c"
+    },
+    {
+      "path": "concepts/amprius-sicore-battery.md",
+      "source_commit": "139759e1a7a067b8078579e2754653f4d584406c"
+    },
+    {
+      "path": "concepts/china-drone-export-controls.md",
+      "source_commit": "139759e1a7a067b8078579e2754653f4d584406c"
+    },
+    {
+      "path": "concepts/computer-vision-drone.md",
+      "source_commit": "139759e1a7a067b8078579e2754653f4d584406c"
+    },
+    {
+      "path": "concepts/dji-osmo-360-ii.md",
+      "source_commit": "139759e1a7a067b8078579e2754653f4d584406c"
+    },
+    {
+      "path": "concepts/drone-ai-agents.md",
+      "source_commit": "139759e1a7a067b8078579e2754653f4d584406c"
+    },
+    {
+      "path": "concepts/drone-anomaly-detection-survey.md",
+      "source_commit": "139759e1a7a067b8078579e2754653f4d584406c"
+    },
+    {
+      "path": "concepts/drone-news-2026-09-03.md",
+      "source_commit": "139759e1a7a067b8078579e2754653f4d584406c"
+    },
+    {
+      "path": "concepts/drone-news-hardware.md",
+      "source_commit": "139759e1a7a067b8078579e2754653f4d584406c"
+    },
+    {
+      "path": "concepts/drone-news-ops.md",
+      "source_commit": "139759e1a7a067b8078579e2754653f4d584406c"
+    },
+    {
+      "path": "concepts/drone-power-battery.md",
+      "source_commit": "139759e1a7a067b8078579e2754653f4d584406c"
+    },
+    {
+      "path": "concepts/drone-regulations.md",
+      "source_commit": "139759e1a7a067b8078579e2754653f4d584406c"
+    },
+    {
+      "path": "concepts/dronuum-computing-continuum.md",
+      "source_commit": "139759e1a7a067b8078579e2754653f4d584406c"
+    },
+    {
+      "path": "concepts/emlid-corrections.md",
+      "source_commit": "139759e1a7a067b8078579e2754653f4d584406c"
+    },
+    {
+      "path": "concepts/kci-critical-facility-intrusion-detection-drone-ai.md",
+      "source_commit": "139759e1a7a067b8078579e2754653f4d584406c"
+    },
+    {
+      "path": "concepts/kci-natural-monument-plant-ndvi-ndre-seasonal.md",
+      "source_commit": "139759e1a7a067b8078579e2754653f4d584406c"
+    },
+    {
+      "path": "concepts/kci-rok-army-drone-acquisition-capability.md",
+      "source_commit": "139759e1a7a067b8078579e2754653f4d584406c"
+    },
+    {
+      "path": "concepts/kci-russia-ukraine-war-drone-terror.md",
+      "source_commit": "139759e1a7a067b8078579e2754653f4d584406c"
+    },
+    {
+      "path": "concepts/kci-utm-k-flight-path-error-regional-analysis.md",
+      "source_commit": "139759e1a7a067b8078579e2754653f4d584406c"
+    },
+    {
+      "path": "concepts/lowes-wing-doordash-drone-delivery-pilot.md",
+      "source_commit": "139759e1a7a067b8078579e2754653f4d584406c"
+    },
+    {
+      "path": "concepts/mavsdk-v4-0-1.md",
+      "source_commit": "139759e1a7a067b8078579e2754653f4d584406c"
+    },
+    {
+      "path": "concepts/mavsdk-v4-0-3.md",
+      "source_commit": "139759e1a7a067b8078579e2754653f4d584406c"
+    },
+    {
+      "path": "concepts/mavsdk.md",
+      "source_commit": "139759e1a7a067b8078579e2754653f4d584406c"
+    },
+    {
+      "path": "concepts/qgroundcontrol-v5-1-4.md",
+      "source_commit": "139759e1a7a067b8078579e2754653f4d584406c"
+    },
+    {
+      "path": "concepts/qgroundcontrol-v5-1-5.md",
+      "source_commit": "139759e1a7a067b8078579e2754653f4d584406c"
+    },
+    {
+      "path": "concepts/qgroundcontrol.md",
+      "source_commit": "139759e1a7a067b8078579e2754653f4d584406c"
+    },
+    {
+      "path": "concepts/skydio-dfr-milestone.md",
+      "source_commit": "139759e1a7a067b8078579e2754653f4d584406c"
+    },
+    {
+      "path": "concepts/skydio-f10-megadock.md",
+      "source_commit": "139759e1a7a067b8078579e2754653f4d584406c"
+    },
+    {
+      "path": "concepts/uk-police-drone-child-injury-incident.md",
+      "source_commit": "139759e1a7a067b8078579e2754653f4d584406c"
+    },
+    {
+      "path": "concepts/utm-system.md",
+      "source_commit": "139759e1a7a067b8078579e2754653f4d584406c"
+    },
+    {
+      "path": "concepts/yolo-v8-4-170.md",
+      "source_commit": "139759e1a7a067b8078579e2754653f4d584406c"
+    },
+    {
+      "path": "concepts/yolo-v8-4-171.md",
+      "source_commit": "139759e1a7a067b8078579e2754653f4d584406c"
+    },
+    {
+      "path": "concepts/yolo.md",
+      "source_commit": "139759e1a7a067b8078579e2754653f4d584406c"
+    },
+    {
+      "path": "entities/dji.md",
+      "source_commit": "139759e1a7a067b8078579e2754653f4d584406c"
+    },
+    {
+      "path": "entities/skydio.md",
+      "source_commit": "139759e1a7a067b8078579e2754653f4d584406c"
+    }
+  ],
   "revoked_paths": []
 }
