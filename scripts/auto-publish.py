@@ -132,6 +132,29 @@ def decide(state: Path, req_id: str, verdict: str, by: str, now: float | None = 
 
 
 # ---------------------------------------------------------------- steps
+def precommit_raw(ctx: Ctx):
+    """Commit any untracked raw/ files before the publish pipeline starts.
+
+    New raw files added by extract-knowledge-graph.py or ingest scripts
+    sit untracked until this step.  If left untracked they leak into
+    commit_paths' staged-set check and cause a mismatch abort.
+    This step is idempotent: nothing to commit → no-op.
+    """
+    # Only auto-commit raw/ paths that are NOT in HARD_DENY_PREFIXES
+    raw_untracked = [
+        line[3:].strip().strip('"')
+        for line in ctx.git('status', '--porcelain', '-u', '--', 'raw/').splitlines()
+        if line.startswith('?? ')
+    ]
+    if not raw_untracked:
+        return
+    ctx.say(f'precommit_raw: {len(raw_untracked)} untracked raw file(s) → auto-commit')
+    ctx.git('add', '--', 'raw/')
+    ctx.git('commit', '-q', '-m',
+            f'raw: auto-commit {len(raw_untracked)} untracked file(s) before publish\n\n'
+            'Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>')
+
+
 def preflight(ctx: Ctx):
     if ctx.git('status', '--porcelain', '--', 'publication/'):
         raise Abort('preflight', 'publication/ has uncommitted edits')
@@ -373,6 +396,7 @@ def execute(ctx: Ctx) -> int:
     web_dirty = False
     try:
         stage = 'preflight'
+        precommit_raw(ctx)   # untracked raw/ 파일 먼저 커밋 (staged-set mismatch 방지)
         preflight(ctx)
         stage = 'rebaseline'
         temp_policy = rebaseline(ctx)
