@@ -912,10 +912,16 @@ json.dump(cache, open(CACHE, "w"), ensure_ascii=False)
 if tstats["attempted"]:
     print(f"  youtube 자막: {tstats['ok']}/{tstats['attempted']}건 추출"
           f" (rate-limit {tstats['rate_limited']}, yt-dlp 없음 {tstats['unavailable']})")
+    stats_row = {"date": today, **{k: tstats[k] for k in ("attempted", "ok", "rate_limited", "unavailable")}}
     stats_path = os.path.expanduser("~/2nd/.ua/youtube-transcript-stats.json")
     try:
-        json.dump({"date": today, **{k: tstats[k] for k in ("attempted", "ok", "rate_limited", "unavailable")}},
-                  open(stats_path, "w"))
+        json.dump(stats_row, open(stats_path, "w"))
+    except OSError:
+        pass
+    history_path = os.path.expanduser("~/2nd/.ua/youtube-transcript-stats-history.jsonl")
+    try:
+        with open(history_path, "a") as hf:
+            hf.write(json.dumps(stats_row, ensure_ascii=False) + "\n")
     except OSError:
         pass
     notify = os.path.expanduser("~/claudeclaw/scripts/notify.sh")

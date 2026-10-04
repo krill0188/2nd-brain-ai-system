@@ -111,14 +111,14 @@ class YouTubeBlockTests(unittest.TestCase):
             "    h = url.split('playlistId=')[1].split('&')[0]\n"
             "    return {'items': [{'snippet': {'title': f'{h} video {i}', 'description': 'd',\n"
             "            'publishedAt': date.today().isoformat() + 'T00:00:00Z',\n"
-            "            'resourceId': {'videoId': f'{h}vid{i}xx'}}} for i in range(3)]}\n")
+            "            'resourceId': {'videoId': f'{h}{today[5:].replace(\"-\", \"\")}v{i}'}}} for i in range(3)]}\n")
         patched, count = re.subn(
             r"def get\(url\):\n    with urllib\.request\.urlopen\(url, timeout=15\) as r:\n        return json\.load\(r\)\n",
             lambda _m: fake_get, source)
         self.assertEqual(count, 1, "YouTube block API helper changed shape; update this test")
         return patched.replace("time.sleep(1.5)", "pass")
 
-    def run_block(self, helper_body: str):
+    def _setup_home(self, helper_body: str) -> Path:
         tmp = tempfile.TemporaryDirectory()
         self.addCleanup(tmp.cleanup)
         home = Path(tmp.name)
@@ -131,17 +131,24 @@ class YouTubeBlockTests(unittest.TestCase):
         conf, inbox = home / "channels.txt", home / "inbox"
         inbox.mkdir()
         conf.write_text("@ChanA|hardware|global\n@ChanB|flight-control|global\n@ChanC|ops-mission|global\n")
-        seen = home / "seen.txt"
-        seen.write_text("")
-        script = home / "block.py"
-        script.write_text(self.block_source(), encoding="utf-8")
+        (home / "seen.txt").write_text("")
+        (home / "block.py").write_text(self.block_source(), encoding="utf-8")
+        return home
+
+    def _run(self, home: Path, date: str):
         done = subprocess.run(
-            [sys.executable, str(script), "KEY", str(conf), str(inbox), "2026-10-02", str(seen)],
+            [sys.executable, str(home / "block.py"), "KEY", str(home / "channels.txt"), str(home / "inbox"),
+             date, str(home / "seen.txt")],
             env={**os.environ, "HOME": str(home)}, capture_output=True, text=True, timeout=60)
         self.assertEqual(done.returncode, 0, done.stderr)
+        return done
+
+    def run_block(self, helper_body: str):
+        home = self._setup_home(helper_body)
+        done = self._run(home, "2026-10-02")
         stats = json.loads((home / "2nd/.ua/youtube-transcript-stats.json").read_text())
         alerts = (home / "alerts.txt").read_text() if (home / "alerts.txt").exists() else ""
-        return sorted(inbox.glob("*.md")), stats, alerts, done.stdout
+        return sorted((home / "inbox").glob("*.md")), stats, alerts, done.stdout
 
     def test_transcript_success_marks_file_and_keeps_description(self):
         files, stats, alerts, out = self.run_block(
@@ -154,6 +161,18 @@ class YouTubeBlockTests(unittest.TestCase):
         self.assertEqual((stats["attempted"], stats["ok"]), (6, 6))
         self.assertEqual(alerts, "")
         self.assertIn("6/6", out)
+
+    def test_history_file_appends_one_row_per_run_without_clobbering(self):
+        home = self._setup_home("import sys\nsys.stdout.write('real transcript text ' * 20)\n")
+        self._run(home, "2026-10-02")
+        self._run(home, "2026-10-03")
+        history_path = home / "2nd/.ua/youtube-transcript-stats-history.jsonl"
+        rows = [json.loads(line) for line in history_path.read_text().splitlines()]
+        self.assertEqual([r["date"] for r in rows], ["2026-10-02", "2026-10-03"])
+        for row in rows:
+            self.assertEqual((row["attempted"], row["ok"]), (6, 6))
+        snapshot = json.loads((home / "2nd/.ua/youtube-transcript-stats.json").read_text())
+        self.assertEqual(snapshot["date"], "2026-10-03")
 
     def test_rate_limit_trips_breaker_after_two_but_collection_continues(self):
         files, stats, alerts, _ = self.run_block("import sys\nsys.exit(3)\n")
