@@ -32,6 +32,9 @@ import sys
 import tempfile
 from pathlib import Path
 
+sys.path.insert(0, os.path.expanduser("~/projectm/scripts"))
+import ai_router  # noqa: E402 — 2026-10-04: discovery 레이어 추출은 저가치 티어로 위임
+
 WIKI_ROOT = Path(os.path.expanduser("~/2nd"))
 RAW_SOURCES = ["raw/papers", "raw/articles", "raw/web", "raw/youtube", "raw/notebooklm", "raw/transcripts"]
 STATE_PATH = WIKI_ROOT / ".ua" / "extract-graph-state.json"
@@ -179,30 +182,20 @@ def parse_graph_json(text: str) -> GDoc:
 
 
 def extract_with_claude(title: str, body: str) -> GDoc:
-    """`claude -p`(Pro 구독, API 키 없음)로 추출. 도구 전면 비활성, 세션 미저장, 빈 작업 디렉터리."""
-    env = {k: v for k, v in os.environ.items() if k != "ANTHROPIC_API_KEY"}
-    env["PATH"] = f"{Path.home()}/.local/bin:/usr/local/bin:" + env.get("PATH", "")
-    with tempfile.TemporaryDirectory(prefix="discovery-claude-") as cwd:
-        result = subprocess.run(
-            [
-                "claude", "-p",
-                "--model", MODEL_ALIAS,
-                "--tools", "",
-                "--no-session-persistence",
-                "--strict-mcp-config",
-                "--system-prompt", SYSTEM_PROMPT,
-                "--output-format", "text",
-            ],
-            input=build_prompt(title, body),
-            capture_output=True,
-            text=True,
-            timeout=CLAUDE_TIMEOUT_SEC,
-            cwd=cwd,
-            env=env,
+    """공용 ai_router.py 경유, 저가치 티어(2026-10-04). 이 결과물은 사람이 검토하기 전
+    discovery 레이어(모듈 docstring 참고)라, 품질이 떨어져도 canonical에 바로 영향이
+    없다 — 원래도 Claude 중 가장 싼 haiku를 쓰던 자리라 '저비용 모델'이라는 선택 자체는
+    그대로 두고, Claude Pro 쿼터 자체를 아예 안 쓰는 codex-lb/Hermes로 한 단계 더 내린다.
+    프롬프트가 build_prompt()로 완전히 self-contained라(파일 접근 불필요) 저가치 경로의
+    '도구 없음' 제약과도 맞는다. system prompt의 프롬프트 인젝션 방어 문구는 그대로 유지."""
+    try:
+        text, _meta = ai_router.call(
+            build_prompt(title, body), tier="low", project="2nd-extract-knowledge-graph",
+            system=SYSTEM_PROMPT, timeout=CLAUDE_TIMEOUT_SEC,
         )
-    if result.returncode != 0:
-        raise RuntimeError(f"CLAUDE_EXIT_{result.returncode}")
-    return parse_graph_json(result.stdout)
+    except ai_router.RouterError as e:
+        raise RuntimeError(f"AI_ROUTER_FAILED: {e}") from e
+    return parse_graph_json(text)
 
 
 def to_discovery_nodes_edges(graph_documents, source_map) -> tuple[list[dict], list[dict]]:

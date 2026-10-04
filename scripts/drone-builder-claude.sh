@@ -35,15 +35,18 @@ SLUG=$(printf '%s' "$CONCEPT" \
 OUT="research/designs/${DATE}-${SLUG}.md"
 mkdir -p research/designs
 
-claude -p "설계 지침 파일 ${GUIDE} 를 먼저 읽고, 거기 적힌 절차와 규칙을 그대로 따라라.
+# 2026-10-04: ai_router.py 경유. 에이전트가 위키를 직접 탐색하며 설계안을 쓰는 작업이라
+# tier=high + --no-fallback(스킬/탐색 의존, 저가치 경로로 못 내림, gate-c-analyze.sh 등과
+# 달리 자체 폴백이 원래 없던 스크립트이므로 그 특성을 그대로 유지).
+python3 "$HOME/projectm/scripts/ai_router.py" -p "설계 지침 파일 ${GUIDE} 를 먼저 읽고, 거기 적힌 절차와 규칙을 그대로 따라라.
 
 컨셉: ${CONCEPT}
 출력 파일: ${OUT}
 created 날짜: $(date +%Y-%m-%d)
 
-작업이 끝나면 생성한 파일 경로 한 줄만 출력해라." \
-  --dangerously-skip-permissions \
-  --add-dir "$HOME/2nd"
+작업이 끝나면 생성한 파일 경로 한 줄만 출력해라." --tier high --project 2nd-drone-builder --workdir "$HOME/2nd" --no-fallback \
+  --claude-arg=--dangerously-skip-permissions \
+  --claude-arg=--add-dir --claude-arg="$HOME/2nd"
 
 # 결과 확인 후 텔레그램 요약 발송 (발송은 LLM 불필요 — OpenRouter 크레딧과 무관)
 if [[ -f "$OUT" ]]; then

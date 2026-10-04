@@ -70,8 +70,13 @@ rollback() {
   cp -p "$BACKUP/index.md" index.md; cp -p "$BACKUP/log.md" log.md
 }
 
+# 2026-10-04: ai_router.py 경유(공용 로깅·kill-switch). 스킬 기반 에이전트 탐색/쓰기라
+# tier=high + --no-fallback 유지(동작 변경 없음) — 아래 스냅샷/롤백 안전망이 이미 있어
+# RC 비정상 종료는 그대로 rollback()으로 흡수된다.
 set +e
-claude -p "$PROMPT" --dangerously-skip-permissions --add-dir "$ROOT"
+python3 "$HOME/projectm/scripts/ai_router.py" -p "$PROMPT" --tier high --project "2nd-research-cron-$MODE" --workdir "$ROOT" --no-fallback \
+  --claude-arg=--dangerously-skip-permissions \
+  --claude-arg=--add-dir --claude-arg="$ROOT"
 RC=$?
 set -e
 if [ $RC -ne 0 ]; then rollback "claude exit $RC"; exit $RC; fi

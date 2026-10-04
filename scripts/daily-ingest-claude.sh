@@ -29,6 +29,13 @@ YouTube 파일은 frontmatter에 transcript: true 이면 "## 자막" 섹션(자�
 
 작업이 끝나면 "수집 N개, 컴파일 N개, 실패 N개" 형식의 한 줄 요약을 마지막에 출력해라.'
 
-exec claude -p "$PROMPT" \
-  --dangerously-skip-permissions \
-  --add-dir "$HOME/2nd"
+# 2026-10-04: ai_router.py 경유(공용 로깅·kill-switch). 핵심 canonical 컴파일 작업이라
+# tier=high 고정(동작 변경 없음) — 레이트리밋일 때만 저가치로 강등되는데, 이 작업은
+# .claude/skills(summarize-note 등) 기반이라 저가치 경로(codex-lb/Hermes)에선 그 스킬
+# 자체를 못 쓴다. 강등되면 품질이 아니라 "스킬을 아예 못 따름"이 되므로, 실패시 그냥
+# 에러로 드러나 다음 launchd 스케줄에서 재시도되는 기존 동작이 더 안전하다 — --no-fallback
+# 으로 레이트리밋이어도 폴백 자체를 막는다(--sensitive와 효과는 같지만 로그에 "PII라서"가
+# 아니라 "스킬 의존이라서"로 정확히 남는다).
+exec python3 "$HOME/projectm/scripts/ai_router.py" -p "$PROMPT" --tier high --project 2nd-daily-ingest --workdir "$HOME/2nd" --no-fallback \
+  --claude-arg=--dangerously-skip-permissions \
+  --claude-arg=--add-dir --claude-arg="$HOME/2nd"
