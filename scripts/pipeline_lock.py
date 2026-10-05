@@ -7,6 +7,21 @@ from pathlib import Path
 LOCK_PATH = Path(__file__).resolve().parent.parent / '.ua/knowledge-pipeline.lock'
 FD_ENV = 'KNOWLEDGE_PIPELINE_LOCK_FD'
 
+# Operational lock contract: all cooperating writers use this same file.
+# The lock is advisory and nonblocking; legacy jobs remain fail-closed until
+# they explicitly adopt this module.
+WRITER_LOCK_NAME = 'dronewiki-writer-v1'
+LOCK_METADATA_PATH = LOCK_PATH.with_suffix('.json')
+
+
+def lock_metadata() -> dict:
+    return {
+        'name': WRITER_LOCK_NAME,
+        'path': str(LOCK_PATH),
+        'mode': 'advisory-nonblocking',
+        'legacy_jobs_must_opt_in': True,
+    }
+
 
 def inherited_lock_fd():
     try:

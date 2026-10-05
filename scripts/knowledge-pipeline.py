@@ -15,6 +15,7 @@ import subprocess
 import tempfile
 import uuid
 from pipeline_lock import shared_lock, inherited_lock_fd
+from ops_contract import create_run, update_run, page_inventory, write_revision
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -275,9 +276,18 @@ def main() -> int:
         print('BLOCKED: publication intermediate path already exists')
         return 2
     (ROOT / '.ua').mkdir(exist_ok=True)
+    run_id, run_dir = create_run(
+        'knowledge-pipeline',
+        'dronewiki-ops-v1',
+        mode='validate-existing' if args.validate_existing else ('refresh-derived' if args.refresh_derived else 'generate-local'),
+        candidate=str(candidate),
+    )
+    update_run(run_dir, status='QUEUED')
+    before_inventory = page_inventory()
     with shared_lock():
         results = []
         try:
+            update_run(run_dir, status='PROCESSING')
             # Freeze publication-relevant source after the initial canonical lint.
             if args.validate_existing:
                 initial = []
@@ -362,7 +372,14 @@ def main() -> int:
             if version_report.exists():
                 version_report.unlink()
 
-        report = {'at': datetime.now(timezone.utc).isoformat(), 'steps': results,
+        after_inventory = page_inventory()
+        revision_path = write_revision(run_id, before_inventory, after_inventory, 'knowledge-pipeline')
+        exit_code = 0 if results and all(r['exit_code'] == 0 for r in results) else 2
+        final_state = 'LINT_PASSED' if exit_code == 0 else ('BLOCKED' if any(r.get('diagnostic') == 'PUBLICATION_REVIEW_REQUIRED' for r in results) else 'FAILED')
+        update_run(run_dir, status=final_state, results=results, revision_ledger=str(revision_path.relative_to(ROOT)))
+        report = {'run_id': run_id, 'run_receipt': str(run_dir.relative_to(ROOT)),
+                  'revision_ledger': str(revision_path.relative_to(ROOT)),
+                  'at': datetime.now(timezone.utc).isoformat(), 'steps': results,
                   'mode': 'validate-existing' if args.validate_existing else 'generate-local',
                   'schedule_activation': 'NOT PERFORMED',
                   'deploy': 'NOT EXECUTED: approval required'}
