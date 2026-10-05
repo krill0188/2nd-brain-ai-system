@@ -24,6 +24,17 @@ def doc(body='body', extra=''):
     return f'---\ntitle: T\n{extra}---\n{body}\n'.encode()
 
 
+class RunnerEncodingTests(unittest.TestCase):
+    def test_default_run_handles_non_utf8_rsync_style_output(self):
+        result = ap.default_run([
+            sys.executable, '-c',
+            'import sys; sys.stdout.buffer.write(b"ok\\xff\\xfe\\n")',
+        ])
+        self.assertEqual(result.returncode, 0)
+        self.assertIn('ok', result.stdout)
+        self.assertIn('\ufffd', result.stdout)
+
+
 class JudgeTests(unittest.TestCase):
     def test_clean_page_passes(self):
         self.assertEqual(lib.judge_file('concepts/a.md', GOOD), [])

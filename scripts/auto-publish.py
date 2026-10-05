@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import subprocess
 import sys
@@ -49,9 +50,24 @@ class Abort(Exception):
 
 
 def default_run(cmd, cwd=None, timeout=1800):
+    """Run a child process without allowing locale bytes to crash the publisher.
+
+    rsync on macOS 13 may emit non-UTF-8 filename bytes in itemized output.
+    Preserve file bytes on disk; only decode process diagnostics loss-tolerantly.
+    C locale makes rsync's control/status output deterministic while the
+    replacement decoder keeps the sync decision usable for unusual filenames.
+    """
     fd = inherited_lock_fd()
-    return subprocess.run(cmd, cwd=cwd, capture_output=True, text=True, timeout=timeout,
-                          pass_fds=(() if fd is None else (fd,)))
+    env = dict(os.environ)
+    env.update({'LC_ALL': 'C', 'LANG': 'C'})
+    result = subprocess.run(cmd, cwd=cwd, capture_output=True, text=False, timeout=timeout,
+                            env=env, pass_fds=(() if fd is None else (fd,)))
+    return subprocess.CompletedProcess(
+        result.args,
+        result.returncode,
+        (result.stdout or b'').decode('utf-8', errors='replace'),
+        (result.stderr or b'').decode('utf-8', errors='replace'),
+    )
 
 
 def default_fetch(url: str, timeout: int = 30):
