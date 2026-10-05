@@ -321,12 +321,12 @@
   },
   "baseline": {
     "description": "Existing local public snapshot bytes; retention only, not a declaration of public classification. Never refresh automatically.",
-    "web_head": "48798bb",
+    "web_head": "e21f9ab",
     "files": {
       ".ua/daily-briefing.json": "8394153ede8920b586c28430eedfe63d3e84b370bca284b67584827ab7424f3b",
       ".ua/discovery-knowledge-graph.json": "ca361999d486e0ca25e3d1c87fec76f6f6434adef618b80f5296bb2e23492c98",
       ".ua/drone-knowledge-graph.json": "ac79afc917dd74e184e0e69213511cb86ab642c9f2c38a39351f3b9f180dff90",
-      ".ua/embeddings.json": "d76f84264d7967848b1dafd10ffb850d2a29fa744d466677ac817b8518f90857",
+      ".ua/embeddings.json": "a8a779412a1c28829a678fb4a2ae66a08df5742faefe90dc0675f01147ca5123",
       ".ua/knowledge-graph.json": "93e0e5dda03d05ee06488aa150ee786b4e4c3a2c51643f5628de43cdb5a53c78",
       ".ua/news-feed.json": "ca8d967c6ef0a88aa3f83ff5dfdb5c811cf08cc0a70dcdf25e86a100aabca317",
       ".ua/self-update-state.json": "6759d802d6086e928c4c3aef676661839575172fe02d9cb40f76cadbeb05861a",
