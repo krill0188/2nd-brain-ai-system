@@ -3,7 +3,7 @@ id: idea-002
 title: "UAV 식생 이상탐지 3계열(RGB+텍스처 / NDVI / 초분광) 통합 벤치마크 교차 비교"
 status: draft
 created: 2026-09-30
-updated: 2026-09-30
+updated: 2026-10-01
 gaps: [GAP-006]
 sources: [raw/papers/drone-ai/comparison-of-uav-image-based-detection-accuracy-of-pine-wilt-disease-affected-t.md, raw/papers/_unclassified/드론-다중분광센서-기반-ndvi를-활용한-한라산-구상나무-개체의-고도사면향별-활력도-예비평가.md, raw/papers/_unclassified/무인기-기반-초분광-영상을-이용한-보리-습해-조기-탐지.md]
 novelty_confidence: 0.5
@@ -72,6 +72,9 @@ novelty_confidence: 0.5
 
 2026-09 근거 3편([[pine-wilt-disease-uav-detection]], [[kci-hallasan-fir-ndvi-vitality-assessment]],
 [[kci-barley-wet-stress-hyperspectral-detection]]) → 신규 생성. 재평가 대상 없음(첫 등재).
+
+2026-10 재평가: idea 생성 이후 GAP-006 관련 신규 근거(통합 데이터셋 시도, 3계열 교차비교 문헌)
+없음. 통합 데이터셋 실현 가능성(Threat to novelty)도 여전히 미검증 → novelty_confidence 0.5 유지.
 
 ## Minimal validation plan
 

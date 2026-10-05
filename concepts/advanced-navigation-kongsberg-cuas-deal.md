@@ -35,3 +35,7 @@ KONGSBERG의 결합은, 대드론 체계가 GNSS 재밍·스푸핑이 표준화�
 
 - [[droneshield]]
 - [[fortem-technologies]]
+
+## 📰 최근 관련 소식
+- 1000km 날던 자폭드론, 아제르바이잔 첫 계약 (데일리방산, Fri, 02 Oc) — https://news.google.com/rss/articles/CBMicEFVX3lxTFA1T2hwU3RfTS1NeF9wUXN1em1hbnhELVNhajNsSTF1dG5JMEdodWdvQjc3aFpEd2JxTFpzRUF3V0dGc2UweThCcWhUMXpNVDBPa3hObEJzWHo5T3EwcXVmSmdpS1Vnd1Z5VXFwWEg0dXg?oc=5
+- 유럽, 무기 ‘공동개발·공동생산’ 체제로…K-방산엔 높아진 장벽·커진 기회 (뉴스버스, Sun, 04 Oc) — https://news.google.com/rss/articles/CBMiakFVX3lxTE9EVVlxcXFvZmhvWTNHVDFDWktrVElvY182V0JyUUlPNEZVWUZTelRXX0pPMkMwSVRwV2NYUDdKNV9aeWdjOUE0TlhpQlpuTDlSczdndk1vYTNja3pGM1NEMTZSaUxwMF9Tc0E?oc=5

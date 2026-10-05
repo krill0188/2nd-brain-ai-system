@@ -31,3 +31,6 @@ ZeroZero Robotics의 HOVERAir VERSA: 2-in-1 핸드헬드 짐벌 카메라 + 자�
 ## 출처
 
 DroneDJ, DroneLife, 2026-08-19. ^[raw/articles/hoverair-versa-2in1-gimbal-drone-2026-08.md]
+
+## 📰 최근 관련 소식
+- [Painless360] I'm installing a 'smart' HEQUAV K11 gimbal to try... (youtube.com, 2026-10-04) — https://www.youtube.com/watch?v=GdQGXZ3HGYw

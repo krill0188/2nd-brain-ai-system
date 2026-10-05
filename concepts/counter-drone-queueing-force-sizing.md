@@ -1,7 +1,7 @@
 ---
 title: "대드론 방어체계 소요산정: 확률적 대기행렬 모형"
 created: 2026-09-25
-updated: 2026-10-01
+updated: 2026-10-03
 type: concept
 domain: ai-autonomy
 tags: [drone, swarm, ops-mission]
@@ -40,3 +40,8 @@ SCR(신호대클러터비) 환경에서 CFAR 후보 탐지에 특징 기반 후�
 - [[dfend-counter-drone-worldcup]] — 월드컵 대드론 운용 사례
 - [[drone-ai-agents]] — 드론 AI 에이전트
 - [[kci-drone-detection-cfar-feature-postprocessing]] — 낮은 SCR 환경 CFAR 특징 기반 드론 탐지 후처리(오경보율 개선)
+- [[kci-multisensor-fusion-counter-drone-identification-engagement]] — 센서융합 식별 신뢰도와 교전영역 활용률(요구성능 분석)
+- [[kci-tank-zone-vulnerability-selective-counter-drone-protection]] — 전차 기능구역별 선택적 대드론 방호
+
+## 📰 최근 관련 소식
+- 코스포·한국대드론산업협회, 대드론 기술 고도화·방산 협력 강화 (와우테일, Fri, 02 Oc) — https://news.google.com/rss/articles/CBMiT0FVX3lxTFBRV0xXbUdVZk95ZjBRMnR3d0Vja3ZTbTQzbDdYczRiRl81LTYzLTEwWVhDZVdwN2ZSVE1EbmgxQnR0VkQ4eW13U3NYN3d1dUk?oc=5

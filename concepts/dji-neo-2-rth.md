@@ -43,3 +43,5 @@ Return to Home는 다음 센서 융합을 통해 구현된다:
 - Two Shenzhen Rivals, Two Different Paths to the U.S. Market (dronelife.com, Thu, 13 Au) — https://dronelife.com/2026/08/13/insta360-dji-us-market/
 - [DJI] What moment would you capture at the show? ｜DJI Neo 2 (youtube.com, 2026-09-06) — https://www.youtube.com/watch?v=-3VeVIIsFs4
 - [DJI] Fast Feet, Clean Frame | DJI Neo 2 (youtube.com, 2026-09-06) — https://www.youtube.com/watch?v=7FrKRyF02W0
+- [DJI] Golden Hour, Kept in 4K | DJI Neo 2 (youtube.com, 2026-10-02) — https://www.youtube.com/watch?v=hjZmpgxV9II
+- [DJI] Palm up. Ride out. | DJI Neo 2 (youtube.com, 2026-10-03) — https://www.youtube.com/watch?v=rQnHVsUukKE

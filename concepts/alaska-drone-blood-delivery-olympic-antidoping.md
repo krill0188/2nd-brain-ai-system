@@ -38,3 +38,5 @@ Nenana에서 출발해 왕복 1,000km(621마일), 8시간 47분 비행을 완료
 
 ## 📰 최근 관련 소식
 - “주문하면 드론이 배달”…밀양 야외 드론 배송 시작 (쿠키뉴스, Wed, 30 Se) — https://news.google.com/rss/articles/CBMiY0FVX3lxTE1qbVFJRzZwMVBMZ19hRFBoRjYtM3BSNlMzNk9yaUwybDlwSm5EZGEwbFZrVTNXUktrMUpSWWJoSlVtbnhRWXhBUzZiWEpsVzNGQVBVQVFGWjd5eEJ3QWJnRWdJcw?oc=5
+- 1000km 날던 자폭드론, 아제르바이잔 첫 계약 (데일리방산, Fri, 02 Oc) — https://news.google.com/rss/articles/CBMicEFVX3lxTFA1T2hwU3RfTS1NeF9wUXN1em1hbnhELVNhajNsSTF1dG5JMEdodWdvQjc3aFpEd2JxTFpzRUF3V0dGc2UweThCcWhUMXpNVDBPa3hObEJzWHo5T3EwcXVmSmdpS1Vnd1Z5VXFwWEg0dXg?oc=5
+- 100㎾ 레이저에 드론 요격기까지… 한국군 무기가 달라진다 [박수찬의 軍] (세계일보, Fri, 02 Oc) — https://news.google.com/rss/articles/CBMiWEFVX3lxTE5rNm9MdnE1ZmxVYTlyNVpHdzc0NnpySHZHOVpTdHJ6eU1IR0JjTEJFNHJIeWFmcE83OXRXeDRoUDlNVHU0UHRiRC0xMjF6aHRPa0w4VHByTHjSAVRBVV95cUxNNmlXUGFyVU10Q1luZTNoWkRfWFBsWlJWOTBjNDlVZ2NYMWFZcWt6VXkzTnB6UVpVY3FsQ29JNUJnVmsxSmxnUjNTWkJLa3hnRmVaMVg?oc=5

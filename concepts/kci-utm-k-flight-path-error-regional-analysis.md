@@ -1,11 +1,11 @@
 ---
 title: "다양한 지역 환경에서의 UTM-K 기반 드론 비행경로 오차 분석"
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-03
 type: concept
 domain: flight-control
 tags: [drone, utm]
-sources: [inbox/processed/fetch-2026-10-02-kci-다양한-지역-환경에서의-utm-k-기반-드론-비행경로-오차-분석.md]
+sources: [inbox/processed/fetch-2026-10-02-kci-다양한-지역-환경에서의-utm-k-기반-드론-비행경로-오차-분석.md, raw/papers/_unclassified/다양한-지역-환경에서의-utm-k-기반-드론-비행경로-오차-분석.md]
 confidence: low
 contested: false
 contradictions: []
@@ -36,3 +36,4 @@ contradictions: []
 
 - [[utm-system]] — 저고도 공역 드론 교통관리(UTM) 체계
 - [[kci-korea-airspace-eu-uspace]] — 드론 공역시스템 비교: 한국형 드론 공역시스템 vs EU U-space
+- [[drone-delivery-news]] — 드론 배송 실증·상용화 동향

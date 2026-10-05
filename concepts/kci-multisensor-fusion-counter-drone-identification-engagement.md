@@ -1,0 +1,44 @@
+---
+title: "이종센서 융합 대드론 표적 식별 신뢰도와 교전영역 활용률 분석 (KCI)"
+created: 2026-10-03
+updated: 2026-10-03
+type: concept
+domain: ops-mission
+tags: [drone, ops-mission, drone-ai]
+sources: [inbox/processed/fetch-2026-10-03-kci-이종센서-융합-기반-대드론-표적-식별-신뢰도와-교전영역-활용률-분석.md, raw/papers/_unclassified/이종센서-융합-기반-대드론-표적-식별-신뢰도와-교전영역-활용률-분석.md]
+confidence: low
+contested: false
+contradictions: []
+---
+
+# 이종센서 융합 대드론 표적 식별 신뢰도와 교전영역 활용률 분석
+
+김동건(LIG디펜스앤에어로스페이스 해외유도무기연구소)이 한국국방기술학회 논문지(2026)에 발표한
+연구. 이종센서 융합에 따른 표적 식별 신뢰도를 식별거리 및 교전영역 활용률과 연계하는 **요구성능
+분석방법**을 제시한다. 원문은 비공개이며 초록만
+확인했다.^[inbox/processed/fetch-2026-10-03-kci-이종센서-융합-기반-대드론-표적-식별-신뢰도와-교전영역-활용률-분석.md]
+
+## 방법
+
+- **증거이론** 기반으로 센서의 물리적 성능을 반영한 신뢰계수를 적용해 융합.
+- 대표 제원과 가정값으로 표적 규모·해석조건별 결과 변화를 관찰.
+- 교전 결심 조건으로부터 **레이더의 요구 증거 강도를 역산**하는 관계를 제시.
+
+## 결과(모델·가정 조건 한정)
+
+- 표적 규모와 광학 분해능에 따라 식별거리와 교전영역 활용률이 달라졌다.
+- 무장의 사거리만으로는 활용 가능한 교전 범위를 설명하기 어려운 사례가 나타났다 → 센서 식별
+  성능과 체계 수준 조건을 함께 고려해야 한다.
+
+## 한계
+
+저자는 이 연구가 요구성능 분석방법의 제안일 뿐 실제 센서융합체계의 성능을 검증한 결과가 아니며,
+적용 범위가 설정한 모델과 해석조건에 한정된다고 명시한다. 단일 출처·초록만 확인이므로 confidence
+low.
+
+## 관련 페이지
+
+- [[kci-counter-drone-hardkill-engagement-zone]] — 하드킬 UAV 교전영역 계산
+- [[counter-drone-queueing-force-sizing]] — 대드론 소요산정 대기행렬 모형
+- [[dfend-counter-drone-worldcup]] — 대드론 실운용 사례
+- [[kci-tank-zone-vulnerability-selective-counter-drone-protection]] — 전차 기능구역별 선택적 대드론 방호(제대급 공유 대드론 기능과 상보적 관점)

@@ -76,3 +76,4 @@ domain: flight-control
 - [UAV Coach] I Use These 4 Apps on EVERY Drone Flight (youtube.com, 2026-09-11) — https://www.youtube.com/watch?v=Y9bZebPQRvI
 - [Joshua Bardwell] Why I paid $60 for this AMAZING cable (I'm stupid) (youtube.com, 2026-09-14) — https://www.youtube.com/watch?v=kagyXl1lvtA
 - One year in, America’s counter-drone task force still has ‘a ton of work to do’ (DefenseScoop, Mon, 24 Au) — https://news.google.com/rss/articles/CBMisgFBVV95cUxORThPZklYSTRJS2hZZkF6UXNsRnhOMV9EVWIyLW1vQ29tTEhSVzBKX2ZScHVqbWxlVzRWR3Rhdmh2WkExaEVBTEN3Y0hKaXZhSDFTZjRTbHdicnNvYV9XbURwRGJvODEzMWEzWTFHMUFnemNienFLRHktYWVfRTlRU01PTjVFZmRMdUNuMDFNWl9GbzNob0JPU2M5eFpwS09kcUpLTjdTUEhFMmhURjFUeXpB?oc=5
+- [Joshua Bardwell] His audacious plan to open-source EVERY PART of a drone // OPENDRONE (youtube.com, 2026-10-03) — https://www.youtube.com/watch?v=MVr2Vm_6CqQ

@@ -50,3 +50,6 @@ contradictions: []
 - [[drone-regulations]] — 드론 규제 개요(FAA/EASA/BVLOS)
 - [[elroy-air]] — 헤비리프트/화물 자율 드론 기업 (Chaparral 조종사 없는 첫 비행 최신 갱신)
 - [[droneshield]] — 대드론(C-UAS) 탐지/방어 기업 개요
+
+## 📰 최근 관련 소식
+- Utah Guard, Royal Moroccan Armed Forces Strengthen Drone Capabilities (nationalguard.mil, Fri, 02 Oc) — https://news.google.com/rss/articles/CBMizgFBVV95cUxNMFVXcHdHNGIwc3FicjZiaUI3TkZVbTdjMk0zdHVYcEtWV1lSb3NITHhrMWVRODA5R3Nxd3hmYks5cXJzVTVrbC0zSkhvXzJvYTBNVU05Z2xTcThhZ05FSV9WMGxjRXFQRjFybmQ3SzhYRmloMVI1b2ZVLVhQbWJoc0FoRzhUbWZWUlRWWEloZ3hOX29DLVVSWllsbV83ejkyZks2aTZHdHo5VEptS3ZiVDFTZzdHTlRHVXBGV1FVaGhYWW16a3JzR2FiSTU1Zw?oc=5

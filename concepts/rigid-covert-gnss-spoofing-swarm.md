@@ -31,3 +31,6 @@ Park & Yoo(2026, arXiv:2608.06885)가 밝힌 UAV 군집 GNSS 스푸핑 방어의
 
 - [[decentralized-swarm-gps-denied]] — GPS 거부 환경 분산 스웜 제어
 - [[swarm-coordination]] — 드론 군집 협조 제어 일반
+
+## 📰 최근 관련 소식
+- 불법드론 최다 고리, RF스캐너 늘려 사각지대 줄인다 (전기신문, Fri, 02 Oc) — https://news.google.com/rss/articles/CBMibEFVX3lxTFAxRkRPOVNNbTNHNDBMcWdrNXhkRVJWeHk1SmhhYmxHdFk2ZVpqVjBpWDZOX011ZGJsaWFpX0FhdVhBRHVQQm1CandhNnhWa29wd0NXNmYxdXJhMmdkNW40OGIwRkFjS1JfaHhoONIBcEFVX3lxTE5Ra2Rud2FIQWdEVHZ1S21KMnRqMk5mYjF4eHhubEstamxvcXFoLUlOb1RlR1REU0h6QjZJVjl0bXZMZU5na2JaS1BZQ1d2SlQ1NlA2cUlCYlR1UGJ1TXZBQmV6R3BrdVZBaC0wUUh5bFY?oc=5

@@ -3,7 +3,7 @@ id: idea-003
 title: "SkyJEPA와 DroneWAM 직접 비교: 제어용 JEPA 세계모델을 내비게이션 과제로 전이했을 때의 성능"
 status: draft
 created: 2026-09-30
-updated: 2026-09-30
+updated: 2026-10-01
 gaps: [GAP-008]
 sources: [inbox/processed/fetch-2026-09-30-arxiv-dronewam-efficient-world-action-model-for-drone-visual-navig.md, inbox/processed/fetch-2026-07-30-arxiv-skyjepa-learning-long-horizon-world-models-for-zero-shot-sim.md]
 novelty_confidence: 0.35
@@ -74,6 +74,12 @@ JEPA 구조"와 "내비게이션 특화 JEPA 구조"는 각기 다른 축(정확
 
 2026-09 근거 2편([[skyjepa-world-models]], [[dronewam-efficient-world-action-model]]) → 신규
 생성. SkyJEPA 근거의 출처 정합성 문제로 낮은 확신 등급 부여. 재평가 대상 없음(첫 등재).
+
+2026-10 재평가: concepts/skyjepa-world-models.md 재확인 결과 sources: [] · confidence: medium ·
+"needs recapture" 노트가 그대로 남아 있어 선행조건 1(원문 대조) 미해소. DroneWAM 저장소
+(github.com/1e12Leon/DroneWAM)도 concepts/dronewam-efficient-world-action-model.md 기준 "코드와
+데이터는 공개 예정"으로 여전히 미공개 — 선행조건 2도 미해소. 두 선행조건 모두 미충족이므로
+novelty_confidence 0.35 유지, 실행 착수 보류 권고 유지.
 
 ## Minimal validation plan
 

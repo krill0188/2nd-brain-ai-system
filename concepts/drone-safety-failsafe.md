@@ -1,10 +1,10 @@
 ---
 title: Drone Safety & Failsafe
 created: 2026-07-27
-updated: 2026-07-27
+updated: 2026-10-05
 type: concept
 tags: [drone, drone-sw, safety, failsafe, RTL, geofence]
-sources: [raw/articles/px4-basic-concepts.md, raw/articles/px4-flight-modes-dev.md]
+sources: [raw/articles/px4-basic-concepts.md, raw/articles/px4-flight-modes-dev.md, raw/papers/_unclassified/전기-추진-시스템을-이용하는-고정익-무인기를-위한-복귀-가능-여부-판단-로직-설계.md]
 confidence: high
 domain: flight-control
 contested: false
@@ -132,8 +132,16 @@ mode_req_manual_control
 - [ ] GPS 신호 품질
 - [ ] 고도/속도 제한 준수
 
+## 예측형 복귀 가능 판단 (KCI 2026)
+
+고정된 배터리 임계값 대신, 복귀점까지의 수직·수평 비행 거리로 예상 에너지 소모를 계산하고 도착 시 잔여 전압을 예측해
+RTB 가능 여부를 판단하는 로직이 전기 추진 고정익 UAV용으로 제안되었다. 예측 잔여 전압이 기준 이하이면 복귀점을
+동적으로 조정한다(비행시험 비교 수치는 초록 절단으로 미확인).^[raw/papers/_unclassified/전기-추진-시스템을-이용하는-고정익-무인기를-위한-복귀-가능-여부-판단-로직-설계.md]
+[[kci-fixed-wing-return-feasibility-logic]], [[drone-power-battery]] 참조.
+
 ## 관련 개념
 
+- [[kci-fixed-wing-return-feasibility-logic]] — 전압 예측 기반 복귀 가능 판단
 - [[px4-flight-modes]] — 비행 모드와 failsafe 연동
 - [[px4-offboard-control]] — Offboard 안전 고려사항
 - [[swarm-coordination]] — 멀티 기체 안전

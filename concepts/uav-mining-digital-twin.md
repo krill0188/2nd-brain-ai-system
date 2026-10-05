@@ -1,10 +1,10 @@
 ---
 title: "UAV Object Detection for Mining Industrial Metaverse"
 created: 2026-08-24
-updated: 2026-08-24
+updated: 2026-10-05
 type: concept
 tags: [drone, ai-autonomy, lidar, digital-twin, mining, ops-mission]
-sources: [inbox/fetch-2026-08-24-arxiv-uav-object-detection-and-positioning-in-a-mining-industrial-.md]
+sources: [inbox/fetch-2026-08-24-arxiv-uav-object-detection-and-positioning-in-a-mining-industrial-.md, raw/papers/_unclassified/건설현장-드론-포인트클라우드와-bim-간의-convex-hull-기반-자동-정합-방안.md, raw/papers/_unclassified/bim-모델과의-정합을-통한-드론-기반-포인트클라우드에서-구조부재-추출-방안.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -54,6 +54,7 @@ An integrated system architecture combining UAV-based sensing, LiDAR terrain mod
 - [[gnn-uav-anomaly-detection]] — Anomaly detection for UAV inspection
 - [[uav-multispectral-glint-correction]] — Multispectral imaging correction
 - [[ops-mission]] — Drone operational missions
+- [[kci-drone-pointcloud-bim-registration-extraction]] — 건설현장 드론 점군–BIM 정합·부재 추출(현장 디지털 트윈의 지오레퍼런싱 측면, 해석)^[raw/papers/_unclassified/건설현장-드론-포인트클라우드와-bim-간의-convex-hull-기반-자동-정합-방안.md]^[raw/papers/_unclassified/bim-모델과의-정합을-통한-드론-기반-포인트클라우드에서-구조부재-추출-방안.md]
 
 ## Source
 

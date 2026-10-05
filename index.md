@@ -3,7 +3,7 @@
 > Complete catalog of active canonical pages. Each entry is a wikilink followed by
 > a one-line summary, sorted alphabetically within its section.
 >
-|> Total pages: 452
+|> Total pages: 489
 ## Entities
 - [[qgroundcontrol-v5-1-0]] — QGroundControl v5.1.0 릴리스 후보 기록.
 |- [[avidrone]] — 캐나다 헤비리프트 드론 기업, DARPA Lift Challenge 우승.
@@ -69,6 +69,10 @@
 - [[wingcopter]] — 독일 드론 제조사, 전술 정찰 eVTOL "Wingcopter 262" 공개 (2026-09).
 - [[dji-sdr-transmission-2]] — DJI 전문 촬영용 4K HDR 무선 영상 전송 시스템 (2026-09-18 출시).
 - [[wingtraray]] — Wingtra VTOL 측량 드론, EU 드론 포트 C3/C6 클래스 인증 획득 (2026-09).
+- [[powerus]] — 미국 자율 드론 시스템 기업, Aureus Greenway Holdings와 합병 후 나스닥 상장 (2026-10).
+- [[robin-radar]] — 네덜란드 델프트 C-UAS 레이더 제조사, 신규 본사로 역량 3배 확대 (2026-09).
+- [[digital-force-technologies]] — JIATF-401 대드론 IDIQ 5억 달러 수주 방어 기술 기업 (2026-09).
+- [[smart-shooter]] — SMASH 대드론 시스템 제조사, JIATF-401 IDIQ 최대 1.5억 달러 수주 (2026-09).
 
 ## Concepts
 |- [[drone-rice-heading-detection]] — 드론 기반 벼 출수 판별 시스템(YOLOv11).
@@ -454,6 +458,39 @@
 - [[dronewam-efficient-world-action-model]] — DroneWAM: JEPA 기반 드론 시각 내비게이션 world-action model (arXiv).
 - [[yolo-v8-4-166]] — YOLO v8.4.166 릴리스 (2026-09-29), 데이터셋 처리·예측 출력 신뢰성 개선.
 - [[diu-low-cost-isr-challenge]] — DIU 저비용 ISR 드론 조달 공모전, 1억 달러 규모 (2026-09).
+- [[yolo-v8-4-170]] — YOLO v8.4.170 릴리스, 디스크 캐시 파일명 복원 및 vid_stride 문서화 (2026-09-30).
+- [[temporal-cascading-quadrotor-mpc]] — UZH T-RO 2026: 쿼드로터 MPC 계획-제어 시간축 캐스케이딩.
+- [[agile-vision-multi-uav-state-estimation]] — FEE-CTU: 민첩 다중 UAV 비전 기반 pose-aware 상태 추정.
+- [[kci-ground-target-tracking-retinanet-kalman]] — RetinaNet+칼만필터 기반 감시 드론 지상 표적 추적(KCI).
+- [[kci-drone-detection-cfar-feature-postprocessing]] — 낮은 SCR 환경 CFAR 특징 기반 드론 탐지 후처리(KCI).
+- [[kci-russia-ukraine-war-drone-terror]] — 러우전쟁 드론 기술의 테러 전용 가능성과 한국 대테러정책 시사점(KCI).
+- [[kci-cepstrum-single-microphone-drone-distance]] — 켑스트럼 기반 단일 마이크로폰 드론 거리 추정(KCI).
+- [[kci-critical-facility-intrusion-detection-drone-ai]] — AI 기반 드론 중요시설 비인가 침입 탐지 개념설계(5단계 파이프라인).
+- [[kci-natural-monument-plant-ndvi-ndre-seasonal]] — 천연기념물 식물유산 기능형별 NDVI·NDRE 계절 변동 분석(cubic spline).
+- [[kci-rok-army-drone-acquisition-capability]] — 러우전쟁·미군 사례 기반 육군 드론 획득 4대 필수 KPP 연구.
+- [[kci-utm-k-flight-path-error-regional-analysis]] — 5개 지역 드론 배송 실증 UTM-K 비행경로 오차 분석.
+- [[mavsdk-v4-0-3]] — MAVSDK v4.0.3 패치 릴리스, Python/Kotlin 핸들 수명 버그 수정 (2026-10-01).
+- [[qgroundcontrol-v5-1-5]] — QGroundControl v5.1.5 안정 릴리스, MAVLink enum·미션 복원 등 다수 버그 수정 (2026-10-01).
+- [[yolo-v8-4-171]] — YOLO v8.4.171 릴리스, AMD ROCm/MIGraphX 지원 추가 (2026-10-01).
+- [[kci-lidar-slam-indoor-battery-monitoring-iot-uav]] — LiDAR-SLAM·LoRa 기반 실내 배터리 저장시설 모니터링 IoT-UAV 플랫폼(KCI, confidence low).
+- [[kci-uav-rainfall-induced-terrain-change-analysis]] — UAV LiDAR DTM·TIN 이종자료 비교와 LoD 0.84 m 기반 강우 유발 지형변화 분석(KCI).
+- [[kci-multisensor-fusion-counter-drone-identification-engagement]] — 증거이론 이종센서 융합 대드론 식별 신뢰도·교전영역 활용률 요구성능 분석(KCI).
+- [[kci-tank-zone-vulnerability-selective-counter-drone-protection]] — 전차 8개 기능구역·3개 위협유형 취약도 평가 기반 선택적 대드론 방호 프레임워크(KCI).
+- [[faa-airspace-classes-drone-authorization]] — FAA 공역 Class A–G별 드론 승인 요건과 LAANC 절차(UAV Coach 자막 기반).
+- [[drone-news-2026-10-03]] — 2026년 10월 3일 드론 업계 주요 소식(Echodyne 대드론, DHS C-UAS 시험, XPRIZE Dryad, Swamp Gas).
+- [[yolo-v8-4-172]] — YOLO v8.4.172 릴리스, OBB 크롭 회전 정렬 및 학습·export 신뢰성 개선 (2026-10-03).
+- [[betafpv-meteor65-pro-ii]] — BetaFPV Meteor65 Pro II 1S 브러시리스 휘프 리뷰(Painless360 자막 기반, confidence low).
+- [[kci-uav-mec-clustering-offloading]] — UAV-MEC 지상/하이브리드 클러스터링 비교와 PSO-ACO 멀티에이전트 오프로딩(KCI, confidence low).
+- [[kci-uav-ground-secrecy-capacity-closed-form]] — UAV-지상 음영 채널 SPSC 확률의 Meijer G 폐형 표현(KCI, confidence low).
+- [[kci-watershed-individual-tree-delineation-uav-lidar-chm]] — UAV LiDAR CHM Watershed 개체목 분할 최적 해상도·임계법 조건(KCI, 초록 절단).
+- [[yolo-v8-4-173]] — YOLO v8.4.173 릴리스, AMD Versal AI Edge Gen 2 NPU용 xilinx export 추가 (2026-10-04).
+- [[mavsdk-v4-0-4]] — MAVSDK v4.0.4 릴리스, discovery 수정 (2026-10-04).
+- [[opendrone-open-source-hardware]] — OpenDrone 완전 오픈소스 FC·ESC·프레임 프로젝트와 ESC 설계 논점(인터뷰 자막, confidence low).
+- [[betafpv-p1-digital-fpv-system]] — BETAFPV P1 저가 디지털 FPV 베타 하드웨어 초기 리뷰(자막 기반, confidence low).
+- [[hequav-k11-dual-sensor-gimbal]] — HEQUAV K11 듀얼 센서 짐벌·Scepter 15 사양과 PX4 통합 예고(자막 기반, confidence low).
+- [[kci-drone-pointcloud-bim-registration-extraction]] — 드론 점군–BIM Convex Hull 정합 및 구조부재 추출 KCI 2건(초록 절단).
+- [[kci-uav-battery-ecm-parameter-estimation]] — 가우스과정 회귀 기반 UAV 배터리 ECM 파라미터 추정(KCI, MAE 약 0.3 V).
+- [[kci-fixed-wing-return-feasibility-logic]] — 잔여 전압 예측 기반 고정익 복귀 가능 여부 판단 로직(KCI, 초록 절단).
 
 ## Comparisons
 

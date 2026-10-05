@@ -1,7 +1,7 @@
 ---
 title: "RIS-Aided Robust Secure UAV Communications"
 created: 2026-08-20
-updated: 2026-08-20
+updated: 2026-10-04
 type: concept
 tags: [datalink, comms-protocol, ris, security]
 sources: [raw/papers/comms-protocol/ris-secure-uav-communications.md]
@@ -58,6 +58,7 @@ domain: comms-protocol
 - [[datalink-communication]] — 드론 데이터링크 통신 기술
 - [[fluid-antenna-system]] — FAS 기반 UAV 통신
 - [[hybrid-beamforming-ntn]] — 비지상 네트워크 하이브리드 빔포밍
+- [[kci-uav-ground-secrecy-capacity-closed-form]] — 음영 UAV-지상 채널 SPSC 폐형 표현(PLS 평가 지표)
 - [[chaotic-map-uav-secure-comms]] — 카오스 맵 기반 UAV 보안 통신
 
 ## 출처

@@ -42,3 +42,6 @@ note: "Raw source not preserved in repo — found during 2026-08-10 provenance a
 ## 출처
 
 - Wang et al., "Inverse-Reinforcement Learning Enabled Digital Twin for Intent-based Drone Networks", arXiv:2607.17186, 2026.
+
+## 📰 최근 관련 소식
+- [Joshua Bardwell] $100 for a digital HD vRX. What's the catch? // BETAFPV P1 VRX REVIEW (youtube.com, 2026-10-04) — https://www.youtube.com/watch?v=5zjWdQfQGmE

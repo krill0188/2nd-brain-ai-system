@@ -1,10 +1,10 @@
 ---
 title: Swarm Drone Coordination
 created: 2026-07-27
-updated: 2026-08-06
+updated: 2026-10-03
 type: concept
 tags: [swarm, drone-ai, multi-drone, formation, coordination]
-sources: [raw/articles/mastervault-recon-swarm.md, raw/articles/mastervault-swarm-architecture.md]
+sources: [raw/articles/mastervault-recon-swarm.md, raw/articles/mastervault-swarm-architecture.md, raw/papers/swarm/occupation-measure-mean-field-control-optimization-over-measures-and-frank-wolfe.md]
 confidence: medium
 domain: ai-autonomy
 contested: false
@@ -127,6 +127,10 @@ Tools/simulation/gazebo-classic/sitl_multiple_run.sh -n 3
 - [[uav-swarm-target-localization]] — 스웜 표적 위치추정
 - [[cross-layered-medical-drone-coordination]] — 의료물자 배송용 다중 드론 조율
 - [[uav-swarm-air-ground-isac]] — 교차 지역 협력 기반 Air-Ground ISAC 군집
+
+## 대규모 군집 최적화: OM-MFC (2026)
+
+Yu·You·Pei의 occupation-measure mean-field control(OM-MFC)은 개별 에이전트가 아니라 에이전트 집단의 **점유측도(occupation measure)** 공간에서 군집의 진화를 모델링하고, 대규모 군집 제어를 측도 위의 무한차원 최적화 문제로 정식화한다. 상호작용 커널이 positive-semidefinite 조건을 만족하면 문제가 볼록해지며, Frank–Wolfe(FW) 및 fully-corrective 변형(FCFW)은 반복마다 고전적 최적제어 하위문제로 환원된다. 볼록성·최적해 존재·수렴 보장이 이론적으로 제시되었고, UAV 군집·위성 군집 수치실험에서 고차원·제약 환경의 확장성을 보였다고 보고한다.^[raw/papers/swarm/occupation-measure-mean-field-control-optimization-over-measures-and-frank-wolfe.md] 수집된 것은 초록뿐이라 실험 수치와 비교 기준선은 확인하지 못했다. 개체 단위 임무할당 접근인 [[kci-llm-cbba-swarm-task-allocation]]과는 달리 집단 분포 수준에서 다루는 접근으로, 에이전트 수가 매우 큰 경우의 대안 후보로 기록한다.
 
 ## 📰 최근 관련 소식
 - 충남 첫 ‘국가 지정 드론공원’ 탄생…당진서 비행·교육·대회 한 번에 (녹색경제신문, Tue, 04 Au) — https://news.google.com/rss/articles/CBMiaEFVX3lxTE9ySFBDbWVDbGdTd3ZTTVlfUWhBYTRDNURtZW8zc2FmLW9CZHZmcF8wcEdFa2FfOVpabEgzM1VjV3lEUFJ3V0pteGtDLWlDN3VEYmhmMDdJQTI1bXl6anNrRW9XTjFxdDk2?oc=5

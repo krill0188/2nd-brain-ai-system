@@ -1,7 +1,7 @@
 ---
 title: UAV Task Offloading for Traffic Monitoring
 created: 2026-08-14
-updated: 2026-08-14
+updated: 2026-10-04
 type: concept
 tags: [drone, ops-mission, ai-agent]
 sources: [inbox/fetch-2026-08-14-crossref-dynamic-adaptive-task-offloading-for-uav-based-road-traffic-.md]
@@ -35,6 +35,7 @@ UAV 기반 도로 교통 모니터링 시스템에서의 동적 적응형 태스
 
 - [[ops-mission]] — 드론 운용/미션 도메인 개요
 - [[drone-ai-agents]] — 자율 의사결정, 다중 에이전트 협력
+- [[kci-uav-mec-clustering-offloading]] — UAV-MEC 오프로딩 2026 KCI 사례(지상 vs 하이브리드 MEC, PSO-ACO)
 - [[computing-continuum]] — 컴퓨팅 연속체 기반 스마트 드론 애플리케이션
 
 ## 📰 최근 관련 소식

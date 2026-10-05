@@ -1,11 +1,11 @@
 ---
 title: "대한민국 육군의 드론 획득 필수능력 연구: 러-우 전쟁 사례와 미군 전략 분석을 바탕으로"
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-03
 type: concept
 domain: ops-mission
 tags: [drone, ops-mission]
-sources: [inbox/processed/fetch-2026-10-02-kci-대한민국-육군의-드론-획득-필수능력-연구-러-우-전쟁-사례와-미군-전략-분석을-바탕으로.md]
+sources: [inbox/processed/fetch-2026-10-02-kci-대한민국-육군의-드론-획득-필수능력-연구-러-우-전쟁-사례와-미군-전략-분석을-바탕으로.md, raw/papers/_unclassified/대한민국-육군의-드론-획득-필수능력-연구-러-우-전쟁-사례와-미군-전략-분석을-바탕으로.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -45,3 +45,5 @@ contradictions: []
 - [[kci-russia-ukraine-war-drone-terror]] — 러우전쟁 드론 기술의 확산과 한국 대테러정책 시사점
 - [[kci-manned-unmanned-teaming-defensive-air-ops]] — 방어적 대공/엄호 작전 유·무인 복합 편대
   임무 효과도 분석
+- [[kci-tank-zone-vulnerability-selective-counter-drone-protection]] — 전차 대드론 방호자원 배분과 제대 간 기능분담
+- [[kci-multisensor-fusion-counter-drone-identification-engagement]] — 대드론 센서융합 요구성능 분석방법

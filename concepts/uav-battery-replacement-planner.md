@@ -1,10 +1,10 @@
 ---
 title: "UAV Battery Replacement Mission Planner"
 created: 2026-08-19
-updated: 2026-08-19
+updated: 2026-10-05
 type: concept
 tags: [drone, ops-mission, battery, mission-planning]
-sources: [inbox/fetch-2026-08-19-arxiv-mission-planner-for-uav-battery-replacement.md]
+sources: [inbox/fetch-2026-08-19-arxiv-mission-planner-for-uav-battery-replacement.md, raw/papers/_unclassified/소형-무인항공기용-리튬이온-배터리-등가회로모델-파라미터-추정에-관한-연구.md]
 confidence: high
 contested: false
 contradictions: []
@@ -36,6 +36,7 @@ domain: ops-mission
 ## 관련 개념
 
 - [[drone-power-battery]] — 드론 배터리 및 전원 관리
+- [[kci-uav-battery-ecm-parameter-estimation]] — 에너지 상태 모니터링에 쓸 수 있는 ECM 기반 상태추정 모델(해석)^[raw/papers/_unclassified/소형-무인항공기용-리튬이온-배터리-등가회로모델-파라미터-추정에-관한-연구.md]
 - [[mission-planning]] — 미션 계획
 - [[swarm-coordination]] — 군집 협업
 

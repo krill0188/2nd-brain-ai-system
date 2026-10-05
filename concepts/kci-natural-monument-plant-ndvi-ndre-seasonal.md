@@ -1,11 +1,11 @@
 ---
 title: "다분광 드론 영상 기반 천연기념물 식물유산의 기능형별 NDVI·NDRE 계절 변동 분석"
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-03
 type: concept
 domain: ops-mission
 tags: [drone, ops-mission]
-sources: [inbox/processed/fetch-2026-10-02-kci-다분광-드론-영상-기반-천연기념물-식물유산의-기능형별-ndvindre-계절-변동-분석.md]
+sources: [inbox/processed/fetch-2026-10-02-kci-다분광-드론-영상-기반-천연기념물-식물유산의-기능형별-ndvindre-계절-변동-분석.md, raw/papers/_unclassified/다분광-드론-영상-기반-천연기념물-식물유산의-기능형별-ndvindre-계절-변동-분석.md]
 confidence: medium
 contested: false
 contradictions: []

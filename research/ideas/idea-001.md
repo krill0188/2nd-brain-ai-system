@@ -3,7 +3,7 @@ id: idea-001
 title: "센서·상태추정·데이터 기반 3중 융합 드론 이상탐지: 융합 조합별 오탐률/누락률 비교 검증"
 status: draft
 created: 2026-09-30
-updated: 2026-09-30
+updated: 2026-10-01
 gaps: [GAP-003]
 sources: [raw/papers/_unclassified/드론-이상-징후-탐지-방법-연구-동향-및-개선-방안-연구.md]
 novelty_confidence: 0.55
@@ -62,6 +62,11 @@ GAP-003(드론 이상 징후 탐지: 센서·상태추정·데이터 기반 융�
 ## Evidence Status
 
 2026-09 근거 1편([[drone-anomaly-detection-survey]]) → 신규 생성. 재평가 대상 없음(첫 등재).
+
+2026-10 재평가: idea 생성 이후(2026-09-30 daily ingest, 730e1a8) raw/inbox/concepts/gaps 어디에도
+GAP-003 관련 신규 근거 없음(`git log --since=2026-09-30 -- raw inbox concepts entities comparisons
+queries` 결과 해당 배치 커밋 이후 변경 0건). 국내외 융합 이상탐지 구현 논문 게재 여부(Threat to
+novelty)도 미확인 상태 유지 → novelty_confidence 0.55 유지.
 
 ## Minimal validation plan
 

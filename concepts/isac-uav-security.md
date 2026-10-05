@@ -1,7 +1,7 @@
 ---
 title: "ISAC-UAV System Physical-Layer Security"
 created: 2026-08-19
-updated: 2026-08-19
+updated: 2026-10-04
 type: concept
 tags: [drone, datalink, isac, security, beamforming]
 sources: [inbox/fetch-2026-08-19-arxiv-improving-physical-layer-security-in-isac-uav-system-beamfor.md]
@@ -39,6 +39,7 @@ domain: comms-protocol
 - [[cross-layer-attacks-uav-5g]] — UAV C2 보안 공격
 - [[secure-swarm-uav-communications]] — 안전한 UAV 군집 통신
 - [[uav-isac-cross-region]] — 교차 지역 ISAC
+- [[kci-uav-ground-secrecy-capacity-closed-form]] — 음영 UAV-지상 채널 SPSC 폐형 표현(PLS 평가 지표)
 
 ## 참고
 

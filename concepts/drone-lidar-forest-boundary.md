@@ -1,10 +1,10 @@
 ---
 title: "드론 라이다를 이용한 임야 현황경계 추출 및 분석"
 created: 2026-08-19
-updated: 2026-08-19
+updated: 2026-10-05
 type: concept
 tags: [drone, ops-mission, lidar, mapping, survey]
-sources: [inbox/fetch-2026-08-19-kci-드론-라이다를-이용한-임야-현황경계-추출-및-분석.md]
+sources: [inbox/fetch-2026-08-19-kci-드론-라이다를-이용한-임야-현황경계-추출-및-분석.md, raw/papers/_unclassified/건설현장-드론-포인트클라우드와-bim-간의-convex-hull-기반-자동-정합-방안.md]
 confidence: high
 contested: false
 contradictions: []
@@ -42,6 +42,11 @@ domain: ops-mission
 - [[rtk-gps-precise-landing]] — RTK GPS 차등 측위
 - [[visual-positioning-odometry]] — GPS 미가용 환경 위치 추정
 - [[dji-terra]] — DJI 매핑 소프트웨어
+
+## 관련 페이지
+
+- [[kci-watershed-individual-tree-delineation-uav-lidar-chm]] — UAV LiDAR CHM Watershed 개체목 분할 최적 조건(2026 KCI)
+- [[kci-drone-pointcloud-bim-registration-extraction]] — 드론 점군을 기준 모델(BIM)에 정합하는 접근; 임야·건설 현장의 점군 활용 대비^[raw/papers/_unclassified/건설현장-드론-포인트클라우드와-bim-간의-convex-hull-기반-자동-정합-방안.md]
 
 ## 참고
 

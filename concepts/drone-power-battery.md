@@ -1,10 +1,10 @@
 ---
 title: Drone Power & Battery
 created: 2026-07-27
-updated: 2026-10-02
+updated: 2026-10-05
 type: concept
 tags: [drone-hw, battery, power, ESC, motor, LiPo]
-sources: [raw/articles/px4-basic-concepts.md, raw/articles/px4-hardware-overview.md]
+sources: [raw/articles/px4-basic-concepts.md, raw/articles/px4-hardware-overview.md, raw/papers/_unclassified/소형-무인항공기용-리튬이온-배터리-등가회로모델-파라미터-추정에-관한-연구.md, raw/papers/_unclassified/전기-추진-시스템을-이용하는-고정익-무인기를-위한-복귀-가능-여부-판단-로직-설계.md]
 confidence: high
 domain: hardware
 contested: false
@@ -170,9 +170,18 @@ SMBus/I2C 통신을 통한 지능형 배터리 관리.
 anode) 기반 셀이 부상하고 있다. 자세한 사양과 미국 정부 생산 보조금 동향은
 [[amprius-sicore-battery]] 참조.
 
+## 배터리 모델링과 잔여 에너지 예측 (KCI 2026)
+
+소형 UAV용 Li-ion 등가회로모델(ECM)은 평형전위와 총 내부저항 파라미터의 정확도에 좌우되며, 가우스과정 회귀 대리모델로
+30~50 V 검증 데이터에서 MAE 약 0.3 V·MAPE 1% 미만을 보고한 연구가 있다(저자 주장, 초록 기준).^[raw/papers/_unclassified/소형-무인항공기용-리튬이온-배터리-등가회로모델-파라미터-추정에-관한-연구.md]
+고정익 UAV에서는 복귀점까지의 예상 에너지 소모로 도착 시 잔여 전압을 예측해 복귀 가능 여부를 판단하는 로직이 제안되었다.
+^[raw/papers/_unclassified/전기-추진-시스템을-이용하는-고정익-무인기를-위한-복귀-가능-여부-판단-로직-설계.md] 단순 전압 임계값 failsafe를 넘어서는 예측형 접근이며, 두 논문의 결합은 해석이다. 상세는
+[[kci-uav-battery-ecm-parameter-estimation]], [[kci-fixed-wing-return-feasibility-logic]] 참조.
+
 ## 관련 개념
 
 - [[drone-safety-failsafe]] — 배터리 기반 failsafe
+- [[kci-uav-battery-ecm-parameter-estimation]] — ECM 파라미터 추정(가우스과정 회귀)
 - [[flight-controller-hardware]] — Power module 선택
 - [[dronecan-protocol]] — CAN 기반 ESC
 - [[amprius-sicore-battery]] — 차세대 실리콘-음극 셀(500 Wh/kg), LiPo 대비 1.5–2배 비행시간 연장 가능성

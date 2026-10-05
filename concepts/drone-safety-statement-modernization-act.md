@@ -22,3 +22,6 @@ contradictions: []
 - [[drone-regulations]] — 드론 규제 개요
 - [[dfend-counter-drone-worldcup]] — 월드컵 대드론 운용
 - [[drone-news-regulations]] — 드론 규제 뉴스
+
+## 📰 최근 관련 소식
+- [quadmovr] 160g 5" LOS drone (youtube.com, 2026-10-04) — https://www.youtube.com/watch?v=akWfG1csYGA

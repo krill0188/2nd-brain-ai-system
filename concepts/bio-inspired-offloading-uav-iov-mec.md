@@ -1,7 +1,7 @@
 ---
 title: "Bio-Inspired Offloading Algorithms in a UAV-Assisted IoV Network with MEC"
 created: 2026-09-29
-updated: 2026-09-30
+updated: 2026-10-04
 type: concept
 domain: comms-protocol
 tags: [drone, drone-ai, datalink]
@@ -45,6 +45,7 @@ UAV를 IoV(차량 사물인터넷)의 이동형 MEC 노드로 활용해 신호�
 
 ## 관련 개념
 
+- [[kci-uav-mec-clustering-offloading]] — 2026 KCI UAV-MEC 클러스터링 비교·PSO-ACO 멀티에이전트 오프로딩(후속 사례)
 - [[uav-task-offloading-traffic-monitoring]] — UAV 기반 교통 모니터링 태스크 오프로딩 연구
 - [[datalink-communication]] — 드론 데이터링크 및 무선 통신
 - [[drone-ai-agents]] — 자율 의사결정, 강화학습 기반 드론 에이전트
