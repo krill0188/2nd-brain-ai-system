@@ -23,6 +23,135 @@
     ".ua/news-feed.json",
     ".ua/self-update-state.json"
   ],
-  "approved_source_versions": [],
+  "approved_source_versions": [
+    {
+      "path": "comparisons/knowledge-tool-roles.md",
+      "source_commit": "ef51bd1623766ce97a0c034470f957a31b375462"
+    },
+    {
+      "path": "concepts/6g-isac-matlab-usrp.md",
+      "source_commit": "ef51bd1623766ce97a0c034470f957a31b375462"
+    },
+    {
+      "path": "concepts/ai-knowledge-workflow.md",
+      "source_commit": "ef51bd1623766ce97a0c034470f957a31b375462"
+    },
+    {
+      "path": "concepts/ai-personal-knowledge-management.md",
+      "source_commit": "ef51bd1623766ce97a0c034470f957a31b375462"
+    },
+    {
+      "path": "concepts/china-drone-export-controls.md",
+      "source_commit": "ef51bd1623766ce97a0c034470f957a31b375462"
+    },
+    {
+      "path": "concepts/dame-net-uav-image-restoration.md",
+      "source_commit": "ef51bd1623766ce97a0c034470f957a31b375462"
+    },
+    {
+      "path": "concepts/dji-mic-mini-2s.md",
+      "source_commit": "ef51bd1623766ce97a0c034470f957a31b375462"
+    },
+    {
+      "path": "concepts/dji-osmo-nano-cinematic.md",
+      "source_commit": "ef51bd1623766ce97a0c034470f957a31b375462"
+    },
+    {
+      "path": "concepts/dji-osmo-nano.md",
+      "source_commit": "ef51bd1623766ce97a0c034470f957a31b375462"
+    },
+    {
+      "path": "concepts/drone-delivery-news.md",
+      "source_commit": "ef51bd1623766ce97a0c034470f957a31b375462"
+    },
+    {
+      "path": "concepts/drone-news-hardware.md",
+      "source_commit": "ef51bd1623766ce97a0c034470f957a31b375462"
+    },
+    {
+      "path": "concepts/drone-news-ops.md",
+      "source_commit": "ef51bd1623766ce97a0c034470f957a31b375462"
+    },
+    {
+      "path": "concepts/drone-news-regulations.md",
+      "source_commit": "ef51bd1623766ce97a0c034470f957a31b375462"
+    },
+    {
+      "path": "concepts/drone-rice-heading-detection.md",
+      "source_commit": "ef51bd1623766ce97a0c034470f957a31b375462"
+    },
+    {
+      "path": "concepts/drone-wall-defense-system.md",
+      "source_commit": "ef51bd1623766ce97a0c034470f957a31b375462"
+    },
+    {
+      "path": "concepts/drone-wildfire-detection-network-optimization.md",
+      "source_commit": "ef51bd1623766ce97a0c034470f957a31b375462"
+    },
+    {
+      "path": "concepts/dronuum-computing-continuum.md",
+      "source_commit": "ef51bd1623766ce97a0c034470f957a31b375462"
+    },
+    {
+      "path": "concepts/faa-12m-drone-research-awards-2026-10.md",
+      "source_commit": "ef51bd1623766ce97a0c034470f957a31b375462"
+    },
+    {
+      "path": "concepts/faa-nextgen-drone-integration.md",
+      "source_commit": "ef51bd1623766ce97a0c034470f957a31b375462"
+    },
+    {
+      "path": "concepts/fcc-drone-approval-revocation.md",
+      "source_commit": "ef51bd1623766ce97a0c034470f957a31b375462"
+    },
+    {
+      "path": "concepts/fcc-dronus-k500l-conditional-approval.md",
+      "source_commit": "ef51bd1623766ce97a0c034470f957a31b375462"
+    },
+    {
+      "path": "concepts/kci-critical-facility-illegal-drone-counter-uas-zones.md",
+      "source_commit": "ef51bd1623766ce97a0c034470f957a31b375462"
+    },
+    {
+      "path": "concepts/kci-critical-facility-intrusion-detection-drone-ai.md",
+      "source_commit": "ef51bd1623766ce97a0c034470f957a31b375462"
+    },
+    {
+      "path": "concepts/kci-sejong-counter-drone-governance.md",
+      "source_commit": "ef51bd1623766ce97a0c034470f957a31b375462"
+    },
+    {
+      "path": "concepts/kci-uav-multispectral-apple-ssc-prediction.md",
+      "source_commit": "ef51bd1623766ce97a0c034470f957a31b375462"
+    },
+    {
+      "path": "concepts/kci-utm-k-flight-path-error-regional-analysis.md",
+      "source_commit": "ef51bd1623766ce97a0c034470f957a31b375462"
+    },
+    {
+      "path": "concepts/michigan-aam-projects.md",
+      "source_commit": "ef51bd1623766ce97a0c034470f957a31b375462"
+    },
+    {
+      "path": "concepts/michigan-medical-drone-delivery-pilot-phase2.md",
+      "source_commit": "ef51bd1623766ce97a0c034470f957a31b375462"
+    },
+    {
+      "path": "concepts/uav-multispectral-glint-correction.md",
+      "source_commit": "ef51bd1623766ce97a0c034470f957a31b375462"
+    },
+    {
+      "path": "concepts/wing-walmart-denver-seattle-2027.md",
+      "source_commit": "ef51bd1623766ce97a0c034470f957a31b375462"
+    },
+    {
+      "path": "raw/papers/_unclassified/pre-harvest-prediction-of-apple-soluble-solids-content-using-uav-based-multispec.md",
+      "source_commit": "ef51bd1623766ce97a0c034470f957a31b375462"
+    },
+    {
+      "path": "raw/papers/swarm/국내외-국가중요시설-대상-불법-드론-적발-사례를-통한-대드론-체계-개선-방안-연구.md",
+      "source_commit": "ef51bd1623766ce97a0c034470f957a31b375462"
+    }
+  ],
   "revoked_paths": []
 }
