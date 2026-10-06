@@ -37,3 +37,6 @@ contradictions: []
 - [[utm-system]] — 저고도 공역 드론 교통관리(UTM) 체계
 - [[kci-korea-airspace-eu-uspace]] — 드론 공역시스템 비교: 한국형 드론 공역시스템 vs EU U-space
 - [[drone-delivery-news]] — 드론 배송 실증·상용화 동향
+
+## 📰 최근 관련 소식
+- [Auterion] Nemyx Vertical Launch System | Auterion (youtube.com, 2026-10-05) — https://www.youtube.com/watch?v=ER0mUN0dv5U

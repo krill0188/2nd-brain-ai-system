@@ -1,7 +1,7 @@
 ---
 title: "AI 기반 드론을 활용한 중요시설 비인가 침입 탐지 연구"
 created: 2026-10-02
-updated: 2026-10-03
+updated: 2026-10-06
 type: concept
 domain: ai-autonomy
 tags: [drone, drone-ai]
@@ -34,6 +34,7 @@ contradictions: []
 
 - [[computer-vision-drone]] — 드론 컴퓨터 비전: YOLO, SLAM, 객체 추적 기반 기술
 - [[drone-ai-agents]] — 자율 의사결정 및 다중 에이전트 협력 아키텍처
+- [[kci-critical-facility-illegal-drone-counter-uas-zones]] — 같은 국가중요시설 대상 대드론 체계 개선안(억제·중첩 탐지식별·3지대 확장)
 
 ## 📰 최근 관련 소식
 - [멈춤보단 천천히라도] 블렌더를 활용한 애니메이션을 만들어보고 있어요 (youtube.com, 2026-10-02) — https://www.youtube.com/watch?v=A8f1DRuyE14

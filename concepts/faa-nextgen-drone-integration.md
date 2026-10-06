@@ -1,7 +1,7 @@
 ---
 title: "FAA NextGen Drone Integration"
 created: 2026-08-19
-updated: 2026-08-19
+updated: 2026-10-06
 type: concept
 domain: regulations
 tags: [drone, regulations, faa, nextgen, airspace, utm]
@@ -39,6 +39,7 @@ FAA releases NextGen fact sheet outlining National Airspace System changes and p
 - [[faa-section-2209-uafr]] — Fixed facility restrictions
 - [[uk-caa-bvlos-scale]] — UK BVLOS commercialization roadmap
 - [[dji-easa-sail-bvlos]] — EASA SAIL BVLOS approval
+- [[faa-12m-drone-research-awards-2026-10]] — NAS 통합을 지원하는 FAA $12M·19개 연구·시험 과제(탐지·회피, BVLOS 통신, 교통관리, 신원확인)
 
 ## Sources
 

@@ -72,3 +72,4 @@ contradictions: []
 - ‘마약왕’박왕열, 1억들여 ‘드론탈옥’ 준비했다 (munhwa.com, Tue, 15 Se) — https://news.google.com/rss/articles/CBMiUEFVX3lxTE42VXBqZ0g1ek9wSlZIa0ZWQ0hGdG5FbnhKRFhrUkY1YTNrWkJUd2I0TkpPS1FqMkYwUm5WTEYtcGU0MHZuRUdhUWgzMkhELU5R?oc=5
 - 스웨덴 방산기업 사브, 한국 신임대표에 스테판 엥스트룀 (드론매거진 뉴스, Sat, 03 Oc) — https://news.google.com/rss/articles/CBMiZEFVX3lxTFBJUlN6MHoxX3hMSURRYU0tMVZIM3JFUDlCT2RSWjFIaWFHZEN6UldCTUpHeXY1MkRlWjV6dnU3R3dNYjdneHNBTFJIeXdZcloybVItV3ZLYlRNc1habllTaXRoQzM?oc=5
 - 코리아스타트업포럼·한국대드론산업협회, 방산 스타트업 기술 ‘현장 검증’ 연결한다 (벤처스퀘어, Thu, 01 Oc) — https://news.google.com/rss/articles/CBMiT0FVX3lxTE1lLXlDT3pFUHoxdVBzSUhQa0t2cEtPbG5JNkNrZ1BPZXV4MDIxVEJkbXp0NDFLU0d0TDlRSGlQbmtvd3RYQlJGNk1GRHJCMmc?oc=5
+- [MATLAB] What Is Aerospace Toolbox? (youtube.com, 2026-10-05) — https://www.youtube.com/watch?v=C4zJCQj2Hro

@@ -1,7 +1,7 @@
 ---
 title: FCC Drone Approval Revocation Odyssey Robot
 created: 2026-08-13
-updated: 2026-08-13
+updated: 2026-10-06
 type: concept
 domain: regulations
 tags: [drone, regulations, fcc, supply-chain]
@@ -29,6 +29,7 @@ FCC가 Odyssey Robot LLC의 드론 및 리모트 컨트롤러에 대한 장비 �
 
 - [[fcc-drone-regulations]] — FCC 외국 제조 드론 규제
 - [[china-drone-export-controls]] — 중국 드론 수출 통제
+- [[fcc-dronus-k500l-conditional-approval]] — 반대 방향 사례: 현지 생산 조건으로 Covered List 예외를 받은 Dronus K500L
 
 ## 📰 최근 관련 소식
 - FCC Revokes Drone Approvals After U.S. Assembler Denies Any Connection (dronelife.com, Wed, 12 Au) — https://dronelife.com/2026/08/12/fcc-drone-approval-revocation-odyssey-robot/

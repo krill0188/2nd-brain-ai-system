@@ -1,10 +1,10 @@
 ---
 title: "Drone Wall 기반 대드론 방어체계"
 created: 2026-09-02
-updated: 2026-09-02
+updated: 2026-10-06
 type: concept
 tags: [drone, ai-autonomy, swarm, defense, cuas]
-sources: [inbox/fetch-2026-09-02-kci-droneto-drone-기반-drone-wall-개념을-적용한-대드론-방어체계-제안.md]
+sources: [inbox/fetch-2026-09-02-kci-droneto-drone-기반-drone-wall-개념을-적용한-대드론-방어체계-제안.md, raw/papers/swarm/국내외-국가중요시설-대상-불법-드론-적발-사례를-통한-대드론-체계-개선-방안-연구.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -34,6 +34,7 @@ Drone-to-Drone 운용 방식을 기반으로 한 Drone Wall 개념의 자율 대
 - [[swarm-coordination]] — 군집 비행 및 협업
 - [[drone-ai-agents]] — 자율 의사결정 시스템
 - [[lockheed-martin-morfius]] — 드론 스웜 대응 시스템
+- [[kci-critical-facility-illegal-drone-counter-uas-zones]] — FPV·군집 드론 대응을 위해 방호 기준 9.3 km의 3배 확장과 탐지-식별-대응 중첩을 제안한 사례 연구(초록 기준, 신뢰도 low) ^[raw/papers/swarm/국내외-국가중요시설-대상-불법-드론-적발-사례를-통한-대드론-체계-개선-방안-연구.md]
 
 ## 출처
 

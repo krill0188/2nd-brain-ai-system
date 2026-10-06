@@ -1,7 +1,7 @@
 ---
 title: "국가중요시설 초밀집지역의 대드론 거버넌스: 세종 국가상징구역 설계"
 created: 2026-09-16
-updated: 2026-10-01
+updated: 2026-10-06
 type: concept
 domain: regulations
 tags: [drone, regulations, ops-mission]
@@ -50,3 +50,4 @@ contradictions: []
 - [[kci-airport-drone-incident-location-reporting]] — 같은 학술지의 공항 드론 대응 연구
 - [[kci-counter-drone-hardkill-engagement-zone]] — 대드론 하드킬 교전영역 알고리즘
 - [[kci-russia-ukraine-war-drone-terror]] — 러우전쟁 드론 기술의 비국가행위자 테러 전용 가능성(위협 시나리오)
+- [[kci-critical-facility-illegal-drone-counter-uas-zones]] — 국내외 적발 사례 분석 기반 권역별 다중 3지대 대드론 체계(거버넌스 설계의 방호지대 측면 보완)

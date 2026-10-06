@@ -1,7 +1,7 @@
 ---
 title: "Multi-view Glint Correction for UAV Multispectral Imagery"
 created: 2026-08-19
-updated: 2026-08-19
+updated: 2026-10-06
 type: concept
 tags: [drone, ops-mission, multispectral, image-processing, research]
 sources: [inbox/fetch-2026-08-19-kci-multi-view-glint-correction-for-uav-multispectral-imagery-in.md]
@@ -37,6 +37,7 @@ UAV 다중분광 영상은 해안 수역의 센티미터급 관찰을 가능하�
 
 - [[computer-vision-drone]] — 드론 컴퓨터 비전
 - [[uav-task-offloading-traffic-monitoring]] — UAV 기반 교통 모니터링
+- [[kci-uav-multispectral-apple-ssc-prediction]] — 방사 보정·모자이킹을 거친 다중분광 식생지수의 육상(과수) 적용 사례
 
 ## 참고
 

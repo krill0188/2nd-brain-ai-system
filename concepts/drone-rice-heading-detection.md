@@ -1,7 +1,7 @@
 ---
 title: "드론 기반 벼 출수 판별 시스템"
 created: 2026-09-02
-updated: 2026-09-02
+updated: 2026-10-06
 type: concept
 tags: [drone, ops-mission, agriculture, computer-vision, yolo]
 sources: [inbox/fetch-2026-09-02-kci-드론-시계열-rgb-영상과-딥러닝-기반-분류-모델을-이용한-벼-품종군의-출수-판별.md]
@@ -40,6 +40,7 @@ domain: ops-mission
 - [[computer-vision-drone]] — 드론 컴퓨터 비전
 - [[yolo]] — YOLO 객체 탐지
 - [[drone-ai-agents]] — AI 기반 드론 분석
+- [[kci-uav-multispectral-apple-ssc-prediction]] — 같은 농업 분야, 다중분광 식생지수 기반 사과 당도 예측(RGB 시계열 분류와 대비되는 센서 접근)
 
 ## 출처
 

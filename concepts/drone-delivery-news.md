@@ -1,7 +1,7 @@
 ---
 title: "Drone Delivery News 2026-08-01"
 created: 2026-08-01
-updated: 2026-08-01
+updated: 2026-10-06
 type: concept
 tags: [drone, ops-mission]
 domain: ops-mission
@@ -32,6 +32,8 @@ contradictions: []
 - [[doordash-air]] — DoorDash 드론 배달 서비스
 - [[dji-osmo-pocket-4]] — DJI Osmo Pocket 4P
 - [[wing-nhs-medical-delivery]] — Wing NHS 의료 배달
+- [[wing-walmart-denver-seattle-2027]] — Wing·Walmart 덴버/시애틀 2027 확장 계획
+- [[michigan-medical-drone-delivery-pilot-phase2]] — 미시간 북부 의료 드론 배송 파일럿 2단계
 
 ## 📰 최근 관련 소식
 - 붉게 달아오른 도심…‘열화상 드론’으로 본 폭염 (news.kbs.co.kr, Wed, 05 Au) — https://news.google.com/rss/articles/CBMiW0FVX3lxTE1qV01vSHh1bDZpaHl0STh1MlZXT2NZU1llRDd0dnVPRlVUZi0zV3pmSk02Q0w1YWpyMV8yVmt2NWxZMWt5M04yOWQ0M2hkZFo5QWZZMHBPZ0txdlU?oc=5

@@ -41,3 +41,6 @@ Puech·de Moor·Trišović·Bertsimas(2026-09-16, arXiv)는 감시 인프라 배
 
 - [[thermal-drone-wildfire-monitoring]] — 열화상 드론 산불 감시 및 C-UAS 대응
 - [[marl-uav-wildfire-exploration]] — 산불 대응 자율 UAV 탐색을 위한 다중 에이전트 강화학습
+
+## 📰 최근 관련 소식
+- 윤준병 “2011년부터 확충한 산림청 드론, 111억원 들이고도 산불 최초 탐지 0건” (브릿지경제, Mon, 05 Oc) — https://news.google.com/rss/articles/CBMiWkFVX3lxTE1RbGpYVjNZOUhsbm5yWEhfUVJfQjBIQlB5MjhHU1I0VGlxZmRPV2g3Mi12ZEptUS1meXplcVhrSS11VDRhOGhnYzlUNnVIc21qWjNtV1lEcjJFUQ?oc=5
