@@ -1,11 +1,11 @@
 ---
 title: "이종센서 융합 대드론 표적 식별 신뢰도와 교전영역 활용률 분석 (KCI)"
 created: 2026-10-03
-updated: 2026-10-03
+updated: 2026-10-07
 type: concept
 domain: ops-mission
 tags: [drone, ops-mission, drone-ai]
-sources: [inbox/processed/fetch-2026-10-03-kci-이종센서-융합-기반-대드론-표적-식별-신뢰도와-교전영역-활용률-분석.md, raw/papers/_unclassified/이종센서-융합-기반-대드론-표적-식별-신뢰도와-교전영역-활용률-분석.md]
+sources: [inbox/processed/fetch-2026-10-03-kci-이종센서-융합-기반-대드론-표적-식별-신뢰도와-교전영역-활용률-분석.md, raw/papers/_unclassified/이종센서-융합-기반-대드론-표적-식별-신뢰도와-교전영역-활용률-분석.md, raw/papers/_unclassified/공분산-교차-기법을-활용한-대드론-체계의-강건-센서-융합.md]
 confidence: low
 contested: false
 contradictions: []
@@ -35,6 +35,10 @@ contradictions: []
 저자는 이 연구가 요구성능 분석방법의 제안일 뿐 실제 센서융합체계의 성능을 검증한 결과가 아니며,
 적용 범위가 설정한 모델과 해석조건에 한정된다고 명시한다. 단일 출처·초록만 확인이므로 confidence
 low.
+
+## 관련 수집: 공분산 교차 센서 융합 (2026-10-07)
+
+이원석(충남대, 2026)의 "공분산 교차 기법을 활용한 대드론 체계의 강건 센서 융합"이 수집됐으나 초록이 비어 있어 방법·결과는 확인하지 못했다. 제목상 증거이론 기반인 본 페이지와 다른 융합 기법(공분산 교차)을 다룬다.^[raw/papers/_unclassified/공분산-교차-기법을-활용한-대드론-체계의-강건-센서-융합.md]
 
 ## 관련 페이지
 

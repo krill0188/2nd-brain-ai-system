@@ -56,3 +56,4 @@ MAVLink-M은 군사 및 상업용 드론 간의 상호운용성을 위한 확장
 - 드론에서 순항미사일까지...‘저가 대량생산’ 방산 혁명이 온다 (The Miilk, Fri, 11 Se) — https://news.google.com/rss/articles/CBMiUEFVX3lxTE9QeC1rel9WX01oM1FPelhMMkkzS3JEN3J2eTJDaFhtSUVPOTljWVN0bUxCM3BSWWEyOEdiVE0xdlB0WmtTZndOa0Y2TzRBNUxT?oc=5
 - [DJI] Take Ronin 4D to IBC 2026 and explore the exhibition with us. (youtube.com, 2026-09-14) — https://www.youtube.com/watch?v=vKqYtJdzl10
 - [Joshua Bardwell] Why I paid $60 for this AMAZING cable (I'm stupid) (youtube.com, 2026-09-14) — https://www.youtube.com/watch?v=kagyXl1lvtA
+- [Painless360] Why can't I get my servos moving in the right direction (INAV)? (youtube.com, 2026-10-06) — https://www.youtube.com/watch?v=FdalLhp_I3w

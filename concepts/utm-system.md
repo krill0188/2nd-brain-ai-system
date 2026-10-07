@@ -1,10 +1,10 @@
 ---
 title: UTM (UAS Traffic Management)
 created: 2026-08-06
-updated: 2026-10-02
+updated: 2026-10-07
 type: concept
 tags: [drone, regulations, utm]
-sources: [inbox/processed/fetch-2026-10-02-kci-다양한-지역-환경에서의-utm-k-기반-드론-비행경로-오차-분석.md]
+sources: [inbox/processed/fetch-2026-10-02-kci-다양한-지역-환경에서의-utm-k-기반-드론-비행경로-오차-분석.md, raw/papers/_unclassified/uam-회랑-바람-관측을-위한-기상드론-유효성-검증.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -34,9 +34,14 @@ UTM은 저고도 공역에서 다수 드론의 안전한 운용을 조율하기 
 기준을 만족했고 오차율도 허용 범위 내로 유지됐다. 도심·도서·해안·산간 등 서로 다른 운용
 환경에서도 UTM-K 기반 오차 분석 방법론이 안정적으로 적용 가능함을 시사한다.^[inbox/processed/fetch-2026-10-02-kci-다양한-지역-환경에서의-utm-k-기반-드론-비행경로-오차-분석.md]
 
+## 저고도 바람 관측 (KCI 2026)
+
+UAM 회랑 운용에는 0~600 m AGL 바람 정보가 필요하다. 이지선(2026)은 기상드론 상승 구간 관측을 서귀포 윈드프로파일러와 비교해 평균 편향 +0.8 m/s, r = 0.839(n = 18)를 보고했다(초록 절단, 단일 출처). 상세는 [[kci-weather-drone-uam-corridor-wind-validation]] 참조.^[raw/papers/_unclassified/uam-회랑-바람-관측을-위한-기상드론-유효성-검증.md]
+
 ## 관련 개념
 
 - [[faa-section-2209-uafr]] — 미국 UAFR 규정
 - [[uk-caa-airspace-architecture]] — 영국 CAA 공역 아키텍처
 - [[kci-utm-k-flight-path-error-regional-analysis]] — UTM-K 기반 비행경로 오차 분석(5개 지역 실증, KCI)
 - [[kci-korea-airspace-eu-uspace]] — 드론 공역시스템 비교: 한국형 드론 공역시스템 vs EU U-space
+- [[kci-weather-drone-uam-corridor-wind-validation]] — UAM 회랑 기상드론 바람 관측 유효성 검증

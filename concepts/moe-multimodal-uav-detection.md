@@ -1,11 +1,11 @@
 ---
 title: "MoE 기반 강건한 UAV 멀티모달 객체 탐지"
 created: 2026-08-11
-updated: 2026-08-11
+updated: 2026-10-07
 type: concept
 tags: [drone, ai-autonomy, paper]
 domain: ai-autonomy
-sources: [raw/papers/drone-ai/moe-multimodal-uav-detection.md]
+sources: [raw/papers/drone-ai/moe-multimodal-uav-detection.md, raw/papers/drone-ai/dmoa-dynamic-mixture-of-adapters-with-feature-enhanced-fusion-for-uav-visible-in.md]
 confidence: low
 contested: false
 contradictions: []
@@ -25,6 +25,11 @@ Xi, Lu, Li의 저널 논문("Mixture-of-experts for robust multimodal object det
 
 - [[drone-ai]] — 드론 AI 기술 전반
 - [[rgb-ir-fusion-uav-detection]] — RGB-IR 융합 기반 UAV 탐지(관련 멀티모달 접근)
+- [[wave-detr-multimodal-drone-detector]] — 멀티모달 드론 탐지기(관련)
+
+## 관련 신규 수집 (2026-10-07)
+
+DMoA("Dynamic Mixture of Adapters with Feature-Enhanced Fusion for UAV Visible-Infrared Object Detection", *Pattern Recognition* 2027)가 Zotero로 수집됐다. 제목상 어댑터 혼합으로 UAV 가시광-적외선 탐지를 다루지만, 초록이 없어 구조·성능은 미확인이다(제목 기준 분류만).^[raw/papers/drone-ai/dmoa-dynamic-mixture-of-adapters-with-feature-enhanced-fusion-for-uav-visible-in.md]
 
 ## 📰 최근 관련 소식
 - 드론 기반 객체 탐지 시스템에 대한 물리적 적대적 패치 공격: 디지털-물리 도메인 갭 분석 및 완화 (kci.go.kr, 2026) — https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003368967

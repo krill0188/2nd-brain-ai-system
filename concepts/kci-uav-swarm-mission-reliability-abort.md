@@ -1,7 +1,7 @@
 ---
 title: "재구성형 UAV 스웜의 임무 중단을 고려한 임무 신뢰도 모델링 및 평가"
 created: 2026-09-12
-updated: 2026-09-12
+updated: 2026-10-07
 type: concept
 domain: ai-autonomy
 tags: [drone, swarm, ai-autonomy]
@@ -35,3 +35,5 @@ contradictions: []
 - [[game-theoretic-drone-swarm-defense]] — 게임이론 기반 드론 스웜 방어 전술 효과 분석
 - [[swarmnxt-aerial-swarm-platform]] — 오픈소스 SW-HW 애자일 공중 스웜 플랫폼
 - [[kci-manned-unmanned-teaming-defensive-air-ops]] — 유·무인 복합 편대 임무 효과도 분석
+- [[kci-quadrotor-compound-fault-accommodation]] — 개별 기체 센서·구동기 고장 추정·보상(노드 고장률 관점과 상보)
+- [[kci-vtol-swarm-takeoff-landing-operation]] — 군집 이착륙·천이 운용 절차

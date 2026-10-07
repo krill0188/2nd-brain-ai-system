@@ -1,7 +1,7 @@
 ---
 title: "Swarm Modes — 군집 드론 운용 모드"
 created: 2026-07-28
-updated: 2026-09-30
+updated: 2026-10-07
 type: concept
 tags: [swarm, drone-ai, ai-agent]
 sources:
@@ -85,6 +85,7 @@ contradictions: []
 - [[game-theoretic-drone-swarm-defense]] — 차등 게임이론 기반 드론 스웜 방어 전술
 - [[swarmnxt-aerial-swarm-platform]] — 오픈소스 SW-HW 애자일 공중 스웜 플랫폼
 - [[kci-uav-swarm-mission-reliability-abort]] — 재구성형 UAV 스웜 임무 신뢰도 모델링
+- [[kci-vtol-swarm-takeoff-landing-operation]] — VTOL 군집 이착륙·천이 운용(군집 진입·이탈 절차)
 - [[calibrate-once-fly-any-team-swarm-training]] — 저충실도 시뮬레이션 잔차 보정 군집 훈련
 
 ## 📰 최근 관련 소식

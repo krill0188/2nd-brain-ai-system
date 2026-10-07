@@ -62,3 +62,5 @@ DJI's latest drone camera capabilities showcasing the Mavic 4 Pro's Hasselblad 1
 - [Painless360] 'Pro Grade' ELRS PWM Receivers: The new RadioMaster ER16, ER12 and ER3Pro (youtube.com, 2026-09-10) — https://www.youtube.com/watch?v=3vInqhMlb1I
 - [DJI] Palm up. Ride out. | DJI Neo 2 (youtube.com, 2026-10-03) — https://www.youtube.com/watch?v=rQnHVsUukKE
 - [DJI] 6 Framing Ideas in One Video | DJI Mavic 3 Pro & DJI Lito X1 (youtube.com, 2026-10-03) — https://www.youtube.com/watch?v=DHS8r7c6oIU
+- [DJI] Tiny drone, big travel energy | DJI Lito X1 (youtube.com, 2026-10-06) — https://www.youtube.com/watch?v=DEwmhMBPiBs
+- [DJI] More speed. Less guesswork. | DJI RS 4 Pro (youtube.com, 2026-10-06) — https://www.youtube.com/watch?v=5pYa6svbq18

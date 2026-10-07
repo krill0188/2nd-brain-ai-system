@@ -73,3 +73,4 @@ contradictions: []
 - 스웨덴 방산기업 사브, 한국 신임대표에 스테판 엥스트룀 (드론매거진 뉴스, Sat, 03 Oc) — https://news.google.com/rss/articles/CBMiZEFVX3lxTFBJUlN6MHoxX3hMSURRYU0tMVZIM3JFUDlCT2RSWjFIaWFHZEN6UldCTUpHeXY1MkRlWjV6dnU3R3dNYjdneHNBTFJIeXdZcloybVItV3ZLYlRNc1habllTaXRoQzM?oc=5
 - 코리아스타트업포럼·한국대드론산업협회, 방산 스타트업 기술 ‘현장 검증’ 연결한다 (벤처스퀘어, Thu, 01 Oc) — https://news.google.com/rss/articles/CBMiT0FVX3lxTE1lLXlDT3pFUHoxdVBzSUhQa0t2cEtPbG5JNkNrZ1BPZXV4MDIxVEJkbXp0NDFLU0d0TDlRSGlQbmtvd3RYQlJGNk1GRHJCMmc?oc=5
 - [MATLAB] What Is Aerospace Toolbox? (youtube.com, 2026-10-05) — https://www.youtube.com/watch?v=C4zJCQj2Hro
+- 세계 방산 스타트업 투자 급증…드론·AI가 안보산업 판도 바꾼다 (드론매거진 뉴스, Tue, 06 Oc) — https://news.google.com/rss/articles/CBMiZEFVX3lxTFA1ZC1iLVlyLUlXMHNuMzlsSENLX1ptTlBYNko0c05ZWEJyT2lpZ09tbHNRalJ4MHJyOGpLNGEwOWI5MVJVNThaMFNoYzRoQUtjdnhEeU14ZGZQbHdQU05YbjhGZHU?oc=5

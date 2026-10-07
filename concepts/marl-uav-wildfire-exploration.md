@@ -1,7 +1,7 @@
 ---
 title: "산불 대응 자율 UAV 탐색을 위한 다중 에이전트 강화학습"
 created: 2026-09-11
-updated: 2026-09-11
+updated: 2026-10-07
 type: concept
 domain: ai-autonomy
 tags: [drone, drone-ai, ai-autonomy]
@@ -34,4 +34,5 @@ contradictions: []
 
 - [[thermal-drone-wildfire-monitoring]] — 열화상 드론 기반 산불 모니터링
 - [[drone-wildfire-rt-detr]] — RT-DETR 기반 산불 탐지 드론 비전 파이프라인
+- [[pso-uav-bushfire-hazard-management]] — 메타휴리스틱(PSO) 기반 산불 UAV 경로계획(RL 대비 최적화 계열)
 - [[hierarchical-rl-uav-navigation]] — 계층적 강화학습 기반 UAV 자율 내비게이션(동일 RL 계열)

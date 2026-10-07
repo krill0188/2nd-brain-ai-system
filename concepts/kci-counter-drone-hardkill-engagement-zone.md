@@ -41,3 +41,4 @@ contradictions: []
 ## 📰 최근 관련 소식
 - 한화, ‘한 발 2000원’ 대드론 무기 등 차세대 방산 솔루션 유럽에 선보인다 (스트레이트뉴스, Mon, 07 Se) — https://news.google.com/rss/articles/CBMid0FVX3lxTE9SSHJVWi1DSUlXR3VFbTBzV3JFRFZBaDREM0lIU2lranFoQmItLU1CbktWbEprRld0TVhRNHl6LWp5TE5NbGhvT19ZZWVvWGdpMkpSZnBYUEcyWGRjejl5dWpCM1JSMEFKR04xV2M0OTk2bDI2XzlJ0gF3QVVfeXFMT1JIclVaLUNJSVdHdUVtMHNXckVEVkFoNEQzSUhTaWtqcWhCYi0tTUJuS1ZsSmtGV3RNWFE0eXotanlMTk1saG9PX1llZW9YZ2kySlJmcFhQRzJYZGN6OXl1akIzUlIwQUpHTjFXYzQ5OTZsMjZfOUk?oc=5
 - [한화시스템/방산] 대드론체계 시스템 개발 — 한화그룹 (Hanwha) (www.wanted.co.kr, 2026-09-18) — https://www.wanted.co.kr/wd/387716
+- 한화시스템, ‘한 발 2000원’ 천광…해외 대드론 시장 공략 (www.ebn.co.kr, Mon, 05 Oc) — https://news.google.com/rss/articles/CBMiaEFVX3lxTE9MVzY3VzM0V1FseHlvc0lFX3Y2bXFsNzFaSzFzVXJzSHNXdDdWSVVqY0hTSUx0Z2pEbzZkdlJUeDFkUGZObXltOXNmU184UkFuWW1pOUVKOXJ3NDlHU0pLUlNBSmI4c0Nm?oc=5

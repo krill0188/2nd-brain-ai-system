@@ -251,3 +251,4 @@ domain: ops-mission
 - 드론 속도전 올인한 日… "우크라 15번 찾아가 현지 업체까지 인수" (조선일보, Mon, 05 Oc) — https://news.google.com/rss/articles/CBMingFBVV95cUxOTUN3MmdOcjMxMHlDVkU4X19pUFB6d254X2VReXNBVGlyOHZ0bUJwTUdOQUJkWE5vXzlaRldSTHFsQXVfVWdyM0p4Nkl0ZkF6bk5HTVZFWVRtdVpxaVJrR2Q0MlRucmxGcTJnZi0tODdRUGFValUyQlY5d2E0Y09JSzd5REc4emdOMXBlMjRENUZKbXJGdjdLbHZSMWlpUQ?oc=5
 - 드론 스페셜리스트 (고객 성공 매니저) — 엔젤스윙 (www.wanted.co.kr, 2026-10-06) — https://www.wanted.co.kr/wd/252275
 - 용인시, 드론으로 재난·시설물 관리…실증 아이디어 공모 (아시아경제, Sun, 13 Se) — https://news.google.com/rss/articles/CBMidEFVX3lxTE5pM2NuRGNzWW9tOFNHSUlVUGp4NTV2ZGlSN1pVZ29xOGUtU0QtZXVJMXR1TVNWYVdpYzZQWVVsMTEzRTgtSm0taVB5QTgySGk0dFM0VG9qclRHSjgzcG1JN21zYkNQOGJGM1VLUVFscGZKNnVU?oc=5
+- 대전시, 관광사진 전국공모전 접수…올해부터 ‘드론사진’ 신설 (타임뉴스, Tue, 06 Oc) — https://news.google.com/rss/articles/CBMiVEFVX3lxTFAxckt3a3RYS19LZ1FfVkNkTjM3RTBma21uLWJFeFpIU0paQ2otQ3JJSm11dWhSVjE4cEc2blZKNHhQcjIxczFjNmxpS0oxQ3BzQktDRw?oc=5

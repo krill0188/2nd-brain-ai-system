@@ -1,7 +1,7 @@
 ---
 title: "INDI Pitch-Rate Controller Stability Analysis for Tilt-Rotor VTOL UAV"
 created: 2026-07-30
-updated: 2026-08-11
+updated: 2026-10-07
 type: concept
 tags: [drone, flight-control, indi, tilt-rotor, vtol, stability]
 sources: [inbox/fetch-2026-07-30-arxiv-linear-stability-analysis-of-an-indi-pitch-rate-controller-u.md, raw/papers/_unclassified/linear-stability-analysis-of-an-indi-pitch-rate-controller-under-model-mismatch-.md]
@@ -62,6 +62,7 @@ domain: flight-control
 - [[px4-flight-modes]] — PX4 비행 모드 및 제어 파라미터
 - [[px4-architecture-deep]] — PX4 아키텍처 및 제어 시스템
 - [[drone-safety-failsafe]] — 드론 안전 및 페일세이프 시스템
+- [[kci-vtol-swarm-takeoff-landing-operation]] — VTOL 군집의 천이·역천이 운용 절차(제어기가 아닌 운용 관점)
 
 ## 📰 최근 관련 소식
 - [UAV Coach] Drone Prices Are About to Jump (youtube.com, 2026-08-15) — https://www.youtube.com/watch?v=FEiY1ONxd70
@@ -77,3 +78,4 @@ domain: flight-control
 - [Joshua Bardwell] Why I paid $60 for this AMAZING cable (I'm stupid) (youtube.com, 2026-09-14) — https://www.youtube.com/watch?v=kagyXl1lvtA
 - One year in, America’s counter-drone task force still has ‘a ton of work to do’ (DefenseScoop, Mon, 24 Au) — https://news.google.com/rss/articles/CBMisgFBVV95cUxORThPZklYSTRJS2hZZkF6UXNsRnhOMV9EVWIyLW1vQ29tTEhSVzBKX2ZScHVqbWxlVzRWR3Rhdmh2WkExaEVBTEN3Y0hKaXZhSDFTZjRTbHdicnNvYV9XbURwRGJvODEzMWEzWTFHMUFnemNienFLRHktYWVfRTlRU01PTjVFZmRMdUNuMDFNWl9GbzNob0JPU2M5eFpwS09kcUpLTjdTUEhFMmhURjFUeXpB?oc=5
 - [Joshua Bardwell] His audacious plan to open-source EVERY PART of a drone // OPENDRONE (youtube.com, 2026-10-03) — https://www.youtube.com/watch?v=MVr2Vm_6CqQ
+- [Joshua Bardwell] Building a P1 whoop to find out how much slower it really is (youtube.com, 2026-10-06) — https://www.youtube.com/watch?v=ZrNlxbI4rlQ

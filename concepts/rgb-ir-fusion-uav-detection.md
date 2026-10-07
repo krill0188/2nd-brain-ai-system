@@ -1,10 +1,10 @@
 ---
 title: "RGB-IR Fusion for UAV Object Detection"
 created: 2026-08-02
-updated: 2026-08-02
+updated: 2026-10-07
 type: concept
 tags: [drone, drone-ai, ai-autonomy]
-sources: [inbox/fetch-2026-08-02-crossref-etfnet-an-efficient-transformer-based-rgbir-fusion-network-f.md]
+sources: [inbox/fetch-2026-08-02-crossref-etfnet-an-efficient-transformer-based-rgbir-fusion-network-f.md, raw/papers/drone-ai/dmoa-dynamic-mixture-of-adapters-with-feature-enhanced-fusion-for-uav-visible-in.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -37,6 +37,11 @@ ETFNet은 효율적인 트랜스포머 기반 RGB-IR 퓨전 네트워크로, UAV
 - [[computer-vision-drone]] — 드론 컴퓨터 비전 기술
 - [[yolo]] — 실시간 객체 검출 아키텍처
 - [[drone-ai-agents]] — AI 기반 자율 드론 시스템
+- [[moe-multimodal-uav-detection]] — 불완전 관측 하의 MoE 멀티모달 탐지(DMoA 수집 메모 포함)
+
+## 후속 수집: DMoA (2026-10-07)
+
+UAV 가시광-적외선 탐지를 제목으로 내세운 DMoA(*Pattern Recognition* 2027, doi 10.1016/j.patcog.2026.115067) 레코드가 추가됐다. 초록 미수집이라 위 접근과의 비교는 보류한다.^[raw/papers/drone-ai/dmoa-dynamic-mixture-of-adapters-with-feature-enhanced-fusion-for-uav-visible-in.md]
 
 ## Open Questions
 

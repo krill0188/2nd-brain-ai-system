@@ -1,10 +1,10 @@
 ---
 title: Emlid Corrections Service
 created: 2026-08-05
-updated: 2026-10-02
+updated: 2026-10-07
 type: concept
 tags: [drone, hardware, gnss, rtk, emlid]
-sources: [inbox/fetch-2026-08-05-yt-emlid-corrections-get-centimeter-accuracy-with-your-reach-in.md, inbox/fetch-2026-08-05-yt-how-to-get-an-rtk-fix-with-emlid-corrections.md, inbox/fetch-2026-08-06-yt-how-to-get-an-rtk-fix-in-seconds.md, inbox/processed/fetch-2026-09-30-yt-why-your-gnss-receiver-wont-lock-fix-and-how-to-fix-it.md, inbox/processed/fetch-2026-10-02-yt-how-gossweiler-cut-site-visits-for-daily-checks-with-emlid-g.md]
+sources: [inbox/fetch-2026-08-05-yt-emlid-corrections-get-centimeter-accuracy-with-your-reach-in.md, inbox/fetch-2026-08-05-yt-how-to-get-an-rtk-fix-with-emlid-corrections.md, inbox/fetch-2026-08-06-yt-how-to-get-an-rtk-fix-in-seconds.md, inbox/processed/fetch-2026-09-30-yt-why-your-gnss-receiver-wont-lock-fix-and-how-to-fix-it.md, inbox/processed/fetch-2026-10-02-yt-how-gossweiler-cut-site-visits-for-daily-checks-with-emlid-g.md, inbox/processed/fetch-2026-10-07-yt-you-can-now-use-emlid-corrections-with-reach-rx-and-rx2-in-p.md]
 confidence: high
 contested: false
 contradictions: []
@@ -61,6 +61,13 @@ RTK 솔루션이 FIX와 FLOAT 사이를 오갈 때 현장에서 점검할 4가�
 - 건설 및 토목
 - GIS 데이터 수집
 
+## PIX4Dcatch 연동 (2026-10-06)
+
+Emlid·Pix4D 영상(자막 기준): 모든 Emlid 수신기가 네트워크 보정 1년 무료로 출하되는데, 지금까지는 ReachView 3 안에서 쓸 수 없었다.
+이제 Reach RX/RX2에서 Emlid Corrections를 활성화하면 PIX4Dcatch가 센티미터급 위치를 받아, NTRIP 주소·포트·인증·마운트포인트를 수동
+입력하지 않고도 지오태그된 3D 스캔을 PIX4Dcloud·PIX4Dmatic에서 처리할 수 있다. 정확도 수치는 자막에 없다.
+^[inbox/processed/fetch-2026-10-07-yt-you-can-now-use-emlid-corrections-with-reach-rx-and-rx2-in-p.md]
+
 ## 관련 개념
 
 - [[gps-uav-imu]] — GPS 미수신 환경 위치추정 기법
@@ -70,3 +77,4 @@ RTK 솔루션이 FIX와 FLOAT 사이를 오갈 때 현장에서 점검할 4가�
 - [Emlid] Why your GNSS receiver won't lock FIX and how to fix it (youtube.com, 2026-09-29) — https://www.youtube.com/watch?v=l2qOaIcsXqQ
 - [Emlid] How Gossweiler cut site visits for daily checks with Emlid GNSS (youtube.com, 2026-10-01) — https://www.youtube.com/watch?v=Oz_PFGysHr8
 - 드론실드가 이끄는 호주 방산주 3선 (simplywall.st, Thu, 01 Oc) — https://news.google.com/rss/articles/CBMiowFBVV95cUxOYUVkMGtKRDJvY01MY0huRHd1UHlfQWdmXzhoaFhtQVl6SHJZRnFyWE8tNDVsbHMyNVlTdHJOVE9qVTNZcjh6WlpJa2tjUGF6dHgzRnVPTDBvdG5Jc3o2WTVZUG1iXzl2ZGp3V1FtdXZYbE1LbGF1bmhtLXNLcVRNUmF4M3cxaUZJclNQUlNIcThid1VVbTA4dUg0YWpoWkVxTk1n0gGjAUFVX3lxTE5hRWQwa0pEMm9jTUxjSG5Ed3VQeV9BZ2ZfOGhoWG1BWXpIcllGcXJYTy00NWxsczI1WVN0ck5UT2pVM1lyOHpaWklra2NQYXp0eDNGdU9MMG90bklzejZZNVlQbWJfOXZkandXUW11dlhsTUtsYXVuaG0tc0txVE1SYXgzdzFpRklyU1BSU0hxOGJ3VVVtMDh1SDRhamhaRXFOTWc?oc=5
+- [Emlid] You can now use Emlid Corrections with Reach RX and RX2 in PIX4Dcatch (youtube.com, 2026-10-06) — https://www.youtube.com/watch?v=wQ81BFHFL8o

@@ -1,10 +1,10 @@
 ---
 title: Drone Safety & Failsafe
 created: 2026-07-27
-updated: 2026-10-05
+updated: 2026-10-07
 type: concept
 tags: [drone, drone-sw, safety, failsafe, RTL, geofence]
-sources: [raw/articles/px4-basic-concepts.md, raw/articles/px4-flight-modes-dev.md, raw/papers/_unclassified/전기-추진-시스템을-이용하는-고정익-무인기를-위한-복귀-가능-여부-판단-로직-설계.md]
+sources: [raw/articles/px4-basic-concepts.md, raw/articles/px4-flight-modes-dev.md, raw/papers/_unclassified/전기-추진-시스템을-이용하는-고정익-무인기를-위한-복귀-가능-여부-판단-로직-설계.md, raw/papers/_unclassified/신경망-기반-센서고장-보상과-imu-기반-구동기고장-보상을-통합한-쿼드로터-uav의-복합-고장-보완-기법.md]
 confidence: high
 domain: flight-control
 contested: false
@@ -139,9 +139,14 @@ RTB 가능 여부를 판단하는 로직이 전기 추진 고정익 UAV용으로
 동적으로 조정한다(비행시험 비교 수치는 초록 절단으로 미확인).^[raw/papers/_unclassified/전기-추진-시스템을-이용하는-고정익-무인기를-위한-복귀-가능-여부-판단-로직-설계.md]
 [[kci-fixed-wing-return-feasibility-logic]], [[drone-power-battery]] 참조.
 
+## 고장 추정 기반 보상 (KCI 2026)
+
+위 failsafe는 임계 조건 충족 시 RTL 등 사전 정의된 동작으로 전환하는 규칙 기반이다. 반면 정재환(2026)은 별도의 고장 판정 단계 없이 신경망 관측기(센서)와 IMU 기반 추력·토크 계산(구동기)으로 추정한 고장 크기를 보상 루프에 바로 반영하는 기법을 제안했고, 시뮬레이션에서 단일·복합 고장 모두 안정 비행을 유지했다고 보고한다(실기체 시험 여부 미확인, 단일 출처).^[raw/papers/_unclassified/신경망-기반-센서고장-보상과-imu-기반-구동기고장-보상을-통합한-쿼드로터-uav의-복합-고장-보완-기법.md]
+
 ## 관련 개념
 
 - [[kci-fixed-wing-return-feasibility-logic]] — 전압 예측 기반 복귀 가능 판단
+- [[kci-quadrotor-compound-fault-accommodation]] — 센서·구동기 복합 고장 추정·보상(규칙 기반 failsafe의 대안 접근)
 - [[px4-flight-modes]] — 비행 모드와 failsafe 연동
 - [[px4-offboard-control]] — Offboard 안전 고려사항
 - [[swarm-coordination]] — 멀티 기체 안전
