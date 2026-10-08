@@ -1,13 +1,14 @@
 ---
 title: "CALOS: 쿼드로터 안전 강화학습을 위한 Control-Affine Lyapunov On-manifold Safety Layer"
 created: 2026-09-18
-updated: 2026-09-30
+updated: 2026-10-08
 type: concept
 domain: flight-control
 tags: [drone, flight-control, reinforcement-learning, safety]
 sources:
   - inbox/fetch-2026-09-18-arxiv-calos-control-affine-lyapunov-on-manifold-safety-layer-for-s.md
   - raw/papers/drone-ai/calos-control-affine-lyapunov-on-manifold-safety-layer-for-safe-deep-reinforceme.md
+  - inbox/processed/fetch-2026-10-08-arxiv-micro-neural-policies-for-safe-real-time-robotic-control.md
 confidence: medium
 contested: false
 contradictions: []
@@ -42,3 +43,7 @@ Cesareo·Mengozzi·Mimmo·Acquaviva(2026-09-15, arXiv)가 제안한 런타임 �
 
 - [[rl-quadrotor-tunable-control]] — 튜닝 가능한 성능을 갖는 RL 기반 쿼드로터 제어
 - [[lightweight-safe-rl-uav]] — 경량 안전 강화학습 UAV 내비게이션
+
+## 최신 근거 연결 (2026-10-08)
+
+- 안전성 보증 방식 대비: Lyapunov 안전 레이어는 해석적 보증, Micro Neural Policies는 통계적 모델 검증(SMC) 기반이다. [[micro-neural-policies-safe-real-time-control]]^[inbox/processed/fetch-2026-10-08-arxiv-micro-neural-policies-for-safe-real-time-robotic-control.md]

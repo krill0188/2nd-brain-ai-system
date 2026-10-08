@@ -1,10 +1,10 @@
 ---
 title: PID Tuning & Control Theory
 created: 2026-07-27
-updated: 2026-07-27
+updated: 2026-10-08
 type: concept
 tags: [drone-sw, PID, tuning, control, rate, attitude, multicopter, stability]
-sources: []
+sources: [inbox/processed/fetch-2026-10-08-arxiv-statistical-turbulence-and-high-fidelity-disturbance-fields-.md]
 confidence: medium
 domain: flight-control
 contested: false
@@ -317,3 +317,7 @@ Weight based on airspeed
 - 실제 튜닝 사례 연구
 - Adaptive gain scheduling
 - Model predictive control (MPC)
+
+## 최신 근거 연결 (2026-10-08)
+
+- 학습 없는 cascaded PID·geometric SE(3) 기준선은 PPO 대비 비교 기준으로 여전히 유효하다. 0–12 m/s 바람 스윕에서 한 번 튜닝한 geometric 제어기가 충돌률 0으로 PPO를 상회했다(초록 기준): [[quadrotor-wind-fidelity-ppo-robustness]]^[inbox/processed/fetch-2026-10-08-arxiv-statistical-turbulence-and-high-fidelity-disturbance-fields-.md]

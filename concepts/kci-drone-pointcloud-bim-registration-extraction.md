@@ -1,11 +1,11 @@
 ---
 title: "드론 포인트클라우드–BIM 정합 및 구조부재 추출 (KCI 2건)"
 created: 2026-10-05
-updated: 2026-10-05
+updated: 2026-10-08
 type: concept
 domain: ops-mission
 tags: [drone, ops-mission, research]
-sources: [raw/papers/_unclassified/건설현장-드론-포인트클라우드와-bim-간의-convex-hull-기반-자동-정합-방안.md, raw/papers/_unclassified/bim-모델과의-정합을-통한-드론-기반-포인트클라우드에서-구조부재-추출-방안.md]
+sources: [raw/papers/_unclassified/건설현장-드론-포인트클라우드와-bim-간의-convex-hull-기반-자동-정합-방안.md, raw/papers/_unclassified/bim-모델과의-정합을-통한-드론-기반-포인트클라우드에서-구조부재-추출-방안.md, inbox/processed/fetch-2026-10-08-kci-서로-다른-드론-촬영경로-기반-3dgs-모델의-공간-구성요소별-시각적-재현-품질-단일-대상지-탐색적-비교.md]
 confidence: low
 contested: false
 contradictions: []
@@ -40,6 +40,10 @@ contradictions: []
 - [[drone-lidar-forest-boundary]] — 드론 LiDAR/점군 처리 사례(산림)
 - [[kci-uav-lidar-ground-point-density-dem-accuracy]] — 드론 점군 정확도 관련 KCI 연구
 - [[uav-mining-digital-twin]] — 드론 기반 현장 디지털 트윈
+
+## 최신 근거 연결 (2026-10-08)
+
+- 같은 드론 촬영 데이터의 다른 재구성 방식(3DGS)에서 촬영경로별 품질 비교: [[kci-3dgs-flight-path-reconstruction-quality]]^[inbox/processed/fetch-2026-10-08-kci-서로-다른-드론-촬영경로-기반-3dgs-모델의-공간-구성요소별-시각적-재현-품질-단일-대상지-탐색적-비교.md]
 
 ## 📰 최근 관련 소식
 - BIM 모델과의 정합을 통한 드론 기반 포인트클라우드에서 구조부재 추출 방안 (kci.go.kr, 2026) — https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003390505

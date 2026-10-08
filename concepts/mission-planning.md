@@ -1,10 +1,10 @@
 ---
 title: Mission Planning
 created: 2026-07-27
-updated: 2026-07-27
+updated: 2026-10-08
 type: concept
 tags: [drone, drone-sw, mission, waypoint, survey, QGC, planning]
-sources: []
+sources: [inbox/processed/fetch-2026-10-08-kci-서로-다른-드론-촬영경로-기반-3dgs-모델의-공간-구성요소별-시각적-재현-품질-단일-대상지-탐색적-비교.md]
 confidence: medium
 domain: ops-mission
 contested: false
@@ -227,3 +227,7 @@ await drone.mission.start_mission()
 - 실제 촬영 미션 사례 연구
 - 자동 경로 최적화 알고리즘
 - 실시간 미션 재계획 방법론
+
+## 최신 근거 연결 (2026-10-08)
+
+- 촬영 미션 경로 설계: 3DGS 재현 품질은 경로 유형에 따라 달라, 평행 왕복형이 15개 조합 모두에서 가장 불리했다(단일 대상지 탐색 사례). [[kci-3dgs-flight-path-reconstruction-quality]]^[inbox/processed/fetch-2026-10-08-kci-서로-다른-드론-촬영경로-기반-3dgs-모델의-공간-구성요소별-시각적-재현-품질-단일-대상지-탐색적-비교.md]

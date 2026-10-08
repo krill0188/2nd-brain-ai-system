@@ -1,10 +1,10 @@
 ---
 title: "Agile Quadrotor Flight Learning"
 created: 2026-07-31
-updated: 2026-08-10
+updated: 2026-10-08
 type: concept
 tags: [drone, ai-autonomy, drone-sw]
-sources: []
+sources: [inbox/processed/fetch-2026-10-08-arxiv-statistical-turbulence-and-high-fidelity-disturbance-fields-.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -36,6 +36,10 @@ note: "Raw source not preserved in repo — found during 2026-08-10 provenance a
 - [[drone-ai]]
 - [[px4-flight-stack]]
 - [[drone-simulation]]
+
+## 최신 근거 연결 (2026-10-08)
+
+- 단서: 레이싱급 쿼드로터 호버 기준 비교에서 튜닝된 geometric 제어기가 학습된 PPO 정책들을 능가했다는 보고가 있다(초록 단일 출처). [[quadrotor-wind-fidelity-ppo-robustness]]^[inbox/processed/fetch-2026-10-08-arxiv-statistical-turbulence-and-high-fidelity-disturbance-fields-.md]
 
 ## 📰 최근 관련 소식
 - 토토 과자 : 실제 경험자들의 조언 (Platea Magazine, Fri, 28 Au) — https://news.google.com/rss/articles/CBMioAJBVV95cUxPUFcxU3RDMlltWFg4OUx4VFY5WHJYY0xFVjZnT1dZT0tNV2xld21qZGJpS1dLczNQcTJzWlIyRGp0S3hzYnc5a0F4TzljM05icHpmNnhZYVJXWGxscHV5eEJOUkxfRVlqYnJwMlFtZmk3ODNuaHhnR1FyZnlEWlo5bjJ6ZnVEUFJZWHh1aEhqSVRKQXQtM3VKdEgtWFdOVTlDRDdLRkhTMW9yU3FBSkVVUGZHWjhkRXZzMU9IeVVQWFNKLXF5S0N2Uk5UZ0gtdUhiS1N4SjM0LUEteXpfMy1YaEt6c0hvVUpyQ1luS1hWODI1aTdVa2N6RzZ5NDA3d0lqVzBheHNESU1rSVBEMEVDWXM3OUkwdjdpV2lYRU9qMU8?oc=5

@@ -35,3 +35,4 @@ DJI의 듀얼 렌즈 시네마틱 포켓 짐벌 카메라. 2026년 7월 30일 �
 
 ## 📰 최근 관련 소식
 - [DJI] New generation. New cinematic language. | Osmo Pocket 4P (youtube.com, 2026-09-29) — https://www.youtube.com/watch?v=rPbMC1fYulk
+- [DJI] Tiny World, Cinema Feel | DJI Osmo Pocket 4P (youtube.com, 2026-10-07) — https://www.youtube.com/watch?v=2VlZuyroJSY

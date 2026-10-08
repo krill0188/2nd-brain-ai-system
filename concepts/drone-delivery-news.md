@@ -1,11 +1,11 @@
 ---
 title: "Drone Delivery News 2026-08-01"
 created: 2026-08-01
-updated: 2026-10-06
+updated: 2026-10-08
 type: concept
 tags: [drone, ops-mission]
 domain: ops-mission
-sources: ["inbox/fetch-2026-08-01-rss-dronedj.md"]
+sources: ["inbox/fetch-2026-08-01-rss-dronedj.md", inbox/processed/fetch-2026-10-08-kci-지형적-특성과-충전소-기능-구분을-고려한-드론-인간-혼합배송의-비용-효율적-입지-및-네트워크-최적화-모형.md]
 confidence: high
 contested: false
 contradictions: []
@@ -34,6 +34,10 @@ contradictions: []
 - [[wing-nhs-medical-delivery]] — Wing NHS 의료 배달
 - [[wing-walmart-denver-seattle-2027]] — Wing·Walmart 덴버/시애틀 2027 확장 계획
 - [[michigan-medical-drone-delivery-pilot-phase2]] — 미시간 북부 의료 드론 배송 파일럿 2단계
+
+## 최신 근거 연결 (2026-10-08)
+
+- 모델링 연구: 지형 제약과 충전소 기능 구분을 반영한 드론-인간 혼합배송 MILP(초록 절단): [[kci-drone-human-hybrid-delivery-milp]]^[inbox/processed/fetch-2026-10-08-kci-지형적-특성과-충전소-기능-구분을-고려한-드론-인간-혼합배송의-비용-효율적-입지-및-네트워크-최적화-모형.md]
 
 ## 📰 최근 관련 소식
 - 붉게 달아오른 도심…‘열화상 드론’으로 본 폭염 (news.kbs.co.kr, Wed, 05 Au) — https://news.google.com/rss/articles/CBMiW0FVX3lxTE1qV01vSHh1bDZpaHl0STh1MlZXT2NZU1llRDd0dnVPRlVUZi0zV3pmSk02Q0w1YWpyMV8yVmt2NWxZMWt5M04yOWQ0M2hkZFo5QWZZMHBPZ0txdlU?oc=5

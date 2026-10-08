@@ -1,10 +1,10 @@
 ---
 title: "Thermal Drone Wildfire Monitoring and C-UAS Response"
 created: 2026-08-24
-updated: 2026-08-24
+updated: 2026-10-08
 type: concept
 tags: [drone, ops-mission, thermal, cuas, wildfire, public-safety]
-sources: [inbox/fetch-2026-08-24-rss-dronelife.md]
+sources: [inbox/fetch-2026-08-24-rss-dronelife.md, inbox/processed/fetch-2026-10-08-kci-eoir-영상-분석-기반-자율-드론을-활용한-산불-초기-진화-기술-연구.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -50,6 +50,10 @@ Recent developments in thermal imaging drones for wildfire monitoring and counte
 ## Source
 
 ^[inbox/fetch-2026-08-24-rss-dronelife.md]
+
+## 최신 근거 연결 (2026-10-08)
+
+- EO와 IR을 동기화해 진화 대상을 고르면 단일 센서보다 정확도가 높았다는 KCI 논문(초록 기준): [[kci-eoir-autonomous-drone-wildfire-suppression]]^[inbox/processed/fetch-2026-10-08-kci-eoir-영상-분석-기반-자율-드론을-활용한-산불-초기-진화-기술-연구.md]
 
 ## 📰 최근 관련 소식
 - United Utilities Uses Thermal Drones to Find Hidden Moorland Fire Hotspots (dronelife.com, Thu, 20 Au) — https://dronelife.com/2026/08/20/thermal-drones-wildfire-monitoring/

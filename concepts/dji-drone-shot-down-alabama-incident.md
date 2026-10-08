@@ -28,3 +28,4 @@ contradictions: []
 
 ## 📰 최근 관련 소식
 - IAEA "러시아 쿠르스크 원전 냉각탑 드론 피격" (연합뉴스, Fri, 18 Se) — https://news.google.com/rss/articles/CBMiW0FVX3lxTE1QSVVDSzE0MDN0cDBSaV8zQjRBQjVHNV9nbnJQYlRfbi1ybWJtcEhLNWZxalYwRHpzdFZWSFFEZkltaUFxUkhkeXZtRnZhS0dsbGlwekZhY1FPME3SAWBBVV95cUxQelFuemdHUUxncldMQ0h4N1lHclBLYy1idklEUVFxYzE0aDFmWS1kQmkzS1Q0ZGR3bENMMHRvYVFfZlFqdzRXWG02OW9OMHJUZHUzM005SW81Q1M5c3MxSEQ?oc=5
+- [영상] 소치 앞바다 유조선 '활활'…"러 그림자 선단, 해상드론 피격" (연합뉴스, Wed, 07 Oc) — https://news.google.com/rss/articles/CBMiW0FVX3lxTFBIRVA3X0tvaTlUMUVRd21rUThSbndKcGhkVzZBMVR3a0JuRllVYl93ZVFCd3dIcWFXYld3QVVONXR4cGg0TFB4anhsTHAxTXAzaUZmU21VQmtraHfSAWBBVV95cUxNMVRJMUpIWV90TGFXVUpPbHF1VndKR0RHdTZLNDBDY1VIU0ZDdkNnNXY1QnhYYlROQmZERXNjNnFuOFBDbnI2VWNtU1pHRE5wQ2YxYkhKYUxyNThlRmxycFU?oc=5

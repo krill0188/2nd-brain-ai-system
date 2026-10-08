@@ -1,10 +1,10 @@
 ---
 title: Datalink Communication
 created: 2026-07-27
-updated: 2026-07-27
+updated: 2026-10-08
 type: concept
 tags: [datalink, drone-sw, RF, LTE, telemetry, communication, C2]
-sources: []
+sources: [inbox/processed/fetch-2026-10-08-kci-multi-dimensional-optimization-of-blocking-aware-resource-al.md]
 confidence: medium
 domain: comms-protocol
 contested: false
@@ -145,3 +145,7 @@ GCS ←──┼─── UAV 2
 - [[dronecan-protocol]] — CAN 버스 통신
 - [[swarm-coordination]] — 멀티 드론 통신
 - [[flight-controller-hardware]] — 텔레메트리 하드웨어
+
+## 최신 근거 연결 (2026-10-08)
+
+- UAV 가시광통신(VLC) 보조 메시 네트워크의 자원 경쟁·혼잡 완화 연구: [[uav-vlc-wmn-blocking-aware-bandwidth-allocation]]^[inbox/processed/fetch-2026-10-08-kci-multi-dimensional-optimization-of-blocking-aware-resource-al.md]

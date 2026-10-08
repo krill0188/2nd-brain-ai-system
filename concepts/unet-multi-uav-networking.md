@@ -1,10 +1,10 @@
 ---
 title: "UNet: Generic Multi-UAV Communication and Networking Architecture"
 created: 2026-08-24
-updated: 2026-08-24
+updated: 2026-10-08
 type: concept
 tags: [drone, gcs-software, datalink, swarm, networking]
-sources: [inbox/fetch-2026-08-24-arxiv-unet-a-generic-and-reliable-multi-uav-communication-and-netw.md]
+sources: [inbox/fetch-2026-08-24-arxiv-unet-a-generic-and-reliable-multi-uav-communication-and-netw.md, inbox/processed/fetch-2026-10-08-kci-multi-dimensional-optimization-of-blocking-aware-resource-al.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -58,6 +58,10 @@ Practical implementation demonstrated effectiveness across:
 ## Source
 
 ^[inbox/fetch-2026-08-24-arxiv-unet-a-generic-and-reliable-multi-uav-communication-and-netw.md]
+
+## 최신 근거 연결 (2026-10-08)
+
+- UAV-VLC 보조 WMN에서 채널 이용률·HMM 간섭 예측·큐잉 혼잡 위험으로 대역을 배분하는 BMPO(초록 절단): [[uav-vlc-wmn-blocking-aware-bandwidth-allocation]]^[inbox/processed/fetch-2026-10-08-kci-multi-dimensional-optimization-of-blocking-aware-resource-al.md]
 
 ## 📰 최근 관련 소식
 - UNet: A Generic and Reliable Multi-UAV Communication and Networking Architecture for Heterogeneous Applications (arxiv.org, 2024-11-05) — http://arxiv.org/abs/2411.03048v2

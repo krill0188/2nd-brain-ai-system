@@ -1,10 +1,10 @@
 ---
 title: Drone Simulation
 created: 2026-07-27
-updated: 2026-07-27
+updated: 2026-10-08
 type: concept
 tags: [drone-sw, simulation, gazebo, sitl, jmavsim, testing]
-sources: [raw/articles/mastervault-px4-devnotes.md, raw/articles/px4-architecture.md]
+sources: [raw/articles/mastervault-px4-devnotes.md, raw/articles/px4-architecture.md, inbox/processed/fetch-2026-10-08-arxiv-statistical-turbulence-and-high-fidelity-disturbance-fields-.md]
 confidence: high
 domain: flight-control
 contested: false
@@ -190,3 +190,7 @@ Microsoft의 Unreal Engine 기반 시뮬레이터.
 - [[ros2-drone-integration]] — ROS2 시뮬레이션 연동
 - [[mavsdk]] — MAVSDK SITL 연결
 - [[computer-vision-drone]] — 비전 시뮬레이션
+
+## 최신 근거 연결 (2026-10-08)
+
+- 시뮬레이션 바람 모델 충실도: 이산 돌풍 도메인 랜덤화가 LES 바람장과 비슷하거나 더 나은 강건성을 보였다는 초록 기준 결과가 있어, 바람 충실도 투자는 기체의 바람 민감도에 비례시키라는 시사점을 준다. [[quadrotor-wind-fidelity-ppo-robustness]]^[inbox/processed/fetch-2026-10-08-arxiv-statistical-turbulence-and-high-fidelity-disturbance-fields-.md]

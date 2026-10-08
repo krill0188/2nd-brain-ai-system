@@ -43,3 +43,6 @@ EU의 「Drone Strategy 2.0」과 U-space 제도를 분석해 한국형 드론 �
 
 - [[kci-bvlos-faa-nprm-korea]] — 같은 저자의 FAA BVLOS NPRM 비교 연구
 - [[utm-system]] — UAS Traffic Management 개요
+
+## 📰 최근 관련 소식
+- EU, 우크라에 1조8천억 지원…드론·미사일 등 구매용 (KBS 뉴스, Wed, 07 Oc) — https://news.google.com/rss/articles/CBMiW0FVX3lxTE9QcERwb25TTnkxYzBOdzV2NWhmeUU0V3FuX2J1dzQzZmkyTFpnay1Fc2p1b2R3cTh0N0dFVWhweVRtVFk2bG8xb2hMWXJhd19jWWVJTjdvS21VTTg?oc=5

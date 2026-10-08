@@ -1,11 +1,11 @@
 ---
 title: "FAA 공역 등급별 드론 비행 승인 요건 (Class A–G, LAANC)"
 created: 2026-10-03
-updated: 2026-10-03
+updated: 2026-10-08
 type: concept
 domain: regulations
 tags: [drone, regulations, ops-mission]
-sources: [inbox/processed/fetch-2026-10-03-yt-can-i-fly-my-drone-here-airspace-classes-explained.md]
+sources: [inbox/processed/fetch-2026-10-03-yt-can-i-fly-my-drone-here-airspace-classes-explained.md, inbox/processed/fetch-2026-10-08-yt-is-espns-drone-footage-legal.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -43,6 +43,11 @@ UAV Coach 영상(2026-10-02, "Can I Fly My Drone Here? Airspace Classes Explaine
   언급).
 - 칸의 값이 0이면 보통 자동 승인 불가. Part 107 조종자는 FAA DroneZone으로 신청할 수 있으나
   시간이 더 걸린다. 레크리에이션 조종자는 선택지가 더 제한적이다.
+
+## 사례: 경기장 상공 중계 드론 (UAV Coach 자막)
+
+- 영상은 Part 107에서 사람 위 비행이 **특정 기체 카테고리 충족 또는 waiver** 로 허용된다고 설명한다. 대학 풋볼 중계 드론은 화자의 추측으로는 사람 위 비행 waiver를 받았을 가능성이 가장 크다(확인된 사실은 아님).
+- 경기장 상공은 보통 경기 1시간 전~1시간 후 비행제한이 걸려 별도의 FAA 승인이 필요하다고 한다.^[inbox/processed/fetch-2026-10-08-yt-is-espns-drone-footage-legal.md]
 
 ## 관련 페이지
 

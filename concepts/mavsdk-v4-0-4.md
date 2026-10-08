@@ -1,11 +1,11 @@
 ---
 title: "MAVSDK v4.0.4 Release"
 created: 2026-10-05
-updated: 2026-10-05
+updated: 2026-10-08
 type: concept
 domain: comms-protocol
 tags: [drone, drone-sw]
-sources: [inbox/processed/fetch-2026-10-05-mavsdk.md]
+sources: [inbox/processed/fetch-2026-10-05-mavsdk.md, inbox/processed/fetch-2026-10-08-mavsdk.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -21,3 +21,7 @@ contradictions: []
 - [[mavsdk-v4-0-3]] — 직전 패치(Python/Kotlin 핸들 수명 버그 수정)
 - [[mavsdk]] — MAVSDK 개요
 - [[mavlink-protocol]] — MAVLink 프로토콜
+
+## 최신 근거 연결 (2026-10-08)
+
+- [[mavsdk-v4-0-5]] — 다음 패치(GAS_SENSOR 예제, system_tests 수정)^[inbox/processed/fetch-2026-10-08-mavsdk.md]

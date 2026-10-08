@@ -1,10 +1,10 @@
 ---
 title: "Lightweight Safe RL for UAV Navigation"
 created: 2026-07-30
-updated: 2026-08-10
+updated: 2026-10-08
 type: concept
 tags: [drone, ai-autonomy, reinforcement-learning, safety, collision-avoidance]
-sources: []
+sources: [inbox/processed/fetch-2026-10-08-arxiv-micro-neural-policies-for-safe-real-time-robotic-control.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -43,6 +43,10 @@ note: "Raw source not preserved in repo — found during 2026-08-10 provenance a
 ## 출처
 
 - Zhang et al., "Lightweight Safe Reinforcement Learning for End-to-End UAV Navigation", arXiv:2607.01794, 2026.
+
+## 최신 근거 연결 (2026-10-08)
+
+- 같은 방향의 보완 연구: ES + 통계적 모델 검증으로 안전성을 유지하며 정책을 0.5~7.5 kB까지 줄인 사례(초록 단일 출처). [[micro-neural-policies-safe-real-time-control]]^[inbox/processed/fetch-2026-10-08-arxiv-micro-neural-policies-for-safe-real-time-robotic-control.md]
 
 ## 📰 최근 관련 소식
 - 명지대 ‘드론봇·대드론 센터’ 출범... 산학군 협력 안보 네트워크 강화 (보안뉴스, Fri, 07 Au) — https://news.google.com/rss/articles/CBMiXkFVX3lxTE5XdUZ2TnIwaktzN3F0dFBmXzZ6UFBqbC1hcFFHS3AxZUYzSmFkNl9IQ1RYQ0VxZlpGX3JRZjJqMzNvbXlLLUNhLV92dk4xaHpUb0xUQWlNVF9oR2xReGc?oc=5

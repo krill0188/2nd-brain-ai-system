@@ -33,3 +33,6 @@ contradictions: []
 - [[kci-sejong-counter-drone-governance]] — 세종시 대드론 거버넌스
 - [[kci-multisensor-fusion-counter-drone-identification-engagement]] — 다중센서 융합 식별·교전
 - [[counter-drone-queueing-force-sizing]] — 대드론 대응 전력 규모 산정
+
+## 📰 최근 관련 소식
+- [최기일의 방산보국㊽] "안티드론 수준 높여 K-대드론 체계 육성해야" (아시아에이, Wed, 07 Oc) — https://news.google.com/rss/articles/CBMiakFVX3lxTE1EMlVCaURKS3lmUG4wazlwZU84aW1OaDBLUVUzQnJYaWxrbGtSTW1jYTVjR2J3TzliSzQzUGRBSERtemNPdWVrS2J1M1VIekN4WENHbkZsWEphYWYxSDBQT1lVcURvSlRFLUHSAW5BVV95cUxOZ3cwZGFxV3c5VHN3dUFHTVRNdXhwUm9qUTVYTEttXzRMNW9fVHREbmZsUUJveHRsaEZjMjNjU2JWb3RNMlNOX0FNdUFXM3RZYmZTa3gxVms3dnNVX0tJWEpKSlpkYl9PUEJQNW5YUQ?oc=5

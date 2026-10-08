@@ -1,13 +1,14 @@
 ---
 title: "드론 기반 산불 조기탐지 네트워크의 비용 최적화"
 created: 2026-09-18
-updated: 2026-10-07
+updated: 2026-10-08
 type: concept
 domain: ops-mission
 tags: [drone, ops-mission, wildfire]
 sources:
   - inbox/fetch-2026-09-18-arxiv-rapid-drone-based-wildfire-detection-at-a-fraction-of-curren.md
   - raw/papers/_unclassified/rapid-drone-based-wildfire-detection-at-a-fraction-of-current-prevention-spendin.md
+  - inbox/processed/fetch-2026-10-08-kci-eoir-영상-분석-기반-자율-드론을-활용한-산불-초기-진화-기술-연구.md
 confidence: medium
 contested: false
 contradictions: []
@@ -42,6 +43,10 @@ Puech·de Moor·Trišović·Bertsimas(2026-09-16, arXiv)는 감시 인프라 배
 - [[thermal-drone-wildfire-monitoring]] — 열화상 드론 산불 감시 및 C-UAS 대응
 - [[marl-uav-wildfire-exploration]] — 산불 대응 자율 UAV 탐색을 위한 다중 에이전트 강화학습
 - [[pso-uav-bushfire-hazard-management]] — 피해지역 커버리지 최대화 PSO 경로계획(예산·배치 최적화와 상보적, 초록 절단)
+
+## 최신 근거 연결 (2026-10-08)
+
+- 탐지 이후 단계: EO/IR 영상으로 의심 영역을 선정하고 2단계 자율 비행으로 소화탄을 투하하는 초기 진화 연구가 있다. [[kci-eoir-autonomous-drone-wildfire-suppression]]^[inbox/processed/fetch-2026-10-08-kci-eoir-영상-분석-기반-자율-드론을-활용한-산불-초기-진화-기술-연구.md]
 
 ## 📰 최근 관련 소식
 - 윤준병 “2011년부터 확충한 산림청 드론, 111억원 들이고도 산불 최초 탐지 0건” (브릿지경제, Mon, 05 Oc) — https://news.google.com/rss/articles/CBMiWkFVX3lxTE1RbGpYVjNZOUhsbm5yWEhfUVJfQjBIQlB5MjhHU1I0VGlxZmRPV2g3Mi12ZEptUS1meXplcVhrSS11VDRhOGhnYzlUNnVIc21qWjNtV1lEcjJFUQ?oc=5
