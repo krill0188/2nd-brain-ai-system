@@ -25,160 +25,132 @@
   ],
   "approved_source_versions": [
     {
-      "path": "comparisons/kci-korea-airspace-eu-uspace.md",
-      "source_commit": "604c32e60c5121a1c7d034eb4a65e91e7d8b69ad"
-    },
-    {
-      "path": "concepts/agile-quadrotor-learning.md",
-      "source_commit": "604c32e60c5121a1c7d034eb4a65e91e7d8b69ad"
-    },
-    {
       "path": "concepts/ai-knowledge-workflow.md",
-      "source_commit": "604c32e60c5121a1c7d034eb4a65e91e7d8b69ad"
+      "source_commit": "b2eb24fa0d53a84a45ef4b9fd9c0db9dadd0ff83"
     },
     {
       "path": "concepts/ai-personal-knowledge-management.md",
-      "source_commit": "604c32e60c5121a1c7d034eb4a65e91e7d8b69ad"
-    },
-    {
-      "path": "concepts/calos-lyapunov-safety-layer-quadrotor-rl.md",
-      "source_commit": "604c32e60c5121a1c7d034eb4a65e91e7d8b69ad"
+      "source_commit": "b2eb24fa0d53a84a45ef4b9fd9c0db9dadd0ff83"
     },
     {
       "path": "concepts/china-drone-export-controls.md",
-      "source_commit": "604c32e60c5121a1c7d034eb4a65e91e7d8b69ad"
+      "source_commit": "b2eb24fa0d53a84a45ef4b9fd9c0db9dadd0ff83"
     },
     {
-      "path": "concepts/datalink-communication.md",
-      "source_commit": "604c32e60c5121a1c7d034eb4a65e91e7d8b69ad"
+      "path": "concepts/cleveland-clinic-drone-delivery.md",
+      "source_commit": "b2eb24fa0d53a84a45ef4b9fd9c0db9dadd0ff83"
     },
     {
-      "path": "concepts/dfend-counter-drone-worldcup.md",
-      "source_commit": "604c32e60c5121a1c7d034eb4a65e91e7d8b69ad"
-    },
-    {
-      "path": "concepts/dji-drone-shot-down-alabama-incident.md",
-      "source_commit": "604c32e60c5121a1c7d034eb4a65e91e7d8b69ad"
+      "path": "concepts/dame-net-uav-image-restoration.md",
+      "source_commit": "b2eb24fa0d53a84a45ef4b9fd9c0db9dadd0ff83"
     },
     {
       "path": "concepts/dji-osmo-360-ii.md",
-      "source_commit": "604c32e60c5121a1c7d034eb4a65e91e7d8b69ad"
+      "source_commit": "b2eb24fa0d53a84a45ef4b9fd9c0db9dadd0ff83"
     },
     {
       "path": "concepts/dji-osmo-action-6.md",
-      "source_commit": "604c32e60c5121a1c7d034eb4a65e91e7d8b69ad"
+      "source_commit": "b2eb24fa0d53a84a45ef4b9fd9c0db9dadd0ff83"
     },
     {
-      "path": "concepts/dji-osmo-pocket-4p-stabilization.md",
-      "source_commit": "604c32e60c5121a1c7d034eb4a65e91e7d8b69ad"
+      "path": "concepts/drone-news-2026-09-11.md",
+      "source_commit": "b2eb24fa0d53a84a45ef4b9fd9c0db9dadd0ff83"
     },
     {
-      "path": "concepts/drone-delivery-news.md",
-      "source_commit": "604c32e60c5121a1c7d034eb4a65e91e7d8b69ad"
-    },
-    {
-      "path": "concepts/drone-news-2026-10-08.md",
-      "source_commit": "604c32e60c5121a1c7d034eb4a65e91e7d8b69ad"
+      "path": "concepts/drone-news-2026-10-09.md",
+      "source_commit": "b2eb24fa0d53a84a45ef4b9fd9c0db9dadd0ff83"
     },
     {
       "path": "concepts/drone-news-hardware.md",
-      "source_commit": "604c32e60c5121a1c7d034eb4a65e91e7d8b69ad"
+      "source_commit": "b2eb24fa0d53a84a45ef4b9fd9c0db9dadd0ff83"
     },
     {
       "path": "concepts/drone-news-ops.md",
-      "source_commit": "604c32e60c5121a1c7d034eb4a65e91e7d8b69ad"
-    },
-    {
-      "path": "concepts/drone-simulation.md",
-      "source_commit": "604c32e60c5121a1c7d034eb4a65e91e7d8b69ad"
-    },
-    {
-      "path": "concepts/drone-wildfire-detection-network-optimization.md",
-      "source_commit": "604c32e60c5121a1c7d034eb4a65e91e7d8b69ad"
+      "source_commit": "b2eb24fa0d53a84a45ef4b9fd9c0db9dadd0ff83"
     },
     {
       "path": "concepts/dronuum-computing-continuum.md",
-      "source_commit": "604c32e60c5121a1c7d034eb4a65e91e7d8b69ad"
+      "source_commit": "b2eb24fa0d53a84a45ef4b9fd9c0db9dadd0ff83"
     },
     {
-      "path": "concepts/faa-airspace-classes-drone-authorization.md",
-      "source_commit": "604c32e60c5121a1c7d034eb4a65e91e7d8b69ad"
+      "path": "concepts/emlid-corrections.md",
+      "source_commit": "b2eb24fa0d53a84a45ef4b9fd9c0db9dadd0ff83"
+    },
+    {
+      "path": "concepts/ga-asi-fujitsu-mou.md",
+      "source_commit": "b2eb24fa0d53a84a45ef4b9fd9c0db9dadd0ff83"
+    },
+    {
+      "path": "concepts/hoverair-versa.md",
+      "source_commit": "b2eb24fa0d53a84a45ef4b9fd9c0db9dadd0ff83"
     },
     {
       "path": "concepts/kci-3dgs-flight-path-reconstruction-quality.md",
-      "source_commit": "604c32e60c5121a1c7d034eb4a65e91e7d8b69ad"
+      "source_commit": "b2eb24fa0d53a84a45ef4b9fd9c0db9dadd0ff83"
+    },
+    {
+      "path": "concepts/kci-counter-drone-3d-air-defense-layered-neutralization.md",
+      "source_commit": "b2eb24fa0d53a84a45ef4b9fd9c0db9dadd0ff83"
+    },
+    {
+      "path": "concepts/kci-counter-drone-hardkill-engagement-zone.md",
+      "source_commit": "b2eb24fa0d53a84a45ef4b9fd9c0db9dadd0ff83"
     },
     {
       "path": "concepts/kci-critical-facility-illegal-drone-counter-uas-zones.md",
-      "source_commit": "604c32e60c5121a1c7d034eb4a65e91e7d8b69ad"
+      "source_commit": "b2eb24fa0d53a84a45ef4b9fd9c0db9dadd0ff83"
     },
     {
-      "path": "concepts/kci-drone-human-hybrid-delivery-milp.md",
-      "source_commit": "604c32e60c5121a1c7d034eb4a65e91e7d8b69ad"
+      "path": "concepts/kci-critical-facility-intrusion-detection-drone-ai.md",
+      "source_commit": "b2eb24fa0d53a84a45ef4b9fd9c0db9dadd0ff83"
     },
     {
-      "path": "concepts/kci-drone-pointcloud-bim-registration-extraction.md",
-      "source_commit": "604c32e60c5121a1c7d034eb4a65e91e7d8b69ad"
+      "path": "concepts/kci-disaster-response-drone-tech-direction.md",
+      "source_commit": "b2eb24fa0d53a84a45ef4b9fd9c0db9dadd0ff83"
     },
     {
-      "path": "concepts/kci-eoir-autonomous-drone-wildfire-suppression.md",
-      "source_commit": "604c32e60c5121a1c7d034eb4a65e91e7d8b69ad"
+      "path": "concepts/kci-drone-orthomosaic-dinosaur-track-dataset.md",
+      "source_commit": "b2eb24fa0d53a84a45ef4b9fd9c0db9dadd0ff83"
     },
     {
-      "path": "concepts/lightweight-safe-rl-uav.md",
-      "source_commit": "604c32e60c5121a1c7d034eb4a65e91e7d8b69ad"
+      "path": "concepts/kci-ground-target-tracking-retinanet-kalman.md",
+      "source_commit": "b2eb24fa0d53a84a45ef4b9fd9c0db9dadd0ff83"
     },
     {
-      "path": "concepts/mavsdk-v4-0-4.md",
-      "source_commit": "604c32e60c5121a1c7d034eb4a65e91e7d8b69ad"
+      "path": "concepts/kci-multisensor-fusion-counter-drone-identification-engagement.md",
+      "source_commit": "b2eb24fa0d53a84a45ef4b9fd9c0db9dadd0ff83"
+    },
+    {
+      "path": "concepts/kci-natural-monument-plant-ndvi-ndre-seasonal.md",
+      "source_commit": "b2eb24fa0d53a84a45ef4b9fd9c0db9dadd0ff83"
+    },
+    {
+      "path": "concepts/kci-uav-lidar-ground-point-density-dem-accuracy.md",
+      "source_commit": "b2eb24fa0d53a84a45ef4b9fd9c0db9dadd0ff83"
+    },
+    {
+      "path": "concepts/kci-uav-rainfall-induced-terrain-change-analysis.md",
+      "source_commit": "b2eb24fa0d53a84a45ef4b9fd9c0db9dadd0ff83"
+    },
+    {
+      "path": "concepts/kci-uav-random-walk-debris-flow-reproducibility.md",
+      "source_commit": "b2eb24fa0d53a84a45ef4b9fd9c0db9dadd0ff83"
     },
     {
       "path": "concepts/mavsdk-v4-0-5.md",
-      "source_commit": "604c32e60c5121a1c7d034eb4a65e91e7d8b69ad"
+      "source_commit": "b2eb24fa0d53a84a45ef4b9fd9c0db9dadd0ff83"
+    },
+    {
+      "path": "concepts/mavsdk-v4-0-6.md",
+      "source_commit": "b2eb24fa0d53a84a45ef4b9fd9c0db9dadd0ff83"
     },
     {
       "path": "concepts/mavsdk.md",
-      "source_commit": "604c32e60c5121a1c7d034eb4a65e91e7d8b69ad"
-    },
-    {
-      "path": "concepts/micro-neural-policies-safe-real-time-control.md",
-      "source_commit": "604c32e60c5121a1c7d034eb4a65e91e7d8b69ad"
+      "source_commit": "b2eb24fa0d53a84a45ef4b9fd9c0db9dadd0ff83"
     },
     {
       "path": "concepts/mission-planning.md",
-      "source_commit": "604c32e60c5121a1c7d034eb4a65e91e7d8b69ad"
-    },
-    {
-      "path": "concepts/pid-tuning-control.md",
-      "source_commit": "604c32e60c5121a1c7d034eb4a65e91e7d8b69ad"
-    },
-    {
-      "path": "concepts/quadrotor-wind-fidelity-ppo-robustness.md",
-      "source_commit": "604c32e60c5121a1c7d034eb4a65e91e7d8b69ad"
-    },
-    {
-      "path": "concepts/rl-quadrotor-tunable-control.md",
-      "source_commit": "604c32e60c5121a1c7d034eb4a65e91e7d8b69ad"
-    },
-    {
-      "path": "concepts/thermal-drone-wildfire-monitoring.md",
-      "source_commit": "604c32e60c5121a1c7d034eb4a65e91e7d8b69ad"
-    },
-    {
-      "path": "concepts/uav-vlc-wmn-blocking-aware-bandwidth-allocation.md",
-      "source_commit": "604c32e60c5121a1c7d034eb4a65e91e7d8b69ad"
-    },
-    {
-      "path": "concepts/unet-multi-uav-networking.md",
-      "source_commit": "604c32e60c5121a1c7d034eb4a65e91e7d8b69ad"
-    },
-    {
-      "path": "entities/dji-osmo-pocket-4.md",
-      "source_commit": "604c32e60c5121a1c7d034eb4a65e91e7d8b69ad"
-    },
-    {
-      "path": "entities/ondas.md",
-      "source_commit": "604c32e60c5121a1c7d034eb4a65e91e7d8b69ad"
+      "source_commit": "b2eb24fa0d53a84a45ef4b9fd9c0db9dadd0ff83"
     }
   ],
   "revoked_paths": []
