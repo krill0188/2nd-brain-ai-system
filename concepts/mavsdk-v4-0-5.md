@@ -1,11 +1,11 @@
 ---
 title: "MAVSDK v4.0.5 Release"
 created: 2026-10-08
-updated: 2026-10-08
+updated: 2026-10-09
 type: concept
 domain: comms-protocol
 tags: [drone, drone-sw]
-sources: [inbox/processed/fetch-2026-10-08-mavsdk.md]
+sources: [inbox/processed/fetch-2026-10-08-mavsdk.md, inbox/processed/fetch-2026-10-09-mavsdk.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -25,3 +25,4 @@ contradictions: []
 - [[mavsdk-v4-0-4]] — 직전 패치(discovery 수정)
 - [[mavsdk]] — MAVSDK 개요
 - [[mavlink-protocol]] — MAVLink 프로토콜
+- [[mavsdk-v4-0-6]] — 다음 패치(JNI `-Xcheck:jni` 테스트)^[inbox/processed/fetch-2026-10-09-mavsdk.md]

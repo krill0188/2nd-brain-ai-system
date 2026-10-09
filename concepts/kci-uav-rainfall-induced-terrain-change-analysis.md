@@ -1,7 +1,7 @@
 ---
 title: "UAV 기반 강우 유발 지형 변화 분석: 이종 데이터 비교와 탐지한계 (KCI)"
 created: 2026-10-03
-updated: 2026-10-03
+updated: 2026-10-09
 type: concept
 domain: ops-mission
 tags: [drone, ops-mission, drone-ai]
@@ -43,3 +43,7 @@ contradictions: []
 - [[kci-uav-lidar-ground-point-density-dem-accuracy]] — 지면점 밀도·해상도와 DEM 정확도
 - [[drone-lidar-forest-boundary]] — 드론 라이다 임야 경계 추출
 - [[emesent-trimble-lidar-integration]] — 모바일 SLAM 스캐너 측량 워크플로
+- [[kci-uav-random-walk-debris-flow-reproducibility]] — UAV 관측범위를 정답으로 쓴 토석류 이동범위 모의 재현성 평가(같은 UAV 지형 변화 관측 계열)
+
+## 📰 최근 관련 소식
+- 아산시, 최신 항공·드론영상으로 도시 변화 신속 파악 (뉴데일리 충청세종, Wed, 07 Oc) — https://news.google.com/rss/articles/CBMiekFVX3lxTFBNdWFfTjhZcXNQTFYyanVhbnV5Q2NyYW9McURFZk9jTWtJZ3llZUJtSGdwSkRoWU4wOUVQRjVlTWl6YXBOZ3cydF90ckF2RnRpSGlqWU8zWXh6TzUydFpkYjZaWm9GVDdpbDJ2R0NkLUlrNm5xRGdXUjJB0gF_QVVfeXFMT2ZrVHRkcVRiQVpXMUQ4MzN3VzJUSFhOdXN1aFk5am9uZlVFX1lDbTdpMC15dndpUTkwMkxqNGlmVXNnTU1Bc0JqWXRxSnFhd2EyLTVRNWZqR240anYzSDJLcUdIV0ZmWXhNb3NKbmtOMkFiMndmcXdfMDF5bGFiWQ?oc=5

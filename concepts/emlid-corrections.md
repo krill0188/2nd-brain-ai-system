@@ -1,10 +1,10 @@
 ---
 title: Emlid Corrections Service
 created: 2026-08-05
-updated: 2026-10-07
+updated: 2026-10-09
 type: concept
 tags: [drone, hardware, gnss, rtk, emlid]
-sources: [inbox/fetch-2026-08-05-yt-emlid-corrections-get-centimeter-accuracy-with-your-reach-in.md, inbox/fetch-2026-08-05-yt-how-to-get-an-rtk-fix-with-emlid-corrections.md, inbox/fetch-2026-08-06-yt-how-to-get-an-rtk-fix-in-seconds.md, inbox/processed/fetch-2026-09-30-yt-why-your-gnss-receiver-wont-lock-fix-and-how-to-fix-it.md, inbox/processed/fetch-2026-10-02-yt-how-gossweiler-cut-site-visits-for-daily-checks-with-emlid-g.md, inbox/processed/fetch-2026-10-07-yt-you-can-now-use-emlid-corrections-with-reach-rx-and-rx2-in-p.md]
+sources: [inbox/fetch-2026-08-05-yt-emlid-corrections-get-centimeter-accuracy-with-your-reach-in.md, inbox/fetch-2026-08-05-yt-how-to-get-an-rtk-fix-with-emlid-corrections.md, inbox/fetch-2026-08-06-yt-how-to-get-an-rtk-fix-in-seconds.md, inbox/processed/fetch-2026-09-30-yt-why-your-gnss-receiver-wont-lock-fix-and-how-to-fix-it.md, inbox/processed/fetch-2026-10-02-yt-how-gossweiler-cut-site-visits-for-daily-checks-with-emlid-g.md, inbox/processed/fetch-2026-10-07-yt-you-can-now-use-emlid-corrections-with-reach-rx-and-rx2-in-p.md, inbox/processed/fetch-2026-10-09-yt-how-gossweiler-sets-up-emlid-gnss-on-the-construction-site.md]
 confidence: high
 contested: false
 contradictions: []
@@ -54,6 +54,8 @@ RTK 솔루션이 FIX와 FLOAT 사이를 오갈 때 현장에서 점검할 4가�
 - **현장 절차**: GNSS 연결 → Fix 획득 대기 → 초기화(initialization) → 기준점 스테이크아웃으로
   좌표계·폴 높이 검증 → 측량 수행.
 
+후속 영상(Emlid Genesis 사용, 자막 기준)도 같은 절차를 보여준다: 현장 도착 후 Genesis를 켜 휴대폰과 연결하고 프로젝트를 연 뒤 Fix를 기다려 초기화하고, 스위스 기준점을 스테이크아웃해 좌표계와 폴 높이가 맞는지 확인해 잘못된 점을 측정하지 않도록 한다.^[inbox/processed/fetch-2026-10-09-yt-how-gossweiler-sets-up-emlid-gnss-on-the-construction-site.md]
+
 ## 활용 분야
 
 - 정밀 측량 및 매핑
@@ -78,3 +80,4 @@ Emlid·Pix4D 영상(자막 기준): 모든 Emlid 수신기가 네트워크 보�
 - [Emlid] How Gossweiler cut site visits for daily checks with Emlid GNSS (youtube.com, 2026-10-01) — https://www.youtube.com/watch?v=Oz_PFGysHr8
 - 드론실드가 이끄는 호주 방산주 3선 (simplywall.st, Thu, 01 Oc) — https://news.google.com/rss/articles/CBMiowFBVV95cUxOYUVkMGtKRDJvY01MY0huRHd1UHlfQWdmXzhoaFhtQVl6SHJZRnFyWE8tNDVsbHMyNVlTdHJOVE9qVTNZcjh6WlpJa2tjUGF6dHgzRnVPTDBvdG5Jc3o2WTVZUG1iXzl2ZGp3V1FtdXZYbE1LbGF1bmhtLXNLcVRNUmF4M3cxaUZJclNQUlNIcThid1VVbTA4dUg0YWpoWkVxTk1n0gGjAUFVX3lxTE5hRWQwa0pEMm9jTUxjSG5Ed3VQeV9BZ2ZfOGhoWG1BWXpIcllGcXJYTy00NWxsczI1WVN0ck5UT2pVM1lyOHpaWklra2NQYXp0eDNGdU9MMG90bklzejZZNVlQbWJfOXZkandXUW11dlhsTUtsYXVuaG0tc0txVE1SYXgzdzFpRklyU1BSU0hxOGJ3VVVtMDh1SDRhamhaRXFOTWc?oc=5
 - [Emlid] You can now use Emlid Corrections with Reach RX and RX2 in PIX4Dcatch (youtube.com, 2026-10-06) — https://www.youtube.com/watch?v=wQ81BFHFL8o
+- [Emlid] How Gossweiler sets up Emlid GNSS on the construction site (youtube.com, 2026-10-08) — https://www.youtube.com/watch?v=JTpDI9iG0cA

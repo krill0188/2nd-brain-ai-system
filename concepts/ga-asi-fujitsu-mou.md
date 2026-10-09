@@ -37,3 +37,6 @@ General Atomics Aeronautical Systems, Inc.(GA-ASI)와 Fujitsu Limited가 일본 
 - [[uas]] — 무인항공체 시스템
 - [[defense-drone]] — 방산 드론
 - [[japan-drone-market]] — 일본 드론 시장
+
+## 📰 최근 관련 소식
+- 코스포·한국대드론산업협회, 대드론·방산 스타트업 육성 MOU 체결 (beSUCCESS, Fri, 02 Oc) — https://news.google.com/rss/articles/CBMiRkFVX3lxTE9uM3ptMEhEUFNnS3FuV2s0ZkhMR1VNMklyd3daREJIa0Zib2ttNUJ6NVJoR2RrdGN2MEQxb2tXWWtsUE13NHc?oc=5

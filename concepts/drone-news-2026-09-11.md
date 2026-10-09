@@ -44,3 +44,6 @@ contradictions: []
 - [[drone-news-2026-09-10]] — 직전 종합된 드론 업계 주요 소식
 - [[drone-power-battery]] — 드론 전원/배터리 시스템 구성 개요
 - [[drone-regulations]] — 드론 규제 개요(FAA/EASA/BVLOS)
+
+## 📰 최근 관련 소식
+- 드론 만들던 방산 스타트업 안두릴, 핵잠 부품 만든다…66억달러 조선소 승부수 (헤럴드경제 미주판, Tue, 06 Oc) — https://news.google.com/rss/articles/CBMiYEFVX3lxTE5RWWkxVXk0NG9SNkhaZVZ5aDgtSlUxSU5FbnVRRFcwTnRidkhUT3drNS01ZUdkd2VPU3hScFk1MjZNWEltcFpWMFpCRVVDVm1VQUV5bFFSZkU0SXVQblFOTg?oc=5

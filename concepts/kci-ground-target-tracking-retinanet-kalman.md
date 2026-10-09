@@ -34,3 +34,6 @@ contradictions: []
 - [[computer-vision-drone]] — 드론 컴퓨터 비전: YOLO, SLAM, 객체 추적 전반
 - [[pt-detr-small-target-detection]] — RT-DETR 기반 UAV 소형 객체 탐지
 - [[drone-anomaly-detection-survey]] — 드론 이상 징후/표적 탐지 방법 연구 동향
+
+## 📰 최근 관련 소식
+- 한글날, 세종중앙공원서 과학과 드론을 만나다 (로봇신문, Thu, 08 Oc) — https://news.google.com/rss/articles/CBMibEFVX3lxTFBic0NTdnNSZU5zUjNhbVM0UmpCR0Q0QzJPc19DM2FZU3hnUFkxUkRnY244STFRU1NBSTB5WHd2aGQwc25FUVZtdW4tbjVWTHMxQWlYc21kLXF6dGhJVlcwWkhQcmxpWkp2WUpXLQ?oc=5

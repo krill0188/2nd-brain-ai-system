@@ -1,7 +1,7 @@
 ---
 title: "UAV-LiDAR 지면점 밀도와 공간 해상도가 DEM 정확도에 미치는 영향"
 created: 2026-09-11
-updated: 2026-10-05
+updated: 2026-10-09
 type: concept
 domain: ops-mission
 tags: [drone, ops-mission]
@@ -34,6 +34,7 @@ UAV-LiDAR는 고밀도 점군을 빠르게 취득할 수 있어 정밀 DEM 제�
 ## 관련 개념
 
 - [[rtk-gps-precise-landing]] — 드론 정밀 측위/착륙 관련 RTK-GPS 활용
+- [[kci-uav-random-walk-debris-flow-reproducibility]] — UAV 지형 관측을 토석류 모델 검증에 쓰는 사례
 - [[kci-drone-pointcloud-bim-registration-extraction]] — 드론 점군의 가림·가설물 영향과 정합 기반 부재 추출(사진측량 점군 측면)^[raw/papers/_unclassified/bim-모델과의-정합을-통한-드론-기반-포인트클라우드에서-구조부재-추출-방안.md]
 - [[micro-drone-slam-imu-vio-lidar-uav-livox-mid-360-pixhawk-4-m]] — 마이크로드론 LiDAR-관성 오도메트리
   플랫폼 비교(동일 LiDAR 매핑 계열)

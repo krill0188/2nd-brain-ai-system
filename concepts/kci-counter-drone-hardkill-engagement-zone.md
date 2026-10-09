@@ -1,7 +1,7 @@
 ---
 title: "대드론 하드킬 무인기의 교전영역 계산 알고리즘 개발"
 created: 2026-09-03
-updated: 2026-09-03
+updated: 2026-10-09
 type: concept
 domain: ops-mission
 tags: [drone, ops-mission, drone-ai]
@@ -37,6 +37,7 @@ contradictions: []
 ## 관련 페이지
 
 대드론 방어 체계의 개요는 [[drone-wall-defense-system]]을, 탐지·방어 통합 솔루션 기업 현황은 [[droneshield]]를 참조한다.
+하드킬을 최종 단계로 두는 계층적 운용 개념은 [[kci-counter-drone-3d-air-defense-layered-neutralization]]을 참조한다.
 
 ## 📰 최근 관련 소식
 - 한화, ‘한 발 2000원’ 대드론 무기 등 차세대 방산 솔루션 유럽에 선보인다 (스트레이트뉴스, Mon, 07 Se) — https://news.google.com/rss/articles/CBMid0FVX3lxTE9SSHJVWi1DSUlXR3VFbTBzV3JFRFZBaDREM0lIU2lranFoQmItLU1CbktWbEprRld0TVhRNHl6LWp5TE5NbGhvT19ZZWVvWGdpMkpSZnBYUEcyWGRjejl5dWpCM1JSMEFKR04xV2M0OTk2bDI2XzlJ0gF3QVVfeXFMT1JIclVaLUNJSVdHdUVtMHNXckVEVkFoNEQzSUhTaWtqcWhCYi0tTUJuS1ZsSmtGV3RNWFE0eXotanlMTk1saG9PX1llZW9YZ2kySlJmcFhQRzJYZGN6OXl1akIzUlIwQUpHTjFXYzQ5OTZsMjZfOUk?oc=5

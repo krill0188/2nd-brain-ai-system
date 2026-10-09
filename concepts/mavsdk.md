@@ -120,6 +120,7 @@ await drone.offboard.set_velocity_ned(
 - **v4.0.3**: Python/Kotlin 바인딩의 객체 핸들 수명(handle lifetime) 버그 수정, MavlinkDirect
   수신 예제 추가. 상세는 [[mavsdk-v4-0-3]] 참고.^[inbox/processed/fetch-2026-10-02-mavsdk.md]
 - **v4.0.5** (2026-10-07): GAS_SENSOR 커스텀 메시지 송수신 예제 추가, system_tests의 DestroyWithResultQueued 상태 수정. 상세는 [[mavsdk-v4-0-5]] 참고.^[inbox/processed/fetch-2026-10-08-mavsdk.md]
+- **v4.0.6** (2026-10-08): JNI 테스트를 `-Xcheck:jni`로 실행하도록 변경. 상세는 [[mavsdk-v4-0-6]] 참고.^[inbox/processed/fetch-2026-10-09-mavsdk.md]
 
 ## 관련 개념
 

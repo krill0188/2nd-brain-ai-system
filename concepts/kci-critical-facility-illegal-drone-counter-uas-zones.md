@@ -1,7 +1,7 @@
 ---
 title: "국가중요시설 불법 드론 적발 사례 기반 대드론 체계 개선"
 created: 2026-10-06
-updated: 2026-10-06
+updated: 2026-10-09
 type: concept
 domain: ops-mission
 tags: [drone, ops-mission, regulations, swarm]
@@ -33,6 +33,7 @@ contradictions: []
 - [[kci-sejong-counter-drone-governance]] — 세종시 대드론 거버넌스
 - [[kci-multisensor-fusion-counter-drone-identification-engagement]] — 다중센서 융합 식별·교전
 - [[counter-drone-queueing-force-sizing]] — 대드론 대응 전력 규모 산정
+- [[kci-counter-drone-3d-air-defense-layered-neutralization]] — 3차원 공중방호지대와 소프트킬·하드킬 계층적 무력화 모델(같은 국가중요시설 대드론 주제)
 
 ## 📰 최근 관련 소식
 - [최기일의 방산보국㊽] "안티드론 수준 높여 K-대드론 체계 육성해야" (아시아에이, Wed, 07 Oc) — https://news.google.com/rss/articles/CBMiakFVX3lxTE1EMlVCaURKS3lmUG4wazlwZU84aW1OaDBLUVUzQnJYaWxrbGtSTW1jYTVjR2J3TzliSzQzUGRBSERtemNPdWVrS2J1M1VIekN4WENHbkZsWEphYWYxSDBQT1lVcURvSlRFLUHSAW5BVV95cUxOZ3cwZGFxV3c5VHN3dUFHTVRNdXhwUm9qUTVYTEttXzRMNW9fVHREbmZsUUJveHRsaEZjMjNjU2JWb3RNMlNOX0FNdUFXM3RZYmZTa3gxVms3dnNVX0tJWEpKSlpkYl9PUEJQNW5YUQ?oc=5

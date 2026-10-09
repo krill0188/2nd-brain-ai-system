@@ -1,7 +1,7 @@
 ---
 title: "다분광 드론 영상 기반 천연기념물 식물유산의 기능형별 NDVI·NDRE 계절 변동 분석"
 created: 2026-10-02
-updated: 2026-10-03
+updated: 2026-10-09
 type: concept
 domain: ops-mission
 tags: [drone, ops-mission]
@@ -37,5 +37,6 @@ contradictions: []
 
 - [[kci-hallasan-fir-ndvi-vitality-assessment]] — 드론 다중분광 NDVI 기반 한라산 구상나무 고도·
   사면향별 활력도 평가(유사 모니터링 방법론)
+- [[kci-drone-orthomosaic-dinosaur-track-dataset]] — 문화유산 현장의 드론 정밀 기록(정사영상·음영기복도) 사례
 - [[kci-barley-wet-stress-hyperspectral-detection]] — UAV 초분광 영상 기반 작물 스트레스 조기
   탐지(식생지수 응용 사례)

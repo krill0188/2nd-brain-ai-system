@@ -38,3 +38,4 @@ contradictions: []
 
 ## 📰 최근 관련 소식
 - [멈춤보단 천천히라도] 블렌더를 활용한 애니메이션을 만들어보고 있어요 (youtube.com, 2026-10-02) — https://www.youtube.com/watch?v=A8f1DRuyE14
+- 한글날, 세종중앙공원서 과학과 드론을 만나다 (로봇신문, Thu, 08 Oc) — https://news.google.com/rss/articles/CBMibEFVX3lxTFBic0NTdnNSZU5zUjNhbVM0UmpCR0Q0QzJPc19DM2FZU3hnUFkxUkRnY244STFRU1NBSTB5WHd2aGQwc25FUVZtdW4tbjVWTHMxQWlYc21kLXF6dGhJVlcwWkhQcmxpWkp2WUpXLQ?oc=5

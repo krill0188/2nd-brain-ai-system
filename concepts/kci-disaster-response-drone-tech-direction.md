@@ -1,7 +1,7 @@
 ---
 title: "재난 대응을 위한 드론의 기술적 발전 방향 (KCI)"
 created: 2026-09-17
-updated: 2026-09-17
+updated: 2026-10-09
 type: concept
 domain: ops-mission
 tags: [drone, ops-mission]
@@ -24,3 +24,4 @@ contradictions: []
 
 - [[uav-comm-bridges-qubo-optimization]] — 재난 대응 UAV 5G 통신 브릿지 최적화 연구
 - [[thermal-drone-wildfire-monitoring]] — 재난 대응 응용의 한 축인 열화상 산불 감시
+- [[kci-uav-random-walk-debris-flow-reproducibility]] — 토석류 재난 이동범위 모의에 UAV 관측을 활용한 사례

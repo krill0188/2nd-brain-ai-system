@@ -42,3 +42,4 @@ DJI의 액션 카메라 시리즈 6세대 모델로, 야간 촬영 성능이 크
 - [DJI] Walk In. Colors Stay True. | DJI Osmo Action 6 (youtube.com, 2026-09-15) — https://www.youtube.com/watch?v=4I7WWfdqDNc
 - [DJI] Run first. Frame later. | DJI Osmo Mobile 8P (youtube.com, 2026-10-03) — https://www.youtube.com/watch?v=u5PubM_NwHc
 - [DJI] You're Basically in Their World | DJI Osmo 360 II (youtube.com, 2026-10-07) — https://www.youtube.com/watch?v=_fGsbqeHvLw
+- [DJI] Sky bright. Valleys deep. All there. | DJI Osmo Action 6 (youtube.com, 2026-10-08) — https://www.youtube.com/watch?v=sF21edxDzU4

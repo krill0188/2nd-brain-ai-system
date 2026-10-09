@@ -137,3 +137,4 @@ AI 개인 지식관리는 자료를 많이 저장하는 일이 아니라, 원본
 - ‘군 실증→사업화’ 잇는다…원주, 국방드론 산업생태계 구축 시동 (서울경제TV, Wed, 07 Oc) — https://news.google.com/rss/articles/CBMiZEFVX3lxTE5vZTJpNlVPSWdXTmFuZVBMOThMdUY4ZERtLTQzZXlIRVd0cC1KczdYZmtMRkRLNHBvaGxvS01zZHNPZkY4clJSTHI3eFk4cF9hSTFjVmZlX2xIWWxqcEUtYlFHNVU?oc=5
 - 원주 국방드론 산업 위해 군·관·산·학·연 뭉쳤다 (강원일보, Wed, 07 Oc) — https://news.google.com/rss/articles/CBMiW0FVX3lxTE9NRVA2MWRHQ1h6bzl6SFhLQ0FnblM0aWdRZW5Yb2hvWm1yTkpuWWZCMVJwLVFsdDFRd2hhcTNZQ1AtaWtRRXliYVdESlpiY0haVHZsbEJrZTJybDQ?oc=5
 - “원주, 국방드론 메카 꿈꾼다” (원주신문, Wed, 07 Oc) — https://news.google.com/rss/articles/CBMiaEFVX3lxTE5yWVlmb09IVVdqUm9zQlA5em5MTVR5c3gwbEg4a3B6VWdJWjE3QmZpMWF3WlA3Vm5zajFHZW5Xb0dla1VYdG9FVjJsaTY1TVNBcHpuOVhXUm9majNVcV9Rc0FQX0hBaEVj?oc=5
+- ‘원주 국방 드론 집적단지’, 500억 공모 도전 (KBS 뉴스, Thu, 08 Oc) — https://news.google.com/rss/articles/CBMiW0FVX3lxTFAxUzFubHAyX2dSWTBXZDVNYnVkN1hFWXhkRmRfaVZubUxJR21nMXBKS1lmWjhfTXhiSzQ4QWJxeXgxckJHSVJCT1dOVExKSG5aaDJDMDRlUFlhZ3M?oc=5
