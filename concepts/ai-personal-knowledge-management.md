@@ -138,3 +138,5 @@ AI 개인 지식관리는 자료를 많이 저장하는 일이 아니라, 원본
 - 원주 국방드론 산업 위해 군·관·산·학·연 뭉쳤다 (강원일보, Wed, 07 Oc) — https://news.google.com/rss/articles/CBMiW0FVX3lxTE9NRVA2MWRHQ1h6bzl6SFhLQ0FnblM0aWdRZW5Yb2hvWm1yTkpuWWZCMVJwLVFsdDFRd2hhcTNZQ1AtaWtRRXliYVdESlpiY0haVHZsbEJrZTJybDQ?oc=5
 - “원주, 국방드론 메카 꿈꾼다” (원주신문, Wed, 07 Oc) — https://news.google.com/rss/articles/CBMiaEFVX3lxTE5yWVlmb09IVVdqUm9zQlA5em5MTVR5c3gwbEg4a3B6VWdJWjE3QmZpMWF3WlA3Vm5zajFHZW5Xb0dla1VYdG9FVjJsaTY1TVNBcHpuOVhXUm9majNVcV9Rc0FQX0hBaEVj?oc=5
 - ‘원주 국방 드론 집적단지’, 500억 공모 도전 (KBS 뉴스, Thu, 08 Oc) — https://news.google.com/rss/articles/CBMiW0FVX3lxTFAxUzFubHAyX2dSWTBXZDVNYnVkN1hFWXhkRmRfaVZubUxJR21nMXBKS1lmWjhfTXhiSzQ4QWJxeXgxckJHSVJCT1dOVExKSG5aaDJDMDRlUFlhZ3M?oc=5
+- [핑크랩 PinkLAB] MuJoCo + ROS 2로 Nav2 · MoveIt · LLM까지 2일 완성 모집 (youtube.com, 2026-10-09) — https://www.youtube.com/watch?v=85FGaf6unms
+- 원주 ‘국방 드론산업’ 메카 도전장 (쿠키뉴스, Wed, 07 Oc) — https://news.google.com/rss/articles/CBMiY0FVX3lxTE5MaHE0U2NWOXdKVG9lV2dSYVRVbHJObWpESGVYS01FOV84MG15UGVJLXNEOVVDNzFud05YZUx6TDF4bkdIM2tRWGRkdXlnQnktRm9sbldqYktmT0czOU0tLUZwMA?oc=5

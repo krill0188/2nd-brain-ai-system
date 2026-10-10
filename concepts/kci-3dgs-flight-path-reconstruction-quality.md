@@ -1,11 +1,11 @@
 ---
 title: "드론 촬영경로별 3DGS 공간 구성요소 재현 품질 비교 (KCI)"
 created: 2026-10-08
-updated: 2026-10-09
+updated: 2026-10-10
 type: concept
 domain: ops-mission
 tags: [drone, drone-ai, ops-mission, research]
-sources: [inbox/processed/fetch-2026-10-08-kci-서로-다른-드론-촬영경로-기반-3dgs-모델의-공간-구성요소별-시각적-재현-품질-단일-대상지-탐색적-비교.md]
+sources: [inbox/processed/fetch-2026-10-08-kci-서로-다른-드론-촬영경로-기반-3dgs-모델의-공간-구성요소별-시각적-재현-품질-단일-대상지-탐색적-비교.md, raw/papers/_unclassified/서로-다른-드론-촬영경로-기반-3dgs-모델의-공간-구성요소별-시각적-재현-품질-단일-대상지-탐색적-비교.md]
 confidence: low
 contested: false
 contradictions: []
@@ -14,7 +14,7 @@ contradictions: []
 # 촬영경로별 3D Gaussian Splatting 재현 품질
 
 황병연(한국폴리텍대)의 산업기술연구논문지(2026) 논문. 같은 대상지를 서로 다른 드론 촬영경로로 촬영해 3DGS 모델을 만들고 공간 구성요소별 재현 품질을 탐색적으로 비교했다.
-단일 대상지·단일 기체·경로당 1회 학습이라는 탐색적 사례이므로 일반화하지 않는다(저자도 명시). 단일 출처라 confidence는 low다.^[inbox/processed/fetch-2026-10-08-kci-서로-다른-드론-촬영경로-기반-3dgs-모델의-공간-구성요소별-시각적-재현-품질-단일-대상지-탐색적-비교.md]
+단일 대상지·단일 기체·경로당 1회 학습이라는 탐색적 사례이므로 일반화하지 않는다(저자도 명시). 단일 출처라 confidence는 low다.^[inbox/processed/fetch-2026-10-08-kci-서로-다른-드론-촬영경로-기반-3dgs-모델의-공간-구성요소별-시각적-재현-품질-단일-대상지-탐색적-비교.md]^[raw/papers/_unclassified/서로-다른-드론-촬영경로-기반-3dgs-모델의-공간-구성요소별-시각적-재현-품질-단일-대상지-탐색적-비교.md]
 
 ## 설계
 
@@ -33,3 +33,5 @@ contradictions: []
 - [[mission-planning]] — 미션 계획(Survey/Waypoint)
 - [[computer-vision-drone]] — 드론 컴퓨터 비전
 - [[kci-drone-orthomosaic-dinosaur-track-dataset]] — 자동 비행 nadir 촬영 기반 문화유산 정사영상 데이터셋(촬영 설계 사례)
+
+- 관련(드론 3D 재현 데이터셋): [[kci-geological-outcrop-3d-mesh-dataset]]

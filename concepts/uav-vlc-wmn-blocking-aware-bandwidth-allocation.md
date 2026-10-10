@@ -1,11 +1,11 @@
 ---
 title: "UAV-VLC 보조 WMN의 차단 인지 다차원 우선순위 대역 할당 (BMPO)"
 created: 2026-10-08
-updated: 2026-10-08
+updated: 2026-10-10
 type: concept
 domain: comms-protocol
 tags: [drone, datalink, research]
-sources: [inbox/processed/fetch-2026-10-08-kci-multi-dimensional-optimization-of-blocking-aware-resource-al.md]
+sources: [inbox/processed/fetch-2026-10-08-kci-multi-dimensional-optimization-of-blocking-aware-resource-al.md, raw/papers/drone-ai/multi-dimensional-optimization-of-blocking-aware-resource-allocation-in-uav-vlc-.md]
 confidence: low
 contested: false
 contradictions: []
@@ -15,7 +15,7 @@ contradictions: []
 
 Yan Zhao(Hainan Univ.)의 KSII Transactions on Internet and Information Systems(2026) 논문. 무선 메시 네트워크(WMN)는 다중 홉·동적 토폴로지·공유 채널 때문에
 노드 밀도가 높거나 트래픽이 폭주할 때 자원 경쟁과 혼잡이 심하다. 이를 UAV-가시광통신(VLC) 보조 WMN에서 풀기 위한 **blocking-aware multi-dimensional priority optimization(BMPO)** 대역폭 할당 전략을 제안한다.
-수집된 초록이 중간에서 잘려 결과·성능 수치는 확인하지 못했다(confidence low).^[inbox/processed/fetch-2026-10-08-kci-multi-dimensional-optimization-of-blocking-aware-resource-al.md]
+수집된 초록이 중간에서 잘려 결과·성능 수치는 확인하지 못했다(confidence low).^[inbox/processed/fetch-2026-10-08-kci-multi-dimensional-optimization-of-blocking-aware-resource-al.md]^[raw/papers/drone-ai/multi-dimensional-optimization-of-blocking-aware-resource-allocation-in-uav-vlc-.md]
 
 ## 3차원 노드 상태 인지 모델 (초록 기준)
 

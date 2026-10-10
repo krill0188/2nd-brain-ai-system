@@ -1,11 +1,11 @@
 ---
 title: "쿼드로터 RL 제어의 학습 바람장 충실도 비교 (PPO vs PID/SE(3))"
 created: 2026-10-08
-updated: 2026-10-08
+updated: 2026-10-10
 type: concept
 domain: flight-control
 tags: [drone, drone-ai, drone-sw, research]
-sources: [inbox/processed/fetch-2026-10-08-arxiv-statistical-turbulence-and-high-fidelity-disturbance-fields-.md]
+sources: [inbox/processed/fetch-2026-10-08-arxiv-statistical-turbulence-and-high-fidelity-disturbance-fields-.md, raw/papers/_unclassified/statistical-turbulence-and-high-fidelity-disturbance-fields-for-quadrotor-flight.md]
 confidence: low
 contested: false
 contradictions: []
@@ -14,7 +14,7 @@ contradictions: []
 # 학습 바람장 충실도가 RL 쿼드로터 강건성에 미치는 영향
 
 Xun Huang의 arXiv 논문(2026-09-09 게재). 강화학습 쿼드로터 제어기는 대개 단순화된 바람 모델로 학습되는데, 바람의 크기가 아니라
-**충실도(fidelity)** 가 정책 강건성에 미치는 영향은 정량화된 적이 없다는 문제의식에서 출발한다. 초록 단일 출처라 confidence는 low다.^[inbox/processed/fetch-2026-10-08-arxiv-statistical-turbulence-and-high-fidelity-disturbance-fields-.md]
+**충실도(fidelity)** 가 정책 강건성에 미치는 영향은 정량화된 적이 없다는 문제의식에서 출발한다. 초록 단일 출처라 confidence는 low다.^[inbox/processed/fetch-2026-10-08-arxiv-statistical-turbulence-and-high-fidelity-disturbance-fields-.md]^[raw/papers/_unclassified/statistical-turbulence-and-high-fidelity-disturbance-fields-for-quadrotor-flight.md]
 
 ## 실험 설계
 
@@ -33,3 +33,5 @@ Xun Huang의 arXiv 논문(2026-09-09 게재). 강화학습 쿼드로터 제어�
 - [[agile-quadrotor-learning]] — 실환경 민첩 쿼드로터 비행 학습
 - [[pid-tuning-control]] — PID 제어 기준선
 - [[drone-simulation]] — 시뮬레이션 환경 총론
+
+- 관련(쿼드로터 RL 제어 관련): [[micro-neural-policies-safe-real-time-control]], [[rl-quadrotor-tunable-control]], [[lightweight-safe-rl-uav]]

@@ -67,3 +67,4 @@ Guide to planning and flying autonomous missions using the HolyBro X650 build wi
 
 ## 📰 최근 관련 소식
 - [Painless360] How to plan and fly an autonomous mission! (HolyBro X650 Build with Audupilot and a PixHawk 6C) (youtube.com, 2026-08-23) — https://www.youtube.com/watch?v=QvtSA_OYZVE
+- [Painless360] Use a StreamDeck with Ardupilot/Mission Planner (Using KH-Control) (youtube.com, 2026-10-09) — https://www.youtube.com/watch?v=SUOT5BBDcYU

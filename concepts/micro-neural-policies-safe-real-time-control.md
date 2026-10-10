@@ -1,11 +1,11 @@
 ---
 title: "Micro Neural Policies: 안전한 실시간 로봇 제어용 초소형 신경망 정책"
 created: 2026-10-08
-updated: 2026-10-08
+updated: 2026-10-10
 type: concept
 domain: flight-control
 tags: [drone, drone-ai, drone-sw, research]
-sources: [inbox/processed/fetch-2026-10-08-arxiv-micro-neural-policies-for-safe-real-time-robotic-control.md]
+sources: [inbox/processed/fetch-2026-10-08-arxiv-micro-neural-policies-for-safe-real-time-robotic-control.md, raw/papers/drone-ai/micro-neural-policies-for-safe-real-time-robotic-control.md]
 confidence: low
 contested: false
 contradictions: []
@@ -14,7 +14,7 @@ contradictions: []
 # Micro Neural Policies (MNP)
 
 Cao, Curcio, Ottaviano, Caccamo의 arXiv 논문(2026-10-06). 연산이 제한된 임베디드 장치에서 안전하고 강건한 실시간 제어를
-하기 위해 신경망 정책을 매우 작게 합성하는 방법이다. 초록 단일 출처라 confidence는 low다.^[inbox/processed/fetch-2026-10-08-arxiv-micro-neural-policies-for-safe-real-time-robotic-control.md]
+하기 위해 신경망 정책을 매우 작게 합성하는 방법이다. 초록 단일 출처라 confidence는 low다.^[inbox/processed/fetch-2026-10-08-arxiv-micro-neural-policies-for-safe-real-time-robotic-control.md]^[raw/papers/drone-ai/micro-neural-policies-for-safe-real-time-robotic-control.md]
 
 ## 방법과 결과 (초록 기준)
 
@@ -32,3 +32,5 @@ Cao, Curcio, Ottaviano, Caccamo의 arXiv 논문(2026-10-06). 연산이 제한된
 - [[lightweight-safe-rl-uav]] — 밀집 환경 경량 안전 강화학습 UAV 내비게이션
 - [[calos-lyapunov-safety-layer-quadrotor-rl]] — 쿼드로터 안전 강화학습용 Lyapunov 안전 레이어
 - [[rl-quadrotor-tunable-control]] — RL 기반 쿼드로터 성능 튜닝
+
+- 관련(바람장 충실도 vs 정책 강건성 비교): [[quadrotor-wind-fidelity-ppo-robustness]]

@@ -47,3 +47,4 @@ contradictions: []
 
 ## 📰 최근 관련 소식
 - 드론 만들던 방산 스타트업 안두릴, 핵잠 부품 만든다…66억달러 조선소 승부수 (헤럴드경제 미주판, Tue, 06 Oc) — https://news.google.com/rss/articles/CBMiYEFVX3lxTE5RWWkxVXk0NG9SNkhaZVZ5aDgtSlUxSU5FbnVRRFcwTnRidkhUT3drNS01ZUdkd2VPU3hScFk1MjZNWEltcFpWMFpCRVVDVm1VQUV5bFFSZkU0SXVQblFOTg?oc=5
+- 얀덱스 데이터센터 이틀째 드론 공격…AI 슈퍼컴퓨터 2대 위기 (매일신문, Fri, 09 Oc) — https://news.google.com/rss/articles/CBMiYkFVX3lxTE9hN2JGSDZTM2RUd0NKQ2pvazZDWEJUVi1yV1hsSGNVRjBrbl9Ed0hETUlscHRHZ3d1d3BFVWlnMVp0d3g3eVFRdXZtTVRBUWhSQVBmbkJfV0t2czdLX19KSjNB?oc=5

@@ -1,11 +1,11 @@
 ---
 title: "국가중요시설 3차원 공중방호 대드론 통합 운용: 소프트킬·하드킬 계층적 무력화 모델 (KCI)"
 created: 2026-10-09
-updated: 2026-10-09
+updated: 2026-10-10
 type: concept
 domain: ops-mission
 tags: [drone, ops-mission, regulations]
-sources: [inbox/processed/fetch-2026-10-09-kci-국가중요시설-3차원-공중방호를-위한-대드론-통합-운용방안-연구-소프트킬하드킬의-계층적-무력화-모델을-중심으로.md]
+sources: [inbox/processed/fetch-2026-10-09-kci-국가중요시설-3차원-공중방호를-위한-대드론-통합-운용방안-연구-소프트킬하드킬의-계층적-무력화-모델을-중심으로.md, raw/papers/_unclassified/국가중요시설-3차원-공중방호를-위한-대드론-통합-운용방안-연구-소프트킬하드킬의-계층적-무력화-모델을-중심으로.md]
 confidence: low
 contested: false
 contradictions: []
@@ -13,7 +13,7 @@ contradictions: []
 
 # 3차원 공중방호 대드론 통합 운용: 계층적 무력화 모델 (KCI)
 
-이우철(경기대 경호보안학과), 『시큐리티연구』 2026. 원문은 비공개이며 초록만 확인했다. 따라서 아래 내용은 모두 초록 수준이고 confidence는 low다.^[inbox/processed/fetch-2026-10-09-kci-국가중요시설-3차원-공중방호를-위한-대드론-통합-운용방안-연구-소프트킬하드킬의-계층적-무력화-모델을-중심으로.md]
+이우철(경기대 경호보안학과), 『시큐리티연구』 2026. 원문은 비공개이며 초록만 확인했다. 따라서 아래 내용은 모두 초록 수준이고 confidence는 low다.^[inbox/processed/fetch-2026-10-09-kci-국가중요시설-3차원-공중방호를-위한-대드론-통합-운용방안-연구-소프트킬하드킬의-계층적-무력화-모델을-중심으로.md]^[raw/papers/_unclassified/국가중요시설-3차원-공중방호를-위한-대드론-통합-운용방안-연구-소프트킬하드킬의-계층적-무력화-모델을-중심으로.md]
 
 ## 문제 설정
 
@@ -39,3 +39,5 @@ contradictions: []
 - [[kci-multisensor-fusion-counter-drone-identification-engagement]] — 식별·교전영역 요구성능
 - [[kci-counter-drone-hardkill-engagement-zone]] — 하드킬 교전영역 계산
 - [[counter-drone-queueing-force-sizing]] — 방어 전력 소요산정
+
+- 관련(국가중요시설 대드론 거버넌스): [[kci-sejong-counter-drone-governance]]

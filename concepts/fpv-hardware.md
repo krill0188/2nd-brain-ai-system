@@ -63,3 +63,4 @@ domain: hardware
 - [Joshua Bardwell] Q&A Livestream - October 12, 2026 (youtube.com, 2026-09-01) — https://www.youtube.com/watch?v=kbmmcxwe4xI
 - [Joshua Bardwell] Walksnail Ascent Firmware Update How-To (youtube.com, 2026-09-09) — https://www.youtube.com/watch?v=yf__frUKreI
 - [Joshua Bardwell] RaceGOW 6! Whoop race ... from your house! (youtube.com, 2026-09-30) — https://www.youtube.com/watch?v=Ai6nMBlTAwA
+- [Joshua Bardwell] No compromises. My DREAM portable soldering iron is ... ALIENTEK T90B (youtube.com, 2026-10-09) — https://www.youtube.com/watch?v=jPXecdg2hcA

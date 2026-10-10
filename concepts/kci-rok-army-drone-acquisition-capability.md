@@ -47,3 +47,6 @@ contradictions: []
   임무 효과도 분석
 - [[kci-tank-zone-vulnerability-selective-counter-drone-protection]] — 전차 대드론 방호자원 배분과 제대 간 기능분담
 - [[kci-multisensor-fusion-counter-drone-identification-engagement]] — 대드론 센서융합 요구성능 분석방법
+
+## 📰 최근 관련 소식
+- 탱크 킬러→미니드론→수상드론→제트드론… 전쟁 흔든 게임체인저 (조선일보, Fri, 09 Oc) — https://news.google.com/rss/articles/CBMingFBVV95cUxPbGtQZjFyeWlpalpFN2w2cW11cHFXQmh0dEFkM0ZxMmpneXBfVTVpM2djVU54WkFqd2gwTXl0TE40cEwzaEctOEFtblV2cVJCV3V6V3RXVTIwUVo4WkFVcU5sNERJSjZVNk5hV1RsT3lrR0RYMTFab05XdGRISnVEaWhJd3FUSzJwRF9xXzIxckU0UnZWQ2VnaVJWV1NGdw?oc=5

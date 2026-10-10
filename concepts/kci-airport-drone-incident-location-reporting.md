@@ -39,3 +39,6 @@ contradictions: []
 
 - [[kci-sejong-counter-drone-governance]] — 같은 학술지의 대드론 거버넌스 연구
 - [[drone-regulations]] — 드론 규제 개요
+
+## 📰 최근 관련 소식
+- 한화디펜스 오스트레일리아, 호주 드론 기업과 보병 전투 차량 드론 대응 공동 개발 착수 (국제뉴스, Thu, 08 Oc) — https://news.google.com/rss/articles/CBMibkFVX3lxTE4zMUdoYW5jVndYZ1h3NjlCejE4Vi1PcGQ4QkJ4SGJZR1ZKQmtnc09HQTJadFI2OHVtQmNqSTlMREExRDJTS2N6a1RZODFJWV9jUnR2WWlRRGl5S0h1RHpicDlQTTg4WU5ic1VXa0hB?oc=5

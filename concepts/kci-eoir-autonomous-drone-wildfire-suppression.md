@@ -1,11 +1,11 @@
 ---
 title: "EO/IR 영상 기반 자율 드론 산불 초기 진화 기술 (KCI)"
 created: 2026-10-08
-updated: 2026-10-08
+updated: 2026-10-10
 type: concept
 domain: ops-mission
 tags: [drone, drone-ai, ops-mission, research]
-sources: [inbox/processed/fetch-2026-10-08-kci-eoir-영상-분석-기반-자율-드론을-활용한-산불-초기-진화-기술-연구.md]
+sources: [inbox/processed/fetch-2026-10-08-kci-eoir-영상-분석-기반-자율-드론을-활용한-산불-초기-진화-기술-연구.md, raw/papers/_unclassified/eoir-영상-분석-기반-자율-드론을-활용한-산불-초기-진화-기술-연구.md]
 confidence: low
 contested: false
 contradictions: []
@@ -14,7 +14,7 @@ contradictions: []
 # EO/IR 영상 기반 자율 드론 산불 초기 진화
 
 이호준(경북대)의 한국항공우주학회지(2026) 논문. 기존 소방 드론이 수동 조종에 의존하고 감시 역할에 머문다는 한계를 넘기 위해, 자율 드론 탑재
-EO/IR 센서로 산불 초기 진화까지 수행하는 기술을 제안한다. 원문은 비공개라 초록 단일 출처(confidence low)다.^[inbox/processed/fetch-2026-10-08-kci-eoir-영상-분석-기반-자율-드론을-활용한-산불-초기-진화-기술-연구.md]
+EO/IR 센서로 산불 초기 진화까지 수행하는 기술을 제안한다. 원문은 비공개라 초록 단일 출처(confidence low)다.^[inbox/processed/fetch-2026-10-08-kci-eoir-영상-분석-기반-자율-드론을-활용한-산불-초기-진화-기술-연구.md]^[raw/papers/_unclassified/eoir-영상-분석-기반-자율-드론을-활용한-산불-초기-진화-기술-연구.md]
 
 ## 제안 파이프라인
 
@@ -30,3 +30,5 @@ EO/IR 센서로 산불 초기 진화까지 수행하는 기술을 제안한다. 
 - [[drone-wildfire-detection-network-optimization]] — 산불 조기탐지 네트워크 배치·라우팅 최적화
 - [[marl-uav-wildfire-exploration]] — 산불 대응 자율 UAV 탐색 MARL
 - [[thermal-drone-wildfire-monitoring]] — 열화상 산불 감시
+
+- 관련(재난 대응·산불 탐지 관련): [[kci-disaster-response-drone-tech-direction]], [[drone-wildfire-rt-detr]]

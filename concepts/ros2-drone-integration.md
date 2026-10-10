@@ -95,3 +95,6 @@ ros2 launch mavros mavros.launch.py fcu_url:=udp://127.0.0.1:14550@
 - [[ros2-drone-deep]] — ROS2 드론 통합 심화 노트
 - [[ros2-lyrical]] — ROS2 드론 소프트웨어 개요
 - [[kite-gcs]] — ArduPilot/INAV/PX4 지원 오픈소스 GCS
+
+## 📰 최근 관련 소식
+- [핑크랩 PinkLAB] MuJoCo + ROS 2로 Nav2 · MoveIt · LLM까지 2일 완성 모집 (youtube.com, 2026-10-09) — https://www.youtube.com/watch?v=85FGaf6unms

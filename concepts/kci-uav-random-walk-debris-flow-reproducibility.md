@@ -1,11 +1,11 @@
 ---
 title: "UAV 관측자료 기반 Random Walk 토석류 이동범위 공간적 재현성 평가: 2023 예천 벌방리 (KCI)"
 created: 2026-10-09
-updated: 2026-10-09
+updated: 2026-10-10
 type: concept
 domain: ops-mission
 tags: [drone, ops-mission, research]
-sources: [inbox/processed/fetch-2026-10-09-kci-uav-관측자료를-이용한-random-walk-기반-토석류-이동범위의-공간적-재현성-평가-2023년-예천-벌.md]
+sources: [inbox/processed/fetch-2026-10-09-kci-uav-관측자료를-이용한-random-walk-기반-토석류-이동범위의-공간적-재현성-평가-2023년-예천-벌.md, raw/papers/_unclassified/uav-관측자료를-이용한-random-walk-기반-토석류-이동범위의-공간적-재현성-평가-2023년-예천-벌방리-사례.md]
 confidence: low
 contested: false
 contradictions: []
@@ -13,7 +13,7 @@ contradictions: []
 
 # UAV 관측 기반 Random Walk 토석류 이동범위 재현성 (KCI)
 
-남경훈(한국화재보험협회), 『지질공학』 2026. 원문 비공개, 초록도 중간에서 절단되어 있어 결론부는 확인하지 못했다(confidence low).^[inbox/processed/fetch-2026-10-09-kci-uav-관측자료를-이용한-random-walk-기반-토석류-이동범위의-공간적-재현성-평가-2023년-예천-벌.md]
+남경훈(한국화재보험협회), 『지질공학』 2026. 원문 비공개, 초록도 중간에서 절단되어 있어 결론부는 확인하지 못했다(confidence low).^[inbox/processed/fetch-2026-10-09-kci-uav-관측자료를-이용한-random-walk-기반-토석류-이동범위의-공간적-재현성-평가-2023년-예천-벌.md]^[raw/papers/_unclassified/uav-관측자료를-이용한-random-walk-기반-토석류-이동범위의-공간적-재현성-평가-2023년-예천-벌방리-사례.md]
 
 ## 설계
 

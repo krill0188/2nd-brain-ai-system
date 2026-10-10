@@ -38,3 +38,4 @@ DJI의 소비자용 항공 촬영 드론. 핵심 특징은 100MP 하셀블라드
 - [Painless360] RC News: New EMAX Nanoscout PRO 1S Whoop just released! (youtube.com, 2026-09-14) — https://www.youtube.com/watch?v=dxP_SiFppwU
 - [Painless360] BetaFPV Meteor65 PRO II: One of the most fun gets upgraded! (youtube.com, 2026-10-03) — https://www.youtube.com/watch?v=8_ENkPBTnGc
 - [DJI] More speed. Less guesswork. | DJI RS 4 Pro (youtube.com, 2026-10-06) — https://www.youtube.com/watch?v=5pYa6svbq18
+- [DJI] Autumn hits different from above. | DJI Mini 5 Pro (youtube.com, 2026-10-09) — https://www.youtube.com/watch?v=IqmuqGntxeU
