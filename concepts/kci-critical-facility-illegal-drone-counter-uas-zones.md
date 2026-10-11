@@ -37,3 +37,4 @@ contradictions: []
 
 ## 📰 최근 관련 소식
 - [최기일의 방산보국㊽] "안티드론 수준 높여 K-대드론 체계 육성해야" (아시아에이, Wed, 07 Oc) — https://news.google.com/rss/articles/CBMiakFVX3lxTE1EMlVCaURKS3lmUG4wazlwZU84aW1OaDBLUVUzQnJYaWxrbGtSTW1jYTVjR2J3TzliSzQzUGRBSERtemNPdWVrS2J1M1VIekN4WENHbkZsWEphYWYxSDBQT1lVcURvSlRFLUHSAW5BVV95cUxOZ3cwZGFxV3c5VHN3dUFHTVRNdXhwUm9qUTVYTEttXzRMNW9fVHREbmZsUUJveHRsaEZjMjNjU2JWb3RNMlNOX0FNdUFXM3RZYmZTa3gxVms3dnNVX0tJWEpKSlpkYl9PUEJQNW5YUQ?oc=5
+- 부산항 '안티 드론 시스템' 운영 4개월간 불법 드론 38건 적발 (매일경제 마켓, Sat, 10 Oc) — https://news.google.com/rss/articles/CBMiUkFVX3lxTE5vTThxQmtuaXBLSUN1dzlnR0s1LUVxUEtFRUk5X2J4OUhDTWM1U2d2MkltY3RvR3R0RVlmQnRPb3JNcF9SREFRSVNXUTg5N3hualE?oc=5

@@ -57,3 +57,5 @@ MAVLink-M은 군사 및 상업용 드론 간의 상호운용성을 위한 확장
 - [DJI] Take Ronin 4D to IBC 2026 and explore the exhibition with us. (youtube.com, 2026-09-14) — https://www.youtube.com/watch?v=vKqYtJdzl10
 - [Joshua Bardwell] Why I paid $60 for this AMAZING cable (I'm stupid) (youtube.com, 2026-09-14) — https://www.youtube.com/watch?v=kagyXl1lvtA
 - [Painless360] Why can't I get my servos moving in the right direction (INAV)? (youtube.com, 2026-10-06) — https://www.youtube.com/watch?v=FdalLhp_I3w
+- [DJI] This Transition Broke Brains | DJI RS 5 (youtube.com, 2026-10-10) — https://www.youtube.com/watch?v=P7RVsrNVcxQ
+- Review: BetaFPV Meteor75 Pro II Analog Edition – 1S Tiny Whoop with Serious Power (oscarliang.com, Fri, 09 Oc) — https://oscarliang.com/betafpv-meteor75-pro-ii-analog/

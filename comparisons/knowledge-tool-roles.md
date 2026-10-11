@@ -50,3 +50,4 @@ LLM Wiki의 유지 원칙은 [[llm-wiki]], 분석 결과의 환류는 [[research
 - [멈춤보단 천천히라도] 2026.10.03 | RTX 4060 8GB AI 인물 교체 실험 — 선명도·합성 개선 (youtube.com, 2026-10-03) — https://www.youtube.com/watch?v=NqlfxhPej8k
 - [멈춤보단 천천히라도] 블렌더를 배운 적 없는 사람이 아스트라와 만든 10초 애니메이션 (youtube.com, 2026-10-04) — https://www.youtube.com/watch?v=XFLM2jmaCJQ
 - [멈춤보단 천천히라도] 블렌더를 배운 적 없는 사람이 아스트라와 만든 애니메이션, 그다음 이야기 (youtube.com, 2026-10-05) — https://www.youtube.com/watch?v=DevNm7mpGBc
+- [멈춤보단 천천히라도] RTX 4060 8GB로 영상 속 인물 바꾸기, 그다음 (youtube.com, 2026-10-10) — https://www.youtube.com/watch?v=Qylk_3ghL4o
