@@ -48,3 +48,6 @@ Maxim Mednikov, Oren Gal(2026-09-15, arXiv)이 제안한 방법으로, 고충실
 - [[swarmnxt-aerial-swarm-platform]] — 오픈소스 공중 스웜 SW/HW 플랫폼
 - [[agilepe-uav-pursuit-evasion]] — Self-play RL 기반 sim-to-real 전이 유사 접근
 - [[swarm-modes]] — 군집 드론 운용 모드 개요
+
+## 📰 최근 관련 소식
+- Gauntlet 2.5 delayed (www.suasnews.com, Sun, 11 Oc) — https://www.suasnews.com/2026/10/gauntlet-2-5-delayed/

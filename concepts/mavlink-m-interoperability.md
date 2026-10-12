@@ -59,3 +59,4 @@ MAVLink-M은 군사 및 상업용 드론 간의 상호운용성을 위한 확장
 - [Painless360] Why can't I get my servos moving in the right direction (INAV)? (youtube.com, 2026-10-06) — https://www.youtube.com/watch?v=FdalLhp_I3w
 - [DJI] This Transition Broke Brains | DJI RS 5 (youtube.com, 2026-10-10) — https://www.youtube.com/watch?v=P7RVsrNVcxQ
 - Review: BetaFPV Meteor75 Pro II Analog Edition – 1S Tiny Whoop with Serious Power (oscarliang.com, Fri, 09 Oc) — https://oscarliang.com/betafpv-meteor75-pro-ii-analog/
+- New Clear Look at DJI Matrice 5TD on Dock Days Before Oct 14 Launch - NEW CAMERA (news.google.com, Sat, 10 Oc) — https://news.google.com/rss/articles/CBMimAFBVV95cUxORzBlN21TektWOWVncmtEenZHT0UtXzRWUlpMUGZGTUdMMXpaM1NYdXNseTZhOWhSODN1Z2NMUFNNMkZkRmEzS1Q4Wl9MSXJVYkwzaDZhSVk5OUR0MzNlRjNoeklyTVZSWGFLLXRJQjh3bFUydXNuRWo0T19WejQ4N1RPRTJVUWRsZk54cnVkdlNKdHA2VlVCOQ?oc=5

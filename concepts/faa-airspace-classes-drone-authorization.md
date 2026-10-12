@@ -54,3 +54,7 @@ UAV Coach 영상(2026-10-02, "Can I Fly My Drone Here? Airspace Classes Explaine
 - [[drone-regulations]] — FAA·EASA·한국 규제 총론
 - [[utm-system]] — 저고도 UTM 체계
 - [[uk-caa-airspace-architecture]] — 영국 공역 구조 비교
+
+## 📰 최근 관련 소식
+- [UAV Coach] Categories 1-4 Explained (youtube.com, 2026-10-09) — https://www.youtube.com/watch?v=y_XjlwqtRNM
+- Police drones near airports can now get faster FAA clearance (dronedj.com, Sat, 10 Oc) — https://dronedj.com/2026/10/10/versaterm-aloft-dronesense-laanc-faa/
