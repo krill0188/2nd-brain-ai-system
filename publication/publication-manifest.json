@@ -23,6 +23,83 @@
     ".ua/news-feed.json",
     ".ua/self-update-state.json"
   ],
-  "approved_source_versions": [],
+  "approved_source_versions": [
+    {
+      "path": "concepts/ai-knowledge-workflow.md",
+      "source_commit": "6d9c1e423dde32e660664ec5e9e2a5dfcb1a2c19"
+    },
+    {
+      "path": "concepts/alaska-drone-blood-delivery-olympic-antidoping.md",
+      "source_commit": "6d9c1e423dde32e660664ec5e9e2a5dfcb1a2c19"
+    },
+    {
+      "path": "concepts/brinc-emergency-drone-funding.md",
+      "source_commit": "6d9c1e423dde32e660664ec5e9e2a5dfcb1a2c19"
+    },
+    {
+      "path": "concepts/calibrate-once-fly-any-team-swarm-training.md",
+      "source_commit": "6d9c1e423dde32e660664ec5e9e2a5dfcb1a2c19"
+    },
+    {
+      "path": "concepts/china-drone-export-controls.md",
+      "source_commit": "6d9c1e423dde32e660664ec5e9e2a5dfcb1a2c19"
+    },
+    {
+      "path": "concepts/dame-net-uav-image-restoration.md",
+      "source_commit": "6d9c1e423dde32e660664ec5e9e2a5dfcb1a2c19"
+    },
+    {
+      "path": "concepts/dji-drone-shot-down-alabama-incident.md",
+      "source_commit": "6d9c1e423dde32e660664ec5e9e2a5dfcb1a2c19"
+    },
+    {
+      "path": "concepts/dji-mavic-4-pro-features.md",
+      "source_commit": "6d9c1e423dde32e660664ec5e9e2a5dfcb1a2c19"
+    },
+    {
+      "path": "concepts/dji-mavic-4-pro.md",
+      "source_commit": "6d9c1e423dde32e660664ec5e9e2a5dfcb1a2c19"
+    },
+    {
+      "path": "concepts/drone-news-2026-10-12.md",
+      "source_commit": "6d9c1e423dde32e660664ec5e9e2a5dfcb1a2c19"
+    },
+    {
+      "path": "concepts/drone-news-hardware.md",
+      "source_commit": "6d9c1e423dde32e660664ec5e9e2a5dfcb1a2c19"
+    },
+    {
+      "path": "concepts/drone-news-ops.md",
+      "source_commit": "6d9c1e423dde32e660664ec5e9e2a5dfcb1a2c19"
+    },
+    {
+      "path": "concepts/dronuum-computing-continuum.md",
+      "source_commit": "6d9c1e423dde32e660664ec5e9e2a5dfcb1a2c19"
+    },
+    {
+      "path": "concepts/faa-airspace-classes-drone-authorization.md",
+      "source_commit": "6d9c1e423dde32e660664ec5e9e2a5dfcb1a2c19"
+    },
+    {
+      "path": "concepts/kci-critical-facility-illegal-drone-counter-uas-zones.md",
+      "source_commit": "6d9c1e423dde32e660664ec5e9e2a5dfcb1a2c19"
+    },
+    {
+      "path": "concepts/mavlink-m-interoperability.md",
+      "source_commit": "6d9c1e423dde32e660664ec5e9e2a5dfcb1a2c19"
+    },
+    {
+      "path": "concepts/micro-drone-slam-imu-vio-lidar-uav-livox-mid-360-pixhawk-4-m.md",
+      "source_commit": "6d9c1e423dde32e660664ec5e9e2a5dfcb1a2c19"
+    },
+    {
+      "path": "concepts/oddityrc-echo5-frame-gps.md",
+      "source_commit": "6d9c1e423dde32e660664ec5e9e2a5dfcb1a2c19"
+    },
+    {
+      "path": "raw/papers/_unclassified/네이버.md",
+      "source_commit": "6d9c1e423dde32e660664ec5e9e2a5dfcb1a2c19"
+    }
+  ],
   "revoked_paths": []
 }
