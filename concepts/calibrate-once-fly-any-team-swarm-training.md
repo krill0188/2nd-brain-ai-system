@@ -51,3 +51,4 @@ Maxim Mednikov, Oren Gal(2026-09-15, arXiv)이 제안한 방법으로, 고충실
 
 ## 📰 최근 관련 소식
 - Gauntlet 2.5 delayed (www.suasnews.com, Sun, 11 Oc) — https://www.suasnews.com/2026/10/gauntlet-2-5-delayed/
+- [TECH한주] 물류·방산·UAM을 잇는 자율비행의 날개… 군집 드론 제어 플랫폼의 리더 ‘네온테크’ (테크월드, Sun, 11 Oc) — https://news.google.com/rss/articles/CBMiaEFVX3lxTE40S1lXd1lKeE92VUk2cUtHczBHTkdsdGZKX0kzSjJjMUdva0RaNzhzTExPZkctbWViaDVrcHd2VzJlS0VQYUJFZ19UN21Cc3JxaHg3QlNfNWl4azBLNTBiYjNWWnpkcERQ?oc=5

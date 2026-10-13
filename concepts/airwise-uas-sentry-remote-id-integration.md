@@ -23,3 +23,6 @@ awareness)에 초점을 맞춘 파트너십을 체결했다. UAS Sentry Nexus의
 
 - [[airwise-nexus]] — Airwise Solutions의 오픈 에어스페이스 인식 플랫폼
 - [[uas-sentry-nexus-observer]] — 휴대용 듀얼 밴드 Remote ID 탐지 시스템
+
+## 📰 최근 관련 소식
+- 이재명 “드론·로봇, 육해공 경계 허물어”…사관학교 통합 재차 강조 (뉴스로드, Mon, 12 Oc) — https://news.google.com/rss/articles/CBMia0FVX3lxTE1LWTBRX3JzTFpNeHhXRElBN3J5VzZEWmdXalkyX2o3MmFyMENIWHd1ZFhMS2lOUmdzWnNkRlhKaVdkZ0puVTdpMGRqTmtiRGlxQUtaVVVLTXFUNHoxWXJydE9SU2k5cW9XOTM00gFvQVVfeXFMTjJ6ZHdrVnZuZWdtRDNYMjh2REktbnl0Y01vdjFwMGhaa053UEt1UFFsRUFUMjBDZko3ZDdON3BqSHFWYkhtRzZwSXpLb0N2Njlsc0tDVktmZkFhUFZ6OC1wNVlxYXkyRkp0T0l5djFn?oc=5

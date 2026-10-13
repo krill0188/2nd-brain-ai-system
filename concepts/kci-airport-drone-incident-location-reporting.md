@@ -42,3 +42,4 @@ contradictions: []
 
 ## 📰 최근 관련 소식
 - 한화디펜스 오스트레일리아, 호주 드론 기업과 보병 전투 차량 드론 대응 공동 개발 착수 (국제뉴스, Thu, 08 Oc) — https://news.google.com/rss/articles/CBMibkFVX3lxTE4zMUdoYW5jVndYZ1h3NjlCejE4Vi1PcGQ4QkJ4SGJZR1ZKQmtnc09HQTJadFI2OHVtQmNqSTlMREExRDJTS2N6a1RZODFJWV9jUnR2WWlRRGl5S0h1RHpicDlQTTg4WU5ic1VXa0hB?oc=5
+- 대공무기 '발칸'으로 드론 잡는다?…AI 접목 저가·소모성 전력 대응 연구 (뉴스1, Mon, 12 Oc) — https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1PMjQzMmQybHRzb1RIZW53X0plWUFpYjN2RjIwNk9IOHdwSFAxY3JTOTFkaXBuQWV6cUNwU3Q1aVVKbmZ0QUtIcjNmVXhyVGFfQk9XQlNHeV94R1hKOG1icWdFNEV4cUU?oc=5

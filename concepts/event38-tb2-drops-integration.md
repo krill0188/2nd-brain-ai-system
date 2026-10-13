@@ -31,3 +31,6 @@ Event38 Unmanned Systems와 TB2 Aerospace의 파트너십 — E455 고정익 VTO
 
 - [[drone-payload-systems]] — 드론 페이로드 시스템
 - [[drone-delivery-news]] — 드론 배달 동향
+
+## 📰 최근 관련 소식
+- 이재명 “드론·로봇, 육해공 경계 허물어”…사관학교 통합 재차 강조 (뉴스로드, Mon, 12 Oc) — https://news.google.com/rss/articles/CBMia0FVX3lxTE1LWTBRX3JzTFpNeHhXRElBN3J5VzZEWmdXalkyX2o3MmFyMENIWHd1ZFhMS2lOUmdzWnNkRlhKaVdkZ0puVTdpMGRqTmtiRGlxQUtaVVVLTXFUNHoxWXJydE9SU2k5cW9XOTM00gFvQVVfeXFMTjJ6ZHdrVnZuZWdtRDNYMjh2REktbnl0Y01vdjFwMGhaa053UEt1UFFsRUFUMjBDZko3ZDdON3BqSHFWYkhtRzZwSXpLb0N2Njlsc0tDVktmZkFhUFZ6OC1wNVlxYXkyRkp0T0l5djFn?oc=5
