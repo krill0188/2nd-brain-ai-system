@@ -26,79 +26,87 @@
   "approved_source_versions": [
     {
       "path": "concepts/ai-knowledge-workflow.md",
-      "source_commit": "6d9c1e423dde32e660664ec5e9e2a5dfcb1a2c19"
+      "source_commit": "ac435f48faef4361e2fc6e91b4c858e2cfacc97d"
     },
     {
-      "path": "concepts/alaska-drone-blood-delivery-olympic-antidoping.md",
-      "source_commit": "6d9c1e423dde32e660664ec5e9e2a5dfcb1a2c19"
+      "path": "concepts/airwise-uas-sentry-remote-id-integration.md",
+      "source_commit": "ac435f48faef4361e2fc6e91b4c858e2cfacc97d"
+    },
+    {
+      "path": "concepts/amprius-sicore-battery.md",
+      "source_commit": "ac435f48faef4361e2fc6e91b4c858e2cfacc97d"
     },
     {
       "path": "concepts/brinc-emergency-drone-funding.md",
-      "source_commit": "6d9c1e423dde32e660664ec5e9e2a5dfcb1a2c19"
+      "source_commit": "ac435f48faef4361e2fc6e91b4c858e2cfacc97d"
     },
     {
       "path": "concepts/calibrate-once-fly-any-team-swarm-training.md",
-      "source_commit": "6d9c1e423dde32e660664ec5e9e2a5dfcb1a2c19"
+      "source_commit": "ac435f48faef4361e2fc6e91b4c858e2cfacc97d"
     },
     {
       "path": "concepts/china-drone-export-controls.md",
-      "source_commit": "6d9c1e423dde32e660664ec5e9e2a5dfcb1a2c19"
+      "source_commit": "ac435f48faef4361e2fc6e91b4c858e2cfacc97d"
+    },
+    {
+      "path": "concepts/cross-layered-medical-drone-coordination.md",
+      "source_commit": "ac435f48faef4361e2fc6e91b4c858e2cfacc97d"
     },
     {
       "path": "concepts/dame-net-uav-image-restoration.md",
-      "source_commit": "6d9c1e423dde32e660664ec5e9e2a5dfcb1a2c19"
+      "source_commit": "ac435f48faef4361e2fc6e91b4c858e2cfacc97d"
     },
     {
-      "path": "concepts/dji-drone-shot-down-alabama-incident.md",
-      "source_commit": "6d9c1e423dde32e660664ec5e9e2a5dfcb1a2c19"
+      "path": "concepts/dji-osmo-360-ii.md",
+      "source_commit": "ac435f48faef4361e2fc6e91b4c858e2cfacc97d"
     },
     {
-      "path": "concepts/dji-mavic-4-pro-features.md",
-      "source_commit": "6d9c1e423dde32e660664ec5e9e2a5dfcb1a2c19"
+      "path": "concepts/dji-osmo-action-6.md",
+      "source_commit": "ac435f48faef4361e2fc6e91b4c858e2cfacc97d"
     },
     {
-      "path": "concepts/dji-mavic-4-pro.md",
-      "source_commit": "6d9c1e423dde32e660664ec5e9e2a5dfcb1a2c19"
-    },
-    {
-      "path": "concepts/drone-news-2026-10-12.md",
-      "source_commit": "6d9c1e423dde32e660664ec5e9e2a5dfcb1a2c19"
+      "path": "concepts/drone-news-2026-10-13.md",
+      "source_commit": "ac435f48faef4361e2fc6e91b4c858e2cfacc97d"
     },
     {
       "path": "concepts/drone-news-hardware.md",
-      "source_commit": "6d9c1e423dde32e660664ec5e9e2a5dfcb1a2c19"
+      "source_commit": "ac435f48faef4361e2fc6e91b4c858e2cfacc97d"
     },
     {
       "path": "concepts/drone-news-ops.md",
-      "source_commit": "6d9c1e423dde32e660664ec5e9e2a5dfcb1a2c19"
+      "source_commit": "ac435f48faef4361e2fc6e91b4c858e2cfacc97d"
     },
     {
-      "path": "concepts/dronuum-computing-continuum.md",
-      "source_commit": "6d9c1e423dde32e660664ec5e9e2a5dfcb1a2c19"
+      "path": "concepts/drone-wall-defense-system.md",
+      "source_commit": "ac435f48faef4361e2fc6e91b4c858e2cfacc97d"
     },
     {
-      "path": "concepts/faa-airspace-classes-drone-authorization.md",
-      "source_commit": "6d9c1e423dde32e660664ec5e9e2a5dfcb1a2c19"
+      "path": "concepts/event38-tb2-drops-integration.md",
+      "source_commit": "ac435f48faef4361e2fc6e91b4c858e2cfacc97d"
     },
     {
-      "path": "concepts/kci-critical-facility-illegal-drone-counter-uas-zones.md",
-      "source_commit": "6d9c1e423dde32e660664ec5e9e2a5dfcb1a2c19"
+      "path": "concepts/kci-airport-drone-incident-location-reporting.md",
+      "source_commit": "ac435f48faef4361e2fc6e91b4c858e2cfacc97d"
     },
     {
-      "path": "concepts/mavlink-m-interoperability.md",
-      "source_commit": "6d9c1e423dde32e660664ec5e9e2a5dfcb1a2c19"
+      "path": "concepts/lowes-wing-doordash-drone-delivery-pilot.md",
+      "source_commit": "ac435f48faef4361e2fc6e91b4c858e2cfacc97d"
     },
     {
-      "path": "concepts/micro-drone-slam-imu-vio-lidar-uav-livox-mid-360-pixhawk-4-m.md",
-      "source_commit": "6d9c1e423dde32e660664ec5e9e2a5dfcb1a2c19"
+      "path": "concepts/swarm-modes.md",
+      "source_commit": "ac435f48faef4361e2fc6e91b4c858e2cfacc97d"
     },
     {
-      "path": "concepts/oddityrc-echo5-frame-gps.md",
-      "source_commit": "6d9c1e423dde32e660664ec5e9e2a5dfcb1a2c19"
+      "path": "concepts/yolo-v8-4-176.md",
+      "source_commit": "ac435f48faef4361e2fc6e91b4c858e2cfacc97d"
     },
     {
-      "path": "raw/papers/_unclassified/네이버.md",
-      "source_commit": "6d9c1e423dde32e660664ec5e9e2a5dfcb1a2c19"
+      "path": "raw/papers/_unclassified/eagle-deim-dual-stream-decoupled-transformer-for-air-to-air-tiny-uav-detection.md",
+      "source_commit": "ac435f48faef4361e2fc6e91b4c858e2cfacc97d"
+    },
+    {
+      "path": "raw/papers/drone-ai/wind-aware-deep-reinforcement-learning-for-autonomous-uav-navigation-without-gps.md",
+      "source_commit": "ac435f48faef4361e2fc6e91b4c858e2cfacc97d"
     }
   ],
   "revoked_paths": []
