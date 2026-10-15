@@ -25,88 +25,244 @@
   ],
   "approved_source_versions": [
     {
+      "path": "concepts/6g-isac-matlab-usrp.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
+    },
+    {
       "path": "concepts/ai-knowledge-workflow.md",
-      "source_commit": "ac435f48faef4361e2fc6e91b4c858e2cfacc97d"
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
+    },
+    {
+      "path": "concepts/ai-personal-knowledge-management.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
     },
     {
       "path": "concepts/airwise-uas-sentry-remote-id-integration.md",
-      "source_commit": "ac435f48faef4361e2fc6e91b4c858e2cfacc97d"
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
     },
     {
-      "path": "concepts/amprius-sicore-battery.md",
-      "source_commit": "ac435f48faef4361e2fc6e91b4c858e2cfacc97d"
+      "path": "concepts/alaska-drone-blood-delivery-olympic-antidoping.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
     },
     {
-      "path": "concepts/brinc-emergency-drone-funding.md",
-      "source_commit": "ac435f48faef4361e2fc6e91b4c858e2cfacc97d"
+      "path": "concepts/ardupilot-plane-4-7.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
     },
     {
-      "path": "concepts/calibrate-once-fly-any-team-swarm-training.md",
-      "source_commit": "ac435f48faef4361e2fc6e91b4c858e2cfacc97d"
+      "path": "concepts/axisflying-bando-5-review.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
+    },
+    {
+      "path": "concepts/axisflying-vertex-5-review.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
+    },
+    {
+      "path": "concepts/betaflight.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
+    },
+    {
+      "path": "concepts/bio-inspired-offloading-uav-iov-mec.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
+    },
+    {
+      "path": "concepts/bt-drone-sim-rail-incident-response.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
     },
     {
       "path": "concepts/china-drone-export-controls.md",
-      "source_commit": "ac435f48faef4361e2fc6e91b4c858e2cfacc97d"
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
     },
     {
-      "path": "concepts/cross-layered-medical-drone-coordination.md",
-      "source_commit": "ac435f48faef4361e2fc6e91b4c858e2cfacc97d"
+      "path": "concepts/companion-computer.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
     },
     {
-      "path": "concepts/dame-net-uav-image-restoration.md",
-      "source_commit": "ac435f48faef4361e2fc6e91b4c858e2cfacc97d"
+      "path": "concepts/dfend-counter-drone-worldcup.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
     },
     {
       "path": "concepts/dji-osmo-360-ii.md",
-      "source_commit": "ac435f48faef4361e2fc6e91b4c858e2cfacc97d"
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
     },
     {
       "path": "concepts/dji-osmo-action-6.md",
-      "source_commit": "ac435f48faef4361e2fc6e91b4c858e2cfacc97d"
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
     },
     {
-      "path": "concepts/drone-news-2026-10-13.md",
-      "source_commit": "ac435f48faef4361e2fc6e91b4c858e2cfacc97d"
+      "path": "concepts/dji-osmo-nano-cinematic.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
+    },
+    {
+      "path": "concepts/dji-osmo-nano.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
+    },
+    {
+      "path": "concepts/drone-ai-agents.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
+    },
+    {
+      "path": "concepts/drone-delivery-news.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
+    },
+    {
+      "path": "concepts/drone-news-2026-10-14.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
+    },
+    {
+      "path": "concepts/drone-news-2026-10-15.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
     },
     {
       "path": "concepts/drone-news-hardware.md",
-      "source_commit": "ac435f48faef4361e2fc6e91b4c858e2cfacc97d"
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
     },
     {
       "path": "concepts/drone-news-ops.md",
-      "source_commit": "ac435f48faef4361e2fc6e91b4c858e2cfacc97d"
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
     },
     {
-      "path": "concepts/drone-wall-defense-system.md",
-      "source_commit": "ac435f48faef4361e2fc6e91b4c858e2cfacc97d"
+      "path": "concepts/drone-regulations.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
     },
     {
-      "path": "concepts/event38-tb2-drops-integration.md",
-      "source_commit": "ac435f48faef4361e2fc6e91b4c858e2cfacc97d"
+      "path": "concepts/dronuum-computing-continuum.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
     },
     {
-      "path": "concepts/kci-airport-drone-incident-location-reporting.md",
-      "source_commit": "ac435f48faef4361e2fc6e91b4c858e2cfacc97d"
+      "path": "concepts/emax-nanoscout-pro-1s-whoop.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
+    },
+    {
+      "path": "concepts/emax-tinyhawk-aero.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
+    },
+    {
+      "path": "concepts/emlid-corrections.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
+    },
+    {
+      "path": "concepts/game-theoretic-drone-swarm-defense.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
+    },
+    {
+      "path": "concepts/hierarchical-rl-uav-navigation.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
+    },
+    {
+      "path": "concepts/hybrid-beamforming-ntn.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
+    },
+    {
+      "path": "concepts/indi-stability-tilt-rotor-vtol.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
+    },
+    {
+      "path": "concepts/kci-counter-drone-hardkill-engagement-zone.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
+    },
+    {
+      "path": "concepts/kci-drone-3d-mapping-fire-investigation.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
+    },
+    {
+      "path": "concepts/kci-drone-human-hybrid-delivery-milp.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
+    },
+    {
+      "path": "concepts/kci-lightweight-uav-precision-imaging.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
+    },
+    {
+      "path": "concepts/kci-multisensor-fusion-counter-drone-identification-engagement.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
+    },
+    {
+      "path": "concepts/kci-naval-integrated-counter-drone-system-direction.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
+    },
+    {
+      "path": "concepts/kci-sejong-counter-drone-governance.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
+    },
+    {
+      "path": "concepts/kci-ship-eoir-counter-drone-sensor-concept.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
+    },
+    {
+      "path": "concepts/kci-tank-zone-vulnerability-selective-counter-drone-protection.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
     },
     {
       "path": "concepts/lowes-wing-doordash-drone-delivery-pilot.md",
-      "source_commit": "ac435f48faef4361e2fc6e91b4c858e2cfacc97d"
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
     },
     {
-      "path": "concepts/swarm-modes.md",
-      "source_commit": "ac435f48faef4361e2fc6e91b4c858e2cfacc97d"
+      "path": "concepts/multi-uav-wind-farm-inspection.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
     },
     {
-      "path": "concepts/yolo-v8-4-176.md",
-      "source_commit": "ac435f48faef4361e2fc6e91b4c858e2cfacc97d"
+      "path": "concepts/pso-uav-bushfire-hazard-management.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
     },
     {
-      "path": "raw/papers/_unclassified/eagle-deim-dual-stream-decoupled-transformer-for-air-to-air-tiny-uav-detection.md",
-      "source_commit": "ac435f48faef4361e2fc6e91b4c858e2cfacc97d"
+      "path": "concepts/quadrotor-wind-fidelity-ppo-robustness.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
     },
     {
-      "path": "raw/papers/drone-ai/wind-aware-deep-reinforcement-learning-for-autonomous-uav-navigation-without-gps.md",
-      "source_commit": "ac435f48faef4361e2fc6e91b4c858e2cfacc97d"
+      "path": "concepts/sim-assisted-uav-beamforming.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
+    },
+    {
+      "path": "concepts/truck-as-hub-vrp-drones-branch-price-cut.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
+    },
+    {
+      "path": "concepts/uav-detr-anti-drone-detection.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
+    },
+    {
+      "path": "concepts/uav-multimodal-beam-prediction-deepsense.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
+    },
+    {
+      "path": "concepts/visual-slam-gps-denied-evaluation.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
+    },
+    {
+      "path": "concepts/yolo-v8-4-177.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
+    },
+    {
+      "path": "raw/articles/quad-drone-lab-quad-drone-start.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
+    },
+    {
+      "path": "raw/papers/_unclassified/an-exact-branch-price-and-cut-algorithm-for-a-truck-as-hub-vehicle-routing-probl.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
+    },
+    {
+      "path": "raw/papers/_unclassified/efficient-multimodal-beam-prediction-for-real-world-6g-uav-communications-via-im.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
+    },
+    {
+      "path": "raw/papers/_unclassified/uniia-det-illumination-adaptive-detection-for-uav-based-wind-turbine-inspection.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
+    },
+    {
+      "path": "raw/papers/_unclassified/드론기반-3d-맵핑-시스템의-화재조사-활용방안-연구.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
+    },
+    {
+      "path": "raw/papers/_unclassified/병역자원-감소와-미래-해양전장환경-변화에-따른-한국-해군-통합대드론체계-발전-방향-연구.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
+    },
+    {
+      "path": "raw/papers/_unclassified/함정-방어를-위한-복합-대드론체계의-eoir-센서-운용개념-및-해상-환경-고려요소-분석.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
+    },
+    {
+      "path": "raw/papers/swarm/from-sensor-trust-to-swarm-resilience-tinyml-guided-integrity-aware-communicatio.md",
+      "source_commit": "956b85f3aaf4fdc2716d7dba15bc6d5ba0b290b6"
     }
   ],
   "revoked_paths": []
