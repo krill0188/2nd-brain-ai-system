@@ -140,3 +140,4 @@ AI 개인 지식관리는 자료를 많이 저장하는 일이 아니라, 원본
 - ‘원주 국방 드론 집적단지’, 500억 공모 도전 (KBS 뉴스, Thu, 08 Oc) — https://news.google.com/rss/articles/CBMiW0FVX3lxTFAxUzFubHAyX2dSWTBXZDVNYnVkN1hFWXhkRmRfaVZubUxJR21nMXBKS1lmWjhfTXhiSzQ4QWJxeXgxckJHSVJCT1dOVExKSG5aaDJDMDRlUFlhZ3M?oc=5
 - [핑크랩 PinkLAB] MuJoCo + ROS 2로 Nav2 · MoveIt · LLM까지 2일 완성 모집 (youtube.com, 2026-10-09) — https://www.youtube.com/watch?v=85FGaf6unms
 - 원주 ‘국방 드론산업’ 메카 도전장 (쿠키뉴스, Wed, 07 Oc) — https://news.google.com/rss/articles/CBMiY0FVX3lxTE5MaHE0U2NWOXdKVG9lV2dSYVRVbHJObWpESGVYS01FOV84MG15UGVJLXNEOVVDNzFud05YZUx6TDF4bkdIM2tRWGRkdXlnQnktRm9sbldqYktmT0czOU0tLUZwMA?oc=5
+- 첨단드론·방산기술 한자리에…이천 복하천서 15~17일 '드론대전' (뉴스1, Tue, 13 Oc) — https://news.google.com/rss/articles/CBMiVkFVX3lxTE5jcTdMUmRsRk9aTnNnNlVyOU16SkI2QXlFOEs4U05VbkpCMjdXSlNhWE5hNkhFRHA5SzUzLUd3RklWWGdxc2NXeXBEMTFpUWZyRWVYWGVR?oc=5

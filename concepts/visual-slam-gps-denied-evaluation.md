@@ -1,10 +1,10 @@
 ---
 title: Visual SLAM GPS-Denied Evaluation
 created: 2026-08-19
-updated: 2026-08-19
+updated: 2026-10-14
 type: concept
 tags: [drone-ai, drone, slam, computer-vision, gps-denied]
-sources: [raw/papers/drone-ai/robust-visual-slam-for-uav-navigation-in-gps-denied-and-degraded-environments-a-.md]
+sources: [raw/papers/drone-ai/robust-visual-slam-for-uav-navigation-in-gps-denied-and-degraded-environments-a-.md, raw/articles/quad-drone-lab-quad-drone-start.md, raw/papers/drone-ai/wind-aware-deep-reinforcement-learning-for-autonomous-uav-navigation-without-gps.md]
 confidence: high
 contested: false
 contradictions: []
@@ -40,3 +40,8 @@ NVIDIA Jetson 플랫폼에서 SWaP(크기, 중량, 전력) 제약 조건 하의 
 - [[computer-vision-drone]] — 드론 컴퓨터 비전
 - [[visual-positioning-odometry]] — 시각적 위치 추정 및 오도메트리
 - [[gps-uav-imu]] — GPS 미수신 환경 UAV 위치 추정
+
+## 신규 관련 근거 (2026-10-14)
+
+- 상용 교육 키트 쪽에서는 PX4 FC + Jetson Nano에 Realsense T265 VIO·D435i 심도 카메라를 non-GPS 옵션으로 묶어 판매한다(벤더 문서, 성능 미검증): [[companion-computer]].^[raw/articles/quad-drone-lab-quad-drone-start.md]
+- GPS/GNSS 없이 바람을 고려해 항법하는 DRL 연구(제목 수준): [[hierarchical-rl-uav-navigation]], [[quadrotor-wind-fidelity-ppo-robustness]].^[raw/papers/drone-ai/wind-aware-deep-reinforcement-learning-for-autonomous-uav-navigation-without-gps.md]

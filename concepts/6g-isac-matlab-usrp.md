@@ -74,3 +74,4 @@ contradictions: []
 - 코리아스타트업포럼·한국대드론산업협회, 방산 스타트업 기술 ‘현장 검증’ 연결한다 (벤처스퀘어, Thu, 01 Oc) — https://news.google.com/rss/articles/CBMiT0FVX3lxTE1lLXlDT3pFUHoxdVBzSUhQa0t2cEtPbG5JNkNrZ1BPZXV4MDIxVEJkbXp0NDFLU0d0TDlRSGlQbmtvd3RYQlJGNk1GRHJCMmc?oc=5
 - [MATLAB] What Is Aerospace Toolbox? (youtube.com, 2026-10-05) — https://www.youtube.com/watch?v=C4zJCQj2Hro
 - 세계 방산 스타트업 투자 급증…드론·AI가 안보산업 판도 바꾼다 (드론매거진 뉴스, Tue, 06 Oc) — https://news.google.com/rss/articles/CBMiZEFVX3lxTFA1ZC1iLVlyLUlXMHNuMzlsSENLX1ptTlBYNko0c05ZWEJyT2lpZ09tbHNRalJ4MHJyOGpLNGEwOWI5MVJVNThaMFNoYzRoQUtjdnhEeU14ZGZQbHdQU05YbjhGZHU?oc=5
+- 이천서 첨단드론대전 개최…해외·국내 방산기업 대거 참여 (팔당유역신문, Tue, 13 Oc) — https://news.google.com/rss/articles/CBMia0FVX3lxTFBrRXE4Y0Iza1NRNHRUYU1OM2RiNXpGOHZ5UDRpQ3lqSFhUMnlRXzhCSXo5dVlDVnhIUk91bnFxSFRDUHlvVUtQWUFsNUJFYk9Wb2hHdHprLUcyZ2VteTFrUW5lT1FWLURVNUVn?oc=5

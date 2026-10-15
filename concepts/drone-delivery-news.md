@@ -1,7 +1,7 @@
 ---
 title: "Drone Delivery News 2026-08-01"
 created: 2026-08-01
-updated: 2026-10-08
+updated: 2026-10-15
 type: concept
 tags: [drone, ops-mission]
 domain: ops-mission
@@ -38,6 +38,8 @@ contradictions: []
 ## 최신 근거 연결 (2026-10-08)
 
 - 모델링 연구: 지형 제약과 충전소 기능 구분을 반영한 드론-인간 혼합배송 MILP(초록 절단): [[kci-drone-human-hybrid-delivery-milp]]^[inbox/processed/fetch-2026-10-08-kci-지형적-특성과-충전소-기능-구분을-고려한-드론-인간-혼합배송의-비용-효율적-입지-및-네트워크-최적화-모형.md]
+
+- [[truck-as-hub-vrp-drones-branch-price-cut]] — 트럭 허브 드론 VRP 분지-가격-절단 정확해법(2026-10 arXiv)
 
 ## 📰 최근 관련 소식
 - 붉게 달아오른 도심…‘열화상 드론’으로 본 폭염 (news.kbs.co.kr, Wed, 05 Au) — https://news.google.com/rss/articles/CBMiW0FVX3lxTE1qV01vSHh1bDZpaHl0STh1MlZXT2NZU1llRDd0dnVPRlVUZi0zV3pmSk02Q0w1YWpyMV8yVmt2NWxZMWt5M04yOWQ0M2hkZFo5QWZZMHBPZ0txdlU?oc=5

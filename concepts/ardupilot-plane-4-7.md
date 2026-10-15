@@ -1,10 +1,10 @@
 ---
 title: ArduPilot Plane 4.7.0
 created: 2026-07-29
-updated: 2026-09-05
+updated: 2026-10-15
 type: concept
 tags: [drone, drone-sw, flight-control]
-sources: [inbox/fetch-2026-07-29-ardupilot.md]
+sources: [inbox/fetch-2026-07-29-ardupilot.md, inbox/processed/fetch-2026-10-15-ardupilot.md]
 confidence: high
 contested: false
 contradictions: []
@@ -25,6 +25,9 @@ ArduPilot Plane 4.7.0은 2026년 7월 21일에 안정 버전으로 릴리스된 
 
 - **Plane-4.7.1** (2026년 9월 4일): 고정익/VTOL용 안정 패치 버전으로 릴리스.
   공지: https://discuss.ardupilot.org/t/plane-4-7-1-released/145389
+- **Plane-4.7.2** (2026년 10월 11일): 고정익/VTOL용 안정 패치 버전으로 릴리스. 변경 내역은 수집 원문에 없다.
+  공지: https://discuss.ardupilot.org/t/plane-4-7-2-released/145804
+  ^[inbox/processed/fetch-2026-10-15-ardupilot.md]
 
 ## 주요 특징
 

@@ -45,3 +45,4 @@ DJI의 액션 카메라 시리즈 6세대 모델로, 야간 촬영 성능이 크
 - [DJI] Sky bright. Valleys deep. All there. | DJI Osmo Action 6 (youtube.com, 2026-10-08) — https://www.youtube.com/watch?v=sF21edxDzU4
 - [DJI] Ice moves. Your frame doesn’t. | DJI Osmo Action 6 (youtube.com, 2026-10-12) — https://www.youtube.com/watch?v=SIHHxE0sm24
 - [DJI] One Take, Behind the Scenes | DJI Inspire 3 (youtube.com, 2026-10-12) — https://www.youtube.com/watch?v=rFYgVzCBml4
+- [DJI] Two Cameras. One Sky Run. | DJI Osmo Action 6 & DJI Osmo 360 (youtube.com, 2026-10-14) — https://www.youtube.com/watch?v=H7YJIrMK60Y

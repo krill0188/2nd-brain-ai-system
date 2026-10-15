@@ -56,3 +56,6 @@ Betaflight는 FPV(First Person View) 드론과 소형 레이싱 드론을 위한
 - [[px4-flight-stack]] — Betaflight와 비교되는 다른 오픈소스 비행 스택
 - [[edgetx-custom-audio]] — EdgeTX 라디오 설정
 - [[fc-firmware-comparison]] — Betaflight vs INAV vs ArduPilot 비교
+
+## 📰 최근 관련 소식
+- 아산 외암민속마을 짚풀문화제 16일 개막… 전국 공예작품·드론쇼 선보인다 (아산데일리, Wed, 14 Oc) — https://news.google.com/rss/articles/CBMiU0FVX3lxTE1kWTl3TzZyTGVwUkRtMkdFc3N6UGFFdGlESVFlTjB3ZFliempfSXRnZko0RG9hNWwtTEFvOXU5MWUwYWxza0JQWXI2UFpPdjFPeGYw?oc=5

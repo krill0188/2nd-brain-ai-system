@@ -1,10 +1,10 @@
 ---
 title: Emlid Corrections Service
 created: 2026-08-05
-updated: 2026-10-09
+updated: 2026-10-15
 type: concept
 tags: [drone, hardware, gnss, rtk, emlid]
-sources: [inbox/fetch-2026-08-05-yt-emlid-corrections-get-centimeter-accuracy-with-your-reach-in.md, inbox/fetch-2026-08-05-yt-how-to-get-an-rtk-fix-with-emlid-corrections.md, inbox/fetch-2026-08-06-yt-how-to-get-an-rtk-fix-in-seconds.md, inbox/processed/fetch-2026-09-30-yt-why-your-gnss-receiver-wont-lock-fix-and-how-to-fix-it.md, inbox/processed/fetch-2026-10-02-yt-how-gossweiler-cut-site-visits-for-daily-checks-with-emlid-g.md, inbox/processed/fetch-2026-10-07-yt-you-can-now-use-emlid-corrections-with-reach-rx-and-rx2-in-p.md, inbox/processed/fetch-2026-10-09-yt-how-gossweiler-sets-up-emlid-gnss-on-the-construction-site.md]
+sources: [inbox/fetch-2026-08-05-yt-emlid-corrections-get-centimeter-accuracy-with-your-reach-in.md, inbox/fetch-2026-08-05-yt-how-to-get-an-rtk-fix-with-emlid-corrections.md, inbox/fetch-2026-08-06-yt-how-to-get-an-rtk-fix-in-seconds.md, inbox/processed/fetch-2026-09-30-yt-why-your-gnss-receiver-wont-lock-fix-and-how-to-fix-it.md, inbox/processed/fetch-2026-10-02-yt-how-gossweiler-cut-site-visits-for-daily-checks-with-emlid-g.md, inbox/processed/fetch-2026-10-07-yt-you-can-now-use-emlid-corrections-with-reach-rx-and-rx2-in-p.md, inbox/processed/fetch-2026-10-09-yt-how-gossweiler-sets-up-emlid-gnss-on-the-construction-site.md, inbox/processed/fetch-2026-10-15-yt-how-gossweiler-keeps-field-and-office-in-sync-with-emlid.md]
 confidence: high
 contested: false
 contradictions: []
@@ -81,3 +81,8 @@ Emlid·Pix4D 영상(자막 기준): 모든 Emlid 수신기가 네트워크 보�
 - 드론실드가 이끄는 호주 방산주 3선 (simplywall.st, Thu, 01 Oc) — https://news.google.com/rss/articles/CBMiowFBVV95cUxOYUVkMGtKRDJvY01MY0huRHd1UHlfQWdmXzhoaFhtQVl6SHJZRnFyWE8tNDVsbHMyNVlTdHJOVE9qVTNZcjh6WlpJa2tjUGF6dHgzRnVPTDBvdG5Jc3o2WTVZUG1iXzl2ZGp3V1FtdXZYbE1LbGF1bmhtLXNLcVRNUmF4M3cxaUZJclNQUlNIcThid1VVbTA4dUg0YWpoWkVxTk1n0gGjAUFVX3lxTE5hRWQwa0pEMm9jTUxjSG5Ed3VQeV9BZ2ZfOGhoWG1BWXpIcllGcXJYTy00NWxsczI1WVN0ck5UT2pVM1lyOHpaWklra2NQYXp0eDNGdU9MMG90bklzejZZNVlQbWJfOXZkandXUW11dlhsTUtsYXVuaG0tc0txVE1SYXgzdzFpRklyU1BSU0hxOGJ3VVVtMDh1SDRhamhaRXFOTWc?oc=5
 - [Emlid] You can now use Emlid Corrections with Reach RX and RX2 in PIX4Dcatch (youtube.com, 2026-10-06) — https://www.youtube.com/watch?v=wQ81BFHFL8o
 - [Emlid] How Gossweiler sets up Emlid GNSS on the construction site (youtube.com, 2026-10-08) — https://www.youtube.com/watch?v=JTpDI9iG0cA
+- [Emlid] How Gossweiler keeps field and office in sync with Emlid (youtube.com, 2026-10-14) — https://www.youtube.com/watch?v=MTxjz-CuwW4
+
+## 클라우드 프로젝트 공유 (Gossweiler 사례, 2026-10-14)
+
+- 사무실에서 프로젝트를 모두 설정하고 전원이 같은 접근 권한을 가지며, 직원이 복귀하기 전에 데이터를 내려받을 수 있다. 과거에는 PC→USB/SD→컨트롤러 import/export 경로에서 SD 카드 손상으로 데이터가 유실되기도 했으나 클라우드 기반으로 바뀌며 해소되었다고 한다 (영상 자막, 팀 발언).^[inbox/processed/fetch-2026-10-15-yt-how-gossweiler-keeps-field-and-office-in-sync-with-emlid.md]

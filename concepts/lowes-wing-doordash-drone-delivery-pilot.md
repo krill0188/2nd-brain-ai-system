@@ -38,3 +38,4 @@ Lowe's가 노스캐롤라이나 매튜스에서 드론 배송 시범을 시작�
 - 영주호 오토캠핑장 ‘신선식품 드론 배송 서비스’ 본격 개시 (시사뉴스, Sun, 04 Oc) — https://news.google.com/rss/articles/CBMiY0FVX3lxTFBWUWl6cnBMMzhKdGVaOFd3WHFrZTVsR0N0T2JQLWpLSUVvakx0eXRDdGkwRkRHSUZ5SW1HeUtXc2RsSmU2SUVJVlpYb3g5a01tWktSd0p6UHBxU2NIZWlMM2gxNA?oc=5
 - "영주호 캠핑장서 주문하면 드론이 직접 배달"…신선식품 배송 뜬다 (매일신문, Sun, 04 Oc) — https://news.google.com/rss/articles/CBMiYkFVX3lxTE81aTRrVkE2c0cwTjBuQ3Q2T3RoQVdhX21QeDd3T1owbGF3eVV3cWc3emJVVXktUENCbXBaQ05qNGFYdFROc2dDSkVlX2lPRDBpa0xtSVI5YUJZejdzdG9CY0xR?oc=5
 - 밀양시, 드론 배송 모바일 주문 도입…전국 첫 공공배달앱 연계 (뉴스핌, Mon, 12 Oc) — https://news.google.com/rss/articles/CBMiXEFVX3lxTFBjU2U3bTFTejk3Rmd2TE1ndU5seTd3X3A5THNqNmg4d2JYbUdtaXpCQzF1NUdqTG1XblJYWGhYTlZlTVNfV281cWRrY29xOVhkczktcWo2ZUs3RDgz?oc=5
+- 밀양 삼문동·하남읍 야외 드론 배송 본격화 (경남신문, Tue, 13 Oc) — https://news.google.com/rss/articles/CBMiWkFVX3lxTE5xM3hEdU80MzJzeHptMlVJa0toODF5Mkpsci1ORGhkMVpxRDN6aHhkN2dzdTRWaXItSHNjVERsS2tTVGIySFBWMkNyZE9YdmxjdEEzdGk1YndKUQ?oc=5

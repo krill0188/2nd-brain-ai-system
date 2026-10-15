@@ -1,7 +1,7 @@
 ---
 title: "이종센서 융합 대드론 표적 식별 신뢰도와 교전영역 활용률 분석 (KCI)"
 created: 2026-10-03
-updated: 2026-10-09
+updated: 2026-10-15
 type: concept
 domain: ops-mission
 tags: [drone, ops-mission, drone-ai]
@@ -47,3 +47,5 @@ low.
 - [[dfend-counter-drone-worldcup]] — 대드론 실운용 사례
 - [[kci-tank-zone-vulnerability-selective-counter-drone-protection]] — 전차 기능구역별 선택적 대드론 방호(제대급 공유 대드론 기능과 상보적 관점)
 - [[kci-counter-drone-3d-air-defense-layered-neutralization]] — 소프트킬 우선·하드킬 최종 계층적 무력화 모델(운용 개념 측면)
+- [[kci-ship-eoir-counter-drone-sensor-concept]] — 함정 레이더+EO/IR 복합체계의 5단계 교전 사이클 센서 역할 분담(해상 환경 요소 정성 분석)
+- [[kci-naval-integrated-counter-drone-system-direction]] — 해군 통합대드론체계(K-Maritime C-UAS) 발전 방향

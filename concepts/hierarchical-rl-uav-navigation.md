@@ -1,10 +1,10 @@
 ---
 title: "계층적 강화학습 UAV 자율 내비게이션"
 created: 2026-09-02
-updated: 2026-09-02
+updated: 2026-10-14
 type: concept
 tags: [drone, ai-autonomy, reinforcement-learning, navigation]
-sources: [inbox/fetch-2026-09-02-crossref-intent-guided-hierarchical-reinforcement-learning-with-hybri.md]
+sources: [inbox/fetch-2026-09-02-crossref-intent-guided-hierarchical-reinforcement-learning-with-hybri.md, raw/papers/drone-ai/wind-aware-deep-reinforcement-learning-for-autonomous-uav-navigation-without-gps.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -26,6 +26,11 @@ domain: ai-autonomy
 - [[drone-ai-agents]] — 자율 의사결정 시스템
 - [[px4-offboard-control]] — ROS2 기반 오프보드 제어
 - [[ros2-drone-integration]] — ROS2 드론 연동
+
+## 인접 연구 (2026-10-14)
+
+- 바람 외란 하에서 GPS/GNSS·시각 인지 없이 항법하는 DRL 연구(제목 수준, 초록 미수집)가 같은 시기에 등록됐다. 계층적 구조와의 비교는 근거 부족으로 보류.^[raw/papers/drone-ai/wind-aware-deep-reinforcement-learning-for-autonomous-uav-navigation-without-gps.md]
+- 바람 외란 학습 관점: [[quadrotor-wind-fidelity-ppo-robustness]], 비GPS 항법: [[visual-slam-gps-denied-evaluation]]
 
 ## 출처
 

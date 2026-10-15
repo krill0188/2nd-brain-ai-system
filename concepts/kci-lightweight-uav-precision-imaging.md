@@ -38,3 +38,7 @@ FC/ESC/PDB 일체형 통합 보드 설계는 드론 소형화 및 군용·산업
 ## 📰 최근 관련 소식
 - 고양시, 고정밀 드론영상 자체 제작… 농지조사·불법건축물 단속 활용 (세계일보, Sat, 05 Se) — https://news.google.com/rss/articles/CBMiWEFVX3lxTE9jSEdrcGN1eXhsZGNDaldONzByRzVWQU5Ib0UtanMwY1VubEwtTm5IckxJNmN1WXdGSDFzMkZRdEw0MElVSFRQbHRVU1ppeXprV0hsM0FFM0PSAVRBVV95cUxPSnYwQ08zNWtlWUNzcU9pZVpMaG9ZTHo3MVNYRTJjWUotQmNfdjJmNEppN25KLWNJR3hMclh4TW11a2l6elozUnl6ZkVjNkJ6aUhYeDA?oc=5
 - [한화시스템/방산] 대드론체계 시스템 개발 — 한화그룹 (Hanwha) (www.wanted.co.kr, 2026-09-18) — https://www.wanted.co.kr/wd/387716
+- [한화에어로스페이스] 드론사업단_드론 지상통제 SW 개발 — 한화그룹 (Hanwha) (www.wanted.co.kr, 2026-10-14) — https://www.wanted.co.kr/wd/391730
+- [한화에어로스페이스] 드론사업단_자폭드론 설계 및 통합 — 한화그룹 (Hanwha) (www.wanted.co.kr, 2026-10-14) — https://www.wanted.co.kr/wd/391736
+- [한화에어로스페이스] 드론사업단_장거리 자폭드론 추진계통 설계 — 한화그룹 (Hanwha) (www.wanted.co.kr, 2026-10-14) — https://www.wanted.co.kr/wd/391735
+- [한화에어로스페이스] 드론사업단_드론 데이터링크 설계 — 한화그룹 (Hanwha) (www.wanted.co.kr, 2026-10-14) — https://www.wanted.co.kr/wd/391732

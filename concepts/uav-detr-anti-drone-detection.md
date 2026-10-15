@@ -1,10 +1,10 @@
 ---
 title: "UAV-DETR - DETR for Anti-Drone Target Detection"
 created: 2026-08-20
-updated: 2026-08-20
+updated: 2026-10-14
 type: concept
 tags: [drone-ai, ai-autonomy, object-detection, detr, counter-uav]
-sources: [raw/papers/ai-autonomy/uav-detr-anti-drone-detection.md]
+sources: [raw/papers/ai-autonomy/uav-detr-anti-drone-detection.md, raw/papers/_unclassified/eagle-deim-dual-stream-decoupled-transformer-for-air-to-air-tiny-uav-detection.md]
 confidence: high
 contested: false
 contradictions: []
@@ -47,6 +47,11 @@ domain: ai-autonomy
 - [[yolo]] — 실시간 객체 검출
 - [[pt-detr-small-target-detection]] — RT-DETR 기반 소형 객체 탐지
 - [[zoomdet-uav-adaptive-detection]] — 적응적 줌인 UAV 객체 탐지
+
+## 관련 신규 연구 (2026-10-14)
+
+- "Eagle-DEIM: Dual-stream decoupled transformer for air-to-air tiny UAV detection"(Expert Systems with Applications, 2027)은 제목상 공대공 환경의 초소형 UAV 탐지를 위한 이중 스트림 분리 트랜스포머를 제안한다. 초록 미수집으로 성능 비교는 불가하며 UAV-DETR와의 우열은 판단하지 않는다.^[raw/papers/_unclassified/eagle-deim-dual-stream-decoupled-transformer-for-air-to-air-tiny-uav-detection.md]
+- 같은 소형 표적 계열: [[pt-detr-small-target-detection]], [[edge-constrained-uav-small-object-detection]]
 
 ## 출처
 

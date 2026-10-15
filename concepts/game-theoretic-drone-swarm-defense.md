@@ -39,3 +39,6 @@ Differential Game) 이론으로 정식화한 연구다
 - [[rigid-covert-gnss-spoofing-swarm]] — UAV 군집 GNSS 스푸핑 탐지 사각지대 분석(적대적 상황 대응 계열)
 - [[swarm-modes]] — 군집 드론 운용 모드 개요
 - [[kci-uav-swarm-mission-reliability-abort]] — 재구성형 UAV 스웜 임무 신뢰도 모델링(같은 raw/papers/swarm 배치로 2026-09-30 수집)
+
+## 📰 최근 관련 소식
+- 野조경태 "원전본부 5곳 중 드론 방어 1곳 뿐" 원안위원장 "용역 중" - 머니투데이 (머니투데이, Tue, 13 Oc) — https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9CRVFaVXdHbzdFNWV5TGExU3ZJYUdSRV81NzBMaTV5anJmOEJlY1FkbUNCaVJlZmhGWi15ZmlTNFhtYXJpcDlQV3l5SnczbDlWdVRDS3dsbE9KZG5wenJZRjJhWXowX1nSAWxBVV95cUxQb0puUHhNeFlZQ2xfOGlSOS1Ub3hJc2R2cVNtd21OTXBac1RuckRsUTVjbzZ2RkQ1RzI4dlRuRlNnS0hvckpVbWlGT1FaeDIyQ0NZS05kRkM3REJhaE8tOFd3RVFXQVVWcjBlSFE?oc=5

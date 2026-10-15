@@ -1,7 +1,7 @@
 ---
 title: "Hybrid Beamforming in Non-Terrestrial Networks"
 created: 2026-08-12
-updated: 2026-08-12
+updated: 2026-10-15
 type: concept
 tags: [drone, datalink, comms-protocol, beamforming, uav, satellite]
 domain: comms-protocol
@@ -51,6 +51,7 @@ Open challenges include scalable, robust, and hardware-efficient HBF for next-ge
 - [[datalink-communication]] — RF and wireless communication for drones
 - [[uav-isac-cross-region]] — Integrated sensing and communication for UAVs
 - [[swarm-coordination]] — Multi-platform coordination
+- [[uav-multimodal-beam-prediction-deepsense]] — UAV mmWave 링크 카메라 기반 빔 선택(탐색 오버헤드 감소 접근)
 
 ## 📰 최근 관련 소식
 - SimActive Correlator3D Supports Large-Scale Green Hydrogen Mapping in Chile (dronelife.com, Thu, 13 Au) — https://dronelife.com/2026/08/13/simactive-green-hydrogen-mapping-chile/

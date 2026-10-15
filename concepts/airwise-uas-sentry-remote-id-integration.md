@@ -26,3 +26,4 @@ awareness)에 초점을 맞춘 파트너십을 체결했다. UAS Sentry Nexus의
 
 ## 📰 최근 관련 소식
 - 이재명 “드론·로봇, 육해공 경계 허물어”…사관학교 통합 재차 강조 (뉴스로드, Mon, 12 Oc) — https://news.google.com/rss/articles/CBMia0FVX3lxTE1LWTBRX3JzTFpNeHhXRElBN3J5VzZEWmdXalkyX2o3MmFyMENIWHd1ZFhMS2lOUmdzWnNkRlhKaVdkZ0puVTdpMGRqTmtiRGlxQUtaVVVLTXFUNHoxWXJydE9SU2k5cW9XOTM00gFvQVVfeXFMTjJ6ZHdrVnZuZWdtRDNYMjh2REktbnl0Y01vdjFwMGhaa053UEt1UFFsRUFUMjBDZko3ZDdON3BqSHFWYkhtRzZwSXpLb0N2Njlsc0tDVktmZkFhUFZ6OC1wNVlxYXkyRkp0T0l5djFn?oc=5
+- [한화에어로스페이스] 드론사업단_C-UAS 요격드론 설계 및 통합 — 한화그룹 (Hanwha) (www.wanted.co.kr, 2026-10-14) — https://www.wanted.co.kr/wd/391734

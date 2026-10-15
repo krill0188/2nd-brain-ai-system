@@ -1,11 +1,11 @@
 ---
 title: "쿼드로터 RL 제어의 학습 바람장 충실도 비교 (PPO vs PID/SE(3))"
 created: 2026-10-08
-updated: 2026-10-10
+updated: 2026-10-14
 type: concept
 domain: flight-control
 tags: [drone, drone-ai, drone-sw, research]
-sources: [inbox/processed/fetch-2026-10-08-arxiv-statistical-turbulence-and-high-fidelity-disturbance-fields-.md, raw/papers/_unclassified/statistical-turbulence-and-high-fidelity-disturbance-fields-for-quadrotor-flight.md]
+sources: [inbox/processed/fetch-2026-10-08-arxiv-statistical-turbulence-and-high-fidelity-disturbance-fields-.md, raw/papers/_unclassified/statistical-turbulence-and-high-fidelity-disturbance-fields-for-quadrotor-flight.md, raw/papers/drone-ai/wind-aware-deep-reinforcement-learning-for-autonomous-uav-navigation-without-gps.md]
 confidence: low
 contested: false
 contradictions: []
@@ -35,3 +35,8 @@ Xun Huang의 arXiv 논문(2026-09-09 게재). 강화학습 쿼드로터 제어�
 - [[drone-simulation]] — 시뮬레이션 환경 총론
 
 - 관련(쿼드로터 RL 제어 관련): [[micro-neural-policies-safe-real-time-control]], [[rl-quadrotor-tunable-control]], [[lightweight-safe-rl-uav]]
+
+## 신규 관련 근거 (2026-10-14)
+
+- Expert Systems with Applications 수록 예정(2027)의 "Wind-aware deep reinforcement learning for autonomous UAV navigation without GPS/GNSS position feedback and visual perception"은 제목상 GPS/GNSS 위치 피드백과 시각 인지 없이 바람을 고려한 DRL 항법을 다룬다. 초록이 수집되지 않아 방법·결과는 확인할 수 없고, 이 페이지의 "충실도보다 제어 권한" 결론을 지지하거나 반박하는 근거로는 쓰지 않는다(contested 아님).^[raw/papers/drone-ai/wind-aware-deep-reinforcement-learning-for-autonomous-uav-navigation-without-gps.md]
+- 항법 쪽 RL: [[hierarchical-rl-uav-navigation]], 비GPS 항법 비교: [[visual-slam-gps-denied-evaluation]]

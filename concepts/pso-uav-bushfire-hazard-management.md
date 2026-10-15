@@ -28,3 +28,6 @@ Natural Hazards Review(2027-02 발행 예정, Crossref 메타데이터)에 실�
 - [[drone-wildfire-detection-network-optimization]] — 산불 조기탐지 네트워크 배치·라우팅 최적화
 - [[marl-uav-wildfire-exploration]] — 산불 대응 MARL 탐색
 - [[thermal-drone-wildfire-monitoring]] — 열화상 드론 산불 감시
+
+## 📰 최근 관련 소식
+- [한화에어로스페이스] 드론사업단_생산기획, 관리 — 한화그룹 (Hanwha) (www.wanted.co.kr, 2026-10-14) — https://www.wanted.co.kr/wd/391738

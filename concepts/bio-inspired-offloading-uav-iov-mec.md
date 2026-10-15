@@ -49,3 +49,6 @@ UAV를 IoV(차량 사물인터넷)의 이동형 MEC 노드로 활용해 신호�
 - [[uav-task-offloading-traffic-monitoring]] — UAV 기반 교통 모니터링 태스크 오프로딩 연구
 - [[datalink-communication]] — 드론 데이터링크 및 무선 통신
 - [[drone-ai-agents]] — 자율 의사결정, 강화학습 기반 드론 에이전트
+
+## 📰 최근 관련 소식
+- [MATLAB] Trace AI Agents in MATLAB with OpenTelemetry (youtube.com, 2026-10-14) — https://www.youtube.com/watch?v=eXDkMO7lgg0

@@ -31,3 +31,4 @@ EMAX가 출시한 신형 1S 휩(whoop)급 FPV 레이싱 드론. Painless360 채�
 
 ## 📰 최근 관련 소식
 - [Painless360] RC News: New EMAX Nanoscout PRO 1S Whoop just released! (youtube.com, 2026-09-14) — https://www.youtube.com/watch?v=dxP_SiFppwU
+- [Painless360] Just out! EMAX Tinyhawk Aero, their first ever custom built 'racer' (youtube.com, 2026-10-14) — https://www.youtube.com/watch?v=O5ISivEChw0

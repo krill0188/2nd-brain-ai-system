@@ -1,7 +1,7 @@
 ---
 title: "SIM-Assisted UAV Beamforming and 3D Position Optimization"
 created: 2026-08-19
-updated: 2026-08-19
+updated: 2026-10-15
 type: concept
 domain: comms-protocol
 tags: [drone, datalink, beamforming, sim, energy-efficiency, optimization]
@@ -63,6 +63,7 @@ Transform-based alternating optimization combining:
 - [[hybrid-beamforming-ntn]] — Non-terrestrial network hybrid beamforming
 - [[stacked-intelligent-metasurfaces]] — SIM-based UAV communication
 - [[uav-isac-cross-region]] — Cross-region ISAC for UAV swarms
+- [[uav-multimodal-beam-prediction-deepsense]] — 이미지·위치 융합 기반 UAV mmWave 빔 예측(실측 DeepSense 시나리오)
 
 ## Sources
 

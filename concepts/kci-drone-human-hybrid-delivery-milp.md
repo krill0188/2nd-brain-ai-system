@@ -1,7 +1,7 @@
 ---
 title: "드론-인간 혼합배송 입지·네트워크 최적화 MILP (KCI)"
 created: 2026-10-08
-updated: 2026-10-10
+updated: 2026-10-15
 type: concept
 domain: ops-mission
 tags: [drone, ops-mission, research]
@@ -27,3 +27,4 @@ contradictions: []
 - [[drone-delivery-news]] — 드론 배달 서비스 동향
 - [[flytrex-rooftop-docks-ai-fleet-positioning]] — 옥상 도킹스테이션 기반 배달 비용 절감 사례
 - [[uav-battery-replacement-planner]] — UAV 배터리 교체 미션 플래너
+- [[truck-as-hub-vrp-drones-branch-price-cut]] — 농촌 라스트마일 트럭 허브-드론 VRP 정확해법(지연·복귀시간·비용 동시 최적화, 본 모형과 대비되는 트럭 동행 구조)

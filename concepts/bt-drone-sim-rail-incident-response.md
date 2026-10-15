@@ -26,3 +26,4 @@ BT Business가 영국 철도경찰(British Transport Police, BTP)의 철도(rail
 ## 📰 최근 관련 소식
 - 안양시, 경기도 드론조종 경진대회 '우수상'…스마트 행정 역량 빛나 (하나뉴스, Wed, 16 Se) — https://news.google.com/rss/articles/CBMibkFVX3lxTE4wZXNPWnQxZ2VabmZYYUwxeW5sWXRSZ2RiY0tUWk5VNWdOZjkxWW9IcEl5YVhMbG5ZRElfdFVrR1dHdUI1bFVEVzBPaWlmeTdEVGRCd1l5Y2s0SFFBRVpxUk1pN0g3N1ZlTjFJR0hB?oc=5
 - 안양시, 경기도 드론조종 경진대회 ‘우수상’ 수상 (뉴스팟, Wed, 16 Se) — https://news.google.com/rss/articles/CBMiQ0FVX3lxTE10anBONUF4bkpMbVl4bDFGSGRiWGM2QnhrOV9kb1k5MV9PaFM1M3JLOTRocUpjV0dsNE52SDFSYVdjb2s?oc=5
+- [단독]도로공사, 3억6000만원 들여 300명 드론자격증 취득 지원, 전담은 16명뿐 (경향신문, Wed, 14 Oc) — https://news.google.com/rss/articles/CBMiWkFVX3lxTE1tRm1fa3pfSmxSSTFsY2MyMmRFRV9YdXpOYUFsa2doZ0d4OThUT09sRkNiZXQzblJGY2xLYnlIWTN6dmNJY0tIWGNlMlBhLWJjbC1yZm1RM1dsUdIBX0FVX3lxTE5mSlpoMV9RSDAtLVd0blNuMm1va2JSTkZ3LXM3bUNXZWJyNFc5YzA4Vm9yWkY0SXN5OWJEbG5wVXhyY24ycEg3RnJTMDkzdmxqczBYRjI5endGYXZWTEk0?oc=5
