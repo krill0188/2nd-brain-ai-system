@@ -8,6 +8,61 @@
 
 > Markdown과 Git 기반 드론 도메인 지식 관리 시스템 — **launchd + `claude -p` 자동화 + 5종 AI 도구 스택 + AI 연구 루프(인간 승인형)** 탑재.
 
+## 기획 · 의도 · 구조 (한눈에)
+
+### 기획 — 무엇을 만드는가
+드론 기술(비행제어·통신·하드웨어·SW·AI·군집·법규) 지식을 **수집 → 컴파일 → 발견 → 인간 결정**으로 쌓고,
+검증된 지식만 공개 위키 [DroneWiki](https://github.com/krill0188/drone-wiki-web)로 발행하는 **개인 지식 운영 시스템**이다.
+논문·제조사 문서·뉴스·영상·특허·정부 공고를 매일 자동 수집하고, AI가 정리·연결하되 **확정은 증거와 승인 규칙으로만** 한다.
+
+### 의도 — 왜 이렇게 만드는가
+1. **증거 우선**: 원문은 `raw/`에 불변 보존, 지식은 출처가 추적되는 Markdown으로만 컴파일한다. 환각을 쌓지 않는다.
+2. **원본은 한 곳, 공개는 선별**: 이 저장소가 source of truth이고, 공개 snapshot은 정책·해시 게이트를 통과한 문서만 `drone-wiki-web`으로 나간다.
+3. **도구는 교체 가능, 자산은 영속**: Markdown·출처 메타데이터·Git 이력이 자산이고, AI 도구·자동화 엔진은 바꿔 끼울 수 있는 레이어다.
+4. **AI는 제안, 사람은 결정**: 일상 컴파일은 자동이지만, AI 연구 루프의 가설·통찰과 미검증 발견 그래프는 사람이 승인해야 canonical이 된다.
+5. **구조화된 지식**: 문서 검색을 넘어 온톨로지(클래스 58개, 관계, 추론 규칙)로 부품 호환·임무 요구·분야 간 연쇄를 **계산**할 수 있게 한다.
+
+### 구조 — 4개 지식 계층과 연계 시스템
+
+```text
+[수집]  RSS · arXiv 8도메인 · Crossref · KCI · 특허 · FAA/관보 · YouTube 27채널 · 나라장터 · HW 제조사/SW 레지스트리
+   ▼  inbox/ ──(daily-ingest, claude -p)──► canonical (concepts · entities · comparisons · queries)
+   │                                         ▲  원문 증거 raw/ (불변)
+   ▼                                         │
+[발견]  discovery graph (AI 추출·미검증)  ──► 사람 검토(/discovery-review) ──► canonical 승격
+[연구]  research/ (Planner→Retriever→Hypothesis→Critic→Verifier→Report) ──► 마스터 승인 ──► 개별 클레임 승격
+   ▼
+[발행]  publication gate(정책·해시) ──► auto-publish(매일 10:30) ──► drone-wiki-web/data/wiki ──► Vercel
+```
+
+| 구분 | 위치 | 규모(2026-10-17 실측) |
+|---|---|---|
+| canonical 개념/개체/비교/질의 | `concepts/` `entities/` `comparisons/` `queries/` | 517 / 57 / 5 / 3 |
+| 원문 증거 | `raw/` (papers, articles, youtube, transcripts, web …) | 431개 파일 |
+| 수집 대기/처리 | `inbox/` | 1,238개 파일 |
+| 연구 루프 산출 | `research/` | 73개 파일 |
+| 온톨로지 | `ontology/class-hierarchy.json` · `docs/ONTOLOGY_SPEC.md` | 클래스 58개, 추론 규칙 8종 설계(설계서 §4, 구현 2종) |
+| 자동화 | `scripts/` + launchd `ai.2nd.*` | 스크립트 161개, 로드된 `ai.2nd.*` 잡 10개(1개는 별개 프로젝트) |
+| 발행 정책 | `publication/policy.json` | 문서 해시 승인, `ontology/`는 review |
+
+### GitHub 기준 현황
+- 저장소: 공개, 2026-07-26 생성. 언어 비중 Python ≈ 415KB · Shell ≈ 180KB · HTML ≈ 31KB (자동화 스크립트 중심 저장소).
+- 릴리즈 이력: **v3.2.2**(08-19 학술수집 대확장: arXiv 8도메인+KCI+Zotero) → **v3.3.0**(08-20 팔란티어식 온톨로지 Link+Action) → **v3.4.0**(09-02 hermes cron → Claude Pro 구독 전환) → **v3.5.0**(09-03 로컬 AI 드론빌더) → **v3.6.0**(10-09 auto-publish 안정화, 발행중단 4일치 복구) → **v3.7.0**(10-17 HW 수집 확장, 아래).
+- 연계 저장소: [`drone-wiki-web`](https://github.com/krill0188/drone-wiki-web) — 공개 snapshot을 서비스하는 Next.js 앱(AI Q&A·GraphRAG·온톨로지 추론·드론 빌더).
+
+### 최근 업데이트 (v3.7.0, 2026-10-17)
+- **HW 세분화 수집**: arXiv 5종(모터/ESC·프로펠러·전원·프레임·페이로드) + 온톨로지 클래스 5개(Propeller/Battery/Frame/Datalink/Payload) 추가.
+- **HW 자료 61건 컴파일**: 제품 카탈로그 7 · 연구 6 · 사례 4 · 개체 2 신규(제조사 공식 사양 기반).
+- **발행 파이프라인**: 새 정규문서 19개 자동 승인·매니페스트 등록, 재기준선 고정(매일 10:30 자동 발행 대기).
+- **수집 확장 설계(승인 대기)**: 드론+α 기본구조 16종·이기종 통신/프로토콜/주파수·공학 8개 분야를 위한 신규 도메인 12개 제안, 제조사 레지스트리(15개 카테고리)·SW 레지스트리(12개 카테고리) 수집은 `~/projectm/hw-collection`에 보관 중(위키 미반영, 승인 후 이관).
+
+### 한계
+- 일부 서브시스템은 구독 전용이 아니다(discovery 추출은 OpenRouter, kinetic 알림은 레거시 Hermes 경로). 상세는 위 Stage 0-R 정정 참고.
+- 공개 snapshot의 production 검색은 현재 keyword fallback이 기대 동작이다(live 호출 로그는 UNKNOWN).
+- 신규 수집 레지스트리의 라이선스·연동 칸은 표본 검증 전이며, 접근 차단 사이트(ROS 공식 문서 등)는 비어 있다.
+
+---
+
 ## 프로젝트 개요
 
 이 프로젝트는 **드론 기술** (8개 주제 영역: drone / datalink / swarm / voice-control / drone-hw / drone-sw / drone-ai / ai-agent) 에 특화된 개인 지식 관리 시스템입니다. Obsidian, VS Code, GitHub 등 어떤 Markdown 도구와도 호환되는 일반 Markdown 파일을 사용해 **캡처 → 컴파일 → 발견 → 인간 결정**의 지속적 워크플로우를 구현합니다.

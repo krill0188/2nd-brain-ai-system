@@ -8,6 +8,59 @@
 
 > A drone-domain knowledge management system built on Markdown and Git — powered by **launchd + `claude -p` automation + 5-AI tool stack + a human-approved AI research loop**.
 
+## Plan · Intent · Structure (at a glance)
+
+### Plan — what this builds
+A **personal knowledge operations system** for drone technology (flight control, datalinks, hardware, software, AI, swarms, regulation). It runs **capture → compile → discovery → human decision**, and publishes only vetted knowledge to the public wiki [DroneWiki](https://github.com/krill0188/drone-wiki-web). Papers, vendor documents, news, videos, patents and government notices are collected daily; AI organizes and links them, but **nothing is finalized without evidence and approval rules**.
+
+### Intent — why it is built this way
+1. **Evidence first**: sources are immutable under `raw/`; knowledge is compiled only as Markdown with traceable provenance.
+2. **One source of truth, selective publication**: this repo is canonical; only documents passing the policy/hash gate reach `drone-wiki-web`.
+3. **Replaceable tools, durable assets**: Markdown, provenance metadata and Git history are the assets; AI tools and automation engines are swappable layers.
+4. **AI proposes, humans decide**: routine compilation is automatic, but research-loop hypotheses and unverified discovery relations become canonical only after human approval.
+5. **Structured knowledge**: an ontology (58 classes, relations, reasoning rules) lets downstream apps *compute* part compatibility, mission requirements and cross-discipline effects instead of only retrieving text.
+
+### Structure — four knowledge layers and connected systems
+
+```text
+[Capture]  RSS · arXiv (8 domains) · Crossref · KCI · patents · FAA/Federal Register · YouTube (27 channels) · procurement notices · HW vendor / SW registries
+   ▼  inbox/ ──(daily-ingest, claude -p)──► canonical (concepts · entities · comparisons · queries)
+   │                                          ▲  raw/ evidence (immutable)
+   ▼                                          │
+[Discovery] discovery graph (AI-extracted, unverified) ──► human review (/discovery-review) ──► promotion to canonical
+[Research]  research/ (Planner→Retriever→Hypothesis→Critic→Verifier→Report) ──► master approval ──► per-claim promotion
+   ▼
+[Publish]  publication gate (policy + hashes) ──► auto-publish (daily 10:30 KST) ──► drone-wiki-web/data/wiki ──► Vercel
+```
+
+| Area | Location | Size (measured 2026-10-17) |
+|---|---|---|
+| Canonical concepts / entities / comparisons / queries | `concepts/` `entities/` `comparisons/` `queries/` | 517 / 57 / 5 / 3 |
+| Source evidence | `raw/` | 431 files |
+| Capture queue / processed | `inbox/` | 1,238 files |
+| Research-loop output | `research/` | 73 files |
+| Ontology | `ontology/class-hierarchy.json` · `docs/ONTOLOGY_SPEC.md` | 58 classes, 8 reasoning rules designed (spec §4; 2 implemented) |
+| Automation | `scripts/` + launchd `ai.2nd.*` | 161 scripts, 10 loaded `ai.2nd.*` jobs (one belongs to a separate project) |
+| Publication policy | `publication/policy.json` | document-hash approval; `ontology/` is review-only |
+
+### GitHub status
+- Public repository created 2026-07-26. Language mix: Python ≈ 415KB · Shell ≈ 180KB · HTML ≈ 31KB (automation-centric).
+- Release history: **v3.2.2** (Aug 19, scholarly collection expansion) → **v3.3.0** (Aug 20, Palantir-style ontology Link + Action) → **v3.4.0** (Sep 2, hermes cron moved to Claude Pro subscription) → **v3.5.0** (Sep 3, local AI drone builder) → **v3.6.0** (Oct 9, auto-publish stabilization) → **v3.7.0** (Oct 17, HW collection expansion, below).
+- Companion repo: [`drone-wiki-web`](https://github.com/krill0188/drone-wiki-web) — Next.js app serving the public snapshot (AI Q&A, GraphRAG, ontology reasoning, drone builder).
+
+### Latest update (v3.7.0, 2026-10-17)
+- **HW-focused collection**: five arXiv topic feeds (motor/ESC, propeller, power, frame, payload) and five new ontology classes (Propeller/Battery/Frame/Datalink/Payload).
+- **61 HW items compiled**: 7 product catalogs, 6 research, 4 cases, 2 entities (manufacturer-official specs).
+- **Publication pipeline**: 19 new canonical files auto-approved and registered; baseline re-pinned (daily 10:30 publish pending).
+- **Collection expansion (awaiting approval)**: 12 proposed new domains for the drone+α base structures, heterogeneous links/protocols/frequencies and eight engineering disciplines; HW vendor registry (15 categories) and SW registry (12 categories) are staged in `~/projectm/hw-collection` (not yet in the wiki).
+
+### Limitations
+- Not every subsystem is subscription-only (discovery extraction uses OpenRouter; legacy Hermes path remains for kinetic notifications). See the Stage 0-R override above.
+- Production search on the public snapshot is expected to fall back to keyword retrieval (live invocation logs: UNKNOWN).
+- The new registries' license/integration columns are not yet sample-verified, and sites that block bots (e.g., official ROS docs) are blank.
+
+---
+
 ## Project Overview
 
 This project is a personal knowledge management system specialized in **drone technology** (8 subject areas: drone / datalink / swarm / voice-control / drone-hw / drone-sw / drone-ai / ai-agent). It implements a continuous **capture → compile → discovery → human decision** workflow using plain Markdown files — compatible with Obsidian, VS Code, GitHub, and any Markdown-compatible tool.
