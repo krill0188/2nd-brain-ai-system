@@ -25,124 +25,80 @@
   ],
   "approved_source_versions": [
     {
-      "path": "concepts/ai-knowledge-workflow.md",
-      "source_commit": "e0d471c6a205dd9dda65302ac6cbbb1f93c157de"
+      "path": "concepts/bldc-motor-esc-characterization-research.md",
+      "source_commit": "14fd7337118915dd9b5f748db6aaecd9fc0345d0"
     },
     {
-      "path": "concepts/aliexpress-125-fpv-drone-build.md",
-      "source_commit": "e0d471c6a205dd9dda65302ac6cbbb1f93c157de"
+      "path": "concepts/drone-battery-cell-pack-specs-catalog.md",
+      "source_commit": "14fd7337118915dd9b5f748db6aaecd9fc0345d0"
     },
     {
-      "path": "concepts/caddx-curve-micro-p18.md",
-      "source_commit": "e0d471c6a205dd9dda65302ac6cbbb1f93c157de"
+      "path": "concepts/drone-delivery-platform-hardware-cases.md",
+      "source_commit": "14fd7337118915dd9b5f748db6aaecd9fc0345d0"
     },
     {
-      "path": "concepts/china-drone-export-controls.md",
-      "source_commit": "e0d471c6a205dd9dda65302ac6cbbb1f93c157de"
+      "path": "concepts/drone-esc-failure-cases.md",
+      "source_commit": "14fd7337118915dd9b5f748db6aaecd9fc0345d0"
     },
     {
-      "path": "concepts/digital-twin-intent-drone-networks.md",
-      "source_commit": "e0d471c6a205dd9dda65302ac6cbbb1f93c157de"
+      "path": "concepts/drone-esc-product-specs-catalog.md",
+      "source_commit": "14fd7337118915dd9b5f748db6aaecd9fc0345d0"
     },
     {
-      "path": "concepts/dji-drone-shot-down-alabama-incident.md",
-      "source_commit": "e0d471c6a205dd9dda65302ac6cbbb1f93c157de"
+      "path": "concepts/drone-facility-inspection-cases.md",
+      "source_commit": "14fd7337118915dd9b5f748db6aaecd9fc0345d0"
     },
     {
-      "path": "concepts/dji-osmo-360-ii.md",
-      "source_commit": "e0d471c6a205dd9dda65302ac6cbbb1f93c157de"
+      "path": "concepts/drone-firefighting-surveillance-cases.md",
+      "source_commit": "14fd7337118915dd9b5f748db6aaecd9fc0345d0"
     },
     {
-      "path": "concepts/dji-osmo-pocket-4p-stabilization.md",
-      "source_commit": "e0d471c6a205dd9dda65302ac6cbbb1f93c157de"
+      "path": "concepts/drone-frame-platform-specs-catalog.md",
+      "source_commit": "14fd7337118915dd9b5f748db6aaecd9fc0345d0"
     },
     {
-      "path": "concepts/drone-news-2026-10-15.md",
-      "source_commit": "e0d471c6a205dd9dda65302ac6cbbb1f93c157de"
+      "path": "concepts/drone-motor-product-specs-catalog.md",
+      "source_commit": "14fd7337118915dd9b5f748db6aaecd9fc0345d0"
     },
     {
-      "path": "concepts/drone-news-2026-10-16.md",
-      "source_commit": "e0d471c6a205dd9dda65302ac6cbbb1f93c157de"
+      "path": "concepts/drone-payload-datalink-product-specs-catalog.md",
+      "source_commit": "14fd7337118915dd9b5f748db6aaecd9fc0345d0"
     },
     {
-      "path": "concepts/drone-news-hardware.md",
-      "source_commit": "e0d471c6a205dd9dda65302ac6cbbb1f93c157de"
+      "path": "concepts/drone-power-module-specs-catalog.md",
+      "source_commit": "14fd7337118915dd9b5f748db6aaecd9fc0345d0"
     },
     {
-      "path": "concepts/drone-news-ops.md",
-      "source_commit": "e0d471c6a205dd9dda65302ac6cbbb1f93c157de"
+      "path": "concepts/drone-propeller-product-specs-catalog.md",
+      "source_commit": "14fd7337118915dd9b5f748db6aaecd9fc0345d0"
     },
     {
-      "path": "concepts/dronuum-computing-continuum.md",
-      "source_commit": "e0d471c6a205dd9dda65302ac6cbbb1f93c157de"
+      "path": "concepts/multirotor-energy-power-models.md",
+      "source_commit": "14fd7337118915dd9b5f748db6aaecd9fc0345d0"
     },
     {
-      "path": "concepts/emax-nanoscout-pro-1s-whoop.md",
-      "source_commit": "e0d471c6a205dd9dda65302ac6cbbb1f93c157de"
+      "path": "concepts/multirotor-propeller-test-research.md",
+      "source_commit": "14fd7337118915dd9b5f748db6aaecd9fc0345d0"
     },
     {
-      "path": "concepts/eve-air-mobility-transition.md",
-      "source_commit": "e0d471c6a205dd9dda65302ac6cbbb1f93c157de"
+      "path": "concepts/multirotor-propulsion-sizing-methods.md",
+      "source_commit": "14fd7337118915dd9b5f748db6aaecd9fc0345d0"
     },
     {
-      "path": "concepts/fpv-hardware.md",
-      "source_commit": "e0d471c6a205dd9dda65302ac6cbbb1f93c157de"
+      "path": "concepts/uav-airframe-structure-optimization-research.md",
+      "source_commit": "14fd7337118915dd9b5f748db6aaecd9fc0345d0"
     },
     {
-      "path": "concepts/gnn-uav-anomaly-detection.md",
-      "source_commit": "e0d471c6a205dd9dda65302ac6cbbb1f93c157de"
+      "path": "concepts/uav-alternative-power-hybrid-fuel-cell-research.md",
+      "source_commit": "14fd7337118915dd9b5f748db6aaecd9fc0345d0"
     },
     {
-      "path": "concepts/hglrc-talon-cinewhoop.md",
-      "source_commit": "e0d471c6a205dd9dda65302ac6cbbb1f93c157de"
+      "path": "entities/dji-agras-t40.md",
+      "source_commit": "14fd7337118915dd9b5f748db6aaecd9fc0345d0"
     },
     {
-      "path": "concepts/indi-stability-tilt-rotor-vtol.md",
-      "source_commit": "e0d471c6a205dd9dda65302ac6cbbb1f93c157de"
-    },
-    {
-      "path": "concepts/kci-manned-unmanned-teaming-defensive-air-ops.md",
-      "source_commit": "e0d471c6a205dd9dda65302ac6cbbb1f93c157de"
-    },
-    {
-      "path": "concepts/kci-military-drone-combat-experiment-continued-use-intention.md",
-      "source_commit": "e0d471c6a205dd9dda65302ac6cbbb1f93c157de"
-    },
-    {
-      "path": "concepts/kci-multispectral-helipad-night-precision-landing.md",
-      "source_commit": "e0d471c6a205dd9dda65302ac6cbbb1f93c157de"
-    },
-    {
-      "path": "concepts/kci-rok-army-drone-acquisition-capability.md",
-      "source_commit": "e0d471c6a205dd9dda65302ac6cbbb1f93c157de"
-    },
-    {
-      "path": "concepts/kci-udt-blocedge-uav-digital-twin-military-iot.md",
-      "source_commit": "e0d471c6a205dd9dda65302ac6cbbb1f93c157de"
-    },
-    {
-      "path": "concepts/kci-vtol-swarm-takeoff-landing-operation.md",
-      "source_commit": "e0d471c6a205dd9dda65302ac6cbbb1f93c157de"
-    },
-    {
-      "path": "concepts/micro-drone-slam-imu-vio-lidar-uav-livox-mid-360-pixhawk-4-m.md",
-      "source_commit": "e0d471c6a205dd9dda65302ac6cbbb1f93c157de"
-    },
-    {
-      "path": "concepts/px4-offboard-control.md",
-      "source_commit": "e0d471c6a205dd9dda65302ac6cbbb1f93c157de"
-    },
-    {
-      "path": "concepts/rtk-gps-precise-landing.md",
-      "source_commit": "e0d471c6a205dd9dda65302ac6cbbb1f93c157de"
-    },
-    {
-      "path": "concepts/uav-mining-digital-twin.md",
-      "source_commit": "e0d471c6a205dd9dda65302ac6cbbb1f93c157de"
-    },
-    {
-      "path": "entities/dji-osmo-pocket-4.md",
-      "source_commit": "e0d471c6a205dd9dda65302ac6cbbb1f93c157de"
+      "path": "entities/dji-matrice-350-rtk.md",
+      "source_commit": "14fd7337118915dd9b5f748db6aaecd9fc0345d0"
     }
   ],
   "revoked_paths": []
