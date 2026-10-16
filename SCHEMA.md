@@ -106,6 +106,19 @@ a valid source record or canonical page.
 - `ops-mission`: operational/mission use cases — public safety, delivery, inspection, disaster response.
 - `fpv`: FPV (first-person-view) racing/freestyle hardware and protocols.
 
+#### Wiki `domain` field (2026-10-17 확장)
+
+`domain:` frontmatter 필드(웹 필터·색상·GraphRAG 다양성에 쓰임)는 `tags`와 별개 어휘다. 기존 7개에 12개를 추가해 19개로 운영한다
+(마스터 승인 2026-10-17, 목록의 단일 출처는 `scripts/add-domain-tags.py`의 `DRONE_DOMAINS`와 웹 `lib/types.ts`의 `DOMAIN_META`).
+
+- 기존: `flight-control` `comms-protocol` `hardware` `gcs-software` `ops-mission` `regulations` `ai-autonomy`
+- 추가: `sensing-perception`(EO/IR·LiDAR·레이더·비전) · `navigation-gnss-denied`(VIO/SLAM·IMU융합·UWB) · `ros-middleware`(ROS/ROS2/DDS) ·
+  `rf-datalink-engineering`(주파수·링크버짓·안테나·MANET/5G/위성) · `mechanical-structures`(프레임·소재·진동·열·공력) ·
+  `electrical-power`(배터리/BMS/EMC/전력전자) · `swarm-multiagent` · `simulation-test`(SITL/HIL) · `edge-ai-compute` · `security` ·
+  `vendor-registry`(제조사 레지스트리) · `software-ecosystem`(드론 융합 SW 레지스트리)
+- 기존 문서의 `domain` 재라벨은 자동 적용하지 않는다(해시 승인 대상 변경). 재라벨 제안은 별도 검토 후 반영한다.
+- `vendor-registry`/`software-ecosystem`은 키워드 추론을 하지 않고 frontmatter에 명시한 문서에만 쓴다.
+
 2026-08-06 검증 노트: 위 7개(`regulations`/`utm`/`PX4`/`hardware`/`company`/`ops-mission`/`fpv`)는
 이번에 신규 등록했지만 실제로는 기존 다수 페이지(예: `flight-controller-hardware.md`,
 `fpv-antenna-guide.md`, `drone-regulations.md`)에서 이미 미등록 상태로 광범위하게

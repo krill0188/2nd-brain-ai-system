@@ -18,7 +18,26 @@ WIKI_ROOT = Path(__file__).parent.parent
 DRONE_DOMAINS = {
     "flight-control", "comms-protocol", "hardware",
     "gcs-software", "ops-mission", "regulations", "ai-autonomy",
+    # 2026-10-17 추가(마스터 승인) — 드론+α 기본구조·이기종 통신·공학 8분야 범위
+    "sensing-perception", "navigation-gnss-denied", "ros-middleware", "rf-datalink-engineering",
+    "mechanical-structures", "electrical-power", "swarm-multiagent", "simulation-test",
+    "edge-ai-compute", "security", "vendor-registry", "software-ecosystem",
 }
+
+# 신규 도메인(2026-10-17): 오분류를 줄이려고 본문이 아닌 슬러그·제목·태그에만 적용한다.
+# vendor-registry / software-ecosystem 은 키워드 추론 없이 frontmatter에 명시한 문서만 쓴다.
+HEAD_ONLY_RULES: list[tuple[str, list[str]]] = [
+    ("security",           ["encrypt", "암호", "보안", "spoofing", "스푸핑", "jamming", "재밍", "cybersecurity", "anti-jam"]),
+    ("edge-ai-compute",    ["jetson", "tensorrt", "npu", "edge ai", "onnx", "엣지 ai", "엣지ai"]),
+    ("swarm-multiagent",   ["swarm", "군집", "multi-agent", "multiagent", "멀티에이전트", "formation", "consensus"]),
+    ("simulation-test",    ["sitl", "hil ", "gazebo", "airsim", "시뮬레이션", "simulation"]),
+    ("ros-middleware",     ["ros2", "ros 2", "micro-ros", "zenoh", " dds", "mavros"]),
+    ("navigation-gnss-denied", ["gnss-denied", "gps-denied", "non-gps", "slam", "visual-inertial", "odometry", "vio ", "uwb", "비-gps", "gps 없"]),
+    ("sensing-perception", ["lidar", "라이다", "radar", "레이더", "thermal", "열화상", "eo/ir", "infrared", "mmwave"]),
+    ("rf-datalink-engineering", ["link budget", "링크 버짓", "주파수", "antenna", "안테나", "manet", "cofdm", "satcom", "위성통신", "5g"]),
+    ("mechanical-structures", ["vibration", "진동", "fatigue", "carbon fiber", "카본", "cfd", "aerodynamic", "공력", "방열"]),
+    ("electrical-power",   ["emc", "emi ", "bms", "power electronics", "전력전자", "regulator"]),
+]
 
 # 키워드 → 도메인 매핑 (순서 중요 — 먼저 매칭된 것 사용)
 DOMAIN_RULES: list[tuple[str, list[str]]] = [
@@ -120,7 +139,12 @@ def infer_domain(slug: str, title: str, tags: list[str], content: str) -> str:
     if slug in SLUG_MAP:
         return SLUG_MAP[slug]
 
-    text = (slug + " " + title + " " + " ".join(tags) + " " + content[:800]).lower()
+    head = (slug + " " + title + " " + " ".join(tags)).lower()
+    for domain, keywords in HEAD_ONLY_RULES:
+        if any(kw in head for kw in keywords):
+            return domain
+
+    text = (head + " " + content[:800]).lower()
     for domain, keywords in DOMAIN_RULES:
         if any(kw in text for kw in keywords):
             return domain

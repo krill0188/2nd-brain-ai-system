@@ -3,7 +3,7 @@
 > Complete catalog of active canonical pages. Each entry is a wikilink followed by
 > a one-line summary, sorted alphabetically within its section.
 >
-|> Total pages: 560
+|> Total pages: 589
 ## Entities
 - [[qgroundcontrol-v5-1-0]] — QGroundControl v5.1.0 릴리스 후보 기록.
 |- [[avidrone]] — 캐나다 헤비리프트 드론 기업, DARPA Lift Challenge 우승.
@@ -562,6 +562,37 @@
 - [[drone-payload-datalink-product-specs-catalog]] — 짐벌·데이터링크 4종 사양: Gremsy T7·SIYI A8 mini·pMDDL2450·RFD900x(domain: hardware).
 - [[drone-frame-platform-specs-catalog]] — 프레임·플랫폼 사양: Freefly Alta X Gen2·Holybro X500 V2(domain: hardware).
 - [[drone-delivery-platform-hardware-cases]] — 배송 드론 HW 사례: DJI FlyCart 30·Matternet M3·Wing Hummingbird(domain: ops-mission).
+
+<!-- 2026-10-17 HW 제조사·SW 레지스트리 이관 (domain: vendor-registry / software-ecosystem) -->
+- [[drone-hw-vendor-registry]] — 드론 HW 제조사 레지스트리, 2026-10-17 수집(공식 페이지 기준, 미확인 표기 포함).
+- [[drone-software-ecosystem-registry]] — 드론 융합 SW 레지스트리, 2026-10-17 수집(공식 페이지 기준, 미확인 표기 포함).
+- [[software-registry-comms-protocol-sw]] — 드론 통신 프로토콜 SW SW 레지스트리 (23건), 2026-10-17 수집(공식 페이지 기준, 미확인 표기 포함).
+- [[software-registry-fleet-utm]] — 드론 플릿·UTM SW 레지스트리 (22건), 2026-10-17 수집(공식 페이지 기준, 미확인 표기 포함).
+- [[software-registry-flight-stack]] — 드론 비행 스택 SW 레지스트리 (13건), 2026-10-17 수집(공식 페이지 기준, 미확인 표기 포함).
+- [[software-registry-gcs]] — 드론 GCS SW 레지스트리 (14건), 2026-10-17 수집(공식 페이지 기준, 미확인 표기 포함).
+- [[software-registry-middleware]] — 드론 ROS·미들웨어 SW 레지스트리 (18건), 2026-10-17 수집(공식 페이지 기준, 미확인 표기 포함).
+- [[software-registry-navigation-slam]] — 드론 항법·SLAM SW 레지스트리 (28건), 2026-10-17 수집(공식 페이지 기준, 미확인 표기 포함).
+- [[software-registry-perception-ai]] — 드론 인식·엣지 AI SW 레지스트리 (24건), 2026-10-17 수집(공식 페이지 기준, 미확인 표기 포함).
+- [[software-registry-planning-control]] — 드론 계획·제어 SW 레지스트리 (25건), 2026-10-17 수집(공식 페이지 기준, 미확인 표기 포함).
+- [[software-registry-security-ops]] — 드론 보안·운영 SW 레지스트리 (22건), 2026-10-17 수집(공식 페이지 기준, 미확인 표기 포함).
+- [[software-registry-simulation]] — 드론 시뮬레이션 SW 레지스트리 (22건), 2026-10-17 수집(공식 페이지 기준, 미확인 표기 포함).
+- [[software-registry-swarm-multiagent]] — 드론 군집·멀티에이전트 SW 레지스트리 (14건), 2026-10-17 수집(공식 페이지 기준, 미확인 표기 포함).
+- [[software-registry-video-streaming]] — 드론 영상 스트리밍 SW 레지스트리 (22건), 2026-10-17 수집(공식 페이지 기준, 미확인 표기 포함).
+- [[vendor-registry-battery]] — 드론 배터리 제조사 레지스트리 (16건), 2026-10-17 수집(공식 페이지 기준, 미확인 표기 포함).
+- [[vendor-registry-camera]] — 드론 카메라·짐벌 제조사 레지스트리 (17건), 2026-10-17 수집(공식 페이지 기준, 미확인 표기 포함).
+- [[vendor-registry-compute]] — 드론 컴패니언·엣지 컴퓨터 제조사 레지스트리 (17건), 2026-10-17 수집(공식 페이지 기준, 미확인 표기 포함).
+- [[vendor-registry-datalink]] — 드론 데이터링크·통신 라디오 제조사 레지스트리 (16건), 2026-10-17 수집(공식 페이지 기준, 미확인 표기 포함).
+- [[vendor-registry-esc]] — 드론 ESC 제조사 레지스트리 (16건), 2026-10-17 수집(공식 페이지 기준, 미확인 표기 포함).
+- [[vendor-registry-fc]] — 드론 비행제어기 제조사 레지스트리 (16건), 2026-10-17 수집(공식 페이지 기준, 미확인 표기 포함).
+- [[vendor-registry-frame]] — 드론 프레임·완기체 제조사 레지스트리 (20건), 2026-10-17 수집(공식 페이지 기준, 미확인 표기 포함).
+- [[vendor-registry-gcs-hw]] — 드론 지상국 HW 제조사 레지스트리 (17건), 2026-10-17 수집(공식 페이지 기준, 미확인 표기 포함).
+- [[vendor-registry-gnss-imu]] — 드론 GNSS·IMU·센서 제조사 레지스트리 (20건), 2026-10-17 수집(공식 페이지 기준, 미확인 표기 포함).
+- [[vendor-registry-lidar]] — 드론 LiDAR 제조사 레지스트리 (17건), 2026-10-17 수집(공식 페이지 기준, 미확인 표기 포함).
+- [[vendor-registry-motor]] — 드론 모터 제조사 레지스트리 (15건), 2026-10-17 수집(공식 페이지 기준, 미확인 표기 포함).
+- [[vendor-registry-payload-mech]] — 드론 투하·윈치·낙하산 제조사 레지스트리 (15건), 2026-10-17 수집(공식 페이지 기준, 미확인 표기 포함).
+- [[vendor-registry-power-charger]] — 드론 전원·충전기·BMS 제조사 레지스트리 (18건), 2026-10-17 수집(공식 페이지 기준, 미확인 표기 포함).
+- [[vendor-registry-propeller]] — 드론 프로펠러 제조사 레지스트리 (15건), 2026-10-17 수집(공식 페이지 기준, 미확인 표기 포함).
+- [[vendor-registry-radar]] — 드론 레이더 제조사 레지스트리 (19건), 2026-10-17 수집(공식 페이지 기준, 미확인 표기 포함).
 
 ## Comparisons
 

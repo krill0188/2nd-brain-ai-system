@@ -2706,3 +2706,11 @@
 - Note: 앞선 중단된 실행이 만든 11개 페이지(인덱스·로그 미반영)를 검수해 이번에 함께 등재. 그 중 깨진 wikilink 3건을 신규 카탈로그 페이지로 연결 수정(`concepts/uav-airframe-structure-optimization-research.md`, `entities/dji-agras-t40.md`, `entities/dji-matrice-350-rtk.md`)
 - Sources: 신규 raw/ 레코드가 없어 기존 관례대로 `inbox/processed/` 경로를 sources로 사용
 - Moved to processed: 위 inbox 파일 62개 중 `.DS_Store`·`.gitkeep` 제외 61개 → `inbox/processed/`
+
+## [2026-10-17] create | HW 제조사·SW 레지스트리 canonical 이관 및 domain 12개 등록
+
+- Created (concepts, 29): `drone-hw-vendor-registry`, `drone-software-ecosystem-registry`, `software-registry-comms-protocol-sw`, `software-registry-fleet-utm`, `software-registry-flight-stack`, `software-registry-gcs`, `software-registry-middleware`, `software-registry-navigation-slam`, `software-registry-perception-ai`, `software-registry-planning-control`, `software-registry-security-ops`, `software-registry-simulation`, `software-registry-swarm-multiagent`, `software-registry-video-streaming`, `vendor-registry-battery`, `vendor-registry-camera`, `vendor-registry-compute`, `vendor-registry-datalink`, `vendor-registry-esc`, `vendor-registry-fc`, `vendor-registry-frame`, `vendor-registry-gcs-hw`, `vendor-registry-gnss-imu`, `vendor-registry-lidar`, `vendor-registry-motor`, `vendor-registry-payload-mech`, `vendor-registry-power-charger`, `vendor-registry-propeller`, `vendor-registry-radar`
+- Created (inbox/processed, 29): `hw-registry-20261017-vendors-*`(15 + INDEX), `hw-registry-20261017-software-*`(12 + INDEX) — 수집 원본 불변 증거
+- Created (scripts, 1): `scripts/import-registry.py`
+- Updated (2): `SCHEMA.md`(wiki `domain` 필드 19개 어휘 문서화), `scripts/add-domain-tags.py`(신규 domain 12개 허용 + 제목·슬러그·태그 한정 규칙)
+- Note: 제조사 254행·SW 247항목은 수집 결과의 행을 그대로 옮겼고 값을 만들거나 고치지 않았다(미확인/접근실패 표기 유지). 기존 문서의 domain 재라벨은 적용하지 않았다(제안서 별도 보관, 승인 대상).
