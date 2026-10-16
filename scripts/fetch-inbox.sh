@@ -589,6 +589,19 @@ fetch_arxiv 'all:"UAV object detection" OR all:"drone visual navigation" OR all:
 sleep 3
 fetch_arxiv 'all:"UAV battery management" OR all:"drone hardware design" OR all:"quadrotor actuator"' "hardware"      "hardware"      3
 sleep 3
+# 2026-10-16 HW 세분화: 모터/ESC·프로펠러·전원·기체구조·페이로드가 위 "hardware" 쿼리 1줄(3건/일)에만
+# 의존해 DroneWiki 답변에 부품 근거가 부족했음(마스터 지적). 구성요소별로 분리 수집한다.
+# domain은 모두 hardware(DOMAIN_META 키 유지).
+fetch_arxiv 'all:"UAV motor" OR all:"brushless motor" OR all:"electronic speed controller" OR all:"quadrotor propulsion"' "hw-motor-esc"  "hardware" 3
+sleep 3
+fetch_arxiv 'all:"UAV propeller" OR all:"multirotor rotor aerodynamics" OR all:"drone propeller noise"'                  "hw-propeller" "hardware" 3
+sleep 3
+fetch_arxiv 'all:"UAV battery" OR all:"drone energy consumption" OR all:"UAV endurance" OR all:"hybrid UAV power"'        "hw-power"     "hardware" 3
+sleep 3
+fetch_arxiv 'all:"UAV airframe" OR all:"multirotor frame design" OR all:"UAV structural design"'                         "hw-frame"     "hardware" 3
+sleep 3
+fetch_arxiv 'all:"UAV payload" OR all:"drone gimbal" OR all:"UAV sensor payload integration"'                            "hw-payload"   "hardware" 3
+sleep 3
 fetch_arxiv 'all:"UAV language model" OR all:"drone LLM agent" OR all:"UAV vision-language model"'    "llm-agent"     "ai-autonomy"   3
 sleep 3
 fetch_arxiv 'all:"UAV jamming detection" OR all:"drone GPS spoofing" OR all:"UAV secure communication"' "security"    "comms-protocol" 3
