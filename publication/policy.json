@@ -445,7 +445,7 @@
   },
   "baseline": {
     "description": "Existing local public snapshot bytes; retention only, not a declaration of public classification. Never refresh automatically.",
-    "web_head": "bf42a10",
+    "web_head": "dbc8b95",
     "files": {
       ".ua/daily-briefing.json": "899fce7816f0009741e40cc68e31097bc85f23b22974b61b15349825d51b8886",
       ".ua/discovery-knowledge-graph.json": "064e91de196c92d79ab397fe887afab8fd00f38aed1b5ae2d18e4196552ae6df",
@@ -997,7 +997,7 @@
       "entities/yari-v6x.md": "ad1b5f424e3d179404feae80316ba145794837fd6dddab65a64aae2882df1b00",
       "entities/yolo-v8-4-114.md": "28c551d76d33d449dc21fee5ffd50f0acc6763d085f3e3865faad2eeffb57943",
       "ontology/SHAPES.md": "efe043d06a743d3e7f33293a3702ddb7a4aa736f4502c6a36129ee134328d9b4",
-      "ontology/class-hierarchy.json": "d864c564987604283e9a8da393968944fcec3ea960c0f31bbbba83b1081c7b91",
+      "ontology/class-hierarchy.json": "d038559de09c68c2d2f495833e67871ea1ba9c53416be879e6ff69545ce6d6d4",
       "queries/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "queries/notebooklm-query-compounding.md": "6e1f3fd330ced09b22931aca0d5a04a01623ba2a5011f7cc39279d8109bae0cf",
       "queries/ua-knowledge-graph-workflow.md": "5cca1594b1672a0bb932a6dac975b14480615e47f6ceeb6ed06d2409d2460657",
