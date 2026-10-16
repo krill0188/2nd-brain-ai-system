@@ -37,3 +37,4 @@ DJI Osmo Pocket 4P는 3축 기계식 짐벌을 탑재하여 표면이 움직이�
 - [DJI] One city, two ways to see it | DJI Osmo Pocket 4P (youtube.com, 2026-09-15) — https://www.youtube.com/watch?v=_4KqLMpM-ME
 - [DJI] New generation. New cinematic language. | Osmo Pocket 4P (youtube.com, 2026-09-29) — https://www.youtube.com/watch?v=rPbMC1fYulk
 - [DJI] Tiny World, Cinema Feel | DJI Osmo Pocket 4P (youtube.com, 2026-10-07) — https://www.youtube.com/watch?v=2VlZuyroJSY
+- [DJI] See More. Tell More.｜20 October 2026, 12 PM (GMT) (youtube.com, 2026-10-15) — https://www.youtube.com/watch?v=-4I3JnioRXk

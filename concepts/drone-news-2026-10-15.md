@@ -1,7 +1,7 @@
 ---
 title: "드론 업계 주요 소식 (2026-10-15)"
 created: 2026-10-15
-updated: 2026-10-15
+updated: 2026-10-16
 type: concept
 domain: ops-mission
 tags: [drone, ops-mission, hardware, regulations]
@@ -35,3 +35,5 @@ contradictions: []
 
 - **AVSS**: PRS-M4DT UAS 구성품으로 영국 CAA SAIL Mark 인증서를 받았다 (sUAS News). 관련: [[drone-regulations]].^[inbox/processed/fetch-2026-10-15-rss-suasnews.md]
 - **skyAlert**: UAS 조종사를 위한 핸즈프리 주변 항공기 인지 도구로 소개되었다 (sUAS News).^[inbox/processed/fetch-2026-10-15-rss-suasnews.md]
+
+다음 일자: [[drone-news-2026-10-16]]

@@ -1,10 +1,10 @@
 ---
 title: FPV 드론 하드웨어 동향
 created: 2026-07-29
-updated: 2026-09-24
+updated: 2026-10-16
 type: concept
 tags: [drone, drone-hw]
-sources: [raw/articles/fetch-2026-07-29-rss-oscarliang-fpv.md, inbox/fetch-2026-08-15-rss-oscarliang-fpv.md]
+sources: [raw/articles/fetch-2026-07-29-rss-oscarliang-fpv.md, inbox/fetch-2026-08-15-rss-oscarliang-fpv.md, inbox/processed/fetch-2026-10-16-yt-brand-new-caddxfpv-curve-hd-fpv-whoop-with-6-mins-plus-fligh.md]
 confidence: high
 contested: false
 contradictions: []
@@ -49,6 +49,7 @@ domain: hardware
 - [[flight-controller-hardware]] — FC 하드웨어 개요
 - [[drone-payload-systems]] — 카메라 및 페이로드 통합
 - [[fpv-motor-selection-guide]] — FPV 드론 모터 선택 가이드
+- [[caddx-curve-micro-p18]] — 2026-10 Caddx Ascent HD 내장 1S 휩(리뷰 단일 출처, confidence low)^[inbox/processed/fetch-2026-10-16-yt-brand-new-caddxfpv-curve-hd-fpv-whoop-with-6-mins-plus-fligh.md]
 
 ## 📰 최근 관련 소식
 - [Joshua Bardwell] 70% more video range & penetration! // RUSHFPV 3.3 GHZ VIDEO RECEIVER (youtube.com, 2026-08-07)

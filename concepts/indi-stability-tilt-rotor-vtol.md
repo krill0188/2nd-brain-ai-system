@@ -80,3 +80,4 @@ domain: flight-control
 - [Joshua Bardwell] His audacious plan to open-source EVERY PART of a drone // OPENDRONE (youtube.com, 2026-10-03) — https://www.youtube.com/watch?v=MVr2Vm_6CqQ
 - [Joshua Bardwell] Building a P1 whoop to find out how much slower it really is (youtube.com, 2026-10-06) — https://www.youtube.com/watch?v=ZrNlxbI4rlQ
 - [Joshua Bardwell] This "durable" drone is awful // Axisflying Bando 5 (youtube.com, 2026-10-14) — https://www.youtube.com/watch?v=Mo15TyjLqgs
+- [UAV Coach] Why Does Flying a Drone Feel Illegal? (youtube.com, 2026-10-15) — https://www.youtube.com/watch?v=xmBoKb3wh1U

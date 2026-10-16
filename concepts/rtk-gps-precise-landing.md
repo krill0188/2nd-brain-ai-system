@@ -1,10 +1,10 @@
 ---
 title: RTK GPS & Precise Landing
 created: 2026-07-27
-updated: 2026-09-09
+updated: 2026-10-16
 type: concept
 tags: [drone-hw, rtk, gps, gnss, differential, precision, landing]
-sources: [inbox/fetch-2026-09-09-yt-fix-your-rtk-drone-positioning-step-by-step-base-setup-guide.md]
+sources: [inbox/fetch-2026-09-09-yt-fix-your-rtk-drone-positioning-step-by-step-base-setup-guide.md, inbox/processed/fetch-2026-10-16-kci-다중-스펙트럼-헬리패드를-이용한-야간-uav-정밀-착륙-ir적외선-영상-기반-정렬-및-거리-센서-기반-하강-.md]
 confidence: medium
 domain: hardware
 contested: false
@@ -314,6 +314,7 @@ Multi-GNSS (4 systems): 20-30 satellites
 - [[mission-planning]] — 정밀 경로
 - [[visual-positioning-odometry]] — VIO + RTK 융합
 - [[px4-flight-modes]] — Precision landing mode
+- [[kci-multispectral-helipad-night-precision-landing]] — RTK 대신 IR 영상 정렬과 거리센서 하강을 쓰는 야간 정밀착륙 보고 사례(평균 착륙오차 16.1 cm 이내, 초록 기준)^[inbox/processed/fetch-2026-10-16-kci-다중-스펙트럼-헬리패드를-이용한-야간-uav-정밀-착륙-ir적외선-영상-기반-정렬-및-거리-센서-기반-하강-.md]
 
 ## 수집 대상
 

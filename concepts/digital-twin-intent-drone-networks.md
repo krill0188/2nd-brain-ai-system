@@ -1,10 +1,10 @@
 ---
 title: "Digital Twin for Intent-Based Drone Networks"
 created: 2026-07-30
-updated: 2026-08-10
+updated: 2026-10-16
 type: concept
 tags: [drone, datalink, comms-protocol, digital-twin, reinforcement-learning]
-sources: []
+sources: [inbox/processed/fetch-2026-10-16-kci-udt-blocedge-uav-integrated-digital-twin-framework-using-blo.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -38,6 +38,7 @@ note: "Raw source not preserved in repo — found during 2026-08-10 provenance a
 - [[datalink-communication]] — RF, LTE, WiFi 등 데이터링크 기술
 - [[drone-ai-agents]] — 자율 의사결정 및 에이전트 아키텍처
 - [[active-sensing-uav-communication]] — 감지 지원 UAV 통신
+- [[kci-udt-blocedge-uav-digital-twin-military-iot]] — 군 IoT 감시용 UAV 디지털 트윈 적용 사례(초록 기준)^[inbox/processed/fetch-2026-10-16-kci-udt-blocedge-uav-integrated-digital-twin-framework-using-blo.md]
 
 ## 출처
 

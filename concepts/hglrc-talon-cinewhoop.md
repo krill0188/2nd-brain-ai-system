@@ -1,11 +1,11 @@
 ---
 title: "HGLRC Talon 2-Inch Cinewhoop"
 created: 2026-08-01
-updated: 2026-08-01
+updated: 2026-10-16
 type: concept
 tags: [drone, drone-hw]
 domain: hardware
-sources: ["inbox/fetch-2026-08-01-rss-oscarliang-fpv.md"]
+sources: ["inbox/fetch-2026-08-01-rss-oscarliang-fpv.md", "inbox/processed/fetch-2026-10-16-yt-brand-new-caddxfpv-curve-hd-fpv-whoop-with-6-mins-plus-fligh.md"]
 confidence: medium
 contested: false
 contradictions: []
@@ -28,3 +28,4 @@ HGLRC의 2인치 시네후프 FPV 드론. Oscar Liang의 리뷰 대상.
 - [[fpv-hardware]] — FPV 드론 하드웨어 동향
 - [[flight-controller-hardware]] — 비행 제어기 하드웨어
 - [[betaflight]] — Betaflight FPV 펌웨어
+- [[caddx-curve-micro-p18]] — 인접 소형 기체(1.8인치 휩)의 HD FPV 내장 사례^[inbox/processed/fetch-2026-10-16-yt-brand-new-caddxfpv-curve-hd-fpv-whoop-with-6-mins-plus-fligh.md]

@@ -51,3 +51,4 @@ contradictions: []
 - [UAV Coach] Is It Still Worth Starting a Drone Business Today? (youtube.com, 2026-08-20) — https://www.youtube.com/watch?v=Am5-N5FF26A
 - [K-드론 강자] 에이럭스, '조달 실적'으로 증명하는 방산 드론 실전 배치 (ebn.co.kr, Mon, 14 Se) — https://news.google.com/rss/articles/CBMiaEFVX3lxTE9pN29fdmJSTDJpYVZfTmRnQ2VCQ1BLcS1qS21nelhuanNOc0xxNnpVYjFzZ2hmMmxxY3VQZnI1TmtfSHM4aDNGR292ZzhtTkxJWGhLc25sSmtOUnhpTEhoYmdnVnpGZ2hf?oc=5
 - [UAV Coach] Categories 1-4 Explained (youtube.com, 2026-10-09) — https://www.youtube.com/watch?v=y_XjlwqtRNM
+- [UAV Coach] Why Does Flying a Drone Feel Illegal? (youtube.com, 2026-10-15) — https://www.youtube.com/watch?v=xmBoKb3wh1U

@@ -1,11 +1,11 @@
 ---
 title: "방어적 대공/엄호 작전 유·무인 복합 편대 임무 효과도 분석"
 created: 2026-09-06
-updated: 2026-09-06
+updated: 2026-10-16
 type: concept
 domain: ops-mission
 tags: [drone, ops-mission, swarm]
-sources: [raw/papers/_unclassified/방어적-대공-작전-및-엄호-시나리오에서의-협업-전투용-무인기-통합-유무인-복합-편대-임무-효과도-분석.md]
+sources: [raw/papers/_unclassified/방어적-대공-작전-및-엄호-시나리오에서의-협업-전투용-무인기-통합-유무인-복합-편대-임무-효과도-분석.md, inbox/processed/fetch-2026-10-16-kci-군-드론-전투실험-관련-특성에-대한-인식이-지속사용-의도에-미치는-영향과-전력화-정책-시사점-운용자-신뢰성과.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -37,3 +37,4 @@ Aircraft급 개념)를 정의하고, 방어적 대공 작전 및 엄호 작전 �
 - [[swarm-coordination]] — 편대 비행 및 리더-팔로워 협업 구조
 - [[uav-swarm-ai-trends-kci]] — UAV 군집 AI 아키텍처 진화 개관(MARL~LLM)
 - [[drone-ai-agents]] — 자율 의사결정 및 다중 에이전트 협력 아키텍처
+- [[kci-military-drone-combat-experiment-continued-use-intention]] — 운용자 421명 설문 기반 전투실험 인식·지속사용 의도 경로 분석(성과 측정 아님)^[inbox/processed/fetch-2026-10-16-kci-군-드론-전투실험-관련-특성에-대한-인식이-지속사용-의도에-미치는-영향과-전력화-정책-시사점-운용자-신뢰성과.md]

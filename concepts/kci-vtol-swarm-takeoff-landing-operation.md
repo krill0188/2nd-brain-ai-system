@@ -1,11 +1,11 @@
 ---
 title: "다수 VTOL 무인기 군집비행 이착륙 운용방안 (KCI)"
 created: 2026-10-07
-updated: 2026-10-07
+updated: 2026-10-16
 type: concept
 domain: flight-control
 tags: [drone, swarm, research]
-sources: [raw/papers/swarm/다수-vtol-무인기의-군집비행을-위한-이착륙-운용방안-및-실비행-적용.md]
+sources: [raw/papers/swarm/다수-vtol-무인기의-군집비행을-위한-이착륙-운용방안-및-실비행-적용.md, inbox/processed/fetch-2026-10-16-kci-다중-스펙트럼-헬리패드를-이용한-야간-uav-정밀-착륙-ir적외선-영상-기반-정렬-및-거리-센서-기반-하강-.md]
 confidence: low
 contested: false
 contradictions: []
@@ -34,3 +34,4 @@ contradictions: []
 - [[swarm-modes]] — Formation/Follow-Leader 등 군집 운용 모드
 - [[kci-uav-swarm-mission-reliability-abort]] — 군집 임무 신뢰도 모델링
 - [[indi-stability-tilt-rotor-vtol]] — 틸트로터 VTOL 제어기 안정성(천이 구간 제어 맥락, 기체 형상은 다름)
+- [[kci-multispectral-helipad-night-precision-landing]] — 멀티로터 단기체 정밀착륙의 비교 맥락(탐색–정렬–하강 3단계, 군집 운용은 다루지 않음)^[inbox/processed/fetch-2026-10-16-kci-다중-스펙트럼-헬리패드를-이용한-야간-uav-정밀-착륙-ir적외선-영상-기반-정렬-및-거리-센서-기반-하강-.md]

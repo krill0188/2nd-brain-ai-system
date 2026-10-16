@@ -1,10 +1,10 @@
 ---
 title: PX4 Offboard Control
 created: 2026-07-27
-updated: 2026-08-10
+updated: 2026-10-16
 type: concept
 tags: [drone-sw, ai-agent, offboard, companion-computer, autonomous]
-sources: [raw/articles/px4-offboard-control.md]
+sources: [raw/articles/px4-offboard-control.md, inbox/processed/fetch-2026-10-16-kci-다중-스펙트럼-헬리패드를-이용한-야간-uav-정밀-착륙-ir적외선-영상-기반-정렬-및-거리-센서-기반-하강-.md]
 confidence: high
 domain: flight-control
 contested: false
@@ -156,3 +156,4 @@ void OffboardControl::publish_vehicle_command(
 - [[px4-system-architecture]] — PX4 시스템 구성 (Companion 연동)
 - [[ros2-drone-integration]] — ROS2 연동 스택
 - [[companion-computer]] — 컴패니언 컴퓨터 설정
+- [[kci-multispectral-helipad-night-precision-landing]] — PX4 오프보드 제어와 ROS 2 기반으로 구현한 정밀착륙 적용 사례^[inbox/processed/fetch-2026-10-16-kci-다중-스펙트럼-헬리패드를-이용한-야간-uav-정밀-착륙-ir적외선-영상-기반-정렬-및-거리-센서-기반-하강-.md]

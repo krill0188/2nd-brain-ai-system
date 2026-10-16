@@ -1,11 +1,11 @@
 ---
 title: "Graph Neural Network-Driven Anomaly Detection for UAV Inspection Data"
 created: 2026-08-01
-updated: 2026-08-01
+updated: 2026-10-16
 type: concept
 tags: [drone, drone-ai]
 domain: ai-autonomy
-sources: ["inbox/fetch-2026-08-01-crossref-graph-neural-network-driven-anomaly-detection-framework-for-.md"]
+sources: ["inbox/fetch-2026-08-01-crossref-graph-neural-network-driven-anomaly-detection-framework-for-.md", "inbox/processed/fetch-2026-10-16-kci-udt-blocedge-uav-integrated-digital-twin-framework-using-blo.md"]
 confidence: medium
 contested: false
 contradictions: []
@@ -31,6 +31,7 @@ International Journal of Energy Technology and Policy에 게시된 연구로, UA
 - [[computer-vision-drone]] — 드론 컴퓨터 비전
 - [[drone-ai-agents]] — 드론 AI 에이전트
 - [[yolo]] — 실시간 객체 검출
+- [[kci-udt-blocedge-uav-digital-twin-military-iot]] — LSTM 오토인코더 기반 이상 탐지 후 UAV 확인 출동 구조(초록 기준)^[inbox/processed/fetch-2026-10-16-kci-udt-blocedge-uav-integrated-digital-twin-framework-using-blo.md]
 
 ## 📰 최근 관련 소식
 - [freeCodeCamp.org] Learn Data Structures and Algorithms Visually – Crash Course (youtube.com, 2026-08-20) — https://www.youtube.com/watch?v=RpLnQnurpLY

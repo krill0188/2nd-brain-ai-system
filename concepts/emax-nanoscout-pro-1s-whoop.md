@@ -1,11 +1,11 @@
 ---
 title: "EMAX Nanoscout PRO 1S Whoop"
 created: 2026-09-15
-updated: 2026-09-15
+updated: 2026-10-16
 type: concept
 domain: hardware
 tags: [drone, drone-hw, fpv]
-sources: [inbox/fetch-2026-09-15-yt-rc-news-new-emax-nanoscout-pro-1s-whoop-just-released.md]
+sources: [inbox/fetch-2026-09-15-yt-rc-news-new-emax-nanoscout-pro-1s-whoop-just-released.md, inbox/processed/fetch-2026-10-16-yt-brand-new-caddxfpv-curve-hd-fpv-whoop-with-6-mins-plus-fligh.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -28,6 +28,7 @@ EMAX가 출시한 신형 1S 휩(whoop)급 FPV 레이싱 드론. Painless360 채�
 - [[fpv-hardware]] — FPV 드론 하드웨어 동향
 - [[betaflight]] — FPV 드론용 오픈소스 비행 제어 소프트웨어
 - [[hglrc-talon-cinewhoop]] — 유사 소형 FPV 제품군
+- [[caddx-curve-micro-p18]] — 같은 1S 휩급에서 HD 디지털 FPV(Caddx Ascent)를 내장한 68 mm 사례(단일 영상 자막 근거)^[inbox/processed/fetch-2026-10-16-yt-brand-new-caddxfpv-curve-hd-fpv-whoop-with-6-mins-plus-fligh.md]
 
 ## 📰 최근 관련 소식
 - [Painless360] RC News: New EMAX Nanoscout PRO 1S Whoop just released! (youtube.com, 2026-09-14) — https://www.youtube.com/watch?v=dxP_SiFppwU

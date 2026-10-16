@@ -1,11 +1,11 @@
 ---
 title: "대한민국 육군의 드론 획득 필수능력 연구: 러-우 전쟁 사례와 미군 전략 분석을 바탕으로"
 created: 2026-10-02
-updated: 2026-10-03
+updated: 2026-10-16
 type: concept
 domain: ops-mission
 tags: [drone, ops-mission]
-sources: [inbox/processed/fetch-2026-10-02-kci-대한민국-육군의-드론-획득-필수능력-연구-러-우-전쟁-사례와-미군-전략-분석을-바탕으로.md, raw/papers/_unclassified/대한민국-육군의-드론-획득-필수능력-연구-러-우-전쟁-사례와-미군-전략-분석을-바탕으로.md]
+sources: [inbox/processed/fetch-2026-10-02-kci-대한민국-육군의-드론-획득-필수능력-연구-러-우-전쟁-사례와-미군-전략-분석을-바탕으로.md, raw/papers/_unclassified/대한민국-육군의-드론-획득-필수능력-연구-러-우-전쟁-사례와-미군-전략-분석을-바탕으로.md, inbox/processed/fetch-2026-10-16-kci-군-드론-전투실험-관련-특성에-대한-인식이-지속사용-의도에-미치는-영향과-전력화-정책-시사점-운용자-신뢰성과.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -47,6 +47,9 @@ contradictions: []
   임무 효과도 분석
 - [[kci-tank-zone-vulnerability-selective-counter-drone-protection]] — 전차 대드론 방호자원 배분과 제대 간 기능분담
 - [[kci-multisensor-fusion-counter-drone-identification-engagement]] — 대드론 센서융합 요구성능 분석방법
+- [[kci-military-drone-combat-experiment-continued-use-intention]] — 전력화 정책의 운용자 수용성 측면 보완 근거(획득·배치 성과는 입증하지 않음)^[inbox/processed/fetch-2026-10-16-kci-군-드론-전투실험-관련-특성에-대한-인식이-지속사용-의도에-미치는-영향과-전력화-정책-시사점-운용자-신뢰성과.md]
 
 ## 📰 최근 관련 소식
 - 탱크 킬러→미니드론→수상드론→제트드론… 전쟁 흔든 게임체인저 (조선일보, Fri, 09 Oc) — https://news.google.com/rss/articles/CBMingFBVV95cUxPbGtQZjFyeWlpalpFN2w2cW11cHFXQmh0dEFkM0ZxMmpneXBfVTVpM2djVU54WkFqd2gwTXl0TE40cEwzaEctOEFtblV2cVJCV3V6V3RXVTIwUVo4WkFVcU5sNERJSjZVNk5hV1RsT3lrR0RYMTFab05XdGRISnVEaWhJd3FUSzJwRF9xXzIxckU0UnZWQ2VnaVJWV1NGdw?oc=5
+- [방산기획] 드론 잡는 빛의 방패 ‘천광’… 대한민국 레이저 방공 시대를 열다 (씨원뉴스, Thu, 15 Oc) — https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9kRDdBQjR2MkhzbE9QYVozTUJXUUxQMDdnNTZmeXRIRXdiLVRhaGJXTHhJREZwVENSWEVyN091Mm5RQ3kyRzdsbnFLTmNxcEp0N25Lb2syLU1BTkZZTmMwM0d6QnBuSVE?oc=5
+- 지뢰밭 뚫는 로봇·자폭드론 기습…눈앞 다가온 육군의 '미래전' (연합뉴스, Thu, 15 Oc) — https://news.google.com/rss/articles/CBMiW0FVX3lxTE1iQVp6MDhvZDlnbGdQTzdMZHRxWkhVZEduRW1mS3RVTVNvd05GQ3hZQ2R1NldZN2pnZ01aRkxaUU9xUmpGd3VZYzh5Z0FMV2pqUjlUbVpCb0RsQ0HSAWBBVV95cUxNTTJXM3pMOVExdVNfR0JJTXFTaklnamplWmhyV1JkSU5vN2pKYVY3NW82YkdtMG5JZzZqeDNqSnA1dzcwR0tMdE5HOTlPN2lZeFNhV2FkZzF6WmNfV3BYZ2M?oc=5
