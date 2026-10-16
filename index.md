@@ -3,7 +3,7 @@
 > Complete catalog of active canonical pages. Each entry is a wikilink followed by
 > a one-line summary, sorted alphabetically within its section.
 >
-|> Total pages: 489
+|> Total pages: 560
 ## Entities
 - [[qgroundcontrol-v5-1-0]] — QGroundControl v5.1.0 릴리스 후보 기록.
 |- [[avidrone]] — 캐나다 헤비리프트 드론 기업, DARPA Lift Challenge 우승.
@@ -73,6 +73,8 @@
 - [[robin-radar]] — 네덜란드 델프트 C-UAS 레이더 제조사, 신규 본사로 역량 3배 확대 (2026-09).
 - [[digital-force-technologies]] — JIATF-401 대드론 IDIQ 5억 달러 수주 방어 기술 기업 (2026-09).
 - [[smart-shooter]] — SMASH 대드론 시스템 제조사, JIATF-401 IDIQ 최대 1.5억 달러 수주 (2026-09).
+- [[dji-agras-t40]] — DJI Agras T40 농업 드론(domain: hardware).
+- [[dji-matrice-350-rtk]] — DJI Matrice 350 RTK 산업용 플랫폼과 Zenmuse H30T 페이로드(domain: hardware).
 
 ## Concepts
 |- [[drone-rice-heading-detection]] — 드론 기반 벼 출수 판별 시스템(YOLOv11).
@@ -491,6 +493,75 @@
 - [[kci-drone-pointcloud-bim-registration-extraction]] — 드론 점군–BIM Convex Hull 정합 및 구조부재 추출 KCI 2건(초록 절단).
 - [[kci-uav-battery-ecm-parameter-estimation]] — 가우스과정 회귀 기반 UAV 배터리 ECM 파라미터 추정(KCI, MAE 약 0.3 V).
 - [[kci-fixed-wing-return-feasibility-logic]] — 잔여 전압 예측 기반 고정익 복귀 가능 여부 판단 로직(KCI, 초록 절단).
+- [[kci-uav-multispectral-apple-ssc-prediction]] — UAV 다중분광 식생지수 기반 사과 수확 전 당도(SSC) 예측(KCI, 초록 절단, confidence low).
+- [[kci-critical-facility-illegal-drone-counter-uas-zones]] — 국가중요시설 불법 드론 적발 사례 기반 다중 3지대 대드론 체계 개선안(KCI, confidence low).
+- [[faa-12m-drone-research-awards-2026-10]] — FAA, DAA·BVLOS 통신·UTM 등 19개 과제에 $12M 지원(2026-10-05).
+- [[fcc-dronus-k500l-conditional-approval]] — FCC, 이탈리아산 Dronus K500L에 Covered List 조건부 예외 부여(2026-10-05).
+- [[wing-walmart-denver-seattle-2027]] — Wing·Walmart, 덴버·시애틀 2027 드론 배송 확장 발표.
+- [[michigan-medical-drone-delivery-pilot-phase2]] — 미시간 북부 의료 드론 배송 파일럿 2단계(2026-10-06 시작).
+- [[kci-vtol-swarm-takeoff-landing-operation]] — 다수 VTOL 군집 동시 수직이륙·그룹 순차 출발 운용방안, 20대 비행시험 천이 20.5초(KCI, confidence low).
+- [[kci-quadrotor-compound-fault-accommodation]] — 신경망 센서고장 보상+IMU 구동기고장 보상 통합 쿼드로터 복합 고장 보완(KCI, 시뮬레이션, confidence low).
+- [[kci-weather-drone-uam-corridor-wind-validation]] — UAM 회랑 바람 관측용 기상드론 WPF 대비 편향 +0.8 m/s 검증(KCI, 초록 절단).
+- [[pso-uav-bushfire-hazard-management]] — PSO 기반 UAV 산불 위험 관리 커버리지·경로계획 최적화(Crossref, 초록 절단, confidence low).
+- [[inav-fixed-wing-servo-direction-checklist]] — INAV 고정익 서보 방향 오류 3단계 점검(라디오·FC 방향·출력 연결, Painless360 자막).
+- [[yolo-v8-4-174]] — YOLO v8.4.174 릴리스, YOLO26 AutoBatch 역전파 프로파일링 수정 (2026-10-06).
+- [[drone-news-2026-10-07]] — 2026년 10월 7일 드론 업계 주요 소식(Powerus C-UAS 8,200만 달러, Nemyx VLS, XTEND 특허).
+- [[micro-neural-policies-safe-real-time-control]] — ES+SMC로 합성한 0.5~7.5 kB 초소형 신경망 정책, 마이크로컨트롤러 실시간 제어(arXiv, confidence low).
+- [[quadrotor-wind-fidelity-ppo-robustness]] — RL 쿼드로터 학습 바람장 충실도 5단계 비교, 이산 돌풍 랜덤화 1위·제어 권한이 한계(arXiv, confidence low).
+- [[kci-eoir-autonomous-drone-wildfire-suppression]] — EO/IR 영상 기반 산불 탐지·진화 대상 선정과 2단계 자율 비행 소화탄 투하(KCI, confidence low).
+- [[uav-vlc-wmn-blocking-aware-bandwidth-allocation]] — UAV-VLC 보조 WMN의 차단 인지 다차원 우선순위 대역 할당 BMPO(KCI, 초록 절단, confidence low).
+- [[kci-3dgs-flight-path-reconstruction-quality]] — 촬영경로 3종별 3DGS 구성요소 재현 품질 탐색적 비교(KCI, confidence low).
+- [[kci-drone-human-hybrid-delivery-milp]] — 지형·충전소 기능을 고려한 드론-인간 혼합배송 입지 MILP(KCI, 초록 절단, confidence low).
+- [[mavsdk-v4-0-5]] — MAVSDK v4.0.5 릴리스, GAS_SENSOR 커스텀 메시지 예제·시스템 테스트 수정 (2026-10-07).
+- [[drone-news-2026-10-08]] — 2026년 10월 8일 드론 업계 주요 소식(FCC 권한 항소, 영국 드론 시험센터, LiveU×Airwise).
+- [[kci-counter-drone-3d-air-defense-layered-neutralization]] — 국가중요시설 3차원 공중방호 소프트킬 우선·하드킬 최종 계층적 무력화 모델(KCI, 초록 기준, confidence low).
+- [[kci-uav-random-walk-debris-flow-reproducibility]] — UAV 관측 기반 Random Walk 토석류 이동범위 재현성, IoU 0.348(KCI, 초록 절단, confidence low).
+- [[kci-drone-orthomosaic-dinosaur-track-dataset]] — 공룡발자국 산지 30곳 드론 정사영상·음영기복도 82개 GeoTIFF 데이터셋(KCI, 초록 절단, confidence low).
+- [[mavsdk-v4-0-6]] — MAVSDK v4.0.6 릴리스, JNI 테스트 -Xcheck:jni 적용 (2026-10-08).
+- [[drone-news-2026-10-09]] — 2026년 10월 9일 드론 업계 주요 소식(FCC 50 MHz 표결 예고, Hornsea 2 화물 드론, Nellis UNIFY.C2).
+- [[kci-geological-outcrop-3d-mesh-dataset]] — 남한 지질 노두 80곳 3D 메시 모델 133개 드론 데이터셋(KIGAM, KCI, 초록 절단, confidence low).
+- [[yolo-v8-4-175]] — YOLO v8.4.175 릴리스, 분류 분할 데이터 누수 수정 및 검증·export 안정화 (2026-10-09).
+- [[kh-control-streamdeck-mission-planner]] — KH-Control: Stream Deck으로 Mission Planner 모드·arm·미션 조작(Painless360 자막, confidence low).
+- [[alientek-t90b-soldering-iron]] — ALIENTEK T90B 140 W JBC C245 휴대 납땜 인두, 6S 구동 드론 수리용(Bardwell 자막, confidence low).
+- [[drone-news-2026-10-10]] — 2026년 10월 10일 드론 업계 주요 소식(Part 107 시험 개정, 29개 주 대드론 훈련 요청, Beam-ScoutDI).
+- [[drone-news-2026-10-11]] — 2026년 10월 11일 드론 업계 주요 소식(Versaterm 경찰 LAANC, BetaFPV Meteor75 Pro II Analog 리뷰).
+- [[drone-news-2026-10-12]] — 2026년 10월 12일 드론 업계 주요 소식(DJI Matrice 5TD 출시 임박, Gauntlet 2.5 연기, Interceptor Bubble).
+- [[oddityrc-echo5-frame-gps]] — OddityRC Echo5 5인치 프레임 사양, 4핀 마이크로 GPS(나침반 없음), ELRS 수신기 리뷰.
+- [[drone-news-2026-10-13]] — 2026년 10월 13일 드론 업계 주요 소식(Elsight GPS 대체 측위, Fortem–MBDA 요격 드론, UK CAA 소음 보고서).
+- [[yolo-v8-4-176]] — YOLO v8.4.176 릴리스, YOLO-World 체크포인트 328.5→25.8 MB 축소 및 검증·SAM 수정 (2026-10-12).
+- [[drone-news-2026-10-14]] — 2026년 10월 14일 드론 업계 주요 소식(Raytheon 7.29억 달러 대드론, Powerus Guardian-3, Ban Flock Act).
+- [[yolo-v8-4-177]] — YOLO v8.4.177 릴리스, SAM 프롬프트 전 프레임 적용 및 Intel NPU OpenVINO 내보내기 수정 (2026-10-13).
+- [[axisflying-vertex-5-review]] — AXISFLYING Vertex 5: 스트랩 없는 배터리 트레이·2분할 모터, 모터 나사 길이 문제(Bardwell 자막, confidence low).
+- [[kci-drone-3d-mapping-fire-investigation]] — 드론 3D 맵핑·열화상 기반 화재조사 활용방안(KCI, 초록 절단, confidence low).
+- [[drone-news-2026-10-15]] — 2026년 10월 15일 드론 업계 주요 소식(Drone Dominance Phase III 4.5억 달러, DJI Dock 4, Robinson SPIRIT 네팔 FMS).
+- [[axisflying-bando-5-review]] — AXISFLYING Bando 5: 알루미늄 중앙 프레임 5인치, 재료 논거와 출하 Betaflight 설정 오류(Bardwell 자막, confidence low).
+- [[emax-tinyhawk-aero]] — EMAX Tinyhawk Aero 65mm 1S 레이싱 웁: 16.3g, 추력 대 중량비 6.7:1, ELRS 3 내장(Painless360 자막, confidence low).
+- [[uav-multimodal-beam-prediction-deepsense]] — 6G UAV mmWave 빔 예측: EfficientNet-B3 이미지+위치 융합, DeepSense 6G Scenario 23 Top-1 87.14%.
+- [[truck-as-hub-vrp-drones-branch-price-cut]] — 농촌 트럭 허브 드론 배송 VRP의 branch-price-and-cut 정확해법(갭 4% 이하).
+- [[kci-naval-integrated-counter-drone-system-direction]] — 한국 해군 통합대드론체계 발전 방향(K-Maritime C-UAS, 초록 기준, confidence low).
+- [[kci-ship-eoir-counter-drone-sensor-concept]] — 함정 복합 대드론체계 EO/IR 5단계 교전 사이클 센서 운용개념(초록 기준, confidence low).
+- [[caddx-curve-micro-p18]] — Caddx Curve Micro P18 Ascent HD FPV 웁 사양·튜닝·비행 평가(자막 기반, confidence low).
+- [[drone-news-2026-10-16]] — 2026년 10월 16일 드론 업계 주요 소식(Rownd, DroneShield, ANRA VISTA, Mobilicom SwarmiX).
+- [[kci-military-drone-combat-experiment-continued-use-intention]] — 군 드론 전투실험 특성 인식→운용자 신뢰·전술적 유용성→지속사용 의도 SEM 분석(초록 기준, confidence low).
+- [[kci-multispectral-helipad-night-precision-landing]] — RGB/IR/열화상 겸용 헬리패드 야간 정밀착륙, PX4 오프보드+ROS2, 오차 16.1cm 이내(초록 기준, confidence low).
+- [[kci-udt-blocedge-uav-digital-twin-military-iot]] — 블록체인·엣지·LSTM-AE 기반 UAV 통합 디지털 트윈 군 IoT 감시(초록 기준, confidence low).
+- [[bldc-motor-esc-characterization-research]] — BLDC 모터·ESC 효율·열 특성 연구 5건 종합(domain: hardware).
+- [[drone-esc-failure-cases]] — ESC 고장 사례: AAIB Velos 추락·BetaFPV Beta85X 화재(domain: hardware).
+- [[drone-facility-inspection-cases]] — 시설 점검 드론 사례: 변전소 Skydio·Idemitsu DJI Dock 3(domain: ops-mission).
+- [[drone-firefighting-surveillance-cases]] — 소방·감시 드론 사례: 대한항공 하이브리드·Oak Ridge Anafi(domain: ops-mission).
+- [[multirotor-energy-power-models]] — 멀티로터 전력·에너지 모델 및 배터리 방전 모델 검증(domain: hardware).
+- [[multirotor-propeller-test-research]] — 프로펠러·모터 정적 시험대와 소형 프롭 저레이놀즈수 연구(domain: hardware).
+- [[multirotor-propulsion-sizing-methods]] — 멀티로터 추진계 해석적 사이징·MDO 방법(domain: hardware).
+- [[uav-airframe-structure-optimization-research]] — UAV 기체 구조 최적화: CF 3D프린팅 프레임·보강재·모듈형(domain: hardware).
+- [[uav-alternative-power-hybrid-fuel-cell-research]] — UAV 대체 동력: ICE 발전기 하이브리드·PEM 연료전지(domain: hardware).
+- [[drone-motor-product-specs-catalog]] — 모터 제품 5종 사양 카탈로그: KDE·T-Motor·Scorpion·Hobbywing·Holybro(domain: hardware).
+- [[drone-esc-product-specs-catalog]] — ESC 제품 4종 사양 카탈로그: Tekko32·KDE UAS95HVC·FLAME(domain: hardware).
+- [[drone-propeller-product-specs-catalog]] — 프로펠러 4종 사양 카탈로그: APC·Gemfan·T-Motor·Master Airscrew(domain: hardware).
+- [[drone-battery-cell-pack-specs-catalog]] — 배터리 셀·팩 3종 사양: Molicel P50B·Tattu 16000·Amprius SiCore(domain: hardware).
+- [[drone-power-module-specs-catalog]] — 전원 모듈 4종 사양·호환성: Holybro PM02/PM02D·CUAV CAN PMU·mRo(domain: hardware).
+- [[drone-payload-datalink-product-specs-catalog]] — 짐벌·데이터링크 4종 사양: Gremsy T7·SIYI A8 mini·pMDDL2450·RFD900x(domain: hardware).
+- [[drone-frame-platform-specs-catalog]] — 프레임·플랫폼 사양: Freefly Alta X Gen2·Holybro X500 V2(domain: hardware).
+- [[drone-delivery-platform-hardware-cases]] — 배송 드론 HW 사례: DJI FlyCart 30·Matternet M3·Wing Hummingbird(domain: ops-mission).
 
 ## Comparisons
 

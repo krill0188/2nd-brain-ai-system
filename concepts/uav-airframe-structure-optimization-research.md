@@ -1,0 +1,25 @@
+---
+title: "UAV 프레임 구조 최적화·모듈형 플랫폼 연구"
+created: 2026-10-16
+updated: 2026-10-16
+type: concept
+domain: hardware
+tags: [drone, drone-hw, hardware]
+sources: [inbox/processed/fetch-2026-10-16-hw-paper-carbon-fiber-3d-printed-frame-hoang-2026.md, inbox/processed/fetch-2026-10-16-hw-paper-uav-airframe-strength-stiffener-ye-2025.md, inbox/processed/fetch-2026-10-16-hw-paper-mrs-drone-modular-hert-2023.md]
+confidence: medium
+contested: false
+contradictions: []
+---
+
+# UAV 프레임 구조 최적화·모듈형 플랫폼 연구
+
+## 경량 3D 프린팅 탄소섬유 프레임 (Hoang 외, 2026)
+F450 기준으로 CFD·FEA·위상 최적화를 결합해 연속 탄소섬유 3D 프린팅 프레임을 제작했다. 초록은 40% 경량화를 보고하고, 비행 시간 28% 증가·탑재 36% 개선은 검색 요약 확인값이라 원문 대조가 필요하다. 개선이 질량 효과만인지 공력 효과가 섞였는지는 미확인.^[inbox/processed/fetch-2026-10-16-hw-paper-carbon-fiber-3d-printed-frame-hoang-2026.md]
+
+## 기체 강도 해석 (Ye 외, 2025)
+7.30 kg 쿼드로터의 호버 하중 정적 해석. 원설계 최대 응력 309.2 MPa·변위 6.49 mm에서, 방식 I(질량 불변)은 응력 189.2 MPa·변위 5.91 mm, 방식 II(리브 보강 무제약)는 질량 6.92 kg(-5.2%)·응력 120.9 MPa(-60.9%)·변위 1.63 mm(-74.8%)였다. 충격·피로·진동은 다루지 않았다.^[inbox/processed/fetch-2026-10-16-hw-paper-uav-airframe-strength-stiffener-ye-2025.md]
+
+## MRS Drone 모듈형 플랫폼 (Hert 외, 2023)
+F450(페이로드 약 0.5 kg, 비행 10~15분), X500, T650(페이로드 2.5 kg) 프레임을 교체 가능한 모듈형 구조로 구성한 다중 로봇 플랫폼이다. X500·T650의 비행 시간과 부품 번호는 미확인.^[inbox/processed/fetch-2026-10-16-hw-paper-mrs-drone-modular-hert-2023.md]
+
+관련: [[drone-frame-platform-specs-catalog]], [[drone-hw]], [[drone-payload-systems]].

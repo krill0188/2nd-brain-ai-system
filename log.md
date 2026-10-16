@@ -2450,3 +2450,259 @@
   - `concepts/drone-lidar-forest-boundary.md` — 점군–BIM 정합 페이지 링크
   - `concepts/kci-uav-lidar-ground-point-density-dem-accuracy.md` — 점군–BIM 정합 페이지 링크
 - 모순 없음. 나머지 후보 목록의 페이지는 raw 근거 변화 없음(뉴스 섹션 자동 갱신)으로 스킵.
+
+## [2026-10-06] ingest | inbox 일일 컴파일 (fetch-2026-10-06-*)
+
+- Created:
+  - `concepts/kci-uav-multispectral-apple-ssc-prediction.md` — KCI 사과 SSC 예측 (domain: ai-autonomy, confidence low — 초록 절단)
+  - `concepts/kci-critical-facility-illegal-drone-counter-uas-zones.md` — KCI 국가중요시설 대드론 체계 (domain: ops-mission, confidence low)
+  - `concepts/faa-12m-drone-research-awards-2026-10.md` — FAA $12M 19개 과제 (domain: regulations)
+  - `concepts/fcc-dronus-k500l-conditional-approval.md` — FCC Dronus K500L 조건부 예외 (domain: regulations, confidence low)
+  - `concepts/wing-walmart-denver-seattle-2027.md` — Wing·Walmart 2027 확장 (domain: ops-mission, confidence low)
+  - `concepts/michigan-medical-drone-delivery-pilot-phase2.md` — 미시간 의료 드론 파일럿 2단계 (domain: ops-mission)
+- Updated: `index.md` (총 페이지 489 → 495)
+- Skipped: RSS 헤드라인만 있는 항목(GA-ASI/Navy, Zing-NUCODE MOU, High Lander·BOND RF, 핀란드 부동산연맹, DJI GEO 교육 Benelux, Sky Elements 11,000대 쇼), YouTube Nemyx VLS·DJI Mic Mini 2S·DJI Osmo Nano 배구(프로모, transcript 없음), YouTube MATLAB Aerospace Toolbox(transcript 있으나 제품 기능 개괄뿐, 절차·사양·측정 정보 없음), YouTube 핑크랩 창고 로봇 캠프(교육 홍보, transcript 없음), YouTube 블렌더 애니메이션(드론 도메인 외)
+- Moved to processed: 위 13개 inbox 파일 → `inbox/processed/` (뉴스 소스는 processed 경로 참조, KCI 논문 소스는 raw/papers 경로)
+
+## [2026-10-06] refactor | 신규 근거 반영 (wiki-refactor)
+
+- Updated (링크·근거 보강, 9개):
+  - `concepts/kci-sejong-counter-drone-governance.md` — 국가중요시설 대드론 3지대 체계 페이지 링크
+  - `concepts/kci-critical-facility-intrusion-detection-drone-ai.md` — 동일
+  - `concepts/drone-wall-defense-system.md` — 9.3 km 3배 확장·중첩 제안 근거 추가(raw 인용, sources 추가)
+  - `concepts/drone-rice-heading-detection.md` — 사과 SSC 다중분광 페이지 링크
+  - `concepts/uav-multispectral-glint-correction.md` — 동일
+  - `concepts/faa-nextgen-drone-integration.md` — FAA $12M 과제 링크
+  - `concepts/fcc-drone-approval-revocation.md` — Dronus K500L 조건부 예외(반대 사례) 링크
+  - `concepts/drone-delivery-news.md` — Wing·Walmart 2027, 미시간 파일럿 2단계 링크
+  - `concepts/michigan-aam-projects.md` — 미시간 파일럿 2단계 링크
+- 모순 없음. 나머지 후보(DJI·뉴스 집계·knowledge 페이지)는 뉴스 섹션 자동 갱신뿐이라 스킵.
+
+## [2026-10-07] ingest | inbox 일일 컴파일 (fetch-2026-10-07-*)
+
+- Created:
+  - `concepts/kci-vtol-swarm-takeoff-landing-operation.md` — KCI 다수 VTOL 군집 이착륙 운용방안 (domain: flight-control, confidence low — 초록 절단)
+  - `concepts/kci-quadrotor-compound-fault-accommodation.md` — KCI 센서·구동기 복합 고장 보완 (domain: flight-control, confidence low)
+  - `concepts/kci-weather-drone-uam-corridor-wind-validation.md` — KCI UAM 회랑 기상드론 바람 관측 검증 (domain: ops-mission, confidence low — 초록 절단)
+  - `concepts/pso-uav-bushfire-hazard-management.md` — PSO 기반 UAV 산불 위험 관리 (domain: ai-autonomy, confidence low — 초록 절단)
+  - `concepts/inav-fixed-wing-servo-direction-checklist.md` — INAV 고정익 서보 방향 3단계 점검 (domain: flight-control, 자막 기반, confidence low)
+  - `concepts/yolo-v8-4-174.md` — YOLO v8.4.174 릴리스 (domain: ai-autonomy)
+  - `concepts/drone-news-2026-10-07.md` — 2026-10-07 드론 업계 소식 (domain: ops-mission)
+- Updated:
+  - `concepts/betafpv-p1-digital-fpv-system.md` — Bardwell P1 휘프 조립 영상 근거 추가(자막 기반, 비행 결과 전 절단)
+  - `concepts/emlid-corrections.md` — PIX4Dcatch 연동 근거 추가(자막 기반)
+  - `index.md` (총 페이지 495 → 502)
+- Skipped: KCI 공분산 교차 대드론 센서 융합(초록이 "."뿐), Crossref DMoA(초록 미제공, 제목만), YouTube DJI RS 4 Pro·DJI Lito X1(프로모, transcript 없음), YouTube GLM-5.3-Flash LLM 밑바닥 학습(드론 도메인 외 — 자막 있으나 일반 LLM 튜토리얼)
+- Moved to processed: 위 18개 inbox 파일 → `inbox/processed/` (뉴스·영상 소스는 processed 경로, 논문 소스는 raw/papers 경로 참조)
+
+## [2026-10-07] refactor | 신규 근거 반영 (wiki-refactor)
+
+- Updated (13개):
+  - `concepts/swarm-coordination.md` — VTOL 군집 이착륙 절차·20대 20.5초 천이 결과 절 추가(raw 인용, sources 추가)
+  - `concepts/swarm-modes.md`, `concepts/kci-vtol-swarm-takeoff-landing-operation.md`, `concepts/indi-stability-tilt-rotor-vtol.md` — VTOL 군집·틸트로터 제어 페이지 상호 링크
+  - `concepts/kci-uav-swarm-mission-reliability-abort.md`, `concepts/kci-quadrotor-compound-fault-accommodation.md` — 군집 신뢰도·개별 기체 고장 보상 링크
+  - `concepts/drone-safety-failsafe.md` — 규칙 기반 failsafe 대비 고장 추정 보상 접근 절 추가(raw 인용, sources 추가)
+  - `concepts/utm-system.md` — 기상드론 바람 관측 검증(+0.8 m/s, r=0.839) 절·링크(raw 인용, sources 추가)
+  - `concepts/drone-wildfire-detection-network-optimization.md`, `concepts/marl-uav-wildfire-exploration.md` — PSO 산불 경로계획 페이지 링크
+  - `concepts/moe-multimodal-uav-detection.md`, `concepts/rgb-ir-fusion-uav-detection.md` — DMoA 수집 메모(제목 기준, 초록 없음)·상호 링크
+  - `concepts/kci-multisensor-fusion-counter-drone-identification-engagement.md` — 공분산 교차 융합 논문 수집 메모(초록 없음)
+- 모순 없음(contested 변경 없음). confidence 상향 없음 — 신규 근거가 모두 초록 단일 출처.
+- 스킵: 뉴스·YouTube 뉴스 섹션만 바뀐 페이지들(6g-isac, ai-*, betafpv, china-export, dji-*, drone-news-*, dronuum, emlid, kci-counter-drone-hardkill, mavlink-m), yolo-v8-4-174·inav 체크리스트·pso·kci-weather(신규 페이지, 링크 충분)
+
+## [2026-10-08] ingest | inbox 일일 컴파일 (fetch-2026-10-08-*)
+
+- Created:
+  - `concepts/micro-neural-policies-safe-real-time-control.md` — Micro Neural Policies (domain: flight-control, confidence low — 초록 단일 출처)
+  - `concepts/quadrotor-wind-fidelity-ppo-robustness.md` — 학습 바람장 충실도별 PPO 강건성 비교 (domain: flight-control, confidence low)
+  - `concepts/kci-eoir-autonomous-drone-wildfire-suppression.md` — EO/IR 기반 산불 초기 진화 (domain: ops-mission, confidence low)
+  - `concepts/uav-vlc-wmn-blocking-aware-bandwidth-allocation.md` — UAV-VLC WMN BMPO (domain: comms-protocol, confidence low — 초록 절단)
+  - `concepts/kci-3dgs-flight-path-reconstruction-quality.md` — 촬영경로별 3DGS 재현 품질 (domain: ops-mission, confidence low)
+  - `concepts/kci-drone-human-hybrid-delivery-milp.md` — 드론-인간 혼합배송 MILP (domain: ops-mission, confidence low — 초록 절단)
+  - `concepts/mavsdk-v4-0-5.md` — MAVSDK v4.0.5 릴리스 (domain: comms-protocol)
+  - `concepts/drone-news-2026-10-08.md` — 2026-10-08 드론 업계 소식 (domain: ops-mission)
+- Updated:
+  - `concepts/faa-airspace-classes-drone-authorization.md` — 경기장 상공 중계 드론 사례 절 추가(UAV Coach 자막 기반, 화자 추측 명시)
+  - `index.md` (총 페이지 502 → 510)
+- Skipped: Skydio·Oscar Liang RSS(헤드라인만, 뉴스 페이지에서 제외 명시), YouTube MuJoCo+ROS 2 Nav2/MoveIt(transcript 없음, 드론 도메인 외 로봇팔), quadmovr My Drone Is Stuck(프로모/설명란만), DJI Osmo Pocket 4P·Osmo 360 II(프로모, transcript 없음), MATLAB Statistics and ML Toolbox(자막 있으나 일반 툴 소개, 드론 구체 정보 없음)
+- Sources: 신규 raw/ 레코드가 아직 없어 기존 관례대로 `inbox/processed/` 경로를 sources로 사용
+- Moved to processed: 위 18개 inbox 파일 → `inbox/processed/`
+
+## [2026-10-08] refactor | 신규 논문·릴리스 근거를 기존 canonical 페이지에 연결
+
+- Updated (15개):
+  - `concepts/rl-quadrotor-tunable-control.md`, `concepts/agile-quadrotor-learning.md`, `concepts/pid-tuning-control.md`, `concepts/drone-simulation.md` — 학습 바람장 충실도 비교(이산 돌풍 랜덤화 1위, 제어 권한이 병목, 튜닝된 geometric 제어기 > PPO) 연결·단서 추가(raw 인용, sources 추가)
+  - `concepts/lightweight-safe-rl-uav.md`, `concepts/calos-lyapunov-safety-layer-quadrotor-rl.md` — Micro Neural Policies(SMC 검증, 0.5~7.5 kB) 연결
+  - `concepts/drone-wildfire-detection-network-optimization.md`, `concepts/thermal-drone-wildfire-monitoring.md` — EO/IR 자율 산불 초기 진화 연결
+  - `concepts/unet-multi-uav-networking.md`, `concepts/datalink-communication.md` — UAV-VLC WMN BMPO 연결
+  - `concepts/mission-planning.md`, `concepts/kci-drone-pointcloud-bim-registration-extraction.md` — 촬영경로별 3DGS 재현 품질 연결
+  - `concepts/drone-delivery-news.md` — 드론-인간 혼합배송 MILP 연결
+  - `concepts/mavsdk.md`, `concepts/mavsdk-v4-0-4.md` — v4.0.5 릴리스 이력·다음 패치 링크
+- 모순 없음(contested 변경 없음). confidence 상향 없음 — 신규 근거가 모두 초록 또는 릴리스 노트 단일 출처.
+- 스킵: 뉴스·YouTube 헤드라인만 추가된 페이지들(comparisons/kci-korea-airspace-eu-uspace, ai-*, china-drone-export-controls, dfend-*, dji-*, drone-news-*, dronuum, kci-critical-facility-*, ondas, dji-osmo-pocket-4). 기존 근거를 바꾸는 내용이 아님. 상한 15개 도달로 marl-uav-wildfire-exploration, uav-battery-replacement-planner 등은 다음 실행 몫.
+
+## [2026-10-09] ingest | inbox 일일 컴파일 (fetch-2026-10-09-*)
+
+- Created:
+  - `concepts/kci-counter-drone-3d-air-defense-layered-neutralization.md` — 3차원 공중방호 계층적 무력화 모델 (domain: ops-mission, confidence low — 초록 단일 출처)
+  - `concepts/kci-uav-random-walk-debris-flow-reproducibility.md` — UAV 관측 기반 RWM 토석류 재현성 (domain: ops-mission, confidence low — 초록 절단)
+  - `concepts/kci-drone-orthomosaic-dinosaur-track-dataset.md` — 공룡발자국 산지 드론 정사영상 데이터셋 (domain: ops-mission, confidence low — 초록 절단)
+  - `concepts/mavsdk-v4-0-6.md` — MAVSDK v4.0.6 릴리스 (domain: comms-protocol)
+  - `concepts/drone-news-2026-10-09.md` — 2026-10-09 드론 업계 소식 (domain: ops-mission)
+- Updated:
+  - `concepts/emlid-corrections.md` — Gossweiler 후속 영상(자막 기반) 현장 검증 절차 확인, sources 추가
+  - `concepts/mavsdk.md`, `concepts/mavsdk-v4-0-5.md` — v4.0.6 이력·다음 패치 링크
+  - `index.md` (총 페이지 510 → 515)
+- Skipped: Crossref 2건(drone-truck 배송망 최적화, UAV 구조임무 배정 — 초록 미제공, 제목만 있음), Skydio RSS(헤드라인만), YouTube DJI Avata 360·Osmo Action 6(프로모, transcript 없음), TanStack Router 강좌(자막 있으나 일반 웹 프런트엔드 강의, 드론 구체 정보 없음)
+- Sources: 신규 raw/ 레코드가 아직 없어 기존 관례대로 `inbox/processed/` 경로를 sources로 사용
+- Moved to processed: 위 14개 inbox 파일 → `inbox/processed/`
+
+## [2026-10-09] refactor | 신규 KCI 페이지를 기존 canonical 페이지에 역링크로 연결
+
+- Updated (9개):
+  - `concepts/kci-critical-facility-illegal-drone-counter-uas-zones.md`, `concepts/kci-multisensor-fusion-counter-drone-identification-engagement.md`, `concepts/kci-counter-drone-hardkill-engagement-zone.md` — kci-counter-drone-3d-air-defense-layered-neutralization 링크(소프트킬 우선·하드킬 최종 운용 개념)
+  - `concepts/kci-uav-rainfall-induced-terrain-change-analysis.md`, `concepts/kci-uav-lidar-ground-point-density-dem-accuracy.md`, `concepts/kci-disaster-response-drone-tech-direction.md` — kci-uav-random-walk-debris-flow-reproducibility 링크
+  - `concepts/kci-3dgs-flight-path-reconstruction-quality.md`, `concepts/kci-natural-monument-plant-ndvi-ndre-seasonal.md`, `concepts/mission-planning.md` — kci-drone-orthomosaic-dinosaur-track-dataset 링크
+- 모순 없음(contested 변경 없음). confidence 변경 없음 — 신규 근거가 모두 초록 단일 출처. 링크만 추가해 본문 주장은 늘리지 않음.
+- 스킵: 헤드라인만 추가된 페이지들(ai-*, china-drone-export-controls, cleveland-clinic, dame-net, dji-osmo-*, drone-news-*, dronuum, ga-asi-fujitsu-mou, hoverair-versa, kci-critical-facility-intrusion-detection, kci-ground-target-tracking). mavsdk*·emlid-corrections는 오늘 ingest에서 이미 반영됨.
+
+## [2026-10-10] ingest | inbox 일일 컴파일 (fetch-2026-10-10-*)
+
+- Created:
+  - `concepts/kci-geological-outcrop-3d-mesh-dataset.md` — 남한 지질 노두 3D 메시 133개 데이터셋 (domain: ops-mission, confidence low — 초록 절단·원문 비공개)
+  - `concepts/yolo-v8-4-175.md` — YOLO v8.4.175 릴리스 (domain: ai-autonomy)
+  - `concepts/kh-control-streamdeck-mission-planner.md` — Stream Deck↔Mission Planner 플러그인 (domain: gcs-software, 자막 기반, confidence low)
+  - `concepts/alientek-t90b-soldering-iron.md` — 드론 수리용 휴대 납땜 인두 리뷰 (domain: hardware, 자막 기반·후반부 절단, confidence low)
+  - `concepts/drone-news-2026-10-10.md` — 2026-10-10 드론 업계 소식 (domain: ops-mission)
+- Updated: `index.md` (총 페이지 515 → 520)
+- Skipped: YouTube 프로모/설명란만(DJI Mini 5 Pro·Osmo Nano 영상, Auterion Seth-X·Talon Interceptor, UAV Coach Categories 1-4·Over People 4 categories — transcript 없음), PinkLAB MuJoCo+ROS2 워크숍 모집 공지, freeCodeCamp n8n 강좌(도메인 외, transcript 없음)
+- Sources: 신규 raw/ 레코드가 아직 없어 기존 관례대로 `inbox/processed/` 경로를 sources로 사용
+- Moved to processed: 위 17개 inbox 파일 → `inbox/processed/`
+
+## [2026-10-10] refactor | 오늘 도착한 raw 논문 레코드를 기존 canonical 페이지 근거로 연결
+
+- Updated (10개): 기존에 `inbox/processed/` 경로만 근거로 쓰던 논문 페이지에 같은 논문의 Zotero raw 레코드를 sources·`^[raw/...]` 마커로 추가(updated 2026-10-10). 본문 주장·confidence 변경 없음(raw 초록이 기존 서술과 동일, 단일 출처 유지).
+  - `concepts/micro-neural-policies-safe-real-time-control.md`, `concepts/quadrotor-wind-fidelity-ppo-robustness.md` — 두 페이지 상호 링크, 후자에 rl-quadrotor-tunable-control·lightweight-safe-rl-uav 링크
+  - `concepts/uav-vlc-wmn-blocking-aware-bandwidth-allocation.md`, `concepts/kci-drone-human-hybrid-delivery-milp.md`, `concepts/kci-uav-random-walk-debris-flow-reproducibility.md`, `concepts/kci-geological-outcrop-3d-mesh-dataset.md` — raw 근거 추가
+  - `concepts/kci-eoir-autonomous-drone-wildfire-suppression.md` — raw 근거 + kci-disaster-response-drone-tech-direction·drone-wildfire-rt-detr 링크
+  - `concepts/kci-3dgs-flight-path-reconstruction-quality.md`, `concepts/kci-drone-orthomosaic-dinosaur-track-dataset.md` — raw 근거 + kci-geological-outcrop-3d-mesh-dataset 링크
+  - `concepts/kci-counter-drone-3d-air-defense-layered-neutralization.md` — raw 근거 + kci-sejong-counter-drone-governance 링크
+- 모순 없음(contested 변경 없음).
+- 스킵: 초록 없는 raw 2건(UAV 구조임무 배정, drone-truck 배송망 — 제목만 있어 반영할 주장 없음), 헤드라인만 추가된 뉴스·제품·도구 페이지(이미 오늘 ingest에서 반영).
+
+## [2026-10-11] ingest | inbox 일일 컴파일 (fetch-2026-10-11-*)
+
+- Created:
+  - `concepts/drone-news-2026-10-11.md` — 2026-10-11 드론 업계 소식 (domain: ops-mission, confidence low — 요약문 절단·헤드라인 수준)
+- Updated: `index.md` (총 페이지 520 → 521)
+- Skipped: Federal Register FAA 2026-20859(인디애나폴리스 다운타운 헬리포트 AIP 면제 결정 — 드론 무관), YouTube 4건(DJI RS 5·Osmo Pocket 4P 프로모 영상 — transcript 없음·설명란만, RTX 4060 AI 영상 인물 변환 — 도메인 외·transcript 없음)
+- Sources: 신규 raw/ 레코드가 아직 없어 기존 관례대로 `inbox/processed/` 경로를 sources로 사용
+- Moved to processed: 위 6개 inbox 파일 → `inbox/processed/`
+
+## [2026-10-12] ingest | inbox 일일 컴파일 (fetch-2026-10-12-*)
+
+- Created:
+  - `concepts/drone-news-2026-10-12.md` — 2026-10-12 드론 업계 소식 (domain: ops-mission, confidence low — 헤드라인 수준)
+  - `concepts/oddityrc-echo5-frame-gps.md` — OddityRC Echo5 프레임·마이크로 GPS·ELRS Rx (domain: hardware, 자막 기반·후반부 절단, confidence low)
+- Updated: `index.md` (총 페이지 521 → 523)
+- Skipped: DJI Mavic 4 Pro YouTube 2건(100MP·Fall 프로모 — transcript 없음, 설명란만), `zotero-네이버.md`(네이버 메인 페이지 — 도메인 외)
+- Sources: 신규 raw/ 레코드가 아직 없어 기존 관례대로 `inbox/processed/` 경로를 sources로 사용
+- Moved to processed: 위 6개 inbox 파일 → `inbox/processed/`
+
+## [2026-10-13] ingest | inbox 일일 컴파일 (fetch-2026-10-13-*)
+
+- Created:
+  - `concepts/drone-news-2026-10-13.md` — 2026-10-13 드론 업계 소식 (domain: ops-mission, confidence low — 헤드라인 수준)
+  - `concepts/yolo-v8-4-176.md` — YOLO v8.4.176 릴리스 (domain: ai-autonomy, confidence medium — 원문 PR 목록 절단)
+- Updated: `index.md` (총 페이지 523 → 525)
+- Skipped: CrossRef 논문 2건(Eagle-DEIM, Wind-aware DRL — 초록 미제공·제목만), YouTube 4건(Auterion Ukraine — 자막이 짧은 운용 홍보 클립이라 구체 기술 정보 없음, DJI Osmo Action 6·Inspire 3 — transcript 없음·프로모, MATLAB Deep Learning Toolbox — 자막이 일반 제품 소개로 드론 특화 정보 없음)
+- Sources: 신규 raw/ 레코드가 아직 없어 기존 관례대로 `inbox/processed/` 경로를 sources로 사용
+- Moved to processed: 위 12개 inbox 파일 → `inbox/processed/`
+
+## [2026-10-13] ingest | 쿼드(QUAD) 드론연구소 자율주행 드론 개발 키트 개요
+
+- Captured raw source: `raw/articles/quad-drone-lab-quad-drone-start.md`
+- Source URL: `https://quad-drone-lab.gitbook.io/quad-drone-start`
+- Preserved the fetched article body as immutable raw evidence; SHA-256 recorded in frontmatter.
+- No canonical page created: this was a source capture request, not a human-approved synthesis.
+
+## [2026-10-14] ingest | inbox 일일 컴파일 (fetch-2026-10-14-*)
+
+- Created:
+  - `concepts/drone-news-2026-10-14.md` — 2026-10-14 드론 업계 소식 (domain: ops-mission, confidence low — 헤드라인 수준)
+  - `concepts/yolo-v8-4-177.md` — YOLO v8.4.177 릴리스 (domain: ai-autonomy, confidence medium — 원문 PR 목록 절단)
+  - `concepts/axisflying-vertex-5-review.md` — AXISFLYING Vertex 5 리뷰 (domain: hardware, 자막 기반·후반부 절단, confidence low)
+  - `concepts/kci-drone-3d-mapping-fire-investigation.md` — 드론 3D 맵핑 화재조사 (domain: ops-mission, 초록 절단, confidence low)
+- Updated: `index.md` (총 페이지 525 → 529)
+- Skipped: CrossRef UniIA-DET(초록 미제공·제목만), YouTube 7건(Painless360 구독자 200k 감사 영상 — 기술 정보 없음, freeCodeCamp 시스템 설계 강의 — 도메인 외, MuJoCo+ROS2 교육 모집 — 프로모·transcript 없음, DJI Mavic 4 Pro·Osmo Pocket 4 — 프로모·transcript 없음, 멈춤보단 천천히라도 2건 — 설명 비어 있음·transcript 없음)
+- Sources: 신규 raw/ 레코드가 아직 없어 기존 관례대로 `inbox/processed/` 경로를 sources로 사용
+- Moved to processed: 위 15개 inbox 파일 → `inbox/processed/`
+
+## [2026-10-14] refactor | wiki-refactor 일일 리팩터링 (신규 raw 5건 반영)
+
+- Updated (7):
+  - `concepts/kci-drone-3d-mapping-fire-investigation.md` — 정식 raw 레코드로 provenance 이전, 열화상 화재 페이지 링크 (강화)
+  - `concepts/companion-computer.md` — QUAD 키트 사례(Jetson/RPi, PX4, Realsense T265·D435i) 추가, sources 보강 (강화)
+  - `concepts/quadrotor-wind-fidelity-ppo-robustness.md` — Wind-aware DRL(제목 수준) 연결, 결론 변경 없음 (링크)
+  - `concepts/hierarchical-rl-uav-navigation.md` — 인접 DRL 연구 연결 (링크)
+  - `concepts/visual-slam-gps-denied-evaluation.md` — 비GPS 키트·DRL 근거 연결 (링크)
+  - `concepts/uav-detr-anti-drone-detection.md` — Eagle-DEIM 연결, 성능 비교는 초록 부재로 보류 (링크)
+  - `concepts/multi-uav-wind-farm-inspection.md` — UniIA-DET 연결 (링크)
+- Skipped: 나머지 목록의 이미 갱신된 canonical·뉴스·YOLO 릴리스 페이지(신규 근거가 기존 주장을 바꾸지 않음), 약화/모순 해당 없음
+
+## [2026-10-15] ingest | inbox 일일 컴파일 (fetch-2026-10-15-*)
+
+- Created:
+  - `concepts/drone-news-2026-10-15.md` — 2026-10-15 드론 업계 소식 (domain: ops-mission, confidence low — 헤드라인 수준)
+  - `concepts/axisflying-bando-5-review.md` — AXISFLYING Bando 5 알루미늄 프레임 리뷰 (domain: hardware, 자막 기반·후반부 절단, confidence low)
+  - `concepts/emax-tinyhawk-aero.md` — EMAX Tinyhawk Aero 웁 (domain: hardware, 자막 기반, confidence low)
+  - `concepts/uav-multimodal-beam-prediction-deepsense.md` — 6G UAV 멀티모달 빔 예측 (domain: comms-protocol, confidence medium)
+  - `concepts/truck-as-hub-vrp-drones-branch-price-cut.md` — 트럭 허브 드론 VRP (domain: ops-mission로 재분류 — 원문 라벨은 comms-protocol, confidence medium)
+  - `concepts/kci-naval-integrated-counter-drone-system-direction.md` — 해군 통합대드론체계 (domain: ops-mission, 초록 기준, confidence low)
+  - `concepts/kci-ship-eoir-counter-drone-sensor-concept.md` — 함정 EO/IR 대드론 센서 운용개념 (domain: ops-mission, 초록 기준, confidence low)
+- Updated:
+  - `concepts/ardupilot-plane-4-7.md` — Plane-4.7.2 패치 릴리스(2026-10-11) 추가
+  - `concepts/emlid-corrections.md` — Gossweiler 클라우드 프로젝트 공유 사례 추가
+  - `index.md` (총 페이지 529 → 536)
+- Skipped: CrossRef TinyML 무결성 스케줄링(초록 미제공·제목만), Skydio RSS(2026-09-23 F10 기사 — 기존 `skydio-f10-megadock` 범위), YouTube 4건(MATLAB OpenTelemetry — 드론 도메인 외 일반 AI 에이전트 관측성, MIT CSAIL 수중 로봇 — 수중 로봇 일반 소개로 구체 사양·측정 결과 없음, DJI Osmo Action 6/360·Osmo Nano — 프로모·transcript 없음)
+- Sources: 신규 raw/ 레코드가 아직 없어 기존 관례대로 `inbox/processed/` 경로를 sources로 사용
+- Moved to processed: 위 inbox 파일 18개 → `inbox/processed/`
+
+## [2026-10-15] refactor | 2026-10-15 신규 근거 반영 (wiki-refactor)
+- 강화: 신규 raw 레코드 4건을 기존 canonical 페이지의 sources/인용 마커에 추가 (inbox 경로만 쓰던 페이지의 근거를 raw로 보강)
+  - `concepts/kci-naval-integrated-counter-drone-system-direction.md`, `concepts/kci-ship-eoir-counter-drone-sensor-concept.md`, `concepts/truck-as-hub-vrp-drones-branch-price-cut.md`, `concepts/uav-multimodal-beam-prediction-deepsense.md`
+- 연결: `concepts/kci-multisensor-fusion-counter-drone-identification-engagement.md`, `concepts/kci-counter-drone-hardkill-engagement-zone.md`, `concepts/kci-sejong-counter-drone-governance.md`, `concepts/kci-drone-human-hybrid-delivery-milp.md`, `concepts/drone-delivery-news.md`, `concepts/sim-assisted-uav-beamforming.md`, `concepts/hybrid-beamforming-ntn.md`
+- Skipped: `raw/papers/swarm/from-sensor-trust-...md`(초록 없이 제목·서지만 있어 주장 반영 불가), 신규 생성 없음, index.md 변경 없음
+
+## [2026-10-16] ingest | inbox 일일 컴파일 (fetch-2026-10-16-*)
+
+- Created:
+  - `concepts/drone-news-2026-10-16.md` — 2026-10-16 드론 업계 소식 (domain: ops-mission, confidence low — 헤드라인 수준)
+  - `concepts/kci-udt-blocedge-uav-digital-twin-military-iot.md` — UAV 통합 디지털 트윈 군 IoT 감시 (domain: ai-autonomy, 초록 기준·잘린 초록, confidence low)
+  - `concepts/kci-multispectral-helipad-night-precision-landing.md` — 다중 스펙트럼 헬리패드 야간 정밀착륙 (domain: flight-control, 초록 기준, confidence low)
+  - `concepts/kci-military-drone-combat-experiment-continued-use-intention.md` — 군 드론 전투실험 인식과 지속사용 의도 (domain: ops-mission, 초록 기준, confidence low)
+  - `concepts/caddx-curve-micro-p18.md` — Caddx Curve Micro P18 웁 (domain: hardware, 자막 기반, confidence low)
+- Updated: `index.md` (총 페이지 536 → 541)
+- Skipped: YouTube 5건 — PinkLab HumanTracking(교육 문의 프로모, 자막 없음), DJI Osmo Pocket 4P 티저(프로모, 기존 `dji-osmo-pocket-4`), DJI Osmo 360 II 슬라이드(프로모, 자막 없음), MATLAB-Python 설정(드론 도메인 외 일반 환경 설정), UAV Coach "Why Does Flying a Drone Feel Illegal"(자막은 심리·태도 조언뿐, 규정·사양 등 구체 정보 없음)
+- Sources: 신규 raw/ 레코드가 아직 없어 기존 관례대로 `inbox/processed/` 경로를 sources로 사용
+- Moved to processed: 위 inbox 파일 14개 → `inbox/processed/`
+
+## [2026-10-16] refactor | 2026-10-16 신규 근거 반영 (wiki-refactor)
+- 연결: 오늘 신규 canonical 5건을 관련 기존 페이지에서 역링크하고 인용 마커·sources·updated 갱신
+  - `concepts/emax-nanoscout-pro-1s-whoop.md`, `concepts/hglrc-talon-cinewhoop.md`, `concepts/fpv-hardware.md` → `caddx-curve-micro-p18`
+  - `concepts/rtk-gps-precise-landing.md`, `concepts/px4-offboard-control.md`, `concepts/kci-vtol-swarm-takeoff-landing-operation.md` → `kci-multispectral-helipad-night-precision-landing`
+  - `concepts/digital-twin-intent-drone-networks.md`, `concepts/uav-mining-digital-twin.md`, `concepts/gnn-uav-anomaly-detection.md` → `kci-udt-blocedge-uav-digital-twin-military-iot`
+  - `concepts/kci-manned-unmanned-teaming-defensive-air-ops.md`, `concepts/kci-rok-army-drone-acquisition-capability.md` → `kci-military-drone-combat-experiment-continued-use-intention`
+  - `concepts/drone-news-2026-10-15.md` → `drone-news-2026-10-16` (다음 일자 링크)
+- Skipped: 기존 페이지 14건의 오늘 변경분은 자동 부착된 뉴스 헤드라인(제목·링크만)이라 강화/약화 근거 없음. 상충 없음, 신규 생성 없음, index.md 변경 없음
+
+## [2026-10-16] ingest | inbox HW 세분화 수집분 컴파일 (fetch-2026-10-16-hw-*)
+
+- Created (concepts, 17):
+  - `concepts/bldc-motor-esc-characterization-research.md`, `concepts/drone-esc-failure-cases.md`, `concepts/multirotor-energy-power-models.md`, `concepts/multirotor-propeller-test-research.md`, `concepts/multirotor-propulsion-sizing-methods.md`, `concepts/uav-airframe-structure-optimization-research.md`, `concepts/uav-alternative-power-hybrid-fuel-cell-research.md` (domain: hardware, 논문 초록 기준)
+  - `concepts/drone-facility-inspection-cases.md`, `concepts/drone-firefighting-surveillance-cases.md`, `concepts/drone-delivery-platform-hardware-cases.md` (domain: ops-mission, 사례)
+  - `concepts/drone-motor-product-specs-catalog.md`, `concepts/drone-esc-product-specs-catalog.md`, `concepts/drone-propeller-product-specs-catalog.md`, `concepts/drone-battery-cell-pack-specs-catalog.md`, `concepts/drone-power-module-specs-catalog.md`, `concepts/drone-payload-datalink-product-specs-catalog.md`, `concepts/drone-frame-platform-specs-catalog.md` (domain: hardware, 제조사 페이지 사양, 미확인·상충 항목 명시)
+- Created (entities, 2): `entities/dji-agras-t40.md`, `entities/dji-matrice-350-rtk.md` (domain: hardware)
+- Updated: `index.md` (총 페이지 541 → 560)
+- Note: 앞선 중단된 실행이 만든 11개 페이지(인덱스·로그 미반영)를 검수해 이번에 함께 등재. 그 중 깨진 wikilink 3건을 신규 카탈로그 페이지로 연결 수정(`concepts/uav-airframe-structure-optimization-research.md`, `entities/dji-agras-t40.md`, `entities/dji-matrice-350-rtk.md`)
+- Sources: 신규 raw/ 레코드가 없어 기존 관례대로 `inbox/processed/` 경로를 sources로 사용
+- Moved to processed: 위 inbox 파일 62개 중 `.DS_Store`·`.gitkeep` 제외 61개 → `inbox/processed/`

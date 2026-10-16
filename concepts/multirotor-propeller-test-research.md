@@ -1,0 +1,27 @@
+---
+title: "프로펠러 성능 시험·측정 연구 (벤치, 저 Re, 덕티드 동축)"
+created: 2026-10-16
+updated: 2026-10-16
+type: concept
+domain: hardware
+tags: [drone, drone-hw, hardware]
+sources: [inbox/processed/fetch-2026-10-16-hw-paper-propeller-motor-static-bench-milenkovic-babic-2026.md, inbox/processed/fetch-2026-10-16-hw-paper-propeller-test-bench-esp32-prasetiyo-2026.md, inbox/processed/fetch-2026-10-16-hw-paper-propulsion-efficiency-goli-2023.md, inbox/processed/fetch-2026-10-16-hw-paper-small-propeller-low-re-mollick-2024.md, inbox/processed/fetch-2026-10-16-hw-paper-ducted-coaxial-rotor-hover-li-2023.md]
+confidence: medium
+contested: false
+contradictions: []
+---
+
+# 프로펠러 성능 시험·측정 연구
+
+소형 UAV 프로펠러·추진계를 실험으로 측정한 논문 5편의 종합이다.
+
+## 벤치 시험
+- Milenković-Babić 외(2026): AXI 4130-16/-20 모터와 Aeronaut CAM 접이식 프로펠러 5종을 정적 측정했고 18×11인치가 추력과 추력-토크 비에서 가장 좋았다. 구체 수치는 초록에 없고 저널명·연도는 추정값이다.^[inbox/processed/fetch-2026-10-16-hw-paper-propeller-motor-static-bench-milenkovic-babic-2026.md]
+- Prasetiyo 외(2026): ESP32 기반 저비용 벤치로 10×5인치 프로펠러 3종(사출·실리콘 주조·3D 프린팅)을 비교했고 총 추진 효율은 약 18~30%, 상용 사출품이 최고였다. 샘플이 3종뿐이다.^[inbox/processed/fetch-2026-10-16-hw-paper-propeller-test-bench-esp32-prasetiyo-2026.md]
+- Goli 외(2023): 모터·프로펠러·배터리 조합 실험에서 12인치 프로펠러 최고 12.9%(3300 mAh)/11.4%(6000 mAh), 700 KV 모터 64.29%/62.01%를 보고했다. 구성품 단위 효율로 보이며 기체 전체와 직접 비교할 수 없다. 6000 mAh 배터리의 탑재 가능 페이로드는 5.82 N 대 2.02 N이었다.^[inbox/processed/fetch-2026-10-16-hw-paper-propulsion-efficiency-goli-2023.md]
+
+## 공력 영역
+- Mollick(2024, 석사논문): APC thin electric 14×12E, 17×12E, 19×12E를 저속 풍동·추력 스탠드로 시험, 저 전진비·Re 30,000~300,000 영역을 다룬다. 수치는 미확인.^[inbox/processed/fetch-2026-10-16-hw-paper-small-propeller-low-re-mollick-2024.md]
+- Li 외(2023): 덕티드 동축 로터 풍동 시험에서 로터 간격 H/R=0.40 최적, 덕트 내 위치 0.31Cd에서 단일 로터 대비 파워 로딩 약 20% 향상, 팁 간격 δ≤0.015R, 최우수 구성 FOM 0.61. 호버 한정이며 전진 비행은 미확인.^[inbox/processed/fetch-2026-10-16-hw-paper-ducted-coaxial-rotor-hover-li-2023.md]
+
+관련: [[fpv-motor-selection-guide]], [[bldc-motor-esc-characterization-research]], [[multirotor-propulsion-sizing-methods]], [[drone-hw]].
