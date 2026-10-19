@@ -1,10 +1,10 @@
 ---
 title: "Drone Wall 기반 대드론 방어체계"
 created: 2026-09-02
-updated: 2026-10-06
+updated: 2026-10-17
 type: concept
 tags: [drone, ai-autonomy, swarm, defense, cuas]
-sources: [inbox/fetch-2026-09-02-kci-droneto-drone-기반-drone-wall-개념을-적용한-대드론-방어체계-제안.md, raw/papers/swarm/국내외-국가중요시설-대상-불법-드론-적발-사례를-통한-대드론-체계-개선-방안-연구.md]
+sources: [inbox/fetch-2026-09-02-kci-droneto-drone-기반-drone-wall-개념을-적용한-대드론-방어체계-제안.md, raw/papers/swarm/국내외-국가중요시설-대상-불법-드론-적발-사례를-통한-대드론-체계-개선-방안-연구.md, inbox/processed/fetch-2026-10-17-kci-야전-보병-생존을-위한-대인-돌격형-소형-드론fpv-방어-체계-연구.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -39,6 +39,10 @@ Drone-to-Drone 운용 방식을 기반으로 한 Drone Wall 개념의 자율 대
 ## 출처
 
 - 김상혁, "Drone-to-Drone 기반 Drone Wall 개념을 적용한 대드론 방어체계 제안", 한국방위산업학회지, 2026
+
+## 최신 근거 연결 (2026-10-17)
+
+- 보병 소제대 단위의 FPV 사각지대 보완 방어 개념(정량 결과 없는 초록 수준, confidence low): [[kci-anti-fpv-infantry-defense-system]]^[inbox/processed/fetch-2026-10-17-kci-야전-보병-생존을-위한-대인-돌격형-소형-드론fpv-방어-체계-연구.md]
 
 ## 📰 최근 관련 소식
 - U.S. Military selects first bases for directed-energy counter-drone program (UAS Magazine, Fri, 08 Ma) — https://news.google.com/rss/articles/CBMiqgFBVV95cUxQYTBSSlZTWElOU015U0xMVTZNYVRwVFhYZ25fSEEyMHVaWjJEYm1QcHVWd0NCVG84MGxvUFhxVWJfZi1WN1JTcWZuZWg5OUMtNHIyd3BIRU52bFhwS0t4cG9SR0dSaW01RFJ4QTNUVHphZXRFRVF6WlQ5UjZVZUtrekVtUlhaQTI3Rm9YMm51eG1teWFUUXNNTy1lbVdnTTN4ZUI0ZHB5Zk1EUQ?oc=5

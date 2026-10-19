@@ -2707,6 +2707,38 @@
 - Sources: 신규 raw/ 레코드가 없어 기존 관례대로 `inbox/processed/` 경로를 sources로 사용
 - Moved to processed: 위 inbox 파일 62개 중 `.DS_Store`·`.gitkeep` 제외 61개 → `inbox/processed/`
 
+## [2026-10-17] ingest | inbox fetch-2026-10-17-* 컴파일
+
+- Created (concepts, 18):
+  - `concepts/addiff-gt-uav-swarm-self-healing.md`
+  - `concepts/crazyflie-brushless-dynamics-model.md`
+  - `concepts/drone-news-2026-10-17.md`
+  - `concepts/fam-dq-dual-quadrotor-aerial-manipulator.md`
+  - `concepts/kci-anti-fpv-infantry-defense-system.md`
+  - `concepts/kci-mavlink-virtual-decoy-swarm-deception.md`
+  - `concepts/kci-yolo-seg-visibility-robustness-suicide-drone.md`
+  - `concepts/payload-dependent-green-drone-routing.md`
+  - `concepts/pmsm-sensorless-controller-observer.md`
+  - `concepts/spinner-self-rotating-tri-rotor.md`
+  - `concepts/uav-3d-spectrum-sensing-rem.md`
+  - `concepts/uav-battery-soh-transfer-learning.md`
+  - `concepts/uav-cable-payload-cooperative-transport-research.md`
+  - `concepts/uav-coach-cinematic-drone-shots.md`
+  - `concepts/uav-ego-noise-speech-enhancement.md`
+  - `concepts/uav-leo-satellite-backhaul-emergency.md`
+  - `concepts/uav-propeller-fault-detection-hybrid-data.md`
+  - `concepts/yolo-v8-4-178.md`
+- Updated: `index.md` (총 페이지 560 → 578)
+- Skipped (사유): `yt-inside-an-ai-factory-power-cooling-and-gpus-explained`, `yt-what-is-mujoco-`, `yt-ai-powered-gnc-for-every-satellite` (도메인 외·워크숍 홍보/위성 GNC, 드론 구체 정보 없음); `yt-dji-neo-2-unboxing`, `yt-hear-the-mountain-meal-dji-mic-mini-2s`, `yt-pov-the-jump-drops-away-dji-osmo-nano` (자막 없음, 프로모/언박싱, 기술 정보 없음)
+- Note: 논문 14·KCI 3건은 초록 기준이라 confidence medium/low. RSS 4건은 `drone-news-2026-10-17`로 통합
+- Sources: 신규 raw/ 레코드가 없어 기존 관례대로 `inbox/processed/` 경로를 sources로 사용
+- Moved to processed: inbox 파일 30개 → `inbox/processed/`
+
+## [2026-10-17] refactor | 신규 10-17 페이지 근거를 기존 canonical에 연결
+
+- Updated (concepts, 13): `bldc-motor-esc-characterization-research`, `multirotor-propeller-test-research`, `multirotor-energy-power-models`, `drone-power-battery`, `swarm-coordination`, `mavlink2-security`, `drone-wall-defense-system`, `computer-vision-drone`, `yolo`, `datalink-communication`, `drone-payload-systems`, `voice-control-drone`, `uav-airframe-structure-optimization-research`
+- Note: 각 페이지에 "최신 근거 연결 (2026-10-17)" 절과 `^[inbox/processed/...]` 마커를 추가하고 `sources`/`updated` 갱신. 모순·약화 사례 없음(상충 근거 미발견), 초록 기준 근거라 confidence 변경 없음
+
 ## [2026-10-17] create | HW 제조사·SW 레지스트리 canonical 이관 및 domain 12개 등록
 
 - Created (concepts, 29): `drone-hw-vendor-registry`, `drone-software-ecosystem-registry`, `software-registry-comms-protocol-sw`, `software-registry-fleet-utm`, `software-registry-flight-stack`, `software-registry-gcs`, `software-registry-middleware`, `software-registry-navigation-slam`, `software-registry-perception-ai`, `software-registry-planning-control`, `software-registry-security-ops`, `software-registry-simulation`, `software-registry-swarm-multiagent`, `software-registry-video-streaming`, `vendor-registry-battery`, `vendor-registry-camera`, `vendor-registry-compute`, `vendor-registry-datalink`, `vendor-registry-esc`, `vendor-registry-fc`, `vendor-registry-frame`, `vendor-registry-gcs-hw`, `vendor-registry-gnss-imu`, `vendor-registry-lidar`, `vendor-registry-motor`, `vendor-registry-payload-mech`, `vendor-registry-power-charger`, `vendor-registry-propeller`, `vendor-registry-radar`
@@ -2714,3 +2746,16 @@
 - Created (scripts, 1): `scripts/import-registry.py`
 - Updated (2): `SCHEMA.md`(wiki `domain` 필드 19개 어휘 문서화), `scripts/add-domain-tags.py`(신규 domain 12개 허용 + 제목·슬러그·태그 한정 규칙)
 - Note: 제조사 254행·SW 247항목은 수집 결과의 행을 그대로 옮겼고 값을 만들거나 고치지 않았다(미확인/접근실패 표기 유지). 기존 문서의 domain 재라벨은 적용하지 않았다(제안서 별도 보관, 승인 대상).
+
+## [2026-10-18] create | inbox 16건 중 11건 컴파일 (논문 7·릴리스 1·영상 1·뉴스 1·페이지 11)
+
+- Created (concepts, 11): `autotrans-uav-suspended-payload-planning-control`, `cyclic-mpdr-beamforming-uav-motor-noise`, `drone-news-2026-10-18`, `drone-proximity-energy-impact-delivery`, `drone-quantum-magnetometry-rubble-mapping`, `e-rocket-tvc-gnc-testbed`, `lipo-charging-cabinet-fire-test`, `lyapunov-diffusion-rl-uav-vehicular-networks`, `mg-mot-metadata-guided-uav-maritime-tracking`, `physics-aware-truck-drone-delivery-planning`, `yolo-v8-4-181`
+- Updated: `index.md` (총 페이지 607 → 618)
+- Skipped (사유): `yt-one-walk-full-sequence-dji-osmo-mobile-8p` (자막이 노래 가사, 프로모 영상), `yt-shot-with-a-crane-dji-inspire-3` (자막 없음, 프로모), `arxiv-design-modeling-and-direction-control-of-a-wire-driven-robot` (수중 로봇 물고기, 드론 도메인 외)
+- Note: 논문 7건은 초록 기준이라 confidence medium. LiPo 캐비닛 영상은 자막 기반 단일 시연이라 low. RSS 3건은 `drone-news-2026-10-18`로 통합. sources는 기존 관례대로 `inbox/processed/` 경로 사용
+- Moved to processed: inbox 파일 16개 → `inbox/processed/`
+
+## [2026-10-18] refactor | 신규 10-18 페이지 근거를 기존 canonical에 연결
+
+- Updated (concepts, 15): `drone-payload-systems`, `uav-cable-payload-cooperative-transport-research`, `voice-control-drone`, `uav-ego-noise-speech-enhancement`, `multirotor-energy-power-models`, `payload-dependent-green-drone-routing`, `kci-drone-human-hybrid-delivery-milp`, `drone-power-battery`, `fpv-battery-maintenance`, `computer-vision-drone`, `yolo`, `yolo-v8-4-178`, `datalink-communication`, `drone-fluxgate-magnetometer-crossline-correction`, `ros2-drone-integration`
+- Note: 각 페이지에 "최신 근거 연결 (2026-10-18)" 절과 `^[inbox/processed/...]` 마커를 추가하고 `sources`/`updated` 갱신. `drone-power-battery`는 LiPo 캐비닛 발화 시연(단일·자막 기반)이 "Fire Safe: 금속 상자" 항목과 부분 상충해 `contested: true`, `contradictions: [lipo-charging-cabinet-fire-test]`와 "상충" 절을 추가(기존 문장 유지). `payload-dependent-green-drone-routing`은 물리 반영 계획 논문이 전제를 지지(강화, confidence 변경 없음). `yolo`는 직전/최신 릴리스 표기를 갱신. 후보 중 `uav-3d-spectrum-sensing-rem`, `kci-disaster-response-drone-tech-direction`, `high-speed-drone-tracking`은 15개 한도로 다음 실행 몫

@@ -3,7 +3,7 @@
 > Complete catalog of active canonical pages. Each entry is a wikilink followed by
 > a one-line summary, sorted alphabetically within its section.
 >
-|> Total pages: 589
+|> Total pages: 618
 ## Entities
 - [[qgroundcontrol-v5-1-0]] — QGroundControl v5.1.0 릴리스 후보 기록.
 |- [[avidrone]] — 캐나다 헤비리프트 드론 기업, DARPA Lift Challenge 우승.
@@ -562,6 +562,36 @@
 - [[drone-payload-datalink-product-specs-catalog]] — 짐벌·데이터링크 4종 사양: Gremsy T7·SIYI A8 mini·pMDDL2450·RFD900x(domain: hardware).
 - [[drone-frame-platform-specs-catalog]] — 프레임·플랫폼 사양: Freefly Alta X Gen2·Holybro X500 V2(domain: hardware).
 - [[drone-delivery-platform-hardware-cases]] — 배송 드론 HW 사례: DJI FlyCart 30·Matternet M3·Wing Hummingbird(domain: ops-mission).
+
+- [[addiff-gt-uav-swarm-self-healing]] — GCS 손상 추론 + 이류-확산 그래프 트랜스포머로 분할된 UAV 군집 토폴로지 복구.
+- [[autotrans-uav-suspended-payload-planning-control]] — AutoTrans: 현수 페이로드 UAV의 실시간 계획 + 적응형 NMPC 외란 보상 프레임워크.
+- [[crazyflie-brushless-dynamics-model]] — Crazyflie Brushless 동역학 모델 식별과 RL 백플립 sim-to-real 전이.
+- [[cyclic-mpdr-beamforming-uav-motor-noise]] — cMPDR 빔포밍: 실제 UAV 모터 녹음에서 MPDR 대비 SI-SDR 최대 5 dB 개선.
+- [[drone-news-2026-10-17]] — FCC DJI·Autel 기록, 국경 비행 제한, Fortem–MBDA, L3Harris–Skydio, Matrice 5 유출 등.
+- [[drone-news-2026-10-18]] — DJI Osmo Pocket 4 펌웨어, FPV 지연 시간 측정, Dominion–Skydio 도킹 드론 100대.
+- [[drone-proximity-energy-impact-delivery]] — 근접 비행 드론 간 에너지 소비 영향: 위치·이격 거리·풍속 실험과 분석 GUI.
+- [[drone-quantum-magnetometry-rubble-mapping]] — 붕괴 건물용 드론 양자 자력계: 3센서 어레이, 약 100샘플에서 구조 상관 정점(시뮬레이션).
+- [[e-rocket-tvc-gnc-testbed]] — E-Rocket: PX4 + ROS 2 기반 저가 TVC 로켓 GNC 검증 테스트베드.
+- [[fam-dq-dual-quadrotor-aerial-manipulator]] — 수동 조인트 듀얼 쿼드로터로 6-DoF 고토크 접촉 작업을 하는 공중 매니퓰레이터.
+- [[kci-anti-fpv-infantry-defense-system]] — 소규모 제대용 보완적 대FPV 복합 방어 체계·전술 개념(정량 결과 없음).
+- [[kci-mavlink-virtual-decoy-swarm-deception]] — 가상 디코이 최대 99대로 공격 표면 100배, CPU +14.63%p·RAM +5.53%p.
+- [[kci-yolo-seg-visibility-robustness-suicide-drone]] — YOLOv12s-seg vs YOLO26s-seg: 잡음·강우 조건에서 Mask mAP는 Mixed에서 0.7932 대 0.7866.
+- [[lipo-charging-cabinet-fire-test]] — LiPo 충전 캐비닛 화재 시험: 외부 약 57~60°C, 불꽃 일부 누출, 소화 포드 효과 불명.
+- [[lyapunov-diffusion-rl-uav-vehicular-networks]] — Lyapunov + 확산 DDPG(D3PG)로 UAV-V2X 채널·전력·고도 공동 최적화(CSI 지연 반영).
+- [[mg-mot-metadata-guided-uav-maritime-tracking]] — MG-MOT: UAV 메타데이터로 해상 장기 ReID, SeaDroneSee HOTA 69.5%·IDF1 85.9%.
+- [[payload-dependent-green-drone-routing]] — 최소 거리 라우팅 대비 평균 2.17%(최대 5.97%) 에너지 절감, 67% 사례.
+- [[physics-aware-truck-drone-delivery-planning]] — 비행 물리를 반영한 트럭-드론 배송 계획: 신경망 비행시간 근사 + 휴리스틱.
+- [[pmsm-sensorless-controller-observer]] — 기계 모델 없이 동작하는 PMSM 센서리스 제어기-관측기와 안정성 증명.
+- [[spinner-self-rotating-tri-rotor]] — 센서 FoV 확장을 위해 회전하며 비행하는 3모터 트라이로터, NMPC+INDI 제어.
+- [[uav-3d-spectrum-sensing-rem]] — 고도·대역폭·기체 안테나 패턴이 UAV 기반 REM 정확도에 미치는 영향과 MC-GPR 제안.
+- [[uav-battery-soh-transfer-learning]] — 비행 데이터(전압·전류·스로틀)를 이미지화해 ResNet-50 전이학습으로 UAV 배터리 SoH를 예측.
+- [[uav-cable-payload-cooperative-transport-research]] — 듀얼 UAV 케이블 운송: 힘 센서 외부 루프, 등가 에이전트 유도, 입력 성형 3편 정리.
+- [[uav-coach-cinematic-drone-shots]] — 직선·수직 하향·오빗·드로니·틸트 5가지 시네마틱 기법과 조작 요령.
+- [[uav-ego-noise-speech-enhancement]] — 프로펠러 근처 참조 마이크 + PK-MWF로 UAV 소음 속 음성 명료도·품질 향상.
+- [[uav-leo-satellite-backhaul-emergency]] — Starlink Mini 탑재 UAV Wi-Fi AP: 200 m까지 업링크 약 30 Mbps, 배터리 영향 미미.
+- [[uav-propeller-fault-detection-hybrid-data]] — RPM→추력/토크 LSTM으로 합성 데이터를 만들고 CNN으로 프로펠러 손상 위치·정도 분류(정확도 80%+).
+- [[yolo-v8-4-178]] — YOLO v8.4.178: Platform 링크, 37개 데이터셋 벤치마크, 트래킹·내보내기 수정 (2026-10-16).
+- [[yolo-v8-4-181]] — YOLO v8.4.181: 데이터셋 탐색·자동 주석·회전 박스 트래킹·JetPack 7.2 감지 수정 (2026-10-17).
 
 <!-- 2026-10-17 HW 제조사·SW 레지스트리 이관 (domain: vendor-registry / software-ecosystem) -->
 - [[drone-hw-vendor-registry]] — 드론 HW 제조사 레지스트리, 2026-10-17 수집(공식 페이지 기준, 미확인 표기 포함).

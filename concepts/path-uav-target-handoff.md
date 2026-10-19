@@ -49,3 +49,6 @@ PATH는 협력 드론 "사이"의 표적 추적 책임 이전을 다루는 반�
 - [[swarm-coordination]] — 다중 드론 협력 구조
 - [[uav-swarm-target-localization]] — 다중경로 환경 UAV 스웜 표적 위치 추정
 - [[kci-ground-target-tracking-retinanet-kalman]] — RetinaNet+칼만필터 기반 단일 감시 드론 지상 표적 추적(KCI)
+
+## 📰 최근 관련 소식
+- 드론 한대에 도시 멈췄다…전쟁 표적 된 데이터센터[현실이 된 파이어세일③] (뉴시스, Sat, 17 Oc) — https://news.google.com/rss/articles/CBMiYEFVX3lxTE8xVDY2alBRd3JOcUY4aUVic2sxM2FmM1VtSHZpX1lzaWhial9RVVlYbF96aXVRRVRmaEFrMS1HV3V0M2prUE1HZ0dIQ2VuLXJ4d2otMkVqVXlySjU4R3dyUtIBeEFVX3lxTFBKR1o0WTFLVzBhX2dralQzV3k4aHVuVnJSa0FDR1pwMWJaanVGUllaYjJOUlRTVndHZG56YTY3UmJKRUJvTEJQc0thelJUVjBRME5YSllnOEpNa1FQVk1rX2d0UHlxeHNZSEFFUFFVME1OODdYUk1Pcg?oc=5

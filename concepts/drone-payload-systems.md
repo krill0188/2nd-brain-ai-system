@@ -1,10 +1,10 @@
 ---
 title: Drone Payload Systems
 created: 2026-07-27
-updated: 2026-07-27
+updated: 2026-10-18
 type: concept
 tags: [drone-hw, payload, gimbal, camera, gripper]
-sources: [raw/articles/px4-basic-concepts.md, raw/articles/px4-hardware-overview.md]
+sources: [raw/articles/px4-basic-concepts.md, raw/articles/px4-hardware-overview.md, inbox/processed/fetch-2026-10-17-arxiv-fam-dq-a-dual-quadrotor-based-fully-actuated-aerial-manipula.md, inbox/processed/fetch-2026-10-17-arxiv-compact-force-sensor-for-dual-uav-cable-suspended-payload-tr.md, inbox/processed/fetch-2026-10-17-arxiv-speech-enhancement-using-ego-noise-references-with-a-microph.md, inbox/processed/fetch-2026-10-18-arxiv-autotrans-a-complete-planning-and-control-framework-for-auto.md]
 confidence: high
 domain: hardware
 contested: false
@@ -165,3 +165,13 @@ Recommended: < 70% for stable flight
 - [[dronecan-protocol]] — CAN 기반 페이로드
 - [[drone-power-battery]] — 페이로드 전원 요구사항
 - [[drone-safety-failsafe]] — 페이로드 안전
+
+## 최신 근거 연결 (2026-10-17)
+
+- 듀얼 쿼드로터 완전구동 매니퓰레이터는 총 질량 0.447 kg에 최대 토크 1.019 N·m(2.28 N·m/kg): [[fam-dq-dual-quadrotor-aerial-manipulator]]^[inbox/processed/fetch-2026-10-17-arxiv-fam-dq-a-dual-quadrotor-based-fully-actuated-aerial-manipula.md]
+- 케이블 매달림 페이로드 협업 운송의 힘 센싱·유도·입력 성형 연구(초록 수준): [[uav-cable-payload-cooperative-transport-research]]^[inbox/processed/fetch-2026-10-17-arxiv-compact-force-sensor-for-dual-uav-cable-suspended-payload-tr.md]
+- 프로펠러 근처 에고노이즈 참조 마이크를 이용한 음성 향상: [[uav-ego-noise-speech-enhancement]]^[inbox/processed/fetch-2026-10-17-arxiv-speech-enhancement-using-ego-noise-references-with-a-microph.md]
+
+## 최신 근거 연결 (2026-10-18)
+
+- 줄로 매단 페이로드 UAV를 위해 전신 안전과 동역학 실현 가능성을 보장하는 실시간 궤적 계획과, 계층적 외란 보상을 쓰는 적응형 NMPC를 결합한 프레임워크(초록 수준, 정량 지표 없음): [[autotrans-uav-suspended-payload-planning-control]]^[inbox/processed/fetch-2026-10-18-arxiv-autotrans-a-complete-planning-and-control-framework-for-auto.md]

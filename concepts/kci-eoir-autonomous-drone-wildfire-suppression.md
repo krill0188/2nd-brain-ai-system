@@ -32,3 +32,6 @@ EO/IR 센서로 산불 초기 진화까지 수행하는 기술을 제안한다. 
 - [[thermal-drone-wildfire-monitoring]] — 열화상 산불 감시
 
 - 관련(재난 대응·산불 탐지 관련): [[kci-disaster-response-drone-tech-direction]], [[drone-wildfire-rt-detr]]
+
+## 📰 최근 관련 소식
+- 美 방산전시회서 드론 기술 주목…韓 방산업체도 신무기 선보여 (SPN 서울평양뉴스, Thu, 15 Oc) — https://news.google.com/rss/articles/CBMia0FVX3lxTE9fbzVJZ08zbVBnLURjZ3ZJUUh1R044MjIwUmFQQUg2N3ZDd0ppWjFvd0xRZTd0b1FKOUgwQ1pyQUhYUFhUVzNoS1VWSVlkLXhfRTUyVWZqVDZtMFdDOTdrTG1lTGI4VkhSYm1R?oc=5

@@ -141,3 +141,5 @@ AI 개인 지식관리는 자료를 많이 저장하는 일이 아니라, 원본
 - [핑크랩 PinkLAB] MuJoCo + ROS 2로 Nav2 · MoveIt · LLM까지 2일 완성 모집 (youtube.com, 2026-10-09) — https://www.youtube.com/watch?v=85FGaf6unms
 - 원주 ‘국방 드론산업’ 메카 도전장 (쿠키뉴스, Wed, 07 Oc) — https://news.google.com/rss/articles/CBMiY0FVX3lxTE5MaHE0U2NWOXdKVG9lV2dSYVRVbHJObWpESGVYS01FOV84MG15UGVJLXNEOVVDNzFud05YZUx6TDF4bkdIM2tRWGRkdXlnQnktRm9sbldqYktmT0czOU0tLUZwMA?oc=5
 - 첨단드론·방산기술 한자리에…이천 복하천서 15~17일 '드론대전' (뉴스1, Tue, 13 Oc) — https://news.google.com/rss/articles/CBMiVkFVX3lxTE5jcTdMUmRsRk9aTnNnNlVyOU16SkI2QXlFOEs4U05VbkpCMjdXSlNhWE5hNkhFRHA5SzUzLUd3RklWWGdxc2NXeXBEMTFpUWZyRWVYWGVR?oc=5
+- [위클리오늘] 정지욱 강원도의원, 원주 국방 드론 클러스터 조성 촉구 (위클리오늘, Fri, 16 Oc) — https://news.google.com/rss/articles/CBMibkFVX3lxTFBScXNwcXY0V0Y2dG8tVFZYbUF4Yy1OWnVOalJIeGhUclc0aWxYaWZxSW5hVnJUNVpZeDRtM254NFpIenhXSGpJN1IyLWhXd1RkbnBYNmJjZGw4enN0WjgtMUtQZy1Fb3NLVUtIT2hn?oc=5
+- 에티포스·넥스윌, 드론·무인체계 방산 통신기술 공동개발 (전자신문, Fri, 16 Oc) — https://news.google.com/rss/articles/CBMiTkFVX3lxTFAySS0tMHJPellWanZSUmlBc3J5RXZGalZpWVJwX09jNWxCQ3hLVTZzNElBRFJncW9TM3JpQWNPQ3J6QWpLZXVkZi16alNfZw?oc=5

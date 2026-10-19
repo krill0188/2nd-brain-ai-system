@@ -1,10 +1,10 @@
 ---
 title: MAVLink 2 & Security
 created: 2026-07-27
-updated: 2026-07-27
+updated: 2026-10-17
 type: concept
 tags: [drone-sw, mavlink, mavlink2, security, signing, encryption, authentication]
-sources: []
+sources: [inbox/processed/fetch-2026-10-17-kci-드론-생존성-향상을-위한-mavlink-프로토콜-변조-기반의-가상-디코이-군집-형성-기만-시스템.md]
 confidence: medium
 domain: comms-protocol
 contested: false
@@ -340,3 +340,7 @@ Production:
 - 드론 사이버 보안 사고 사례
 - MAVLink 암호화 표준화 동향
 - HSM 기반 key management
+
+## 최신 근거 연결 (2026-10-17)
+
+- 서명·암호화 같은 보호와 별개로, MAVLink 변조 가상 디코이로 공격자가 관측하는 표면을 확대하는 기만 접근이 제안되었다. 100배 조건에서 CPU 2.48%→17.11%, RAM 20.17%→25.70%였고 실제 탐지 회피 효과는 초록에 없다: [[kci-mavlink-virtual-decoy-swarm-deception]]^[inbox/processed/fetch-2026-10-17-kci-드론-생존성-향상을-위한-mavlink-프로토콜-변조-기반의-가상-디코이-군집-형성-기만-시스템.md]

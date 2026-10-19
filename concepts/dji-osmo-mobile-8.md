@@ -37,3 +37,4 @@ DJI의 스마트폰 짐벌 시스템. 2026년 8월 공개.
 - [DJI] Your Thumbs Run the Scene | DJI Osmo Mobile 8 (youtube.com, 2026-08-23) — https://www.youtube.com/watch?v=ttaMMdP-5Ic
 - [DJI] Sunday vs. Monday: Which side are you on today?  | DJI Osmo Mobile 8P (youtube.com, 2026-09-18) — https://www.youtube.com/watch?v=rXenvzzJ8X8
 - [DJI] Run first. Frame later. | DJI Osmo Mobile 8P (youtube.com, 2026-10-03) — https://www.youtube.com/watch?v=u5PubM_NwHc
+- [DJI] One Walk. Full Sequence. | DJI Osmo Mobile 8P (youtube.com, 2026-10-17) — https://www.youtube.com/watch?v=MGy7jGEMEGA

@@ -102,3 +102,7 @@ tmp/
 *~
 .DS_Store
 Thumbs.db
+
+# 외부 에이전트 스킬 번들(NVIDIA 등 도구 설치물) — 지식 자산이 아니므로 추적 제외 (2026-10-19)
+.agents/
+skills-lock.json

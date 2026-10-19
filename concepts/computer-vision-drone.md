@@ -1,10 +1,10 @@
 ---
 title: Computer Vision for Drones
 created: 2026-07-27
-updated: 2026-10-02
+updated: 2026-10-18
 type: concept
 tags: [drone-ai, computer-vision, SLAM, detection, tracking, YOLO]
-sources: [raw/papers/_unclassified/감시-드론을-위한-심층-신경망-기반-지상-표적-추적-기법.md, inbox/processed/fetch-2026-10-02-yolo.md]
+sources: [raw/papers/_unclassified/감시-드론을-위한-심층-신경망-기반-지상-표적-추적-기법.md, inbox/processed/fetch-2026-10-02-yolo.md, inbox/processed/fetch-2026-10-17-kci-국방-ai-신뢰성ㆍ보안성-향상을-위한-러-우-전쟁-자폭-드론-촬영-이미지-기반-yolo-세그멘테이션-모델의-.md, inbox/processed/fetch-2026-10-18-arxiv-sea-you-later-metadata-guided-long-term-re-identification-fo.md, inbox/processed/fetch-2026-10-18-yolo.md]
 confidence: medium
 domain: ai-autonomy
 contested: false
@@ -180,6 +180,15 @@ for waypoint in path:
 - [[ros2-drone-integration]] — ROS2 비전 파이프라인
 - [[kci-ground-target-tracking-retinanet-kalman]] — RetinaNet+칼만필터 기반 감시 드론 지상 표적 추적(KCI)
 - [[kci-critical-facility-intrusion-detection-drone-ai]] — AI 드론 기반 중요시설 침입탐지 5단계 파이프라인 개념설계(KCI)
+
+## 최신 근거 연결 (2026-10-17)
+
+- 전차 항공영상 1,296장으로 YOLOv12s-seg와 YOLO26s-seg를 노이즈·폭우 조건에서 비교했다. 원본은 YOLOv12s-seg가 Mask mAP50-95 0.9028로 앞서고, Mixed 조건 Mask는 YOLO26s-seg 0.7932가 0.7866으로 근소 우위였다: [[kci-yolo-seg-visibility-robustness-suicide-drone]]^[inbox/processed/fetch-2026-10-17-kci-국방-ai-신뢰성ㆍ보안성-향상을-위한-러-우-전쟁-자폭-드론-촬영-이미지-기반-yolo-세그멘테이션-모델의-.md]
+
+## 최신 근거 연결 (2026-10-18)
+
+- UAV 메타데이터(GPS, 고도, 카메라 자세)로 단기 트랙을 장기 트랙으로 병합하는 모션 기반 MOT가 SeaDroneSee 추적 챌린지 테스트 분할에서 HOTA 69.5%, IDF1 85.9%를 보고했다(초록 기준): [[mg-mot-metadata-guided-uav-maritime-tracking]]^[inbox/processed/fetch-2026-10-18-arxiv-sea-you-later-metadata-guided-long-term-re-identification-fo.md]
+- 검출 프레임워크 최신 릴리스는 [[yolo-v8-4-181]]이다. 회전 박스 트래킹의 각도 일관성, JetPack 7.2 감지 등 Jetson 계열 companion computer 관련 변경이 있으나 드론 전용 수치는 없다.^[inbox/processed/fetch-2026-10-18-yolo.md]
 
 ## 📰 최근 관련 소식
 - Army seeks next-gen missile that could shoot down small drones for less than $150K a pop (DefenseScoop, Tue, 04 Au) — https://news.google.com/rss/articles/CBMie0FVX3lxTE5GbzRtdW9TS3Y4b3JkaW9oazVGWW9nUWRxa0hGY25RV2h1UEg1MVVfQnhSUE1xS1VFMzVSUGRyckRva0VEZFV5aWhqeHZsbngwV2FpTDBLMVEwdllFOWVXYVZyU3g2VDNESS1WekhBLXNYOEdhMWZrenRESQ?oc=5

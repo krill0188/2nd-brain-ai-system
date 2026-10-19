@@ -52,3 +52,4 @@ contradictions: []
 - [K-드론 강자] 에이럭스, '조달 실적'으로 증명하는 방산 드론 실전 배치 (ebn.co.kr, Mon, 14 Se) — https://news.google.com/rss/articles/CBMiaEFVX3lxTE9pN29fdmJSTDJpYVZfTmRnQ2VCQ1BLcS1qS21nelhuanNOc0xxNnpVYjFzZ2hmMmxxY3VQZnI1TmtfSHM4aDNGR292ZzhtTkxJWGhLc25sSmtOUnhpTEhoYmdnVnpGZ2hf?oc=5
 - [UAV Coach] Categories 1-4 Explained (youtube.com, 2026-10-09) — https://www.youtube.com/watch?v=y_XjlwqtRNM
 - [UAV Coach] Why Does Flying a Drone Feel Illegal? (youtube.com, 2026-10-15) — https://www.youtube.com/watch?v=xmBoKb3wh1U
+- 레드캣, 드론 '현장 충전'으로 작전반경 넓힌다 (데일리방산, Sat, 17 Oc) — https://news.google.com/rss/articles/CBMicEFVX3lxTE1udzlkYlZVMXljSldfZnllLXpiN05IbWhRY2ctZUZMejloUEF0VHZVWFBmcXRiblpGNFFEZ2VQRlZLSnJ1OFhXalFjdEh3bENJN1JJNlA5cnBzTzV2U001aXBBb3pqTExJMUhPT1lnUjI?oc=5

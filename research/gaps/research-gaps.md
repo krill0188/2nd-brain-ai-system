@@ -2,7 +2,7 @@
 status: draft
 title: "연구 공백 원장 (Research Gaps Ledger)"
 created: 2026-09-30
-updated: 2026-10-12
+updated: 2026-10-19
 type: gap-ledger
 tags: [research, gaps, meta]
 ---
@@ -13,7 +13,7 @@ tags: [research, gaps, meta]
 기록하는 원장이다. `research-gap-miner` 스킬(Weekly)이 갱신하며, 승인된 공백은
 `research-idea-generator`가 연구 아이디어로 승격할 수 있다. 이 파일 자체는 canonical 지식이 아니다.
 
-첫 실행(2026-09-30)에 GAP-001~GAP-014를 등재했고, 2회차(2026-10-05)에 GAP-015~GAP-019를, 3회차(2026-10-12)에 GAP-020~GAP-026을 추가했다.
+첫 실행(2026-09-30)에 GAP-001~GAP-014를 등재했고, 2회차(2026-10-05)에 GAP-015~GAP-019를, 3회차(2026-10-12)에 GAP-020~GAP-026을, 4회차(2026-10-19)에 GAP-027~GAP-036을 추가했다.
 
 ---
 
@@ -154,7 +154,8 @@ tags: [research, gaps, meta]
 - type: 3
 - evidence: [[kci-uav-mec-clustering-offloading]] ^[raw/papers/_unclassified/comparison-of-clustering-algorithms-for-ground-and-hybrid-mobile-edge-computing-.md] ^[raw/papers/swarm/multi-agent-based-qos-aware-task-offloading-in-single-cell-uav-mec-systems-using.md], [[bio-inspired-offloading-uav-iov-mec]], [[uav-task-offloading-traffic-monitoring]]
 - first_found: 2026-10-05
-- last_checked: 2026-10-05
+- last_checked: 2026-10-19
+- update_note: 2026-10-19 Lyapunov 유도 확산 RL(D3PG, [[lyapunov-diffusion-rl-uav-vehicular-networks]] ^[inbox/processed/fetch-2026-10-18-arxiv-a-lyapunov-guided-diffusion-based-reinforcement-learning-app.md])이 UAV 자원·궤적 최적화의 또 다른 기법으로 등재됨. 과제가 V2X 합 전송률이라 MEC 오프로딩과 직접 비교 근거는 아니며 수치도 초록에 없음.
 - resolution_condition: 위키에 등재된 오프로딩 기법들을 동일 시나리오·지표(지연·에너지·마감 충족)에서 비교한 수치 결과가 편입되면 종료. 현재 수집분은 초록뿐이라 결과 수치가 없음.
 
 ### GAP-018 · UAV 물리계층 보안 폐형 해석(SPSC)과 RIS·ISAC 보안 기법이 결합 평가되지 않음
@@ -178,7 +179,8 @@ tags: [research, gaps, meta]
 - type: 3
 - evidence: [[quadrotor-wind-fidelity-ppo-robustness]] ^[raw/papers/_unclassified/statistical-turbulence-and-high-fidelity-disturbance-fields-for-quadrotor-flight.md], [[pid-tuning-control]], [[agile-quadrotor-learning]]
 - first_found: 2026-10-12
-- last_checked: 2026-10-12
+- last_checked: 2026-10-19
+- update_note: 2026-10-19 Crazyflie Brushless 동역학 모델 논문([[crazyflie-brushless-dynamics-model]] ^[inbox/processed/fetch-2026-10-17-arxiv-how-to-model-your-crazyflie-brushless.md])이 학습 제어기(백플립)의 sim-to-real 전이를 보였으나 튜닝된 고전 제어기와의 비교는 없어 공백 유지.
 - resolution_condition: 다른 기체·궤적(호버 외) 또는 실비행에서 학습 정책과 튜닝된 geometric/PID 제어기를 동일 바람 조건으로 비교한 결과가 편입되면 종료. 현재는 레이싱급 쿼드로터 호버 시뮬레이션의 단일 초록.
 
 ### GAP-021 · 쿼드로터 복합 고장 보상이 시뮬레이션만 보고되고 규칙 기반 failsafe와 정량 비교가 없음
@@ -194,7 +196,8 @@ tags: [research, gaps, meta]
 - type: 4
 - evidence: [[kci-uav-battery-ecm-parameter-estimation]] ^[raw/papers/_unclassified/소형-무인항공기용-리튬이온-배터리-등가회로모델-파라미터-추정에-관한-연구.md], [[kci-fixed-wing-return-feasibility-logic]] ^[raw/papers/_unclassified/전기-추진-시스템을-이용하는-고정익-무인기를-위한-복귀-가능-여부-판단-로직-설계.md], [[drone-power-battery]]
 - first_found: 2026-10-12
-- last_checked: 2026-10-12
+- last_checked: 2026-10-19
+- update_note: 2026-10-19 비행 운용 데이터 기반 LiPo SoH 예측([[uav-battery-soh-transfer-learning]] ^[inbox/processed/fetch-2026-10-17-arxiv-machine-learning-based-battery-state-of-health-prediction-fo.md])이 세 번째 배터리 상태 추정 접근으로 추가됨. 오차 수치가 초록에 없고 복귀 판단 로직과의 결합 평가는 여전히 없음.
 - resolution_condition: ECM 파라미터 추정 오차(MAE 약 0.3 V)가 복귀 가능 판단 결과에 전파되는 정도를 측정한 연구가 편입되면 종료. 복귀 판단 논문은 비행시험 수치가 초록 절단으로 미확인이며, 두 논문의 결합은 위키 측 해석이다.
 
 ### GAP-023 · VTOL 군집 이착륙·천이 절차의 규모·환경 확장성 근거 부재
@@ -229,6 +232,86 @@ tags: [research, gaps, meta]
 - last_checked: 2026-10-12
 - resolution_condition: 복수 대상지·기체·반복 학습으로 경로 우열(0° 평행 왕복형이 최하위)이 재현되면 종료. 요소별 검정은 Holm 보정 후 유의하지 않았음.
 
+### GAP-027 · 대드론 개념연구(함정 EO/IR·해군 통합체계·대보병 FPV 방어)가 정성 서술에 그치고 정량 비교가 없음
+- status: open
+- type: 8
+- evidence: [[kci-ship-eoir-counter-drone-sensor-concept]] ^[raw/papers/_unclassified/함정-방어를-위한-복합-대드론체계의-eoir-센서-운용개념-및-해상-환경-고려요소-분석.md], [[kci-naval-integrated-counter-drone-system-direction]] ^[raw/papers/_unclassified/병역자원-감소와-미래-해양전장환경-변화에-따른-한국-해군-통합대드론체계-발전-방향-연구.md], [[kci-anti-fpv-infantry-defense-system]] ^[inbox/processed/fetch-2026-10-17-kci-야전-보병-생존을-위한-대인-돌격형-소형-드론fpv-방어-체계-연구.md]
+- first_found: 2026-10-19
+- last_checked: 2026-10-19
+- resolution_condition: 해상 환경 요소(대기 광학·해면 배경)가 EO/IR 탐지·식별 성능에 미치는 영향, 또는 FPV 방어 수단의 보병 생존성 효과를 수치로 제시한 시험·시뮬레이션이 편입되면 종료. 세 논문 모두 confidence low이며 초록에 정량 결과가 없음(GAP-015·GAP-025와 같은 계열의 영역 공백).
+
+### GAP-028 · MAVLink 가상 디코이 기만의 실제 공격자 대응 효과(탐지 회피·제어권 탈취 억제) 미검증
+- status: open
+- type: 5
+- evidence: [[kci-mavlink-virtual-decoy-swarm-deception]] ^[inbox/processed/fetch-2026-10-17-kci-드론-생존성-향상을-위한-mavlink-프로토콜-변조-기반의-가상-디코이-군집-형성-기만-시스템.md], [[mavlink2-security]]
+- first_found: 2026-10-19
+- last_checked: 2026-10-19
+- resolution_condition: 공격자 모델(스캐닝·하이재킹 도구)을 상대로 디코이 도입 전후의 표적 식별 확률 또는 공격 성공률을 측정한 결과가 편입되면 종료. 현재는 논리적 공격 표면 100배 확장과 CPU +14.63%p, RAM +5.53%p 자원 비용만 보고됨.
+
+### GAP-029 · 자폭 드론 영상 YOLO 세그멘테이션 강건성이 단일 공개 데이터셋·합성 열화 조건에서만 평가됨
+- status: open
+- type: 6
+- evidence: [[kci-yolo-seg-visibility-robustness-suicide-drone]] ^[inbox/processed/fetch-2026-10-17-kci-국방-ai-신뢰성ㆍ보안성-향상을-위한-러-우-전쟁-자폭-드론-촬영-이미지-기반-yolo-세그멘테이션-모델의-.md], [[yolo]]
+- first_found: 2026-10-19
+- last_checked: 2026-10-19
+- resolution_condition: 실제 전장 영상 또는 다른 데이터셋에서 YOLOv12s-seg와 YOLO26s-seg의 열화 강건성 순위가 재현되면 종료. 현재는 전차 1,296장(학습 1,102/검증 194)과 잡음·폭우 합성 조건이며, Mixed Mask mAP 차이(0.7932 대 0.7866)는 근소해 통계적 유의성도 확인되지 않음.
+
+### GAP-030 · 에너지 인지 배송 계획 3계열(페이로드 의존 경로·물리 반영 트럭-드론·근접 상호영향)이 결합 평가되지 않음
+- status: open
+- type: 4
+- evidence: [[payload-dependent-green-drone-routing]] ^[inbox/processed/fetch-2026-10-17-arxiv-energy-efficient-drone-logistics-for-last-mile-delivery-impl.md], [[physics-aware-truck-drone-delivery-planning]] ^[inbox/processed/fetch-2026-10-18-arxiv-physics-aware-truck-and-drone-delivery-planning-using-optimi.md], [[drone-proximity-energy-impact-delivery]] ^[inbox/processed/fetch-2026-10-18-arxiv-impact-of-spatial-proximity-on-drone-services.md], [[truck-as-hub-vrp-drones-branch-price-cut]]
+- first_found: 2026-10-19
+- last_checked: 2026-10-19
+- resolution_condition: 적재 중량 의존 에너지 모델과 근접 비행 상호 영향을 트럭-드론 통합 계획에 함께 넣고 동일 사례에서 비교한 결과가 편입되면 종료. 근접 영향 논문은 정량 결과가 없고, 에너지 절감은 평균 2.17%·최대 5.97%에 그침.
+
+### GAP-031 · UAV 자체 소음 억제 기법(cMPDR 대 참조 기반 MWF) 직접 비교 불가
+- status: open
+- type: 3
+- evidence: [[cyclic-mpdr-beamforming-uav-motor-noise]] ^[inbox/processed/fetch-2026-10-18-arxiv-cyclic-mpdr-beamforming-for-suppression-of-almost-cyclostati.md], [[uav-ego-noise-speech-enhancement]] ^[inbox/processed/fetch-2026-10-17-arxiv-speech-enhancement-using-ego-noise-references-with-a-microph.md]
+- first_found: 2026-10-19
+- last_checked: 2026-10-19
+- resolution_condition: 동일 UAV 녹음 데이터와 동일 지표(SI-SDR·STOI·PESQ)에서 두 접근을 비교한 결과가 편입되면 종료. 위키 페이지 스스로 실험 조건·지표가 달라 직접 비교할 수 없다고 명시함.
+
+### GAP-032 · 프로펠러 고장 탐지(하이브리드 sim-to-real)가 실내 비행·단일 정확도 지표에 그치고 복합 고장과 연결되지 않음
+- status: open
+- type: 6
+- evidence: [[uav-propeller-fault-detection-hybrid-data]] ^[inbox/processed/fetch-2026-10-17-arxiv-machine-learning-for-uav-propeller-fault-detection-based-on-.md], [[kci-quadrotor-compound-fault-accommodation]]
+- first_found: 2026-10-19
+- last_checked: 2026-10-19
+- resolution_condition: 실외·외란 조건 비행 데이터에서의 진단 성능, 또는 탐지 결과를 고장 보상 제어(GAP-021)에 연결한 폐루프 시험이 편입되면 종료. 현재 테스트 세트 정확도 80% 이상이며 기체 제작 편차로 약식 보정이 필요했음.
+
+### GAP-033 · 드론 양자 자력계 붕괴 건물 매핑이 시뮬레이션만 있고 실비행·실센서 검증이 없음
+- status: open
+- type: 6
+- evidence: [[drone-quantum-magnetometry-rubble-mapping]] ^[inbox/processed/fetch-2026-10-18-arxiv-from-rubble-simulation-to-active-magnetic-mapping-quantum-se.md], [[drone-fluxgate-magnetometer-crossline-correction]]
+- first_found: 2026-10-19
+- last_checked: 2026-10-19
+- resolution_condition: 실제 양자 자력계를 탑재한 UAV 비행 데이터, 또는 위키의 플럭스게이트 자력계 보정 연구와의 동일 조건 비교가 편입되면 종료. 현재는 Unreal Engine 주차장 붕괴 모델과 쌍극자 근사 기반(지붕선 위 약 1 m)이며 실비행 결과는 없음.
+
+### GAP-034 · UAV 탑재 LEO 위성 백홀이 농촌 환경·약 200 m 범위에서만 실비행 평가됨
+- status: open
+- type: 6
+- evidence: [[uav-leo-satellite-backhaul-emergency]] ^[inbox/processed/fetch-2026-10-17-arxiv-experimental-evaluation-of-a-uav-mounted-leo-satellite-backh.md], [[datalink-communication]]
+- first_found: 2026-10-19
+- last_checked: 2026-10-19
+- resolution_condition: 도심·산악·재난 현장, 또는 200 m를 넘는 고도·거리 조건에서 처리량(현재 업링크 약 30 Mbps)과 지연이 재현되면 종료. 배터리 영향이 미미하다는 결론도 단일 기체 조건에 근거함.
+
+### GAP-035 · 다중 스펙트럼 헬리패드 야간 정밀착륙의 성공률 100%가 소규모 시험·낮은 신뢰도 근거에 의존
+- status: open
+- type: 6
+- evidence: [[kci-multispectral-helipad-night-precision-landing]] ^[inbox/processed/fetch-2026-10-16-kci-다중-스펙트럼-헬리패드를-이용한-야간-uav-정밀-착륙-ir적외선-영상-기반-정렬-및-거리-센서-기반-하강-.md]
+- first_found: 2026-10-19
+- last_checked: 2026-10-19
+- resolution_condition: 시행 횟수·기상·바람 조건을 명시한 반복 시험, 또는 타 정밀착륙 방식(GNSS-RTK·비전 마커)과의 비교가 편입되면 종료. 평균 착륙오차 16.1 cm 이내·성공률 100%의 시행 횟수가 초록에 없고 페이지 confidence가 low임.
+
+### GAP-036 · AdDiff-GT 군집 자가 복구가 시뮬레이션 전용이며 통신 지연·실기체 제약이 반영되지 않음
+- status: open
+- type: 6
+- evidence: [[addiff-gt-uav-swarm-self-healing]] ^[inbox/processed/fetch-2026-10-17-arxiv-coverage-preserving-self-healing-in-partially-observable-3d-.md], [[swarm-coordination]]
+- first_found: 2026-10-19
+- last_checked: 2026-10-19
+- resolution_condition: 실기체 군집 또는 하드웨어 인 더 루프 환경에서 토폴로지 복구와 공간 보존이 재현되면 종료. 8,000개 분할 시나리오(대규모 5,000개 포함) 결과는 모두 시뮬레이션이며, 위키 페이지도 시뮬레이션 전용으로 명시함.
+
 ---
 
 ## 요약
@@ -236,4 +319,5 @@ tags: [research, gaps, meta]
 - 2026-09-30 첫 실행: 신규 GAP-001 ~ GAP-014 (14건)
 - 2026-10-05 2회차: 신규 5건(GAP-015 ~ GAP-019) / 갱신 2건(GAP-005 narrowing, GAP-006 근거 추가) / 해소 0건
 - 2026-10-12 3회차: 신규 7건(GAP-020 ~ GAP-026) / 갱신 2건(GAP-006·GAP-015 근거 추가) / 해소 0건
-- 현재 미해소 26건 (open 25 + narrowing 1, closed 0)
+- 2026-10-19 4회차: 신규 10건(GAP-027 ~ GAP-036) / 갱신 3건(GAP-017·GAP-020·GAP-022 근거 추가) / 해소 0건
+- 현재 미해소 36건 (open 35 + narrowing 1, closed 0)

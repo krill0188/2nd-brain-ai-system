@@ -1,11 +1,11 @@
 ---
 title: "멀티로터 전력·에너지 소비 모델 연구"
 created: 2026-10-16
-updated: 2026-10-16
+updated: 2026-10-18
 type: concept
 domain: hardware
 tags: [drone, drone-hw, hardware]
-sources: [inbox/processed/fetch-2026-10-16-hw-paper-multirotor-power-model-gong-2022.md, inbox/processed/fetch-2026-10-16-hw-paper-forward-flight-efficiency-patnaik-2025.md, inbox/processed/fetch-2026-10-16-hw-paper-quadrotor-electrical-energy-model-honcharenko-2026.md, inbox/processed/fetch-2026-10-16-hw-paper-multicopter-energy-aware-framework-gasche-2025.md, inbox/processed/fetch-2026-10-16-hw-paper-battery-discharge-model-validation-di-nisio-2023.md]
+sources: [inbox/processed/fetch-2026-10-16-hw-paper-multirotor-power-model-gong-2022.md, inbox/processed/fetch-2026-10-16-hw-paper-forward-flight-efficiency-patnaik-2025.md, inbox/processed/fetch-2026-10-16-hw-paper-quadrotor-electrical-energy-model-honcharenko-2026.md, inbox/processed/fetch-2026-10-16-hw-paper-multicopter-energy-aware-framework-gasche-2025.md, inbox/processed/fetch-2026-10-16-hw-paper-battery-discharge-model-validation-di-nisio-2023.md, inbox/processed/fetch-2026-10-17-arxiv-energy-efficient-drone-logistics-for-last-mile-delivery-impl.md, inbox/processed/fetch-2026-10-17-arxiv-machine-learning-based-battery-state-of-health-prediction-fo.md, inbox/processed/fetch-2026-10-18-arxiv-impact-of-spatial-proximity-on-drone-services.md, inbox/processed/fetch-2026-10-18-arxiv-physics-aware-truck-and-drone-delivery-planning-using-optimi.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -28,3 +28,13 @@ contradictions: []
 체공시간 견적을 정격 용량 ÷ 평균 전력으로 단순화하면 고전력 구간에서 가용 용량을 과대평가할 수 있다. 배터리 내부저항과 ESC 손실을 포함한 모델이 초기 견적에 유리하다.
 
 관련: [[drone-power-battery]], [[bldc-motor-esc-characterization-research]], [[multirotor-propulsion-sizing-methods]], [[uav-battery-replacement-planner]].
+
+## 최신 근거 연결 (2026-10-17)
+
+- 소비 에너지가 거리뿐 아니라 적재 중량에 의존한다는 전제 아래 다중 정차 배송을 최적화하면, 최소 거리 경로 대비 67% 사례에서 평균 2.17%(최대 5.97%) 절감되고 더 긴 경로가 유리할 수도 있다: [[payload-dependent-green-drone-routing]]^[inbox/processed/fetch-2026-10-17-arxiv-energy-efficient-drone-logistics-for-last-mile-delivery-impl.md]
+- 방전 모델 외에 운용 데이터(전압·전류·스로틀)만으로 LiPo 잔여 용량(SoH)을 예측하는 전이학습 접근: [[uav-battery-soh-transfer-learning]]^[inbox/processed/fetch-2026-10-17-arxiv-machine-learning-based-battery-state-of-health-prediction-fo.md]
+
+## 최신 근거 연결 (2026-10-18)
+
+- 드론 간 근접 비행의 위치·이격 거리·풍속 조건에서 스카이웨이 구간 에너지 소비 데이터를 수집하고 상호 에너지 영향을 분석하는 GUI를 만들었다(정량 결과는 초록에 없음): [[drone-proximity-energy-impact-delivery]]^[inbox/processed/fetch-2026-10-18-arxiv-impact-of-spatial-proximity-on-drone-services.md]
+- 운동학·에너지 식을 포함한 궤적 최적화 해로 신경망을 학습해 비행 시간을 근사하고 트럭-드론 배송 계획에 넣으면, 비행 물리를 무시한 벤치마크보다 투어 시간과 드론 에너지 소비가 개선된다고 보고했다(초록 기준, 수치 없음): [[physics-aware-truck-drone-delivery-planning]]^[inbox/processed/fetch-2026-10-18-arxiv-physics-aware-truck-and-drone-delivery-planning-using-optimi.md]

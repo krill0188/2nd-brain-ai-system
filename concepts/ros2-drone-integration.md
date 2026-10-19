@@ -1,10 +1,10 @@
 ---
 title: ROS2 Drone Integration
 created: 2026-07-27
-updated: 2026-08-10
+updated: 2026-10-18
 type: concept
 tags: [drone-sw, ROS2, MAVROS, micro-ROS, middleware]
-sources: [raw/articles/ros2-devnotes.md]
+sources: [raw/articles/ros2-devnotes.md, inbox/processed/fetch-2026-10-18-arxiv-the-e-rocket-low-cost-testbed-for-tvc-rocket-gnc-validation.md]
 confidence: high
 domain: gcs-software
 contested: false
@@ -95,6 +95,10 @@ ros2 launch mavros mavros.launch.py fcu_url:=udp://127.0.0.1:14550@
 - [[ros2-drone-deep]] — ROS2 드론 통합 심화 노트
 - [[ros2-lyrical]] — ROS2 드론 소프트웨어 개요
 - [[kite-gcs]] — ArduPilot/INAV/PX4 지원 오픈소스 GCS
+
+## 최신 근거 연결 (2026-10-18)
+
+- PX4 오토파일럿과 ROS 2를 이중 컴퓨터로 구성해 맞춤 GNC 알고리즘을 수용한 TVC 로켓 테스트베드 사례. 모션캡처 공간에서 PID 궤적 추종으로 검증했다(수치는 초록에 없음): [[e-rocket-tvc-gnc-testbed]]^[inbox/processed/fetch-2026-10-18-arxiv-the-e-rocket-low-cost-testbed-for-tvc-rocket-gnc-validation.md]
 
 ## 📰 최근 관련 소식
 - [핑크랩 PinkLAB] MuJoCo + ROS 2로 Nav2 · MoveIt · LLM까지 2일 완성 모집 (youtube.com, 2026-10-09) — https://www.youtube.com/watch?v=85FGaf6unms

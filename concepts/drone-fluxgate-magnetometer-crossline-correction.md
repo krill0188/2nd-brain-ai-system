@@ -1,11 +1,11 @@
 ---
 title: "드론 탑재 삼성분 플럭스게이트 자력탐사 교차점 오차 보정"
 created: 2026-09-05
-updated: 2026-10-01
+updated: 2026-10-18
 type: concept
 domain: hardware
 tags: [drone, hardware, drone-hw]
-sources: [raw/papers/_unclassified/드론-탑재-삼성분-플럭스게이트-자력탐사자료의-교차점-오차-분석-및-보정.md, raw/papers/_unclassified/켑스트럼을-이용한-단일-마이크로폰-기반-드론-거리-추정.md]
+sources: [raw/papers/_unclassified/드론-탑재-삼성분-플럭스게이트-자력탐사자료의-교차점-오차-분석-및-보정.md, raw/papers/_unclassified/켑스트럼을-이용한-단일-마이크로폰-기반-드론-거리-추정.md, inbox/processed/fetch-2026-10-18-arxiv-from-rubble-simulation-to-active-magnetic-mapping-quantum-se.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -36,3 +36,7 @@ contradictions: []
 - [[drone-payload-systems]] — 카메라, 짐벌, 페이로드 트리거 등 드론 페이로드 통합
 - [[sensor-calibration]] — Accel/Gyro/Compass/Baro 등 센서 캘리브레이션
 - [[kci-cepstrum-single-microphone-drone-distance]] — 켑스트럼 기반 단일 마이크로폰 드론 거리 추정(동일 단일센서 방법론 계열)
+
+## 최신 근거 연결 (2026-10-18)
+
+- 드론 탑재 자기 센싱의 다른 용도로, 붕괴 건물 지붕선 약 1 m 위에서 sub-pT~sub-nT 자기 구조 복원을 보인 양자 자력계 능동 매핑 시뮬레이션. 3센서 어레이가 기울기 해상도와 탑재 중량의 절충점이며 실비행 시험은 없다(초록 기준): [[drone-quantum-magnetometry-rubble-mapping]]^[inbox/processed/fetch-2026-10-18-arxiv-from-rubble-simulation-to-active-magnetic-mapping-quantum-se.md]

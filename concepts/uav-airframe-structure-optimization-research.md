@@ -1,11 +1,11 @@
 ---
 title: "UAV 프레임 구조 최적화·모듈형 플랫폼 연구"
 created: 2026-10-16
-updated: 2026-10-16
+updated: 2026-10-17
 type: concept
 domain: hardware
 tags: [drone, drone-hw, hardware]
-sources: [inbox/processed/fetch-2026-10-16-hw-paper-carbon-fiber-3d-printed-frame-hoang-2026.md, inbox/processed/fetch-2026-10-16-hw-paper-uav-airframe-strength-stiffener-ye-2025.md, inbox/processed/fetch-2026-10-16-hw-paper-mrs-drone-modular-hert-2023.md]
+sources: [inbox/processed/fetch-2026-10-16-hw-paper-carbon-fiber-3d-printed-frame-hoang-2026.md, inbox/processed/fetch-2026-10-16-hw-paper-uav-airframe-strength-stiffener-ye-2025.md, inbox/processed/fetch-2026-10-16-hw-paper-mrs-drone-modular-hert-2023.md, inbox/processed/fetch-2026-10-17-arxiv-a-self-rotating-tri-rotor-uav-for-field-of-view-expansion-an.md, inbox/processed/fetch-2026-10-17-arxiv-fam-dq-a-dual-quadrotor-based-fully-actuated-aerial-manipula.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -23,3 +23,8 @@ F450 기준으로 CFD·FEA·위상 최적화를 결합해 연속 탄소섬유 3D
 F450(페이로드 약 0.5 kg, 비행 10~15분), X500, T650(페이로드 2.5 kg) 프레임을 교체 가능한 모듈형 구조로 구성한 다중 로봇 플랫폼이다. X500·T650의 비행 시간과 부품 번호는 미확인.^[inbox/processed/fetch-2026-10-16-hw-paper-mrs-drone-modular-hert-2023.md]
 
 관련: [[drone-frame-platform-specs-catalog]], [[drone-hw]], [[drone-payload-systems]].
+
+## 최신 근거 연결 (2026-10-17)
+
+- 기체 형상 측면 사례: 모터 3개로 위치·롤·피치를 제어하며 연속 회전으로 FoV를 넓히는 트라이로터(풍속 4.8 m/s까지 안정 비행): [[spinner-self-rotating-tri-rotor]]^[inbox/processed/fetch-2026-10-17-arxiv-a-self-rotating-tri-rotor-uav-for-field-of-view-expansion-an.md]
+- 수동 조인트로 쿼드로터 모듈 2개를 잇는 완전구동 구조: [[fam-dq-dual-quadrotor-aerial-manipulator]]^[inbox/processed/fetch-2026-10-17-arxiv-fam-dq-a-dual-quadrotor-based-fully-actuated-aerial-manipula.md]

@@ -1,10 +1,10 @@
 ---
 title: Datalink Communication
 created: 2026-07-27
-updated: 2026-10-08
+updated: 2026-10-18
 type: concept
 tags: [datalink, drone-sw, RF, LTE, telemetry, communication, C2]
-sources: [inbox/processed/fetch-2026-10-08-kci-multi-dimensional-optimization-of-blocking-aware-resource-al.md]
+sources: [inbox/processed/fetch-2026-10-08-kci-multi-dimensional-optimization-of-blocking-aware-resource-al.md, inbox/processed/fetch-2026-10-17-arxiv-uav-based-3d-spectrum-sensing-insights-on-altitude-bandwidth.md, inbox/processed/fetch-2026-10-17-arxiv-experimental-evaluation-of-a-uav-mounted-leo-satellite-backh.md, inbox/processed/fetch-2026-10-17-arxiv-coverage-preserving-self-healing-in-partially-observable-3d-.md, inbox/processed/fetch-2026-10-18-arxiv-a-lyapunov-guided-diffusion-based-reinforcement-learning-app.md]
 confidence: medium
 domain: comms-protocol
 contested: false
@@ -149,3 +149,13 @@ GCS ←──┼─── UAV 2
 ## 최신 근거 연결 (2026-10-08)
 
 - UAV 가시광통신(VLC) 보조 메시 네트워크의 자원 경쟁·혼잡 완화 연구: [[uav-vlc-wmn-blocking-aware-bandwidth-allocation]]^[inbox/processed/fetch-2026-10-08-kci-multi-dimensional-optimization-of-blocking-aware-resource-al.md]
+
+## 최신 근거 연결 (2026-10-17)
+
+- 실측 기반 3D 라디오 환경 지도(REM)에서 고도·대역폭·안테나 패턴 보정이 정확도를 좌우하며 GPR이 가장 안정적인 기준선이었다: [[uav-3d-spectrum-sensing-rem]]^[inbox/processed/fetch-2026-10-17-arxiv-uav-based-3d-spectrum-sensing-insights-on-altitude-bandwidth.md]
+- Starlink Mini를 실은 UAV가 약 200 m 범위까지 업링크 약 30 Mbps를 유지한 LEO 백홀 비상 통신 실험: [[uav-leo-satellite-backhaul-emergency]]^[inbox/processed/fetch-2026-10-17-arxiv-experimental-evaluation-of-a-uav-mounted-leo-satellite-backh.md]
+- 분할된 군집망의 토폴로지 복구(시뮬레이션): [[addiff-gt-uav-swarm-self-healing]]^[inbox/processed/fetch-2026-10-17-arxiv-coverage-preserving-self-healing-in-partially-observable-3d-.md]
+
+## 최신 근거 연결 (2026-10-18)
+
+- 저고도 UAV의 V2X 지원에서 채널 할당·전력·고도를 함께 최적화하는 Lyapunov 유도 확산 RL(D3PG)이 실제 차량 궤적 시뮬레이션에서 벤치마크보다 우수하다고 보고했다(초록 기준, 수치 없음, CSI 피드백 지연 고려): [[lyapunov-diffusion-rl-uav-vehicular-networks]]^[inbox/processed/fetch-2026-10-18-arxiv-a-lyapunov-guided-diffusion-based-reinforcement-learning-app.md]

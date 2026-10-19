@@ -46,3 +46,6 @@ contradictions: []
 - [[drone-news-2026-09-09]] — 직전 종합된 드론 업계 주요 소식
 - [[rtk-gps-precise-landing]] — 드론 정밀 측위 관련 라이다/GNSS 활용
 - [[drone-regulations]] — 드론 규제 개요(FAA/EASA/BVLOS)
+
+## 📰 최근 관련 소식
+- 정지욱 강원도의원 “원주를 국방 드론 산업 중심지로 육성해야” (로컬세계, Fri, 16 Oc) — https://news.google.com/rss/articles/CBMiYEFVX3lxTFBpOFhvYXNhSUhJVXFmcl9XUkR4N1MyZ0lIWDFsWGhKTUt3QkM0RDMxRFhaMGhQSm9zYzRBcklORWgtR3pCQ0p4SDF3bWxUckdmbk9qWFl5ODBQRl9xR1pIWtIBWEFVX3lxTE5kSThGOHhVVTdxRHJ5SUNRUkZoQVhCVW1UTjlPT1Z2V2V4N3pTZmxCaU1RMS1hWW40bjBWUHV0QkFfZnB6UGFWVmZaTGJVRHcyc2ZFMGQzcVM?oc=5

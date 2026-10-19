@@ -32,3 +32,6 @@ contradictions: []
 ## 관련 페이지
 
 미국 드론 규제 전반은 [[drone-regulations]]를, FAA 집행 프로그램은 [[faa-deter-program]]을 참조한다.
+
+## 📰 최근 관련 소식
+- “전차·자주포 등 K방산 수출품에 드론 끼워 넣어야” [2026 세계드론산업포럼] (세계일보, Tue, 13 Oc) — https://news.google.com/rss/articles/CBMiWEFVX3lxTE0xbU9TZ1IteUh3dXQ0Y0ZHNHhkYWNWelRzWjBPLXQteHVCdllhM3RaWm9wSVMyT3dCay1wamsyblBodDZ6bE1IUktUVmdlaEZaanpIMGl2YnLSAVRBVV95cUxNcHVmNXNOVVZKZjUwX1BJeFVpazVuOURrNXY5LWsxeEl6RFVsYUdGb3BXcnl6aldNX3lLX00xaDdlcnZHbnFaY3djb2JGR284ZlI3eF8?oc=5

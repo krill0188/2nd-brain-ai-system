@@ -1,10 +1,10 @@
 ---
 title: Voice Control for Drones
 created: 2026-07-27
-updated: 2026-07-27
+updated: 2026-10-18
 type: concept
 tags: [voice-control, drone-sw, ai-agent, NLP, speech]
-sources: []
+sources: [inbox/processed/fetch-2026-10-17-arxiv-speech-enhancement-using-ego-noise-references-with-a-microph.md, inbox/processed/fetch-2026-10-18-arxiv-cyclic-mpdr-beamforming-for-suppression-of-almost-cyclostati.md]
 confidence: medium
 domain: ai-autonomy
 contested: false
@@ -180,6 +180,14 @@ class VoiceControlNode(Node):
 - Whisper + 드론 통합 오픈소스
 - 다국어 음성 명령 데이터셋
 - 음성 인증/보안 방법론
+
+## 최신 근거 연결 (2026-10-17)
+
+- 에고노이즈 참조 신호를 PK-MWF에 넣으면 표준 MWF보다 STOI·PESQ 개선이 크고 SNR 개선은 비슷했다. 반무향실 고정 거치 실험이다: [[uav-ego-noise-speech-enhancement]]^[inbox/processed/fetch-2026-10-17-arxiv-speech-enhancement-using-ego-noise-references-with-a-microph.md]
+
+## 최신 근거 연결 (2026-10-18)
+
+- 에고노이즈 참조 마이크 방식과 별개로, 모터 소음의 주기정상 상관을 쓰는 cMPDR 빔포밍은 실제 UAV 모터 녹음의 저 SNR 조건에서 MPDR 대비 SI-SDR 최대 5 dB 개선을 보였고 단일 마이크에서도 효과가 있다고 보고했다(초록 기준): [[cyclic-mpdr-beamforming-uav-motor-noise]]^[inbox/processed/fetch-2026-10-18-arxiv-cyclic-mpdr-beamforming-for-suppression-of-almost-cyclostati.md]
 
 ## 📰 최근 관련 소식
 - Army seeks next-gen missile that could shoot down small drones for less than $150K a pop (DefenseScoop, Tue, 04 Au) — https://news.google.com/rss/articles/CBMie0FVX3lxTE5GbzRtdW9TS3Y4b3JkaW9oazVGWW9nUWRxa0hGY25RV2h1UEg1MVVfQnhSUE1xS1VFMzVSUGRyckRva0VEZFV5aWhqeHZsbngwV2FpTDBLMVEwdllFOWVXYVZyU3g2VDNESS1WekhBLXNYOEdhMWZrenRESQ?oc=5

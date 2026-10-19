@@ -1,11 +1,11 @@
 ---
 title: "BLDC 모터·ESC 특성 측정·모델링 연구 (효율·열·추력 모델)"
 created: 2026-10-16
-updated: 2026-10-16
+updated: 2026-10-17
 type: concept
 domain: hardware
 tags: [drone, drone-hw, hardware]
-sources: [inbox/processed/fetch-2026-10-16-hw-paper-esc-motor-efficiency-characterization-brown-2019.md, inbox/processed/fetch-2026-10-16-hw-paper-bldc-inverter-electro-thermal-cheng-2021.md, inbox/processed/fetch-2026-10-16-hw-paper-digital-twin-bldc-gauthier-2023.md, inbox/processed/fetch-2026-10-16-hw-paper-motor-efficiency-estimation-cheng-2025.md, inbox/processed/fetch-2026-10-16-hw-paper-thrust-estimation-bemt-santos-2024.md]
+sources: [inbox/processed/fetch-2026-10-16-hw-paper-esc-motor-efficiency-characterization-brown-2019.md, inbox/processed/fetch-2026-10-16-hw-paper-bldc-inverter-electro-thermal-cheng-2021.md, inbox/processed/fetch-2026-10-16-hw-paper-digital-twin-bldc-gauthier-2023.md, inbox/processed/fetch-2026-10-16-hw-paper-motor-efficiency-estimation-cheng-2025.md, inbox/processed/fetch-2026-10-16-hw-paper-thrust-estimation-bemt-santos-2024.md, inbox/processed/fetch-2026-10-17-arxiv-a-robust-sensorless-controller-observer-strategy-for-pmsms-w.md, inbox/processed/fetch-2026-10-17-arxiv-how-to-model-your-crazyflie-brushless.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -28,3 +28,8 @@ contradictions: []
 추진계 효율은 모터 단독이 아니라 ESC 손실을 별도 항목으로 두고, 추력 보정은 호버점 하나가 아니라 PWM 전 구간에서 해야 한다는 점이 반복된다. 고장 사례는 [[drone-esc-failure-cases]], 에너지 모델은 [[multirotor-energy-power-models]]를 참고한다.
 
 관련: [[drone-hw]], [[fpv-motor-selection-guide]], [[px4-control-tuning]].
+
+## 최신 근거 연결 (2026-10-17)
+
+- 센서리스 PMSM 제어기-관측기 연구는 UAV 프로펠러 제어를 가정했으나 검증이 수치 시뮬레이션에 그쳐 하드웨어 측정 중심인 위 결과와 성격이 다르다: [[pmsm-sensorless-controller-observer]]^[inbox/processed/fetch-2026-10-17-arxiv-a-robust-sensorless-controller-observer-strategy-for-pmsms-w.md]
+- Crazyflie Brushless(브러시드 대비 추력 약 50% 큼)의 동역학 모델 식별과 sim-to-real 전이 사례: [[crazyflie-brushless-dynamics-model]]^[inbox/processed/fetch-2026-10-17-arxiv-how-to-model-your-crazyflie-brushless.md]

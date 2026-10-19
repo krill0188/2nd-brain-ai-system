@@ -1,14 +1,14 @@
 ---
 title: Drone Power & Battery
 created: 2026-07-27
-updated: 2026-10-05
+updated: 2026-10-18
 type: concept
 tags: [drone-hw, battery, power, ESC, motor, LiPo]
-sources: [raw/articles/px4-basic-concepts.md, raw/articles/px4-hardware-overview.md, raw/papers/_unclassified/소형-무인항공기용-리튬이온-배터리-등가회로모델-파라미터-추정에-관한-연구.md, raw/papers/_unclassified/전기-추진-시스템을-이용하는-고정익-무인기를-위한-복귀-가능-여부-판단-로직-설계.md]
+sources: [raw/articles/px4-basic-concepts.md, raw/articles/px4-hardware-overview.md, raw/papers/_unclassified/소형-무인항공기용-리튬이온-배터리-등가회로모델-파라미터-추정에-관한-연구.md, raw/papers/_unclassified/전기-추진-시스템을-이용하는-고정익-무인기를-위한-복귀-가능-여부-판단-로직-설계.md, inbox/processed/fetch-2026-10-17-arxiv-machine-learning-based-battery-state-of-health-prediction-fo.md, inbox/processed/fetch-2026-10-18-yt-i-exploded-a-lipo-in-a-600-safe-it-shot-flames.md]
 confidence: high
 domain: hardware
-contested: false
-contradictions: []
+contested: true
+contradictions: [lipo-charging-cabinet-fire-test]
 ---
 
 # Drone Power & Battery
@@ -185,6 +185,15 @@ anode) 기반 셀이 부상하고 있다. 자세한 사양과 미국 정부 생�
 - [[flight-controller-hardware]] — Power module 선택
 - [[dronecan-protocol]] — CAN 기반 ESC
 - [[amprius-sicore-battery]] — 차세대 실리콘-음극 셀(500 Wh/kg), LiPo 대비 1.5–2배 비행시간 연장 가능성
+
+## 최신 근거 연결 (2026-10-17)
+
+- 2200 mAh 342회·1100 mAh 289회 비행 데이터로 시계열을 이미지화해 ResNet-50 전이학습으로 SoH를 예측한 연구(구체 오차는 초록에 없음): [[uav-battery-soh-transfer-learning]]^[inbox/processed/fetch-2026-10-17-arxiv-machine-learning-based-battery-state-of-health-prediction-fo.md]
+
+## 상충 (2026-10-18)
+
+- 위 "Fire Safe: 금속 상자" 항목에 대해, 충전 중 LiPo를 의도적으로 발화시킨 단일 시연에서 진행자는 금속 캐비닛만으로는 LiPo 화재를 막지 못하며 열이 금속을 통해 인접 물체를 발화시킬 수 있다고 설명했다. 이중 벽·온도 팬·소화 포드를 갖춘 캐비닛에서도 폭발이 반복되고 문 앞쪽으로 불꽃이 샜으며, 외부 온도는 약 57~60°C였다(자막 기반, 단일 제품·단일 시연, 일반화 곤란): [[lipo-charging-cabinet-fire-test]]^[inbox/processed/fetch-2026-10-18-yt-i-exploded-a-lipo-in-a-600-safe-it-shot-flames.md]
+- 해석: 금속 상자 자체를 부정하는 근거는 아니다. 진행자도 이 캐비닛이 일반적인 사용자 방식보다 낫다고 결론 냈으며, 단일 시연이라 기존 기술을 뒤집지 않고 `contested`로만 표시한다.
 
 ## 📰 최근 관련 소식
 - How to Choose FPV Drone Motors – Considerations and Best Motor Recommendations (oscarliang.com, Thu, 13 Au) — https://oscarliang.com/motors/

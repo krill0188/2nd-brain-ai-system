@@ -1,11 +1,11 @@
 ---
 title: "프로펠러 성능 시험·측정 연구 (벤치, 저 Re, 덕티드 동축)"
 created: 2026-10-16
-updated: 2026-10-16
+updated: 2026-10-17
 type: concept
 domain: hardware
 tags: [drone, drone-hw, hardware]
-sources: [inbox/processed/fetch-2026-10-16-hw-paper-propeller-motor-static-bench-milenkovic-babic-2026.md, inbox/processed/fetch-2026-10-16-hw-paper-propeller-test-bench-esp32-prasetiyo-2026.md, inbox/processed/fetch-2026-10-16-hw-paper-propulsion-efficiency-goli-2023.md, inbox/processed/fetch-2026-10-16-hw-paper-small-propeller-low-re-mollick-2024.md, inbox/processed/fetch-2026-10-16-hw-paper-ducted-coaxial-rotor-hover-li-2023.md]
+sources: [inbox/processed/fetch-2026-10-16-hw-paper-propeller-motor-static-bench-milenkovic-babic-2026.md, inbox/processed/fetch-2026-10-16-hw-paper-propeller-test-bench-esp32-prasetiyo-2026.md, inbox/processed/fetch-2026-10-16-hw-paper-propulsion-efficiency-goli-2023.md, inbox/processed/fetch-2026-10-16-hw-paper-small-propeller-low-re-mollick-2024.md, inbox/processed/fetch-2026-10-16-hw-paper-ducted-coaxial-rotor-hover-li-2023.md, inbox/processed/fetch-2026-10-17-arxiv-machine-learning-for-uav-propeller-fault-detection-based-on-.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -25,3 +25,7 @@ contradictions: []
 - Li 외(2023): 덕티드 동축 로터 풍동 시험에서 로터 간격 H/R=0.40 최적, 덕트 내 위치 0.31Cd에서 단일 로터 대비 파워 로딩 약 20% 향상, 팁 간격 δ≤0.015R, 최우수 구성 FOM 0.61. 호버 한정이며 전진 비행은 미확인.^[inbox/processed/fetch-2026-10-16-hw-paper-ducted-coaxial-rotor-hover-li-2023.md]
 
 관련: [[fpv-motor-selection-guide]], [[bldc-motor-esc-characterization-research]], [[multirotor-propulsion-sizing-methods]], [[drone-hw]].
+
+## 최신 근거 연결 (2026-10-17)
+
+- 프로펠러 추력·토크를 RPM 입력 LSTM으로 모델링하고 고장 위치·손상 정도를 CNN으로 분류한 연구(테스트 세트 정확도 80% 이상, 기체 제작 편차로 약식 보정 필요): [[uav-propeller-fault-detection-hybrid-data]]^[inbox/processed/fetch-2026-10-17-arxiv-machine-learning-for-uav-propeller-fault-detection-based-on-.md]

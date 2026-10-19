@@ -1,11 +1,11 @@
 ---
 title: YOLO
 created: 2026-07-29
-updated: 2026-10-02
+updated: 2026-10-18
 type: concept
 domain: ai-autonomy
 tags: [drone, drone-ai, ai-agent]
-sources: [inbox/fetch-2026-07-29-yolo.md, inbox/fetch-2026-09-01-yolo.md, inbox/fetch-2026-09-15-yolo.md, inbox/fetch-2026-09-16-yolo.md, inbox/fetch-2026-09-17-yolo.md, inbox/fetch-2026-09-18-yolo.md, inbox/processed/fetch-2026-10-02-yolo.md]
+sources: [inbox/fetch-2026-07-29-yolo.md, inbox/fetch-2026-09-01-yolo.md, inbox/fetch-2026-09-15-yolo.md, inbox/fetch-2026-09-16-yolo.md, inbox/fetch-2026-09-17-yolo.md, inbox/fetch-2026-09-18-yolo.md, inbox/processed/fetch-2026-10-02-yolo.md, inbox/processed/fetch-2026-10-17-kci-국방-ai-신뢰성ㆍ보안성-향상을-위한-러-우-전쟁-자폭-드론-촬영-이미지-기반-yolo-세그멘테이션-모델의-.md, inbox/processed/fetch-2026-10-17-yolo.md, inbox/processed/fetch-2026-10-18-yolo.md]
 confidence: high
 contested: false
 contradictions: []
@@ -48,3 +48,12 @@ YOLO는 실시간 객체 검출을 위한 딥러닝 아키텍처이다. 단일 �
 - [[computer-vision-drone]] — 드론 컴퓨터 비전 응용
 - [[opencv]] — YOLO 모델 배포에 사용되는 컴퓨터 비전 라이브러리
 - [[drone-ai-agents]] — AI 기반 자율 드론 시스템
+
+## 최신 근거 연결 (2026-10-17)
+
+- 직전 릴리스 [[yolo-v8-4-178]](2026-10-16)는 Platform 링크·트래킹·내보내기 호환성 수정 중심이며 신규 아키텍처는 없다.^[inbox/processed/fetch-2026-10-17-yolo.md]
+- 시야 방해(노이즈·폭우) 강건성 평가에서 모델 순위가 조건별로 바뀔 수 있다는 근거: [[kci-yolo-seg-visibility-robustness-suicide-drone]]^[inbox/processed/fetch-2026-10-17-kci-국방-ai-신뢰성ㆍ보안성-향상을-위한-러-우-전쟁-자폭-드론-촬영-이미지-기반-yolo-세그멘테이션-모델의-.md]
+
+## 최신 근거 연결 (2026-10-18)
+
+- 최신 릴리스는 [[yolo-v8-4-181]](2026-10-17)로, 데이터셋 로딩·자동 주석·회전 박스 트래킹·세그멘테이션 메모리·JetPack 7.2 감지 중심의 수정이며 아키텍처 변경은 없다.^[inbox/processed/fetch-2026-10-18-yolo.md]

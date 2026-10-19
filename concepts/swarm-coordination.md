@@ -1,10 +1,10 @@
 ---
 title: Swarm Drone Coordination
 created: 2026-07-27
-updated: 2026-10-07
+updated: 2026-10-17
 type: concept
 tags: [swarm, drone-ai, multi-drone, formation, coordination]
-sources: [raw/articles/mastervault-recon-swarm.md, raw/articles/mastervault-swarm-architecture.md, raw/papers/swarm/occupation-measure-mean-field-control-optimization-over-measures-and-frank-wolfe.md, raw/papers/swarm/다수-vtol-무인기의-군집비행을-위한-이착륙-운용방안-및-실비행-적용.md]
+sources: [raw/articles/mastervault-recon-swarm.md, raw/articles/mastervault-swarm-architecture.md, raw/papers/swarm/occupation-measure-mean-field-control-optimization-over-measures-and-frank-wolfe.md, raw/papers/swarm/다수-vtol-무인기의-군집비행을-위한-이착륙-운용방안-및-실비행-적용.md, inbox/processed/fetch-2026-10-17-arxiv-coverage-preserving-self-healing-in-partially-observable-3d-.md, inbox/processed/fetch-2026-10-17-kci-드론-생존성-향상을-위한-mavlink-프로토콜-변조-기반의-가상-디코이-군집-형성-기만-시스템.md]
 confidence: medium
 domain: ai-autonomy
 contested: false
@@ -136,6 +136,11 @@ Yu·You·Pei의 occupation-measure mean-field control(OM-MFC)은 개별 에이�
 ## VTOL 고정익 군집의 이착륙 운용 (KCI 2026)
 
 기존 페이지가 다룬 편대·통신·최적화 외에, 군집이 비행에 진입·이탈하는 구간의 운용도 별도 절차가 필요하다. 이호진(2026)은 전 기체 동시 수직이륙 → 그룹별 지정 고도 분리 → 그룹 순차 출발·병렬 천이, 착륙은 공간 분리 → 순차 이탈 → 역천이 순서를 제안했고, 20대(2개 그룹) 옥외 시험에서 선두 그룹 천이 개시 후 전 기체가 20.5초 이내에 천이를 마쳤다고 보고한다(초록 절단, 단일 출처).^[raw/papers/swarm/다수-vtol-무인기의-군집비행을-위한-이착륙-운용방안-및-실비행-적용.md]
+
+## 최신 근거 연결 (2026-10-17)
+
+- 네트워크 분할 후 커버리지를 보존하며 자가 복구하는 그래프 트랜스포머(AdDiff-GT)는 8,000개 분할 시나리오 시뮬레이션에서 6개 기준선보다 우수했다. 시뮬레이션 전용 결과다: [[addiff-gt-uav-swarm-self-healing]]^[inbox/processed/fetch-2026-10-17-arxiv-coverage-preserving-self-healing-in-partially-observable-3d-.md]
+- 추가 기체 없이 MAVLink 변조로 최대 99대 가상 디코이를 만들어 공격 표면을 최대 100배 넓히는 기만 방어: [[kci-mavlink-virtual-decoy-swarm-deception]]^[inbox/processed/fetch-2026-10-17-kci-드론-생존성-향상을-위한-mavlink-프로토콜-변조-기반의-가상-디코이-군집-형성-기만-시스템.md]
 
 ## 📰 최근 관련 소식
 - 충남 첫 ‘국가 지정 드론공원’ 탄생…당진서 비행·교육·대회 한 번에 (녹색경제신문, Tue, 04 Au) — https://news.google.com/rss/articles/CBMiaEFVX3lxTE9ySFBDbWVDbGdTd3ZTTVlfUWhBYTRDNURtZW8zc2FmLW9CZHZmcF8wcEdFa2FfOVpabEgzM1VjV3lEUFJ3V0pteGtDLWlDN3VEYmhmMDdJQTI1bXl6anNrRW9XTjFxdDk2?oc=5

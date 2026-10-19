@@ -1,11 +1,11 @@
 ---
 title: "드론-인간 혼합배송 입지·네트워크 최적화 MILP (KCI)"
 created: 2026-10-08
-updated: 2026-10-15
+updated: 2026-10-18
 type: concept
 domain: ops-mission
 tags: [drone, ops-mission, research]
-sources: [inbox/processed/fetch-2026-10-08-kci-지형적-특성과-충전소-기능-구분을-고려한-드론-인간-혼합배송의-비용-효율적-입지-및-네트워크-최적화-모형.md, raw/papers/_unclassified/지형적-특성과-충전소-기능-구분을-고려한-드론-인간-혼합배송의-비용-효율적-입지-및-네트워크-최적화-모형.md]
+sources: [inbox/processed/fetch-2026-10-08-kci-지형적-특성과-충전소-기능-구분을-고려한-드론-인간-혼합배송의-비용-효율적-입지-및-네트워크-최적화-모형.md, raw/papers/_unclassified/지형적-특성과-충전소-기능-구분을-고려한-드론-인간-혼합배송의-비용-효율적-입지-및-네트워크-최적화-모형.md, inbox/processed/fetch-2026-10-18-arxiv-physics-aware-truck-and-drone-delivery-planning-using-optimi.md]
 confidence: low
 contested: false
 contradictions: []
@@ -28,3 +28,7 @@ contradictions: []
 - [[flytrex-rooftop-docks-ai-fleet-positioning]] — 옥상 도킹스테이션 기반 배달 비용 절감 사례
 - [[uav-battery-replacement-planner]] — UAV 배터리 교체 미션 플래너
 - [[truck-as-hub-vrp-drones-branch-price-cut]] — 농촌 라스트마일 트럭 허브-드론 VRP 정확해법(지연·복귀시간·비용 동시 최적화, 본 모형과 대비되는 트럭 동행 구조)
+
+## 최신 근거 연결 (2026-10-18)
+
+- 입지·네트워크 최적화와 달리, 트럭 경로와 드론 궤적을 함께 계획하면서 드론 비행 시간을 신경망으로 근사해 휴리스틱에 넣는 배송 계획 접근: [[physics-aware-truck-drone-delivery-planning]]^[inbox/processed/fetch-2026-10-18-arxiv-physics-aware-truck-and-drone-delivery-planning-using-optimi.md]

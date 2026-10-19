@@ -58,3 +58,4 @@ UAV Coach 영상(2026-10-02, "Can I Fly My Drone Here? Airspace Classes Explaine
 ## 📰 최근 관련 소식
 - [UAV Coach] Categories 1-4 Explained (youtube.com, 2026-10-09) — https://www.youtube.com/watch?v=y_XjlwqtRNM
 - Police drones near airports can now get faster FAA clearance (dronedj.com, Sat, 10 Oc) — https://dronedj.com/2026/10/10/versaterm-aloft-dronesense-laanc-faa/
+- FAA, 미국·멕시코 국경 일대 무허가 드론 비행 금지 (Investing.com 한국어, Fri, 16 Oc) — https://news.google.com/rss/articles/CBMid0FVX3lxTFBQWTdkT3BPNzhfbElJYjdIajROb2tJRHBYNzd5SjFKQ0xMYUVZU19jYWU1M0ZlTm56N0pJdmRKXzVrX2poWWQzcHUzcl9RZ2g2eThrdDRkWFFVS082LWNIdm95QVk5WGtLdkNCZjVBSUw0aU1SaTBJ?oc=5
