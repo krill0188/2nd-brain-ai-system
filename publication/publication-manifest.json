@@ -25,80 +25,496 @@
   ],
   "approved_source_versions": [
     {
+      "path": "concepts/addiff-gt-uav-swarm-self-healing.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/ai-knowledge-workflow.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/ai-personal-knowledge-management.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/alaska-drone-blood-delivery-olympic-antidoping.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/autotrans-uav-suspended-payload-planning-control.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/bilevel-route-hazard-exploration-uav.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
       "path": "concepts/bldc-motor-esc-characterization-research.md",
-      "source_commit": "14fd7337118915dd9b5f748db6aaecd9fc0345d0"
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/california-drone-concert-restriction.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/china-drone-export-controls.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/china-rc-component-supply-3dxr-2026-10.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/cleveland-clinic-drone-delivery.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/computer-vision-drone.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/crazyflie-brushless-dynamics-model.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/cyclic-mpdr-beamforming-uav-motor-noise.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/datalink-communication.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/dji-mic-mini-2s.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/dji-osmo-360-ii.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/dji-osmo-action-6.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/dji-osmo-mobile-8.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/dji-osmo-nano.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
     },
     {
       "path": "concepts/drone-battery-cell-pack-specs-catalog.md",
-      "source_commit": "14fd7337118915dd9b5f748db6aaecd9fc0345d0"
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
     },
     {
       "path": "concepts/drone-delivery-platform-hardware-cases.md",
-      "source_commit": "14fd7337118915dd9b5f748db6aaecd9fc0345d0"
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
     },
     {
       "path": "concepts/drone-esc-failure-cases.md",
-      "source_commit": "14fd7337118915dd9b5f748db6aaecd9fc0345d0"
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
     },
     {
       "path": "concepts/drone-esc-product-specs-catalog.md",
-      "source_commit": "14fd7337118915dd9b5f748db6aaecd9fc0345d0"
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
     },
     {
       "path": "concepts/drone-facility-inspection-cases.md",
-      "source_commit": "14fd7337118915dd9b5f748db6aaecd9fc0345d0"
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
     },
     {
       "path": "concepts/drone-firefighting-surveillance-cases.md",
-      "source_commit": "14fd7337118915dd9b5f748db6aaecd9fc0345d0"
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/drone-fluxgate-magnetometer-crossline-correction.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
     },
     {
       "path": "concepts/drone-frame-platform-specs-catalog.md",
-      "source_commit": "14fd7337118915dd9b5f748db6aaecd9fc0345d0"
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/drone-hw-vendor-registry.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
     },
     {
       "path": "concepts/drone-motor-product-specs-catalog.md",
-      "source_commit": "14fd7337118915dd9b5f748db6aaecd9fc0345d0"
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/drone-news-2026-09-10.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/drone-news-2026-10-17.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/drone-news-2026-10-18.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/drone-news-2026-10-19.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/drone-news-hardware.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/drone-news-ops.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
     },
     {
       "path": "concepts/drone-payload-datalink-product-specs-catalog.md",
-      "source_commit": "14fd7337118915dd9b5f748db6aaecd9fc0345d0"
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/drone-payload-systems.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/drone-power-battery.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
     },
     {
       "path": "concepts/drone-power-module-specs-catalog.md",
-      "source_commit": "14fd7337118915dd9b5f748db6aaecd9fc0345d0"
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
     },
     {
       "path": "concepts/drone-propeller-product-specs-catalog.md",
-      "source_commit": "14fd7337118915dd9b5f748db6aaecd9fc0345d0"
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/drone-proximity-energy-impact-delivery.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/drone-quantum-magnetometry-rubble-mapping.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/drone-software-ecosystem-registry.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/drone-wall-defense-system.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/dronuum-computing-continuum.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/e-rocket-tvc-gnc-testbed.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/energy-efficient-uav-replacement-sdn.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/faa-airspace-classes-drone-authorization.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/fam-dq-dual-quadrotor-aerial-manipulator.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/fpv-battery-maintenance.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/indi-stability-tilt-rotor-vtol.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/kci-anti-fpv-infantry-defense-system.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/kci-drone-human-hybrid-delivery-milp.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/kci-eoir-autonomous-drone-wildfire-suppression.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/kci-mavlink-virtual-decoy-swarm-deception.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/kci-rok-army-drone-acquisition-capability.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/kci-yolo-seg-visibility-robustness-suicide-drone.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/lipo-charging-cabinet-fire-test.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/lowes-wing-doordash-drone-delivery-pilot.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/lyapunov-diffusion-rl-uav-vehicular-networks.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/mavlink2-security.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/mg-mot-metadata-guided-uav-maritime-tracking.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/micro-drone-slam-imu-vio-lidar-uav-livox-mid-360-pixhawk-4-m.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/modular-energy-aware-multicopter-model.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/multi-uav-payload-transport-rao-controllers.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
     },
     {
       "path": "concepts/multirotor-energy-power-models.md",
-      "source_commit": "14fd7337118915dd9b5f748db6aaecd9fc0345d0"
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
     },
     {
       "path": "concepts/multirotor-propeller-test-research.md",
-      "source_commit": "14fd7337118915dd9b5f748db6aaecd9fc0345d0"
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
     },
     {
       "path": "concepts/multirotor-propulsion-sizing-methods.md",
-      "source_commit": "14fd7337118915dd9b5f748db6aaecd9fc0345d0"
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/path-uav-target-handoff.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/payload-dependent-green-drone-routing.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/physics-aware-truck-drone-delivery-planning.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/pmsm-sensorless-controller-observer.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/propeller-feedback-airspeed-estimation.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/ros2-drone-integration.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/software-registry-comms-protocol-sw.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/software-registry-fleet-utm.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/software-registry-flight-stack.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/software-registry-gcs.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/software-registry-middleware.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/software-registry-navigation-slam.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/software-registry-perception-ai.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/software-registry-planning-control.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/software-registry-security-ops.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/software-registry-simulation.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/software-registry-swarm-multiagent.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/software-registry-video-streaming.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/spinner-self-rotating-tri-rotor.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/swarm-coordination.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/uav-3d-spectrum-sensing-rem.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
     },
     {
       "path": "concepts/uav-airframe-structure-optimization-research.md",
-      "source_commit": "14fd7337118915dd9b5f748db6aaecd9fc0345d0"
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
     },
     {
       "path": "concepts/uav-alternative-power-hybrid-fuel-cell-research.md",
-      "source_commit": "14fd7337118915dd9b5f748db6aaecd9fc0345d0"
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/uav-battery-soh-transfer-learning.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/uav-cable-payload-cooperative-transport-research.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/uav-coach-cinematic-drone-shots.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/uav-ego-noise-speech-enhancement.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/uav-leo-satellite-backhaul-emergency.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/uav-propeller-fault-detection-hybrid-data.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/uav-swarm-ai-trends-kci.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/uav-swipt-mec-drl-resource-management.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/uav-weather-aerial-channel-impacts.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/vendor-registry-battery.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/vendor-registry-camera.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/vendor-registry-compute.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/vendor-registry-datalink.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/vendor-registry-esc.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/vendor-registry-fc.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/vendor-registry-frame.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/vendor-registry-gcs-hw.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/vendor-registry-gnss-imu.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/vendor-registry-lidar.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/vendor-registry-motor.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/vendor-registry-payload-mech.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/vendor-registry-power-charger.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/vendor-registry-propeller.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/vendor-registry-radar.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/voice-control-drone.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/yolo-v8-4-178.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/yolo-v8-4-181.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/yolo-v8-4-182.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
+    },
+    {
+      "path": "concepts/yolo.md",
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
     },
     {
       "path": "entities/dji-agras-t40.md",
-      "source_commit": "14fd7337118915dd9b5f748db6aaecd9fc0345d0"
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
     },
     {
       "path": "entities/dji-matrice-350-rtk.md",
-      "source_commit": "14fd7337118915dd9b5f748db6aaecd9fc0345d0"
+      "source_commit": "3ca20f47251c99c197178cd6db498fed34b37dbf"
     }
   ],
   "revoked_paths": []
