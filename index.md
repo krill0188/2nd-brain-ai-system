@@ -3,7 +3,7 @@
 > Complete catalog of active canonical pages. Each entry is a wikilink followed by
 > a one-line summary, sorted alphabetically within its section.
 >
-|> Total pages: 618
+|> Total pages: 645
 ## Entities
 - [[qgroundcontrol-v5-1-0]] — QGroundControl v5.1.0 릴리스 후보 기록.
 |- [[avidrone]] — 캐나다 헤비리프트 드론 기업, DARPA Lift Challenge 우승.
@@ -623,6 +623,49 @@
 - [[vendor-registry-power-charger]] — 드론 전원·충전기·BMS 제조사 레지스트리 (18건), 2026-10-17 수집(공식 페이지 기준, 미확인 표기 포함).
 - [[vendor-registry-propeller]] — 드론 프로펠러 제조사 레지스트리 (15건), 2026-10-17 수집(공식 페이지 기준, 미확인 표기 포함).
 - [[vendor-registry-radar]] — 드론 레이더 제조사 레지스트리 (19건), 2026-10-17 수집(공식 페이지 기준, 미확인 표기 포함).
+
+<!-- 2026-10-20 10-19/10-20 inbox 컴파일분 + 카탈로그 누락 보정분 -->
+- [[amazon-prime-air-expansion-2026]] — Amazon Prime Air Expansion 2026.
+- [[bilevel-route-hazard-exploration-uav]] — 이중 레벨 UAV 경로 최적화(VRP+edge CVT)와 베이지안 갱신 기반 미지 위험 탐색 (2025).
+- [[bldc-motor-propeller-digital-twin-static-thrust]] — BLDC 모터-프로펠러 정지 추력 디지털 트윈: 정상·과도 응답이 선형화 모델과 크게 어긋남.
+- [[capsulebot-hybrid-aerial-ground-bicopter]] — CapsuleBot: 4모터만으로 공중 비행과 지상 주행을 겸하는 하이브리드 바이콥터.
+- [[china-rc-component-supply-3dxr-2026-10]] — 3DXR 재고 업데이트: 중국발 RC 부품 공급난, NDAA 대응·비중국산 제품 확대 (자막 기반).
+- [[dji-mavic-4-pro-thermal-rocket]] — DJI Mavic 4 Pro Thermal Rocket Capture.
+- [[drone-news-2026-10-19]] — Skydio ISR Command 출시 등 (헤드라인 위주).
+- [[drone-news-2026-10-20]] — 중국 드론 수출통제 개정(11/18 시행), 미·멕시코 국경 드론 제한, 우크라이나 중량 드론 부상병 후송.
+- [[energy-efficient-uav-replacement-sdn]] — SDN UAV 네트워크의 에너지 효율적 UAV 교체·플로우 핸드오버 ILP와 휴리스틱.
+- [[fault-tolerant-dynamic-task-assignment-uav-search]] — 고장·배터리를 반영한 UAV 탐색팀 동적 임무 할당(확률적 동적계획법).
+- [[fpga-chaotic-map-uav-secure-comms]] — FPGA Chaotic Map for UAV Secure Communication.
+- [[generative-cvae-uav-engine-mount-design]] — UAV 모터 마운트 10,000개 설계를 다분야 시뮬레이션해 CVAE로 다기준 생성 설계.
+- [[hoverair-versa-2in1-2026]] — HoverAir Versa 2-in-1 Gimbal Drone.
+- [[kci-north-korea-drone-lessons-adoption]] — 북한의 러·우전 무인기 전훈 수용은 전술 모방·시험 단계이며 제도화 근거는 제한적.
+- [[modular-energy-aware-multicopter-model]] — 배터리·ESC·BLDC·LiDAR/카메라를 결합한 모듈식 에너지 인식 멀티콥터 모델.
+- [[multi-uav-payload-transport-rao-controllers]] — 다중 UAV 페이로드 운송: 피드백 선형화 지수 안정 제어와 HOCBF 시간 웨이포인트 항법.
+- [[nc2s-secure-c3-uxv]] — NC2S: UxV용 보안 지휘·통제·통신.
+- [[ondas-ohio-drone-hub-2026]] — Ondas Ohio Drone Hub.
+- [[param-diff-copter-4-7-0-4-7-1]] — ArduPilot Copter 4.7.0 → 4.7.1 파라미터 변경 전체 목록.
+- [[param-diff-plane-4-7-0-4-7-1]] — ArduPilot Plane 4.7.0 → 4.7.1 파라미터 변경 전체 목록.
+- [[propeller-feedback-airspeed-estimation]] — ESC 출력·회전수만으로 고정익 대기속도를 추정(nRMSE 5%).
+- [[rf-energy-harvesting-sensor-tags-drone-agriculture]] — 드론 비콘으로 무배터리 센서 태그 구동: 지상 성공, 공중 시험은 간섭으로 검출 실패.
+- [[saildrone-european-expansion-2026]] — Saildrone European Expansion 2026.
+- [[skydio-dfr-milestone]] — Skydio DFR Command Milestone.
+- [[slei3d-heterogeneous-fleet-exploration]] — SLEI3D: 이기종 군집의 동시 탐색·검사.
+- [[uav-battery-recharge-agent-based-simulation]] — 통신 없는 군집 재충전 조정 BL·CT 정책의 에이전트 기반 시뮬레이션 6,000회.
+- [[uav-fleet-sensor-network-data-collection-de]] — Differential Evolution으로 UAV 팀의 분산 센서망 데이터 수집 계획.
+- [[uav-rotatable-antenna-rotation-delay]] — 회전형 안테나의 기계적 회전 지연을 반영한 UAV 방향·빔포밍 공동 설계(AG-ZF).
+- [[uav-swarm-air-ground-isac]] — 교차 지역 협력 기반 Air-Ground ISAC UAV 군집.
+- [[uav-swipt-mec-drl-resource-management]] — UAV 보조 SWIPT-MEC 에너지 효율 자원 관리: 개선 SAC 심층강화학습.
+- [[uav-weather-aerial-channel-impacts]] — 비·안개·눈이 2~900 GHz UAV 항공 채널과 커버리지에 미치는 영향.
+- [[uavionix-airwise-flightline-2026]] — uAvionix-Airwise FlightLine Partnership.
+- [[yolo-v8-4-182]] — YOLO v8.4.182: 음수 박스 크기 라벨 검증, 데이터셋 캐시 재스캔, Linux 드라이브 중복 제거.
+- [[zoomdet-uav-object-detection]] — ZoomDet: UAV 객체 탐지용 적응형 이미지 줌인.
+- [[kr-drone-business-registration]] — 한국 초경량비행장치사용사업 등록 요건·서류·업무 범위.
+- [[kr-drone-flight-approval-airspace]] — 한국 공역 구분·비행승인(150m, 관제권)·조종자 준수사항.
+- [[kr-drone-law-framework]] — 한국 드론 법체계 개요: 항공안전법·드론법 정의, 장치 기준, UTM.
+- [[kr-drone-penalties]] — 한국 초경량비행장치 위반 형사벌·과태료 정리.
+- [[kr-public-emergency-drone-exemption]] — 군·경·세관 적용 제외와 국가기관 긴급비행 특례.
+- [[kr-ultralight-registration-certification]] — 한국 초경량비행장치 신고·안전성인증·조종자증명(종별 기준).
+- [[kr-unmanned-special-flight-approval]] — 한국 무인비행장치 야간·가시권 밖 특별비행승인 절차.
 
 ## Comparisons
 

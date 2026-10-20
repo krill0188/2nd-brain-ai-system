@@ -2779,3 +2779,10 @@
 - Updated (53쪽, frontmatter에 `ontology_class` 한 줄만 추가): ArduPilot 7 · Battery 6 · Camera 1 · Datalink 1 · ESC 1 · FixedWing 1 · FlightController 2 · FlightStack 2 · Frame 2 · GNSS 1 · Gimbal 1 · LiDAR 1 · Motor 1 · Multirotor 4 · PX4 10 · Payload 2 · Propeller 1 · ROS2 5 · SwarmCoordinator 2 · VTOL 2
 - Source: `ontology/class-approvals-20261020.json`(승인 목록·사유), 제안 원본은 drone-wiki-web `docs/ontology-class-proposals.md`(등급 A 130건). 적용 도구 `scripts/apply-class-approvals.py`.
 - Note: 제안 130건 중 53건만 승인, 77건 제외(제조사·SW 레지스트리 12, 키워드 우연 일치 약 14, MAVLink 11건은 프로토콜이라 물리 `Datalink` 클래스와 달라 제외, 클래스의 응용·제어 연구 약 35, 주제 다른 문서 약 5). 본문·domain·tags는 변경하지 않았고 index.md 항목도 불변. 새 클래스(예: CommunicationProtocol)는 필요하면 별도 제안으로만 다룬다.
+
+## [2026-10-20] create | inbox 39건(한국 드론 법령 조문) 전부 컴파일 → 한국 드론 법제 페이지 7쪽
+
+- Created (concepts, 7, domain: regulations): `kr-drone-law-framework`, `kr-ultralight-registration-certification`, `kr-drone-flight-approval-airspace`, `kr-unmanned-special-flight-approval`, `kr-drone-business-registration`, `kr-drone-penalties`, `kr-public-emergency-drone-exemption`
+- Updated: `concepts/drone-regulations.md`(한국 세부 조문 링크 절 추가, updated 갱신), `index.md`(총 페이지 638 → 645)
+- Note: 조문 39건(항공안전법·시행령·시행규칙·항공사업법·드론법·군사기지법·특별비행 고시)을 주제별 7쪽으로 묶었다(조문 1건당 1쪽 생성 안 함). 법제처 발췌본 기준이며 confidence medium. 별표 23(공역 구역)·특별비행 안전기준 별표 1·시행령 금액 기준은 수집되지 않아 미반영. sources는 기존 관례대로 `inbox/processed/` 경로 사용
+- Moved to processed: inbox 파일 39개 → `inbox/processed/`

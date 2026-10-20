@@ -1,7 +1,7 @@
 ---
 title: Drone Regulations
 created: 2026-07-27
-updated: 2026-10-02
+updated: 2026-10-20
 type: concept
 tags: [drone, regulations, UAS, FAA, EASA, BVLOS, compliance]
 sources: [inbox/fetch-2026-08-15-rss-dronelife.md, inbox/processed/fetch-2026-09-29-rss-dronelife.md]
@@ -219,3 +219,7 @@ note: "Knowledge-based page - no raw source ingested yet"
 - [quadmovr] 160g 5" LOS drone (youtube.com, 2026-10-04) — https://www.youtube.com/watch?v=akWfG1csYGA
 - 공항 불법 드론에 항공기 지연..."과태료 5백만 원" (YTN, Sun, 04 Oc) — https://news.google.com/rss/articles/CBMib0FVX3lxTE45VE4zQWZOOW5rMzFXaTVoQ05nMkRuN19aMkhIUzhnTXR0WWg0TWhUY2lCZjB3OFBRNS1UUEFDOFEzMmFIYWJvb1NwR19MMWxXYkZfNVJhNlZ1SGVqNDZZNENzTVdTbWJmQmJGLVdrVQ?oc=5
 - “드론 추정 물체 목격, 항공 비상 상황”···독일 뉘른베르크 공항, 항공기 운항 중단 (경향신문, Tue, 13 Oc) — https://news.google.com/rss/articles/CBMiWkFVX3lxTE5JaWc0dlBwY2xfdXM0QjlNelZQR0RIMjNJLVBwSEhLTDVRNkZ4ZUc2a29UTWEyNU53bXZ5N1g1M2pWRjhyb2VXd0V5WmZhcmk2YmF3a0VqVi0wd9IBX0FVX3lxTE1xRGZaN0IzWVdNbWVudVhkRHkyTjN3VkhKdGIyaGRmOTdqcmlFUW1kYnNBbzRsY2tQZkhnelpSN00yWjBNVUlwRkdLQW5Ga3lQWUlKbmtCREtLRzFqU0RR?oc=5
+
+## 한국 세부 조문 (2026-10-20)
+
+한국 항공안전법 기반 상세는 [[kr-drone-law-framework]], [[kr-ultralight-registration-certification]], [[kr-drone-flight-approval-airspace]], [[kr-unmanned-special-flight-approval]], [[kr-drone-penalties]]에 정리했다.
