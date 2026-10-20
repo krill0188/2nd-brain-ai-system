@@ -7,6 +7,7 @@ tags: [drone-sw, ai-agent, offboard, companion-computer, autonomous]
 sources: [raw/articles/px4-offboard-control.md, inbox/processed/fetch-2026-10-16-kci-다중-스펙트럼-헬리패드를-이용한-야간-uav-정밀-착륙-ir적외선-영상-기반-정렬-및-거리-센서-기반-하강-.md]
 confidence: high
 domain: flight-control
+ontology_class: PX4
 contested: false
 contradictions: []
 ---

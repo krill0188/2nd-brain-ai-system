@@ -4,6 +4,7 @@ created: 2026-09-18
 updated: 2026-09-18
 type: concept
 domain: ops-mission
+ontology_class: VTOL
 tags: [drone, company, ops-mission]
 sources: [inbox/fetch-2026-09-18-rss-dronelife.md]
 confidence: medium

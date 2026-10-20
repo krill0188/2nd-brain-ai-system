@@ -7,6 +7,7 @@ tags: [drone-hw, flight-controller, FC, hardware, Pixhawk]
 sources: [raw/articles/mastervault-hardware-reference.md, raw/articles/px4-hardware-overview.md]
 confidence: high
 domain: hardware
+ontology_class: FlightController
 contested: false
 contradictions: []
 ---

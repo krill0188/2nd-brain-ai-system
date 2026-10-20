@@ -9,6 +9,7 @@ confidence: medium
 contested: false
 contradictions: []
 domain: gcs-software
+ontology_class: ROS2
 ---
 
 # MAVROS

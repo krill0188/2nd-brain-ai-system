@@ -9,6 +9,7 @@ confidence: high
 contested: false
 contradictions: []
 domain: flight-control
+ontology_class: FlightStack
 ---
 
 # Betaflight

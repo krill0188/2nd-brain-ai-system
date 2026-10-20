@@ -4,6 +4,7 @@ created: 2026-10-16
 updated: 2026-10-16
 type: concept
 domain: hardware
+ontology_class: Multirotor
 tags: [drone, drone-hw, hardware]
 sources: [inbox/processed/fetch-2026-10-16-hw-paper-propulsion-optimization-analytical-dai-2019.md, inbox/processed/fetch-2026-10-16-hw-paper-multirotor-mdo-weight-power-burela-sujit-2026.md, inbox/processed/fetch-2026-10-16-hw-paper-propulsion-efficiency-goli-2023.md]
 confidence: medium

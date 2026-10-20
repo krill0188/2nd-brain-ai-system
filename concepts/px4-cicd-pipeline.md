@@ -7,6 +7,7 @@ tags: [drone-sw, CI/CD, build, test, github-actions, docker]
 sources: []
 confidence: medium
 domain: gcs-software
+ontology_class: PX4
 contested: false
 contradictions: []
 note: "Knowledge-based page - no raw source ingested yet"

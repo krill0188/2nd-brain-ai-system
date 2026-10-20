@@ -4,6 +4,7 @@ created: 2026-10-18
 updated: 2026-10-18
 type: concept
 domain: hardware
+ontology_class: Battery
 tags: [drone, drone-hw, fpv]
 sources: [inbox/processed/fetch-2026-10-18-yt-i-exploded-a-lipo-in-a-600-safe-it-shot-flames.md]
 confidence: low

@@ -10,6 +10,7 @@ sources:
   - inbox/processed/px4-system-architecture.md
 confidence: high
 domain: flight-control
+ontology_class: PX4
 contested: false
 contradictions: []
 ---

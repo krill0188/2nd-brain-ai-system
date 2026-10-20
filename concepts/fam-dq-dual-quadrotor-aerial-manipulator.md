@@ -4,6 +4,7 @@ created: 2026-10-17
 updated: 2026-10-17
 type: concept
 domain: hardware
+ontology_class: Multirotor
 tags: [drone, drone-hw]
 sources: [inbox/processed/fetch-2026-10-17-arxiv-fam-dq-a-dual-quadrotor-based-fully-actuated-aerial-manipula.md]
 confidence: medium

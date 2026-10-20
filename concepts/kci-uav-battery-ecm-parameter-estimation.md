@@ -4,6 +4,7 @@ created: 2026-10-05
 updated: 2026-10-05
 type: concept
 domain: hardware
+ontology_class: Battery
 tags: [drone, drone-hw, research]
 sources: [raw/papers/_unclassified/소형-무인항공기용-리튬이온-배터리-등가회로모델-파라미터-추정에-관한-연구.md]
 confidence: low

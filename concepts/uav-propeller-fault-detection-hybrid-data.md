@@ -4,6 +4,7 @@ created: 2026-10-17
 updated: 2026-10-17
 type: concept
 domain: hardware
+ontology_class: Propeller
 tags: [drone, drone-hw, drone-ai]
 sources: [inbox/processed/fetch-2026-10-17-arxiv-machine-learning-for-uav-propeller-fault-detection-based-on-.md]
 confidence: medium

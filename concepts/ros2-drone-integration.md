@@ -7,6 +7,7 @@ tags: [drone-sw, ROS2, MAVROS, micro-ROS, middleware]
 sources: [raw/articles/ros2-devnotes.md, inbox/processed/fetch-2026-10-18-arxiv-the-e-rocket-low-cost-testbed-for-tvc-rocket-gnc-validation.md]
 confidence: high
 domain: gcs-software
+ontology_class: ROS2
 contested: false
 contradictions: []
 ---

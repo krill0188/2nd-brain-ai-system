@@ -9,6 +9,7 @@ confidence: high
 contested: false
 contradictions: []
 domain: flight-control
+ontology_class: ArduPilot
 ---
 
 # ArduPilot Plane 4.7.0

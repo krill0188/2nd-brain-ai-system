@@ -4,6 +4,7 @@ created: 2026-09-03
 updated: 2026-10-01
 type: concept
 domain: hardware
+ontology_class: FlightStack
 tags: [drone-hw, hardware, drone-sw, fpv]
 sources: [inbox/processed/fetch-2026-10-01-rss-oscarliang-fpv.md]
 confidence: high

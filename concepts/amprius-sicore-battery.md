@@ -4,6 +4,7 @@ created: 2026-09-03
 updated: 2026-09-29
 type: concept
 domain: hardware
+ontology_class: Battery
 tags: [drone-hw, hardware, drone]
 sources: [inbox/processed/fetch-2026-09-29-rss-suasnews.md, inbox/processed/fetch-2026-09-29-rss-dronelife.md]
 confidence: medium

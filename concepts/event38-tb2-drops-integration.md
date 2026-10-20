@@ -5,6 +5,7 @@ updated: 2026-08-04
 type: concept
 tags: [drone-hw, payload, vtol]
 domain: hardware
+ontology_class: Payload
 sources: [inbox/fetch-2026-08-04-rss-dronelife.md]
 confidence: high
 contested: false

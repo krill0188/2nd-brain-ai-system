@@ -10,6 +10,7 @@ sources:
   - raw/papers/swarm/robust-observer-based-visual-servoing-control-of-gimbal-mounted-cameras-for-mult.md
 confidence: medium
 domain: ai-autonomy
+ontology_class: SwarmCoordinator
 contested: false
 contradictions: []
 ---

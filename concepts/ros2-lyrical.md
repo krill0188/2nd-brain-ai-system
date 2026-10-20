@@ -9,6 +9,7 @@ confidence: high
 contested: false
 contradictions: []
 domain: gcs-software
+ontology_class: ROS2
 ---
 
 # ROS 2 Lyrical Luth

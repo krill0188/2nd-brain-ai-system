@@ -7,6 +7,7 @@ tags: [drone-sw, ros2, advanced, micro-ros, dds, qos, companion]
 sources: []
 confidence: medium
 domain: gcs-software
+ontology_class: ROS2
 contested: false
 contradictions: []
 note: "Knowledge-based page - no raw source ingested yet"

@@ -7,6 +7,7 @@ tags: [datalink, drone-sw, RF, LTE, telemetry, communication, C2]
 sources: [inbox/processed/fetch-2026-10-08-kci-multi-dimensional-optimization-of-blocking-aware-resource-al.md, inbox/processed/fetch-2026-10-17-arxiv-uav-based-3d-spectrum-sensing-insights-on-altitude-bandwidth.md, inbox/processed/fetch-2026-10-17-arxiv-experimental-evaluation-of-a-uav-mounted-leo-satellite-backh.md, inbox/processed/fetch-2026-10-17-arxiv-coverage-preserving-self-healing-in-partially-observable-3d-.md, inbox/processed/fetch-2026-10-18-arxiv-a-lyapunov-guided-diffusion-based-reinforcement-learning-app.md, inbox/processed/fetch-2026-10-19-arxiv-meteorologically-introduced-impacts-on-aerial-channels-and-u.md, inbox/processed/fetch-2026-10-20-arxiv-uav-rotatable-antenna-under-rotation-delay.md, inbox/processed/fetch-2026-10-19-arxiv-joint-resource-management-for-energy-efficient-uav-assisted-.md, inbox/processed/fetch-2026-10-20-arxiv-autonomous-agricultural-monitoring-with-aerial-drones-and-rf.md]
 confidence: medium
 domain: comms-protocol
+ontology_class: Datalink
 contested: false
 contradictions: []
 ---

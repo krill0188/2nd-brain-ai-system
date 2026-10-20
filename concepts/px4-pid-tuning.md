@@ -7,6 +7,7 @@ tags: [drone-sw, pid, tuning, control, rate, attitude, multicopter]
 sources: []
 confidence: medium
 domain: flight-control
+ontology_class: PX4
 contested: false
 contradictions: []
 note: "Knowledge-based page - no raw source ingested yet"

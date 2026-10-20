@@ -1,0 +1,217 @@
+{
+ "_comment": "2026-10-20 마스터 지시('등급 A 검토·승인')에 따라 AI가 제안 등급 A 130건을 문서별로 읽고 선별한 승인 목록. 제외 77건: 제조사·SW 레지스트리 12, 키워드 우연 일치(framework·imu·lte 등) 약 14, MAVLink 문서 11(프로토콜이라 물리 Datalink 클래스와 다름), 클래스의 응용·제어 연구 약 35, 주제 다른 문서 약 5. 값은 scripts/apply-class-approvals.py가 해당 문서 frontmatter에 한 줄로만 추가한다(다른 본문 불변).",
+ "approved": [
+  {
+   "path": "concepts/ardupilot-architecture.md",
+   "ontology_class": "ArduPilot"
+  },
+  {
+   "path": "concepts/ardupilot-params-by-version.md",
+   "ontology_class": "ArduPilot"
+  },
+  {
+   "path": "concepts/ardupilot-plane-4-7.md",
+   "ontology_class": "ArduPilot"
+  },
+  {
+   "path": "concepts/param-diff-copter-4-6-0-4-7-0.md",
+   "ontology_class": "ArduPilot"
+  },
+  {
+   "path": "concepts/param-diff-copter-4-7-0-4-7-1.md",
+   "ontology_class": "ArduPilot"
+  },
+  {
+   "path": "concepts/param-diff-plane-4-7-0-4-7-1.md",
+   "ontology_class": "ArduPilot"
+  },
+  {
+   "path": "entities/ardupilot.md",
+   "ontology_class": "ArduPilot"
+  },
+  {
+   "path": "concepts/amprius-sicore-battery.md",
+   "ontology_class": "Battery"
+  },
+  {
+   "path": "concepts/drone-power-battery.md",
+   "ontology_class": "Battery"
+  },
+  {
+   "path": "concepts/kci-uav-battery-ecm-parameter-estimation.md",
+   "ontology_class": "Battery"
+  },
+  {
+   "path": "concepts/lipo-charging-cabinet-fire-test.md",
+   "ontology_class": "Battery"
+  },
+  {
+   "path": "concepts/rincell-rc50t-drone-cell.md",
+   "ontology_class": "Battery"
+  },
+  {
+   "path": "concepts/uav-battery-soh-transfer-learning.md",
+   "ontology_class": "Battery"
+  },
+  {
+   "path": "concepts/event-camera-drone.md",
+   "ontology_class": "Camera"
+  },
+  {
+   "path": "concepts/datalink-communication.md",
+   "ontology_class": "Datalink"
+  },
+  {
+   "path": "concepts/drone-esc-failure-cases.md",
+   "ontology_class": "ESC"
+  },
+  {
+   "path": "concepts/kci-fixed-wing-return-feasibility-logic.md",
+   "ontology_class": "FixedWing"
+  },
+  {
+   "path": "concepts/flight-controller-hardware.md",
+   "ontology_class": "FlightController"
+  },
+  {
+   "path": "concepts/pixhawk-setup-params.md",
+   "ontology_class": "FlightController"
+  },
+  {
+   "path": "concepts/betaflight.md",
+   "ontology_class": "FlightStack"
+  },
+  {
+   "path": "concepts/betaflight-fc-alignment-wizard.md",
+   "ontology_class": "FlightStack"
+  },
+  {
+   "path": "concepts/axisflying-bando-5-review.md",
+   "ontology_class": "Frame"
+  },
+  {
+   "path": "concepts/uav-airframe-structure-optimization-research.md",
+   "ontology_class": "Frame"
+  },
+  {
+   "path": "concepts/rtk-gps-precise-landing.md",
+   "ontology_class": "GNSS"
+  },
+  {
+   "path": "concepts/hequav-k11-dual-sensor-gimbal.md",
+   "ontology_class": "Gimbal"
+  },
+  {
+   "path": "concepts/emesent-trimble-lidar-integration.md",
+   "ontology_class": "LiDAR"
+  },
+  {
+   "path": "concepts/fpv-motor-selection-guide.md",
+   "ontology_class": "Motor"
+  },
+  {
+   "path": "concepts/crazyflie-brushless-dynamics-model.md",
+   "ontology_class": "Multirotor"
+  },
+  {
+   "path": "concepts/multirotor-energy-power-models.md",
+   "ontology_class": "Multirotor"
+  },
+  {
+   "path": "concepts/multirotor-propulsion-sizing-methods.md",
+   "ontology_class": "Multirotor"
+  },
+  {
+   "path": "concepts/fam-dq-dual-quadrotor-aerial-manipulator.md",
+   "ontology_class": "Multirotor"
+  },
+  {
+   "path": "concepts/param-diff-px4-1-16-0-1-17-0.md",
+   "ontology_class": "PX4"
+  },
+  {
+   "path": "concepts/px4-architecture-deep.md",
+   "ontology_class": "PX4"
+  },
+  {
+   "path": "concepts/px4-cicd-pipeline.md",
+   "ontology_class": "PX4"
+  },
+  {
+   "path": "concepts/px4-control-tuning.md",
+   "ontology_class": "PX4"
+  },
+  {
+   "path": "concepts/px4-offboard-control.md",
+   "ontology_class": "PX4"
+  },
+  {
+   "path": "concepts/px4-params-by-version.md",
+   "ontology_class": "PX4"
+  },
+  {
+   "path": "concepts/px4-pid-tuning.md",
+   "ontology_class": "PX4"
+  },
+  {
+   "path": "concepts/px4-system-architecture.md",
+   "ontology_class": "PX4"
+  },
+  {
+   "path": "concepts/px4-tuning-control.md",
+   "ontology_class": "PX4"
+  },
+  {
+   "path": "concepts/px4-v1-17.md",
+   "ontology_class": "PX4"
+  },
+  {
+   "path": "concepts/drone-payload-systems.md",
+   "ontology_class": "Payload"
+  },
+  {
+   "path": "concepts/event38-tb2-drops-integration.md",
+   "ontology_class": "Payload"
+  },
+  {
+   "path": "concepts/uav-propeller-fault-detection-hybrid-data.md",
+   "ontology_class": "Propeller"
+  },
+  {
+   "path": "concepts/mavros.md",
+   "ontology_class": "ROS2"
+  },
+  {
+   "path": "concepts/ros2-advanced-integration.md",
+   "ontology_class": "ROS2"
+  },
+  {
+   "path": "concepts/ros2-advanced.md",
+   "ontology_class": "ROS2"
+  },
+  {
+   "path": "concepts/ros2-drone-integration.md",
+   "ontology_class": "ROS2"
+  },
+  {
+   "path": "concepts/ros2-lyrical.md",
+   "ontology_class": "ROS2"
+  },
+  {
+   "path": "concepts/swarm-coordination.md",
+   "ontology_class": "SwarmCoordinator"
+  },
+  {
+   "path": "concepts/swarm-modes.md",
+   "ontology_class": "SwarmCoordinator"
+  },
+  {
+   "path": "concepts/indi-stability-tilt-rotor-vtol.md",
+   "ontology_class": "VTOL"
+  },
+  {
+   "path": "concepts/skydrive-verty-korea-evtol-mou.md",
+   "ontology_class": "VTOL"
+  }
+ ]
+}

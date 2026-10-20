@@ -4,6 +4,7 @@ created: 2026-10-16
 updated: 2026-10-20
 type: concept
 domain: hardware
+ontology_class: Frame
 tags: [drone, drone-hw, hardware]
 sources: [inbox/processed/fetch-2026-10-16-hw-paper-carbon-fiber-3d-printed-frame-hoang-2026.md, inbox/processed/fetch-2026-10-16-hw-paper-uav-airframe-strength-stiffener-ye-2025.md, inbox/processed/fetch-2026-10-16-hw-paper-mrs-drone-modular-hert-2023.md, inbox/processed/fetch-2026-10-17-arxiv-a-self-rotating-tri-rotor-uav-for-field-of-view-expansion-an.md, inbox/processed/fetch-2026-10-17-arxiv-fam-dq-a-dual-quadrotor-based-fully-actuated-aerial-manipula.md, inbox/processed/fetch-2026-10-20-arxiv-a-generative-neural-network-approach-for-3d-multi-criteria-d.md, inbox/processed/fetch-2026-10-20-arxiv-capsulebot-a-novel-hybrid-aerial-ground-bi-copter-robot-with.md]
 confidence: medium

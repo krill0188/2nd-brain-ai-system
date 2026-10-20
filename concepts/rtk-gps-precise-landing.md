@@ -7,6 +7,7 @@ tags: [drone-hw, rtk, gps, gnss, differential, precision, landing]
 sources: [inbox/fetch-2026-09-09-yt-fix-your-rtk-drone-positioning-step-by-step-base-setup-guide.md, inbox/processed/fetch-2026-10-16-kci-다중-스펙트럼-헬리패드를-이용한-야간-uav-정밀-착륙-ir적외선-영상-기반-정렬-및-거리-센서-기반-하강-.md]
 confidence: medium
 domain: hardware
+ontology_class: GNSS
 contested: false
 contradictions: []
 ---

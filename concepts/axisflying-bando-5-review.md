@@ -4,6 +4,7 @@ created: 2026-10-15
 updated: 2026-10-15
 type: concept
 domain: hardware
+ontology_class: Frame
 tags: [drone, drone-hw, fpv, hardware]
 sources: [inbox/processed/fetch-2026-10-15-yt-this-durable-drone-is-awful-axisflying-bando-5.md]
 confidence: low

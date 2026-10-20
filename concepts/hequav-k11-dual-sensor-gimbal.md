@@ -4,6 +4,7 @@ created: 2026-10-05
 updated: 2026-10-05
 type: concept
 domain: hardware
+ontology_class: Gimbal
 tags: [drone, drone-hw, hardware]
 sources: [inbox/processed/fetch-2026-10-05-yt-im-installing-a-smart-hequav-k11-gimbal-to-try.md]
 confidence: low

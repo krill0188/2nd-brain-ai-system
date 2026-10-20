@@ -9,6 +9,7 @@ confidence: low
 contested: false
 contradictions: []
 domain: hardware
+ontology_class: FlightController
 note: "출처는 Pixhawk 표준(DS-009)·Holybro 문서 기반 정리(방법론)이나 raw/ 스냅샷 미보존 — 2026-08-10 프로버넌스 감사에서 발견, 재캡처 필요"
 ---
 

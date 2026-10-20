@@ -9,6 +9,7 @@ confidence: medium
 contested: false
 contradictions: []
 domain: flight-control
+ontology_class: ArduPilot
 note: "출처는 공식 파라미터 메타데이터 자동 diff(방법론)이나 raw/ 스냅샷 미보존 — 2026-08-10 프로버넌스 감사에서 발견, 재캡처 필요"
 ---
 

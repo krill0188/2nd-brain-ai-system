@@ -8,6 +8,7 @@ sources:
   - raw/articles/entity-ardupilot.md
 confidence: high
 domain: flight-control
+ontology_class: ArduPilot
 contested: false
 contradictions: []
 ---

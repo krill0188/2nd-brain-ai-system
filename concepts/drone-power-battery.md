@@ -7,6 +7,7 @@ tags: [drone-hw, battery, power, ESC, motor, LiPo]
 sources: [raw/articles/px4-basic-concepts.md, raw/articles/px4-hardware-overview.md, raw/papers/_unclassified/소형-무인항공기용-리튬이온-배터리-등가회로모델-파라미터-추정에-관한-연구.md, raw/papers/_unclassified/전기-추진-시스템을-이용하는-고정익-무인기를-위한-복귀-가능-여부-판단-로직-설계.md, inbox/processed/fetch-2026-10-17-arxiv-machine-learning-based-battery-state-of-health-prediction-fo.md, inbox/processed/fetch-2026-10-18-yt-i-exploded-a-lipo-in-a-600-safe-it-shot-flames.md]
 confidence: high
 domain: hardware
+ontology_class: Battery
 contested: true
 contradictions: [lipo-charging-cabinet-fire-test]
 ---

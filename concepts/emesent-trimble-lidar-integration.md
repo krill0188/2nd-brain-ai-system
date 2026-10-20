@@ -4,6 +4,7 @@ created: 2026-09-17
 updated: 2026-09-17
 type: concept
 domain: hardware
+ontology_class: LiDAR
 tags: [drone, hardware]
 sources: [inbox/fetch-2026-09-17-rss-dronedj.md]
 confidence: medium

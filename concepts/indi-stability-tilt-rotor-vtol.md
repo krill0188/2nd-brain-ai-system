@@ -9,6 +9,7 @@ confidence: high
 contested: false
 contradictions: []
 domain: flight-control
+ontology_class: VTOL
 ---
 
 # INDI Pitch-Rate Controller Stability Analysis for Tilt-Rotor VTOL UAV
