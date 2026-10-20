@@ -206,3 +206,17 @@ For every canonical create, update, filed query, archive, or delete operation:
 When an index section exceeds 50 entries, divide it into stable subsections. When
 the full index exceeds 200 entries, add a thematic navigation map without changing
 the canonical count. Rotate the log only under its policy in `log.md`.
+
+## Derived RDB Layer (SQLite) — added 2026-10-20 (master-approved design)
+
+A deterministic, regenerable relational layer is built **from** the Markdown above. It is never a source of truth.
+
+- **Source of truth:** Git/Markdown (`raw/`, canonical pages, `ontology/`). The SQLite database is derived; delete it and rebuild at any time. The builder lives in the web repository (`drone-wiki-web/scripts/build-knowledge-db.py`) because it joins the published snapshot with `data/ontology`; run it with `--wiki-root ~/2nd` for an internal (unpublished) build. Same inputs must produce byte-identical output.
+- **`domain` is preserved verbatim.** `documents.domain` stores the frontmatter value exactly (NULL when absent). The builder never reclassifies, normalizes, or infers `domain`. Values outside the official list are kept and only flagged (`domain_registered = 0`). Path-derived guesses go to `domain_hint`, never to `domain`.
+- **`tags`, `domain`, and ontology class are three different things** and are stored separately (`document_tags`, `documents.domain`, `ontology_nodes.class_name`). A new `domain` or ontology class is proposed (`ontology_class_proposals`, migration proposal documents), never auto-applied.
+- **Claim status:** `verified` = a verbatim quote was matched against the source text; `sourced` = the cited source file exists (SHA-256 recorded) but the page sentence is a summary; `contested` = the page lists contradictions; `unverified` = no usable source; `blocked` = the cited path cannot be resolved. Sentences extracted from canonical pages (`^[source]` markers) can reach `sourced` at most.
+- **Graph boundary:** `document_links` (wikilinks) is the Wiki graph for navigation only. `ontology_relations` holds classes, entities, and verified/derived relations only. The discovery graph is never loaded and never a factual basis for answers.
+- **Query order for answers:** domain filter → ontology class/entity → ontology relations → claims → evidence → (supplementary) canonical pages → NVIDIA NIM for wording only. Wiki pages alone never produce a confirmed answer.
+- **Publication:** the database file/dump is never part of the publication snapshot; the web build derives it from the already-published snapshot only.
+
+Details and commands: `docs/RDB_LAYER.md`.
