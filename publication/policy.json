@@ -87,7 +87,7 @@
     "concepts/drone-assistant-finland-regulatory-tool.md": "dafb70b554f05d86008b5cc7ec73498e76be4a7215fb6c53cdd0d967f5c3cb6c",
     "concepts/drone-news-2026-09-12.md": "9eab96000d1025a25b2293c42357aa733ea494918598719142cf1cdfbf31de98",
     "concepts/drone-news-regulations.md": "b260e03a107ee1eab4a9c957a176d28d7cf3ad6159daf1b394258c5cd3d51fb1",
-    "concepts/drone-regulations.md": "ce0e0887c289f541edb2e543e7ab003e9a34212f85a70c7321a028ec8888802a",
+    "concepts/drone-regulations.md": "080b52335c6e839e65ffbfe39be438a073ba1ef429142d59ac37d1c5bba7316a",
     "concepts/drone-rice-heading-detection.md": "a970e53fb1d7e0838696c926ab723febc67eca7eefb737077da3ea854b010f60",
     "concepts/drone-safety-statement-modernization-act.md": "a057bfbeff9383bb62fb334e15e3982d1b4c1fb425eab91f9e7c7da7ec676fc7",
     "concepts/drone-sw.md": "56cb354dd2c3cfb3ead77d6c475cbe2f67f678ed31497d3a1ec69e69c75e4668",
@@ -565,7 +565,14 @@
     "concepts/ros2-advanced.md": "3b135f236e96f1e3911e3505e29c81f37dbdda673c175d0a1d2bd0f0560ba2d4",
     "concepts/ros2-lyrical.md": "49cf1bc4c3ce9ad4f11af5b513a40dcf9a1df72f22f352d99c2581e9125379d6",
     "entities/ardupilot.md": "abd1c1946b001bbce7550f00469a65590983eb3d2d4644cf5dd2d18857414750",
-    "ontology/class-approvals-20261020.json": "f85c4c12d0c56d07c6e1c66edb378ead3598e51bd93c16b4aaf7c67acc15767c"
+    "ontology/class-approvals-20261020.json": "f85c4c12d0c56d07c6e1c66edb378ead3598e51bd93c16b4aaf7c67acc15767c",
+    "concepts/kr-drone-business-registration.md": "2b47e68911d07e820b46c666d32755a9fe215b5d877a4995febe7b8b7d91185b",
+    "concepts/kr-drone-flight-approval-airspace.md": "5c7a1485ae99e2d17a6a383c39fe812bb88d4c54ecce114efdc7549a051ad7cc",
+    "concepts/kr-drone-law-framework.md": "c7e91bc43146110494bda514eb791c86faa453ffaf80704b6cf5623f36da35ce",
+    "concepts/kr-drone-penalties.md": "599d9dcd278d5390aa008be1a908b388c17d9b1d9660d855f8cd3c17cd18731c",
+    "concepts/kr-public-emergency-drone-exemption.md": "a0813dca044ccb41c8a91a8512fd2f6b44e6aab43ddf766fb2901bf12337735a",
+    "concepts/kr-ultralight-registration-certification.md": "ce28cd2d8cf0b46061c879b0b8b4955c3b176397895e72f87984e1e6f7797dc0",
+    "concepts/kr-unmanned-special-flight-approval.md": "40e1e5077bc2467cf941de6b46808a6f9e519d35978a248e1625273493525487"
   },
   "baseline": {
     "description": "Existing local public snapshot bytes; retention only, not a declaration of public classification. Never refresh automatically.",
