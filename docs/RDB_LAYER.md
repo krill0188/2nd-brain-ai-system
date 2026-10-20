@@ -27,5 +27,12 @@ npx tsx scripts/test-kg-answer.ts [--live]
 - 위키 문장 claim은 최대 `sourced`(요약이라 원문 인용 대조 불가).
 - 출처 경로 해석: 자동 갱신이 `inbox/X` 출처를 `inbox/processed/X`로 옮기므로 해석기가 이동을 따라간다. `^[` 접두가 붙은 sources 항목은 정규화(원본은 수정하지 않음).
 
+## 위키→클래스 연결 제안 (2026-10-20)
+- `ontology_node_proposals` 표에 슬러그·제목·태그 키워드 규칙으로 만든 제안이 있다(등급 A 슬러그/제목 단일 후보, B 복수 후보, C 태그만). 목록은 `drone-wiki-web/docs/ontology-class-proposals.md`.
+- 문서의 `ontology_class`는 자동으로 바꾸지 않는다. 승인한 제안만 해당 문서 frontmatter에 반영하며, 문서 변경은 발행 게이트(해시 승인) 대상이다.
+
+## 최신성 검사
+- `build-knowledge-db.py --verify`는 재생성 결과와 커밋된 `knowledge.sql`을 바이트 비교한다(지문에 빌더·스키마 해시 포함). 위키 스냅샷을 갱신한 뒤에는 덤프를 다시 만들고 커밋해야 한다.
+
 ## 롤백
 - `KG_BACKEND=json`(기본)로 즉시 복귀. 덤프 삭제와 재생성은 원본에 영향이 없다.
