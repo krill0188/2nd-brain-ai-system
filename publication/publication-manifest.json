@@ -25,220 +25,36 @@
   ],
   "approved_source_versions": [
     {
-      "path": "concepts/amprius-sicore-battery.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
+      "path": "concepts/drone-regulations.md",
+      "source_commit": "2acd14173633978e04c0ae6fb217aa39b0e2da08"
     },
     {
-      "path": "concepts/ardupilot-architecture.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
+      "path": "concepts/kr-drone-business-registration.md",
+      "source_commit": "2acd14173633978e04c0ae6fb217aa39b0e2da08"
     },
     {
-      "path": "concepts/ardupilot-params-by-version.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
+      "path": "concepts/kr-drone-flight-approval-airspace.md",
+      "source_commit": "2acd14173633978e04c0ae6fb217aa39b0e2da08"
     },
     {
-      "path": "concepts/ardupilot-plane-4-7.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
+      "path": "concepts/kr-drone-law-framework.md",
+      "source_commit": "2acd14173633978e04c0ae6fb217aa39b0e2da08"
     },
     {
-      "path": "concepts/axisflying-bando-5-review.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
+      "path": "concepts/kr-drone-penalties.md",
+      "source_commit": "2acd14173633978e04c0ae6fb217aa39b0e2da08"
     },
     {
-      "path": "concepts/betaflight-fc-alignment-wizard.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
+      "path": "concepts/kr-public-emergency-drone-exemption.md",
+      "source_commit": "2acd14173633978e04c0ae6fb217aa39b0e2da08"
     },
     {
-      "path": "concepts/betaflight.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
+      "path": "concepts/kr-ultralight-registration-certification.md",
+      "source_commit": "2acd14173633978e04c0ae6fb217aa39b0e2da08"
     },
     {
-      "path": "concepts/crazyflie-brushless-dynamics-model.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/datalink-communication.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/drone-esc-failure-cases.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/drone-payload-systems.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/drone-power-battery.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/emesent-trimble-lidar-integration.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/event-camera-drone.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/event38-tb2-drops-integration.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/fam-dq-dual-quadrotor-aerial-manipulator.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/flight-controller-hardware.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/fpv-motor-selection-guide.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/hequav-k11-dual-sensor-gimbal.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/indi-stability-tilt-rotor-vtol.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/kci-fixed-wing-return-feasibility-logic.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/kci-uav-battery-ecm-parameter-estimation.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/lipo-charging-cabinet-fire-test.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/mavros.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/multirotor-energy-power-models.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/multirotor-propulsion-sizing-methods.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/param-diff-copter-4-6-0-4-7-0.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/param-diff-copter-4-7-0-4-7-1.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/param-diff-plane-4-7-0-4-7-1.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/param-diff-px4-1-16-0-1-17-0.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/pixhawk-setup-params.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/px4-architecture-deep.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/px4-cicd-pipeline.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/px4-control-tuning.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/px4-offboard-control.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/px4-params-by-version.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/px4-pid-tuning.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/px4-system-architecture.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/px4-tuning-control.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/px4-v1-17.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/rincell-rc50t-drone-cell.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/ros2-advanced-integration.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/ros2-advanced.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/ros2-drone-integration.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/ros2-lyrical.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/rtk-gps-precise-landing.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/skydrive-verty-korea-evtol-mou.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/swarm-coordination.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/swarm-modes.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/uav-airframe-structure-optimization-research.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/uav-battery-soh-transfer-learning.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "concepts/uav-propeller-fault-detection-hybrid-data.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "entities/ardupilot.md",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
-    },
-    {
-      "path": "ontology/class-approvals-20261020.json",
-      "source_commit": "b2d72e772927fac339f8371f8f49e1bf3e670b83"
+      "path": "concepts/kr-unmanned-special-flight-approval.md",
+      "source_commit": "2acd14173633978e04c0ae6fb217aa39b0e2da08"
     }
   ],
   "revoked_paths": []
