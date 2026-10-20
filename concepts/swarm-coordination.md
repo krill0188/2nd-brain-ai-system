@@ -1,10 +1,10 @@
 ---
 title: Swarm Drone Coordination
 created: 2026-07-27
-updated: 2026-10-17
+updated: 2026-10-20
 type: concept
 tags: [swarm, drone-ai, multi-drone, formation, coordination]
-sources: [raw/articles/mastervault-recon-swarm.md, raw/articles/mastervault-swarm-architecture.md, raw/papers/swarm/occupation-measure-mean-field-control-optimization-over-measures-and-frank-wolfe.md, raw/papers/swarm/다수-vtol-무인기의-군집비행을-위한-이착륙-운용방안-및-실비행-적용.md, inbox/processed/fetch-2026-10-17-arxiv-coverage-preserving-self-healing-in-partially-observable-3d-.md, inbox/processed/fetch-2026-10-17-kci-드론-생존성-향상을-위한-mavlink-프로토콜-변조-기반의-가상-디코이-군집-형성-기만-시스템.md]
+sources: [raw/articles/mastervault-recon-swarm.md, raw/articles/mastervault-swarm-architecture.md, raw/papers/swarm/occupation-measure-mean-field-control-optimization-over-measures-and-frank-wolfe.md, raw/papers/swarm/다수-vtol-무인기의-군집비행을-위한-이착륙-운용방안-및-실비행-적용.md, inbox/processed/fetch-2026-10-17-arxiv-coverage-preserving-self-healing-in-partially-observable-3d-.md, inbox/processed/fetch-2026-10-17-kci-드론-생존성-향상을-위한-mavlink-프로토콜-변조-기반의-가상-디코이-군집-형성-기만-시스템.md, inbox/processed/fetch-2026-10-20-arxiv-fault-tolerant-dynamic-task-assignment-for-uav-based-search-.md, inbox/processed/fetch-2026-10-20-arxiv-agent-based-simulation-of-uav-battery-recharging-for-iot-app.md, inbox/processed/fetch-2026-10-19-arxiv-bi-level-route-optimization-and-path-planning-with-hazard-ex.md, inbox/processed/fetch-2026-10-20-arxiv-exploiting-a-fleet-of-uavs-for-monitoring-and-data-acquisiti.md]
 confidence: medium
 domain: ai-autonomy
 contested: false
@@ -141,6 +141,13 @@ Yu·You·Pei의 occupation-measure mean-field control(OM-MFC)은 개별 에이�
 
 - 네트워크 분할 후 커버리지를 보존하며 자가 복구하는 그래프 트랜스포머(AdDiff-GT)는 8,000개 분할 시나리오 시뮬레이션에서 6개 기준선보다 우수했다. 시뮬레이션 전용 결과다: [[addiff-gt-uav-swarm-self-healing]]^[inbox/processed/fetch-2026-10-17-arxiv-coverage-preserving-self-healing-in-partially-observable-3d-.md]
 - 추가 기체 없이 MAVLink 변조로 최대 99대 가상 디코이를 만들어 공격 표면을 최대 100배 넓히는 기만 방어: [[kci-mavlink-virtual-decoy-swarm-deception]]^[inbox/processed/fetch-2026-10-17-kci-드론-생존성-향상을-위한-mavlink-프로토콜-변조-기반의-가상-디코이-군집-형성-기만-시스템.md]
+
+## 최신 근거 연결 (2026-10-20)
+
+- 센서·액추에이터 고장 후 잔여 능력과 배터리 도달 범위를 반영해 탐색 임무를 재할당하는 확률적 동적계획법 정책(오프라인 계산, 온라인 적용, 시뮬레이션): [[fault-tolerant-dynamic-task-assignment-uav-search]]^[^[inbox/processed/fetch-2026-10-20-arxiv-fault-tolerant-dynamic-task-assignment-for-uav-based-search-.md]]
+- 군집 드론이 재충전 결정을 서로 알리지 않는 조건의 에이전트 기반 시뮬레이션: [[uav-battery-recharge-agent-based-simulation]]^[^[inbox/processed/fetch-2026-10-20-arxiv-agent-based-simulation-of-uav-battery-recharging-for-iot-app.md]]
+- 위험 지점 방문 순서(VRP)와 배터리 예산 하위 경로를 나눈 이중 레벨 경로 계획: [[bilevel-route-hazard-exploration-uav]]^[^[inbox/processed/fetch-2026-10-19-arxiv-bi-level-route-optimization-and-path-planning-with-hazard-ex.md]]
+- 페이로드·배터리 제약 아래 Differential Evolution으로 센서 방문 수를 최대화하는 UAV 팀 데이터 수집 계획: [[uav-fleet-sensor-network-data-collection-de]]^[^[inbox/processed/fetch-2026-10-20-arxiv-exploiting-a-fleet-of-uavs-for-monitoring-and-data-acquisiti.md]]
 
 ## 📰 최근 관련 소식
 - 충남 첫 ‘국가 지정 드론공원’ 탄생…당진서 비행·교육·대회 한 번에 (녹색경제신문, Tue, 04 Au) — https://news.google.com/rss/articles/CBMiaEFVX3lxTE9ySFBDbWVDbGdTd3ZTTVlfUWhBYTRDNURtZW8zc2FmLW9CZHZmcF8wcEdFa2FfOVpabEgzM1VjV3lEUFJ3V0pteGtDLWlDN3VEYmhmMDdJQTI1bXl6anNrRW9XTjFxdDk2?oc=5

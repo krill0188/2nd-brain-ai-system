@@ -1,11 +1,11 @@
 ---
 title: "중국 드론 수출 통제"
 created: 2026-08-06
-updated: 2026-08-06
+updated: 2026-10-20
 type: concept
 tags: [drone, regulations]
 domain: regulations
-sources: [inbox/fetch-2026-08-06-rss-dronelife.md]
+sources: [inbox/fetch-2026-08-06-rss-dronelife.md, inbox/processed/fetch-2026-10-19-yt-3dxr-supply-and-stock-latest-oct26-china-rc-component-export.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -26,6 +26,11 @@ contradictions: []
 
 - [[fcc-drone-regulations]] — 미국 FCC의 외국산 드론 규제
 - [[drone-regulations]] — 드론 규제 개요
+
+## 최신 근거 연결 (2026-10-20)
+
+- 영국 유통업체 증언(영상 자막, 2026-10-18)에 따르면 일부 중국 제조사의 비행 컨트롤러 반출이 막혔고 브랜드별로 성패가 갈리며, Holybro는 생산지를 옮겨 정상 유통 중이고 NDAA 준수 제품이 늘고 있다: [[china-rc-component-supply-3dxr-2026-10]]^[^[inbox/processed/fetch-2026-10-19-yt-3dxr-supply-and-stock-latest-oct26-china-rc-component-export.md]]
+- 단일 영상 자막이고 자막이 잘려 있으며 구체 규정·시행일 언급이 없어, 위 "공고 34호" 조치와의 인과는 확인되지 않는다. 이 페이지의 `confidence`는 올리지 않는다.
 
 ## 📰 최근 관련 소식
 - “한국? 북한보다 드론 못 쓰잖아”…외신의 ‘뼈 때리는’ 지적 나왔다, 이유는? [밀리터리+] (나우뉴스, Wed, 05 Au) — https://news.google.com/rss/articles/CBMicEFVX3lxTE1zc2ZnMTVET2duS1VDTGhkcFJLb1Y2Tm55QTZVaU5OeDVzUEdmeTVxRXo1UUR6X2FqY2l4eDB4T1VjTjFwRmZDQzIwV1cyeUtleXBMNWtFQlNYekRhM3VOLWNYNUltejJIcV9TOG5aVnA?oc=5

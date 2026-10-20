@@ -1,11 +1,11 @@
 ---
 title: "다중 UAV 케이블 매달림 페이로드 운송 연구 (센서·유도·입력성형)"
 created: 2026-10-17
-updated: 2026-10-18
+updated: 2026-10-20
 type: concept
 domain: hardware
 tags: [drone, drone-hw, research]
-sources: [inbox/processed/fetch-2026-10-17-arxiv-compact-force-sensor-for-dual-uav-cable-suspended-payload-tr.md, inbox/processed/fetch-2026-10-17-arxiv-equivalent-agent-guidance-for-cooperative-uav-payload-transp.md, inbox/processed/fetch-2026-10-17-arxiv-global-sensitive-based-input-shaping-for-uav-payload-precisi.md, inbox/processed/fetch-2026-10-18-arxiv-autotrans-a-complete-planning-and-control-framework-for-auto.md]
+sources: [inbox/processed/fetch-2026-10-17-arxiv-compact-force-sensor-for-dual-uav-cable-suspended-payload-tr.md, inbox/processed/fetch-2026-10-17-arxiv-equivalent-agent-guidance-for-cooperative-uav-payload-transp.md, inbox/processed/fetch-2026-10-17-arxiv-global-sensitive-based-input-shaping-for-uav-payload-precisi.md, inbox/processed/fetch-2026-10-18-arxiv-autotrans-a-complete-planning-and-control-framework-for-auto.md, inbox/processed/fetch-2026-10-19-arxiv-an-input-output-feedback-linearization-based-exponentially-s.md, inbox/processed/fetch-2026-10-19-arxiv-temporal-waypoint-navigation-of-multi-uav-payload-system-usi.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -35,3 +35,8 @@ contradictions: []
 ## 최신 근거 연결 (2026-10-18)
 
 - 협업 운송 외에 줄 매단 페이로드 UAV의 실시간 궤적 계획과 적응형 NMPC 제어를 통합한 프레임워크도 보고됐다(초록 기준, 코드 공개 여부는 확인되지 않음): [[autotrans-uav-suspended-payload-planning-control]]^[inbox/processed/fetch-2026-10-18-arxiv-autotrans-a-complete-planning-and-control-framework-for-auto.md]
+
+## 최신 근거 연결 (2026-10-20)
+
+- 케이블이 아니라 2자유도 자기 구형 조인트로 강체 페이로드 프레임에 UAV를 연결한 구성도 연구된다: 입출력 피드백 선형화 추적 제어가 지수 안정이고 Gazebo 실시간 시뮬레이션에서 외란과 페이로드 질량 불확실성에 강건하다고 한다^[^[inbox/processed/fetch-2026-10-19-arxiv-an-input-output-feedback-linearization-based-exponentially-s.md]], STL 시간 사양을 HOCBF로 처리한 웨이포인트 항법은 Gazebo 택배 시나리오로 시연했다^[^[inbox/processed/fetch-2026-10-19-arxiv-temporal-waypoint-navigation-of-multi-uav-payload-system-usi.md]]: [[multi-uav-payload-transport-rao-controllers]]
+- 위 케이블 방식 세 연구와 마찬가지로 이 구성의 결과도 초록상 시뮬레이션 단계이며 실기체 시험은 확인되지 않는다.

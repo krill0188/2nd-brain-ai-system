@@ -1,11 +1,11 @@
 ---
 title: "프로펠러 성능 시험·측정 연구 (벤치, 저 Re, 덕티드 동축)"
 created: 2026-10-16
-updated: 2026-10-17
+updated: 2026-10-20
 type: concept
 domain: hardware
 tags: [drone, drone-hw, hardware]
-sources: [inbox/processed/fetch-2026-10-16-hw-paper-propeller-motor-static-bench-milenkovic-babic-2026.md, inbox/processed/fetch-2026-10-16-hw-paper-propeller-test-bench-esp32-prasetiyo-2026.md, inbox/processed/fetch-2026-10-16-hw-paper-propulsion-efficiency-goli-2023.md, inbox/processed/fetch-2026-10-16-hw-paper-small-propeller-low-re-mollick-2024.md, inbox/processed/fetch-2026-10-16-hw-paper-ducted-coaxial-rotor-hover-li-2023.md, inbox/processed/fetch-2026-10-17-arxiv-machine-learning-for-uav-propeller-fault-detection-based-on-.md]
+sources: [inbox/processed/fetch-2026-10-16-hw-paper-propeller-motor-static-bench-milenkovic-babic-2026.md, inbox/processed/fetch-2026-10-16-hw-paper-propeller-test-bench-esp32-prasetiyo-2026.md, inbox/processed/fetch-2026-10-16-hw-paper-propulsion-efficiency-goli-2023.md, inbox/processed/fetch-2026-10-16-hw-paper-small-propeller-low-re-mollick-2024.md, inbox/processed/fetch-2026-10-16-hw-paper-ducted-coaxial-rotor-hover-li-2023.md, inbox/processed/fetch-2026-10-17-arxiv-machine-learning-for-uav-propeller-fault-detection-based-on-.md, inbox/processed/fetch-2026-10-19-arxiv-airspeed-estimation-for-uavs-using-only-propeller-feedback.md, inbox/processed/fetch-2026-10-20-arxiv-digital-twin-of-a-dc-brushless-electric-motor-propeller-syst.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -29,3 +29,8 @@ contradictions: []
 ## 최신 근거 연결 (2026-10-17)
 
 - 프로펠러 추력·토크를 RPM 입력 LSTM으로 모델링하고 고장 위치·손상 정도를 CNN으로 분류한 연구(테스트 세트 정확도 80% 이상, 기체 제작 편차로 약식 보정 필요): [[uav-propeller-fault-detection-hybrid-data]]^[inbox/processed/fetch-2026-10-17-arxiv-machine-learning-for-uav-propeller-fault-detection-based-on-.md]
+
+## 최신 근거 연결 (2026-10-20)
+
+- 프로펠러 전력·회전속도로 대기속도를 역산하는 모델을 BEM 시뮬레이션, 풍동, 비행시험 데이터로 유도해 피토관 대체·중복용으로 제안했다(고정익, 초록 기준): [[propeller-feedback-airspeed-estimation]]^[^[inbox/processed/fetch-2026-10-19-arxiv-airspeed-estimation-for-uavs-using-only-propeller-feedback.md]] — 위 벤치 시험이 정적 추력 중심인 데 비해 전진 비행 조건의 프로펠러 응답을 측정 수단으로 쓴 접근이다.
+- 모터·프로펠러 쌍의 정지 추력 응답을 디지털 트윈과 비교한 결과 선형화 모델이 과도 응답에서 크게 어긋났다: [[bldc-motor-propeller-digital-twin-static-thrust]]^[^[inbox/processed/fetch-2026-10-20-arxiv-digital-twin-of-a-dc-brushless-electric-motor-propeller-syst.md]]

@@ -1,11 +1,11 @@
 ---
 title: "러시아ㆍ우크라이나 전쟁이 드론 테러에 미치는 영향과 시사점 (KCI)"
 created: 2026-10-01
-updated: 2026-10-02
+updated: 2026-10-20
 type: concept
 domain: regulations
 tags: [drone, regulations]
-sources: [inbox/processed/fetch-2026-10-01-kci-러시아ㆍ우크라이나-전쟁이-드론-테러에-미치는-영향과-시사점.md]
+sources: [inbox/processed/fetch-2026-10-01-kci-러시아ㆍ우크라이나-전쟁이-드론-테러에-미치는-영향과-시사점.md, inbox/processed/fetch-2026-10-20-kci-북한의-러시아우크라이나전-무인기-전훈-수용-징후와-대남-도발-시사점.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -47,3 +47,8 @@ contradictions: []
   획득 ROC/KPP(경제성·혹한기 운용·항재밍/보안·신속 전개)를 도출한 연구(KCI) — 전장에서
   검증된 드론 기술의 확산이 위협(테러 전용)과 아군 획득체계 개혁(전력화) 양쪽에 동시에
   영향을 준다는 점에서 상호 보완적 시사점을 제공한다.
+
+## 최신 근거 연결 (2026-10-20)
+
+- 같은 러·우전 교훈을 북한 쪽에서 본 평가: 임무별 분화, 자폭공격기 반복 시험·생산 확대 등 전술 모방·시험 단계의 징후는 있으나 교리·편제·교육훈련에 반영된 제도화 근거는 제한적이라고 한다(초록 기준, 원문 비공개): [[kci-north-korea-drone-lessons-adoption]]^[^[inbox/processed/fetch-2026-10-20-kci-북한의-러시아우크라이나전-무인기-전훈-수용-징후와-대남-도발-시사점.md]]
+- 위 "군용 체계 직접 이전보다 상용부품·정밀진입·다수 기체 운용이 현실적 위협"이라는 종합과 충돌하지 않으며, 대남 위협을 특정 형태로 단정하지 말고 정찰·침투, 교란·기만, 반복·분산 운용 중심으로 평가해야 한다는 점에서 보완 관계다.

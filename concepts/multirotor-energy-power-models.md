@@ -1,11 +1,11 @@
 ---
 title: "멀티로터 전력·에너지 소비 모델 연구"
 created: 2026-10-16
-updated: 2026-10-18
+updated: 2026-10-20
 type: concept
 domain: hardware
 tags: [drone, drone-hw, hardware]
-sources: [inbox/processed/fetch-2026-10-16-hw-paper-multirotor-power-model-gong-2022.md, inbox/processed/fetch-2026-10-16-hw-paper-forward-flight-efficiency-patnaik-2025.md, inbox/processed/fetch-2026-10-16-hw-paper-quadrotor-electrical-energy-model-honcharenko-2026.md, inbox/processed/fetch-2026-10-16-hw-paper-multicopter-energy-aware-framework-gasche-2025.md, inbox/processed/fetch-2026-10-16-hw-paper-battery-discharge-model-validation-di-nisio-2023.md, inbox/processed/fetch-2026-10-17-arxiv-energy-efficient-drone-logistics-for-last-mile-delivery-impl.md, inbox/processed/fetch-2026-10-17-arxiv-machine-learning-based-battery-state-of-health-prediction-fo.md, inbox/processed/fetch-2026-10-18-arxiv-impact-of-spatial-proximity-on-drone-services.md, inbox/processed/fetch-2026-10-18-arxiv-physics-aware-truck-and-drone-delivery-planning-using-optimi.md]
+sources: [inbox/processed/fetch-2026-10-16-hw-paper-multirotor-power-model-gong-2022.md, inbox/processed/fetch-2026-10-16-hw-paper-forward-flight-efficiency-patnaik-2025.md, inbox/processed/fetch-2026-10-16-hw-paper-quadrotor-electrical-energy-model-honcharenko-2026.md, inbox/processed/fetch-2026-10-16-hw-paper-multicopter-energy-aware-framework-gasche-2025.md, inbox/processed/fetch-2026-10-16-hw-paper-battery-discharge-model-validation-di-nisio-2023.md, inbox/processed/fetch-2026-10-17-arxiv-energy-efficient-drone-logistics-for-last-mile-delivery-impl.md, inbox/processed/fetch-2026-10-17-arxiv-machine-learning-based-battery-state-of-health-prediction-fo.md, inbox/processed/fetch-2026-10-18-arxiv-impact-of-spatial-proximity-on-drone-services.md, inbox/processed/fetch-2026-10-18-arxiv-physics-aware-truck-and-drone-delivery-planning-using-optimi.md, inbox/processed/fetch-2026-10-19-arxiv-a-modular-energy-aware-framework-for-multicopter-modeling-in.md, inbox/processed/fetch-2026-10-20-arxiv-agent-based-simulation-of-uav-battery-recharging-for-iot-app.md, inbox/processed/fetch-2026-10-20-arxiv-capsulebot-a-novel-hybrid-aerial-ground-bi-copter-robot-with.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -38,3 +38,9 @@ contradictions: []
 
 - 드론 간 근접 비행의 위치·이격 거리·풍속 조건에서 스카이웨이 구간 에너지 소비 데이터를 수집하고 상호 에너지 영향을 분석하는 GUI를 만들었다(정량 결과는 초록에 없음): [[drone-proximity-energy-impact-delivery]]^[inbox/processed/fetch-2026-10-18-arxiv-impact-of-spatial-proximity-on-drone-services.md]
 - 운동학·에너지 식을 포함한 궤적 최적화 해로 신경망을 학습해 비행 시간을 근사하고 트럭-드론 배송 계획에 넣으면, 비행 물리를 무시한 벤치마크보다 투어 시간과 드론 에너지 소비가 개선된다고 보고했다(초록 기준, 수치 없음): [[physics-aware-truck-drone-delivery-planning]]^[inbox/processed/fetch-2026-10-18-arxiv-physics-aware-truck-and-drone-delivery-planning-using-optimi.md]
+
+## 최신 근거 연결 (2026-10-20)
+
+- Gasche 외(2025)의 모듈식 모델은 수색구조 군집 경로계획 후속 연구의 기반으로 제시되며, 이종 군집의 기체별 모델링을 쉽게 한다고 주장한다(초록 기준, 정량 결과 없음): [[modular-energy-aware-multicopter-model]]^[^[inbox/processed/fetch-2026-10-19-arxiv-a-modular-energy-aware-framework-for-multicopter-modeling-in.md]] — 위 "파워트레인·배터리 수준" 항목과 같은 논문이라 독립 근거가 아니며 `confidence`는 유지한다.
+- 배터리 잔량이 아니라 재충전 정책 수준에서는, 드론 간 통신 없이 ChargerThreshold(CT) 정책이 30개 상황·6,000회 시뮬레이션에서 극단적 사용 조건에 더 안정적이었다(시뮬레이션만): [[uav-battery-recharge-agent-based-simulation]]^[^[inbox/processed/fetch-2026-10-20-arxiv-agent-based-simulation-of-uav-battery-recharging-for-iot-app.md]]
+- 바이콥터 4개 모터로 공중(틸트 로터)·지상(구동 바퀴) 추진을 겸하는 시제품이 낮은 소비전력을 확인했다고 보고한다(수치는 초록에 없음): [[capsulebot-hybrid-aerial-ground-bicopter]]^[^[inbox/processed/fetch-2026-10-20-arxiv-capsulebot-a-novel-hybrid-aerial-ground-bi-copter-robot-with.md]]

@@ -1,11 +1,11 @@
 ---
 title: "BLDC 모터·ESC 특성 측정·모델링 연구 (효율·열·추력 모델)"
 created: 2026-10-16
-updated: 2026-10-17
+updated: 2026-10-20
 type: concept
 domain: hardware
 tags: [drone, drone-hw, hardware]
-sources: [inbox/processed/fetch-2026-10-16-hw-paper-esc-motor-efficiency-characterization-brown-2019.md, inbox/processed/fetch-2026-10-16-hw-paper-bldc-inverter-electro-thermal-cheng-2021.md, inbox/processed/fetch-2026-10-16-hw-paper-digital-twin-bldc-gauthier-2023.md, inbox/processed/fetch-2026-10-16-hw-paper-motor-efficiency-estimation-cheng-2025.md, inbox/processed/fetch-2026-10-16-hw-paper-thrust-estimation-bemt-santos-2024.md, inbox/processed/fetch-2026-10-17-arxiv-a-robust-sensorless-controller-observer-strategy-for-pmsms-w.md, inbox/processed/fetch-2026-10-17-arxiv-how-to-model-your-crazyflie-brushless.md]
+sources: [inbox/processed/fetch-2026-10-16-hw-paper-esc-motor-efficiency-characterization-brown-2019.md, inbox/processed/fetch-2026-10-16-hw-paper-bldc-inverter-electro-thermal-cheng-2021.md, inbox/processed/fetch-2026-10-16-hw-paper-digital-twin-bldc-gauthier-2023.md, inbox/processed/fetch-2026-10-16-hw-paper-motor-efficiency-estimation-cheng-2025.md, inbox/processed/fetch-2026-10-16-hw-paper-thrust-estimation-bemt-santos-2024.md, inbox/processed/fetch-2026-10-17-arxiv-a-robust-sensorless-controller-observer-strategy-for-pmsms-w.md, inbox/processed/fetch-2026-10-17-arxiv-how-to-model-your-crazyflie-brushless.md, inbox/processed/fetch-2026-10-20-arxiv-digital-twin-of-a-dc-brushless-electric-motor-propeller-syst.md, inbox/processed/fetch-2026-10-19-arxiv-airspeed-estimation-for-uavs-using-only-propeller-feedback.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -33,3 +33,8 @@ contradictions: []
 
 - 센서리스 PMSM 제어기-관측기 연구는 UAV 프로펠러 제어를 가정했으나 검증이 수치 시뮬레이션에 그쳐 하드웨어 측정 중심인 위 결과와 성격이 다르다: [[pmsm-sensorless-controller-observer]]^[inbox/processed/fetch-2026-10-17-arxiv-a-robust-sensorless-controller-observer-strategy-for-pmsms-w.md]
 - Crazyflie Brushless(브러시드 대비 추력 약 50% 큼)의 동역학 모델 식별과 sim-to-real 전이 사례: [[crazyflie-brushless-dynamics-model]]^[inbox/processed/fetch-2026-10-17-arxiv-how-to-model-your-crazyflie-brushless.md]
+
+## 최신 근거 연결 (2026-10-20)
+
+- **강화(같은 논문의 추가 세부)**: 위 Gauthier 외(2023) 항목의 정지 추력 디지털 트윈은 KDE2315XF-885(885 Kv)+945 프로펠러와 Holybro ESC로 구동한 AIR 2216(880 Kv)+1045 프로펠러 실측과 비교했고, 정상상태와 과도 응답 모두 문헌의 선형화 모델과 상당히 어긋났다고 초록이 밝힌다: [[bldc-motor-propeller-digital-twin-static-thrust]]^[^[inbox/processed/fetch-2026-10-20-arxiv-digital-twin-of-a-dc-brushless-electric-motor-propeller-syst.md]] — 동일 논문의 재수집이라 독립 반복 검증이 아니며 `confidence`는 올리지 않는다.
+- 최신 ESC가 주는 전력·회전수 피드백만으로 고정익 대기속도를 추정(미학습 비행 데이터 nRMSE 약 5%)하는 연구는 ESC 텔레메트리를 추정 센서로 쓰는 사례다(초록 기준, 고정익 대상): [[propeller-feedback-airspeed-estimation]]^[^[inbox/processed/fetch-2026-10-19-arxiv-airspeed-estimation-for-uavs-using-only-propeller-feedback.md]]

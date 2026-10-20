@@ -1,10 +1,10 @@
 ---
 title: Drone Payload Systems
 created: 2026-07-27
-updated: 2026-10-18
+updated: 2026-10-20
 type: concept
 tags: [drone-hw, payload, gimbal, camera, gripper]
-sources: [raw/articles/px4-basic-concepts.md, raw/articles/px4-hardware-overview.md, inbox/processed/fetch-2026-10-17-arxiv-fam-dq-a-dual-quadrotor-based-fully-actuated-aerial-manipula.md, inbox/processed/fetch-2026-10-17-arxiv-compact-force-sensor-for-dual-uav-cable-suspended-payload-tr.md, inbox/processed/fetch-2026-10-17-arxiv-speech-enhancement-using-ego-noise-references-with-a-microph.md, inbox/processed/fetch-2026-10-18-arxiv-autotrans-a-complete-planning-and-control-framework-for-auto.md]
+sources: [raw/articles/px4-basic-concepts.md, raw/articles/px4-hardware-overview.md, inbox/processed/fetch-2026-10-17-arxiv-fam-dq-a-dual-quadrotor-based-fully-actuated-aerial-manipula.md, inbox/processed/fetch-2026-10-17-arxiv-compact-force-sensor-for-dual-uav-cable-suspended-payload-tr.md, inbox/processed/fetch-2026-10-17-arxiv-speech-enhancement-using-ego-noise-references-with-a-microph.md, inbox/processed/fetch-2026-10-18-arxiv-autotrans-a-complete-planning-and-control-framework-for-auto.md, inbox/processed/fetch-2026-10-19-arxiv-an-input-output-feedback-linearization-based-exponentially-s.md, inbox/processed/fetch-2026-10-20-arxiv-autonomous-agricultural-monitoring-with-aerial-drones-and-rf.md]
 confidence: high
 domain: hardware
 contested: false
@@ -175,3 +175,8 @@ Recommended: < 70% for stable flight
 ## 최신 근거 연결 (2026-10-18)
 
 - 줄로 매단 페이로드 UAV를 위해 전신 안전과 동역학 실현 가능성을 보장하는 실시간 궤적 계획과, 계층적 외란 보상을 쓰는 적응형 NMPC를 결합한 프레임워크(초록 수준, 정량 지표 없음): [[autotrans-uav-suspended-payload-planning-control]]^[inbox/processed/fetch-2026-10-18-arxiv-autotrans-a-complete-planning-and-control-framework-for-auto.md]
+
+## 최신 근거 연결 (2026-10-20)
+
+- 다중 UAV가 조인트로 연결된 강체 페이로드를 운송하는 제어 연구(피드백 선형화 추적, Gazebo 시뮬레이션): [[multi-uav-payload-transport-rao-controllers]]^[^[inbox/processed/fetch-2026-10-19-arxiv-an-input-output-feedback-linearization-based-exponentially-s.md]]
+- 센서 태그 구동용 RF 비콘 페이로드는 지상 시험에서 동작했으나 공중에서는 무선 간섭으로 태그 데이터 검출에 실패해, 무선 페이로드의 기체 탑재 간섭 검증이 필요함을 보여준다: [[rf-energy-harvesting-sensor-tags-drone-agriculture]]^[^[inbox/processed/fetch-2026-10-20-arxiv-autonomous-agricultural-monitoring-with-aerial-drones-and-rf.md]]

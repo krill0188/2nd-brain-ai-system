@@ -1,11 +1,11 @@
 ---
 title: "UAV 지원 업링크 전송 에너지 효율 최적화 (확률적 LoS 채널)"
 created: 2026-09-04
-updated: 2026-09-04
+updated: 2026-10-20
 type: concept
 domain: comms-protocol
 tags: [drone, datalink, comms-protocol]
-sources: []
+sources: [inbox/processed/fetch-2026-10-19-arxiv-meteorologically-introduced-impacts-on-aerial-channels-and-u.md, inbox/processed/fetch-2026-10-19-arxiv-joint-resource-management-for-energy-efficient-uav-assisted-.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -47,3 +47,8 @@ contradictions: []
 ## 관련 페이지
 
 UAV 통신 아키텍처 일반은 [[unet-multi-uav-networking]]를, 드론 데이터링크 기술은 [[datalink-communication]]을 참조한다.
+
+## 최신 근거 연결 (2026-10-20)
+
+- **적용 범위 주의(약화)**: 이 페이지가 요약한 확률적 LoS 채널 모델에는 강수·눈 등 기상 손실이 언급되어 있지 않다(요약 기준, 원문 비공개). 기상 연구는 mmWave에서 비, 근-THz에서 눈이 커버리지에 크게 영향을 준다고 보고하므로 고주파 대역에 이 결과를 옮길 때는 기상 항을 따로 검토해야 한다: [[uav-weather-aerial-channel-impacts]]^[^[inbox/processed/fetch-2026-10-19-arxiv-meteorologically-introduced-impacts-on-aerial-channels-and-u.md]] — 두 논문의 직접 비교 근거는 없어 `contested`로 표시하지 않는다.
+- 에너지 효율과 단말 배터리 지속성을 함께 다루는 UAV 지원 SWIPT-MEC의 강화학습 자원 관리(시뮬레이션): [[uav-swipt-mec-drl-resource-management]]^[^[inbox/processed/fetch-2026-10-19-arxiv-joint-resource-management-for-energy-efficient-uav-assisted-.md]]

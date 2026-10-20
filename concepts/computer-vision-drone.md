@@ -1,10 +1,10 @@
 ---
 title: Computer Vision for Drones
 created: 2026-07-27
-updated: 2026-10-18
+updated: 2026-10-20
 type: concept
 tags: [drone-ai, computer-vision, SLAM, detection, tracking, YOLO]
-sources: [raw/papers/_unclassified/감시-드론을-위한-심층-신경망-기반-지상-표적-추적-기법.md, inbox/processed/fetch-2026-10-02-yolo.md, inbox/processed/fetch-2026-10-17-kci-국방-ai-신뢰성ㆍ보안성-향상을-위한-러-우-전쟁-자폭-드론-촬영-이미지-기반-yolo-세그멘테이션-모델의-.md, inbox/processed/fetch-2026-10-18-arxiv-sea-you-later-metadata-guided-long-term-re-identification-fo.md, inbox/processed/fetch-2026-10-18-yolo.md]
+sources: [raw/papers/_unclassified/감시-드론을-위한-심층-신경망-기반-지상-표적-추적-기법.md, inbox/processed/fetch-2026-10-02-yolo.md, inbox/processed/fetch-2026-10-17-kci-국방-ai-신뢰성ㆍ보안성-향상을-위한-러-우-전쟁-자폭-드론-촬영-이미지-기반-yolo-세그멘테이션-모델의-.md, inbox/processed/fetch-2026-10-18-arxiv-sea-you-later-metadata-guided-long-term-re-identification-fo.md, inbox/processed/fetch-2026-10-18-yolo.md, inbox/processed/fetch-2026-10-19-yolo.md]
 confidence: medium
 domain: ai-autonomy
 contested: false
@@ -189,6 +189,10 @@ for waypoint in path:
 
 - UAV 메타데이터(GPS, 고도, 카메라 자세)로 단기 트랙을 장기 트랙으로 병합하는 모션 기반 MOT가 SeaDroneSee 추적 챌린지 테스트 분할에서 HOTA 69.5%, IDF1 85.9%를 보고했다(초록 기준): [[mg-mot-metadata-guided-uav-maritime-tracking]]^[inbox/processed/fetch-2026-10-18-arxiv-sea-you-later-metadata-guided-long-term-re-identification-fo.md]
 - 검출 프레임워크 최신 릴리스는 [[yolo-v8-4-181]]이다. 회전 박스 트래킹의 각도 일관성, JetPack 7.2 감지 등 Jetson 계열 companion computer 관련 변경이 있으나 드론 전용 수치는 없다.^[inbox/processed/fetch-2026-10-18-yolo.md]
+
+## 최신 근거 연결 (2026-10-20)
+
+- YOLO v8.4.182는 음수 너비·높이 라벨을 검증 단계에서 거부하고 캐시 버전을 올려 기존 데이터셋을 재스캔한다. 모델 아키텍처 변경은 없고 드론 전용 수치도 릴리스 노트에 없다: [[yolo-v8-4-182]]^[^[inbox/processed/fetch-2026-10-19-yolo.md]]
 
 ## 📰 최근 관련 소식
 - Army seeks next-gen missile that could shoot down small drones for less than $150K a pop (DefenseScoop, Tue, 04 Au) — https://news.google.com/rss/articles/CBMie0FVX3lxTE5GbzRtdW9TS3Y4b3JkaW9oazVGWW9nUWRxa0hGY25RV2h1UEg1MVVfQnhSUE1xS1VFMzVSUGRyckRva0VEZFV5aWhqeHZsbngwV2FpTDBLMVEwdllFOWVXYVZyU3g2VDNESS1WekhBLXNYOEdhMWZrenRESQ?oc=5

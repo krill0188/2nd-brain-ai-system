@@ -1,11 +1,11 @@
 ---
 title: "재구성형 UAV 스웜의 임무 중단을 고려한 임무 신뢰도 모델링 및 평가"
 created: 2026-09-12
-updated: 2026-10-07
+updated: 2026-10-20
 type: concept
 domain: ai-autonomy
 tags: [drone, swarm, ai-autonomy]
-sources: [raw/papers/swarm/mission-reliability-modeling-and-evaluation-for-reconfigurable-uav-swarm-conside.md]
+sources: [raw/papers/swarm/mission-reliability-modeling-and-evaluation-for-reconfigurable-uav-swarm-conside.md, inbox/processed/fetch-2026-10-20-arxiv-fault-tolerant-dynamic-task-assignment-for-uav-based-search-.md]
 confidence: low
 contested: false
 contradictions: []
@@ -37,3 +37,7 @@ contradictions: []
 - [[kci-manned-unmanned-teaming-defensive-air-ops]] — 유·무인 복합 편대 임무 효과도 분석
 - [[kci-quadrotor-compound-fault-accommodation]] — 개별 기체 센서·구동기 고장 추정·보상(노드 고장률 관점과 상보)
 - [[kci-vtol-swarm-takeoff-landing-operation]] — 군집 이착륙·천이 운용 절차
+
+## 최신 근거 연결 (2026-10-20)
+
+- 임무 신뢰도·중단 임계값 관점과 짝이 되는 고장 이후 재할당 관점: 센서·액추에이터 고장 뒤 잔여 능력과 배터리 도달 범위를 반영하는 확률적 동적계획법 할당 정책(시뮬레이션): [[fault-tolerant-dynamic-task-assignment-uav-search]]^[^[inbox/processed/fetch-2026-10-20-arxiv-fault-tolerant-dynamic-task-assignment-for-uav-based-search-.md]] — 이 페이지는 단일 출처·초록 기반이라 `confidence: low`를 유지한다.
