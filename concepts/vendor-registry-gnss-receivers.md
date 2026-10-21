@@ -13,10 +13,11 @@ contradictions: []
 
 # 드론 GNSS 수신기·모듈·안테나 제품 레지스트리
 
-GNSS 제조사 공식 페이지에서 확인한 제품 74건의 요약표(수집 2026-10-21). 페이지에 없는 값은 '—'(미확인)이며 추정하지 않는다. 제조사 개요는 [[vendor-registry-gnss-imu]], GNSS 공학 자료는 [[gnss-engineering-hub]]를 본다.^[inbox/processed/hw-20261021-gnss-vendors.md]
+GNSS 제조사 공식 페이지에서 확인한 제품 94건의 요약표(수집 2026-10-21). 페이지에 없는 값은 '—'(미확인)이며 추정하지 않는다. 제조사 개요는 [[vendor-registry-gnss-imu]], GNSS 공학 자료는 [[gnss-engineering-hub]]를 본다.^[inbox/processed/hw-20261021-gnss-vendors.md]
 
 | 제조사 | 제품 | 지원 위성군 | 주파수 대역 | 인터페이스 | RTK/PPK/PPP |
 |---|---|---|---|---|---|
+| Allystar (ALLYSTAR Technology) | Allystar TAU1202 / TAU1205 | — | — | UART 1, I2C 1, CAN 1(맞춤 펌웨어만), NMEA 0183 v4.00/4.1 | — |
 | Antcom (Hexagon) | Antcom 4NC-3.5CG1215P-XX-X-7.5EM GPS L1/L2 CRPA (FRPA footprint) | — | — | — | — |
 | Antcom (Hexagon) | Antcom 4NF-5.5CGXX15P-XX-X Lightweight 4-element CRPA | — | — | — | — |
 | Antcom (Hexagon) | Antcom 7NF-6.29CG1215P-6S-X 7-element CRPA with cable outputs | — | — | — | — |
@@ -39,16 +40,22 @@ GNSS 제조사 공식 페이지에서 확인한 제품 74건의 요약표(수집
 | ARK Electronics | ARK TESEO GPS (ST TESEO LIV4F) | GPS/Galileo/Glonass/BeiDou/QZSS 동시, IRNSS ready | L1/L5 | Pixhawk Standard CAN x2 (DroneCAN), 4 Pin JST GH;  | 미기재 |
 | ARK Electronics | ARK X20 RTK GPS (u-blox ZED-X20P) | all-band all constellation(구체 목록 미기재) | all-band(구체 미기재) | Pixhawk Standard CAN x2 (DroneCAN), 4 Pin JST GH;  | RTK, PPP-RTK, PPP 알고리즘 |
 | Beitian | Beitian BN-220 GPS / BN-880 GPS & Compass | GPS, GLONASS, Galileo, BeiDou, QZSS, SBAS | GPS L1, GLONASS L1, BeiDou B1, SBAS L1, Galileo E1 | — | — |
+| CHC Navigation (CHCNAV) | CHCNAV M7 / B7 Series (M710N, M720, M722, B760) 보도 기반 | — | — | — | — |
+| Chelton | Chelton Anti-Jam GPS DACU8b (8-Channel Nulling & Beamforming) | — | — | — | — |
 | CUAV | CUAV C-RTK 2 (PPK/RTK module) | GPS, GLONASS, Galileo, BeiDou (4 concurrent), QZSS, SBAS | GPS L1C/A, L2C; GLONASS L1OF, L2OF; Galileo E1B/C, E5b; BeiDou B1I, B2 | DroneCAN; USB Type-C (HS), F9P USB 1, F9P UART 1,  | RTK 및 PPK 지원(RAW 저장); PPK base로는 비권장 |
 | CUAV | CUAV C-RTK 9Ps | 북두(BeiDou), 갈릴레오(Galileo), 글로나스(GLONASS), GPS (페이지 중국어 원문) | GPS L1C/A, L2C; GLONASS L1OF, L2OF; Galileo E1 B/C, E5b; BeiDou B1I, B | UART x 2, USB x 1, 안테나 MMCX x 1 | RTK 지원; PPK 불지원 (페이지 '不支持') |
+| CubePilot (HEX/ProfiCNC) | CubePilot Here 4 (HEX/ProfiCNC) Multiband RTK GNSS | GPS, GLONASS, Galileo, BeiDou + SBAS, QZSS; 동시 최대 4 성좌 | — | — | 최대 20 Hz |
 | DJI | DJI D-RTK 2 High Precision GNSS Mobile Station | GPS, BeiDou, GLONASS, Galileo (11개 신호) | GPS L1 C/A, L2, L5; BeiDou B1, B2, B3; GLONASS F1, F2; Galileo E1, E5A | 데이터링크: OcuSync, Wi-Fi, LAN, 4G; 메모리 16 GB | RTK 지원(RTCM 2.X/3.X 차분 데이터); PPK/PPP 미확인 |
 | Emlid | Emlid Reach M2 RTK GNSS Module for UAV & Drone Mapping | GPS/QZSS L1C/A, L2C; GLONASS L1OF, L2OF; BeiDou B1I, B2I; Ga | — | USB, UART, Event(카메라 핫슈 동기, 소개문에 microsecond 미만 해상 | RTK, PPK (페이지 소개문), 보정 입력 NTRIP·VRS·RTCM3 |
 | Emlid | Emlid Reach RS4 multi-band RTK GNSS receiver | GPS L1C/A, L2C, L5; GLONASS L1OF, L2OF; Galileo E1-B/C, E5a, | — | RS-232, USB Type-C, LoRa 868/915 MHz(최대 1 W, 최대 8  | — |
+| Furuno | Furuno eRideOPUS 9 ePV9000B | — | — | — | — |
+| Furuno | Furuno GN-87 Multi-GNSS Receiver Module | — | — | — | — |
 | Harxon | Harxon HX-CUX012A Full-band low-profile embedded helix | — | — | — | — |
 | Harxon | Harxon HX-HE202A L1/L5 embedded helix | — | — | — | — |
 | Harxon | Harxon HX-HE205A L1/L2 dual-band embedded helix (D-QHA) | — | — | — | — |
 | Harxon | Harxon HX-HE401A Full-band embedded helix (multi-point feed) | — | — | — | — |
 | Harxon | Harxon HX-HE402A Full-band embedded helix (D-QHA) | — | — | — | — |
+| Hemisphere GNSS | Hemisphere GNSS Phantom 40 OEM Board | — | — | 3 x 시리얼(CMOS 2 + RS-232 1), USB host/device 1, Eth | Long-range RTK baselines up to 50 km (key features 문구) |
 | Holybro | Holybro DroneCAN H-RTK F9P (Rover / Helical) | BeiDou, Galileo, GLONASS, GPS / QZSS | B1I, B2I, E1B/C, E5b, L1C/A, L1OF, L2C, L2OF | DroneCAN 1 Mbit/s (CAN 종단저항 소프트웨어 전환 지원); Helical은 | RTK 지원(PPK 미확인) |
 | Holybro | Holybro H-RTK F9P Series (Rover / Helical / Base, IST8310) | GPS, GLONASS, BeiDou, Galileo | GPS L1C/A, L2C; GLONASS L1OF, L2OF; BeiDou B1, B2; Galileo E1-B/C, E5b | Rover: GH1.25 10pin 또는 6pin 케이블; Helical/Base: Por | RTK 지원; Moving Base RTK 5 Hz max(Helical/Base) |
 | Holybro | Holybro H-RTK ZED-F9P Ultralight | GPS / QZSS, GLONASS, Galileo, BeiDou | L1C/A, L2C, L1OF, L2OF, E1B/C, E5b, B1I, B2I | UART (TX1/RX1, TX2/RX2), I2C; 38400-230400 bps (기본 | RTK 지원 |
@@ -58,15 +65,26 @@ GNSS 제조사 공식 페이지에서 확인한 제품 74건의 요약표(수집
 | Matek Systems | Matek GNSS & Compass M10Q-5883 (EOL 표기) | GPS, GLONASS, Galileo, BeiDou (u-blox M10 시리즈) | L1 GNSS 신호 | UART(TX, RX), I2C(DA, CL) 컴퍼스, JST-GH-6P, UART 기본  | 미지원 |
 | Matek Systems | Matek GNSS & Compass M9N-5883 | GPS, GLONASS, Galileo, BeiDou (NEO-M9N) | — | UART(TX, RX) GNSS, I2C(DA, CL) 컴퍼스, JST-GH-6P, UAR | 미지원 |
 | Maxtena | Maxtena M1227HCT-A2-SMA Rugged L1/L2 GPS GLONASS Active Antenna | — | — | — | — |
+| mRobotics (mRo) | mRo GPS u-Blox NEO-M9N – IST8308 | GPS, GLONASS, Galileo, BeiDou | — | — | No / No / No |
+| mRobotics (mRo) | mRo Location One GPS (u-blox M9N + RM3100, CAN) | GPS, GLONASS, Galileo, BeiDou | — | — | No |
+| mRobotics (mRo) | mRo mosaic-X5 RTK L1/L2/E5 CAN GPS | GPS (L1/L2/L5), Galileo (E5b), Glonass (L1/L2) | — | — | Yes |
+| mRobotics (mRo) | mRo u-Blox ZED-F9 RTK L1/L2 GPS (M10020) | GPS (L1/L2), GLONASS (L1/L2), Galileo, BeiDou | — | — | RTK ready: Yes |
 | NovAtel (Hexagon) | NovAtel (Hexagon) GAJT-310 anti-jam antenna | — | — | — | — |
 | NovAtel (Hexagon) | NovAtel (Hexagon) GAJT-710ML anti-jam antenna | — | — | — | — |
+| NovAtel (Hexagon) | NovAtel (Hexagon) GAJT-AE-N anti-jam antenna electronics | — | — | — | — |
 | NovAtel (Hexagon) | NovAtel (Hexagon) GAJT-AE3 anti-jam antenna system | — | — | — | — |
+| NovAtel (Hexagon) | NovAtel OEM719 | — | — | LVCMOS COM 3, CAN 2, USB 1 | 1 cm + 1 ppm (RMS) |
+| NovAtel (Hexagon) | NovAtel OEM729 | — | — | RS232/RS422 1, LVCMOS 3, CAN 2, USB 1, Ethernet 1 | 1 cm + 1 ppm (RMS) |
+| NovAtel (Hexagon) | NovAtel OEM7600 | — | — | LVCMOS 5, CAN 2, USB device 1, USB host 1, Etherne | 1 cm + 1 ppm (RMS) |
 | Quectel | Quectel LC29H series | GPS/QZSS, GLONASS, BDS, NavIC, Galileo | L1 및 L5 동시 수신 (dual-band) | — | Optional RTK; Optional integrated dead reckoning (DR) |
 | Quectel | Quectel LG290P | GPS, GLONASS, Galileo, BDS, QZSS, NavIC (+SBAS: WAAS, EGNOS, | L1, L2, L5, E6 quad-band 동시 수신 | UART, I2C* | Quad-band RTK; RTK HOLD(RTK 보정 중단 시 최대 10분 고정밀 유지); PP-HAS E |
 | Quectel | Quectel LG580P (03) | GPS, GLONASS, Galileo, BDS, QZSS, NavIC, SBAS | L1, L2, L5, L6 | UART, SPI*, I2C*, CAN* | 고정밀 RTK 계열 모듈(RTK 알고리즘 상세 미확인) |
+| Safran Federal Systems / Safran Navigation & Timing (Orolia) | Safran 8230AJ / 8231AJ GPS/GNSS Anti-Jam Antenna | — | — | — | — |
 | Septentrio | Septentrio mosaic-G5 P1 | GPS, GLONASS, BeiDou, Galileo, QZSS, SDCM(NavIC 미기재) | GPS L1C/A, L1PY, L2C, L2P(Y), L5; GLONASS L1CA, L2CA, L2P, L3 CDMA; Be | USB device (2.0 HS) 1, Event markers 2, PPS out 2 | — |
 | Septentrio | Septentrio mosaic-G5 P8 | GPS, GLONASS, BeiDou, Galileo, QZSS, NavIC, SBAS(EGNOS, WAAS | GPS L1C/A, L1C, L1PY, L2C, L2P(Y), L5; GLONASS L1CA, L2CA, L2P, L3 CDM | USB device (2.0 HS) 1, Event markers 2, PPS out 1 | RTK 지원, Galileo HAS 지원 |
+| Septentrio | Septentrio mosaic-G5 T (G5 계열 공통 하드웨어 수치 보강) | — | — | UART 2 (LVTTL, 4 Mbps), USB 2.0 HS, GPIO 2, PPS 2, | — |
 | Septentrio | Septentrio mosaic GNSS Module Hardware Manual v1.11.0 (mosaic-X5/T/H 공통 사양 보강) | — | — | — | — |
+| Septentrio | Septentrio mosaic-X5 데이터시트 보강 (채널·정확도·TTFF·AIM+) | — | — | UART 4 (LVTTL, 최대 4 Mbps), Ethernet(RMII) 10/100,  | 수평 0.6 cm + 0.5 ppm, 수직 1 cm + 1 ppm |
 | Septentrio | Septentrio mosaic-X5 | GPS, GLONASS, BeiDou, Galileo, QZSS, NavIC, SBAS(Egnos, WAAS | GPS L1C/A, L1PY, L2C, L2P(Y), L5; GLONASS L1CA, L2CA, L2P, L3 CDMA; Be | USB device (2.0 HS) 1, Event markers 2, 설정 가능 PPS  | RTK 지원('RTK positioning at the lowest power consumption' 문구) |
 | STMicroelectronics | STMicroelectronics Teseo-LIV4F tiny dual-band GNSS module | GPS/QZSS, Galileo, GLONASS, BeiDou (동시 멀티컨스텔레이션·멀티밴드), IRNSS | GPS/QZSS L1C/A·L5C, GLONASS L1OF, BeiDou B1i·B2a, Galileo E1·E5a | UART, I2C (NMEA 는 UART 와 I2C 모두 지원) | RTK 기준국 메시지(RTCM 1005/1006) 언급, 자체 RTK 솔루션 여부 미확인 |
 | Swift Navigation | Swift Navigation Piksi Multi | GPS L1/L2, GLONASS G1/G2, BeiDou B1/B2, Galileo E1/E5b, SBAS | — | UART-LVTTL 2 (1 Mbps), CAN 2 (1 Mbps), Ethernet 10 | 초기화 시간 < 10 s, 신뢰도 > 99%, 솔루션 지연 < 30 ms |
@@ -75,6 +93,8 @@ GNSS 제조사 공식 페이지에서 확인한 제품 74건의 요약표(수집
 | Tersus GNSS | Tersus BX50L-TAP | GPS, GLONASS, Galileo, BeiDou, QZSS, SBAS, IRNSS | 'almost all frequencies' (구체 미기재) | COM, USB, CAN, PPS, event mark | RTK; TAP(위성 기반 PPP) 서비스 |
 | Tersus GNSS | Tersus BX50M-TAP | GPS, GLONASS, Galileo, BeiDou, QZSS, SBAS, IRNSS | 'almost all frequencies' (구체 미기재) | COM, USB, CAN, PPS, event mark | RTK; TAP PPP |
 | Tersus GNSS | Tersus MX206 Module | 모든 현행 GNSS 위성군(구체 미기재) | 'almost all frequencies' | 3 x UART, 2 x CAN, SPI Master/Slave, I2C, 2 x PPS, | PPP/RTK 듀얼모드 자동 전환; TAP PPP |
+| Trimble | Trimble BD992 | — | — | USB 2.0 device 1, Ethernet 1, RS232 3 (최대 460,800) | typically <8 s, 신뢰도 >99.9% |
+| TUALCOM | TUALCOM TUALAJ 4200-MINI CRPA GNSS Anti-Jam System | — | — | Serial RS-232, RS-485 | — |
 | u-blox | u-blox ANN-MB series (ANN-MB-00/01/02) L1/L2 multi-band GNSS antenna | — | — | — | — |
 | u-blox | u-blox ANN-MB1 L1/L5 multi-band GNSS antenna | — | — | — | — |
 | u-blox | u-blox ANN-MB5 L1/L5 multi-band standard precision GNSS antenna | — | — | — | — |

@@ -15,13 +15,14 @@ contradictions: []
 
 비행 로그 형식, 데이터셋·합성데이터, 시간 동기화, 엣지 배포·MLOps, 연합학습, 이상 탐지 자료 허브.^[inbox/processed/hw-20261021-hub-aidata.md]
 
-수록 29건(수집 2026-10-21). 각 문서의 수치는 원문 초록·공식 페이지에 적힌 값이며 본문 전체를 대조한 것이 아니다.^[inbox/processed/hw-20261021-hub-aidata.md]
+수록 33건(수집 2026-10-21). 각 문서의 수치는 원문 초록·공식 페이지에 적힌 값이며 본문 전체를 대조한 것이 아니다.^[inbox/processed/hw-20261021-hub-aidata.md]
 
 - [[data-anomaly-alfa-keipour-2019]] — ALFA: A Dataset for UAV Fault and Anomaly Detection
 - [[data-anomaly-resam-islam-2022]] — RESAM: Requirements Elicitation and Specification for Deep-Learning Anomaly Models with Applications to UAV Flight Controllers
 - [[data-dataset-uavid]] — UAVid: A Semantic Segmentation Dataset for UAV Imagery
 - [[data-dataset-visdrone]] — VisDrone-Dataset (GitHub README)
 - [[data-edge-aerial-autonomy-stack-panerati-2026]] — aerial-autonomy-stack: a Faster-than-real-time, Autopilot-agnostic, ROS2 Framework to Simulate and Deploy Perception-based Drones
+- [[data-edge-deepstream-9-2-jetson-orin-model-fps]] — NVIDIA DeepStream SDK 9.2 Performance: TAO pre-trained models end-to-end FPS on Jetson AGX Orin / AGX Thor
 - [[data-edge-jetson-orin-lineup]] — NVIDIA Jetson Orin family (product page)
 - [[data-edge-jetson-ota-update]] — Jetson Linux Developer Guide: Software Packages and the Update Mechanism (OTA)
 - [[data-edge-nvidia-jetson-mlperf-orin]] — NVIDIA Jetson Benchmarks (MLPerf Inference Edge on Jetson AGX Orin / Orin NX)
@@ -39,8 +40,11 @@ contradictions: []
 - [[data-flightlog-px4-ulog-format]] — ULog File Format (PX4 User and Developer Guide)
 - [[data-flightlog-rosbag2]] — rosbag2 (ros2/rosbag2 GitHub README)
 - [[data-latency-px4-ardupilot-loop-rates-official]] — PX4 / ArduPilot official docs: loop rates, offboard streaming and EKF2 delay compensation
+- [[data-latency-px4-ardupilot-rates-delays-params-source]] — PX4 and ArduPilot source docs: control loop rates, EKF delay parameter defaults, offboard timeout
 - [[data-sync-hardware-timestamp-ntnu-wiki-and-gnss-clock]] — Hardware timestamping for drone sensors: NTNU Time Synchronization Overview and Open-Source LiDAR Time Synchronization (GNSS-clock mimic)
+- [[data-sync-kalibr-temporal-calibration-readme]] — Kalibr (ethz-asl): Visual-Inertial Calibration with temporal (time offset) estimation
 - [[data-sync-linux-pps-kernel]] — PPS - Pulse Per Second (Linux kernel documentation)
+- [[data-sync-ros2-message-filters-approximatetime-source]] — ros2/message_filters ApproximateTime: official doc (doc/index.rst) and C++ source (jazzy/rolling) defaults
 - [[data-sync-ros2-message-filters-approximatetime]] — message_filters ApproximateTime policy (ROS wiki mirror) and ROS 2 tutorial
 - [[data-synthetic-airsim-image-apis]] — AirSim Image APIs
 - [[data-synthetic-omni-replicator]] — Omniverse Replicator (omni.replicator documentation)
