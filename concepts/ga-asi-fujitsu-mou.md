@@ -3,6 +3,7 @@ title: GA-ASI Fujitsu Japan UAS MOU
 created: 2026-09-01
 updated: 2026-09-14
 type: concept
+domain: ops-mission
 tags: [drone, company, defense, japan, ga-asi, fujitsu]
 sources: [inbox/fetch-2026-09-01-rss-suasnews.md]
 confidence: high

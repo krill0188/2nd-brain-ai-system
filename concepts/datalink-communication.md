@@ -163,7 +163,7 @@ GCS ←──┼─── UAV 2
 
 ## 최신 근거 연결 (2026-10-20)
 
-- 비·안개·눈 조건의 2 GHz~900 GHz 항공 채널 분석에서 mmWave는 중간 강도 비가, 근-THz는 눈이 3D 커버리지 반경에 가장 큰 영향을 주며 주파수가 높을수록 안테나 수 증설로 보상할 수 있다고 한다(초록 기준): [[uav-weather-aerial-channel-impacts]]^[^[inbox/processed/fetch-2026-10-19-arxiv-meteorologically-introduced-impacts-on-aerial-channels-and-u.md]]
-- 회전형 안테나는 기계 회전 시간이 전송 가능 시간을 줄여 재방향 이득과 트레이드오프를 이루며, 최소 유효 전송률 최대화를 위해 방향·빔포밍을 공동 설계한다(이론·시뮬레이션): [[uav-rotatable-antenna-rotation-delay]]^[^[inbox/processed/fetch-2026-10-20-arxiv-uav-rotatable-antenna-under-rotation-delay.md]]
-- 지상 인프라가 없는 지역에서 UAV가 연산과 무선 전력을 함께 제공하는 SWIPT-MEC를 개선 SAC로 최적화했으나 실기체 검증은 없다: [[uav-swipt-mec-drl-resource-management]]^[^[inbox/processed/fetch-2026-10-19-arxiv-joint-resource-management-for-energy-efficient-uav-assisted-.md]]
-- **한계 사례**: 드론 탑재 비콘으로 배터리 없는 센서 태그를 구동하는 AERPAW 실험은 지상 시험에서 안정적이었지만 공중 시험에서는 무선 간섭으로 태그 데이터 검출에 실패했다: [[rf-energy-harvesting-sensor-tags-drone-agriculture]]^[^[inbox/processed/fetch-2026-10-20-arxiv-autonomous-agricultural-monitoring-with-aerial-drones-and-rf.md]]
+- 비·안개·눈 조건의 2 GHz~900 GHz 항공 채널 분석에서 mmWave는 중간 강도 비가, 근-THz는 눈이 3D 커버리지 반경에 가장 큰 영향을 주며 주파수가 높을수록 안테나 수 증설로 보상할 수 있다고 한다(초록 기준): [[uav-weather-aerial-channel-impacts]]^[inbox/processed/fetch-2026-10-19-arxiv-meteorologically-introduced-impacts-on-aerial-channels-and-u.md]
+- 회전형 안테나는 기계 회전 시간이 전송 가능 시간을 줄여 재방향 이득과 트레이드오프를 이루며, 최소 유효 전송률 최대화를 위해 방향·빔포밍을 공동 설계한다(이론·시뮬레이션): [[uav-rotatable-antenna-rotation-delay]]^[inbox/processed/fetch-2026-10-20-arxiv-uav-rotatable-antenna-under-rotation-delay.md]
+- 지상 인프라가 없는 지역에서 UAV가 연산과 무선 전력을 함께 제공하는 SWIPT-MEC를 개선 SAC로 최적화했으나 실기체 검증은 없다: [[uav-swipt-mec-drl-resource-management]]^[inbox/processed/fetch-2026-10-19-arxiv-joint-resource-management-for-energy-efficient-uav-assisted-.md]
+- **한계 사례**: 드론 탑재 비콘으로 배터리 없는 센서 태그를 구동하는 AERPAW 실험은 지상 시험에서 안정적이었지만 공중 시험에서는 무선 간섭으로 태그 데이터 검출에 실패했다: [[rf-energy-harvesting-sensor-tags-drone-agriculture]]^[inbox/processed/fetch-2026-10-20-arxiv-autonomous-agricultural-monitoring-with-aerial-drones-and-rf.md]

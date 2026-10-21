@@ -1,11 +1,11 @@
 ---
 title: "ELRS 4.1 릴리스"
 created: 2026-08-04
-updated: 2026-08-04
+updated: 2026-10-21
 type: concept
 tags: [drone-hw, fpv, datalink]
 domain: hardware
-sources: [inbox/fetch-2026-08-04-yt-elrs-41-makes-binding-easier-than-ever.md]
+sources: [inbox/fetch-2026-08-04-yt-elrs-41-makes-binding-easier-than-ever.md, inbox/processed/fetch-2026-10-21-yt-why-modern-rc-radio-power-buttons-are-safer-than-you-think.md]
 confidence: high
 contested: false
 contradictions: []
@@ -36,6 +36,10 @@ ExpressLRS 4.1 버전의 주요 개선사항 — 바인딩 프로세스 간소�
 
 - [[fpv-hardware]] — FPV 드론 하드웨어
 - [[datalink-communication]] — RF 통신 및 데이터링크
+
+## 최신 근거 연결 (2026-10-21)
+
+- ExpressLRS 수신기가 연결돼 텔레메트리가 살아 있을 때는 라디오 전원을 길게 눌러도 바로 꺼지지 않고 Enter로 확인해야 종료된다는 영상 진술이 있다(Painless360, 단일 출처): [[rc-radio-power-button-safety]]^[inbox/processed/fetch-2026-10-21-yt-why-modern-rc-radio-power-buttons-are-safer-than-you-think.md]
 
 ## 📰 최근 관련 소식
 - [Joshua Bardwell] ELRS 4.1 makes binding EASIER THAN EVER! (youtube.com, 2026-08-03) — https://www.youtube.com/watch?v=nNbh13-DW5E

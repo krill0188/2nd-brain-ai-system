@@ -32,5 +32,5 @@ contradictions: []
 
 ## 최신 근거 연결 (2026-10-20)
 
-- 프로펠러 전력·회전속도로 대기속도를 역산하는 모델을 BEM 시뮬레이션, 풍동, 비행시험 데이터로 유도해 피토관 대체·중복용으로 제안했다(고정익, 초록 기준): [[propeller-feedback-airspeed-estimation]]^[^[inbox/processed/fetch-2026-10-19-arxiv-airspeed-estimation-for-uavs-using-only-propeller-feedback.md]] — 위 벤치 시험이 정적 추력 중심인 데 비해 전진 비행 조건의 프로펠러 응답을 측정 수단으로 쓴 접근이다.
-- 모터·프로펠러 쌍의 정지 추력 응답을 디지털 트윈과 비교한 결과 선형화 모델이 과도 응답에서 크게 어긋났다: [[bldc-motor-propeller-digital-twin-static-thrust]]^[^[inbox/processed/fetch-2026-10-20-arxiv-digital-twin-of-a-dc-brushless-electric-motor-propeller-syst.md]]
+- 프로펠러 전력·회전속도로 대기속도를 역산하는 모델을 BEM 시뮬레이션, 풍동, 비행시험 데이터로 유도해 피토관 대체·중복용으로 제안했다(고정익, 초록 기준): [[propeller-feedback-airspeed-estimation]]^[inbox/processed/fetch-2026-10-19-arxiv-airspeed-estimation-for-uavs-using-only-propeller-feedback.md] — 위 벤치 시험이 정적 추력 중심인 데 비해 전진 비행 조건의 프로펠러 응답을 측정 수단으로 쓴 접근이다.
+- 모터·프로펠러 쌍의 정지 추력 응답을 디지털 트윈과 비교한 결과 선형화 모델이 과도 응답에서 크게 어긋났다: [[bldc-motor-propeller-digital-twin-static-thrust]]^[inbox/processed/fetch-2026-10-20-arxiv-digital-twin-of-a-dc-brushless-electric-motor-propeller-syst.md]

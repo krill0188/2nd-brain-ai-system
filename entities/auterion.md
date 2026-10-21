@@ -3,6 +3,7 @@ title: "Auterion"
 created: 2026-07-31
 updated: 2026-08-10
 type: entity
+domain: flight-control
 tags: [drone, drone-sw, flight-control, gcs-software]
 sources: []
 confidence: medium

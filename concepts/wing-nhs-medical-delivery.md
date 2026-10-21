@@ -43,3 +43,6 @@ Wing의 영국 국민보건서비스(NHS) 긴급 의료 샘플 드론 배달 서
 - [[doordash-air]] — DoorDash FAA Part 135 인증 드론 배달
 - [[drone-regulations]] — 드론 규제 및 인증
 - [[ops-mission]] — 드론 운용 및 미션 관리
+
+## 📰 최근 관련 소식
+- Matternet Expands NHS Drone Delivery Network to Children’s Hospital in London (dronelife.com, Tue, 20 Oc) — https://dronelife.com/2026/10/20/matternet-nhs-drone-delivery-london/

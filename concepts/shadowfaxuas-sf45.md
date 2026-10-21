@@ -3,6 +3,7 @@ title: ShadowfaxUAS SF45
 created: 2026-09-01
 updated: 2026-09-14
 type: concept
+domain: hardware
 tags: [drone, hardware, vtol, isr, shadowfaxuas]
 sources: [inbox/fetch-2026-09-01-rss-suasnews.md]
 confidence: high

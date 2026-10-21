@@ -1,11 +1,11 @@
 ---
 title: "CapsuleBot: 공중-지상 하이브리드 바이콥터 (Zheng 외, 2023)"
 created: 2026-10-20
-updated: 2026-10-20
+updated: 2026-10-21
 type: concept
 domain: hardware
 tags: [drone, drone-hw]
-sources: [inbox/processed/fetch-2026-10-20-arxiv-capsulebot-a-novel-hybrid-aerial-ground-bi-copter-robot-with.md]
+sources: [inbox/processed/fetch-2026-10-20-arxiv-capsulebot-a-novel-hybrid-aerial-ground-bi-copter-robot-with.md, inbox/processed/fetch-2026-10-21-arxiv-maspa-an-efficient-strategy-for-path-planning-with-a-tethere.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -18,3 +18,7 @@ contradictions: []
 서보 모터와 BLDC 모터로 구성한 "actuated-wheel-rotor"가 공중에서는 틸트 로터, 지상에서는 구동 바퀴로 동작한다. 바이콥터에 필요한 4개 모터만으로 하이브리드 추진을 구현해 추가 모터가 없다. 공중 모드는 바이콥터 모델, 지상 모드는 2륜 자세 균형 로봇 모델 기반으로 동역학·제어를 설계했다. 시제품 실험에서 낮은 소비전력과 저소음을 확인했고, 급경사 등반·절벽 비행 통과·험지 주행 과제를 시연했다.^[inbox/processed/fetch-2026-10-20-arxiv-capsulebot-a-novel-hybrid-aerial-ground-bi-copter-robot-with.md]
 
 관련: 장시간 운용과 에너지 모델은 [[multirotor-energy-power-models]], 구조 설계 연구는 [[uav-airframe-structure-optimization-research]].
+
+## 최신 근거 연결 (2026-10-21)
+
+- 공중-지상 겸용을 한 기체의 변환(틸트 로터 ↔ 구동 바퀴)으로 푸는 CapsuleBot과 달리, UGV와 UAV를 테더로 묶어 지상 이동과 공중 비행을 분담하는 구성도 연구된다: [[maspa-tethered-marsupial-uav-ugv-path-planning]]^[inbox/processed/fetch-2026-10-21-arxiv-maspa-an-efficient-strategy-for-path-planning-with-a-tethere.md] 두 구성의 성능 비교 근거는 없다.

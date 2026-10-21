@@ -3,6 +3,7 @@ title: QGroundControl v5.1.4 Release Notes
 created: 2026-09-01
 updated: 2026-10-02
 type: concept
+domain: gcs-software
 tags: [drone, drone-sw, gcs-software, qgroundcontrol, release]
 sources: [inbox/fetch-2026-09-01-qgroundcontrol.md]
 confidence: high

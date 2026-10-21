@@ -1,11 +1,11 @@
 ---
 title: "LLM-Enabled UAV Natural Language Navigation via STL"
 created: 2026-08-12
-updated: 2026-08-12
+updated: 2026-10-21
 type: concept
 tags: [drone, voice-control, ai-agent, llm, regulations]
 domain: ai-autonomy
-sources: [inbox/fetch-2026-08-12-arxiv-llm-enabled-low-altitude-uav-natural-language-navigation-via.md]
+sources: [inbox/fetch-2026-08-12-arxiv-llm-enabled-low-altitude-uav-natural-language-navigation-via.md, inbox/processed/fetch-2026-10-21-arxiv-stress-query-and-temporal-reliability-of-vision-language-mod.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -54,3 +54,7 @@ contradictions: []
 ## 출처
 
 Yuqi Ping et al., "LLM-Enabled Low-Altitude UAV Natural Language Navigation via Signal Temporal Logic Specification Translation and Repair", arXiv:2603.27583, 2026-03-29.
+
+## 최신 근거 연결 (2026-10-21)
+
+- 언어·시각 모델을 비행 루프에 넣을 때의 실시간성 문제: 경량 모델은 구조적 환각으로 결정론적 상태 기계를 깨뜨리고 대형 모델은 추론 지연으로 궤적 과보정을 일으키며, 중간 규모 모델이 균형이 가장 좋았다고 보고한다(초록 기준, 모델명·수치 미확인): [[vlm-copilot-uav-navigation-latency-reliability]]^[inbox/processed/fetch-2026-10-21-arxiv-stress-query-and-temporal-reliability-of-vision-language-mod.md]

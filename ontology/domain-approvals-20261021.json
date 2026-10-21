@@ -1,0 +1,105 @@
+{
+ "_comment": "2026-10-21 마스터 지시('도메인이 없는 문서는 도메인을 연결')에 따라 domain 없는 28건 중 25건에 공식 19개 어휘의 값을 문서별로 읽고 지정했다. 기존에 domain이 있는 문서는 건드리지 않는다. 제외 3건(comparisons/knowledge-tool-roles, queries/notebooklm-query-compounding, queries/ua-knowledge-graph-workflow)은 드론 주제가 아닌 지식관리 문서라 공식 어휘에 맞는 값이 없어 domain 신설 제안으로 남긴다(예: knowledge-management). 근거: tags의 도메인성 태그, 인접 문서(같은 계열 릴리스·제조사)의 domain, 본문 주제.",
+ "approved": [
+  {
+   "path": "concepts/a2z-longtail-dual.md",
+   "domain": "hardware"
+  },
+  {
+   "path": "concepts/aeroeval-mdo-framework.md",
+   "domain": "hardware"
+  },
+  {
+   "path": "concepts/agile-quadrotor-learning.md",
+   "domain": "ai-autonomy"
+  },
+  {
+   "path": "concepts/dji-osmo-360-ii.md",
+   "domain": "hardware"
+  },
+  {
+   "path": "concepts/drone-news-2026-07-31.md",
+   "domain": "ops-mission"
+  },
+  {
+   "path": "concepts/drone-wildfire-rt-detr.md",
+   "domain": "ai-autonomy"
+  },
+  {
+   "path": "concepts/event-camera-drone.md",
+   "domain": "sensing-perception"
+  },
+  {
+   "path": "concepts/ga-asi-fujitsu-mou.md",
+   "domain": "ops-mission"
+  },
+  {
+   "path": "concepts/hdzero-goggle-2-scroll-fix.md",
+   "domain": "hardware"
+  },
+  {
+   "path": "concepts/llm-swarm-wot-framework.md",
+   "domain": "swarm-multiagent"
+  },
+  {
+   "path": "concepts/louisville-dfr-expansion.md",
+   "domain": "ops-mission"
+  },
+  {
+   "path": "concepts/mavsdk-release.md",
+   "domain": "comms-protocol"
+  },
+  {
+   "path": "concepts/qgroundcontrol-v5-1-4.md",
+   "domain": "gcs-software"
+  },
+  {
+   "path": "concepts/qgroundcontrol.md",
+   "domain": "gcs-software"
+  },
+  {
+   "path": "concepts/shadowfaxuas-sf45.md",
+   "domain": "hardware"
+  },
+  {
+   "path": "concepts/terra-drone-deftech.md",
+   "domain": "ops-mission"
+  },
+  {
+   "path": "concepts/test-time-scaling-vlm-uav.md",
+   "domain": "ai-autonomy"
+  },
+  {
+   "path": "concepts/uav-isac-cross-region.md",
+   "domain": "comms-protocol"
+  },
+  {
+   "path": "concepts/visual-slam-gps-denied-evaluation.md",
+   "domain": "navigation-gnss-denied"
+  },
+  {
+   "path": "concepts/yolo-v8-4-137.md",
+   "domain": "ai-autonomy"
+  },
+  {
+   "path": "concepts/zuri-cargo-tiltrotor.md",
+   "domain": "hardware"
+  },
+  {
+   "path": "entities/auterion.md",
+   "domain": "flight-control"
+  },
+  {
+   "path": "entities/bitcraze.md",
+   "domain": "hardware"
+  },
+  {
+   "path": "entities/kite-gcs.md",
+   "domain": "gcs-software"
+  },
+  {
+   "path": "entities/ratefpv.md",
+   "domain": "hardware"
+  }
+ ]
+}

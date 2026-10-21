@@ -31,7 +31,7 @@ Natural Hazards Review(2027-02 발행 예정, Crossref 메타데이터)에 실�
 
 ## 최신 근거 연결 (2026-10-20)
 
-- 위험 지역 모니터링의 다른 최적화 접근: 위험 지점 방문 순서를 VRP로, 정보 이득을 최대화하는 B-스플라인 경로와 베이지안 위험 확률 갱신을 하위 계획으로 두는 이중 레벨 전략이 엣지 기반 CVT로 기준선보다 높은 위험 발견률을 보였다고 한다(시뮬레이션): [[bilevel-route-hazard-exploration-uav]]^[^[inbox/processed/fetch-2026-10-19-arxiv-bi-level-route-optimization-and-path-planning-with-hazard-ex.md]] — 두 논문의 직접 비교 실험은 없다.
+- 위험 지역 모니터링의 다른 최적화 접근: 위험 지점 방문 순서를 VRP로, 정보 이득을 최대화하는 B-스플라인 경로와 베이지안 위험 확률 갱신을 하위 계획으로 두는 이중 레벨 전략이 엣지 기반 CVT로 기준선보다 높은 위험 발견률을 보였다고 한다(시뮬레이션): [[bilevel-route-hazard-exploration-uav]]^[inbox/processed/fetch-2026-10-19-arxiv-bi-level-route-optimization-and-path-planning-with-hazard-ex.md] — 두 논문의 직접 비교 실험은 없다.
 
 ## 📰 최근 관련 소식
 - [한화에어로스페이스] 드론사업단_생산기획, 관리 — 한화그룹 (Hanwha) (www.wanted.co.kr, 2026-10-14) — https://www.wanted.co.kr/wd/391738

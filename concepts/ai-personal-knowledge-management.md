@@ -143,3 +143,5 @@ AI 개인 지식관리는 자료를 많이 저장하는 일이 아니라, 원본
 - 첨단드론·방산기술 한자리에…이천 복하천서 15~17일 '드론대전' (뉴스1, Tue, 13 Oc) — https://news.google.com/rss/articles/CBMiVkFVX3lxTE5jcTdMUmRsRk9aTnNnNlVyOU16SkI2QXlFOEs4U05VbkpCMjdXSlNhWE5hNkhFRHA5SzUzLUd3RklWWGdxc2NXeXBEMTFpUWZyRWVYWGVR?oc=5
 - [위클리오늘] 정지욱 강원도의원, 원주 국방 드론 클러스터 조성 촉구 (위클리오늘, Fri, 16 Oc) — https://news.google.com/rss/articles/CBMibkFVX3lxTFBScXNwcXY0V0Y2dG8tVFZYbUF4Yy1OWnVOalJIeGhUclc0aWxYaWZxSW5hVnJUNVpZeDRtM254NFpIenhXSGpJN1IyLWhXd1RkbnBYNmJjZGw4enN0WjgtMUtQZy1Fb3NLVUtIT2hn?oc=5
 - 에티포스·넥스윌, 드론·무인체계 방산 통신기술 공동개발 (전자신문, Fri, 16 Oc) — https://news.google.com/rss/articles/CBMiTkFVX3lxTFAySS0tMHJPellWanZSUmlBc3J5RXZGalZpWVJwX09jNWxCQ3hLVTZzNElBRFJncW9TM3JpQWNPQ3J6QWpLZXVkZi16alNfZw?oc=5
+- [핑크랩 PinkLAB] ROS2수업? 로봇수업? MuJoCo와 양팔로봇으로 끝까지 가봤습니다 (youtube.com, 2026-10-20) — https://www.youtube.com/watch?v=Lst8QjB7tvk
+- [MATLAB] Accelerating Engineering Design with Agentic AI (youtube.com, 2026-10-20) — https://www.youtube.com/watch?v=riIEO9Sk_fo

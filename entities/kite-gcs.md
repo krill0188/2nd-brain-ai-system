@@ -3,6 +3,7 @@ title: "Kite GCS"
 created: 2026-07-31
 updated: 2026-08-10
 type: entity
+domain: gcs-software
 tags: [drone, drone-sw, gcs-software]
 sources: []
 confidence: medium

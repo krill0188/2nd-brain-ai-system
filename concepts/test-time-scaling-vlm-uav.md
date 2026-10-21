@@ -1,10 +1,11 @@
 ---
 title: Test-Time Scaling VLM for UAV Navigation
 created: 2026-08-19
-updated: 2026-08-19
+updated: 2026-10-21
 type: concept
+domain: ai-autonomy
 tags: [voice-control, drone, ai-agent, vlm, navigation]
-sources: [raw/papers/voice-control/fetch-2026-08-19-arxiv-no-training-better-flights-test-time-scaled-vlms-for-uav-nav.md]
+sources: [raw/papers/voice-control/fetch-2026-08-19-arxiv-no-training-better-flights-test-time-scaled-vlms-for-uav-nav.md, inbox/processed/fetch-2026-10-21-arxiv-stress-query-and-temporal-reliability-of-vision-language-mod.md]
 confidence: high
 contested: false
 contradictions: []
@@ -35,3 +36,7 @@ Vision-Language Model(VLM)의 추론 성능을 추가 학습 없이 개선하는
 - [[voice-control-drone]] — 음성 명령 드론 인터페이스
 - [[drone-ai-agents]] — 드론 AI 에이전트 아키텍처
 - [[llm-enabled-uav-natural-language-navigation]] — LLM 기반 UAV 자연어 내비게이션
+
+## 최신 근거 연결 (2026-10-21)
+
+- **적용 범위 주의**: 테스트 시간 스케일링은 추론을 더 쓰는 방식인데, 스트레스 테스트 벤치마크는 대형 모델의 추론 지연이 궤적 과보정을 일으킨다고 보고한다.^[inbox/processed/fetch-2026-10-21-arxiv-stress-query-and-temporal-reliability-of-vision-language-mod.md] 두 연구가 같은 모델·지연 조건에서 비교된 것은 아니므로 직접적인 상충으로 보지 않고 `contested`는 유지(false)한다. 지연 예산이 빠듯한 온보드 환경에서의 적용성은 확인되지 않았다: [[vlm-copilot-uav-navigation-latency-reliability]]

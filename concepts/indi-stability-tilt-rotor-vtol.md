@@ -1,10 +1,10 @@
 ---
 title: "INDI Pitch-Rate Controller Stability Analysis for Tilt-Rotor VTOL UAV"
 created: 2026-07-30
-updated: 2026-10-07
+updated: 2026-10-21
 type: concept
 tags: [drone, flight-control, indi, tilt-rotor, vtol, stability]
-sources: [inbox/fetch-2026-07-30-arxiv-linear-stability-analysis-of-an-indi-pitch-rate-controller-u.md, raw/papers/_unclassified/linear-stability-analysis-of-an-indi-pitch-rate-controller-under-model-mismatch-.md]
+sources: [inbox/fetch-2026-07-30-arxiv-linear-stability-analysis-of-an-indi-pitch-rate-controller-u.md, raw/papers/_unclassified/linear-stability-analysis-of-an-indi-pitch-rate-controller-under-model-mismatch-.md, inbox/processed/fetch-2026-10-21-arxiv-design-of-a-flying-humanoid-robot-based-on-thrust-vector-con.md]
 confidence: high
 contested: false
 contradictions: []
@@ -64,6 +64,10 @@ ontology_class: VTOL
 - [[px4-architecture-deep]] — PX4 아키텍처 및 제어 시스템
 - [[drone-safety-failsafe]] — 드론 안전 및 페일세이프 시스템
 - [[kci-vtol-swarm-takeoff-landing-operation]] — VTOL 군집의 천이·역천이 운용 절차(제어기가 아닌 운용 관점)
+
+## 최신 근거 연결 (2026-10-21)
+
+- 추력 방향 제어로 자세를 안정화하는 다른 사례: Jet-HR2 비행 휴머노이드는 발의 덕티드 팬 자세를 바꿔 추력 벡터를 제어함으로써 이륙 중 회전·다이브를 억제했고, 추력 대 중량비 1.17에서 이륙에 성공했다(초록 기준, 제어기 구조가 달라 INDI와 직접 비교는 불가): [[jet-hr2-flying-humanoid-thrust-vectoring]]^[inbox/processed/fetch-2026-10-21-arxiv-design-of-a-flying-humanoid-robot-based-on-thrust-vector-con.md]
 
 ## 📰 최근 관련 소식
 - [UAV Coach] Drone Prices Are About to Jump (youtube.com, 2026-08-15) — https://www.youtube.com/watch?v=FEiY1ONxd70

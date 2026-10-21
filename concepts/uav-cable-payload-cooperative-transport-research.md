@@ -1,11 +1,11 @@
 ---
 title: "다중 UAV 케이블 매달림 페이로드 운송 연구 (센서·유도·입력성형)"
 created: 2026-10-17
-updated: 2026-10-20
+updated: 2026-10-21
 type: concept
 domain: hardware
 tags: [drone, drone-hw, research]
-sources: [inbox/processed/fetch-2026-10-17-arxiv-compact-force-sensor-for-dual-uav-cable-suspended-payload-tr.md, inbox/processed/fetch-2026-10-17-arxiv-equivalent-agent-guidance-for-cooperative-uav-payload-transp.md, inbox/processed/fetch-2026-10-17-arxiv-global-sensitive-based-input-shaping-for-uav-payload-precisi.md, inbox/processed/fetch-2026-10-18-arxiv-autotrans-a-complete-planning-and-control-framework-for-auto.md, inbox/processed/fetch-2026-10-19-arxiv-an-input-output-feedback-linearization-based-exponentially-s.md, inbox/processed/fetch-2026-10-19-arxiv-temporal-waypoint-navigation-of-multi-uav-payload-system-usi.md]
+sources: [inbox/processed/fetch-2026-10-17-arxiv-compact-force-sensor-for-dual-uav-cable-suspended-payload-tr.md, inbox/processed/fetch-2026-10-17-arxiv-equivalent-agent-guidance-for-cooperative-uav-payload-transp.md, inbox/processed/fetch-2026-10-17-arxiv-global-sensitive-based-input-shaping-for-uav-payload-precisi.md, inbox/processed/fetch-2026-10-18-arxiv-autotrans-a-complete-planning-and-control-framework-for-auto.md, inbox/processed/fetch-2026-10-19-arxiv-an-input-output-feedback-linearization-based-exponentially-s.md, inbox/processed/fetch-2026-10-19-arxiv-temporal-waypoint-navigation-of-multi-uav-payload-system-usi.md, inbox/processed/fetch-2026-10-21-arxiv-maspa-an-efficient-strategy-for-path-planning-with-a-tethere.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -38,5 +38,9 @@ contradictions: []
 
 ## 최신 근거 연결 (2026-10-20)
 
-- 케이블이 아니라 2자유도 자기 구형 조인트로 강체 페이로드 프레임에 UAV를 연결한 구성도 연구된다: 입출력 피드백 선형화 추적 제어가 지수 안정이고 Gazebo 실시간 시뮬레이션에서 외란과 페이로드 질량 불확실성에 강건하다고 한다^[^[inbox/processed/fetch-2026-10-19-arxiv-an-input-output-feedback-linearization-based-exponentially-s.md]], STL 시간 사양을 HOCBF로 처리한 웨이포인트 항법은 Gazebo 택배 시나리오로 시연했다^[^[inbox/processed/fetch-2026-10-19-arxiv-temporal-waypoint-navigation-of-multi-uav-payload-system-usi.md]]: [[multi-uav-payload-transport-rao-controllers]]
+- 케이블이 아니라 2자유도 자기 구형 조인트로 강체 페이로드 프레임에 UAV를 연결한 구성도 연구된다: 입출력 피드백 선형화 추적 제어가 지수 안정이고 Gazebo 실시간 시뮬레이션에서 외란과 페이로드 질량 불확실성에 강건하다고 한다^[inbox/processed/fetch-2026-10-19-arxiv-an-input-output-feedback-linearization-based-exponentially-s.md], STL 시간 사양을 HOCBF로 처리한 웨이포인트 항법은 Gazebo 택배 시나리오로 시연했다^[inbox/processed/fetch-2026-10-19-arxiv-temporal-waypoint-navigation-of-multi-uav-payload-system-usi.md]: [[multi-uav-payload-transport-rao-controllers]]
 - 위 케이블 방식 세 연구와 마찬가지로 이 구성의 결과도 초록상 시뮬레이션 단계이며 실기체 시험은 확인되지 않는다.
+
+## 최신 근거 연결 (2026-10-21)
+
+- 케이블이 페이로드가 아니라 지상 차량(UGV)과 UAV를 잇는 구성도 있다: 마수피얼 시스템의 테더를 팽팽하다고 가정하고 볼록성·장애물 기하로 UAV의 실행 가능한 이륙 지점 집합을 구해 경로를 계획하며, 테더로 UAV 비행 중 배터리 제약을 완화하는 것이 이점으로 제시된다(초록 기준, 느슨한 테더로 확장): [[maspa-tethered-marsupial-uav-ugv-path-planning]]^[inbox/processed/fetch-2026-10-21-arxiv-maspa-an-efficient-strategy-for-path-planning-with-a-tethere.md]

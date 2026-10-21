@@ -1,10 +1,10 @@
 ---
 title: Skydio
 created: 2026-08-03
-updated: 2026-10-02
+updated: 2026-10-21
 type: entity
 tags: [drone, hardware, company, autonomy, security]
-sources: [inbox/fetch-2026-08-03-rss-skydio.md, inbox/fetch-2026-08-06-rss-skydio.md, inbox/fetch-2026-08-07-rss-skydio.md, inbox/fetch-2026-08-08-rss-skydio.md, inbox/fetch-2026-08-09-rss-skydio.md, inbox/processed/fetch-2026-09-30-rss-dronelife.md, inbox/processed/fetch-2026-09-30-rss-skydio.md]
+sources: [inbox/fetch-2026-08-03-rss-skydio.md, inbox/fetch-2026-08-06-rss-skydio.md, inbox/fetch-2026-08-07-rss-skydio.md, inbox/fetch-2026-08-08-rss-skydio.md, inbox/fetch-2026-08-09-rss-skydio.md, inbox/processed/fetch-2026-09-30-rss-dronelife.md, inbox/processed/fetch-2026-09-30-rss-skydio.md, inbox/processed/fetch-2026-10-21-rss-skydio.md]
 confidence: high
 contested: false
 contradictions: []
@@ -39,3 +39,7 @@ domain: hardware
 - [[skydio-f10-megadock]] — F10 Lightrunner 고정익 드론·MegaDock 플랫폼 상세
 - [[drone-ai-agents]] — 드론 AI 자율 시스템
 - [[drone-first-responder-dfr]] — 응급 대응 드론 프로그램
+
+## 최신 근거 연결 (2026-10-21)
+
+- L3Harris가 무전기·파형 기술을 Skydio 드론에 통합했고 Skydio가 ISR 지휘 플랫폼을 공개했다는 헤드라인이 보도됐다. 한편 St. Paul 주민들이 경찰 드론 계약에 항의했고 Lower Merion 경찰 드론 예산 $375,000이 논란이 됐다(헤드라인 기준, 본문 세부 미확인): [[skydio-dfr-milestone]], [[drone-news-2026-10-21]]^[inbox/processed/fetch-2026-10-21-rss-skydio.md]

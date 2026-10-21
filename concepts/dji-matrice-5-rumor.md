@@ -45,3 +45,4 @@ DJI 엔터프라이즈 라인업의 새로운 동향 — Matrice 30 후속 모�
 - [DJI] A Rocket Launch. Now in Thermal. | DJI Mavic 4 Pro & Matrice 4TD (youtube.com, 2026-08-20) — https://www.youtube.com/watch?v=MnUhzDUb66I
 - 우크라이나 정보당국 “러 파병 북한군 8500명… 드론부대도 포함” (브릿지경제, Sat, 22 Au) — https://news.google.com/rss/articles/CBMiWkFVX3lxTE5zcEt3M0NIZU9Lc19ZOE5ueEotOEtTMm9HQzhpVGhGeF9oY3BqUXltSW5DWTFFX3ZOMEtLYXhSTnhmVlJkTElBak9tc2hlRlU0OV90M0lIUTRzUQ?oc=5
 - [UAV Coach] Impulse Bought a DJI Air 3S... Now What? (youtube.com, 2026-09-18) — https://www.youtube.com/watch?v=lLH-7q5OtE8
+- [DJI] Volcano POV, No Looking Away | DJI O4 Air Unit Pro (youtube.com, 2026-10-20) — https://www.youtube.com/watch?v=WBH_VfmdTSA

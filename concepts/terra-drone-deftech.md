@@ -3,6 +3,7 @@ title: Terra Drone DEFTECH Partnership
 created: 2026-09-01
 updated: 2026-09-14
 type: concept
+domain: ops-mission
 tags: [drone, company, defense, c-uas, terra-drone]
 sources: [inbox/fetch-2026-09-01-rss-dronelife.md]
 confidence: high

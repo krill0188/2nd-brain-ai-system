@@ -3,6 +3,7 @@ title: AeroEval MDO Framework
 created: 2026-08-19
 updated: 2026-08-19
 type: concept
+domain: hardware
 tags: [drone-hw, drone, optimization, simulation, hardware]
 sources: [raw/papers/drone-hw/fetch-2026-08-19-arxiv-multi-domain-physics-based-mdo-of-multirotor-uavs-a-determin.md]
 confidence: high

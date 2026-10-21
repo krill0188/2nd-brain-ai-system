@@ -26,3 +26,6 @@ contradictions: []
 
 ## 관련
 RL 기반 쿼드로터 제어는 [[rl-quadrotor-tunable-control]], [[agile-quadrotor-learning]] 참조. 초록 기준 요약이며 파라미터 수치는 원문에 없다.
+
+## 📰 최근 관련 소식
+- Your Own Personal eVTOL? Skyfly Raises $10 Million to Bring the Axe to Market (dronelife.com, Tue, 20 Oc) — https://dronelife.com/2026/10/20/skyfly-personal-evtol-aircraft-funding/

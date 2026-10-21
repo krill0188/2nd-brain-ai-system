@@ -32,5 +32,5 @@ F450(페이로드 약 0.5 kg, 비행 10~15분), X500, T650(페이로드 2.5 kg) 
 
 ## 최신 근거 연결 (2026-10-20)
 
-- 시뮬레이션 10,000개 데이터로 CVAE를 학습해 역학·열역학·공기역학 기준을 동시에 만족하는 모터 마운트를 생성하는 접근(정량 성능은 초록에 없음): [[generative-cvae-uav-engine-mount-design]]^[^[inbox/processed/fetch-2026-10-20-arxiv-a-generative-neural-network-approach-for-3d-multi-criteria-d.md]] — 위 강도 해석·프레임 설계 사례의 수작업 탐색을 생성 모델로 대체하는 방향이다.
-- 틸트 로터가 지상에서 구동 바퀴가 되는 4모터 하이브리드 바이콥터로 급경사 등반·험지 주행을 시제품에서 시연했다: [[capsulebot-hybrid-aerial-ground-bicopter]]^[^[inbox/processed/fetch-2026-10-20-arxiv-capsulebot-a-novel-hybrid-aerial-ground-bi-copter-robot-with.md]]
+- 시뮬레이션 10,000개 데이터로 CVAE를 학습해 역학·열역학·공기역학 기준을 동시에 만족하는 모터 마운트를 생성하는 접근(정량 성능은 초록에 없음): [[generative-cvae-uav-engine-mount-design]]^[inbox/processed/fetch-2026-10-20-arxiv-a-generative-neural-network-approach-for-3d-multi-criteria-d.md] — 위 강도 해석·프레임 설계 사례의 수작업 탐색을 생성 모델로 대체하는 방향이다.
+- 틸트 로터가 지상에서 구동 바퀴가 되는 4모터 하이브리드 바이콥터로 급경사 등반·험지 주행을 시제품에서 시연했다: [[capsulebot-hybrid-aerial-ground-bicopter]]^[inbox/processed/fetch-2026-10-20-arxiv-capsulebot-a-novel-hybrid-aerial-ground-bi-copter-robot-with.md]

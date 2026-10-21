@@ -14,7 +14,7 @@ contradictions: []
 
 # ROS2 Drone Integration
 
-ROS2는 Flight Controller와 연동하여 고급 자율 기능을 구현하는 메인 **middleware** 스택이다. Companion Computer에서 실행되며 PX4/ArduPilot과 브릿지 연결된다.^[raw/articles/mastervault-ros2-devnotes.md]
+ROS2는 Flight Controller와 연동하여 고급 자율 기능을 구현하는 메인 **middleware** 스택이다. Companion Computer에서 실행되며 PX4/ArduPilot과 브릿지 연결된다.^[inbox/processed/mastervault-ros2-devnotes.md]
 
 ## 지원 배포판
 

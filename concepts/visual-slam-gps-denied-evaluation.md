@@ -3,6 +3,7 @@ title: Visual SLAM GPS-Denied Evaluation
 created: 2026-08-19
 updated: 2026-10-14
 type: concept
+domain: navigation-gnss-denied
 tags: [drone-ai, drone, slam, computer-vision, gps-denied]
 sources: [raw/papers/drone-ai/robust-visual-slam-for-uav-navigation-in-gps-denied-and-degraded-environments-a-.md, raw/articles/quad-drone-lab-quad-drone-start.md, raw/papers/drone-ai/wind-aware-deep-reinforcement-learning-for-autonomous-uav-navigation-without-gps.md]
 confidence: high

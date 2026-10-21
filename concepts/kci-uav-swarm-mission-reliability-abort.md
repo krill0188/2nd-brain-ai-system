@@ -40,4 +40,4 @@ contradictions: []
 
 ## 최신 근거 연결 (2026-10-20)
 
-- 임무 신뢰도·중단 임계값 관점과 짝이 되는 고장 이후 재할당 관점: 센서·액추에이터 고장 뒤 잔여 능력과 배터리 도달 범위를 반영하는 확률적 동적계획법 할당 정책(시뮬레이션): [[fault-tolerant-dynamic-task-assignment-uav-search]]^[^[inbox/processed/fetch-2026-10-20-arxiv-fault-tolerant-dynamic-task-assignment-for-uav-based-search-.md]] — 이 페이지는 단일 출처·초록 기반이라 `confidence: low`를 유지한다.
+- 임무 신뢰도·중단 임계값 관점과 짝이 되는 고장 이후 재할당 관점: 센서·액추에이터 고장 뒤 잔여 능력과 배터리 도달 범위를 반영하는 확률적 동적계획법 할당 정책(시뮬레이션): [[fault-tolerant-dynamic-task-assignment-uav-search]]^[inbox/processed/fetch-2026-10-20-arxiv-fault-tolerant-dynamic-task-assignment-for-uav-based-search-.md] — 이 페이지는 단일 출처·초록 기반이라 `confidence: low`를 유지한다.

@@ -179,5 +179,5 @@ Recommended: < 70% for stable flight
 
 ## 최신 근거 연결 (2026-10-20)
 
-- 다중 UAV가 조인트로 연결된 강체 페이로드를 운송하는 제어 연구(피드백 선형화 추적, Gazebo 시뮬레이션): [[multi-uav-payload-transport-rao-controllers]]^[^[inbox/processed/fetch-2026-10-19-arxiv-an-input-output-feedback-linearization-based-exponentially-s.md]]
-- 센서 태그 구동용 RF 비콘 페이로드는 지상 시험에서 동작했으나 공중에서는 무선 간섭으로 태그 데이터 검출에 실패해, 무선 페이로드의 기체 탑재 간섭 검증이 필요함을 보여준다: [[rf-energy-harvesting-sensor-tags-drone-agriculture]]^[^[inbox/processed/fetch-2026-10-20-arxiv-autonomous-agricultural-monitoring-with-aerial-drones-and-rf.md]]
+- 다중 UAV가 조인트로 연결된 강체 페이로드를 운송하는 제어 연구(피드백 선형화 추적, Gazebo 시뮬레이션): [[multi-uav-payload-transport-rao-controllers]]^[inbox/processed/fetch-2026-10-19-arxiv-an-input-output-feedback-linearization-based-exponentially-s.md]
+- 센서 태그 구동용 RF 비콘 페이로드는 지상 시험에서 동작했으나 공중에서는 무선 간섭으로 태그 데이터 검출에 실패해, 무선 페이로드의 기체 탑재 간섭 검증이 필요함을 보여준다: [[rf-energy-harvesting-sensor-tags-drone-agriculture]]^[inbox/processed/fetch-2026-10-20-arxiv-autonomous-agricultural-monitoring-with-aerial-drones-and-rf.md]

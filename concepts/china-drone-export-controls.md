@@ -29,7 +29,7 @@ contradictions: []
 
 ## 최신 근거 연결 (2026-10-20)
 
-- 영국 유통업체 증언(영상 자막, 2026-10-18)에 따르면 일부 중국 제조사의 비행 컨트롤러 반출이 막혔고 브랜드별로 성패가 갈리며, Holybro는 생산지를 옮겨 정상 유통 중이고 NDAA 준수 제품이 늘고 있다: [[china-rc-component-supply-3dxr-2026-10]]^[^[inbox/processed/fetch-2026-10-19-yt-3dxr-supply-and-stock-latest-oct26-china-rc-component-export.md]]
+- 영국 유통업체 증언(영상 자막, 2026-10-18)에 따르면 일부 중국 제조사의 비행 컨트롤러 반출이 막혔고 브랜드별로 성패가 갈리며, Holybro는 생산지를 옮겨 정상 유통 중이고 NDAA 준수 제품이 늘고 있다: [[china-rc-component-supply-3dxr-2026-10]]^[inbox/processed/fetch-2026-10-19-yt-3dxr-supply-and-stock-latest-oct26-china-rc-component-export.md]
 - 단일 영상 자막이고 자막이 잘려 있으며 구체 규정·시행일 언급이 없어, 위 "공고 34호" 조치와의 인과는 확인되지 않는다. 이 페이지의 `confidence`는 올리지 않는다.
 
 ## 📰 최근 관련 소식
@@ -606,3 +606,5 @@ contradictions: []
 - 수영구, 광안리 M 드론라이트쇼 ‘너의 꿈을 그려봐’ 그림 공모전 (부산경제, Thu, 15 Oc) — https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5UODBZQ3BCOXNvbW1Xemt3N0dPVklJVEhRSHJaRnZzTzJiV0VYM1pVT3BEd0dfSlliU0ZBbUZ2TXV5OEFPdUNURzdXMUVqTUk3aFVLRkd4cWo2T25kTWNha3FmMG1iV1U?oc=5
 - 충남도, 공무원 드론조종 경진대회 개최…15개 시군 45명 참가 (주간한국, Sat, 17 Oc) — https://news.google.com/rss/articles/CBMicEFVX3lxTFBKSXFQb1dDMTVEb3VPbHhnTEN0M0ZOeHN3SHFydjVPVDFTUUpQRzFVWndiSUpTY3pvRmh6WHVuWkxfUGhZcXFla3hYbVlIRmRSaDF3Zm9kTXlMRUJROFphTVlxR2dUckFCcFpfdzR1N1fSAXRBVV95cUxPQWVLUm54elE3a0NPaVJHcllEczlvaXNoSTlXZXFwVWVpUi1PVXVGUWRUZGY0cUdKc3VTellEUlJ6OVJiVEdKWi1URUJnWjNpcDR5OUtJazNQT2UyNGJ2T2tENlFQdmhaMWZBM1VrVnFWQk9UaQ?oc=5
 - [K방산 오디세이] "드론·미사일 요격에 강력한 방호력"…수출 핵심축 'AS21 레드백' (뉴시스, Fri, 16 Oc) — https://news.google.com/rss/articles/CBMiYEFVX3lxTE82UkNvVjRVUVdOOGhYcmx6UV9ERGVvckJIcXkwV3JobXlpb2I2LW9VSVpua01FUzdVRmF3RnRrdUdmaUhraFJWRkZmLXVJYkZPNUZoQ3BYRks2SGtzREoyNtIBeEFVX3lxTE9nQkxEdmFBczVUclNJZGRIcVBkQzVtQ2xVR1IyRVJYTHc4N245SGlXc0UtZXdzOUplV0V2TW1EMU9DQk5XZE1MejRVMWZNVnMyXy1WdVBLbUFWdURuS0Y0cVNGQ1VfY0VtUlpzM1U4Z0YyTTRhMGVLag?oc=5
+- Parrot and Rapid Imaging brings AR situational awareness to professional drone users - EMS1 (news.google.com, Thu, 29 Ap) — https://news.google.com/rss/articles/CBMi9AFBVV95cUxQUHdLMWVsOUE4MEo4UjNIMEpkSXowd0NPVExWWGlYZFRzLXAycEJXSW8xd0tpU3RhWGZzTlY2WTA4Zk1IWjdnaEhydzNLN0RtZHh0SkpLcURBUVBtRWlhVkhBd0hlVHFZZnp1TlFmWUJOUXB5bVdvbWoxZmtTdkViVGljNVRRZjNJZWx0U1FzVmNSX2V2elBtanhybGxraS1KOS11eGFMSE0tRE9tbThPTFlKeTl3ZjFiWm5jQ0Z5SU5seFJSWkdWMURBU2ZQcThRTE9ZVVlGVDhvZ3A5OXBjUk1OZjJpMnN1dWFULVFwS0t5WFpf?oc=5
+- Plowman Craven expands infrastructure division following period of significant growth (www.suasnews.com, Tue, 20 Oc) — https://www.suasnews.com/2026/10/plowman-craven-expands-infrastructure-division-following-period-of-significant-growth/

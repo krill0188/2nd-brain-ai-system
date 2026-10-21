@@ -1,10 +1,10 @@
 ---
 title: Matternet
 created: 2026-08-06
-updated: 2026-09-30
+updated: 2026-10-21
 type: entity
 tags: [drone, ops-mission, company]
-sources: [raw/articles/fetch-2026-09-19-rss-dronelife.md, inbox/processed/fetch-2026-09-23-rss-dronelife.md, inbox/processed/fetch-2026-09-29-rss-dronedj.md, inbox/processed/fetch-2026-09-30-rss-dronelife.md]
+sources: [raw/articles/fetch-2026-09-19-rss-dronelife.md, inbox/processed/fetch-2026-09-23-rss-dronelife.md, inbox/processed/fetch-2026-09-29-rss-dronedj.md, inbox/processed/fetch-2026-09-30-rss-dronelife.md, inbox/processed/fetch-2026-10-21-rss-dronelife.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -40,3 +40,7 @@ domain: ops-mission
 
 - [[doordash-air]] — 드론 배송 서비스 비교 대상
 - [[drone-first-responder-dfr]] — 응급/의료 드론 운용 사례
+
+## 최신 근거 연결 (2026-10-21)
+
+- **NHS 런던 확대 (2026-10-20 보도)**: Great Ormond Street 어린이병원(GOSH)까지 NHS 드론 배송망을 넓혀 긴급 검체를 인근 검사실로 수송하며, 검사 결과 수령을 앞당기는 것이 목적이라고 한다(헤드라인·요약 기준, 기체·건수 미확인): [[wing-nhs-medical-delivery]], [[drone-news-2026-10-21]]^[inbox/processed/fetch-2026-10-21-rss-dronelife.md]

@@ -36,5 +36,5 @@ contradictions: []
 
 ## 최신 근거 연결 (2026-10-20)
 
-- **강화(같은 논문의 추가 세부)**: 위 Gauthier 외(2023) 항목의 정지 추력 디지털 트윈은 KDE2315XF-885(885 Kv)+945 프로펠러와 Holybro ESC로 구동한 AIR 2216(880 Kv)+1045 프로펠러 실측과 비교했고, 정상상태와 과도 응답 모두 문헌의 선형화 모델과 상당히 어긋났다고 초록이 밝힌다: [[bldc-motor-propeller-digital-twin-static-thrust]]^[^[inbox/processed/fetch-2026-10-20-arxiv-digital-twin-of-a-dc-brushless-electric-motor-propeller-syst.md]] — 동일 논문의 재수집이라 독립 반복 검증이 아니며 `confidence`는 올리지 않는다.
-- 최신 ESC가 주는 전력·회전수 피드백만으로 고정익 대기속도를 추정(미학습 비행 데이터 nRMSE 약 5%)하는 연구는 ESC 텔레메트리를 추정 센서로 쓰는 사례다(초록 기준, 고정익 대상): [[propeller-feedback-airspeed-estimation]]^[^[inbox/processed/fetch-2026-10-19-arxiv-airspeed-estimation-for-uavs-using-only-propeller-feedback.md]]
+- **강화(같은 논문의 추가 세부)**: 위 Gauthier 외(2023) 항목의 정지 추력 디지털 트윈은 KDE2315XF-885(885 Kv)+945 프로펠러와 Holybro ESC로 구동한 AIR 2216(880 Kv)+1045 프로펠러 실측과 비교했고, 정상상태와 과도 응답 모두 문헌의 선형화 모델과 상당히 어긋났다고 초록이 밝힌다: [[bldc-motor-propeller-digital-twin-static-thrust]]^[inbox/processed/fetch-2026-10-20-arxiv-digital-twin-of-a-dc-brushless-electric-motor-propeller-syst.md] — 동일 논문의 재수집이라 독립 반복 검증이 아니며 `confidence`는 올리지 않는다.
+- 최신 ESC가 주는 전력·회전수 피드백만으로 고정익 대기속도를 추정(미학습 비행 데이터 nRMSE 약 5%)하는 연구는 ESC 텔레메트리를 추정 센서로 쓰는 사례다(초록 기준, 고정익 대상): [[propeller-feedback-airspeed-estimation]]^[inbox/processed/fetch-2026-10-19-arxiv-airspeed-estimation-for-uavs-using-only-propeller-feedback.md]

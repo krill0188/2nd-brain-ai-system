@@ -3,6 +3,7 @@ title: A2Z Drone Delivery Longtail Dual
 created: 2026-09-01
 updated: 2026-09-14
 type: concept
+domain: hardware
 tags: [drone, hardware, delivery, bvlos, a2z]
 sources: [inbox/fetch-2026-09-01-rss-dronedj.md, inbox/fetch-2026-09-01-rss-dronelife.md]
 confidence: high

@@ -3,6 +3,7 @@ title: LLM Swarm WoT Framework
 created: 2026-08-19
 updated: 2026-08-19
 type: concept
+domain: swarm-multiagent
 tags: [swarm, ai-agent, drone, llm, wot]
 sources: [raw/papers/swarm/fetch-2026-08-19-arxiv-say-the-mission-execute-the-swarm-agent-enhanced-llm-reasoni.md]
 confidence: high

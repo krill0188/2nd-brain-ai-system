@@ -1,10 +1,10 @@
 ---
 title: "Flight-Ready LiDAR-Inertial Odometry for Embedded Drone Platforms"
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-10-21
 type: concept
 tags: [drone, ai-autonomy, slam, lidar, imu, navigation]
-sources: [inbox/fetch-2026-07-30-arxiv-flight-ready-lidar-inertial-odometry-for-embedded-drone-plat.md]
+sources: [inbox/fetch-2026-07-30-arxiv-flight-ready-lidar-inertial-odometry-for-embedded-drone-plat.md, inbox/processed/fetch-2026-10-21-arxiv-perception-and-energy-aware-motion-planning-for-uav-using-le.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -58,3 +58,7 @@ domain: ai-autonomy
 - [[computer-vision-drone]] — 드론 컴퓨터 비전 및 SLAM
 - [[px4-offboard-control]] — PX4 오프보드 제어
 - [[drone-simulation]] — 드론 시뮬레이션 환경
+
+## 최신 근거 연결 (2026-10-21)
+
+- 오도메트리 추정기 자체가 아니라 계획 단계에서 LiDAR 인지 품질을 다루는 접근: 속도에 따른 LiDAR 측정 불확실성을 학습해 에너지와 위치추정 오차의 트레이드오프를 조정한다(시뮬레이션, 초록 기준): [[perception-energy-aware-uav-lidar-motion-planning]]^[inbox/processed/fetch-2026-10-21-arxiv-perception-and-energy-aware-motion-planning-for-uav-using-le.md]

@@ -3,6 +3,7 @@ title: "Bitcraze"
 created: 2026-07-31
 updated: 2026-08-10
 type: entity
+domain: hardware
 ontology_class: Manufacturer
 tags: [drone, drone-hw, drone-sw, swarm]
 sources: []

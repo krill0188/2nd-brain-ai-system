@@ -3,6 +3,7 @@ title: MAVSDK v3.17.4 Release Notes
 created: 2026-09-01
 updated: 2026-09-01
 type: concept
+domain: comms-protocol
 tags: [drone, drone-sw, comms-protocol, mavsdk, release]
 sources: [inbox/fetch-2026-09-01-mavsdk.md]
 confidence: high

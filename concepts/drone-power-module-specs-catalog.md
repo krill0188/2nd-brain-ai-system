@@ -29,3 +29,6 @@ contradictions: []
 - mRo는 문서 사이트에 "unmaintained" 경고가 있고, ArduPilot 기준 BATT_VOLT_MULT 15.30, BATT_AMP_PERVLT 50이다. 보드에 인쇄된 값을 우선 적용한다. ^[inbox/processed/fetch-2026-10-16-hw-product-power-module-mro-power-zero-m10077.md]
 
 관련: [[drone-power-battery]], [[flight-controller-hardware]], [[dronecan-protocol]], [[pixhawk]].
+
+## 📰 최근 관련 소식
+- [Painless360] Why modern RC radio power buttons are safer than you think! (youtube.com, 2026-10-20) — https://www.youtube.com/watch?v=DLFeyCly0T8

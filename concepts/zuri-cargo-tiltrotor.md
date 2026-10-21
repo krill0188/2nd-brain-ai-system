@@ -3,6 +3,7 @@ title: Zuri Uncrewed Cargo Tiltrotor
 created: 2026-09-01
 updated: 2026-09-14
 type: concept
+domain: hardware
 tags: [drone, hardware, vtol, cargo, zuri]
 sources: [inbox/fetch-2026-09-01-rss-dronelife.md]
 confidence: high

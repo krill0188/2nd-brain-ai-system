@@ -3,6 +3,7 @@ title: "UAV ISAC via Cross-Region Cooperation"
 created: 2026-07-31
 updated: 2026-08-10
 type: concept
+domain: comms-protocol
 tags: [drone, comms-protocol, swarm, datalink]
 sources: []
 confidence: medium

@@ -3,6 +3,7 @@ title: "Event Camera for Drones"
 created: 2026-07-31
 updated: 2026-08-10
 type: concept
+domain: sensing-perception
 ontology_class: Camera
 tags: [drone, ai-autonomy, drone-hw, hardware]
 sources: []

@@ -3,6 +3,7 @@ title: Louisville DFR Fleet Expansion
 created: 2026-09-01
 updated: 2026-09-01
 type: concept
+domain: ops-mission
 tags: [drone, ops-mission, dfr, public-safety, louisville]
 sources: [inbox/fetch-2026-09-01-rss-skydio.md]
 confidence: high

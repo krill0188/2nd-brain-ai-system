@@ -145,10 +145,10 @@ Yu·You·Pei의 occupation-measure mean-field control(OM-MFC)은 개별 에이�
 
 ## 최신 근거 연결 (2026-10-20)
 
-- 센서·액추에이터 고장 후 잔여 능력과 배터리 도달 범위를 반영해 탐색 임무를 재할당하는 확률적 동적계획법 정책(오프라인 계산, 온라인 적용, 시뮬레이션): [[fault-tolerant-dynamic-task-assignment-uav-search]]^[^[inbox/processed/fetch-2026-10-20-arxiv-fault-tolerant-dynamic-task-assignment-for-uav-based-search-.md]]
-- 군집 드론이 재충전 결정을 서로 알리지 않는 조건의 에이전트 기반 시뮬레이션: [[uav-battery-recharge-agent-based-simulation]]^[^[inbox/processed/fetch-2026-10-20-arxiv-agent-based-simulation-of-uav-battery-recharging-for-iot-app.md]]
-- 위험 지점 방문 순서(VRP)와 배터리 예산 하위 경로를 나눈 이중 레벨 경로 계획: [[bilevel-route-hazard-exploration-uav]]^[^[inbox/processed/fetch-2026-10-19-arxiv-bi-level-route-optimization-and-path-planning-with-hazard-ex.md]]
-- 페이로드·배터리 제약 아래 Differential Evolution으로 센서 방문 수를 최대화하는 UAV 팀 데이터 수집 계획: [[uav-fleet-sensor-network-data-collection-de]]^[^[inbox/processed/fetch-2026-10-20-arxiv-exploiting-a-fleet-of-uavs-for-monitoring-and-data-acquisiti.md]]
+- 센서·액추에이터 고장 후 잔여 능력과 배터리 도달 범위를 반영해 탐색 임무를 재할당하는 확률적 동적계획법 정책(오프라인 계산, 온라인 적용, 시뮬레이션): [[fault-tolerant-dynamic-task-assignment-uav-search]]^[inbox/processed/fetch-2026-10-20-arxiv-fault-tolerant-dynamic-task-assignment-for-uav-based-search-.md]
+- 군집 드론이 재충전 결정을 서로 알리지 않는 조건의 에이전트 기반 시뮬레이션: [[uav-battery-recharge-agent-based-simulation]]^[inbox/processed/fetch-2026-10-20-arxiv-agent-based-simulation-of-uav-battery-recharging-for-iot-app.md]
+- 위험 지점 방문 순서(VRP)와 배터리 예산 하위 경로를 나눈 이중 레벨 경로 계획: [[bilevel-route-hazard-exploration-uav]]^[inbox/processed/fetch-2026-10-19-arxiv-bi-level-route-optimization-and-path-planning-with-hazard-ex.md]
+- 페이로드·배터리 제약 아래 Differential Evolution으로 센서 방문 수를 최대화하는 UAV 팀 데이터 수집 계획: [[uav-fleet-sensor-network-data-collection-de]]^[inbox/processed/fetch-2026-10-20-arxiv-exploiting-a-fleet-of-uavs-for-monitoring-and-data-acquisiti.md]
 
 ## 📰 최근 관련 소식
 - 충남 첫 ‘국가 지정 드론공원’ 탄생…당진서 비행·교육·대회 한 번에 (녹색경제신문, Tue, 04 Au) — https://news.google.com/rss/articles/CBMiaEFVX3lxTE9ySFBDbWVDbGdTd3ZTTVlfUWhBYTRDNURtZW8zc2FmLW9CZHZmcF8wcEdFa2FfOVpabEgzM1VjV3lEUFJ3V0pteGtDLWlDN3VEYmhmMDdJQTI1bXl6anNrRW9XTjFxdDk2?oc=5

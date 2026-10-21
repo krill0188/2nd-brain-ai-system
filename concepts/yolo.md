@@ -1,11 +1,11 @@
 ---
 title: YOLO
 created: 2026-07-29
-updated: 2026-10-18
+updated: 2026-10-21
 type: concept
 domain: ai-autonomy
 tags: [drone, drone-ai, ai-agent]
-sources: [inbox/fetch-2026-07-29-yolo.md, inbox/fetch-2026-09-01-yolo.md, inbox/fetch-2026-09-15-yolo.md, inbox/fetch-2026-09-16-yolo.md, inbox/fetch-2026-09-17-yolo.md, inbox/fetch-2026-09-18-yolo.md, inbox/processed/fetch-2026-10-02-yolo.md, inbox/processed/fetch-2026-10-17-kci-국방-ai-신뢰성ㆍ보안성-향상을-위한-러-우-전쟁-자폭-드론-촬영-이미지-기반-yolo-세그멘테이션-모델의-.md, inbox/processed/fetch-2026-10-17-yolo.md, inbox/processed/fetch-2026-10-18-yolo.md]
+sources: [inbox/fetch-2026-07-29-yolo.md, inbox/fetch-2026-09-01-yolo.md, inbox/fetch-2026-09-15-yolo.md, inbox/fetch-2026-09-16-yolo.md, inbox/fetch-2026-09-17-yolo.md, inbox/fetch-2026-09-18-yolo.md, inbox/processed/fetch-2026-10-02-yolo.md, inbox/processed/fetch-2026-10-17-kci-국방-ai-신뢰성ㆍ보안성-향상을-위한-러-우-전쟁-자폭-드론-촬영-이미지-기반-yolo-세그멘테이션-모델의-.md, inbox/processed/fetch-2026-10-17-yolo.md, inbox/processed/fetch-2026-10-18-yolo.md, inbox/processed/fetch-2026-10-21-yolo.md]
 confidence: high
 contested: false
 contradictions: []
@@ -57,3 +57,8 @@ YOLO는 실시간 객체 검출을 위한 딥러닝 아키텍처이다. 단일 �
 ## 최신 근거 연결 (2026-10-18)
 
 - 최신 릴리스는 [[yolo-v8-4-181]](2026-10-17)로, 데이터셋 로딩·자동 주석·회전 박스 트래킹·세그멘테이션 메모리·JetPack 7.2 감지 중심의 수정이며 아키텍처 변경은 없다.^[inbox/processed/fetch-2026-10-18-yolo.md]
+
+## 최신 근거 연결 (2026-10-21)
+
+- 최신 릴리스는 [[yolo-v8-4-183]](2026-10-20)다. 직전 [[yolo-v8-4-182]](2026-10-18)는 라벨 검증 강화 중심이었고, 이번 릴리스는 Axelera Metis(Voyager SDK 1.9.0)·Intel LiteRT 배포 확대와 학습·예측 안정성 수정이 핵심이며 모델 아키텍처 변경은 릴리스 노트에 없다.^[inbox/processed/fetch-2026-10-21-yolo.md]
+- 분류기 라벨 정렬 수정으로 ImageNette 검증 정확도가 9.45% → 70.37%로 보고됐다. 릴리스 노트의 자체 수치이며 드론 데이터셋 결과는 아니다.^[inbox/processed/fetch-2026-10-21-yolo.md]

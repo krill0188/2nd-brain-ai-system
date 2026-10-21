@@ -3,6 +3,7 @@ title: Drone Wildfire Monitoring RT-DETR
 created: 2026-09-01
 updated: 2026-09-14
 type: concept
+domain: ai-autonomy
 tags: [drone, drone-ai, wildfire, detection, rt-detr, kci]
 sources: [inbox/fetch-2026-09-01-kci-드론-영상-기반-실시간-산불-감시를-위한-연기-특화-rt-detr-개선-모델-설계-및-성능-분석.md]
 confidence: high

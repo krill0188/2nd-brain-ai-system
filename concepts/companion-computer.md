@@ -1,10 +1,10 @@
 ---
 title: Companion Computer
 created: 2026-08-06
-updated: 2026-10-14
+updated: 2026-10-21
 type: concept
 tags: [drone-hw, drone-sw]
-sources: [raw/articles/quad-drone-lab-quad-drone-start.md]
+sources: [raw/articles/quad-drone-lab-quad-drone-start.md, inbox/processed/fetch-2026-10-21-arxiv-stress-query-and-temporal-reliability-of-vision-language-mod.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -39,6 +39,10 @@ Flight Controller와 별도로 탑재되어 AI 추론·영상처리·미션 계�
 - [[flight-controller-hardware]] — FC 하드웨어 개요
 - [[px4-offboard-control]] — Offboard 제어 인터페이스
 - [[visual-slam-gps-denied-evaluation]] — non-GPS 비전 항법의 Jetson 배포 평가
+
+## 최신 근거 연결 (2026-10-21)
+
+- 온보드 연산 자원에 따라 VLM 규모와 추론 지연의 상충이 달라진다: 고성능 워크스테이션과 내장 그래픽 노트북에서 스트레스 테스트한 결과 중간 규모 모델이 하드웨어 프로파일 전반에서 가장 안정적이었다고 한다(초록 기준): [[vlm-copilot-uav-navigation-latency-reliability]]^[inbox/processed/fetch-2026-10-21-arxiv-stress-query-and-temporal-reliability-of-vision-language-mod.md]
 
 ## 📰 최근 관련 소식
 - 임현 유비파이 대표 - 드론쇼 기업이 말하는 ‘신방산’ (포브스코리아, Thu, 27 Au) — https://news.google.com/rss/articles/CBMickFVX3lxTFBzRHdaMWhHN0h4YUlrVFhYSDEtU1BVM1gySHFlVExZSHNkVjBsWU1YaTMtS1dwcHdtSWRHeTJMRll1WEhabUh4dGh2UTNpM1VGOVZ4VzdSa2Q4WnEzeHNYMDFWbHVrNHBDLTJUekhpSW45UQ?oc=5

@@ -3,6 +3,7 @@ title: QGroundControl
 created: 2026-07-29
 updated: 2026-10-02
 type: concept
+domain: gcs-software
 tags: [drone, drone-sw, gcs-software]
 sources: [inbox/fetch-2026-07-29-qgroundcontrol.md, inbox/fetch-2026-09-01-qgroundcontrol.md, inbox/processed/fetch-2026-10-02-qgroundcontrol.md]
 confidence: high

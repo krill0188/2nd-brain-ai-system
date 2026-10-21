@@ -1,11 +1,11 @@
 ---
 title: "드론 업계 주요 소식 (2026-10-20)"
 created: 2026-10-20
-updated: 2026-10-20
+updated: 2026-10-21
 type: concept
 domain: ops-mission
 tags: [drone, ops-mission, regulations]
-sources: [inbox/processed/fetch-2026-10-20-rss-dronelife.md, inbox/processed/fetch-2026-10-20-rss-skydio.md]
+sources: [inbox/processed/fetch-2026-10-20-rss-dronelife.md, inbox/processed/fetch-2026-10-20-rss-skydio.md, inbox/processed/fetch-2026-10-21-rss-dronelife.md]
 confidence: low
 contested: false
 contradictions: []
@@ -24,3 +24,7 @@ contradictions: []
 
 ## 제외
 - Skydio 로비 프로필(OpenSecrets) 헤드라인은 게시일이 2026-07-21이고 본문이 없어 반영하지 않았다.^[inbox/processed/fetch-2026-10-20-rss-skydio.md]
+
+## 최신 근거 연결 (2026-10-21)
+
+- 다음 일자 요약은 [[drone-news-2026-10-21]]이다. Matternet의 런던 NHS 드론 배송망 확대 기사(DRONELIFE, 2026-10-20 게시)는 다음 일자 요약에 반영됐다.^[inbox/processed/fetch-2026-10-21-rss-dronelife.md]

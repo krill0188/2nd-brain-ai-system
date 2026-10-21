@@ -14,13 +14,13 @@ contradictions: []
 
 # PX4 Offboard Control
 
-Offboard 모드는 **Companion Computer**가 Flight Controller의 비행 제어를 외부에서 직접 제어할 수 있게 하는 모드다. PX4는 오프보드 명령을 받아 실행하면서도 안전 장치(페일세이프)는 유지한다.^[raw/articles/px4-ros2-offboard-control.md]
+Offboard 모드는 **Companion Computer**가 Flight Controller의 비행 제어를 외부에서 직접 제어할 수 있게 하는 모드다. PX4는 오프보드 명령을 받아 실행하면서도 안전 장치(페일세이프)는 유지한다.^[inbox/processed/px4-ros2-offboard-control.md]
 
 > **⚠️ 경고**: Offboard 제어는 위험하다. 실제 기체에서는 항상 수동 제어로 회귀할 방법을 확보하라.
 
 ## 핵심 개념
 
-PX4는 **OffboardControlMode** 메시지를 수신해야 offboard 모드로 시동한다. 메시지 스트림이 약 **2Hz** 아래로 떨어지면 PX4는 offboard 모드를 종료한다.^[raw/articles/px4-ros2-offboard-control.md]
+PX4는 **OffboardControlMode** 메시지를 수신해야 offboard 모드로 시동한다. 메시지 스트림이 약 **2Hz** 아래로 떨어지면 PX4는 offboard 모드를 종료한다.^[inbox/processed/px4-ros2-offboard-control.md]
 
 ## 시스템 아키텍처
 

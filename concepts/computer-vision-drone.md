@@ -192,7 +192,7 @@ for waypoint in path:
 
 ## 최신 근거 연결 (2026-10-20)
 
-- YOLO v8.4.182는 음수 너비·높이 라벨을 검증 단계에서 거부하고 캐시 버전을 올려 기존 데이터셋을 재스캔한다. 모델 아키텍처 변경은 없고 드론 전용 수치도 릴리스 노트에 없다: [[yolo-v8-4-182]]^[^[inbox/processed/fetch-2026-10-19-yolo.md]]
+- YOLO v8.4.182는 음수 너비·높이 라벨을 검증 단계에서 거부하고 캐시 버전을 올려 기존 데이터셋을 재스캔한다. 모델 아키텍처 변경은 없고 드론 전용 수치도 릴리스 노트에 없다: [[yolo-v8-4-182]]^[inbox/processed/fetch-2026-10-19-yolo.md]
 
 ## 📰 최근 관련 소식
 - Army seeks next-gen missile that could shoot down small drones for less than $150K a pop (DefenseScoop, Tue, 04 Au) — https://news.google.com/rss/articles/CBMie0FVX3lxTE5GbzRtdW9TS3Y4b3JkaW9oazVGWW9nUWRxa0hGY25RV2h1UEg1MVVfQnhSUE1xS1VFMzVSUGRyckRva0VEZFV5aWhqeHZsbngwV2FpTDBLMVEwdllFOWVXYVZyU3g2VDNESS1WekhBLXNYOEdhMWZrenRESQ?oc=5

@@ -3,6 +3,7 @@ title: DJI Osmo 360 II
 created: 2026-09-01
 updated: 2026-09-25
 type: concept
+domain: hardware
 tags: [drone, hardware, dji, camera, 360]
 sources: [inbox/fetch-2026-09-01-rss-dronedj.md, inbox/processed/fetch-2026-09-25-rss-dronedj.md]
 confidence: high

@@ -1,12 +1,12 @@
 ---
 title: "멀티로터 전력·에너지 소비 모델 연구"
 created: 2026-10-16
-updated: 2026-10-20
+updated: 2026-10-21
 type: concept
 domain: hardware
 ontology_class: Multirotor
 tags: [drone, drone-hw, hardware]
-sources: [inbox/processed/fetch-2026-10-16-hw-paper-multirotor-power-model-gong-2022.md, inbox/processed/fetch-2026-10-16-hw-paper-forward-flight-efficiency-patnaik-2025.md, inbox/processed/fetch-2026-10-16-hw-paper-quadrotor-electrical-energy-model-honcharenko-2026.md, inbox/processed/fetch-2026-10-16-hw-paper-multicopter-energy-aware-framework-gasche-2025.md, inbox/processed/fetch-2026-10-16-hw-paper-battery-discharge-model-validation-di-nisio-2023.md, inbox/processed/fetch-2026-10-17-arxiv-energy-efficient-drone-logistics-for-last-mile-delivery-impl.md, inbox/processed/fetch-2026-10-17-arxiv-machine-learning-based-battery-state-of-health-prediction-fo.md, inbox/processed/fetch-2026-10-18-arxiv-impact-of-spatial-proximity-on-drone-services.md, inbox/processed/fetch-2026-10-18-arxiv-physics-aware-truck-and-drone-delivery-planning-using-optimi.md, inbox/processed/fetch-2026-10-19-arxiv-a-modular-energy-aware-framework-for-multicopter-modeling-in.md, inbox/processed/fetch-2026-10-20-arxiv-agent-based-simulation-of-uav-battery-recharging-for-iot-app.md, inbox/processed/fetch-2026-10-20-arxiv-capsulebot-a-novel-hybrid-aerial-ground-bi-copter-robot-with.md]
+sources: [inbox/processed/fetch-2026-10-16-hw-paper-multirotor-power-model-gong-2022.md, inbox/processed/fetch-2026-10-16-hw-paper-forward-flight-efficiency-patnaik-2025.md, inbox/processed/fetch-2026-10-16-hw-paper-quadrotor-electrical-energy-model-honcharenko-2026.md, inbox/processed/fetch-2026-10-16-hw-paper-multicopter-energy-aware-framework-gasche-2025.md, inbox/processed/fetch-2026-10-16-hw-paper-battery-discharge-model-validation-di-nisio-2023.md, inbox/processed/fetch-2026-10-17-arxiv-energy-efficient-drone-logistics-for-last-mile-delivery-impl.md, inbox/processed/fetch-2026-10-17-arxiv-machine-learning-based-battery-state-of-health-prediction-fo.md, inbox/processed/fetch-2026-10-18-arxiv-impact-of-spatial-proximity-on-drone-services.md, inbox/processed/fetch-2026-10-18-arxiv-physics-aware-truck-and-drone-delivery-planning-using-optimi.md, inbox/processed/fetch-2026-10-19-arxiv-a-modular-energy-aware-framework-for-multicopter-modeling-in.md, inbox/processed/fetch-2026-10-20-arxiv-agent-based-simulation-of-uav-battery-recharging-for-iot-app.md, inbox/processed/fetch-2026-10-20-arxiv-capsulebot-a-novel-hybrid-aerial-ground-bi-copter-robot-with.md, inbox/processed/fetch-2026-10-21-arxiv-perception-and-energy-aware-motion-planning-for-uav-using-le.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -42,6 +42,10 @@ contradictions: []
 
 ## 최신 근거 연결 (2026-10-20)
 
-- Gasche 외(2025)의 모듈식 모델은 수색구조 군집 경로계획 후속 연구의 기반으로 제시되며, 이종 군집의 기체별 모델링을 쉽게 한다고 주장한다(초록 기준, 정량 결과 없음): [[modular-energy-aware-multicopter-model]]^[^[inbox/processed/fetch-2026-10-19-arxiv-a-modular-energy-aware-framework-for-multicopter-modeling-in.md]] — 위 "파워트레인·배터리 수준" 항목과 같은 논문이라 독립 근거가 아니며 `confidence`는 유지한다.
-- 배터리 잔량이 아니라 재충전 정책 수준에서는, 드론 간 통신 없이 ChargerThreshold(CT) 정책이 30개 상황·6,000회 시뮬레이션에서 극단적 사용 조건에 더 안정적이었다(시뮬레이션만): [[uav-battery-recharge-agent-based-simulation]]^[^[inbox/processed/fetch-2026-10-20-arxiv-agent-based-simulation-of-uav-battery-recharging-for-iot-app.md]]
-- 바이콥터 4개 모터로 공중(틸트 로터)·지상(구동 바퀴) 추진을 겸하는 시제품이 낮은 소비전력을 확인했다고 보고한다(수치는 초록에 없음): [[capsulebot-hybrid-aerial-ground-bicopter]]^[^[inbox/processed/fetch-2026-10-20-arxiv-capsulebot-a-novel-hybrid-aerial-ground-bi-copter-robot-with.md]]
+- Gasche 외(2025)의 모듈식 모델은 수색구조 군집 경로계획 후속 연구의 기반으로 제시되며, 이종 군집의 기체별 모델링을 쉽게 한다고 주장한다(초록 기준, 정량 결과 없음): [[modular-energy-aware-multicopter-model]]^[inbox/processed/fetch-2026-10-19-arxiv-a-modular-energy-aware-framework-for-multicopter-modeling-in.md] — 위 "파워트레인·배터리 수준" 항목과 같은 논문이라 독립 근거가 아니며 `confidence`는 유지한다.
+- 배터리 잔량이 아니라 재충전 정책 수준에서는, 드론 간 통신 없이 ChargerThreshold(CT) 정책이 30개 상황·6,000회 시뮬레이션에서 극단적 사용 조건에 더 안정적이었다(시뮬레이션만): [[uav-battery-recharge-agent-based-simulation]]^[inbox/processed/fetch-2026-10-20-arxiv-agent-based-simulation-of-uav-battery-recharging-for-iot-app.md]
+- 바이콥터 4개 모터로 공중(틸트 로터)·지상(구동 바퀴) 추진을 겸하는 시제품이 낮은 소비전력을 확인했다고 보고한다(수치는 초록에 없음): [[capsulebot-hybrid-aerial-ground-bicopter]]^[inbox/processed/fetch-2026-10-20-arxiv-capsulebot-a-novel-hybrid-aerial-ground-bi-copter-robot-with.md]
+
+## 최신 근거 연결 (2026-10-21)
+
+- 에너지 모델을 계획에 직접 쓰는 사례: 수평 속도의 함수로 에너지 소비와 탑재 LiDAR 측정의 이분산 불확실성을 비행 전 시뮬레이션 데이터로 학습하고, 온라인 계획에서 배터리 사용량과 위치추정 오차를 함께 줄인다(GNSS 차단 환경, 시뮬레이션 검증, 초록 기준): [[perception-energy-aware-uav-lidar-motion-planning]]^[inbox/processed/fetch-2026-10-21-arxiv-perception-and-energy-aware-motion-planning-for-uav-using-le.md]

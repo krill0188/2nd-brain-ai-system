@@ -3,6 +3,7 @@ title: HDZero Goggle 2 Scroll Wheel Fix
 created: 2026-09-01
 updated: 2026-09-14
 type: concept
+domain: hardware
 tags: [drone, fpv, hardware, hdzero, goggle]
 sources: [inbox/fetch-2026-09-01-yt-hdzero-goggle-2-crazy-scroll-wheel-fix.md]
 confidence: high
