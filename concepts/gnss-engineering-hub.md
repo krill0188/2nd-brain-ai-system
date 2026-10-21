@@ -15,7 +15,7 @@ contradictions: []
 
 GNSS 신호·정밀측위(RTK/PPP)·설치환경·재밍/스푸핑·GNSS/INS 융합·무결성·GNSS 거부 환경 대안에 관한 수집 자료 허브. 제품 사양은 [[vendor-registry-gnss-receivers]], 제조사 목록은 [[vendor-registry-gnss-imu]]를 본다.^[inbox/processed/hw-20261021-hub-gnss.md]
 
-수록 51건(수집 2026-10-21). 각 문서의 수치는 원문 초록·공식 페이지에 적힌 값이며 본문 전체를 대조한 것이 아니다.^[inbox/processed/hw-20261021-hub-gnss.md]
+수록 52건(수집 2026-10-21). 각 문서의 수치는 원문 초록·공식 페이지에 적힌 값이며 본문 전체를 대조한 것이 아니다.^[inbox/processed/hw-20261021-hub-gnss.md]
 
 - [[env-ardupilot-gps-how-it-works-doc]] — GPS / GNSS How it works (ArduPilot docs)
 - [[env-ardupilot-gps-mounting-doc]] — Installing 3DR uBlox GPS + Compass Module (ArduPilot Copter docs) - mounting guidance
@@ -44,6 +44,7 @@ GNSS 신호·정밀측위(RTK/PPP)·설치환경·재밍/스푸핑·GNSS/INS 융
 - [[integrity-kass-qualification-insidegnss-2024]] — Korea Augmentation Satellite System (KASS): System Performance Qualification Result Overview
 - [[integrity-nasa-rnp-utm-jung-2016]] — Applying Required Navigation Performance Concept for Traffic Management of Small Unmanned Aircraft Systems
 - [[integrity-raim-survey-huang-2025]] — A survey of GNSS receiver autonomous integrity monitoring: Research status and opportunities
+- [[jamming-ardupilot-ekf3-jamming-expected-doc]] — ArduPilot GPS Jamming Mediation (EK3_OPTIONS JammingExpected)
 - [[jamming-esa-jammertest-2026]] — Jammertest pumps up the jam in Norway (ESA)
 - [[jamming-kci-yoo-resnet-svm-jamming-classification-kics-2023]] — ResNet/SVM-Based GNSS Jamming Classification Scheme
 - [[jamming-kwon-null-steering-circular-array-jees-2018]] — Null Steering of Circular Array Using Array Factor for GPS Anti-Jam
