@@ -746,7 +746,7 @@
     "concepts/gnss-denied-leo-survey-he-2025.md": "ee7c6911e368ffacfddd029b16dee2b5451ea419b97726b637fdbd5389494af4",
     "concepts/gnss-denied-uwb-pena-queralta-2003.04380.md": "e11a36cffd4ef1f465d241883ecd16fc9758f87f01cd81f638bac84372321ce0",
     "concepts/gnss-denied-vio-novak-2602.01860.md": "258e1eea8dd4fc083dcbca14d48c30730ada196415441baac2acc0a9035da9d6",
-    "concepts/gnss-engineering-hub.md": "539a79519292f6d47ecf0f50aa7a202a5186ba97fa3dec14e580b4801478c8c1",
+    "concepts/gnss-engineering-hub.md": "a54ef7a1643e0385aff54c8df594b2c31879594821e3fd2373bbdcbdcf41f748",
     "concepts/gnss-signals-beidou-navipedia.md": "34f9105cfae79f91f8bed09ae64c97b6cfa440aad2d99d3f60f0ffcc1794d70c",
     "concepts/gnss-signals-galileo-navipedia.md": "cc6c503340066c35dff5de237b392f83bb38f7c9ccb036607cc1952233b76dc2",
     "concepts/gnss-signals-glonass-navipedia.md": "438b4e3e7daf377f8f3292804099597ea9e4a085542154ad8ce38c2e7a4353e1",
@@ -779,7 +779,8 @@
     "concepts/spoofing-kci-kim-cn0-detection-tle-jpnt-2026-3.md": "03ec347e667b3849d7cedc53815528e5e8faf0d28c29ef1aed901348021927e5",
     "concepts/spoofing-kci-park-sac-covert-spoofing-uav-jpnt-2026.md": "13e1dee09e1523c5b25911a550c518d9898cf19ed6b0d7aeeb1cc02c72e78b16",
     "concepts/spoofing-sharifi-utm-security-survey-2601.08229.md": "0fd7aac2250234c40e61e7c3e9c7747842036f600824aa3434e0f30fbe4a4cf2",
-    "concepts/vendor-registry-gnss-receivers.md": "b904f1ba3466e90b85cf952bd30f4491e501b3a52710c5b1da20d681fef7a40b"
+    "concepts/vendor-registry-gnss-receivers.md": "1d874e1a6a404a29053e2817358d4cee0f02a99bb871879cd182eaffd58ae0e6",
+    "concepts/jamming-ardupilot-ekf3-jamming-expected-doc.md": "d985224e55e2e2a9916f074d4f577c64856dadd67642ef5348bb0db2e14e9a3d"
   },
   "baseline": {
     "description": "Existing local public snapshot bytes; retention only, not a declaration of public classification. Never refresh automatically.",
