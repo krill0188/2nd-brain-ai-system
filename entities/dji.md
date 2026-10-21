@@ -9,6 +9,7 @@ confidence: medium
 contested: false
 contradictions: []
 domain: hardware
+ontology_class: Manufacturer
 ---
 
 # DJI

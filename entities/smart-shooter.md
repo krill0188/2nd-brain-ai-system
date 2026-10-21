@@ -4,6 +4,7 @@ created: 2026-10-01
 updated: 2026-10-01
 type: entity
 domain: ai-autonomy
+ontology_class: Manufacturer
 tags: [drone, ai-agent, company]
 sources: [inbox/processed/fetch-2026-10-01-rss-suasnews.md]
 confidence: medium

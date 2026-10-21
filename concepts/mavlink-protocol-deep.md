@@ -10,6 +10,7 @@ sources:
   - inbox/processed/px4-mavlink.md
 confidence: high
 domain: comms-protocol
+ontology_class: CommunicationProtocol
 contested: false
 contradictions: []
 ---

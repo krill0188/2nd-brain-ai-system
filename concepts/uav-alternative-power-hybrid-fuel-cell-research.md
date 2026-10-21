@@ -4,6 +4,7 @@ created: 2026-10-16
 updated: 2026-10-16
 type: concept
 domain: hardware
+ontology_class: Engine
 tags: [drone, drone-hw, hardware]
 sources: [inbox/processed/fetch-2026-10-16-hw-paper-hybrid-ice-generator-multirotor-krznar-2024.md, inbox/processed/fetch-2026-10-16-hw-paper-pem-fuel-cell-uav-alternative-power-shuhayeu-2024.md]
 confidence: low

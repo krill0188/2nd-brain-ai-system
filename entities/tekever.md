@@ -9,6 +9,7 @@ confidence: medium
 contested: false
 contradictions: []
 domain: ai-autonomy
+ontology_class: Manufacturer
 ---
 
 # TEKEVER

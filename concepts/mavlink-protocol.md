@@ -7,6 +7,7 @@ tags: [drone-sw, datalink, MAVLink, communication]
 sources: [raw/articles/mastervault-mavlink-reference.md, raw/articles/mavlink-xml-schema.md, raw/articles/px4-mavlink.md, inbox/fetch-2026-08-16-yt-what-is-mavlink-an-introduction-for-new-pilots.md]
 confidence: high
 domain: comms-protocol
+ontology_class: CommunicationProtocol
 contested: false
 contradictions: []
 ---

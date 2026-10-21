@@ -4,6 +4,7 @@ created: 2026-10-01
 updated: 2026-10-01
 type: entity
 domain: hardware
+ontology_class: Manufacturer
 tags: [drone, hardware, company]
 sources: [inbox/processed/fetch-2026-10-01-rss-dronelife.md, raw/papers/_unclassified/드론-탐지를-위한-효과적인-특징-기반-후처리-기법.md]
 confidence: medium

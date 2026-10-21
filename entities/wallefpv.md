@@ -9,6 +9,7 @@ confidence: medium
 contested: false
 contradictions: []
 domain: flight-control
+ontology_class: Manufacturer
 ---
 
 # WalleFPV

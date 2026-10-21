@@ -8,6 +8,7 @@ sources:
   - raw/articles/entity-mavlink-protocol.md
 confidence: high
 domain: comms-protocol
+ontology_class: CommunicationProtocol
 contested: false
 contradictions: []
 ---

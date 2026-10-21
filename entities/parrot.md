@@ -9,6 +9,7 @@ confidence: high
 contested: false
 contradictions: []
 domain: hardware
+ontology_class: Manufacturer
 ---
 
 # Parrot

@@ -7,6 +7,7 @@ tags: [drone-sw, mavlink, mavlink2, security, signing, encryption, authenticatio
 sources: [inbox/processed/fetch-2026-10-17-kci-드론-생존성-향상을-위한-mavlink-프로토콜-변조-기반의-가상-디코이-군집-형성-기만-시스템.md]
 confidence: medium
 domain: comms-protocol
+ontology_class: CommunicationProtocol
 contested: false
 contradictions: []
 note: "Knowledge-based page - no raw source ingested yet"

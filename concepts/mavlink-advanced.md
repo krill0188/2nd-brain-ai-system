@@ -7,6 +7,7 @@ tags: [drone-sw, datalink, mavlink, mavlink2, security, signing, advanced]
 sources: []
 confidence: medium
 domain: comms-protocol
+ontology_class: CommunicationProtocol
 contested: false
 contradictions: []
 note: "Knowledge-based page - no raw source ingested yet"

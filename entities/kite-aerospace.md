@@ -4,6 +4,7 @@ created: 2026-09-15
 updated: 2026-09-15
 type: entity
 domain: hardware
+ontology_class: Manufacturer
 tags: [drone, hardware, company]
 sources: [inbox/fetch-2026-09-15-rss-dronelife.md]
 confidence: medium

@@ -5,6 +5,7 @@ updated: 2026-08-12
 type: entity
 tags: [drone, company, hardware, propulsion, motor, us-manufacturing]
 domain: hardware
+ontology_class: Manufacturer
 sources:
   - inbox/fetch-2026-08-12-rss-dronelife.md
   - inbox/fetch-2026-08-12-rss-suasnews.md

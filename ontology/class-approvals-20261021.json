@@ -1,0 +1,93 @@
+{
+ "_comment": "2026-10-21 마스터 승인(남은 것 순차 승인)에 따라 신설 클래스 3개(CommunicationProtocol·Manufacturer·Engine)에 맞는 문서만 문서별로 읽고 선별한 승인 목록. 레지스트리 문서(vendor-registry-*, software-registry-*)는 제조사·SW 목록이라 개체가 아니므로 제외. 값은 scripts/apply-class-approvals.py가 해당 문서 frontmatter에 한 줄로만 추가한다. skydio·sol-one은 승인 당시 야간 수집으로 작업 트리에 미커밋 변경이 있어 이번 적용에서 제외(수집분이 커밋된 뒤 같은 기준으로 추가).",
+ "approved": [
+  {
+   "path": "concepts/mavlink-protocol.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/mavlink-protocol-deep.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/advanced-mavlink.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/mavlink-advanced-features.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/mavlink-advanced.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/mavlink2-security.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "entities/mavlink.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/uav-alternative-power-hybrid-fuel-cell-research.md",
+   "ontology_class": "Engine"
+  },
+  {
+   "path": "entities/abz-innovation.md",
+   "ontology_class": "Manufacturer"
+  },
+  {
+   "path": "entities/avidrone.md",
+   "ontology_class": "Manufacturer"
+  },
+  {
+   "path": "entities/bitcraze.md",
+   "ontology_class": "Manufacturer"
+  },
+  {
+   "path": "entities/dji.md",
+   "ontology_class": "Manufacturer"
+  },
+  {
+   "path": "entities/epropelled.md",
+   "ontology_class": "Manufacturer"
+  },
+  {
+   "path": "entities/parrot.md",
+   "ontology_class": "Manufacturer"
+  },
+  {
+   "path": "entities/ratefpv.md",
+   "ontology_class": "Manufacturer"
+  },
+  {
+   "path": "entities/robin-radar.md",
+   "ontology_class": "Manufacturer"
+  },
+  {
+   "path": "entities/wallefpv.md",
+   "ontology_class": "Manufacturer"
+  },
+  {
+   "path": "entities/wingcopter.md",
+   "ontology_class": "Manufacturer"
+  },
+  {
+   "path": "entities/kite-aerospace.md",
+   "ontology_class": "Manufacturer"
+  },
+  {
+   "path": "entities/smart-shooter.md",
+   "ontology_class": "Manufacturer"
+  },
+  {
+   "path": "entities/heven-aerotech.md",
+   "ontology_class": "Manufacturer"
+  },
+  {
+   "path": "entities/tekever.md",
+   "ontology_class": "Manufacturer"
+  }
+ ]
+}
