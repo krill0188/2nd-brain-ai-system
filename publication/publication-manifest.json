@@ -25,804 +25,420 @@
   ],
   "approved_source_versions": [
     {
-      "path": "concepts/ai-agent-safety-latency-typefly-chen-2023.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-agent-safety-robopair-robey-2024.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-agent-safety-saycan-ahn-2022.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-assurance-ml-lifecycle-ashmore-2019.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-cert-do178c-ml-dmitriev-low-criticality-2022.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-cert-do178c-ml-runway-sign-classifier-dal-c-2023.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-cert-do178c-ml-semi-automated-sridhar-2025.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-cert-easa-ai-roadmap-timeline.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-cert-easa-concept-paper-level1-2-issue02.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-cert-easa-concept-paper-proposed-issue-03.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-cert-ed324-arp6983-ml-assurance-standard.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-cert-ed324-eurocae-wg114-status-2026-10.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-cert-faa-roadmap-ai-safety-assurance.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-cert-iso-21448-sotif.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-cert-iso-pas-8800-ai-safety-road-vehicles.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-cert-ul-4600-overview.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-compression-deep-compression-han-2015.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-compression-distillation-hinton-2015.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "path": "concepts/ai-cert-arp6983-ed324-easa-ai-days-2026-flash-talk.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
       "path": "concepts/ai-drone-data-processing-hub.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
       "path": "concepts/ai-drone-models-hub.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
-      "path": "concepts/ai-fl-uav-backdoor-gps-spoofing-jedrzejczak-2026.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "path": "concepts/ai-fl-uav-aerpaw-poisoning-kostage-2025.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
-      "path": "concepts/ai-fl-uav-distributed-ml-swarms-ding-2023.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-fl-uav-dp-hierarchical-gat-shit-2025.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-fl-uav-privllmswarm-mpc-ayana-2025.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-fl-uav-reliable-participation-cheriguene-2023.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-fl-uav-soul-unlearning-zaman-2025.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-latency-ardupilot-companion-uart-baud-dade-2026.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-latency-companion-fc-dds-vs-mavros-cotta-2023.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-latency-px4-offboard-afio-forum-2026.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "path": "concepts/ai-fl-uav-real-hardware-chained-attacks-sabo-2026.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
       "path": "concepts/ai-latency-vision-in-the-loop-wickramasuriya-2026.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
-      "path": "concepts/ai-llm-drone-taking-flight-px4-lim-2025.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "path": "concepts/ai-sync-exposure-midpoint-hs-es-vins-yang-2026.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
-      "path": "concepts/ai-model-depth-anything-v2.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-model-depth-pro.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-model-dreamerv3.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-model-edgetam.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-model-grounding-dino.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-model-jetson-ai-lab-orin-nano-super.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-model-mobilellm.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-model-mobilesam.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-model-navila.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-model-onfly-onboard-aerial-vln.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-model-openvla.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-model-phi-3.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-model-pi0-openpi.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-model-qwen2-5-vl.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-model-rf-detr.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-model-rt-detr.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-model-sam2.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-model-smolvlm.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-model-uav-vla.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-model-vln-on-the-fly.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-model-yolo-ultralytics-jetson-orin-benchmarks.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-model-yolo-world.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-model-yolo11.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-model-yolo26-ultralytics-jetson-orin-per-variant.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-model-yolov10.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-model-yolov12.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-model-yolov9.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-quantization-awq-lin-2023.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-quantization-gptq-frantar-2022.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-quantization-integer-only-jacob-2017.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-quantization-smoothquant-xiao-2022.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-quantization-whitepaper-nagel-2021.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-safety-concrete-problems-amodei-2016.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-sim2real-deep-drone-acrobatics-kaufmann-2020.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-sim2real-domain-randomization-tobin-2017.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-sim2real-gym-pybullet-drones-panerati-2021.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-sim2real-learning-high-speed-flight-loquercio-2021.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-sim2real-racing-oc-vs-rl-song-2023.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-sim2real-survey-zhao-2020.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-sim2real-swift-champion-drone-racing-kaufmann-2023.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-smallobj-sahi-akyon-2022.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-smallobj-soda-cheng-2022.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-smallobj-visdrone-zhu-2020.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-sync-camera-imu-online-temporal-calibration-qin-2018.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-sync-camera-imu-varying-time-offset-ling-2018.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-uncertainty-deep-ensembles-lakshminarayanan-2016.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/ai-uncertainty-mc-dropout-gal-2015.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "path": "concepts/ai-sync-pirvs-hardware-sync-host-timestamp-zhang-2017.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
       "path": "concepts/ai-vlm-nav-airnav-cai-2026.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
-      "path": "concepts/ai-vlm-nav-openfly-gao-2025.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "path": "concepts/aliexpress-125-fpv-drone-build.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
-      "path": "concepts/ai-vlm-nav-soranav-song-2025.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "path": "concepts/brinc-emergency-drone-funding.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
-      "path": "concepts/conv-6g-control-comm-codesign-liang-2026.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "path": "concepts/cleveland-clinic-drone-delivery.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
-      "path": "concepts/conv-dt-model-sharing-xiong-2023.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "path": "concepts/computer-vision-drone.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
-      "path": "concepts/conv-dt-uav-network-hossen-2025.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "path": "concepts/conv-arp6983-status-2026-10-22.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "concepts/conv-camera-imu-sync-hw-vs-sw-evidence-2026-10.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
       "path": "concepts/conv-dt-uav-zero-touch-mcmanus-2022.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/conv-energy-comm-coverage-samshad-2024.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/conv-energy-comm-trajectory-battery-im-2023.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
       "path": "concepts/conv-energy-flying-batteries-jain-2019.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
       "path": "concepts/conv-energy-staging-jain-2020.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
-      "path": "concepts/conv-isac-cooperative-li-2025.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "path": "concepts/conv-fl-uav-real-airframe-attack-evidence-check.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
-      "path": "concepts/conv-isac-deeplsc-ye-2024.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/conv-isac-mec-peng-2024.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/conv-isac-networked-cheng-2024.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/conv-isac-predictive-beamforming-jiang-2025.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/conv-mbse-sysml-ros2-angadi-2026.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/conv-swap-autopilot-krishnan-2021.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/conv-swap-nano-uav-survey-zango-2026.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/conv-swarm-agentic-edge-nguyen-2026.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/conv-swarm-llm-rally-wang-2025.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/conv-utm-security-spalas-2024.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/conv-utm-skyroad-zahed-2025.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/data-anomaly-alfa-keipour-2019.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "path": "concepts/conv-jetson-orin-benchmark-source-map-2026-10.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
       "path": "concepts/data-anomaly-resam-islam-2022.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/data-dataset-uavid.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/data-dataset-visdrone.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/data-edge-aerial-autonomy-stack-panerati-2026.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
       "path": "concepts/data-edge-deepstream-9-2-jetson-orin-model-fps.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
-      "path": "concepts/data-edge-jetson-orin-lineup.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "path": "concepts/data-edge-jetson-ai-lab-models-orin-llm-vlm-throughput.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
-      "path": "concepts/data-edge-jetson-ota-update.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "path": "concepts/data-edge-jetson-benchmarks-github-csv-config.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
-      "path": "concepts/data-edge-nvidia-jetson-mlperf-orin.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "path": "concepts/data-edge-jetson-benchmarks-wayback-2023-12-orin-family-fps.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
-      "path": "concepts/data-edge-onnxruntime-tensorrt-ep.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "path": "concepts/data-edge-nvidia-jetson-benchmarks-live-page-mlperf-thor-2026-10.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
-      "path": "concepts/data-edge-tensorrt-quantized-types.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "path": "concepts/data-sync-ardupilot-camera-trigger-feedback.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
-      "path": "concepts/data-edge-tensorrt-quickstart.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "path": "concepts/data-sync-px4-camera-capture-hotshoe-and-vio-sync.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
-      "path": "concepts/data-fl-uav-bcsfl-hafeez-2024.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "path": "concepts/dji-easa-sail-bvlos.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
-      "path": "concepts/data-fl-uav-privacy-yang-2020.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/data-fl-uav-split-sflsc3-hou-2025.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/data-flightlog-ardupilot-aplogger-formats.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/data-flightlog-ardupilot-dataflash.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/data-flightlog-mcap-spec.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/data-flightlog-px4-analysis-tools.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/data-flightlog-px4-logging.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/data-flightlog-px4-ulog-format.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/data-flightlog-rosbag2.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/data-latency-px4-ardupilot-loop-rates-official.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/data-latency-px4-ardupilot-rates-delays-params-source.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/data-sync-hardware-timestamp-ntnu-wiki-and-gnss-clock.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/data-sync-kalibr-temporal-calibration-readme.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/data-sync-linux-pps-kernel.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/data-sync-ros2-message-filters-approximatetime-source.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/data-sync-ros2-message-filters-approximatetime.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/data-synthetic-airsim-image-apis.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/data-synthetic-omni-replicator.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/data-synthetic-pegasus-simulator-jacinto-2023.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/data-synthetic-testing-pipeline-jiang-2025.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "path": "concepts/dji-mavic-4-pro-features.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
       "path": "concepts/drone-convergence-engineering-hub.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
-      "path": "concepts/env-ardupilot-gps-how-it-works-doc.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "path": "concepts/drone-delivery-news.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
-      "path": "concepts/env-ardupilot-gps-mounting-doc.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "path": "concepts/drone-news-2026-10-22.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
-      "path": "concepts/env-basler-usb3-2.4ghz-gps-note.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "path": "concepts/drone-news-ops.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
-      "path": "concepts/env-dlr-miniaturized-all-gnss-antenna-array-choke-ring-eucap-2021.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "path": "concepts/env-brodin-helicopter-rotor-gps-reception-jnav-2005.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
-      "path": "concepts/env-henkel-anavs-uav-6d-rtk-antenna-eucap-2020.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "path": "concepts/env-hehenberger-dlr-gnss-array-installed-height-sensors-2022.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
-      "path": "concepts/env-kim-uav-airborne-multipath-jpnt-2015.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "path": "concepts/env-jiang-uav-gnss-review-drones-2026.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
-      "path": "concepts/env-punzet-groundplane-rtk-uav-ars-2023.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/env-recuv-gpsworld-uas-gnss-2016.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/env-usb3-gnss-emlid-forum-2017.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/fusion-ardupilot-ekf3-gps-overview.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/fusion-ardupilot-gps-blending.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/fusion-ardupilot-gps-for-yaw-dual-antenna.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/fusion-delama-galilean-gnss-delay-2605.13266.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/fusion-px4-ekf2-gnss-handling.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/fusion-suzuki-multi-gnss-receivers-uav-iros-2019.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/fusion-wen-fgo-vs-ekf-2004.10572.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/gnss-denied-aeromap3d-2607.14009.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/gnss-denied-leo-fisher-emenonye-2502.06083.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/gnss-denied-leo-jardak-2022.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/gnss-denied-leo-survey-he-2025.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/gnss-denied-uwb-pena-queralta-2003.04380.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/gnss-denied-vio-novak-2602.01860.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "path": "concepts/env-punzet-groundplane-rtk-uav-ars-2023-fulltext.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
       "path": "concepts/gnss-engineering-hub.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
-      "path": "concepts/gnss-signals-beidou-navipedia.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/gnss-signals-galileo-navipedia.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/gnss-signals-glonass-navipedia.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/gnss-signals-gps-navipedia.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/integrity-kass-design-insidegnss.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/integrity-kass-qualification-insidegnss-2024.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "path": "concepts/indi-stability-tilt-rotor-vtol.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
       "path": "concepts/integrity-nasa-rnp-utm-jung-2016.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
-      "path": "concepts/integrity-raim-survey-huang-2025.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "path": "concepts/korea-ngii-network-rtk-account-registration-official-guide.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
-      "path": "concepts/jamming-ardupilot-ekf3-jamming-expected-doc.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "path": "concepts/korea-ngii-network-rtk-server-mountpoints-official.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
-      "path": "concepts/jamming-elaraby-hierarchical-dithered-null-steering-analog-crpa-2026.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "path": "concepts/lipo-charging-cabinet-fire-test.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
-      "path": "concepts/jamming-esa-jammertest-2026.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "path": "concepts/llm-guided-semantic-trajectory-optimization-uav.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
-      "path": "concepts/jamming-kci-yoo-resnet-svm-jamming-classification-kics-2023.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "path": "concepts/precise-beni-rtk-ppk-uav-total-station-sensors-2026.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
-      "path": "concepts/jamming-kwon-null-steering-circular-array-jees-2018.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "path": "concepts/precise-cerreta-ebee-rtk-ppk-base-distance-ijaaa-2023.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
-      "path": "concepts/jamming-novatel-grit-doc.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "path": "concepts/precise-tavasci-low-cost-rtk-critical-environments-sensors-2024.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
-      "path": "concepts/jamming-septentrio-aim-plus-jamming-protection-page.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "path": "concepts/reflection-based-relative-localization-uav-active-markers.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
-      "path": "concepts/jamming-septentrio-jammertest-2023-results-page.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/jamming-spanghero-jammer-localization-2503.20352.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/jamming-spanghero-uav-mapping-interference-2405.07611.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/korea-jamming-koreatimes-2024-11.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/korea-jamming-segye-2024-11-cumulative.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/korea-kci-kim-ngii-network-rtk-testbed-jpnt-2024.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/korea-kci-lee-network-rtk-mountpoint-comparison-2026.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/korea-ngii-geodesy-portal-access-attempt-2026-10-22.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/korea-ngii-geodesy-portal-service-list.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/korea-ngii-network-rtk-access-distributor-notice.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/korea-seoul-network-rtk-service-access.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/precise-kci-hwang-rtk-drone-river-survey-kosham-2024.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/precise-kci-kim-rtk-precision-landing-iemek-2023.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/precise-mirmohammadian-ztd-long-baseline-rtk-sensors-2022.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/precise-ntrip-unavco-kb.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/precise-ppk-rtk-ppp-ar-arkali-2025.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/precise-ppp-rtk-review-li-2022.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/precise-px4-rtk-gps-doc.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/precise-stempfhuber-3d-rtk-single-gnss-receivers-isprs-2013.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/precise-wang-bds-gps-rtk-baseline-lengths-remote-sensing-2022.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/spoofing-jung-px4-ekf-drl-2506.08445.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/spoofing-kci-kim-cn0-detection-korea-jpnt-2026-1.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/spoofing-kci-kim-cn0-detection-tle-jpnt-2026-3.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/spoofing-kci-park-sac-covert-spoofing-uav-jpnt-2026.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/spoofing-septentrio-aim-plus-spoofing-protection-page.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
-    },
-    {
-      "path": "concepts/spoofing-sharifi-utm-security-survey-2601.08229.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "path": "concepts/uav-detr-anti-drone-detection.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     },
     {
       "path": "concepts/vendor-registry-gnss-receivers.md",
-      "source_commit": "eb9cfea30398b31ffa2147d765f559bf9d71602c"
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "concepts/voxl-sdk-1-8-0.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/_unclassified/a-robust-sensorless-controller-observer-strategy-for-pmsms-with-unknown-resistan.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/_unclassified/airspeed-estimation-for-uavs-using-only-propeller-feedback.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/_unclassified/autotrans-a-complete-planning-and-control-framework-for-autonomous-uav-payload-t.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/_unclassified/bi-level-route-optimization-and-path-planning-with-hazard-exploration.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/_unclassified/capsulebot-a-novel-hybrid-aerial-ground-bi-copter-robot-with-two-actuated-wheel-.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/_unclassified/compact-force-sensor-for-dual-uav-cable-suspended-payload-transport-with-tension.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/_unclassified/cyclic-mpdr-beamforming-for-suppression-of-almost-cyclostationary-acoustic-inter.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/_unclassified/design-modeling-and-direction-control-of-a-wire-driven-robotic-fish-based-on-a-2.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/_unclassified/design-of-a-flying-humanoid-robot-based-on-thrust-vector-control.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/_unclassified/digital-twin-of-a-dc-brushless-electric-motor-propeller-system-with-application-.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/_unclassified/energy-efficient-drone-logistics-for-last-mile-delivery-implications-of-payload-.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/_unclassified/energy-efficient-uav-replacement-in-software-defined-uav-networks.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/_unclassified/experimental-evaluation-of-a-uav-mounted-leo-satellite-backhaul-for-emergency-co.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/_unclassified/exploiting-a-fleet-of-uavs-for-monitoring-and-data-acquisition-of-a-distributed-.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/_unclassified/from-rubble-simulation-to-active-magnetic-mapping-quantum-sensing-for-disaster-r.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/_unclassified/global-sensitive-based-input-shaping-for-uav-payload-precision-motion-control.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/_unclassified/impact-of-spatial-proximity-on-drone-services.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/_unclassified/inductive-position-sensors-based-on-coupling-of-coils-on-printed-circuit-boards-.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/_unclassified/llm-guided-semantic-aware-trajectory-optimization-for-uav-path-planning-using-en.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/_unclassified/machine-learning-based-battery-state-of-health-prediction-for-unmanned-aerial-ve.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/_unclassified/maspa-an-efficient-strategy-for-path-planning-with-a-tethered-marsupial-robotics.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/_unclassified/mdfnet-a-lightweight-multi-scale-dynamic-fusion-network-for-visual-measurement-o.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/_unclassified/meteorologically-introduced-impacts-on-aerial-channels-and-uav-communications.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/_unclassified/skydio-unveils-isr-command-platform-for-drone-intelligence-and-surveillance-oper.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/_unclassified/speech-enhancement-using-ego-noise-references-with-a-microphone-array-embedded-i.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/_unclassified/stanford-pupper-a-low-cost-agile-quadruped-robot-for-benchmarking-and-education.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/_unclassified/stress-query-and-temporal-reliability-of-vision-language-models-as-copilots-in-a.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/_unclassified/uav-rotatable-antenna-under-rotation-delay.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/_unclassified/국방-ai-신뢰성ㆍ보안성-향상을-위한-러-우-전쟁-자폭-드론-촬영-이미지-기반-yolo-세그멘테이션-모델의-시야-방해-강건성-평가.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/_unclassified/북한의-러시아우크라이나전-무인기-전훈-수용-징후와-대남-도발-시사점.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/_unclassified/야전-보병-생존을-위한-대인-돌격형-소형-드론fpv-방어-체계-연구.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/datalink/autonomous-agricultural-monitoring-with-aerial-drones-and-rf-energy-harvesting-s.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/datalink/uav-based-3d-spectrum-sensing-insights-on-altitude-bandwidth-trajectory-and-effe.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/datalink/드론-생존성-향상을-위한-mavlink-프로토콜-변조-기반의-가상-디코이-군집-형성-기만-시스템.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/drone-ai/a-generative-neural-network-approach-for-3d-multi-criteria-design-generation-and.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/drone-ai/a-lyapunov-guided-diffusion-based-reinforcement-learning-approach-for-uav-assist.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/drone-ai/camf-det-closure-aware-multimodal-fusion-for-lidar-camera-3d-object-detection-on.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/drone-ai/how-to-model-your-crazyflie-brushless.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/drone-ai/joint-resource-management-for-energy-efficient-uav-assisted-swipt-mec-a-deep-rei.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/drone-ai/machine-learning-for-uav-propeller-fault-detection-based-on-a-hybrid-data-genera.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/drone-ai/perception-and-energy-aware-motion-planning-for-uav-using-learning-based-model-u.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/drone-ai/physics-aware-truck-and-drone-delivery-planning-using-optimization-machine-learn.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/drone-ai/sea-you-later-metadata-guided-long-term-re-identification-for-uav-based-multi-ob.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/drone-ai/xtenth-car-a-proportionally-scaled-experimental-vehicle-platform-for-connected-a.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/drone-hw/fault-tolerant-dynamic-task-assignment-for-uav-based-search-teams.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/drone-hw/the-e-rocket-low-cost-testbed-for-tvc-rocket-gnc-validation.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/swarm/a-modular-energy-aware-framework-for-multicopter-modeling-in-control-and-plannin.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/swarm/agent-based-simulation-of-uav-battery-recharging-for-iot-applications-precision-.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/swarm/an-input-output-feedback-linearization-based-exponentially-stable-controller-for.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/swarm/coverage-preserving-self-healing-in-partially-observable-3d-uav-swarm-networks-v.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/swarm/equivalent-agent-guidance-for-cooperative-uav-payload-transportation.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
+    },
+    {
+      "path": "raw/papers/swarm/temporal-waypoint-navigation-of-multi-uav-payload-system-using-barrier-functions.md",
+      "source_commit": "22529008fedc9477029960024e65ae475ca14c4b"
     }
   ],
   "revoked_paths": []
