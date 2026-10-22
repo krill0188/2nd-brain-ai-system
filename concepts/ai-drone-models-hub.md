@@ -1,11 +1,11 @@
 ---
 title: "드론 AI 모델·AI 공학 자료 허브"
-created: 2026-10-22
-updated: 2026-10-22
+created: 2026-10-23
+updated: 2026-10-23
 type: concept
 domain: ai-autonomy
 tags: [drone, hub]
-sources: [inbox/processed/hw-20261022-hub-aimodel.md]
+sources: [inbox/processed/hw-20261023-hub-aimodel.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -13,9 +13,9 @@ contradictions: []
 
 # 드론 AI 모델·AI 공학 자료 허브
 
-드론 인지(검출·분할·깊이)·VLM/VLA·온디바이스 언어모델·세계 모델 카드와, 양자화·압축·불확실성·sim-to-real·에이전트 안전 자료 허브.^[inbox/processed/hw-20261022-hub-aimodel.md]
+드론 인지(검출·분할·깊이)·VLM/VLA·온디바이스 언어모델·세계 모델 카드와, 양자화·압축·불확실성·sim-to-real·에이전트 안전 자료 허브.^[inbox/processed/hw-20261023-hub-aimodel.md]
 
-수록 84건(수집 2026-10-22). 각 문서의 수치는 원문 초록·공식 페이지에 적힌 값이며 본문 전체를 대조한 것이 아니다.^[inbox/processed/hw-20261022-hub-aimodel.md]
+수록 88건(수집 2026-10-23). 각 문서의 수치는 원문 초록·공식 페이지에 적힌 값이며 본문 전체를 대조한 것이 아니다.^[inbox/processed/hw-20261023-hub-aimodel.md]
 
 - [[ai-model-depth-anything-v2]] — Depth Anything V2
 - [[ai-model-depth-pro]] — Depth Pro: Sharp Monocular Metric Depth in Less Than a Second
@@ -101,3 +101,7 @@ contradictions: []
 - [[ai-fl-uav-real-hardware-chained-attacks-sabo-2026]] — Chained Attacks on Drone-Based Federated Learning: From Network Disruption to Device Impersonation
 - [[ai-sync-exposure-midpoint-hs-es-vins-yang-2026]] — Exposure-Midpoint Temporal Alignment and Risk-Aware Adaptive Feature Tracking for Stereo Visual-Inertial Odometry (HS-ES-VINS)
 - [[ai-sync-pirvs-hardware-sync-host-timestamp-zhang-2017]] — PIRVS: An Advanced Visual-Inertial SLAM System with Flexible Sensor Fusion and Hardware Co-Design
+- [[ai-edge-jetson-orin-nano-agx-yolo-latency-laf-yolov10-2026]] — LAF-YOLOv10 ... Small Object Detection in Drone Aerial Imagery — Table 8 Jetson Orin Nano / AGX Orin 지연(ms)
+- [[ai-edge-jetson-orin-nx-agx-depth-anything-latency-finke-2026]] — Learning Vision-Based Omnidirectional Navigation: A Teacher-Student Approach Using Monocular Depth Estimation (Jetson Orin NX / AGX Orin / Thor 지연 표)
+- [[ai-sync-time-offset-vins-mono-rmse-qin-shen-2018]] — Online Temporal Calibration for Monocular Visual-Inertial Systems — 시간 오프셋 주입 시 VINS 정확도 (EuRoC)
+- [[ai-sync-versavis-tschopp-2019-synced-vs-nonsynced]] — VersaVIS: An Open Versatile Multi-Camera Visual-Inertial Sensor Suite (동기 대 비동기 센서 비교 실험)
