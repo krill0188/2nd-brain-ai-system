@@ -1,11 +1,11 @@
 ---
 title: "드론 AI 데이터처리 자료 허브"
-created: 2026-10-21
-updated: 2026-10-21
+created: 2026-10-22
+updated: 2026-10-22
 type: concept
 domain: edge-ai-compute
 tags: [drone, hub]
-sources: [inbox/processed/hw-20261021-hub-aidata.md]
+sources: [inbox/processed/hw-20261022-hub-aidata.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -13,9 +13,9 @@ contradictions: []
 
 # 드론 AI 데이터처리 자료 허브
 
-비행 로그 형식, 데이터셋·합성데이터, 시간 동기화, 엣지 배포·MLOps, 연합학습, 이상 탐지 자료 허브.^[inbox/processed/hw-20261021-hub-aidata.md]
+비행 로그 형식, 데이터셋·합성데이터, 시간 동기화, 엣지 배포·MLOps, 연합학습, 이상 탐지 자료 허브.^[inbox/processed/hw-20261022-hub-aidata.md]
 
-수록 33건(수집 2026-10-21). 각 문서의 수치는 원문 초록·공식 페이지에 적힌 값이며 본문 전체를 대조한 것이 아니다.^[inbox/processed/hw-20261021-hub-aidata.md]
+수록 39건(수집 2026-10-22). 각 문서의 수치는 원문 초록·공식 페이지에 적힌 값이며 본문 전체를 대조한 것이 아니다.^[inbox/processed/hw-20261022-hub-aidata.md]
 
 - [[data-anomaly-alfa-keipour-2019]] — ALFA: A Dataset for UAV Fault and Anomaly Detection
 - [[data-anomaly-resam-islam-2022]] — RESAM: Requirements Elicitation and Specification for Deep-Learning Anomaly Models with Applications to UAV Flight Controllers
@@ -50,3 +50,9 @@ contradictions: []
 - [[data-synthetic-omni-replicator]] — Omniverse Replicator (omni.replicator documentation)
 - [[data-synthetic-pegasus-simulator-jacinto-2023]] — Pegasus Simulator: An Isaac Sim Framework for Multiple Aerial Vehicles Simulation
 - [[data-synthetic-testing-pipeline-jiang-2025]] — A Step-by-Step Guide to Creating a Robust Autonomous Drone Testing Pipeline
+- [[data-edge-jetson-ai-lab-models-orin-llm-vlm-throughput]] — Jetson AI Lab 2.0 Models 페이지 Performance Comparison: Orin AGX 64GB / NX 16GB / Nano 8GB LLM·VLM 생성 처리량 (페이지 내장 JSON)
+- [[data-edge-jetson-benchmarks-github-csv-config]] — NVIDIA-AI-IOT/jetson_benchmarks: 벤치 스크립트 조건(JetPack 4.4+, TensorRT 7+)과 Orin Nano 모델별 배치·해상도 설정 CSV
+- [[data-edge-jetson-benchmarks-wayback-2023-12-orin-family-fps]] — NVIDIA Jetson Benchmarks (Wayback 2023-12-20 / 2024-06-21 snapshot): Orin Nano 4/8GB, Orin NX 8/16GB, AGX Orin 32/64GB 모델별 처리량 표
+- [[data-edge-nvidia-jetson-benchmarks-live-page-mlperf-thor-2026-10]] — NVIDIA Jetson Benchmarks 라이브 페이지(2026-10-22 열람): MLPerf Edge AGX Orin / Orin NX 지연·처리량, AGX Thor LLM·VLM 표
+- [[data-sync-ardupilot-camera-trigger-feedback]] — ArduPilot Copter 문서: Camera Shutter Configuration — 서보/릴레이 트리거와 핫슈 피드백(CAM1_FEEDBAK_PIN) 로깅
+- [[data-sync-px4-camera-capture-hotshoe-and-vio-sync]] — PX4 문서: 카메라 트리거(TRIG_*)·캡처핀(CAM_CAP_FBACK)과 카메라-IMU(VIO) 동기 예제

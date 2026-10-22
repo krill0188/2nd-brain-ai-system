@@ -1,11 +1,11 @@
 ---
 title: "드론 AI 모델·AI 공학 자료 허브"
-created: 2026-10-21
-updated: 2026-10-21
+created: 2026-10-22
+updated: 2026-10-22
 type: concept
 domain: ai-autonomy
 tags: [drone, hub]
-sources: [inbox/processed/hw-20261021-hub-aimodel.md]
+sources: [inbox/processed/hw-20261022-hub-aimodel.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -13,9 +13,9 @@ contradictions: []
 
 # 드론 AI 모델·AI 공학 자료 허브
 
-드론 인지(검출·분할·깊이)·VLM/VLA·온디바이스 언어모델·세계 모델 카드와, 양자화·압축·불확실성·sim-to-real·에이전트 안전 자료 허브.^[inbox/processed/hw-20261021-hub-aimodel.md]
+드론 인지(검출·분할·깊이)·VLM/VLA·온디바이스 언어모델·세계 모델 카드와, 양자화·압축·불확실성·sim-to-real·에이전트 안전 자료 허브.^[inbox/processed/hw-20261022-hub-aimodel.md]
 
-수록 79건(수집 2026-10-21). 각 문서의 수치는 원문 초록·공식 페이지에 적힌 값이며 본문 전체를 대조한 것이 아니다.^[inbox/processed/hw-20261021-hub-aimodel.md]
+수록 84건(수집 2026-10-22). 각 문서의 수치는 원문 초록·공식 페이지에 적힌 값이며 본문 전체를 대조한 것이 아니다.^[inbox/processed/hw-20261022-hub-aimodel.md]
 
 - [[ai-model-depth-anything-v2]] — Depth Anything V2
 - [[ai-model-depth-pro]] — Depth Pro: Sharp Monocular Metric Depth in Less Than a Second
@@ -96,3 +96,8 @@ contradictions: []
 - [[ai-vlm-nav-airnav-cai-2026]] — AirNav: A Large-Scale UAV Vision-and-Language Navigation Dataset with Natural and Diverse Instructions
 - [[ai-vlm-nav-openfly-gao-2025]] — OpenFly: A comprehensive platform for aerial vision-language navigation
 - [[ai-vlm-nav-soranav-song-2025]] — SoraNav: Adaptive UAV Task-Centric Navigation via Zeroshot VLM Reasoning
+- [[ai-cert-arp6983-ed324-easa-ai-days-2026-flash-talk]] — EASA AI Days 2026 (9-10 Sep 2026) Flash Talk: EUROCAE WG-114 / SAE G-34 — ED-324/ARP6983 timeline, deliverables, EASA recognition
+- [[ai-fl-uav-aerpaw-poisoning-kostage-2025]] — Federated Learning-enabled Network Incident Anomaly Detection Optimization for Drone Swarms (NSF AERPAW)
+- [[ai-fl-uav-real-hardware-chained-attacks-sabo-2026]] — Chained Attacks on Drone-Based Federated Learning: From Network Disruption to Device Impersonation
+- [[ai-sync-exposure-midpoint-hs-es-vins-yang-2026]] — Exposure-Midpoint Temporal Alignment and Risk-Aware Adaptive Feature Tracking for Stereo Visual-Inertial Odometry (HS-ES-VINS)
+- [[ai-sync-pirvs-hardware-sync-host-timestamp-zhang-2017]] — PIRVS: An Advanced Visual-Inertial SLAM System with Flexible Sensor Fusion and Hardware Co-Design

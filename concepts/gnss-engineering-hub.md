@@ -1,11 +1,11 @@
 ---
 title: "드론 GNSS 공학 자료 허브"
-created: 2026-10-21
-updated: 2026-10-21
+created: 2026-10-22
+updated: 2026-10-22
 type: concept
 domain: navigation-gnss-denied
 tags: [drone, hub]
-sources: [inbox/processed/hw-20261021-hub-gnss.md]
+sources: [inbox/processed/hw-20261022-hub-gnss.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -13,9 +13,9 @@ contradictions: []
 
 # 드론 GNSS 공학 자료 허브
 
-GNSS 신호·정밀측위(RTK/PPP)·설치환경·재밍/스푸핑·GNSS/INS 융합·무결성·GNSS 거부 환경 대안에 관한 수집 자료 허브. 제품 사양은 [[vendor-registry-gnss-receivers]], 제조사 목록은 [[vendor-registry-gnss-imu]]를 본다.^[inbox/processed/hw-20261021-hub-gnss.md]
+GNSS 신호·정밀측위(RTK/PPP)·설치환경·재밍/스푸핑·GNSS/INS 융합·무결성·GNSS 거부 환경 대안에 관한 수집 자료 허브. 제품 사양은 [[vendor-registry-gnss-receivers]], 제조사 목록은 [[vendor-registry-gnss-imu]]를 본다.^[inbox/processed/hw-20261022-hub-gnss.md]
 
-수록 63건(수집 2026-10-21). 각 문서의 수치는 원문 초록·공식 페이지에 적힌 값이며 본문 전체를 대조한 것이 아니다.^[inbox/processed/hw-20261021-hub-gnss.md]
+수록 72건(수집 2026-10-22). 각 문서의 수치는 원문 초록·공식 페이지에 적힌 값이며 본문 전체를 대조한 것이 아니다.^[inbox/processed/hw-20261022-hub-gnss.md]
 
 - [[env-ardupilot-gps-how-it-works-doc]] — GPS / GNSS How it works (ArduPilot docs)
 - [[env-ardupilot-gps-mounting-doc]] — Installing 3DR uBlox GPS + Compass Module (ArduPilot Copter docs) - mounting guidance
@@ -80,3 +80,12 @@ GNSS 신호·정밀측위(RTK/PPP)·설치환경·재밍/스푸핑·GNSS/INS 융
 - [[spoofing-kci-park-sac-covert-spoofing-uav-jpnt-2026]] — SAC-Based Covert Spoofing Technique for GNSS/INS Integrated UAV Using Dual NIS Reward
 - [[spoofing-septentrio-aim-plus-spoofing-protection-page]] — AIM+ Anti-Spoofing Protection (Septentrio 기술 해설)
 - [[spoofing-sharifi-utm-security-survey-2601.08229]] — A Survey of Security Challenges and Solutions for UAS Traffic Management (UTM) and small Unmanned Aerial Systems (sUAS)
+- [[env-brodin-helicopter-rotor-gps-reception-jnav-2005]] — The Effect of Helicopter Rotors on GPS Signal Reception
+- [[env-hehenberger-dlr-gnss-array-installed-height-sensors-2022]] — Design and Installed Performance Analysis of a Miniaturized All-GNSS Bands Antenna Array for Robust Navigation on UAV Platforms
+- [[env-jiang-uav-gnss-review-drones-2026]] — UAV Positioning Using GNSS: A Review of the Current Status
+- [[env-punzet-groundplane-rtk-uav-ars-2023-fulltext]] — Impact of Additional Antenna Groundplanes on RTK-GNSS Positioning Accuracy of UAVs (본문 수치 보강)
+- [[korea-ngii-network-rtk-account-registration-official-guide]] — 국토지리정보원 실시간 측위보정정보(네트워크 RTK) 계정 등록 절차 - 공식 안내문 3종
+- [[korea-ngii-network-rtk-server-mountpoints-official]] — 국토지리정보원 네트워크 RTK 서버·마운트포인트·서비스 구분 - 공식 페이지와 변경 안내문
+- [[precise-beni-rtk-ppk-uav-total-station-sensors-2026]] — RTK and PPK GNSS Positioning Accuracy Assessment for UAVs Using a PPS-Synchronized Robotic Total Station
+- [[precise-cerreta-ebee-rtk-ppk-base-distance-ijaaa-2023]] — Accuracy Assessment of the eBee Using RTK and PPK Corrections Methods as a Function of Distance to a GNSS Base Station
+- [[precise-tavasci-low-cost-rtk-critical-environments-sensors-2024]] — Reliability of Real-Time Kinematic (RTK) Positioning for Low-Cost Drones' Navigation across Global Navigation Satellite System (GNSS) Critical Environments

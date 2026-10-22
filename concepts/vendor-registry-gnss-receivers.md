@@ -1,11 +1,11 @@
 ---
 title: "드론 GNSS 수신기·모듈·안테나 제품 레지스트리"
-created: 2026-10-21
-updated: 2026-10-21
+created: 2026-10-22
+updated: 2026-10-22
 type: concept
 domain: vendor-registry
 tags: [drone, drone-hw, gnss, vendor-registry]
-sources: [inbox/processed/hw-20261021-gnss-vendors.md]
+sources: [inbox/processed/hw-20261022-gnss-vendors.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -13,7 +13,7 @@ contradictions: []
 
 # 드론 GNSS 수신기·모듈·안테나 제품 레지스트리
 
-GNSS 제조사 공식 페이지에서 확인한 제품 94건의 요약표(수집 2026-10-21). 페이지에 없는 값은 '—'(미확인)이며 추정하지 않는다. 제조사 개요는 [[vendor-registry-gnss-imu]], GNSS 공학 자료는 [[gnss-engineering-hub]]를 본다.^[inbox/processed/hw-20261021-gnss-vendors.md]
+GNSS 제조사 공식 페이지에서 확인한 제품 105건의 요약표(수집 2026-10-22). 페이지에 없는 값은 '—'(미확인)이며 추정하지 않는다. 제조사 개요는 [[vendor-registry-gnss-imu]], GNSS 공학 자료는 [[gnss-engineering-hub]]를 본다.^[inbox/processed/hw-20261022-gnss-vendors.md]
 
 | 제조사 | 제품 | 지원 위성군 | 주파수 대역 | 인터페이스 | RTK/PPK/PPP |
 |---|---|---|---|---|---|
@@ -111,5 +111,16 @@ GNSS 제조사 공식 페이지에서 확인한 제품 94건의 요약표(수집
 | Unicore | Unicore UM980C | GPS, BDS, GLONASS, Galileo, QZSS, NavIC, SBAS, L-Band | GPS L1C/A, L1C, L2C, L2P(Y), L5; BDS B1I, B3I, B1C, B2a, B2b; GLONASS  | 3 x UART (LVTTL), 1 x SPI*, 1 x I2C*, 1 x CAN* | RTK (RMS) H 0.8 cm + 1 ppm / V 1.5 cm + 1 ppm |
 | Unicore | Unicore UM981 (RTK/INS) | GPS, BDS, GLONASS, Galileo, QZSS, NavIC, SBAS | GPS L1C/A, L1C, L2C, L2P(Y), L5; BDS B1I, B3I, B1C, B2a, B2b; GLONASS  | 3 x UART (LVTTL), 1 x I2C*, 1 x SPI*, 1 x CAN* | RTK (RMS) H 0.8 cm + 1 ppm / V 1.5 cm + 1 ppm |
 | Unicore | Unicore UM982 (듀얼안테나 포지셔닝·헤딩) | GPS, BDS, GLONASS, Galileo, QZSS, SBAS(주안테나) | 주안테나: GPS L1C/A, L2C, L2P(Y), L5; BDS B1I, B3I, B1C, B2a, B2b*; GLONAS | 3 x UART (LVTTL), 1 x SPI*, 1 x I2C*, 1 x CAN* | RTK (RMS) H 0.8 cm + 1 ppm / V 1.5 cm + 1 ppm |
+| CHC Navigation (CHCNAV, Shanghai Huace Navigation Technology Ltd.) | CHCNAV B760 (OEM GNSS 보드) 공식 제품페이지·데이터시트 | — | — | UART 3, ECLOCK 1(10M/20M), CLOCK_OUT 1(10M), LAN 1 | 1/2/5/10/20 Hz, 100 Hz* |
+| CHC Navigation (CHCNAV, Shanghai Huace Navigation Technology Ltd.) | CHCNAV M710N (초소형 12x16 mm 모듈) 공식 제품페이지·데이터시트 | — | — | — | 수평 0.8 cm + 1 ppm / 수직 1.5 cm + 1 ppm |
+| CHC Navigation (CHCNAV, Shanghai Huace Navigation Technology Ltd.) | CHCNAV M720 (GNSS 포지셔닝 모듈) 공식 제품페이지·데이터시트 | — | — | — | 1/2/5/10/20 Hz; Raw data 100 Hz* |
+| CHC Navigation (CHCNAV, Shanghai Huace Navigation Technology Ltd.) | CHCNAV M722 (듀얼안테나 포지셔닝·헤딩 모듈) 공식 제품페이지·데이터시트 | — | — | — | 1/2/5/10/20 Hz; Raw data 100 Hz* |
+| Septentrio | Septentrio mosaic-G5 P1 공식 데이터시트 (789채널·전력·AIM+ 등급) | — | — | — | 수평 0.6 cm + 0.5 ppm, 수직 1 cm + 1 ppm, 초기화 7 s |
+| Septentrio | Septentrio mosaic-G5 P6 공식 데이터시트 (789채널·전력·AIM+ 등급) | — | — | UART 2, USB 2.0 HS, GPIO 2, PPS 2, 이벤트 마커 2 | 수평 0.6 cm + 0.5 ppm / 수직 1 cm + 1 ppm, 초기화 7 s |
+| Septentrio | Septentrio mosaic-G5 P8 공식 데이터시트 (789채널·전력·AIM+ 등급) | — | — | UART(LVTTL, 최대 4 Mbps) 2, USB 2.0 HS 1, GPIO 2, PP | 수평 0.6 cm + 0.5 ppm / 수직 1 cm + 1 ppm, 초기화 7 s |
+| Septentrio | Septentrio mosaic-X5 448채널 수치 독립 확인 (3개 사본 + SparkFun 문서) | — | — | — | — |
+| SIYI Technology (思翼科技) | SIYI F9P RTK Module (u-blox ZED-F9P, 공식 사양) | GPS L1C/A, L2C; GLONASS L1OF, L2OF; Galileo E1B/C, E5b; BeiD | — | UART 2, USB-C 1 | — |
+| SIYI Technology (思翼科技, 공식 페이지 하단 표기: 思翼科技(深圳)有限公司) | SIYI RTK Positioning & Orientation Module (UM982 듀얼안테나, 공식 사양) | GPS, GLONASS, BeiDou, Galileo, QZSS | — | 사양 페이지: UART+I2C 1, UART 1, USB-C 1 / 매뉴얼: UART 2, | 수평 0.8 cm + 1 PPM / 고도 1.5 cm + 1 PPM |
+| SIYI Technology (思翼科技) | SIYI UniGNSS M10 (u-blox M10, DroneCAN GNSS, 공식 사양) | — | — | — | — |
 
-제품별 원본 사양 기록은 inbox/processed/hw-20261021-product-gnss-*.md 에 있다.^[inbox/processed/hw-20261021-gnss-vendors.md]
+제품별 원본 사양 기록은 inbox/processed/hw-20261022-product-gnss-*.md 에 있다.^[inbox/processed/hw-20261022-gnss-vendors.md]
