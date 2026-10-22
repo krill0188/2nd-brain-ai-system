@@ -1,11 +1,11 @@
 ---
 title: "드론 AI 데이터처리 자료 허브"
-created: 2026-10-23
-updated: 2026-10-23
+created: 2026-10-24
+updated: 2026-10-24
 type: concept
 domain: edge-ai-compute
 tags: [drone, hub]
-sources: [inbox/processed/hw-20261023-hub-aidata.md]
+sources: [inbox/processed/hw-20261024-hub-aidata.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -13,9 +13,9 @@ contradictions: []
 
 # 드론 AI 데이터처리 자료 허브
 
-비행 로그 형식, 데이터셋·합성데이터, 시간 동기화, 엣지 배포·MLOps, 연합학습, 이상 탐지 자료 허브.^[inbox/processed/hw-20261023-hub-aidata.md]
+비행 로그 형식, 데이터셋·합성데이터, 시간 동기화, 엣지 배포·MLOps, 연합학습, 이상 탐지 자료 허브.^[inbox/processed/hw-20261024-hub-aidata.md]
 
-수록 41건(수집 2026-10-23). 각 문서의 수치는 원문 초록·공식 페이지에 적힌 값이며 본문 전체를 대조한 것이 아니다.^[inbox/processed/hw-20261023-hub-aidata.md]
+수록 42건(수집 2026-10-24). 각 문서의 수치는 원문 초록·공식 페이지에 적힌 값이며 본문 전체를 대조한 것이 아니다.^[inbox/processed/hw-20261024-hub-aidata.md]
 
 - [[data-anomaly-alfa-keipour-2019]] — ALFA: A Dataset for UAV Fault and Anomaly Detection
 - [[data-anomaly-resam-islam-2022]] — RESAM: Requirements Elicitation and Specification for Deep-Learning Anomaly Models with Applications to UAV Flight Controllers
@@ -58,3 +58,4 @@ contradictions: []
 - [[data-sync-px4-camera-capture-hotshoe-and-vio-sync]] — PX4 문서: 카메라 트리거(TRIG_*)·캡처핀(CAM_CAP_FBACK)과 카메라-IMU(VIO) 동기 예제
 - [[data-edge-jetson-cudla-samples-yolov5s-orin-latency-ms]] — NVIDIA-AI-IOT cuDLA-samples: YOLOv5s INT8 Orin(DLA vs GPU) 배치별 지연(ms)
 - [[data-edge-jetson-nanosam-latency-ms-orin-nano-agx]] — NVIDIA-AI-IOT NanoSAM README 성능표: Jetson Orin Nano / AGX Orin 지연(ms)
+- [[data-edge-isaac-ros-performance-summary-release-3-2-orin-nx-nano-agx]] — Isaac ROS 공식 Performance Summary (release-3.2): AGX Orin / Orin NX / Orin Nano Super 노드·그래프별 fps·지연(ms)

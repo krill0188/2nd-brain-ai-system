@@ -1,11 +1,11 @@
 ---
 title: "드론 GNSS 공학 자료 허브"
-created: 2026-10-23
-updated: 2026-10-23
+created: 2026-10-24
+updated: 2026-10-24
 type: concept
 domain: navigation-gnss-denied
 tags: [drone, hub]
-sources: [inbox/processed/hw-20261023-hub-gnss.md]
+sources: [inbox/processed/hw-20261024-hub-gnss.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -13,9 +13,9 @@ contradictions: []
 
 # 드론 GNSS 공학 자료 허브
 
-GNSS 신호·정밀측위(RTK/PPP)·설치환경·재밍/스푸핑·GNSS/INS 융합·무결성·GNSS 거부 환경 대안에 관한 수집 자료 허브. 제품 사양은 [[vendor-registry-gnss-receivers]], 제조사 목록은 [[vendor-registry-gnss-imu]]를 본다.^[inbox/processed/hw-20261023-hub-gnss.md]
+GNSS 신호·정밀측위(RTK/PPP)·설치환경·재밍/스푸핑·GNSS/INS 융합·무결성·GNSS 거부 환경 대안에 관한 수집 자료 허브. 제품 사양은 [[vendor-registry-gnss-receivers]], 제조사 목록은 [[vendor-registry-gnss-imu]]를 본다.^[inbox/processed/hw-20261024-hub-gnss.md]
 
-수록 75건(수집 2026-10-23). 각 문서의 수치는 원문 초록·공식 페이지에 적힌 값이며 본문 전체를 대조한 것이 아니다.^[inbox/processed/hw-20261023-hub-gnss.md]
+수록 77건(수집 2026-10-24). 각 문서의 수치는 원문 초록·공식 페이지에 적힌 값이며 본문 전체를 대조한 것이 아니다.^[inbox/processed/hw-20261024-hub-gnss.md]
 
 - [[env-ardupilot-gps-how-it-works-doc]] — GPS / GNSS How it works (ArduPilot docs)
 - [[env-ardupilot-gps-mounting-doc]] — Installing 3DR uBlox GPS + Compass Module (ArduPilot Copter docs) - mounting guidance
@@ -92,3 +92,5 @@ GNSS 신호·정밀측위(RTK/PPP)·설치환경·재밍/스푸핑·GNSS/INS 융
 - [[env-rotor-blade-modulation-obrien-2009-access-log]] — O'Brien·Hayhurst·Gupta 2009 'Effects of Rotor Blade Modulation on GNSS Receiver Measurements' 접근 기록 + 인접 공개 논문(Barbiero 2013)
 - [[env-septentrio-ion-gnss-interference-quadcopter-selfjamming]] — Septentrio 'GNSS Interference' ION 자료 — 쿼드콥터 카메라 self-jamming 사례
 - [[env-uas-onboard-rfi-cn0-stubbs-akos-2016]] — Innovation: Flying safe — GNSS robustness for unmanned aircraft systems (기체 전원 ON/OFF 시 GPS C/N0 저하 실측)
+- [[env-uav-antenna-installation-height-hehenberger-2022-no-motor-emi]] — Design and Installed Performance Analysis of a Miniaturized All-GNSS Bands Antenna Array for Robust Navigation on UAV Platforms (헥사로터 설치 높이 50~130 mm, 로터 없는 측정)
+- [[korea-ngii-network-rtk-g-vrs-drone-access-recheck-2026-10-24]] — 국토지리정보원 네트워크 RTK·SSR·G-VRS — 드론 사용 문구, 신청 방식, 요금/승인 기간 재확인 (2026-10-24)

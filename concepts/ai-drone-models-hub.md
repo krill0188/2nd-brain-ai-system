@@ -1,11 +1,11 @@
 ---
 title: "드론 AI 모델·AI 공학 자료 허브"
-created: 2026-10-23
-updated: 2026-10-23
+created: 2026-10-24
+updated: 2026-10-24
 type: concept
 domain: ai-autonomy
 tags: [drone, hub]
-sources: [inbox/processed/hw-20261023-hub-aimodel.md]
+sources: [inbox/processed/hw-20261024-hub-aimodel.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -13,9 +13,9 @@ contradictions: []
 
 # 드론 AI 모델·AI 공학 자료 허브
 
-드론 인지(검출·분할·깊이)·VLM/VLA·온디바이스 언어모델·세계 모델 카드와, 양자화·압축·불확실성·sim-to-real·에이전트 안전 자료 허브.^[inbox/processed/hw-20261023-hub-aimodel.md]
+드론 인지(검출·분할·깊이)·VLM/VLA·온디바이스 언어모델·세계 모델 카드와, 양자화·압축·불확실성·sim-to-real·에이전트 안전 자료 허브.^[inbox/processed/hw-20261024-hub-aimodel.md]
 
-수록 88건(수집 2026-10-23). 각 문서의 수치는 원문 초록·공식 페이지에 적힌 값이며 본문 전체를 대조한 것이 아니다.^[inbox/processed/hw-20261023-hub-aimodel.md]
+수록 88건(수집 2026-10-24). 각 문서의 수치는 원문 초록·공식 페이지에 적힌 값이며 본문 전체를 대조한 것이 아니다.^[inbox/processed/hw-20261024-hub-aimodel.md]
 
 - [[ai-model-depth-anything-v2]] — Depth Anything V2
 - [[ai-model-depth-pro]] — Depth Pro: Sharp Monocular Metric Depth in Less Than a Second

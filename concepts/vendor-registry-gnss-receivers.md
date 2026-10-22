@@ -1,11 +1,11 @@
 ---
 title: "드론 GNSS 수신기·모듈·안테나 제품 레지스트리"
-created: 2026-10-23
-updated: 2026-10-23
+created: 2026-10-24
+updated: 2026-10-24
 type: concept
 domain: vendor-registry
 tags: [drone, drone-hw, gnss, vendor-registry]
-sources: [inbox/processed/hw-20261023-gnss-vendors.md]
+sources: [inbox/processed/hw-20261024-gnss-vendors.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -13,7 +13,7 @@ contradictions: []
 
 # 드론 GNSS 수신기·모듈·안테나 제품 레지스트리
 
-GNSS 제조사 공식 페이지에서 확인한 제품 106건의 요약표(수집 2026-10-23). 페이지에 없는 값은 '—'(미확인)이며 추정하지 않는다. 제조사 개요는 [[vendor-registry-gnss-imu]], GNSS 공학 자료는 [[gnss-engineering-hub]]를 본다.^[inbox/processed/hw-20261023-gnss-vendors.md]
+GNSS 제조사 공식 페이지에서 확인한 제품 106건의 요약표(수집 2026-10-24). 페이지에 없는 값은 '—'(미확인)이며 추정하지 않는다. 제조사 개요는 [[vendor-registry-gnss-imu]], GNSS 공학 자료는 [[gnss-engineering-hub]]를 본다.^[inbox/processed/hw-20261024-gnss-vendors.md]
 
 | 제조사 | 제품 | 지원 위성군 | 주파수 대역 | 인터페이스 | RTK/PPK/PPP |
 |---|---|---|---|---|---|
@@ -124,4 +124,4 @@ GNSS 제조사 공식 페이지에서 확인한 제품 106건의 요약표(수�
 | SIYI Technology (思翼科技) | SIYI UniGNSS M10 (u-blox M10, DroneCAN GNSS, 공식 사양) | — | — | — | — |
 | Septentrio | Septentrio mosaic-G5 P3 / P3H 공식 데이터시트 (789채널, 전력, 헤딩) | — | — | UART 2(LVTTL, 최대 4 Mbps), USB 2.0 HS 1, GPIO 2, PP | 0.6 cm + 0.5 ppm / 1 cm + 1 ppm, 초기화 7 s (개활지, RMS, 기선 <40 k |
 
-제품별 원본 사양 기록은 inbox/processed/hw-20261023-product-gnss-*.md 에 있다.^[inbox/processed/hw-20261023-gnss-vendors.md]
+제품별 원본 사양 기록은 inbox/processed/hw-20261024-product-gnss-*.md 에 있다.^[inbox/processed/hw-20261024-gnss-vendors.md]

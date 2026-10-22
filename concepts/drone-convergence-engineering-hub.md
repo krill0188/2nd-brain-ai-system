@@ -1,11 +1,11 @@
 ---
 title: "드론 융합공학 자료 허브"
-created: 2026-10-23
-updated: 2026-10-23
+created: 2026-10-24
+updated: 2026-10-24
 type: concept
 domain: ai-autonomy
 tags: [drone, hub]
-sources: [inbox/processed/hw-20261023-hub-conv.md]
+sources: [inbox/processed/hw-20261024-hub-conv.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -13,9 +13,9 @@ contradictions: []
 
 # 드론 융합공학 자료 허브
 
-AI×통신(ISAC/MEC), 디지털 트윈, SWaP 공동설계, 에너지·제어·통신 공동최적화, MBSE, UTM·군집 의사결정 자료 허브.^[inbox/processed/hw-20261023-hub-conv.md]
+AI×통신(ISAC/MEC), 디지털 트윈, SWaP 공동설계, 에너지·제어·통신 공동최적화, MBSE, UTM·군집 의사결정 자료 허브.^[inbox/processed/hw-20261024-hub-conv.md]
 
-수록 27건(수집 2026-10-23). 각 문서의 수치는 원문 초록·공식 페이지에 적힌 값이며 본문 전체를 대조한 것이 아니다.^[inbox/processed/hw-20261023-hub-conv.md]
+수록 30건(수집 2026-10-24). 각 문서의 수치는 원문 초록·공식 페이지에 적힌 값이며 본문 전체를 대조한 것이 아니다.^[inbox/processed/hw-20261024-hub-conv.md]
 
 - [[conv-6g-control-comm-codesign-liang-2026]] — UAV Control and Communication Enabled Low-Altitude Economy: Challenges, Resilient Architecture and Co-design Strategies
 - [[conv-dt-model-sharing-xiong-2023]] — A Digital Twin Empowered Lightweight Model Sharing Scheme for Multi-Robot Systems
@@ -44,3 +44,6 @@ AI×통신(ISAC/MEC), 디지털 트윈, SWaP 공동설계, 에너지·제어·�
 - [[conv-arp6983-status-2026-10-23]] — SAE ARP6983 / EUROCAE ED-324 발행 상태 — Wayback SAE 페이지·EUROCAE 소식 재확인 (2026-10-23)
 - [[conv-camera-imu-sync-direct-comparison-2026-10-23]] — 카메라-IMU 동기 HW vs SW 직접 정량 비교 — 재조사 결과 (2026-10-23)
 - [[conv-jetson-orin-latency-ms-sources-2026-10-23]] — Jetson Orin 지연(ms) 표 신규 출처 정리 (2026-10-23) — 조건 그대로
+- [[conv-arp6983-ed324-status-2026-10-24]] — SAE ARP6983 / EUROCAE ED-324 발행 여부 — EUROCAE WG-114 공식 페이지 라이브 확인 (2026-10-24)
+- [[conv-camera-imu-sync-hw-vs-sw-search-round4-2026-10-24]] — 카메라-IMU 하드웨어 동기 vs 소프트웨어 동기 직접 정량 비교 — 4차 재조사 (2026-10-24)
+- [[conv-motor-esc-antenna-cn0-quant-search-round4-2026-10-24]] — 모터·ESC·프로펠러 근접 GNSS 안테나 C/N0 저하 정량 — 4차 재조사 결과 (2026-10-24)
