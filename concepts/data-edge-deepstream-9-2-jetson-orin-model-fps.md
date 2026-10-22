@@ -47,3 +47,6 @@ contradictions: []
 - Orin NX/Nano 수치 없음(페이지는 AGX Orin과 Thor만). 지연(ms) 값 없음. 스트림 수·nvpmodel·JetPack 버전 미확인. Jetson AI Lab와 developer.nvidia.com/embedded/jetson-benchmarks는 단일/멀티 스트림 지연(ms) 열이 보이나 JS 렌더링 표라 값 추출 실패(미확인).^[inbox/processed/hw-20261021-data-edge-deepstream-9-2-jetson-orin-model-fps.md]
 
 상위 허브: [[ai-drone-data-processing-hub]] · 함께 보기: [[companion-computer]]
+
+## 📰 최근 관련 소식
+- [ModalAI] SDK 1.8.0 Built to be built on (youtube.com, 2026-10-21) — https://www.youtube.com/watch?v=B_PI7TkdSMA

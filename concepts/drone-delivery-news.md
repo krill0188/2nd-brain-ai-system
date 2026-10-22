@@ -57,3 +57,4 @@ contradictions: []
 - “착륙 못 하고 빙빙”…제주공항 또 멈춰 세운 ‘드론’ [잇슈 키워드] (KBS 뉴스, Wed, 19 Au) — https://news.google.com/rss/articles/CBMiW0FVX3lxTE1OTDVMN1FKWDBGNzNDNkN0NEdfWnFqLWs1Qm1jUExDVnpJdGEwcGVTM1hYQ0p2M29ZNklYRjQ0a3R0NTVaUHo3UGFFYzRScFNKVXZQMURPOXdMNWc?oc=5
 - [Joshua Bardwell] Q&A Livestream - August 23, 2026 (youtube.com, 2026-08-23) — https://www.youtube.com/watch?v=PQGyyYn5CJM
 - [Joshua Bardwell] Q&A Livestream - October 12, 2026 (youtube.com, 2026-09-01) — https://www.youtube.com/watch?v=kbmmcxwe4xI
+- As Drone Delivery Expands, Cities Turn to Zoning Rules to Address Local Concerns (dronelife.com, Wed, 21 Oc) — https://dronelife.com/2026/10/21/drone-delivery-zoning-rules-local-restrictions/

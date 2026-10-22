@@ -28,3 +28,6 @@ contradictions: []
 - 초록에 수치 없음. 세부 아키텍처 계층은 본문 미열람으로 미확인.^[inbox/processed/hw-20261021-conv-dt-uav-zero-touch-mcmanus-2022.md]
 
 상위 허브: [[drone-convergence-engineering-hub]] · 함께 보기: [[drone-simulation]]
+
+## 📰 최근 관련 소식
+- Trump’s Transportation Secretary Sean P. Duffy Announces First-Ever Special Airworthiness Market Survey Certificate for eVTOL Aircraft (www.suasnews.com, Wed, 21 Oc) — https://www.suasnews.com/2026/10/trumps-transportation-secretary-sean-p-duffy-announces-first-ever-special-airworthiness-market-survey-certificate-for-evtol-aircraft/

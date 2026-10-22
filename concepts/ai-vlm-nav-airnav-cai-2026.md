@@ -27,3 +27,6 @@ contradictions: []
 - 초록만 확인. 실기 시험의 구체 조건·수치 미확인.^[inbox/processed/hw-20261021-ai-vlm-nav-airnav-cai-2026.md]
 
 상위 허브: [[ai-drone-models-hub]] · 함께 보기: [[test-time-scaling-vlm-uav]]
+
+## 📰 최근 관련 소식
+- Axon Vision Accelerates U.S. Growth Strategy with Expanded U.S.Operating Presence and Strategic Leadership (www.suasnews.com, Wed, 21 Oc) — https://www.suasnews.com/2026/10/axon-vision-accelerates-u-s-growth-strategy-with-expanded-u-s-operating-presence-and-strategic-leadership/

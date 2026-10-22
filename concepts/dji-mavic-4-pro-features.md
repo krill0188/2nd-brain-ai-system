@@ -66,3 +66,4 @@ DJI's latest drone camera capabilities showcasing the Mavic 4 Pro's Hasselblad 1
 - [DJI] More speed. Less guesswork. | DJI RS 4 Pro (youtube.com, 2026-10-06) — https://www.youtube.com/watch?v=5pYa6svbq18
 - [DJI] Fall Looks Unreal From Up Here | DJI Mavic 4 Pro (youtube.com, 2026-10-11) — https://www.youtube.com/watch?v=cp0qbG2NHtA
 - [DJI] 100MP Hits Different | DJI Mavic 4 Pro (youtube.com, 2026-10-11) — https://www.youtube.com/watch?v=OxsdGmA9vCc
+- [DJI] Tiny box. Big wait. | DJI Lito 1 (youtube.com, 2026-10-21) — https://www.youtube.com/watch?v=_o0pDQii-sM

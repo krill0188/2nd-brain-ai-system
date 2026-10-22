@@ -28,3 +28,7 @@ CPS용 딥러닝 이상 탐지기를 만들기 위한 요구사항 프로세스 
 - 초록에 수치 없음. 데이터 규모·모델 성능은 본문 미열람으로 미확인.^[inbox/processed/hw-20261021-data-anomaly-resam-islam-2022.md]
 
 상위 허브: [[ai-drone-data-processing-hub]] · 함께 보기: [[drone-esc-failure-cases]]
+
+## 📰 최근 관련 소식
+- BETA Becomes First Company to Secure Landmark FAA Authorization to Conduct Flight Operations with Prospective Customers in Electric VTOL Aircraft (www.suasnews.com, Wed, 21 Oc) — https://www.suasnews.com/2026/10/beta-becomes-first-company-to-secure-landmark-faa-authorization-to-conduct-flight-operations-with-prospective-customers-in-electric-vtol-aircraft/
+- CES 2014: Parrot Jumping Sumo and MiniDrone set to invade your home this year - ExtremeTech (news.google.com, Mon, 06 Ja) — https://news.google.com/rss/articles/CBMiugFBVV95cUxQR0dwUU1UcDNXMmlpX282b1NxME5TOXFUb29QS3JnNW9XRTZ2QlRpVnQyM2NEUUxpaVN0WTdPQk1QXzB4Q1VrUVR5N2xJOVBkZkI3cDNScFRzQ2xjZXhwbm9SVHVOeWVEZzVQZFFpQ0pHRnkxNTJLVTVRblU0eWdLLTlON1h2WjdOMDdYenJveGFKNVBuMjBZN095MlZ2UEpmS0VkMGM5a1FGSjhtZGdyQmt4NUdlNklfeEE?oc=5

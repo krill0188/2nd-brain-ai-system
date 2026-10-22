@@ -3,7 +3,7 @@
 > Complete catalog of active canonical pages. Each entry is a wikilink followed by
 > a one-line summary, sorted alphabetically within its section.
 >
-|> Total pages: 645
+|> Total pages: 656
 ## Entities
 - [[qgroundcontrol-v5-1-0]] — QGroundControl v5.1.0 릴리스 후보 기록.
 |- [[avidrone]] — 캐나다 헤비리프트 드론 기업, DARPA Lift Challenge 우승.
@@ -666,6 +666,17 @@
 - [[kr-public-emergency-drone-exemption]] — 군·경·세관 적용 제외와 국가기관 긴급비행 특례.
 - [[kr-ultralight-registration-certification]] — 한국 초경량비행장치 신고·안전성인증·조종자증명(종별 기준).
 - [[kr-unmanned-special-flight-approval]] — 한국 무인비행장치 야간·가시권 밖 특별비행승인 절차.
+|- [[drone-news-2026-10-21]] — 2026년 10월 21일 드론 업계 주요 소식(Matternet NHS, Skydio, Skyfly, Sol.One 인도).
+|- [[drone-news-2026-10-22]] — 2026년 10월 22일 드론 업계 주요 소식(eVTOL FAA 승인, Elistair–ANAFI UKR 테더, 배송 허브 조닝, DJI 구형 펌웨어).
+|- [[jet-hr2-flying-humanoid-thrust-vectoring]] — Jet-HR2 비행 휴머노이드: 덕티드 팬 추력 벡터 제어로 추력비 1.17 이륙.
+|- [[llm-guided-semantic-trajectory-optimization-uav]] — LLM이 의미 변조 계수만 추론하고 B-스플라인이 경로를 최적화하는 UAV 궤적 계획(ETRI Journal 2026).
+|- [[maspa-tethered-marsupial-uav-ugv-path-planning]] — MASPA: 테더 연결 UGV-UAV 경로 계획, RRT* 대비 수 초 내 해결.
+|- [[perception-energy-aware-uav-lidar-motion-planning]] — GNSS 차단 환경 UAV의 에너지·LiDAR 인지 품질 동시 최적화 모션 계획.
+|- [[rc-radio-power-button-safety]] — RC 라디오 푸시버튼 전원의 오조작 방지 동작(길게 누름·ELRS 연결 시 확인).
+|- [[reflection-based-relative-localization-uav-active-markers]] — 반사 기반 UAV 팀 상대 위치추정: 능동 UV 마커 반사+파티클 필터, 30 m 이상에서 기존 UVR보다 우수.
+|- [[vlm-copilot-uav-navigation-latency-reliability]] — UAV 항법 VLM 코파일럿의 추론 지연·환각 트레이드오프 벤치마크.
+|- [[voxl-sdk-1-8-0]] — ModalAI VOXL SDK 1.8.0: libmodal-pipe 2.15, voxl-logger, 어안 스테레오 정류, 신규 패키지.
+|- [[yolo-v8-4-183]] — YOLO v8.4.183 릴리스, Axelera SDK 1.9·Intel LiteRT 지원 (2026-10-20).
 
 ## Comparisons
 

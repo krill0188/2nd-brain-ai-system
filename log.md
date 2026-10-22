@@ -2786,3 +2786,24 @@
 - Updated: `concepts/drone-regulations.md`(한국 세부 조문 링크 절 추가, updated 갱신), `index.md`(총 페이지 638 → 645)
 - Note: 조문 39건(항공안전법·시행령·시행규칙·항공사업법·드론법·군사기지법·특별비행 고시)을 주제별 7쪽으로 묶었다(조문 1건당 1쪽 생성 안 함). 법제처 발췌본 기준이며 confidence medium. 별표 23(공역 구역)·특별비행 안전기준 별표 1·시행령 금액 기준은 수집되지 않아 미반영. sources는 기존 관례대로 `inbox/processed/` 경로 사용
 - Moved to processed: inbox 파일 39개 → `inbox/processed/`
+
+## [2026-10-21] create | inbox 18건 중 12건 컴파일 (논문 4·릴리스 1·영상 1·뉴스 1, 페이지 7)
+
+- Created (concepts, 7): `jet-hr2-flying-humanoid-thrust-vectoring` (hardware), `maspa-tethered-marsupial-uav-ugv-path-planning` (ai-autonomy), `perception-energy-aware-uav-lidar-motion-planning` (ai-autonomy), `vlm-copilot-uav-navigation-latency-reliability` (ai-autonomy), `yolo-v8-4-183` (ai-autonomy), `rc-radio-power-button-safety` (flight-control), `drone-news-2026-10-21` (ops-mission)
+- Updated: `index.md` (총 페이지 645 → 652)
+- Skipped (사유): `arxiv-stanford-pupper-...` (4족 보행 로봇, 드론 도메인 외); `arxiv-xtenth-car-...` (지상 차량 플랫폼, 드론 도메인 외); `rss-parrot`, `rss-dji-enterprise` (2015~2026-07 게시의 오래된 항목뿐); `yt-accelerating-engineering-design-with-agentic-ai` (자막이 MATLAB/Simulink 제품 소개이며 예시가 자동차 서브시스템, 드론 구체 정보 없음); `yt-ros2수업-로봇수업-mujoco-...` (자막이 강좌 홍보·소개, 지상 양팔로봇 대상); `yt-dji-osmo-pocket-4p-...pearl-white`, `yt-volcano-pov-...o4-air-unit-pro` (자막 없음, 프로모)
+- Note: 논문 4건은 초록 기준이라 confidence medium, 뉴스·단일 영상은 low. sources는 기존 관례대로 `inbox/processed/` 경로 사용
+- Moved to processed: inbox 파일 18개 → `inbox/processed/` (스킵 6건 포함)
+
+## [2026-10-21] refactor | 10-21 신규 7쪽 근거를 기존 canonical 15쪽에 연결
+
+- Updated (concepts 13, entities 2): `multirotor-energy-power-models`, `flight-ready-lidar-inertial-odometry`, `llm-enabled-uav-natural-language-navigation`, `test-time-scaling-vlm-uav`, `companion-computer`, `yolo`, `yolo-v8-4-182`, `edgetx-custom-audio`, `elrs-41-release`, `uav-cable-payload-cooperative-transport-research`, `capsulebot-hybrid-aerial-ground-bicopter`, `indi-stability-tilt-rotor-vtol`, `drone-news-2026-10-20`, `entities/matternet`, `entities/skydio`
+- Note: 각 페이지에 "최신 근거 연결 (2026-10-21)" 절과 `^[inbox/processed/...]` 마커를 추가하고 `sources`/`updated` 갱신. `test-time-scaling-vlm-uav`에는 VLM 추론 지연 벤치마크 기반 적용 범위 주의를 추가했다(같은 조건 비교가 아니라 `contested`는 false 유지, `confidence` 변경 없음). 신규 근거가 모두 초록·헤드라인·단일 영상 수준이라 어떤 페이지도 `confidence`를 올리지 않았다. 후보 중 15쪽 초과분(`yolo-v8-4-181`, `kci-llm-cbba-swarm-task-allocation`, `distributed-aerial-surveillance-swarm`, `faa-section-2209-uafr`, `drone-safety-failsafe`)은 다음 실행 몫. 신규 페이지 없음이라 index.md 변경 없음.
+
+## [2026-10-22] create | inbox 15건 중 9건 컴파일 (논문 1·영상 2·뉴스 RSS 4·Zotero 1 → 페이지 4)
+
+- Created (concepts, 4): `llm-guided-semantic-trajectory-optimization-uav` (ai-autonomy), `reflection-based-relative-localization-uav-active-markers` (ai-autonomy), `voxl-sdk-1-8-0` (ai-autonomy), `drone-news-2026-10-22` (ops-mission)
+- Updated: `index.md` (총 페이지 652 → 656)
+- Skipped (사유): `rss-parrot`, `rss-dji-enterprise` (2014~2026-08 게시의 오래된 항목뿐); `yt-postgresql-hybrid-search-course-...` (자막은 범용 PostgreSQL BM25·벡터 검색 강좌, 드론 도메인 외); `yt-tactical-backpacks-are-better-...` (자막이 가방 수납 리뷰, 드론 기술 정보 없음); `yt-tiny-box-big-wait-dji-lito-1` (자막 없음, 언박싱 프로모)
+- Note: KCI 논문은 원문 비공개·초록 기준, 영상·뉴스는 단일 출처라 모두 confidence low. `yt-4-updates-...-dji-avata-360`(자막 없음, 설명란 업데이트 4건)과 Zotero Skydio ISR 항목(제목만)은 별도 페이지 없이 `drone-news-2026-10-22`에 흡수. `voxl-sdk-1-8-0`은 자막 없는 설명란 기준. sources는 기존 관례대로 `inbox/processed/` 경로 사용
+- Moved to processed: inbox 파일 15개 → `inbox/processed/` (스킵 5건 포함)

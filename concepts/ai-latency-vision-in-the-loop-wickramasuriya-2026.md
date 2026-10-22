@@ -32,3 +32,6 @@ contradictions: []
 - 제어기 주기 미기재(논문). 초록 외 본문은 arXiv HTML 추출 텍스트 기준. 수치 해석은 표 그대로.^[inbox/processed/hw-20261021-ai-latency-vision-in-the-loop-wickramasuriya-2026.md]
 
 상위 허브: [[ai-drone-models-hub]] · 함께 보기: [[px4-offboard-control]]
+
+## 📰 최근 관련 소식
+- Elistair Unveils Tethered Solution for the Parrot ANAFI UKR (dronelife.com, Wed, 21 Oc) — https://dronelife.com/2026/10/21/elistair-unveils-tethered-solution-for-the-parrot-anafi-ukr/

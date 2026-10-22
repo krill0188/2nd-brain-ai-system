@@ -87,3 +87,5 @@ ontology_class: VTOL
 - [Joshua Bardwell] This "durable" drone is awful // Axisflying Bando 5 (youtube.com, 2026-10-14) — https://www.youtube.com/watch?v=Mo15TyjLqgs
 - [UAV Coach] Why Does Flying a Drone Feel Illegal? (youtube.com, 2026-10-15) — https://www.youtube.com/watch?v=xmBoKb3wh1U
 - [Joshua Bardwell] I Exploded a LiPo in a $600 Safe (It Shot Flames) (youtube.com, 2026-10-17) — https://www.youtube.com/watch?v=H_eHspF-6KM
+- Team UAV Completes 500 Transformer Drone Inspections for National Grid Electricity Distribution (dronelife.com, Wed, 21 Oc) — https://dronelife.com/2026/10/21/team-uav-completes-500-transformer-drone-inspections-for-national-grid-electricity-distribution/
+- Best Drones For Beginners In 2021 - SlashGear (news.google.com, Fri, 18 Fe) — https://news.google.com/rss/articles/CBMidkFVX3lxTE1PamhMc1RZRVhhQlMwejMweHJiTU8zU1pYX3lXU3FFWWM2NFBHZzhRWXdJMVZielVncXpkOEVHMHk4X0J6T01lV2VfcGhKWVhzT0tZb2tOUnQtTWZtY2Eta1FXX215eTNiSHNabFYwUEVoWlJiR2c?oc=5

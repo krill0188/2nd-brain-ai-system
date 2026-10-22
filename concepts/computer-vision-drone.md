@@ -213,3 +213,4 @@ for waypoint in path:
 - [멈춤보단 천천히라도] DP — 한 번 구한 답은 기억한다 | 3분 알고리즘 #15 (youtube.com, 2026-09-18) — https://www.youtube.com/watch?v=eYO62e2alYA
 - [멈춤보단 천천히라도] 3분 알고리즘 — 애니메이션으로 배우는 알고리즘 기초 (youtube.com, 2026-09-18) — https://www.youtube.com/watch?v=WII-LeqSI58
 - Northrop Grumman to Accelerate Extended-Range C-UAS Missile Technology for US Army (Northrop Grumman, Tue, 29 Se) — https://news.google.com/rss/articles/CBMiwgFBVV95cUxNdnB2bXIzRGFoZ1B3Tk5yX0x6bzJVRWNUUEx1T2VvamkxZ1JSTHdBa0pjdFBER1F4dW9LV2FRTmtjNTdqYVJhdWowUjFRdm5TM2xuRENMQlFJVkJtWjMwR0YtTVdjTFN4TU5wT0NlODdVc1pzbVE1TC1udVlnbDlLd3pKbzdONlNyLXVQMGl6dTVNVTZGRnotNy00SFRBY3RQV0R4dkpBX3VlakFlVWQzVjc3RHkxaWhPWlAyZlhZVXZZQQ?oc=5
+- Best Drones For Beginners In 2021 - SlashGear (news.google.com, Fri, 18 Fe) — https://news.google.com/rss/articles/CBMidkFVX3lxTE1PamhMc1RZRVhhQlMwejMweHJiTU8zU1pYX3lXU3FFWWM2NFBHZzhRWXdJMVZielVncXpkOEVHMHk4X0J6T01lV2VfcGhKWVhzT0tZb2tOUnQtTWZtY2Eta1FXX215eTNiSHNabFYwUEVoWlJiR2c?oc=5

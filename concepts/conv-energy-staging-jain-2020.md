@@ -28,3 +28,6 @@ contradictions: []
 - 투하 단계 안전(낙하물) 문제는 초록에 없음: 미확인.^[inbox/processed/hw-20261021-conv-energy-staging-jain-2020.md]
 
 상위 허브: [[drone-convergence-engineering-hub]] · 함께 보기: [[drone-power-battery]]
+
+## 📰 최근 관련 소식
+- Disco Adds Fixed Wing Flight to Parrot's Flock of Drones - IEEE Spectrum (news.google.com, Tue, 05 Ja) — https://news.google.com/rss/articles/CBMiiAFBVV95cUxOWnJoZE45RDNvS1R2VTU4OTIwU2hvN3I3bDhsVFl2dFFlVW5SNHV5b0NmSW1FekhGREFfV3NIZUJuZW5XZUVMVjViUlpKek02ejBYZzRyM21nZEhqSC1vc01hTV8zQTFVb1FSYjRfSXJYaDh6aEZ0cUdnYk1Ndm5GRFhraXNYTUdQ?oc=5

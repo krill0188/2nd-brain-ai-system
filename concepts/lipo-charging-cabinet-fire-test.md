@@ -40,3 +40,4 @@ LiPo를 금속 캐비닛에 넣고 충전 중 의도적으로 발화시켜 캐�
 
 ## 📰 최근 관련 소식
 - [Joshua Bardwell] I Exploded a LiPo in a $600 Safe (It Shot Flames) (youtube.com, 2026-10-17) — https://www.youtube.com/watch?v=H_eHspF-6KM
+- [Joshua Bardwell] Tactical backpacks are better. Why I switched! // PGYTECH ONEMO TACTICAL BACKPACK (youtube.com, 2026-10-21) — https://www.youtube.com/watch?v=lJRyfqrutTE

@@ -57,3 +57,6 @@ domain: ai-autonomy
 
 - Yang et al., "UAV-DETR: DETR for Anti-Drone Target Detection", arXiv:2603.22841, 2026.
 - Code: https://github.com/wd-sir/UAVDETR
+
+## 📰 최근 관련 소식
+- Team UAV Completes 500 Transformer Drone Inspections for National Grid Electricity Distribution (dronelife.com, Wed, 21 Oc) — https://dronelife.com/2026/10/21/team-uav-completes-500-transformer-drone-inspections-for-national-grid-electricity-distribution/

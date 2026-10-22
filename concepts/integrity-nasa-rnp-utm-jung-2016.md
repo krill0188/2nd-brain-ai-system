@@ -29,3 +29,6 @@ ICAO의 RNP 개념을 UTM에 적용한다. 운영 위험을 정량화한 뒤 위
 2016년 자료로 현행 규정과 다를 수 있음. RNP 값은 초록에서 미확인. 항법원(GNSS) 요구 성능 분해는 확인 못 함.^[inbox/processed/hw-20261021-integrity-nasa-rnp-utm-jung-2016.md]
 
 상위 허브: [[gnss-engineering-hub]] · 함께 보기: [[gnss-denied-remote-autonomy]]
+
+## 📰 최근 관련 소식
+- Proposed ASTM Standard Will Aid Unmanned Aircraft Industry (www.suasnews.com, Wed, 21 Oc) — https://www.suasnews.com/2026/10/proposed-astm-standard-will-aid-unmanned-aircraft-industry/
