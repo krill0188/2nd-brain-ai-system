@@ -9,6 +9,7 @@ confidence: high
 contested: false
 contradictions: []
 domain: gcs-software
+ontology_class: GNSSDeniedNavigation
 ---
 
 # GNSS-Denied Remote Autonomy for Small UAVs

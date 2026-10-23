@@ -4,6 +4,7 @@ created: 2026-10-21
 updated: 2026-10-21
 type: concept
 domain: edge-ai-compute
+ontology_class: EdgeAIPerformance
 tags: [drone, ai, quantization, w8a8, llm]
 sources: [inbox/processed/hw-20261021-ai-quantization-smoothquant-xiao-2022.md]
 confidence: medium

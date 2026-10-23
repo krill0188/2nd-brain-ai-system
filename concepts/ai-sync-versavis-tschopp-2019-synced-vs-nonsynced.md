@@ -4,6 +4,7 @@ created: 2026-10-23
 updated: 2026-10-23
 type: concept
 domain: ros-middleware
+ontology_class: TimingLatency
 tags: [drone, time-synchronization, camera-imu, hardware-trigger, kalibr, rovio, versavis]
 sources: [inbox/processed/hw-20261023-ai-sync-versavis-tschopp-2019-synced-vs-nonsynced.md]
 confidence: medium

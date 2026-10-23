@@ -9,6 +9,7 @@ confidence: high
 contested: false
 contradictions: []
 domain: flight-control
+ontology_class: QuadrotorControl
 ---
 
 # 쿼드로터 웨이포인트 비행 시간 최적 계획

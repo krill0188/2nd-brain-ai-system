@@ -4,6 +4,7 @@ created: 2026-10-22
 updated: 2026-10-22
 type: concept
 domain: edge-ai-compute
+ontology_class: EdgeAIPerformance
 tags: [drone, edge-inference, jetson-orin, jetson-thor, mlperf, tensorrt, latency, benchmark]
 sources: [inbox/processed/hw-20261022-data-edge-nvidia-jetson-benchmarks-live-page-mlperf-thor-2026-10.md]
 confidence: medium

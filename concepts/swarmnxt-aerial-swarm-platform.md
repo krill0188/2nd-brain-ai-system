@@ -4,6 +4,7 @@ created: 2026-09-12
 updated: 2026-09-12
 type: concept
 domain: ai-autonomy
+ontology_class: SwarmResearch
 tags: [drone, swarm, ai-autonomy]
 sources: [raw/papers/swarm/swarmnxt-open-source-software-hardware-platform-for-fast-and-agile-aerial-swarms.md]
 confidence: medium

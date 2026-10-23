@@ -4,6 +4,7 @@ created: 2026-10-22
 updated: 2026-10-22
 type: concept
 domain: hardware
+ontology_class: TimingLatency
 tags: [drone, ardupilot, camera-trigger, hotshoe, time-synchronization, cam1-params]
 sources: [inbox/processed/hw-20261022-data-sync-ardupilot-camera-trigger-feedback.md]
 confidence: medium

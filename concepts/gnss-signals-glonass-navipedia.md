@@ -4,6 +4,7 @@ created: 2026-10-21
 updated: 2026-10-21
 type: concept
 domain: rf-datalink-engineering
+ontology_class: GNSSSignalsEnvironment
 tags: [drone, gnss]
 sources: [inbox/processed/hw-20261021-gnss-signals-glonass-navipedia.md]
 confidence: medium

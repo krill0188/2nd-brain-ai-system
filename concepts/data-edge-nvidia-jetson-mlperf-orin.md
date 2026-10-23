@@ -4,6 +4,7 @@ created: 2026-10-21
 updated: 2026-10-21
 type: concept
 domain: edge-ai-compute
+ontology_class: EdgeAIPerformance
 tags: [drone, edge-inference, jetson-orin, mlperf, benchmark]
 sources: [inbox/processed/hw-20261021-data-edge-nvidia-jetson-mlperf-orin.md]
 confidence: medium

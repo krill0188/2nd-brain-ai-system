@@ -4,6 +4,7 @@ created: 2026-10-22
 updated: 2026-10-22
 type: concept
 domain: hardware
+ontology_class: TimingLatency
 tags: [drone, px4, camera-trigger, camera-capture, time-synchronization, vio, camera-imu, mavros]
 sources: [inbox/processed/hw-20261022-data-sync-px4-camera-capture-hotshoe-and-vio-sync.md]
 confidence: medium

@@ -4,6 +4,7 @@ created: 2026-09-08
 updated: 2026-09-30
 type: concept
 domain: ai-autonomy
+ontology_class: SwarmResearch
 tags: [drone, ai-autonomy, swarm]
 sources: [raw/papers/swarm/game-theoretic-drone-swarm-defense-a-case-study-in-applied-differential-game-the.md]
 confidence: medium

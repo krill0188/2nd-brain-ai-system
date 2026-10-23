@@ -4,6 +4,7 @@ created: 2026-10-21
 updated: 2026-10-21
 type: concept
 domain: ai-autonomy
+ontology_class: SwarmResearch
 tags: [drone, privacy, mpc, llm, swarm, differential-privacy-comparison]
 sources: [inbox/processed/hw-20261021-ai-fl-uav-privllmswarm-mpc-ayana-2025.md]
 confidence: medium

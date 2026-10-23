@@ -4,6 +4,7 @@ created: 2026-10-22
 updated: 2026-10-22
 type: concept
 domain: hardware
+ontology_class: PrecisePositioning
 tags: [drone, gnss, rtk, ppk, total-station, 단기선, 실측]
 sources: [inbox/processed/hw-20261022-precise-beni-rtk-ppk-uav-total-station-sensors-2026.md]
 confidence: medium

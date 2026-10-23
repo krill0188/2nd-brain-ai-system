@@ -4,6 +4,7 @@ created: 2026-10-08
 updated: 2026-10-14
 type: concept
 domain: flight-control
+ontology_class: QuadrotorControl
 tags: [drone, drone-ai, drone-sw, research]
 sources: [inbox/processed/fetch-2026-10-08-arxiv-statistical-turbulence-and-high-fidelity-disturbance-fields-.md, raw/papers/_unclassified/statistical-turbulence-and-high-fidelity-disturbance-fields-for-quadrotor-flight.md, raw/papers/drone-ai/wind-aware-deep-reinforcement-learning-for-autonomous-uav-navigation-without-gps.md]
 confidence: low

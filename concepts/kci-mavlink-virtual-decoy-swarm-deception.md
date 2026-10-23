@@ -4,6 +4,7 @@ created: 2026-10-17
 updated: 2026-10-17
 type: concept
 domain: comms-protocol
+ontology_class: SwarmResearch
 tags: [drone, datalink, swarm]
 sources: [inbox/processed/fetch-2026-10-17-kci-드론-생존성-향상을-위한-mavlink-프로토콜-변조-기반의-가상-디코이-군집-형성-기만-시스템.md]
 confidence: medium

@@ -10,6 +10,7 @@ confidence: high
 contested: false
 contradictions: []
 domain: comms-protocol
+ontology_class: SwarmResearch
 note: "2026-08-19 재수집으로 원문(PDF) 확보, sources 필드 채움. authors: Silveria, Araujo, Nascimento, Givigi"
 ---
 

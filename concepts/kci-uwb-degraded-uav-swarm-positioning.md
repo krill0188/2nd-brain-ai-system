@@ -4,6 +4,7 @@ created: 2026-09-17
 updated: 2026-09-17
 type: concept
 domain: comms-protocol
+ontology_class: SwarmResearch
 tags: [drone, datalink, swarm]
 sources: [raw/papers/_unclassified/uwb-품질-저하-환경에서-uav-군집측위의최소운용조건분석.md]
 confidence: medium

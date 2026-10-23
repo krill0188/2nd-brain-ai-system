@@ -4,6 +4,7 @@ created: 2026-10-07
 updated: 2026-10-16
 type: concept
 domain: flight-control
+ontology_class: SwarmResearch
 tags: [drone, swarm, research]
 sources: [raw/papers/swarm/다수-vtol-무인기의-군집비행을-위한-이착륙-운용방안-및-실비행-적용.md, inbox/processed/fetch-2026-10-16-kci-다중-스펙트럼-헬리패드를-이용한-야간-uav-정밀-착륙-ir적외선-영상-기반-정렬-및-거리-센서-기반-하강-.md]
 confidence: low

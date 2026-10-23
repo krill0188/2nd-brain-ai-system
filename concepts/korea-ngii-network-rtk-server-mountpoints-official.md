@@ -4,6 +4,7 @@ created: 2026-10-22
 updated: 2026-10-22
 type: concept
 domain: ops-mission
+ontology_class: PrecisePositioning
 tags: [drone, gnss, ngii, network-rtk, ntrip, ssr, 공식, 드론]
 sources: [inbox/processed/hw-20261022-korea-ngii-network-rtk-server-mountpoints-official.md]
 confidence: medium

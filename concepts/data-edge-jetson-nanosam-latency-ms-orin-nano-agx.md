@@ -4,6 +4,7 @@ created: 2026-10-23
 updated: 2026-10-23
 type: concept
 domain: edge-ai-compute
+ontology_class: EdgeAIPerformance
 tags: [drone, edge-inference, jetson-orin, tensorrt, latency-ms, nanosam, sam]
 sources: [inbox/processed/hw-20261023-data-edge-jetson-nanosam-latency-ms-orin-nano-agx.md]
 confidence: medium

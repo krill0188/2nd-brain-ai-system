@@ -4,6 +4,7 @@ created: 2026-10-21
 updated: 2026-10-21
 type: concept
 domain: security
+ontology_class: GNSSInterferenceSecurity
 tags: [drone, gnss, aim-plus, osnma, septentrio]
 sources: [inbox/processed/hw-20261021-spoofing-septentrio-aim-plus-spoofing-protection-page.md]
 confidence: medium

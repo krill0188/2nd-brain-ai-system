@@ -9,6 +9,7 @@ confidence: medium
 contested: false
 contradictions: []
 domain: flight-control
+ontology_class: QuadrotorControl
 ---
 
 # Spatial Dubins Airplane-Based Reference Smoothing for Quadrotor Control

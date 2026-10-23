@@ -4,6 +4,7 @@ created: 2026-10-22
 updated: 2026-10-22
 type: concept
 domain: hardware
+ontology_class: GNSSSignalsEnvironment
 tags: [drone, gnss, ground-plane, rtk, 정량, 보강]
 sources: [inbox/processed/hw-20261022-env-punzet-groundplane-rtk-uav-ars-2023-fulltext.md]
 confidence: medium

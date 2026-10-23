@@ -4,6 +4,7 @@ created: 2026-10-21
 updated: 2026-10-21
 type: concept
 domain: flight-control
+ontology_class: TimingLatency
 tags: [drone, latency, px4, offboard, ros2, inference-lag, sitl]
 sources: [inbox/processed/hw-20261021-ai-latency-px4-offboard-afio-forum-2026.md]
 confidence: medium

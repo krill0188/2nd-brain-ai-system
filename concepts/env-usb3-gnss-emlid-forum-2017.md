@@ -4,6 +4,7 @@ created: 2026-10-21
 updated: 2026-10-21
 type: concept
 domain: hardware
+ontology_class: GNSSSignalsEnvironment
 tags: [drone, gnss]
 sources: [inbox/processed/hw-20261021-env-usb3-gnss-emlid-forum-2017.md]
 confidence: medium

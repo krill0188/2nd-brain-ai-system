@@ -4,6 +4,7 @@ created: 2026-10-21
 updated: 2026-10-21
 type: concept
 domain: security
+ontology_class: GNSSInterferenceSecurity
 tags: [drone, gnss, crpa, null-steering, swap, 시뮬레이션]
 sources: [inbox/processed/hw-20261021-jamming-elaraby-hierarchical-dithered-null-steering-analog-crpa-2026.md]
 confidence: medium

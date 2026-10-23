@@ -4,6 +4,7 @@ created: 2026-10-21
 updated: 2026-10-21
 type: concept
 domain: security
+ontology_class: GNSSInterferenceSecurity
 tags: [drone, gnss, kci]
 sources: [inbox/processed/hw-20261021-spoofing-kci-park-sac-covert-spoofing-uav-jpnt-2026.md]
 confidence: medium

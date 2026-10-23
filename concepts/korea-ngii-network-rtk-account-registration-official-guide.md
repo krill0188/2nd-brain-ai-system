@@ -4,6 +4,7 @@ created: 2026-10-22
 updated: 2026-10-22
 type: concept
 domain: ops-mission
+ontology_class: PrecisePositioning
 tags: [drone, gnss, ngii, network-rtk, ntrip, 신청절차, 공식]
 sources: [inbox/processed/hw-20261022-korea-ngii-network-rtk-account-registration-official-guide.md]
 confidence: medium

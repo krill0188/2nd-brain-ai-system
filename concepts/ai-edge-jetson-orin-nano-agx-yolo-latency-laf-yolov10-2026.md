@@ -4,6 +4,7 @@ created: 2026-10-23
 updated: 2026-10-23
 type: concept
 domain: edge-ai-compute
+ontology_class: EdgeAIPerformance
 tags: [drone, edge-inference, jetson-orin, tensorrt, latency-ms, yolo, visdrone]
 sources: [inbox/processed/hw-20261023-ai-edge-jetson-orin-nano-agx-yolo-latency-laf-yolov10-2026.md]
 confidence: medium

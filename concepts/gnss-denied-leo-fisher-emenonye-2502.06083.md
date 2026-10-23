@@ -4,6 +4,7 @@ created: 2026-10-21
 updated: 2026-10-21
 type: concept
 domain: navigation-gnss-denied
+ontology_class: GNSSDeniedNavigation
 tags: [drone, gnss]
 sources: [inbox/processed/hw-20261021-gnss-denied-leo-fisher-emenonye-2502.06083.md]
 confidence: medium

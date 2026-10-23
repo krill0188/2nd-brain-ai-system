@@ -4,6 +4,7 @@ created: 2026-10-21
 updated: 2026-10-21
 type: concept
 domain: navigation-gnss-denied
+ontology_class: GNSSDeniedNavigation
 tags: [drone, gnss]
 sources: [inbox/processed/hw-20261021-gnss-denied-uwb-pena-queralta-2003.04380.md]
 confidence: medium

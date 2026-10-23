@@ -4,6 +4,7 @@ created: 2026-10-22
 updated: 2026-10-22
 type: concept
 domain: ai-autonomy
+ontology_class: TimingLatency
 tags: [drone, time-synchronization, camera-imu, hardware-trigger, vio, kalibr]
 sources: [inbox/processed/hw-20261022-ai-sync-pirvs-hardware-sync-host-timestamp-zhang-2017.md]
 confidence: medium

@@ -4,6 +4,7 @@ created: 2026-10-21
 updated: 2026-10-21
 type: concept
 domain: ai-autonomy
+ontology_class: TimingLatency
 tags: [drone, time-synchronization, camera-imu, kalibr, vins-mono, time-offset, hardware-sync]
 sources: [inbox/processed/hw-20261021-ai-sync-camera-imu-online-temporal-calibration-qin-2018.md]
 confidence: medium

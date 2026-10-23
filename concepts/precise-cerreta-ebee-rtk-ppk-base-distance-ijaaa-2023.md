@@ -4,6 +4,7 @@ created: 2026-10-22
 updated: 2026-10-22
 type: concept
 domain: hardware
+ontology_class: PrecisePositioning
 tags: [drone, gnss, rtk, ppk, baseline, 실측, uav]
 sources: [inbox/processed/hw-20261022-precise-cerreta-ebee-rtk-ppk-base-distance-ijaaa-2023.md]
 confidence: medium

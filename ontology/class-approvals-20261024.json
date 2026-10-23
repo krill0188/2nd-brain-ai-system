@@ -1,0 +1,529 @@
+{
+ "_comment": "2026-10-24 마스터 승인('승인 권장 범위 진행')에 따라 주제 클래스(ResearchTopic 하위)에 연결한다. docs/ontology-topic-class-proposal.md의 슬러그 규칙 후보 237건을 검토자가 문서를 읽고 '주제 자체가 해당 주제 범위'인 것만 승인했다(제외: 뉴스·제품 카드·허브·릴리스 노트·접근 기록·주제 불일치). RegulationOps는 법령 원문(verbatim) 경로와 겹쳐 이번 범위에서 제외했다. 값은 scripts/apply-class-approvals.py가 frontmatter에 한 줄로만 추가한다.",
+ "approved": [
+  {
+   "path": "concepts/jamming-elaraby-hierarchical-dithered-null-steering-analog-crpa-2026.md",
+   "ontology_class": "GNSSInterferenceSecurity"
+  },
+  {
+   "path": "concepts/jamming-kci-yoo-resnet-svm-jamming-classification-kics-2023.md",
+   "ontology_class": "GNSSInterferenceSecurity"
+  },
+  {
+   "path": "concepts/jamming-kwon-null-steering-circular-array-jees-2018.md",
+   "ontology_class": "GNSSInterferenceSecurity"
+  },
+  {
+   "path": "concepts/jamming-septentrio-aim-plus-jamming-protection-page.md",
+   "ontology_class": "GNSSInterferenceSecurity"
+  },
+  {
+   "path": "concepts/jamming-spanghero-jammer-localization-2503.20352.md",
+   "ontology_class": "GNSSInterferenceSecurity"
+  },
+  {
+   "path": "concepts/jamming-spanghero-uav-mapping-interference-2405.07611.md",
+   "ontology_class": "GNSSInterferenceSecurity"
+  },
+  {
+   "path": "concepts/kci-dual-nis-sac-gnss-ins-spoofing.md",
+   "ontology_class": "GNSSInterferenceSecurity"
+  },
+  {
+   "path": "concepts/rigid-covert-gnss-spoofing-swarm.md",
+   "ontology_class": "GNSSInterferenceSecurity"
+  },
+  {
+   "path": "concepts/spoofing-jung-px4-ekf-drl-2506.08445.md",
+   "ontology_class": "GNSSInterferenceSecurity"
+  },
+  {
+   "path": "concepts/spoofing-kci-kim-cn0-detection-korea-jpnt-2026-1.md",
+   "ontology_class": "GNSSInterferenceSecurity"
+  },
+  {
+   "path": "concepts/spoofing-kci-kim-cn0-detection-tle-jpnt-2026-3.md",
+   "ontology_class": "GNSSInterferenceSecurity"
+  },
+  {
+   "path": "concepts/spoofing-kci-park-sac-covert-spoofing-uav-jpnt-2026.md",
+   "ontology_class": "GNSSInterferenceSecurity"
+  },
+  {
+   "path": "concepts/spoofing-septentrio-aim-plus-spoofing-protection-page.md",
+   "ontology_class": "GNSSInterferenceSecurity"
+  },
+  {
+   "path": "concepts/korea-kci-kim-ngii-network-rtk-testbed-jpnt-2024.md",
+   "ontology_class": "PrecisePositioning"
+  },
+  {
+   "path": "concepts/korea-kci-lee-network-rtk-mountpoint-comparison-2026.md",
+   "ontology_class": "PrecisePositioning"
+  },
+  {
+   "path": "concepts/korea-ngii-network-rtk-account-registration-official-guide.md",
+   "ontology_class": "PrecisePositioning"
+  },
+  {
+   "path": "concepts/korea-ngii-network-rtk-g-vrs-drone-access-recheck-2026-10-24.md",
+   "ontology_class": "PrecisePositioning"
+  },
+  {
+   "path": "concepts/korea-ngii-network-rtk-server-mountpoints-official.md",
+   "ontology_class": "PrecisePositioning"
+  },
+  {
+   "path": "concepts/korea-seoul-network-rtk-service-access.md",
+   "ontology_class": "PrecisePositioning"
+  },
+  {
+   "path": "concepts/precise-beni-rtk-ppk-uav-total-station-sensors-2026.md",
+   "ontology_class": "PrecisePositioning"
+  },
+  {
+   "path": "concepts/precise-cerreta-ebee-rtk-ppk-base-distance-ijaaa-2023.md",
+   "ontology_class": "PrecisePositioning"
+  },
+  {
+   "path": "concepts/precise-kci-hwang-rtk-drone-river-survey-kosham-2024.md",
+   "ontology_class": "PrecisePositioning"
+  },
+  {
+   "path": "concepts/precise-kci-kim-rtk-precision-landing-iemek-2023.md",
+   "ontology_class": "PrecisePositioning"
+  },
+  {
+   "path": "concepts/precise-mirmohammadian-ztd-long-baseline-rtk-sensors-2022.md",
+   "ontology_class": "PrecisePositioning"
+  },
+  {
+   "path": "concepts/precise-ntrip-unavco-kb.md",
+   "ontology_class": "PrecisePositioning"
+  },
+  {
+   "path": "concepts/precise-ppk-rtk-ppp-ar-arkali-2025.md",
+   "ontology_class": "PrecisePositioning"
+  },
+  {
+   "path": "concepts/precise-ppp-rtk-review-li-2022.md",
+   "ontology_class": "PrecisePositioning"
+  },
+  {
+   "path": "concepts/precise-stempfhuber-3d-rtk-single-gnss-receivers-isprs-2013.md",
+   "ontology_class": "PrecisePositioning"
+  },
+  {
+   "path": "concepts/precise-tavasci-low-cost-rtk-critical-environments-sensors-2024.md",
+   "ontology_class": "PrecisePositioning"
+  },
+  {
+   "path": "concepts/precise-wang-bds-gps-rtk-baseline-lengths-remote-sensing-2022.md",
+   "ontology_class": "PrecisePositioning"
+  },
+  {
+   "path": "concepts/fusion-delama-galilean-gnss-delay-2605.13266.md",
+   "ontology_class": "TimingLatency"
+  },
+  {
+   "path": "concepts/fusion-suzuki-multi-gnss-receivers-uav-iros-2019.md",
+   "ontology_class": "GNSSDeniedNavigation"
+  },
+  {
+   "path": "concepts/fusion-wen-fgo-vs-ekf-2004.10572.md",
+   "ontology_class": "GNSSDeniedNavigation"
+  },
+  {
+   "path": "concepts/gnss-denied-aeromap3d-2607.14009.md",
+   "ontology_class": "GNSSDeniedNavigation"
+  },
+  {
+   "path": "concepts/gnss-denied-leo-fisher-emenonye-2502.06083.md",
+   "ontology_class": "GNSSDeniedNavigation"
+  },
+  {
+   "path": "concepts/gnss-denied-leo-jardak-2022.md",
+   "ontology_class": "GNSSDeniedNavigation"
+  },
+  {
+   "path": "concepts/gnss-denied-leo-survey-he-2025.md",
+   "ontology_class": "GNSSDeniedNavigation"
+  },
+  {
+   "path": "concepts/gnss-denied-remote-autonomy.md",
+   "ontology_class": "GNSSDeniedNavigation"
+  },
+  {
+   "path": "concepts/gnss-denied-uwb-pena-queralta-2003.04380.md",
+   "ontology_class": "GNSSDeniedNavigation"
+  },
+  {
+   "path": "concepts/gnss-denied-vio-novak-2602.01860.md",
+   "ontology_class": "GNSSDeniedNavigation"
+  },
+  {
+   "path": "concepts/integrity-raim-survey-huang-2025.md",
+   "ontology_class": "GNSSDeniedNavigation"
+  },
+  {
+   "path": "concepts/visual-slam-gps-denied-evaluation.md",
+   "ontology_class": "GNSSDeniedNavigation"
+  },
+  {
+   "path": "concepts/env-brodin-helicopter-rotor-gps-reception-jnav-2005.md",
+   "ontology_class": "GNSSSignalsEnvironment"
+  },
+  {
+   "path": "concepts/env-dlr-miniaturized-all-gnss-antenna-array-choke-ring-eucap-2021.md",
+   "ontology_class": "GNSSSignalsEnvironment"
+  },
+  {
+   "path": "concepts/env-hehenberger-dlr-gnss-array-installed-height-sensors-2022.md",
+   "ontology_class": "GNSSSignalsEnvironment"
+  },
+  {
+   "path": "concepts/env-henkel-anavs-uav-6d-rtk-antenna-eucap-2020.md",
+   "ontology_class": "GNSSSignalsEnvironment"
+  },
+  {
+   "path": "concepts/env-kim-uav-airborne-multipath-jpnt-2015.md",
+   "ontology_class": "GNSSSignalsEnvironment"
+  },
+  {
+   "path": "concepts/env-punzet-groundplane-rtk-uav-ars-2023.md",
+   "ontology_class": "GNSSSignalsEnvironment"
+  },
+  {
+   "path": "concepts/env-punzet-groundplane-rtk-uav-ars-2023-fulltext.md",
+   "ontology_class": "GNSSSignalsEnvironment"
+  },
+  {
+   "path": "concepts/env-septentrio-ion-gnss-interference-quadcopter-selfjamming.md",
+   "ontology_class": "GNSSSignalsEnvironment"
+  },
+  {
+   "path": "concepts/env-uas-onboard-rfi-cn0-stubbs-akos-2016.md",
+   "ontology_class": "GNSSSignalsEnvironment"
+  },
+  {
+   "path": "concepts/env-uav-antenna-installation-height-hehenberger-2022-no-motor-emi.md",
+   "ontology_class": "GNSSSignalsEnvironment"
+  },
+  {
+   "path": "concepts/env-usb3-gnss-emlid-forum-2017.md",
+   "ontology_class": "GNSSSignalsEnvironment"
+  },
+  {
+   "path": "concepts/gnss-signals-beidou-navipedia.md",
+   "ontology_class": "GNSSSignalsEnvironment"
+  },
+  {
+   "path": "concepts/gnss-signals-galileo-navipedia.md",
+   "ontology_class": "GNSSSignalsEnvironment"
+  },
+  {
+   "path": "concepts/gnss-signals-glonass-navipedia.md",
+   "ontology_class": "GNSSSignalsEnvironment"
+  },
+  {
+   "path": "concepts/gnss-signals-gps-navipedia.md",
+   "ontology_class": "GNSSSignalsEnvironment"
+  },
+  {
+   "path": "concepts/ai-latency-ardupilot-companion-uart-baud-dade-2026.md",
+   "ontology_class": "TimingLatency"
+  },
+  {
+   "path": "concepts/ai-latency-companion-fc-dds-vs-mavros-cotta-2023.md",
+   "ontology_class": "TimingLatency"
+  },
+  {
+   "path": "concepts/ai-latency-px4-offboard-afio-forum-2026.md",
+   "ontology_class": "TimingLatency"
+  },
+  {
+   "path": "concepts/ai-sync-camera-imu-online-temporal-calibration-qin-2018.md",
+   "ontology_class": "TimingLatency"
+  },
+  {
+   "path": "concepts/ai-sync-camera-imu-varying-time-offset-ling-2018.md",
+   "ontology_class": "TimingLatency"
+  },
+  {
+   "path": "concepts/ai-sync-exposure-midpoint-hs-es-vins-yang-2026.md",
+   "ontology_class": "TimingLatency"
+  },
+  {
+   "path": "concepts/ai-sync-pirvs-hardware-sync-host-timestamp-zhang-2017.md",
+   "ontology_class": "TimingLatency"
+  },
+  {
+   "path": "concepts/ai-sync-time-offset-vins-mono-rmse-qin-shen-2018.md",
+   "ontology_class": "TimingLatency"
+  },
+  {
+   "path": "concepts/ai-sync-versavis-tschopp-2019-synced-vs-nonsynced.md",
+   "ontology_class": "TimingLatency"
+  },
+  {
+   "path": "concepts/data-latency-px4-ardupilot-loop-rates-official.md",
+   "ontology_class": "TimingLatency"
+  },
+  {
+   "path": "concepts/data-latency-px4-ardupilot-rates-delays-params-source.md",
+   "ontology_class": "TimingLatency"
+  },
+  {
+   "path": "concepts/data-sync-ardupilot-camera-trigger-feedback.md",
+   "ontology_class": "TimingLatency"
+  },
+  {
+   "path": "concepts/data-sync-hardware-timestamp-ntnu-wiki-and-gnss-clock.md",
+   "ontology_class": "TimingLatency"
+  },
+  {
+   "path": "concepts/data-sync-kalibr-temporal-calibration-readme.md",
+   "ontology_class": "TimingLatency"
+  },
+  {
+   "path": "concepts/data-sync-linux-pps-kernel.md",
+   "ontology_class": "TimingLatency"
+  },
+  {
+   "path": "concepts/data-sync-px4-camera-capture-hotshoe-and-vio-sync.md",
+   "ontology_class": "TimingLatency"
+  },
+  {
+   "path": "concepts/data-sync-ros2-message-filters-approximatetime.md",
+   "ontology_class": "TimingLatency"
+  },
+  {
+   "path": "concepts/ai-compression-deep-compression-han-2015.md",
+   "ontology_class": "EdgeAIPerformance"
+  },
+  {
+   "path": "concepts/ai-compression-distillation-hinton-2015.md",
+   "ontology_class": "EdgeAIPerformance"
+  },
+  {
+   "path": "concepts/ai-edge-jetson-orin-nano-agx-yolo-latency-laf-yolov10-2026.md",
+   "ontology_class": "EdgeAIPerformance"
+  },
+  {
+   "path": "concepts/ai-edge-jetson-orin-nx-agx-depth-anything-latency-finke-2026.md",
+   "ontology_class": "EdgeAIPerformance"
+  },
+  {
+   "path": "concepts/ai-model-jetson-ai-lab-orin-nano-super.md",
+   "ontology_class": "EdgeAIPerformance"
+  },
+  {
+   "path": "concepts/ai-model-yolo-ultralytics-jetson-orin-benchmarks.md",
+   "ontology_class": "EdgeAIPerformance"
+  },
+  {
+   "path": "concepts/ai-quantization-awq-lin-2023.md",
+   "ontology_class": "EdgeAIPerformance"
+  },
+  {
+   "path": "concepts/ai-quantization-gptq-frantar-2022.md",
+   "ontology_class": "EdgeAIPerformance"
+  },
+  {
+   "path": "concepts/ai-quantization-integer-only-jacob-2017.md",
+   "ontology_class": "EdgeAIPerformance"
+  },
+  {
+   "path": "concepts/ai-quantization-smoothquant-xiao-2022.md",
+   "ontology_class": "EdgeAIPerformance"
+  },
+  {
+   "path": "concepts/ai-quantization-whitepaper-nagel-2021.md",
+   "ontology_class": "EdgeAIPerformance"
+  },
+  {
+   "path": "concepts/data-edge-deepstream-9-2-jetson-orin-model-fps.md",
+   "ontology_class": "EdgeAIPerformance"
+  },
+  {
+   "path": "concepts/data-edge-isaac-ros-performance-summary-release-3-2-orin-nx-nano-agx.md",
+   "ontology_class": "EdgeAIPerformance"
+  },
+  {
+   "path": "concepts/data-edge-jetson-ai-lab-models-orin-llm-vlm-throughput.md",
+   "ontology_class": "EdgeAIPerformance"
+  },
+  {
+   "path": "concepts/data-edge-jetson-benchmarks-github-csv-config.md",
+   "ontology_class": "EdgeAIPerformance"
+  },
+  {
+   "path": "concepts/data-edge-jetson-benchmarks-wayback-2023-12-orin-family-fps.md",
+   "ontology_class": "EdgeAIPerformance"
+  },
+  {
+   "path": "concepts/data-edge-jetson-cudla-samples-yolov5s-orin-latency-ms.md",
+   "ontology_class": "EdgeAIPerformance"
+  },
+  {
+   "path": "concepts/data-edge-jetson-nanosam-latency-ms-orin-nano-agx.md",
+   "ontology_class": "EdgeAIPerformance"
+  },
+  {
+   "path": "concepts/data-edge-nvidia-jetson-benchmarks-live-page-mlperf-thor-2026-10.md",
+   "ontology_class": "EdgeAIPerformance"
+  },
+  {
+   "path": "concepts/data-edge-nvidia-jetson-mlperf-orin.md",
+   "ontology_class": "EdgeAIPerformance"
+  },
+  {
+   "path": "concepts/data-edge-onnxruntime-tensorrt-ep.md",
+   "ontology_class": "EdgeAIPerformance"
+  },
+  {
+   "path": "concepts/data-edge-tensorrt-quantized-types.md",
+   "ontology_class": "EdgeAIPerformance"
+  },
+  {
+   "path": "concepts/data-edge-tensorrt-quickstart.md",
+   "ontology_class": "EdgeAIPerformance"
+  },
+  {
+   "path": "concepts/data-anomaly-alfa-keipour-2019.md",
+   "ontology_class": "FlightLogData"
+  },
+  {
+   "path": "concepts/data-dataset-uavid.md",
+   "ontology_class": "FlightLogData"
+  },
+  {
+   "path": "concepts/data-dataset-visdrone.md",
+   "ontology_class": "FlightLogData"
+  },
+  {
+   "path": "concepts/data-flightlog-mcap-spec.md",
+   "ontology_class": "FlightLogData"
+  },
+  {
+   "path": "concepts/data-synthetic-airsim-image-apis.md",
+   "ontology_class": "FlightLogData"
+  },
+  {
+   "path": "concepts/data-synthetic-omni-replicator.md",
+   "ontology_class": "FlightLogData"
+  },
+  {
+   "path": "concepts/addiff-gt-uav-swarm-self-healing.md",
+   "ontology_class": "SwarmResearch"
+  },
+  {
+   "path": "concepts/ai-fl-uav-distributed-ml-swarms-ding-2023.md",
+   "ontology_class": "SwarmResearch"
+  },
+  {
+   "path": "concepts/ai-fl-uav-privllmswarm-mpc-ayana-2025.md",
+   "ontology_class": "SwarmResearch"
+  },
+  {
+   "path": "concepts/calibrate-once-fly-any-team-swarm-training.md",
+   "ontology_class": "SwarmResearch"
+  },
+  {
+   "path": "concepts/conv-swarm-agentic-edge-nguyen-2026.md",
+   "ontology_class": "SwarmResearch"
+  },
+  {
+   "path": "concepts/conv-swarm-llm-rally-wang-2025.md",
+   "ontology_class": "SwarmResearch"
+  },
+  {
+   "path": "concepts/decentralized-swarm-gps-denied.md",
+   "ontology_class": "SwarmResearch"
+  },
+  {
+   "path": "concepts/distributed-aerial-surveillance-swarm.md",
+   "ontology_class": "SwarmResearch"
+  },
+  {
+   "path": "concepts/game-theoretic-drone-swarm-defense.md",
+   "ontology_class": "SwarmResearch"
+  },
+  {
+   "path": "concepts/kci-llm-cbba-swarm-task-allocation.md",
+   "ontology_class": "SwarmResearch"
+  },
+  {
+   "path": "concepts/kci-mavlink-virtual-decoy-swarm-deception.md",
+   "ontology_class": "SwarmResearch"
+  },
+  {
+   "path": "concepts/kci-uav-swarm-mission-reliability-abort.md",
+   "ontology_class": "SwarmResearch"
+  },
+  {
+   "path": "concepts/kci-uwb-degraded-uav-swarm-positioning.md",
+   "ontology_class": "SwarmResearch"
+  },
+  {
+   "path": "concepts/kci-vtol-swarm-takeoff-landing-operation.md",
+   "ontology_class": "SwarmResearch"
+  },
+  {
+   "path": "concepts/llm-swarm-wot-framework.md",
+   "ontology_class": "SwarmResearch"
+  },
+  {
+   "path": "concepts/swarmnxt-aerial-swarm-platform.md",
+   "ontology_class": "SwarmResearch"
+  },
+  {
+   "path": "concepts/uav-swarm-ai-trends-kci.md",
+   "ontology_class": "SwarmResearch"
+  },
+  {
+   "path": "concepts/uav-swarm-air-ground-isac.md",
+   "ontology_class": "SwarmResearch"
+  },
+  {
+   "path": "concepts/uav-swarm-target-localization.md",
+   "ontology_class": "SwarmResearch"
+  },
+  {
+   "path": "concepts/agile-quadrotor-learning.md",
+   "ontology_class": "QuadrotorControl"
+  },
+  {
+   "path": "concepts/calos-lyapunov-safety-layer-quadrotor-rl.md",
+   "ontology_class": "QuadrotorControl"
+  },
+  {
+   "path": "concepts/e2e-fly-end-to-end-quadrotor.md",
+   "ontology_class": "QuadrotorControl"
+  },
+  {
+   "path": "concepts/kci-quadrotor-compound-fault-accommodation.md",
+   "ontology_class": "QuadrotorControl"
+  },
+  {
+   "path": "concepts/quadrotor-wind-fidelity-ppo-robustness.md",
+   "ontology_class": "QuadrotorControl"
+  },
+  {
+   "path": "concepts/rl-quadrotor-tunable-control.md",
+   "ontology_class": "QuadrotorControl"
+  },
+  {
+   "path": "concepts/spatial-dubins-quadrotor-control.md",
+   "ontology_class": "QuadrotorControl"
+  },
+  {
+   "path": "concepts/temporal-cascading-quadrotor-mpc.md",
+   "ontology_class": "QuadrotorControl"
+  },
+  {
+   "path": "concepts/time-optimal-quadrotor-waypoints.md",
+   "ontology_class": "QuadrotorControl"
+  }
+ ]
+}

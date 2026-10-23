@@ -4,6 +4,7 @@ created: 2026-09-18
 updated: 2026-10-08
 type: concept
 domain: flight-control
+ontology_class: QuadrotorControl
 tags: [drone, flight-control, reinforcement-learning, safety]
 sources:
   - inbox/fetch-2026-09-18-arxiv-calos-control-affine-lyapunov-on-manifold-safety-layer-for-s.md

@@ -4,6 +4,7 @@ created: 2026-10-21
 updated: 2026-10-21
 type: concept
 domain: hardware
+ontology_class: PrecisePositioning
 tags: [drone, gnss, rtk, baseline]
 sources: [inbox/processed/hw-20261021-precise-mirmohammadian-ztd-long-baseline-rtk-sensors-2022.md]
 confidence: medium

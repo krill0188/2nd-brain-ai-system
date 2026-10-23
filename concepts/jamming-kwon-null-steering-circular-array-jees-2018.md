@@ -4,6 +4,7 @@ created: 2026-10-21
 updated: 2026-10-21
 type: concept
 domain: security
+ontology_class: GNSSInterferenceSecurity
 tags: [drone, gnss, crpa]
 sources: [inbox/processed/hw-20261021-jamming-kwon-null-steering-circular-array-jees-2018.md]
 confidence: medium

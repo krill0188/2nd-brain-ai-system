@@ -4,6 +4,7 @@ created: 2026-10-21
 updated: 2026-10-21
 type: concept
 domain: edge-ai-compute
+ontology_class: EdgeAIPerformance
 tags: [drone, ai, quantization, on-device-llm, edge-inference]
 sources: [inbox/processed/hw-20261021-ai-quantization-awq-lin-2023.md]
 confidence: medium

@@ -4,6 +4,7 @@ created: 2026-10-21
 updated: 2026-10-21
 type: concept
 domain: swarm-multiagent
+ontology_class: SwarmResearch
 tags: [drone, swarm, llm, marl, decision]
 sources: [inbox/processed/hw-20261021-conv-swarm-llm-rally-wang-2025.md]
 confidence: medium

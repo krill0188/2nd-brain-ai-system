@@ -4,6 +4,7 @@ created: 2026-10-22
 updated: 2026-10-22
 type: concept
 domain: ai-autonomy
+ontology_class: TimingLatency
 tags: [drone, time-synchronization, camera-imu, hardware-trigger, vins-fusion, exposure, online-calibration]
 sources: [inbox/processed/hw-20261022-ai-sync-exposure-midpoint-hs-es-vins-yang-2026.md]
 confidence: medium

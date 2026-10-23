@@ -4,6 +4,7 @@ created: 2026-10-22
 updated: 2026-10-22
 type: concept
 domain: hardware
+ontology_class: GNSSSignalsEnvironment
 tags: [drone, gnss, rotor, 신호감쇠, 유인헬기, 초록기준]
 sources: [inbox/processed/hw-20261022-env-brodin-helicopter-rotor-gps-reception-jnav-2005.md]
 confidence: medium

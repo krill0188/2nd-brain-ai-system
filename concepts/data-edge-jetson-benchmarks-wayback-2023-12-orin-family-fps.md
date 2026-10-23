@@ -4,6 +4,7 @@ created: 2026-10-22
 updated: 2026-10-22
 type: concept
 domain: edge-ai-compute
+ontology_class: EdgeAIPerformance
 tags: [drone, edge-inference, jetson-orin, tensorrt, benchmark, orin-nano, orin-nx, agx-orin, yolov5, wayback]
 sources: [inbox/processed/hw-20261022-data-edge-jetson-benchmarks-wayback-2023-12-orin-family-fps.md]
 confidence: medium

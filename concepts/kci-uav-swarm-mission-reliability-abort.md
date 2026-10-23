@@ -4,6 +4,7 @@ created: 2026-09-12
 updated: 2026-10-20
 type: concept
 domain: ai-autonomy
+ontology_class: SwarmResearch
 tags: [drone, swarm, ai-autonomy]
 sources: [raw/papers/swarm/mission-reliability-modeling-and-evaluation-for-reconfigurable-uav-swarm-conside.md, inbox/processed/fetch-2026-10-20-arxiv-fault-tolerant-dynamic-task-assignment-for-uav-based-search-.md]
 confidence: low

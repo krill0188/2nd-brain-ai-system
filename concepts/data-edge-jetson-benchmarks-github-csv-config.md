@@ -4,6 +4,7 @@ created: 2026-10-22
 updated: 2026-10-22
 type: concept
 domain: edge-ai-compute
+ontology_class: EdgeAIPerformance
 tags: [drone, edge-inference, jetson, tensorrt, benchmark, batch-size, methodology]
 sources: [inbox/processed/hw-20261022-data-edge-jetson-benchmarks-github-csv-config.md]
 confidence: medium

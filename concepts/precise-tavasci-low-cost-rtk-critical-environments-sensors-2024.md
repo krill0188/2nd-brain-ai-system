@@ -4,6 +4,7 @@ created: 2026-10-22
 updated: 2026-10-22
 type: concept
 domain: hardware
+ontology_class: PrecisePositioning
 tags: [drone, gnss, rtk, f9p, 차폐, 재고정, 실측]
 sources: [inbox/processed/hw-20261022-precise-tavasci-low-cost-rtk-critical-environments-sensors-2024.md]
 confidence: medium

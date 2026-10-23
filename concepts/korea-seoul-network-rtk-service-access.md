@@ -4,6 +4,7 @@ created: 2026-10-21
 updated: 2026-10-21
 type: concept
 domain: hardware
+ontology_class: PrecisePositioning
 tags: [drone, gnss, network-rtk, ntrip, vrs, seoul]
 sources: [inbox/processed/hw-20261021-korea-seoul-network-rtk-service-access.md]
 confidence: medium

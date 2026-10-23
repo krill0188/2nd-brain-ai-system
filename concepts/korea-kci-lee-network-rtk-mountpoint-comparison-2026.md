@@ -4,6 +4,7 @@ created: 2026-10-21
 updated: 2026-10-21
 type: concept
 domain: navigation-gnss-denied
+ontology_class: PrecisePositioning
 tags: [drone, gnss, kci, network-rtk]
 sources: [inbox/processed/hw-20261021-korea-kci-lee-network-rtk-mountpoint-comparison-2026.md]
 confidence: medium

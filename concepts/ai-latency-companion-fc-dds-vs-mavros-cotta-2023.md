@@ -4,6 +4,7 @@ created: 2026-10-21
 updated: 2026-10-21
 type: concept
 domain: flight-control
+ontology_class: TimingLatency
 tags: [drone, latency, mavros, xrce-dds, px4, companion-computer, time-sync]
 sources: [inbox/processed/hw-20261021-ai-latency-companion-fc-dds-vs-mavros-cotta-2023.md]
 confidence: medium

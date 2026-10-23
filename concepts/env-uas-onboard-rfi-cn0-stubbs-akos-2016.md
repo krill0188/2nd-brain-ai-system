@@ -4,6 +4,7 @@ created: 2026-10-23
 updated: 2026-10-23
 type: concept
 domain: hardware
+ontology_class: GNSSSignalsEnvironment
 tags: [drone, hardware, gnss, rfi, onboard-interference, cn0, antenna-placement]
 sources: [inbox/processed/hw-20261023-env-uas-onboard-rfi-cn0-stubbs-akos-2016.md]
 confidence: medium

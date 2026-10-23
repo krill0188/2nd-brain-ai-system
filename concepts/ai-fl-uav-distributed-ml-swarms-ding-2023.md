@@ -4,6 +4,7 @@ created: 2026-10-21
 updated: 2026-10-21
 type: concept
 domain: ai-autonomy
+ontology_class: SwarmResearch
 tags: [drone, federated-learning, split-learning, swarm, survey]
 sources: [inbox/processed/hw-20261021-ai-fl-uav-distributed-ml-swarms-ding-2023.md]
 confidence: medium

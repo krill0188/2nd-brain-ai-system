@@ -4,6 +4,7 @@ created: 2026-09-17
 updated: 2026-09-30
 type: concept
 domain: ai-autonomy
+ontology_class: SwarmResearch
 tags: [drone, drone-ai, swarm]
 sources:
   - inbox/fetch-2026-09-17-arxiv-calibrate-once-fly-any-team-residual-grounded-low-fidelity-t.md

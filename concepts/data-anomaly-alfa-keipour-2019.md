@@ -4,6 +4,7 @@ created: 2026-10-21
 updated: 2026-10-21
 type: concept
 domain: ai-autonomy
+ontology_class: FlightLogData
 tags: [drone, anomaly-detection, fault-prediction, dataset, flight-log]
 sources: [inbox/processed/hw-20261021-data-anomaly-alfa-keipour-2019.md]
 confidence: medium

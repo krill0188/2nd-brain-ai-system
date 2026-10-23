@@ -4,6 +4,7 @@ created: 2026-07-31
 updated: 2026-10-08
 type: concept
 domain: ai-autonomy
+ontology_class: QuadrotorControl
 tags: [drone, ai-autonomy, drone-sw]
 sources: [inbox/processed/fetch-2026-10-08-arxiv-statistical-turbulence-and-high-fidelity-disturbance-fields-.md]
 confidence: medium

@@ -4,6 +4,7 @@ created: 2026-10-21
 updated: 2026-10-21
 type: concept
 domain: hardware
+ontology_class: PrecisePositioning
 tags: [drone, gnss, rtk, baseline, ambiguity-fixing-rate, 비UAV]
 sources: [inbox/processed/hw-20261021-precise-wang-bds-gps-rtk-baseline-lengths-remote-sensing-2022.md]
 confidence: medium

@@ -4,6 +4,7 @@ created: 2026-10-23
 updated: 2026-10-23
 type: concept
 domain: hardware
+ontology_class: GNSSSignalsEnvironment
 tags: [drone, hardware, gnss, rfi, self-jamming, septentrio, aim-plus]
 sources: [inbox/processed/hw-20261023-env-septentrio-ion-gnss-interference-quadcopter-selfjamming.md]
 confidence: medium

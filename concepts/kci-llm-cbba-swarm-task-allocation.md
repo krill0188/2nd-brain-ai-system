@@ -4,6 +4,7 @@ created: 2026-09-06
 updated: 2026-09-06
 type: concept
 domain: ai-autonomy
+ontology_class: SwarmResearch
 tags: [drone, swarm, ai-agent, ai-autonomy]
 sources: [raw/papers/_unclassified/대규모-언어-모델-기반의-전략적-파라미터-생성을-통한-상황-적응형-군집-무인기-임무-할당.md]
 confidence: medium

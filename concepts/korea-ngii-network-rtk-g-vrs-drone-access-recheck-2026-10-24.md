@@ -4,6 +4,7 @@ created: 2026-10-24
 updated: 2026-10-24
 type: concept
 domain: ops-mission
+ontology_class: PrecisePositioning
 tags: [drone, gnss, ngii, network-rtk, ssr, g-vrs, 신청절차]
 sources: [inbox/processed/hw-20261024-korea-ngii-network-rtk-g-vrs-drone-access-recheck-2026-10-24.md]
 confidence: medium

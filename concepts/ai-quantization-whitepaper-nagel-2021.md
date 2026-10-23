@@ -4,6 +4,7 @@ created: 2026-10-21
 updated: 2026-10-21
 type: concept
 domain: edge-ai-compute
+ontology_class: EdgeAIPerformance
 tags: [drone, ai, quantization, ptq, qat, edge-inference]
 sources: [inbox/processed/hw-20261021-ai-quantization-whitepaper-nagel-2021.md]
 confidence: medium

@@ -4,6 +4,7 @@ created: 2026-10-21
 updated: 2026-10-21
 type: concept
 domain: security
+ontology_class: GNSSInterferenceSecurity
 tags: [drone, gnss]
 sources: [inbox/processed/hw-20261021-jamming-spanghero-uav-mapping-interference-2405.07611.md]
 confidence: medium

@@ -9,6 +9,7 @@ confidence: medium
 contested: false
 contradictions: []
 domain: flight-control
+ontology_class: QuadrotorControl
 note: "Raw source not preserved in repo — found during 2026-08-10 provenance audit, needs recapture"
 ---
 

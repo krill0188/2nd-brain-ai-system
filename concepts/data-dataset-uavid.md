@@ -4,6 +4,7 @@ created: 2026-10-21
 updated: 2026-10-21
 type: concept
 domain: simulation-test
+ontology_class: FlightLogData
 tags: [drone, dataset, uavid, segmentation]
 sources: [inbox/processed/hw-20261021-data-dataset-uavid.md]
 confidence: medium

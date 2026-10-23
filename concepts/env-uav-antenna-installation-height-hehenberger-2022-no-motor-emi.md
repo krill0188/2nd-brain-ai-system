@@ -4,6 +4,7 @@ created: 2026-10-24
 updated: 2026-10-24
 type: concept
 domain: hardware
+ontology_class: GNSSSignalsEnvironment
 tags: [drone, hardware, gnss, antenna-placement, installation-height, cn0, multipath, env]
 sources: [inbox/processed/hw-20261024-env-uav-antenna-installation-height-hehenberger-2022-no-motor-emi.md]
 confidence: medium

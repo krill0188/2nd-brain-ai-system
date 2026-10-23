@@ -5,6 +5,7 @@ updated: 2026-08-01
 type: concept
 tags: [drone, drone-ai, swarm]
 domain: ai-autonomy
+ontology_class: SwarmResearch
 sources: ["inbox/fetch-2026-08-01-crossref-detection-aided-enhanced-reweighted-atomic-norm-minimization.md"]
 confidence: medium
 contested: false

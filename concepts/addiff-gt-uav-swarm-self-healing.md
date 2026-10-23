@@ -4,6 +4,7 @@ created: 2026-10-17
 updated: 2026-10-17
 type: concept
 domain: gcs-software
+ontology_class: SwarmResearch
 tags: [drone, swarm, datalink]
 sources: [inbox/processed/fetch-2026-10-17-arxiv-coverage-preserving-self-healing-in-partially-observable-3d-.md]
 confidence: medium

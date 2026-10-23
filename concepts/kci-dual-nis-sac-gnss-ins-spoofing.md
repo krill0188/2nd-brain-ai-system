@@ -4,6 +4,7 @@ created: 2026-09-17
 updated: 2026-09-30
 type: concept
 domain: ai-autonomy
+ontology_class: GNSSInterferenceSecurity
 tags: [drone, drone-ai, datalink]
 sources:
   - inbox/fetch-2026-09-17-kci-이중-nis-보상을-적용한-sac-기반-gnssins-복합항법-무인기-은닉-기만-기법.md

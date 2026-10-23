@@ -4,6 +4,7 @@ created: 2026-10-22
 updated: 2026-10-22
 type: concept
 domain: hardware
+ontology_class: GNSSSignalsEnvironment
 tags: [drone, gnss, 안테나-장착높이, choke-ring, multipath, 정량]
 sources: [inbox/processed/hw-20261022-env-hehenberger-dlr-gnss-array-installed-height-sensors-2022.md]
 confidence: medium

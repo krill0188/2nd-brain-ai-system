@@ -4,6 +4,7 @@ created: 2026-10-21
 updated: 2026-10-21
 type: concept
 domain: security
+ontology_class: GNSSInterferenceSecurity
 tags: [drone, gnss]
 sources: [inbox/processed/hw-20261021-spoofing-jung-px4-ekf-drl-2506.08445.md]
 confidence: medium

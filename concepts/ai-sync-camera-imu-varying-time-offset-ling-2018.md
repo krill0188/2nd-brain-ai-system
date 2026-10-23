@@ -4,6 +4,7 @@ created: 2026-10-21
 updated: 2026-10-21
 type: concept
 domain: ai-autonomy
+ontology_class: TimingLatency
 tags: [drone, time-synchronization, camera-imu, rolling-shutter, time-offset, vio]
 sources: [inbox/processed/hw-20261021-ai-sync-camera-imu-varying-time-offset-ling-2018.md]
 confidence: medium

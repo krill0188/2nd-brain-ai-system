@@ -5,6 +5,7 @@ updated: 2026-08-11
 type: concept
 tags: [drone, swarm, paper, security]
 domain: ai-autonomy
+ontology_class: GNSSInterferenceSecurity
 sources: [raw/papers/swarm/rigid-covert-gnss-spoofing-of-uav-swarms-a-structural-blind-spot-its-detection-l.md]
 confidence: high
 contested: false

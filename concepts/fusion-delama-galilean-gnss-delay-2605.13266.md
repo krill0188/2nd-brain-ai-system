@@ -4,6 +4,7 @@ created: 2026-10-21
 updated: 2026-10-21
 type: concept
 domain: navigation-gnss-denied
+ontology_class: TimingLatency
 tags: [drone, gnss]
 sources: [inbox/processed/hw-20261021-fusion-delama-galilean-gnss-delay-2605.13266.md]
 confidence: medium

@@ -4,6 +4,7 @@ created: 2026-10-21
 updated: 2026-10-21
 type: concept
 domain: navigation-gnss-denied
+ontology_class: GNSSDeniedNavigation
 tags: [drone, gnss]
 sources: [inbox/processed/hw-20261021-fusion-wen-fgo-vs-ekf-2004.10572.md]
 confidence: medium

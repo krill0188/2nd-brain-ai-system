@@ -5,6 +5,7 @@ updated: 2026-08-11
 type: concept
 tags: [drone, swarm, paper]
 domain: ai-autonomy
+ontology_class: SwarmResearch
 sources: [raw/papers/swarm/uav-swarming-for-air-ground-isac-via-cross-region-cooperation.md]
 confidence: medium
 contested: false

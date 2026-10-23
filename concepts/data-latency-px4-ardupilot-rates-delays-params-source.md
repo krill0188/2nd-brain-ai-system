@@ -4,6 +4,7 @@ created: 2026-10-21
 updated: 2026-10-21
 type: concept
 domain: flight-control
+ontology_class: TimingLatency
 tags: [drone, control-loop, latency, px4, ardupilot, ekf2, ekf3, parameters]
 sources: [inbox/processed/hw-20261021-data-latency-px4-ardupilot-rates-delays-params-source.md]
 confidence: medium

@@ -4,6 +4,7 @@ created: 2026-10-22
 updated: 2026-10-22
 type: concept
 domain: edge-ai-compute
+ontology_class: EdgeAIPerformance
 tags: [drone, edge-inference, jetson-orin, llm, vlm, vllm, llama-cpp, benchmark, jetson-ai-lab]
 sources: [inbox/processed/hw-20261022-data-edge-jetson-ai-lab-models-orin-llm-vlm-throughput.md]
 confidence: medium

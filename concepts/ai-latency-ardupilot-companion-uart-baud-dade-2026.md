@@ -4,6 +4,7 @@ created: 2026-10-21
 updated: 2026-10-21
 type: concept
 domain: flight-control
+ontology_class: TimingLatency
 tags: [drone, ardupilot, mavlink, latency, companion-computer, raspberry-pi, uart, mavlink-router]
 sources: [inbox/processed/hw-20261021-ai-latency-ardupilot-companion-uart-baud-dade-2026.md]
 confidence: medium

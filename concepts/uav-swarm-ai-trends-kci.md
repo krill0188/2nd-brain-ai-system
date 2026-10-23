@@ -9,6 +9,7 @@ confidence: high
 contested: false
 contradictions: []
 domain: ai-autonomy
+ontology_class: SwarmResearch
 ---
 
 # UAV 군집 AI 기술 동향

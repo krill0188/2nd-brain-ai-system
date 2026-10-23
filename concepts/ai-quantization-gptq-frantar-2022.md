@@ -4,6 +4,7 @@ created: 2026-10-21
 updated: 2026-10-21
 type: concept
 domain: edge-ai-compute
+ontology_class: EdgeAIPerformance
 tags: [drone, ai, quantization, llm, model-compression]
 sources: [inbox/processed/hw-20261021-ai-quantization-gptq-frantar-2022.md]
 confidence: medium

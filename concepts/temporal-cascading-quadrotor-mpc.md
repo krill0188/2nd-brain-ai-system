@@ -4,6 +4,7 @@ created: 2026-10-01
 updated: 2026-10-01
 type: concept
 domain: ai-autonomy
+ontology_class: QuadrotorControl
 tags: [drone, drone-ai]
 sources: [inbox/processed/fetch-2026-10-01-yt-temporal-cascading-of-planning-and-control-for-quadrotor-mpc.md]
 confidence: low

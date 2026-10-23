@@ -4,6 +4,7 @@ created: 2026-10-21
 updated: 2026-10-21
 type: concept
 domain: hardware
+ontology_class: GNSSSignalsEnvironment
 tags: [drone, gnss, multipath]
 sources: [inbox/processed/hw-20261021-env-kim-uav-airborne-multipath-jpnt-2015.md]
 confidence: medium

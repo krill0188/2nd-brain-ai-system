@@ -4,6 +4,7 @@ created: 2026-10-21
 updated: 2026-10-21
 type: concept
 domain: navigation-gnss-denied
+ontology_class: GNSSDeniedNavigation
 tags: [drone, gnss, uav, multipath, rtk, fix-rate, antenna]
 sources: [inbox/processed/hw-20261021-fusion-suzuki-multi-gnss-receivers-uav-iros-2019.md]
 confidence: medium

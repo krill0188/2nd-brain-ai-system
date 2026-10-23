@@ -4,6 +4,7 @@ created: 2026-10-24
 updated: 2026-10-24
 type: concept
 domain: edge-ai-compute
+ontology_class: EdgeAIPerformance
 tags: [drone, edge-inference, jetson-orin, orin-nx, latency-ms, fps, isaac-ros, stereo-depth, rt-detr]
 sources: [inbox/processed/hw-20261024-data-edge-isaac-ros-performance-summary-release-3-2-orin-nx-nano-agx.md]
 confidence: medium
