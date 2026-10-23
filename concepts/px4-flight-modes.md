@@ -7,6 +7,7 @@ tags: [drone-sw, PX4, flight-control]
 sources: [raw/articles/px4-flight-modes.md]
 confidence: high
 domain: flight-control
+ontology_class: PX4
 contested: false
 contradictions: []
 ---

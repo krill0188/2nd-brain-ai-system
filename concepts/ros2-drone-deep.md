@@ -10,6 +10,7 @@ sources:
   - inbox/processed/px4-ros2-user-guide.md
 confidence: high
 domain: gcs-software
+ontology_class: ROS2
 contested: false
 contradictions: []
 ---

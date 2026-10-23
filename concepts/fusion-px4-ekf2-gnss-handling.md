@@ -4,6 +4,7 @@ created: 2026-10-21
 updated: 2026-10-21
 type: concept
 domain: flight-control
+ontology_class: PX4
 tags: [drone, gnss]
 sources: [inbox/processed/hw-20261021-fusion-px4-ekf2-gnss-handling.md]
 confidence: medium

@@ -3,6 +3,7 @@ title: NotebookLM 질의 지식 증분 워크플로
 created: 2026-07-21
 updated: 2026-08-10
 type: query
+domain: knowledge-management
 tags:
   - automation
   - knowledge-base

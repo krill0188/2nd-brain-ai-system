@@ -1,0 +1,61 @@
+{
+ "_comment": "2026-10-23 마스터 승인(남은 것 승인)에 따라 docs/ontology-class-proposals.md(등급 A·B)를 문서별로 읽고 '주제 자체가 그 소프트웨어(PX4·ArduPilot·ROS 2)의 공식 문서·사용 가이드'인 것만 선별했다. 키워드가 슬러그·제목에 있을 뿐인 논문·레지스트리·기법 문서(GNSS 56건, SwarmCoordinator 17건, Multirotor 12건, 제조사 레지스트리 등)는 개체가 아니므로 제외했다. 값은 scripts/apply-class-approvals.py가 frontmatter에 한 줄로만 추가한다.",
+ "approved": [
+  {
+   "path": "entities/px4-flight-stack.md",
+   "ontology_class": "PX4"
+  },
+  {
+   "path": "concepts/px4-flight-modes.md",
+   "ontology_class": "PX4"
+  },
+  {
+   "path": "concepts/px4-simulation.md",
+   "ontology_class": "PX4"
+  },
+  {
+   "path": "concepts/data-flightlog-px4-analysis-tools.md",
+   "ontology_class": "PX4"
+  },
+  {
+   "path": "concepts/data-flightlog-px4-logging.md",
+   "ontology_class": "PX4"
+  },
+  {
+   "path": "concepts/data-flightlog-px4-ulog-format.md",
+   "ontology_class": "PX4"
+  },
+  {
+   "path": "concepts/fusion-px4-ekf2-gnss-handling.md",
+   "ontology_class": "PX4"
+  },
+  {
+   "path": "concepts/fusion-ardupilot-ekf3-gps-overview.md",
+   "ontology_class": "ArduPilot"
+  },
+  {
+   "path": "concepts/jamming-ardupilot-ekf3-jamming-expected-doc.md",
+   "ontology_class": "ArduPilot"
+  },
+  {
+   "path": "concepts/data-flightlog-ardupilot-aplogger-formats.md",
+   "ontology_class": "ArduPilot"
+  },
+  {
+   "path": "concepts/data-flightlog-ardupilot-dataflash.md",
+   "ontology_class": "ArduPilot"
+  },
+  {
+   "path": "concepts/data-flightlog-rosbag2.md",
+   "ontology_class": "ROS2"
+  },
+  {
+   "path": "concepts/data-sync-ros2-message-filters-approximatetime-source.md",
+   "ontology_class": "ROS2"
+  },
+  {
+   "path": "concepts/ros2-drone-deep.md",
+   "ontology_class": "ROS2"
+  }
+ ]
+}

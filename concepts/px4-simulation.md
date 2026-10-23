@@ -9,6 +9,7 @@ confidence: medium
 contested: false
 contradictions: []
 domain: flight-control
+ontology_class: PX4
 ---
 
 # PX4 Simulation (SITL)

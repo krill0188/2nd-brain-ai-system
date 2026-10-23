@@ -4,6 +4,7 @@ created: 2026-10-21
 updated: 2026-10-21
 type: concept
 domain: flight-control
+ontology_class: ArduPilot
 tags: [drone, flight-log, dataflash, ardupilot]
 sources: [inbox/processed/hw-20261021-data-flightlog-ardupilot-dataflash.md]
 confidence: medium

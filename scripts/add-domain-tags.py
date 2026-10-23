@@ -22,6 +22,8 @@ DRONE_DOMAINS = {
     "sensing-perception", "navigation-gnss-denied", "ros-middleware", "rf-datalink-engineering",
     "mechanical-structures", "electrical-power", "swarm-multiagent", "simulation-test",
     "edge-ai-compute", "security", "vendor-registry", "software-ecosystem",
+    # 2026-10-23 추가(마스터 승인) — 드론 외 지식관리(PKM) 문서용. 키워드 추론 없이 명시 지정만.
+    "knowledge-management",
 }
 
 # 신규 도메인(2026-10-17): 오분류를 줄이려고 본문이 아닌 슬러그·제목·태그에만 적용한다.

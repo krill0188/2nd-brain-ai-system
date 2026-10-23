@@ -4,6 +4,7 @@ created: 2026-10-21
 updated: 2026-10-21
 type: concept
 domain: security
+ontology_class: ArduPilot
 tags: [drone, gnss, ardupilot]
 sources: [inbox/processed/hw-20261021-jamming-ardupilot-ekf3-jamming-expected-doc.md]
 confidence: medium

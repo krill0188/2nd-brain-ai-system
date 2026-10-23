@@ -3,6 +3,7 @@ title: AI 지식관리 도구 역할 비교
 created: 2026-07-21
 updated: 2026-08-10
 type: comparison
+domain: knowledge-management
 tags:
   - comparison
   - pkm

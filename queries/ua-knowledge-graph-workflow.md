@@ -3,6 +3,7 @@ title: UA 위키 지식그래프 전체 워크플로
 created: 2026-07-21
 updated: 2026-08-10
 type: query
+domain: knowledge-management
 tags:
   - knowledge-base
   - knowledge-graph

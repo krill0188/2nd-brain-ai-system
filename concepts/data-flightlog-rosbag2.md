@@ -4,6 +4,7 @@ created: 2026-10-21
 updated: 2026-10-21
 type: concept
 domain: ros-middleware
+ontology_class: ROS2
 tags: [drone, flight-log, rosbag2, mcap, ros2]
 sources: [inbox/processed/hw-20261021-data-flightlog-rosbag2.md]
 confidence: medium

@@ -1,0 +1,17 @@
+{
+ "_comment": "2026-10-23 마스터 승인으로 domain 'knowledge-management'(지식관리·PKM 도구/워크플로, 드론 주제 아님)를 신설하고 domain이 없던 지식관리 문서 3건에만 지정한다. 기존 domain 값은 건드리지 않는다.",
+ "approved": [
+  {
+   "path": "comparisons/knowledge-tool-roles.md",
+   "domain": "knowledge-management"
+  },
+  {
+   "path": "queries/notebooklm-query-compounding.md",
+   "domain": "knowledge-management"
+  },
+  {
+   "path": "queries/ua-knowledge-graph-workflow.md",
+   "domain": "knowledge-management"
+  }
+ ]
+}

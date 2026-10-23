@@ -8,6 +8,7 @@ sources:
   - raw/articles/entity-px4-flight-stack.md
 confidence: high
 domain: flight-control
+ontology_class: PX4
 contested: false
 contradictions: []
 ---

@@ -4,6 +4,7 @@ created: 2026-10-21
 updated: 2026-10-21
 type: concept
 domain: flight-control
+ontology_class: PX4
 tags: [drone, flight-log, analysis, pyulog]
 sources: [inbox/processed/hw-20261021-data-flightlog-px4-analysis-tools.md]
 confidence: medium
