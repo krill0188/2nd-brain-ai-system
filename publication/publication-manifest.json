@@ -25,48 +25,200 @@
   ],
   "approved_source_versions": [
     {
-      "path": "concepts/ai-drone-data-processing-hub.md",
-      "source_commit": "15af9df5bf756b82e3104f0af90fb55d72a0db7c"
+      "path": "comparisons/knowledge-tool-roles.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
     },
     {
-      "path": "concepts/ai-drone-models-hub.md",
-      "source_commit": "15af9df5bf756b82e3104f0af90fb55d72a0db7c"
+      "path": "concepts/ai-knowledge-workflow.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
     },
     {
-      "path": "concepts/conv-arp6983-ed324-status-2026-10-24.md",
-      "source_commit": "15af9df5bf756b82e3104f0af90fb55d72a0db7c"
+      "path": "concepts/china-drone-export-controls.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
     },
     {
-      "path": "concepts/conv-camera-imu-sync-hw-vs-sw-search-round4-2026-10-24.md",
-      "source_commit": "15af9df5bf756b82e3104f0af90fb55d72a0db7c"
+      "path": "concepts/cross-layer-attacks-uav-5g.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
     },
     {
-      "path": "concepts/conv-motor-esc-antenna-cn0-quant-search-round4-2026-10-24.md",
-      "source_commit": "15af9df5bf756b82e3104f0af90fb55d72a0db7c"
+      "path": "concepts/data-flightlog-ardupilot-aplogger-formats.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
     },
     {
-      "path": "concepts/data-edge-isaac-ros-performance-summary-release-3-2-orin-nx-nano-agx.md",
-      "source_commit": "15af9df5bf756b82e3104f0af90fb55d72a0db7c"
+      "path": "concepts/data-flightlog-ardupilot-dataflash.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
     },
     {
-      "path": "concepts/drone-convergence-engineering-hub.md",
-      "source_commit": "15af9df5bf756b82e3104f0af90fb55d72a0db7c"
+      "path": "concepts/data-flightlog-px4-analysis-tools.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
     },
     {
-      "path": "concepts/env-uav-antenna-installation-height-hehenberger-2022-no-motor-emi.md",
-      "source_commit": "15af9df5bf756b82e3104f0af90fb55d72a0db7c"
+      "path": "concepts/data-flightlog-px4-logging.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
     },
     {
-      "path": "concepts/gnss-engineering-hub.md",
-      "source_commit": "15af9df5bf756b82e3104f0af90fb55d72a0db7c"
+      "path": "concepts/data-flightlog-px4-ulog-format.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
     },
     {
-      "path": "concepts/korea-ngii-network-rtk-g-vrs-drone-access-recheck-2026-10-24.md",
-      "source_commit": "15af9df5bf756b82e3104f0af90fb55d72a0db7c"
+      "path": "concepts/data-flightlog-rosbag2.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
     },
     {
-      "path": "concepts/vendor-registry-gnss-receivers.md",
-      "source_commit": "15af9df5bf756b82e3104f0af90fb55d72a0db7c"
+      "path": "concepts/data-sync-ros2-message-filters-approximatetime-source.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
+    },
+    {
+      "path": "concepts/datalink-communication.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
+    },
+    {
+      "path": "concepts/dji-osmo-360-ii.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
+    },
+    {
+      "path": "concepts/dji-osmo-pocket-4p-stabilization.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
+    },
+    {
+      "path": "concepts/drone-first-responder-dfr.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
+    },
+    {
+      "path": "concepts/drone-news-2026-10-23.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
+    },
+    {
+      "path": "concepts/drone-news-ops.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
+    },
+    {
+      "path": "concepts/faa-airspace-classes-drone-authorization.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
+    },
+    {
+      "path": "concepts/fusion-ardupilot-ekf3-gps-overview.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
+    },
+    {
+      "path": "concepts/fusion-px4-ekf2-gnss-handling.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
+    },
+    {
+      "path": "concepts/fusion-suzuki-multi-gnss-receivers-uav-iros-2019.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
+    },
+    {
+      "path": "concepts/fusion-wen-fgo-vs-ekf-2004.10572.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
+    },
+    {
+      "path": "concepts/indi-stability-tilt-rotor-vtol.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
+    },
+    {
+      "path": "concepts/jamming-ardupilot-ekf3-jamming-expected-doc.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
+    },
+    {
+      "path": "concepts/mavlink-m-interoperability.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
+    },
+    {
+      "path": "concepts/occ-drone-dual-tag-chacha20-poly1305.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
+    },
+    {
+      "path": "concepts/physai-bench-uav-agentic-benchmark.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
+    },
+    {
+      "path": "concepts/precise-cerreta-ebee-rtk-ppk-base-distance-ijaaa-2023.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
+    },
+    {
+      "path": "concepts/precise-kci-kim-rtk-precision-landing-iemek-2023.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
+    },
+    {
+      "path": "concepts/px4-flight-modes.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
+    },
+    {
+      "path": "concepts/px4-simulation.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
+    },
+    {
+      "path": "concepts/ros2-drone-deep.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
+    },
+    {
+      "path": "concepts/skydio-blue-uas-cleared.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
+    },
+    {
+      "path": "concepts/skydio-centralsquare-dfr-integration.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
+    },
+    {
+      "path": "concepts/uav-anomaly-fitness-function-icsearcher.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
+    },
+    {
+      "path": "concepts/uav-irs-dqn-power-allocation-6g.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
+    },
+    {
+      "path": "concepts/uk-caa-airspace-architecture.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
+    },
+    {
+      "path": "concepts/wing-nhs-medical-delivery.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
+    },
+    {
+      "path": "concepts/yolo-v8-4-184.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
+    },
+    {
+      "path": "entities/dji-osmo-pocket-4.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
+    },
+    {
+      "path": "entities/px4-flight-stack.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
+    },
+    {
+      "path": "ontology/class-approvals-20261023.json",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
+    },
+    {
+      "path": "ontology/domain-approvals-20261023.json",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
+    },
+    {
+      "path": "queries/notebooklm-query-compounding.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
+    },
+    {
+      "path": "queries/ua-knowledge-graph-workflow.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
+    },
+    {
+      "path": "raw/papers/_unclassified/energy-efficiency-optimization-and-dqn-based-power-allocation-in-uav-irs-assiste.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
+    },
+    {
+      "path": "raw/papers/_unclassified/global-shutter-기반-occ-드론-채널을-위한-이중-태그-기반-chacha20-poly1305-aead-인증-프로토콜.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
+    },
+    {
+      "path": "raw/papers/drone-ai/synergizing-frequency-domain-modulation-and-hierarchical-feature-refinement-for-.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
+    },
+    {
+      "path": "raw/papers/drone-sw/uav-이상-동작-탐지를-위한-적합도-함수-연구.md",
+      "source_commit": "16e0095c6dd70865ef600319255e9eba718eb765"
     }
   ],
   "revoked_paths": []
