@@ -29,3 +29,6 @@ contradictions: []
 초록 수준 열람: fix rate 수치(%), 안테나 배치 도면, 기선 길이는 본문에서 확인하지 못해 미확인. 6개 안테나는 중량·비용 부담이 있음(저자 시스템 한정).^[inbox/processed/hw-20261021-fusion-suzuki-multi-gnss-receivers-uav-iros-2019.md]
 
 상위 허브: [[gnss-engineering-hub]] · 함께 보기: [[gnss-denied-remote-autonomy]]
+
+## 📰 최근 관련 소식
+- [MATLAB] Mapping Between MATLAB and Python | MATLAB and Python for Students (youtube.com, 2026-10-22) — https://www.youtube.com/watch?v=-xy6_XCzcKU

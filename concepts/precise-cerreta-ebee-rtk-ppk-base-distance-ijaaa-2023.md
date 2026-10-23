@@ -39,3 +39,6 @@ contradictions: []
 열람 범위: 논문 전문 7쪽(Wayback 보관 PDF에서 텍스트 추출)을 읽음. 주의: (1) 값은 GNSS 위치 자체가 아니라 사진측량 모델의 검사점 오차라서 카메라·고도(GSD) 영향이 섞임. (2) 거리가 비행장소·날짜와 묶여 있어(Table 2) 거리와 장소·날씨 효과가 분리되지 않음. (3) 고정익 1기종이라 멀티콥터 일반화는 미확인. (4) 거리별 N이 4~7로 작음. 출처: 저널 공식 페이지(commons.erau.edu)는 Cloudflare 차단이라 web.archive.org 보관 PDF로 본문 확인. 신뢰도: 중상(동료심사 학술지, 수치 직접 확인).^[inbox/processed/hw-20261022-precise-cerreta-ebee-rtk-ppk-base-distance-ijaaa-2023.md]
 
 상위 허브: [[gnss-engineering-hub]] · 함께 보기: [[vendor-registry-gnss-imu]]
+
+## 📰 최근 관련 소식
+- Signature Aviation and UrbanV Launch Signature UrbanV Alliance to Develop and Operate AAM Infrastructure Across the United States (www.suasnews.com, Wed, 21 Oc) — https://www.suasnews.com/2026/10/signature-aviation-and-urbanv-launch-signature-urbanv-alliance-to-develop-and-operate-aam-infrastructure-across-the-united-states/

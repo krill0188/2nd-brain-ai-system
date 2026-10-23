@@ -26,3 +26,6 @@ domain: regulations
 
 - [[drone-regulations]] — 드론 규제 총론
 - [[utm-system]] — UTM 시스템
+
+## 📰 최근 관련 소식
+- Establishment of Class E Airspace; Havana, IL (federalregister.gov, 2026-10-22) — https://www.federalregister.gov/documents/2026/10/22/2026-21565/establishment-of-class-e-airspace-havana-il

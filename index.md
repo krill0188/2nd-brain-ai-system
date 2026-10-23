@@ -3,7 +3,7 @@
 > Complete catalog of active canonical pages. Each entry is a wikilink followed by
 > a one-line summary, sorted alphabetically within its section.
 >
-|> Total pages: 656
+|> Total pages: 661
 ## Entities
 - [[qgroundcontrol-v5-1-0]] — QGroundControl v5.1.0 릴리스 후보 기록.
 |- [[avidrone]] — 캐나다 헤비리프트 드론 기업, DARPA Lift Challenge 우승.
@@ -677,6 +677,11 @@
 |- [[vlm-copilot-uav-navigation-latency-reliability]] — UAV 항법 VLM 코파일럿의 추론 지연·환각 트레이드오프 벤치마크.
 |- [[voxl-sdk-1-8-0]] — ModalAI VOXL SDK 1.8.0: libmodal-pipe 2.15, voxl-logger, 어안 스테레오 정류, 신규 패키지.
 |- [[yolo-v8-4-183]] — YOLO v8.4.183 릴리스, Axelera SDK 1.9·Intel LiteRT 지원 (2026-10-20).
+- [[drone-news-2026-10-23]] — 2026년 10월 23일 드론 업계 주요 소식(Evolver DFR, Wing–Walmart 샬럿, DJI 펌웨어, OFCOM 1.4 GHz).
+- [[occ-drone-dual-tag-chacha20-poly1305]] — OCC 드론 채널용 mini-tag/full-tag 이중 태그 ChaCha20-Poly1305 AEAD 인증(초록 기준).
+- [[uav-anomaly-fitness-function-icsearcher]] — ArduPilot 파라미터 조합 이상 동작 탐색용 편차 특성 적합도 함수(초록 기준).
+- [[uav-irs-dqn-power-allocation-6g]] — UAV-IRS 보조 THz NOMA 6G의 TSS 궤적과 DQN 전력 할당(초록 기준).
+- [[yolo-v8-4-184]] — YOLO v8.4.184: 다중 페이지 TIFF 수정, YOLOE 로딩·검증 개선 (2026-10-22).
 
 ## Comparisons
 

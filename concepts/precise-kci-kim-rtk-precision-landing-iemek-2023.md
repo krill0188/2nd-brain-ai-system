@@ -29,3 +29,6 @@ KCI 포털 수록 논문(초록 직접 확인). 드론 스테이션 자동 충�
 기체·RTK 모듈·기선 길이·보정 방식 미확인. 반복 10회 소표본.^[inbox/processed/hw-20261021-precise-kci-kim-rtk-precision-landing-iemek-2023.md]
 
 상위 허브: [[gnss-engineering-hub]] · 함께 보기: [[vendor-registry-gnss-imu]]
+
+## 📰 최근 관련 소식
+- SkyeBrowse Adds New Timelines Tools For Drone Surveys (dronelife.com, Thu, 22 Oc) — https://dronelife.com/2026/10/22/skyebrowse-adds-new-timelines-tools-for-drone-surveys/

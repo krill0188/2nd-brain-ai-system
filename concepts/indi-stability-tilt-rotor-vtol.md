@@ -89,3 +89,6 @@ ontology_class: VTOL
 - [Joshua Bardwell] I Exploded a LiPo in a $600 Safe (It Shot Flames) (youtube.com, 2026-10-17) — https://www.youtube.com/watch?v=H_eHspF-6KM
 - Team UAV Completes 500 Transformer Drone Inspections for National Grid Electricity Distribution (dronelife.com, Wed, 21 Oc) — https://dronelife.com/2026/10/21/team-uav-completes-500-transformer-drone-inspections-for-national-grid-electricity-distribution/
 - Best Drones For Beginners In 2021 - SlashGear (news.google.com, Fri, 18 Fe) — https://news.google.com/rss/articles/CBMidkFVX3lxTE1PamhMc1RZRVhhQlMwejMweHJiTU8zU1pYX3lXU3FFWWM2NFBHZzhRWXdJMVZielVncXpkOEVHMHk4X0J6T01lV2VfcGhKWVhzT0tZb2tOUnQtTWZtY2Eta1FXX215eTNiSHNabFYwUEVoWlJiR2c?oc=5
+- University of Cincinnati Engineers Use Sound to Detect Drone Damage for NASA (dronelife.com, Thu, 22 Oc) — https://dronelife.com/2026/10/22/university-of-cincinnati-engineers-use-sound-to-detect-drone-damage-for-nasa/
+- [UAV Coach] Why Haven't Drones Replaced Helicopters Yet? (youtube.com, 2026-10-22) — https://www.youtube.com/watch?v=KprQlrjOXaI
+- SkyeBrowse Adds New Timelines Tools For Drone Surveys (dronelife.com, Thu, 22 Oc) — https://dronelife.com/2026/10/22/skyebrowse-adds-new-timelines-tools-for-drone-surveys/

@@ -46,3 +46,4 @@ Wing의 영국 국민보건서비스(NHS) 긴급 의료 샘플 드론 배달 서
 
 ## 📰 최근 관련 소식
 - Matternet Expands NHS Drone Delivery Network to Children’s Hospital in London (dronelife.com, Tue, 20 Oc) — https://dronelife.com/2026/10/20/matternet-nhs-drone-delivery-london/
+- Wing and Walmart Launch Drone Delivery in Charlotte (dronelife.com, Thu, 22 Oc) — https://dronelife.com/2026/10/22/wing-and-walmart-launch-drone-delivery-in-charlotte/

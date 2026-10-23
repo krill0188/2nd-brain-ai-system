@@ -35,3 +35,6 @@ contradictions: []
 
 - [[drone-ai-agents]]
 - [[llm-uav-carrier-tactical-agent]]
+
+## 📰 최근 관련 소식
+- Teaching Robots to “Feel Pain”: AstraQua Secures $1.3 Million NASA Contract (www.suasnews.com, Thu, 22 Oc) — https://www.suasnews.com/2026/10/teaching-robots-to-feel-pain-astraqua-secures-1-3-million-nasa-contract/

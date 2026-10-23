@@ -28,3 +28,6 @@ contradictions: []
 초록에 정량 수치 없음. 지상 차량 도심 데이터이며 드론 직접 시험 아님.^[inbox/processed/hw-20261021-fusion-wen-fgo-vs-ekf-2004.10572.md]
 
 상위 허브: [[gnss-engineering-hub]] · 함께 보기: [[gnss-denied-remote-autonomy]]
+
+## 📰 최근 관련 소식
+- [MATLAB] Mapping Between MATLAB and Python | MATLAB and Python for Students (youtube.com, 2026-10-22) — https://www.youtube.com/watch?v=-xy6_XCzcKU

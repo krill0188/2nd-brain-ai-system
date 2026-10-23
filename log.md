@@ -2807,3 +2807,11 @@
 - Skipped (사유): `rss-parrot`, `rss-dji-enterprise` (2014~2026-08 게시의 오래된 항목뿐); `yt-postgresql-hybrid-search-course-...` (자막은 범용 PostgreSQL BM25·벡터 검색 강좌, 드론 도메인 외); `yt-tactical-backpacks-are-better-...` (자막이 가방 수납 리뷰, 드론 기술 정보 없음); `yt-tiny-box-big-wait-dji-lito-1` (자막 없음, 언박싱 프로모)
 - Note: KCI 논문은 원문 비공개·초록 기준, 영상·뉴스는 단일 출처라 모두 confidence low. `yt-4-updates-...-dji-avata-360`(자막 없음, 설명란 업데이트 4건)과 Zotero Skydio ISR 항목(제목만)은 별도 페이지 없이 `drone-news-2026-10-22`에 흡수. `voxl-sdk-1-8-0`은 자막 없는 설명란 기준. sources는 기존 관례대로 `inbox/processed/` 경로 사용
 - Moved to processed: inbox 파일 15개 → `inbox/processed/` (스킵 5건 포함)
+
+## [2026-10-23] create | inbox 17건 중 6건 컴파일 (논문 3·릴리스 1·뉴스/영상 → 페이지 5)
+
+- Created (concepts, 5): `concepts/yolo-v8-4-184.md` (ai-autonomy), `concepts/uav-irs-dqn-power-allocation-6g.md` (comms-protocol), `concepts/occ-drone-dual-tag-chacha20-poly1305.md` (comms-protocol), `concepts/uav-anomaly-fitness-function-icsearcher.md` (flight-control), `concepts/drone-news-2026-10-23.md` (ops-mission)
+- Updated: `index.md` (총 페이지 656 → 661)
+- Skipped (사유): `crossref-synergizing-frequency-domain-...` (초록 미제공, 제목만); `fedreg-faa-2026-21565` (일리노이 헬리포트 Class E 공역 설정, 드론 무관); `rss-dji-enterprise` (2025-12~2026-07 게시 항목뿐); `yt-mapping-between-matlab-and-python` (자막이 MATLAB·Python 일반 문법 대응, 드론 기술 정보 없음); `yt-mcp-security-fundamentals-course` (자막이 범용 MCP 보안 강좌, 드론 도메인 외); `yt-rotate-your-phone-...-dji-avata-360`, `yt-spin-into-the-shot-dji-osmo-pocket-4p` (자막 없음, 프로모 숏폼)
+- Note: 논문은 초록 기준, 뉴스·단일 영상은 모두 confidence low. 헬리콥터 영상은 자막 내용만 근거로 `drone-news-2026-10-23`에 흡수. sources는 기존 관례대로 `inbox/processed/` 경로(논문은 raw 경로 병기)
+- Moved to processed: inbox 파일 17개 → `inbox/processed/` (스킵 7건 포함)
