@@ -33,7 +33,6 @@ discovery 그래프에서 자동 추출·일괄 승격된 항목을 분류별로
 - [[brushless-dc-motors]] — brushless DC motors
 - [[c-rtk-9ps]] — C-Rtk 9Ps
 - [[cloud-servers]] — Cloud Servers
-- [[cube-orange-entity]] — Cube Orange
 - [[cylindrical-cell-battery]] — Cylindrical-cell battery
 - [[directional-antennas]] — directional antennas
 - [[edge-node]] — Edge Node
@@ -113,7 +112,6 @@ discovery 그래프에서 자동 추출·일괄 승격된 항목을 분류별로
 - [[rm3100]] — Rm3100
 - [[rotatable-antennas]] — Rotatable Antennas
 - [[safety-monitor]] — Safety Monitor
-- [[sd-card-entity]] — Sd Card
 - [[semi-anechoic-chamber]] — semi-anechoic chamber
 - [[servo-motor]] — servo motor
 - [[servo-motors]] — servo motors
