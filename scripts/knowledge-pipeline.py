@@ -216,6 +216,10 @@ def run_steps(items, execute=subprocess.run) -> list[dict]:
 
         results.append(record)
         if result.returncode:
+            # 문서 추출은 일부 문서가 실패해도 성공분이 저장되고 다음 밤에 재시도되므로 후속 단계(그래프·검증)를 막지 않는다.
+            if name == 'Generate:discovery':
+                record['diagnostic'] = 'PARTIAL_EXTRACTION_CONTINUE'
+                continue
             break
 
     return results
