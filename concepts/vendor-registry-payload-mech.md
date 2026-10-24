@@ -4,6 +4,7 @@ created: 2026-10-17
 updated: 2026-10-17
 type: concept
 domain: vendor-registry
+ontology_class: VendorRegistry
 tags: [drone, drone-hw, company]
 sources: [inbox/processed/hw-registry-20261017-vendors-payload-mech.md]
 confidence: medium

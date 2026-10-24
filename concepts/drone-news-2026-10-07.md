@@ -4,6 +4,7 @@ created: 2026-10-07
 updated: 2026-10-07
 type: concept
 domain: ops-mission
+ontology_class: NewsDigest
 tags: [drone, ops-mission, company]
 sources: [inbox/processed/fetch-2026-10-07-rss-dronedj.md, inbox/processed/fetch-2026-10-07-rss-dronelife.md, inbox/processed/fetch-2026-10-07-rss-suasnews.md, inbox/processed/fetch-2026-10-07-rss-dji-enterprise.md, inbox/processed/fetch-2026-10-07-rss-skydio.md]
 confidence: medium

@@ -9,6 +9,7 @@ confidence: medium
 contested: false
 contradictions: []
 domain: ops-mission
+ontology_class: NewsDigest
 ---
 
 # 드론 운용 및 미션 동향 2026-07

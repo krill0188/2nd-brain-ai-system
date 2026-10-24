@@ -14,6 +14,7 @@ confidence: medium
 contested: false
 contradictions: []
 domain: ops-mission
+ontology_class: NewsDigest
 ---
 
 # Drone News Digest - 2026-08-20

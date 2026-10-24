@@ -4,6 +4,7 @@ created: 2026-10-23
 updated: 2026-10-23
 type: concept
 domain: ops-mission
+ontology_class: NewsDigest
 tags: [drone, ops-mission, regulations]
 sources: [inbox/processed/fetch-2026-10-23-rss-dronedj.md, inbox/processed/fetch-2026-10-23-rss-dronelife.md, inbox/processed/fetch-2026-10-23-rss-skydio.md, inbox/processed/fetch-2026-10-23-rss-suasnews.md, inbox/processed/fetch-2026-10-23-rss-parrot.md, inbox/processed/fetch-2026-10-23-yt-why-havent-drones-replaced-helicopters-yet.md]
 confidence: low

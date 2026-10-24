@@ -4,6 +4,7 @@ created: 2026-09-03
 updated: 2026-09-03
 type: concept
 domain: ops-mission
+ontology_class: NewsDigest
 tags: [drone, hardware, ops-mission]
 sources: []
 confidence: high

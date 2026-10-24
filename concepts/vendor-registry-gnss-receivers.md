@@ -4,6 +4,7 @@ created: 2026-10-24
 updated: 2026-10-24
 type: concept
 domain: vendor-registry
+ontology_class: VendorRegistry
 tags: [drone, drone-hw, gnss, vendor-registry]
 sources: [inbox/processed/hw-20261024-gnss-vendors.md]
 confidence: medium

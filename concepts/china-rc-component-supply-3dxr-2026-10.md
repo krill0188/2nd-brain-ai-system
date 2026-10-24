@@ -4,6 +4,7 @@ created: 2026-10-19
 updated: 2026-10-19
 type: concept
 domain: vendor-registry
+ontology_class: VendorRegistry
 tags: [drone, drone-hw, regulations, company]
 sources: [inbox/processed/fetch-2026-10-19-yt-3dxr-supply-and-stock-latest-oct26-china-rc-component-export.md]
 confidence: low

@@ -4,6 +4,7 @@ created: 2026-10-19
 updated: 2026-10-19
 type: concept
 domain: ops-mission
+ontology_class: NewsDigest
 tags: [drone, ops-mission]
 sources: [inbox/processed/fetch-2026-10-19-rss-skydio.md, inbox/processed/fetch-2026-10-19-rss-suasnews.md]
 confidence: low

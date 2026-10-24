@@ -1,0 +1,213 @@
+{
+ "_comment": "2026-10-24 마스터 위임 승인(권장대로). 뉴스 모음(drone-news-*, drone-delivery-news) 34건=NewsDigest, frontmatter domain: vendor-registry 18건=VendorRegistry. 경로·frontmatter로 결정되는 묶음만 포함, domain은 변경하지 않는다. 되돌리기: scripts/revert-class-approvals.py.",
+ "approved": [
+  {
+   "path": "concepts/drone-news-2026-07-31.md",
+   "ontology_class": "NewsDigest"
+  },
+  {
+   "path": "concepts/drone-news-2026-08-01.md",
+   "ontology_class": "NewsDigest"
+  },
+  {
+   "path": "concepts/drone-news-2026-08-20.md",
+   "ontology_class": "NewsDigest"
+  },
+  {
+   "path": "concepts/drone-news-2026-09-03.md",
+   "ontology_class": "NewsDigest"
+  },
+  {
+   "path": "concepts/drone-news-2026-09-04.md",
+   "ontology_class": "NewsDigest"
+  },
+  {
+   "path": "concepts/drone-news-2026-09-05.md",
+   "ontology_class": "NewsDigest"
+  },
+  {
+   "path": "concepts/drone-news-2026-09-06.md",
+   "ontology_class": "NewsDigest"
+  },
+  {
+   "path": "concepts/drone-news-2026-09-09.md",
+   "ontology_class": "NewsDigest"
+  },
+  {
+   "path": "concepts/drone-news-2026-09-10.md",
+   "ontology_class": "NewsDigest"
+  },
+  {
+   "path": "concepts/drone-news-2026-09-11.md",
+   "ontology_class": "NewsDigest"
+  },
+  {
+   "path": "concepts/drone-news-2026-09-12.md",
+   "ontology_class": "NewsDigest"
+  },
+  {
+   "path": "concepts/drone-news-2026-10-03.md",
+   "ontology_class": "NewsDigest"
+  },
+  {
+   "path": "concepts/drone-news-2026-10-07.md",
+   "ontology_class": "NewsDigest"
+  },
+  {
+   "path": "concepts/drone-news-2026-10-08.md",
+   "ontology_class": "NewsDigest"
+  },
+  {
+   "path": "concepts/drone-news-2026-10-09.md",
+   "ontology_class": "NewsDigest"
+  },
+  {
+   "path": "concepts/drone-news-2026-10-10.md",
+   "ontology_class": "NewsDigest"
+  },
+  {
+   "path": "concepts/drone-news-2026-10-11.md",
+   "ontology_class": "NewsDigest"
+  },
+  {
+   "path": "concepts/drone-news-2026-10-12.md",
+   "ontology_class": "NewsDigest"
+  },
+  {
+   "path": "concepts/drone-news-2026-10-13.md",
+   "ontology_class": "NewsDigest"
+  },
+  {
+   "path": "concepts/drone-news-2026-10-14.md",
+   "ontology_class": "NewsDigest"
+  },
+  {
+   "path": "concepts/drone-news-2026-10-15.md",
+   "ontology_class": "NewsDigest"
+  },
+  {
+   "path": "concepts/drone-news-2026-10-16.md",
+   "ontology_class": "NewsDigest"
+  },
+  {
+   "path": "concepts/drone-news-2026-10-17.md",
+   "ontology_class": "NewsDigest"
+  },
+  {
+   "path": "concepts/drone-news-2026-10-18.md",
+   "ontology_class": "NewsDigest"
+  },
+  {
+   "path": "concepts/drone-news-2026-10-19.md",
+   "ontology_class": "NewsDigest"
+  },
+  {
+   "path": "concepts/drone-news-2026-10-20.md",
+   "ontology_class": "NewsDigest"
+  },
+  {
+   "path": "concepts/drone-news-2026-10-21.md",
+   "ontology_class": "NewsDigest"
+  },
+  {
+   "path": "concepts/drone-news-2026-10-22.md",
+   "ontology_class": "NewsDigest"
+  },
+  {
+   "path": "concepts/drone-news-2026-10-23.md",
+   "ontology_class": "NewsDigest"
+  },
+  {
+   "path": "concepts/drone-news-2026-10-24.md",
+   "ontology_class": "NewsDigest"
+  },
+  {
+   "path": "concepts/drone-news-hardware.md",
+   "ontology_class": "NewsDigest"
+  },
+  {
+   "path": "concepts/drone-news-ops.md",
+   "ontology_class": "NewsDigest"
+  },
+  {
+   "path": "concepts/drone-news-regulations.md",
+   "ontology_class": "NewsDigest"
+  },
+  {
+   "path": "concepts/drone-delivery-news.md",
+   "ontology_class": "NewsDigest"
+  },
+  {
+   "path": "concepts/china-rc-component-supply-3dxr-2026-10.md",
+   "ontology_class": "VendorRegistry"
+  },
+  {
+   "path": "concepts/drone-hw-vendor-registry.md",
+   "ontology_class": "VendorRegistry"
+  },
+  {
+   "path": "concepts/vendor-registry-battery.md",
+   "ontology_class": "VendorRegistry"
+  },
+  {
+   "path": "concepts/vendor-registry-camera.md",
+   "ontology_class": "VendorRegistry"
+  },
+  {
+   "path": "concepts/vendor-registry-compute.md",
+   "ontology_class": "VendorRegistry"
+  },
+  {
+   "path": "concepts/vendor-registry-datalink.md",
+   "ontology_class": "VendorRegistry"
+  },
+  {
+   "path": "concepts/vendor-registry-esc.md",
+   "ontology_class": "VendorRegistry"
+  },
+  {
+   "path": "concepts/vendor-registry-fc.md",
+   "ontology_class": "VendorRegistry"
+  },
+  {
+   "path": "concepts/vendor-registry-frame.md",
+   "ontology_class": "VendorRegistry"
+  },
+  {
+   "path": "concepts/vendor-registry-gcs-hw.md",
+   "ontology_class": "VendorRegistry"
+  },
+  {
+   "path": "concepts/vendor-registry-gnss-imu.md",
+   "ontology_class": "VendorRegistry"
+  },
+  {
+   "path": "concepts/vendor-registry-gnss-receivers.md",
+   "ontology_class": "VendorRegistry"
+  },
+  {
+   "path": "concepts/vendor-registry-lidar.md",
+   "ontology_class": "VendorRegistry"
+  },
+  {
+   "path": "concepts/vendor-registry-motor.md",
+   "ontology_class": "VendorRegistry"
+  },
+  {
+   "path": "concepts/vendor-registry-payload-mech.md",
+   "ontology_class": "VendorRegistry"
+  },
+  {
+   "path": "concepts/vendor-registry-power-charger.md",
+   "ontology_class": "VendorRegistry"
+  },
+  {
+   "path": "concepts/vendor-registry-propeller.md",
+   "ontology_class": "VendorRegistry"
+  },
+  {
+   "path": "concepts/vendor-registry-radar.md",
+   "ontology_class": "VendorRegistry"
+  }
+ ]
+}

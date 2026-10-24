@@ -9,6 +9,7 @@ confidence: medium
 contested: false
 contradictions: []
 domain: regulations
+ontology_class: NewsDigest
 ---
 
 # 드론 규제 동향 2026-07

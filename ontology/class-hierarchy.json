@@ -1,5 +1,5 @@
 {
-  "_comment": "ONTOLOGY_SPEC.md §1 클래스 계층을 그대로 옮긴 경량 조회 테이블(G2, 2026-08-02). 정식 OWL/DL 추론기 없이 parent 필드만으로 조상/자손 조회를 지원한다. 새 클래스 발명 없음 — ONTOLOGY_SPEC.md에 이미 정의된 것만 옮김. 2026-10-24 마스터 승인으로 연구·기법 문서용 주제 클래스(ResearchTopic 및 하위 10개, 개체 아님·verified 승급 근거 아님) 신설. 2026-10-21 마스터 승인으로 Engine(Actuator 하위)·CommunicationProtocol(SoftwareSystem 하위)·Manufacturer(Thing 하위)를 추가했다 — 위키 문서 연결 제안에서 기존 클래스에 맞지 않던 문서군(엔진·연료전지 연구, MAVLink 등 프로토콜, 제조사 개체)용.",
+  "_comment": "ONTOLOGY_SPEC.md §1 클래스 계층을 그대로 옮긴 경량 조회 테이블(G2, 2026-08-02). 정식 OWL/DL 추론기 없이 parent 필드만으로 조상/자손 조회를 지원한다. 새 클래스 발명 없음 — ONTOLOGY_SPEC.md에 이미 정의된 것만 옮김. 2026-10-24 마스터 승인으로 연구·기법 문서용 주제 클래스(ResearchTopic 및 하위 10개, 개체 아님·verified 승급 근거 아님) 신설. 2026-10-21 마스터 승인으로 Engine(Actuator 하위)·CommunicationProtocol(SoftwareSystem 하위)·Manufacturer(Thing 하위)를 추가했다 — 위키 문서 연결 제안에서 기존 클래스에 맞지 않던 문서군(엔진·연료전지 연구, MAVLink 등 프로토콜, 제조사 개체)용. 2026-10-24 마스터 위임 승인으로 문서 형식 클래스 NewsDigest(뉴스 모음)·VendorRegistry(제조사·제품 레지스트리 문서)를 DataArtifact 하위에 신설(개체 아님·verified 승급 근거 아님, 별칭 없음).",
   "classes": {
     "Thing": { "parent": null },
 
@@ -62,6 +62,8 @@
     "SensorReading": { "parent": "DataArtifact" },
     "Telemetry": { "parent": "DataArtifact" },
     "KnowledgeClaim": { "parent": "DataArtifact" },
+    "NewsDigest": { "parent": "DataArtifact" },
+    "VendorRegistry": { "parent": "DataArtifact" },
 
     "Agent": { "parent": "Thing" },
     "HumanOperator": { "parent": "Agent" },

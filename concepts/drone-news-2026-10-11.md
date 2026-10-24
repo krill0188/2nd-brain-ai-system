@@ -4,6 +4,7 @@ created: 2026-10-11
 updated: 2026-10-11
 type: concept
 domain: ops-mission
+ontology_class: NewsDigest
 tags: [drone, ops-mission, fpv]
 sources: [inbox/processed/fetch-2026-10-11-rss-dronedj.md, inbox/processed/fetch-2026-10-11-rss-oscarliang-fpv.md]
 confidence: low

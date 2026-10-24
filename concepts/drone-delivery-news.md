@@ -5,6 +5,7 @@ updated: 2026-10-15
 type: concept
 tags: [drone, ops-mission]
 domain: ops-mission
+ontology_class: NewsDigest
 sources: ["inbox/fetch-2026-08-01-rss-dronedj.md", inbox/processed/fetch-2026-10-08-kci-지형적-특성과-충전소-기능-구분을-고려한-드론-인간-혼합배송의-비용-효율적-입지-및-네트워크-최적화-모형.md]
 confidence: high
 contested: false

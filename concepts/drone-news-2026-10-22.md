@@ -4,6 +4,7 @@ created: 2026-10-22
 updated: 2026-10-22
 type: concept
 domain: ops-mission
+ontology_class: NewsDigest
 tags: [drone, ops-mission, regulations]
 sources: [inbox/processed/fetch-2026-10-22-rss-dronedj.md, inbox/processed/fetch-2026-10-22-rss-dronelife.md, inbox/processed/fetch-2026-10-22-rss-skydio.md, inbox/processed/fetch-2026-10-22-rss-suasnews.md, inbox/processed/fetch-2026-10-22-yt-4-updates-one-nonstop-flight-dji-avata-360.md, inbox/processed/zotero-skydio-unveils-isr-command-platform-for-drone-intelligence-and-surveillance-oper.md]
 confidence: low

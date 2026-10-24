@@ -9,6 +9,7 @@ confidence: medium
 contested: false
 contradictions: []
 domain: hardware
+ontology_class: NewsDigest
 ---
 
 # 드론 하드웨어 및 제조사 동향 2026-07

@@ -5,6 +5,7 @@ updated: 2026-08-06
 type: concept
 tags: [drone, ops-mission]
 domain: ops-mission
+ontology_class: NewsDigest
 sources: ["inbox/fetch-2026-08-01-rss-dronelife.md"]
 confidence: high
 contested: false

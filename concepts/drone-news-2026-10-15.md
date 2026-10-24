@@ -4,6 +4,7 @@ created: 2026-10-15
 updated: 2026-10-16
 type: concept
 domain: ops-mission
+ontology_class: NewsDigest
 tags: [drone, ops-mission, hardware, regulations]
 sources: [inbox/processed/fetch-2026-10-15-rss-dronelife.md, inbox/processed/fetch-2026-10-15-rss-suasnews.md, inbox/processed/fetch-2026-10-15-rss-dji-enterprise.md, inbox/processed/fetch-2026-10-15-rss-oscarliang-fpv.md]
 confidence: low
