@@ -32,3 +32,4 @@ CPS용 딥러닝 이상 탐지기를 만들기 위한 요구사항 프로세스 
 ## 📰 최근 관련 소식
 - BETA Becomes First Company to Secure Landmark FAA Authorization to Conduct Flight Operations with Prospective Customers in Electric VTOL Aircraft (www.suasnews.com, Wed, 21 Oc) — https://www.suasnews.com/2026/10/beta-becomes-first-company-to-secure-landmark-faa-authorization-to-conduct-flight-operations-with-prospective-customers-in-electric-vtol-aircraft/
 - CES 2014: Parrot Jumping Sumo and MiniDrone set to invade your home this year - ExtremeTech (news.google.com, Mon, 06 Ja) — https://news.google.com/rss/articles/CBMiugFBVV95cUxQR0dwUU1UcDNXMmlpX282b1NxME5TOXFUb29QS3JnNW9XRTZ2QlRpVnQyM2NEUUxpaVN0WTdPQk1QXzB4Q1VrUVR5N2xJOVBkZkI3cDNScFRzQ2xjZXhwbm9SVHVOeWVEZzVQZFFpQ0pHRnkxNTJLVTVRblU0eWdLLTlON1h2WjdOMDdYenJveGFKNVBuMjBZN095MlZ2UEpmS0VkMGM5a1FGSjhtZGdyQmt4NUdlNklfeEE?oc=5
+- [MATLAB] What’s New in MATLAB and Simulink | MATLAB EXPO Online 2026 (youtube.com, 2026-10-23) — https://www.youtube.com/watch?v=vSzRW5XIy9s

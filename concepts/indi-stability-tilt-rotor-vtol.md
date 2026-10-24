@@ -92,3 +92,4 @@ ontology_class: VTOL
 - University of Cincinnati Engineers Use Sound to Detect Drone Damage for NASA (dronelife.com, Thu, 22 Oc) — https://dronelife.com/2026/10/22/university-of-cincinnati-engineers-use-sound-to-detect-drone-damage-for-nasa/
 - [UAV Coach] Why Haven't Drones Replaced Helicopters Yet? (youtube.com, 2026-10-22) — https://www.youtube.com/watch?v=KprQlrjOXaI
 - SkyeBrowse Adds New Timelines Tools For Drone Surveys (dronelife.com, Thu, 22 Oc) — https://dronelife.com/2026/10/22/skyebrowse-adds-new-timelines-tools-for-drone-surveys/
+- [UAV Coach] Potensic ATOM 2: The Best Budget Drone for Beginners? (youtube.com, 2026-10-23) — https://www.youtube.com/watch?v=5CI2kSNjBDM

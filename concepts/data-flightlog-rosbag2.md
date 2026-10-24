@@ -30,3 +30,6 @@ rosbag2는 ROS 2의 기록·재생 도구(ros2 bag CLI)이다. 저장 플러그�
 - 성능 수치(기록 처리량 등) 미확인.^[inbox/processed/hw-20261021-data-flightlog-rosbag2.md]
 
 상위 허브: [[ai-drone-data-processing-hub]] · 함께 보기: [[ros2-drone-integration]]
+
+## 📰 최근 관련 소식
+- [핑크랩 PinkLAB] PinkLAB Studio 🌸 (youtube.com, 2026-10-23) — https://www.youtube.com/watch?v=6KirnJZtQms

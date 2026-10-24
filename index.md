@@ -3,7 +3,7 @@
 > Complete catalog of active canonical pages. Each entry is a wikilink followed by
 > a one-line summary, sorted alphabetically within its section.
 >
-|> Total pages: 661
+|> Total pages: 667
 ## Entities
 - [[qgroundcontrol-v5-1-0]] — QGroundControl v5.1.0 릴리스 후보 기록.
 |- [[avidrone]] — 캐나다 헤비리프트 드론 기업, DARPA Lift Challenge 우승.
@@ -682,6 +682,12 @@
 - [[uav-anomaly-fitness-function-icsearcher]] — ArduPilot 파라미터 조합 이상 동작 탐색용 편차 특성 적합도 함수(초록 기준).
 - [[uav-irs-dqn-power-allocation-6g]] — UAV-IRS 보조 THz NOMA 6G의 TSS 궤적과 DQN 전력 할당(초록 기준).
 - [[yolo-v8-4-184]] — YOLO v8.4.184: 다중 페이지 TIFF 수정, YOLOE 로딩·검증 개선 (2026-10-22).
+- [[aerial-mission-aware-llm-selection-flying-networks]] — AERIAL: 비행 네트워크용 임무 인지 LLM 선택 프레임워크(초록 기준).
+- [[diffdreamer-world-model-differentiable-simulation]] — DiffDreamer: 월드 모델+미분 가능 시뮬레이션 쿼드로터 RL 제어(초록 기준).
+- [[dynamic-fleet-sizing-uav-relays-post-disaster-mpc]] — 재난 후 이종 UAV 중계기 가동 대수 MPC 결정(초록 기준).
+- [[ris-assisted-clustered-uav-noma-bilevel-optimization]] — RIS 보조 군집형 UAV-NOMA outage 분석과 이중 최적화(초록 기준).
+- [[potensic-atom-2]] — Potensic ATOM 2 입문용 249g 미만 드론 리뷰(UAV Coach).
+- [[drone-news-2026-10-24]] — 드론 업계 주요 소식 2026-10-24 (버티포트 초안, 경찰 드론, DJI 펌웨어).
 
 ## Comparisons
 

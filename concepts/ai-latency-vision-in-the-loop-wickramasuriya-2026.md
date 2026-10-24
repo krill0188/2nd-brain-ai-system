@@ -35,3 +35,5 @@ contradictions: []
 
 ## 📰 최근 관련 소식
 - Elistair Unveils Tethered Solution for the Parrot ANAFI UKR (dronelife.com, Wed, 21 Oc) — https://dronelife.com/2026/10/21/elistair-unveils-tethered-solution-for-the-parrot-anafi-ukr/
+- Building the Autonomous Warfare Command – DRPM UxS (www.suasnews.com, Fri, 23 Oc) — https://www.suasnews.com/2026/10/building-the-autonomous-warfare-command-drpm-uxs/
+- Chuyka 4.5.0. (www.suasnews.com, Fri, 23 Oc) — https://www.suasnews.com/2026/10/chuyka-4-5-0/

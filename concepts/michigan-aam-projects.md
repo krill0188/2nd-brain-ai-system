@@ -36,3 +36,4 @@ contradictions: []
 ## 📰 최근 관련 소식
 - 드론·로봇·AI까지 키운다…BNK부산은행, 동남권 방산기술에 투자 (이코노미사이언스, Thu, 13 Au) — https://news.google.com/rss/articles/CBMib0FVX3lxTE1TOVZ4eTdTVXpKaWFJQWhzNFVQaFUxM0ZPLWtjNWxJZEp5OGFqYklrb1lKVUdKWmUzVEJlNmtnbnItcUg1MFN2TFM1ZnMxS1dFb2lROEhLWkQtUjBrcWNGWmtUdkkzYUJLZTBUZHdLcw?oc=5
 - Michigan Awards $2 Million for Five Advanced Air Mobility Projects (dronelife.com, Wed, 12 Au) — https://dronelife.com/2026/08/12/michigan-advanced-air-mobility-projects-2-million/
+- Gov. Whitmer awards $1.7M to launch 12 Advanced Air Mobility projects statewide 12 pilot projects will demonstrate advanced air mobility technologies in real-world applications across Michigan (www.suasnews.com, Fri, 23 Oc) — https://www.suasnews.com/2026/10/gov-whitmer-awards-1-7m-to-launch-12-advanced-air-mobility-projects-statewide-12-pilot-projects-will-demonstrate-advanced-air-mobility-technologies-in-real-world-applications-across-michigan/

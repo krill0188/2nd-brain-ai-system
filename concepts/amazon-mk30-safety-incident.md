@@ -58,3 +58,4 @@ Amazon Prime Air MK30 드론의 Darlington 정원 불시 착륙 사고. Oregon �
 
 ## 📰 최근 관련 소식
 - [DJI] Istanbul After Dark | DJI Air 3S (youtube.com, 2026-08-17) — https://www.youtube.com/watch?v=7o40DrX2qX4
+- Amazon Drone Delivery Plan Faces State Review as Massachusetts Residents Organize (dronelife.com, Fri, 23 Oc) — https://dronelife.com/2026/10/23/amazon-drone-delivery-westborough-state-review/

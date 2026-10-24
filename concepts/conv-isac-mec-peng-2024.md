@@ -28,3 +28,6 @@ contradictions: []
 - 초록에 수치 없음. 실기 검증 미확인.^[inbox/processed/hw-20261021-conv-isac-mec-peng-2024.md]
 
 상위 허브: [[drone-convergence-engineering-hub]] · 함께 보기: [[uav-isac-cross-region]]
+
+## 📰 최근 관련 소식
+- FAA Releases Draft Design Standards for Vertiports and Vertical Flight Facilities (dronelife.com, Fri, 23 Oc) — https://dronelife.com/2026/10/23/faa-vertiport-design-standards-2026/

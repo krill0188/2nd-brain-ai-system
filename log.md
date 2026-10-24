@@ -2815,3 +2815,11 @@
 - Skipped (사유): `crossref-synergizing-frequency-domain-...` (초록 미제공, 제목만); `fedreg-faa-2026-21565` (일리노이 헬리포트 Class E 공역 설정, 드론 무관); `rss-dji-enterprise` (2025-12~2026-07 게시 항목뿐); `yt-mapping-between-matlab-and-python` (자막이 MATLAB·Python 일반 문법 대응, 드론 기술 정보 없음); `yt-mcp-security-fundamentals-course` (자막이 범용 MCP 보안 강좌, 드론 도메인 외); `yt-rotate-your-phone-...-dji-avata-360`, `yt-spin-into-the-shot-dji-osmo-pocket-4p` (자막 없음, 프로모 숏폼)
 - Note: 논문은 초록 기준, 뉴스·단일 영상은 모두 confidence low. 헬리콥터 영상은 자막 내용만 근거로 `drone-news-2026-10-23`에 흡수. sources는 기존 관례대로 `inbox/processed/` 경로(논문은 raw 경로 병기)
 - Moved to processed: inbox 파일 17개 → `inbox/processed/` (스킵 7건 포함)
+
+## [2026-10-24] create | inbox 19건 중 7건 컴파일 (논문 4·영상 1·뉴스 RSS 5 → 신규 6쪽, 기존 1쪽 보강)
+
+- Created (concepts, 6): `concepts/aerial-mission-aware-llm-selection-flying-networks.md` (ai-autonomy), `concepts/diffdreamer-world-model-differentiable-simulation.md` (flight-control), `concepts/dynamic-fleet-sizing-uav-relays-post-disaster-mpc.md` (comms-protocol), `concepts/ris-assisted-clustered-uav-noma-bilevel-optimization.md` (comms-protocol), `concepts/potensic-atom-2.md` (hardware), `concepts/drone-news-2026-10-24.md` (ops-mission)
+- Updated: `concepts/betafpv-p1-digital-fpv-system.md` (ArtLynk 신제품 3종 절 추가, 자막 근거), `index.md` (총 페이지 661 → 667)
+- Skipped (사유): `crossref-when-metadata-betrays-the-mission-...` (초록 미제공, 제목만); `rss-parrot` (2010~2021 게시 항목뿐); `rss-dji-enterprise` (2025-11~2026-07 게시 항목뿐); `yt-gemini-4-argon-api-crash-course` (범용 LLM API 강좌, 드론 도메인 외); `yt-whats-new-in-matlab-and-simulink` (자막이 행사 홍보 문구 몇 줄); `yt-no-remote-in-sight-dji-neo-2`, `yt-street-flow-through-melbourne-dji-osmo-pocket-4p`, `yt-pinklab-studio-` (자막 없음, 프로모 숏폼)
+- Note: 논문은 초록 기준, 영상·뉴스는 단일 출처라 모두 confidence low. 논문은 raw 경로, 영상·뉴스는 기존 관례대로 `inbox/processed/` 경로를 sources로 사용
+- Moved to processed: inbox 파일 19개 → `inbox/processed/` (스킵 8건 포함)

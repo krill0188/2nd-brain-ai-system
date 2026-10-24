@@ -1,11 +1,11 @@
 ---
 title: "BETAFPV P1 디지털 FPV 시스템 (베타 하드웨어)"
 created: 2026-10-05
-updated: 2026-10-07
+updated: 2026-10-24
 type: concept
 domain: hardware
 tags: [drone, drone-hw, fpv, hardware]
-sources: [inbox/processed/fetch-2026-10-05-yt-100-for-a-digital-hd-vrx-whats-the-catch-betafpv-p1-vrx-revi.md, inbox/processed/fetch-2026-10-07-yt-building-a-p1-whoop-to-find-out-how-much-slower-it-really-is.md]
+sources: [inbox/processed/fetch-2026-10-05-yt-100-for-a-digital-hd-vrx-whats-the-catch-betafpv-p1-vrx-revi.md, inbox/processed/fetch-2026-10-07-yt-building-a-p1-whoop-to-find-out-how-much-slower-it-really-is.md, inbox/processed/fetch-2026-10-24-yt-betafpv-gets-serious-about-artlynk-with-new-hd-fpv-hardware.md]
 confidence: low
 contested: false
 contradictions: []
@@ -46,6 +46,19 @@ Joshua Bardwell이 Matrix P1 AIO FC로 65 mm 휘프를 직접 조립한 영상(�
 - **조립 팁**: FC 화살표가 기수 방향(다르면 Betaflight에서 재매핑 가능). 모터 회전 방향을 미리 확인하지 않아 Betaflight에서 반전했다.
   카메라 고정 나사가 업틸트 각도를 정하며 중간 단계 구멍을 선택했다. 안테나는 영상용과 ELRS 제어용이 분리돼 있다.
 
+## 추가 근거: ArtLynk 신제품 라인업(2026-10-23)
+
+Painless360의 신제품 소개 영상(자막 기준). 리뷰어는 "빅3(DJI·Walksnail·HDZero)가 아닌 시스템은 꾸준한 신제품이 사용자 신뢰의 조건"이라며,
+BetaFPV가 이 시스템에 크게 투자하고 있다고 평가했다. BetaFPV는 약 10~11개월간 HD 제품을 내왔고 아날로그 → ArtLynk 기반 HD 순으로 확장했다.
+^[inbox/processed/fetch-2026-10-24-yt-betafpv-gets-serious-about-artlynk-with-new-hd-fpv-hardware.md]
+
+- **P1 HD VTX 올인원 휘프 FC(1S)**: FC+ESC+VTX 일체형. ESC 12 A 연속, DShot 300/600, ExpressLRS 수신기 내장, VTX P1A 최대 200 mW,
+  지연 약 60 ms(리뷰어가 ArtLynk의 약점으로 지적), 1080p 60fps, 카메라 FOV 153°(16:9). 모터 커넥터 JST 1.25 3핀, 전원 BT2.0, 무게 약 4.6 g.
+  같은 JST 모터 커넥터를 쓰는 기존 휘프의 메인보드를 교체하는 용도.
+- **HD FPV 모니터**: 밝기 1,000 nit, 안테나 2개, 하단 1/4인치 마운트, 외부 배터리 전원. 고글 없이 쓰거나 시선 비행 보조용.
+- **P1 VTX Nano 수신기(고글 모듈)**: Fat Shark용·Skyzone용 두 버전. 고글 HDMI 입력으로 1080p 60fps, 다중 주파수·밴드, SD 카드 녹화, 범위는 약 400 m 이상.
+  리뷰어는 고글 내부 개조가 필요해 본인은 쓰지 못하며, 외부 전원 독립형이 더 나았을 것이라 평했다.
+
 ## 관련 개념
 
 - [[fpv-hardware]] — FPV 하드웨어 일반
@@ -56,3 +69,4 @@ Joshua Bardwell이 Matrix P1 AIO FC로 65 mm 휘프를 직접 조립한 영상(�
 ## 📰 최근 관련 소식
 - [Joshua Bardwell] $100 for a digital HD vRX. What's the catch? // BETAFPV P1 VRX REVIEW (youtube.com, 2026-10-04) — https://www.youtube.com/watch?v=5zjWdQfQGmE
 - [Joshua Bardwell] Building a P1 whoop to find out how much slower it really is (youtube.com, 2026-10-06) — https://www.youtube.com/watch?v=ZrNlxbI4rlQ
+- [Painless360] BetaFPV gets serious about ArtLynk with new HD FPV hardware (youtube.com, 2026-10-23) — https://www.youtube.com/watch?v=Xs2nlZzw-yQ

@@ -43,3 +43,4 @@ contradictions: []
 
 ## 📰 최근 관련 소식
 - Signature Aviation and UrbanV Launch Signature UrbanV Alliance to Develop and Operate AAM Infrastructure Across the United States (www.suasnews.com, Wed, 21 Oc) — https://www.suasnews.com/2026/10/signature-aviation-and-urbanv-launch-signature-urbanv-alliance-to-develop-and-operate-aam-infrastructure-across-the-united-states/
+- Gov. Whitmer awards $1.7M to launch 12 Advanced Air Mobility projects statewide 12 pilot projects will demonstrate advanced air mobility technologies in real-world applications across Michigan (www.suasnews.com, Fri, 23 Oc) — https://www.suasnews.com/2026/10/gov-whitmer-awards-1-7m-to-launch-12-advanced-air-mobility-projects-statewide-12-pilot-projects-will-demonstrate-advanced-air-mobility-technologies-in-real-world-applications-across-michigan/

@@ -103,3 +103,4 @@ ros2 launch mavros mavros.launch.py fcu_url:=udp://127.0.0.1:14550@
 
 ## 📰 최근 관련 소식
 - [핑크랩 PinkLAB] MuJoCo + ROS 2로 Nav2 · MoveIt · LLM까지 2일 완성 모집 (youtube.com, 2026-10-09) — https://www.youtube.com/watch?v=85FGaf6unms
+- [핑크랩 PinkLAB] PinkLAB Studio 🌸 (youtube.com, 2026-10-23) — https://www.youtube.com/watch?v=6KirnJZtQms
