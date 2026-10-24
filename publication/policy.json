@@ -1489,7 +1489,13 @@
     "concepts/yolo26s-seg.md": "2021d88acbf9790cd8734abeaec6e4588c13319975d44fc074d55333911cf520",
     "concepts/yolov11.md": "4e746d169ce7ae7fc779bf7f20ec944a679b931930d3363cfc3549c470586a95",
     "concepts/yolov12s-seg.md": "16da0b04239d41105315b125bb4a9f71c76961355644e3f720e154786e79243d",
-    "concepts/zoomdet.md": "87c38f47bf941f179c8011af23fc825f3144e0f9abcea8f00318d39277f1da30"
+    "concepts/zoomdet.md": "87c38f47bf941f179c8011af23fc825f3144e0f9abcea8f00318d39277f1da30",
+    "concepts/bc-nmpc.md": "af560a9fa8c9e4be712a1f9d0b93c799a1a7a7d95efd908144b420ec9bdbbac5",
+    "concepts/bvlos-운항규정.md": "9d3ab4a750edaf7c8e45c04d45069019be263532d0ba29004938dff86c2ae841",
+    "concepts/parameter-efficient-entropy-guided-feature-suppression-framework.md": "ba5b1b459715e20207f75b650f8d97f5bb22eb5d071c0404f5541b8c8cd37716",
+    "concepts/prior-knowledge-multichannel-wiener-filter-pk-mwf.md": "403a1e43d241f4c019994210191992f31836f4642244584c6d9a51371691bcea",
+    "concepts/sf-tmat.md": "c1c202f2f03a627d97bb2d990ff689f339a7928d3d9d1fdc8fffe20e992c37e2",
+    "concepts/wire-driven-robotic-fish.md": "652311bbdf72a884853d22df76ae51c08087ce0fd236ea716e7626482b156446"
   },
   "baseline": {
     "description": "Existing local public snapshot bytes; retention only, not a declaration of public classification. Never refresh automatically.",
