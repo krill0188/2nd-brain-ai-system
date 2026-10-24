@@ -65,7 +65,7 @@ discovery 그래프에서 자동 추출·일괄 승격된 항목을 분류별로
 - [[covariance-prediction]] — Covariance Prediction
 - [[cretaceous-gyeongsang-basin]] — Cretaceous Gyeongsang Basin
 - [[criticdrivenpathway]] — CriticDrivenPathway
-- [[csi]] — Csi
+- [[csi-entity]] — Csi
 - [[csi-feedback-delay]] — CSI feedback delay
 - [[ct-k]] — Ct-K
 - [[data-efficiency]] — Data Efficiency
@@ -95,7 +95,7 @@ discovery 그래프에서 자동 추출·일괄 승격된 항목을 분류별로
 - [[eavesdropper-jamming]] — Eavesdropper Jamming
 - [[edge-load]] — edge load
 - [[ego-noise-reference-signals]] — ego-noise reference signals
-- [[ekf]] — Ekf
+- [[ekf-entity]] — Ekf
 - [[electromagnetic-scattering-analysis]] — Electromagnetic Scattering Analysis
 - [[eligibility-provisions]] — Eligibility provisions
 - [[embodied-navigation]] — embodied navigation
@@ -409,7 +409,7 @@ discovery 그래프에서 자동 추출·일괄 승격된 항목을 분류별로
 - [[time-allocation]] — Time Allocation
 - [[timing-synchronization]] — Timing Synchronization
 - [[traffic-conditions]] — Traffic Conditions
-- [[trajectory-prediction]] — Trajectory Prediction
+- [[trajectory-prediction-entity]] — Trajectory Prediction
 - [[transmit-power]] — Transmit Power
 - [[twi]] — Twi
 - [[user-plane]] — User Plane
@@ -431,7 +431,7 @@ discovery 그래프에서 자동 추출·일괄 승격된 항목을 분류별로
 - [[truck-drone-collaborative-routing]] — Truck-Drone Collaborative Routing
 - [[uav]] — Uav
 - [[신속-획득-혁신]] — 신속 획득 혁신
-- [[swarm-coordination]] — Swarm Coordination
+- [[swarm-coordination-entity]] — Swarm Coordination
 
 ## 관련 허브
 

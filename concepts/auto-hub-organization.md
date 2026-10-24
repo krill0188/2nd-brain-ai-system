@@ -22,7 +22,7 @@ discovery 그래프에서 자동 추출·일괄 승격된 항목을 분류별로
 - [[acm]] — Acm
 - [[alatau]] — Alatau
 - [[ark]] — Ark
-- [[arxiv]] — Arxiv
+- [[arxiv-entity]] — Arxiv
 - [[arxiv-2002-01823]] — arXiv.2002.01823
 - [[autoflight]] — AutoFlight
 - [[california]] — California
@@ -33,7 +33,7 @@ discovery 그래프에서 자동 추출·일괄 승격된 항목을 분류별로
 - [[duksan-navcours-co]] — Duksan Navcours Co.
 - [[elsevier-ras]] — Elsevier Ras
 - [[eprosima]] — Eprosima
-- [[faa]] — Faa
+- [[faa-entity]] — Faa
 - [[fda]] — Fda
 - [[gitlab]] — GitLab
 - [[gopro]] — GoPro

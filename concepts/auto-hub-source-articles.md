@@ -54,7 +54,7 @@ discovery 그래프에서 자동 추출·일괄 승격된 항목을 출처 유�
 - [[conditional-approval]] — Conditional Approval
 - [[config-mavlink-dialect]] — Config_Mavlink_Dialect
 - [[crashflip-mode]] — Crashflip mode
-- [[cube-orange]] — Cube Orange
+- [[cube-orange-entity]] — Cube Orange
 - [[cubepilot]] — Cubepilot
 - [[cylindrical-cell-battery]] — Cylindrical-cell battery
 - [[dataflash]] — Dataflash
@@ -63,7 +63,7 @@ discovery 그래프에서 자동 추출·일괄 승격된 항목을 출처 유�
 - [[development-xml]] — Development.Xml
 - [[device-drivers]] — Device Drivers
 - [[digital-european-sky]] — Digital European Sky
-- [[ekf]] — Ekf
+- [[ekf-entity]] — Ekf
 - [[electronic-conspicuity]] — Electronic Conspicuity
 - [[eligibility-provisions]] — Eligibility provisions
 - [[enu]] — Enu
@@ -178,7 +178,7 @@ discovery 그래프에서 자동 추출·일괄 승격된 항목을 출처 유�
 - [[rssi]] — RSSI
 - [[rtl-swarm]] — Rtl Swarm
 - [[satellite-communications]] — Satellite Communications
-- [[sd-card]] — Sd Card
+- [[sd-card-entity]] — Sd Card
 - [[sesar-ju]] — SESAR JU
 - [[settlement-procedures]] — Settlement procedures
 - [[sik]] — Sik

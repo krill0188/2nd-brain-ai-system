@@ -82,7 +82,7 @@ discovery 그래프에서 자동 추출·일괄 승격된 항목을 출처 유�
 - [[anyi]] — Anyi
 - [[araujo-paulo-ricardo-marques-de]] — Araujo, Paulo Ricardo Marques De
 - [[ari]] — ARI
-- [[arxiv]] — Arxiv
+- [[arxiv-entity]] — Arxiv
 - [[arxiv-2002-01823]] — arXiv.2002.01823
 - [[ascon]] — ASCON
 - [[asmar-muqeet]] — Asmar Muqeet
@@ -228,7 +228,7 @@ discovery 그래프에서 자동 추출·일괄 승격된 항목을 출처 유�
 - [[criticdrivenpathway]] — CriticDrivenPathway
 - [[cross-layer-local-support]] — Cross Layer Local Support
 - [[cross-scale-feature-enhancement]] — Cross-scale Feature Enhancement
-- [[csi]] — Csi
+- [[csi-entity]] — Csi
 - [[csi-feedback-delay]] — CSI feedback delay
 - [[csp-pac]] — Csp-Pac
 - [[cssa]] — Cssa
@@ -265,7 +265,7 @@ discovery 그래프에서 자동 추출·일괄 승격된 항목을 출처 유�
 - [[differential-evolution]] — Differential Evolution
 - [[differential-evolution-de]] — Differential Evolution (DE)
 - [[differential-game-theory]] — Differential Game Theory
-- [[diffusion-models]] — Diffusion Models
+- [[diffusion-models-entity]] — Diffusion Models
 - [[digital-flight-approval]] — Digital Flight Approval
 - [[ding-guoru]] — Ding, Guoru
 - [[dingwen-zhang]] — Dingwen Zhang
@@ -332,7 +332,7 @@ discovery 그래프에서 자동 추출·일괄 승격된 항목을 출처 유�
 - [[external-microphone]] — external microphone
 - [[f-genschuh-armin]] — Fügenschuh, Armin
 - [[f1-score]] — F1-score
-- [[faa]] — Faa
+- [[faa-entity]] — Faa
 - [[fading-channels]] — Fading channels
 - [[fcpm]] — Fcpm
 - [[fda]] — Fda
@@ -374,7 +374,7 @@ discovery 그래프에서 자동 추출·일괄 승격된 항목을 출처 유�
 - [[gasche-sebastian]] — Gasche, Sebastian
 - [[gasteratos-antonios]] — Gasteratos, Antonios
 - [[gather-and-distribute]] — Gather-And-Distribute
-- [[gaussian-process-regression]] — Gaussian Process Regression
+- [[gaussian-process-regression-entity]] — Gaussian Process Regression
 - [[geng]] — Geng
 - [[geospatial-data]] — Geospatial Data
 - [[ghazy-abdallah-s]] — Ghazy, Abdallah S.
@@ -482,7 +482,7 @@ discovery 그래프에서 자동 추출·일괄 승격된 항목을 출처 유�
 - [[infrastructure-network]] — Infrastructure Network
 - [[infrastructure-placement]] — infrastructure placement
 - [[inland-river-shipping]] — Inland River Shipping
-- [[input-output-feedback-linearization]] — Input-Output Feedback Linearization
+- [[input-output-feedback-linearization-entity]] — Input-Output Feedback Linearization
 - [[ins]] — INS
 - [[insulator-fault-detection]] — Insulator Fault Detection
 - [[integer-linear-program]] — integer linear program
@@ -543,7 +543,7 @@ discovery 그래프에서 자동 추출·일괄 승격된 항목을 출처 유�
 - [[k-csm]] — K-Csm
 - [[k-diu]] — K-Diu
 - [[k-means]] — K-Means
-- [[k-uam]] — K-Uam
+- [[k-uam-entity]] — K-Uam
 - [[kaggle]] — Kaggle
 - [[kang-gu-hyun]] — Kang Gu-Hyun
 - [[kangwon-national-university]] — Kangwon National University
@@ -1248,7 +1248,7 @@ discovery 그래프에서 자동 추출·일괄 승격된 항목을 출처 유�
 - [[rf-channel]] — Rf Channel
 - [[rf-detection]] — RF Detection
 - [[ricardo-grando]] — Ricardo Grando
-- [[ris]] — Ris
+- [[ris-entity]] — Ris
 - [[rita-cunha]] — Rita Cunha
 - [[rizvi]] — Rizvi
 - [[rmse]] — Rmse
@@ -1404,7 +1404,7 @@ discovery 그래프에서 자동 추출·일괄 승격된 항목을 출처 유�
 - [[teaya-yang]] — Teaya Yang
 - [[temporal-dependencies]] — temporal dependencies
 - [[tengan-elisa]] — Tengan, Elisa
-- [[terahertz-thz]] — terahertz (THz)
+- [[terahertz-thz-entity]] — terahertz (THz)
 - [[test-scenario-generation]] — Test Scenario Generation
 - [[tevv]] — TEVV
 - [[textbook-model-of-blcd-dynamics]] — textbook model of BLCD dynamics
@@ -1426,7 +1426,7 @@ discovery 그래프에서 자동 추출·일괄 승격된 항목을 출처 유�
 - [[track-selection-scheme-tss]] — Track Selection Scheme (TSS)
 - [[traffic-conditions]] — Traffic Conditions
 - [[trajectory-generation]] — Trajectory Generation
-- [[trajectory-prediction]] — Trajectory Prediction
+- [[trajectory-prediction-entity]] — Trajectory Prediction
 - [[trans-gaussian-kriging]] — trans-Gaussian Kriging
 - [[transfer-learning]] — transfer learning
 - [[transmit-power]] — Transmit Power
@@ -1632,8 +1632,8 @@ discovery 그래프에서 자동 추출·일괄 승격된 항목을 출처 유�
 - [[무인기-비행제어시스템]] — 무인기 비행제어시스템
 - [[신속-획득-혁신]] — 신속 획득 혁신
 - [[토석류-이동범위의-공간적-재현성-평가]] — 토석류 이동범위의 공간적 재현성 평가
-- [[ekf]] — EKF
-- [[swarm-coordination]] — Swarm Coordination
+- [[ekf-entity]] — EKF
+- [[swarm-coordination-entity]] — Swarm Coordination
 
 ## 관련 허브
 

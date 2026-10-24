@@ -102,7 +102,7 @@ discovery 그래프에서 자동 추출·일괄 승격된 항목을 분류별로
 - [[diehard]] — Diehard
 - [[differential-evolution]] — Differential Evolution
 - [[differential-evolution-de]] — Differential Evolution (DE)
-- [[diffusion-models]] — Diffusion Models
+- [[diffusion-models-entity]] — Diffusion Models
 - [[digital-flight-approval]] — Digital Flight Approval
 - [[distributed-gaussian-processes]] — Distributed Gaussian Processes
 - [[distributionally-robust-optimization]] — Distributionally Robust Optimization
@@ -137,7 +137,7 @@ discovery 그래프에서 자동 추출·일괄 승격된 항목을 분류별로
 - [[g-d-c-cooperative-queue]] — G/D/c Cooperative Queue
 - [[gaff]] — Gaff
 - [[gather-and-distribute]] — Gather-And-Distribute
-- [[gaussian-process-regression]] — Gaussian Process Regression
+- [[gaussian-process-regression-entity]] — Gaussian Process Regression
 - [[gcs]] — Gcs
 - [[gcs-dev]] — Gcs_Dev
 - [[geofence]] — Geofence
@@ -168,7 +168,7 @@ discovery 그래프에서 자동 추출·일괄 승격된 항목을 분류별로
 - [[inductive-sensing-concepts]] — inductive sensing concepts
 - [[infrared-imagery]] — Infrared Imagery
 - [[infrared-imaging]] — Infrared Imaging
-- [[input-output-feedback-linearization]] — Input-Output Feedback Linearization
+- [[input-output-feedback-linearization-entity]] — Input-Output Feedback Linearization
 - [[ins]] — INS
 - [[integer-linear-program]] — integer linear program
 - [[integrated-fault-estimation-and-accommodation-scheme]] — integrated fault estimation and accommodation scheme
@@ -176,7 +176,7 @@ discovery 그래프에서 자동 추출·일괄 승격된 항목을 분류별로
 - [[jax]] — JAX
 - [[k-csm]] — K-Csm
 - [[k-means]] — K-Means
-- [[k-uam]] — K-Uam
+- [[k-uam-entity]] — K-Uam
 - [[kci]] — KCI
 - [[kilted]] — Kilted
 - [[knn]] — Knn
@@ -353,7 +353,7 @@ discovery 그래프에서 자동 추출·일괄 승격된 항목을 분류별로
 - [[regularization-techniques]] — regularization techniques
 - [[resnet-50]] — ResNet-50
 - [[resolvers]] — resolvers
-- [[ris]] — Ris
+- [[ris-entity]] — Ris
 - [[robust-controller]] — robust controller
 - [[ros]] — Ros
 - [[rotation-delay-aware-communication-model]] — rotation-delay-aware communication model
@@ -400,7 +400,7 @@ discovery 그래프에서 자동 추출·일괄 승격된 항목을 분류별로
 - [[swarm-manager]] — Swarm Manager
 - [[swarm-ops-gcs]] — Swarm Ops Gcs
 - [[tdoa]] — TDOA
-- [[terahertz-thz]] — terahertz (THz)
+- [[terahertz-thz-entity]] — terahertz (THz)
 - [[textbook-model-of-blcd-dynamics]] — textbook model of BLCD dynamics
 - [[tf2]] — Tf2
 - [[thermal-imaging]] — Thermal imaging
@@ -464,8 +464,8 @@ discovery 그래프에서 자동 추출·일괄 승격된 항목을 분류별로
 - [[vision-language-models]] — Vision-Language Models
 - [[wire-driven-robotic-fish]] — wire-driven robotic fish
 - [[무인기-비행제어시스템]] — 무인기 비행제어시스템
-- [[csi]] — CSI
-- [[ekf]] — EKF
+- [[csi-entity]] — CSI
+- [[ekf-entity]] — EKF
 
 ## 관련 허브
 
