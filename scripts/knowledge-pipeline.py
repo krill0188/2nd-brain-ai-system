@@ -59,7 +59,7 @@ def steps(candidate: Path) -> list[tuple[str, list[str]]]:
         ('Generate:kinetic-apply', [py, str(ROOT / 'scripts/apply-kinetic-rules.py'), '--no-notify']),
         ('Validate:canonical-lint-before-generation', ['python3', str(ROOT / 'scripts/lint-knowledge.py'), '--full']),
         ('Generate:embeddings', [py, str(ROOT / 'scripts/embed-docs.py'), '--if-stale']),
-        ('Generate:discovery', ['bash', str(ROOT / 'scripts/extract-knowledge-graph.sh'), '--limit', '15']),
+        ('Generate:discovery', ['bash', str(ROOT / 'scripts/extract-knowledge-graph.sh'), '--limit', '40']),
         ('Generate:canonical-graph', ['bash', str(ROOT / 'scripts/update-graph.sh')]),
         ('Validate:all', ['python3', str(ROOT / 'scripts/publication-preflight.py')]),
         ('Publish:policy-candidate', [
