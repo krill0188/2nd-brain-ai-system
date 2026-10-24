@@ -13,6 +13,16 @@ import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
 
+# 시스템 python3에 PyYAML이 없으면(brew 업그레이드 뒤 등) 저장소 가상환경(.venv)으로 다시 실행한다.
+try:
+    import yaml  # noqa: F401
+except ModuleNotFoundError:
+    import os as _os, sys as _sys
+    _venv = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), ".venv", "bin", "python")
+    if _os.path.exists(_venv) and _os.path.realpath(_sys.executable) != _os.path.realpath(_venv):
+        _os.execv(_venv, [_venv] + _sys.argv)
+    raise
+
 import yaml
 from graph_lib import extract_links_by_section, ontology_class_for_domain
 
