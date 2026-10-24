@@ -141,6 +141,8 @@ discovery 그래프에서 자동 추출·일괄 승격된 항목을 분류별로
 - [[weapon-system]] — Weapon System
 - [[wpf]] — WPF
 - [[x-car]] — X-CAR
+- [[unmanned-aerial-vehicles]] — Unmanned Aerial Vehicles
+- [[xtenth-car]] — XTENTH-CAR
 
 ## 관련 허브
 

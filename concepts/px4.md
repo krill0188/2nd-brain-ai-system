@@ -2,7 +2,7 @@
 title: "Px4"
 created: 2026-10-24
 updated: 2026-10-24
-type: entity
+type: concept
 tags: [px4, flight-control, middleware, nuttx, mavlink]
 sources: ["raw/articles/ardupilot-architecture.md"]
 confidence: medium
@@ -46,3 +46,8 @@ ArduPilot과 비교해 **uORB publish/subscribe 기반의 통합된 코드베이
 ## 출처
 
 - (사용자 재확인 필요) original: raw/articles/ardupilot-architecture.md
+
+## 분류
+
+- [[auto-hub-technology]] — 자동 추출 분류
+- [[auto-hub-source-articles]] — 출처 유형

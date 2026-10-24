@@ -1608,6 +1608,30 @@ discovery 그래프에서 자동 추출·일괄 승격된 항목을 출처 유�
 - [[zhu-yuxiao]] — Zhu, Yuxiao
 - [[zikang-xiong]] — Zikang Xiong
 - [[zongzhen-liu]] — Zongzhen Liu
+- [[adaptive-image-zoom-in-with-bounding-box-transformation-for-uav-object-detection]] — Adaptive Image Zoom-In With Bounding Box Transformation For Uav Object Detection
+- [[airswarm]] — Airswarm
+- [[bc-nmpc]] — Bc-Nmpc
+- [[branch-price-and-cut-algorithm]] — branch-price-and-cut algorithm
+- [[bvlos-운항규정]] — BVLOS 운항규정
+- [[drone-coverage-network]] — drone coverage network
+- [[dynamic-multi-scale-mixture-of-experts]] — Dynamic Multi-scale Mixture-of-Experts
+- [[dynamic-task-assignment]] — dynamic task assignment
+- [[orbit-fl]] — Orbit-Fl
+- [[parameter-efficient-entropy-guided-feature-suppression-framework]] — Parameter-Efficient Entropy-Guided Feature Suppression Framework
+- [[power-control]] — Power Control
+- [[prior-knowledge-multichannel-wiener-filter-pk-mwf]] — prior knowledge multichannel Wiener filter (PK-MWF)
+- [[sf-tmat]] — Sf-Tmat
+- [[sparc-nart]] — Sparc-Nart
+- [[truck-drone-collaborative-routing]] — Truck-Drone Collaborative Routing
+- [[unmanned-aerial-vehicles]] — Unmanned Aerial Vehicles
+- [[uw-ocdm]] — Uw-Ocdm
+- [[visible-thermal-fusion]] — Visible-thermal fusion
+- [[vision-language-models]] — Vision-Language Models
+- [[wire-driven-robotic-fish]] — wire-driven robotic fish
+- [[xtenth-car]] — XTENTH-CAR
+- [[무인기-비행제어시스템]] — 무인기 비행제어시스템
+- [[신속-획득-혁신]] — 신속 획득 혁신
+- [[토석류-이동범위의-공간적-재현성-평가]] — 토석류 이동범위의 공간적 재현성 평가
 
 ## 관련 허브
 

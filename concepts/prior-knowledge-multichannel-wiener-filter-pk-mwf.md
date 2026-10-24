@@ -8,6 +8,7 @@ sources: []
 confidence: medium
 contradictions: []
 domain: comms-protocol
+contested: false
 ---
 
 # prior knowledge multichannel Wiener filter (PK-MWF)
@@ -41,3 +42,8 @@ The prior knowledge multichannel Wiener filter (PK-MWF) is a speech enhancement 
 ## 출처
 
 - (사용자 재확인 필요) — 원문(full text)확인이 필요한 부분: 실험 결과의 구체적 수치 및 통계적 유의성Details are based on the abstract and relationship graph only. Full paper text should be reviewed to verify quantitative results and underlying assumptions.
+
+## 분류
+
+- [[auto-hub-technology]] — 자동 추출 분류
+- [[auto-hub-source-papers]] — 출처 유형

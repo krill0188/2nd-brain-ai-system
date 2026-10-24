@@ -2,7 +2,7 @@
 title: "Drone Coverage Network"
 created: 2026-10-24
 updated: 2026-10-24
-type: entity
+type: concept
 tags: [drone-network, coverage-planning, emergency-response, bayesian-optimization, scotland]
 sources: []
 confidence: medium
@@ -46,3 +46,8 @@ In the referenced case study, the drone coverage network was specifically applie
 ## 출처
 
 - (사용자 재확인 필요) - A Bayesian learning approach for drone coverage network: A case study on cardiac arrest in Scotland, Basu et al., 2027, DOI: 10.1016/j.ress.2026.113470
+
+## 분류
+
+- [[auto-hub-technology]] — 자동 추출 분류
+- [[auto-hub-source-papers]] — 출처 유형

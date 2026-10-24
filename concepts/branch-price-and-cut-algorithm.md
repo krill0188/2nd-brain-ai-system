@@ -8,6 +8,7 @@ sources: [http://arxiv.org/abs/2610.15016v1]
 confidence: medium
 contradictions: []
 domain: ai-autonomy
+contested: false
 ---
 
 # Branch-Price-and-Cut Algorithm
@@ -43,3 +44,8 @@ To solve the problem exactly, the method employs tailored **pricing**, **cutting
 ## 출처
 
 - (사용자 재확인 필요) – 원문: Pu, Fan; Rathinam, Sivakumar; Zhang, Yunlong; Li, Xiaopeng; Wang, Xiubin; Zhou, Yang. (2026). "An Exact Branch-Price-and-Cut Algorithm for a Truck-as-Hub Vehicle Routing Problem with Drones in Rural Areas." arXiv:2610.15016. [http://arxiv.org/abs/2610.15016v1](http://arxiv.org/abs/2610.15016v1)
+
+## 분류
+
+- [[auto-hub-technology]] — 자동 추출 분류
+- [[auto-hub-source-papers]] — 출처 유형

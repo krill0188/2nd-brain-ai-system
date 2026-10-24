@@ -45,3 +45,8 @@ domain: ai-autonomy
 
 ## 출처
 - (사용자 재확인 필요)
+
+## 분류
+
+- [[auto-hub-technology]] — 자동 추출 분류
+- [[auto-hub-source-papers]] — 출처 유형

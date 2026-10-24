@@ -8,6 +8,7 @@ sources: ["arXiv:2503.06890"]
 confidence: medium
 contradictions: []
 domain: ai-autonomy
+contested: false
 ---
 
 # AirSwarm
@@ -44,3 +45,8 @@ AirSwarm은 COTS(상용자제) 드론을 활용하여 비용 효율적인 멀티
 ## 출처
 
 - (사용자 재확인 필요)
+
+## 분류
+
+- [[auto-hub-technology]] — 자동 추출 분류
+- [[auto-hub-source-papers]] — 출처 유형

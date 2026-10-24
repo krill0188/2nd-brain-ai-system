@@ -8,6 +8,7 @@ sources: []
 confidence: medium
 contradictions: []
 domain: ai-autonomy
+contested: false
 ---
 
 # BC-NMPC: Battery-Constrained NMPC with Propulsion Prediction and Replanning for High-Speed Flight
@@ -42,3 +43,8 @@ BC-NMPC(Battery-Constrained Nonlinear Model Predictive Control)는 드론의 고
 ## 출처
 
 - [1] Parakh M. Gupta et al., "BC-NMPC: Battery-Constrained NMPC with Propulsion Prediction and Replanning for High-Speed Flight," *Robotics and Autonomous Systems*, 2026. arXiv:2607.23867.
+
+## 분류
+
+- [[auto-hub-technology]] — 자동 추출 분류
+- [[auto-hub-source-papers]] — 출처 유형

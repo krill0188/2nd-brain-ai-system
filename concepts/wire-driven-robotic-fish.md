@@ -8,6 +8,7 @@ sources: []
 confidence: medium
 contradictions: []
 domain: hardware
+contested: false
 ---
 
 # Wire-Driven Robotic Fish
@@ -40,3 +41,8 @@ Robotic fish utilizing the Body-Caudal Fin (BCF) locomotion pattern are widely s
 
 - (사용자 재확인 필요) — 원문 발췌 내용 검증 필요
 - Wang, Yita; Chen, Chen; Chen, Yicheng; Li, Jinjie; Motegi, Yuichi; Ohkuma, Kenji; Maki, Toshihiro; Zhao, Moju. "Design, Modeling and Direction Control of a Wire-Driven Robotic Fish Based on a 2-DoF Crank-Slider Mechanism." arXiv preprint arXiv:2603.02851 (2026). DOI: 10.48550/arXiv.2603.02851.
+
+## 분류
+
+- [[auto-hub-technology]] — 자동 추출 분류
+- [[auto-hub-source-papers]] — 출처 유형

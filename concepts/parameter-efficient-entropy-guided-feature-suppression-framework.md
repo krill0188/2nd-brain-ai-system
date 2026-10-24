@@ -8,6 +8,7 @@ sources: []
 confidence: medium
 contradictions: []
 domain: ai-autonomy
+contested: false
 ---
 
 # Parameter-Efficient Entropy-Guided Feature Suppression Framework
@@ -40,3 +41,8 @@ domain: ai-autonomy
 ## 출처
 
 - (사용자 재확인 필요) — 원문: https://doi.org/10.1016/j.epsr.2026.114117 (2027년 발표 예정인 논문)
+
+## 분류
+
+- [[auto-hub-technology]] — 자동 추출 분류
+- [[auto-hub-source-papers]] — 출처 유형

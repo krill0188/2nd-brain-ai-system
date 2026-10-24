@@ -2,7 +2,7 @@
 title: "Sparc-Nart"
 created: 2026-10-24
 updated: 2026-10-24
-type: entity
+type: concept
 tags: [path-planning, swarm-networking, aerial-robotics, sparse-aware-cooperative, radio-technology]
 sources: ["raw/papers/drone-sw/path-planning-optimisation-for-sparse-aware-and-cooperative-networked-aerial-rob.md"]
 confidence: medium
@@ -42,3 +42,8 @@ domain: ai-autonomy
 ## 출처
 
 - (사용자 재확인 필요) — 원문: Conceição, Maria; Grilo, António; Basiri, Meysam (2026). "Path Planning Optimisation for SParse, AwaRe and Cooperative Networked Aerial Robot Teams (SpArC-NARTs)". arXiv:2602.14247. https://arxiv.org/abs/2602.14247v2
+
+## 분류
+
+- [[auto-hub-technology]] — 자동 추출 분류
+- [[auto-hub-source-papers]] — 출처 유형

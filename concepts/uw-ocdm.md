@@ -8,6 +8,7 @@ sources: []
 confidence: medium
 contradictions: []
 domain: comms-protocol
+contested: false
 ---
 
 # UW-OCDM
@@ -41,3 +42,8 @@ domain: comms-protocol
 ## 출처
 
 - (사용자 재확인 필요) Tao, Yi; Gao, Zhen; Wan, Ziwei; Lv, Yuezu; Wang, Hua; Huang, Kaibin; Chen, Sheng. "UW-OCDM for Low-Altitude UAV Communication and Cooperative Sensing." arXiv preprint arXiv:2608.21050 (2026).
+
+## 분류
+
+- [[auto-hub-technology]] — 자동 추출 분류
+- [[auto-hub-source-papers]] — 출처 유형

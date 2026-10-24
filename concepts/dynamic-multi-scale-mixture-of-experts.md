@@ -8,6 +8,7 @@ sources: []
 confidence: medium
 contradictions: []
 domain: ai-autonomy
+contested: false
 ---
 
 # Dynamic Multi-scale Mixture-of-Experts
@@ -44,3 +45,8 @@ UAV 소형 물체 탐지는 배경 clutter(잡음) 및 해상도 제한으로 �
 ## 출처
 
 - (사용자 재확인 필요) DOI: 10.1016/j.eswa.2026.134461, "Dynamic multi-scale mixture-of-experts with cross-scale feature enhancement for UAV small object detection", Xiangyu, Li; Zhiqiang, Hou; Lingling, Xiong; Sugang, Ma; Yang, Liu, 2027.
+
+## 분류
+
+- [[auto-hub-technology]] — 자동 추출 분류
+- [[auto-hub-source-papers]] — 출처 유형

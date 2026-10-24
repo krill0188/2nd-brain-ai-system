@@ -4,11 +4,11 @@ created: 2026-10-24
 updated: 2026-10-24
 type: concept
 tags: [federated-learning, continual-learning, multi-uav, environmental-monitoring, swarm-intelligence]
-sources:
-- https://doi.org/10.1016/j.future.2026.108775
+sources: ["https://doi.org/10.1016/j.future.2026.108775"]
 confidence: medium
 contradictions: []
 domain: ai-autonomy
+contested: false
 ---
 
 # Orbit-Fl
@@ -45,3 +45,8 @@ Orbit-FL은 다체(UAV) 환경 감시 시나리오에서 연방 지속 학습(Fe
 ## 출처
 
 - (사용자 재확인 필요) original paper: "ORBIT-FL: Scene-aware and budget-adaptive federated continual learning for multi-UAV environmental monitoring", Zhao et al., 2027, DOI: 10.1016/j.future.2026.108775
+
+## 분류
+
+- [[auto-hub-technology]] — 자동 추출 분류
+- [[auto-hub-source-papers]] — 출처 유형

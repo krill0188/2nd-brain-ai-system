@@ -43,3 +43,8 @@ UDA(Unsupervised Domain Adaptation)는 소스 도메인과 타겟 도메인 간�
 ## 출처
 
 - (사용자 재확인 필요) Chen, Hongyu; Liu, Jiping; Wang, Yong; Zhu, Jun; Feng, Dejun; Xie, Yakun, "Teaching in adverse scenes: a statistically feedback-driven threshold and mask adjustment teacher-student framework for object detection in UAV images under adverse scenes," arXiv preprint arXiv:2506.11175, 2025. DOI: 10.48550/arXiv.2506.11175.
+
+## 분류
+
+- [[auto-hub-technology]] — 자동 추출 분류
+- [[auto-hub-source-papers]] — 출처 유형

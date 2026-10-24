@@ -428,6 +428,9 @@ discovery 그래프에서 자동 추출·일괄 승격된 항목을 분류별로
 - [[weather-scenarios]] — Weather Scenarios
 - [[wind-disturbances]] — wind disturbances
 - [[zero-shot-transfer]] — zero-shot transfer
+- [[truck-drone-collaborative-routing]] — Truck-Drone Collaborative Routing
+- [[uav]] — Uav
+- [[신속-획득-혁신]] — 신속 획득 혁신
 
 ## 관련 허브
 

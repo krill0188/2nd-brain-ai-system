@@ -8,6 +8,7 @@ sources: []
 confidence: medium
 contradictions: []
 domain: ops-mission
+contested: false
 ---
 
 # Truck-Drone Collaborative Routing
@@ -43,3 +44,8 @@ domain: ops-mission
 ## 출처
 
 - (사용자 재확인 필요) Liang, YOU; Lei, ZHANG; Mingfa, ZHENG; Chuhan, MA; Bowu, WEI, "Truck-drone collaborative routing under road damage and dynamic demand for humanitarian logistics," Transportation Research Part E: Logistics and Transportation Review, vol. 105236, 2027. DOI: 10.1016/j.tre.2026.105236
+
+## 분류
+
+- [[auto-hub-concept]] — 자동 추출 분류
+- [[auto-hub-source-papers]] — 출처 유형

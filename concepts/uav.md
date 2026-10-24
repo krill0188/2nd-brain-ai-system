@@ -35,3 +35,8 @@ Uav은 multicopter, helicopter, fixed-wing aircraft 등 비행 형태에 따라 
 ## 출처
 
 - (사용자 재확인 필요) original: px4-basic-concepts.md
+
+## 분류
+
+- [[auto-hub-concept]] — 자동 추출 분류
+- [[auto-hub-source-articles]] — 출처 유형

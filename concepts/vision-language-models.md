@@ -52,3 +52,8 @@ Vision-Language Models(VLMs)은 이미지나 비디오와 같은 시각적 데�
 
 ---
 [ERROR: 복수개의 [SAME_AS] 관계가 있음. 재확인 필요]
+
+## 분류
+
+- [[auto-hub-technology]] — 자동 추출 분류
+- [[auto-hub-source-papers]] — 출처 유형

@@ -2,7 +2,7 @@
 title: "Unmanned Aerial Vehicles"
 created: 2026-10-24
 updated: 2026-10-24
-type: entity
+type: concept
 tags: [hardware, uav, aerial-platform, communications, swarm]
 sources: []
 confidence: medium
@@ -46,3 +46,8 @@ domain: hardware
 ## 출처
 
 - (사용자 재확인 필요)原文 참조: http://arxiv.org/abs/2601.00163v1
+
+## 분류
+
+- [[auto-hub-hardware]] — 자동 추출 분류
+- [[auto-hub-source-papers]] — 출처 유형

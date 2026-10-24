@@ -61,6 +61,7 @@ discovery 그래프에서 자동 추출·일괄 승격된 항목을 분류별로
 - [[swarm-localization]] — Swarm Localization
 - [[target-identification]] — Target Identification
 - [[wheel-mode]] — wheel mode
+- [[토석류-이동범위의-공간적-재현성-평가]] — 토석류 이동범위의 공간적 재현성 평가
 
 ## 관련 허브
 

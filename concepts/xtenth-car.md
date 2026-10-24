@@ -2,7 +2,7 @@
 title: "XTENTH-CAR"
 created: 2026-10-24
 updated: 2026-10-24
-type: entity
+type: concept
 tags: [hardware, experimental-platform, proportionally-scaled, robotics, autonomy]
 sources: []
 confidence: medium
@@ -42,3 +42,8 @@ Connected Autonomous Vehicles (CAV) 연구를 위해 안전한 실험 환경을 
 ## 출처
 
 - -(사용자 재확인 필요)
+
+## 분류
+
+- [[auto-hub-hardware]] — 자동 추출 분류
+- [[auto-hub-source-papers]] — 출처 유형

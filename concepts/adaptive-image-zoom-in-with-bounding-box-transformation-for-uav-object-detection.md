@@ -39,3 +39,8 @@ UAV가 촬영한 영상에서는 객체가 작고 sparse하여 객체 탐지 모
 
 ## 출처
 - (사용자 재확인 필요) Wang et al., "Adaptive Image Zoom-in with Bounding Box Transformation for UAV Object Detection," arXiv:2602.07512, 2026. DOI: 10.48550/arXiv.2602.07512.
+
+## 분류
+
+- [[auto-hub-technology]] — 자동 추출 분류
+- [[auto-hub-source-papers]] — 출처 유형

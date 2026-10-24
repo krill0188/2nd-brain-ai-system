@@ -40,6 +40,7 @@ discovery 그래프에서 자동 추출·일괄 승격된 항목을 분류별로
 - [[ko-f6a2b11df3]] — 기록관리 규정
 - [[sae-arp4754b]] — Sae Arp4754B
 - [[wildfire-prevention-expenditure]] — wildfire-prevention expenditure
+- [[bvlos-운항규정]] — BVLOS 운항규정
 
 ## 관련 허브
 

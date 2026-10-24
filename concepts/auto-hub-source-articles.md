@@ -218,6 +218,8 @@ discovery 그래프에서 자동 추출·일괄 승격된 항목을 출처 유�
 - [[wind-turbine-inspection-platform]] — Wind turbine inspection platform
 - [[y-t-g]] — Y-T-G
 - [[zubax]] — Zubax
+- [[px4]] — Px4
+- [[uav]] — Uav
 
 ## 관련 허브
 

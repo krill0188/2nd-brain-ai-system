@@ -8,6 +8,7 @@ sources: []
 confidence: medium
 contradictions: []
 domain: comms-protocol
+contested: false
 ---
 
 # Power Control
@@ -38,3 +39,8 @@ This paper presents a power control scheme specifically for orthogonal time freq
 ## 출처
 
 - (사용자 재확인 필요) Le, Thuan Van; Luong, Nguyen Cong; Hoang, Trong-Dai; Bao, Vo Nguyen Quoc; Huynh-The, Thien; Li, Xingwang; Tu, Ngo Hoang. "OTFS-Enabled Delayed SINR-Feedback Power Control for Reliable and Fair High-Mobility UAV Communications." arXiv preprint arXiv:2609.22309 (2026).
+
+## 분류
+
+- [[auto-hub-technology]] — 자동 추출 분류
+- [[auto-hub-source-papers]] — 출처 유형
