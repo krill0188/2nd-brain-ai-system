@@ -3,6 +3,7 @@ title: "Uavdt"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+domain: ai-autonomy
 ontology_class: Mission
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/drone-ai/adaptive-image-zoom-in-with-bounding-box-transformation-for-uav-object-detection.md", "raw/papers/drone-ai/zoomdet-adaptive-image-zoom-uav-object-detection.md", "raw/papers/drone-ai/clsc-detr-reliable-candidate-ranking-via-cross-layer-geometric-support-for-uav-s.md", "raw/papers/drone-ai/lgi-detr-local-global-interaction-for-uav-object-detection.md"]

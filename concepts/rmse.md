@@ -3,6 +3,7 @@ title: "Rmse"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+domain: hardware
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/drone-hw/fetch-2026-08-19-arxiv-multi-domain-physics-based-mdo-of-multirotor-uavs-a-determin.md", "raw/papers/drone-hw/multi-domain-physics-based-mdo-of-multirotor-uavs-a-deterministic-framework-for-.md", "raw/papers/_unclassified/uav-lidar-지면점-밀도와-공간-해상도가-dem-정확도에-미치는-영향.md"]
 confidence: low

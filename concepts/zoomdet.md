@@ -3,6 +3,7 @@ title: "Zoomdet"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+domain: ai-autonomy
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/drone-ai/adaptive-image-zoom-in-with-bounding-box-transformation-for-uav-object-detection.md", "raw/papers/drone-ai/zoomdet-adaptive-image-zoom-uav-object-detection.md"]
 confidence: low

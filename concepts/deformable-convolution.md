@@ -3,6 +3,7 @@ title: "Deformable Convolution"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+domain: ai-autonomy
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/drone-ai/cross-modal-offset-guided-dynamic-alignment-and-fusion-for-weakly-aligned-uav-ob.md", "raw/papers/drone-ai/uavd-mamba-deformable-token-fusion-vision-mamba-for-multimodal-uav-detection.md"]
 confidence: low

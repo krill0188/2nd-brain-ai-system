@@ -3,6 +3,7 @@ title: "Visual Perception"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+domain: ai-autonomy
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/drone-ai/시각-마커-탐지를-이용한-자율-배송-드론-시스템-설계.md", "raw/papers/drone-ai/usfnet-a-uav-shore-fusion-visual-perception-framework-for-inland-river-shipping-.md"]
 confidence: low

@@ -3,6 +3,7 @@ title: "Visdrone2019"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+domain: ai-autonomy
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/drone-ai/pt-detr-small-target-detection-based-on-partially-aware-detail-focus.md", "raw/papers/drone-ai/pt-detr-small-target-detection.md", "raw/papers/drone-ai/lgi-detr-local-global-interaction-for-uav-object-detection.md"]
 confidence: low

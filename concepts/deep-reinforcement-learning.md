@@ -3,6 +3,7 @@ title: "Deep Reinforcement Learning"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+domain: ai-autonomy
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/drone-ai/uav-군집-ai-기술-동향-인공지능-발전과-다중-에이전트-아키텍처의-진화-관점에서.md", "raw/papers/drone-ai/multi-agent-reinforcement-learning-for-autonomous-uav-exploration-in-wildfire-re.md", "raw/papers/_unclassified/bio-inspired-offloading-algorithms-in-a-uav-assisted-iov-network-with-mobile-edg.md", "raw/papers/drone-ai/calos-control-affine-lyapunov-on-manifold-safety-layer-for-safe-deep-reinforceme.md", "raw/papers/drone-ai/spiking-neural-network-actor-critic-proximal-policy-optimization-control-for-aut.md"]
 confidence: low

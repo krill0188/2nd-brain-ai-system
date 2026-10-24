@@ -3,6 +3,7 @@ title: "Rgb"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+domain: ai-autonomy
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/drone-ai/tri-modal-fusion-transformers-for-uav-based-object-detection.md", "raw/papers/drone-ai/wave-detr-multi-modal-visible-and-acoustic-real-life-drone-detector.md"]
 confidence: low

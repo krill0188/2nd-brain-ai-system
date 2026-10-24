@@ -3,6 +3,7 @@ title: "Object Detection"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+domain: ai-autonomy
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/drone-ai/uav-object-detection-and-positioning-in-a-mining-industrial-metaverse-with-custo.md", "raw/papers/drone-ai/시각-마커-탐지를-이용한-자율-배송-드론-시스템-설계.md", "raw/papers/_unclassified/감시-드론을-위한-심층-신경망-기반-지상-표적-추적-기법.md"]
 confidence: low

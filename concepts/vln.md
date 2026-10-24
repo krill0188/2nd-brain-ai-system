@@ -3,6 +3,7 @@ title: "Vln"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+domain: ai-autonomy
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/voice-control/fetch-2026-08-19-arxiv-no-training-better-flights-test-time-scaled-vlms-for-uav-nav.md", "raw/papers/voice-control/no-training-better-flights-test-time-scaled-vlms-for-uav-navigation.md"]
 confidence: low

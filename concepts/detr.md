@@ -3,6 +3,7 @@ title: "Detr"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+domain: ai-autonomy
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/drone-ai/uav-detr-anti-drone-detection.md", "raw/papers/drone-ai/clsc-detr-reliable-candidate-ranking-via-cross-layer-geometric-support-for-uav-s.md", "raw/papers/drone-ai/lgi-detr-local-global-interaction-for-uav-object-detection.md"]
 confidence: low

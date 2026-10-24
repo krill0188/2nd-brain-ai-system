@@ -1,0 +1,141 @@
+{
+ "_comment": "2026-10-24 마스터 승인(권장대로). 자동 승격 문서 중 같은 분야 논문 출처가 2건 이상이고 80% 이상 일치하며 Person이 아닌 34건에만 domain을 지정한다(raw/papers 폴더→공식 domain 대응). 출처 1건·분산·Person은 지정하지 않는다. 기존 domain은 건드리지 않는다.",
+ "approved": [
+  {
+   "path": "concepts/3d-reconstruction.md",
+   "domain": "ai-autonomy"
+  },
+  {
+   "path": "concepts/zoomdet.md",
+   "domain": "ai-autonomy"
+  },
+  {
+   "path": "concepts/uav-object-detection.md",
+   "domain": "ai-autonomy"
+  },
+  {
+   "path": "concepts/uavdt.md",
+   "domain": "ai-autonomy"
+  },
+  {
+   "path": "concepts/pt-detr.md",
+   "domain": "ai-autonomy"
+  },
+  {
+   "path": "concepts/rt-detr.md",
+   "domain": "ai-autonomy"
+  },
+  {
+   "path": "concepts/visdrone2019.md",
+   "domain": "ai-autonomy"
+  },
+  {
+   "path": "concepts/rgb.md",
+   "domain": "ai-autonomy"
+  },
+  {
+   "path": "concepts/detr.md",
+   "domain": "ai-autonomy"
+  },
+  {
+   "path": "concepts/deep-reinforcement-learning.md",
+   "domain": "ai-autonomy"
+  },
+  {
+   "path": "concepts/aeroeval.md",
+   "domain": "hardware"
+  },
+  {
+   "path": "concepts/maximum-takeoff-weight.md",
+   "domain": "hardware"
+  },
+  {
+   "path": "concepts/mtow.md",
+   "domain": "hardware"
+  },
+  {
+   "path": "concepts/isac.md",
+   "domain": "rf-datalink-engineering"
+  },
+  {
+   "path": "concepts/deformable-convolution.md",
+   "domain": "ai-autonomy"
+  },
+  {
+   "path": "concepts/dronevehicle-dataset.md",
+   "domain": "ai-autonomy"
+  },
+  {
+   "path": "concepts/object-detection.md",
+   "domain": "ai-autonomy"
+  },
+  {
+   "path": "concepts/visual-perception.md",
+   "domain": "ai-autonomy"
+  },
+  {
+   "path": "concepts/quadrotor.md",
+   "domain": "ai-autonomy"
+  },
+  {
+   "path": "concepts/proximal-policy-optimization.md",
+   "domain": "ai-autonomy"
+  },
+  {
+   "path": "concepts/6g.md",
+   "domain": "ai-autonomy"
+  },
+  {
+   "path": "concepts/padf-module.md",
+   "domain": "ai-autonomy"
+  },
+  {
+   "path": "concepts/median-frequency-feature-fusion.md",
+   "domain": "ai-autonomy"
+  },
+  {
+   "path": "concepts/mfff-module.md",
+   "domain": "ai-autonomy"
+  },
+  {
+   "path": "concepts/focaler-siou.md",
+   "domain": "ai-autonomy"
+  },
+  {
+   "path": "concepts/multidisciplinary-design-optimization.md",
+   "domain": "hardware"
+  },
+  {
+   "path": "concepts/mdo.md",
+   "domain": "hardware"
+  },
+  {
+   "path": "concepts/mape.md",
+   "domain": "hardware"
+  },
+  {
+   "path": "concepts/rmse.md",
+   "domain": "hardware"
+  },
+  {
+   "path": "concepts/mcp.md",
+   "domain": "swarm-multiagent"
+  },
+  {
+   "path": "concepts/w3c-web-of-things.md",
+   "domain": "swarm-multiagent"
+  },
+  {
+   "path": "concepts/wot.md",
+   "domain": "swarm-multiagent"
+  },
+  {
+   "path": "concepts/vlms.md",
+   "domain": "ai-autonomy"
+  },
+  {
+   "path": "concepts/vln.md",
+   "domain": "ai-autonomy"
+  }
+ ]
+}

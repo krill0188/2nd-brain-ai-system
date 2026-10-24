@@ -3,6 +3,7 @@ title: "Uav Object Detection"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+domain: ai-autonomy
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/drone-ai/adaptive-image-zoom-in-with-bounding-box-transformation-for-uav-object-detection.md", "raw/papers/drone-ai/pt-detr-small-target-detection-based-on-partially-aware-detail-focus.md", "raw/papers/drone-ai/pt-detr-small-target-detection.md", "raw/papers/drone-ai/tri-modal-fusion-transformers-for-uav-based-object-detection.md", "raw/papers/drone-ai/cross-modal-offset-guided-dynamic-alignment-and-fusion-for-weakly-aligned-uav-ob.md"]
 confidence: low

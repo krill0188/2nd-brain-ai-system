@@ -3,6 +3,7 @@ title: "Proximal Policy Optimization"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+domain: ai-autonomy
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/drone-ai/calos-control-affine-lyapunov-on-manifold-safety-layer-for-safe-deep-reinforceme.md", "raw/papers/drone-ai/spiking-neural-network-actor-critic-proximal-policy-optimization-control-for-aut.md"]
 confidence: low

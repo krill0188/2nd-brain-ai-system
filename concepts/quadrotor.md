@@ -3,6 +3,7 @@ title: "Quadrotor"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+domain: ai-autonomy
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/oa-mppi-occlusion-aware-model-predictive-path-integral-control-for-uav-flight.md", "raw/papers/drone-ai/calos-control-affine-lyapunov-on-manifold-safety-layer-for-safe-deep-reinforceme.md", "raw/papers/drone-ai/micro-neural-policies-for-safe-real-time-robotic-control.md", "raw/papers/drone-ai/diffdreamer-coupling-world-models-with-differentiable-simulation-for-agile-quadr.md"]
 confidence: low

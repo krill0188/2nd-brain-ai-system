@@ -3,6 +3,7 @@ title: "3D Reconstruction"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+domain: ai-autonomy
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/drone-ai/radwan2024-uav-slam-gpsdenied.md", "raw/papers/drone-ai/uav-object-detection-and-positioning-in-a-mining-industrial-metaverse-with-custo.md"]
 confidence: low
