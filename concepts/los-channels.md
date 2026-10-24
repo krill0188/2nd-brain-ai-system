@@ -3,6 +3,7 @@ title: "Los Channels"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: CommunicationProtocol
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/energy-efficiency-optimization-for-uav-assisted-uplink-transmissions-over-probab.md"]
 confidence: low

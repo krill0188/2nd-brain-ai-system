@@ -3,6 +3,7 @@ title: "Autonomous Uav Exploration"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Mission
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/drone-ai/multi-agent-reinforcement-learning-for-autonomous-uav-exploration-in-wildfire-re.md"]
 confidence: low

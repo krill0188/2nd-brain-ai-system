@@ -3,6 +3,7 @@ title: "Huynh-The, Thien"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/otfs-enabled-delayed-sinr-feedback-power-control-for-reliable-and-fair-high-mobi.md"]
 confidence: low

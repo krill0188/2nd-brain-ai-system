@@ -3,6 +3,7 @@ title: "Huo, Bingcong"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/drone-ai/pt-detr-small-target-detection-based-on-partially-aware-detail-focus.md"]
 confidence: low

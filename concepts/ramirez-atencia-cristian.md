@@ -3,6 +3,7 @@ title: "Ramirez-Atencia, Cristian"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/swarm/weighted-strategies-to-guide-a-multi-objective-evolutionary-algorithm-for-multi-.md"]
 confidence: low

@@ -3,6 +3,7 @@ title: "Liu"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/drone-sw/aero-llm-a-distributed-framework-for-secure-uav-communication-and-intelligent-de.md", "raw/papers/swarm/when-metadata-betrays-the-mission-learning-to-defend-uav-swarms-with-adaptive-pr.md"]
 confidence: low

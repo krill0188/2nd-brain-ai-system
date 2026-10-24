@@ -3,6 +3,7 @@ title: "Odyssey Robot"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Organization
 tags: [auto-promoted, unreviewed]
 sources: ["raw/articles/fetch-2026-07-29-rss-dronedj.md"]
 confidence: low

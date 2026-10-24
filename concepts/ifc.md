@@ -3,6 +3,7 @@ title: "IFC"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: CommunicationProtocol
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/bim-모델과의-정합을-통한-드론-기반-포인트클라우드에서-구조부재-추출-방안.md"]
 confidence: low

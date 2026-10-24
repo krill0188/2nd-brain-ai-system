@@ -3,6 +3,7 @@ title: "Sujit, P. B."
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/drone-hw/multi-domain-physics-based-mdo-of-multirotor-uavs-a-deterministic-framework-for-.md"]
 confidence: low

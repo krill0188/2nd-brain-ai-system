@@ -3,6 +3,7 @@ title: "Longkun Zou"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/registration-free-visible-thermal-fusion-for-uav-detection.md"]
 confidence: low

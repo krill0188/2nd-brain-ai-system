@@ -3,6 +3,7 @@ title: "Ahmed, Aboelezz"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/surrogate-assisted-aerodynamic-design-optimization-of-a-bladeless-uav-thruster-w.md"]
 confidence: low

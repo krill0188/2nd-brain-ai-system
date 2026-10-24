@@ -1,0 +1,3649 @@
+{
+ "_comment": "2026-10-24 마스터 승인(권장대로). 자동 승격 문서의 discovery 분류를 의미가 같은 공식 클래스로 연결: Protocol→CommunicationProtocol, Mission→Mission, Organization/Person/Regulation→신규 클래스(승인). Technology·Concept·Hardware는 의미가 넓어 연결하지 않는다. domain은 변경하지 않는다. 분류는 LLM 자동 추출 기반이므로 미검토. 되돌리기: scripts/revert-class-approvals.py.",
+ "approved": [
+  {
+   "path": "concepts/dronecan.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/uxrce-dds.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/uorb.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/uart.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/udp.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/tcp.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/holybro.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/uavcan.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/dronecode.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/posix.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/cuav.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/autonomous-swarm-reconnaissance-system.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/wifi.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/mav-cmd.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/serial.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/command-protocol.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/mavlink-2.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/dds.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/iwcmc-2019.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ieee.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ieee-icuas-2024.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/mtls.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/ecdsa.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/ecdh.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/wi-fi.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/uavdt.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/ad-hoc-wireless-networks.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/model-context-protocol.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/secure-swarm-uav-assisted-communications-with-cooperative-friendly-jamming.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/time-switching-relaying-protocol.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/landspace.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/autonomous-delivery.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/wildfire-response.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/autonomous-uav-exploration.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/drone-bird-discrimination.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/wildfire-detection.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/drone-strategy-2-0.md",
+   "ontology_class": "Regulation"
+  },
+  {
+   "path": "concepts/korean-drone-airspace-system.md",
+   "ontology_class": "Regulation"
+  },
+  {
+   "path": "concepts/nvidia-isaac-lab.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/trajectory-tracking.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/agent-to-agent.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/autonomous-uav-missions.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/bridge-inspection.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/tunnel-inspection.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/structural-inspection.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/civil-infrastructure-inspection.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/fcc.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/odyssey-robot.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/foreign-drone-ban.md",
+   "ontology_class": "Regulation"
+  },
+  {
+   "path": "concepts/national-security-restrictions.md",
+   "ontology_class": "Regulation"
+  },
+  {
+   "path": "concepts/msp.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/deter.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/faa-regulations.md",
+   "ontology_class": "Regulation"
+  },
+  {
+   "path": "concepts/uas-regulations.md",
+   "ontology_class": "Regulation"
+  },
+  {
+   "path": "concepts/avi-spl.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/drone-delivery.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/drone-visual-navigation.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/ground-target-tracking.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/military-operation.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/drone-terrorism.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/russia-ukraine-war.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/counter-terrorism-policy.md",
+   "ontology_class": "Regulation"
+  },
+  {
+   "path": "concepts/pre-harvest-prediction-of-apple-soluble-solids-content-using-uav-based-multispec.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/swarm-flight.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/landing.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/urban-drone-human-hybrid-delivery.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/dual-uav-cable-suspended-payload-transport.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/stanford-student-robotics.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/sprint.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/scramble.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/autonomous-uav-navigation.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/precision-agriculture.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/disaster-recovery.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/dengue-vector-control.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/package-delivery-scenario.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/bvlos-운항규정.md",
+   "ontology_class": "Regulation"
+  },
+  {
+   "path": "concepts/토석류-이동범위의-공간적-재현성-평가.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/chris-anderson.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/gplv3.md",
+   "ontology_class": "Regulation"
+  },
+  {
+   "path": "concepts/bsd.md",
+   "ontology_class": "Regulation"
+  },
+  {
+   "path": "concepts/lorenz-meier.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/mavlink-1-0.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/heartbeat.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/sys-status.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/local-position-ned.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/global-position-int.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/vfr-hud.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/command-long.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/command-ack.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/attitude-target.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/position-target-local-ned.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/position-target-global-int.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/home-position.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/statustext.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/mro-technology.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/cubepilot.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/spi.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/i2c.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/can.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/bsd-3-clause.md",
+   "ontology_class": "Regulation"
+  },
+  {
+   "path": "concepts/mission-count.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/mission-item-int.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/mission-ack.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/param-request-list.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/param-value.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/fifo-scheduling.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/ethernet.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/can-bus.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/ark.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/raccoonlab.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/zubax.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/mavlink-standard-modes-protocol.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/file-transfer-protocol.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/parameter-protocol.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/mission-protocol.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/offboardcontrolmode.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/trajectorysetpoint.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/vehiclecommand.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/vehiclecommandack.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/eprosima.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/azza-allouch.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/anis-koubaa.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/mohamed-khalgui.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/tarek-abbes.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/maram-alajlan.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/yasir-javed.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/abdelfettah-belghith.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/alvaro-j-gaona.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/arxiv.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ahmed-radwan.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ali-tourani.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/hriday-bavle.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/holger-voos.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/jose-luis-sanchez-lopez.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/tali-orlev-shapira.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/itzik-klein.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/jeryes-danial.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/yosi-ben-asher.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/parakh-m-gupta.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/matej-mihulka.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/matej-novosad.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/robert-penicka.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/elsevier-ras.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/jo-o-pinto.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/jay-patrikar.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/john-keller.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/rita-cunha.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/sebastian-scherer.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ant-nio-pascoal.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/jan-ming-kevin-tan.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/xiangqi-li.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/chenzhe-jin.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/narsimlu-kemsaram.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/valerio-modugno.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/xiaowei-li.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/kuan-xu.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/fen-liu.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/lihua-xie.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/peisen-xu.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ooi-wei-tsang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/uist-2026.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/acm.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/shoon-kit-lim.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/melissa-jia-ying-chong.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/jing-huey-khor.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/rf-channel.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/nwachioma-christian.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/tdma.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/li-sixian.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/duo-bin.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/tao-meixia.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/yuan-xiaojun.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/transport-layer-security.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/elliptic-curve-digital-signature-algorithm.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/hash-based-message-authentication-codes.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/wang-tao.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/lin-chenyu.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/tang-chenwei.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/zhou-jizhe.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/xiong-deng.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/li-jianan.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/zhao-jian.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/lv-jiancheng.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/huo-bingcong.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/wang-zhiming.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/bingcong-huo.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/zhiming-wang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/abichandani-pramod.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/jun-yang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/dong-wang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/hongxu-yin.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/hongpeng-li.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/jianxiong-yu.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/sungkyunkwan-university.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/kang-gu-hyun.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/tao-wang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/chenyu-lin.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/chenwei-tang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/jizhe-zhou.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/deng-xiong.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/jianan-li.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/jian-zhao.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/jiancheng-lv.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/akshay-gupta-burela.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/p-b-sujit.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/burela-akshay-gupta.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/sujit-p-b.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/t-rebolo.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/a-grilo.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/c-ribeiro.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/exploration-missions.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/ground-sensing-coverage.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/concei-o-maria.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/grilo-ant-nio.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/basiri-meysam.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/junfeng-chen.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/yuxiao-zhu.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/xintong-zhang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/bing-luo.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/meng-guo.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/chen-junfeng.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/zhu-yuxiao.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/zhang-xintong.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/luo-bing.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/guo-meng.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ground-target-protection.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/silveria-dimitria.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/araujo-paulo-ricardo-marques-de.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/nascimento-tiago.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/givigi-sidney.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/alqudsi-yunes.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/mcp.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/w3c-web-of-things.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/wot.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/lorenzo-gigli.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/luca-sciullo.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/angelo-trotta.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/bou-ek-zden-k.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/fl-dr-miroslav.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/straka-ond-ej.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/gigli-lorenzo.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/sciullo-luca.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/trotta-angelo.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/amplify-and-forward-relaying.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/huang-jiahao.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/li-rongpeng.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/zhao-zhifeng.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ding-guoru.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/zhang-honggang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/feinan-cheng.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/dongliang-xu.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/wenli-nong.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/zhiheng-zhang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ang-liu.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/tianyu-wang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/yue-yao.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/cheng-feinan.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/xu-dongliang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/nong-wenli.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/zhang-zhiheng.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/liu-ang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/wang-tianyu.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/yao-yue.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/zhaoyang-sheng.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/jian-ke.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/junjie-zhu.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/fu-ren.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/yuan.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/jiang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/chuang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/yang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/jiaze.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/cong.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/zhang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/zhigang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/vitale-christian.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/grigoriou-yiannis.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ellinas-georgios.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ruitao-lu.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/zhanhong-zhuo.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/siyu-wang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/dingwen-zhang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/bobo-xi.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-e4fe3edfd8.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-4d5337ffc0.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-8323393e8a.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-165830225e.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-8a313e9e87.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/ko-92cff5bef2.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/manan-khan-abdul.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-a1097f3c21.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-2d9acfee68.md",
+   "ontology_class": "Regulation"
+  },
+  {
+   "path": "concepts/kmtc.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/dtims.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/k-diu.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-bd24ab6964.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-51f6fd4bef.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-699fd4a8a9.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-2a19d81744.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-37253dfac4.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-2db24ab83d.md",
+   "ontology_class": "Regulation"
+  },
+  {
+   "path": "concepts/ko-f43c101015.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-2bbd7221f5.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-73f00b6277.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-364cee4994.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-6169c36041.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-7d2db16e1d.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/ko-7d9bb36723.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-deb43b1fb9.md",
+   "ontology_class": "Regulation"
+  },
+  {
+   "path": "concepts/ko-e54c31fc32.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/a-ctco.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/korean-army.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/dixit-bhavya.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/a-ananthapadmanabhan.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/thahsin-adheeba.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/pathak-saketh.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/kasbekar-gaurav-s.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-8253c7faf1.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-f7fbf857b7.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-f00b28f0b5.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-15b496a5dc.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/john-coltrane.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/korean-national-university-of-arts.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/lei.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/hongjiang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/geng.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/jianshuo.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/park.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ki-hong.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/jia.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/liang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/miao.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/xiaqing.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/pan.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/gaofeng.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/amorim-arthur.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/taylor-max.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/kann-trevor.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/leavens-gary-t.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/harrison-william-l.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/joneckis-lance.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/tao-yi.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/gao-zhen.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/wan-ziwei.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/lv-yuezu.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/wang-hua.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/chen-sheng.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/lin-junyan.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/zongzhen-liu.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/hui-luo.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/zhixing-wang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/yuxing-wei.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/haorui-zuo.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/jianlin-zhang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/lv-kunwei.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/xiao-zhiren.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ren-hang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/lan-ping.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/gang-yang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/wenqi-zhang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/yuan-yao.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/xingshe-zhou.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/chen-zifa.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/shufang-yuan.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/chen-hongyu.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/liu-jiping.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/wang-yong.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/zhu-jun.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/feng-dejun.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/xie-yakun.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/balaska-vasiliki.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/papapetros-ioannis-tsampikos.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/oikonomou-katerina-maria.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/bampis-loukas.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/gasteratos-antonios.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ze-liu.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/rui-wang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/zhichao-shi.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/lte.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/ko-7573460df9.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-7adb53ce51.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-f37f12ca4f.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-4f8e6cd15f.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-269cd1e979.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-8dadcec762.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-c7410e33f5.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-94ec1dd5b6.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-1a587cd26f.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/li-wei.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/tang-jiaman.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/li-yang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/xia-beihao.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/tan-ligang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/qin-hongmao.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/oh-ethan.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/vazquez-ruben.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/mesterharm-chris.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/chadha-ritu.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/dharmalingam.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/balakrishnan.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/mukherjee.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/rajdeep.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/piggott.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/brett.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/feng.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/guohuan.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/liu.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/anyi.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/sartaj-hassan.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/asmar-muqeet.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/mykytyn-pavlo.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/chitauro-ronald.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/dyka-zoya.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/langendoerfer-peter.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/sae-arp4754b.md",
+   "ontology_class": "Regulation"
+  },
+  {
+   "path": "concepts/dal-b-cmd-mon.md",
+   "ontology_class": "Regulation"
+  },
+  {
+   "path": "concepts/autonomous-cars.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/joe-eappen.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/zikang-xiong.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/shreyash-s-iyengar.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/suresh-jagannathan.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/environmental-monitoring.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/zhao-yang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/weiyi-hu.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/haoran-hu.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/hua-cui.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/qingshuang-sun.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/3gpp.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/wang-xiucheng.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/cheng-nan.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/huan-junxi.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/matteo-vandelli.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/daniele-dragoni.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/guo-lili.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/school-of-information-science-and-technology.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/nantong-university.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/los-channels.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/university-of-tabriz.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ata-turgut.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/vikas-dhiman.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ahmed-aboelezz.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-f23da1f5ea.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-9f53f56540.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/tianyuan-fan.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/lijun-fu.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/chuangxin-guo.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/yan-zhang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/roy-sanku-kumar.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/samshad-mohamed.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/rajawat-ketan.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ramirez-atencia-cristian.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ser-javier-del.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/camacho-david.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ghazy-abdallah-s.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ammar-hussein-a.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/bayes-james.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/chan-francois.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/zheng-cao.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/zhongjun-fu.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/keyang-li.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/xingyue-zhou.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/hang-rao.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-01d3423d6a.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-3057dcf112.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-fc53ac39a5.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-b367cbc6e6.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-4f65591a9e.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-c92eeaf9a6.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-c7adc35f38.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/kunzhong-miao.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/chang-wang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/yifeng-niu.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/wei-zhang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/hongbo-yu.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/sri.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/vikash-m.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/pranav-yogesh.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/rayappa.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/david-amar-raj.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/manimaran.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-9c25109142.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/stanag-4586.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/ko-7cc771aeaa.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/allen-ross-e.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/xiling-luo.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/chengpeng-jiang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/gang-wang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/jialing-liu.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/liang-you.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/lei-zhang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/mingfa-zheng.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/chuhan-ma.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/bowu-wei.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-eb90ff65b8.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-4a231cda65.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/chandra-caden.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ng-jerry.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-165dcd15e0.md",
+   "ontology_class": "Regulation"
+  },
+  {
+   "path": "concepts/fda.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/jarus.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-6404df318b.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-f7f46438f5.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-76fe623688.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-dc37879ce5.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-f0a950615d.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-8bf88deca9.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-404ea1e98e.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-5f9f2f7602.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/toumieh-charbel.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/mistry-niel.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/jarvis-benjamin.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/jeger-simon.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/liu-peize.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/shen-shaojie.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/floreano-dario.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/yang-zhou.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/jiankun-peng.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/di-wu.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/zexing-wang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/inland-river-shipping.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/sen.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/xiaohua-cao.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/hua-zhou.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/mutual-agreement-handshake.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/kim-heegyeong.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/james-alice.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/seth-avishkar.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/kuantama-endrowednes.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/williamson-jane.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/feng-yimeng.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/han-richard.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/icao.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/faa.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-ae1ae76a07.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-6fc5e87e1d.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/ko-61c77385f6.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/ko-935c1bc453.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-25fce658d0.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-33189cffa6.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-1d907f51e3.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-8ffde10b56.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-16b0616709.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/cardiac-arrest.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/scotland.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/t-basu.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/e-patelli.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/g-filippi.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/b-parsonage.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/c-maddock.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/shuming-lin.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/siyuan-zhan.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/jinyi-liang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/junnan-tan.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/sang-feng.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/jie-shi.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/lichao-zhu.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/wonkwang-university.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/chae-woo-nam.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/s-ajani-oladayo.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/adeyinka-adedigba.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/rammohan-mallipeddi.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/vittorio-palladino.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/teaya-yang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ruiqi-zhang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/mark-w-mueller.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/le-thuan-van.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/luong-nguyen-cong.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/bao-vo-nguyen-quoc.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/huynh-the-thien.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/li-xingwang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/tu-ngo-hoang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/wildfire-prevention-expenditure.md",
+   "ontology_class": "Regulation"
+  },
+  {
+   "path": "concepts/california.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/moor-danique-de.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/shenghui-huang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/yuqi-wang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/longkun-zou.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/lingwei-dang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/hongyu-chi.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/yingjie-du.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/qimin-cheng.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/linfeng-yuan.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/uwb.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/ko-b092130cca.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-8c30e6ac4f.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/swarm-localization.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/ko-89edd91385.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-8c0fe037a8.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-c7252e3d70.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-fb5a52f62a.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/ko-febf14020d.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-dc09754efd.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-6b92ab1b79.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/ko-d0a0f021f3.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/ko-15d5a66223.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-ea94589fd8.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/14-cfr-part-107.md",
+   "ontology_class": "Regulation"
+  },
+  {
+   "path": "concepts/ko-b615bd8b24.md",
+   "ontology_class": "Regulation"
+  },
+  {
+   "path": "concepts/ko-0713bfbf13.md",
+   "ontology_class": "Regulation"
+  },
+  {
+   "path": "concepts/ko-58e19e68c5.md",
+   "ontology_class": "Regulation"
+  },
+  {
+   "path": "concepts/ko-00dff99752.md",
+   "ontology_class": "Regulation"
+  },
+  {
+   "path": "concepts/ko-f6a2b11df3.md",
+   "ontology_class": "Regulation"
+  },
+  {
+   "path": "concepts/utm.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/ko-4af3aa9806.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/ko-b929a7fb05.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/ko-193e334b53.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/ko-e3f50eb92b.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/u-space-service-provider.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/korean-aerospace-university.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/logistics.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/disaster-response.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/public-safety.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/cesareo-fabrizio.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/mengozzi-sebastiano.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/mimmo-nicola.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/xiangyu-li.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/zhiqiang-hou.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/lingling-xiong.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/sugang-ma.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/yang-liu.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/mohamed-amine-ferrag.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/merouane-debbah.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/abderrahmane-lakas.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/manu-perumkunnil.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/norbert-tihanyi.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/walugembe-francis-noah.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/wielgosz-maciej.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/gori-an-toma.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/mertik-matej.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/hiago-sodre.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/vincent-sandin.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/pablo-moraes.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ahilen-mazondo.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/igor-nunes.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/william-moraes.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/andr-kelbouscas.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ricardo-grando.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/duksan-navcours-co.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-fec33f35f3.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/mednikov-maxim.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/gal-oren.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/shunyi-zhu.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/jiajia-xu.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/jian-bi.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/meiyan-wang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/innovate-uk.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/loggerhead-ventures.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/one-planet-capital.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/conditional-approval.md",
+   "ontology_class": "Regulation"
+  },
+  {
+   "path": "concepts/fifa-world-cup.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/gopro.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/oscar-liang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/unifly.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/sesar-ju.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/civil-aviation-authority.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/decision-no-60.md",
+   "ontology_class": "Regulation"
+  },
+  {
+   "path": "concepts/autoflight.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/alatau.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/orqa.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/games-of-the-future-2026.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/executive-order.md",
+   "ontology_class": "Regulation"
+  },
+  {
+   "path": "concepts/y-t-g.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/glenn-jocher.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/yao-liang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-a80f968d99.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/rf-detection.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/yongin-university.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/noh-young-ki.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-7b0a75e6cf.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-1f2616d1ba.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-d36cc090d5.md",
+   "ontology_class": "Regulation"
+  },
+  {
+   "path": "concepts/ko-32b67935fd.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-193517d15c.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-341670f42e.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/doy.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/ko-2c8e7bc523.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/jeonnam-gwangju-agriculture-technology-office.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-40fb427237.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-8fff75c7b3.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-ae13f72c65.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-04bae70eb6.md",
+   "ontology_class": "Regulation"
+  },
+  {
+   "path": "concepts/ko-e9df3052a1.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-ed25efdbbb.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-05d93a3e8b.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/ko-d7427c3c48.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/target-identification.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/lig-defense-aerospace.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-3998237461.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-88e9e59271.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-3ce6e0eb53.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-d4b90d7a1e.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-621b172dbd.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-314e4c94f1.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/daniel-psijas.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/karel-toledo.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/javier-baladron.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/yu-di.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/you-sixiong.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/pei-chaoying.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/individual-tree-crown-segmentation.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/kangwon-national-university.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/department-of-forest-sciences.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ah-ri-shin.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/hansung-university.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-24d4906cda.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-eecea44f3c.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-060e441b50.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-8dae9f42ae.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-ef133e9c31.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-12e26afd19.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ifc.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/structural-element-extraction.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/construction-status-analysis.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/ko-ad4edd4023.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-bdf3bf2a5e.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/rtb.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/ko-b8b6c5ac7f.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/gyeongsang-national-university.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/chang-hyeok-park.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-2c06ef598b.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-8f2e356312.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/nato.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/prisma.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/korea-meteorological-administration-kma.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-fecb7483a4.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-7835cd7850.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-e7eec6e254.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-542d643d69.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/ko-96729ed924.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-822e5c0ba1.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-8b824d5dac.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/weiyang-chen.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/mao-ye.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/bushfire-detection-and-prevention.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/zakria-qadir.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/hamza-zafar-muhammad.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/muhammad-bilal.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ehsan-noroozinejad-farsangi.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/maria-rashidi.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-e2bbbe154c.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-f48163006a.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/hamid-hosseini-dolatabadi-sayed.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/rakesh-chowdhury.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/wenquan-dong.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-e39f453fff.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-215dd5d7b7.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-81c0f883c0.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/yin-xiang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/xinlong-zheng.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/huang-xun.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-ddc7223fe2.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-04cbcd076f.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-79d8e0cf1c.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-15cbf59a62.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-74a27cc4a7.md",
+   "ontology_class": "Regulation"
+  },
+  {
+   "path": "concepts/ko-506011f6ea.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-c1166c0752.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/kigam.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-cf72267af7.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-31dce39e08.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-65acc031d7.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/cartpole.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/yan-zhao.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-4c2122fb6e.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/shuangbao-ma.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/yutong-wang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/yapeng-zhang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/hongliang-gao.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/h-seyin-k-kerdem.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/tolga-kahraman-h.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/yusuf-s-nmez.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-c2d60c3487.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/xunyang-su.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/chengjia-wang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/xinghui-dong.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-51a78f832a.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-8a1c83296e.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-980b4af972.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/pu-fan.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/rathinam-sivakumar.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/zhang-yunlong.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/li-xiaopeng.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/wang-xiubin.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/zhou-yang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/tevv.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/ko-3e3ff977ea.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-1ae64f1826.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/kumar-lal-vivek.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/sudeepta-mishra.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/bosso-alessandro.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/conficoni-christian.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/arxiv-2002-01823.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/li-haojia.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/wang-haokun.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/feng-chen.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/gao-fei.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/zhou-boyu.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/choi-jimin.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/stagg-grant.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/peterson-cameron-k.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/li-max-z.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/wheel-mode.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/cannata-giorgio.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/carlini-giorgio.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/sante-filippo.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/heusdens-richard.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/hendriks-richard-c.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/wang-yita.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/chen-chen.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/chen-yicheng.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/li-jinjie.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/motegi-yuichi.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ohkuma-kenji.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/maki-toshihiro.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/zhao-moju.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/li-yuhang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/zhou-yuhao.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/huang-junbin.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/wang-zijun.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/zhu-shunjie.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/zheng-li.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/luo-jiajin.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/cao-rui.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/zhang-yun.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/huang-zhifeng.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/kde-direct.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/last-mile-delivery.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/multi-stop-delivery-tours.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/single-customer-tours.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/data-flow-handover.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/public-protection-and-disaster-relief.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/tovey-samuel.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/prestel-stefan.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/yamauchi-hiroshi.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/10-48550-arxiv-2607-26717.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/baker-karan.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/maharjan-sanjay.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/hlayel-tariq.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ogunbodede-oladapo.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/dunphy-dutch.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/stein-adrian.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/srithar.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/vejaykarthy.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/rizvi.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/syeda-amna.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/abusafia.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/amani.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/bouguettaya.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/athman.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/alkouz.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/balsam.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-01f305b25a.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-128bf22e3b.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-69c951be19.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/tengan-elisa.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ruiz-santiago.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/alkmim-mansour.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/cardenuto-jo-o.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/waterschoot-toon-van.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-86af6853c9.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/kaggle.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-48d5651abb.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/ko-f589179a5d.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-a0325092b7.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-0e25dff668.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-42b9570322.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-06c49977d4.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/nsf.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/ko-049a89117b.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/ko-9289c695a2.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/christoph-petroll.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/sebastian-eilermann.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/philipp-hoefer.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/vehicle-to-everything-communication.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/yanze-jiang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/yanfeng-gu.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/xian-li.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/gr-fe-alexander.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/h-nig-wolfgang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/trimpe-sebastian.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/takemura-reiya.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ishigami-genya.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/gitlab.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/sun-yineng.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/f-genschuh-armin.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/vaze-vikrant.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/recharge.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/pedro-santos.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/andr-fonte.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/paulo-oliveira.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/gasche-sebastian.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/findeisen-rolf.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/rao-nishanth.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/sundaram-suresh.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/kumar-saurabh.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/kumar-shashi-ranjan.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/sinha-abhinav.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/jagtap-pushpak.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/indian-institute-of-technology.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/hkdf-expand.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/ascon.md",
+   "ontology_class": "CommunicationProtocol"
+  },
+  {
+   "path": "concepts/ko-c417cf41af.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/zhipeng-zhang.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/yangjie-wei.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-43f28be610.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/ko-fa66da814b.md",
+   "ontology_class": "Organization"
+  },
+  {
+   "path": "concepts/peng.md",
+   "ontology_class": "Person"
+  },
+  {
+   "path": "concepts/aggressivetracking.md",
+   "ontology_class": "Mission"
+  },
+  {
+   "path": "concepts/px4.md",
+   "ontology_class": "PX4"
+  },
+  {
+   "path": "concepts/software-registry-flight-stack.md",
+   "ontology_class": "VendorRegistry"
+  },
+  {
+   "path": "concepts/software-registry-swarm-multiagent.md",
+   "ontology_class": "VendorRegistry"
+  }
+ ]
+}

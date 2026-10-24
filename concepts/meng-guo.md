@@ -3,6 +3,7 @@ title: "Meng Guo"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/drone-sw/slei3d-heterogeneous-fleet-exploration.md", "raw/papers/gcs-software/slei3d-heterogeneous-fleet.md"]
 confidence: low

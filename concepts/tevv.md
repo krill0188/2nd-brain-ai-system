@@ -3,6 +3,7 @@ title: "TEVV"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: CommunicationProtocol
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/병역자원-감소와-미래-해양전장환경-변화에-따른-한국-해군-통합대드론체계-발전-방향-연구.md"]
 confidence: low

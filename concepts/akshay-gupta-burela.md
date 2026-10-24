@@ -3,6 +3,7 @@ title: "Akshay Gupta Burela"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/drone-hw/fetch-2026-08-19-arxiv-multi-domain-physics-based-mdo-of-multirotor-uavs-a-determin.md"]
 confidence: low

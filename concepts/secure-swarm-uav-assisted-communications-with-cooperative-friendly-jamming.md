@@ -3,6 +3,7 @@ title: "Secure Swarm Uav-Assisted Communications With Cooperative Friendly Jammi
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Mission
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/swarm/secure-swarm-uav-assisted-communications-with-cooperative-friendly-jamming.md"]
 confidence: low

@@ -3,6 +3,7 @@ title: "국립목포대학교"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Organization
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/swarm/multi-agent-based-qos-aware-task-offloading-in-single-cell-uav-mec-systems-using.md"]
 confidence: low

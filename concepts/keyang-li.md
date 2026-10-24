@@ -3,6 +3,7 @@ title: "Keyang Li"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/sample-preserving-evaluation-and-frozen-rank-consensus-for-uav-transmission-line.md"]
 confidence: low

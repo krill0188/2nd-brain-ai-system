@@ -3,6 +3,7 @@ title: "Wang, Xiucheng"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/swarm/rmworld-task-aware-radio-world-models-with-value-of-information-guided-multi-tri.md"]
 confidence: low

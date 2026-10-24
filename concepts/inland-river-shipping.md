@@ -3,6 +3,7 @@ title: "Inland River Shipping"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Mission
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/drone-ai/usfnet-a-uav-shore-fusion-visual-perception-framework-for-inland-river-shipping-.md"]
 confidence: low

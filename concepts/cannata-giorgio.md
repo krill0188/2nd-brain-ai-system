@@ -3,6 +3,7 @@ title: "Cannata, Giorgio"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/compact-force-sensor-for-dual-uav-cable-suspended-payload-transport-with-tension.md"]
 confidence: low

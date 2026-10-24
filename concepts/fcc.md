@@ -3,6 +3,7 @@ title: "FCC"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Organization
 tags: [auto-promoted, unreviewed]
 sources: ["raw/articles/fetch-2026-07-29-rss-dronedj.md", "raw/articles/fetch-2026-07-29-rss-dronelife.md", "raw/articles/fetch-2026-07-29-rss-suasnews-regulation.md", "raw/papers/_unclassified/dynamic-active-fleet-sizing-of-heterogeneous-uav-relays-for-post-disaster-commun.md"]
 confidence: low

@@ -3,6 +3,7 @@ title: "Roy, Sanku Kumar"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/swarm/unet-a-generic-and-reliable-multi-uav-communication-and-networking-architecture-.md"]
 confidence: low

@@ -3,6 +3,7 @@ title: "Moor, Danique de"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/rapid-drone-based-wildfire-detection-at-a-fraction-of-current-prevention-spendin.md"]
 confidence: low

@@ -3,6 +3,7 @@ title: "Tang Jiaman"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/drone-ai/uavd-mamba-deformable-token-fusion-vision-mamba-for-multimodal-uav-detection.md"]
 confidence: low

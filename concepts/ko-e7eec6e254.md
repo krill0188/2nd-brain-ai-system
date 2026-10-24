@@ -3,6 +3,7 @@ title: "이지선"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/uam-회랑-바람-관측을-위한-기상드론-유효성-검증.md"]
 confidence: low

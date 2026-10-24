@@ -3,6 +3,7 @@ title: "MSP"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: CommunicationProtocol
 tags: [auto-promoted, unreviewed]
 sources: ["raw/articles/fetch-2026-08-03-betaflight.md"]
 confidence: low

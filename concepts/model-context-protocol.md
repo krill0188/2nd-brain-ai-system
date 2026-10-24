@@ -3,6 +3,7 @@ title: "Model Context Protocol"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: CommunicationProtocol
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/swarm/fetch-2026-08-19-arxiv-say-the-mission-execute-the-swarm-agent-enhanced-llm-reasoni.md", "raw/papers/swarm/say-the-mission-execute-the-swarm-agent-enhanced-llm-reasoning-in-the-web-of-dro.md", "raw/papers/drone-ai/physai-bench-a-benchmark-for-llm-based-agentic-decision-making-in-autonomous-uav.md"]
 confidence: low

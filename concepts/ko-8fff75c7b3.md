@@ -3,6 +3,7 @@ title: "연암공과대학교"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Organization
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/다양한-지역-환경에서의-utm-k-기반-드론-비행경로-오차-분석.md"]
 confidence: low

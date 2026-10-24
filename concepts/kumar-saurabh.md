@@ -3,6 +3,7 @@ title: "Kumar, Saurabh"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/swarm/equivalent-agent-guidance-for-cooperative-uav-payload-transportation.md"]
 confidence: low

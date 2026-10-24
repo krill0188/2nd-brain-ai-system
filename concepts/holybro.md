@@ -3,6 +3,7 @@ title: "Holybro"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Organization
 tags: [auto-promoted, unreviewed]
 sources: ["raw/articles/entity-pixhawk-hardware.md", "raw/articles/mastervault-hardware-reference.md", "raw/articles/px4-dronecan.md", "raw/papers/_unclassified/digital-twin-of-a-dc-brushless-electric-motor-propeller-system-with-application-.md"]
 confidence: low

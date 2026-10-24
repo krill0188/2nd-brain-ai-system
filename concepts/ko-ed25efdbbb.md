@@ -3,6 +3,7 @@ title: "러시아"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Organization
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/대한민국-육군의-드론-획득-필수능력-연구-러-우-전쟁-사례와-미군-전략-분석을-바탕으로.md"]
 confidence: low

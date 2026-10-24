@@ -3,6 +3,7 @@ title: "Kmtc"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Organization
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/군용-드론의-국산화를-위한-민군-협력-방안-연구.md"]
 confidence: low

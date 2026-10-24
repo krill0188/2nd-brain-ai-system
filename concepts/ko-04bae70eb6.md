@@ -3,6 +3,7 @@ title: "드론 배송 실증사업 안전 기준"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Regulation
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/다양한-지역-환경에서의-utm-k-기반-드론-비행경로-오차-분석.md"]
 confidence: low

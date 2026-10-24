@@ -3,6 +3,7 @@ title: "Hiago Sodre"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/drone-ai/vision-language-models-as-copilots-for-autonomous-uav-navigation-analysis-of-lat.md"]
 confidence: low

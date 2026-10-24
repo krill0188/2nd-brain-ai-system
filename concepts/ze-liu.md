@@ -3,6 +3,7 @@ title: "Ze Liu"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/a-differential-evolution-distributionally-robust-sizing-method-for-power-supply-.md"]
 confidence: low

@@ -3,6 +3,7 @@ title: "Karel Toledo"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/swarm/multi-agent-reinforcement-learning-for-energy-efficient-cooperative-uav-deployme.md"]
 confidence: low

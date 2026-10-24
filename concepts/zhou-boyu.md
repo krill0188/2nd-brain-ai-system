@@ -3,6 +3,7 @@ title: "Zhou, Boyu"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/autotrans-a-complete-planning-and-control-framework-for-autonomous-uav-payload-t.md"]
 confidence: low

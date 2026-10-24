@@ -3,6 +3,7 @@ title: "숭실대학교"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Organization
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/uwb-품질-저하-환경에서-uav-군집측위의최소운용조건분석.md"]
 confidence: low

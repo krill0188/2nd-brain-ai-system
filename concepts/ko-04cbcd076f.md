@@ -3,6 +3,7 @@ title: "한국화재보험협회"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Organization
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/uav-관측자료를-이용한-random-walk-기반-토석류-이동범위의-공간적-재현성-평가-2023년-예천-벌방리-사례.md"]
 confidence: low

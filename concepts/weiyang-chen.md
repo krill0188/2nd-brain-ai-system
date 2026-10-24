@@ -3,6 +3,7 @@ title: "Weiyang, Chen"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/drone-ai/dmoa-dynamic-mixture-of-adapters-with-feature-enhanced-fusion-for-uav-visible-in.md"]
 confidence: low

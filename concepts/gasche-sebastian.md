@@ -3,6 +3,7 @@ title: "Gasche, Sebastian"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/swarm/a-modular-energy-aware-framework-for-multicopter-modeling-in-control-and-plannin.md"]
 confidence: low

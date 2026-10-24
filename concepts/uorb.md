@@ -3,6 +3,7 @@ title: "Uorb"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: CommunicationProtocol
 tags: [auto-promoted, unreviewed]
 sources: ["raw/articles/entity-ardupilot.md", "raw/articles/entity-px4-flight-stack.md", "raw/articles/mastervault-px4-devnotes.md", "raw/articles/px4-architecture.md", "raw/articles/px4-flight-modes-dev.md"]
 confidence: low

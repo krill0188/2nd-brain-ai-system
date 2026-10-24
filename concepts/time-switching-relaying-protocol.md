@@ -3,6 +3,7 @@ title: "Time-Switching Relaying Protocol"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: CommunicationProtocol
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/swarm/secure-swarm-uav-assisted-communications-with-cooperative-friendly-jamming.md"]
 confidence: low

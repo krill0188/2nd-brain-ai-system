@@ -3,6 +3,7 @@ title: "Landspace"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Organization
 tags: [auto-promoted, unreviewed]
 sources: ["raw/youtube/dji-mavic-4-thermal-rocket-launch.md"]
 confidence: low

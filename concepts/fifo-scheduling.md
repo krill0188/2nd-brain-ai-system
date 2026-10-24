@@ -3,6 +3,7 @@ title: "Fifo Scheduling"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: CommunicationProtocol
 tags: [auto-promoted, unreviewed]
 sources: ["raw/articles/px4-architecture.md"]
 confidence: low

@@ -3,6 +3,7 @@ title: "DETER"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Mission
 tags: [auto-promoted, unreviewed]
 sources: ["raw/articles/fetch-2026-08-03-fedreg-faa-2026-07585.md"]
 confidence: low

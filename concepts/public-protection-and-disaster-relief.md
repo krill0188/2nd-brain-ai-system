@@ -3,6 +3,7 @@ title: "Public Protection and Disaster Relief"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Mission
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/experimental-evaluation-of-a-uav-mounted-leo-satellite-backhaul-for-emergency-co.md"]
 confidence: low

@@ -3,6 +3,7 @@ title: "이호준"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/eoir-영상-분석-기반-자율-드론을-활용한-산불-초기-진화-기술-연구.md"]
 confidence: low

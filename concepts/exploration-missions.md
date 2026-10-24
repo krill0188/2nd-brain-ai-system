@@ -3,6 +3,7 @@ title: "Exploration Missions"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Mission
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/drone-sw/path-planning-optimisation-for-sparse-aware-and-cooperative-networked-aerial-rob.md"]
 confidence: low

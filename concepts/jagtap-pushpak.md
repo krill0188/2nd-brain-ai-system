@@ -3,6 +3,7 @@ title: "Jagtap, Pushpak"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/swarm/temporal-waypoint-navigation-of-multi-uav-payload-system-using-barrier-functions.md"]
 confidence: low

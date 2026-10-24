@@ -3,6 +3,7 @@ title: "John Coltrane"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/이종-문화-화성-어법의-융합과-미학적-확장-존-콜트레인의-드론drone-활용을-중심으로.md"]
 confidence: low

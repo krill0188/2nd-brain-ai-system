@@ -3,6 +3,7 @@ title: "Param_Request_List"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: CommunicationProtocol
 tags: [auto-promoted, unreviewed]
 sources: ["raw/articles/mastervault-mavlink-reference.md"]
 confidence: low

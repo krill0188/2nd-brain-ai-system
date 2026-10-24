@@ -9,6 +9,7 @@ confidence: medium
 contested: false
 contradictions: []
 domain: regulations
+ontology_class: Regulation
 ---
 
 # BVLOS 운항규정

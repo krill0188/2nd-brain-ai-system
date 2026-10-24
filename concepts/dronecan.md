@@ -3,6 +3,7 @@ title: "Dronecan"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: CommunicationProtocol
 tags: [auto-promoted, unreviewed]
 sources: ["raw/articles/ardupilot-architecture.md", "raw/articles/entity-pixhawk-hardware.md", "raw/articles/px4-basic-concepts.md", "raw/articles/px4-dronecan.md", "raw/articles/px4-system-architecture.md"]
 confidence: low

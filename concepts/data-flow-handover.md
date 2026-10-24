@@ -3,6 +3,7 @@ title: "data flow handover"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: CommunicationProtocol
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/energy-efficient-uav-replacement-in-software-defined-uav-networks.md"]
 confidence: low

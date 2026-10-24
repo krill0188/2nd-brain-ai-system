@@ -3,6 +3,7 @@ title: "드론 포화 공격"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Mission
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/대드론-방어체계-소요산정에-관한-확률적-대기행렬-모형-연구.md"]
 confidence: low

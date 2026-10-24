@@ -3,6 +3,7 @@ title: "Li, Rongpeng"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/swarm/wonder-a-radio-world-model-based-negotiation-framework-for-multi-agent-uav-cover.md"]
 confidence: low

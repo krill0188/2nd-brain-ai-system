@@ -3,6 +3,7 @@ title: "박종일"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/drone-ai/이중-nis-보상을-적용한-sac-기반-gnssins-복합항법-무인기-은닉-기만-기법.md"]
 confidence: low

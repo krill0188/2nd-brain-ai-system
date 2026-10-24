@@ -3,6 +3,7 @@ title: "Sae Arp4754B"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Regulation
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/swarm/a-safety-driven-architectural-framework-for-fail-operational-drone-swarms-in-cri.md"]
 confidence: low

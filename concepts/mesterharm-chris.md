@@ -3,6 +3,7 @@ title: "Mesterharm, Chris"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/drone-ai/wave-detr-multi-modal-visible-and-acoustic-real-life-drone-detector.md"]
 confidence: low

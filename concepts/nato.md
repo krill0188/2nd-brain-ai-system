@@ -3,6 +3,7 @@ title: "NATO"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Organization
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/swarm/국내외-국가중요시설-대상-불법-드론-적발-사례를-통한-대드론-체계-개선-방안-연구.md", "raw/papers/_unclassified/병역자원-감소와-미래-해양전장환경-변화에-따른-한국-해군-통합대드론체계-발전-방향-연구.md"]
 confidence: low

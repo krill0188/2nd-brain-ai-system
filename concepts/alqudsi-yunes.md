@@ -3,6 +3,7 @@ title: "Alqudsi, Yunes"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/swarm/enhancing-drone-light-shows-performances-optimal-allocation-and-trajectories-for.md"]
 confidence: low

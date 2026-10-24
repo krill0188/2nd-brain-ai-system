@@ -3,6 +3,7 @@ title: "NSF"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Organization
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/datalink/autonomous-agricultural-monitoring-with-aerial-drones-and-rf-energy-harvesting-s.md"]
 confidence: low

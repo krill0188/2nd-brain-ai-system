@@ -3,6 +3,7 @@ title: "wildfire-prevention expenditure"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Regulation
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/rapid-drone-based-wildfire-detection-at-a-fraction-of-current-prevention-spendin.md"]
 confidence: low

@@ -3,6 +3,7 @@ title: "Itzik Klein"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/drone-ai/shapira2025-icdnet.md", "raw/papers/drone-hw/danial2025-microdrone-slam.md"]
 confidence: low

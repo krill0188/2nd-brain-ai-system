@@ -3,6 +3,7 @@ title: "GitLab"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Organization
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/drone-ai/perception-and-energy-aware-motion-planning-for-uav-using-learning-based-model-u.md"]
 confidence: low

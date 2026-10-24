@@ -3,6 +3,7 @@ title: "wheel mode"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Mission
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/capsulebot-a-novel-hybrid-aerial-ground-bi-copter-robot-with-two-actuated-wheel-.md"]
 confidence: low

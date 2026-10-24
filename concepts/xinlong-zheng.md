@@ -3,6 +3,7 @@ title: "Xinlong, Zheng"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/personalized-assignment-of-uav-rescue-tasks-an-integrated-framework-of-content-b.md"]
 confidence: low

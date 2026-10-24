@@ -3,6 +3,7 @@ title: "Vitale, Christian"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/leveraging-uav-autonomy-for-minimum-4d-flight-authorization-volumes.md"]
 confidence: low

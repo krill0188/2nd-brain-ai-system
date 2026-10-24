@@ -3,6 +3,7 @@ title: "Yang Zhou"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/mdolf-framework-for-multi-target-detection-and-online-localization-of-ground-obj.md"]
 confidence: low

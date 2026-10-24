@@ -3,6 +3,7 @@ title: "Agent-to-Agent"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: CommunicationProtocol
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/drone-ai/physai-bench-a-benchmark-for-llm-based-agentic-decision-making-in-autonomous-uav.md"]
 confidence: low

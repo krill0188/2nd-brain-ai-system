@@ -3,6 +3,7 @@ title: "FAA regulations"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Regulation
 tags: [auto-promoted, unreviewed]
 sources: ["raw/articles/fetch-2026-08-03-fedreg-faa-2026-07585.md"]
 confidence: low

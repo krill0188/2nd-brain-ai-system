@@ -3,6 +3,7 @@ title: "University Of Tabriz"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Organization
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/mobility-aware-pilot-assignment-for-uav-only-cf-mmimo-networks.md"]
 confidence: low

@@ -3,6 +3,7 @@ title: "Transport Layer Security"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: CommunicationProtocol
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/datalink/secure-command-control-and-communications-systems-c3-for-army-uxvs.md", "raw/papers/drone-sw/nc2s-secure-c3-uxv.md", "raw/papers/gcs-software/nc2s-secure-c3-system.md"]
 confidence: low

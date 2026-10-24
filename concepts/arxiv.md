@@ -3,6 +3,7 @@ title: "Arxiv"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Organization
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/drone-ai/gaona2026-lidar-odometry.md", "raw/papers/drone-ai/shapira2025-icdnet.md", "raw/papers/drone-hw/danial2025-microdrone-slam.md", "raw/papers/swarm/li2025-airswarm.md", "raw/papers/voice-control/lim2025-taking-flight-with-dialogue.md"]
 confidence: low

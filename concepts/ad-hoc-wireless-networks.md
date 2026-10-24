@@ -3,6 +3,7 @@ title: "Ad-Hoc Wireless Networks"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: CommunicationProtocol
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/drone-sw/slei3d-heterogeneous-fleet-exploration.md", "raw/papers/drone-sw/slei3d-simultaneous-exploration-and-inspection-via-heterogeneous-fleets-under-li.md", "raw/papers/gcs-software/slei3d-heterogeneous-fleet.md"]
 confidence: low

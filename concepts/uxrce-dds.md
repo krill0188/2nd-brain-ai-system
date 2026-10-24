@@ -3,6 +3,7 @@ title: "Uxrce-Dds"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: CommunicationProtocol
 tags: [auto-promoted, unreviewed]
 sources: ["raw/articles/ardupilot-architecture.md", "raw/articles/entity-ardupilot.md", "raw/articles/entity-px4-flight-stack.md", "raw/articles/px4-ros2-user-guide.md"]
 confidence: low

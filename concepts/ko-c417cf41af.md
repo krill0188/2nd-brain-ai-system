@@ -3,6 +3,7 @@ title: "아주대학교"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Organization
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/global-shutter-기반-occ-드론-채널을-위한-이중-태그-기반-chacha20-poly1305-aead-인증-프로토콜.md"]
 confidence: low

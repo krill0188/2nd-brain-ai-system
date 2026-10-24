@@ -3,6 +3,7 @@ title: "Rf Channel"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: CommunicationProtocol
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/datalink/fpga-prototyping-of-synchronized-chaotic-map-for-uav-secure-communication.md"]
 confidence: low

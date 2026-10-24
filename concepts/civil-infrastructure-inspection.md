@@ -3,6 +3,7 @@ title: "Civil Infrastructure Inspection"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Mission
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/drone-ai/spiking-neural-network-actor-critic-proximal-policy-optimization-control-for-aut.md"]
 confidence: low

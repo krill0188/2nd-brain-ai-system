@@ -3,6 +3,7 @@ title: "Hüseyin, Küçükerdem"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/drone-ai/wind-aware-deep-reinforcement-learning-for-autonomous-uav-navigation-without-gps.md"]
 confidence: low

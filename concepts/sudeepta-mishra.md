@@ -3,6 +3,7 @@ title: "Sudeepta, Mishra"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/swarm/from-sensor-trust-to-swarm-resilience-tinyml-guided-integrity-aware-communicatio.md"]
 confidence: low

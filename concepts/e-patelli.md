@@ -3,6 +3,7 @@ title: "E. Patelli"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/a-bayesian-learning-approach-for-drone-coverage-network-a-case-study-on-cardiac-.md"]
 confidence: low

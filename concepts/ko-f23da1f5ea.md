@@ -3,6 +3,7 @@ title: "양은석"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/군용-무인항공기-지상안테나조립체-bit-오탐-개선-로직-연구.md"]
 confidence: low

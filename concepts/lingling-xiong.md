@@ -3,6 +3,7 @@ title: "Lingling Xiong"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/drone-ai/dynamic-multi-scale-mixture-of-experts-with-cross-scale-feature-enhancement-for-.md"]
 confidence: low

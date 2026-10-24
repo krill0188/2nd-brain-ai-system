@@ -3,6 +3,7 @@ title: "국립부경대학교"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Organization
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/다중-무인기-데이터-수집에서-클러스터링-및-경로-생성-기법의-특성에-대한-연구.md", "raw/papers/_unclassified/드론-탐지를-위한-효과적인-특징-기반-후처리-기법.md"]
 confidence: low

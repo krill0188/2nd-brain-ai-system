@@ -3,6 +3,7 @@ title: "Dual-UAV Cable-Suspended Payload Transport"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Mission
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/compact-force-sensor-for-dual-uav-cable-suspended-payload-transport-with-tension.md"]
 confidence: low

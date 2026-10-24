@@ -3,6 +3,7 @@ title: "Hendriks, Richard C."
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/cyclic-mpdr-beamforming-for-suppression-of-almost-cyclostationary-acoustic-inter.md"]
 confidence: low

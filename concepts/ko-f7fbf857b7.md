@@ -3,6 +3,7 @@ title: "김상혁"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/droneto-drone-기반-drone-wall-개념을-적용한-대드론-방어체계-제안.md"]
 confidence: low

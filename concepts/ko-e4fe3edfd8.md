@@ -3,6 +3,7 @@ title: "국민대학교"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Organization
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/uav-lidar를-활용한-안동시-산불-피해지의-토사-변화량-산정과-공간-해상도별-영향인자-분석.md"]
 confidence: low

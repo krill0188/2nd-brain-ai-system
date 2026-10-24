@@ -3,6 +3,7 @@ title: "dengue vector control"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Mission
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/swarm/agent-based-simulation-of-uav-battery-recharging-for-iot-applications-precision-.md"]
 confidence: low

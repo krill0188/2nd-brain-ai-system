@@ -3,6 +3,7 @@ title: "Bsd 3-Clause"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Regulation
 tags: [auto-promoted, unreviewed]
 sources: ["raw/articles/entity-px4-flight-stack.md"]
 confidence: low

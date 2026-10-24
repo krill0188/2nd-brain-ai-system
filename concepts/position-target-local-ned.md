@@ -3,6 +3,7 @@ title: "Position_Target_Local_Ned"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: CommunicationProtocol
 tags: [auto-promoted, unreviewed]
 sources: ["raw/articles/entity-mavlink-protocol.md"]
 confidence: low

@@ -3,6 +3,7 @@ title: "Y-T-G"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/articles/fetch-2026-09-20-yolo.md"]
 confidence: low

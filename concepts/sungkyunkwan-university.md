@@ -3,6 +3,7 @@ title: "Sungkyunkwan University"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Organization
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/drone-ai/uav-군집-ai-기술-동향-인공지능-발전과-다중-에이전트-아키텍처의-진화-관점에서.md"]
 confidence: low

@@ -3,6 +3,7 @@ title: "김상현"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/다중-무인기-데이터-수집에서-클러스터링-및-경로-생성-기법의-특성에-대한-연구.md", "raw/papers/_unclassified/감시-드론을-위한-심층-신경망-기반-지상-표적-추적-기법.md"]
 confidence: low

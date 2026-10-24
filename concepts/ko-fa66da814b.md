@@ -3,6 +3,7 @@ title: "세종대학교"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Organization
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/drone-sw/uav-이상-동작-탐지를-위한-적합도-함수-연구.md"]
 confidence: low

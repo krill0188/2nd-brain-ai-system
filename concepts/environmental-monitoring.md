@@ -3,6 +3,7 @@ title: "Environmental Monitoring"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Mission
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/swarm/orbit-fl-scene-aware-and-budget-adaptive-federated-continual-learning-for-multi-.md"]
 confidence: low

@@ -3,6 +3,7 @@ title: "Sang Feng"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/aerodistinct-a-generative-data-construction-pipeline-and-benchmark-for-dronebird.md"]
 confidence: low

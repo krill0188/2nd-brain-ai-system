@@ -3,6 +3,7 @@ title: "Iwcmc 2019"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Organization
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/datalink/allouch2019-mavsec.md"]
 confidence: low

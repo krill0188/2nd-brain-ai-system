@@ -3,6 +3,7 @@ title: "Stanag 4586"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: CommunicationProtocol
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/소형무장헬기-유무인복합-운용-통합검증환경-구축-및-비행제어시스템-통합-검증.md"]
 confidence: low

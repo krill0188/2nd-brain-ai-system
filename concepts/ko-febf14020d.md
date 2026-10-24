@@ -3,6 +3,7 @@ title: "한국항공우주연구원"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Organization
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/재난-대응을-위한-드론의-기술적-발전-방향.md"]
 confidence: low

@@ -3,6 +3,7 @@ title: "Cubepilot"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Organization
 tags: [auto-promoted, unreviewed]
 sources: ["raw/articles/entity-pixhawk-hardware.md"]
 confidence: low

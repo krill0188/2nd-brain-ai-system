@@ -3,6 +3,7 @@ title: "Ieee Icuas 2024"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Organization
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/drone-ai/radwan2024-uav-slam-gpsdenied.md", "raw/papers/drone-sw/jacinto2024-pegasus-simulator.md"]
 confidence: low

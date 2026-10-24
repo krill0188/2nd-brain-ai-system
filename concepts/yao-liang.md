@@ -3,6 +3,7 @@ title: "Yao, Liang"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/dronewam-efficient-world-action-model-for-drone-visual-navigation.md"]
 confidence: low

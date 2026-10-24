@@ -3,6 +3,7 @@ title: "제갈갑성"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/uav고해상도자료기반신두리해안사구지형피복단위의분류와공간분포정량화.md"]
 confidence: low

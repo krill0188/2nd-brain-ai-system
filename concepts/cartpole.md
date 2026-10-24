@@ -3,6 +3,7 @@ title: "Cartpole"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Mission
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/drone-ai/micro-neural-policies-for-safe-real-time-robotic-control.md"]
 confidence: low

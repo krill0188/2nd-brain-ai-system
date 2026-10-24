@@ -3,6 +3,7 @@ title: "Matteo Vandelli"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/combinatorial-optimization-of-connected-uav-communication-bridges-for-emergency-.md"]
 confidence: low

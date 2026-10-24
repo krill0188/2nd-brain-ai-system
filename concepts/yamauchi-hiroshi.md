@@ -3,6 +3,7 @@ title: "Yamauchi, Hiroshi"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/from-rubble-simulation-to-active-magnetic-mapping-quantum-sensing-for-disaster-r.md"]
 confidence: low

@@ -3,6 +3,7 @@ title: "Stagg, Grant"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/bi-level-route-optimization-and-path-planning-with-hazard-exploration.md"]
 confidence: low

@@ -3,6 +3,7 @@ title: "Cardenuto, João"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/speech-enhancement-using-ego-noise-references-with-a-microphone-array-embedded-i.md"]
 confidence: low

@@ -3,6 +3,7 @@ title: "Lte"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: CommunicationProtocol
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/고정밀-영상-획득을-위한-경량-무인비행체-플랫폼-개발.md"]
 confidence: low

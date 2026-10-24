@@ -3,6 +3,7 @@ title: "Indian Institute of Technology"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Organization
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/energy-efficiency-optimization-and-dqn-based-power-allocation-in-uav-irs-assiste.md"]
 confidence: low

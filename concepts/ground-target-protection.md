@@ -3,6 +3,7 @@ title: "Ground-Target Protection"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Mission
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/swarm/decentralized-uav-swarms-for-ground-target-protection-in-gps--and-communication-.md"]
 confidence: low

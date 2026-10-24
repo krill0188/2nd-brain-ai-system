@@ -3,6 +3,7 @@ title: "Sebastian Eilermann"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/drone-ai/a-generative-neural-network-approach-for-3d-multi-criteria-design-generation-and.md"]
 confidence: low

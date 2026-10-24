@@ -3,6 +3,7 @@ title: "A-Ctco"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Organization
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/미한-육군-신속획득-생태계-비교-분석을-통한-한국형-연속적-변혁체계-제안-미-육군-연속적-변혁-전략과-한국-육군-드론봇-챌린지-사례를-중심으로.md"]
 confidence: low

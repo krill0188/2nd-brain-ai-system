@@ -3,6 +3,7 @@ title: "Oscar Liang"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/articles/fetch-2026-07-29-rss-oscarliang-fpv.md", "raw/articles/fetch-2026-08-03-rss-oscarliang-fpv.md"]
 confidence: low

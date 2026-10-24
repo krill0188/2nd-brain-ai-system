@@ -3,6 +3,7 @@ title: "KIGAM"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Organization
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/드론-광학영상-기반-남한-지질-노두-3d-메시-모델-데이터셋-구축-현황-지오빅데이터-오픈플랫폼-지질자원주제도-2d3d-가시화-서비스.md"]
 confidence: low

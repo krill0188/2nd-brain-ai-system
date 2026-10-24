@@ -3,6 +3,7 @@ title: "LIG넥스원"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Organization
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/함정-방어를-위한-복합-대드론체계의-eoir-센서-운용개념-및-해상-환경-고려요소-분석.md"]
 confidence: low

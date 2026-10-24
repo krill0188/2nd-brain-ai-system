@@ -3,6 +3,7 @@ title: "Liu, Jiping"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/drone-ai/teaching-in-adverse-scenes-a-statistically-feedback-driven-threshold-and-mask-ad.md"]
 confidence: low

@@ -3,6 +3,7 @@ title: "Manan Khan Abdul"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Person
 tags: [auto-promoted, unreviewed]
 sources: ["raw/papers/_unclassified/xai-guided-optimizer-distillation-for-real-time-uav-relay-positioning-in-teraher.md"]
 confidence: low

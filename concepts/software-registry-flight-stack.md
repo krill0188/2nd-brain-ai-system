@@ -4,6 +4,7 @@ created: 2026-10-17
 updated: 2026-10-17
 type: concept
 domain: software-ecosystem
+ontology_class: VendorRegistry
 tags: [drone, drone-sw]
 sources: [inbox/processed/hw-registry-20261017-software-flight-stack.md]
 confidence: medium

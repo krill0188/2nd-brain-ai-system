@@ -3,6 +3,7 @@ title: "Cuav"
 created: 2026-10-24
 updated: 2026-10-24
 type: concept
+ontology_class: Organization
 tags: [auto-promoted, unreviewed]
 sources: ["raw/articles/mastervault-hardware-reference.md", "raw/articles/px4-dronecan.md"]
 confidence: low
