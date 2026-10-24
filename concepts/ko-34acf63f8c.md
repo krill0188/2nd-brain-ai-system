@@ -1,0 +1,31 @@
+---
+title: "경로 생성 알고리즘"
+created: 2026-10-24
+updated: 2026-10-24
+type: concept
+tags: [auto-promoted, unreviewed]
+sources: ["raw/papers/_unclassified/다중-무인기-데이터-수집에서-클러스터링-및-경로-생성-기법의-특성에-대한-연구.md"]
+confidence: low
+contested: false
+contradictions: []
+---
+
+# 경로 생성 알고리즘
+
+## 정의
+
+원문에서 자동 추출된 개념 항목이며 사람이 내용을 검토하지 않았다. 정의와 수치는 재확인 필요.
+
+## 출처
+
+- raw/papers/_unclassified/다중-무인기-데이터-수집에서-클러스터링-및-경로-생성-기법의-특성에-대한-연구.md
+
+## 분류
+
+- [[auto-hub-concept]] — 자동 추출 분류: 개념
+- [[auto-hub-source-papers]] — 출처 유형: 논문
+
+## 관련
+
+- [[ko-25603b4375]] — 다중 무인기 데이터 수집 시스템 (COMPONENT)
+- [[ko-9adbf5a25d]] — 데이터 신선도 (DETERMINES)

@@ -1,0 +1,34 @@
+---
+title: "dynamics model"
+created: 2026-10-24
+updated: 2026-10-24
+type: concept
+tags: [auto-promoted, unreviewed]
+sources: ["raw/papers/drone-ai/how-to-model-your-crazyflie-brushless.md"]
+confidence: low
+contested: false
+contradictions: []
+---
+
+# dynamics model
+
+## 정의
+
+원문에서 자동 추출된 기술 항목이며 사람이 내용을 검토하지 않았다. 정의와 수치는 재확인 필요.
+
+## 출처
+
+- raw/papers/drone-ai/how-to-model-your-crazyflie-brushless.md
+
+## 분류
+
+- [[auto-hub-technology]] — 자동 추출 분류: 기술
+- [[auto-hub-source-papers]] — 출처 유형: 논문
+
+## 관련
+
+- [[crazyflie-brushless]] — Crazyflie Brushless (MODELS)
+- [[backflip-controller]] — backflip controller (TRAINED_WITH)
+- [[gr-fe-alexander]] — Gräfe, Alexander (AUTHORED)
+- [[h-nig-wolfgang]] — Hönig, Wolfgang (AUTHORED)
+- [[trimpe-sebastian]] — Trimpe, Sebastian (AUTHORED)

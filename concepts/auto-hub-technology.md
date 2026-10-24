@@ -1,0 +1,460 @@
+---
+title: "자동 승격 허브: technology"
+created: 2026-10-24
+updated: 2026-10-24
+type: concept
+tags: [auto-hub, unreviewed]
+sources: [".ua/discovery-knowledge-graph.json"]
+confidence: low
+contested: false
+contradictions: []
+---
+
+# 자동 승격 허브: technology
+
+## 정의
+
+discovery 그래프에서 자동 추출·일괄 승격된 항목을 분류별로 모아 둔 목록이다. 항목 내용은 사람이 검토하지 않았다.
+
+## 항목
+
+- [[3d-modeling]] — 3D Modeling
+- [[3d-radio-environment-maps]] — 3D Radio Environment Maps
+- [[3d-scene-generation]] — 3D Scene Generation
+- [[5g-beyond]] — 5G&Beyond
+- [[5g-standalone]] — 5G Standalone
+- [[a-modular-energy-aware-framework-for-multicopter-modeling-in-control-and-plannin]] — A Modular Energy Aware Framework for Multicopter Modeling in Control and Planning Applications
+- [[aco]] — ACO
+- [[active-set-enumeration]] — Active-set Enumeration
+- [[actuator-fault-compensation]] — actuator fault compensation
+- [[adaptive-sampling]] — Adaptive Sampling
+- [[aewe]] — Aewe
+- [[ag-zf]] — AG-ZF
+- [[agent-core]] — Agent Core
+- [[android]] — Android
+- [[ap-ahrs]] — Ap_Ahrs
+- [[ap-motors]] — Ap_Motors
+- [[arduplane]] — Arduplane
+- [[ardurover]] — Ardurover
+- [[ardusub]] — Ardusub
+- [[ari]] — ARI
+- [[autonomous-flight-technology]] — Autonomous Flight Technology
+- [[autopilot-system]] — Autopilot System
+- [[avionics-systems]] — Avionics Systems
+- [[b-spline-optimizer]] — B-spline optimizer
+- [[b-spline-trajectories]] — B-spline trajectories
+- [[backflip-controller]] — backflip controller
+- [[battery-bar]] — Battery bar
+- [[battery-management-system]] — Battery Management System
+- [[bayesian-active-sampling]] — Bayesian active sampling
+- [[bayesian-inference]] — Bayesian inference
+- [[bayesian-learning]] — Bayesian learning
+- [[bidirectional-token-exchange]] — Bidirectional Token Exchange
+- [[bim]] — BIM
+- [[bio-inspired-algorithms]] — Bio-Inspired Algorithms
+- [[bit]] — Bit
+- [[bite]] — Bite
+- [[blade-element-momentum]] — Blade Element Momentum
+- [[bushfire-detection-and-prevention-system]] — bushfire detection and prevention system
+- [[c-g-d-1-queue]] — c(G/D/1) Queue
+- [[c3k2]] — C3K2
+- [[camf-det]] — CAMF-Det
+- [[cbba]] — Cbba
+- [[cds]] — Cds
+- [[channel-attention]] — Channel Attention
+- [[chirp-signal-generator]] — Chirp signal generator
+- [[chm]] — Chm
+- [[clustering-algorithms]] — Clustering algorithms
+- [[cmakelists-txt]] — Cmakelists.Txt
+- [[cockpit-display-systems]] — Cockpit Display Systems
+- [[cognitive-radio-networks]] — cognitive radio networks
+- [[colcon]] — Colcon
+- [[colmap]] — COLMAP
+- [[combined-feedforward-feedback-control-strategy]] — combined feedforward-feedback control strategy
+- [[common-information-service]] — Common Information Service
+- [[compact-formulation]] — compact formulation
+- [[confidence-guided-framework]] — Confidence-Guided Framework
+- [[config-mavlink-dialect]] — Config_Mavlink_Dialect
+- [[confusion-matrix]] — Confusion Matrix
+- [[content-based-filtering]] — content-based filtering
+- [[control-input-reconfiguration]] — control input reconfiguration
+- [[control-strategies]] — control strategies
+- [[convex-hull-based-automatic-registration-method]] — Convex Hull-based automatic registration method
+- [[corner-aligned-bounding-box-transformation]] — Corner-Aligned Bounding Box Transformation
+- [[correlation-summation]] — Correlation Summation
+- [[cplex]] — Cplex
+- [[crashflip-mode]] — Crashflip mode
+- [[cross-layer-local-support]] — Cross Layer Local Support
+- [[cross-scale-feature-enhancement]] — Cross-scale Feature Enhancement
+- [[csp-pac]] — Csp-Pac
+- [[cssa]] — Cssa
+- [[cubic-spline]] — Cubic Spline
+- [[dafm]] — Dafm
+- [[data-driven-optimization]] — Data-driven optimization
+- [[dataflash]] — Dataflash
+- [[dc-brushless-electric-motor-propeller-system]] — DC Brushless Electric Motor-Propeller System
+- [[debug-task-mode]] — DEBUG_TASK mode
+- [[deep-q-network-dqn]] — Deep Q-Network (DQN)
+- [[deepmimo]] — Deepmimo
+- [[dem]] — Dem
+- [[detection-transformer]] — Detection Transformer
+- [[development-xml]] — Development.Xml
+- [[diehard]] — Diehard
+- [[differential-evolution]] — Differential Evolution
+- [[differential-evolution-de]] — Differential Evolution (DE)
+- [[diffusion-models]] — Diffusion Models
+- [[digital-flight-approval]] — Digital Flight Approval
+- [[distributed-gaussian-processes]] — Distributed Gaussian Processes
+- [[distributionally-robust-optimization]] — Distributionally Robust Optimization
+- [[dmoa]] — DMoA
+- [[dod]] — Dod
+- [[double-shadowing]] — Double-Shadowing
+- [[dqn-based-noma-power-allocation-scheme]] — DQN-based NOMA power allocation scheme
+- [[dsfma]] — Dsfma
+- [[dtm]] — DTM
+- [[dynamic-attention-guided-fusion-module]] — Dynamic Attention-Guided Fusion Module
+- [[dynamic-mixture-of-adapters]] — Dynamic Mixture of Adapters
+- [[dynamics-model]] — dynamics model
+- [[eagle-deim]] — Eagle-DEIM
+- [[ecfrfn]] — Ecfrfn
+- [[edge-based-centroidal-voronoi-tessellation-cvt]] — edge-based centroidal Voronoi tessellation (CVT)
+- [[efficientnet-b3]] — EfficientNet-B3
+- [[electronic-conspicuity]] — Electronic Conspicuity
+- [[elementspecific-rule-based-processing]] — elementspecific rule-based processing
+- [[ensemble-ucb]] — Ensemble Ucb
+- [[eot]] — Eot
+- [[evolution-strategy-es]] — Evolution Strategy (ES)
+- [[exponentially-stable-controller]] — Exponentially Stable Controller
+- [[fading-channels]] — Fading channels
+- [[feature-enhanced-fusion]] — Feature-Enhanced Fusion
+- [[feature-pyramid]] — Feature Pyramid
+- [[fleetscape]] — Fleetscape
+- [[focaler-siou]] — Focaler-Siou
+- [[fp16]] — FP16
+- [[frequency-adaptive-modeling]] — Frequency-adaptive modeling
+- [[fresh-filtering]] — FRESH filtering
+- [[fusion-mamba-block]] — Fusion Mamba Block
+- [[g-d-c-cooperative-queue]] — G/D/c Cooperative Queue
+- [[gaff]] — Gaff
+- [[gather-and-distribute]] — Gather-And-Distribute
+- [[gaussian-process-regression]] — Gaussian Process Regression
+- [[gcs]] — Gcs
+- [[gcs-dev]] — Gcs_Dev
+- [[geofence]] — Geofence
+- [[github-actions]] — GitHub Actions
+- [[gli]] — GLI
+- [[global-information-injection-module]] — Global Information Injection Module
+- [[global-positioning-system]] — Global Positioning System
+- [[google-drive]] — Google Drive
+- [[gpr]] — GPR
+- [[gpt-5-2]] — GPT-5.2
+- [[gpt-5-3]] — GPT-5.3
+- [[grad-cam]] — Grad-Cam
+- [[graph-transformer]] — graph Transformer
+- [[graphical-user-interface-gui]] — Graphical User Interface (GUI)
+- [[grayscale-imagery]] — Grayscale imagery
+- [[greedy-algorithm]] — Greedy Algorithm
+- [[grok-4-5]] — Grok 4.5
+- [[gurobi]] — Gurobi
+- [[heuristic-algorithm]] — heuristic algorithm
+- [[humble]] — Humble
+- [[hungarian-algorithm]] — Hungarian Algorithm
+- [[icd-net]] — Icd-Net
+- [[image-segmentation]] — Image Segmentation
+- [[image-synthetic-fusion]] — Image-Synthetic fusion
+- [[image-transport]] — Image_Transport
+- [[imagenet]] — ImageNet
+- [[impedance-control]] — impedance control
+- [[inductive-sensing-concepts]] — inductive sensing concepts
+- [[infrared-imagery]] — Infrared Imagery
+- [[infrared-imaging]] — Infrared Imaging
+- [[input-output-feedback-linearization]] — Input-Output Feedback Linearization
+- [[ins]] — INS
+- [[integer-linear-program]] — integer linear program
+- [[integrated-fault-estimation-and-accommodation-scheme]] — integrated fault estimation and accommodation scheme
+- [[jadc2]] — JADC2
+- [[jax]] — JAX
+- [[k-csm]] — K-Csm
+- [[k-means]] — K-Means
+- [[k-uam]] — K-Uam
+- [[kci]] — KCI
+- [[kilted]] — Kilted
+- [[knn]] — Knn
+- [[ko-058fc9b03e]] — 영상수집
+- [[ko-0792cbc512]] — K-드론
+- [[ko-0a053ccb58]] — 전기 추진 시스템
+- [[ko-0b495d3e2c]] — 자동화 데이터 서비스
+- [[ko-0dcbe831bd]] — 다항 선형 회귀 분석
+- [[ko-11b3cd4711]] — 구역판단
+- [[ko-137df5871c]] — 군용 드론
+- [[ko-141516c604]] — 6-Dof 다중 시뮬레이션
+- [[ko-1a84da3942]] — 로지스틱 분류 알고리즘
+- [[ko-21939ef34f]] — 자율비행기술
+- [[ko-257555812a]] — 가상 디코이 군집 형성 기만 시스템
+- [[ko-26378db943]] — 단일 방공체계
+- [[ko-2c26b977a0]] — 도플러 스펙트럼
+- [[ko-2c8198a660]] — 로지스틱 지시함수
+- [[ko-2d7ce0517e]] — 음향신호처리
+- [[ko-2fbc77e9d2]] — 지리 좌표 기반 드론 유도
+- [[ko-3d5ec13529]] — 통신 보안
+- [[ko-434a67abed]] — 피코(PICo) 분석 모델
+- [[ko-4a8b8ee5d0]] — Spad 측정법
+- [[ko-4bf683412e]] — 자동 착륙
+- [[ko-4ce9c19fea]] — Clara 기법
+- [[ko-4f0acb8c46]] — IR 영상 분석
+- [[ko-5091ba91ba]] — 자율주행
+- [[ko-54c08a2ec3]] — 군집(Swarm) 드론
+- [[ko-58b3c465db]] — 통제권 변경
+- [[ko-5d2b3e9fce]] — 다분광 영상
+- [[ko-613a95b8d2]] — 음원위치추정
+- [[ko-632592e7ba]] — 영상 기반 드론 제어
+- [[ko-634af241e9]] — 마이크로폰배열
+- [[ko-651b7e5078]] — 임무 재계획
+- [[ko-654e818688]] — 물류 시스템
+- [[ko-6a01e0c532]] — 지리적 위치 추정
+- [[ko-6f90d508ec]] — 공유대드론기능
+- [[ko-74fdffe4b8]] — 파레토분석
+- [[ko-7babea6013]] — 가상 디코이 드론 군집
+- [[ko-7c49c70ac6]] — 교전영역 산출 알고리즘
+- [[ko-7d730f4117]] — Ols 회귀분석
+- [[ko-7e2db31631]] — 지오빅데이터 오픈플랫폼
+- [[ko-859cba8e63]] — 머신러닝
+- [[ko-88c513c387]] — 자동 이륙
+- [[ko-8b3445e390]] — EO 영상 분석
+- [[ko-8c5095c933]] — 안티드론 기술
+- [[ko-925e2dd17e]] — 재난대응드론기술
+- [[ko-9308ba250b]] — 가우스과정 회귀
+- [[ko-93ed48f5b8]] — 드론 배송 시스템
+- [[ko-9bbc50b8f3]] — 강건 센서 융합
+- [[ko-aa2d067974]] — 하드킬
+- [[ko-aee4f104f9]] — Holm 보정
+- [[ko-b471f5b47f]] — 지질자원주제도 2D/3D 가시화 서비스
+- [[ko-b4a040fd8c]] — 2단계 자율 비행
+- [[ko-b5c1084fa3]] — 플러그 앤 플레이
+- [[ko-ba4971de43]] — 중첩 탐지 및 식별 시스템
+- [[ko-badf3ee54f]] — 공분산 교차 기법
+- [[ko-bd2591be4b]] — 민간 드론
+- [[ko-c506cd8165]] — 지휘통제체계
+- [[ko-ce75850ca6]] — 부트스트랩 분석
+- [[ko-d62502dc19]] — 방공체계
+- [[ko-dac37ee148]] — 멀티플랫폼 드론
+- [[ko-db1a92ba83]] — 드론기술
+- [[ko-e3d301036d]] — 다층 방공체계
+- [[ko-e8513f96bf]] — 정사영상 정합
+- [[ko-f39d9ce772]] — 등가회로모델(ECM)
+- [[ko-f97a63376d]] — 컴퓨터비전
+- [[ko-f9ffca2140]] — 딥러닝
+- [[ko-fc381fac58]] — Monte Carlo 시뮬레이션
+- [[lcaat]] — LCAAT
+- [[least-squares-optimization]] — least squares optimization
+- [[line-segment-voronoi-diagram]] — line segment Voronoi diagram
+- [[listener]] — Listener
+- [[local-spatial-enhancement-module]] — Local Spatial Enhancement Module
+- [[low-altitude-ad-hoc-networks]] — Low-Altitude Ad Hoc Networks
+- [[lpips]] — LPIPS
+- [[lua]] — Lua
+- [[macos]] — Macos
+- [[marl]] — Marl
+- [[matrix-completion]] — matrix completion
+- [[mavexplorer]] — Mavexplorer
+- [[mavlink-router]] — Mavlink Router
+- [[mavproxy]] — Mavproxy
+- [[mavutil-mavlink-connection]] — Mavutil.Mavlink_Connection
+- [[mc-assisted-gpr-framework]] — MC-assisted GPR framework
+- [[mc-att-control]] — Mc_Att_Control
+- [[mc-pos-control]] — Mc_Pos_Control
+- [[mdfnet]] — MDFNet
+- [[median-frequency-feature-fusion]] — Median-Frequency Feature Fusion
+- [[meijer-g-function]] — Meijer G-function
+- [[metadata-guided-mot-mg-mot]] — Metadata Guided MOT (MG-MOT)
+- [[metaheuristic]] — Metaheuristic
+- [[metaheuristic-optimization-algorithm]] — metaheuristic optimization algorithm
+- [[mfff-module]] — Mfff Module
+- [[micro-neural-policies-mnp]] — Micro Neural Policies (MNP)
+- [[micro-ros]] — Micro-Ros
+- [[micro-ros-agent]] — Micro_Ros_Agent
+- [[millimeter-wave]] — millimeter-wave
+- [[millimeter-wave-mmwave]] — millimeter wave (mmWave)
+- [[minimal-xml]] — Minimal.Xml
+- [[minimax-controller]] — minimax controller
+- [[mixer]] — Mixer
+- [[model-verification]] — Model Verification
+- [[modeutil]] — Modeutil
+- [[montecarloanalysis]] — MonteCarloAnalysis
+- [[motion-capture]] — Motion Capture
+- [[msffpn]] — Msffpn
+- [[multi-objective-evolutionary-algorithm]] — Multi-Objective Evolutionary Algorithm
+- [[multi-target-tracking]] — Multi-Target Tracking
+- [[multichannel-wiener-filter-mwf]] — multichannel Wiener filter (MWF)
+- [[multimodal-detection]] — Multimodal Detection
+- [[multispectral-imaging]] — Multispectral Imaging
+- [[nav2]] — Nav2
+- [[ndjson]] — NDJSON
+- [[ndvi-rededge]] — NDVI rededge
+- [[near-thz]] — near THz
+- [[network-slicing]] — network slicing
+- [[neural-network-observer]] — neural-network observer
+- [[neural-network-predictors]] — neural network predictors
+- [[non-linear-model]] — Non-linear Model
+- [[non-orthogonal-multiple-access-noma]] — non-orthogonal multiple access (NOMA)
+- [[non-robust-controller]] — non-robust controller
+- [[nps]] — Nps
+- [[ns-3]] — ns-3
+- [[nwd-loss]] — Nwd Loss
+- [[oafa]] — Oafa
+- [[observer-based-control]] — Observer-Based Control
+- [[occ]] — OCC
+- [[ofdm]] — OFDM
+- [[off-grid-refinement]] — Off-Grid Refinement
+- [[offboard-control-cpp]] — Offboard_Control.Cpp
+- [[offset-prediction]] — Offset Prediction
+- [[ollama]] — Ollama
+- [[openstreetmap]] — OpenStreetMap
+- [[openvsp]] — Openvsp
+- [[optical-encoders]] — optical encoders
+- [[optical-imagery]] — optical imagery
+- [[optimal-assignment-policies]] — optimal assignment policies
+- [[optimization-control]] — optimization control
+- [[orb-advertise-multi]] — Orb_Advertise_Multi
+- [[orb-id]] — Orb_Id
+- [[orb-queue-length]] — Orb_Queue_Length
+- [[ordinary-kriging]] — ordinary Kriging
+- [[osa]] — Osa
+- [[padf-module]] — Padf Module
+- [[paf-cfa]] — Paf/Cfa
+- [[pansharpening]] — pansharpening
+- [[particle-swarm-optimization]] — Particle Swarm Optimization
+- [[pd-controller]] — PD controller
+- [[per-triangle-dipole-approximation]] — per-triangle dipole approximation
+- [[periodogram]] — periodogram
+- [[pesq]] — PESQ
+- [[point-cloud]] — Point Cloud
+- [[point-to-mesh-distance-filtering]] — point-to-mesh distance filtering
+- [[power-law-vertical-wind-profiles]] — power-law vertical wind profiles
+- [[power-supply-systems]] — Power Supply Systems
+- [[ppo]] — Ppo
+- [[prbs]] — PRBS
+- [[prearm]] — PreArm
+- [[prediction-smoothing-projection]] — Prediction-Smoothing-Projection
+- [[processor-in-the-loop]] — processor-in-the-loop
+- [[psnr]] — PSNR
+- [[pso]] — PSO
+- [[pypofacets]] — Pypofacets
+- [[quadrature-signals]] — quadrature signals
+- [[quantum-adiabatic-algorithm]] — Quantum Adiabatic Algorithm
+- [[quantum-magnetometry]] — quantum magnetometry
+- [[queueing-network]] — Queueing Network
+- [[qurt]] — Qurt
+- [[rabbit]] — Rabbit
+- [[radiodynamics]] — Radiodynamics
+- [[real-time-information-sharing]] — Real-time Information Sharing
+- [[real-world-vehicle-mobility-traces]] — real-world vehicle mobility traces
+- [[reference-controller]] — reference controller
+- [[regularization-techniques]] — regularization techniques
+- [[resnet-50]] — ResNet-50
+- [[resolvers]] — resolvers
+- [[ris]] — Ris
+- [[robust-controller]] — robust controller
+- [[ros]] — Ros
+- [[rotation-delay-aware-communication-model]] — rotation-delay-aware communication model
+- [[rrt]] — RRT*
+- [[rssi]] — RSSI
+- [[rule-based-verification-framework]] — rule-based verification framework
+- [[runtime-monitoring]] — Runtime Monitoring
+- [[rwm]] — RWM
+- [[satellite-communications]] — Satellite Communications
+- [[secrecy-capacity]] — Secrecy Capacity
+- [[sel4]] — Sel4
+- [[selection-combining]] — Selection Combining
+- [[self-correction]] — Self-Correction
+- [[si-sdr]] — SI-SDR
+- [[signal-processing]] — Signal Processing
+- [[signmark-guided-navigation]] — Signmark-Guided Navigation
+- [[simple-kriging]] — simple Kriging
+- [[simplified-model]] — simplified model
+- [[single-shadowing]] — Single-Shadowing
+- [[sliding-window-self-attention]] — Sliding Window Self-Attention
+- [[software-isolation]] — Software Isolation
+- [[spatial-attention]] — Spatial Attention
+- [[spatial-channel-dual-attention]] — Spatial-Channel Dual Attention
+- [[speck-ctr]] — Speck-Ctr
+- [[speech-activity-detection]] — speech activity detection
+- [[speech-enhancement]] — speech enhancement
+- [[speech-presence-probability-spp]] — speech presence probability (SPP)
+- [[sppf]] — Sppf
+- [[sqlite]] — SQLite
+- [[srr]] — SRR
+- [[stability-verification]] — Stability Verification
+- [[stacca]] — Stacca
+- [[standard-xml]] — Standard.Xml
+- [[statistical-model-checking-smc]] — Statistical Model Checking (SMC)
+- [[stochastic-dynamic-programming]] — stochastic dynamic programming
+- [[stochastic-gaussian-policy]] — Stochastic Gaussian Policy
+- [[stochastic-goal-recurrence]] — stochastic goal recurrence
+- [[stoi]] — STOI
+- [[stp]] — Stp
+- [[strictly-positive-secrecy-capacity]] — Strictly Positive Secrecy Capacity
+- [[successive-convex-approximation]] — Successive Convex Approximation
+- [[successive-interference-cancellation]] — Successive Interference Cancellation
+- [[swarm-intelligence]] — Swarm Intelligence
+- [[swarm-manager]] — Swarm Manager
+- [[swarm-ops-gcs]] — Swarm Ops Gcs
+- [[tdoa]] — TDOA
+- [[terahertz-thz]] — terahertz (THz)
+- [[textbook-model-of-blcd-dynamics]] — textbook model of BLCD dynamics
+- [[tf2]] — Tf2
+- [[thermal-imaging]] — Thermal imaging
+- [[thermal-lwir]] — Thermal Lwir
+- [[thermal-mapping]] — Thermal Mapping
+- [[time-series]] — Time Series
+- [[time-slot-scheduling]] — Time-Slot Scheduling
+- [[torque-current-controller]] — torque/current controller
+- [[tpi]] — Tpi
+- [[track-selection-scheme-tss]] — Track Selection Scheme (TSS)
+- [[trajectory-generation]] — Trajectory Generation
+- [[trans-gaussian-kriging]] — trans-Gaussian Kriging
+- [[transfer-learning]] — transfer learning
+- [[turtle-mode]] — Turtle mode
+- [[two-sample-t-test]] — Two Sample T-Test
+- [[two-stage-detector]] — Two-Stage Detector
+- [[two-stage-robust-optimization]] — two-stage robust optimization
+- [[uam]] — UAM
+- [[uatg]] — Uatg
+- [[uda]] — Uda
+- [[ugv]] — Ugv
+- [[unified-assignment-and-trajectory-generation]] — Unified Assignment And Trajectory Generation
+- [[uniia-det]] — UniIA-DET
+- [[unreal-engine]] — Unreal Engine
+- [[variable-feedback-controller]] — Variable Feedback Controller
+- [[vehicle-dynamics]] — vehicle dynamics
+- [[vfst]] — Vfst
+- [[video-based-reconstruction]] — Video-based Reconstruction
+- [[visible-imaging]] — Visible Imaging
+- [[visible-light-communication]] — visible light communication
+- [[visible-spectrum-imaging]] — Visible spectrum imaging
+- [[vision-transformer]] — Vision Transformer
+- [[visual-servoing-control]] — Visual Servoing Control
+- [[vlm]] — Vlm
+- [[vlms]] — Vlms
+- [[vln]] — Vln
+- [[vnir]] — Vnir
+- [[vspaero]] — Vspaero
+- [[wav2vec2]] — Wav2Vec2
+- [[weighted-random-generator]] — Weighted Random Generator
+- [[wind-turbine-inspection-platform]] — Wind turbine inspection platform
+- [[wtconv]] — Wtconv
+- [[xtech]] — Xtech
+- [[z-axis-alignment]] — Z-axis alignment
+
+## 관련 허브
+
+- [[auto-hub-concept]]
+- [[auto-hub-hardware]]
+- [[auto-hub-mission]]
+- [[auto-hub-organization]]
+- [[auto-hub-person]]
+- [[auto-hub-protocol]]
+- [[auto-hub-regulation]]
+- [[auto-hub-source-articles]]
+- [[auto-hub-source-papers]]
+- [[auto-hub-source-youtube]]

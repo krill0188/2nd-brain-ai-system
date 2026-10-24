@@ -1,0 +1,233 @@
+---
+title: "자동 승격 허브: 출처-articles"
+created: 2026-10-24
+updated: 2026-10-24
+type: concept
+tags: [auto-hub, unreviewed]
+sources: [".ua/discovery-knowledge-graph.json"]
+confidence: low
+contested: false
+contradictions: []
+---
+
+# 자동 승격 허브: 출처-articles
+
+## 정의
+
+discovery 그래프에서 자동 추출·일괄 승격된 항목을 출처 유형별로 모아 둔 목록이다. 항목 내용은 사람이 검토하지 않았다.
+
+## 항목
+
+- [[3d-modeling]] — 3D Modeling
+- [[4k-hdr]] — 4K HDR
+- [[accelerometer]] — Accelerometer
+- [[accelerometers]] — Accelerometers
+- [[alatau]] — Alatau
+- [[altitude-control]] — Altitude Control
+- [[antennatracker]] — Antennatracker
+- [[ap-ahrs]] — Ap_Ahrs
+- [[ap-motors]] — Ap_Motors
+- [[arduplane]] — Arduplane
+- [[ardurover]] — Ardurover
+- [[ardusub]] — Ardusub
+- [[ark]] — Ark
+- [[attitude-target]] — Attitude_Target
+- [[autoflight]] — AutoFlight
+- [[autopilot1]] — Autopilot1
+- [[battery-bar]] — Battery bar
+- [[battery-monitor]] — Battery Monitor
+- [[blimp]] — Blimp
+- [[bmp388]] — Bmp388
+- [[bsd]] — Bsd
+- [[bsd-3-clause]] — Bsd 3-Clause
+- [[c-rtk-9ps]] — C-Rtk 9Ps
+- [[can]] — Can
+- [[can-bus]] — Can Bus
+- [[chirp-signal-generator]] — Chirp signal generator
+- [[chris-anderson]] — Chris Anderson
+- [[civil-aviation-authority]] — Civil Aviation Authority
+- [[cmakelists-txt]] — Cmakelists.Txt
+- [[colcon]] — Colcon
+- [[com-arm-ekf]] — Com_Arm_Ekf
+- [[command-ack]] — Command_Ack
+- [[command-long]] — Command_Long
+- [[conditional-approval]] — Conditional Approval
+- [[config-mavlink-dialect]] — Config_Mavlink_Dialect
+- [[crashflip-mode]] — Crashflip mode
+- [[cube-orange]] — Cube Orange
+- [[cubepilot]] — Cubepilot
+- [[cylindrical-cell-battery]] — Cylindrical-cell battery
+- [[dataflash]] — Dataflash
+- [[debug-task-mode]] — DEBUG_TASK mode
+- [[decision-no-60]] — Decision No. 60
+- [[development-xml]] — Development.Xml
+- [[device-drivers]] — Device Drivers
+- [[digital-european-sky]] — Digital European Sky
+- [[ekf]] — Ekf
+- [[electronic-conspicuity]] — Electronic Conspicuity
+- [[eligibility-provisions]] — Eligibility provisions
+- [[enu]] — Enu
+- [[eprosima]] — Eprosima
+- [[ethernet]] — Ethernet
+- [[executive-order]] — Executive Order
+- [[fifa-world-cup]] — FIFA World Cup
+- [[fifo-scheduling]] — Fifo Scheduling
+- [[file-transfer-protocol]] — File Transfer Protocol
+- [[flu]] — Flu
+- [[follow-leader]] — Follow-Leader
+- [[formation-flight]] — Formation Flight
+- [[fp16]] — FP16
+- [[frd]] — Frd
+- [[games-of-the-future-2026]] — Games of the Future 2026
+- [[gcs]] — Gcs
+- [[gcs-dev]] — Gcs_Dev
+- [[geofence]] — Geofence
+- [[gimbals]] — Gimbals
+- [[github-actions]] — GitHub Actions
+- [[glenn-jocher]] — glenn-jocher
+- [[global-position-int]] — Global_Position_Int
+- [[google-drive]] — Google Drive
+- [[gopro]] — GoPro
+- [[gopro-hero-13-black]] — GoPro Hero 13 Black
+- [[gplv3]] — Gplv3
+- [[h-rtk-f9p]] — H-Rtk F9P
+- [[heartbeat]] — Heartbeat
+- [[home-position]] — Home_Position
+- [[humble]] — Humble
+- [[i2c]] — I2C
+- [[icm-20689]] — Icm-20689
+- [[icm-42688-p]] — Icm-42688-P
+- [[image-transport]] — Image_Transport
+- [[innovate-uk]] — Innovate UK
+- [[insta360-go-3s]] — Insta360 Go 3S
+- [[ist8310]] — Ist8310
+- [[jetson-nano]] — Jetson Nano
+- [[kilted]] — Kilted
+- [[ko-5457802a04]] — Q650-V1 자율주행 드론 키트
+- [[ko-7eb257f3ae]] — 인텔 Realsense T265 VIO 트래킹 카메라
+- [[ko-881afae0a3]] — D435i 심도 카메라
+- [[ko-c2d60c3487]] — 쿼드(QUAD) 드론연구소
+- [[listener]] — Listener
+- [[local-position-ned]] — Local_Position_Ned
+- [[loggerhead-ventures]] — Loggerhead Ventures
+- [[lorenz-meier]] — Lorenz Meier
+- [[lte-link]] — Lte Link
+- [[lua]] — Lua
+- [[m9n]] — M9N
+- [[macos]] — Macos
+- [[manual]] — Manual
+- [[mavexplorer]] — Mavexplorer
+- [[mavlink-1-0]] — Mavlink 1.0
+- [[mavlink-router]] — Mavlink Router
+- [[mavlink-standard-modes-protocol]] — Mavlink Standard Modes Protocol
+- [[mavproxy]] — Mavproxy
+- [[mavutil-mavlink-connection]] — Mavutil.Mavlink_Connection
+- [[mc-att-control]] — Mc_Att_Control
+- [[mc-pos-control]] — Mc_Pos_Control
+- [[message-version]] — Message_Version
+- [[micro-ros]] — Micro-Ros
+- [[micro-ros-agent]] — Micro_Ros_Agent
+- [[minimal-xml]] — Minimal.Xml
+- [[mission-ack]] — Mission_Ack
+- [[mission-count]] — Mission_Count
+- [[mission-item-int]] — Mission_Item_Int
+- [[mission-protocol]] — Mission Protocol
+- [[mixer]] — Mixer
+- [[mixers]] — Mixers
+- [[modeutil]] — Modeutil
+- [[mpc-xy-vel-max]] — Mpc_Xy_Vel_Max
+- [[mro-technology]] — Mro Technology
+- [[ms5611]] — Ms5611
+- [[multicopter]] — Multicopter
+- [[nav2]] — Nav2
+- [[ndjson]] — NDJSON
+- [[ned]] — Ned
+- [[neo-3x]] — Neo 3X
+- [[offboard-control-cpp]] — Offboard_Control.Cpp
+- [[offboardcontrolmode]] — Offboardcontrolmode
+- [[one-planet-capital]] — One Planet Capital
+- [[orb-advertise-multi]] — Orb_Advertise_Multi
+- [[orb-id]] — Orb_Id
+- [[orb-queue-length]] — Orb_Queue_Length
+- [[orqa]] — Orqa
+- [[oscar-liang]] — Oscar Liang
+- [[parachute-systems]] — Parachute Systems
+- [[param-request-list]] — Param_Request_List
+- [[param-value]] — Param_Value
+- [[parameter-protocol]] — Parameter Protocol
+- [[position-estimation]] — Position Estimation
+- [[position-target-global-int]] — Position_Target_Global_Int
+- [[position-target-local-ned]] — Position_Target_Local_Ned
+- [[power-distribution-modules]] — Power Distribution Modules
+- [[power-management-board]] — Power Management Board
+- [[prbs]] — PRBS
+- [[prearm]] — PreArm
+- [[q250-v3-opti]] — Q250-V3 Opti
+- [[q500-v2]] — Q500-V2
+- [[q950]] — Q950
+- [[qurt]] — Qurt
+- [[raccoonlab]] — Raccoonlab
+- [[rangefinder]] — Rangefinder
+- [[rangefinders]] — Rangefinders
+- [[raspberry-pi]] — Raspberry Pi
+- [[raspberry-pi-5]] — Raspberry Pi 5
+- [[return-to-launch]] — Return To Launch
+- [[rm3100]] — Rm3100
+- [[ros]] — Ros
+- [[rover]] — Rover
+- [[rssi]] — RSSI
+- [[rtl-swarm]] — Rtl Swarm
+- [[satellite-communications]] — Satellite Communications
+- [[sd-card]] — Sd Card
+- [[sesar-ju]] — SESAR JU
+- [[settlement-procedures]] — Settlement procedures
+- [[sik]] — Sik
+- [[sik-v3]] — Sik V3
+- [[smart-battery-systems]] — Smart Battery Systems
+- [[spi]] — Spi
+- [[stabilized]] — Stabilized
+- [[standard-xml]] — Standard.Xml
+- [[statustext]] — Statustext
+- [[stm32f427]] — Stm32F427
+- [[stm32f765]] — Stm32F765
+- [[stm32h757]] — Stm32H757
+- [[sub]] — Sub
+- [[swarm-ops-gcs]] — Swarm Ops Gcs
+- [[sys-autostart]] — Sys_Autostart
+- [[sys-status]] — Sys_Status
+- [[system-control]] — System_Control
+- [[tachometers]] — Tachometers
+- [[telemetry-radio]] — Telemetry Radio
+- [[telemetry-radios]] — Telemetry Radios
+- [[tf2]] — Tf2
+- [[thermal-mapping]] — Thermal Mapping
+- [[topdown-viewfinder]] — Topdown Viewfinder
+- [[traffic-avoidance-equipment]] — Traffic Avoidance Equipment
+- [[trajectorysetpoint]] — Trajectorysetpoint
+- [[turtle-mode]] — Turtle mode
+- [[u-blox-zed-f9p]] — U-Blox Zed-F9P
+- [[ubuntu-20-04]] — Ubuntu 20.04
+- [[ubuntu-22-04]] — Ubuntu 22.04
+- [[unifly]] — Unifly
+- [[vehiclecommand]] — Vehiclecommand
+- [[vehiclecommandack]] — Vehiclecommandack
+- [[velocity-limits]] — Velocity_Limits
+- [[vfr-hud]] — Vfr_Hud
+- [[video-based-reconstruction]] — Video-based Reconstruction
+- [[violations]] — Violations
+- [[wind-turbine-inspection-platform]] — Wind turbine inspection platform
+- [[y-t-g]] — Y-T-G
+- [[zubax]] — Zubax
+
+## 관련 허브
+
+- [[auto-hub-concept]]
+- [[auto-hub-hardware]]
+- [[auto-hub-mission]]
+- [[auto-hub-organization]]
+- [[auto-hub-person]]
+- [[auto-hub-protocol]]
+- [[auto-hub-regulation]]
+- [[auto-hub-source-papers]]
+- [[auto-hub-source-youtube]]
+- [[auto-hub-technology]]

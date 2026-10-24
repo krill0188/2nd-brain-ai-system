@@ -1,0 +1,26 @@
+---
+title: "K-Uam"
+created: 2026-10-24
+updated: 2026-10-24
+type: concept
+tags: [auto-promoted, unreviewed]
+sources: ["raw/papers/_unclassified/경남-지역의-물류-취약성-문제-해결을-위한-k-드론-기반-섬-배송-실증-연구.md"]
+confidence: low
+contested: false
+contradictions: []
+---
+
+# K-Uam
+
+## 정의
+
+원문에서 자동 추출된 기술 항목이며 사람이 내용을 검토하지 않았다. 정의와 수치는 재확인 필요.
+
+## 출처
+
+- raw/papers/_unclassified/경남-지역의-물류-취약성-문제-해결을-위한-k-드론-기반-섬-배송-실증-연구.md
+
+## 분류
+
+- [[auto-hub-technology]] — 자동 추출 분류: 기술
+- [[auto-hub-source-papers]] — 출처 유형: 논문

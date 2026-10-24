@@ -1,0 +1,31 @@
+---
+title: "디지털 소비환경 신뢰"
+created: 2026-10-24
+updated: 2026-10-24
+type: concept
+tags: [auto-promoted, unreviewed]
+sources: ["raw/papers/_unclassified/디지털-소비환경-신뢰와-드론-배송-이용의도---조건부-안전성-인식의-역할과-안전-거버넌스-함의--.md"]
+confidence: low
+contested: false
+contradictions: []
+---
+
+# 디지털 소비환경 신뢰
+
+## 정의
+
+원문에서 자동 추출된 개념 항목이며 사람이 내용을 검토하지 않았다. 정의와 수치는 재확인 필요.
+
+## 출처
+
+- raw/papers/_unclassified/디지털-소비환경-신뢰와-드론-배송-이용의도---조건부-안전성-인식의-역할과-안전-거버넌스-함의--.md
+
+## 분류
+
+- [[auto-hub-concept]] — 자동 추출 분류: 개념
+- [[auto-hub-source-papers]] — 출처 유형: 논문
+
+## 관련
+
+- [[paf-cfa]] — Paf/Cfa (MEASURES)
+- [[ko-deb43b1fb9]] — 한국 소비생활지표 (GOVERNS)

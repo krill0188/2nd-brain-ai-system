@@ -1,0 +1,26 @@
+---
+title: "Cretaceous Gyeongsang Basin"
+created: 2026-10-24
+updated: 2026-10-24
+type: concept
+tags: [auto-promoted, unreviewed]
+sources: ["raw/papers/_unclassified/드론-광학영상-기반-남한-지질-노두-3d-메시-모델-데이터셋-구축-현황-지오빅데이터-오픈플랫폼-지질자원주제도-2d3d-가시화-서비스.md"]
+confidence: low
+contested: false
+contradictions: []
+---
+
+# Cretaceous Gyeongsang Basin
+
+## 정의
+
+원문에서 자동 추출된 개념 항목이며 사람이 내용을 검토하지 않았다. 정의와 수치는 재확인 필요.
+
+## 출처
+
+- raw/papers/_unclassified/드론-광학영상-기반-남한-지질-노두-3d-메시-모델-데이터셋-구축-현황-지오빅데이터-오픈플랫폼-지질자원주제도-2d3d-가시화-서비스.md
+
+## 분류
+
+- [[auto-hub-concept]] — 자동 추출 분류: 개념
+- [[auto-hub-source-papers]] — 출처 유형: 논문

@@ -1,0 +1,443 @@
+---
+title: "자동 승격 허브: concept"
+created: 2026-10-24
+updated: 2026-10-24
+type: concept
+tags: [auto-hub, unreviewed]
+sources: [".ua/discovery-knowledge-graph.json"]
+confidence: low
+contested: false
+contradictions: []
+---
+
+# 자동 승격 허브: concept
+
+## 정의
+
+discovery 그래프에서 자동 추출·일괄 승격된 항목을 분류별로 모아 둔 목록이다. 항목 내용은 사람이 검토하지 않았다.
+
+## 항목
+
+- [[3d-coverage-radius]] — 3D coverage radius
+- [[3d-environment-model]] — 3D Environment Model
+- [[3d-exploration]] — 3D Exploration
+- [[4k-hdr]] — 4K HDR
+- [[6-dof-flight-trajectories]] — 6-DoF flight trajectories
+- [[acquisition-date]] — Acquisition Date
+- [[actoroptimization]] — ActorOptimization
+- [[ad-hoc-network]] — Ad Hoc Network
+- [[advection-diffusion-dynamics]] — advection-diffusion dynamics
+- [[aero-stealth-design]] — Aero-Stealth Design
+- [[altitude-control]] — Altitude Control
+- [[antennatracker]] — Antennatracker
+- [[atmospheric-boundary-layer]] — atmospheric boundary layer
+- [[autonomous-collaboration]] — Autonomous Collaboration
+- [[autonomous-decision-making]] — Autonomous Decision-Making
+- [[autonomous-flight]] — Autonomous Flight
+- [[autonomous-ground-vehicles-agvs]] — Autonomous Ground Vehicles (AGVs)
+- [[autonomous-vehicle-av]] — Autonomous Vehicle (AV)
+- [[bayesian-analysis]] — Bayesian Analysis
+- [[bayesian-residual]] — Bayesian Residual
+- [[beyond-visual-line-of-sight]] — Beyond Visual Line Of Sight
+- [[blimp]] — Blimp
+- [[body-and-soul]] — Body And Soul
+- [[body-caudal-fin-bcf-locomotion-pattern]] — Body-Caudal Fin (BCF) locomotion pattern
+- [[centralized-control]] — Centralized Control
+- [[chaos]] — Chaos
+- [[classicalcontrol]] — ClassicalControl
+- [[classicalplanning]] — ClassicalPlanning
+- [[collaborative-reasoning]] — collaborative reasoning
+- [[collision-risk-assessment]] — Collision Risk Assessment
+- [[com-arm-ekf]] — Com_Arm_Ekf
+- [[command-and-control]] — Command-And-Control
+- [[computation-efficiency]] — computation efficiency
+- [[congestion-awareness]] — Congestion Awareness
+- [[congestion-index]] — Congestion Index
+- [[contact-resolution]] — contact-resolution
+- [[contour]] — Contour
+- [[control-affine-systems]] — Control-Affine Systems
+- [[control-characteristics]] — Control Characteristics
+- [[control-commands]] — control commands
+- [[convex-hull]] — Convex Hull
+- [[convex-quadratic-program]] — Convex Quadratic Program
+- [[cooperative-behaviours]] — Cooperative Behaviours
+- [[cost-effectiveness]] — cost-effectiveness
+- [[covariance-prediction]] — Covariance Prediction
+- [[cretaceous-gyeongsang-basin]] — Cretaceous Gyeongsang Basin
+- [[criticdrivenpathway]] — CriticDrivenPathway
+- [[csi]] — Csi
+- [[csi-feedback-delay]] — CSI feedback delay
+- [[ct-k]] — Ct-K
+- [[data-efficiency]] — Data Efficiency
+- [[data-governance]] — Data Governance
+- [[decentralised-decision-making]] — Decentralised Decision-Making
+- [[decentralized-execution]] — Decentralized Execution
+- [[decentralized-planning]] — Decentralized Planning
+- [[defense-evasion]] — Defense Evasion
+- [[detect-decide-engage-loops]] — Detect-Decide-Engage Loops
+- [[detection-performance]] — Detection Performance
+- [[detection-speed]] — detection speed
+- [[device-drivers]] — Device Drivers
+- [[differentiablemotionrewards]] — DifferentiableMotionRewards
+- [[differentiablerl]] — DifferentiableRL
+- [[differential-game-theory]] — Differential Game Theory
+- [[digital-european-sky]] — Digital European Sky
+- [[distributed-production]] — Distributed Production
+- [[dnbr]] — Dnbr
+- [[doppler-estimation]] — Doppler Estimation
+- [[doppler-shift]] — Doppler Shift
+- [[double-nakagami-m-fading]] — Double_Nakagami_m_fading
+- [[dual-concealment-reward]] — Dual-concealment reward
+- [[dual-use]] — Dual-Use
+- [[dynamic-fleet-sizing]] — Dynamic Fleet Sizing
+- [[dynamic-reconfiguration]] — Dynamic Reconfiguration
+- [[early-detection]] — early detection
+- [[eavesdropper-jamming]] — Eavesdropper Jamming
+- [[edge-load]] — edge load
+- [[ego-noise-reference-signals]] — ego-noise reference signals
+- [[ekf]] — Ekf
+- [[electromagnetic-scattering-analysis]] — Electromagnetic Scattering Analysis
+- [[eligibility-provisions]] — Eligibility provisions
+- [[embodied-navigation]] — embodied navigation
+- [[energy-consumption]] — energy consumption
+- [[energy-efficiency-optimization]] — Energy Efficiency Optimization
+- [[engagement-area-utilization]] — Engagement Area Utilization
+- [[engagement-decision]] — Engagement Decision
+- [[engagement-range]] — Engagement Range
+- [[enu]] — Enu
+- [[evidence-strength]] — Evidence Strength
+- [[f-2-8]] — f/2.8
+- [[f1-score]] — F1-score
+- [[fcpm]] — Fcpm
+- [[fire-boundary-tracking]] — Fire-Boundary Tracking
+- [[flight-trajectory]] — Flight trajectory
+- [[flu]] — Flu
+- [[flying-ad-hoc-networks]] — Flying Ad-Hoc Networks
+- [[follow-leader]] — Follow-Leader
+- [[format-level-errors]] — Format-level errors
+- [[formation-control]] — Formation Control
+- [[formation-flight]] — Formation Flight
+- [[frd]] — Frd
+- [[frozen-rank-consensus]] — Frozen Rank Consensus
+- [[fuji-apple]] — 'Fuji' apple
+- [[functional-hazard-assessment]] — Functional Hazard Assessment
+- [[future-states]] — future states
+- [[geospatial-data]] — Geospatial Data
+- [[giant-steps]] — Giant Steps
+- [[gris]] — GRIS
+- [[ground-truth]] — Ground Truth
+- [[guided-mode]] — Guided Mode
+- [[gyeongsang-basin]] — Gyeongsang Basin
+- [[gyeongsang-supergroup]] — Gyeongsang Supergroup
+- [[hallasan]] — Hallasan
+- [[haman-formation]] — Haman Formation
+- [[health-vectors]] — Health Vectors
+- [[heterogeneous-specifications]] — Heterogeneous Specifications
+- [[heterogeneous-traffic]] — Heterogeneous Traffic
+- [[hidden-launch]] — Hidden Launch
+- [[high-level-task-rules]] — high-level task rules
+- [[humanitarian-logistics]] — Humanitarian Logistics
+- [[hybrid-maneuver-modes]] — Hybrid Maneuver Modes
+- [[i2s]] — I2S
+- [[identification-distance]] — Identification Distance
+- [[identification-performance]] — Identification Performance
+- [[idf1]] — IDF1
+- [[ignitions]] — ignitions
+- [[india]] — India
+- [[indian-classical-music]] — Indian Classical Music
+- [[infrared-modality]] — Infrared Modality
+- [[infrastructure-network]] — Infrastructure Network
+- [[infrastructure-placement]] — infrastructure placement
+- [[insulator-fault-detection]] — Insulator Fault Detection
+- [[integer-quadratic-program]] — Integer Quadratic Program
+- [[intelligent-transportation-system-its]] — Intelligent Transportation System (ITS)
+- [[interaction-kernel]] — Interaction Kernel
+- [[interpretation-conditions]] — Interpretation Conditions
+- [[intersection-over-union-iou]] — intersection over union (IoU)
+- [[intuitive-physics]] — intuitive physics
+- [[ios]] — IOS
+- [[jamming-resistance]] — Jamming Resistance
+- [[jeju-island]] — Jeju Island
+- [[jindong-formation]] — Jindong Formation
+- [[ko-02f0d8edb5]] — 안전 거버넌스
+- [[ko-03c0d424ba]] — 기능분담
+- [[ko-06d99a2f0d]] — 45° 대각 왕복형(B)
+- [[ko-06e02bbdb2]] — 핵심성능지표
+- [[ko-09f1093b2a]] — 공동상황인식(Common Operational Picture)
+- [[ko-0a8aec316d]] — 객체 중심 궤도+연결형(C)
+- [[ko-0ac46e1ce4]] — 전자전
+- [[ko-0c9ddcdf1d]] — 작전운용성능
+- [[ko-0f5f6788a3]] — 0° 평행 왕복형(A)
+- [[ko-0ff64d94e5]] — 직교좌표계
+- [[ko-109043fa3b]] — 회색지대체계
+- [[ko-12fc997df3]] — 호버링
+- [[ko-14c70458e3]] — 사이버위협
+- [[ko-1658816ffe]] — 위치정보 오류
+- [[ko-21042470e0]] — 피해최소화
+- [[ko-2238881da8]] — 시스템 연동성
+- [[ko-2282bdaae4]] — 오경보율
+- [[ko-2331b6a635]] — 센서 네트워크
+- [[ko-242a335481]] — 중복 재방문
+- [[ko-25603b4375]] — 다중 무인기 데이터 수집 시스템
+- [[ko-2a50314739]] — 혹한기 운용 지속성
+- [[ko-2ab8404760]] — 회전 불변량
+- [[ko-30441bdc11]] — 기하학적관계
+- [[ko-33ce3f5e2d]] — 유무인복합체계
+- [[ko-34acf63f8c]] — 경로 생성 알고리즘
+- [[ko-364e7b77ea]] — 사이버전자전
+- [[ko-37a4b8f59d]] — 플랫폼수준방호
+- [[ko-38c0d64955]] — 통신 장애
+- [[ko-39e8957d10]] — 3차원 공중방호 통합 운용모델
+- [[ko-3be9b3c4bc]] — 엔트로피 계수
+- [[ko-3cf212ca5b]] — 인적재난
+- [[ko-4e4ee5a6fa]] — 취약도우선순위지수
+- [[ko-518876cb8e]] — 축방향 도달범위
+- [[ko-53161edeb8]] — 데이터 수집량
+- [[ko-5c12e5871a]] — 수요 가중 클러스터링
+- [[ko-5c6bc03a5b]] — 임무영향도
+- [[ko-676bc7a367]] — 방어 성능
+- [[ko-6845f0b334]] — 표적화용이성
+- [[ko-6a81e88972]] — 측선 간 레벨링 보정
+- [[ko-6c05e5f33f]] — 지면반사파
+- [[ko-6cdf33fe80]] — 비용 비대칭성
+- [[ko-6ea0aa04fc]] — 저고도 공역
+- [[ko-71623ecfe9]] — 탐욕 기반 경로 구성
+- [[ko-7235529eda]] — 직접파
+- [[ko-7249c59aca]] — 탐지확률
+- [[ko-72dd682cd7]] — 안성천 명당교
+- [[ko-7cf8845c3b]] — 신속 전개 능력
+- [[ko-7d8d442a66]] — 위협통합지표
+- [[ko-7e6c8f0aa7]] — 기술성과
+- [[ko-7f76112a59]] — 활성화에너지
+- [[ko-8385d60b22]] — 방호아키텍처
+- [[ko-839ebe74aa]] — 소프트킬 우선·하드킬 최종
+- [[ko-83b4e578ae]] — 이용률
+- [[ko-875a2c075c]] — 수평거리
+- [[ko-8b01066b86]] — 이동성 매개변수 Ω
+- [[ko-8ba823647a]] — 평형전위
+- [[ko-8bea35af65]] — 최소 충족 요건
+- [[ko-8f23fe151d]] — 3차원 공중방호지대
+- [[ko-8fd0845f8c]] — 공통 공간언어(Common Spatial Language)
+- [[ko-92e4968769]] — 조건부 안전성 인식
+- [[ko-93d5c888b4]] — 전력지원체계
+- [[ko-967862e776]] — 상용화
+- [[ko-9adbf5a25d]] — 데이터 신선도
+- [[ko-a0a25d44ec]] — 처리용량
+- [[ko-a3f3a87469]] — 드론봇 전투체계
+- [[ko-a86ed7a52e]] — 경제성
+- [[ko-ac716e2218]] — 여단급 운용개념
+- [[ko-ae03d566c0]] — 피해예방
+- [[ko-b2902e9e69]] — 비용-위험 균형
+- [[ko-b2a56b0d7b]] — 통합 방공망
+- [[ko-b45c76c280]] — 2차피해
+- [[ko-b4c4012b8e]] — 안전관리체계
+- [[ko-b556d429cf]] — 최적 전력 수준
+- [[ko-b6f3a6ebbc]] — 공역관리
+- [[ko-b7242199a1]] — 선형 오차
+- [[ko-c0ba818ef4]] — 항재밍
+- [[ko-c0efb5022c]] — 식생지수
+- [[ko-c158733887]] — 사회재난
+- [[ko-c166af42d3]] — 토석류
+- [[ko-c7a533fc3f]] — 점성자화
+- [[ko-cc87a4d191]] — 잔여위협
+- [[ko-cdfb2e8e87]] — 위험 기반 최소 전력 수준
+- [[ko-cf24d5268b]] — 전자전 취약성
+- [[ko-d2b7508eaf]] — 잔여취약도지수
+- [[ko-d3c95a0388]] — 계산 비용
+- [[ko-d4102a1a8d]] — 플랫폼 중심전
+- [[ko-d73722662f]] — 대량 생산성
+- [[ko-d79b257d1b]] — 방호자원배분
+- [[ko-da5cda4273]] — 데이터 보안성
+- [[ko-db228a8fc4]] — 위협 수준별 계층적 무력화 모델
+- [[ko-dc1dda157a]] — 원거리 탐지-식별-대응 다중 3지대 개념
+- [[ko-dccc60bf2c]] — 총 내부저항
+- [[ko-ddf5e5cca9]] — 디지털 소비환경 신뢰
+- [[ko-df8c6afdef]] — 경로 재생성
+- [[ko-e12f21b87b]] — 광대역소음
+- [[ko-e28582fc19]] — 실패확률
+- [[ko-e3ac022dc3]] — 9.3Km 3지대 방호계획
+- [[ko-e75f81c989]] — 표준화 기반 아키텍처
+- [[ko-e94e0a4c34]] — 제대급방호
+- [[ko-ee62016e70]] — 주파수영역간섭구조
+- [[ko-eef822bfa4]] — 배터리 취약성
+- [[ko-ef207076f7]] — 진화적 획득
+- [[ko-ef5f0fdd1c]] — 충돌 위험
+- [[ko-f0d5684a44]] — 기능손상가능성
+- [[ko-f0f3a9329f]] — 적대적 패치 공격
+- [[ko-f353d3588a]] — 드론비행금지구역
+- [[ko-f3a8634f69]] — 손상기제
+- [[ko-f8905f3c8e]] — 무기체계
+- [[ko-f8a9d68b7d]] — 방위각
+- [[ko-fa685c6178]] — 자연재난
+- [[ko-fcb55f7502]] — 위치 데이터
+- [[ko-fe5f63ffdc]] — 데이터 중심 소모전
+- [[korean-fir]] — Korean Fir
+- [[lane-aware-congestion-modeling]] — Lane-aware Congestion Modeling
+- [[large-population-control]] — Large Population Control
+- [[larix-kaempferi]] — Larix kaempferi
+- [[latent-tokens]] — latent tokens
+- [[latentdynamics]] — LatentDynamics
+- [[lateral-tracking-error]] — Lateral Tracking Error
+- [[link-reorganization]] — Link Reorganization
+- [[log-law]] — log law
+- [[logic-level-errors]] — Logic-level errors
+- [[logistic-map]] — Logistic Map
+- [[long-range-attack]] — Long-Range Attack
+- [[low-level-control-capabilities]] — low-level control capabilities
+- [[low-level-physical-control]] — Low-level physical control
+- [[lowest-floor-boundary]] — lowest floor boundary
+- [[lyapunov-stability]] — Lyapunov Stability
+- [[manual]] — Manual
+- [[mape]] — Mape
+- [[markov-decision-process-mdp]] — Markov decision process (MDP)
+- [[mdo]] — Mdo
+- [[mesh-topology]] — Mesh Topology
+- [[message-version]] — Message_Version
+- [[midcourse-guidance]] — Midcourse Guidance
+- [[mission-abort]] — Mission Abort
+- [[mission-context]] — mission context
+- [[mission-success-probability]] — Mission Success Probability
+- [[mixers]] — Mixers
+- [[modelfreerl]] — ModelFreeRL
+- [[motion-models]] — Motion Models
+- [[mpc-xy-vel-max]] — Mpc_Xy_Vel_Max
+- [[multi-agent-control]] — Multi-Agent Control
+- [[multi-agent-planning]] — Multi-Agent Planning
+- [[multi-agent-policy]] — multi-agent policy
+- [[multi-lane-highways]] — Multi-lane Highways
+- [[multicopter]] — Multicopter
+- [[multidisciplinary-design-optimization]] — Multidisciplinary Design Optimization
+- [[multimodal-image-fusion]] — Multimodal Image Fusion
+- [[nakagami-m-fading]] — Nakagami_m_fading
+- [[nash-equilibrium]] — Nash Equilibrium
+- [[natural-monument]] — Natural Monument
+- [[navigation-hijacking]] — Navigation hijacking
+- [[ned]] — Ned
+- [[network-latency]] — network latency
+- [[network-slices]] — Network Slices
+- [[neungju-basin]] — Neungju Basin
+- [[node-replacement]] — Node Replacement
+- [[non-uniform-zooming]] — Non-Uniform Zooming
+- [[noncentral-chi-square-distributions]] — Noncentral Chi-Square Distributions
+- [[normalized-impact-frequency-nif]] — normalized impact frequency (NIF)
+- [[novel-food]] — Novel Food
+- [[observation-prediction]] — observation prediction
+- [[occupation-measures]] — Occupation Measures
+- [[ocp]] — Ocp
+- [[odometryconditionedrelativestaterepresentation]] — OdometryConditionedRelativeStateRepresentation
+- [[one-way-delay]] — One-Way Delay
+- [[online-decision-making]] — online decision-making
+- [[online-localization]] — Online Localization
+- [[ooda-loop]] — Ooda Loop
+- [[operational-coordination-priority]] — Operational Coordination Priority
+- [[optical-resolution]] — Optical Resolution
+- [[p65b]] — P65B
+- [[p73]] — P73
+- [[packet-loss]] — packet loss
+- [[path-delay]] — Path Delay
+- [[pedal-point]] — Pedal Point
+- [[phased-missions]] — Phased Missions
+- [[physical-performance]] — Physical Performance
+- [[pilot-assignment]] — Pilot Assignment
+- [[pilot-contamination]] — Pilot Contamination
+- [[plant-heritage]] — Plant Heritage
+- [[policy-learning]] — Policy Learning
+- [[position-estimation]] — Position Estimation
+- [[positional-accuracy]] — Positional Accuracy
+- [[positive-semidefiniteness-condition]] — Positive-Semidefiniteness Condition
+- [[precision-penetration]] — Precision Penetration
+- [[probabilistic-spatial-temporal-envelopes]] — Probabilistic Spatial-Temporal Envelopes
+- [[prompt-temperature]] — prompt temperature
+- [[real-time-processing]] — Real-Time Processing
+- [[recall]] — Recall
+- [[received-signal-to-noise-ratio-snr]] — received signal-to-noise ratio (SNR)
+- [[reference-trajectory]] — reference trajectory
+- [[relative-dynamics]] — Relative Dynamics
+- [[relief]] — Relief
+- [[representation-space]] — representation space
+- [[return-to-launch]] — Return To Launch
+- [[reward-design]] — Reward Design
+- [[rewarddecomposition]] — RewardDecomposition
+- [[rmse]] — Rmse
+- [[road-damage]] — Road Damage
+- [[road-topologies]] — Road Topologies
+- [[rotor-thrust-limits]] — Rotor Thrust Limits
+- [[rover]] — Rover
+- [[rpm]] — RPM
+- [[rtl-swarm]] — Rtl Swarm
+- [[run-time-assurance]] — Run-Time Assurance
+- [[sample-preserving-evaluation]] — Sample-Preserving Evaluation
+- [[sca]] — Sca
+- [[sdr]] — Sdr
+- [[seasonal-amplitude]] — Seasonal Amplitude
+- [[seasonal-trajectory]] — Seasonal Trajectory
+- [[secrecy-outage-probability]] — Secrecy Outage Probability
+- [[secrecy-rate]] — Secrecy Rate
+- [[semi-open-queuing-network]] — semi-open queuing network
+- [[settlement-procedures]] — Settlement procedures
+- [[shadowing]] — Shadowing
+- [[sic]] — SIC
+- [[signal-phase-timing]] — Signal Phase Timing
+- [[signal-to-noise-ratios-snrs]] — signal-to-noise ratios (SNRs)
+- [[signalized-intersections]] — Signalized Intersections
+- [[slope]] — Slope
+- [[spatial-coverage]] — spatial coverage
+- [[spatial-resolution]] — Spatial Resolution
+- [[spectral-efficiency]] — Spectral Efficiency
+- [[speech-correlation-matrix-estimate]] — speech correlation matrix estimate
+- [[spot-heights]] — Spot Heights
+- [[stabilized]] — Stabilized
+- [[star-topology]] — Star Topology
+- [[statistical-turbulence]] — statistical turbulence
+- [[stl]] — Stl
+- [[strict-total-ordering-relation]] — strict total ordering relation
+- [[sub]] — Sub
+- [[sum-rate]] — Sum Rate
+- [[swarm-robotics]] — Swarm Robotics
+- [[syntax-errors]] — Syntax errors
+- [[synthetic-coherent-structures]] — synthetic coherent structures
+- [[sys-autostart]] — Sys_Autostart
+- [[system-level-conditions]] — System-Level Conditions
+- [[tactical-framework]] — Tactical Framework
+- [[target-assignment]] — Target Assignment
+- [[target-coverage-ratio]] — Target Coverage Ratio
+- [[target-scale]] — Target Scale
+- [[task-allocation]] — Task Allocation
+- [[temporal-dependencies]] — temporal dependencies
+- [[test-scenario-generation]] — Test Scenario Generation
+- [[throughput]] — throughput
+- [[time-allocation]] — Time Allocation
+- [[timing-synchronization]] — Timing Synchronization
+- [[traffic-conditions]] — Traffic Conditions
+- [[trajectory-prediction]] — Trajectory Prediction
+- [[transmit-power]] — Transmit Power
+- [[twi]] — Twi
+- [[user-plane]] — User Plane
+- [[user-scheduling]] — User Scheduling
+- [[value-of-information]] — Value-Of-Information
+- [[value-of-movement]] — Value Of Movement
+- [[vegetation-index]] — Vegetation Index
+- [[vehicle-density]] — Vehicle Density
+- [[velocity-limits]] — Velocity_Limits
+- [[vertical-offset]] — Vertical Offset
+- [[violations]] — Violations
+- [[vision-based-collective-flight]] — Vision-Based Collective Flight
+- [[visual-inertial-fusion]] — Visual-Inertial Fusion
+- [[waypoint-navigation]] — Waypoint Navigation
+- [[weapon-range]] — Weapon Range
+- [[weather-scenarios]] — Weather Scenarios
+- [[wind-disturbances]] — wind disturbances
+- [[zero-shot-transfer]] — zero-shot transfer
+
+## 관련 허브
+
+- [[auto-hub-hardware]]
+- [[auto-hub-mission]]
+- [[auto-hub-organization]]
+- [[auto-hub-person]]
+- [[auto-hub-protocol]]
+- [[auto-hub-regulation]]
+- [[auto-hub-source-articles]]
+- [[auto-hub-source-papers]]
+- [[auto-hub-source-youtube]]
+- [[auto-hub-technology]]

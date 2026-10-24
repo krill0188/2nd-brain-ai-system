@@ -1,0 +1,1623 @@
+---
+title: "자동 승격 허브: 출처-papers"
+created: 2026-10-24
+updated: 2026-10-24
+type: concept
+tags: [auto-hub, unreviewed]
+sources: [".ua/discovery-knowledge-graph.json"]
+confidence: low
+contested: false
+contradictions: []
+---
+
+# 자동 승격 허브: 출처-papers
+
+## 정의
+
+discovery 그래프에서 자동 추출·일괄 승격된 항목을 출처 유형별로 모아 둔 목록이다. 항목 내용은 사람이 검토하지 않았다.
+
+## 항목
+
+- [[10-48550-arxiv-2607-26717]] — 10.48550/arXiv.2607.26717
+- [[1045-propeller]] — 1045 propeller
+- [[14-cfr-part-107]] — 14 CFR Part 107
+- [[2-dof-magnetic-spherical-joint]] — 2-DOF magnetic spherical joint
+- [[3d-coverage-radius]] — 3D coverage radius
+- [[3d-environment-model]] — 3D Environment Model
+- [[3d-exploration]] — 3D Exploration
+- [[3d-radio-environment-maps]] — 3D Radio Environment Maps
+- [[3d-scene-generation]] — 3D Scene Generation
+- [[3gpp]] — 3Gpp
+- [[5g-beyond]] — 5G&Beyond
+- [[5g-standalone]] — 5G Standalone
+- [[6-dof-flight-trajectories]] — 6-DoF flight trajectories
+- [[945-propeller]] — 945 propeller
+- [[a-ananthapadmanabhan]] — A., Ananthapadmanabhan
+- [[a-ctco]] — A-Ctco
+- [[a-grilo]] — A. Grilo
+- [[a-modular-energy-aware-framework-for-multicopter-modeling-in-control-and-plannin]] — A Modular Energy Aware Framework for Multicopter Modeling in Control and Planning Applications
+- [[abdelfettah-belghith]] — Abdelfettah Belghith
+- [[abderrahmane-lakas]] — Abderrahmane Lakas
+- [[abichandani-pramod]] — Abichandani, Pramod
+- [[abusafia]] — Abusafia
+- [[acm]] — Acm
+- [[aco]] — ACO
+- [[acquisition-date]] — Acquisition Date
+- [[active-set-enumeration]] — Active-set Enumeration
+- [[actoroptimization]] — ActorOptimization
+- [[actuated-wheel-rotor]] — actuated-wheel-rotor
+- [[actuator-fault-compensation]] — actuator fault compensation
+- [[ad-hoc-network]] — Ad Hoc Network
+- [[adaptive-sampling]] — Adaptive Sampling
+- [[adeyinka-adedigba]] — Adeyinka, Adedigba
+- [[advection-diffusion-dynamics]] — advection-diffusion dynamics
+- [[aero-stealth-design]] — Aero-Stealth Design
+- [[aewe]] — Aewe
+- [[ag-zf]] — AG-ZF
+- [[agent-core]] — Agent Core
+- [[aggressivetracking]] — AggressiveTracking
+- [[ah-ri-shin]] — Ah-Ri Shin
+- [[ahilen-mazondo]] — Ahilen Mazondo
+- [[ahmed-aboelezz]] — Ahmed, Aboelezz
+- [[ahmed-radwan]] — Ahmed Radwan
+- [[akshay-gupta-burela]] — Akshay Gupta Burela
+- [[ali-tourani]] — Ali Tourani
+- [[alkmim-mansour]] — Alkmim, Mansour
+- [[alkouz]] — Alkouz
+- [[allen-ross-e]] — Allen, Ross E.
+- [[alqudsi-yunes]] — Alqudsi, Yunes
+- [[altum-pt]] — Altum-PT
+- [[alvaro-j-gaona]] — Alvaro J. Gaona
+- [[amani]] — Amani
+- [[ammar-hussein-a]] — Ammar, Hussein A.
+- [[amorim-arthur]] — Amorim, Arthur
+- [[amplify-and-forward-relaying]] — Amplify-And-Forward Relaying
+- [[andr-fonte]] — André Fonte
+- [[andr-kelbouscas]] — André Kelbouscas
+- [[android]] — Android
+- [[ang-liu]] — Ang Liu
+- [[angelo-trotta]] — Angelo Trotta
+- [[anis-koubaa]] — Anis Koubaa
+- [[ant-nio-pascoal]] — António Pascoal
+- [[anyi]] — Anyi
+- [[araujo-paulo-ricardo-marques-de]] — Araujo, Paulo Ricardo Marques De
+- [[ari]] — ARI
+- [[arxiv]] — Arxiv
+- [[arxiv-2002-01823]] — arXiv.2002.01823
+- [[ascon]] — ASCON
+- [[asmar-muqeet]] — Asmar Muqeet
+- [[ata-turgut]] — Ata, Turgut
+- [[athman]] — Athman
+- [[atmospheric-boundary-layer]] — atmospheric boundary layer
+- [[autonomous-cars]] — Autonomous Cars
+- [[autonomous-collaboration]] — Autonomous Collaboration
+- [[autonomous-decision-making]] — Autonomous Decision-Making
+- [[autonomous-flight]] — Autonomous Flight
+- [[autonomous-flight-technology]] — Autonomous Flight Technology
+- [[autonomous-ground-vehicles-agvs]] — Autonomous Ground Vehicles (AGVs)
+- [[autonomous-vehicle-av]] — Autonomous Vehicle (AV)
+- [[autopilot-system]] — Autopilot System
+- [[avionics-systems]] — Avionics Systems
+- [[azza-allouch]] — Azza Allouch
+- [[b-parsonage]] — B. Parsonage
+- [[b-spline-optimizer]] — B-spline optimizer
+- [[b-spline-trajectories]] — B-spline trajectories
+- [[backflip-controller]] — backflip controller
+- [[baker-karan]] — Baker, Karan
+- [[balakrishnan]] — Balakrishnan
+- [[balaska-vasiliki]] — Balaska, Vasiliki
+- [[balsam]] — Balsam
+- [[bampis-loukas]] — Bampis, Loukas
+- [[bao-vo-nguyen-quoc]] — Bao, Vo Nguyen Quoc
+- [[basiri-meysam]] — Basiri, Meysam
+- [[battery-management-stations]] — Battery Management Stations
+- [[battery-management-system]] — Battery Management System
+- [[bayes-james]] — Bayes, James
+- [[bayesian-active-sampling]] — Bayesian active sampling
+- [[bayesian-analysis]] — Bayesian Analysis
+- [[bayesian-inference]] — Bayesian inference
+- [[bayesian-learning]] — Bayesian learning
+- [[bayesian-residual]] — Bayesian Residual
+- [[beyond-visual-line-of-sight]] — Beyond Visual Line Of Sight
+- [[bidirectional-token-exchange]] — Bidirectional Token Exchange
+- [[bim]] — BIM
+- [[bing-luo]] — Bing Luo
+- [[bingcong-huo]] — Bingcong Huo
+- [[bio-inspired-algorithms]] — Bio-Inspired Algorithms
+- [[bit]] — Bit
+- [[bite]] — Bite
+- [[blade-element-momentum]] — Blade Element Momentum
+- [[bobo-xi]] — Bobo Xi
+- [[body-and-soul]] — Body And Soul
+- [[body-caudal-fin-bcf-locomotion-pattern]] — Body-Caudal Fin (BCF) locomotion pattern
+- [[bosso-alessandro]] — Bosso, Alessandro
+- [[bou-ek-zden-k]] — Bouček, Zdeněk
+- [[bouguettaya]] — Bouguettaya
+- [[bowu-wei]] — Bowu Wei
+- [[brett]] — Brett
+- [[brushed-motors]] — brushed motors
+- [[brushless-dc-motors]] — brushless DC motors
+- [[burela-akshay-gupta]] — Burela, Akshay Gupta
+- [[bushfire-detection-and-prevention]] — bushfire detection and prevention
+- [[bushfire-detection-and-prevention-system]] — bushfire detection and prevention system
+- [[c-g-d-1-queue]] — c(G/D/1) Queue
+- [[c-maddock]] — C. Maddock
+- [[c-ribeiro]] — C. Ribeiro
+- [[c3k2]] — C3K2
+- [[california]] — California
+- [[camacho-david]] — Camacho, David
+- [[camf-det]] — CAMF-Det
+- [[cannata-giorgio]] — Cannata, Giorgio
+- [[cao-rui]] — Cao, Rui
+- [[cardenuto-jo-o]] — Cardenuto, João
+- [[cardiac-arrest]] — cardiac arrest
+- [[carlini-giorgio]] — Carlini, Giorgio
+- [[cartpole]] — Cartpole
+- [[cbba]] — Cbba
+- [[cds]] — Cds
+- [[centralized-control]] — Centralized Control
+- [[cesareo-fabrizio]] — Cesareo, Fabrizio
+- [[chadha-ritu]] — Chadha, Ritu
+- [[chae-woo-nam]] — Chae Woo NAM
+- [[chan-francois]] — Chan, Francois
+- [[chandra-caden]] — Chandra, Caden
+- [[chang-hyeok-park]] — Chang-Hyeok Park
+- [[chang-wang]] — Chang Wang
+- [[channel-attention]] — Channel Attention
+- [[chaos]] — Chaos
+- [[chen-chen]] — Chen, Chen
+- [[chen-hongyu]] — Chen, Hongyu
+- [[chen-junfeng]] — Chen, Junfeng
+- [[chen-sheng]] — Chen, Sheng
+- [[chen-yicheng]] — Chen, Yicheng
+- [[chen-zifa]] — Chen, Zifa
+- [[cheng-feinan]] — Cheng, Feinan
+- [[cheng-nan]] — Cheng, Nan
+- [[chengjia-wang]] — Chengjia, Wang
+- [[chengpeng-jiang]] — Chengpeng Jiang
+- [[chenwei-tang]] — Chenwei Tang
+- [[chenyu-lin]] — Chenyu Lin
+- [[chenzhe-jin]] — Chenzhe Jin
+- [[chitauro-ronald]] — Chitauro, Ronald
+- [[chm]] — Chm
+- [[choi-jimin]] — Choi, Jimin
+- [[christoph-petroll]] — Christoph Petroll
+- [[chuang]] — Chuang
+- [[chuangxin-guo]] — Chuangxin Guo
+- [[chuhan-ma]] — Chuhan Ma
+- [[classicalcontrol]] — ClassicalControl
+- [[classicalplanning]] — ClassicalPlanning
+- [[cloud-servers]] — Cloud Servers
+- [[clustering-algorithms]] — Clustering algorithms
+- [[cockpit-display-systems]] — Cockpit Display Systems
+- [[cognitive-radio-networks]] — cognitive radio networks
+- [[collaborative-reasoning]] — collaborative reasoning
+- [[collision-risk-assessment]] — Collision Risk Assessment
+- [[colmap]] — COLMAP
+- [[combined-feedforward-feedback-control-strategy]] — combined feedforward-feedback control strategy
+- [[command-and-control]] — Command-And-Control
+- [[common-information-service]] — Common Information Service
+- [[compact-formulation]] — compact formulation
+- [[computation-efficiency]] — computation efficiency
+- [[concei-o-maria]] — Conceição, Maria
+- [[conficoni-christian]] — Conficoni, Christian
+- [[confidence-guided-framework]] — Confidence-Guided Framework
+- [[confusion-matrix]] — Confusion Matrix
+- [[cong]] — Cong
+- [[congestion-awareness]] — Congestion Awareness
+- [[congestion-index]] — Congestion Index
+- [[construction-status-analysis]] — construction status analysis
+- [[contact-resolution]] — contact-resolution
+- [[content-based-filtering]] — content-based filtering
+- [[contour]] — Contour
+- [[control-affine-systems]] — Control-Affine Systems
+- [[control-characteristics]] — Control Characteristics
+- [[control-commands]] — control commands
+- [[control-input-reconfiguration]] — control input reconfiguration
+- [[control-strategies]] — control strategies
+- [[convex-hull]] — Convex Hull
+- [[convex-hull-based-automatic-registration-method]] — Convex Hull-based automatic registration method
+- [[convex-quadratic-program]] — Convex Quadratic Program
+- [[cooperative-behaviours]] — Cooperative Behaviours
+- [[corner-aligned-bounding-box-transformation]] — Corner-Aligned Bounding Box Transformation
+- [[correlation-summation]] — Correlation Summation
+- [[cost-effectiveness]] — cost-effectiveness
+- [[covariance-prediction]] — Covariance Prediction
+- [[cplex]] — Cplex
+- [[cretaceous-gyeongsang-basin]] — Cretaceous Gyeongsang Basin
+- [[criticdrivenpathway]] — CriticDrivenPathway
+- [[cross-layer-local-support]] — Cross Layer Local Support
+- [[cross-scale-feature-enhancement]] — Cross-scale Feature Enhancement
+- [[csi]] — Csi
+- [[csi-feedback-delay]] — CSI feedback delay
+- [[csp-pac]] — Csp-Pac
+- [[cssa]] — Cssa
+- [[ct-k]] — Ct-K
+- [[cubic-spline]] — Cubic Spline
+- [[dafm]] — Dafm
+- [[dal-b-cmd-mon]] — Dal B Cmd/Mon
+- [[daniel-psijas]] — Daniel Psijas
+- [[daniele-dragoni]] — Daniele Dragoni
+- [[data-driven-optimization]] — Data-driven optimization
+- [[data-efficiency]] — Data Efficiency
+- [[data-flow-handover]] — data flow handover
+- [[data-governance]] — Data Governance
+- [[david-amar-raj]] — David Amar Raj
+- [[dc-brushless-electric-motor-propeller-system]] — DC Brushless Electric Motor-Propeller System
+- [[decentralised-decision-making]] — Decentralised Decision-Making
+- [[decentralized-execution]] — Decentralized Execution
+- [[decentralized-planning]] — Decentralized Planning
+- [[deep-q-network-dqn]] — Deep Q-Network (DQN)
+- [[deepmimo]] — Deepmimo
+- [[defense-evasion]] — Defense Evasion
+- [[dem]] — Dem
+- [[deng-xiong]] — Deng Xiong
+- [[department-of-forest-sciences]] — Department of Forest Sciences
+- [[detect-decide-engage-loops]] — Detect-Decide-Engage Loops
+- [[detection-performance]] — Detection Performance
+- [[detection-speed]] — detection speed
+- [[detection-transformer]] — Detection Transformer
+- [[dharmalingam]] — Dharmalingam
+- [[di-wu]] — Di Wu
+- [[diehard]] — Diehard
+- [[differentiablemotionrewards]] — DifferentiableMotionRewards
+- [[differentiablerl]] — DifferentiableRL
+- [[differential-evolution]] — Differential Evolution
+- [[differential-evolution-de]] — Differential Evolution (DE)
+- [[differential-game-theory]] — Differential Game Theory
+- [[diffusion-models]] — Diffusion Models
+- [[digital-flight-approval]] — Digital Flight Approval
+- [[ding-guoru]] — Ding, Guoru
+- [[dingwen-zhang]] — Dingwen Zhang
+- [[directional-antennas]] — directional antennas
+- [[disaster-response]] — Disaster Response
+- [[distributed-gaussian-processes]] — Distributed Gaussian Processes
+- [[distributed-production]] — Distributed Production
+- [[distributionally-robust-optimization]] — Distributionally Robust Optimization
+- [[dixit-bhavya]] — Dixit, Bhavya
+- [[dmoa]] — DMoA
+- [[dnbr]] — Dnbr
+- [[dod]] — Dod
+- [[dong-wang]] — Dong Wang
+- [[dongliang-xu]] — Dongliang Xu
+- [[doppler-estimation]] — Doppler Estimation
+- [[doppler-shift]] — Doppler Shift
+- [[double-nakagami-m-fading]] — Double_Nakagami_m_fading
+- [[double-shadowing]] — Double-Shadowing
+- [[doy]] — DOY
+- [[dqn-based-noma-power-allocation-scheme]] — DQN-based NOMA power allocation scheme
+- [[dsfma]] — Dsfma
+- [[dtims]] — Dtims
+- [[dtm]] — DTM
+- [[dual-concealment-reward]] — Dual-concealment reward
+- [[dual-use]] — Dual-Use
+- [[duksan-navcours-co]] — Duksan Navcours Co.
+- [[dunphy-dutch]] — Dunphy, Dutch
+- [[duo-bin]] — Duo Bin
+- [[dyka-zoya]] — Dyka, Zoya
+- [[dynamic-attention-guided-fusion-module]] — Dynamic Attention-Guided Fusion Module
+- [[dynamic-fleet-sizing]] — Dynamic Fleet Sizing
+- [[dynamic-mixture-of-adapters]] — Dynamic Mixture of Adapters
+- [[dynamic-reconfiguration]] — Dynamic Reconfiguration
+- [[dynamics-model]] — dynamics model
+- [[e-patelli]] — E. Patelli
+- [[eagle-deim]] — Eagle-DEIM
+- [[early-detection]] — early detection
+- [[eavesdropper-jamming]] — Eavesdropper Jamming
+- [[ecfrfn]] — Ecfrfn
+- [[edge-based-centroidal-voronoi-tessellation-cvt]] — edge-based centroidal Voronoi tessellation (CVT)
+- [[edge-load]] — edge load
+- [[edge-node]] — Edge Node
+- [[efficientnet-b3]] — EfficientNet-B3
+- [[ego-noise-reference-signals]] — ego-noise reference signals
+- [[ehsan-noroozinejad-farsangi]] — Ehsan, Noroozinejad Farsangi
+- [[electromagnetic-scattering-analysis]] — Electromagnetic Scattering Analysis
+- [[elementspecific-rule-based-processing]] — elementspecific rule-based processing
+- [[ellinas-georgios]] — Ellinas, Georgios
+- [[elliptic-curve-digital-signature-algorithm]] — Elliptic Curve Digital Signature Algorithm
+- [[elsevier-ras]] — Elsevier Ras
+- [[embodied-navigation]] — embodied navigation
+- [[energy-consumption]] — energy consumption
+- [[energy-efficiency-optimization]] — Energy Efficiency Optimization
+- [[engagement-area-utilization]] — Engagement Area Utilization
+- [[engagement-decision]] — Engagement Decision
+- [[engagement-range]] — Engagement Range
+- [[ensemble-ucb]] — Ensemble Ucb
+- [[environmental-monitoring]] — Environmental Monitoring
+- [[eot]] — Eot
+- [[evidence-strength]] — Evidence Strength
+- [[evolution-strategy-es]] — Evolution Strategy (ES)
+- [[exploration-missions]] — Exploration Missions
+- [[exponentially-stable-controller]] — Exponentially Stable Controller
+- [[external-microphone]] — external microphone
+- [[f-genschuh-armin]] — Fügenschuh, Armin
+- [[f1-score]] — F1-score
+- [[faa]] — Faa
+- [[fading-channels]] — Fading channels
+- [[fcpm]] — Fcpm
+- [[fda]] — Fda
+- [[feature-enhanced-fusion]] — Feature-Enhanced Fusion
+- [[feature-pyramid]] — Feature Pyramid
+- [[feinan-cheng]] — Feinan Cheng
+- [[fen-liu]] — Fen Liu
+- [[feng]] — Feng
+- [[feng-chen]] — Feng, Chen
+- [[feng-dejun]] — Feng, Dejun
+- [[feng-yimeng]] — Feng, Yimeng
+- [[findeisen-rolf]] — Findeisen, Rolf
+- [[fire-boundary-tracking]] — Fire-Boundary Tracking
+- [[fl-dr-miroslav]] — Flídr, Miroslav
+- [[fleetscape]] — Fleetscape
+- [[flight-trajectory]] — Flight trajectory
+- [[floreano-dario]] — Floreano, Dario
+- [[flying-ad-hoc-networks]] — Flying Ad-Hoc Networks
+- [[focaler-siou]] — Focaler-Siou
+- [[format-level-errors]] — Format-level errors
+- [[formation-control]] — Formation Control
+- [[frequency-adaptive-modeling]] — Frequency-adaptive modeling
+- [[fresh-filtering]] — FRESH filtering
+- [[frozen-rank-consensus]] — Frozen Rank Consensus
+- [[fu-ren]] — Fu Ren
+- [[fuji-apple]] — 'Fuji' apple
+- [[functional-hazard-assessment]] — Functional Hazard Assessment
+- [[fusion-mamba-block]] — Fusion Mamba Block
+- [[future-states]] — future states
+- [[g-d-c-cooperative-queue]] — G/D/c Cooperative Queue
+- [[g-filippi]] — G. Filippi
+- [[gaff]] — Gaff
+- [[gal-oren]] — Gal, Oren
+- [[gang-wang]] — Gang Wang
+- [[gang-yang]] — Gang Yang
+- [[gao-fei]] — Gao, Fei
+- [[gao-zhen]] — Gao, Zhen
+- [[gaofeng]] — Gaofeng
+- [[gasche-sebastian]] — Gasche, Sebastian
+- [[gasteratos-antonios]] — Gasteratos, Antonios
+- [[gather-and-distribute]] — Gather-And-Distribute
+- [[gaussian-process-regression]] — Gaussian Process Regression
+- [[geng]] — Geng
+- [[geospatial-data]] — Geospatial Data
+- [[ghazy-abdallah-s]] — Ghazy, Abdallah S.
+- [[giant-steps]] — Giant Steps
+- [[gigli-lorenzo]] — Gigli, Lorenzo
+- [[gitlab]] — GitLab
+- [[givigi-sidney]] — Givigi, Sidney
+- [[gli]] — GLI
+- [[global-information-injection-module]] — Global Information Injection Module
+- [[global-positioning-system]] — Global Positioning System
+- [[global-shutter]] — Global Shutter
+- [[gnb]] — Gnb
+- [[gori-an-toma]] — Goričan, Tomaž
+- [[gpr]] — GPR
+- [[gpt-5-2]] — GPT-5.2
+- [[gpt-5-3]] — GPT-5.3
+- [[gr-fe-alexander]] — Gräfe, Alexander
+- [[grad-cam]] — Grad-Cam
+- [[graph-transformer]] — graph Transformer
+- [[graphical-user-interface-gui]] — Graphical User Interface (GUI)
+- [[grayscale-imagery]] — Grayscale imagery
+- [[greedy-algorithm]] — Greedy Algorithm
+- [[grigoriou-yiannis]] — Grigoriou, Yiannis
+- [[grilo-ant-nio]] — Grilo, António
+- [[gris]] — GRIS
+- [[grok-4-5]] — Grok 4.5
+- [[ground-sensing-coverage]] — Ground Sensing Coverage
+- [[ground-target-protection]] — Ground-Target Protection
+- [[ground-truth]] — Ground Truth
+- [[guided-mode]] — Guided Mode
+- [[guo-lili]] — Guo Lili
+- [[guo-meng]] — Guo, Meng
+- [[guohuan]] — Guohuan
+- [[gurobi]] — Gurobi
+- [[gyeongsang-basin]] — Gyeongsang Basin
+- [[gyeongsang-national-university]] — GyeongSang National University
+- [[gyeongsang-supergroup]] — Gyeongsang Supergroup
+- [[h-nig-wolfgang]] — Hönig, Wolfgang
+- [[h-seyin-k-kerdem]] — Hüseyin, Küçükerdem
+- [[hallasan]] — Hallasan
+- [[haman-formation]] — Haman Formation
+- [[hamid-hosseini-dolatabadi-sayed]] — Hamid, Hosseini Dolatabadi Sayed
+- [[hamza-zafar-muhammad]] — Hamza, Zafar Muhammad
+- [[han-richard]] — Han, Richard
+- [[hang-rao]] — Hang Rao
+- [[hansung-university]] — Hansung University
+- [[haoran-hu]] — Haoran, Hu
+- [[haorui-zuo]] — Haorui Zuo
+- [[harmonic-drives]] — harmonic drives
+- [[harrison-william-l]] — Harrison, William L.
+- [[hash-based-message-authentication-codes]] — Hash-Based Message Authentication Codes
+- [[health-vectors]] — Health Vectors
+- [[hendriks-richard-c]] — Hendriks, Richard C.
+- [[heterogeneous-specifications]] — Heterogeneous Specifications
+- [[heterogeneous-traffic]] — Heterogeneous Traffic
+- [[heuristic-algorithm]] — heuristic algorithm
+- [[heusdens-richard]] — Heusdens, Richard
+- [[hiago-sodre]] — Hiago Sodre
+- [[hidden-launch]] — Hidden Launch
+- [[high-level-task-rules]] — high-level task rules
+- [[hkdf-expand]] — HKDF-Expand
+- [[hlayel-tariq]] — Hlayel, Tariq
+- [[holger-voos]] — Holger Voos
+- [[hongbo-yu]] — Hongbo Yu
+- [[hongjiang]] — Hongjiang
+- [[hongliang-gao]] — Hongliang, Gao
+- [[hongpeng-li]] — Hongpeng Li
+- [[hongxu-yin]] — Hongxu Yin
+- [[hongyu-chi]] — Hongyu Chi
+- [[hriday-bavle]] — Hriday Bavle
+- [[hua-cui]] — Hua, Cui
+- [[hua-zhou]] — Hua Zhou
+- [[huan-junxi]] — Huan, Junxi
+- [[huang-jiahao]] — Huang, Jiahao
+- [[huang-junbin]] — Huang, Junbin
+- [[huang-xun]] — Huang, Xun
+- [[huang-zhifeng]] — Huang, Zhifeng
+- [[hui-luo]] — Hui Luo
+- [[humanitarian-logistics]] — Humanitarian Logistics
+- [[hungarian-algorithm]] — Hungarian Algorithm
+- [[huo-bingcong]] — Huo, Bingcong
+- [[huynh-the-thien]] — Huynh-The, Thien
+- [[hybrid-maneuver-modes]] — Hybrid Maneuver Modes
+- [[i2s]] — I2S
+- [[icao]] — Icao
+- [[icd-net]] — Icd-Net
+- [[identification-distance]] — Identification Distance
+- [[identification-performance]] — Identification Performance
+- [[idf1]] — IDF1
+- [[ifc]] — IFC
+- [[ignitions]] — ignitions
+- [[igor-nunes]] — Igor Nunes
+- [[image-segmentation]] — Image Segmentation
+- [[image-synthetic-fusion]] — Image-Synthetic fusion
+- [[imagenet]] — ImageNet
+- [[impedance-control]] — impedance control
+- [[india]] — India
+- [[indian-classical-music]] — Indian Classical Music
+- [[indian-institute-of-technology]] — Indian Institute of Technology
+- [[individual-tree-crown-segmentation]] — Individual Tree Crown Segmentation
+- [[inductive-sensing-concepts]] — inductive sensing concepts
+- [[infrared-imagery]] — Infrared Imagery
+- [[infrared-imaging]] — Infrared Imaging
+- [[infrared-modality]] — Infrared Modality
+- [[infrastructure-network]] — Infrastructure Network
+- [[infrastructure-placement]] — infrastructure placement
+- [[inland-river-shipping]] — Inland River Shipping
+- [[input-output-feedback-linearization]] — Input-Output Feedback Linearization
+- [[ins]] — INS
+- [[insulator-fault-detection]] — Insulator Fault Detection
+- [[integer-linear-program]] — integer linear program
+- [[integer-quadratic-program]] — Integer Quadratic Program
+- [[integrated-fault-estimation-and-accommodation-scheme]] — integrated fault estimation and accommodation scheme
+- [[intel-realsense-d435i]] — Intel Realsense D435I
+- [[intelligent-transportation-system-its]] — Intelligent Transportation System (ITS)
+- [[interaction-kernel]] — Interaction Kernel
+- [[interpretation-conditions]] — Interpretation Conditions
+- [[intersection-over-union-iou]] — intersection over union (IoU)
+- [[intuitive-physics]] — intuitive physics
+- [[ios]] — IOS
+- [[ishigami-genya]] — Ishigami, Genya
+- [[itzik-klein]] — Itzik Klein
+- [[jadc2]] — JADC2
+- [[jagtap-pushpak]] — Jagtap, Pushpak
+- [[james-alice]] — James, Alice
+- [[jamming-resistance]] — Jamming Resistance
+- [[jan-ming-kevin-tan]] — Jan Ming Kevin Tan
+- [[jarus]] — Jarus
+- [[jarvis-benjamin]] — Jarvis, Benjamin
+- [[javier-baladron]] — Javier Baladron
+- [[jax]] — JAX
+- [[jay-patrikar]] — Jay Patrikar
+- [[jeger-simon]] — Jeger, Simon
+- [[jeju-island]] — Jeju Island
+- [[jeonnam-gwangju-agriculture-technology-office]] — Jeonnam Gwangju Agriculture Technology Office
+- [[jeryes-danial]] — Jeryes Danial
+- [[jia]] — Jia
+- [[jiajia-xu]] — Jiajia Xu
+- [[jialing-liu]] — Jialing Liu
+- [[jian-bi]] — Jian Bi
+- [[jian-ke]] — Jian Ke
+- [[jian-zhao]] — Jian Zhao
+- [[jianan-li]] — Jianan Li
+- [[jiancheng-lv]] — Jiancheng Lv
+- [[jiang]] — Jiang
+- [[jiankun-peng]] — Jiankun Peng
+- [[jianlin-zhang]] — Jianlin Zhang
+- [[jianshuo]] — Jianshuo
+- [[jianxiong-yu]] — Jianxiong Yu
+- [[jiaze]] — Jiaze
+- [[jie-shi]] — Jie Shi
+- [[jindong-formation]] — Jindong Formation
+- [[jing-huey-khor]] — Jing Huey Khor
+- [[jinyi-liang]] — Jinyi Liang
+- [[jizhe-zhou]] — Jizhe Zhou
+- [[jo-o-pinto]] — João Pinto
+- [[joe-eappen]] — Joe Eappen
+- [[john-coltrane]] — John Coltrane
+- [[john-keller]] — John Keller
+- [[joneckis-lance]] — Joneckis, Lance
+- [[jose-luis-sanchez-lopez]] — Jose Luis Sanchez-Lopez
+- [[jun-yang]] — Jun Yang
+- [[junfeng-chen]] — Junfeng Chen
+- [[junjie-zhu]] — Junjie Zhu
+- [[junnan-tan]] — Junnan Tan
+- [[k-csm]] — K-Csm
+- [[k-diu]] — K-Diu
+- [[k-means]] — K-Means
+- [[k-uam]] — K-Uam
+- [[kaggle]] — Kaggle
+- [[kang-gu-hyun]] — Kang Gu-Hyun
+- [[kangwon-national-university]] — Kangwon National University
+- [[kann-trevor]] — Kann, Trevor
+- [[karel-toledo]] — Karel Toledo
+- [[kasbekar-gaurav-s]] — Kasbekar, Gaurav S.
+- [[kci]] — KCI
+- [[kde-direct]] — KDE Direct
+- [[kde2315xf-885-885-kv-motor]] — KDE2315XF-885/885 Kv motor
+- [[keyang-li]] — Keyang Li
+- [[ki-hong]] — Ki-Hong
+- [[kigam]] — KIGAM
+- [[kim-heegyeong]] — Kim, Heegyeong
+- [[kmtc]] — Kmtc
+- [[knn]] — Knn
+- [[ko-00dff99752]] — 사이버보안 기준
+- [[ko-01d3423d6a]] — 서울시립대
+- [[ko-01f305b25a]] — 우정물류기술연구센터
+- [[ko-02f0d8edb5]] — 안전 거버넌스
+- [[ko-03c0d424ba]] — 기능분담
+- [[ko-049a89117b]] — 제어권 탈취
+- [[ko-04bae70eb6]] — 드론 배송 실증사업 안전 기준
+- [[ko-04cbcd076f]] — 한국화재보험협회
+- [[ko-058fc9b03e]] — 영상수집
+- [[ko-05d93a3e8b]] — 감시정찰
+- [[ko-060e441b50]] — 남채우
+- [[ko-06c49977d4]] — 나기정
+- [[ko-06d99a2f0d]] — 45° 대각 왕복형(B)
+- [[ko-06e02bbdb2]] — 핵심성능지표
+- [[ko-070a274f17]] — 지상통제장비
+- [[ko-0713bfbf13]] — 개별 면제 제도
+- [[ko-0792cbc512]] — K-드론
+- [[ko-09f1093b2a]] — 공동상황인식(Common Operational Picture)
+- [[ko-0a053ccb58]] — 전기 추진 시스템
+- [[ko-0a8aec316d]] — 객체 중심 궤도+연결형(C)
+- [[ko-0ac46e1ce4]] — 전자전
+- [[ko-0b495d3e2c]] — 자동화 데이터 서비스
+- [[ko-0c9ddcdf1d]] — 작전운용성능
+- [[ko-0dcbe831bd]] — 다항 선형 회귀 분석
+- [[ko-0e25dff668]] — 북한군
+- [[ko-0f5f6788a3]] — 0° 평행 왕복형(A)
+- [[ko-0ff64d94e5]] — 직교좌표계
+- [[ko-109043fa3b]] — 회색지대체계
+- [[ko-11b3cd4711]] — 구역판단
+- [[ko-128bf22e3b]] — 한국전자통신연구원 디지털융합연구소
+- [[ko-12e26afd19]] — 곽민슬
+- [[ko-12fc997df3]] — 호버링
+- [[ko-137df5871c]] — 군용 드론
+- [[ko-141516c604]] — 6-Dof 다중 시뮬레이션
+- [[ko-14c70458e3]] — 사이버위협
+- [[ko-15b496a5dc]] — 정윤정
+- [[ko-15cbf59a62]] — 경기대학교
+- [[ko-15d5a66223]] — 김준호
+- [[ko-165830225e]] — 서울대학교
+- [[ko-1658816ffe]] — 위치정보 오류
+- [[ko-165dcd15e0]] — 생활물류서비스산업발전법
+- [[ko-16b0616709]] — 문홍렬
+- [[ko-193517d15c]] — 강원대학교
+- [[ko-193e334b53]] — 군사 응용
+- [[ko-1a587cd26f]] — 임동균
+- [[ko-1a84da3942]] — 로지스틱 분류 알고리즘
+- [[ko-1ae64f1826]] — 함정 자체방어
+- [[ko-1d907f51e3]] — 국회 세종의사당
+- [[ko-1f2616d1ba]] — 양원준
+- [[ko-21042470e0]] — 피해최소화
+- [[ko-215dd5d7b7]] — 경북대학교
+- [[ko-21939ef34f]] — 자율비행기술
+- [[ko-2238881da8]] — 시스템 연동성
+- [[ko-2282bdaae4]] — 오경보율
+- [[ko-2331b6a635]] — 센서 네트워크
+- [[ko-242a335481]] — 중복 재방문
+- [[ko-24d4906cda]] — 이후진
+- [[ko-25603b4375]] — 다중 무인기 데이터 수집 시스템
+- [[ko-257555812a]] — 가상 디코이 군집 형성 기만 시스템
+- [[ko-25fce658d0]] — 공항운영자
+- [[ko-26378db943]] — 단일 방공체계
+- [[ko-269cd1e979]] — 항공기술연구원
+- [[ko-285046b8d4]] — 전장환경장비
+- [[ko-2a19d81744]] — 국방대학교
+- [[ko-2a50314739]] — 혹한기 운용 지속성
+- [[ko-2ab8404760]] — 회전 불변량
+- [[ko-2bbd7221f5]] — 고려대학교
+- [[ko-2c06ef598b]] — 박현호
+- [[ko-2c19868b4f]] — 레이더
+- [[ko-2c26b977a0]] — 도플러 스펙트럼
+- [[ko-2c8198a660]] — 로지스틱 지시함수
+- [[ko-2c8e7bc523]] — 정수호
+- [[ko-2d7ce0517e]] — 음향신호처리
+- [[ko-2d957e06bd]] — 공중통제기
+- [[ko-2d9acfee68]] — 드론 안보 등급제
+- [[ko-2db24ab83d]] — 국방전력발전업무 훈령
+- [[ko-2fbc77e9d2]] — 지리 좌표 기반 드론 유도
+- [[ko-30441bdc11]] — 기하학적관계
+- [[ko-3057dcf112]] — 공간정보공학과
+- [[ko-314e4c94f1]] — 화재감지
+- [[ko-31dce39e08]] — 한국폴리텍대학 아산캠퍼스
+- [[ko-32b67935fd]] — 조성범
+- [[ko-33189cffa6]] — 대통령경호처
+- [[ko-33ce3f5e2d]] — 유무인복합체계
+- [[ko-341670f42e]] — 윤공현
+- [[ko-34acf63f8c]] — 경로 생성 알고리즘
+- [[ko-364cee4994]] — 조영복
+- [[ko-364e7b77ea]] — 사이버전자전
+- [[ko-37253dfac4]] — 군수사령부
+- [[ko-37a4b8f59d]] — 플랫폼수준방호
+- [[ko-38c0d64955]] — 통신 장애
+- [[ko-3998237461]] — 조건우
+- [[ko-39e8957d10]] — 3차원 공중방호 통합 운용모델
+- [[ko-3be9b3c4bc]] — 엔트로피 계수
+- [[ko-3c50692b3a]] — 광학 센서
+- [[ko-3ce6e0eb53]] — 획득연구부
+- [[ko-3cf212ca5b]] — 인적재난
+- [[ko-3d5ec13529]] — 통신 보안
+- [[ko-3e3ff977ea]] — LIG넥스원
+- [[ko-404ea1e98e]] — D기관
+- [[ko-40fb427237]] — 한국교통안전공단
+- [[ko-42b9570322]] — 한국군
+- [[ko-434a67abed]] — 피코(PICo) 분석 모델
+- [[ko-43f28be610]] — 정우성
+- [[ko-48d5651abb]] — 유무인복합전투체계
+- [[ko-4a231cda65]] — 홍일영
+- [[ko-4a8b8ee5d0]] — Spad 측정법
+- [[ko-4af3aa9806]] — 시설물 점검
+- [[ko-4bf683412e]] — 자동 착륙
+- [[ko-4c2122fb6e]] — 네이버
+- [[ko-4ce9c19fea]] — Clara 기법
+- [[ko-4d5337ffc0]] — 안동시
+- [[ko-4e4ee5a6fa]] — 취약도우선순위지수
+- [[ko-4f0acb8c46]] — IR 영상 분석
+- [[ko-4f65591a9e]] — 인천대학교
+- [[ko-4f8e6cd15f]] — 김상현
+- [[ko-506011f6ea]] — 이홍진
+- [[ko-5091ba91ba]] — 자율주행
+- [[ko-518876cb8e]] — 축방향 도달범위
+- [[ko-51a78f832a]] — 고령소방서
+- [[ko-51f6fd4bef]] — 배재영
+- [[ko-53161edeb8]] — 데이터 수집량
+- [[ko-542d643d69]] — UAM 회랑 바람 관측을 위한 기상드론 유효성 검증
+- [[ko-5436c88eb4]] — infrared(IR) 센서
+- [[ko-54c08a2ec3]] — 군집(Swarm) 드론
+- [[ko-58b3c465db]] — 통제권 변경
+- [[ko-58e19e68c5]] — 운항자 인증제도
+- [[ko-5a6615f05d]] — 소형무인기
+- [[ko-5c12e5871a]] — 수요 가중 클러스터링
+- [[ko-5c6bc03a5b]] — 임무영향도
+- [[ko-5d2b3e9fce]] — 다분광 영상
+- [[ko-5f9f2f7602]] — E기업
+- [[ko-613a95b8d2]] — 음원위치추정
+- [[ko-6169c36041]] — 국립경국대학교
+- [[ko-61c77385f6]] — 위치참조체계
+- [[ko-621b172dbd]] — 임영훈
+- [[ko-632592e7ba]] — 영상 기반 드론 제어
+- [[ko-634af241e9]] — 마이크로폰배열
+- [[ko-6404df318b]] — 싱가포르
+- [[ko-651b7e5078]] — 임무 재계획
+- [[ko-654e818688]] — 물류 시스템
+- [[ko-65acc031d7]] — 문형훈
+- [[ko-676bc7a367]] — 방어 성능
+- [[ko-6845f0b334]] — 표적화용이성
+- [[ko-699fd4a8a9]] — 국방과학기술획득학과
+- [[ko-69c951be19]] — 이한섭
+- [[ko-6a01e0c532]] — 지리적 위치 추정
+- [[ko-6a81e88972]] — 측선 간 레벨링 보정
+- [[ko-6b92ab1b79]] — 재난현장활용
+- [[ko-6c05e5f33f]] — 지면반사파
+- [[ko-6cdf33fe80]] — 비용 비대칭성
+- [[ko-6ea0aa04fc]] — 저고도 공역
+- [[ko-6f90d508ec]] — 공유대드론기능
+- [[ko-6fc5e87e1d]] — 국가지점번호
+- [[ko-71623ecfe9]] — 탐욕 기반 경로 구성
+- [[ko-7235529eda]] — 직접파
+- [[ko-7249c59aca]] — 탐지확률
+- [[ko-72dd682cd7]] — 안성천 명당교
+- [[ko-73f00b6277]] — 심상훈
+- [[ko-74a27cc4a7]] — 6단계 교전규칙
+- [[ko-74fdffe4b8]] — 파레토분석
+- [[ko-7573460df9]] — 한서대학교
+- [[ko-76fe623688]] — 서강대학교
+- [[ko-7835cd7850]] — 기상응용연구부
+- [[ko-7917c766a4]] — 무인기 시뮬레이터
+- [[ko-7972a79c66]] — 적 무인기
+- [[ko-79d8e0cf1c]] — 이우철
+- [[ko-7adb53ce51]] — 김세준
+- [[ko-7b0a75e6cf]] — 한양대학교
+- [[ko-7b5b9d8b37]] — 요격 무인기
+- [[ko-7babea6013]] — 가상 디코이 드론 군집
+- [[ko-7bfea60ce5]] — 소형드론
+- [[ko-7c49c70ac6]] — 교전영역 산출 알고리즘
+- [[ko-7cc771aeaa]] — 조환희
+- [[ko-7cf8845c3b]] — 신속 전개 능력
+- [[ko-7d2db16e1d]] — 드론 영상 기반 실시간 산불 감시
+- [[ko-7d730f4117]] — Ols 회귀분석
+- [[ko-7d8d442a66]] — 위협통합지표
+- [[ko-7d9bb36723]] — 한국외국어대학교
+- [[ko-7e2db31631]] — 지오빅데이터 오픈플랫폼
+- [[ko-7e6c8f0aa7]] — 기술성과
+- [[ko-7f76112a59]] — 활성화에너지
+- [[ko-81c0f883c0]] — 산불 탐지
+- [[ko-822e5c0ba1]] — 충남대학교
+- [[ko-8253c7faf1]] — 광운대학교
+- [[ko-8323393e8a]] — 황세연
+- [[ko-8385d60b22]] — 방호아키텍처
+- [[ko-839ebe74aa]] — 소프트킬 우선·하드킬 최종
+- [[ko-83b4e578ae]] — 이용률
+- [[ko-859cba8e63]] — 머신러닝
+- [[ko-86af6853c9]] — 육군3사관학교
+- [[ko-875683516c]] — 벡터 자력계
+- [[ko-875a2c075c]] — 수평거리
+- [[ko-88c513c387]] — 자동 이륙
+- [[ko-88e9e59271]] — 국방기술진흥연구소
+- [[ko-89edd91385]] — 한만준
+- [[ko-8a1c83296e]] — 황인하
+- [[ko-8a313e9e87]] — 신두리 해안사구
+- [[ko-8b01066b86]] — 이동성 매개변수 Ω
+- [[ko-8b3445e390]] — EO 영상 분석
+- [[ko-8b824d5dac]] — 정재환
+- [[ko-8ba823647a]] — 평형전위
+- [[ko-8bea35af65]] — 최소 충족 요건
+- [[ko-8bf88deca9]] — C기관
+- [[ko-8c0fe037a8]] — 연세대학교
+- [[ko-8c30e6ac4f]] — 숭실대학교
+- [[ko-8c5095c933]] — 안티드론 기술
+- [[ko-8dadcec762]] — 국방과학연구소
+- [[ko-8dae9f42ae]] — 국립목포대학교
+- [[ko-8f23fe151d]] — 3차원 공중방호지대
+- [[ko-8f2e356312]] — 대진대학교
+- [[ko-8fd0845f8c]] — 공통 공간언어(Common Spatial Language)
+- [[ko-8ffde10b56]] — 정부세종청사
+- [[ko-8fff75c7b3]] — 연암공과대학교
+- [[ko-925e2dd17e]] — 재난대응드론기술
+- [[ko-9289c695a2]] — 한화시스템
+- [[ko-92cff5bef2]] — 제갈갑성
+- [[ko-92e4968769]] — 조건부 안전성 인식
+- [[ko-9308ba250b]] — 가우스과정 회귀
+- [[ko-935c1bc453]] — 항공교통관제기관
+- [[ko-93d5c888b4]] — 전력지원체계
+- [[ko-93ed48f5b8]] — 드론 배송 시스템
+- [[ko-94ec1dd5b6]] — 청주대학교
+- [[ko-96729ed924]] — 이원석
+- [[ko-967862e776]] — 상용화
+- [[ko-980b4af972]] — 경북소방본부
+- [[ko-9adbf5a25d]] — 데이터 신선도
+- [[ko-9bbc50b8f3]] — 강건 센서 융합
+- [[ko-9c25109142]] — 한국항공우주산업
+- [[ko-9f53f56540]] — 국방기술품질원
+- [[ko-a0325092b7]] — 육군교육사령부
+- [[ko-a0a25d44ec]] — 처리용량
+- [[ko-a1097f3c21]] — 경상남도
+- [[ko-a3f3a87469]] — 드론봇 전투체계
+- [[ko-a7a10dfa80]] — 엔코더
+- [[ko-a80f968d99]] — 최인오
+- [[ko-a86ed7a52e]] — 경제성
+- [[ko-a921cb9f62]] — 플럭스게이트 자력계
+- [[ko-aa2d067974]] — 하드킬
+- [[ko-ac716e2218]] — 여단급 운용개념
+- [[ko-ad4edd4023]] — 임현수
+- [[ko-ae03d566c0]] — 피해예방
+- [[ko-ae13f72c65]] — 정재호
+- [[ko-ae1ae76a07]] — 이준혁
+- [[ko-aee4f104f9]] — Holm 보정
+- [[ko-b092130cca]] — 김요셉
+- [[ko-b2902e9e69]] — 비용-위험 균형
+- [[ko-b2a56b0d7b]] — 통합 방공망
+- [[ko-b2b036d3b3]] — 무인기
+- [[ko-b367cbc6e6]] — 정경서
+- [[ko-b3b902bcce]] — 센서노드
+- [[ko-b45c76c280]] — 2차피해
+- [[ko-b471f5b47f]] — 지질자원주제도 2D/3D 가시화 서비스
+- [[ko-b4a040fd8c]] — 2단계 자율 비행
+- [[ko-b4c1bcb852]] — electro-optical(EO) 센서
+- [[ko-b4c4012b8e]] — 안전관리체계
+- [[ko-b556d429cf]] — 최적 전력 수준
+- [[ko-b5c1084fa3]] — 플러그 앤 플레이
+- [[ko-b615bd8b24]] — 특별비행승인제도
+- [[ko-b6f3a6ebbc]] — 공역관리
+- [[ko-b7242199a1]] — 선형 오차
+- [[ko-b8b6c5ac7f]] — 전선재
+- [[ko-b929a7fb05]] — 정밀농업
+- [[ko-ba4971de43]] — 중첩 탐지 및 식별 시스템
+- [[ko-badf3ee54f]] — 공분산 교차 기법
+- [[ko-baf1a85ca6]] — 유인기 시뮬레이터
+- [[ko-bd24ab6964]] — 경상국립대학교
+- [[ko-bd2591be4b]] — 민간 드론
+- [[ko-bdf3bf2a5e]] — 김진희
+- [[ko-c0ba818ef4]] — 항재밍
+- [[ko-c0efb5022c]] — 식생지수
+- [[ko-c1166c0752]] — 한국지질자원연구원
+- [[ko-c158733887]] — 사회재난
+- [[ko-c166af42d3]] — 토석류
+- [[ko-c417cf41af]] — 아주대학교
+- [[ko-c506cd8165]] — 지휘통제체계
+- [[ko-c7252e3d70]] — 국방융합공학과
+- [[ko-c7410e33f5]] — 안효득
+- [[ko-c7a533fc3f]] — 점성자화
+- [[ko-c7adc35f38]] — 김지안
+- [[ko-c92eeaf9a6]] — 최병길
+- [[ko-cc87a4d191]] — 잔여위협
+- [[ko-cdfb2e8e87]] — 위험 기반 최소 전력 수준
+- [[ko-ce75850ca6]] — 부트스트랩 분석
+- [[ko-cf24d5268b]] — 전자전 취약성
+- [[ko-cf5af0e896]] — 소화탄
+- [[ko-cf72267af7]] — 황병연
+- [[ko-d0a0f021f3]] — 재난치안용무인기개발사업
+- [[ko-d2b7508eaf]] — 잔여취약도지수
+- [[ko-d36cc090d5]] — 개인영상정보 보호
+- [[ko-d3c95a0388]] — 계산 비용
+- [[ko-d4102a1a8d]] — 플랫폼 중심전
+- [[ko-d4b90d7a1e]] — 한국공학대학교
+- [[ko-d62502dc19]] — 방공체계
+- [[ko-d73722662f]] — 대량 생산성
+- [[ko-d7427c3c48]] — 직접 타격
+- [[ko-d79b257d1b]] — 방호자원배분
+- [[ko-da5cda4273]] — 데이터 보안성
+- [[ko-dac37ee148]] — 멀티플랫폼 드론
+- [[ko-db1a92ba83]] — 드론기술
+- [[ko-db228a8fc4]] — 위협 수준별 계층적 무력화 모델
+- [[ko-dc09754efd]] — 항공기술연구부
+- [[ko-dc1dda157a]] — 원거리 탐지-식별-대응 다중 3지대 개념
+- [[ko-dc37879ce5]] — A기관
+- [[ko-dccc60bf2c]] — 총 내부저항
+- [[ko-ddc7223fe2]] — 남경훈
+- [[ko-ddf5e5cca9]] — 디지털 소비환경 신뢰
+- [[ko-deb43b1fb9]] — 한국 소비생활지표
+- [[ko-df8c6afdef]] — 경로 재생성
+- [[ko-e12f21b87b]] — 광대역소음
+- [[ko-e28582fc19]] — 실패확률
+- [[ko-e2bbbe154c]] — 이호진
+- [[ko-e39f453fff]] — 이호준
+- [[ko-e3ac022dc3]] — 9.3Km 3지대 방호계획
+- [[ko-e3d301036d]] — 다층 방공체계
+- [[ko-e3f50eb92b]] — 윤민철
+- [[ko-e4fe3edfd8]] — 국민대학교
+- [[ko-e54c31fc32]] — 김문용
+- [[ko-e666e507a4]] — 스칼라 자력계
+- [[ko-e75f81c989]] — 표준화 기반 아키텍처
+- [[ko-e7eec6e254]] — 이지선
+- [[ko-e8513f96bf]] — 정사영상 정합
+- [[ko-e94e0a4c34]] — 제대급방호
+- [[ko-e9df3052a1]] — 미국 국방부
+- [[ko-ea084e1846]] — 지상통제기
+- [[ko-ea8ffbaf32]] — 전자광학·적외선 센서
+- [[ko-ea94589fd8]] — 한국항공대학교
+- [[ko-eb90ff65b8]] — 남서울대학교
+- [[ko-ed25efdbbb]] — 러시아
+- [[ko-ee62016e70]] — 주파수영역간섭구조
+- [[ko-eecea44f3c]] — 원광대학교
+- [[ko-eef822bfa4]] — 배터리 취약성
+- [[ko-ef133e9c31]] — 이연우
+- [[ko-ef207076f7]] — 진화적 획득
+- [[ko-ef5f0fdd1c]] — 충돌 위험
+- [[ko-f00b28f0b5]] — 국립식량과학원
+- [[ko-f0a950615d]] — B기관
+- [[ko-f0d5684a44]] — 기능손상가능성
+- [[ko-f0f3a9329f]] — 적대적 패치 공격
+- [[ko-f23da1f5ea]] — 양은석
+- [[ko-f353d3588a]] — 드론비행금지구역
+- [[ko-f37f12ca4f]] — 국립부경대학교
+- [[ko-f39d9ce772]] — 등가회로모델(ECM)
+- [[ko-f3a8634f69]] — 손상기제
+- [[ko-f43c101015]] — 문주영
+- [[ko-f48163006a]] — LIG디펜스&에어로스페이스
+- [[ko-f589179a5d]] — 김태훈
+- [[ko-f6a2b11df3]] — 기록관리 규정
+- [[ko-f7f46438f5]] — 김채향
+- [[ko-f7fbf857b7]] — 김상혁
+- [[ko-f8905f3c8e]] — 무기체계
+- [[ko-f8a9d68b7d]] — 방위각
+- [[ko-f97a63376d]] — 컴퓨터비전
+- [[ko-f9ffca2140]] — 딥러닝
+- [[ko-fa66da814b]] — 세종대학교
+- [[ko-fa685c6178]] — 자연재난
+- [[ko-fb198810bb]] — 자세 센서
+- [[ko-fb5a52f62a]] — 드론 포화 공격
+- [[ko-fc381fac58]] — Monte Carlo 시뮬레이션
+- [[ko-fc53ac39a5]] — 부산대학교
+- [[ko-fcb55f7502]] — 위치 데이터
+- [[ko-fe5f63ffdc]] — 데이터 중심 소모전
+- [[ko-febf14020d]] — 한국항공우주연구원
+- [[ko-fec33f35f3]] — 박종일
+- [[ko-fecb7483a4]] — 국립기상과학원
+- [[korea-meteorological-administration-kma]] — Korea Meteorological Administration (KMA)
+- [[korean-aerospace-university]] — Korean Aerospace University
+- [[korean-army]] — Korean Army
+- [[korean-fir]] — Korean Fir
+- [[korean-national-university-of-arts]] — Korean National University Of Arts
+- [[kuan-xu]] — Kuan Xu
+- [[kuantama-endrowednes]] — Kuantama, Endrowednes
+- [[kumar-lal-vivek]] — Kumar, Lal Vivek
+- [[kumar-saurabh]] — Kumar, Saurabh
+- [[kumar-shashi-ranjan]] — Kumar, Shashi Ranjan
+- [[kunzhong-miao]] — Kunzhong Miao
+- [[lan-ping]] — Lan, Ping
+- [[lane-aware-congestion-modeling]] — Lane-aware Congestion Modeling
+- [[langendoerfer-peter]] — Langendoerfer, Peter
+- [[large-population-control]] — Large Population Control
+- [[larix-kaempferi]] — Larix kaempferi
+- [[last-mile-delivery]] — Last-Mile Delivery
+- [[latent-tokens]] — latent tokens
+- [[latentdynamics]] — LatentDynamics
+- [[lateral-tracking-error]] — Lateral Tracking Error
+- [[lcaat]] — LCAAT
+- [[le-thuan-van]] — Le, Thuan Van
+- [[least-squares-optimization]] — least squares optimization
+- [[leavens-gary-t]] — Leavens, Gary T.
+- [[lei]] — Lei
+- [[lei-zhang]] — Lei Zhang
+- [[li-haojia]] — Li, Haojia
+- [[li-jianan]] — Li, Jianan
+- [[li-jinjie]] — Li, Jinjie
+- [[li-max-z]] — Li, Max Z.
+- [[li-rongpeng]] — Li, Rongpeng
+- [[li-sixian]] — Li Sixian
+- [[li-wei]] — Li Wei
+- [[li-xiaopeng]] — Li, Xiaopeng
+- [[li-xingwang]] — Li, Xingwang
+- [[li-yang]] — Li Yang
+- [[li-yuhang]] — Li, Yuhang
+- [[liang]] — Liang
+- [[liang-you]] — Liang You
+- [[lichao-zhu]] — Lichao Zhu
+- [[lig-defense-aerospace]] — LIG Defense & Aerospace
+- [[lihua-xie]] — Lihua Xie
+- [[lijun-fu]] — Lijun Fu
+- [[lin-chenyu]] — Lin, Chenyu
+- [[lin-junyan]] — Lin, Junyan
+- [[line-segment-voronoi-diagram]] — line segment Voronoi diagram
+- [[linfeng-yuan]] — Linfeng Yuan
+- [[lingling-xiong]] — Lingling Xiong
+- [[lingwei-dang]] — Lingwei Dang
+- [[link-reorganization]] — Link Reorganization
+- [[lithium-ion-battery]] — lithium-ion battery
+- [[lithium-polymer-batteries-of-1100-mah]] — lithium polymer batteries of 1100 mAh
+- [[lithium-polymer-batteries-of-2200-mah]] — lithium polymer batteries of 2200 mAh
+- [[liu]] — Liu
+- [[liu-ang]] — Liu, Ang
+- [[liu-jiping]] — Liu, Jiping
+- [[liu-peize]] — Liu, Peize
+- [[lna]] — Lna
+- [[local-spatial-enhancement-module]] — Local Spatial Enhancement Module
+- [[log-law]] — log law
+- [[logic-level-errors]] — Logic-level errors
+- [[logistic-map]] — Logistic Map
+- [[logistics]] — Logistics
+- [[long-range-attack]] — Long-Range Attack
+- [[longkun-zou]] — Longkun Zou
+- [[lorenzo-gigli]] — Lorenzo Gigli
+- [[los-channels]] — Los Channels
+- [[loudspeaker]] — loudspeaker
+- [[low-altitude-ad-hoc-networks]] — Low-Altitude Ad Hoc Networks
+- [[low-level-control-capabilities]] — low-level control capabilities
+- [[low-level-physical-control]] — Low-level physical control
+- [[lowest-floor-boundary]] — lowest floor boundary
+- [[lpips]] — LPIPS
+- [[lte]] — Lte
+- [[luca-sciullo]] — Luca Sciullo
+- [[luo-bing]] — Luo, Bing
+- [[luo-jiajin]] — Luo, Jiajin
+- [[luong-nguyen-cong]] — Luong, Nguyen Cong
+- [[lv-jiancheng]] — Lv, Jiancheng
+- [[lv-kunwei]] — Lv, Kunwei
+- [[lv-yuezu]] — Lv, Yuezu
+- [[lyapunov-stability]] — Lyapunov Stability
+- [[m300-rtk]] — M300 Rtk
+- [[maharjan-sanjay]] — Maharjan, Sanjay
+- [[maki-toshihiro]] — Maki, Toshihiro
+- [[manan-khan-abdul]] — Manan Khan Abdul
+- [[manimaran]] — Manimaran
+- [[manu-perumkunnil]] — Manu Perumkunnil
+- [[mao-ye]] — Mao, Ye
+- [[mape]] — Mape
+- [[maram-alajlan]] — Maram Alajlan
+- [[maria-rashidi]] — Maria, Rashidi
+- [[mark-w-mueller]] — Mark W. Mueller
+- [[markov-decision-process-mdp]] — Markov decision process (MDP)
+- [[marl]] — Marl
+- [[matej-mihulka]] — Matej Mihulka
+- [[matej-novosad]] — Matej Novosad
+- [[matrix-completion]] — matrix completion
+- [[matteo-vandelli]] — Matteo Vandelli
+- [[mc-assisted-gpr-framework]] — MC-assisted GPR framework
+- [[mcp]] — Mcp
+- [[mdfnet]] — MDFNet
+- [[mdo]] — Mdo
+- [[median-frequency-feature-fusion]] — Median-Frequency Feature Fusion
+- [[mednikov-maxim]] — Mednikov, Maxim
+- [[meijer-g-function]] — Meijer G-function
+- [[meiyan-wang]] — Meiyan Wang
+- [[melissa-jia-ying-chong]] — Melissa Jia Ying Chong
+- [[meng-guo]] — Meng Guo
+- [[mengozzi-sebastiano]] — Mengozzi, Sebastiano
+- [[merouane-debbah]] — Merouane Debbah
+- [[mertik-matej]] — Mertik, Matej
+- [[mesh-topology]] — Mesh Topology
+- [[mesterharm-chris]] — Mesterharm, Chris
+- [[metadata-guided-mot-mg-mot]] — Metadata Guided MOT (MG-MOT)
+- [[metaheuristic]] — Metaheuristic
+- [[metaheuristic-optimization-algorithm]] — metaheuristic optimization algorithm
+- [[mfff-module]] — Mfff Module
+- [[miao]] — Miao
+- [[micasense-rededge-p]] — Micasense Rededge-P
+- [[micro-neural-policies-mnp]] — Micro Neural Policies (MNP)
+- [[microphone-array]] — microphone array
+- [[microphones]] — microphones
+- [[midcourse-guidance]] — Midcourse Guidance
+- [[millimeter-wave]] — millimeter-wave
+- [[millimeter-wave-mmwave]] — millimeter wave (mmWave)
+- [[mimmo-nicola]] — Mimmo, Nicola
+- [[mingfa-zheng]] — Mingfa Zheng
+- [[minimax-controller]] — minimax controller
+- [[mission-abort]] — Mission Abort
+- [[mission-context]] — mission context
+- [[mission-success-probability]] — Mission Success Probability
+- [[mistry-niel]] — Mistry, Niel
+- [[mlx90640]] — MLX90640
+- [[model-verification]] — Model Verification
+- [[modelfreerl]] — ModelFreeRL
+- [[mohamed-amine-ferrag]] — Mohamed Amine Ferrag
+- [[mohamed-khalgui]] — Mohamed Khalgui
+- [[montecarloanalysis]] — MonteCarloAnalysis
+- [[moor-danique-de]] — Moor, Danique de
+- [[motegi-yuichi]] — Motegi, Yuichi
+- [[motion-capture]] — Motion Capture
+- [[motion-models]] — Motion Models
+- [[mq-2]] — MQ-2
+- [[msffpn]] — Msffpn
+- [[muhammad-bilal]] — Muhammad, Bilal
+- [[mukherjee]] — Mukherjee
+- [[multi-agent-control]] — Multi-Agent Control
+- [[multi-agent-planning]] — Multi-Agent Planning
+- [[multi-agent-policy]] — multi-agent policy
+- [[multi-lane-highways]] — Multi-lane Highways
+- [[multi-objective-evolutionary-algorithm]] — Multi-Objective Evolutionary Algorithm
+- [[multi-stop-delivery-tours]] — Multi-Stop Delivery Tours
+- [[multi-target-tracking]] — Multi-Target Tracking
+- [[multichannel-wiener-filter-mwf]] — multichannel Wiener filter (MWF)
+- [[multicopters]] — multicopters
+- [[multidisciplinary-design-optimization]] — Multidisciplinary Design Optimization
+- [[multimodal-detection]] — Multimodal Detection
+- [[multimodal-image-fusion]] — Multimodal Image Fusion
+- [[multispectral-imaging]] — Multispectral Imaging
+- [[mutual-agreement-handshake]] — Mutual Agreement Handshake
+- [[mykytyn-pavlo]] — Mykytyn, Pavlo
+- [[nakagami-m-fading]] — Nakagami_m_fading
+- [[nantong-university]] — Nantong University
+- [[narsimlu-kemsaram]] — Narsimlu Kemsaram
+- [[nascimento-tiago]] — Nascimento, Tiago
+- [[nash-equilibrium]] — Nash Equilibrium
+- [[nato]] — NATO
+- [[natural-monument]] — Natural Monument
+- [[navigation-hijacking]] — Navigation hijacking
+- [[ndvi-rededge]] — NDVI rededge
+- [[near-thz]] — near THz
+- [[network-latency]] — network latency
+- [[network-slices]] — Network Slices
+- [[network-slicing]] — network slicing
+- [[neungju-basin]] — Neungju Basin
+- [[neural-network-observer]] — neural-network observer
+- [[neural-network-predictors]] — neural network predictors
+- [[ng-jerry]] — Ng, Jerry
+- [[node-replacement]] — Node Replacement
+- [[noh-young-ki]] — Noh Young-ki
+- [[non-linear-model]] — Non-linear Model
+- [[non-orthogonal-multiple-access-noma]] — non-orthogonal multiple access (NOMA)
+- [[non-robust-controller]] — non-robust controller
+- [[non-uniform-zooming]] — Non-Uniform Zooming
+- [[noncentral-chi-square-distributions]] — Noncentral Chi-Square Distributions
+- [[nong-wenli]] — Nong, Wenli
+- [[norbert-tihanyi]] — Norbert Tihanyi
+- [[normalized-impact-frequency-nif]] — normalized impact frequency (NIF)
+- [[novel-food]] — Novel Food
+- [[nps]] — Nps
+- [[ns-3]] — ns-3
+- [[nsf]] — NSF
+- [[nvidia-jetson-agx-orin]] — NVIDIA Jetson AGX Orin
+- [[nwachioma-christian]] — Nwachioma, Christian
+- [[nwd-loss]] — Nwd Loss
+- [[oafa]] — Oafa
+- [[observation-prediction]] — observation prediction
+- [[observer-based-control]] — Observer-Based Control
+- [[occ]] — OCC
+- [[occupation-measures]] — Occupation Measures
+- [[ocp]] — Ocp
+- [[odometryconditionedrelativestaterepresentation]] — OdometryConditionedRelativeStateRepresentation
+- [[ofdm]] — OFDM
+- [[off-grid-refinement]] — Off-Grid Refinement
+- [[offset-prediction]] — Offset Prediction
+- [[ogunbodede-oladapo]] — Ogunbodede, Oladapo
+- [[oh-ethan]] — Oh, Ethan
+- [[ohkuma-kenji]] — Ohkuma, Kenji
+- [[oikonomou-katerina-maria]] — Oikonomou, Katerina Maria
+- [[ollama]] — Ollama
+- [[one-way-delay]] — One-Way Delay
+- [[online-decision-making]] — online decision-making
+- [[online-localization]] — Online Localization
+- [[ooda-loop]] — Ooda Loop
+- [[ooi-wei-tsang]] — Ooi Wei Tsang
+- [[openstreetmap]] — OpenStreetMap
+- [[openvsp]] — Openvsp
+- [[operational-coordination-priority]] — Operational Coordination Priority
+- [[optical-encoders]] — optical encoders
+- [[optical-imagery]] — optical imagery
+- [[optical-resolution]] — Optical Resolution
+- [[optimal-assignment-policies]] — optimal assignment policies
+- [[optimization-control]] — optimization control
+- [[ordinary-kriging]] — ordinary Kriging
+- [[osa]] — Osa
+- [[p-b-sujit]] — P. B. Sujit
+- [[p65b]] — P65B
+- [[p73]] — P73
+- [[pablo-moraes]] — Pablo Moraes
+- [[packet-loss]] — packet loss
+- [[padf-module]] — Padf Module
+- [[paf-cfa]] — Paf/Cfa
+- [[pan]] — Pan
+- [[pansharpening]] — pansharpening
+- [[papapetros-ioannis-tsampikos]] — Papapetros, Ioannis Tsampikos
+- [[parakh-m-gupta]] — Parakh M. Gupta
+- [[park]] — Park
+- [[particle-swarm-optimization]] — Particle Swarm Optimization
+- [[passive-synchronization-pads]] — passive synchronization pads
+- [[path-delay]] — Path Delay
+- [[pathak-saketh]] — Pathak, Saketh
+- [[paulo-oliveira]] — Paulo Oliveira
+- [[payload-frame]] — payload frame
+- [[pd-controller]] — PD controller
+- [[pedal-point]] — Pedal Point
+- [[pedro-santos]] — Pedro Santos
+- [[pei-chaoying]] — Pei, Chaoying
+- [[peisen-xu]] — Peisen Xu
+- [[peng]] — Peng
+- [[per-triangle-dipole-approximation]] — per-triangle dipole approximation
+- [[periodogram]] — periodogram
+- [[permanent-magnets-synchronous-machines]] — Permanent Magnets Synchronous Machines
+- [[pesq]] — PESQ
+- [[peterson-cameron-k]] — Peterson, Cameron K.
+- [[phased-missions]] — Phased Missions
+- [[philipp-hoefer]] — Philipp Hoefer
+- [[physical-performance]] — Physical Performance
+- [[piggott]] — Piggott
+- [[pilot-assignment]] — Pilot Assignment
+- [[pilot-contamination]] — Pilot Contamination
+- [[plant-heritage]] — Plant Heritage
+- [[pmsms]] — PMSMs
+- [[point-cloud]] — Point Cloud
+- [[point-to-mesh-distance-filtering]] — point-to-mesh distance filtering
+- [[policy-learning]] — Policy Learning
+- [[positional-accuracy]] — Positional Accuracy
+- [[positive-semidefiniteness-condition]] — Positive-Semidefiniteness Condition
+- [[power-distribution-board]] — Power Distribution Board
+- [[power-law-vertical-wind-profiles]] — power-law vertical wind profiles
+- [[power-supply-systems]] — Power Supply Systems
+- [[ppo]] — Ppo
+- [[pranav-yogesh]] — Pranav Yogesh
+- [[precision-penetration]] — Precision Penetration
+- [[prediction-smoothing-projection]] — Prediction-Smoothing-Projection
+- [[prestel-stefan]] — Prestel, Stefan
+- [[prisma]] — PRISMA
+- [[probabilistic-spatial-temporal-envelopes]] — Probabilistic Spatial-Temporal Envelopes
+- [[processor-in-the-loop]] — processor-in-the-loop
+- [[prompt-temperature]] — prompt temperature
+- [[propellers]] — propellers
+- [[psnr]] — PSNR
+- [[pso]] — PSO
+- [[pu-fan]] — Pu, Fan
+- [[public-protection-and-disaster-relief]] — Public Protection and Disaster Relief
+- [[public-safety]] — Public Safety
+- [[pypofacets]] — Pypofacets
+- [[qimin-cheng]] — Qimin Cheng
+- [[qin-hongmao]] — Qin Hongmao
+- [[qingshuang-sun]] — Qingshuang, Sun
+- [[quadrature-signals]] — quadrature signals
+- [[quantum-adiabatic-algorithm]] — Quantum Adiabatic Algorithm
+- [[quantum-magnetometry]] — quantum magnetometry
+- [[queueing-network]] — Queueing Network
+- [[rabbit]] — Rabbit
+- [[radiodynamics]] — Radiodynamics
+- [[rajawat-ketan]] — Rajawat, Ketan
+- [[rajdeep]] — Rajdeep
+- [[rakesh-chowdhury]] — Rakesh, Chowdhury
+- [[ramirez-atencia-cristian]] — Ramirez-Atencia, Cristian
+- [[rammohan-mallipeddi]] — Rammohan, Mallipeddi
+- [[rao-nishanth]] — Rao, Nishanth
+- [[rathinam-sivakumar]] — Rathinam, Sivakumar
+- [[rayappa]] — Rayappa
+- [[real-time-information-sharing]] — Real-time Information Sharing
+- [[real-time-processing]] — Real-Time Processing
+- [[real-world-vehicle-mobility-traces]] — real-world vehicle mobility traces
+- [[recall]] — Recall
+- [[received-signal-to-noise-ratio-snr]] — received signal-to-noise ratio (SNR)
+- [[recharge]] — recharge
+- [[reference-controller]] — reference controller
+- [[reference-trajectory]] — reference trajectory
+- [[regularization-techniques]] — regularization techniques
+- [[relative-dynamics]] — Relative Dynamics
+- [[relief]] — Relief
+- [[ren-hang]] — Ren, Hang
+- [[representation-space]] — representation space
+- [[resnet-50]] — ResNet-50
+- [[resolvers]] — resolvers
+- [[reward-design]] — Reward Design
+- [[rewarddecomposition]] — RewardDecomposition
+- [[rf-channel]] — Rf Channel
+- [[rf-detection]] — RF Detection
+- [[ricardo-grando]] — Ricardo Grando
+- [[ris]] — Ris
+- [[rita-cunha]] — Rita Cunha
+- [[rizvi]] — Rizvi
+- [[rmse]] — Rmse
+- [[road-damage]] — Road Damage
+- [[road-topologies]] — Road Topologies
+- [[robert-penicka]] — Robert Penicka
+- [[robust-controller]] — robust controller
+- [[rotatable-antennas]] — Rotatable Antennas
+- [[rotation-delay-aware-communication-model]] — rotation-delay-aware communication model
+- [[rotor-thrust-limits]] — Rotor Thrust Limits
+- [[roy-sanku-kumar]] — Roy, Sanku Kumar
+- [[rpm]] — RPM
+- [[rrt]] — RRT*
+- [[rtb]] — RTB
+- [[rui-wang]] — Rui Wang
+- [[ruiqi-zhang]] — Ruiqi Zhang
+- [[ruitao-lu]] — Ruitao Lu
+- [[ruiz-santiago]] — Ruiz, Santiago
+- [[rule-based-verification-framework]] — rule-based verification framework
+- [[run-time-assurance]] — Run-Time Assurance
+- [[runtime-monitoring]] — Runtime Monitoring
+- [[rwm]] — RWM
+- [[s-ajani-oladayo]] — S., Ajani Oladayo
+- [[sae-arp4754b]] — Sae Arp4754B
+- [[safety-monitor]] — Safety Monitor
+- [[sample-preserving-evaluation]] — Sample-Preserving Evaluation
+- [[samshad-mohamed]] — Samshad, Mohamed
+- [[sang-feng]] — Sang Feng
+- [[sante-filippo]] — Sante, Filippo
+- [[sartaj-hassan]] — Sartaj Hassan
+- [[sca]] — Sca
+- [[school-of-information-science-and-technology]] — School Of Information Science And Technology
+- [[sciullo-luca]] — Sciullo, Luca
+- [[scotland]] — Scotland
+- [[sdr]] — Sdr
+- [[seasonal-amplitude]] — Seasonal Amplitude
+- [[seasonal-trajectory]] — Seasonal Trajectory
+- [[sebastian-eilermann]] — Sebastian Eilermann
+- [[sebastian-scherer]] — Sebastian Scherer
+- [[secrecy-capacity]] — Secrecy Capacity
+- [[secrecy-outage-probability]] — Secrecy Outage Probability
+- [[secrecy-rate]] — Secrecy Rate
+- [[sel4]] — Sel4
+- [[selection-combining]] — Selection Combining
+- [[self-correction]] — Self-Correction
+- [[semi-anechoic-chamber]] — semi-anechoic chamber
+- [[semi-open-queuing-network]] — semi-open queuing network
+- [[sen]] — Sen
+- [[ser-javier-del]] — Ser, Javier Del
+- [[servo-motor]] — servo motor
+- [[servo-motors]] — servo motors
+- [[seth-avishkar]] — Seth, Avishkar
+- [[shadowing]] — Shadowing
+- [[shen-shaojie]] — Shen, Shaojie
+- [[shenghui-huang]] — Shenghui Huang
+- [[shoon-kit-lim]] — Shoon Kit Lim
+- [[shreyash-s-iyengar]] — Shreyash S. Iyengar
+- [[shuangbao-ma]] — Shuangbao, Ma
+- [[shufang-yuan]] — Shufang Yuan
+- [[shuming-lin]] — Shuming Lin
+- [[shunyi-zhu]] — Shunyi Zhu
+- [[si-sdr]] — SI-SDR
+- [[sic]] — SIC
+- [[signal-phase-timing]] — Signal Phase Timing
+- [[signal-processing]] — Signal Processing
+- [[signal-to-noise-ratios-snrs]] — signal-to-noise ratios (SNRs)
+- [[signalized-intersections]] — Signalized Intersections
+- [[signmark-guided-navigation]] — Signmark-Guided Navigation
+- [[silveria-dimitria]] — Silveria, Dimitria
+- [[simple-kriging]] — simple Kriging
+- [[simplified-model]] — simplified model
+- [[single-customer-tours]] — Single-Customer Tours
+- [[single-shadowing]] — Single-Shadowing
+- [[sinha-abhinav]] — Sinha, Abhinav
+- [[siyu-wang]] — Siyu Wang
+- [[siyuan-zhan]] — Siyuan Zhan
+- [[sliding-window-self-attention]] — Sliding Window Self-Attention
+- [[slope]] — Slope
+- [[software-isolation]] — Software Isolation
+- [[spatial-attention]] — Spatial Attention
+- [[spatial-channel-dual-attention]] — Spatial-Channel Dual Attention
+- [[spatial-coverage]] — spatial coverage
+- [[spatial-resolution]] — Spatial Resolution
+- [[speck-ctr]] — Speck-Ctr
+- [[spectral-efficiency]] — Spectral Efficiency
+- [[speech-activity-detection]] — speech activity detection
+- [[speech-correlation-matrix-estimate]] — speech correlation matrix estimate
+- [[speech-enhancement]] — speech enhancement
+- [[speech-presence-probability-spp]] — speech presence probability (SPP)
+- [[spot-heights]] — Spot Heights
+- [[sppf]] — Sppf
+- [[sqlite]] — SQLite
+- [[sri]] — Sri
+- [[srithar]] — Srithar
+- [[srr]] — SRR
+- [[stability-verification]] — Stability Verification
+- [[stacca]] — Stacca
+- [[stagg-grant]] — Stagg, Grant
+- [[stanag-4586]] — Stanag 4586
+- [[star-topology]] — Star Topology
+- [[statistical-model-checking-smc]] — Statistical Model Checking (SMC)
+- [[statistical-turbulence]] — statistical turbulence
+- [[stein-adrian]] — Stein, Adrian
+- [[stl]] — Stl
+- [[stochastic-dynamic-programming]] — stochastic dynamic programming
+- [[stochastic-gaussian-policy]] — Stochastic Gaussian Policy
+- [[stochastic-goal-recurrence]] — stochastic goal recurrence
+- [[stoi]] — STOI
+- [[stp]] — Stp
+- [[straka-ond-ej]] — Straka, Ondřej
+- [[strict-total-ordering-relation]] — strict total ordering relation
+- [[strictly-positive-secrecy-capacity]] — Strictly Positive Secrecy Capacity
+- [[structural-element-extraction]] — structural element extraction
+- [[successive-convex-approximation]] — Successive Convex Approximation
+- [[successive-interference-cancellation]] — Successive Interference Cancellation
+- [[sudeepta-mishra]] — Sudeepta, Mishra
+- [[sugang-ma]] — Sugang Ma
+- [[sujit-p-b]] — Sujit, P. B.
+- [[sum-rate]] — Sum Rate
+- [[sun-yineng]] — Sun, Yineng
+- [[sundaram-suresh]] — Sundaram, Suresh
+- [[sungkyunkwan-university]] — Sungkyunkwan University
+- [[suresh-jagannathan]] — Suresh Jagannathan
+- [[swarm-intelligence]] — Swarm Intelligence
+- [[swarm-localization]] — Swarm Localization
+- [[swarm-manager]] — Swarm Manager
+- [[swarm-robotics]] — Swarm Robotics
+- [[syeda-amna]] — Syeda Amna
+- [[syntax-errors]] — Syntax errors
+- [[synthetic-coherent-structures]] — synthetic coherent structures
+- [[system-level-conditions]] — System-Level Conditions
+- [[system-on-module-som]] — System on Module (SOM)
+- [[t-basu]] — T. Basu
+- [[t-rebolo]] — T. Rebolo
+- [[tactical-framework]] — Tactical Framework
+- [[takemura-reiya]] — Takemura, Reiya
+- [[tali-orlev-shapira]] — Tali Orlev Shapira
+- [[tan-ligang]] — Tan Ligang
+- [[tang-chenwei]] — Tang, Chenwei
+- [[tang-jiaman]] — Tang Jiaman
+- [[tao-meixia]] — Tao Meixia
+- [[tao-wang]] — Tao Wang
+- [[tao-yi]] — Tao, Yi
+- [[tarek-abbes]] — Tarek Abbes
+- [[target-assignment]] — Target Assignment
+- [[target-coverage-ratio]] — Target Coverage Ratio
+- [[target-identification]] — Target Identification
+- [[target-scale]] — Target Scale
+- [[task-allocation]] — Task Allocation
+- [[taylor-max]] — Taylor, Max
+- [[tdma]] — Tdma
+- [[tdoa]] — TDOA
+- [[teaya-yang]] — Teaya Yang
+- [[temporal-dependencies]] — temporal dependencies
+- [[tengan-elisa]] — Tengan, Elisa
+- [[terahertz-thz]] — terahertz (THz)
+- [[test-scenario-generation]] — Test Scenario Generation
+- [[tevv]] — TEVV
+- [[textbook-model-of-blcd-dynamics]] — textbook model of BLCD dynamics
+- [[thahsin-adheeba]] — Thahsin, Adheeba
+- [[thermal-imaging]] — Thermal imaging
+- [[thermal-lwir]] — Thermal Lwir
+- [[throughput]] — throughput
+- [[tianyu-wang]] — Tianyu Wang
+- [[tianyuan-fan]] — Tianyuan Fan
+- [[time-allocation]] — Time Allocation
+- [[time-series]] — Time Series
+- [[time-slot-scheduling]] — Time-Slot Scheduling
+- [[timing-synchronization]] — Timing Synchronization
+- [[tolga-kahraman-h]] — Tolga, Kahraman H.
+- [[torque-current-controller]] — torque/current controller
+- [[toumieh-charbel]] — Toumieh, Charbel
+- [[tovey-samuel]] — Tovey, Samuel
+- [[tpi]] — Tpi
+- [[track-selection-scheme-tss]] — Track Selection Scheme (TSS)
+- [[traffic-conditions]] — Traffic Conditions
+- [[trajectory-generation]] — Trajectory Generation
+- [[trajectory-prediction]] — Trajectory Prediction
+- [[trans-gaussian-kriging]] — trans-Gaussian Kriging
+- [[transfer-learning]] — transfer learning
+- [[transmit-power]] — Transmit Power
+- [[transport-layer-security]] — Transport Layer Security
+- [[trimpe-sebastian]] — Trimpe, Sebastian
+- [[trinity-f90]] — Trinity F90+
+- [[trotta-angelo]] — Trotta, Angelo
+- [[tu-ngo-hoang]] — Tu, Ngo Hoang
+- [[twi]] — Twi
+- [[two-sample-t-test]] — Two Sample T-Test
+- [[two-stage-detector]] — Two-Stage Detector
+- [[two-stage-robust-optimization]] — two-stage robust optimization
+- [[u-space-service-provider]] — U-space Service Provider
+- [[uam]] — UAM
+- [[uatg]] — Uatg
+- [[uda]] — Uda
+- [[ugv]] — Ugv
+- [[uist-2026]] — Uist 2026
+- [[unified-assignment-and-trajectory-generation]] — Unified Assignment And Trajectory Generation
+- [[uniia-det]] — UniIA-DET
+- [[university-of-tabriz]] — University Of Tabriz
+- [[unmanned-carrier]] — Unmanned Carrier
+- [[unmanned-ground-vehicle-ugv]] — Unmanned Ground Vehicle (UGV)
+- [[unreal-engine]] — Unreal Engine
+- [[user-plane]] — User Plane
+- [[user-scheduling]] — User Scheduling
+- [[utm]] — UTM
+- [[uwb]] — UWB
+- [[valerio-modugno]] — Valerio Modugno
+- [[value-of-information]] — Value-Of-Information
+- [[value-of-movement]] — Value Of Movement
+- [[variable-feedback-controller]] — Variable Feedback Controller
+- [[vaze-vikrant]] — Vaze, Vikrant
+- [[vazquez-ruben]] — Vazquez, Ruben
+- [[vegetation-index]] — Vegetation Index
+- [[vehicle-density]] — Vehicle Density
+- [[vehicle-dynamics]] — vehicle dynamics
+- [[vehicle-to-everything-communication]] — vehicle-to-everything communication
+- [[vejaykarthy]] — Vejaykarthy
+- [[vertical-offset]] — Vertical Offset
+- [[vertical-rigid-links]] — vertical rigid links
+- [[vfst]] — Vfst
+- [[vikas-dhiman]] — Vikas, Dhiman
+- [[vikash-m]] — Vikash M.
+- [[vincent-sandin]] — Vincent Sandin
+- [[visible-imaging]] — Visible Imaging
+- [[visible-light-communication]] — visible light communication
+- [[visible-spectrum-imaging]] — Visible spectrum imaging
+- [[vision-based-collective-flight]] — Vision-Based Collective Flight
+- [[vision-transformer]] — Vision Transformer
+- [[visual-inertial-fusion]] — Visual-Inertial Fusion
+- [[visual-servoing-control]] — Visual Servoing Control
+- [[vitale-christian]] — Vitale, Christian
+- [[vittorio-palladino]] — Vittorio Palladino
+- [[vlm]] — Vlm
+- [[vlms]] — Vlms
+- [[vln]] — Vln
+- [[vnir]] — Vnir
+- [[vspaero]] — Vspaero
+- [[w3c-web-of-things]] — W3C Web Of Things
+- [[walugembe-francis-noah]] — Walugembe, Francis Noah
+- [[wan-ziwei]] — Wan, Ziwei
+- [[wang-haokun]] — Wang, Haokun
+- [[wang-hua]] — Wang, Hua
+- [[wang-tao]] — Wang, Tao
+- [[wang-tianyu]] — Wang, Tianyu
+- [[wang-xiubin]] — Wang, Xiubin
+- [[wang-xiucheng]] — Wang, Xiucheng
+- [[wang-yita]] — Wang, Yita
+- [[wang-yong]] — Wang, Yong
+- [[wang-zhiming]] — Wang, Zhiming
+- [[wang-zijun]] — Wang, Zijun
+- [[warehouse-robots]] — Warehouse Robots
+- [[waterschoot-toon-van]] — Waterschoot, Toon van
+- [[wav2vec2]] — Wav2Vec2
+- [[waypoint-navigation]] — Waypoint Navigation
+- [[weapon-range]] — Weapon Range
+- [[weapon-system]] — Weapon System
+- [[weather-scenarios]] — Weather Scenarios
+- [[wei-zhang]] — Wei Zhang
+- [[weighted-random-generator]] — Weighted Random Generator
+- [[weiyang-chen]] — Weiyang, Chen
+- [[weiyi-hu]] — Weiyi, Hu
+- [[wenli-nong]] — Wenli Nong
+- [[wenqi-zhang]] — Wenqi Zhang
+- [[wenquan-dong]] — Wenquan, Dong
+- [[wheel-mode]] — wheel mode
+- [[wielgosz-maciej]] — Wielgosz, Maciej
+- [[wildfire-prevention-expenditure]] — wildfire-prevention expenditure
+- [[william-moraes]] — William Moraes
+- [[williamson-jane]] — Williamson, Jane
+- [[wind-disturbances]] — wind disturbances
+- [[wonkwang-university]] — Wonkwang University
+- [[wot]] — Wot
+- [[wpf]] — WPF
+- [[wtconv]] — Wtconv
+- [[x-car]] — X-CAR
+- [[xia-beihao]] — Xia Beihao
+- [[xian-li]] — Xian, Li
+- [[xiangqi-li]] — Xiangqi Li
+- [[xiangyu-li]] — Xiangyu Li
+- [[xiao-zhiren]] — Xiao, Zhiren
+- [[xiaohua-cao]] — Xiaohua Cao
+- [[xiaowei-li]] — Xiaowei Li
+- [[xiaqing]] — Xiaqing
+- [[xie-yakun]] — Xie, Yakun
+- [[xiling-luo]] — Xiling Luo
+- [[xinghui-dong]] — Xinghui, Dong
+- [[xingshe-zhou]] — Xingshe Zhou
+- [[xingyue-zhou]] — Xingyue Zhou
+- [[xinlong-zheng]] — Xinlong, Zheng
+- [[xintong-zhang]] — Xintong Zhang
+- [[xiong-deng]] — Xiong, Deng
+- [[xtech]] — Xtech
+- [[xu-dongliang]] — Xu, Dongliang
+- [[xunyang-su]] — Xunyang, Su
+- [[yamauchi-hiroshi]] — Yamauchi, Hiroshi
+- [[yan-zhang]] — Yan Zhang
+- [[yan-zhao]] — Yan Zhao
+- [[yanfeng-gu]] — Yanfeng, Gu
+- [[yang]] — Yang
+- [[yang-liu]] — Yang Liu
+- [[yang-zhou]] — Yang Zhou
+- [[yangjie-wei]] — Yangjie, Wei
+- [[yanze-jiang]] — Yanze, Jiang
+- [[yao-liang]] — Yao, Liang
+- [[yao-yue]] — Yao, Yue
+- [[yapeng-zhang]] — Yapeng, Zhang
+- [[yasir-javed]] — Yasir Javed
+- [[yifeng-niu]] — Yifeng Niu
+- [[yin-xiang]] — Yin, Xiang
+- [[yingjie-du]] — Yingjie Du
+- [[yongin-university]] — Yongin University
+- [[yosi-ben-asher]] — Yosi Ben Asher
+- [[you-sixiong]] — You, Sixiong
+- [[yu-di]] — Yu, Di
+- [[yuan]] — Yuan
+- [[yuan-xiaojun]] — Yuan Xiaojun
+- [[yuan-yao]] — Yuan Yao
+- [[yue-yao]] — Yue Yao
+- [[yuqi-wang]] — Yuqi Wang
+- [[yusuf-s-nmez]] — Yusuf, Sönmez
+- [[yutong-wang]] — Yutong, Wang
+- [[yuxiao-zhu]] — Yuxiao Zhu
+- [[yuxing-wei]] — Yuxing Wei
+- [[z-axis-alignment]] — Z-axis alignment
+- [[zakria-qadir]] — Zakria, Qadir
+- [[ze-liu]] — Ze Liu
+- [[zero-shot-transfer]] — zero-shot transfer
+- [[zexing-wang]] — Zexing Wang
+- [[zhang]] — Zhang
+- [[zhang-honggang]] — Zhang, Honggang
+- [[zhang-xintong]] — Zhang, Xintong
+- [[zhang-yun]] — Zhang, Yun
+- [[zhang-yunlong]] — Zhang, Yunlong
+- [[zhang-zhiheng]] — Zhang, Zhiheng
+- [[zhanhong-zhuo]] — Zhanhong Zhuo
+- [[zhao-jian]] — Zhao, Jian
+- [[zhao-moju]] — Zhao, Moju
+- [[zhao-yang]] — Zhao, Yang
+- [[zhao-zhifeng]] — Zhao, Zhifeng
+- [[zhaoyang-sheng]] — Zhaoyang Sheng
+- [[zheng-cao]] — Zheng Cao
+- [[zheng-li]] — Zheng, Li
+- [[zhichao-shi]] — Zhichao Shi
+- [[zhigang]] — Zhigang
+- [[zhiheng-zhang]] — Zhiheng Zhang
+- [[zhiming-wang]] — Zhiming Wang
+- [[zhipeng-zhang]] — Zhipeng, Zhang
+- [[zhiqiang-hou]] — Zhiqiang Hou
+- [[zhixing-wang]] — Zhixing Wang
+- [[zhongjun-fu]] — Zhongjun Fu
+- [[zhou-boyu]] — Zhou, Boyu
+- [[zhou-jizhe]] — Zhou, Jizhe
+- [[zhou-yang]] — Zhou, Yang
+- [[zhou-yuhao]] — Zhou, Yuhao
+- [[zhu-jun]] — Zhu, Jun
+- [[zhu-shunjie]] — Zhu, Shunjie
+- [[zhu-yuxiao]] — Zhu, Yuxiao
+- [[zikang-xiong]] — Zikang Xiong
+- [[zongzhen-liu]] — Zongzhen Liu
+
+## 관련 허브
+
+- [[auto-hub-concept]]
+- [[auto-hub-hardware]]
+- [[auto-hub-mission]]
+- [[auto-hub-organization]]
+- [[auto-hub-person]]
+- [[auto-hub-protocol]]
+- [[auto-hub-regulation]]
+- [[auto-hub-source-articles]]
+- [[auto-hub-source-youtube]]
+- [[auto-hub-technology]]

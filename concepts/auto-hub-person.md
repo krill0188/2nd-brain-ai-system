@@ -1,0 +1,605 @@
+---
+title: "자동 승격 허브: person"
+created: 2026-10-24
+updated: 2026-10-24
+type: concept
+tags: [auto-hub, unreviewed]
+sources: [".ua/discovery-knowledge-graph.json"]
+confidence: low
+contested: false
+contradictions: []
+---
+
+# 자동 승격 허브: person
+
+## 정의
+
+discovery 그래프에서 자동 추출·일괄 승격된 항목을 분류별로 모아 둔 목록이다. 항목 내용은 사람이 검토하지 않았다.
+
+## 항목
+
+- [[a-ananthapadmanabhan]] — A., Ananthapadmanabhan
+- [[a-grilo]] — A. Grilo
+- [[abdelfettah-belghith]] — Abdelfettah Belghith
+- [[abderrahmane-lakas]] — Abderrahmane Lakas
+- [[abichandani-pramod]] — Abichandani, Pramod
+- [[abusafia]] — Abusafia
+- [[adeyinka-adedigba]] — Adeyinka, Adedigba
+- [[ah-ri-shin]] — Ah-Ri Shin
+- [[ahilen-mazondo]] — Ahilen Mazondo
+- [[ahmed-aboelezz]] — Ahmed, Aboelezz
+- [[ahmed-radwan]] — Ahmed Radwan
+- [[akshay-gupta-burela]] — Akshay Gupta Burela
+- [[ali-tourani]] — Ali Tourani
+- [[alkmim-mansour]] — Alkmim, Mansour
+- [[alkouz]] — Alkouz
+- [[allen-ross-e]] — Allen, Ross E.
+- [[alqudsi-yunes]] — Alqudsi, Yunes
+- [[alvaro-j-gaona]] — Alvaro J. Gaona
+- [[amani]] — Amani
+- [[ammar-hussein-a]] — Ammar, Hussein A.
+- [[amorim-arthur]] — Amorim, Arthur
+- [[andr-fonte]] — André Fonte
+- [[andr-kelbouscas]] — André Kelbouscas
+- [[ang-liu]] — Ang Liu
+- [[angelo-trotta]] — Angelo Trotta
+- [[anis-koubaa]] — Anis Koubaa
+- [[ant-nio-pascoal]] — António Pascoal
+- [[anyi]] — Anyi
+- [[araujo-paulo-ricardo-marques-de]] — Araujo, Paulo Ricardo Marques De
+- [[asmar-muqeet]] — Asmar Muqeet
+- [[ata-turgut]] — Ata, Turgut
+- [[athman]] — Athman
+- [[azza-allouch]] — Azza Allouch
+- [[b-parsonage]] — B. Parsonage
+- [[baker-karan]] — Baker, Karan
+- [[balakrishnan]] — Balakrishnan
+- [[balaska-vasiliki]] — Balaska, Vasiliki
+- [[balsam]] — Balsam
+- [[bampis-loukas]] — Bampis, Loukas
+- [[bao-vo-nguyen-quoc]] — Bao, Vo Nguyen Quoc
+- [[basiri-meysam]] — Basiri, Meysam
+- [[bayes-james]] — Bayes, James
+- [[bing-luo]] — Bing Luo
+- [[bingcong-huo]] — Bingcong Huo
+- [[bobo-xi]] — Bobo Xi
+- [[bosso-alessandro]] — Bosso, Alessandro
+- [[bou-ek-zden-k]] — Bouček, Zdeněk
+- [[bouguettaya]] — Bouguettaya
+- [[bowu-wei]] — Bowu Wei
+- [[brett]] — Brett
+- [[burela-akshay-gupta]] — Burela, Akshay Gupta
+- [[c-maddock]] — C. Maddock
+- [[c-ribeiro]] — C. Ribeiro
+- [[camacho-david]] — Camacho, David
+- [[cannata-giorgio]] — Cannata, Giorgio
+- [[cao-rui]] — Cao, Rui
+- [[cardenuto-jo-o]] — Cardenuto, João
+- [[carlini-giorgio]] — Carlini, Giorgio
+- [[cesareo-fabrizio]] — Cesareo, Fabrizio
+- [[chadha-ritu]] — Chadha, Ritu
+- [[chae-woo-nam]] — Chae Woo NAM
+- [[chan-francois]] — Chan, Francois
+- [[chandra-caden]] — Chandra, Caden
+- [[chang-hyeok-park]] — Chang-Hyeok Park
+- [[chang-wang]] — Chang Wang
+- [[chen-chen]] — Chen, Chen
+- [[chen-hongyu]] — Chen, Hongyu
+- [[chen-junfeng]] — Chen, Junfeng
+- [[chen-sheng]] — Chen, Sheng
+- [[chen-yicheng]] — Chen, Yicheng
+- [[chen-zifa]] — Chen, Zifa
+- [[cheng-feinan]] — Cheng, Feinan
+- [[cheng-nan]] — Cheng, Nan
+- [[chengjia-wang]] — Chengjia, Wang
+- [[chengpeng-jiang]] — Chengpeng Jiang
+- [[chenwei-tang]] — Chenwei Tang
+- [[chenyu-lin]] — Chenyu Lin
+- [[chenzhe-jin]] — Chenzhe Jin
+- [[chitauro-ronald]] — Chitauro, Ronald
+- [[choi-jimin]] — Choi, Jimin
+- [[chris-anderson]] — Chris Anderson
+- [[christoph-petroll]] — Christoph Petroll
+- [[chuang]] — Chuang
+- [[chuangxin-guo]] — Chuangxin Guo
+- [[chuhan-ma]] — Chuhan Ma
+- [[concei-o-maria]] — Conceição, Maria
+- [[conficoni-christian]] — Conficoni, Christian
+- [[cong]] — Cong
+- [[daniel-psijas]] — Daniel Psijas
+- [[daniele-dragoni]] — Daniele Dragoni
+- [[david-amar-raj]] — David Amar Raj
+- [[deng-xiong]] — Deng Xiong
+- [[dharmalingam]] — Dharmalingam
+- [[di-wu]] — Di Wu
+- [[ding-guoru]] — Ding, Guoru
+- [[dingwen-zhang]] — Dingwen Zhang
+- [[dixit-bhavya]] — Dixit, Bhavya
+- [[dong-wang]] — Dong Wang
+- [[dongliang-xu]] — Dongliang Xu
+- [[dunphy-dutch]] — Dunphy, Dutch
+- [[duo-bin]] — Duo Bin
+- [[dyka-zoya]] — Dyka, Zoya
+- [[e-patelli]] — E. Patelli
+- [[ehsan-noroozinejad-farsangi]] — Ehsan, Noroozinejad Farsangi
+- [[ellinas-georgios]] — Ellinas, Georgios
+- [[f-genschuh-armin]] — Fügenschuh, Armin
+- [[feinan-cheng]] — Feinan Cheng
+- [[fen-liu]] — Fen Liu
+- [[feng]] — Feng
+- [[feng-chen]] — Feng, Chen
+- [[feng-dejun]] — Feng, Dejun
+- [[feng-yimeng]] — Feng, Yimeng
+- [[findeisen-rolf]] — Findeisen, Rolf
+- [[fl-dr-miroslav]] — Flídr, Miroslav
+- [[floreano-dario]] — Floreano, Dario
+- [[fu-ren]] — Fu Ren
+- [[g-filippi]] — G. Filippi
+- [[gal-oren]] — Gal, Oren
+- [[gang-wang]] — Gang Wang
+- [[gang-yang]] — Gang Yang
+- [[gao-fei]] — Gao, Fei
+- [[gao-zhen]] — Gao, Zhen
+- [[gaofeng]] — Gaofeng
+- [[gasche-sebastian]] — Gasche, Sebastian
+- [[gasteratos-antonios]] — Gasteratos, Antonios
+- [[geng]] — Geng
+- [[ghazy-abdallah-s]] — Ghazy, Abdallah S.
+- [[gigli-lorenzo]] — Gigli, Lorenzo
+- [[givigi-sidney]] — Givigi, Sidney
+- [[glenn-jocher]] — glenn-jocher
+- [[gori-an-toma]] — Goričan, Tomaž
+- [[gr-fe-alexander]] — Gräfe, Alexander
+- [[grigoriou-yiannis]] — Grigoriou, Yiannis
+- [[grilo-ant-nio]] — Grilo, António
+- [[guo-lili]] — Guo Lili
+- [[guo-meng]] — Guo, Meng
+- [[guohuan]] — Guohuan
+- [[h-nig-wolfgang]] — Hönig, Wolfgang
+- [[h-seyin-k-kerdem]] — Hüseyin, Küçükerdem
+- [[hamid-hosseini-dolatabadi-sayed]] — Hamid, Hosseini Dolatabadi Sayed
+- [[hamza-zafar-muhammad]] — Hamza, Zafar Muhammad
+- [[han-richard]] — Han, Richard
+- [[hang-rao]] — Hang Rao
+- [[haoran-hu]] — Haoran, Hu
+- [[haorui-zuo]] — Haorui Zuo
+- [[harrison-william-l]] — Harrison, William L.
+- [[hendriks-richard-c]] — Hendriks, Richard C.
+- [[heusdens-richard]] — Heusdens, Richard
+- [[hiago-sodre]] — Hiago Sodre
+- [[hlayel-tariq]] — Hlayel, Tariq
+- [[holger-voos]] — Holger Voos
+- [[hongbo-yu]] — Hongbo Yu
+- [[hongjiang]] — Hongjiang
+- [[hongliang-gao]] — Hongliang, Gao
+- [[hongpeng-li]] — Hongpeng Li
+- [[hongxu-yin]] — Hongxu Yin
+- [[hongyu-chi]] — Hongyu Chi
+- [[hriday-bavle]] — Hriday Bavle
+- [[hua-cui]] — Hua, Cui
+- [[hua-zhou]] — Hua Zhou
+- [[huan-junxi]] — Huan, Junxi
+- [[huang-jiahao]] — Huang, Jiahao
+- [[huang-junbin]] — Huang, Junbin
+- [[huang-xun]] — Huang, Xun
+- [[huang-zhifeng]] — Huang, Zhifeng
+- [[hui-luo]] — Hui Luo
+- [[huo-bingcong]] — Huo, Bingcong
+- [[huynh-the-thien]] — Huynh-The, Thien
+- [[igor-nunes]] — Igor Nunes
+- [[ishigami-genya]] — Ishigami, Genya
+- [[itzik-klein]] — Itzik Klein
+- [[jagtap-pushpak]] — Jagtap, Pushpak
+- [[james-alice]] — James, Alice
+- [[jan-ming-kevin-tan]] — Jan Ming Kevin Tan
+- [[jarvis-benjamin]] — Jarvis, Benjamin
+- [[javier-baladron]] — Javier Baladron
+- [[jay-patrikar]] — Jay Patrikar
+- [[jeger-simon]] — Jeger, Simon
+- [[jeryes-danial]] — Jeryes Danial
+- [[jia]] — Jia
+- [[jiajia-xu]] — Jiajia Xu
+- [[jialing-liu]] — Jialing Liu
+- [[jian-bi]] — Jian Bi
+- [[jian-ke]] — Jian Ke
+- [[jian-zhao]] — Jian Zhao
+- [[jianan-li]] — Jianan Li
+- [[jiancheng-lv]] — Jiancheng Lv
+- [[jiang]] — Jiang
+- [[jiankun-peng]] — Jiankun Peng
+- [[jianlin-zhang]] — Jianlin Zhang
+- [[jianshuo]] — Jianshuo
+- [[jianxiong-yu]] — Jianxiong Yu
+- [[jiaze]] — Jiaze
+- [[jie-shi]] — Jie Shi
+- [[jing-huey-khor]] — Jing Huey Khor
+- [[jinyi-liang]] — Jinyi Liang
+- [[jizhe-zhou]] — Jizhe Zhou
+- [[jo-o-pinto]] — João Pinto
+- [[joe-eappen]] — Joe Eappen
+- [[john-coltrane]] — John Coltrane
+- [[john-keller]] — John Keller
+- [[joneckis-lance]] — Joneckis, Lance
+- [[jose-luis-sanchez-lopez]] — Jose Luis Sanchez-Lopez
+- [[jun-yang]] — Jun Yang
+- [[junfeng-chen]] — Junfeng Chen
+- [[junjie-zhu]] — Junjie Zhu
+- [[junnan-tan]] — Junnan Tan
+- [[kang-gu-hyun]] — Kang Gu-Hyun
+- [[kann-trevor]] — Kann, Trevor
+- [[karel-toledo]] — Karel Toledo
+- [[kasbekar-gaurav-s]] — Kasbekar, Gaurav S.
+- [[keyang-li]] — Keyang Li
+- [[ki-hong]] — Ki-Hong
+- [[kim-heegyeong]] — Kim, Heegyeong
+- [[ko-060e441b50]] — 남채우
+- [[ko-06c49977d4]] — 나기정
+- [[ko-12e26afd19]] — 곽민슬
+- [[ko-15b496a5dc]] — 정윤정
+- [[ko-15d5a66223]] — 김준호
+- [[ko-16b0616709]] — 문홍렬
+- [[ko-1a587cd26f]] — 임동균
+- [[ko-1f2616d1ba]] — 양원준
+- [[ko-24d4906cda]] — 이후진
+- [[ko-2c06ef598b]] — 박현호
+- [[ko-2c8e7bc523]] — 정수호
+- [[ko-32b67935fd]] — 조성범
+- [[ko-341670f42e]] — 윤공현
+- [[ko-364cee4994]] — 조영복
+- [[ko-3998237461]] — 조건우
+- [[ko-43f28be610]] — 정우성
+- [[ko-4a231cda65]] — 홍일영
+- [[ko-4f8e6cd15f]] — 김상현
+- [[ko-506011f6ea]] — 이홍진
+- [[ko-51f6fd4bef]] — 배재영
+- [[ko-621b172dbd]] — 임영훈
+- [[ko-65acc031d7]] — 문형훈
+- [[ko-69c951be19]] — 이한섭
+- [[ko-73f00b6277]] — 심상훈
+- [[ko-79d8e0cf1c]] — 이우철
+- [[ko-7adb53ce51]] — 김세준
+- [[ko-7cc771aeaa]] — 조환희
+- [[ko-8323393e8a]] — 황세연
+- [[ko-89edd91385]] — 한만준
+- [[ko-8a1c83296e]] — 황인하
+- [[ko-8b824d5dac]] — 정재환
+- [[ko-92cff5bef2]] — 제갈갑성
+- [[ko-96729ed924]] — 이원석
+- [[ko-a80f968d99]] — 최인오
+- [[ko-ad4edd4023]] — 임현수
+- [[ko-ae13f72c65]] — 정재호
+- [[ko-ae1ae76a07]] — 이준혁
+- [[ko-b092130cca]] — 김요셉
+- [[ko-b367cbc6e6]] — 정경서
+- [[ko-b8b6c5ac7f]] — 전선재
+- [[ko-bdf3bf2a5e]] — 김진희
+- [[ko-c7410e33f5]] — 안효득
+- [[ko-c7adc35f38]] — 김지안
+- [[ko-c92eeaf9a6]] — 최병길
+- [[ko-cf72267af7]] — 황병연
+- [[ko-ddc7223fe2]] — 남경훈
+- [[ko-e2bbbe154c]] — 이호진
+- [[ko-e39f453fff]] — 이호준
+- [[ko-e3f50eb92b]] — 윤민철
+- [[ko-e54c31fc32]] — 김문용
+- [[ko-e7eec6e254]] — 이지선
+- [[ko-ef133e9c31]] — 이연우
+- [[ko-f23da1f5ea]] — 양은석
+- [[ko-f43c101015]] — 문주영
+- [[ko-f589179a5d]] — 김태훈
+- [[ko-f7f46438f5]] — 김채향
+- [[ko-f7fbf857b7]] — 김상혁
+- [[ko-fec33f35f3]] — 박종일
+- [[kuan-xu]] — Kuan Xu
+- [[kuantama-endrowednes]] — Kuantama, Endrowednes
+- [[kumar-lal-vivek]] — Kumar, Lal Vivek
+- [[kumar-saurabh]] — Kumar, Saurabh
+- [[kumar-shashi-ranjan]] — Kumar, Shashi Ranjan
+- [[kunzhong-miao]] — Kunzhong Miao
+- [[lan-ping]] — Lan, Ping
+- [[langendoerfer-peter]] — Langendoerfer, Peter
+- [[le-thuan-van]] — Le, Thuan Van
+- [[leavens-gary-t]] — Leavens, Gary T.
+- [[lei]] — Lei
+- [[lei-zhang]] — Lei Zhang
+- [[li-haojia]] — Li, Haojia
+- [[li-jianan]] — Li, Jianan
+- [[li-jinjie]] — Li, Jinjie
+- [[li-max-z]] — Li, Max Z.
+- [[li-rongpeng]] — Li, Rongpeng
+- [[li-sixian]] — Li Sixian
+- [[li-wei]] — Li Wei
+- [[li-xiaopeng]] — Li, Xiaopeng
+- [[li-xingwang]] — Li, Xingwang
+- [[li-yang]] — Li Yang
+- [[li-yuhang]] — Li, Yuhang
+- [[liang]] — Liang
+- [[liang-you]] — Liang You
+- [[lichao-zhu]] — Lichao Zhu
+- [[lihua-xie]] — Lihua Xie
+- [[lijun-fu]] — Lijun Fu
+- [[lin-chenyu]] — Lin, Chenyu
+- [[lin-junyan]] — Lin, Junyan
+- [[linfeng-yuan]] — Linfeng Yuan
+- [[lingling-xiong]] — Lingling Xiong
+- [[lingwei-dang]] — Lingwei Dang
+- [[liu]] — Liu
+- [[liu-ang]] — Liu, Ang
+- [[liu-jiping]] — Liu, Jiping
+- [[liu-peize]] — Liu, Peize
+- [[longkun-zou]] — Longkun Zou
+- [[lorenz-meier]] — Lorenz Meier
+- [[lorenzo-gigli]] — Lorenzo Gigli
+- [[luca-sciullo]] — Luca Sciullo
+- [[luo-bing]] — Luo, Bing
+- [[luo-jiajin]] — Luo, Jiajin
+- [[luong-nguyen-cong]] — Luong, Nguyen Cong
+- [[lv-jiancheng]] — Lv, Jiancheng
+- [[lv-kunwei]] — Lv, Kunwei
+- [[lv-yuezu]] — Lv, Yuezu
+- [[maharjan-sanjay]] — Maharjan, Sanjay
+- [[maki-toshihiro]] — Maki, Toshihiro
+- [[manan-khan-abdul]] — Manan Khan Abdul
+- [[manimaran]] — Manimaran
+- [[manu-perumkunnil]] — Manu Perumkunnil
+- [[mao-ye]] — Mao, Ye
+- [[maram-alajlan]] — Maram Alajlan
+- [[maria-rashidi]] — Maria, Rashidi
+- [[mark-w-mueller]] — Mark W. Mueller
+- [[matej-mihulka]] — Matej Mihulka
+- [[matej-novosad]] — Matej Novosad
+- [[matteo-vandelli]] — Matteo Vandelli
+- [[mednikov-maxim]] — Mednikov, Maxim
+- [[meiyan-wang]] — Meiyan Wang
+- [[melissa-jia-ying-chong]] — Melissa Jia Ying Chong
+- [[meng-guo]] — Meng Guo
+- [[mengozzi-sebastiano]] — Mengozzi, Sebastiano
+- [[merouane-debbah]] — Merouane Debbah
+- [[mertik-matej]] — Mertik, Matej
+- [[mesterharm-chris]] — Mesterharm, Chris
+- [[miao]] — Miao
+- [[mimmo-nicola]] — Mimmo, Nicola
+- [[mingfa-zheng]] — Mingfa Zheng
+- [[mistry-niel]] — Mistry, Niel
+- [[mohamed-amine-ferrag]] — Mohamed Amine Ferrag
+- [[mohamed-khalgui]] — Mohamed Khalgui
+- [[moor-danique-de]] — Moor, Danique de
+- [[motegi-yuichi]] — Motegi, Yuichi
+- [[muhammad-bilal]] — Muhammad, Bilal
+- [[mukherjee]] — Mukherjee
+- [[mykytyn-pavlo]] — Mykytyn, Pavlo
+- [[narsimlu-kemsaram]] — Narsimlu Kemsaram
+- [[nascimento-tiago]] — Nascimento, Tiago
+- [[ng-jerry]] — Ng, Jerry
+- [[noh-young-ki]] — Noh Young-ki
+- [[nong-wenli]] — Nong, Wenli
+- [[norbert-tihanyi]] — Norbert Tihanyi
+- [[nwachioma-christian]] — Nwachioma, Christian
+- [[ogunbodede-oladapo]] — Ogunbodede, Oladapo
+- [[oh-ethan]] — Oh, Ethan
+- [[ohkuma-kenji]] — Ohkuma, Kenji
+- [[oikonomou-katerina-maria]] — Oikonomou, Katerina Maria
+- [[ooi-wei-tsang]] — Ooi Wei Tsang
+- [[oscar-liang]] — Oscar Liang
+- [[p-b-sujit]] — P. B. Sujit
+- [[pablo-moraes]] — Pablo Moraes
+- [[pan]] — Pan
+- [[papapetros-ioannis-tsampikos]] — Papapetros, Ioannis Tsampikos
+- [[parakh-m-gupta]] — Parakh M. Gupta
+- [[park]] — Park
+- [[pathak-saketh]] — Pathak, Saketh
+- [[paulo-oliveira]] — Paulo Oliveira
+- [[pedro-santos]] — Pedro Santos
+- [[pei-chaoying]] — Pei, Chaoying
+- [[peisen-xu]] — Peisen Xu
+- [[peng]] — Peng
+- [[peterson-cameron-k]] — Peterson, Cameron K.
+- [[philipp-hoefer]] — Philipp Hoefer
+- [[piggott]] — Piggott
+- [[pranav-yogesh]] — Pranav Yogesh
+- [[prestel-stefan]] — Prestel, Stefan
+- [[pu-fan]] — Pu, Fan
+- [[qimin-cheng]] — Qimin Cheng
+- [[qin-hongmao]] — Qin Hongmao
+- [[qingshuang-sun]] — Qingshuang, Sun
+- [[rajawat-ketan]] — Rajawat, Ketan
+- [[rajdeep]] — Rajdeep
+- [[rakesh-chowdhury]] — Rakesh, Chowdhury
+- [[ramirez-atencia-cristian]] — Ramirez-Atencia, Cristian
+- [[rammohan-mallipeddi]] — Rammohan, Mallipeddi
+- [[rao-nishanth]] — Rao, Nishanth
+- [[rathinam-sivakumar]] — Rathinam, Sivakumar
+- [[rayappa]] — Rayappa
+- [[ren-hang]] — Ren, Hang
+- [[ricardo-grando]] — Ricardo Grando
+- [[rita-cunha]] — Rita Cunha
+- [[rizvi]] — Rizvi
+- [[robert-penicka]] — Robert Penicka
+- [[roy-sanku-kumar]] — Roy, Sanku Kumar
+- [[rui-wang]] — Rui Wang
+- [[ruiqi-zhang]] — Ruiqi Zhang
+- [[ruitao-lu]] — Ruitao Lu
+- [[ruiz-santiago]] — Ruiz, Santiago
+- [[s-ajani-oladayo]] — S., Ajani Oladayo
+- [[samshad-mohamed]] — Samshad, Mohamed
+- [[sang-feng]] — Sang Feng
+- [[sante-filippo]] — Sante, Filippo
+- [[sartaj-hassan]] — Sartaj Hassan
+- [[sciullo-luca]] — Sciullo, Luca
+- [[sebastian-eilermann]] — Sebastian Eilermann
+- [[sebastian-scherer]] — Sebastian Scherer
+- [[sen]] — Sen
+- [[ser-javier-del]] — Ser, Javier Del
+- [[seth-avishkar]] — Seth, Avishkar
+- [[shen-shaojie]] — Shen, Shaojie
+- [[shenghui-huang]] — Shenghui Huang
+- [[shoon-kit-lim]] — Shoon Kit Lim
+- [[shreyash-s-iyengar]] — Shreyash S. Iyengar
+- [[shuangbao-ma]] — Shuangbao, Ma
+- [[shufang-yuan]] — Shufang Yuan
+- [[shuming-lin]] — Shuming Lin
+- [[shunyi-zhu]] — Shunyi Zhu
+- [[silveria-dimitria]] — Silveria, Dimitria
+- [[sinha-abhinav]] — Sinha, Abhinav
+- [[siyu-wang]] — Siyu Wang
+- [[siyuan-zhan]] — Siyuan Zhan
+- [[sri]] — Sri
+- [[srithar]] — Srithar
+- [[stagg-grant]] — Stagg, Grant
+- [[stein-adrian]] — Stein, Adrian
+- [[straka-ond-ej]] — Straka, Ondřej
+- [[sudeepta-mishra]] — Sudeepta, Mishra
+- [[sugang-ma]] — Sugang Ma
+- [[sujit-p-b]] — Sujit, P. B.
+- [[sun-yineng]] — Sun, Yineng
+- [[sundaram-suresh]] — Sundaram, Suresh
+- [[suresh-jagannathan]] — Suresh Jagannathan
+- [[syeda-amna]] — Syeda Amna
+- [[t-basu]] — T. Basu
+- [[t-rebolo]] — T. Rebolo
+- [[takemura-reiya]] — Takemura, Reiya
+- [[tali-orlev-shapira]] — Tali Orlev Shapira
+- [[tan-ligang]] — Tan Ligang
+- [[tang-chenwei]] — Tang, Chenwei
+- [[tang-jiaman]] — Tang Jiaman
+- [[tao-meixia]] — Tao Meixia
+- [[tao-wang]] — Tao Wang
+- [[tao-yi]] — Tao, Yi
+- [[tarek-abbes]] — Tarek Abbes
+- [[taylor-max]] — Taylor, Max
+- [[teaya-yang]] — Teaya Yang
+- [[tengan-elisa]] — Tengan, Elisa
+- [[thahsin-adheeba]] — Thahsin, Adheeba
+- [[tianyu-wang]] — Tianyu Wang
+- [[tianyuan-fan]] — Tianyuan Fan
+- [[tolga-kahraman-h]] — Tolga, Kahraman H.
+- [[toumieh-charbel]] — Toumieh, Charbel
+- [[tovey-samuel]] — Tovey, Samuel
+- [[trimpe-sebastian]] — Trimpe, Sebastian
+- [[trotta-angelo]] — Trotta, Angelo
+- [[tu-ngo-hoang]] — Tu, Ngo Hoang
+- [[valerio-modugno]] — Valerio Modugno
+- [[vaze-vikrant]] — Vaze, Vikrant
+- [[vazquez-ruben]] — Vazquez, Ruben
+- [[vejaykarthy]] — Vejaykarthy
+- [[vikas-dhiman]] — Vikas, Dhiman
+- [[vikash-m]] — Vikash M.
+- [[vincent-sandin]] — Vincent Sandin
+- [[vitale-christian]] — Vitale, Christian
+- [[vittorio-palladino]] — Vittorio Palladino
+- [[walugembe-francis-noah]] — Walugembe, Francis Noah
+- [[wan-ziwei]] — Wan, Ziwei
+- [[wang-haokun]] — Wang, Haokun
+- [[wang-hua]] — Wang, Hua
+- [[wang-tao]] — Wang, Tao
+- [[wang-tianyu]] — Wang, Tianyu
+- [[wang-xiubin]] — Wang, Xiubin
+- [[wang-xiucheng]] — Wang, Xiucheng
+- [[wang-yita]] — Wang, Yita
+- [[wang-yong]] — Wang, Yong
+- [[wang-zhiming]] — Wang, Zhiming
+- [[wang-zijun]] — Wang, Zijun
+- [[waterschoot-toon-van]] — Waterschoot, Toon van
+- [[wei-zhang]] — Wei Zhang
+- [[weiyang-chen]] — Weiyang, Chen
+- [[weiyi-hu]] — Weiyi, Hu
+- [[wenli-nong]] — Wenli Nong
+- [[wenqi-zhang]] — Wenqi Zhang
+- [[wenquan-dong]] — Wenquan, Dong
+- [[wielgosz-maciej]] — Wielgosz, Maciej
+- [[william-moraes]] — William Moraes
+- [[williamson-jane]] — Williamson, Jane
+- [[xia-beihao]] — Xia Beihao
+- [[xian-li]] — Xian, Li
+- [[xiangqi-li]] — Xiangqi Li
+- [[xiangyu-li]] — Xiangyu Li
+- [[xiao-zhiren]] — Xiao, Zhiren
+- [[xiaohua-cao]] — Xiaohua Cao
+- [[xiaowei-li]] — Xiaowei Li
+- [[xiaqing]] — Xiaqing
+- [[xie-yakun]] — Xie, Yakun
+- [[xiling-luo]] — Xiling Luo
+- [[xinghui-dong]] — Xinghui, Dong
+- [[xingshe-zhou]] — Xingshe Zhou
+- [[xingyue-zhou]] — Xingyue Zhou
+- [[xinlong-zheng]] — Xinlong, Zheng
+- [[xintong-zhang]] — Xintong Zhang
+- [[xiong-deng]] — Xiong, Deng
+- [[xu-dongliang]] — Xu, Dongliang
+- [[xunyang-su]] — Xunyang, Su
+- [[y-t-g]] — Y-T-G
+- [[yamauchi-hiroshi]] — Yamauchi, Hiroshi
+- [[yan-zhang]] — Yan Zhang
+- [[yan-zhao]] — Yan Zhao
+- [[yanfeng-gu]] — Yanfeng, Gu
+- [[yang]] — Yang
+- [[yang-liu]] — Yang Liu
+- [[yang-zhou]] — Yang Zhou
+- [[yangjie-wei]] — Yangjie, Wei
+- [[yanze-jiang]] — Yanze, Jiang
+- [[yao-liang]] — Yao, Liang
+- [[yao-yue]] — Yao, Yue
+- [[yapeng-zhang]] — Yapeng, Zhang
+- [[yasir-javed]] — Yasir Javed
+- [[yifeng-niu]] — Yifeng Niu
+- [[yin-xiang]] — Yin, Xiang
+- [[yingjie-du]] — Yingjie Du
+- [[yosi-ben-asher]] — Yosi Ben Asher
+- [[you-sixiong]] — You, Sixiong
+- [[yu-di]] — Yu, Di
+- [[yuan]] — Yuan
+- [[yuan-xiaojun]] — Yuan Xiaojun
+- [[yuan-yao]] — Yuan Yao
+- [[yue-yao]] — Yue Yao
+- [[yuqi-wang]] — Yuqi Wang
+- [[yusuf-s-nmez]] — Yusuf, Sönmez
+- [[yutong-wang]] — Yutong, Wang
+- [[yuxiao-zhu]] — Yuxiao Zhu
+- [[yuxing-wei]] — Yuxing Wei
+- [[zakria-qadir]] — Zakria, Qadir
+- [[ze-liu]] — Ze Liu
+- [[zexing-wang]] — Zexing Wang
+- [[zhang]] — Zhang
+- [[zhang-honggang]] — Zhang, Honggang
+- [[zhang-xintong]] — Zhang, Xintong
+- [[zhang-yun]] — Zhang, Yun
+- [[zhang-yunlong]] — Zhang, Yunlong
+- [[zhang-zhiheng]] — Zhang, Zhiheng
+- [[zhanhong-zhuo]] — Zhanhong Zhuo
+- [[zhao-jian]] — Zhao, Jian
+- [[zhao-moju]] — Zhao, Moju
+- [[zhao-yang]] — Zhao, Yang
+- [[zhao-zhifeng]] — Zhao, Zhifeng
+- [[zhaoyang-sheng]] — Zhaoyang Sheng
+- [[zheng-cao]] — Zheng Cao
+- [[zheng-li]] — Zheng, Li
+- [[zhichao-shi]] — Zhichao Shi
+- [[zhigang]] — Zhigang
+- [[zhiheng-zhang]] — Zhiheng Zhang
+- [[zhiming-wang]] — Zhiming Wang
+- [[zhipeng-zhang]] — Zhipeng, Zhang
+- [[zhiqiang-hou]] — Zhiqiang Hou
+- [[zhixing-wang]] — Zhixing Wang
+- [[zhongjun-fu]] — Zhongjun Fu
+- [[zhou-boyu]] — Zhou, Boyu
+- [[zhou-jizhe]] — Zhou, Jizhe
+- [[zhou-yang]] — Zhou, Yang
+- [[zhou-yuhao]] — Zhou, Yuhao
+- [[zhu-jun]] — Zhu, Jun
+- [[zhu-shunjie]] — Zhu, Shunjie
+- [[zhu-yuxiao]] — Zhu, Yuxiao
+- [[zikang-xiong]] — Zikang Xiong
+- [[zongzhen-liu]] — Zongzhen Liu
+
+## 관련 허브
+
+- [[auto-hub-concept]]
+- [[auto-hub-hardware]]
+- [[auto-hub-mission]]
+- [[auto-hub-organization]]
+- [[auto-hub-protocol]]
+- [[auto-hub-regulation]]
+- [[auto-hub-source-articles]]
+- [[auto-hub-source-papers]]
+- [[auto-hub-source-youtube]]
+- [[auto-hub-technology]]
