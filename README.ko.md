@@ -20,7 +20,7 @@
 2. **원본은 한 곳, 공개는 선별**: 이 저장소가 source of truth이고, 공개 snapshot은 정책·해시 게이트를 통과한 문서만 `drone-wiki-web`으로 나간다.
 3. **도구는 교체 가능, 자산은 영속**: Markdown·출처 메타데이터·Git 이력이 자산이고, AI 도구·자동화 엔진은 바꿔 끼울 수 있는 레이어다.
 4. **AI는 제안, 사람은 결정**: 일상 컴파일은 자동이지만, AI 연구 루프의 가설·통찰과 미검증 발견 그래프는 사람이 승인해야 canonical이 된다.
-5. **구조화된 지식**: 문서 검색을 넘어 온톨로지(클래스 58개, 관계, 추론 규칙)로 부품 호환·임무 요구·분야 간 연쇄를 **계산**할 수 있게 한다.
+5. **구조화된 지식**: 문서 검색을 넘어 온톨로지(클래스 74개, 관계, 추론 규칙)로 부품 호환·임무 요구·분야 간 연쇄를 **계산**할 수 있게 한다.
 
 ### 구조 — 4개 지식 계층과 연계 시스템
 
@@ -35,13 +35,13 @@
 [발행]  publication gate(정책·해시) ──► auto-publish(매일 10:30) ──► drone-wiki-web/data/wiki ──► Vercel
 ```
 
-| 구분 | 위치 | 규모(2026-10-17 실측) |
+| 구분 | 위치 | 규모(2026-10-24 실측) |
 |---|---|---|
-| canonical 개념/개체/비교/질의 | `concepts/` `entities/` `comparisons/` `queries/` | 517 / 57 / 5 / 3 |
-| 원문 증거 | `raw/` (papers, articles, youtube, transcripts, web …) | 431개 파일 |
-| 수집 대기/처리 | `inbox/` | 1,238개 파일 |
+| canonical 개념/개체/비교/질의 | `concepts/` `entities/` `comparisons/` `queries/` | 3,199 / 56 / 4 / 2 (이 중 2,366쪽은 자동 승격된 미검토 문서) |
+| 원문 증거 | `raw/` (papers, articles, youtube, transcripts, web …) | 532개 파일 |
+| 수집 대기/처리 | `inbox/` | 1,786개 파일 |
 | 연구 루프 산출 | `research/` | 73개 파일 |
-| 온톨로지 | `ontology/class-hierarchy.json` · `docs/ONTOLOGY_SPEC.md` | 클래스 58개, 추론 규칙 8종 설계(설계서 §4, 구현 2종) |
+| 온톨로지 | `ontology/class-hierarchy.json` · `docs/ONTOLOGY_SPEC.md` | 클래스 74개(주제 클래스 10개, NewsDigest·VendorRegistry 포함), 추론 규칙은 drone-wiki-web에서 구동 |
 | 자동화 | `scripts/` + launchd `ai.2nd.*` | 스크립트 161개, 로드된 `ai.2nd.*` 잡 10개(1개는 별개 프로젝트) |
 | 발행 정책 | `publication/policy.json` | 문서 해시 승인, `ontology/`는 review |
 
@@ -50,7 +50,14 @@
 - 릴리즈 이력: **v3.2.2**(08-19 학술수집 대확장: arXiv 8도메인+KCI+Zotero) → **v3.3.0**(08-20 팔란티어식 온톨로지 Link+Action) → **v3.4.0**(09-02 hermes cron → Claude Pro 구독 전환) → **v3.5.0**(09-03 로컬 AI 드론빌더) → **v3.6.0**(10-09 auto-publish 안정화, 발행중단 4일치 복구) → **v3.7.0**(10-17 HW 수집 확장, 아래).
 - 연계 저장소: [`drone-wiki-web`](https://github.com/krill0188/drone-wiki-web) — 공개 snapshot을 서비스하는 Next.js 앱(AI Q&A·GraphRAG·온톨로지 추론·드론 빌더).
 
-### 최근 업데이트 (v3.7.0, 2026-10-17)
+### 최근 업데이트 (v3.8.0, 2026-10-24)
+- **discovery 일괄 승격**: 대기 중이던 discovery 개념 1,791건을 **모델 호출 없이**(이름·분류·출처·그래프 이웃만) 한 번에 승격했다. 각 문서에는 `confidence: low`와 `unreviewed` 태그를 달았고, 생성된 분류·출처 허브 11개(`concepts/auto-hub-*.md`)에 연결해 관계를 지어내지 않고도 위키링크 린트 규칙을 충족했다. 마스터가 화면에서 직접 승격한 문서를 합쳐 canonical 문서는 909 → 3,275쪽(임베딩 3,934, canonical 그래프 노드 3,275 · 엣지 14,072)이 됐다.
+- **사실 근거 아님**: 이 문서들은 claim이 없다. 사실은 원문 인용이 검증된 claim(`claims.json`, `paper-claims.json`)과 `^[출처]` 문장에서만 나온다. 다음 단계는 LLM이 제안하고 코드가 원문과 글자 단위로 대조해 확인하는 claim 추출이다.
+- **온톨로지**: `NewsDigest`·`VendorRegistry` 클래스 추가(부모 `DataArtifact`), 제품·뉴스 문서 52건 분류(`ontology/class-approvals-20261024b.json`, `scripts/revert-class-approvals.py`로 되돌릴 수 있음).
+- **파이프라인 보강**: PyYAML이 없으면 `.venv`로 자동 재실행, 문서 추출 일부 실패가 야간 파이프라인 전체를 멈추지 않도록 수정(`PARTIAL_EXTRACTION_CONTINUE`).
+- **웹(drone-wiki-web)**: NIM·OpenRouter 키 풀 폴백, 빌더 배선도·단계별 이미지, 4조건 안내 카드, GitHub Actions 클라우드 점검. 해당 저장소 `docs/RELEASES.md` 참고.
+
+### 이전 업데이트 (v3.7.0, 2026-10-17)
 - **HW 세분화 수집**: arXiv 5종(모터/ESC·프로펠러·전원·프레임·페이로드) + 온톨로지 클래스 5개(Propeller/Battery/Frame/Datalink/Payload) 추가.
 - **HW 자료 61건 컴파일**: 제품 카탈로그 7 · 연구 6 · 사례 4 · 개체 2 신규(제조사 공식 사양 기반).
 - **발행 파이프라인**: 새 정규문서 19개 자동 승인·매니페스트 등록, 재기준선 고정(매일 10:30 자동 발행 대기).

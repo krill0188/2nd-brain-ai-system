@@ -18,7 +18,7 @@ A **personal knowledge operations system** for drone technology (flight control,
 2. **One source of truth, selective publication**: this repo is canonical; only documents passing the policy/hash gate reach `drone-wiki-web`.
 3. **Replaceable tools, durable assets**: Markdown, provenance metadata and Git history are the assets; AI tools and automation engines are swappable layers.
 4. **AI proposes, humans decide**: routine compilation is automatic, but research-loop hypotheses and unverified discovery relations become canonical only after human approval.
-5. **Structured knowledge**: an ontology (58 classes, relations, reasoning rules) lets downstream apps *compute* part compatibility, mission requirements and cross-discipline effects instead of only retrieving text.
+5. **Structured knowledge**: an ontology (74 classes, relations, reasoning rules) lets downstream apps *compute* part compatibility, mission requirements and cross-discipline effects instead of only retrieving text.
 
 ### Structure — four knowledge layers and connected systems
 
@@ -33,13 +33,13 @@ A **personal knowledge operations system** for drone technology (flight control,
 [Publish]  publication gate (policy + hashes) ──► auto-publish (daily 10:30 KST) ──► drone-wiki-web/data/wiki ──► Vercel
 ```
 
-| Area | Location | Size (measured 2026-10-17) |
+| Area | Location | Size (measured 2026-10-24) |
 |---|---|---|
-| Canonical concepts / entities / comparisons / queries | `concepts/` `entities/` `comparisons/` `queries/` | 517 / 57 / 5 / 3 |
-| Source evidence | `raw/` | 431 files |
-| Capture queue / processed | `inbox/` | 1,238 files |
+| Canonical concepts / entities / comparisons / queries | `concepts/` `entities/` `comparisons/` `queries/` | 3,199 / 56 / 4 / 2 (of which 2,366 are auto-promoted, unreviewed stubs) |
+| Source evidence | `raw/` | 532 files |
+| Capture queue / processed | `inbox/` | 1,786 files |
 | Research-loop output | `research/` | 73 files |
-| Ontology | `ontology/class-hierarchy.json` · `docs/ONTOLOGY_SPEC.md` | 58 classes, 8 reasoning rules designed (spec §4; 2 implemented) |
+| Ontology | `ontology/class-hierarchy.json` · `docs/ONTOLOGY_SPEC.md` | 74 classes (incl. 10 topic classes, NewsDigest, VendorRegistry); reasoning rules live in drone-wiki-web |
 | Automation | `scripts/` + launchd `ai.2nd.*` | 161 scripts, 10 loaded `ai.2nd.*` jobs (one belongs to a separate project) |
 | Publication policy | `publication/policy.json` | document-hash approval; `ontology/` is review-only |
 
@@ -48,7 +48,14 @@ A **personal knowledge operations system** for drone technology (flight control,
 - Release history: **v3.2.2** (Aug 19, scholarly collection expansion) → **v3.3.0** (Aug 20, Palantir-style ontology Link + Action) → **v3.4.0** (Sep 2, hermes cron moved to Claude Pro subscription) → **v3.5.0** (Sep 3, local AI drone builder) → **v3.6.0** (Oct 9, auto-publish stabilization) → **v3.7.0** (Oct 17, HW collection expansion, below).
 - Companion repo: [`drone-wiki-web`](https://github.com/krill0188/drone-wiki-web) — Next.js app serving the public snapshot (AI Q&A, GraphRAG, ontology reasoning, drone builder).
 
-### Latest update (v3.7.0, 2026-10-17)
+### Latest update (v3.8.0, 2026-10-24)
+- **Discovery bulk promotion**: 1,791 pending discovery concepts promoted in one pass **without model calls** (name, class, sources and graph neighbours only). Each stub is marked `confidence: low` + tag `unreviewed`, and linked to 11 generated classification / source hubs (`concepts/auto-hub-*.md`) so the canonical-link lint rule holds without inventing relations. Together with the master's manual promotions, canonical docs went 909 → 3,275 (embeddings 3,934, canonical graph 3,275 nodes / 14,072 edges).
+- **Not a factual basis**: these stubs carry no claims. Facts still come only from quote-verified claims (`claims.json`, `paper-claims.json`) and `^[source]` sentences; the next step is LLM-proposed, code-verified (literal quote match) claim extraction.
+- **Ontology**: `NewsDigest` and `VendorRegistry` classes added (parent `DataArtifact`); 52 product/news documents classified through `ontology/class-approvals-20261024b.json` (reversible with `scripts/revert-class-approvals.py`).
+- **Pipeline hardening**: `publication-gate.py` / `build-canonical-graph.py` re-exec into `.venv` when PyYAML is missing; the daily pipeline no longer aborts when a few documents fail extraction (`PARTIAL_EXTRACTION_CONTINUE`).
+- **Web side (drone-wiki-web)**: key-pool fallback for NVIDIA NIM / OpenRouter, wiring diagram and per-stage images in the builder, four-condition guide cards, cloud monitoring via GitHub Actions. See that repository's `docs/RELEASES.md`.
+
+### Previous update (v3.7.0, 2026-10-17)
 - **HW-focused collection**: five arXiv topic feeds (motor/ESC, propeller, power, frame, payload) and five new ontology classes (Propeller/Battery/Frame/Datalink/Payload).
 - **61 HW items compiled**: 7 product catalogs, 6 research, 4 cases, 2 entities (manufacturer-official specs).
 - **Publication pipeline**: 19 new canonical files auto-approved and registered; baseline re-pinned (daily 10:30 publish pending).
@@ -56,6 +63,7 @@ A **personal knowledge operations system** for drone technology (flight control,
 
 ### Limitations
 - Not every subsystem is subscription-only (discovery extraction uses OpenRouter; legacy Hermes path remains for kinetic notifications). See the Stage 0-R override above.
+- 2,366 canonical documents are auto-generated and unreviewed; treat them as navigation aids, not evidence. Nodes whose slug is not ASCII use a `ko-<hash>` slug because the wikilink lint only accepts `[a-z0-9-]`.
 - Production search on the public snapshot is expected to fall back to keyword retrieval (live invocation logs: UNKNOWN).
 - The new registries' license/integration columns are not yet sample-verified, and sites that block bots (e.g., official ROS docs) are blank.
 
