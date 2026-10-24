@@ -464,6 +464,8 @@ discovery 그래프에서 자동 추출·일괄 승격된 항목을 분류별로
 - [[vision-language-models]] — Vision-Language Models
 - [[wire-driven-robotic-fish]] — wire-driven robotic fish
 - [[무인기-비행제어시스템]] — 무인기 비행제어시스템
+- [[csi]] — CSI
+- [[ekf]] — EKF
 
 ## 관련 허브
 

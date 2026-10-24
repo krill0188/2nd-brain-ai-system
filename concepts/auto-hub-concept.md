@@ -431,6 +431,7 @@ discovery 그래프에서 자동 추출·일괄 승격된 항목을 분류별로
 - [[truck-drone-collaborative-routing]] — Truck-Drone Collaborative Routing
 - [[uav]] — Uav
 - [[신속-획득-혁신]] — 신속 획득 혁신
+- [[swarm-coordination]] — Swarm Coordination
 
 ## 관련 허브
 
