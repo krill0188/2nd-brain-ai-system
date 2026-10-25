@@ -36,3 +36,4 @@ DJI Mavic 4 Pro 2026년 8월 펌웨어 업데이트 — 부드러운 비행 경�
 - DJI Mavic 4 Pro drone gets new firmware update for smoother flights (dronedj.com, Fri, 14 Au) — https://dronedj.com/2026/08/14/dji-mavic-4-drone-firmware-2/
 - [DJI] A Moon This Close? | DJI Mavic 4 Pro (youtube.com, 2026-09-08) — https://www.youtube.com/watch?v=yNMbasMoqho
 - [DJI] IFA 2026 in one frame. 🎬 (youtube.com, 2026-09-08) — https://www.youtube.com/watch?v=ezPCF17Cw7s
+- DJI Avata drone owners have a new firmware update to install (dronedj.com, Sat, 24 Oc) — https://dronedj.com/2026/10/24/dji-avata-firmware-new-drone/

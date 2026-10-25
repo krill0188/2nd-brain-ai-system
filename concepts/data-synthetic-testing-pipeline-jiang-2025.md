@@ -28,3 +28,6 @@ contradictions: []
 - 초록에 수치 없음.^[inbox/processed/hw-20261021-data-synthetic-testing-pipeline-jiang-2025.md]
 
 상위 허브: [[ai-drone-data-processing-hub]] · 함께 보기: [[drone-simulation]]
+
+## 📰 최근 관련 소식
+- Auburn Police use drone first responder to arrest rape suspect - Renton Reporter (news.google.com, Mon, 05 Oc) — https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZDY3M3FJWmRlS3FzanJvaXY0cU55UXRreUVhd3J3aVVLNFRPeUppSzJWSXJKUS14LUhMWHcxSGRUcC1NTGhSZGQtQnJtbUdzOUhQb1hkOElGbkNUNnJ6bXBXRlhlVkJyQU8tS0l3dGZqNUhmcHdFZzhudThDbU41cUNnbDJsSTBFSFdfOXNGRnRlblVrYUQta3p0aE1yQVh3LVM5NGk5X3E?oc=5

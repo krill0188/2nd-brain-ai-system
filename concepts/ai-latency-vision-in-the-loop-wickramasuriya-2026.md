@@ -37,3 +37,4 @@ contradictions: []
 - Elistair Unveils Tethered Solution for the Parrot ANAFI UKR (dronelife.com, Wed, 21 Oc) — https://dronelife.com/2026/10/21/elistair-unveils-tethered-solution-for-the-parrot-anafi-ukr/
 - Building the Autonomous Warfare Command – DRPM UxS (www.suasnews.com, Fri, 23 Oc) — https://www.suasnews.com/2026/10/building-the-autonomous-warfare-command-drpm-uxs/
 - Chuyka 4.5.0. (www.suasnews.com, Fri, 23 Oc) — https://www.suasnews.com/2026/10/chuyka-4-5-0/
+- Parrot’s Latest MiniDrone Fits In The Palm Of Your Hand, Plus Jumping Sumo - SingularityHub (news.google.com, Thu, 16 Ja) — https://news.google.com/rss/articles/CBMisAFBVV95cUxQNXY4Rmc3cThiZElyVGJuV09iYVpGV0FXWjFRemZNZ0JKajlRd2RoOW1ydFp2b0xwNHF3Zm9FV2NOdnowdHYwUDVvbzl2Qi1qZ1NZQ2x1bUEwS0czc3JQazVVRk9xSVZlelFlN05TZGtVWXJhTzc4ZU4xU1R4cTktTnZ5bWpmR2VNWnVjb3o5QUJVZTl2ZXlYSUhGZmJxazREbFhfdWowYnZVblN0elR0cg?oc=5

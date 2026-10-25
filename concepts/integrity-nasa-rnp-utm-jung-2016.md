@@ -32,3 +32,4 @@ ICAO의 RNP 개념을 UTM에 적용한다. 운영 위험을 정량화한 뒤 위
 
 ## 📰 최근 관련 소식
 - Proposed ASTM Standard Will Aid Unmanned Aircraft Industry (www.suasnews.com, Wed, 21 Oc) — https://www.suasnews.com/2026/10/proposed-astm-standard-will-aid-unmanned-aircraft-industry/
+- U.S. Marines train with Skydio X2D Small Unmanned Aircraft Systems [Image 3 of 6] - DVIDS (news.google.com, Fri, 18 Se) — https://news.google.com/rss/articles/CBMipgFBVV95cUxPNDcxUjdlX2tZLWt1RG5MSWdjZEIwM0pRemMzTDh2ZGkwTWhHSmdLZmpKSm1vMlM1Q01xZklkd29pSVYtVW96S09xTGFOR3l0ZTZLMTRtSGVfM21zQTZiaDdObnNhWUJZdG5sVG50VmRyQm9UbkFNeFpMS2JOalpDVEFHR2F2YVptanNmZ25QN0hpSmNEVEZRMGZnT21FVlR0YnpEY0xB?oc=5

@@ -93,3 +93,4 @@ ontology_class: VTOL
 - [UAV Coach] Why Haven't Drones Replaced Helicopters Yet? (youtube.com, 2026-10-22) — https://www.youtube.com/watch?v=KprQlrjOXaI
 - SkyeBrowse Adds New Timelines Tools For Drone Surveys (dronelife.com, Thu, 22 Oc) — https://dronelife.com/2026/10/22/skyebrowse-adds-new-timelines-tools-for-drone-surveys/
 - [UAV Coach] Potensic ATOM 2: The Best Budget Drone for Beginners? (youtube.com, 2026-10-23) — https://www.youtube.com/watch?v=5CI2kSNjBDM
+- North Charleston Plans Skydio DFR Launch For July 2027 - DroneXL (news.google.com, Sat, 18 Ju) — https://news.google.com/rss/articles/CBMid0FVX3lxTFBxTENFTzlQSGJWQ3lMMjhMX0pNcDFCQ04zU1VsS2JjcEdfWWxCS2FFUnhSWjlaV2plVF9SZTJka0phYndrVGliUWNNWV9XdkFiS3BBQkplN05Ha3gzWndKcWhBMU91cGl5Y0twdUprMGF2X29RNXlr?oc=5

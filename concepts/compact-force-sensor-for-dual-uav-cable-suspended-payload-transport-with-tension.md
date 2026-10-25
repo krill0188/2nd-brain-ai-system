@@ -25,3 +25,6 @@ contradictions: []
 - [[compact-force-sensor]] — PRESENTS
 - [[tension-aware-outer-loop-control]] — PRESENTS
 - [[dual-uav-cable-suspended-payload-transport]] — ADDRESSES
+
+## 📰 최근 관련 소식
+- [DJI] Every move starts with control. | DJI RS 4 (youtube.com, 2026-10-24) — https://www.youtube.com/watch?v=sdXIAl-AUXA

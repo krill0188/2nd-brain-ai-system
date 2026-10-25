@@ -31,3 +31,4 @@ contradictions: []
 
 ## 📰 최근 관련 소식
 - Disco Adds Fixed Wing Flight to Parrot's Flock of Drones - IEEE Spectrum (news.google.com, Tue, 05 Ja) — https://news.google.com/rss/articles/CBMiiAFBVV95cUxOWnJoZE45RDNvS1R2VTU4OTIwU2hvN3I3bDhsVFl2dFFlVW5SNHV5b0NmSW1FekhGREFfV3NIZUJuZW5XZUVMVjViUlpKek02ejBYZzRyM21nZEhqSC1vc01hTV8zQTFVb1FSYjRfSXJYaDh6aEZ0cUdnYk1Ndm5GRFhraXNYTUdQ?oc=5
+- Parrot Hydrofoil Drone Is Half Boat, Half Flying Machine - autoevolution (news.google.com, Tue, 07 Ju) — https://news.google.com/rss/articles/CBMiqwFBVV95cUxPQW14b3o5d2NXZng1TlducUFoTUFhWTB3MDRnWk9KUFNUVGx4cmMtNmdiMlRIelEyVFZ3aDd0YUhNTm1wRHpueVQtMWJmX2F5RzFSM3VOaUF6YkhJaEk3M01lYWpnYVJqYmhhS2dqRjF3a0xyQ0kzbTM3S2lkWlA0ME9nX3psRUdUak9iVjBWZ3dLSzJvVWlxZzlrcWpYbHQ2QkdzVWVYTFh2Q3c?oc=5

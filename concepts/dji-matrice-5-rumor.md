@@ -46,3 +46,4 @@ DJI 엔터프라이즈 라인업의 새로운 동향 — Matrice 30 후속 모�
 - 우크라이나 정보당국 “러 파병 북한군 8500명… 드론부대도 포함” (브릿지경제, Sat, 22 Au) — https://news.google.com/rss/articles/CBMiWkFVX3lxTE5zcEt3M0NIZU9Lc19ZOE5ueEotOEtTMm9HQzhpVGhGeF9oY3BqUXltSW5DWTFFX3ZOMEtLYXhSTnhmVlJkTElBak9tc2hlRlU0OV90M0lIUTRzUQ?oc=5
 - [UAV Coach] Impulse Bought a DJI Air 3S... Now What? (youtube.com, 2026-09-18) — https://www.youtube.com/watch?v=lLH-7q5OtE8
 - [DJI] Volcano POV, No Looking Away | DJI O4 Air Unit Pro (youtube.com, 2026-10-20) — https://www.youtube.com/watch?v=WBH_VfmdTSA
+- DJI announces the compact Matrice 30 enterprise drone with RC Plus controller - DroneDJ (news.google.com, Mon, 21 Ma) — https://news.google.com/rss/articles/CBMickFVX3lxTE50U3FJYkt3bXBCU3NzbmVRV19lLTZYaFpvUGI2WkwzLWtTeExPS0YwNTc1cFZjYU9DMGxlN0hBbERETFNrX2wzZjJVWU9tdzJfNFJMZ0c5d19jZmxxU25HRVY1b2JmUmh0dnFRdmlqMXd2QQ?oc=5

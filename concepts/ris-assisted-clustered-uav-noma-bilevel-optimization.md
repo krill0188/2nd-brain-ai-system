@@ -27,3 +27,6 @@ Ghazikor 외, arXiv 2610.30410 (2026-10-21). **초록 기준**이다.
 
 ## 한계
 수치 결과와 시뮬레이션 파라미터는 초록에 없다.
+
+## 📰 최근 관련 소식
+- Outage Analysis and Bilevel Resource Optimization in RIS-Assisted Clustered UAV-NOMA Networks (arxiv.org, 2026-10-21) — http://arxiv.org/abs/2610.30410v1

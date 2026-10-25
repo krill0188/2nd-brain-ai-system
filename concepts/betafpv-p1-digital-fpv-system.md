@@ -70,3 +70,4 @@ BetaFPV가 이 시스템에 크게 투자하고 있다고 평가했다. BetaFPV�
 - [Joshua Bardwell] $100 for a digital HD vRX. What's the catch? // BETAFPV P1 VRX REVIEW (youtube.com, 2026-10-04) — https://www.youtube.com/watch?v=5zjWdQfQGmE
 - [Joshua Bardwell] Building a P1 whoop to find out how much slower it really is (youtube.com, 2026-10-06) — https://www.youtube.com/watch?v=ZrNlxbI4rlQ
 - [Painless360] BetaFPV gets serious about ArtLynk with new HD FPV hardware (youtube.com, 2026-10-23) — https://www.youtube.com/watch?v=Xs2nlZzw-yQ
+- [Painless360] CaddxFPV Ratel Ultra Analogue FPV Camera: What is it like to fly? (youtube.com, 2026-10-24) — https://www.youtube.com/watch?v=q7u32D_vS0U

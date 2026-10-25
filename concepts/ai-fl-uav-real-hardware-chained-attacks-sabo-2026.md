@@ -31,3 +31,6 @@ contradictions: []
 - 비행 기체·비행 중 시험 아님(대용 장치) → "실기체 UAV FL 보안 실증"에는 해당하지 않음(conv-fl-uav-real-airframe-attack-evidence-check 참조). 위 정확도는 소형 모델/데이터 설정이며 모델·데이터셋 세부는 이 파일에 미전사. 신뢰도 중상(arXiv 프리프린트, 심사 여부 미확인).^[inbox/processed/hw-20261022-ai-fl-uav-real-hardware-chained-attacks-sabo-2026.md]
 
 상위 허브: [[ai-drone-models-hub]] · 함께 보기: [[swarm-coordination]]
+
+## 📰 최근 관련 소식
+- DJI Teases Possible New Enterprise Drone Set to be Revealed On June 10th - No Film School (news.google.com, Thu, 05 Ju) — https://news.google.com/rss/articles/CBMiYkFVX3lxTE1VYWgtT2RvYkVxdzlINkdfNlNtS0RUM3locXgzTHFUSUNkQ3FyT0dkNFBvRng2dXFPc3FjQWk0N25rM25HaFRjZW5ScmMxMl9fOE8zRmw1RjAwQ3RSLXlYdGh3?oc=5

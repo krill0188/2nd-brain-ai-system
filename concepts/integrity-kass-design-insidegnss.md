@@ -30,3 +30,6 @@ KASS 설계와 초기 성능 요약. 기준국 7개(2020년 말 구축), KPS 2·
 페이지의 저자·게재일 미확인(별도 열람 못함). 정상 조건만 평가(위협 시나리오 제외). 정량 정확도 수치 텍스트 부재.^[inbox/processed/hw-20261021-integrity-kass-design-insidegnss.md]
 
 상위 허브: [[gnss-engineering-hub]] · 함께 보기: [[gnss-denied-remote-autonomy]]
+
+## 📰 최근 관련 소식
+- Parrot’s Latest MiniDrone Fits In The Palm Of Your Hand, Plus Jumping Sumo - SingularityHub (news.google.com, Thu, 16 Ja) — https://news.google.com/rss/articles/CBMisAFBVV95cUxQNXY4Rmc3cThiZElyVGJuV09iYVpGV0FXWjFRemZNZ0JKajlRd2RoOW1ydFp2b0xwNHF3Zm9FV2NOdnowdHYwUDVvbzl2Qi1qZ1NZQ2x1bUEwS0czc3JQazVVRk9xSVZlelFlN05TZGtVWXJhTzc4ZU4xU1R4cTktTnZ5bWpmR2VNWnVjb3o5QUJVZTl2ZXlYSUhGZmJxazREbFhfdWowYnZVblN0elR0cg?oc=5

@@ -69,3 +69,4 @@ DJI's latest drone camera capabilities showcasing the Mavic 4 Pro's Hasselblad 1
 - [DJI] Tiny box. Big wait. | DJI Lito 1 (youtube.com, 2026-10-21) — https://www.youtube.com/watch?v=_o0pDQii-sM
 - [DJI] Street Flow Through Melbourne | DJI Osmo Pocket 4P (youtube.com, 2026-10-23) — https://www.youtube.com/watch?v=TMgSQdrNJ4s
 - [DJI] No Remote in Sight | DJI Neo 2 (youtube.com, 2026-10-23) — https://www.youtube.com/watch?v=dEnuUrUS0Js
+- Which DJI Enterprise Drone Has the Best Zoom? - No Film School (news.google.com, Thu, 27 Fe) — https://news.google.com/rss/articles/CBMiWkFVX3lxTE1jV3RLaVB1NjEzWmVMNHlkQnVMTzRnSGhNV1N1b1RGVXp0OEhoeDUyN3djQ2dFRVVoWFl6dWp4RzRNeDQtSkVUTFRWSGVIU05hdno3aGxfa3d0UQ?oc=5

@@ -30,3 +30,4 @@ contradictions: []
 
 ## 📰 최근 관련 소식
 - Axon Vision Accelerates U.S. Growth Strategy with Expanded U.S.Operating Presence and Strategic Leadership (www.suasnews.com, Wed, 21 Oc) — https://www.suasnews.com/2026/10/axon-vision-accelerates-u-s-growth-strategy-with-expanded-u-s-operating-presence-and-strategic-leadership/
+- Parrotâ€™s new drone lets you fly with VR goggles and phone - Hypergrid Business (news.google.com, Wed, 04 Se) — https://news.google.com/rss/articles/CBMirgFBVV95cUxQZkVPajZOcm1JSkxVRmVUeHpfSDlEVWFILVNabmkzaWZqOG11YWhuS0FqcGpBRHhrUEV1anF4MDhfa3UxaEFnakJYM3dFRE1lMXVORjY4NFRFRlRWOFdEUzVvMEFkUGVNcERDY0tzOTJ6SW1HVE1YMUw0aHRuUExGOGdpQl9hZ2NSQ3Q1YUoyRUdGTFQ5NHEtNE5fYmN3WjFWQkhqUHlvcjJTT2RlaHc?oc=5
