@@ -25,144 +25,116 @@
   ],
   "approved_source_versions": [
     {
-      "path": "concepts/3d-reconstruction.md",
-      "source_commit": "2750ceace9efa325431e315d634c8e0a7594f994"
+      "path": "concepts/ai-fl-uav-real-hardware-chained-attacks-sabo-2026.md",
+      "source_commit": "d1001a38c1cab0d3cc245008d461eebdad460e7f"
     },
     {
-      "path": "concepts/6g.md",
-      "source_commit": "2750ceace9efa325431e315d634c8e0a7594f994"
+      "path": "concepts/ai-latency-vision-in-the-loop-wickramasuriya-2026.md",
+      "source_commit": "d1001a38c1cab0d3cc245008d461eebdad460e7f"
     },
     {
-      "path": "concepts/aeroeval.md",
-      "source_commit": "2750ceace9efa325431e315d634c8e0a7594f994"
+      "path": "concepts/ai-vlm-nav-airnav-cai-2026.md",
+      "source_commit": "d1001a38c1cab0d3cc245008d461eebdad460e7f"
     },
     {
-      "path": "concepts/deep-reinforcement-learning.md",
-      "source_commit": "2750ceace9efa325431e315d634c8e0a7594f994"
+      "path": "concepts/betafpv-p1-digital-fpv-system.md",
+      "source_commit": "d1001a38c1cab0d3cc245008d461eebdad460e7f"
     },
     {
-      "path": "concepts/deformable-convolution.md",
-      "source_commit": "2750ceace9efa325431e315d634c8e0a7594f994"
+      "path": "concepts/caddx-ratel-ultra-analog-fpv-camera.md",
+      "source_commit": "d1001a38c1cab0d3cc245008d461eebdad460e7f"
     },
     {
-      "path": "concepts/detr.md",
-      "source_commit": "2750ceace9efa325431e315d634c8e0a7594f994"
+      "path": "concepts/china-drone-export-controls.md",
+      "source_commit": "d1001a38c1cab0d3cc245008d461eebdad460e7f"
     },
     {
-      "path": "concepts/dronevehicle-dataset.md",
-      "source_commit": "2750ceace9efa325431e315d634c8e0a7594f994"
+      "path": "concepts/compact-force-sensor-for-dual-uav-cable-suspended-payload-transport-with-tension.md",
+      "source_commit": "d1001a38c1cab0d3cc245008d461eebdad460e7f"
     },
     {
-      "path": "concepts/focaler-siou.md",
-      "source_commit": "2750ceace9efa325431e315d634c8e0a7594f994"
+      "path": "concepts/conv-energy-flying-batteries-jain-2019.md",
+      "source_commit": "d1001a38c1cab0d3cc245008d461eebdad460e7f"
     },
     {
-      "path": "concepts/isac.md",
-      "source_commit": "2750ceace9efa325431e315d634c8e0a7594f994"
+      "path": "concepts/data-anomaly-resam-islam-2022.md",
+      "source_commit": "d1001a38c1cab0d3cc245008d461eebdad460e7f"
     },
     {
-      "path": "concepts/mape.md",
-      "source_commit": "2750ceace9efa325431e315d634c8e0a7594f994"
+      "path": "concepts/data-synthetic-testing-pipeline-jiang-2025.md",
+      "source_commit": "d1001a38c1cab0d3cc245008d461eebdad460e7f"
     },
     {
-      "path": "concepts/maximum-takeoff-weight.md",
-      "source_commit": "2750ceace9efa325431e315d634c8e0a7594f994"
+      "path": "concepts/divide-conquer-uav-detector.md",
+      "source_commit": "d1001a38c1cab0d3cc245008d461eebdad460e7f"
     },
     {
-      "path": "concepts/mcp.md",
-      "source_commit": "2750ceace9efa325431e315d634c8e0a7594f994"
+      "path": "concepts/dji-matrice-5-rumor.md",
+      "source_commit": "d1001a38c1cab0d3cc245008d461eebdad460e7f"
     },
     {
-      "path": "concepts/mdo.md",
-      "source_commit": "2750ceace9efa325431e315d634c8e0a7594f994"
+      "path": "concepts/dji-mavic-4-pro-features.md",
+      "source_commit": "d1001a38c1cab0d3cc245008d461eebdad460e7f"
     },
     {
-      "path": "concepts/median-frequency-feature-fusion.md",
-      "source_commit": "2750ceace9efa325431e315d634c8e0a7594f994"
+      "path": "concepts/dji-mavic-4-pro-firmware-update.md",
+      "source_commit": "d1001a38c1cab0d3cc245008d461eebdad460e7f"
     },
     {
-      "path": "concepts/mfff-module.md",
-      "source_commit": "2750ceace9efa325431e315d634c8e0a7594f994"
+      "path": "concepts/dji-mavic-4-pro.md",
+      "source_commit": "d1001a38c1cab0d3cc245008d461eebdad460e7f"
     },
     {
-      "path": "concepts/mtow.md",
-      "source_commit": "2750ceace9efa325431e315d634c8e0a7594f994"
+      "path": "concepts/dji-osmo-action-6.md",
+      "source_commit": "d1001a38c1cab0d3cc245008d461eebdad460e7f"
     },
     {
-      "path": "concepts/multidisciplinary-design-optimization.md",
-      "source_commit": "2750ceace9efa325431e315d634c8e0a7594f994"
+      "path": "concepts/drone-first-responder-dfr.md",
+      "source_commit": "d1001a38c1cab0d3cc245008d461eebdad460e7f"
     },
     {
-      "path": "concepts/object-detection.md",
-      "source_commit": "2750ceace9efa325431e315d634c8e0a7594f994"
+      "path": "concepts/drone-news-2026-10-25.md",
+      "source_commit": "d1001a38c1cab0d3cc245008d461eebdad460e7f"
     },
     {
-      "path": "concepts/padf-module.md",
-      "source_commit": "2750ceace9efa325431e315d634c8e0a7594f994"
+      "path": "concepts/drone-news-ops.md",
+      "source_commit": "d1001a38c1cab0d3cc245008d461eebdad460e7f"
     },
     {
-      "path": "concepts/proximal-policy-optimization.md",
-      "source_commit": "2750ceace9efa325431e315d634c8e0a7594f994"
+      "path": "concepts/indi-stability-tilt-rotor-vtol.md",
+      "source_commit": "d1001a38c1cab0d3cc245008d461eebdad460e7f"
     },
     {
-      "path": "concepts/pt-detr.md",
-      "source_commit": "2750ceace9efa325431e315d634c8e0a7594f994"
+      "path": "concepts/integrity-kass-design-insidegnss.md",
+      "source_commit": "d1001a38c1cab0d3cc245008d461eebdad460e7f"
     },
     {
-      "path": "concepts/quadrotor.md",
-      "source_commit": "2750ceace9efa325431e315d634c8e0a7594f994"
+      "path": "concepts/integrity-nasa-rnp-utm-jung-2016.md",
+      "source_commit": "d1001a38c1cab0d3cc245008d461eebdad460e7f"
     },
     {
-      "path": "concepts/rgb.md",
-      "source_commit": "2750ceace9efa325431e315d634c8e0a7594f994"
+      "path": "concepts/mavlink-m-interoperability.md",
+      "source_commit": "d1001a38c1cab0d3cc245008d461eebdad460e7f"
     },
     {
-      "path": "concepts/rmse.md",
-      "source_commit": "2750ceace9efa325431e315d634c8e0a7594f994"
+      "path": "concepts/ris-assisted-clustered-uav-noma-bilevel-optimization.md",
+      "source_commit": "d1001a38c1cab0d3cc245008d461eebdad460e7f"
     },
     {
-      "path": "concepts/rt-detr.md",
-      "source_commit": "2750ceace9efa325431e315d634c8e0a7594f994"
+      "path": "concepts/skydio-centralsquare-dfr-integration.md",
+      "source_commit": "d1001a38c1cab0d3cc245008d461eebdad460e7f"
     },
     {
-      "path": "concepts/uav-object-detection.md",
-      "source_commit": "2750ceace9efa325431e315d634c8e0a7594f994"
+      "path": "concepts/skydio-dock-milestone.md",
+      "source_commit": "d1001a38c1cab0d3cc245008d461eebdad460e7f"
     },
     {
-      "path": "concepts/uavdt.md",
-      "source_commit": "2750ceace9efa325431e315d634c8e0a7594f994"
+      "path": "concepts/yolo-v8-4-116.md",
+      "source_commit": "d1001a38c1cab0d3cc245008d461eebdad460e7f"
     },
     {
-      "path": "concepts/visdrone2019.md",
-      "source_commit": "2750ceace9efa325431e315d634c8e0a7594f994"
-    },
-    {
-      "path": "concepts/visual-perception.md",
-      "source_commit": "2750ceace9efa325431e315d634c8e0a7594f994"
-    },
-    {
-      "path": "concepts/vlms.md",
-      "source_commit": "2750ceace9efa325431e315d634c8e0a7594f994"
-    },
-    {
-      "path": "concepts/vln.md",
-      "source_commit": "2750ceace9efa325431e315d634c8e0a7594f994"
-    },
-    {
-      "path": "concepts/w3c-web-of-things.md",
-      "source_commit": "2750ceace9efa325431e315d634c8e0a7594f994"
-    },
-    {
-      "path": "concepts/wot.md",
-      "source_commit": "2750ceace9efa325431e315d634c8e0a7594f994"
-    },
-    {
-      "path": "concepts/zoomdet.md",
-      "source_commit": "2750ceace9efa325431e315d634c8e0a7594f994"
-    },
-    {
-      "path": "ontology/domain-approvals-20261024.json",
-      "source_commit": "2750ceace9efa325431e315d634c8e0a7594f994"
+      "path": "concepts/yolo-v8-4-188.md",
+      "source_commit": "d1001a38c1cab0d3cc245008d461eebdad460e7f"
     }
   ],
   "revoked_paths": []
