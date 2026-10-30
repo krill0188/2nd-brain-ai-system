@@ -3,7 +3,7 @@
 > Complete catalog of active canonical pages. Each entry is a wikilink followed by
 > a one-line summary, sorted alphabetically within its section.
 >
-|> Total pages: 667
+|> Total pages: 692
 ## Entities
 - [[qgroundcontrol-v5-1-0]] — QGroundControl v5.1.0 릴리스 후보 기록.
 |- [[avidrone]] — 캐나다 헤비리프트 드론 기업, DARPA Lift Challenge 우승.
@@ -688,6 +688,31 @@
 - [[ris-assisted-clustered-uav-noma-bilevel-optimization]] — RIS 보조 군집형 UAV-NOMA outage 분석과 이중 최적화(초록 기준).
 - [[potensic-atom-2]] — Potensic ATOM 2 입문용 249g 미만 드론 리뷰(UAV Coach).
 - [[drone-news-2026-10-24]] — 드론 업계 주요 소식 2026-10-24 (버티포트 초안, 경찰 드론, DJI 펌웨어).
+- [[drone-news-2026-10-25]] — 드론 업계 주요 소식 2026-10-25 (Skydio DFR·X2D, DJI Avata 펌웨어).
+- [[caddx-ratel-ultra-analog-fpv-camera]] — Caddx Ratel Ultra 아날로그 FPV 카메라 사양·야간/주간 테스트(Painless360 자막).
+- [[yolo-v8-4-188]] — YOLO v8.4.188 릴리스, Android QNN 로딩 수정 및 LiteRT 도구체인 상향 (2026-10-24).
+- [[drone-news-2026-10-26]] — 드론 업계 주요 소식 2026-10-26 (L3Harris-Skydio X10D, GA-ASI FQ-42, DJI Avata 360 펌웨어).
+- [[inav-logical-conditions]] — INAV 9 Programming 탭 Logical Conditions: 조건→믹서 활성화(VTX·플랩·3단 스위치 예).
+- [[yolo-v8-4-189]] — YOLO v8.4.189 릴리스, IMX500·Hailo export 수정 및 ONNX 저 opset 호환 (2026-10-25).
+- [[diy-21700-4s-usb-pd-power-bank]] — Joshua Bardwell DIY 21700 4S1P 파워뱅크: 65W USB PD, 니켈 스트립 스폿 용접(자막 기준).
+- [[drone-news-2026-10-27]] — 드론 업계 주요 소식 2026-10-27 (Anduril AI Grand Prix, FCC 위성 규칙, 미시간 AAM, 육군 드론 수요).
+- [[rl-single-propeller-modular-uav-docking-control]] — 단일 프로펠러 큐브형 모듈 UAV의 PPO/MAPPO 호버링·공중 결합 제어(Isaac Lab, 초록).
+- [[rtk-uav-photogrammetry-mesh-grasshopper-validation]] — RTK-UAV SfM 메시 독립 검증 수직 RMSE 5.22cm, Rhino-Grasshopper 연계(초록).
+- [[uav-base-station-charging-station-placement-return-constraint]] — UAV 기지국 충전소 배치: 복귀 제약·데이터율 임계 반경, 원판 커버리지 환원(초록).
+- [[uav-uam-embedded-systems-survey]] — UAV vs UAM 임베디드 시스템 비교: SWaP·유연성 vs 인증·다중화(초록).
+- [[yolo-v8-4-190]] — YOLO v8.4.190 릴리스, YOLO26-seg 마스크 인식 학습·RKNN depth INT8 export (2026-10-26).
+- [[yolo-v8-4-191]] — YOLO v8.4.191 릴리스, RKNN INT8 export 확장(CPU tail.onnx 디코딩)·OC-SORT 개선 (2026-10-27).
+- [[mavsdk-v4-1-0]] — MAVSDK v4.1.0 릴리스, ArduPilot 호환 보강·MAVLink 32비트 sysid 지원 (2026-10-27).
+- [[dual-gradient-consensus-quadrotor-ood-disturbance]] — DGC: 쿼드로터 일시적 분포 외 외란에 대한 적응 step 제어(초록).
+- [[fluid-antenna-uav-dual-mobility-survey]] — Fluid Antenna UAV 통신: 궤적·FA 위치 이중 이동성, 오프라인-온라인 최적화(초록).
+- [[quadrotor-controller-comparison-reproducibility-study]] — 튜닝·preview·폴백·타이밍이 쿼드로터 제어기 순위를 바꾼다는 재현성 연구(초록).
+- [[quadrotor-suspended-payload-pso-hybrid-polynomial-trajectory]] — 현수 페이로드 쿼드로터: 3D A*·jerk/snap 최적화·PSO 궤적 계획(초록).
+- [[phased-trajectory-planning-uav-swarm-dynamic-environments]] — UAV 군집 단계적 궤적 계획: 개선 GA + 가변 스텝 희소 A*(초록).
+- [[hybrid-deep-learning-uav-navigation-cellular-signals]] — 셀룰러 신호 기반 UAV 항법 F2MGDRL 프레임워크(초록).
+- [[drone-mounted-lighting-minimum-illuminance-operating-conditions]] — 드론 탑재 조명 최소조도 충족 높이·광축 탐색, ReluxDesktop 대비 RMSE 0.21–0.25 lx(초록).
+- [[hd-fpv-vtx-standby-mode-low-power-warning]] — HD FPV VTX 저전력 경고: 고글 standby mode 해제로 해결(Painless360 자막).
+- [[drone-news-2026-10-28]] — 드론 업계 주요 소식 2026-10-28 (Percepto Axion, DHS 대드론 조달, Saildrone 스웨덴, Skydio X10D 입찰).
+- [[ecalc-xcoptercalc]] — eCalc xcopterCalc 멀티콥터 추진계 계산기: 입출력·±15% 표기·한계·자동화 주의, 예측/실측 비교 기록 구조(domain: hardware).
 
 ## Comparisons
 

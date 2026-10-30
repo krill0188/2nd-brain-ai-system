@@ -2823,3 +2823,118 @@
 - Skipped (사유): `crossref-when-metadata-betrays-the-mission-...` (초록 미제공, 제목만); `rss-parrot` (2010~2021 게시 항목뿐); `rss-dji-enterprise` (2025-11~2026-07 게시 항목뿐); `yt-gemini-4-argon-api-crash-course` (범용 LLM API 강좌, 드론 도메인 외); `yt-whats-new-in-matlab-and-simulink` (자막이 행사 홍보 문구 몇 줄); `yt-no-remote-in-sight-dji-neo-2`, `yt-street-flow-through-melbourne-dji-osmo-pocket-4p`, `yt-pinklab-studio-` (자막 없음, 프로모 숏폼)
 - Note: 논문은 초록 기준, 영상·뉴스는 단일 출처라 모두 confidence low. 논문은 raw 경로, 영상·뉴스는 기존 관례대로 `inbox/processed/` 경로를 sources로 사용
 - Moved to processed: inbox 파일 19개 → `inbox/processed/` (스킵 8건 포함)
+
+## [2026-10-25] create | inbox 8건 중 3건 컴파일 (릴리스 1·영상 1·뉴스 RSS 2 → 신규 3쪽)
+
+- Created (concepts, 3): `concepts/yolo-v8-4-188.md` (ai-autonomy), `concepts/caddx-ratel-ultra-analog-fpv-camera.md` (hardware), `concepts/drone-news-2026-10-25.md` (ops-mission)
+- Updated: `index.md` (총 페이지 667 → 670)
+- Skipped (사유): `rss-parrot` (2014~2020 게시 항목뿐); `rss-dji-enterprise` (2022~2025 게시 항목뿐); `yt-through-the-car-back-inside-dji-avata-2` (자막이 대화 몇 마디, 기술 정보 없음); `yt-every-move-starts-with-control-dji-rs-4` (자막 없음, 프로모 숏폼)
+- Note: 릴리스·영상·뉴스 모두 단일 출처라 confidence low. Ratel Ultra는 자막 내용만 근거. `rss-dronedj`(Avata 펌웨어)와 `rss-skydio`는 `drone-news-2026-10-25`에 흡수. sources는 기존 관례대로 `inbox/processed/` 경로 사용
+- Moved to processed: inbox 파일 8개 → `inbox/processed/` (스킵 4건 포함)
+
+## [2026-10-26] create | inbox 11건 중 7건 컴파일 (릴리스 1·영상 2·뉴스 RSS 4 → 신규 3쪽)
+
+- Created (concepts, 3): `concepts/yolo-v8-4-189.md` (ai-autonomy), `concepts/inav-logical-conditions.md` (flight-control, 자막 근거), `concepts/drone-news-2026-10-26.md` (ops-mission)
+- Updated: `index.md` (총 페이지 670 → 673)
+- Skipped (사유): `rss-parrot` (2015~2021 게시 항목뿐); `rss-dji-enterprise` (2025-11~2026-04 게시 항목뿐); `yt-every-twist-in-frame-dji-osmo-360-ii` (자막 없음, 프로모 숏폼); `yt-stairs-ball-no-second-takes-dji-osmo-nano` (자막 없음, 프로모 숏폼)
+- Note: 모두 단일 출처라 confidence low. INAV 영상은 자막 앞 8000자만 근거. `rss-skydio`·`rss-dronedj`·`rss-suasnews`·`rss-oscarliang-fpv`·quadmovr 영상(설명란 부품 목록)은 `drone-news-2026-10-26`에 흡수. sources는 기존 관례대로 `inbox/processed/` 경로 사용
+- Moved to processed: inbox 파일 11개 → `inbox/processed/` (스킵 4건 포함)
+
+## [2026-10-27] create | inbox 16건 중 7건 컴파일 (논문 4·릴리스 1·영상 1·뉴스 RSS → 신규 7쪽)
+
+- Created (concepts, 7): `concepts/yolo-v8-4-190.md` (ai-autonomy), `concepts/rl-single-propeller-modular-uav-docking-control.md` (ai-autonomy), `concepts/uav-base-station-charging-station-placement-return-constraint.md` (comms-protocol), `concepts/uav-uam-embedded-systems-survey.md` (flight-control), `concepts/rtk-uav-photogrammetry-mesh-grasshopper-validation.md` (ops-mission), `concepts/diy-21700-4s-usb-pd-power-bank.md` (hardware, 자막 근거), `concepts/drone-news-2026-10-27.md` (ops-mission)
+- Updated: `index.md` (총 페이지 673 → 680)
+- Skipped (사유): `rss-parrot` (2013~2017 게시 항목뿐); `rss-dji-enterprise` (2021~2025 게시 항목뿐); `yt-candy-turns-into-aurora-dji-osmo-pocket-4p`, `yt-glasses-on-going-under-dji-osmo-action-6`, `yt-손바닥에-펜-세우기-...-shorts` (자막 없음, 프로모 숏폼); `yt-거대-로봇회사들-사이에서-...-로보월드-2026-첫-전시` (자막이 로봇 교육 플랫폼 부스 홍보, 드론 기술 정보 없음)
+- Note: 논문은 초록 기준(원문 비공개), 나머지는 단일 출처라 모두 confidence low. 파워뱅크 영상은 자막 앞 8000자만 근거. sources는 기존 관례대로 `inbox/processed/` 경로 사용. 기존 KCI 논문의 domain 키워드 추론값은 페이지에서 7개 공식 값으로 재지정
+- Moved to processed: inbox 파일 16개 → `inbox/processed/` (스킵 5건 포함)
+
+## [2026-10-28] create | inbox 21건 중 11건 컴파일 (논문 6·릴리스 2·영상 1·뉴스 RSS → 신규 11쪽)
+
+- Created (concepts, 11): `concepts/yolo-v8-4-191.md` (ai-autonomy), `concepts/mavsdk-v4-1-0.md` (comms-protocol), `concepts/dual-gradient-consensus-quadrotor-ood-disturbance.md` (flight-control), `concepts/fluid-antenna-uav-dual-mobility-survey.md` (comms-protocol), `concepts/quadrotor-controller-comparison-reproducibility-study.md` (flight-control), `concepts/quadrotor-suspended-payload-pso-hybrid-polynomial-trajectory.md` (flight-control), `concepts/phased-trajectory-planning-uav-swarm-dynamic-environments.md` (ai-autonomy), `concepts/hybrid-deep-learning-uav-navigation-cellular-signals.md` (ai-autonomy), `concepts/drone-mounted-lighting-minimum-illuminance-operating-conditions.md` (ops-mission), `concepts/hd-fpv-vtx-standby-mode-low-power-warning.md` (hardware, 자막 근거), `concepts/drone-news-2026-10-28.md` (ops-mission)
+- Updated: `index.md` (총 페이지 680 → 691)
+- Skipped (사유): `rss-parrot` (2010~2016 게시 항목뿐); `rss-dji-enterprise` (DJI Modify 1.7.0 외 과거 항목뿐, Modify는 dronedj로 흡수); `yt-jev-course-prefill-only-inference-...` (범용 LLM 추론 강좌, 드론 도메인 외); `yt-what-is-simulink-design-verifier` (범용 MATLAB 제품 소개, 드론 특화 기술 정보 없음); `yt-핑크랩의-원격-교육---pinklab-studio` (교육 플랫폼 홍보, 드론 기술 정보 없음); `yt-that-moon-didnt-move-...-dji-mavic-4-pro`, `yt-too-messy-for-a-retake-dji-osmo-360-ii` (자막 없음, 프로모 숏폼)
+- Note: 논문은 초록 기준(KCI는 원문 비공개·초록 일부 잘림), 나머지는 단일 출처라 모두 confidence low. arXiv 3건은 raw/papers 경로, 나머지는 기존 관례대로 `inbox/processed/` 경로를 sources로 사용. HD FPV 영상은 자막 내용만 근거. `rss-skydio`·`rss-dronedj`·`rss-dronelife`·`rss-suasnews`는 `drone-news-2026-10-28`에 흡수
+- Moved to processed: inbox 파일 21개 → `inbox/processed/` (스킵 7건 포함)
+
+## [2026-10-30] ingest | eCalc xcopterCalc
+
+- Created or updated:
+  - raw/articles/ecalc-xcoptercalc.md (created)
+  - raw/articles/ecalc-xcoptercalc-help.md (created)
+  - concepts/ecalc-xcoptercalc.md (created)
+  - concepts/multirotor-propulsion-sizing-methods.md (updated: 관련 링크 `[[ecalc-xcoptercalc]]` 1건 추가, `updated` 갱신 — 신규 페이지의 고아 상태 해소 목적)
+  - templates/ecalc-xcoptercalc-run.md (created)
+  - templates/propulsion-prediction-measurement-comparison.md (created)
+  - scripts/validate-ecalc-run.py (created)
+  - scripts/test_validate_ecalc_run.py (created)
+  - index.md (총 페이지 691 → 692, concepts 말미에 1줄 추가)
+- Source URL:
+  - https://www.ecalc.ch/xcoptercalc.php
+  - https://www.ecalc.ch/calcinclude/help/xcoptercalchelp.htm
+- REA status:
+  - `rea` 6.5.0 확인. `rea doctor`는 `healthy: false`(등록된 클라이언트 0개, REA 스킬 identity stale, ghidra/ida/jadx 미설정). REA MCP 서버는 이 세션에서 연결 시간 초과(CONNECT_TIMEOUT)라서 REA 설정은 건드리지 않았고 REA 기반 브라우저 분석은 수행하지 못함. 대신 공식 페이지·도움말을 각 HTTP GET 1회로 받아 HTML 정적 분석(필드·결과 라벨·정확도 표기·회원 기능 문구)만 수행. 로그인·계산 실행·대량 호출 없음.
+- Verification:
+  - raw 2건: 본문 SHA-256 재계산 일치(SCHEMA 규칙: frontmatter 이후 본문), 원본 HTML SHA-256은 `source_html_sha256`에 별도 기록. 기존 tracked raw 파일 변경 0건(`git diff -- raw` 비어 있음).
+  - canonical: 필수 9필드·type/디렉터리 일치, sources 2건 실존, `^[...]` 마커 모두 sources 내, 태그 4종(drone, drone-hw, research, provenance) SCHEMA 등록 확인, wikilink 8건 전부 실존, index 항목 1건.
+  - `python3 scripts/test_validate_ecalc_run.py` 20/20 통과(불완전 입력·잘못된 단위·결과만 채운 기록·blocked_fields 불일치·URL 불일치·예측/실측 혼합·not_compared 유지 포함). 템플릿 원본을 `validate-ecalc-run.py`에 넣으면 필수 입력 누락으로 exit 1, 비교 템플릿은 exit 0.
+  - `scripts/weekly-lint.py`: exit 0, 총 이슈 2816 → 링크 추가 후 2815. 신규 페이지 관련 이슈 0건. 잔여 이슈는 기존 불일치(canonical 3286쪽 대 index 695쪽 등)이며 이번 작업 범위 밖.
+- Unresolved:
+  - eCalc "Accuracy: +/-15%"의 산정 근거·적용 출력 범위 미확인.
+  - 재사용·재배포 조건(라이선스) 문서 미확인, 공식 API·기계 판독 인터페이스 미확인(발견되지 않음일 뿐 부재 확정 아님).
+  - 브라우저 실관찰(계산 흐름, URL 파라미터 형식, 네트워크 호출, 계산 위치 서버/클라이언트) 미확인. 공유 링크·CSV는 회원 전용이라 미시험.
+  - 계산엔진 버전: 자산 쿼리 `7.41.019`와 화면 "Version: X / Data:" 칸의 관계 미확인.
+  - 비교 템플릿의 motor_rpm·thrust·battery_voltage_drop 예측값은 run 템플릿 results에 대응 필드가 없어 출처 교차검증 불가(수기 입력).
+
+## [2026-10-30] update | eCalc xcopterCalc REA 상태 정정
+
+- Updated:
+  - concepts/ecalc-xcoptercalc.md (출처와 검증 상태의 REA 행 2건 정정·추가)
+- REA status (정정):
+  - 앞선 ingest 항목의 "REA MCP 연결 실패"는 원인이 등록 정비 문제였음. `~/.claude.json`의 rea 등록이 `rea-agents@6.4.0` 고정(npx 기동)이었고 스킬 identity가 어긋나 있었다. 마스터 지시로 `rea setup --client claude_code --yes` 실행(백업 자동 생성) → 등록이 로컬 `rea mcp`(6.5.0)로 갱신, `claude mcp list`에서 Connected, `rea doctor --client claude_code --skill` healthy: true. 전체 범위 doctor는 다른 클라이언트 미등록과 ghidra/ida/jadx 미설정으로 여전히 false(이번 작업과 무관).
+  - 현재 세션에는 MCP 도구가 로드되지 않아 `rea` CLI로 대체: 임시 프로필 headless Chrome(loopback CDP)에서 eCalc 페이지 1회 로드 후 `rea discover-webmcp-tools` → 선언된 WebMCP 도구 0개. 계산 실행·입력·네트워크 캡처 없음. 관찰 후 Chrome 종료·임시 프로필 삭제.
+- Verification:
+  - index.md 변경 없음(제목·요약·총계 동일). raw 2건 무변경.
+- Unresolved:
+  - 계산 흐름·URL 파라미터 형식·계산 위치(서버/클라이언트)·네트워크 호출은 여전히 미확인(수동 단일 계산 관찰 필요, 공유 링크는 회원 전용).
+
+## [2026-10-30] update | eCalc xcopterCalc 계산 위치 관찰·독립 QA 반영
+
+- Updated:
+  - concepts/ecalc-xcoptercalc.md (온도 경고 구간 정정: 게이지 70~90 °C 노랑·그래프 80 °C 적색, P/D 비 표기, 호버 전류·전력은 Total Drive 값 기록 명시, 계산 위치·URL 파라미터 행 갱신)
+  - templates/ecalc-xcoptercalc-run.md (results: min_flight_time_min·battery_rated_voltage_v·hover_motor_rpm·maximum_motor_rpm 추가, motor.cooling, airframe.accessories_current_a/weight_g 추가, Total Drive 기준 주석)
+  - templates/propulsion-prediction-measurement-comparison.md (motor_rpm → motor_rpm_hover / motor_rpm_maximum 분리, 교차검증 범위 주석)
+  - scripts/validate-ecalc-run.py, scripts/test_validate_ecalc_run.py (위 필드·cooling 열거형·운영점 교차검증, 테스트 22/22)
+- REA status:
+  - 임의 관찰 입력으로 Calculate 1회: 입력 전체가 쿼리 파라미터로 `/calcinclude/xcoptercalcres.php`에 GET 전송 → 계산은 서버 측. 내부 엔드포인트라 직접 호출하지 않음. 입력·결과는 저장하지 않음. 임시 Chrome 종료·프로필 삭제.
+- Verification:
+  - qa-reviewer 독립 검토(조건부 통과)의 주의 3건·참고 3건을 raw 원문과 대조해 유효분을 반영. 참고 7(파서 이스케이프)은 실제 데이터에 발생하지 않아 미반영. index.md 변경 없음, 기존 raw 무변경, raw SHA 일치.
+  - publication-gate 읽기 전용 감사: 신규·수정 4개 파일은 `hold`(미승인)라 공개 스냅샷에 나가지 않음.
+- Unresolved:
+  - URL 공유 파라미터 형식(회원 전용), ±15% 근거, 라이선스, 공식 API 여부.
+  - 실제 기체 1건 run 기록은 마스터의 실제 부품·시험 데이터 필요(임의 값으로 작성하지 않음).
+
+## [2026-10-30] update | eCalc xcopterCalc 공개 승인(2건)
+
+- Updated:
+  - publication/policy.json (approved_files에 2건 추가: concepts/ecalc-xcoptercalc.md, concepts/multirotor-propulsion-sizing-methods.md — 현재 sha256 기준)
+- Note: 마스터 지시로 canonical 페이지만 공개 승인. `approve-held.py --apply`는 보류 86건 전체를 승인하므로 쓰지 않고 2건만 직접 등록. raw/articles/ecalc-xcoptercalc*.md 2건은 eCalc 도움말 전문 재배포가 되고 라이선스 미확인이라 hold 유지. 게이트 재감사: approve 2, hold 84(기존 82 + raw 2), retain/exclude 불변. 배포·push·commit 없음 — 승인은 다음 공개 스냅샷 빌드 때 반영.
+
+## [2026-10-30] update | eCalc 로그인 없는 적용 절차(A)·예측값 검증 절차(B)
+
+- Updated:
+  - concepts/ecalc-xcoptercalc.md (A: "로그인 없이 쓰는 절차" 절 추가, URL 공유 파라미터 항목을 '확인 불필요로 종결' 처리)
+  - concepts/multirotor-propeller-test-research.md (B: "예측값 검증 절차 (DroneWiki 운영 절차)" 절 추가, `updated` 갱신; 기존 sources 마커만 사용, 새 근거 추가 없음)
+  - publication/policy.json (마스터가 공개 승인한 ecalc 페이지의 수정본 해시로 갱신)
+- Note: index.md 제목·요약·총계 변경 없음. multirotor-propeller-test-research는 기존 승인 해시와 달라져 publication-gate 상 hold(마스터가 이 페이지 공개를 따로 승인하지 않았으므로 기존 공개본 유지). 새 절은 DroneWiki 운영 절차이며 논문이 제시한 방법으로 표기하지 않음.
+
+## [2026-10-30] update | multirotor-propeller-test-research 공개 승인
+
+- Updated:
+  - publication/policy.json (concepts/multirotor-propeller-test-research.md 현재 sha256 승인 등록)
+- Note: 마스터 지시로 해당 페이지 1건만 승인. 게이트 재감사 결과 ecalc·sizing-methods·propeller-test-research 3건 approve, raw 2건 hold 유지. 배포·push·commit 없음.
+
+## [2026-10-30] update | eCalc 공개 반영(스냅샷 빌드·배포·기준선 재고정)
+
+- Updated:
+  - publication/policy.json, publication/publication-manifest.json (보류 84건 승인 → 매니페스트 87건 등록 → 웹 50afeaa 기준선 재고정, baseline 3662→3697)
+- Note: 후보 20261030T010919Z-2b7d92550e02(3697개)를 drone-wiki-web에 반영(신규 35·변경 58·삭제 0, 커밋 50afeaa) 후 push·`vercel --prod`. 1차 빌드(--refresh-derived)가 만든 자동 생성 스텁 22건은 ~/projectm/drone-wiki-ops/quarantine-stubs-20261030/로 격리(미공개). 운영 검증: /api/health documents 3300·지문 일치, /wiki/ecalc-xcoptercalc 200·본문 확인, eval:prod 25/25(p90 10.5s, 검증 경고 3건). raw/articles/ecalc-xcoptercalc*.md 2건은 마스터 일괄 승인에 따라 공개됨(라이선스 미확인 상태).
