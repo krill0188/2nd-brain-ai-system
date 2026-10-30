@@ -40,3 +40,4 @@ RetinaNet 탐지에 칼만 필터를 결합할 때 신경망 단독 대비 표�
 
 ## 📰 최근 관련 소식
 - Parrot Drone BeBop 2 Is Like a “Flying Image Processor” - IEEE Spectrum (news.google.com, Thu, 29 Ju) — https://news.google.com/rss/articles/CBMihwFBVV95cUxOcHZmc0tpbmlSdVRpUHdQaXloS245ekxWcXRzZ2ZJZ2U4LXdEUUZWbEo0UEpKU21EWE84cUhuT3FpOGo1TVoyYmNTT3dTQ18xZGlLX2syTXZqaUFEMVNEanpVLXZjS2swMDExVlIxRkRDb3BzSXJYenIweWc4LXRQbWJhejV4WnM?oc=5
+- 50mph Drone Launches Like Paper Airplane - Electronics360 (news.google.com, Thu, 07 Ja) — https://news.google.com/rss/articles/CBMilgFBVV95cUxQSnlLZ0c2aDdGN0hkbWVYQnBlSDVPaHoxVkxtNy1vVThPWVphY3B1RnlTZDFMbmlSeWo3WUs2cWwwS0VHUHpZSmZ1Vi1ienA4ZW5kckFwa000TTVMVlhGM2txdlJadTlWZV9pZGlna281YzRzY2lzTy1RZGc0UGE1ODkxRXJRNjJPVnp2TG1fT09sRklPRlE?oc=5

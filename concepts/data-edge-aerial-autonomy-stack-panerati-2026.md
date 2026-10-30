@@ -28,3 +28,6 @@ GPU 가속 인식부터 비행 컨트롤러 동작까지 드론 자율성을 구
 - 초록 외 하드웨어(Jetson 등) 지원 목록과 20배 달성 조건은 미확인.^[inbox/processed/hw-20261021-data-edge-aerial-autonomy-stack-panerati-2026.md]
 
 상위 허브: [[ai-drone-data-processing-hub]] · 함께 보기: [[companion-computer]]
+
+## 📰 최근 관련 소식
+- Estonian Drone Autonomy Startup Advances to Anduril AI Grand Prix Finals (dronelife.com, Mon, 26 Oc) — https://dronelife.com/2026/10/26/anduril-ai-grand-prix-autonomous-drone-racing/

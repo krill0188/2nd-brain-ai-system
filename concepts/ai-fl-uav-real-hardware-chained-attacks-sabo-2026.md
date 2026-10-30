@@ -34,3 +34,4 @@ contradictions: []
 
 ## 📰 최근 관련 소식
 - DJI Teases Possible New Enterprise Drone Set to be Revealed On June 10th - No Film School (news.google.com, Thu, 05 Ju) — https://news.google.com/rss/articles/CBMiYkFVX3lxTE1VYWgtT2RvYkVxdzlINkdfNlNtS0RUM3locXgzTHFUSUNkQ3FyT0dkNFBvRng2dXFPc3FjQWk0N25rM25HaFRjZW5ScmMxMl9fOE8zRmw1RjAwQ3RSLXlYdGh3?oc=5
+- From Drone Pilot to Cockpit: The Procedural Skills That Transfer (and the Ones That Don’t) (www.suasnews.com, Sun, 25 Oc) — https://www.suasnews.com/2026/10/from-drone-pilot-to-cockpit-the-procedural-skills-that-transfer-and-the-ones-that-dont/

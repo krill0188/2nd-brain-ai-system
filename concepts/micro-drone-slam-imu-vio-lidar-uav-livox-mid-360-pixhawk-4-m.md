@@ -53,3 +53,4 @@ contradictions: []
 - [UAV Coach] Categories 1-4 Explained (youtube.com, 2026-10-09) — https://www.youtube.com/watch?v=y_XjlwqtRNM
 - [UAV Coach] Why Does Flying a Drone Feel Illegal? (youtube.com, 2026-10-15) — https://www.youtube.com/watch?v=xmBoKb3wh1U
 - 레드캣, 드론 '현장 충전'으로 작전반경 넓힌다 (데일리방산, Sat, 17 Oc) — https://news.google.com/rss/articles/CBMicEFVX3lxTE1udzlkYlZVMXljSldfZnllLXpiN05IbWhRY2ctZUZMejloUEF0VHZVWFBmcXRiblpGNFFEZ2VQRlZLSnJ1OFhXalFjdEh3bENJN1JJNlA5cnBzTzV2U001aXBBb3pqTExJMUhPT1lnUjI?oc=5
+- [Painless360] INAV Logical Conditions Explained Simply (youtube.com, 2026-10-25) — https://www.youtube.com/watch?v=T_HLnNIOCcY

@@ -44,3 +44,6 @@ UAV가 촬영한 영상에서는 객체가 작고 sparse하여 객체 탐지 모
 
 - [[auto-hub-technology]] — 자동 추출 분류
 - [[auto-hub-source-papers]] — 출처 유형
+
+## 📰 최근 관련 소식
+- GA-ASI Partnering With Spirit Defense For FQ-42 CCA Production (www.suasnews.com, Sun, 25 Oc) — https://www.suasnews.com/2026/10/ga-asi-partnering-with-spirit-defense-for-fq-42-cca-production/

@@ -1,7 +1,7 @@
 ---
 title: "멀티로터 추진계·질량 사이징 방법 (Dai 2019, Burela 2026)"
 created: 2026-10-16
-updated: 2026-10-16
+updated: 2026-10-30
 type: concept
 domain: hardware
 ontology_class: Multirotor
@@ -23,4 +23,4 @@ contradictions: []
 ## 실험 기반 조합 선정
 Goli 외(2023)는 모터 KV·프로펠러 크기·배터리 용량을 바꿔 가며 ESC 신호, 전류, 추력, 토크를 측정하는 절차를 제시한다.^[inbox/processed/fetch-2026-10-16-hw-paper-propulsion-efficiency-goli-2023.md]
 
-관련: [[multirotor-propeller-test-research]], [[multirotor-energy-power-models]], [[drone-hw]].
+관련: [[multirotor-propeller-test-research]], [[multirotor-energy-power-models]], [[drone-hw]], [[ecalc-xcoptercalc]].

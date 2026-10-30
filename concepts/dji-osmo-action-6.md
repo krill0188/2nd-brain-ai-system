@@ -48,3 +48,5 @@ DJI의 액션 카메라 시리즈 6세대 모델로, 야간 촬영 성능이 크
 - [DJI] Two Cameras. One Sky Run. | DJI Osmo Action 6 & DJI Osmo 360 (youtube.com, 2026-10-14) — https://www.youtube.com/watch?v=H7YJIrMK60Y
 - [DJI] One Walk. Full Sequence. | DJI Osmo Mobile 8P (youtube.com, 2026-10-17) — https://www.youtube.com/watch?v=MGy7jGEMEGA
 - DJI Gives Pilots Full Airspace Control. The World Holds Its Breath. - DroneXL (news.google.com, Wed, 19 No) — https://news.google.com/rss/articles/CBMif0FVX3lxTE1aQXB0VFY3eTdSZ1RHeWhlTFg1M3pCNGhQcGtKbU05Q1dlcl81NGJYTEJCZ3VqSlJfZUQ3TWRQSXFFUDViaDNZdlNwZG9oWVJsbExFYng2RnJRSTFUVTRReWxxYVVSOENpYnJRY1BxVy10UTQzdWY5RjljV1Rnc2s?oc=5
+- [DJI] Glasses on. Going under. | DJI Osmo Action 6 (youtube.com, 2026-10-26) — https://www.youtube.com/watch?v=G8DmOyP5r-k
+- [DJI] Too Messy for a Retake | DJI Osmo 360 II (youtube.com, 2026-10-27) — https://www.youtube.com/watch?v=fwSzjr2dNLU

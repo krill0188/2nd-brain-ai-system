@@ -39,3 +39,4 @@ DJI의 듀얼 렌즈 시네마틱 포켓 짐벌 카메라. 2026년 7월 30일 �
 - [DJI] See More. Tell More.｜20 October 2026, 12 PM (GMT) (youtube.com, 2026-10-15) — https://www.youtube.com/watch?v=-4I3JnioRXk
 - [DJI] DJI Osmo Pocket 4P is now available in Pearl White — the Dual-Camera Cinematic Pocket Gimbal Camera. (youtube.com, 2026-10-20) — https://www.youtube.com/watch?v=h_8Ug05Ok9g
 - [DJI] Spin Into the Shot | DJI Osmo Pocket 4P (youtube.com, 2026-10-22) — https://www.youtube.com/watch?v=kKdNVzyEDyE
+- [DJI] Candy Turns Into Aurora | DJI Osmo Pocket 4P (youtube.com, 2026-10-26) — https://www.youtube.com/watch?v=x3W8qIfYzNU

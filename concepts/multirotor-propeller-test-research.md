@@ -1,7 +1,7 @@
 ---
 title: "프로펠러 성능 시험·측정 연구 (벤치, 저 Re, 덕티드 동축)"
 created: 2026-10-16
-updated: 2026-10-20
+updated: 2026-10-30
 type: concept
 domain: hardware
 tags: [drone, drone-hw, hardware]
@@ -34,3 +34,15 @@ contradictions: []
 
 - 프로펠러 전력·회전속도로 대기속도를 역산하는 모델을 BEM 시뮬레이션, 풍동, 비행시험 데이터로 유도해 피토관 대체·중복용으로 제안했다(고정익, 초록 기준): [[propeller-feedback-airspeed-estimation]]^[inbox/processed/fetch-2026-10-19-arxiv-airspeed-estimation-for-uavs-using-only-propeller-feedback.md] — 위 벤치 시험이 정적 추력 중심인 데 비해 전진 비행 조건의 프로펠러 응답을 측정 수단으로 쓴 접근이다.
 - 모터·프로펠러 쌍의 정지 추력 응답을 디지털 트윈과 비교한 결과 선형화 모델이 과도 응답에서 크게 어긋났다: [[bldc-motor-propeller-digital-twin-static-thrust]]^[inbox/processed/fetch-2026-10-20-arxiv-digital-twin-of-a-dc-brushless-electric-motor-propeller-syst.md]
+
+## 예측값 검증 절차 (DroneWiki 운영 절차, 2026-10-30)
+
+외부 계산기나 자체 모델이 낸 추진계 예측값을 정적 추력시험과 비행로그로 확인하는 순서다. 아래 단계는 위 논문들의 주의점을 반영한 **DroneWiki 운영 절차**이며, 논문이 직접 제시한 방법이 아니다. 로그인이나 유료 기능 없이 수행할 수 있다.
+
+1. **부품 데이터 확정**: 제조사 공개 사양 또는 직접 측정값만 쓴다. 유사 부품 값으로 추정해 채우지 않고, 모르면 `null`로 둔다.
+2. **예측값 기록**: [[ecalc-xcoptercalc]] 같은 외부 계산기를 사람이 한 건씩 돌려 `templates/ecalc-xcoptercalc-run.md`에 입력과 결과를 모두 적는다. `scripts/validate-ecalc-run.py`로 형식을 검증한다.
+3. **정적 추력시험**: 같은 모터·프로펠러·배터리 조합으로 추력, 전류, 전압, 가능하면 RPM을 기록한다. 구성품 단위 효율과 시스템 효율은 직접 비교할 수 없다는 점을 지킨다.^[inbox/processed/fetch-2026-10-16-hw-paper-propulsion-efficiency-goli-2023.md] 샘플이 적은 비교는 결론을 약하게 쓴다.^[inbox/processed/fetch-2026-10-16-hw-paper-propeller-test-bench-esp32-prasetiyo-2026.md]
+4. **비행로그 추출**: 호버처럼 정상상태로 보이는 구간의 전류·전압·전력을 뽑는다([[flight-logging-analysis]]). 호버와 최대 출력 같은 운영점을 구분해 적는다.
+5. **비교 기록**: `templates/propulsion-prediction-measurement-comparison.md`에 예측값과 실측값을 **다른 필드**로 적고, 측정 출처와 일자를 남긴다. 오차는 `validate-ecalc-run.py --comparison`이 재계산해 확인한다.
+6. **해석 주의**: 정적 시험은 과도 응답을 대변하지 못한다. 모터·프로펠러 쌍의 정지 추력 응답에서 선형화 모델이 과도 응답과 크게 어긋난 사례가 있다.^[inbox/processed/fetch-2026-10-20-arxiv-digital-twin-of-a-dc-brushless-electric-motor-propeller-syst.md] 저 레이놀즈수 소형 프로펠러는 벤치 결과를 다른 크기에 옮기기 전에 적용 범위를 확인한다.^[inbox/processed/fetch-2026-10-16-hw-paper-small-propeller-low-re-mollick-2024.md]
+7. **합격선은 사후 설정**: 도구가 표기한 정확도(예: eCalc의 ±15%)는 해당 도구의 자체 표기이며 DroneWiki의 합격 기준이 아니다. 오차 기록이 쌓인 뒤 기체 종류별로 정한다.

@@ -31,3 +31,5 @@ contradictions: []
 
 ## 📰 최근 관련 소식
 - Auburn Police use drone first responder to arrest rape suspect - Renton Reporter (news.google.com, Mon, 05 Oc) — https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZDY3M3FJWmRlS3FzanJvaXY0cU55UXRreUVhd3J3aVVLNFRPeUppSzJWSXJKUS14LUhMWHcxSGRUcC1NTGhSZGQtQnJtbUdzOUhQb1hkOElGbkNUNnJ6bXBXRlhlVkJyQU8tS0l3dGZqNUhmcHdFZzhudThDbU41cUNnbDJsSTBFSFdfOXNGRnRlblVrYUQta3p0aE1yQVh3LVM5NGk5X3E?oc=5
+- From Steep Slopes and Glaciers to High Speed: Next-Generation Autonomous Drone Landings (www.suasnews.com, Sun, 25 Oc) — https://www.suasnews.com/2026/10/from-steep-slopes-and-glaciers-to-high-speed-next-generation-autonomous-drone-landings/
+- Parrot Bebop Drone Review - Tom's Guide (news.google.com, Thu, 08 Oc) — https://news.google.com/rss/articles/CBMickFVX3lxTFA5M3dsQkx3QkhUTURkaDVEdXhxTFRQeGxQdEtOaTJybUVZX0NyTUc4VzZhQ3BCUXc4TmtnVXM2dlRZS3dsOWVyTlRYUTM2SjFxVlp6WXJwTGZmdU5xcjJGM0xFSEdMTVFFR1d0MjVjR2hodw?oc=5

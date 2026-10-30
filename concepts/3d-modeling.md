@@ -28,3 +28,6 @@ contradictions: []
 ## 관련
 
 - [[dji-terra]] — DJI Terra (ENABLES)
+
+## 📰 최근 관련 소식
+- DJI Modify 1.6 Sharpens Its 3D Modeling Toolkit - DroneXL (news.google.com, Wed, 15 Ap) — https://news.google.com/rss/articles/CBMicEFVX3lxTE1ySTdveTQ2clFNc1hIRVVfaWIzamdRaUpReDI5VnR6N1RIUnl1Mm9fLVNYOFpXSWFlZjVMSURETzdoaGsyNFljUF8xY2Z2RGY5alRlRGtfWnN5WnVIQ01qX0EyZVZuT21ONU5rMV93eDQ?oc=5

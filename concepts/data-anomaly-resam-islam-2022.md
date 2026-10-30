@@ -35,3 +35,4 @@ CPS용 딥러닝 이상 탐지기를 만들기 위한 요구사항 프로세스 
 - [MATLAB] What’s New in MATLAB and Simulink | MATLAB EXPO Online 2026 (youtube.com, 2026-10-23) — https://www.youtube.com/watch?v=vSzRW5XIy9s
 - When metadata betrays the mission: Learning to defend UAV swarms with adaptive privacy (doi.org, 2027-2) — https://doi.org/10.1016/j.adhoc.2026.104458
 - Parrotâ€™s new drone lets you fly with VR goggles and phone - Hypergrid Business (news.google.com, Wed, 04 Se) — https://news.google.com/rss/articles/CBMirgFBVV95cUxQZkVPajZOcm1JSkxVRmVUeHpfSDlEVWFILVNabmkzaWZqOG11YWhuS0FqcGpBRHhrUEV1anF4MDhfa3UxaEFnakJYM3dFRE1lMXVORjY4NFRFRlRWOFdEUzVvMEFkUGVNcERDY0tzOTJ6SW1HVE1YMUw0aHRuUExGOGdpQl9hZ2NSQ3Q1YUoyRUdGTFQ5NHEtNE5fYmN3WjFWQkhqUHlvcjJTT2RlaHc?oc=5
+- [MATLAB] What Is Simulink Design Verifier? (youtube.com, 2026-10-27) — https://www.youtube.com/watch?v=K86oOsSCdgA

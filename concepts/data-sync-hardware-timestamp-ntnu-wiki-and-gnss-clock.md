@@ -31,3 +31,7 @@ arXiv 2107.02625: 마이크로컨트롤러가 GNSS 클럭 신호를 모사해 Li
 - NTNU 문서는 프로젝트 위키라 신뢰도 낮음. arXiv는 초록만 확인. 카메라 하드웨어 타임스탬프 정량 비교(Kalibr 대비) 자료는 미확보.^[inbox/processed/hw-20261021-data-sync-hardware-timestamp-ntnu-wiki-and-gnss-clock.md]
 
 상위 허브: [[ai-drone-data-processing-hub]] · 함께 보기: [[vendor-registry-gnss-imu]]
+
+## 📰 최근 관련 소식
+- European first: Intelic connects multi-vendor sensors, C2 and interceptor drone in a single operational workflow (www.suasnews.com, Sun, 25 Oc) — https://www.suasnews.com/2026/10/european-first-intelic-connects-multi-vendor-sensors-c2-and-interceptor-drone-in-a-single-operational-workflow/
+- Percepto Launches Hardware-Agnostic Axion Platform for Infrastructure Inspection Data (dronelife.com, Tue, 27 Oc) — https://dronelife.com/2026/10/27/percepto-launches-hardware-agnostic-axion-platform-for-infrastructure-inspection-data/

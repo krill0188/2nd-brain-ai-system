@@ -57,3 +57,4 @@ Practical guides for FPV drone maintenance covering LiPo battery balance connect
 ## 📰 최근 관련 소식
 - How to use ND Filters on FPV Drones: Creating Cinematic FPV Videos (oscarliang.com, Sun, 09 Au) — https://oscarliang.com/nd-filter-fpv/
 - How to Fix a Broken LiPo Battery Balance Connector Safely (oscarliang.com, Sat, 22 Au) — https://oscarliang.com/fix-balance-plug-lipo-replace/
+- [quadmovr] Quiet and Lightweight Acro Drone | 160g AUW (youtube.com, 2026-10-25) — https://www.youtube.com/watch?v=blhh94pNGas

@@ -37,3 +37,4 @@ DJI의 249g 이하 초경량 여행용 드론. 강풍에서도 안정적인 비�
 - [DJI] Total Darkness. Bright Corona. One Frame. | DJI Mavic 4 Pro (youtube.com, 2026-08-14) — https://www.youtube.com/watch?v=etlG90Nm8j8
 - 2 Enterprise Anafi Usa Parrot Anafi Vs Mavic USED DJI Mini Pro Drone With RC Remote Controller Adorama - diocesisdesalamanca (news.google.com, Wed, 15 Ju) — https://news.google.com/rss/articles/CBMiiAFBVV95cUxOWmh3YWdsRUExbEVmWVVaVGFieTFvTTI2dlEtbzhUYUpFdlE3UzJKeEdnUGxMNGZLaUFIcldzOFc3dWM2YThneDNvY3ptRGs2N2VRZkQ5QzJMU0V0bkNxdXJGVGU5am9FcjYycmxKelJmVHZfdkZsN0ptZk9FZlI1azFZVnhmZ2Fa?oc=5
 - [DJI] Autumn hits different from above. | DJI Mini 5 Pro (youtube.com, 2026-10-09) — https://www.youtube.com/watch?v=IqmuqGntxeU
+- DJI Spark vs. Parrot Bebop 2 - New Atlas (news.google.com, Thu, 20 Ju) — https://news.google.com/rss/articles/CBMicEFVX3lxTE1fd1hFZGdKbnZLQmdVcUdGb1pzeHltV0pJOFRtTmF0WlhQdnh5Tm1DcjFOQWU3QkVFLTFlTGRJZFJURkNlUFltUTh5Vm5sMnpSQ3hLa0dxWXBaV2RpSnVzUkJXcWE1S2VWdkJYR2VRdWI?oc=5

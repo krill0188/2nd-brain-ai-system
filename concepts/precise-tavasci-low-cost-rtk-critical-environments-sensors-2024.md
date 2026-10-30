@@ -31,3 +31,6 @@ contradictions: []
 (1) 실제 드론 비행이 아닌 카트 시험. (2) 기준선 100 m 미만 조건만 시험 → 기선 길이별 오차 자료는 아님. (3) 안테나 장착 위치 비교 없음. (4) 열람 범위: PMC 본문을 WebFetch 요약으로 읽음(요약 도구 경유라 표·그림 세부는 미확인). 신뢰도: 중상(동료심사). 같은 수치가 20261022 리뷰(env-jiang-...)에도 2차 인용됨.^[inbox/processed/hw-20261022-precise-tavasci-low-cost-rtk-critical-environments-sensors-2024.md]
 
 상위 허브: [[gnss-engineering-hub]] · 함께 보기: [[vendor-registry-gnss-imu]]
+
+## 📰 최근 관련 소식
+- FCC Seeks Input on Simplifying Satellite Communications Rules for Drones (dronelife.com, Mon, 26 Oc) — https://dronelife.com/2026/10/26/fcc-satellite-communications-rules-drones/

@@ -44,3 +44,6 @@ note: "Raw source not preserved in repo — found during 2026-08-10 provenance a
 ## 출처
 
 - Sun et al., "E2E-Fly: An Integrated Training-to-Deployment System for End-to-End Quadrotor Autonomy", arXiv:2604.12916, 2026.
+
+## 📰 최근 관련 소식
+- Estonian Drone Autonomy Startup Advances to Anduril AI Grand Prix Finals (dronelife.com, Mon, 26 Oc) — https://dronelife.com/2026/10/26/anduril-ai-grand-prix-autonomous-drone-racing/

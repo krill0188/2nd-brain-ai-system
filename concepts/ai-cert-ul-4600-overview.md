@@ -27,3 +27,6 @@ contradictions: []
 - UL 공식 페이지는 열람하지 않았고 페이지의 설명은 간략함. 도로차량용이며 드론 직접 적용 여부 미확인. 안전 사례 구성 요건 세부 미확인.^[inbox/processed/hw-20261021-ai-cert-ul-4600-overview.md]
 
 상위 허브: [[ai-drone-models-hub]] · 함께 보기: [[drone-regulations]]
+
+## 📰 최근 관련 소식
+- Crockford’s First Law of Bureaucratic Innovation (www.suasnews.com, Mon, 26 Oc) — https://www.suasnews.com/2026/10/crockfords-first-law-of-bureaucratic-innovation/

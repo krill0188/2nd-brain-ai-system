@@ -28,3 +28,8 @@ contradictions: []
 드론/항공 적용은 초록에 없음(미확인).^[inbox/processed/hw-20261021-ai-sim2real-domain-randomization-tobin-2017.md]
 
 상위 허브: [[ai-drone-models-hub]] · 함께 보기: [[drone-simulation]]
+
+## 📰 최근 관련 소식
+- From Drone Pilot to Cockpit: The Procedural Skills That Transfer (and the Ones That Don’t) (www.suasnews.com, Sun, 25 Oc) — https://www.suasnews.com/2026/10/from-drone-pilot-to-cockpit-the-procedural-skills-that-transfer-and-the-ones-that-dont/
+- Skydio Drone Crashes And Burns Feet From FIFA World Cup Crowds In Brooklyn, And The NYPD Has Been Here Before - DroneXL (news.google.com, Wed, 01 Ju) — https://news.google.com/rss/articles/CBMikAFBVV95cUxPTG9TZUtIb3hfZGI1U1BIM0xjb3YzZEpyREh5YTE3NlhmVjJlTVUtOEFfTzVZRDRzamJmQndxSmkya3l2ZGZoTE9aQ1d2elRUOURPemxscGZqTkx2YnMxdzB4SGt6WUlSbXBEWk54cmtsYThYd19qVlg3ekJzQUJldlFubkZrVUo0dDJkOEE3dzM?oc=5
+- Remānguys from Tallinn reaches the final of Anduril’s AI Grand Prix, a world race of drones that fly themselves (www.suasnews.com, Mon, 26 Oc) — https://www.suasnews.com/2026/10/remanguys-from-tallinn-reaches-the-final-of-andurils-ai-grand-prix-a-world-race-of-drones-that-fly-themselves/

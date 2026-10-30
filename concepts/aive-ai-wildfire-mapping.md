@@ -23,3 +23,6 @@ mapping)까지 복잡한 매핑 작업을 단순화하는 방향으로 접근을
 
 - [[dji-terra]] — DJI 매핑 소프트웨어, AI/thermal mapping 지원
 - [[drone-wildfire-rt-detr]] — 드론 산불 감시 RT-DETR 개선 모델
+
+## 📰 최근 관련 소식
+- 3D Drone Mapping: Inside Parrot’s “Impossible” Mission Over Positano [VIDEO] - Dronelife (news.google.com, Wed, 03 No) — https://news.google.com/rss/articles/CBMinwFBVV95cUxQQXhhSjJOejc2SVRpYjg0ZG1iamkzYXF6UlNYRVlUYXRTUEkxTzNhNmRZeHpsVkxaWHdtanJVVTJpME14TzZvT1p6NjEteUtDNEduakwyTDBvMTFVZllfRzlxd0RoRml6ODAwZmVIS29UOXA3dEtwNnkzNDFyMERxS2QzQzVfR19Ja2k5Z3VVMHlBZmpjQkpvNEhyY2xGdm8?oc=5

@@ -25,3 +25,6 @@ contradictions: []
 라이선스, 실제 기기 지연 수치 초록에 없음(미확인). 드론 적용 미확인.^[inbox/processed/hw-20261021-model-mobilellm.md]
 
 상위 허브: [[ai-drone-models-hub]] · 함께 보기: [[companion-computer]]
+
+## 📰 최근 관련 소식
+- Skydio CEO Adam Bry on why Silicon Valley shouldn’t draw red lines for drone use - The Verge (news.google.com, Mon, 15 Ju) — https://news.google.com/rss/articles/CBMiowFBVV95cUxNUnRRMlhfa1Y1cGhVdDUtR0UwYVUyaHhqSlc4M1lELUZ5QWFhaGtxY28wN1ctZWNSSzltR3lyb3l1TWN4LU9SdkgtYjNkM0MzdmkyWkZnR0ExOWtxeTFlNmNQWk9UTnkwSGx2cXhaTFVvdGctaWMxNjNEbWtHdDU3Zk0zeWZBeHFJcUxiMl9xQUtNaEN6TkpuYllPX1dBZnNiTElr?oc=5

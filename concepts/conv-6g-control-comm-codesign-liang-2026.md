@@ -28,3 +28,6 @@ contradictions: []
 - 초록에 수치 없음. 사례 연구 결과 수치와 레이턴시 요구값은 미확인(본문 미열람). IEEE Network 형식 원고(검색 결과 기준, 게재 여부 미확인).^[inbox/processed/hw-20261021-conv-6g-control-comm-codesign-liang-2026.md]
 
 상위 허브: [[drone-convergence-engineering-hub]] · 함께 보기: [[uav-isac-cross-region]]
+
+## 📰 최근 관련 소식
+- Fluid Antennas Enabled UAV Communication Systems: Fundamentals, Challenges, and Future Directions (arxiv.org, 2026-10-26) — http://arxiv.org/abs/2610.35047v1

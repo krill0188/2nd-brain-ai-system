@@ -52,3 +52,4 @@ DJI의 초소형 액션 카메라 — 52g 무게로 어디에나 클립 가능.
 - [DJI] Wait 3 Seconds for This | DJI Osmo Pocket 4P (youtube.com, 2026-10-10) — https://www.youtube.com/watch?v=8kcYeMcwZfE
 - [DJI] What does a hamster's home look like?| DJI Osmo Nano (youtube.com, 2026-10-14) — https://www.youtube.com/watch?v=O1kBXpzMggc
 - [DJI] POV: the jump drops away | DJI Osmo Nano (youtube.com, 2026-10-16) — https://www.youtube.com/watch?v=FtePJKC5tJw
+- [DJI] Stairs. Ball. No Second Takes. | DJI Osmo Nano (youtube.com, 2026-10-25) — https://www.youtube.com/watch?v=B23fpE_4VGo

@@ -35,3 +35,6 @@ raw/papers/_unclassified에 추가돼 출처가 이중 확보됐다.^[raw/papers
 
 - [[datalink-communication]]
 - [[active-sensing-uav-communication]]
+
+## 📰 최근 관련 소식
+- [핑크랩 PinkLAB] 손바닥에 펜 세우기, 이 로봇은 AI가 해요 🤖 현실 연습 0번 #shorts (youtube.com, 2026-10-26) — https://www.youtube.com/watch?v=gthFC-u38Fw

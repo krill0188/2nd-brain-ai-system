@@ -1635,3 +1635,6 @@ discovery 그래프에서 자동 추출·일괄 승격된 항목을 출처 유�
 - [[auto-hub-source-articles]]
 - [[auto-hub-source-youtube]]
 - [[auto-hub-technology]]
+
+## 📰 최근 관련 소식
+- How Tuning, Reference Preview, Actuator Modeling, and Fallback Policies Change Quadrotor Controller Comparisons: A Reproducible Simulation Study (arxiv.org, 2026-10-26) — http://arxiv.org/abs/2610.35165v1

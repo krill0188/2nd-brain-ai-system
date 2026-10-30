@@ -21,3 +21,6 @@ contradictions: []
 
 ## 연결
 [[datalink-communication]]의 링크 버짓 논의와 [[uav-uplink-energy-efficiency-los]]를 보완하는 기상 변수 근거다.
+
+## 📰 최근 관련 소식
+- Skydio Lobbying Profile, 2021 - OpenSecrets (news.google.com, Mon, 27 Ju) — https://news.google.com/rss/articles/CBMikAFBVV95cUxQdk9SblF0bldZNU5za0wwVzJMQVJrXzdBYTF0ZkVPRHpxTDYxb1d2c2JSdkhKTlMzaG1aM3JmTFJhd0JxemVSTmxEZHZ6OGQzakpfUDZuRkhZRWg3NlFZcjJNREJWWE5YNzdXazYxbUNmV2pBT1NPcWJuNFZoNjV4WWw5cEItamVpV2l6ZEF6eWc?oc=5

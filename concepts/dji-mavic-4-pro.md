@@ -43,3 +43,4 @@ DJI의 소비자용 항공 촬영 드론. 핵심 특징은 100MP 하셀블라드
 - [DJI] Fall Looks Unreal From Up Here | DJI Mavic 4 Pro (youtube.com, 2026-10-11) — https://www.youtube.com/watch?v=cp0qbG2NHtA
 - DJI announces the compact Matrice 30 enterprise drone with RC Plus controller - DroneDJ (news.google.com, Mon, 21 Ma) — https://news.google.com/rss/articles/CBMickFVX3lxTE50U3FJYkt3bXBCU3NzbmVRV19lLTZYaFpvUGI2WkwzLWtTeExPS0YwNTc1cFZjYU9DMGxlN0hBbERETFNrX2wzZjJVWU9tdzJfNFJMZ0c5d19jZmxxU25HRVY1b2JmUmh0dnFRdmlqMXd2QQ?oc=5
 - DJI Avata drone owners have a new firmware update to install (dronedj.com, Sat, 24 Oc) — https://dronedj.com/2026/10/24/dji-avata-firmware-new-drone/
+- DJI Spark vs. Parrot Bebop 2 - New Atlas (news.google.com, Thu, 20 Ju) — https://news.google.com/rss/articles/CBMicEFVX3lxTE1fd1hFZGdKbnZLQmdVcUdGb1pzeHltV0pJOFRtTmF0WlhQdnh5Tm1DcjFOQWU3QkVFLTFlTGRJZFJURkNlUFltUTh5Vm5sMnpSQ3hLa0dxWXBaV2RpSnVzUkJXcWE1S2VWdkJYR2VRdWI?oc=5

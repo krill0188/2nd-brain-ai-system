@@ -82,6 +82,7 @@ Emlid·Pix4D 영상(자막 기준): 모든 Emlid 수신기가 네트워크 보�
 - [Emlid] You can now use Emlid Corrections with Reach RX and RX2 in PIX4Dcatch (youtube.com, 2026-10-06) — https://www.youtube.com/watch?v=wQ81BFHFL8o
 - [Emlid] How Gossweiler sets up Emlid GNSS on the construction site (youtube.com, 2026-10-08) — https://www.youtube.com/watch?v=JTpDI9iG0cA
 - [Emlid] How Gossweiler keeps field and office in sync with Emlid (youtube.com, 2026-10-14) — https://www.youtube.com/watch?v=MTxjz-CuwW4
+- [핑크랩 PinkLAB] 핑크랩의 원격 교육 - PinkLAB Studio를 소개합니다. (youtube.com, 2026-10-27) — https://www.youtube.com/watch?v=uoDRE5IqLfc
 
 ## 클라우드 프로젝트 공유 (Gossweiler 사례, 2026-10-14)
 

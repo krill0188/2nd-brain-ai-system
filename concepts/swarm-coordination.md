@@ -152,3 +152,4 @@ Yu·You·Pei의 occupation-measure mean-field control(OM-MFC)은 개별 에이�
 
 ## 📰 최근 관련 소식
 - 충남 첫 ‘국가 지정 드론공원’ 탄생…당진서 비행·교육·대회 한 번에 (녹색경제신문, Tue, 04 Au) — https://news.google.com/rss/articles/CBMiaEFVX3lxTE9ySFBDbWVDbGdTd3ZTTVlfUWhBYTRDNURtZW8zc2FmLW9CZHZmcF8wcEdFa2FfOVpabEgzM1VjV3lEUFJ3V0pteGtDLWlDN3VEYmhmMDdJQTI1bXl6anNrRW9XTjFxdDk2?oc=5
+- 50mph Drone Launches Like Paper Airplane - Electronics360 (news.google.com, Thu, 07 Ja) — https://news.google.com/rss/articles/CBMilgFBVV95cUxQSnlLZ0c2aDdGN0hkbWVYQnBlSDVPaHoxVkxtNy1vVThPWVphY3B1RnlTZDFMbmlSeWo3WUs2cWwwS0VHUHpZSmZ1Vi1ienA4ZW5kckFwa000TTVMVlhGM2txdlJadTlWZV9pZGlna281YzRzY2lzTy1RZGc0UGE1ODkxRXJRNjJPVnp2TG1fT09sRklPRlE?oc=5

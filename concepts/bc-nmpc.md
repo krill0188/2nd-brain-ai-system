@@ -48,3 +48,7 @@ BC-NMPC(Battery-Constrained Nonlinear Model Predictive Control)는 드론의 고
 
 - [[auto-hub-technology]] — 자동 추출 분류
 - [[auto-hub-source-papers]] — 출처 유형
+
+## 📰 최근 관련 소식
+- From Steep Slopes and Glaciers to High Speed: Next-Generation Autonomous Drone Landings (www.suasnews.com, Sun, 25 Oc) — https://www.suasnews.com/2026/10/from-steep-slopes-and-glaciers-to-high-speed-next-generation-autonomous-drone-landings/
+- GA-ASI Partnering With Spirit Defense For FQ-42 CCA Production (www.suasnews.com, Sun, 25 Oc) — https://www.suasnews.com/2026/10/ga-asi-partnering-with-spirit-defense-for-fq-42-cca-production/

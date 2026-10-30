@@ -30,3 +30,6 @@ contradictions: []
 - FlyCart는 Wikipedia와 판매점 시트 기반(중간 신뢰도)이며 충전 시간·사이클 수명·실제 운용 규모가 없다.
 
 관련: [[matternet]], [[dji-enterprise]], [[drone-delivery-news]], [[wing-nhs-medical-delivery]], [[drone-regulations]].
+
+## 📰 최근 관련 소식
+- SightFlight Turns a Single DJI Drone Flight Into a Complete Solar Roof Survey (www.suasnews.com, Mon, 26 Oc) — https://www.suasnews.com/2026/10/sightflight-turns-a-single-dji-drone-flight-into-a-complete-solar-roof-survey/

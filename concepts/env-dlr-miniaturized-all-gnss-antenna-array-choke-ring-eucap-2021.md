@@ -29,3 +29,6 @@ UAV의 강한 다중경로와 (의도적) 간섭 환경에서 강건한 항법�
 초록만 열람. 이득·축비·다중경로 억제량·무게 등 정량값, 저자명은 미확인. 널 형성 알고리즘은 다루는지 확인 못함.^[inbox/processed/hw-20261021-env-dlr-miniaturized-all-gnss-antenna-array-choke-ring-eucap-2021.md]
 
 상위 허브: [[gnss-engineering-hub]] · 함께 보기: [[vendor-registry-gnss-imu]]
+
+## 📰 최근 관련 소식
+- FCC Seeks Input on Simplifying Satellite Communications Rules for Drones (dronelife.com, Mon, 26 Oc) — https://dronelife.com/2026/10/26/fcc-satellite-communications-rules-drones/

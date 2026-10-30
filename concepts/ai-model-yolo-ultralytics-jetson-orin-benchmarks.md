@@ -57,3 +57,6 @@ contradictions: []
 - YOLO11 대응 값은 DeepStream 가이드의 Orin NX 한 장치뿐.^[inbox/processed/hw-20261021-model-yolo-ultralytics-jetson-orin-benchmarks.md]
 
 상위 허브: [[ai-drone-models-hub]] · 함께 보기: [[test-time-scaling-vlm-uav]]
+
+## 📰 최근 관련 소식
+- State Grid Bets $250 Million on DJI Drones — And It’s Not a Pilot Program - DroneXL (news.google.com, Mon, 16 Ma) — https://news.google.com/rss/articles/CBMigwFBVV95cUxQS05HVjV0X3FyN1FPaWhVS1htUmthbVpyZXNsS0lXUWEtTzgtTU1PRDR2TWZIdGV1OUc2N1VXc1FjU3UzZnlVQjJxTlZ0UlR0SVVIT2dkUUwzZlY0VHhQZmJqTE8zb25qTVZMWUJxb0RSdVM4UlotSHpZVThRMXZtd3FiYw?oc=5
