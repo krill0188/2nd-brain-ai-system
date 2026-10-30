@@ -429,6 +429,11 @@ PYEOF
 
 fetch_federal_register "drone" "faa" "regulations" 5
 
+# ── 한국 법령 변경(법제처 오픈API) → news-feed '법령 이벤트' ──────
+# 대상은 drone-wiki-web/data/ontology/laws.json(마스터 확정 목록). 인증키 LAW_OC 없으면 스스로 스킵한다.
+# 임베디드 python 블록이 아니라 별도 스크립트라 시험(test_fetch_law.py)으로 검증한다.
+python3 "$HOME/2nd/scripts/fetch-law.py" || echo "  ⚠️  법령 수집 실패 — scripts/fetch-law.py 출력 확인"
+
 # ── arXiv 논문 자동 수집 (inbox → 위키 컴파일 + news-feed) ──────
 fetch_arxiv() {
   local query="$1" slug="$2" domain="$3" max_items="${4:-3}"
