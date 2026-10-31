@@ -3396,12 +3396,12 @@
   },
   "baseline": {
     "description": "Existing local public snapshot bytes; retention only, not a declaration of public classification. Never refresh automatically.",
-    "web_head": "c9bb4d7",
+    "web_head": "35d098f",
     "files": {
-      ".ua/daily-briefing.json": "045b075e7ae32eaea50f3f30fd6ed376742134f5583252374222f73d6b574ab1",
+      ".ua/daily-briefing.json": "0199dc7fe149fd76300e8b52142cad93b96904f928f35f864b06e53533b8c3c1",
       ".ua/discovery-knowledge-graph.json": "547e870b9d5ded0e525efe34d4fcec79a664ccef334b04191b4396534d770864",
       ".ua/drone-knowledge-graph.json": "85552347b55bb5abe115902f7c15fa9ea8bff21d224b62055695a87d8ef08485",
-      ".ua/embeddings.json": "80560e98505dc6854ab558c0914c4be413bf1776b191764c142d275f40eb8643",
+      ".ua/embeddings.json": "a7352cff15816c02d608461b050a65ed4835502cf556cb013963d3b177331873",
       ".ua/knowledge-graph.json": "93e0e5dda03d05ee06488aa150ee786b4e4c3a2c51643f5628de43cdb5a53c78",
       ".ua/news-feed.json": "aa964cb7261fd11331a401150c23d99e19cc0389a95539291db720b7124764c3",
       ".ua/self-update-state.json": "0f4eff5771de2c135344d750483aad97151a95cdca0a7b1ddb1e7550b28f1c81",
