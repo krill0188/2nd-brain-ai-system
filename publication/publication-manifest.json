@@ -23,55 +23,6 @@
     ".ua/news-feed.json",
     ".ua/self-update-state.json"
   ],
-  "approved_source_versions": [
-    {
-      "path": "concepts/adaptive-lighting-night-maritime-sar-sea-fog.md",
-      "source_commit": "1f3fbc4f149e7739c2a555cbee193101cffdfd45"
-    },
-    {
-      "path": "concepts/dji-legacy-drone-firmware-updates-2026-10.md",
-      "source_commit": "1f3fbc4f149e7739c2a555cbee193101cffdfd45"
-    },
-    {
-      "path": "concepts/drone-data-standardization-three-layer-framework.md",
-      "source_commit": "1f3fbc4f149e7739c2a555cbee193101cffdfd45"
-    },
-    {
-      "path": "concepts/heterogeneous-uav-swarm-maritime-strike-system-dynamics.md",
-      "source_commit": "1f3fbc4f149e7739c2a555cbee193101cffdfd45"
-    },
-    {
-      "path": "concepts/lora-drone-atmospheric-monitoring-system.md",
-      "source_commit": "1f3fbc4f149e7739c2a555cbee193101cffdfd45"
-    },
-    {
-      "path": "concepts/part-107-exam-sectional-chart-change-2026-10.md",
-      "source_commit": "1f3fbc4f149e7739c2a555cbee193101cffdfd45"
-    },
-    {
-      "path": "concepts/policy-based-ai-inspection-agent-tower-crane-uav.md",
-      "source_commit": "1f3fbc4f149e7739c2a555cbee193101cffdfd45"
-    },
-    {
-      "path": "concepts/predefined-time-cooperative-guidance-control-quadrotor-swarm-impact-angle.md",
-      "source_commit": "1f3fbc4f149e7739c2a555cbee193101cffdfd45"
-    },
-    {
-      "path": "concepts/px4-developer-summit-2026-dronecode-update.md",
-      "source_commit": "1f3fbc4f149e7739c2a555cbee193101cffdfd45"
-    },
-    {
-      "path": "concepts/selective-sliding-mode-control-aerial-robots-disturbances.md",
-      "source_commit": "1f3fbc4f149e7739c2a555cbee193101cffdfd45"
-    },
-    {
-      "path": "concepts/yolo-v8-4-192.md",
-      "source_commit": "1f3fbc4f149e7739c2a555cbee193101cffdfd45"
-    },
-    {
-      "path": "concepts/yolo-v8-4-194.md",
-      "source_commit": "1f3fbc4f149e7739c2a555cbee193101cffdfd45"
-    }
-  ],
+  "approved_source_versions": [],
   "revoked_paths": []
 }
