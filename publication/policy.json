@@ -3380,7 +3380,19 @@
     "raw/papers/datalink/fluid-antennas-enabled-uav-communication-systems-fundamentals-challenges-and-fut.md": "5dabf816dde90ae11145243c5202ce486f138586d3f2b2891446c4277c5bba30",
     "raw/papers/drone-ai/hybrid-deep-learning-framework-for-real-time-uav-navigation-with-adaptive-smooth.md": "b59690974fa286c84a8aa178642b2007dc286c776a9ecb9ee2e3d1b95f1f5e9c",
     "raw/papers/drone-ai/강화학습-기반-단일-프로펠러-모듈형-uav의-비행-및-결합-제어.md": "ea8244abb108621b1fc9ff5f52cf4823e4413307320a228ada743a27d2eb572b",
-    "raw/papers/swarm/phased-trajectory-planning-for-uav-swarm-cooperation-in-complex-dynamic-environm.md": "bfb644619a5ed4fce4a5a2b7afd2937a414fe924e4684474193a75657d10e3f2"
+    "raw/papers/swarm/phased-trajectory-planning-for-uav-swarm-cooperation-in-complex-dynamic-environm.md": "bfb644619a5ed4fce4a5a2b7afd2937a414fe924e4684474193a75657d10e3f2",
+    "concepts/adaptive-lighting-night-maritime-sar-sea-fog.md": "1dbb6d05b6370d8db41c75bfeaca51a6ecb994421f892ba70834c43b939b28e7",
+    "concepts/dji-legacy-drone-firmware-updates-2026-10.md": "bae7b4cef8ae7b955657bcb40e03c719f53d6bb9eb226b10903040f472cddafa",
+    "concepts/drone-data-standardization-three-layer-framework.md": "d84c93bea2eb5e5f79d5b516c8b0951fa2f9c123904a41d26492228554f22b0f",
+    "concepts/heterogeneous-uav-swarm-maritime-strike-system-dynamics.md": "bc57d4e2df5b4cdfc31b4801083f6de9748980f082177b271f55503483d56ec3",
+    "concepts/lora-drone-atmospheric-monitoring-system.md": "13e998d6f94c881a8963ce1521cf1ae4420523ce3a38e534a2b3509b7573b32d",
+    "concepts/part-107-exam-sectional-chart-change-2026-10.md": "b3e098d04b3174a9ed6aa574b39cf49b972fa87b5cebcab53e770dfd8a278c81",
+    "concepts/policy-based-ai-inspection-agent-tower-crane-uav.md": "475fab7902e02c4126700a9ca0fc65701634d12cddedea2bf80f44ce1d5df07f",
+    "concepts/predefined-time-cooperative-guidance-control-quadrotor-swarm-impact-angle.md": "939c60427efea27d1454ef2f2712f0b61faccb249338a327df371910cfb028b2",
+    "concepts/px4-developer-summit-2026-dronecode-update.md": "c461cbf869a8a0aa40f1121ec6eb304a7b2c528fa47f4be2fbbeb97d4b16357f",
+    "concepts/selective-sliding-mode-control-aerial-robots-disturbances.md": "8e7f8b7f3d9aeadad574c8fe2cd05e8f0bb5eacff6cee6c4e05d52772f3ea21b",
+    "concepts/yolo-v8-4-192.md": "b740fe6fba5ab9a9244d0d1223e95f54c15b490d584691cc3a07636229c1b2c3",
+    "concepts/yolo-v8-4-194.md": "79f5d5a10bc2abe3362c597b109fc07cca9dd7c7c9a724a3fd0b8cb9ff19ec5f"
   },
   "baseline": {
     "description": "Existing local public snapshot bytes; retention only, not a declaration of public classification. Never refresh automatically.",
