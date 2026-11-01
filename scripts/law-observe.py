@@ -27,7 +27,7 @@ WEB = os.path.join(HOME, "projectm", "drone-wiki-web")
 LAWS = os.path.join(WEB, "data", "ontology", "laws.json")
 BUILD = os.path.join(WEB, "scripts", "build-events.py")
 MIN_DAYS = 7
-TITLE_RE = re.compile(r"^\[법령\] (?P<name>.+?) · (?P<kind>.+?) · 시행 \d{4}-\d{2}-\d{2}$")
+TITLE_RE = re.compile(r"^\[법령\] (?P<name>.+?) · (?P<kind>.+?) · 시행 \d{4}-\d{2}-\d{2}(?: \(일부 \d{4}-\d{2}-\d{2}(?:, \d{4}-\d{2}-\d{2})* 시행\))?$")  # 부분 시행 병기 허용
 
 spec = importlib.util.spec_from_file_location("fetch_law", os.path.join(os.path.dirname(os.path.abspath(__file__)), "fetch-law.py"))
 fl = importlib.util.module_from_spec(spec)

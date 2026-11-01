@@ -34,6 +34,7 @@ class Workspace:
         self.fix = self.tmp / "fix"
         self.fix.mkdir()
         self.store = self.tmp / "store"
+        self.feed = self.tmp / "feed.json"  # 제목 동기화 대상(실제 ~/2nd/.ua/news-feed.json 을 건드리지 않는다)
         self.laws = self.tmp / "laws.json"
         self.laws.write_text(json.dumps({"confirmed": True, "laws": [{"id": LAW_ID, "name": NAME}]}, ensure_ascii=False), encoding="utf-8")
         self.set_payload(pl or payload())
@@ -44,7 +45,7 @@ class Workspace:
     def run(self, *extra):
         sent = []
         with patch.object(fl, "append_to_feed", side_effect=lambda items: sent.extend(items)):
-            code = fl.main(["--laws", str(self.laws), "--store-dir", str(self.store), "--fixture-dir", str(self.fix), *extra])
+            code = fl.main(["--laws", str(self.laws), "--store-dir", str(self.store), "--feed", str(self.feed), "--fixture-dir", str(self.fix), *extra])
         return code, sent
 
 
@@ -92,6 +93,37 @@ class Units(unittest.TestCase):
             bad = {k: v for k, v in rec.items() if k != field}
             self.assertIsNone(fl.to_feed_item(NAME, bad), field)
         self.assertIsNone(fl.to_feed_item(NAME, {**rec, "시행일자": "20261301"}))
+
+    def test_service_dates_representative_and_partial(self):
+        base = {"법령": {"기본정보": {"시행일자": "20260701", "조문시행일자문자열": "20260709:제26조제1항제30호, 제26조제2항제7호\n20260801:제30조, 20260701:제1조"}}}
+        self.assertEqual(fl.service_dates(base), ("20260701", ["20260709", "20260801"]))  # 대표와 같은 날짜는 부분 시행이 아니다
+        self.assertEqual(fl.service_dates({"법령": {"기본정보": {"시행일자": "20260917"}}}), ("20260917", []))
+        for bad in ({}, None, {"법령": {}}, {"법령": {"기본정보": {"시행일자": "2026-07-01"}}}):
+            self.assertEqual(fl.service_dates(bad)[0], None)
+        self.assertEqual(fl.service_dates({"법령": {"기본정보": {"시행일자": "20260701", "조문시행일자문자열": "20261301:제1조"}}}), ("20260701", []))  # 존재하지 않는 날짜 무시
+
+    def test_feed_item_title_uses_representative_date_with_partial_suffix(self):
+        rec = {**fl.clean_record(fl.pick_exact(payload(), NAME)), "대표시행일자": "20260315", "부분시행일자": "20260401,20260501"}
+        self.assertEqual(fl.to_feed_item(NAME, rec)["title"], "[법령] 항공안전법 · 일부개정 · 시행 2026-03-15 (일부 2026-04-01, 2026-05-01 시행)")
+        rec.pop("부분시행일자")
+        self.assertEqual(fl.to_feed_item(NAME, rec)["title"], "[법령] 항공안전법 · 일부개정 · 시행 2026-03-15")
+        rec.pop("대표시행일자")  # 본문 API 를 못 받은 경우: 목록 API 시행일로 폴백
+        self.assertEqual(fl.to_feed_item(NAME, rec)["title"], "[법령] 항공안전법 · 일부개정 · 시행 2026-04-01")
+
+    def test_sync_feed_titles(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            feed = Path(tmp) / "feed.json"
+            old = [{"title": "[법령] 항공안전법 · 일부개정 · 시행 2026-04-01", "url": "https://www.law.go.kr/법령/x#rev-1", "sha256": "abc", "fetched": "t"},
+                   {"title": "다른 기사", "url": "https://example.com/a", "sha256": "def"}]
+            feed.write_text(json.dumps(old, ensure_ascii=False, indent=1), encoding="utf-8")
+            new = [{"title": "[법령] 항공안전법 · 일부개정 · 시행 2026-03-15", "url": "https://www.law.go.kr/법령/x#rev-1"}]
+            self.assertEqual(fl.sync_feed_titles(new, str(feed)), 1)
+            got = json.loads(feed.read_text(encoding="utf-8"))
+            self.assertEqual(got[0]["title"], new[0]["title"])
+            self.assertEqual((got[0]["sha256"], got[0]["fetched"], got[1]), ("abc", "t", old[1]))  # 이벤트 id(sha256)·다른 항목 불변
+            self.assertEqual(feed.read_text(encoding="utf-8"), json.dumps(got, ensure_ascii=False, indent=1))  # news-feed-append 와 같은 서식
+            self.assertEqual(fl.sync_feed_titles(new, str(feed)), 0)  # 멱등
+            self.assertEqual(fl.sync_feed_titles(new, str(Path(tmp) / "none.json")), 0)  # 피드가 없으면 아무 것도 하지 않는다
 
     def test_revision_gets_distinct_url_and_title(self):
         a = fl.to_feed_item(NAME, fl.clean_record(fl.pick_exact(payload(), NAME)))
@@ -144,7 +176,7 @@ class Main(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             ws = Workspace(tmp)
             with patch.object(fl, "append_to_feed", side_effect=RuntimeError("boom")):
-                code = fl.main(["--laws", str(ws.laws), "--store-dir", str(ws.store), "--fixture-dir", str(ws.fix)])
+                code = fl.main(["--laws", str(ws.laws), "--store-dir", str(ws.store), "--feed", str(ws.feed), "--fixture-dir", str(ws.fix)])
             self.assertEqual(code, 2)
             self.assertEqual(list(ws.store.glob("law_*")), [])  # 보존 파일은 없다(실행 기록 runs.jsonl 만 남음)
             code, sent = ws.run()
@@ -154,7 +186,7 @@ class Main(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             ws = Workspace(tmp)
             with patch.object(fl, "load_oc", return_value=""), patch.object(fl, "fetch_remote", side_effect=AssertionError("네트워크 호출 금지")):
-                code = fl.main(["--laws", str(ws.laws), "--store-dir", str(ws.store)])
+                code = fl.main(["--laws", str(ws.laws), "--store-dir", str(ws.store), "--feed", str(ws.feed)])
             self.assertEqual(code, 0)
 
     def test_run_log_records_outcomes_without_secrets(self):
@@ -174,9 +206,52 @@ class Main(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             ws = Workspace(tmp)
             with patch.object(fl, "load_oc", return_value=""):
-                fl.main(["--laws", str(ws.laws), "--store-dir", str(ws.store)])
+                fl.main(["--laws", str(ws.laws), "--store-dir", str(ws.store), "--feed", str(ws.feed)])
             rows = [json.loads(x) for x in (ws.store / "runs.jsonl").read_text(encoding="utf-8").splitlines()]
             self.assertEqual([r["status"] for r in rows], ["skipped-no-key"])
+
+    def _service(self, ws, rep="20260315", partial="20260401:제1조제1항"):
+        (ws.fix / "law_aviation-safety-act.service.json").write_text(json.dumps({"법령": {"기본정보": {"시행일자": rep, "조문시행일자문자열": partial}}}, ensure_ascii=False), encoding="utf-8")
+
+    def test_title_uses_service_dates_and_record_keeps_them(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            ws = Workspace(tmp); self._service(ws)
+            code, sent = ws.run()
+            self.assertEqual((code, len(sent)), (0, 1))
+            self.assertEqual(sent[0]["title"], "[법령] 항공안전법 · 일부개정 · 시행 2026-03-15 (일부 2026-04-01 시행)")
+            rec = json.loads(next((ws.store / "law_aviation-safety-act").glob("*.json")).read_text(encoding="utf-8"))
+            self.assertEqual((rec["대표시행일자"], rec["부분시행일자"]), ("20260315", "20260401"))
+            self.assertEqual(ws.run()[1], [])  # 같은 내용이면 다시 내보내지 않는다
+
+    def test_service_failure_reuses_last_dates_for_same_revision_and_falls_back_otherwise(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            ws = Workspace(tmp); self._service(ws)
+            ws.run()
+            (ws.fix / "law_aviation-safety-act.service.json").unlink()  # 다음 날 본문 API 실패 모사
+            code, sent = ws.run()
+            self.assertEqual((code, sent), (0, []))  # 같은 개정판이면 직전 대표·부분 시행일을 이어받아 '변경 없음'(제목이 폴백으로 흔들리지 않음)
+            rows = [json.loads(x) for x in (ws.store / "runs.jsonl").read_text(encoding="utf-8").splitlines()]
+            self.assertEqual(rows[-1]["unchanged"], 1)
+        with tempfile.TemporaryDirectory() as tmp:  # 처음부터 본문 API 가 없으면 목록 API 시행일로 폴백하고 기록한다
+            ws = Workspace(tmp)
+            code, sent = ws.run()
+            self.assertEqual((code, sent[0]["title"]), (0, "[법령] 항공안전법 · 일부개정 · 시행 2026-04-01"))
+            rows = [json.loads(x) for x in (ws.store / "runs.jsonl").read_text(encoding="utf-8").splitlines()]
+            self.assertEqual(len(rows[-1]["fallback"]), 1)
+
+    def test_run_syncs_existing_feed_titles(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            ws = Workspace(tmp); self._service(ws)
+            url = fl.to_feed_item(NAME, fl.clean_record(fl.pick_exact(payload(), NAME)))["url"]
+            ws.feed.write_text(json.dumps([{"title": "[법령] 항공안전법 · 일부개정 · 시행 2026-04-01", "url": url, "sha256": "keep"}], ensure_ascii=False, indent=1), encoding="utf-8")
+            ws.run()
+            got = json.loads(ws.feed.read_text(encoding="utf-8"))
+            self.assertEqual((got[0]["title"], got[0]["sha256"]), ("[법령] 항공안전법 · 일부개정 · 시행 2026-03-15 (일부 2026-04-01 시행)", "keep"))
+        with tempfile.TemporaryDirectory() as tmp:  # dry-run 은 피드를 바꾸지 않는다
+            ws = Workspace(tmp); self._service(ws)
+            before = json.dumps([{"title": "옛 제목", "url": url, "sha256": "k"}], ensure_ascii=False, indent=1)
+            ws.feed.write_text(before, encoding="utf-8"); ws.run("--dry-run")
+            self.assertEqual(ws.feed.read_text(encoding="utf-8"), before)
 
     def test_bad_config_is_exit_1(self):
         self.assertEqual(fl.main(["--laws", "/nonexistent/laws.json"]), 1)
@@ -193,7 +268,7 @@ class Main(unittest.TestCase):
                 with self.subTest(type(err).__name__):
                     out, errbuf = io.StringIO(), io.StringIO()
                     with patch.object(fl, "load_oc", return_value="SECRETKEY"), patch.object(fl, "fetch_remote", side_effect=err), redirect_stdout(out), redirect_stderr(errbuf):
-                        code = fl.main(["--laws", str(ws.laws), "--store-dir", str(ws.store)])
+                        code = fl.main(["--laws", str(ws.laws), "--store-dir", str(ws.store), "--feed", str(ws.feed)])
                     self.assertEqual(code, 2)
                     self.assertNotIn("SECRETKEY", out.getvalue() + errbuf.getvalue())
 
