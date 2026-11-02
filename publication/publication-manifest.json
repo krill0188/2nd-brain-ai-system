@@ -26,335 +26,335 @@
   "approved_source_versions": [
     {
       "path": "comparisons/knowledge-tool-roles.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/3dgcpm.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/actuator-prediction.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/ai-drone-data-processing-hub.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/ai-knowledge-workflow.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/ai-latency-vision-in-the-loop-wickramasuriya-2026.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/aitester-uas-testing.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/altitude-planning.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/boundary-layer-sliding-mode-control-bl-smc.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/cellular-network-signals.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/china-drone-export-controls.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/command-timing.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/constant-step-dapl.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/conv-energy-flying-batteries-jain-2019.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/conv-energy-staging-jain-2020.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/cross-layered-medical-drone-coordination.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/dapl.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/data-anomaly-resam-islam-2022.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/data-sync-hardware-timestamp-ntnu-wiki-and-gnss-clock.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/directional-selection-method.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/dji-mavic-4-pro-features.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/dji-mavic-4-pro-firmware-update.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/dji-multirotor-unmanned-aerial-vehicle-uav-platforms.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/dji-osmo-360-ii.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/dji-osmo-action-6.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/dji-osmo-pocket-4p-stabilization.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/drone-bird-discrimination.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/drone-delivery-news.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/drone-news-2026-08-20.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/drone-news-2026-10-11.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/drone-news-ops.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/dual-mobility-perspective.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/fallback-activity.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/fcu.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/fpv-hardware.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/frozen-parameter-baseline.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/ga-asi-fujitsu-mou.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/ga-asi-mojave-battlefield-short-field-ops.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/games-of-the-future-2026.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/geometric-so-3-controller.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/global-planning.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/hequav-k11-dual-sensor-gimbal.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/hover-lqr.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/hybrid-deep-learning-framework.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/improved-genetic-algorithm.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/indi-stability-tilt-rotor-vtol.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/joint-optimization.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/l1-augmented-mpc.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/lawns.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/least-squares-adaptation.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/linear-mpc-with-lqr-fallback-lmpc-f.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/lipo-battery.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/macro-mobility.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/mavlink-m-interoperability.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/micro-mobility.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/mpc.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/multi-objective-optimization-model.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/offline-bptt-policy.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/offline-online-optimization-framework.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/online-local-replanning.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/phased-trajectory-planning-method.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/position-reconfiguration.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/preview-enabled-lmpc-f.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/prop-kw-wizard.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/redundant-waypoint-deletion-operator.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/reference-preview.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/rff-based-mpc.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/siyi-unifc-6-pico-flight-controller.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/thermal-drone-wildfire-monitoring.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/two-dimensional-pathfinding.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/yolo-v8-4-195.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "concepts/yolo-v8-4-197.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "entities/dao-xuan-quy.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "entities/dji-osmo-pocket-4.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "entities/le-ngoc-bich.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "entities/michael-kelly.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "entities/nanjing-university-of-aeronautics.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "entities/nguyen-le-minh.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "entities/p-tamilselvi.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "entities/ren-jinke.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "entities/wei-zhou.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "entities/wu-jun.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     },
     {
       "path": "entities/you-changsheng.md",
-      "source_commit": "7b6b2ff988c85f69412a061d225ef21f6d01946f"
+      "source_commit": "269edd24d3aa9e08b3906e83b6d84f87b0b786b4"
     }
   ],
   "revoked_paths": []
