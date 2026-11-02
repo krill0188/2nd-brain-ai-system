@@ -6,6 +6,7 @@ type: concept
 tags: [dapl, adaptive-learning, quadrotor-control, rff, out-of-disturbance, gradient-update]
 sources: [http://arxiv.org/abs/2610.34538v1]
 confidence: medium
+contested: false
 contradictions: []
 domain: ai-autonomy
 ---
@@ -39,3 +40,7 @@ Quadrotor trajectory tracking under unmodeled disturbances often relies on onlin
 ## 출처
 
 - (사용자 재확인 필요) [arXiv:2610.34538v1](http://arxiv.org/abs/2610.34538v1) - Dual Gradient Consensus for Adaptive Learning to Transient Out-of-Distribution Disturbances in Quadrotor Control
+
+## 참고
+
+[[dapl]] [[giant-steps]]

@@ -44,3 +44,7 @@ hover LQR은 쿼드럽터 안정 비행 제어에서 사용되는 선형 quadrat
 ## 출처
 
 - (사용자 재확인 필요) [paper: How Tuning, Reference Preview, Actuator Modeling, and Fallback Policies Change Quadrotor Controller Comparisons: A Reproducible Simulation Study](http://arxiv.org/abs/2610.35165v1), Dao et al., 2026.
+
+## 참고
+
+[[quadrotor]] [[hover-point-throttle-curve]]

@@ -6,6 +6,7 @@ type: entity
 tags: [person, uav-communication, fluid-antennas, low-altitude-wireless-networks]
 sources: []
 confidence: medium
+contested: false
 contradictions: []
 domain: comms-protocol
 ---
@@ -35,3 +36,7 @@ You, Changsheng은 유wenchao Liu, Weijie Yuan, Jun Wu, Jinke Ren, Xuhui Zhang�
 - (사용자 재확인 필요) 원문 발췌내용을 기반으로 하며, 구체적인 저자 상세 경력 등은 추가 확인이 필요합니다.
 
 - Liu, Wenchao; Yuan, Weijie; Wu, Jun; Ren, Jinke; Zhang, Xuhui; You, Changsheng. "Fluid Antennas Enabled UAV Communication Systems: Fundamentals, Challenges, and Future Directions." arXiv preprint arXiv:2610.35047 (2026).
+
+## 참고
+
+[[abz-innovation]] [[airwise-nexus]]

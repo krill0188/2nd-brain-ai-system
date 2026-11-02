@@ -43,3 +43,7 @@ This method retains the random Fourier feature model and offline BPTT policy whi
 - (사용자 재확인 필요) original paper: Tan, Mingtian; Tzoumas, Vasileios. "Dual Gradient Consensus for Adaptive Learning to Transient Out-of-Distribution Disturbances in Quadrotor Control." arXiv:2610.34538, 2026.
 
 재확인 필요: 원문에서 least-squares adaptation이 단순히 상수 스텝 크기로 업데이트되는 방식으로 설명되어 있으나, DGC 프레임워크 내에서 어떻게 수정·개선되는지에 대한 상세한 수식적 검증은 아직 확인되지 않았습니다.
+
+## 참고
+
+[[quadrotor]] [[least-squares-optimization]]

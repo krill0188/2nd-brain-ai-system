@@ -43,3 +43,7 @@ The study introduces cellular network signals as a core component for developing
 
 - (사용자 재확인 필요) original paper: "Hybrid Deep Learning Framework for Real-Time UAV Navigation with Adaptive Smoothness Control" (2026)
 - https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003396172
+
+## 참고
+
+[[ad-hoc-network]] [[ad-hoc-wireless-networks]]

@@ -6,6 +6,7 @@ type: concept
 tags: [baseline, disturbance-rejection, quadrotor-control, rff-mpc]
 sources: [raw/papers/_unclassified/dual-gradient-consensus-for-adaptive-learning-to-transient-out-of-distribution-d.md]
 confidence: medium
+contested: false
 contradictions: []
 domain: navigation-gnss-denied
 ---
@@ -35,3 +36,7 @@ Quadrotor trajectory tracking research에서 온라인 잔차 적응이 disturba
 ## 출처
 
 - (사용자 재확인 필요) raw/papers/_unclassified/dual-gradient-consensus-for-adaptive-learning-to-transient-out-of-distribution-d.md
+
+## 참고
+
+[[frozen-rank-consensus]] [[kci-uav-battery-ecm-parameter-estimation]]

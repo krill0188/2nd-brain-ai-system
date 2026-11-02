@@ -43,3 +43,7 @@ domain: ai-autonomy
 ## 출처
 
 - (사용자 재확인 필요)
+
+## 참고
+
+[[altitude-planning]] [[autotrans-uav-suspended-payload-planning-control]]

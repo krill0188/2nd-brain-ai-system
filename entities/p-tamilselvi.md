@@ -6,6 +6,7 @@ type: entity
 tags: [person, researcher, uav-navigation, deep-learning, federated-learning]
 sources: []
 confidence: medium
+contested: false
 contradictions: []
 domain: ai-autonomy
 ---
@@ -41,3 +42,7 @@ P. Tamilselvi는 Sathyabama Institute of Science and Technology 소속 연구원
 
 - (사용자 재확인 필요)
 - https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003396172
+
+## 참고
+
+[[abz-innovation]] [[airwise-nexus]]

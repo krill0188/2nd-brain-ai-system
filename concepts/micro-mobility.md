@@ -41,3 +41,7 @@ Low-altitude wireless networks (LAWNs)를 지원하는 UAV 통신 시스템은 �
 ## 출처
 
 - (사용자 재확인 필요) — 원문: Liu et al., "Fluid Antennas Enabled UAV Communication Systems: Fundamentals, Challenges, and Future Directions," *arXiv preprint arXiv:2610.35047*, 2026.
+
+## 참고
+
+[[caddx-curve-micro-p18]] [[dual-mobility-perspective]]

@@ -44,3 +44,7 @@ domain: ai-autonomy
 ## 출처
 
 - (사용자 재확인 필요) original paper: "Hybrid Deep Learning Framework for Real-Time UAV Navigation with Adaptive Smoothness Control," P. Tamilselvi, 2026, Sathyabama Institute of Science and Technology.
+
+## 참고
+
+[[reinforcement-learning]] [[a-modular-energy-aware-framework-for-multicopter-modeling-in-control-and-plannin]]

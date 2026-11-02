@@ -6,6 +6,7 @@ type: concept
 tags: [mpc, lqr, controller-comparison, quadrotor, tuning, fallback-policy]
 sources: []
 confidence: medium
+contested: false
 contradictions: []
 domain: flight-control
 ---
@@ -45,3 +46,7 @@ LMPC-F는 쿼드롯로 비전 제어에서 발생할 수 있는 최적화 실패
 - (사용자 재확인 필요) "How Tuning, Reference Preview, Actuator Modeling, and Fallback Policies Change Quadrotor Controller Comparisons: A Reproducible Simulation Study", Dao et al., 2026, arXiv:2610.35165
 
 ---
+
+## 참고
+
+[[mpc]] [[quadrotor]]

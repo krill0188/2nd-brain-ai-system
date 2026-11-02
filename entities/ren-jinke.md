@@ -6,6 +6,7 @@ type: entity
 tags: [person, antenna-engineering, uav-communication, fluid-antennas]
 sources: []
 confidence: medium
+contested: false
 contradictions: []
 domain: comms-protocol
 ---
@@ -29,3 +30,7 @@ Fluid antennas (FAs) provide an additional degree of freedom (DoF) by reconfigur
 ## 재확인 필요
 
 - Ren, Jinke가 이 논문에서 구체적으로 기여한 연구 내용(예: 어떤 파트authors, 연구 주제 등)은 확인이 필요합니다. 원문에서는 전체 저자 중 한 명으로 명시되어 있을 뿐 개별 연구 책임 범위는 상세히 밝혀지지 않았습니다.
+
+## 참고
+
+[[abz-innovation]] [[airwise-nexus]]

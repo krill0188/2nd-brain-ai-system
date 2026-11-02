@@ -6,6 +6,7 @@ type: concept
 tags: [trajectory-planning, uav-swarm, genetic-algorithm, optimization, phasd-trajectory-planning]
 sources: []
 confidence: medium
+contested: false
 contradictions: []
 domain: navigation-gnss-denied
 ---
@@ -43,3 +44,7 @@ UAV 군집이 복잡하고 동적인 환경에서 협력 비행할 때, 전체�
 ## 출처
 
 - (사용자 재확인 필요)
+
+## 참고
+
+[[altitude-planning]] [[autotrans-uav-suspended-payload-planning-control]]

@@ -38,3 +38,7 @@ Quadrotor trajectory tracking에서 unmodeled disturbances이 존재할 경우, 
 
 ## 출처
 - (사용자 재확인 필요) 원문: arXiv 2026 논문 "Dual Gradient Consensus for Adaptive Learning to Transient Out-of-Distribution Disturbances in Quadrotor Control" (DOI: 10.48550/arXiv.2610.34538)
+
+## 참고
+
+[[mpc]] [[quadrotor]]

@@ -45,3 +45,7 @@ UAV 통신 시스템에서 저고도 무선 네트워크(LAWNs)는 대규모 파
 - (사용자 재확인 필요) original source: Liu et al., "Fluid Antennas Enabled UAV Communication Systems: Fundamentals, Challenges, and Future Directions," arXiv preprint arXiv:2610.35047, 2026.
 
 ---
+
+## 참고
+
+[[control-input-reconfiguration]] [[dynamic-reconfiguration]]

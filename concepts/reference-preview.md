@@ -44,3 +44,7 @@ Quadrotor controller 비교 연구에서 단일 추적 오차만 보고하는 �
 ## 출처
 
 - -(사용자 재확인 필요) — 위 내용은 2026년 arXiv 발표 논문의 초록(Abstract) 일부를 기반으로 하였으나, 급격한 단계 입력(outcome)에 대한 언급이 절단된 상태임. 원문 전체를 재확인할 것.
+
+## 참고
+
+[[mpc]] [[actuator-modeling]]

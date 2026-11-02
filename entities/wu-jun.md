@@ -2,9 +2,10 @@
 title: "Wu, Jun"
 created: 2026-11-01
 updated: 2026-11-01
-type: person
+type: entity
 tags: [person, uav-communication, fluid-antennas]
 confidence: medium
+contested: false
 contradictions: []
 domain: comms-protocol
 sources: []
@@ -38,3 +39,7 @@ Wu, Jun은 [Liu, Wenchao; Yuan, Weijie; Wu, Jun; Ren, Jinke; Zhang, Xuhui; You, 
 ## 출처
 
 - (사용자 재확인 필요) — Wu, Jun은 논문 [arXiv:2610.35047v1](http://arxiv.org/abs/2610.35047v1)의 공동 저자로 명시되어 있으나, 개인의 전문 경력이나 소속 기관 등 추가 biografical 정보는 원문에 명시되지 않았습니다.
+
+## 참고
+
+[[abz-innovation]] [[airwise-nexus]]

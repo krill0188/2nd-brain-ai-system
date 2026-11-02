@@ -41,3 +41,7 @@ Altitude Planning은 UAV 스웜 협력에서Three-Dimensional Search를 고효�
 ## 출처
 
 - (사용자 재확인 필요)
+
+## 참고
+
+[[altitude-control]] [[altitude-bar]]

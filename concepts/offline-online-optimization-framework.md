@@ -43,3 +43,7 @@ Fluid antennas (FAs) provide an additional degree of freedom by reconfiguring an
 - (사용자 재확인 필요) — 원문 발췌에 구체적인 출처가 명시되어 있지 않음
 
 ---
+
+## 참고
+
+[[a-modular-energy-aware-framework-for-multicopter-modeling-in-control-and-plannin]] [[actoroptimization]]

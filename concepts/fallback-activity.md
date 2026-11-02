@@ -6,6 +6,7 @@ type: concept
 tags: [control-theory, mpc, pid, quadrotor, simulation-study]
 sources: []
 confidence: medium
+contested: false
 contradictions: []
 domain: navigation-gnss-denied
 ---
@@ -38,3 +39,7 @@ Quadrotor controller 비교 연구에서, 보정되지 않은 추적 오차 외�
 ## 출처
 
 - (사용자 재확인 필요)
+
+## 참고
+
+[[mpc]] [[pid]]

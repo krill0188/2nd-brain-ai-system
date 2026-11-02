@@ -6,6 +6,7 @@ type: entity
 tags: [researcher, quadrotor-control, pid-controller, lqr, sliding-mode-control, mpc, drone-robotics, simulation-study]
 sources: []
 confidence: medium
+contested: false
 contradictions: []
 domain: ai-autonomy
 ---
@@ -43,3 +44,7 @@ Dao, Xuan-Quy는 2026년 ArXiv에 게시된 "How Tuning, Reference Preview, Actu
 - (사용자 재확인 필요)原文에 명시된 대로 ArXiv preprint (2026) 참조
 
 ---
+
+## 참고
+
+[[mpc]] [[abz-innovation]]

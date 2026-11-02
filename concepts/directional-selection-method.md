@@ -35,3 +35,7 @@ domain: ai-autonomy
 ## 출처
 
 - (사용자 재확인 필요)
+
+## 참고
+
+[[aerial-mission-aware-llm-selection-flying-networks]] [[bidirectional-token-exchange]]

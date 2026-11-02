@@ -28,3 +28,7 @@ Prop-KW-Wizard는 RC 멀티콥터에서 모터 및 프로펠러 조합을 설계
 - [[xcopterCalc]] — eCalc와 유사한 헬리콥터/멀티콥터 계산기
 
 출처: (사용자 재확인 필요)
+
+## 참고
+
+[[multicopter]] [[1045-propeller]]

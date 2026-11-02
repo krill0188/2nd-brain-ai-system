@@ -6,6 +6,7 @@ type: concept
 tags: [uav-communication, fluid-antennas, low-altitude-wireless-networks, trajectory-planning, mobility-classification]
 sources: []
 confidence: medium
+contested: false
 contradictions: []
 domain: comms-protocol
 ---
@@ -41,3 +42,7 @@ Fluid antennas (FAs) introduce an additional degree of freedom (DoF) by reconfig
 ## 출처
 
 - (사용자 재확인 필요) original paper: Liu et al., "Fluid Antennas Enabled UAV Communication Systems: Fundamentals, Challenges, and Future Directions," arXiv preprint arXiv:2610.35047, 2026.
+
+## 참고
+
+[[dual-mobility-perspective]] [[eve-air-mobility-transition]]

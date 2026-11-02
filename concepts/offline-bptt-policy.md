@@ -6,6 +6,7 @@ type: concept
 tags: [adaptive-learning, quadrotor-control, offline-training, gradient-descent]
 sources: []
 confidence: medium
+contested: false
 contradictions: []
 domain: ai-autonomy
 ---
@@ -43,3 +44,7 @@ Quadrotor trajectory tracking under unmodeled disturbances often relies on onlin
 ## 출처
 
 - (사용자 재확인 필요) — 원문 발췌에는 "offline BPTT policy"라는 용어가 언급되나, 이에 대한 독립적인 정의나 표준 문서는 현재까지 확인되지 않았습니다.
+
+## 참고
+
+[[counter-terrorism-policy]] [[decentralized-policy]]

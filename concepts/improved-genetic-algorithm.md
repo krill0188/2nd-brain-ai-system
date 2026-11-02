@@ -46,3 +46,7 @@ domain: ai-autonomy
 
 - (사용자 재확인 필요) 원문 발췌 기반 자동 추출
 - 【원문】Zhou, W. et al., "Phased Trajectory Planning for UAV Swarm Cooperation in Complex Dynamic Environments," 2026.
+
+## 참고
+
+[[bio-inspired-algorithms]] [[branch-price-and-cut-algorithm]]

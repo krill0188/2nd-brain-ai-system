@@ -6,6 +6,7 @@ type: concept
 tags: [mpc, quadrotor, optimal-control, actuator-modeling, reference-preview]
 sources: [http://arxiv.org/abs/2610.35165v1]
 confidence: medium
+contested: false
 contradictions: []
 domain: navigation-gnss-denied
 ---
@@ -45,3 +46,7 @@ Quadrotor controller 비교 연구에서 MPC는 단순한 추적 오차 외에 �
 - (사용자 재확인 필요) 원문: http://arxiv.org/abs/2610.35165v1 (2026)
 
 ---
+
+## 참고
+
+[[hover-lqr]] [[quadrotor]]

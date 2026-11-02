@@ -5,8 +5,9 @@ updated: 2026-11-01
 type: concept
 tags: [uav-communication, fluid-antennas, trajectory-planning, channel-adaptation, dual-mobility]
 sources:
-- http://arxiv.org/abs/2610.35047v1
+  - http://arxiv.org/abs/2610.35047v1
 confidence: medium
+contested: false
 contradictions: []
 domain: comms-protocol
 ---
@@ -42,3 +43,7 @@ Fluid Antennas Enabled UAV Communication Systems 연구에서 중심 논점으�
 - http://arxiv.org/abs/2610.35047v1 (Liu et al., 2026)
 
 재확인 필요: 본 문서는 원문 발췌 내용에 기반하여 구조화했으나, Dual-Mobility Perspective 개념의 구체적인 수학적 모델이나 최적화 알고리즘 세부 사항은 원문에 명시되지 않았으며, 추가적인 검증이 필요합니다.
+
+## 참고
+
+[[a2z-longtail-dual]] [[bayesian-residual]]

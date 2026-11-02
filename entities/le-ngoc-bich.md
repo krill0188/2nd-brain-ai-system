@@ -6,6 +6,7 @@ type: entity
 tags: [author, quadrotor, control-theory, mpc, pid, lqr, sliding-mode]
 sources: []
 confidence: medium
+contested: false
 contradictions: []
 domain: ai-autonomy
 ---
@@ -39,3 +40,7 @@ Le, Ngoc-Bich는 Xuan-Quy Dao, Le-Minh Nguyen와 공동 저자로서 2026년 발
 ## 출처
 
 - (사용자 재확인 필요)
+
+## 참고
+
+[[quadrotor]] [[mpc]]

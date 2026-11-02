@@ -6,6 +6,7 @@ type: entity
 tags: [person, ai-autonomy, trajectory-planning, uav-swarm]
 sources: []
 confidence: medium
+contested: false
 contradictions: []
 domain: ai-autonomy
 ---
@@ -30,3 +31,7 @@ The document introduces Wei Zhou as an author of a 2026 paper presenting a novel
 
 ## 출처
 - (사용자 재확인 필요)
+
+## 참고
+
+[[hua-zhou]] [[jizhe-zhou]]

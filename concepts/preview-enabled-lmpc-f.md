@@ -6,6 +6,7 @@ type: concept
 tags: [lmpc, mpc-fallback, quadrotor, controller-comparison, reference-preview, actuator-modeling]
 sources: ["How Tuning, Reference Preview, Actuator Modeling, and Fallback Policies Change Quadrotor Controller Comparisons: A Reproducible Simulation Study (arXiv:2610.35165v1)"]
 confidence: medium
+contested: false
 contradictions: []
 domain: navigation-gnss-denied
 ---
@@ -45,3 +46,7 @@ Quadrotor controller 비교 연구에서 단순 트래킹 오차 외에도 튜�
 ## 출처
 
 - (사용자 재확인 필요) — 본 문서는 LLM 기반 추출 원문을 기반으로 하였으며, 상세한 수학적 모델 및 파라미터 값은 원문 논문을 재확인할 것.
+
+## 참고
+
+[[quadrotor]] [[reference-preview]]

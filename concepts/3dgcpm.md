@@ -2,7 +2,7 @@
 title: "3DGCPM"
 created: 2026-11-01
 updated: 2026-11-01
-type: entity
+type: concept
 tags: [cellular-network, deep-learning, uav-navigation, propagation-model]
 sources: []
 confidence: medium
@@ -33,3 +33,7 @@ GPS 교란과 지역화 오류, 동적 장애물, 비효율적인 비행 궤적 
 ## 출처
 
 - (사용자 재확인 필요)
+
+## 참고
+
+[[10-48550-arxiv-2607-26717]] [[1045-propeller]]

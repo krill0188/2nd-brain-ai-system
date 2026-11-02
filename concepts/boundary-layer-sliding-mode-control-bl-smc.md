@@ -6,6 +6,7 @@ type: concept
 tags: [control-theory, sliding-mode-control, quadrotor, robust-control, actuator-modeling]
 sources: []
 confidence: medium
+contested: false
 contradictions: []
 domain: flight-control
 ---
@@ -40,3 +41,7 @@ Boundary-layer sliding-mode control (BL-SMC) is a variant of sliding-mode contro
 ## 출처
 
 - (사용자 재확인 필요) — 위 내용은 arXiv 사전 인쇄 논문(Dao et al., 2026) 원문 발췌 기반이며, 그래프 관계(tuning protocol --[IMPACTS]--> BL-SMC) 외에는 검증되지 않은 자동 추출 정보입니다.
+
+## 참고
+
+[[quadrotor]] [[actuator-modeling]]

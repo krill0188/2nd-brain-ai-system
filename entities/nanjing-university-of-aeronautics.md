@@ -5,6 +5,7 @@ updated: 2026-11-01
 type: entity
 tags: [university, china, aeronautics, education, research]
 confidence: medium
+contested: false
 contradictions: []
 domain: education
 sources:
@@ -38,3 +39,7 @@ Nanjing University of Aeronautics(나anjing 항공대학교)는 드론 및 UAV �
 
 ## 출처
 - (사용자 재확인 필요)
+
+## 참고
+
+[[gyeongsang-national-university]] [[hansung-university]]

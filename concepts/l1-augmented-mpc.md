@@ -6,6 +6,7 @@ type: concept
 tags: [adaptive-control, robust-tracking, rff-quadrotor, mpc, dr-wiki-autotag]
 sources: ["arXiv:2610.34538v1 (2026)"]
 confidence: medium
+contested: false
 contradictions: []
 domain: flight-control
 ---
@@ -42,3 +43,7 @@ Quadrotor 소요 궤적 추적에서 온라인 잔차 적응은 교란 보상에
 ## 출처
 
 - (사용자 재확인 필요) — 원문([arXiv:2610.34538v1](http://arxiv.org/abs/2610.34538v1))에 명시된 정의 및 성능 비교 결과이며, 자세한 파라미터 및 메커니즘은 해당 논문을 직접 확인할 것.
+
+## 참고
+
+[[mpc]] [[10-48550-arxiv-2607-26717]]

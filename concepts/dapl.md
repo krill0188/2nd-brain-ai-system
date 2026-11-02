@@ -38,3 +38,7 @@ DAPL(대상 도메인 적응형 잔여 정책)은 항목 특성 변환(Random Fo
 ## 출처
 
 - (사용자 재확인 필요) Dual Gradient Consensus for Adaptive Learning to Transient Out-of-Distribution Disturbances in Quadrotor Control, Tan & Tzoumas, 2026. arXiv:2610.34538.
+
+## 참고
+
+[[quadrotor]] [[constant-step-dapl]]

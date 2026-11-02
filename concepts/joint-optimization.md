@@ -6,6 +6,7 @@ type: concept
 tags: [uav-communication, fluid-antennas, trajectory-optimization, beamforming, offline-online-framework]
 sources: []
 confidence: medium
+contested: false
 contradictions: []
 domain: comms-protocol
 ---
@@ -43,3 +44,7 @@ UAV 통신 시스템에서 안테나 위치 재구성 및 trajectary 계획과 �
 ## 출처
 
 - (사용자 재확인 필요) Liu et al., "Fluid Antennas Enabled UAV Communication Systems: Fundamentals, Challenges, and Future Directions," *arXiv preprint arXiv:2610.35047*, 2026. [http://arxiv.org/abs/2610.35047v1](http://arxiv.org/abs/2610.35047v1)
+
+## 참고
+
+[[2-dof-magnetic-spherical-joint]] [[actoroptimization]]

@@ -6,6 +6,7 @@ type: concept
 tags: [wireless-networks, uav-communication, low-altitude]
 sources: []
 confidence: medium
+contested: false
 contradictions: []
 domain: comms-protocol
 ---
@@ -44,3 +45,7 @@ LAWNs는 지상과 공중 사이의 대역폭 효율적인 통신을 목표로 �
 ## 출처
 
 - (사용자 재확인 필요) — 원문: Liu et al., "Fluid Antennas Enabled UAV Communication Systems: Fundamentals, Challenges, and Future Directions," 2026. arXiv:2610.35047.
+
+## 참고
+
+[[10-48550-arxiv-2607-26717]] [[1045-propeller]]

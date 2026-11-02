@@ -2,10 +2,11 @@
 title: "LiPo Battery"
 created: 2026-11-01
 updated: 2026-11-01
-type: entity
+type: concept
 tags: [hardware, battery, lipo, power-system]
 sources: []
 confidence: medium
+contested: false
 contradictions: []
 domain: hardware
 ---
@@ -42,3 +43,7 @@ eCalc 등 RC 계산 툴에서 전원 시스템의 핵심 구성 요소로 언급
 
 - (사용자 재확인 필요) original source: eCalc RC Calculator documentation excerpt
 - original source: xcopterCalc Help - Hilfe
+
+## 참고
+
+[[amprius-sicore-battery]] [[battery-bar]]

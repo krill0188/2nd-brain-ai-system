@@ -2,7 +2,7 @@
 title: "geometric $SO(3)$ controller"
 created: 2026-11-01
 updated: 2026-11-01
-type: entity
+type: concept
 tags: [flight-control, nonlinear-control, so3-control, quadrotor]
 sources: []
 confidence: medium
@@ -43,3 +43,7 @@ geometric $SO(3)$ controller는 비선형 플랜트에서 로터 자이로스코
 ## 출처
 
 - (사용자 재확인 필요)
+
+## 참고
+
+[[quadrotor]] [[backflip-controller]]

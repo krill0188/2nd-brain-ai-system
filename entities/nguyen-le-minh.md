@@ -6,6 +6,7 @@ type: entity
 tags: [person, quadrotor, controller-comparison, pid-controller, lqr, sliding-mode-control, mpc, so3-controller, actuator-modeling]
 sources: [dao_2026_quadrotor_controller_comparison]
 confidence: medium
+contested: false
 contradictions: []
 domain: ai-autonomy
 ---
@@ -42,3 +43,7 @@ Nguyen, Le-Minh는 2026년 Dao, Xuan-Quy와 Le, Ngoc-Bich가 공동으로 작성
 ## 출처
 
 - (사용자 재확인 필요) original paper: dao, xuan-quy; nguyen, le-minh; le, ngoc-bich (2026). "How Tuning, Reference Preview, Actuator Modeling, and Fallback Policies Change Quadrotor Controller Comparisons: A Reproducible Simulation Study." arXiv:2610.35165.
+
+## 참고
+
+[[quadrotor]] [[mpc]]

@@ -45,3 +45,7 @@ UAV swarm cooperation in complex dynamic environments requires efficient traject
 ## 출처
 
 - (사용자 재확인 필요) — Original paper: "Phased Trajectory Planning for UAV Swarm Cooperation in Complex Dynamic Environments" (2026)
+
+## 참고
+
+[[time-optimal-quadrotor-waypoints]] [[waypoint-navigation]]

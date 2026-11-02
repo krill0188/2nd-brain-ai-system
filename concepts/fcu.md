@@ -6,6 +6,7 @@ type: concept
 tags: [hardware, flight-controller, multicopter, rc-calculator]
 sources: []
 confidence: medium
+contested: false
 contradictions: []
 domain: hardware
 ---
@@ -23,3 +24,7 @@ eCalc의 xcopterCalc 계산기는 RC 멀티�opter 모터 설정을 선택할 �
 
 ## 출처
 - (사용자 재확인 필요) original: eCalc - the most reliable RC Calculators on the Web for electric Motors
+
+## 참고
+
+[[flight-controller]] [[multicopter]]

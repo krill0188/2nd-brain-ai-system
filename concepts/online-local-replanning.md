@@ -41,3 +41,7 @@ Online Local Replanning은 UAV 군집이 복잡한 동적 환경에서 협력 �
 ## 출처
 
 - (사용자 재확인 필요)
+
+## 참고
+
+[[ai-sync-camera-imu-online-temporal-calibration-qin-2018]] [[cross-layer-local-support]]
