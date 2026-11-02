@@ -29,3 +29,6 @@ contradictions: []
 ## 관련
 
 - [[autoflight]] — AutoFlight (PARTICIPATES_IN)
+
+## 📰 최근 관련 소식
+- Skydio Number of Employees 2026 | Employee Count & Headcount Data - Revelio Labs (news.google.com, Tue, 28 Ju) — https://news.google.com/rss/articles/CBMiZEFVX3lxTE5jYU9nOVlsaGN2NUdqcVlXT0VRMWdKY2VkUWdMaldyUmNNVnoyWk1zbTJaZlJCNWhITEhMbVB4ejg4b0RoVmtSUXFyMElUM253T0xDV2g4TFoyV25BWWllRnlGM0o?oc=5

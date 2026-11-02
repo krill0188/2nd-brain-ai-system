@@ -28,3 +28,4 @@ contradictions: []
 
 ## 📰 최근 관련 소식
 - DJI Modify 1.6 Sharpens Its 3D Modeling Toolkit - DroneXL (news.google.com, Wed, 15 Ap) — https://news.google.com/rss/articles/CBMicEFVX3lxTE1ySTdveTQ2clFNc1hIRVVfaWIzamdRaUpReDI5VnR6N1RIUnl1Mm9fLVNYOFpXSWFlZjVMSURETzdoaGsyNFljUF8xY2Z2RGY5alRlRGtfWnN5WnVIQ01qX0EyZVZuT21ONU5rMV93eDQ?oc=5
+- Slope Missions, Linear Routes, and More: DJI Enterprise’s Latest Updates - DroneXL (news.google.com, Fri, 24 Ma) — https://news.google.com/rss/articles/CBMibEFVX3lxTE1xdXYtSjI2eEh6em9jaTRlWDlIRjFqVEtMeENCZ0ZfLW5wekVGTkM5bld2dDhQdVFSRGRQdE5QbGhNWlhkaTFEazhEVGpoLW91ZDVmcnUtZmpMQkVkUndxa2Y1X1hpbnI1SE14Vw?oc=5

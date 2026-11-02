@@ -50,3 +50,4 @@ DJI의 액션 카메라 시리즈 6세대 모델로, 야간 촬영 성능이 크
 - DJI Gives Pilots Full Airspace Control. The World Holds Its Breath. - DroneXL (news.google.com, Wed, 19 No) — https://news.google.com/rss/articles/CBMif0FVX3lxTE1aQXB0VFY3eTdSZ1RHeWhlTFg1M3pCNGhQcGtKbU05Q1dlcl81NGJYTEJCZ3VqSlJfZUQ3TWRQSXFFUDViaDNZdlNwZG9oWVJsbExFYng2RnJRSTFUVTRReWxxYVVSOENpYnJRY1BxVy10UTQzdWY5RjljV1Rnc2s?oc=5
 - [DJI] Glasses on. Going under. | DJI Osmo Action 6 (youtube.com, 2026-10-26) — https://www.youtube.com/watch?v=G8DmOyP5r-k
 - [DJI] Too Messy for a Retake | DJI Osmo 360 II (youtube.com, 2026-10-27) — https://www.youtube.com/watch?v=fwSzjr2dNLU
+- [DJI] Careful, you can breathe | DJI Osmo Action 6 (youtube.com, 2026-10-31) — https://www.youtube.com/watch?v=Xt3mWhQNv9I

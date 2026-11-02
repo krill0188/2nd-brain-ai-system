@@ -31,3 +31,6 @@ General Atomics Aeronautical Systems(GA-ASI)와 Hanwha Aerospace가 Mojave UAS�
 
 - [[ga-asi-fujitsu-mou]] — GA-ASI-Fujitsu 일본 UAS MOU
 - [[drone-news-2026-09-12]] — GA-ASI 산불 대응 UAS 공개 등 2026-09-12 드론 뉴스 다이제스트
+
+## 📰 최근 관련 소식
+- GA-ASI Opening New Remote Split Operation in North Dakota (www.suasnews.com, Sat, 31 Oc) — https://www.suasnews.com/2026/10/ga-asi-opening-new-remote-split-operation-in-north-dakota/

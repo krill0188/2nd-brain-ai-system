@@ -1,12 +1,12 @@
 ---
 title: "HEQUAV K11 듀얼 센서 짐벌 + Scepter 15 컨트롤러"
 created: 2026-10-05
-updated: 2026-10-05
+updated: 2026-11-01
 type: concept
 domain: hardware
 ontology_class: Gimbal
 tags: [drone, drone-hw, hardware]
-sources: [inbox/processed/fetch-2026-10-05-yt-im-installing-a-smart-hequav-k11-gimbal-to-try.md]
+sources: [inbox/processed/fetch-2026-10-05-yt-im-installing-a-smart-hequav-k11-gimbal-to-try.md, inbox/processed/fetch-2026-11-01-yt-hequav-k11-and-scepter-15-android-radio-my-setup-steps.md]
 confidence: low
 contested: false
 contradictions: []
@@ -33,6 +33,20 @@ Painless360의 설치 예고 영상(2026-10-04, 자막 기준). 아직 비행 �
 - 기체측: 짐벌/제어 보드와 영상 송수신 유닛이 이더넷 케이블로 연결.
 - 리뷰어 평: 매뉴얼이 전문 통합 업체 대상이라 취미 사용자는 진입 장벽이 높으며, 제조사가 피드백을 받아 매뉴얼을 보강 중.
 
+## 배선·연결 구성 (Painless360 후속 영상, 2026-10-31, 자막 기준)
+
+Holybro X650 프레임 + Pixhawk 6C(ArduPilot) 조합에 K11과 Scepter 15를 설치한 리뷰어의 배선 설명이다. 영상 자막은 앞부분만 확보돼 있어 바인딩·라디오 설정·QGC FPV 추가 부분은 자막에서 확인되지 않는다.^[inbox/processed/fetch-2026-11-01-yt-hequav-k11-and-scepter-15-android-radio-my-setup-steps.md]
+
+- **전원**: Maytech 12 V BEC로 6S 비행 배터리를 12 V로 낮춰 수신기/VTX 유닛과 짐벌 카메라에 함께 공급(XT30으로 배전반에 연결). 리뷰어는 전압이 높으면 내부 강압 발열이 커진다며 허용 범위의 낮은 쪽을 쓴다.
+- **영상**: 수신기/VTX 유닛과 짐벌 사이는 이더넷 연결(키트 케이블에 이미 결선, 짐벌 커넥터의 상당수 핀이 이더넷용)이며 영상 전송에 쓰인다.
+- **S.BUS**: 수신기 출력이 FC와 짐벌 양쪽으로 들어간다. 상위 채널이 팬·틸트에 매핑되고 스틱 극단에서 줌도 처리한다.
+- **MAVLink 텔레메트리**: FC의 여분 UART 2개를 MAVLink 2, 115200 baud로 설정한다. 하나는 수신기/VTX로 텔레메트리를 보내 라디오의 QGC에서 비행을 모니터링하고, 다른 하나(TX/RX 쌍)는 짐벌 쪽 연결이다. ArduPilot에서 SERIAL1·SERIAL2(TELEM1·TELEM2)를 MAVLink 2/115200으로 맞췄다.
+- **케이블 주의**: 키트 케이블은 매뉴얼 기준 결선이라 Holybro 6C 커넥터에 맞게 핀을 다시 배열해야 했다. 루프 케이블이 S.BUS 외에는 모두 검은색이라 TX↔RX 교차 연결을 신중히 확인해야 한다.
+- **확인 결과**: 최초 전원 투입 때 ArduPilot·Mission Planner에서 S.BUS 움직임이 확인됐다. 실제 비행 시험은 아직이었다.
+- 리뷰어 평: 필요한 설정 정보 상당수가 매뉴얼에 없었고, 제조사가 피드백을 받아 매뉴얼에 배선도를 추가했다.
+
+관련: [[holybro-6c]], [[qgroundcontrol]], [[mavlink-protocol]]
+
 ## 관련 개념
 
 - [[drone-payload-systems]] — 드론 페이로드 일반
@@ -40,4 +54,5 @@ Painless360의 설치 예고 영상(2026-10-04, 자막 기준). 아직 비행 �
 - [[ardupilot]] — 동일
 
 ## 📰 최근 관련 소식
+- [Painless360] HEQUAV K11 and Scepter 15 Android Radio: My Setup Steps (youtube.com, 2026-10-31) — https://www.youtube.com/watch?v=PqD0aSRnZ_I
 - [Painless360] I'm installing a 'smart' HEQUAV K11 gimbal to try... (youtube.com, 2026-10-04) — https://www.youtube.com/watch?v=GdQGXZ3HGYw

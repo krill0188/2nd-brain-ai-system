@@ -23,3 +23,6 @@ contradictions: []
 ## FPV 하드웨어
 
 - **BetaFPV Meteor75 Pro II Analog**: 1S 타이니 웝 리뷰. 필자가 앞서 DJI O4 Wide 버전을 시험했고 이번에 아날로그 버전을 다룬다는 점만 요약문에서 확인된다(성능 수치 없음) (Oscar Liang). 관련: [[betafpv-meteor65-pro-ii]].^[inbox/processed/fetch-2026-10-11-rss-oscarliang-fpv.md]
+
+## 📰 최근 관련 소식
+- [핑크랩 PinkLAB] 2026 로보월드 핑크랩 | 킨텍스 3홀 A03에서 만나요 #shorts (youtube.com, 2026-10-31) — https://www.youtube.com/watch?v=gNgQCJeAFHw

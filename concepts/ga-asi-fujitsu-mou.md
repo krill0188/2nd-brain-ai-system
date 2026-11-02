@@ -41,3 +41,4 @@ General Atomics Aeronautical Systems, Inc.(GA-ASI)와 Fujitsu Limited가 일본 
 
 ## 📰 최근 관련 소식
 - 코스포·한국대드론산업협회, 대드론·방산 스타트업 육성 MOU 체결 (beSUCCESS, Fri, 02 Oc) — https://news.google.com/rss/articles/CBMiRkFVX3lxTE9uM3ptMEhEUFNnS3FuV2s0ZkhMR1VNMklyd3daREJIa0Zib2ttNUJ6NVJoR2RrdGN2MEQxb2tXWWtsUE13NHc?oc=5
+- GA-ASI Opening New Remote Split Operation in North Dakota (www.suasnews.com, Sat, 31 Oc) — https://www.suasnews.com/2026/10/ga-asi-opening-new-remote-split-operation-in-north-dakota/

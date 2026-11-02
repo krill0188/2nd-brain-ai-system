@@ -617,3 +617,4 @@ contradictions: []
 - [핑크랩 PinkLAB] 손바닥에 펜 세우기, 이 로봇은 AI가 해요 🤖 현실 연습 0번 #shorts (youtube.com, 2026-10-26) — https://www.youtube.com/watch?v=gthFC-u38Fw
 - [핑크랩 PinkLAB] 거대 로봇회사들 사이에서, 가장 핑크랩스럽게 | 로보월드 2026 첫 전시 (youtube.com, 2026-10-25) — https://www.youtube.com/watch?v=tiy7-75ZWPM
 - [핑크랩 PinkLAB] 핑크랩의 원격 교육 - PinkLAB Studio를 소개합니다. (youtube.com, 2026-10-27) — https://www.youtube.com/watch?v=uoDRE5IqLfc
+- [핑크랩 PinkLAB] 2026 로보월드 핑크랩 | 킨텍스 3홀 A03에서 만나요 #shorts (youtube.com, 2026-10-31) — https://www.youtube.com/watch?v=gNgQCJeAFHw

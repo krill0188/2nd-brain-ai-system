@@ -31,3 +31,6 @@ contradictions: []
 
 ## 📰 최근 관련 소식
 - Disco Adds Fixed Wing Flight to Parrot's Flock of Drones - IEEE Spectrum (news.google.com, Tue, 05 Ja) — https://news.google.com/rss/articles/CBMiiAFBVV95cUxOWnJoZE45RDNvS1R2VTU4OTIwU2hvN3I3bDhsVFl2dFFlVW5SNHV5b0NmSW1FekhGREFfV3NIZUJuZW5XZUVMVjViUlpKek02ejBYZzRyM21nZEhqSC1vc01hTV8zQTFVb1FSYjRfSXJYaDh6aEZ0cUdnYk1Ndm5GRFhraXNYTUdQ?oc=5
+- British Army launches Top Gun academy to train best kamikaze drone pilots - Forces News (news.google.com, Sat, 31 Au) — https://news.google.com/rss/articles/CBMisAFBVV95cUxOSTg3LUl6ZnFNU2JqUGtlNGNzS2VHUEJDQkJ2TENJTjZyNzVVSmpoOEZiSDZVbXRiMWU1TXR3cE1EU1RXX2F1cUdWTUJGbnNDZVczNjVtdGYtdDNQQkRvV2lYYjNEYXZSZmdRVlhjWm5hN09QbVBhVFF4UjU4Y0NTNThBMTZBMExpVVFRVFI3b2dxazJIY0ZmNDJzZS02UFYxMW5sSk5lMDdsMUNJc2RjSg?oc=5
+- Parrot MiniDrones Review: Hands-on - Ubergizmo (news.google.com, Wed, 15 Ju) — https://news.google.com/rss/articles/CBMia0FVX3lxTE9tMzVERTRRbkRVWllSd0lyNkNQV21iZGdPbXF1Tlk4d1ZzQTNmQkJkWVowNmNoaGZJTzBfQjBxU0NnUDFXbDZMelhaeVBOcFNKdGFSV1Q3Y1lNU1d5cTlfa0xfY2xNMzR2VGkw?oc=5
+- DOE Launches Battery Manufacturing Initiative to Strengthen U.S. Supply Chain (dronelife.com, Sun, 01 No) — https://dronelife.com/2026/11/01/doe-us-battery-manufacturing-initiative/

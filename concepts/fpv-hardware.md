@@ -65,3 +65,4 @@ domain: hardware
 - [Joshua Bardwell] Walksnail Ascent Firmware Update How-To (youtube.com, 2026-09-09) — https://www.youtube.com/watch?v=yf__frUKreI
 - [Joshua Bardwell] RaceGOW 6! Whoop race ... from your house! (youtube.com, 2026-09-30) — https://www.youtube.com/watch?v=Ai6nMBlTAwA
 - [Joshua Bardwell] No compromises. My DREAM portable soldering iron is ... ALIENTEK T90B (youtube.com, 2026-10-09) — https://www.youtube.com/watch?v=jPXecdg2hcA
+- Parrot Mambo FPV: Become a FPV Race Pilot - sUAS News (news.google.com, Fri, 15 Se) — https://news.google.com/rss/articles/CBMifEFVX3lxTE8xMG15RkJubkRtbHNITXB5eFVJTUI5d0tvMmlWb2Z3NFBJZkJETWFUMktoUTRaXzVtZlBxUVRDdVVDbmVTU1dCdXpoRmNxU1VqU1pRcFJMNTU5STNXS0FkaUJzYXlobUUxTkk4ei0zMTU2M1ZUU2dOMlA2ekY?oc=5

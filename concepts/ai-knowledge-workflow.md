@@ -227,3 +227,4 @@ AI 지식 워크플로는 원본 수집부터 검토된 지식과 산출물 생�
 - 충남도, 공무원 드론조종 경진대회 개최…15개 시군 45명 참가 (주간한국, Sat, 17 Oc) — https://news.google.com/rss/articles/CBMicEFVX3lxTFBKSXFQb1dDMTVEb3VPbHhnTEN0M0ZOeHN3SHFydjVPVDFTUUpQRzFVWndiSUpTY3pvRmh6WHVuWkxfUGhZcXFla3hYbVlIRmRSaDF3Zm9kTXlMRUJROFphTVlxR2dUckFCcFpfdzR1N1fSAXRBVV95cUxPQWVLUm54elE3a0NPaVJHcllEczlvaXNoSTlXZXFwVWVpUi1PVXVGUWRUZGY0cUdKc3VTellEUlJ6OVJiVEdKWi1URUJnWjNpcDR5OUtJazNQT2UyNGJ2T2tENlFQdmhaMWZBM1VrVnFWQk9UaQ?oc=5
 - [freeCodeCamp.org] MCP Security Fundamentals Course (youtube.com, 2026-10-22) — https://www.youtube.com/watch?v=gYXLRMycVMk
 - Teaching Robots to “Feel Pain”: AstraQua Secures $1.3 Million NASA Contract (www.suasnews.com, Thu, 22 Oc) — https://www.suasnews.com/2026/10/teaching-robots-to-feel-pain-astraqua-secures-1-3-million-nasa-contract/
+- [멈춤보단 천천히라도] 틈틈일기에 장소 메모 기능이 추가되었어요. (youtube.com, 2026-10-31) — https://www.youtube.com/watch?v=ukAXjoUO7IU

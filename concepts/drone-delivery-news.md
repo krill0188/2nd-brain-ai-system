@@ -59,3 +59,4 @@ contradictions: []
 - [Joshua Bardwell] Q&A Livestream - August 23, 2026 (youtube.com, 2026-08-23) — https://www.youtube.com/watch?v=PQGyyYn5CJM
 - [Joshua Bardwell] Q&A Livestream - October 12, 2026 (youtube.com, 2026-09-01) — https://www.youtube.com/watch?v=kbmmcxwe4xI
 - As Drone Delivery Expands, Cities Turn to Zoning Rules to Address Local Concerns (dronelife.com, Wed, 21 Oc) — https://dronelife.com/2026/10/21/drone-delivery-zoning-rules-local-restrictions/
+- LiDAR Drone News: Mapping, Enterprise Payloads and Regulation (October 2026) - DroneXL (news.google.com, Wed, 28 Oc) — https://news.google.com/rss/articles/CBMiVEFVX3lxTE45aDhGTUI2bEZvTjBZc2xGTkhVVExCQVB5ZGw4eWFHREl6REdlOGo3eFVjZno5T1BDeHpWV2lnX3FxMkt5cFhZTVZUWGNudC1uUFMzQQ?oc=5

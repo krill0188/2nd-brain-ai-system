@@ -35,3 +35,5 @@ arXiv 2107.02625: 마이크로컨트롤러가 GNSS 클럭 신호를 모사해 Li
 ## 📰 최근 관련 소식
 - European first: Intelic connects multi-vendor sensors, C2 and interceptor drone in a single operational workflow (www.suasnews.com, Sun, 25 Oc) — https://www.suasnews.com/2026/10/european-first-intelic-connects-multi-vendor-sensors-c2-and-interceptor-drone-in-a-single-operational-workflow/
 - Percepto Launches Hardware-Agnostic Axion Platform for Infrastructure Inspection Data (dronelife.com, Tue, 27 Oc) — https://dronelife.com/2026/10/27/percepto-launches-hardware-agnostic-axion-platform-for-infrastructure-inspection-data/
+- LiDAR Drone News: Mapping, Enterprise Payloads and Regulation (October 2026) - DroneXL (news.google.com, Wed, 28 Oc) — https://news.google.com/rss/articles/CBMiVEFVX3lxTE45aDhGTUI2bEZvTjBZc2xGTkhVVExCQVB5ZGw4eWFHREl6REdlOGo3eFVjZno5T1BDeHpWV2lnX3FxMkt5cFhZTVZUWGNudC1uUFMzQQ?oc=5
+- Blue Marble Geographics Introduces New Global Mapper Subscription for GIS and Drone Mapping (dronelife.com, Sun, 01 No) — https://dronelife.com/2026/11/01/global-mapper-subscription-drone-mapping/

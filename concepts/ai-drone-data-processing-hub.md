@@ -59,3 +59,6 @@ contradictions: []
 - [[data-edge-jetson-cudla-samples-yolov5s-orin-latency-ms]] — NVIDIA-AI-IOT cuDLA-samples: YOLOv5s INT8 Orin(DLA vs GPU) 배치별 지연(ms)
 - [[data-edge-jetson-nanosam-latency-ms-orin-nano-agx]] — NVIDIA-AI-IOT NanoSAM README 성능표: Jetson Orin Nano / AGX Orin 지연(ms)
 - [[data-edge-isaac-ros-performance-summary-release-3-2-orin-nx-nano-agx]] — Isaac ROS 공식 Performance Summary (release-3.2): AGX Orin / Orin NX / Orin Nano Super 노드·그래프별 fps·지연(ms)
+
+## 📰 최근 관련 소식
+- [PX4 Autopilot - Open Source Flight Control.] Leveraging GPU-accelerated Stereo Visual Inertial Odometry in PX4 Using ROS 2 (youtube.com, 2026-10-27) — https://www.youtube.com/watch?v=8L7qnAlUlO8

@@ -75,3 +75,6 @@ MAVLink-M은 군사 및 상업용 드론 간의 상호운용성을 위한 확장
 - As U.S. Drone Manufacturing Accelerates, Faster Technology Integration Becomes Critical (dronelife.com, Tue, 27 Oc) — https://dronelife.com/2026/10/27/suntek-thermal-drone-technology-integration/
 - The weakest part of every survey job is the delivery. So we built our own (www.suasnews.com, Tue, 27 Oc) — https://www.suasnews.com/2026/10/the-weakest-part-of-every-survey-job-is-the-delivery-so-we-built-our-own/
 - King Willem-Alexander to open Robin Radar Systems’ new Delft headquarters (www.suasnews.com, Tue, 27 Oc) — https://www.suasnews.com/2026/10/king-willem-alexander-to-open-robin-radar-systems-new-delft-headquarters/
+- [Painless360] HEQUAV K11 and Scepter 15 Android Radio: My Setup Steps (youtube.com, 2026-10-31) — https://www.youtube.com/watch?v=PqD0aSRnZ_I
+- Skydio X10 Thermal Drone Finds Lost Man at 3 A.M. in Florida - DroneXL (news.google.com, Sun, 05 Ju) — https://news.google.com/rss/articles/CBMifEFVX3lxTE1RV0VQallkX1VpeDZHaWJpSlJOWEcwVVlTSDd5ckJtaE90TU9YSUtXUF82cm5KSEtKX19ZZ0NycXlUQ1RPZnl0dXVpUlFnMW1zTV9jVmZQRVRpdzJ5OV9jZzQwNW1GWGRjTWZpd2lPQ3hwQVFiZFNySzZ2RHc?oc=5
+- [핑크랩 PinkLAB] PinkLAB at ROBOTWORLD 2026 | See you at KINTEX Hall 3, A03 #shorts (youtube.com, 2026-11-01) — https://www.youtube.com/watch?v=zreW9VGwCg0

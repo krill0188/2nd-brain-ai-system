@@ -100,3 +100,6 @@ ontology_class: NewsDigest
 ## 출처
 
 - DroneDJ, DroneLife, Skydio 뉴스, sUAS News (2026-08-20)
+
+## 📰 최근 관련 소식
+- Minneapolis rejects Skydio drone surveillance contract - Fight Back! News (news.google.com, Sat, 18 Ju) — https://news.google.com/rss/articles/CBMikwFBVV95cUxOX3dpSWhZNm5UYS1mbEZYZTdnSU9LTmpZSUpSeGUzWU83Z1RyRHRkcFl6S1IwVHR1RWJoX09ZbmFxZVlPd3dpUk81TGZjMUZpSzlVUll5QjZJSjFUY1NkNTNHWHpqbjJCcHo3c3RsRFdfQjJYcktVWEtmV1Q1c2ZYZC1QUXRJaWlsWVdNRFZCRXhpX2M?oc=5
