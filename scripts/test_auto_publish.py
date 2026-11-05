@@ -120,8 +120,28 @@ class ApprovalTests(unittest.TestCase):
         req = self.make()
         self.assertEqual(ap.decide(self.state, req['id'], 'approved', 'cli'), 'approved')
         self.assertTrue(ap.decide(self.state, req['id'], 'rejected', 'cli').startswith('not-pending'))
-        later = time.time() + lib.APPROVAL_TTL_SECONDS + 10
+        later = time.time() + lib.DECISION_TTL_SECONDS + 10
         self.assertEqual(lib.approved_pairs(ap.load_requests(self.state), later), set())
+
+    def test_approval_outlives_the_next_daily_run(self):
+        """회귀(2026-11-06): 요청은 10:30 에 생기고 다음 실행은 24시간 뒤. 알림 직후(4시간 안) 승인한 건이 20시간 TTL 에 걸려 다음 실행 전에 만료되던 결함."""
+        req = self.make()
+        created = req['created']
+        self.assertEqual(ap.decide(self.state, req['id'], 'approved', 'telegram', now=created + 600), 'approved')   # 알림 10분 뒤 승인
+        next_run = created + 24 * 3600                                                                               # 다음 날 같은 시각 실행
+        self.assertEqual(lib.approved_pairs(ap.load_requests(self.state), next_run), {('concepts/a.md', 'a' * 64)})
+        self.assertEqual(lib.approved_pairs(ap.load_requests(self.state), created + 600 + lib.DECISION_TTL_SECONDS + 5), set())  # 그래도 48시간 뒤에는 만료
+
+    def test_pending_still_expires_after_20h_and_cannot_be_decided(self):
+        req = self.make()
+        late = req['created'] + lib.APPROVAL_TTL_SECONDS + 5
+        self.assertEqual(lib.request_state(req, late), 'expired')
+        self.assertEqual(ap.decide(self.state, req['id'], 'approved', 'telegram', now=late), 'not-pending:expired')
+
+    def test_rejection_also_uses_the_decision_window(self):
+        req = self.make()
+        ap.decide(self.state, req['id'], 'rejected', 'telegram', now=req['created'] + 60)
+        self.assertEqual(lib.request_state(ap.load_requests(self.state)[0], req['created'] + 30 * 3600), 'rejected')
 
     def test_decide_rejects_bad_ids(self):
         self.assertEqual(ap.decide(self.state, '../../etc/passwd', 'approved', 'x'), 'invalid-id')
@@ -487,6 +507,50 @@ class WebSyncTests(unittest.TestCase):
         # status 는 --untracked-files=no 로 부른다(eval-prod-result.json·site-audit/ 같은 미추적 파일은 막지 않는다)
         exc, calls = self.run_sync()
         self.assertTrue(any(c[0] == 'status' and '--untracked-files=no' in c for c in calls))
+
+
+class ButtonNotifyTests(unittest.TestCase):
+    """예외 승인 알림의 인라인 버튼(봇 callback_query 핸들러 publish:<approve|reject>:<id> 와 계약)."""
+    BOT_CALLBACK = __import__('re').compile(r'^publish:(approve|reject):[0-9a-f]{12}$')
+
+    def test_inline_keyboard_json_matches_telegram_and_bot_contract(self):
+        kb = json.loads(ap.inline_keyboard([('✅ 승인', 'publish:approve:abcdef012345'), ('❌ 거부', 'publish:reject:abcdef012345')]))
+        row = kb['inline_keyboard'][0]
+        self.assertEqual([b['text'] for b in row], ['✅ 승인', '❌ 거부'])
+        for b in row:
+            self.assertRegex(b['callback_data'], self.BOT_CALLBACK); self.assertLessEqual(len(b['callback_data'].encode()), 64)   # 텔레그램 한도 64바이트
+
+    def test_deliver_passes_buttons_as_second_arg_and_not_through_telegram_safe(self):
+        calls = []
+        def runner(cmd, **kw):
+            calls.append(cmd); return subprocess.CompletedProcess(cmd, 0, '', '')
+        with tempfile.TemporaryDirectory() as d:
+            script = Path(d) / 'notify.sh'; script.write_text('#!/bin/bash\n')
+            self.assertTrue(ap.deliver('제목 <b> & 100%', runner=runner, notify_path=script, log_path=Path(d) / 'n.log', buttons=[('OK', 'publish:approve:abcdef012345')]))
+            self.assertTrue(ap.deliver('plain', runner=runner, notify_path=script, log_path=Path(d) / 'n.log'))
+        self.assertEqual(len(calls[0]), 4); self.assertEqual(len(calls[1]), 3)                  # 버튼 있으면 인자 3개, 없으면 기존 호출 그대로
+        self.assertNotIn('<', calls[0][2]); json.loads(calls[0][3])                             # 본문만 telegram_safe, 키보드 JSON 은 손대지 않음
+
+    def test_alert_falls_back_to_plain_notify_without_button_sender(self):
+        sent, with_buttons = [], []
+        ap.Ctx(notify=sent.append).alert('msg', [('a', 'b')])
+        self.assertEqual(sent, ['msg'])
+        ap.Ctx(notify=sent.append, notify_buttons=lambda m, b: with_buttons.append((m, b))).alert('msg2', [('a', 'b')])
+        self.assertEqual(with_buttons, [('msg2', [('a', 'b')])]); self.assertEqual(sent, ['msg'])
+
+    def test_exception_request_notice_carries_approve_and_reject_buttons(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            base = Path(tmp); (base / 'state').mkdir()
+            got = []
+            ctx = ap.Ctx(apply=True, state=base / 'state', notify=lambda m: got.append((m, None)), notify_buttons=lambda m, b: got.append((m, b)), now=lambda: 1000.0)
+            items = [{'path': 'concepts/a.md', 'sha256': 'a' * 64, 'reasons': ['file-too-large']}]
+            with self.assertRaises(ap.Abort):
+                ap.raise_exception_request(ctx, items, [], [])
+        msg, buttons = got[0]
+        self.assertIn('예외 승인 필요', msg); self.assertIn('48시간', msg); self.assertIn('20시간', msg)
+        self.assertEqual([b[0] for b in buttons], ['✅ 승인', '❌ 거부'])
+        for _, data in buttons: self.assertRegex(data, self.BOT_CALLBACK)
+        self.assertEqual(buttons[0][1].split(':')[2], buttons[1][1].split(':')[2])
 
 
 if __name__ == '__main__':

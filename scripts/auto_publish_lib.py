@@ -16,7 +16,9 @@ MAX_FILES = 100
 MAX_CHANGED_LINES = 1500
 MAX_FILE_BYTES = 200_000
 MAX_WEB_DELETIONS = 5
-APPROVAL_TTL_SECONDS = 20 * 3600
+APPROVAL_TTL_SECONDS = 20 * 3600     # 승인 대기 요청이 응답을 기다리는 시간(이후 만료, 다음 실행이 새 요청을 만든다)
+DECISION_TTL_SECONDS = 48 * 3600     # 승인·거부 결정이 유효한 시간. 요청은 10:30 실행에서 생기고 다음 실행은 24시간 뒤라서, 결정 유효 시간이 20시간이면
+                                     # 요청 직후 4시간 안에 승인한 건이 다음 실행 전에 만료되어 헛수고가 됐다(2026-11-06). 승인은 파일 해시에 고정되어 있어 길게 둬도 안전하다.
 
 SENSITIVE_PATTERNS = {
     'local-path': re.compile(r'(?:/Users/[A-Za-z0-9._-]+|/home/[A-Za-z0-9._-]+|[A-Za-z]:\\Users\\)'),
@@ -125,7 +127,7 @@ def new_request(items: list[dict], batch_reasons: list[str], now: float | None =
 
 def request_state(req: dict, now: float | None = None) -> str:
     now = now or time.time()
-    if req.get('status') in ('approved', 'rejected') and now - req.get('decided_at', req['created']) > APPROVAL_TTL_SECONDS:
+    if req.get('status') in ('approved', 'rejected') and now - req.get('decided_at', req['created']) > DECISION_TTL_SECONDS:
         return 'expired'
     if req['status'] == 'pending' and now - req['created'] > APPROVAL_TTL_SECONDS:
         return 'expired'

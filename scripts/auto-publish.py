@@ -95,9 +95,17 @@ class Ctx:
     run: Callable = default_run
     fetch: Callable = default_fetch
     notify: Callable[[str], None] = lambda msg: None
+    notify_buttons: Callable[[str, list], None] | None = None   # (메시지, [(라벨, callback_data), ...]) — 없으면 버튼 없이 notify 로 보낸다
     now: Callable[[], float] = time.time
     sleep: Callable[[float], None] = time.sleep
     log: list = field(default_factory=list)
+
+    def alert(self, msg: str, buttons: list | None = None):
+        """알림 전송. 버튼(인라인 키보드)을 지원하는 전송기가 있으면 버튼과 함께, 없으면 일반 알림으로."""
+        if buttons and self.notify_buttons:
+            self.notify_buttons(msg, buttons)
+        else:
+            self.notify(msg)
 
     def say(self, msg: str):
         line = f'[{datetime.now().strftime("%H:%M:%S")}] {msg}'
@@ -282,8 +290,10 @@ def raise_exception_request(ctx: Ctx, items: list[dict], batch_reasons: list[str
     if ctx.apply:
         save_request(ctx.state, req)
         sample = '; '.join(f"{i['path']} [{','.join(i['reasons'])}]" for i in items[:5])
-        ctx.notify(f"[2nd 자동발행] 예외 승인 필요 id={req['id']}\n{len(items)}건 {batch_reasons or ''}\n{sample}\n"
-                   f"승인: /publish approve {req['id']}  거부: /publish reject {req['id']}\n20시간 내 무응답이면 오늘은 건너뜁니다.")
+        ctx.alert(f"[2nd 자동발행] 예외 승인 필요 id={req['id']}\n{len(items)}건 {batch_reasons or ''}\n{sample}\n"
+                  f"아래 버튼으로 바로 승인·거부하세요(또는 /publish approve {req['id']}).\n"
+                  f"요청 후 20시간 안에 결정하면 되고, 승인은 48시간 유효합니다(파일 내용이 바뀌면 새 요청).",
+                  [('✅ 승인', f"publish:approve:{req['id']}"), ('❌ 거부', f"publish:reject:{req['id']}")])
     raise Abort('exception', f"{len(items)} files need human approval (id {req['id']})", code=5)
 
 
@@ -488,8 +498,13 @@ def record(ctx: Ctx, status: str, detail: dict, started: float):
     (ctx.state / 'last-run.json').write_text(json.dumps(payload, ensure_ascii=False, indent=2) + '\n')
 
 
+def inline_keyboard(buttons: list) -> str:
+    """[(라벨, callback_data), ...] → 텔레그램 reply_markup JSON(한 줄에 모두). callback_data 는 봇의 callback_query 핸들러(publish:<approve|reject>:<id>)가 처리한다."""
+    return json.dumps({'inline_keyboard': [[{'text': t, 'callback_data': d} for t, d in buttons]]}, ensure_ascii=False)
+
+
 def deliver(message: str, runner=subprocess.run, notify_path: Path = NOTIFY, log_path: Path | None = None,
-            attempts: int = 2, pause=time.sleep) -> bool:
+            attempts: int = 2, pause=time.sleep, buttons: list | None = None) -> bool:
     """Send via notify.sh, retry on failure, and record each attempt; never raises."""
     log_path = log_path or STATE / 'notify.log'
     if not notify_path.is_file():
@@ -498,7 +513,8 @@ def deliver(message: str, runner=subprocess.run, notify_path: Path = NOTIFY, log
         outcomes = []
         for attempt in range(1, attempts + 1):
             try:
-                done = runner(['bash', str(notify_path), telegram_safe(message)], capture_output=True, text=True, timeout=60)
+                cmd = ['bash', str(notify_path), telegram_safe(message)] + ([inline_keyboard(buttons)] if buttons else [])
+                done = runner(cmd, capture_output=True, text=True, timeout=60)
                 outcomes.append(f'attempt {attempt} rc={done.returncode} {(done.stderr or "").strip()[:200]}'.strip())
                 if done.returncode == 0:
                     break
@@ -521,6 +537,10 @@ def telegram_notify(message: str):
     deliver(message)
 
 
+def telegram_notify_buttons(message: str, buttons: list):
+    deliver(message, buttons=buttons)
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--apply', action='store_true')
@@ -541,7 +561,7 @@ def main() -> int:
         return 0 if verdict in ('approved', 'rejected') else 1
 
     from pipeline_lock import run_locked
-    ctx = Ctx(apply=args.apply, push=not args.no_push, notify=telegram_notify)
+    ctx = Ctx(apply=args.apply, push=not args.no_push, notify=telegram_notify, notify_buttons=telegram_notify_buttons)
     return run_locked(lambda: execute(ctx))
 
 
