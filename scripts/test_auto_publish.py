@@ -429,5 +429,65 @@ class DeliverTests(unittest.TestCase):
         self.assertIn('notify.sh missing', self.log.read_text())
 
 
+class WebSyncTests(unittest.TestCase):
+    """preflight 의 web 폴더 동기화(sync_web_head): 뒤처지기만 하고 깨끗할 때만 fast-forward."""
+
+    def run_sync(self, head='aaa', remote='bbb', ahead='0', behind='3', branch='main', dirty=''):
+        calls = []
+
+        def fake(cmd, cwd=None, timeout=None):
+            calls.append(cmd[3:])
+            sub = cmd[3]
+            out = ''
+            if sub == 'rev-parse':
+                out = head if cmd[4] == 'HEAD' else remote
+            elif sub == 'rev-list':
+                out = ahead if cmd[5].startswith(f'{remote}..') else behind
+            elif sub == 'branch':
+                out = branch
+            elif sub == 'status':
+                out = dirty
+            return subprocess.CompletedProcess([], 0, out, '')
+
+        ctx = ap.Ctx(run=fake, web=Path('/web'), root=Path('/root'))
+        ctx.say = lambda m: calls.append(('say', m))
+        try:
+            ap.sync_web_head(ctx)
+            return None, calls
+        except ap.Abort as exc:
+            return exc, calls
+
+    def merged(self, calls):
+        return [c for c in calls if c[0] == 'merge']
+
+    def test_equal_head_does_nothing(self):
+        exc, calls = self.run_sync(head='x', remote='x')
+        self.assertIsNone(exc); self.assertEqual(self.merged(calls), [])
+
+    def test_behind_only_clean_main_fast_forwards(self):
+        exc, calls = self.run_sync()
+        self.assertIsNone(exc); self.assertEqual(self.merged(calls), [['merge', '--ff-only', 'origin/main']])
+        self.assertTrue(any(c[0] == 'say' and '3 commit' in c[1] for c in calls))
+
+    def test_ahead_or_diverged_aborts_without_merge(self):
+        exc, calls = self.run_sync(ahead='2', behind='3')
+        self.assertIn('web HEAD differs from origin/main', exc.detail); self.assertIn('ahead 2', exc.detail); self.assertEqual(self.merged(calls), [])
+        exc, calls = self.run_sync(ahead='1', behind='0')
+        self.assertIsNotNone(exc); self.assertEqual(self.merged(calls), [])
+
+    def test_dirty_tracked_files_or_wrong_branch_abort(self):
+        exc, calls = self.run_sync(dirty=' M app/page.tsx')
+        self.assertIn('tracked files are modified', exc.detail); self.assertEqual(self.merged(calls), [])
+        exc, calls = self.run_sync(branch='')
+        self.assertIn('detached', exc.detail); self.assertEqual(self.merged(calls), [])
+        exc, calls = self.run_sync(branch='feat/x')
+        self.assertIn('feat/x', exc.detail); self.assertEqual(self.merged(calls), [])
+
+    def test_untracked_files_do_not_block(self):
+        # status 는 --untracked-files=no 로 부른다(eval-prod-result.json·site-audit/ 같은 미추적 파일은 막지 않는다)
+        exc, calls = self.run_sync()
+        self.assertTrue(any(c[0] == 'status' and '--untracked-files=no' in c for c in calls))
+
+
 if __name__ == '__main__':
     unittest.main()

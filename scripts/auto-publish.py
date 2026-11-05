@@ -179,8 +179,29 @@ def preflight(ctx: Ctx):
     if ctx.git('status', '--porcelain', '--', 'data/wiki', cwd=ctx.web):
         raise Abort('preflight', 'web data/wiki is dirty')
     ctx.git('fetch', 'origin', 'main', cwd=ctx.web)
-    if ctx.git('rev-parse', 'HEAD', cwd=ctx.web) != ctx.git('rev-parse', 'origin/main', cwd=ctx.web):
-        raise Abort('preflight', 'web HEAD differs from origin/main')
+    sync_web_head(ctx)
+
+
+def sync_web_head(ctx: Ctx):
+    """web 폴더 HEAD 를 origin/main 에 맞춘다.
+
+    웹을 배포·푸시하면 origin/main 이 앞서가는데, 이 폴더를 pull 하지 않으면 사전 점검이 매번 실패해 발행이 정체됐다(2026-11-02~05).
+    그래서 **뒤처지기만 했고(앞선 커밋 0) main 브랜치이며 추적 파일이 깨끗할 때만** fast-forward 로 따라잡는다.
+    앞서 있거나 갈라졌거나 detached 이거나 수정 중인 파일이 있으면 예전처럼 중단한다(작업 중인 내용을 덮어쓰지 않는다).
+    """
+    head = ctx.git('rev-parse', 'HEAD', cwd=ctx.web)
+    remote = ctx.git('rev-parse', 'origin/main', cwd=ctx.web)
+    if head == remote:
+        return
+    ahead = int(ctx.git('rev-list', '--count', f'{remote}..{head}', cwd=ctx.web) or 0)
+    behind = int(ctx.git('rev-list', '--count', f'{head}..{remote}', cwd=ctx.web) or 0)
+    branch = ctx.git('branch', '--show-current', cwd=ctx.web)
+    if ahead or not behind or branch != 'main':
+        raise Abort('preflight', f'web HEAD differs from origin/main (ahead {ahead}, behind {behind}, branch {branch or "detached"})')
+    if ctx.git('status', '--porcelain', '--untracked-files=no', cwd=ctx.web):
+        raise Abort('preflight', f'web HEAD differs from origin/main (behind {behind}) and tracked files are modified; not fast-forwarding')
+    ctx.git('merge', '--ff-only', 'origin/main', cwd=ctx.web)
+    ctx.say(f'web fast-forwarded {behind} commit(s) to origin/main')
 
 
 def snapshot_hashes(web: Path) -> dict:
