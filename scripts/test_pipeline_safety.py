@@ -1,5 +1,7 @@
 """Offline pipeline boundary tests; no generators, model calls or messages."""
 import importlib.util
+import subprocess
+import sys
 import tempfile
 import unittest
 from pathlib import Path
@@ -92,6 +94,59 @@ class PipelineSafetyTests(unittest.TestCase):
             r4.assert_called_once()
             r6.assert_called_once()
             notify.assert_not_called()
+
+
+class LegacyJobGuardTests(unittest.TestCase):
+    """겹침 가드: 락 없이 도는 로드된 옛 작업은 막고, 공유 락 래퍼로 실행되는 작업은 통과(2026-11-06)."""
+
+    def plist(self, d, label, args):
+        import plistlib
+        with open(Path(d) / f'ai.2nd.{label}.plist', 'wb') as fh:
+            plistlib.dump({'Label': f'ai.2nd.{label}', 'ProgramArguments': args}, fh)
+
+    def test_shares_lock_detection(self):
+        with tempfile.TemporaryDirectory() as d:
+            self.plist(d, 'daily-fetch', ['/bin/bash', '/x/hermes-wrap.sh', 'job', 'python3 /x/with-pipeline-lock.py -- bash y.sh'])  # hermes-wrap 이 bash -c 로 실행하는 명령 문자열 안의 래퍼도 락 공유
+            self.plist(d, 'mention-only', ['/bin/bash', '/x/old.sh', '--note', 'no-with-pipeline-lock.pyx'])  # 이름만 비슷한 문자열은 아님
+            self.plist(d, 'daily-ingest', ['/usr/bin/python3', '/Users/a/2nd/scripts/with-pipeline-lock.py', '--', '/bin/bash', 'x.sh'])
+            self.plist(d, 'sync-dronewiki', ['/bin/bash', '/x/old-generator.sh'])
+            home = Path(d)
+            self.assertTrue(pipeline.shares_pipeline_lock('daily-ingest', home))
+            self.assertFalse(pipeline.shares_pipeline_lock('sync-dronewiki', home))
+            self.assertTrue(pipeline.shares_pipeline_lock('daily-fetch', home))
+            self.assertFalse(pipeline.shares_pipeline_lock('mention-only', home))
+            self.assertFalse(pipeline.shares_pipeline_lock('no-such-job', home))   # plist 없음 → 막는 쪽
+            (home / 'ai.2nd.broken.plist').write_text('not a plist')
+            self.assertFalse(pipeline.shares_pipeline_lock('broken', home))
+
+    def run_main(self, loaded, shares):
+        import contextlib, io
+        calls = []
+        def fake_run(cmd, **kw):
+            label = cmd[-1].removeprefix('ai.2nd.')
+            return subprocess.CompletedProcess(cmd, 0 if label in loaded else 113, '', '')
+        out = io.StringIO()
+        old = (pipeline.subprocess.run, pipeline.shares_pipeline_lock, sys.argv)
+        pipeline.subprocess.run, pipeline.shares_pipeline_lock = fake_run, (lambda label, *a: label in shares)
+        sys.argv = ['knowledge-pipeline.py', '--refresh-derived']  # 후보 경로가 없어 가드 통과 뒤 'isolated --candidate' 로 멈춘다
+        try:
+            with contextlib.redirect_stdout(out):
+                code = pipeline.main()
+        finally:
+            pipeline.subprocess.run, pipeline.shares_pipeline_lock, sys.argv = old
+        return code, out.getvalue()
+
+    def test_loaded_lock_sharing_jobs_do_not_block(self):
+        code, out = self.run_main(loaded={'daily-fetch', 'daily-ingest'}, shares={'daily-fetch', 'daily-ingest'})
+        self.assertNotIn('overlapping legacy', out); self.assertIn('isolated --candidate', out)
+
+    def test_loaded_job_without_lock_still_blocks(self):
+        code, out = self.run_main(loaded={'daily-ingest', 'sync-dronewiki'}, shares={'daily-ingest'})
+        self.assertEqual(code, 2); self.assertIn('overlapping legacy', out)
+
+    def test_nothing_loaded_passes_guard(self):
+        code, out = self.run_main(loaded=set(), shares=set())
+        self.assertNotIn('overlapping legacy', out)
 
 
 if __name__ == '__main__':

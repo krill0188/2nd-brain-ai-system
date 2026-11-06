@@ -225,6 +225,27 @@ def run_steps(items, execute=subprocess.run) -> list[dict]:
     return results
 
 
+LEGACY_LABELS = ('daily-fetch', 'daily-ingest', 'dronewiki-self-update', 'lint-knowledge',
+                 'extract-knowledge-graph', 'update-knowledge-graph', 'apply-kinetic-rules', 'sync-dronewiki')
+
+
+def shares_pipeline_lock(label: str, launch_agents: Path | None = None) -> bool:
+    """launchd 작업의 plist 가 with-pipeline-lock.py 래퍼로 실행하는가(=이 파이프라인과 같은 락을 공유).
+
+    아래 가드는 '락을 쓰지 않는 옛 독립 생성기'를 막으려는 것이다(새 락만으로는 그 작업들을 조율할 수 없다). 11/5 부터 daily-fetch·daily-ingest 가
+    락 래퍼로 실행되도록 바뀌어 이 조건이 해소됐으므로, 래퍼를 쓰는 작업은 겹침으로 보지 않는다(daily-fetch 는 hermes-wrap.sh 의 명령 문자열 안에 래퍼가 있다). plist 를 읽을 수 없거나 형식이 이상하면 False(막는 쪽).
+    """
+    import plistlib
+    path = (launch_agents or Path.home() / 'Library/LaunchAgents') / f'ai.2nd.{label}.plist'
+    try:
+        with path.open('rb') as fh:
+            args = plistlib.load(fh).get('ProgramArguments') or []
+    except (OSError, ValueError, plistlib.InvalidFileException):
+        return False
+    # 인자 자체가 래퍼이거나(…/with-pipeline-lock.py), hermes-wrap.sh 처럼 명령 문자열을 bash -c 로 넘기는 형태("python3 …/with-pipeline-lock.py -- bash …")
+    return any(isinstance(a, str) and re.search(r'(^|[\s/])with-pipeline-lock\.py(\s|$)', a) is not None for a in args)
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--run-local', action='store_true')
@@ -259,11 +280,11 @@ def main() -> int:
         return 0
     # Fail closed while legacy independent generators are installed. A new lock alone
     # cannot coordinate old jobs that do not share that lock.
-    labels = ('daily-fetch', 'daily-ingest', 'dronewiki-self-update', 'lint-knowledge',
-              'extract-knowledge-graph', 'update-knowledge-graph', 'apply-kinetic-rules', 'sync-dronewiki')
-    for label in labels:
+    for label in LEGACY_LABELS:
         state = subprocess.run(['launchctl', 'list', 'ai.2nd.' + label], capture_output=True, text=True)
         if state.returncode == 0 and (not args.validate_existing or re.search(r'"PID"\s*=\s*\d+', state.stdout)):
+            if shares_pipeline_lock(label):
+                continue  # 이 파이프라인과 같은 락(with-pipeline-lock.py)으로 직렬화되는 작업은 동시 쓰기 충돌이 없다
             print('BLOCKED: overlapping legacy launchd jobs remain loaded; schedule migration required')
             return 2
     if not (args.candidate or args.candidate_root) or candidate.exists() or any(
