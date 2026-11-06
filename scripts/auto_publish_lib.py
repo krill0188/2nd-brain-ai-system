@@ -202,9 +202,16 @@ FAILURE_HINTS = (
 )
 
 
-def explain_failure(stage: str, detail: str) -> str:
+def explain_failure(stage: str, detail: str, progress: dict | None = None) -> str:
     """실패 알림 본문: 원인·조치·재실행 명령을 덧붙인다(고정 문구만; 자식 출력은 그대로 옮기지 않는다)."""
+    spent = ''
+    if progress:
+        done = [f"{r['step']} {r['seconds']:.0f}초" for r in (progress.get('done') or []) if r.get('seconds') is not None]
+        if progress.get('current'):
+            done.append(f"{progress['current']} 진행 중 끊김")
+        if done:
+            spent = '\n단계별 소요: ' + ', '.join(done)
     for marker, cause, action in FAILURE_HINTS:
         if marker in (detail or ''):
-            return f"원인: {cause}\n조치: {action}\n재실행: {RERUN_COMMAND}"
-    return f"재실행: {RERUN_COMMAND}"
+            return f"원인: {cause}{spent}\n조치: {action}\n재실행: {RERUN_COMMAND}"
+    return f"{spent.lstrip(chr(10))}\n재실행: {RERUN_COMMAND}".lstrip('\n')

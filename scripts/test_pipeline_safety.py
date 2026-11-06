@@ -1,5 +1,6 @@
 """Offline pipeline boundary tests; no generators, model calls or messages."""
 import importlib.util
+import json
 import subprocess
 import sys
 import tempfile
@@ -176,6 +177,19 @@ class DiscoveryDrainTests(unittest.TestCase):
     def test_nothing_pending_makes_no_extra_call(self):
         r = pipeline.drain_discovery(lambda: self.fail('호출 금지'), '남은 미처리 0개')
         self.assertEqual((r['stopped'], r['rounds']), ('DONE', 1))
+
+
+class ProgressTests(unittest.TestCase):
+    def test_run_steps_records_seconds_and_progress(self):
+        import types, tempfile
+        tmp = Path(tempfile.mkdtemp()) / 'progress.json'
+        fake = lambda cmd, **kw: types.SimpleNamespace(returncode=0, stdout=b'ok', stderr=b'')
+        with patch.object(pipeline, 'PROGRESS_PATH', tmp):
+            res = pipeline.run_steps([('A', ['x']), ('B', ['y'])], execute=fake)
+        self.assertTrue(all('seconds' in r for r in res))
+        data = json.loads(tmp.read_text())
+        self.assertIsNone(data['current'])
+        self.assertEqual([r['step'] for r in data['done']], ['A', 'B'])
 
 
 if __name__ == '__main__':

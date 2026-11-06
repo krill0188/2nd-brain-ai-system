@@ -152,6 +152,7 @@ def output_text(result) -> str:
     return out.decode('utf-8', errors='replace') if isinstance(out, bytes) else str(out)
 
 
+PROGRESS_PATH = ROOT / '.ua/pipeline-progress.json'  # 시간 초과로 끊겨도 어느 단계에서 얼마나 걸렸는지 남긴다
 DISCOVERY_STEP = 'Generate:discovery'
 DISCOVERY_DRAIN_BUDGET_SEC = 20 * 60  # 추출 소진 루프 전용 벽시계 예산(파생물 갱신 전체 3600초와 별개)
 PENDING_RE = re.compile(r'남은 미처리 (\d+)개')
@@ -192,10 +193,26 @@ def drain_discovery(run, first_output: str, budget_sec: float = DISCOVERY_DRAIN_
     return {'rounds': rounds, 'remaining': pending if pending is not None else -1, 'stopped': stopped}
 
 
+def write_progress(done: list[dict], current: str | None, path: Path | None = None) -> None:
+    """단계별 소요 시간을 기록한다(실패해도 파이프라인을 막지 않는다)."""
+    try:
+        target = path or PROGRESS_PATH
+        target.parent.mkdir(parents=True, exist_ok=True)
+        tmp = target.with_suffix('.tmp')
+        tmp.write_text(json.dumps({'updated_at': datetime.now(timezone.utc).isoformat(), 'current': current,
+                                   'done': [{'step': r['step'], 'seconds': r.get('seconds'), 'exit_code': r['exit_code']} for r in done]},
+                                  ensure_ascii=False) + '\n')
+        tmp.replace(target)
+    except OSError:
+        pass
+
+
 def run_steps(items, execute=subprocess.run) -> list[dict]:
     results = []
     for name, command in items:
         fd = inherited_lock_fd()
+        write_progress(results, name)
+        step_started = time.monotonic()
         try:
             result = execute(
                 command,
@@ -215,7 +232,7 @@ def run_steps(items, execute=subprocess.run) -> list[dict]:
             })
             break
 
-        record = {'step': name, 'exit_code': result.returncode}
+        record = {'step': name, 'exit_code': result.returncode, 'seconds': round(time.monotonic() - step_started, 1)}
 
         if result.returncode:
             # Persist only fixed diagnostics; never source/provider output.
@@ -277,6 +294,7 @@ def run_steps(items, execute=subprocess.run) -> list[dict]:
                 continue
             break
 
+    write_progress(results, None)
     return results
 
 

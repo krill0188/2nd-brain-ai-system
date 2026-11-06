@@ -478,7 +478,7 @@ def execute(ctx: Ctx) -> int:
         status = 'noop' if exc.code == 0 else 'skipped' if exc.code == 5 else 'failed'
         record(ctx, status, {'stage': exc.stage, 'detail': exc.detail}, started)
         if status == 'failed' and ctx.apply:
-            ctx.notify(f'[2nd 자동발행] 실패 단계={exc.stage}\n{exc.detail[:300]}\n{lib.explain_failure(exc.stage, exc.detail)}\n기존 사이트는 유지됩니다.')
+            ctx.notify(f'[2nd 자동발행] 실패 단계={exc.stage}\n{exc.detail[:300]}\n{lib.explain_failure(exc.stage, exc.detail, read_progress())}\n기존 사이트는 유지됩니다.')
         ctx.say(f'{status}: {exc}')
         return exc.code
     except Exception as exc:  # noqa: BLE001
@@ -486,8 +486,37 @@ def execute(ctx: Ctx) -> int:
             restore_web(ctx)
         record(ctx, 'crashed', {'stage': stage, 'detail': repr(exc)[:300]}, started)
         if ctx.apply:
-            ctx.notify(f'[2nd 자동발행] 예기치 못한 오류 단계={stage}\n{repr(exc)[:300]}\n{lib.explain_failure(stage, repr(exc))}')
+            ctx.notify(f'[2nd 자동발행] 예기치 못한 오류 단계={stage}\n{repr(exc)[:300]}\n{lib.explain_failure(stage, repr(exc), read_progress())}')
         raise
+
+
+def read_progress() -> dict | None:
+    try:
+        return json.loads((ROOT / '.ua/pipeline-progress.json').read_text())
+    except (OSError, ValueError):
+        return None
+
+
+def doctor(ctx: Ctx) -> int:
+    """배포 없이 발행 사전 조건을 읽기 전용으로 점검한다(auto_publish_doctor)."""
+    import importlib.util
+    import os
+    import auto_publish_doctor as dr
+    spec = importlib.util.spec_from_file_location('knowledge_pipeline', ROOT / 'scripts/knowledge-pipeline.py')
+    kp = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(kp)
+    ps = subprocess.run(['ps', '-axo', 'pid,ppid,command'], capture_output=True, text=True).stdout
+    loaded = lambda label: subprocess.run(['launchctl', 'list', 'ai.2nd.' + label], capture_output=True, text=True).returncode == 0
+    policy = json.loads((ROOT / 'publication/policy.json').read_text())
+    status = subprocess.run([PY, str(ROOT / 'scripts/artifact-status.py')], capture_output=True, text=True, timeout=300).stdout
+    rows = [dr.check_busy_processes(ps, os.getpid())]
+    rows += dr.check_git_clean(ROOT, ctx.web)
+    rows += [dr.check_approved_committed(ROOT, policy), dr.check_web_sync(ctx.web),
+             dr.check_legacy_launchd(kp.LEGACY_LABELS, loaded, kp.shares_pipeline_lock),
+             dr.check_pending_documents(status),
+             dr.check_site(lambda url: default_fetch(url)[0], SITE)]
+    print(dr.format_report(rows))
+    return dr.exit_code(rows)
 
 
 def record(ctx: Ctx, status: str, detail: dict, started: float):
@@ -549,12 +578,15 @@ def main() -> int:
     ap.add_argument('--reject')
     ap.add_argument('--by', default='cli')
     ap.add_argument('--list', action='store_true')
+    ap.add_argument('--doctor', action='store_true', help='read-only precheck of every publish stage; no lock, no changes')
     args = ap.parse_args()
 
     if args.list:
         for req in load_requests(STATE):
             print(req['id'], lib.request_state(req), len(req['items']), req.get('batch_reasons'))
         return 0
+    if args.doctor:
+        return doctor(Ctx(apply=False, push=False, notify=lambda m: None))
     if args.approve or args.reject:
         verdict = decide(STATE, args.approve or args.reject, 'approved' if args.approve else 'rejected', args.by)
         print(verdict)

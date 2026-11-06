@@ -50,7 +50,14 @@
 - 릴리즈 이력: **v3.2.2**(08-19 학술수집 대확장: arXiv 8도메인+KCI+Zotero) → **v3.3.0**(08-20 팔란티어식 온톨로지 Link+Action) → **v3.4.0**(09-02 hermes cron → Claude Pro 구독 전환) → **v3.5.0**(09-03 로컬 AI 드론빌더) → **v3.6.0**(10-09 auto-publish 안정화, 발행중단 4일치 복구) → **v3.7.0**(10-17 HW 수집 확장, 아래).
 - 연계 저장소: [`drone-wiki-web`](https://github.com/krill0188/drone-wiki-web) — 공개 snapshot을 서비스하는 Next.js 앱(AI Q&A·GraphRAG·온톨로지 추론·드론 빌더).
 
-### 최근 업데이트 (v3.8.0, 2026-10-24)
+### 최근 업데이트 (v3.9.0, 2026-11-06)
+- **홈페이지 뉴스 정지 해소**: 10/31 이후 자동 발행이 네 겹으로 막혀 있었습니다 — 미커밋 승인 파일, 파이프라인 락과 겹친 옛 launchd 작업, 느린 추출 단계, 남은 대기 문서. 11/6 발행으로 페이지 3,312 → 3,384, 일일 브리핑이 최신 날짜로 복귀했습니다.
+- **추출**: 지식그래프 추출을 저가치 OpenRouter 경로(문서당 약 300초) 대신 `claude -p`(haiku, 조용한 폴백 금지)로 바꿔 약 14초로 줄였고, 대기 문서를 0이 될 때까지 반복 처리합니다(예산 20분, 실패·진척 없음이면 중단).
+- **검증**: 추출 대기 문서는 경고이고 차단하지 않습니다. 중복 슬러그, 누락·불필요 노드, 노드 신선도 오류는 계속 발행을 막습니다.
+- **운영**: `auto-publish.py --doctor`가 모든 단계의 사전 조건을 읽기 전용으로 점검합니다(실행 중·고아 프로세스, 미커밋 승인 파일, 웹 동기화, 레거시 launchd 겹침, 대기 문서, 사이트 응답). 단계별 소요 시간은 `.ua/pipeline-progress.json`에 남고, 실패 알림에는 원인·조치·재실행 명령이 들어가며, 배포 알림에는 대표 주소 `https://drone-wiki-web.vercel.app`가 표시됩니다.
+- 설계 노트: `docs/2026-11-06-publish-discovery-backlog-design.md`.
+
+### 이전 업데이트 (v3.8.0, 2026-10-24)
 - **discovery 일괄 승격**: 대기 중이던 discovery 개념 1,791건을 **모델 호출 없이**(이름·분류·출처·그래프 이웃만) 한 번에 승격했다. 각 문서에는 `confidence: low`와 `unreviewed` 태그를 달았고, 생성된 분류·출처 허브 11개(`concepts/auto-hub-*.md`)에 연결해 관계를 지어내지 않고도 위키링크 린트 규칙을 충족했다. 마스터가 화면에서 직접 승격한 문서를 합쳐 canonical 문서는 909 → 3,275쪽(임베딩 3,934, canonical 그래프 노드 3,275 · 엣지 14,072)이 됐다.
 - **사실 근거 아님**: 이 문서들은 claim이 없다. 사실은 원문 인용이 검증된 claim(`claims.json`, `paper-claims.json`)과 `^[출처]` 문장에서만 나온다. 다음 단계는 LLM이 제안하고 코드가 원문과 글자 단위로 대조해 확인하는 claim 추출이다.
 - **온톨로지**: `NewsDigest`·`VendorRegistry` 클래스 추가(부모 `DataArtifact`), 제품·뉴스 문서 52건 분류(`ontology/class-approvals-20261024b.json`, `scripts/revert-class-approvals.py`로 되돌릴 수 있음).

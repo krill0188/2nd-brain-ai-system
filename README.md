@@ -45,10 +45,17 @@ A **personal knowledge operations system** for drone technology (flight control,
 
 ### GitHub status
 - Public repository created 2026-07-26. Language mix: Python ≈ 415KB · Shell ≈ 180KB · HTML ≈ 31KB (automation-centric).
-- Release history: **v3.2.2** (Aug 19, scholarly collection expansion) → **v3.3.0** (Aug 20, Palantir-style ontology Link + Action) → **v3.4.0** (Sep 2, hermes cron moved to Claude Pro subscription) → **v3.5.0** (Sep 3, local AI drone builder) → **v3.6.0** (Oct 9, auto-publish stabilization) → **v3.7.0** (Oct 17, HW collection expansion, below).
+- Release history: **v3.2.2** (Aug 19, scholarly collection expansion) → **v3.3.0** (Aug 20, Palantir-style ontology Link + Action) → **v3.4.0** (Sep 2, hermes cron moved to Claude Pro subscription) → **v3.5.0** (Sep 3, local AI drone builder) → **v3.6.0** (Oct 9, auto-publish stabilization) → **v3.7.0** (Oct 17, HW collection expansion) → **v3.8.0** (Oct 24, discovery bulk promotion) → **v3.9.0** (Nov 6, publish pipeline recovery).
 - Companion repo: [`drone-wiki-web`](https://github.com/krill0188/drone-wiki-web) — Next.js app serving the public snapshot (AI Q&A, GraphRAG, ontology reasoning, drone builder).
 
-### Latest update (v3.8.0, 2026-10-24)
+### Latest update (v3.9.0, 2026-11-06)
+- **Homepage news unfrozen**: the auto-publish pipeline had been blocked since 10/31 by four stacked causes — uncommitted approved files, legacy launchd jobs overlapping the pipeline lock, a slow extraction step, and leftover pending documents. Published on 2026-11-06 (pages 3,312 → 3,384, daily briefing back to the current date).
+- **Extraction**: knowledge-graph extraction now calls `claude -p` (haiku) with no silent fallback instead of the low-tier OpenRouter route (~300 s per document → ~14 s), and drains the pending queue in a loop (20-minute budget; stops on failure or no progress).
+- **Validation**: pending extraction documents are a warning, not a blocker; duplicate slugs, missing/extra nodes and stale canonical nodes still block publication.
+- **Operations**: `auto-publish.py --doctor` prechecks every stage read-only (busy/orphan processes, uncommitted approved files, web sync, legacy launchd overlap, pending documents, site response); per-step timings are recorded in `.ua/pipeline-progress.json`; failure alerts include cause, action and the rerun command; deploy alerts show the canonical address `https://drone-wiki-web.vercel.app`.
+- Design note: `docs/2026-11-06-publish-discovery-backlog-design.md`.
+
+### Previous update (v3.8.0, 2026-10-24)
 - **Discovery bulk promotion**: 1,791 pending discovery concepts promoted in one pass **without model calls** (name, class, sources and graph neighbours only). Each stub is marked `confidence: low` + tag `unreviewed`, and linked to 11 generated classification / source hubs (`concepts/auto-hub-*.md`) so the canonical-link lint rule holds without inventing relations. Together with the master's manual promotions, canonical docs went 909 → 3,275 (embeddings 3,934, canonical graph 3,275 nodes / 14,072 edges).
 - **Not a factual basis**: these stubs carry no claims. Facts still come only from quote-verified claims (`claims.json`, `paper-claims.json`) and `^[source]` sentences; the next step is LLM-proposed, code-verified (literal quote match) claim extraction.
 - **Ontology**: `NewsDigest` and `VendorRegistry` classes added (parent `DataArtifact`); 52 product/news documents classified through `ontology/class-approvals-20261024b.json` (reversible with `scripts/revert-class-approvals.py`).

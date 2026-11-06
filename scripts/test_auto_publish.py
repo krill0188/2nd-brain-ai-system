@@ -566,5 +566,41 @@ class ExplainFailureTests(unittest.TestCase):
         self.assertNotIn('원인:', msg)
 
 
+class DoctorTests(unittest.TestCase):
+    def setUp(self):
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        import auto_publish_doctor as dr
+        self.dr = dr
+
+    def test_busy_processes_detected_but_not_doctor_itself(self):
+        ps = "100 1 /py scripts/extract-knowledge-graph.py --limit 10\n200 1 /py scripts/auto-publish.py --doctor\n300 1 /usr/bin/other"
+        self.assertEqual(self.dr.check_busy_processes(ps)[1], 'FAIL')
+        self.assertEqual(self.dr.check_busy_processes("200 1 /py scripts/auto-publish.py --doctor")[1], 'OK')
+
+    def test_legacy_launchd_overlap(self):
+        r = self.dr.check_legacy_launchd(('a', 'b'), lambda l: True, lambda l: l == 'a')
+        self.assertEqual(r[1], 'FAIL')
+        self.assertIn('b', r[2])
+        self.assertEqual(self.dr.check_legacy_launchd(('a',), lambda l: True, lambda l: True)[1], 'OK')
+        self.assertEqual(self.dr.check_legacy_launchd(('a',), lambda l: False, lambda l: False)[1], 'OK')
+
+    def test_pending_is_warn_integrity_is_fail(self):
+        self.assertEqual(self.dr.check_pending_documents('{"discovery_pending_documents": 5, "canonical_node_source_fresh": true}')[1], 'WARN')
+        self.assertEqual(self.dr.check_pending_documents('{"discovery_pending_documents": 0, "canonical_node_source_fresh": true}')[1], 'OK')
+        self.assertEqual(self.dr.check_pending_documents('{"missing_nodes": 2, "canonical_node_source_fresh": true}')[1], 'FAIL')
+        self.assertEqual(self.dr.check_pending_documents('garbage')[1], 'WARN')
+
+    def test_exit_code_and_report(self):
+        rows = [('a', 'OK', 'x', ''), ('b', 'FAIL', 'y', '조치')]
+        self.assertEqual(self.dr.exit_code(rows), 2)
+        self.assertIn('종합: FAIL', self.dr.format_report(rows))
+        self.assertEqual(self.dr.exit_code([('a', 'WARN', 'x', '')]), 0)
+
+    def test_progress_in_failure_message(self):
+        msg = lib.explain_failure('derived', 'TimeoutExpired', {'done': [{'step': 'Generate:embeddings', 'seconds': 12.0, 'exit_code': 0}], 'current': 'Generate:discovery'})
+        self.assertIn('Generate:embeddings 12초', msg)
+        self.assertIn('Generate:discovery 진행 중 끊김', msg)
+
+
 if __name__ == '__main__':
     unittest.main()
