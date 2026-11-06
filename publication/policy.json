@@ -2,7 +2,7 @@
   "version": 1,
   "default": "review",
   "directories": {
-    "raw/": "deny",
+    "raw/": "review",
     "concepts/": "review",
     "entities/": "review",
     "comparisons/": "review",
