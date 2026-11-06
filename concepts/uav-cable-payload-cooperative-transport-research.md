@@ -44,3 +44,6 @@ contradictions: []
 ## 최신 근거 연결 (2026-10-21)
 
 - 케이블이 페이로드가 아니라 지상 차량(UGV)과 UAV를 잇는 구성도 있다: 마수피얼 시스템의 테더를 팽팽하다고 가정하고 볼록성·장애물 기하로 UAV의 실행 가능한 이륙 지점 집합을 구해 경로를 계획하며, 테더로 UAV 비행 중 배터리 제약을 완화하는 것이 이점으로 제시된다(초록 기준, 느슨한 테더로 확장): [[maspa-tethered-marsupial-uav-ugv-path-planning]]^[inbox/processed/fetch-2026-10-21-arxiv-maspa-an-efficient-strategy-for-path-planning-with-a-tethere.md]
+
+## 📰 최근 관련 소식
+- 이기종 다중 UAV 환경에서 시간-공간 위험도를 고려한 충돌 회피 속도 결정에 관한 연구 (kci.go.kr, 2026) — https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003400271

@@ -39,3 +39,6 @@ contradictions: []
 - Chuyka 4.5.0. (www.suasnews.com, Fri, 23 Oc) — https://www.suasnews.com/2026/10/chuyka-4-5-0/
 - Parrot’s Latest MiniDrone Fits In The Palm Of Your Hand, Plus Jumping Sumo - SingularityHub (news.google.com, Thu, 16 Ja) — https://news.google.com/rss/articles/CBMisAFBVV95cUxQNXY4Rmc3cThiZElyVGJuV09iYVpGV0FXWjFRemZNZ0JKajlRd2RoOW1ydFp2b0xwNHF3Zm9FV2NOdnowdHYwUDVvbzl2Qi1qZ1NZQ2x1bUEwS0czc3JQazVVRk9xSVZlelFlN05TZGtVWXJhTzc4ZU4xU1R4cTktTnZ5bWpmR2VNWnVjb3o5QUJVZTl2ZXlYSUhGZmJxazREbFhfdWowYnZVblN0elR0cg?oc=5
 - Parrot Jumping Sumo review - Pocket-lint (news.google.com, Tue, 30 Se) — https://news.google.com/rss/articles/CBMikAFBVV95cUxPZ3ptT3d6M1pOSFpLdS0yUEZycU9SZXBRMWs4S0prdzNOc0I3QnA5VnVkTm4wazdEX0Jkd1daWUNWNDdDWkxuZGkwVjF2Z2pZYy1OV2xNOGFPX1N5VWVxRGRPb2M1aHVKQkJuSERyTUhZRlFPbnpEYVVmVFlGSGRxUm0wSjk5ZVd1RmZzWnlJS0I?oc=5
+- Navy DRPM RAS Seeks Cargo Drones for Marine Corps (dronelife.com, Mon, 02 No) — https://dronelife.com/2026/11/02/navy-drpm-ras-seeks-cargo-drones-for-marine-corps/
+- [MATLAB] What's new in MATLAB R2026b? (youtube.com, 2026-11-02) — https://www.youtube.com/watch?v=tVQcXs-Xkv8
+- Primoco UAV nine-month revenue rises 69%, EBITDA grows 246% (www.suasnews.com, Mon, 02 No) — https://www.suasnews.com/2026/11/primoco-uav-nine-month-revenue-rises-69-ebitda-grows-246/

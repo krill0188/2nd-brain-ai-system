@@ -33,3 +33,6 @@ Table I 원문: 파인튜닝된 Depth Anything V2 기반 단안 깊이 모델, T
 - Orin Nano 값 없음, TensorRT 버전·전력모드·모델 파라미터 수 미확인(논문 본문 범위에서 확인 못 함).^[inbox/processed/hw-20261023-ai-edge-jetson-orin-nx-agx-depth-anything-latency-finke-2026.md]
 
 상위 허브: [[ai-drone-models-hub]] · 함께 보기: [[mbse-uav-sysml]]
+
+## 📰 최근 관련 소식
+- FADE: A Flow-Based Approach for Multichannel Tail Estimation (arxiv.org, 2026-11-01) — http://arxiv.org/abs/2611.01849v1

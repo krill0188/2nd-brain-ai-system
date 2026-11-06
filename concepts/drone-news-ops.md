@@ -313,3 +313,9 @@ ontology_class: NewsDigest
 - [핑크랩 PinkLAB] PinkLAB at ROBOTWORLD 2026 | See you at KINTEX Hall 3, A03 #shorts (youtube.com, 2026-11-01) — https://www.youtube.com/watch?v=zreW9VGwCg0
 - FEMA’s $250 Million Counter-Drone Grant Deadline Approaches: Applications Due November 16 (dronelife.com, Sun, 01 No) — https://dronelife.com/2026/11/01/fema-counter-drone-grants-2027-deadline/
 - Port St. Lucie Skydio X10 Saves Life On Day One - DroneXL (news.google.com, Tue, 16 Ju) — https://news.google.com/rss/articles/CBMid0FVX3lxTE5yVVJlSEZFRy1mblZYdXFwMGNwUDVVSkI5Q1lvcGdQcFJpczVSanBFaGxfdW13UEhWU0V4ZC16cTlWbHR5czdwM0lUek9mRDB6c3I1bGp5SkV0Y0dCb182ZlZoYjlnbXdvbUFtVzZpQU5tc2NMazAw?oc=5
+- [핑크랩 PinkLAB] Among the giants, Proudly PinkLAB | ROBOWORLD 2026 Booth Preview #shorts (youtube.com, 2026-11-02) — https://www.youtube.com/watch?v=5Ol2BGJ8rOE
+- [사업부문] 산업용 드론 솔루션 사업-북미담당 — 니어스랩 (www.wanted.co.kr, 2026-11-03) — https://www.wanted.co.kr/wd/378767
+- [사업부문] 산업용 드론 솔루션 사업 리드 — 니어스랩 (www.wanted.co.kr, 2026-11-03) — https://www.wanted.co.kr/wd/346128
+- [핑크랩 PinkLAB] 요랬는데 요래됐어요 | 핑크랩 로보월드 2026 부스 설치 타임랩스 (youtube.com, 2026-11-03) — https://www.youtube.com/watch?v=hBJU1itT0NI
+- Windracers ULTRA First to Fly in Indiana Drone Corridor (www.suasnews.com, Tue, 03 No) — https://www.suasnews.com/2026/11/windracers-ultra-first-to-fly-in-indiana-drone-corridor/
+- [K.S Jin] Swarm 비행 Test 영상 (youtube.com, 2026-11-03) — https://www.youtube.com/watch?v=GPv6-e5C7XA

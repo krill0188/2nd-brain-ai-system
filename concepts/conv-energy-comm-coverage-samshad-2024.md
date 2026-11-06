@@ -28,3 +28,6 @@ contradictions: []
 - 에너지 절감률 등 다른 수치는 초록에 없음: 미확인. 3대 규모를 넘는 확장성 미확인.^[inbox/processed/hw-20261021-conv-energy-comm-coverage-samshad-2024.md]
 
 상위 허브: [[drone-convergence-engineering-hub]] · 함께 보기: [[drone-power-battery]]
+
+## 📰 최근 관련 소식
+- Failure-aware truck–drone collaborative routing for multi-type coverage tasks (doi.org, 2027-4) — https://doi.org/10.1016/j.apm.2026.117407

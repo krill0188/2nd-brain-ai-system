@@ -78,3 +78,6 @@ MAVLink-M은 군사 및 상업용 드론 간의 상호운용성을 위한 확장
 - [Painless360] HEQUAV K11 and Scepter 15 Android Radio: My Setup Steps (youtube.com, 2026-10-31) — https://www.youtube.com/watch?v=PqD0aSRnZ_I
 - Skydio X10 Thermal Drone Finds Lost Man at 3 A.M. in Florida - DroneXL (news.google.com, Sun, 05 Ju) — https://news.google.com/rss/articles/CBMifEFVX3lxTE1RV0VQallkX1VpeDZHaWJpSlJOWEcwVVlTSDd5ckJtaE90TU9YSUtXUF82cm5KSEtKX19ZZ0NycXlUQ1RPZnl0dXVpUlFnMW1zTV9jVmZQRVRpdzJ5OV9jZzQwNW1GWGRjTWZpd2lPQ3hwQVFiZFNySzZ2RHc?oc=5
 - [핑크랩 PinkLAB] PinkLAB at ROBOTWORLD 2026 | See you at KINTEX Hall 3, A03 #shorts (youtube.com, 2026-11-01) — https://www.youtube.com/watch?v=zreW9VGwCg0
+- [핑크랩 PinkLAB] Among the giants, Proudly PinkLAB | ROBOWORLD 2026 Booth Preview #shorts (youtube.com, 2026-11-02) — https://www.youtube.com/watch?v=5Ol2BGJ8rOE
+- [MATLAB] What's new in MATLAB R2026b? (youtube.com, 2026-11-02) — https://www.youtube.com/watch?v=tVQcXs-Xkv8
+- [Painless360] How to change the sound volume on your radio (an EdgeTX quick tip!) (youtube.com, 2026-11-03) — https://www.youtube.com/watch?v=afJimVKM7Vo

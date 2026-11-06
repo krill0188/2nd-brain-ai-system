@@ -49,3 +49,6 @@ contradictions: []
 ## 최신 근거 연결 (2026-10-21)
 
 - 에너지 모델을 계획에 직접 쓰는 사례: 수평 속도의 함수로 에너지 소비와 탑재 LiDAR 측정의 이분산 불확실성을 비행 전 시뮬레이션 데이터로 학습하고, 온라인 계획에서 배터리 사용량과 위치추정 오차를 함께 줄인다(GNSS 차단 환경, 시뮬레이션 검증, 초록 기준): [[perception-energy-aware-uav-lidar-motion-planning]]^[inbox/processed/fetch-2026-10-21-arxiv-perception-and-energy-aware-motion-planning-for-uav-using-le.md]
+
+## 📰 최근 관련 소식
+- [멈춤보단 천천히라도] 파이토치 2편 — 워크플로 — 직선 하나로 배우는 학습의 전체 흐름 (youtube.com, 2026-11-03) — https://www.youtube.com/watch?v=zXqgssCF7-w

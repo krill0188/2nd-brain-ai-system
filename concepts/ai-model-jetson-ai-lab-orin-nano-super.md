@@ -45,3 +45,6 @@ contradictions: []
 - AGX Orin 및 AGX Thor 결과는 이미지(차트)만 있어 수치 미확인.^[inbox/processed/hw-20261021-model-jetson-ai-lab-orin-nano-super.md]
 
 상위 허브: [[ai-drone-models-hub]] · 함께 보기: [[test-time-scaling-vlm-uav]]
+
+## 📰 최근 관련 소식
+- [intRo-Lab.] Seamless 드론으로 보는 청주대학교 가을 Season 2 (youtube.com, 2026-11-03) — https://www.youtube.com/watch?v=-5RpaZ3wId8

@@ -44,3 +44,4 @@ UAV 이미지를 위한 분할-정복 탐지기 — 다양한 스케일과 조�
 - [Painless360] New tool! Customise your radio and edit EdgeTX themes easily! (youtube.com, 2026-08-21) — https://www.youtube.com/watch?v=A-4OwLXs6xg
 - [Painless360] Walksnail ASCENT: Simple Update and Binding Tutorial (youtube.com, 2026-09-06) — https://www.youtube.com/watch?v=MOIE0yypHe0
 - [freeCodeCamp.org] Gemini 4 Argon API Crash Course (youtube.com, 2026-10-23) — https://www.youtube.com/watch?v=JGly6PSK5iw
+- Navy DRPM RAS Seeks Cargo Drones for Marine Corps (dronelife.com, Mon, 02 No) — https://dronelife.com/2026/11/02/navy-drpm-ras-seeks-cargo-drones-for-marine-corps/

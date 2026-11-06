@@ -101,3 +101,4 @@ ontology_class: VTOL
 - Flight Controller Explained: How to Choose the Best FC for FPV Drones (oscarliang.com, Sat, 31 Oc) — https://oscarliang.com/flight-controller/
 - Port St. Lucie Skydio X10 Saves Life On Day One - DroneXL (news.google.com, Tue, 16 Ju) — https://news.google.com/rss/articles/CBMid0FVX3lxTE5yVVJlSEZFRy1mblZYdXFwMGNwUDVVSkI5Q1lvcGdQcFJpczVSanBFaGxfdW13UEhWU0V4ZC16cTlWbHR5czdwM0lUek9mRDB6c3I1bGp5SkV0Y0dCb182ZlZoYjlnbXdvbUFtVzZpQU5tc2NMazAw?oc=5
 - Deadlocked Minneapolis City Council fails to pass police drone pilot program - Star Tribune (news.google.com, Thu, 16 Ju) — https://news.google.com/rss/articles/CBMieEFVX3lxTE9OZ2JBeUN2VllmU3V0NnV3WTRXWTZHVjJUR2t6T2NwcTJZZ3E4VFdYLVoyMmRGVExMbk5xYjFsRjRhTm1yMXV4dVJfenprUW5SWEMwNk5rcDA5Rm8tX0xMV2poRTNKMHg1eXBUc0x6ZUUwMHo5QW5IVA?oc=5
+- Is Trump’s Plan to Build a U.S. Drone Industry Working? (dronelife.com, Mon, 02 No) — https://dronelife.com/2026/11/02/us-drone-manufacturing-trump-policy-progress/

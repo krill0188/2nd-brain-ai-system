@@ -93,3 +93,6 @@ jetson-ai-lab.com 의 Models 페이지는 JS 차트이지만 HTML 안에 `benchm
 - 이 표는 언어/비전-언어 모델 생성 처리량이며 YOLO류 검출 지연·FPS 와 다름. 해상도(이미지 입력 크기)·배치·전력 모드 미표기. 단위 미확인. 신뢰도: 제조사 공식 페이지 내장 데이터라 높음, 단 조건 기재가 적어 설계 근거로는 상대 비교용.^[inbox/processed/hw-20261022-data-edge-jetson-ai-lab-models-orin-llm-vlm-throughput.md]
 
 상위 허브: [[ai-drone-data-processing-hub]] · 함께 보기: [[companion-computer]]
+
+## 📰 최근 관련 소식
+- [intRo-Lab.] Seamless 드론으로 보는 청주대학교 가을 Season 2 (youtube.com, 2026-11-03) — https://www.youtube.com/watch?v=-5RpaZ3wId8

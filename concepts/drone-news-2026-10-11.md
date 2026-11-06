@@ -26,3 +26,4 @@ contradictions: []
 
 ## 📰 최근 관련 소식
 - [핑크랩 PinkLAB] 2026 로보월드 핑크랩 | 킨텍스 3홀 A03에서 만나요 #shorts (youtube.com, 2026-10-31) — https://www.youtube.com/watch?v=gNgQCJeAFHw
+- [핑크랩 PinkLAB] 요랬는데 요래됐어요 🤖 로보월드 2026 핑크랩 부스 #shorts (youtube.com, 2026-11-03) — https://www.youtube.com/watch?v=aU0rPiNjXB0

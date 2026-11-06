@@ -42,3 +42,4 @@ Painless360의 첫인상 리뷰(2026-10-03, 영상 자막 기준) 요약. 단일
 
 ## 📰 최근 관련 소식
 - [Painless360] BetaFPV Meteor65 PRO II: One of the most fun gets upgraded! (youtube.com, 2026-10-03) — https://www.youtube.com/watch?v=8_ENkPBTnGc
+- [Joshua Bardwell] Is the BetaFPV Pavo20 Pro II a Genuine Upgrade? (youtube.com, 2026-11-03) — https://www.youtube.com/watch?v=7wc8CB-bRlM

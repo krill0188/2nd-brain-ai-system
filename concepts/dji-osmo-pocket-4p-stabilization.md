@@ -43,3 +43,4 @@ DJI Osmo Pocket 4P는 3축 기계식 짐벌을 탑재하여 표면이 움직이�
 - [DJI] Street Flow Through Melbourne | DJI Osmo Pocket 4P (youtube.com, 2026-10-23) — https://www.youtube.com/watch?v=TMgSQdrNJ4s
 - [DJI] Candy Turns Into Aurora | DJI Osmo Pocket 4P (youtube.com, 2026-10-26) — https://www.youtube.com/watch?v=x3W8qIfYzNU
 - [DJI] Autumn, Frame by Frame | DJI Osmo Pocket 4P (youtube.com, 2026-10-31) — https://www.youtube.com/watch?v=tVJhEw0iqYM
+- [DJI] Cyberpunk, in One Spin | DJI Osmo Mobile 8P (youtube.com, 2026-11-02) — https://www.youtube.com/watch?v=zbMCJbnNxPc

@@ -618,3 +618,10 @@ contradictions: []
 - [핑크랩 PinkLAB] 거대 로봇회사들 사이에서, 가장 핑크랩스럽게 | 로보월드 2026 첫 전시 (youtube.com, 2026-10-25) — https://www.youtube.com/watch?v=tiy7-75ZWPM
 - [핑크랩 PinkLAB] 핑크랩의 원격 교육 - PinkLAB Studio를 소개합니다. (youtube.com, 2026-10-27) — https://www.youtube.com/watch?v=uoDRE5IqLfc
 - [핑크랩 PinkLAB] 2026 로보월드 핑크랩 | 킨텍스 3홀 A03에서 만나요 #shorts (youtube.com, 2026-10-31) — https://www.youtube.com/watch?v=gNgQCJeAFHw
+- 야외 환경에서 음성과 함께 수집된 드론 음향 데이터 세트에 대한 CRNN 기반 식별기 성능 분석 (kci.go.kr, 2026) — https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003399857
+- [핑크랩 PinkLAB] 2026 로보월드 참여기업 | 핑크랩 PinkLAB – Physical AI, 현실에서 증명합니다 (youtube.com, 2026-11-02) — https://www.youtube.com/watch?v=ZCqOWfM9eOc
+- [사업부문] 산업용 드론 솔루션 사업-북미담당 — 니어스랩 (www.wanted.co.kr, 2026-11-03) — https://www.wanted.co.kr/wd/378767
+- [사업부문] 산업용 드론 솔루션 사업 리드 — 니어스랩 (www.wanted.co.kr, 2026-11-03) — https://www.wanted.co.kr/wd/346128
+- 중국 드론 제품의 비행 효율성 비교연구 -중국 DJI를 비롯한 4사 제품의 비교분석을 중심으로- (kci.go.kr, 2026) — https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003398657
+- [핑크랩 PinkLAB] 요랬는데 요래됐어요 | 핑크랩 로보월드 2026 부스 설치 타임랩스 (youtube.com, 2026-11-03) — https://www.youtube.com/watch?v=hBJU1itT0NI
+- [핑크랩 PinkLAB] 요랬는데 요래됐어요 🤖 로보월드 2026 핑크랩 부스 #shorts (youtube.com, 2026-11-03) — https://www.youtube.com/watch?v=aU0rPiNjXB0

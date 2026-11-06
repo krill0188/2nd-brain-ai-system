@@ -31,3 +31,6 @@ contradictions: []
 - 효율·추력 곡선은 대부분 미게재다. 실측은 [[multirotor-propeller-test-research]], 효율 특성은 [[bldc-motor-esc-characterization-research]]를 참고한다.
 
 관련: [[drone-esc-product-specs-catalog]], [[drone-propeller-product-specs-catalog]], [[drone-power-battery]].
+
+## 📰 최근 관련 소식
+- A French Sovereign Drone, Ordered From a Chinese Catalogue (www.suasnews.com, Tue, 03 No) — https://www.suasnews.com/2026/11/a-french-sovereign-drone-ordered-from-a-chinese-catalogue/

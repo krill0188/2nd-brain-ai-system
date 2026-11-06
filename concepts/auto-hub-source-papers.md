@@ -1638,3 +1638,5 @@ discovery 그래프에서 자동 추출·일괄 승격된 항목을 출처 유�
 
 ## 📰 최근 관련 소식
 - How Tuning, Reference Preview, Actuator Modeling, and Fallback Policies Change Quadrotor Controller Comparisons: A Reproducible Simulation Study (arxiv.org, 2026-10-26) — http://arxiv.org/abs/2610.35165v1
+- 플랜트 건설현장 기자재 위치추적을 위한 드론 기반  영상 처리 정보체계 설계 (kci.go.kr, 2026) — https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003399882
+- 드론 전자전 환경에서의 GPS 재밍 취약성 및 교전 비용 비대칭성 분석에 기반한 유형별 계층적 전자기 방어 체계 설계 (kci.go.kr, 2026) — https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003401196

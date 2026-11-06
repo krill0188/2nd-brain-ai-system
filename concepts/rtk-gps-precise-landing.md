@@ -329,3 +329,4 @@ Multi-GNSS (4 systems): 20-30 satellites
 - GPS 끊긴 건물서 조난자 찾는다…우주항공청, 드론 경연대회 개최 (뉴시스, Sun, 06 Se) — https://news.google.com/rss/articles/CBMiYEFVX3lxTE9ZakJZMlRhb041TjRzMlNtNWI5MnVMemhCcVpmUy1MSWpCYjYxOGtENWtIZlFPY3VsYlEtYUxxQzh5OE9RV3FGV1hhaXd0cXUtSVhyXzBiUmJwZ0lQTHRUbNIBeEFVX3lxTE5HYUlnUS1Gb2JPeURjNHZrelM5dmtfODMyX0VseWJ4ZDJTcHVKX0dNRjJmdTdPZzl0QUxxamNvamtvenZjakFiQ3BsTlJ2YWlXX2p6aEpuUk5xTDk4cGJyQTJxWTdDQ2VWYnhXTDVQS1VFVUFQM0RSZw?oc=5
 - [Emlid] Fix Your RTK Drone Positioning: Step-by-Step Base Setup Guide (youtube.com, 2026-09-08) — https://www.youtube.com/watch?v=skRiCNmBI9g
 - 이번 주말, 집에만 있긴 아까워요! 서울 곳곳 문화행사(ft.드론쇼·축제) (mediahub.seoul.go.kr, Thu, 10 Se) — https://news.google.com/rss/articles/CBMiWEFVX3lxTE1FU1d6VUR1djZ1ZS1HY0gxRnhFOU5rZGl1OW9MNXJDUEZEZHZJTnRrM3V3VWg3RHdJdTRPdzJYWllUUEZCYk5DUUZGZkVRcEdhWUlKcDNrMU0?oc=5
+- [K.S Jin] Swarm 비행 Test 영상 (youtube.com, 2026-11-03) — https://www.youtube.com/watch?v=GPv6-e5C7XA

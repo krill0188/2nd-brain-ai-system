@@ -228,3 +228,5 @@ AI 지식 워크플로는 원본 수집부터 검토된 지식과 산출물 생�
 - [freeCodeCamp.org] MCP Security Fundamentals Course (youtube.com, 2026-10-22) — https://www.youtube.com/watch?v=gYXLRMycVMk
 - Teaching Robots to “Feel Pain”: AstraQua Secures $1.3 Million NASA Contract (www.suasnews.com, Thu, 22 Oc) — https://www.suasnews.com/2026/10/teaching-robots-to-feel-pain-astraqua-secures-1-3-million-nasa-contract/
 - [멈춤보단 천천히라도] 틈틈일기에 장소 메모 기능이 추가되었어요. (youtube.com, 2026-10-31) — https://www.youtube.com/watch?v=ukAXjoUO7IU
+- [핑크랩 PinkLAB] 2026 로보월드 참여기업 | 핑크랩 PinkLAB – Physical AI, 현실에서 증명합니다 (youtube.com, 2026-11-02) — https://www.youtube.com/watch?v=ZCqOWfM9eOc
+- [멈춤보단 천천히라도] 파이토치 2편 — 워크플로 — 직선 하나로 배우는 학습의 전체 흐름 (youtube.com, 2026-11-03) — https://www.youtube.com/watch?v=zXqgssCF7-w

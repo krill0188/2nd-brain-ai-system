@@ -35,3 +35,4 @@ EO/IR 센서로 산불 초기 진화까지 수행하는 기술을 제안한다. 
 
 ## 📰 최근 관련 소식
 - 美 방산전시회서 드론 기술 주목…韓 방산업체도 신무기 선보여 (SPN 서울평양뉴스, Thu, 15 Oc) — https://news.google.com/rss/articles/CBMia0FVX3lxTE9fbzVJZ08zbVBnLURjZ3ZJUUh1R044MjIwUmFQQUg2N3ZDd0ppWjFvd0xRZTd0b1FKOUgwQ1pyQUhYUFhUVzNoS1VWSVlkLXhfRTUyVWZqVDZtMFdDOTdrTG1lTGI4VkhSYm1R?oc=5
+- 음향 AI·컴퓨터비전 연구원 (영상 기반 드론 탐지·추적) — 부전전자 (www.wanted.co.kr, 2026-11-04) — https://www.wanted.co.kr/wd/396232

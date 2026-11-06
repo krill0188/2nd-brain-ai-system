@@ -40,3 +40,4 @@ contradictions: []
 
 ## 📰 최근 관련 소식
 - 용인특례시, 드론특별자유화구역 공모 참여기업·실증과제 수요조사 (m-i.kr, Sun, 13 Se) — https://news.google.com/rss/articles/CBMiaEFVX3lxTE1tNnc3M01ZeEJWMW56NzRXaXd1d3JiaVFYWUgtOXRhcWwtNGNhb2NvekpfSE1USkVJUngzT0RFQi04bW90d3FRUHBnZmFtYW9zZzBQUW9mSXFHQkhRLVAwV3ktNUpOWC010gFoQVVfeXFMTW02dzczTVl4QlYxbno3NFdpd3V3cmJpUVhZSC05dGFxbC00Y2FvY296Sl9ITVRKRUlSeDNPREVCLThtb3R3cVFQcGdmYW1hb3NnMFBRb2ZJcUdCSFEtUDBXeS01Sk5YLTU?oc=5
+- 베지어 곡선 기반 UAV 충돌회피 경로 최적화를 위한 학습 기반 초기값 생성 기법 (kci.go.kr, 2026) — https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003401170

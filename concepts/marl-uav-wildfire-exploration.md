@@ -36,3 +36,6 @@ contradictions: []
 - [[drone-wildfire-rt-detr]] — RT-DETR 기반 산불 탐지 드론 비전 파이프라인
 - [[pso-uav-bushfire-hazard-management]] — 메타휴리스틱(PSO) 기반 산불 UAV 경로계획(RL 대비 최적화 계열)
 - [[hierarchical-rl-uav-navigation]] — 계층적 강화학습 기반 UAV 자율 내비게이션(동일 RL 계열)
+
+## 📰 최근 관련 소식
+- KlaskTron: An Open-Source Platform for Physical Adversarial Multi-Agent RL (arxiv.org, 2026-11-02) — http://arxiv.org/abs/2611.03138v1
