@@ -13,6 +13,7 @@ import re
 import shutil
 import subprocess
 import tempfile
+import time
 import uuid
 from pipeline_lock import shared_lock, inherited_lock_fd
 from datetime import datetime, timezone
@@ -146,6 +147,51 @@ def ensure_web_dependencies(execute=subprocess.run, notify=notify_telegram) -> l
     return [record]
 
 
+def output_text(result) -> str:
+    out = getattr(result, 'stdout', b'') or b''
+    return out.decode('utf-8', errors='replace') if isinstance(out, bytes) else str(out)
+
+
+DISCOVERY_STEP = 'Generate:discovery'
+DISCOVERY_DRAIN_BUDGET_SEC = 20 * 60  # 추출 소진 루프 전용 벽시계 예산(파생물 갱신 전체 3600초와 별개)
+PENDING_RE = re.compile(r'남은 미처리 (\d+)개')
+
+
+def remaining_pending(output: str) -> int | None:
+    """extract-knowledge-graph.py 출력에서 남은 미처리 문서 수. 알 수 없으면 None."""
+    if '처리할 것이 없습니다' in output:
+        return 0
+    m = PENDING_RE.search(output)
+    return int(m.group(1)) if m else None
+
+
+def drain_discovery(run, first_output: str, budget_sec: float = DISCOVERY_DRAIN_BUDGET_SEC, clock=time.monotonic) -> dict:
+    """대기 문서가 0이 될 때까지 추출을 반복한다. run() -> (exit_code, output).
+
+    한 번에 --limit 건만 처리하므로 신규 문서가 많으면 대기가 남는다. 예산 소진·실패·진척 없음이면 멈추고 남은 건수를 돌려준다.
+    """
+    started = clock()
+    pending = remaining_pending(first_output)
+    rounds = 1
+    stopped = 'DONE'
+    while pending:
+        if clock() - started >= budget_sec:
+            stopped = 'BUDGET_EXHAUSTED'
+            break
+        code, output = run()
+        rounds += 1
+        now = remaining_pending(output)
+        if code != 0 or now is None:
+            stopped = 'EXTRACTION_FAILED'
+            break
+        if now >= pending:
+            stopped = 'NO_PROGRESS'
+            pending = now
+            break
+        pending = now
+    return {'rounds': rounds, 'remaining': pending if pending is not None else -1, 'stopped': stopped}
+
+
 def run_steps(items, execute=subprocess.run) -> list[dict]:
     results = []
     for name, command in items:
@@ -215,6 +261,15 @@ def run_steps(items, execute=subprocess.run) -> list[dict]:
                     pass
 
         results.append(record)
+        if name == DISCOVERY_STEP and not result.returncode:
+            def run_again(command=command, fd=fd):
+                r = execute(command, cwd=WEB, capture_output=True, timeout=1800, pass_fds=(() if fd is None else (fd,)))
+                return r.returncode, output_text(r)
+            first = output_text(result)
+            drained = drain_discovery(run_again, first)
+            record.update(drain_rounds=drained['rounds'], drain_remaining=drained['remaining'], drain_stopped=drained['stopped'])
+            if drained['remaining']:
+                record['diagnostic'] = 'DISCOVERY_BACKLOG_REMAINING'
         if result.returncode:
             # 문서 추출은 일부 문서가 실패해도 성공분이 저장되고 다음 밤에 재시도되므로 후속 단계(그래프·검증)를 막지 않는다.
             if name == 'Generate:discovery':

@@ -553,5 +553,18 @@ class ButtonNotifyTests(unittest.TestCase):
         self.assertEqual(buttons[0][1].split(':')[2], buttons[1][1].split(':')[2])
 
 
+class ExplainFailureTests(unittest.TestCase):
+    def test_known_causes_include_action_and_rerun(self):
+        msg = lib.explain_failure('derived', "TimeoutExpired(['x'], 3600)")
+        self.assertIn('시간 제한', msg)
+        self.assertIn('재실행:', msg)
+        self.assertIn('auto-publish.py --apply', msg)
+
+    def test_unknown_cause_still_gives_rerun(self):
+        msg = lib.explain_failure('deploy', 'weird')
+        self.assertEqual(msg.count('재실행:'), 1)
+        self.assertNotIn('원인:', msg)
+
+
 if __name__ == '__main__':
     unittest.main()

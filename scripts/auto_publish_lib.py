@@ -186,3 +186,25 @@ def live_check_ok(statuses: dict[str, int], pages: int | None, prev_pages: int |
     elif prev_pages is not None and pages < prev_pages - slack:
         problems.append(f'/api/pages {pages} < previous {prev_pages} - {slack}')
     return problems
+
+
+RERUN_COMMAND = 'cd ~/2nd && python3 scripts/with-pipeline-lock.py -- .venv/bin/python scripts/auto-publish.py --apply'
+
+# (상세에 포함된 표지, 원인, 조치) — 위에서부터 먼저 맞는 것을 쓴다.
+FAILURE_HINTS = (
+    ('TimeoutExpired', '파생물 갱신이 시간 제한을 넘겼습니다(대개 지식그래프 추출 지연)', '~/projectm/scripts/ai_router_log.jsonl 의 2nd-extract-knowledge-graph 소요 시간과 남은 고아 프로세스(ps) 확인'),
+    ('overlapping legacy launchd', '락을 쓰지 않는 옛 launchd 작업이 아직 로드돼 있습니다', 'launchctl list | grep ai.2nd 로 겹치는 작업 확인 후 이전 또는 해제'),
+    ('uncommitted', '승인 파일이 커밋되지 않았거나 수정된 상태입니다', '~/2nd 에서 git status 로 확인 후 승인 파일 커밋'),
+    ('graph-coverage', '그래프 정합성 검증이 실패했습니다', '~/2nd/.venv/bin/python scripts/artifact-status.py 출력 확인'),
+    ('another knowledge writer', '다른 작업이 지식 락을 잡고 있습니다', 'ps 로 pipeline·extract·embed 프로세스 확인'),
+    ('differs from origin', '웹 저장소가 원격과 다릅니다', '~/projectm/drone-wiki-web 에서 git status / fetch 확인'),
+    ('needs human approval', '사람 승인이 필요한 파일이 있습니다', '텔레그램 승인 버튼 또는 auto-publish.py --approve <id>'),
+)
+
+
+def explain_failure(stage: str, detail: str) -> str:
+    """실패 알림 본문: 원인·조치·재실행 명령을 덧붙인다(고정 문구만; 자식 출력은 그대로 옮기지 않는다)."""
+    for marker, cause, action in FAILURE_HINTS:
+        if marker in (detail or ''):
+            return f"원인: {cause}\n조치: {action}\n재실행: {RERUN_COMMAND}"
+    return f"재실행: {RERUN_COMMAND}"

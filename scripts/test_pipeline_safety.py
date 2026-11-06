@@ -149,5 +149,34 @@ class LegacyJobGuardTests(unittest.TestCase):
         self.assertNotIn('overlapping legacy', out)
 
 
+class DiscoveryDrainTests(unittest.TestCase):
+    def test_remaining_pending_parse(self):
+        self.assertEqual(pipeline.remaining_pending('처리 결과: 성공 10 / 실패 0 / 남은 미처리 5개'), 5)
+        self.assertEqual(pipeline.remaining_pending('✅ 신규/변경된 raw 문서가 없습니다. 처리할 것이 없습니다.'), 0)
+        self.assertIsNone(pipeline.remaining_pending('알 수 없는 출력'))
+
+    def test_drain_until_empty(self):
+        outs = iter([(0, '남은 미처리 10개'), (0, '남은 미처리 0개')])
+        r = pipeline.drain_discovery(lambda: next(outs), '남은 미처리 20개')
+        self.assertEqual((r['stopped'], r['remaining'], r['rounds']), ('DONE', 0, 3))
+
+    def test_drain_stops_without_progress(self):
+        r = pipeline.drain_discovery(lambda: (0, '남은 미처리 5개'), '남은 미처리 5개')
+        self.assertEqual((r['stopped'], r['remaining']), ('NO_PROGRESS', 5))
+
+    def test_drain_stops_on_failure(self):
+        r = pipeline.drain_discovery(lambda: (1, ''), '남은 미처리 5개')
+        self.assertEqual((r['stopped'], r['remaining']), ('EXTRACTION_FAILED', 5))
+
+    def test_drain_respects_budget(self):
+        ticks = iter([0, 5000])
+        r = pipeline.drain_discovery(lambda: self.fail('예산 소진 뒤에는 호출하지 않는다'), '남은 미처리 5개', budget_sec=1200, clock=lambda: next(ticks))
+        self.assertEqual((r['stopped'], r['remaining']), ('BUDGET_EXHAUSTED', 5))
+
+    def test_nothing_pending_makes_no_extra_call(self):
+        r = pipeline.drain_discovery(lambda: self.fail('호출 금지'), '남은 미처리 0개')
+        self.assertEqual((r['stopped'], r['rounds']), ('DONE', 1))
+
+
 if __name__ == '__main__':
     unittest.main()

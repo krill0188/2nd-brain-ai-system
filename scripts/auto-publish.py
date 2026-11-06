@@ -469,7 +469,7 @@ def execute(ctx: Ctx) -> int:
         web_dirty = False
         finish(ctx, result)
         record(ctx, 'ok', result, started)
-        ctx.notify(f"[2nd 자동발행] 배포 완료 {result['deployment']}\n페이지 {result['previous_pages']} -> {result['pages']}, 변경 {changed}건"
+        ctx.notify(f"[2nd 자동발행] 배포 완료 {SITE}\n(배포 {result['deployment']})\n페이지 {result['previous_pages']} -> {result['pages']}, 변경 {changed}건"
                    + (f"\n경고: {result['warning']}" if result.get('warning') else ''))
         return 0
     except Abort as exc:
@@ -478,7 +478,7 @@ def execute(ctx: Ctx) -> int:
         status = 'noop' if exc.code == 0 else 'skipped' if exc.code == 5 else 'failed'
         record(ctx, status, {'stage': exc.stage, 'detail': exc.detail}, started)
         if status == 'failed' and ctx.apply:
-            ctx.notify(f'[2nd 자동발행] 실패 단계={exc.stage}\n{exc.detail[:300]}\n기존 사이트는 유지됩니다.')
+            ctx.notify(f'[2nd 자동발행] 실패 단계={exc.stage}\n{exc.detail[:300]}\n{lib.explain_failure(exc.stage, exc.detail)}\n기존 사이트는 유지됩니다.')
         ctx.say(f'{status}: {exc}')
         return exc.code
     except Exception as exc:  # noqa: BLE001
@@ -486,7 +486,7 @@ def execute(ctx: Ctx) -> int:
             restore_web(ctx)
         record(ctx, 'crashed', {'stage': stage, 'detail': repr(exc)[:300]}, started)
         if ctx.apply:
-            ctx.notify(f'[2nd 자동발행] 예기치 못한 오류 단계={stage}\n{repr(exc)[:300]}')
+            ctx.notify(f'[2nd 자동발행] 예기치 못한 오류 단계={stage}\n{repr(exc)[:300]}\n{lib.explain_failure(stage, repr(exc))}')
         raise
 
 

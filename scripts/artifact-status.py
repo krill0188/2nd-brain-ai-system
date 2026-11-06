@@ -32,8 +32,10 @@ def main() -> int:
                   'canonical_node_source_fresh': node_fresh,
                   'legacy_edges_pending_review': graph.get('legacy_edges_pending_review', 0),
                   'discovery_historical_extraction_success': 'UNKNOWN: old state predates failure-safe tracking'}
+        # 발견 레이어의 추출 지연은 공개 정합성 문제가 아니므로 경고로만 보고한다(차단하면 뉴스·브리핑 배포까지 멈춘다 — 2026-11-06 사고).
+        report['warnings'] = [f"discovery_pending_documents={len(pending)}"] if pending else []
         print(json.dumps(report))
-        return 2 if not node_fresh or any(report[k] for k in ('duplicate_slugs', 'missing_nodes', 'extra_nodes', 'discovery_pending_documents')) else 0
+        return 2 if not node_fresh or any(report[k] for k in ('duplicate_slugs', 'missing_nodes', 'extra_nodes')) else 0
     except (OSError, ValueError, KeyError, TypeError):
         print('Graph artifact validation failed; no files changed')
         return 2
