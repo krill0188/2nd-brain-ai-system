@@ -10,7 +10,7 @@ doi: "10.48550/arXiv.2008.09404"
 url: "http://arxiv.org/abs/2008.09404v3"
 zotero_key: VFUI7UB8
 tags: ["auto:2nd-brain"]
-attachment_path: raw/papers/files/_unclassified/robust-secure-uav-communications-with-the-aid-of-reconfigurable-intelligent-surf.pdf
+attachment_path: raw/papers/files/datalink/robust-secure-uav-communications-with-the-aid-of-reconfigurable-intelligent-surf.pdf
 attachment_sha256: 8ec8c8c8c83769acd927774071810ce0897b90a6663b585512506a6e41c00dc8
 sha256: 7702a09d55f0f31d
 ---

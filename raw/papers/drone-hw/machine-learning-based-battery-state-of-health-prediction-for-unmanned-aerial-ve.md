@@ -10,7 +10,7 @@ doi: "10.48550/arXiv.2607.06791"
 url: "http://arxiv.org/abs/2607.06791v1"
 zotero_key: 3I9DN9U7
 tags: ["auto:2nd-brain"]
-attachment_path: raw/papers/files/_unclassified/machine-learning-based-battery-state-of-health-prediction-for-unmanned-aerial-ve.pdf
+attachment_path: raw/papers/files/drone-hw/machine-learning-based-battery-state-of-health-prediction-for-unmanned-aerial-ve.pdf
 attachment_sha256: 5b00d55dcbb4e08a8fe0920cb58b2e6ee2d97c3b52d6743b1e7524c7fc105b79
 sha256: 11b941dd1ec22cd1
 ---

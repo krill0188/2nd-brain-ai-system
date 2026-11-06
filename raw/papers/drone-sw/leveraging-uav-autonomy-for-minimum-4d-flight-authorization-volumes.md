@@ -10,7 +10,7 @@ doi: "10.48550/arXiv.2608.23166"
 url: "http://arxiv.org/abs/2608.23166v1"
 zotero_key: W7HREWKB
 tags: ["auto:2nd-brain"]
-attachment_path: raw/papers/files/_unclassified/leveraging-uav-autonomy-for-minimum-4d-flight-authorization-volumes.pdf
+attachment_path: raw/papers/files/drone-sw/leveraging-uav-autonomy-for-minimum-4d-flight-authorization-volumes.pdf
 attachment_sha256: 18f7e493d553201b8a130bcf171dedeccb84a80b978d03484a982eeb4f671be0
 sha256: 5666f128e4e1a771
 ---

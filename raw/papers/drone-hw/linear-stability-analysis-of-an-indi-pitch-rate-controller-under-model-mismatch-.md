@@ -10,7 +10,7 @@ doi: "10.48550/arXiv.2607.16471"
 url: "http://arxiv.org/abs/2607.16471v1"
 zotero_key: 875AZHJA
 tags: ["auto:2nd-brain"]
-attachment_path: raw/papers/files/_unclassified/linear-stability-analysis-of-an-indi-pitch-rate-controller-under-model-mismatch-.pdf
+attachment_path: raw/papers/files/drone-hw/linear-stability-analysis-of-an-indi-pitch-rate-controller-under-model-mismatch-.pdf
 attachment_sha256: 366fba5732b54483aa5b679dc853ceea00e462fa8255cbd5bf4af1e2171fda41
 sha256: 09324ad798c5cb67
 ---

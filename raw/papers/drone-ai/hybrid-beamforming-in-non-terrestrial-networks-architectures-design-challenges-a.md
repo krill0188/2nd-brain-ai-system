@@ -10,7 +10,7 @@ doi: "10.48550/arXiv.2608.08501"
 url: "http://arxiv.org/abs/2608.08501v1"
 zotero_key: I9N2578J
 tags: ["auto:2nd-brain"]
-attachment_path: raw/papers/files/_unclassified/hybrid-beamforming-in-non-terrestrial-networks-architectures-design-challenges-a.pdf
+attachment_path: raw/papers/files/drone-ai/hybrid-beamforming-in-non-terrestrial-networks-architectures-design-challenges-a.pdf
 attachment_sha256: 5b57a9587bde93363a5f461e9769862b798a42d0ca407e1455028a3601851e82
 sha256: d10b10d4d208dcc0
 ---

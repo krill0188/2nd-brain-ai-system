@@ -10,7 +10,7 @@ doi: "10.48550/arXiv.2108.04537"
 url: "http://arxiv.org/abs/2108.04537v3"
 zotero_key: 7UXVXEF8
 tags: ["auto:2nd-brain"]
-attachment_path: raw/papers/files/_unclassified/time-optimal-planning-for-quadrotor-waypoint-flight.pdf
+attachment_path: raw/papers/files/drone-hw/time-optimal-planning-for-quadrotor-waypoint-flight.pdf
 attachment_sha256: 880b1f0c8d96d3d0213c103c32bd20566e4bc7820f223677293442a6470c591f
 sha256: 2c9c261d96d48374
 ---

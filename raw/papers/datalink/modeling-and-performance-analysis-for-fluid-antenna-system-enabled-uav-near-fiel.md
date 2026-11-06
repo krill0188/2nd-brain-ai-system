@@ -10,7 +10,7 @@ doi: "10.48550/arXiv.2608.09179"
 url: "http://arxiv.org/abs/2608.09179v1"
 zotero_key: RSUMC4Q6
 tags: ["auto:2nd-brain"]
-attachment_path: raw/papers/files/_unclassified/modeling-and-performance-analysis-for-fluid-antenna-system-enabled-uav-near-fiel.pdf
+attachment_path: raw/papers/files/datalink/modeling-and-performance-analysis-for-fluid-antenna-system-enabled-uav-near-fiel.pdf
 attachment_sha256: a8cd2de1d4a174ffd3d28c7ea23be31e92c78b7edaca9aa1c8bf9bb9c30298bc
 sha256: 10517e8afbc8ad99
 ---

@@ -10,7 +10,7 @@ doi: "10.48550/arXiv.2608.12037"
 url: "http://arxiv.org/abs/2608.12037v1"
 zotero_key: AV5NSSI3
 tags: ["auto:2nd-brain"]
-attachment_path: raw/papers/files/_unclassified/clustered-randomized-smoothing-for-stochastic-prediction-functions.pdf
+attachment_path: raw/papers/files/drone-ai/clustered-randomized-smoothing-for-stochastic-prediction-functions.pdf
 attachment_sha256: 6475cd552cee045cd08f3775fc43bf4341166aea744471ae8a5c485be8805dc8
 sha256: 4f4c3151ce274c62
 ---

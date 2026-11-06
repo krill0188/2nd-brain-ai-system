@@ -10,7 +10,7 @@ doi: "10.48550/arXiv.2609.02562"
 url: "http://arxiv.org/abs/2609.02562v1"
 zotero_key: C23RWS4R
 tags: ["auto:2nd-brain"]
-attachment_path: raw/papers/files/_unclassified/combinatorial-optimization-of-connected-uav-communication-bridges-for-emergency-.pdf
+attachment_path: raw/papers/files/datalink/combinatorial-optimization-of-connected-uav-communication-bridges-for-emergency-.pdf
 attachment_sha256: a003450ae222dbd6f659a11a88fe0556e285a21291463b27a83d30d02e4a9641
 sha256: 7930e0c04f72232f
 ---

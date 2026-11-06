@@ -10,7 +10,7 @@ doi: "10.48550/arXiv.2609.22309"
 url: "http://arxiv.org/abs/2609.22309v1"
 zotero_key: NHPRARQ3
 tags: ["auto:2nd-brain"]
-attachment_path: raw/papers/files/_unclassified/otfs-enabled-delayed-sinr-feedback-power-control-for-reliable-and-fair-high-mobi.pdf
+attachment_path: raw/papers/files/drone-ai/otfs-enabled-delayed-sinr-feedback-power-control-for-reliable-and-fair-high-mobi.pdf
 attachment_sha256: f64c845fab031f967e38cf465ffc6a4fad2774d89177fb3523b7eeb8e935d990
 sha256: dcac19c2341560c7
 ---

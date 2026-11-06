@@ -10,7 +10,7 @@ doi: "10.48550/arXiv.2410.04709"
 url: "http://arxiv.org/abs/2410.04709v1"
 zotero_key: G8PHKF7H
 tags: ["auto:2nd-brain"]
-attachment_path: raw/papers/files/_unclassified/direction-modulation-design-for-uav-assisted-by-irs-with-discrete-phase-shift.pdf
+attachment_path: raw/papers/files/datalink/direction-modulation-design-for-uav-assisted-by-irs-with-discrete-phase-shift.pdf
 attachment_sha256: a9a20e285fa0e87f600a2dcfc492c10f3afc723d3c32c8f99bbdc66ce418edf0
 sha256: 073707cf7ae50d0c
 ---

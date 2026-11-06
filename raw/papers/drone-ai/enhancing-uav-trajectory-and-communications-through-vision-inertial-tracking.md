@@ -10,7 +10,7 @@ doi: "10.48550/arXiv.2609.03099"
 url: "http://arxiv.org/abs/2609.03099v1"
 zotero_key: 668H5PGA
 tags: ["auto:2nd-brain"]
-attachment_path: raw/papers/files/_unclassified/enhancing-uav-trajectory-and-communications-through-vision-inertial-tracking.pdf
+attachment_path: raw/papers/files/drone-ai/enhancing-uav-trajectory-and-communications-through-vision-inertial-tracking.pdf
 attachment_sha256: 6a0ed81000fabdcde68d2a07c47cee5b69a76d1eed7f73d7aa59f4d6d56f63ff
 sha256: f2ddd95521142b59
 ---

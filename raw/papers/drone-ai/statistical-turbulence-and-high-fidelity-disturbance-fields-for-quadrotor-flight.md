@@ -10,7 +10,7 @@ doi: "10.48550/arXiv.2610.06874"
 url: "http://arxiv.org/abs/2610.06874v1"
 zotero_key: ESPKIGKA
 tags: ["auto:2nd-brain"]
-attachment_path: raw/papers/files/_unclassified/statistical-turbulence-and-high-fidelity-disturbance-fields-for-quadrotor-flight.pdf
+attachment_path: raw/papers/files/drone-ai/statistical-turbulence-and-high-fidelity-disturbance-fields-for-quadrotor-flight.pdf
 attachment_sha256: 2ee6b350ef50cbd39b8fc90381853ef4a18bd1def4dbaf3550097a95e1202d74
 sha256: 8ab73f7c03b2e0cf
 ---

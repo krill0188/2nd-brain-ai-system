@@ -10,7 +10,7 @@ doi: "10.48550/arXiv.2609.28709"
 url: "http://arxiv.org/abs/2609.28709v1"
 zotero_key: SCQKRVRU
 tags: ["auto:2nd-brain"]
-attachment_path: raw/papers/files/_unclassified/oa-mppi-occlusion-aware-model-predictive-path-integral-control-for-uav-flight.pdf
+attachment_path: raw/papers/files/drone-hw/oa-mppi-occlusion-aware-model-predictive-path-integral-control-for-uav-flight.pdf
 attachment_sha256: dc9966cdf40c2a45d8cfd08245b36703f4eb7c5edad29a5b40cfd15751bdf0f6
 sha256: 783f249cf5d15f57
 ---

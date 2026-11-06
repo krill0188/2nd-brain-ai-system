@@ -10,7 +10,7 @@ doi: "10.48550/arXiv.2002.01823"
 url: "http://arxiv.org/abs/2002.01823v1"
 zotero_key: AE4MC6CK
 tags: ["auto:2nd-brain"]
-attachment_path: raw/papers/files/_unclassified/a-robust-sensorless-controller-observer-strategy-for-pmsms-with-unknown-resistan.pdf
+attachment_path: raw/papers/files/drone-ai/a-robust-sensorless-controller-observer-strategy-for-pmsms-with-unknown-resistan.pdf
 attachment_sha256: 148ae643356e7e88ce19d698177c61e16f062680432163d57cfe4b0dfb944989
 sha256: ff23e49eaf063b35
 ---
