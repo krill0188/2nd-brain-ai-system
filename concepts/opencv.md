@@ -1,10 +1,10 @@
 ---
 title: OpenCV
 created: 2026-07-29
-updated: 2026-07-29
+updated: 2026-11-07
 type: concept
 tags: [drone, drone-ai, ai-agent]
-sources: [inbox/fetch-2026-07-29-opencv.md]
+sources: [inbox/fetch-2026-07-29-opencv.md, inbox/processed/fetch-2026-11-07-opencv.md]
 confidence: high
 contested: false
 contradictions: []
@@ -28,6 +28,10 @@ OpenCV(Open Source Computer Vision Library)은 실시간 컴퓨터 비전을 위
 
 - 4.x에서 5.x로의 마이그레이션 가이드 제공
 - Android SDK 16KB 페이지 크기 대응 패키지 제공
+
+## 최신 릴리스: OpenCV 5.1.0 (2026-11-06)
+
+2026-11-06 OpenCV 5.1.0이 공개됐다. 수집된 릴리스 노트에는 공개 사실과 변경 로그(공식 wiki OpenCV-Change-Logs) 링크만 있고 세부 변경 내용은 없다. ^[inbox/processed/fetch-2026-11-07-opencv.md]
 
 ## 드론 응용
 
