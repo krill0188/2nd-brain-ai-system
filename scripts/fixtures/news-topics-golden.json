@@ -1,0 +1,593 @@
+{
+ "note": "뉴스 주제 분류 골든셋 55건(2026-11-07, 마스터 지시로 직접 라벨링). gold=정답, alts=허용 대안. 시드 20261107 무작위 추출.",
+ "items": [
+  {
+   "url": "https://www.suasnews.com/2026/10/sparc-ai-signs-mou-for-european-fixed-wing-uav-integration-and-advances-commercial-strategy-in-the-middle-east/",
+   "title": "SPARC AI Signs MOU for European Fixed-Wing UAV Integration and Advances Commercial Strategy in the Middle East",
+   "summary": "SPARC AI Inc. (CSE: SPAI; OTCQB: SPAIF; Frankfurt: 5OV0) (“SPARC AI” or the “Company”), a",
+   "summary_ko": "SPARC AI가 유럽 고정익 UAV 통합을 위한 MOU 체결",
+   "source": "www.suasnews.com",
+   "gold": [
+    "vendor-registry"
+   ],
+   "alts": []
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQdTFCMk55TTI1NnhrQlpVYXhMRTVUeWtoQWxUTWVmakJ6d1g0Q3pMdDlRcWlNX1kzM3F1WHhJVU9qcG1QdW1EYVJsVDJzbVlDU3JlaWswSzlNWjdraVZ1WHRGUm9PNHFONDRfS2pjZUNINXhqZkRlLUZ2aFMwVEM3dGtLZm4zM0g2cW1OVlhCZ08?oc=5",
+   "title": "Skydio Lobbying Profile, 2020 - OpenSecrets",
+   "summary": "Skydio Lobbying Profile, 2020  OpenSecrets",
+   "summary_ko": "Skydio의 2020년 로비 활동 분석",
+   "source": "news.google.com",
+   "gold": [],
+   "alts": [
+    "vendor-registry"
+   ]
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPZ3ptT3d6M1pOSFpLdS0yUEZycU9SZXBRMWs4S0prdzNOc0I3QnA5VnVkTm4wazdEX0Jkd1daWUNWNDdDWkxuZGkwVjF2Z2pZYy1OV2xNOGFPX1N5VWVxRGRPb2M1aHVKQkJuSERyTUhZRlFPbnpEYVVmVFlGSGRxUm0wSjk5ZVd1RmZzWnlJS0I?oc=5",
+   "title": "Parrot Jumping Sumo review - Pocket-lint",
+   "summary": "Parrot Jumping Sumo review  Pocket-lint",
+   "summary_ko": "Parrot Jumping Sumo 점프형 미니드론 리뷰.",
+   "source": "news.google.com",
+   "gold": [],
+   "alts": []
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQbVd0cWRXWmdUcGZKRFlHdkxwNHRWdkxlclR1SWhUSy1LdmMtVU80b2k3ZENDalJ4dFhkTGpxNTduSXgtUktsWk9fRVhOU3ZqZ25IRlRFU2NYV3Fma0YzN2JhU1VRQUM2TjBjYkZMQVI0UzFwQlYybllXZENqOEZBa1VudlBhLTBmX2c?oc=5",
+   "title": "Soldiers advance from flying to fighting with drones - The British Army",
+   "summary": "Soldiers advance from flying to fighting with drones  The British Army",
+   "summary_ko": "군인이 드론 전진에서 전투로 전환",
+   "source": "news.google.com",
+   "gold": [],
+   "alts": []
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1jV3RLaVB1NjEzWmVMNHlkQnVMTzRnSGhNV1N1b1RGVXp0OEhoeDUyN3djQ2dFRVVoWFl6dWp4RzRNeDQtSkVUTFRWSGVIU05hdno3aGxfa3d0UQ?oc=5",
+   "title": "Which DJI Enterprise Drone Has the Best Zoom? - No Film School",
+   "summary": "Which DJI Enterprise Drone Has the Best Zoom?  No Film School",
+   "summary_ko": "어느 DJI 기업용 드론이 최상의 줌 성능을 갖추고 있는지 비교 분석한다.",
+   "source": "news.google.com",
+   "gold": [
+    "sensing-perception"
+   ],
+   "alts": [
+    "vendor-registry"
+   ]
+  },
+  {
+   "url": "https://dronedj.com/2026/11/06/skydio-funding-axon-public-safety/",
+   "title": "Skydio’s public safety drone business just got a $1.2 billion boost",
+   "summary": "Axon is making a massive bet on the future of public safety drones. The company, best known for its body cameras, Tasers, and law enforcement technology, has announced an additional $1.2 billion inves",
+   "summary_ko": "액손 12억 달러 투자로 스카이디오 공공안전 드론 사업 대규모 성장 동력 확보.",
+   "source": "dronedj.com",
+   "gold": [
+    "vendor-registry"
+   ],
+   "alts": []
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBKTVVyVEw1SHlZMjFUWHNxaEdBdEpOa0l1MXd1N3JOY1FPcHNLUXAzOGxxeC0zMUJjbUdCcFpMaE0yRHJVckFPc0NfX0p4Rmt2UGlDa3RpTzl1TGIzbzNyd2lmRWVDWHNfT2RVWmt5dWpOMHJYOERwa3pfcUs?oc=5",
+   "title": "Fire Commanders Can See Drone Locations and Live Video in One Place with New Skydio Partnership - Dronelife",
+   "summary": "Fire Commanders Can See Drone Locations and Live Video in One Place with New Skydio Partnership  Dronelife",
+   "summary_ko": "Skydio 파트너십으로 소방 지휘부가 드론 위치·실시간 영상을 한 곳에서 확인 가능",
+   "source": "news.google.com",
+   "gold": [
+    "vendor-registry"
+   ],
+   "alts": []
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1JSWNoM3VYZXIxT2NjOWtTQ0ppeXNzN19ZMnNWVWlfN0xoeGM1YW1jQTZETEszNmxwQ1dMbnlyN2tFTmJGaHBERFBySWd4cEppalJxQ20xWFg?oc=5",
+   "title": "DJI to Phase Out Several Enterprise Drones and Cameras, Spurring Mavic 3 Rumors - UAV Coach",
+   "summary": "DJI to Phase Out Several Enterprise Drones and Cameras, Spurring Mavic 3 Rumors  UAV Coach",
+   "summary_ko": "DJI가 몇몇 기업용 드론과 카메라를 단계적으로 종료하며 Mavic 3 소문이 나왔습니다.",
+   "source": "news.google.com",
+   "gold": [
+    "vendor-registry"
+   ],
+   "alts": []
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=K86oOsSCdgA",
+   "title": "[MATLAB] What Is Simulink Design Verifier?",
+   "summary": "Simulink Design Verifier™ uses formal methods to identify design errors, verify requirements, and automatically generate test cases for Simulink® and Stateflow® models. Detect issues such as integer o",
+   "summary_ko": "Simulink Design Verifier은 수식 기반 검증으로 모델 오류를 찾아 테스트 케이스를 생성한다.",
+   "source": "youtube.com",
+   "gold": [
+    "simulation-test"
+   ],
+   "alts": []
+  },
+  {
+   "url": "https://oscarliang.com/hglrc-rc3-soldering-iron/",
+   "title": "Review: HGLRC RC3 Soldering Iron – Is This the Best Portable Soldering Iron in 2026?",
+   "summary": "Review: HGLRC RC3 Soldering Iron – Is This the Best Portable Soldering Iron in 2026?\nI absolutely loved the HGLRC RC2 soldering iron. It was one of my top recommendations for portable soldering irons.",
+   "summary_ko": "HGLRC RC3 납땜 인두 리뷰 - 2026년 최고의 휴대용 납땜 인두인가?",
+   "source": "oscarliang.com",
+   "gold": [],
+   "alts": []
+  },
+  {
+   "url": "https://github.com/ultralytics/ultralytics/releases/tag/v8.4.201",
+   "title": "yolo v8.4.201 릴리즈",
+   "summary": "## 🌟 Summary **v8.4.201 makes PIL-based plotting up to 15× faster** while keeping visuals consistent, and standardizes the Construction-PPE dataset’s name and download paths. 🚀  ## 📊 Key Changes - **F",
+   "summary_ko": "YOLO v8.4.201 릴리스: PIL 기반 플롯팅 15배 빨라지고 건설 안전장비 데이터셋 표준화",
+   "source": "github.com",
+   "gold": [
+    "software-ecosystem"
+   ],
+   "alts": [
+    "sensing-perception"
+   ]
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNSGc1cTFrU0twSWpscS1PcWxnS2R3c2M3RVp2eGlFbm14U296TXNpa2tGdmt2YjBiUkZoa0plcC1uYXZlUTNuUTZoeDVpLTA4eHdxbkVPdGNCUkNrbmhqQU5vX3A1SHBiSFBTVXd3Z2FrbDN0N2lBSmlDeGg4VmFlb09WSlZCZGcyMTlFT0Rkc0dKcGxTYlhVQ0FyMHRVWjQ?oc=5",
+   "title": "Pre Amazon Prime Day bargain: this Parrot Mambo Mission drone is HALF PRICE - www.t3.com",
+   "summary": "Pre Amazon Prime Day bargain: this Parrot Mambo Mission drone is HALF PRICE  www.t3.com",
+   "summary_ko": "Parrot Mambo Mission 교육용 드론이 Amazon Prime Day 세일에서 반값 할인 중입니다.",
+   "source": "news.google.com",
+   "gold": [],
+   "alts": []
+  },
+  {
+   "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003395887",
+   "title": "강화학습 기반 단일 프로펠러 모듈형 UAV의 비행 및 결합 제어",
+   "summary": "Unmanned vehicles are mobile platforms capable of autonomously performing missions across diverse domains, including ground, maritime, and aerial environments, by leveraging artificial intelligence wi",
+   "summary_ko": "강화학습 기반 단일 프로펠러 UAV의 비행과 결합 제어를 연구한 논문입니다.",
+   "source": "kci.go.kr",
+   "gold": [
+    "mechanical-structures"
+   ],
+   "alts": []
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE0zcHNNZHg0YlFyUzladTFST0VuQ3JRQUY4Q3hwenFwZ01aRDAxV2dBbHgzRjFxUTU0T2RXdmdVOUN6a3lvaWhHRHl5UDBPQnBSOENWWE91aGFqb1lac1E?oc=5",
+   "title": "The Skydio 2+ Drone Lets You Fly Like a Pro - WIRED",
+   "summary": "The Skydio 2+ Drone Lets You Fly Like a Pro  WIRED",
+   "summary_ko": "스카이디오 2+ 자율비행 성능으로 전문가급 조종 가능",
+   "source": "news.google.com",
+   "gold": [],
+   "alts": []
+  },
+  {
+   "url": "https://dronelife.com/2026/10/28/anra-advances-nato-tested-counter-drone-technology-with-utm-airspace-data/",
+   "title": "ANRA Advances NATO-Tested Counter-Drone Technology With UTM Airspace Data",
+   "summary": "SIOP and TACO have advanced from TRL 5 to TRL 7. ANRA is now inviting U.S. sensor makers, integrators and agencies to explore partnerships as federal counter-drone funding grows. ANRA Technologies ann",
+   "summary_ko": "ANRA가 UTM 공역 데이터 기반 방위 드론 기술을 TRL7 단계로 시작",
+   "source": "dronelife.com",
+   "gold": [],
+   "alts": [
+    "security",
+    "vendor-registry"
+   ]
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOeHZsZUJKeE5VcmI5aC16ejJlUmdIX0swWlVTd3BoM3MxZ2JqU3BoZ09JVFlwOWt6REptUFE3S2ZaUEhXS2w5eEdhLWJQN1BGS1kwalBYb1UyVGZGUDRvOGJrTzB6TVNqQ2tfaTdNLXlaY2pjdmFiNl82S1JSZlloRHJfQQ?oc=5",
+   "title": "Addressing data security concerns with DJI drones - Heliguy",
+   "summary": "Addressing data security concerns with DJI drones  Heliguy",
+   "summary_ko": "DJI 드론 데이터 보안 우려 해소 방안 논의",
+   "source": "news.google.com",
+   "gold": [
+    "security"
+   ],
+   "alts": []
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxObURFek8tRDJMbjZhTmZmS1pveUpBZmpUUE9HS1lWV0Q4VldqWDNZbmhfYUZ4WWtHemE1Q2dRdF9HSnoyOFVxYkp2eV8wd21YaDRIYTlVaVpnamVleUhleC1ZREF6R1ViTGJkbkdOYUFnRFJKbjBnbVN3RmJVY0tuVXh0MzJJSm8yVTZoUHlUSVo4YUtlU2plTnR2aw?oc=5",
+   "title": "Exclusive: Drone manufacturer Skydio raises $170 million extension round - TechCrunch",
+   "summary": "Exclusive: Drone manufacturer Skydio raises $170 million extension round  TechCrunch",
+   "summary_ko": "Skydio가 1.7억 달러 확장 펀딩 라운드 유치",
+   "source": "news.google.com",
+   "gold": [
+    "vendor-registry"
+   ],
+   "alts": []
+  },
+  {
+   "url": "https://dronelife.com/2026/11/03/simactive-phase-one-defense-mapping/",
+   "title": "SimActive and Phase One Streamline Large-Scale Defense Mapping",
+   "summary": "Integration helps defense organizations process thousands of high-resolution aerial images faster, reducing manual work and speeding up map production. SimActive has announced an integrated workflow w",
+   "summary_ko": "SimActive와 Phase One이 대규모 방위 매핑을 위한 항공 이미지 처리 워크플로우를 통합했습니다.",
+   "source": "dronelife.com",
+   "gold": [],
+   "alts": [
+    "software-ecosystem"
+   ]
+  },
+  {
+   "url": "https://github.com/ultralytics/ultralytics/releases/tag/v8.4.195",
+   "title": "yolo v8.4.195 릴리즈",
+   "summary": "## 🌟 Summary **v8.4.195 adds early Python 3.15 compatibility checks, fixes AutoBatch profiling on older PyTorch versions, and improves documentation accuracy across hundreds of pages.**  ## 📊 Key Chan",
+   "summary_ko": "YOLO v8.4.195 릴리즈: Python 3.15 호환성 점검 추가, 구형 PyTorch에서 AutoBatch 프로파일링(AutoBatch profiling) 버그 수정, 수백 페이지 문서 정확도 개선.",
+   "source": "github.com",
+   "gold": [
+    "software-ecosystem"
+   ],
+   "alts": [
+    "sensing-perception"
+   ]
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOUHFHdFVPWjkzQU9XQXhxbjlKZXo0dm52eDBjWHV3X2hRd3JRYkpxV2FybkdDXzZHWGhtYTRNRk9Fa3hzeXdsTV9YckdjOE9jV3Bab2FTWFh6OGZxbjlreXo1WnhKQjN0RURfNUV4eGhHMGpHNmtoSXp2MUJCRjR5SF9FQ21sbTZZTzRTUUxkcmxqTmhDVVVwUHlXRUZ2ZUFaQThWQmltUXhWdUJaUEgyOURhd09QV3czVEdPZA?oc=5",
+   "title": "Skydio Soars Into 2023 as it Meets Critical Infrastructure Need - Business Wire",
+   "summary": "Skydio Soars Into 2023 as it Meets Critical Infrastructure Need  Business Wire",
+   "summary_ko": "스카이디오 2023년 핵심 인프라 수요 충족하며 성장",
+   "source": "news.google.com",
+   "gold": [
+    "vendor-registry"
+   ],
+   "alts": []
+  },
+  {
+   "url": "https://www.suasnews.com/2026/11/primoco-uav-nine-month-revenue-rises-69-ebitda-grows-246/",
+   "title": "Primoco UAV nine-month revenue rises 69%, EBITDA grows 246%",
+   "summary": "Czech unmanned aircraft manufacturer Primoco UAV SE reported revenue of CZK 430.9 million for the",
+   "summary_ko": "체코 Primoco UAV, 9개월 매출 69% 성장, EBITDA 246% 증가",
+   "source": "www.suasnews.com",
+   "gold": [
+    "vendor-registry"
+   ],
+   "alts": []
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=sdXIAl-AUXA",
+   "title": "[DJI] Every move starts with control. | DJI RS 4",
+   "summary": "DJI RS 4 keeps your camera moves intentional, and automated axis locks make each reset feel quick and precise 🏛️🎬 From start point to end frame, the motion reads better. Which shot would you practice ",
+   "summary_ko": "DJI RS 4는 자동 축 잠금 기능 덕분에 카메라 움직임을 정밀하게 제어해 프로시네용을 향상한다.",
+   "source": "youtube.com",
+   "gold": [],
+   "alts": [
+    "vendor-registry"
+   ]
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=aU0rPiNjXB0",
+   "title": "[핑크랩 PinkLAB] 요랬는데 요래됐어요 🤖 로보월드 2026 핑크랩 부스 #shorts",
+   "summary": "뼈대만 있던 부스 → 로봇까지 출근 완료! 로보월드 2026 핑크랩 부스에서 만나요 🩷 🌐 https://pinklab.art #핑크랩 #PinkLAB #로보월드2026 #PhysicalAI #로봇교육 #shorts",
+   "summary_ko": "",
+   "source": "youtube.com",
+   "gold": [],
+   "alts": []
+  },
+  {
+   "url": "https://dronelife.com/2026/11/01/global-mapper-subscription-drone-mapping/",
+   "title": "Blue Marble Geographics Introduces New Global Mapper Subscription for GIS and Drone Mapping",
+   "summary": "Three subscription tiers bring mapping, terrain analysis, lidar processing, and photogrammetry tools into a unified offering. Blue Marble Geographics has introduced a new subscription model for its Gl",
+   "summary_ko": "Blue Marble Geographics가 GIS 및 드론 매핑용 Global Mapper 구독 모델 출시.",
+   "source": "dronelife.com",
+   "gold": [],
+   "alts": [
+    "software-ecosystem"
+   ]
+  },
+  {
+   "url": "https://github.com/ultralytics/ultralytics/releases/tag/v8.4.202",
+   "title": "yolo v8.4.202 릴리즈",
+   "summary": "## 🌟 Summary **Ultralytics 8.4.202 improves stream-video saving and fixes several compatibility and reliability issues, alongside updated model and benchmark documentation.**  ## 📊 Key Changes - 🎥 **S",
+   "summary_ko": "Ultralytics YOLO v8.4.202 출시, 스트림 비디오 저장 개선 및 호환성/안정성 수정",
+   "source": "github.com",
+   "gold": [
+    "software-ecosystem"
+   ],
+   "alts": [
+    "sensing-perception"
+   ]
+  },
+  {
+   "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003396198",
+   "title": "Evaluation of the Operational Effectiveness of a Heterogeneous UAV Swarm in Maritime Strike Missions Based on a System Dynamics Model",
+   "summary": "The ongoing Russia-Ukraine conflict has highlighted the significant potential of heterogeneous UAV swarms in the military domain, wheretheyhavebeenemployedacrossawiderangeofmodernwarfarescenarios.Howe",
+   "summary_ko": "해상 공격에 이종 드론 스웜의 효율성을 시스템 역학 모델로 평가합니다.",
+   "source": "kci.go.kr",
+   "gold": [
+    "swarm-multiagent"
+   ],
+   "alts": []
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9HOENLRE15YWpFT3JjY1kwQV9iS3dabU9YQkI2YWdJUUxXQnRCZHEyeU5WYWw4ZEJJX2NhRHZsNTB5SnZ0MHZhLUhxMXU0VlotUkJUd3RldUVHMzZsbXhjRm90b2dXd09Na0ZKcjd3VmNCZw?oc=5",
+   "title": "Mountain rescuers turn to automated DJI drones to save time - DroneDJ",
+   "summary": "Mountain rescuers turn to automated DJI drones to save time  DroneDJ",
+   "summary_ko": "산악 구조대가 DJI 자동화 드론을 활용해 구조 시간을 단축하고 있습니다.",
+   "source": "news.google.com",
+   "gold": [],
+   "alts": []
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPUHNLS1ZJTU1icGE2SFQ5MG5CQmF0UF9rN1Z6Xy12azU0VDRPcUU2Z1pCVThXcTFIQklkQ3IzTEw0TUtWcTluMkUyTlBaWm5tazRHSjI1UGVPakZsSkZmOFV5VW4xd0hac241YWF2UmtrMEJzeEpkZ05GS25qLTJpMzloVkI?oc=5",
+   "title": "Flying the Parrot AR.Drone 2.0 Quadricopter with a Windows tablet (Hidden Gem) - Windows Central",
+   "summary": "Flying the Parrot AR.Drone 2.0 Quadricopter with a Windows tablet (Hidden Gem)  Windows Central",
+   "summary_ko": "윈도우 태블릿으로 패럿 AR.Drone 2.0 쿼드콥터를 조종해 본 경험을 소개하는 기사입니다.",
+   "source": "news.google.com",
+   "gold": [],
+   "alts": []
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOMVp2ODhSMFhKdU0tRU1rWVVfRmxPUkpxQkNORElSYUJsazItYzREbDhqaG45WWJiaVg2aGdDaGtHaDdNaEhKOUZCa0hvdUpWam5hd0NTc19xZFpqVVJHRjNiOHpGWnZXdnJFUTYwMXdDSkRwUXZoRzB3cWwtVzdkVWpmdEZIUU1wVHIzT09PZXhtcGJ5bGdxVjBSOVRRcUlJa1VUVEJQWERzUm9xb0puNGNxaWhjbS0zWkd3M2dJa0ZOS05HZDlYdkdHaDZSR0JxNk9sUmVVbmQ4eXJaTHZySGRUbHU3OUlkdmc?oc=5",
+   "title": "Parrot Bluegrass: Estimate biomass, understand fertilization needs and identify opportunities increase agricultural output - sUAS News",
+   "summary": "Parrot Bluegrass: Estimate biomass, understand fertilization needs and identify opportunities increase agricultural output  sUAS News",
+   "summary_ko": "Parrot Bluegrass, 농업용 다분광 드론으로 생물량 추정 및 비료 수요 분석 지원",
+   "source": "news.google.com",
+   "gold": [
+    "sensing-perception"
+   ],
+   "alts": [
+    "vendor-registry"
+   ]
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=tiy7-75ZWPM",
+   "title": "[핑크랩 PinkLAB] 거대 로봇회사들 사이에서, 가장 핑크랩스럽게 | 로보월드 2026 첫 전시",
+   "summary": "안녕하세요! 핑크랩입니다! 🌸🤖 저희... 망한 것 같습니다. 😱 핑크랩 창업 이후 처음으로 로보월드에 전시 부스를 마련했습니다! 그런데 부스 배치도를 보고 깜짝 놀랐습니다. 주변을 둘러보니 이름만 들어도 알 만한 멋진 로봇 기업들이 가득하네요. 에이로봇, 로보티즈, XYZ 등등... 😅 마치 유명 맛집들이 즐비한 골목에 초라한 손님없는 식당이 된 듯한 기",
+   "summary_ko": "",
+   "source": "youtube.com",
+   "gold": [],
+   "alts": []
+  },
+  {
+   "url": "https://github.com/ultralytics/ultralytics/releases/tag/v8.4.189",
+   "title": "yolo v8.4.189 릴리즈",
+   "summary": "## 🌟 Summary **Ultralytics 8.4.189 improves deployment reliability and inference robustness**, with key fixes for Sony IMX500 and Hailo exports, clearer dataset errors, and safer handling of model out",
+   "summary_ko": "울트라리틱스 YOLO v8.4.189은 배포 안정성과 추론 견고성을 높이고 내보내기 관련 문제를 수정했습니다.",
+   "source": "github.com",
+   "gold": [
+    "software-ecosystem"
+   ],
+   "alts": [
+    "sensing-perception"
+   ]
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=7wc8CB-bRlM",
+   "title": "[Joshua Bardwell] Is the BetaFPV Pavo20 Pro II a Genuine Upgrade?",
+   "summary": "Uncertain about what to buy? Check out THE ULTIMATE FPV SHOPPING LIST: https://www.fpvknowitall.com/ultimate-fpv-shopping-list SUPPORT ME ON PATREON at: http://bit.ly/2Ep5Sia THIS IS MY FULL TIME JOB.",
+   "summary_ko": "BetaFPV Pavo20 Pro II 드론이 실제로 업그레이드가 되었는지 검토하는 영상입니다.",
+   "source": "youtube.com",
+   "gold": [],
+   "alts": []
+  },
+  {
+   "url": "http://arxiv.org/abs/2610.38930v1",
+   "title": "Selective Sliding Mode Control Enhances Robustness of Aerial Robots Under Disturbances",
+   "summary": "Quadrotor control under disturbances such as wind gusts and payload variations remains challenging. First-order sliding mode control (SMC) and matched/unmatched uncertainty distinction are classical a",
+   "summary_ko": "슬라이딩 모드 제어로 바람·중량 변화에 강력한 항공 로봇 제어",
+   "source": "arxiv.org",
+   "gold": [],
+   "alts": []
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=JGly6PSK5iw",
+   "title": "[freeCodeCamp.org] Gemini 4 Argon API Crash Course",
+   "summary": "Learn how to use Google's Gemini 4 Argon model through practical JavaScript examples. This course walks through key development topics including API key setup, sending basic API requests, adjusting mo",
+   "summary_ko": "freeCodeCamp는 JavaScript 예제를 통해 Google Gemini 4 Argon API 사용법을 가르친다.",
+   "source": "youtube.com",
+   "gold": [],
+   "alts": []
+  },
+  {
+   "url": "https://dronelife.com/2026/10/27/dhs-counter-uas-procurement-cybersecurity-training/",
+   "title": "DHS Procurement Forecast Includes Counter-Drone Cybersecurity and Training",
+   "summary": "Planned contract valued at $20 million to $50 million covers a range of security services, including counter-UAS expertise and small-drone cybersecurity. The Department of Homeland Security (DHS) has ",
+   "summary_ko": "DHS가 드론 방어용 사이버보안 및 훈련을 포함한 계약을 2000-5000만 달러 규모로 인수할 예정이다.",
+   "source": "dronelife.com",
+   "gold": [
+    "security"
+   ],
+   "alts": []
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNN3ZBMlBKWnpNVDkwTUZnOXhiRTJMcFl2dXlsdTFXZUI4WE9RVlRrTjNJbnY0ckdrSkpHejZWUUpqNndiaHkxeG5mYWRWMkpFalpnbnlWRk5jYUtXRkxzcndVVm1KdDNRQ295MEdzQnZHalF1Q3JwY0hRVkY4UzFjVFRyTFFaX0xHLTJDaHlmYjhsbDBCb0pRYktSWQ?oc=5",
+   "title": "Royal Navy opens tender for Skydio X10D reconnaissance drones - Dealroom",
+   "summary": "Royal Navy opens tender for Skydio X10D reconnaissance drones  Dealroom",
+   "summary_ko": "영국 해군, Skydio X10D 정찰 드론 입찰 개시",
+   "source": "news.google.com",
+   "gold": [],
+   "alts": [
+    "vendor-registry"
+   ]
+  },
+  {
+   "url": "https://github.com/ultralytics/ultralytics/releases/tag/v8.4.184",
+   "title": "yolo v8.4.184 릴리즈",
+   "summary": "## 🌟 Summary A reliability-focused release with an important TIFF-reading fix, plus improvements to segmentation prompts, model loading, validation, integrations, and Platform workflows—without introd",
+   "summary_ko": "YOLO v8.4.184는 TIFF 파일 읽기 오류를 고치고 모델 안정성과 검증 기능을 개선했습니다.",
+   "source": "github.com",
+   "gold": [
+    "software-ecosystem"
+   ],
+   "alts": [
+    "sensing-perception"
+   ]
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZkVPajZOcm1JSkxVRmVUeHpfSDlEVWFILVNabmkzaWZqOG11YWhuS0FqcGpBRHhrUEV1anF4MDhfa3UxaEFnakJYM3dFRE1lMXVORjY4NFRFRlRWOFdEUzVvMEFkUGVNcERDY0tzOTJ6SW1HVE1YMUw0aHRuUExGOGdpQl9hZ2NSQ3Q1YUoyRUdGTFQ5NHEtNE5fYmN3WjFWQkhqUHlvcjJTT2RlaHc?oc=5",
+   "title": "Parrotâ€™s new drone lets you fly with VR goggles and phone - Hypergrid Business",
+   "summary": "Parrotâ€™s new drone lets you fly with VR goggles and phone  Hypergrid Business",
+   "summary_ko": "파롯의 신형 드론은 VR 고글과 스마트폰으로 동시에 조종·비행이 가능한 혁신적 컨트롤을 제공한다.",
+   "source": "news.google.com",
+   "gold": [
+    "vendor-registry"
+   ],
+   "alts": []
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1aQXB0VFY3eTdSZ1RHeWhlTFg1M3pCNGhQcGtKbU05Q1dlcl81NGJYTEJCZ3VqSlJfZUQ3TWRQSXFFUDViaDNZdlNwZG9oWVJsbExFYng2RnJRSTFUVTRReWxxYVVSOENpYnJRY1BxVy10UTQzdWY5RjljV1Rnc2s?oc=5",
+   "title": "DJI Gives Pilots Full Airspace Control. The World Holds Its Breath. - DroneXL",
+   "summary": "DJI Gives Pilots Full Airspace Control. The World Holds Its Breath.  DroneXL",
+   "summary_ko": "DJI는 파이럿들에게 전 세계 비행 공간을 완전히 통제할 수 있는 기능을 제공했다.",
+   "source": "news.google.com",
+   "gold": [],
+   "alts": []
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=4nEbpeUawpk",
+   "title": "[Painless360] Fix Low/Standby Power Warning in Your HD FPV Goggles (Walksnail, DJI , HDZero etc.)",
+   "summary": "See all of my Walksnail tips here: https://www.youtube.com/playlist?list=PLYsWjANuAm4pxSZ-nhQ-evC1cVohWzVgR you can now arm a HD system from an ExpressLRS system. see https://youtu.be/kX9Hp7zsv9I Than",
+   "summary_ko": "HD FPV 고글의 낮은 배터리 경고를 해결하는 팁을 Walksnail 및 팀이 공유한다.",
+   "source": "youtube.com",
+   "gold": [],
+   "alts": [
+    "electrical-power"
+   ]
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNUnRRMlhfa1Y1cGhVdDUtR0UwYVUyaHhqSlc4M1lELUZ5QWFhaGtxY28wN1ctZWNSSzltR3lyb3l1TWN4LU9SdkgtYjNkM0MzdmkyWkZnR0ExOWtxeTFlNmNQWk9UTnkwSGx2cXhaTFVvdGctaWMxNjNEbWtHdDU3Zk0zeWZBeHFJcUxiMl9xQUtNaEN6TkpuYllPX1dBZnNiTElr?oc=5",
+   "title": "Skydio CEO Adam Bry on why Silicon Valley shouldn’t draw red lines for drone use - The Verge",
+   "summary": "Skydio CEO Adam Bry on why Silicon Valley shouldn’t draw red lines for drone use  The Verge",
+   "summary_ko": "스카이디오 CEO가 드론 활용에 대한 실리콘밸리의 자율 규제와 정책 경계 문제를 논의합니다.",
+   "source": "news.google.com",
+   "gold": [],
+   "alts": []
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxONm9yOC05T05lT25jRHVGMWJrT3dQN2hlWXRkQ2E0cHZkSXVSS3BPMnc5dEx2bkF1a05TX2ZzOWVucE52N2M0bzB6Z0JXbnRQTENlSk1PcVdfcjN4ZmxpWTlCdmpvYnFCcFl0ZzM1WF84QWt3VF9RNktJT2hYX2R2eDFSZF9lNUtPcmxkd29R?oc=5",
+   "title": "Axon Invests $1.2 Billion in Skydio to Build the Future of Drone as First Responder - Yahoo Finance",
+   "summary": "Axon Invests $1.2 Billion in Skydio to Build the Future of Drone as First Responder  Yahoo Finance",
+   "summary_ko": "액손, 스카이디오 12억 달러 투자해 공공안전 드론 시장 주도권 강화.",
+   "source": "news.google.com",
+   "gold": [
+    "vendor-registry"
+   ],
+   "alts": []
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=5CI2kSNjBDM",
+   "title": "[UAV Coach] Potensic ATOM 2: The Best Budget Drone for Beginners?",
+   "summary": "✅ Get the ATOM 2: https://store.potensic.com/products/atom-2?srsltid=AYCX9vJ0rjGxWpNjMFm56uLi8I_PKWEAuTmacwzYJYnxqai0YUF2YAzK In this video, we review the Potensic ATOM 2, test out it’s popular featur",
+   "summary_ko": "Potensic ATOM 2는 예산 친화적 초보용 드론으로 인기 기능을 테스트해 본다.",
+   "source": "youtube.com",
+   "gold": [],
+   "alts": []
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQajBHQ1FqR05ab3NoMG56c1YwdWF1SGNJMEZDUTFXb0t1Y1h5WHBiWi1QWDFfX1FkMGw4VDV0ZlE0LWJqMV9SaFcxMDgwOGd1d3hKXzZrSkhoUFBBdUdGS2ZHVkJLSWF6WUhtMnhUUm1Lc3JtaTJmbHVibUFWX2E2Tmg2NEdfcl9jNERYMW5XMlI4UGpoWnVaOVhaX3RpVjNmSE5YdWpNNl9ZejVjV2RnTEJsSHNPLVN2aklJ?oc=5",
+   "title": "Air Hogs Hawk Eye, Parrot AR.Drone Quadricopter, and four other flying toys. - Slate",
+   "summary": "Air Hogs Hawk Eye, Parrot AR.Drone Quadricopter, and four other flying toys.  Slate",
+   "summary_ko": "Air Hogs, Parrot 등 4종의 휴대용 광학 드론",
+   "source": "news.google.com",
+   "gold": [],
+   "alts": []
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxONDNBR0Fwa2ZVYld1T2V1WnVMNjNGcEgzaWJkNDdDVE1Na195cE1ZLTRyV3RFekp6c0VRVDM4WEFKbHJUZzdGemMyc0JDRnZGc3hxQnprSkFKMEZDTDVFSm5Vb0x1MmNpLXJfSWtYMU11VlJyR2U5eWczZEpCV1R6TDhxR1hFUVR0VlFJSENfWm15Vzl3YTRscEF3RmQ2ZlpQaWVzQg?oc=5",
+   "title": "Flying hacker contraption hunts other drones, turns them into zombies - sUAS News",
+   "summary": "Flying hacker contraption hunts other drones, turns them into zombies  sUAS News",
+   "summary_ko": "sUAS 해킹 장치가 다른 드론을 사냥해 ‘좀비화’시켰습니다.",
+   "source": "news.google.com",
+   "gold": [
+    "security"
+   ],
+   "alts": []
+  },
+  {
+   "url": "http://arxiv.org/abs/2610.34538v1",
+   "title": "Dual Gradient Consensus for Adaptive Learning to Transient Out-of-Distribution Disturbances in Quadrotor Control",
+   "summary": "Quadrotor trajectory tracking under unmodeled disturbances often relies on online residual adaptation, but short out-domain residuals can corrupt the learned disturbance model when constant-step updat",
+   "summary_ko": "쌍방향 그래디언트 합의를 통한 방어적 학습으로 드론이 예기치 파손에 적응하기 어려운 거동을 다룬 연구.",
+   "source": "arxiv.org",
+   "gold": [],
+   "alts": []
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVXBhT0puQlBhVGNmTy0tSF9BbXVSS1pfV05rUG5hTmJkbFVqSjNKdWRvbWN2UlF6bFFlRnFsQ2xGcVRHRXFKSnpFS1NYM0ZRQ05jUjF1NVVtTlVtd2Zfb3ZiSkNPbWlrUVVtZ0ltM3BPR0JBNWFab1U3S3ZHR043ZjBibDB5XzkzS01FRDB2Y2pJWTN5WHhwT3pKck1BRlZuZERyazFGQ0FLUHVV?oc=5",
+   "title": "US Army Tests VMAX Electronic Warfare System With Skydio X10 Drones - Военное дело",
+   "summary": "US Army Tests VMAX Electronic Warfare System With Skydio X10 Drones  Военное дело",
+   "summary_ko": "미군은 Skydio X10 드론과 VMAX 전자전 시스템을 테스트했습니다.",
+   "source": "news.google.com",
+   "gold": [
+    "security"
+   ],
+   "alts": [
+    "rf-datalink-engineering"
+   ]
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNaGcwN21WcXFuemFDTHZTVnlUVTVOOGJEWXZ5ZHBMUlVQZ1JWUWRPTTJ5cjZqQVpnbm9iZ3VmWlplcVRZaS12WWdVa2tEczEtekZ5ZHJjRWtZYUJwWndUUEc1TWZnck14NDBpdmVHUnpUS2NEUmFQS2ZXcGRDNTMwRm03amRKTEJBU0h4OUxCaHM5WG9aV3RreXk1QmNpRFVqNTJIaWFIdWdxZw?oc=5",
+   "title": "Dronemaker Skydio hiring team in Ukraine amid strategy shift - C4ISRNet",
+   "summary": "Dronemaker Skydio hiring team in Ukraine amid strategy shift  C4ISRNet",
+   "summary_ko": "Skydio가 전략 변화 속에서 우크라이나에 개발팀을 구성하고 있다는 소식입니다.",
+   "source": "news.google.com",
+   "gold": [
+    "vendor-registry"
+   ],
+   "alts": []
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPYWRNQUNNX0FmUVVtSWRnbGpkdl94YndUMmRSdktpai14SWN4WmVpQzJPdEU4b1c3aWN5cW9UVi1qUEJfbk1WNXhnLUpNTUVGVG9aVVlSaG1ueV9PU19kS0tCQzlXOTFTN2sxd2s3UF9oZmY3azRSWEFrZ0IzaVgxS2FWdldQS01CY3l2VkFiczdXRUlsM2s3UjR4dUQxbFhNX0d4NlhkOWp6ZXQ2MkV5cW1xelZvNkhEVjlUWkNsbEQtbWF3N0xVc3c2S1JRQk9jZEQ1ZjloUm4xZw?oc=5",
+   "title": "Automated Drone Technology Further Transforms Polish Mountain Rescue Operations - PR Newswire",
+   "summary": "Automated Drone Technology Further Transforms Polish Mountain Rescue Operations  PR Newswire",
+   "summary_ko": "폴란드 산악구조대에 자동화 드론 도입, 눈 덮인 산악 지역 수색 시간 단축",
+   "source": "news.google.com",
+   "gold": [],
+   "alts": []
+  },
+  {
+   "url": "http://arxiv.org/abs/2610.31617v1",
+   "title": "DiffDreamer: Coupling World Models with Differentiable Simulation for Agile Quadrotor Control",
+   "summary": "Tasks such as quadrotor dynamic-gate racing require agents to anticipate external motion while maintaining precise high-frequency control. World-model-based reinforcement learning provides a natural s",
+   "summary_ko": "세계 모델과 미분 가능한 시뮬레이션을 결합해 쿼드로터의 고주파 제어를 개선하는 방법을 제시합니다.",
+   "source": "arxiv.org",
+   "gold": [
+    "simulation-test"
+   ],
+   "alts": []
+  },
+  {
+   "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003395386",
+   "title": "LLM-guided semantic-aware trajectory optimization for UAV path planning using environmental context",
+   "summary": "Autonomous unmanned aerial vehicle path planning in urban environments requires both geometric safety and semantic awareness. Conventional planners based on fixed costs or predefined risk models strug",
+   "summary_ko": "대규모 언어 모델(LLM)로 도시 환경의 의미와 위험을 고려해 드론 경로를 계획합니다.",
+   "source": "kci.go.kr",
+   "gold": [],
+   "alts": []
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE8tdkpBbFVIWVFUcjBWck9lRUtwUmllVGZBaWgtdzhiWk5naUNXeVdlMmtiMkhVSGhGbW1zbS1jeDBSVTQtbEJRaG5ITFhObWtZSmE1Ujh1WkpRZ0gxYVhUdTFSMDZtQ05VUkE?oc=5",
+   "title": "DJI launches the ultimate foldable DJI Enterprise drone, the DJI Matrice 30 or M30, and more… - DroneXL",
+   "summary": "DJI launches the ultimate foldable DJI Enterprise drone, the DJI Matrice 30 or M30, and more…  DroneXL",
+   "summary_ko": "DJI가 접이식 엔터프라이즈 드론 마트리스 30(M30) 출시",
+   "source": "news.google.com",
+   "gold": [
+    "vendor-registry"
+   ],
+   "alts": []
+  },
+  {
+   "url": "http://arxiv.org/abs/2610.35165v1",
+   "title": "How Tuning, Reference Preview, Actuator Modeling, and Fallback Policies Change Quadrotor Controller Comparisons: A Reproducible Simulation Study",
+   "summary": "Quadrotor controller comparisons commonly report a single tracking error, although the resulting ranking also depends on tuning effort, reference information, actuator prediction, optimizer fallback, ",
+   "summary_ko": "쿼드로터 컨트롤러 비교에서 튜닝과 예측이 성능 순위에 미치는 영향을 시뮬레이션으로 재현했다.",
+   "source": "arxiv.org",
+   "gold": [
+    "simulation-test"
+   ],
+   "alts": []
+  },
+  {
+   "url": "https://dronelife.com/2026/10/21/elistair-unveils-tethered-solution-for-the-parrot-anafi-ukr/",
+   "title": "Elistair Unveils Tethered Solution for the Parrot ANAFI UKR",
+   "summary": "A new air module connects Parrot’s ANAFI UKR micro-UAV to Elistair’s Safe-T and Ligh-T tether stations, enabling hours of uninterrupted flight for ISR missions. Elistair unveiled a new tethered air mo",
+   "summary_ko": "Elistair가 패럿 ANAFI UKR을 케이블로 연결해 장시간 정찰·감시하는 장비를 공개했습니다.",
+   "source": "dronelife.com",
+   "gold": [
+    "vendor-registry"
+   ],
+   "alts": [
+    "electrical-power"
+   ]
+  },
+  {
+   "url": "https://github.com/ultralytics/ultralytics/releases/tag/v8.4.204",
+   "title": "yolo v8.4.204 릴리즈",
+   "summary": "## 🌟 Summary Ultralytics **8.4.204** makes high-resolution tiling available across training, validation, and prediction, and adds improvements to FastSAM prompts, model exports, and dataset handling. ",
+   "summary_ko": "울트라리틱스 YOLO v8.4.204, 고해상도 타일링 지원 등 학습·추론 성능 향상 기능 추가.",
+   "source": "github.com",
+   "gold": [
+    "software-ecosystem"
+   ],
+   "alts": [
+    "sensing-perception"
+   ]
+  }
+ ]
+}

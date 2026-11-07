@@ -1,0 +1,29 @@
+{
+ "_note": "주제 메뉴를 채우기 위한 추가 수집 소스(2026-11-07, 설계 docs/2026-11-07-news-topic-classification-design.md §②). 항목은 뉴스 피드에만 들어가고 inbox(위키 컴파일)에는 들어가지 않는다. domain 은 옛 7종 중 가장 가까운 값(주제는 news_topics.py 가 붙인다).",
+ "sources": [
+  {"slug": "ros-discourse", "url": "https://discourse.ros.org/latest.rss", "type": "news", "domain": "gcs-software", "max": 3, "include": "ROS|robot|drone|UAV|Nav2|micro-ROS|Zenoh|DDS|middleware"},
+  {"slug": "px4-release", "url": "https://github.com/PX4/PX4-Autopilot/releases.atom", "type": "release", "domain": "flight-control", "max": 1},
+  {"slug": "ardupilot-release", "url": "https://github.com/ArduPilot/ardupilot/releases.atom", "type": "release", "domain": "flight-control", "max": 1},
+  {"slug": "qgc-release", "url": "https://github.com/mavlink/qgroundcontrol/releases.atom", "type": "release", "domain": "gcs-software", "max": 1},
+  {"slug": "gz-sim-release", "url": "https://github.com/gazebosim/gz-sim/releases.atom", "type": "release", "domain": "gcs-software", "max": 1},
+  {"slug": "ros2-release", "url": "https://github.com/ros2/ros2/releases.atom", "type": "release", "domain": "gcs-software", "max": 1},
+  {"slug": "micro-ros-release", "url": "https://github.com/micro-ROS/micro_ros_setup/releases.atom", "type": "release", "domain": "gcs-software", "max": 1},
+  {"slug": "nvidia-jetson-blog", "url": "https://developer.nvidia.com/blog/feed/", "type": "news", "domain": "hardware", "max": 3, "include": "Jetson|drone|UAV|aerial"},
+  {"slug": "arxiv-gnss-denied", "url": "arxiv:all:\"GNSS-denied\" AND all:UAV", "type": "paper", "domain": "flight-control", "max": 3},
+  {"slug": "arxiv-vio-uav", "url": "arxiv:all:\"visual inertial\" AND all:UAV", "type": "paper", "domain": "flight-control", "max": 3},
+  {"slug": "arxiv-swarm", "url": "arxiv:all:swarm AND all:UAV", "type": "paper", "domain": "ai-autonomy", "max": 3},
+  {"slug": "arxiv-battery", "url": "arxiv:all:UAV AND (all:battery OR all:\"fuel cell\" OR all:hydrogen)", "type": "paper", "domain": "hardware", "max": 3},
+  {"slug": "arxiv-datalink", "url": "arxiv:all:UAV AND (all:datalink OR all:\"communication link\")", "type": "paper", "domain": "comms-protocol", "max": 3},
+  {"slug": "arxiv-security", "url": "arxiv:all:UAV AND all:security AND cat:cs.CR", "type": "paper", "domain": "ops-mission", "max": 3},
+  {"slug": "arxiv-simulation", "url": "arxiv:all:UAV AND (all:\"digital twin\" OR all:simulator)", "type": "paper", "domain": "ops-mission", "max": 3},
+  {"slug": "arxiv-edge-ai", "url": "arxiv:all:UAV AND (all:\"edge computing\" OR all:Jetson OR all:onboard)", "type": "paper", "domain": "ai-autonomy", "max": 3},
+  {"slug": "arxiv-structures", "url": "arxiv:all:UAV AND (all:morphing OR all:airframe OR all:propeller)", "type": "paper", "domain": "hardware", "max": 3},
+  {"slug": "arxiv-perception", "url": "arxiv:all:UAV AND (all:LiDAR OR all:\"object detection\")", "type": "paper", "domain": "ai-autonomy", "max": 3},
+  {"slug": "gn-battery", "url": "https://news.google.com/rss/search?q=drone+battery+OR+%22hydrogen+fuel+cell%22+drone&hl=en-US&gl=US&ceid=US:en", "type": "news", "domain": "hardware", "max": 4},
+  {"slug": "gn-datalink", "url": "https://news.google.com/rss/search?q=drone+datalink+OR+%22drone+communication+link%22&hl=en-US&gl=US&ceid=US:en", "type": "news", "domain": "comms-protocol", "max": 4},
+  {"slug": "gn-security", "url": "https://news.google.com/rss/search?q=drone+cybersecurity+OR+%22drone+spoofing%22&hl=en-US&gl=US&ceid=US:en", "type": "news", "domain": "ops-mission", "max": 4},
+  {"slug": "gn-gnss-denied", "url": "https://news.google.com/rss/search?q=%22GPS-denied%22+OR+%22GNSS-denied%22+drone&hl=en-US&gl=US&ceid=US:en", "type": "news", "domain": "flight-control", "max": 4},
+  {"slug": "gn-edge-ai", "url": "https://news.google.com/rss/search?q=%22Jetson%22+drone+OR+%22edge+AI%22+drone&hl=en-US&gl=US&ceid=US:en", "type": "news", "domain": "hardware", "max": 4},
+  {"slug": "gn-swarm", "url": "https://news.google.com/rss/search?q=%22drone+swarm%22&hl=en-US&gl=US&ceid=US:en", "type": "news", "domain": "ops-mission", "max": 4}
+ ]
+}

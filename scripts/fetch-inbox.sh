@@ -339,6 +339,10 @@ fetch_rss "https://dronelife.com/feed/"    "dronelife"     "ops-mission" 5
 # ── regulations (RSS) ───────────────────────────────────────────
 fetch_rss "https://www.suasnews.com/category/regulation/feed/" "suasnews-regulation" "regulations" 5
 
+# ── 주제 메뉴 보강(비GNSS·ROS·RF·전원·군집·시뮬·엣지AI·보안·SW 생태계 등): 설정 scripts/news-topic-sources.json
+# 뉴스 피드에만 병합(주제 분류 포함, inbox 에는 쓰지 않음). 실패해도 수집을 막지 않는다(2026-11-07).
+python3 "$HOME/2nd/scripts/fetch-topic-sources.py" 2>&1 | tail -3 || true
+
 # ── regulations 1차 소스: 미 연방 규정공보(Federal Register, FAA) ──
 # 무료·키 불필요(federalregister.gov 공식 API). 뉴스 재가공이 아닌
 # FAA 규정/고시 원문을 직접 수집 — "틀린 말을 하지 않는다" 목표에

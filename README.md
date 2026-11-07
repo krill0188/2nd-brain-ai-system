@@ -48,7 +48,13 @@ A **personal knowledge operations system** for drone technology (flight control,
 - Release history: **v3.2.2** (Aug 19, scholarly collection expansion) → **v3.3.0** (Aug 20, Palantir-style ontology Link + Action) → **v3.4.0** (Sep 2, hermes cron moved to Claude Pro subscription) → **v3.5.0** (Sep 3, local AI drone builder) → **v3.6.0** (Oct 9, auto-publish stabilization) → **v3.7.0** (Oct 17, HW collection expansion) → **v3.8.0** (Oct 24, discovery bulk promotion) → **v3.9.0** (Nov 6, publish pipeline recovery).
 - Companion repo: [`drone-wiki-web`](https://github.com/krill0188/drone-wiki-web) — Next.js app serving the public snapshot (AI Q&A, GraphRAG, ontology reasoning, drone builder).
 
-### Latest update (v3.9.2, 2026-11-07)
+### Latest update (v3.10.0, 2026-11-07)
+- **News topic classification**: `scripts/news_topics.py` adds a closed-list `topics` field (max 2, 12 topics) to every news item at collection time via the shared LLM router; fail-open, retry-capped, idempotent. Golden set of 55 hand-labelled items: **84 %** agreement, 0 closed-list violations. Existing 500 items were backfilled.
+- **Topic sources**: `scripts/fetch-topic-sources.py` + `news-topic-sources.json` add 24 feeds (arXiv ×10, GitHub release atoms ×6, ROS Discourse, NVIDIA blog, Google News ×6) so the 13 previously empty news menus are populated. Stdlib-only RSS/Atom parser, per-source cap, arXiv 3.1 s spacing; wired into the daily fetch with one line.
+- **Ordinance check**: `scripts/verify-ordinances.py` compares ordinance summaries with the official law.go.kr OpenAPI text (read-only; key never printed). Five ordinances verified; one unverifiable "newly established" claim removed.
+- Web side (drone-wiki-web v2.21.2–v2.21.3): main-page document count follows the real page list; news menu filters by `domain` or `topics`, shows counts, dims empty menus, hides PKM. Design: `docs/2026-11-07-news-topic-classification-design.md`.
+
+### Previous update (v3.9.2, 2026-11-07)
 - **`auto-publish.py --doctor` fixes**: an approved file whose content changed after approval is now a warning (the gate will ask for re-approval) — only "hash matches the pin but not committed" is a failure; a stale graph is a warning (regenerated during publish), duplicate slugs stay a failure; fixed a bug that dropped the first character of the first path from `git status --porcelain` output.
 
 ### Previous update (v3.9.1, 2026-11-07)

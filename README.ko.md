@@ -50,7 +50,13 @@
 - 릴리즈 이력: **v3.2.2**(08-19 학술수집 대확장: arXiv 8도메인+KCI+Zotero) → **v3.3.0**(08-20 팔란티어식 온톨로지 Link+Action) → **v3.4.0**(09-02 hermes cron → Claude Pro 구독 전환) → **v3.5.0**(09-03 로컬 AI 드론빌더) → **v3.6.0**(10-09 auto-publish 안정화, 발행중단 4일치 복구) → **v3.7.0**(10-17 HW 수집 확장, 아래).
 - 연계 저장소: [`drone-wiki-web`](https://github.com/krill0188/drone-wiki-web) — 공개 snapshot을 서비스하는 Next.js 앱(AI Q&A·GraphRAG·온톨로지 추론·드론 빌더).
 
-### 최근 업데이트 (v3.9.2, 2026-11-07)
+### 최근 업데이트 (v3.10.0, 2026-11-07)
+- **뉴스 주제 분류**: `scripts/news_topics.py` 가 수집 시점에 공용 LLM 라우터로 모든 뉴스 항목에 닫힌 목록 `topics`(최대 2개, 12종)를 추가합니다. 실패해도 병합은 계속(fail-open), 재시도 상한, 멱등. 직접 라벨링한 골든셋 55건에서 일치율 **84%**, 닫힌 목록 위반 0. 기존 500건은 백필했습니다.
+- **주제 소스**: `scripts/fetch-topic-sources.py` + `news-topic-sources.json` 으로 24개 피드(arXiv 10, GitHub 릴리즈 6, ROS Discourse, NVIDIA 블로그, Google News 6)를 추가해 비어 있던 뉴스 메뉴 13개를 채웠습니다. 표준 라이브러리 RSS/Atom 파서, 소스별 건수 제한, arXiv 3.1초 간격, 일일 수집에 한 줄로 연결했습니다.
+- **조례 대조**: `scripts/verify-ordinances.py` 가 조례 요약을 법제처 OpenAPI 원문과 읽기 전용으로 대조합니다(키 비출력). 조례 5건을 확인했고 확인 불가한 "신설" 표현 1건을 뺐습니다.
+- 웹(drone-wiki-web v2.21.2~v2.21.3): 메인 문서 수가 실제 페이지 목록을 따르고, 뉴스 메뉴가 `domain` 또는 `topics` 로 필터·건수 표시·빈 메뉴 흐림·PKM 숨김을 합니다. 설계: `docs/2026-11-07-news-topic-classification-design.md`.
+
+### 이전 업데이트 (v3.9.2, 2026-11-07)
 - **`auto-publish.py --doctor` 보정**: 승인 뒤에 내용이 바뀐 파일은 경고(게이트가 재승인을 요청)로, "고정 해시와 같은데 미커밋"만 실패로 판정합니다. 그래프 뒤처짐은 경고(발행 중 재생성), 중복 슬러그는 계속 실패입니다. `git status --porcelain` 출력의 첫 경로 첫 글자가 잘리던 버그도 고쳤습니다.
 
 ### 이전 업데이트 (v3.9.1, 2026-11-07)

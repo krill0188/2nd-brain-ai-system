@@ -65,6 +65,17 @@ def main():
     existing.sort(key=lambda x: x.get("fetched", ""), reverse=True)
     existing = existing[:MAX_ITEMS]
 
+    # 주제 분류(topics) — 새 항목(과 아직 분류 안 된 항목)에 붙인다. fail-open: 실패해도 병합은 계속(NEWS_TOPICS=0 이면 건너뜀).
+    if os.environ.get("NEWS_TOPICS", "1") != "0":
+        try:
+            sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+            import news_topics
+            st = news_topics.apply_topics(existing)
+            if st["todo"]:
+                print(f"news-feed: 주제 분류 {st['todo']}건 → 있음 {st['classified']} · 빈 배열 {st['empty']} · 실패 {st['failed']}")
+        except Exception as e:  # noqa: BLE001
+            print(f"news-feed: 주제 분류 건너뜀({type(e).__name__})", file=sys.stderr)
+
     os.makedirs(os.path.dirname(FEED_PATH), exist_ok=True)
     with open(FEED_PATH, "w") as f:
         json.dump(existing, f, ensure_ascii=False, indent=1)
