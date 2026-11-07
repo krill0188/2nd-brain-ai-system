@@ -7,6 +7,7 @@ import tempfile
 import time
 import unittest
 from pathlib import Path
+from types import SimpleNamespace
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
@@ -587,8 +588,33 @@ class DoctorTests(unittest.TestCase):
     def test_pending_is_warn_integrity_is_fail(self):
         self.assertEqual(self.dr.check_pending_documents('{"discovery_pending_documents": 5, "canonical_node_source_fresh": true}')[1], 'WARN')
         self.assertEqual(self.dr.check_pending_documents('{"discovery_pending_documents": 0, "canonical_node_source_fresh": true}')[1], 'OK')
-        self.assertEqual(self.dr.check_pending_documents('{"missing_nodes": 2, "canonical_node_source_fresh": true}')[1], 'FAIL')
+        self.assertEqual(self.dr.check_pending_documents('{"missing_nodes": 2, "canonical_node_source_fresh": true}')[1], 'WARN')  # 발행 중 그래프 재생성으로 해결
         self.assertEqual(self.dr.check_pending_documents('garbage')[1], 'WARN')
+
+
+    def test_approved_files_hash_distinguishes_fail_and_warn(self):
+        import hashlib, tempfile
+        root = Path(tempfile.mkdtemp())
+        (root / 'a.md').write_text('approved content'); (root / 'b.md').write_text('changed after approval')
+        pins = {'a.md': hashlib.sha256(b'approved content').hexdigest(), 'b.md': hashlib.sha256(b'original').hexdigest()}
+        run = lambda cmd, **kw: SimpleNamespace(stdout=' M a.md\n M b.md\n')
+        self.assertEqual(self.dr.check_approved_committed(root, {'approved_files': pins}, run)[1], 'FAIL')  # a.md: 해시 일치+미커밋
+        run2 = lambda cmd, **kw: SimpleNamespace(stdout=' M b.md\n')
+        self.assertEqual(self.dr.check_approved_committed(root, {'approved_files': pins}, run2)[1], 'WARN')  # b.md 만: 승인 후 변경
+        run3 = lambda cmd, **kw: SimpleNamespace(stdout='')
+        self.assertEqual(self.dr.check_approved_committed(root, {'approved_files': pins}, run3)[1], 'OK')
+
+    def test_porcelain_leading_space_not_lost_for_first_path(self):
+        import hashlib, tempfile
+        root = Path(tempfile.mkdtemp()); (root / 'concepts').mkdir()
+        (root / 'concepts/x.md').write_text('same')
+        pins = {'concepts/x.md': hashlib.sha256(b'same').hexdigest()}
+        run = lambda cmd, **kw: SimpleNamespace(stdout=' M concepts/x.md\n')  # 첫 줄이 공백으로 시작
+        self.assertEqual(self.dr.check_approved_committed(root, {'approved_files': pins}, run)[1], 'FAIL')
+
+    def test_graph_staleness_is_warn_duplicates_are_fail(self):
+        self.assertEqual(self.dr.check_pending_documents('{"missing_nodes": 3, "canonical_node_source_fresh": false}')[1], 'WARN')
+        self.assertEqual(self.dr.check_pending_documents('{"duplicate_slugs": 1, "canonical_node_source_fresh": true}')[1], 'FAIL')
 
     def test_exit_code_and_report(self):
         rows = [('a', 'OK', 'x', ''), ('b', 'FAIL', 'y', '조치')]

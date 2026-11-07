@@ -19,6 +19,12 @@ def _git(args, cwd, run=subprocess.run) -> str:
     return (r.stdout or '').strip()
 
 
+def _git_lines(args, cwd, run=subprocess.run) -> list:
+    """porcelain 출력은 줄 앞 공백이 의미를 가지므로 strip 하지 않고 줄 단위로 돌려준다."""
+    r = run(['git', *args], cwd=cwd, capture_output=True, text=True, timeout=60)
+    return [l for l in (r.stdout or '').splitlines() if l.strip()]
+
+
 def check_busy_processes(ps_output: str, own_pid: int | None = None) -> tuple:
     """실행 중인 발행·파이프라인·추출·임베딩 프로세스(고아 포함)."""
     rows = [l for l in ps_output.splitlines() if BUSY_PATTERN.search(l) and '--doctor' not in l and (own_pid is None or not l.strip().startswith(f'{own_pid} '))]
@@ -39,13 +45,30 @@ def check_git_clean(root: Path, web: Path, run=subprocess.run) -> list:
 
 
 def check_approved_committed(root: Path, policy: dict, run=subprocess.run) -> tuple:
-    """정책에 고정된 승인 파일이 커밋되지 않았으면 매니페스트 단계가 실패한다."""
-    paths = list((policy.get('approved_files') or {}).keys())
+    """정책에 고정된 승인 파일 중 커밋되지 않은 것을 가른다.
+
+    · 작업본 해시 == 고정 해시인데 미커밋 → FAIL (승인은 됐는데 커밋이 안 됨: 매니페스트 단계가 실패하는 2026-11-06 사고)
+    · 작업본 해시 != 고정 해시 → WARN (승인 뒤에 파일이 바뀜: 게이트가 보류로 잡아 재승인을 요청하므로 막힘은 아님)
+    """
+    import hashlib
+    pins = policy.get('approved_files') or {}
+    paths = list(pins.keys())
     dirty = []
     for i in range(0, len(paths), 200):
-        dirty += _git(['status', '--porcelain', '--', *paths[i:i + 200]], root, run).splitlines()
-    if dirty:
-        return ('approved-files-committed', FAIL, f'미커밋·수정 {len(dirty)}건', '승인 파일을 커밋한 뒤 실행')
+        dirty += _git_lines(['status', '--porcelain', '--', *paths[i:i + 200]], root, run)
+    must_commit, changed = [], []
+    for line in dirty:
+        rel = line[3:].strip().strip('"')
+        try:
+            h = hashlib.sha256((root / rel).read_bytes()).hexdigest()
+        except OSError:
+            changed.append(rel)  # 삭제된 파일은 게이트가 판단
+            continue
+        (must_commit if h == pins.get(rel) else changed).append(rel)
+    if must_commit:
+        return ('approved-files-committed', FAIL, f'승인(해시 일치)됐지만 미커밋 {len(must_commit)}건', '승인 파일을 커밋한 뒤 실행')
+    if changed:
+        return ('approved-files-committed', WARN, f'승인 후 내용이 바뀐 파일 {len(changed)}건(발행 시 재승인 요청이 올 수 있음)', '')
     return ('approved-files-committed', OK, f'{len(paths)}건 모두 커밋됨', '')
 
 
@@ -77,8 +100,10 @@ def check_pending_documents(status_stdout: str) -> tuple:
         return ('discovery-pending', WARN, 'artifact-status 출력 해석 실패', 'scripts/artifact-status.py 직접 실행')
     n = d.get('discovery_pending_documents', 0)
     bad = [k for k in ('duplicate_slugs', 'missing_nodes', 'extra_nodes') if d.get(k)]
+    if d.get('duplicate_slugs'):
+        return ('graph-integrity', FAIL, '중복 슬러그 있음(그래프 재생성으로 해결되지 않음)', 'concepts·entities 등에서 같은 이름 문서 정리')
     if bad or d.get('canonical_node_source_fresh') is False:
-        return ('graph-integrity', FAIL, '정합성 오류: ' + ', '.join(bad or ['canonical_node_source_fresh']), 'update-graph.sh 후 artifact-status 재확인')
+        return ('graph-integrity', WARN, '그래프가 문서보다 뒤처짐: ' + ', '.join(bad or ['canonical_node_source_fresh']), '발행 중 Generate:canonical-graph 단계가 다시 만든다')
     if n:
         return ('discovery-pending', WARN, f'추출 대기 {n}건(소진 루프가 처리)', '')
     return ('discovery-pending', OK, '대기 0건', '')
