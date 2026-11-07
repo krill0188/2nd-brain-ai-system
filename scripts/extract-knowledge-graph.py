@@ -49,7 +49,7 @@ ALLOWED_NODES = [
 MAX_CHARS_PER_DOC = 6000
 MODEL_ALIAS = "haiku"
 CLAUDE_TIMEOUT_SEC = 240
-# 2026-11-06: 저가치 티어(OpenRouter kimi-k2)가 문서당 ~5분이라 발행 갱신 3600초 제한을 넘김 → claude -p(haiku) 직접 호출, 폴백 금지.
+# 2026-11-06: 저가치 티어(OpenRouter kimi-k2)가 문서당 ~5분이라 발행 갱신 3600초 제한을 넘김 → claude -p(haiku) 1순위, 실패 시 라우터가 NIM 무료 → OpenRouter 무료 순으로 이어간다.
 DISALLOWED_TOOLS = ["Bash", "Edit", "Write", "Read", "WebFetch", "WebSearch"]  # 프롬프트가 self-contained라 도구 불필요
 MAX_NODES_PER_DOC = 60
 MAX_RELS_PER_DOC = 80
@@ -192,7 +192,7 @@ def extract_with_claude(title: str, body: str) -> GDoc:
     '도구 없음' 제약과도 맞는다. system prompt의 프롬프트 인젝션 방어 문구는 그대로 유지."""
     try:
         text, _meta = ai_router.call(
-            build_prompt(title, body), tier="high", no_fallback=True, project="2nd-extract-knowledge-graph",
+            build_prompt(title, body), tier="high", project="2nd-extract-knowledge-graph",
             system=SYSTEM_PROMPT, timeout=CLAUDE_TIMEOUT_SEC,
             claude_args=["--model", MODEL_ALIAS, "--disallowedTools", *DISALLOWED_TOOLS],
         )
