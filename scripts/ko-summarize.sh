@@ -38,8 +38,8 @@ print(f"""아래 드론 분야 영문 자료 목록입니다. 각 항목을 한�
 PYEOF
   ) || break  # 대상 없으면 종료
 
-  # 단순 요약 작업 — 공용 ai_router.py로 위임, 저가치 티어(Claude 쿼터 안 씀,
-  # codex-lb/OpenRouter 우선) 사용. 뉴스 제목·요약뿐이라 민감정보 아님.
+  # 단순 요약 작업 — 공용 ai_router.py로 위임. 2026-11-07 라우터 순서: claude -p → NVIDIA NIM 무료 → OpenRouter 무료
+  # (claude_first). 뉴스 제목·요약뿐이라 민감정보 아님.
   # (2nd AGENTS.md 자체 규칙: "Use the lowest-cost capable model for ... summarization")
   TMP=$(mktemp)
   ERR=$(mktemp)

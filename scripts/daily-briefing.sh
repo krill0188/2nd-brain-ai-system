@@ -50,7 +50,7 @@ print(f"""오늘({today}) 수집된 드론 분야 자료를 분야별로 정리�
 PYEOF
 )
 
-# 단순 요약(이미 수집된 뉴스를 카드로 압축) — 공용 ai_router.py 저가치 티어로 위임
+# 단순 요약(이미 수집된 뉴스를 카드로 압축) — 공용 ai_router.py 로 위임(2026-11-07 순서: claude -p → NIM 무료 → OpenRouter 무료)
 # (2nd AGENTS.md 자체 규칙: "Use the lowest-cost capable model for ... summarization")
 TMP=$(mktemp)
 ERR=$(mktemp)

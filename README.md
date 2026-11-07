@@ -48,7 +48,13 @@ A **personal knowledge operations system** for drone technology (flight control,
 - Release history: **v3.2.2** (Aug 19, scholarly collection expansion) → **v3.3.0** (Aug 20, Palantir-style ontology Link + Action) → **v3.4.0** (Sep 2, hermes cron moved to Claude Pro subscription) → **v3.5.0** (Sep 3, local AI drone builder) → **v3.6.0** (Oct 9, auto-publish stabilization) → **v3.7.0** (Oct 17, HW collection expansion) → **v3.8.0** (Oct 24, discovery bulk promotion) → **v3.9.0** (Nov 6, publish pipeline recovery).
 - Companion repo: [`drone-wiki-web`](https://github.com/krill0188/drone-wiki-web) — Next.js app serving the public snapshot (AI Q&A, GraphRAG, ontology reasoning, drone builder).
 
-### Latest update (v3.9.0, 2026-11-06)
+### Latest update (v3.9.1, 2026-11-07)
+- **Shared LLM router order** (`~/projectm/scripts/ai_router.py`): 1) `claude -p`, 2) NVIDIA NIM free endpoint, 3) OpenRouter free. Each fallback tier uses one model — the best in our measurements (`nemotron-3-ultra-550b-a55b`; coding test passed, extraction 54 s / 28 nodes) — and rotates across three API keys per provider. The paid `kimi-k2` route was removed; set `claude_first=false` to restore the old order.
+- **Key loading**: keys are read at run time from `~/.hermes/.env` / `config.yaml`, classified by value prefix; a variable assigned twice uses its last value; Hermes keys, when present, are used exclusively. Key values are never printed or stored.
+- **Knowledge-graph extraction** follows the same order (fallback allowed instead of failing).
+- Verified: per-key calls (6/6), key rotation, tier-by-tier fallback, daily-briefing JSON parsing on all three tiers.
+
+### Previous update (v3.9.0, 2026-11-06)
 - **Homepage news unfrozen**: the auto-publish pipeline had been blocked since 10/31 by four stacked causes — uncommitted approved files, legacy launchd jobs overlapping the pipeline lock, a slow extraction step, and leftover pending documents. Published on 2026-11-06 (pages 3,312 → 3,384, daily briefing back to the current date).
 - **Extraction**: knowledge-graph extraction now calls `claude -p` (haiku) with no silent fallback instead of the low-tier OpenRouter route (~300 s per document → ~14 s), and drains the pending queue in a loop (20-minute budget; stops on failure or no progress).
 - **Validation**: pending extraction documents are a warning, not a blocker; duplicate slugs, missing/extra nodes and stale canonical nodes still block publication.
